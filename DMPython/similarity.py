@@ -22,10 +22,10 @@ def cosine_similarity_analyze(document_dict_a, document_dict_b):
 
     a_vector_magnitude=0
     for elem in vector_a:
-        a_vector_magnitude +=math.pow(elem,2)
+        a_vector_magnitude += math.pow(elem,2)
     b_vector_magnitude=0
     for elem in vector_b:
-        b_vector_magnitude +=math.pow(elem,2)
+        b_vector_magnitude += math.pow(elem,2)
 
     magnitude = math.sqrt(a_vector_magnitude) * math.sqrt(b_vector_magnitude)
     dot_product = 0

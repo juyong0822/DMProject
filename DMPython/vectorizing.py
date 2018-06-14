@@ -98,3 +98,19 @@ vec1 = doc_vectorizer.docvecs[i]
 vec2 = doc_vectorizer.docvecs[j]
 
 print(cos_similarity(vec1, vec2))
+
+i, j = 58, 100
+print(docs[i])
+print(docs[j])
+vec1 = doc_vectorizer.docvecs[i]
+vec2 = doc_vectorizer.docvecs[j]
+
+print(cos_similarity(vec1, vec2))
+
+i, j = 80, 100
+print(docs[i])
+print(docs[j])
+vec1 = doc_vectorizer.docvecs[i]
+vec2 = doc_vectorizer.docvecs[j]
+
+print(cos_similarity(vec1, vec2))

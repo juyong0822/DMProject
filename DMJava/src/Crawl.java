@@ -11,7 +11,7 @@ import java.io.*;
 public class Crawl {
 
     static final int page_limit = 20;
-    static final String location = "..\\CrawlingFiles\\";
+    static final String location = "..\\CrawlingFiles0614\\";
 
     int success = 0;         // crawling success
     int fail1 = 0;           // 2심 없음 fail

@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 89도2360 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2090976';
+var contIdEtc = '';
+var saNo = '89도2360';
+var sngoNm = '선고';
+var saNm = '특정범죄가중처벌등에관한법률위반(도주차량,인정된죄명:교통사고처리특례법)';
+try {
+	var sngoDay=('19900313' ? 
+			'19900313'.length==4 ? Date.parseExact('19900313','yyyy').toString('yyyy. M. d.') : 
+				'19900313'.length==6 ? Date.parseExact('19900313','yyyyMM').toString('yyyy. M. d.') : 
+					'19900313'.length==8 ? Date.parseExact('19900313','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 89도2360 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '89도2360';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />89도2360</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(29)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(2)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2100616">대법원 1994. 11. 11. 선고 94도2349 판결 [공1994.12.15.(982),3326]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061816">대법원 2003. 2. 26. 선고 2001도1314 판결 [공2003.4.15.(176),946]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|213365">황상현 특정범죄가중처벌등에관한법률 제5조의3제1항 위반죄와 관련된 문제 인권과 정의 224호  / 대한변호사협회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|215079">황상현 특정범죄가중처벌등에 관한 법률 제5조의3 제1항 위반죄와 관련된 제문제 형사판례연구 3호  / 박영사  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|508383">최복규 가. 배당이의의 소를 제기하여 제1심에서 패소하고 항소하여 항소심 계속중 피고인의 기망행위로 인하여 한 항소취하행위와 재산적 처분행위, 나. 제3자에게 재산상의 이익을 취득하게 한 경우에 해당함에도 검사가 대법원판례해설 43호 (2003.07) / 법원도서관  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|36170">박일환 법원의 심판의무 대법원판례해설 14호 (91.11) / 법원도서관  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|567624">이기광 특정범죄 가중처벌 등에 관한 법률위반(도주차량)죄의 구성요건 등에 관한 대법원 판례 경향의 분석과 검토 재판과 판례 15집  / 대구판례연구회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|219348">손대식 특정범죄가중처벌등에 관한 법률위반(도주차량)죄에 관한 소고 재판과판례 4집  / 대구판례연구회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|239520">이동기 특정범죄가중처벌등에관한법률위반(도주차량)죄 : 판례를 중심으로 법조 46권 10호 (97.10) / 법조협회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|237825">노만경 특정범죄가중처벌등에관한법률위반(도주차량)의 판례 동향 : ‘도주’의 개념을 중심으로 재판실무연구 1996  / 광주지방법원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|562653">사법연수원 형사판결서작성실무:. 2016 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|41839">오석준 형사항소심에서의 판결주문에 관한 몇가지 문제 : 판례를 중심으로 사법연구자료 20집  / 대법원 법원행정처  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|471435">이재상 축소사실의 인정과 법원의 심판범위 형사재판의 제문제  . 제3권 (2000.11) / 박영사  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|786610">민철기 사건의 실체에 관한 심리가 이미 완료되어 교통사고처리 특례법 제3조 제2항 단서에서 정한 사유가 없는 것으로 판명되고, 달리 피고인이 같은 법 제3조 제1항의 죄를 범하였다고 인정되지 않는 경우 공소기각 사유가 있더라도 무죄판결을 선고할 수 있는지 여부 대법원판례해설 제104호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461588">황상현 특정범죄가중처벌등에관한법률 제5조의3 제1항 위반죄에 있어서의 도주의 개념과 도주의 범의 청주법률논단 1집  / 충북법률실무연구회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|248499">여훈구 일죄의 일부가 각 무죄, 공소기각에 해당하는 경우 판결 주문의 표시 방법 형사판례연구 5호  / 박영사  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|247317">임범석 특정범죄가중처벌등에관한법률 제5조의 3 제1항의 "피해자를 구호하는 등 도로교통법 제50조 제1항의 규정에 의한 조치를 취하지 아니하고 도주한 때"의 의미 재판실무연구 2권  / 수원지방법원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|41282">김동건 뺑소니 교통사고에 대한 소고 법학논집 : 취봉김용철선생고희기념   / 박영사  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|518614">김우진 일죄의 일부가 각 무죄, 공소기각에 해당하는 경우 판결주문의 표시방법 형사판례의 연구 : 지송 이재상교수 화갑기념논문집 . Ⅱ   / 박영사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|790154">박길성 공소기각판결 선고를 위한 무죄판결 파기의 타당성 : 의정부지방법원 2015. 1. 23. 선고 2014노1652 판결을 중심으로 재판실무연구 2015 / 광주지방법원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|620488">양경승 특가법상 도주차량운전죄에 있어 운전자의 구호조치의무의 내용과 도주의 의미 청연논총 (제7집)박국수  사법연수원장 퇴임기념 / 사법연수원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256483">김희옥 공판심리의 범위 판례 형사소송법 (97.09) / 길안사  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|247296">김우진 특정범죄가중처벌등에관한법률위반(도주차량)죄에 있어서 도주의 의미 판례연구 v.1997  / 서울지방법원 동부지원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|812964">민철기 피고인의 이익을 위하여 형식재판 우선 원칙에 대한 예외를 인정할 수 있는지 여부 올바른 재판 따뜻한 재판:. 이인복 대법관 퇴임기념 논문집   / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|645978">박길성 형사재판에서 형식재판우선의 원칙은 언제나 타당한가? : 대판 2002.7.12, 2001도6777을 중심으로 저스티스 126호  / 한국법학원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|551359">신우정 특정범죄가중처벌등에관한법률 제5조의3 제1항 소정의 도주운전죄의 요건 재판과 판례 14집  / 대구판례연구회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|497452">오경식 공소장변경과 법원의 심판범위 Jurist 385호  / 청림인터렉티브  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|562651">사법연수원 형사소송절차실무:. 2016 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|265272">엄종규 대법원 판례를 통하여 본 공소장변경에 관하여 재판과 판례 7집  / 대구판례연구회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|515299">최복규 사기죄에서의 재산적 처분행위와 법원의 심판범위 형사재판의 제문제  . 제4권 (2003.12) / 박영사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|535423">배기열 일죄의 일부가 무죄이고 그 나머지 부분이 면소나 공소기각사유에 해당하는 경우의 판결 주문 표시방법 사법연수원 논문집 제2집  / 사법연수원  2004 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="법원조직법|8|0|null">법원조직법 제8조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="특정범죄가중처벌등에관한법률|5|3|null">특정범죄가중처벌등에관한법률 제5조의3 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형법|268|0|null">형법 제268조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법원조직법|8|0|null">법원조직법 제8조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특정범죄가중처벌등에관한법률|5|3|null">특정범죄가중처벌등에관한법률 제5조의3 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|268|0|null">형법 제268조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|50|0|null">도로교통법 제50조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대법원|88도1945">
+대법원 1989.2.28. 선고 88도1945 판결</a></p><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|89노1005">
+서울고등법원 1989.10.5. 선고 89노1005 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1990. 3. 13. 선고 89도2360 판결</h2><p class="sub_title">[특정범죄가중처벌등에관한법률위반(도주차량,인정된죄명:교통사고처리특례법)][집38(1)형,650;공1990.5.1.(871),917]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 환송판결후의 새로운 증거에 의한 사실인정이어서 환송판결의 기속력을 벗어난 것이 아니라고 본 사례</p>
+      <p></p>
+      <p>
+        </p><p>나. 도주차량운전자의 가중처벌규정인 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄가중처벌등에관한법률|5|3 ">특정범죄가중처벌등에관한법률 제5조의3 제1항</a></span> 위반의 공소사실을 심리한 결과 도주사실이 인정되지 않는 경우 업무상과실치사상죄에 대한 판단여부(적극)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 환송판결 후의 새로운 증거에 의한 사실인정이어서 환송판결의 기속력을 벗어난 것이 아니라고 본 사례</p>
+      <p></p><p>
+        </p><p>나. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄가중처벌등에관한법률|5|3 ">특정범죄가중처벌등에관한법률 제5조의3(도주차량운전자의 가중처벌규정) 제1항</a></span> 소정의 죄는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|268|">형법 제268조</a></span>의 업무상 과실치사상죄를 범한 당해 차량의 운전자가 피해자를 구호하는 등 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|">도로교통법 제50조 제1항</a></span>의 규정에 의한 조치를 취하지 아니하고 도주한 때에 성립하는 것으로서 업무상과실치사상죄를 포함하고 있는 것이므로 위 가중처벌규정위반죄로 공소가 제기된 경우에는 업무상과실치사상죄의 점에 관하여 검사에게 공소권이 없는 경우에도 도주의 부분만 공소가 제기되고 업무상과실치사상죄는 공소가 제기되어 있지 아니하다고 할수 없고, 따라서 심리결과 도주사실이 인정되지 않더라도 업무상과실치사상죄가 인정되면 유죄판결을 하고 공소권이 없으면 공소기각판결을 하는 것이지 법원에서 업무상 과실치사상죄의 부분이 공소된 것인지 여부를 석명하여 그 결과에 따라 판결을 하여야 하는 것은 아니다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법원조직법|8|">법원조직법 제8조</a></span> 나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄가중처벌등에관한법률|5|3">특정범죄가중처벌등에관한법률 제5조의3</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|268|">형법 제268조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+          검사
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【환송판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|88도1945|판결" href="#//">
+대법원 1989.2.28. 선고 88도1945 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|89노1005|판결" href="#//">
+서울고등법원 1989.10.5. 선고 89노1005 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 본다.</p><p>  제1점에 대하여,</p><p> 원심판결 이유를 기록에 비추어 보면, 피고인이 12인승 그레이스를 운행하다가 과실로 피해자 전태주,이명호에게 순차 상해를 입힌 사실은 인정되나 도주의 점은 인정되지 아니한다는 원심의 설시이유는 수긍이 되고 원심의 증거취사와 사실인정에 소론과 같은 채증법칙을 어긴 위법이 있다고 할 수 없다.</p><p>  그리고 원심은 당원의 환송판결후 새로이 증인 유효종, 민부기를 신문하고 이들 증거와 원심이 취신한 증거들에 의하여 피고인이 이 사건 사고 2, 3분전에 공소외 문부산을 충돌하여 6주일간의 치료를 요하는 중상을 입게 한 후 병원에 호송중이던 사실과 위 문부산은 얼굴에서 피가 흐르고 차안에서도 계속하여 아프다고 통증을 호소하여 피고인은 동인에게 참으라고 말하면서 자주 뒷좌석에 있는 동인을 뒤돌아 보았으며, 중상을 입은 것으로 판단하고 극도로 흥분, 당황하고 있었던 사실, 이 사건 사고장소는 노폭이 6미터이고 좌우에 노점상 및 통행인이 많아 차가 교행하기도 어려운 복잡한 길이었고 피고인은 사고후에도 뛰어서 따라 갈 수 있을 정도의 빠르지 않은 속도로 진행하고 있었던 사실, 이 사건 사고직후 현장에 있던 여러사람들의 사고가 났다는 소리를 듣고 공소외 민부기가 집에서 나왔을 때는 피고인 차량은 이미 지나가버린 후였으며 봉고가 사람을 치었다는 누군가의 말을 듣고 지나가던 오토바이를 탄사람에게 "봉고다"라고 혼자서 소리쳐 동인으로 하여금 피고인 차량을 추적하게 하였던 사실을 새로이 인정하고(이 인정사실은 환송전의 원심사실인정과 일치하는 부분이 있기는 하여도 그 사실인정과 같은 것은 아니다) 이 인정사실에 터잡아 이 사건 사고직후에 행인 20여명이 사고가 났다고 고함을 지른 사실이 있으며 차창은 열려 있었고 차의 속도가 시속 10킬로 내외이며 피고인이 그때 고개를 돌려 뒷쪽을 쳐다본 사실까지 있다고 하여도 피고인은 이미 이 사건 사고 이전에 다른 교통사고를 야기하여 중상을 입은 부상자를 호송하느라 극도로 흥분, 당황하고 있었고, 사고당시는 일몰전의 시각으로 훤히 밝았으며 사고장소는 많은 목격자들이 있는 시장 뒷골목의 혼잡한 도로로서 사고후에도 여전히 빠르지 않은 속도로 차를 운전하고 있던 사정 등으로 보아 피고인의 사고가 났다는 사람들의 소리를 듣고 이를 확인하기 위하여 뒤돌아 보았다고 보기는 어려워 피고인에게 도주의 범의가 있었다고 인정하기에는 미흡하다고 판단한 것이므로 원심의 판단이 당원의 환송판결의 기속력을 벗어난 것이라거나 원심판결이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법원조직법|8|">법원조직법 제8조</a></span>에 위배된 것이라고 할 수는 없다. 따라서 논지는 이유 없다.
+      </p><p>  제2점에 대하여,</p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄가중처벌등에관한법률|5|3 " style="text-decoration:underline">특정범죄가중처벌등에관한법률 제5조의3(도주차량운전자의 가중처벌) 제1항</a></span> 소정의 죄(이하 위의 죄라고 한다)는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|268|" style="text-decoration:underline">형법 제268조</a></span>의 죄(이하 업무상과실치사상죄라고 한다)를 범한 당해 차량의 운전자가 피해자를 구호하는 등
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|" style="text-decoration:underline"> 도로교통법 제50조 제1항</a></span>의 규정에 의한 조치를 취하지 아니하고 도주한 때에 성립하는 것으로서 업무상과실치사상죄는 위의 죄에 포함되어 있는 것이며 그러므로 위의 죄로 공소가 제기된 경우에는 그 공소사실중에 업무상과실치사상의 죄가 포함되어 있는 것이라고 보아야 할 것이지 도주의 부분만 공소가 제기되어 있을 뿐 업무상과실치사상의 죄는 공소가 제기되어 있지 아니하다고 할 수 없고 이 경우 업무상과실치사상죄의 점에 관하여 검사에게 공소권이 없는 경우라고 달리 볼 것은 아니다.
+        </span>
+      </p><p>
+        <span class="accrnt_txt">그러므로 위의 죄의 경우 심리결과 도주사실이 인정되지 아니한다고 하더라도 업무상과실치상의 죄가 인정되면 유죄의 판결을 하고 공소권이 없으면 공소기각의 판결을 하는 것이지 법원에서 업무상 과실치사상죄의 부분이 공소된 것인지 여부를 석명하여 그 결과에 따라 판결을 하여야 하는 것은 아니다.</span>
+      </p><p>  따라서 이 사건에서 원심이 위의 죄에 관하여 도주의 사실은 인정되지 아니하고 업무상과실치상의 죄에 관하여는 공소권이 없다는 이유로 이 사건 공소를 기각한 조처는 정당하다고 할 것이고 논지도 이유 없다.</p><p>  그러므로 상고를 기각하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김덕주(재판장) 윤관 배만운 안우만 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

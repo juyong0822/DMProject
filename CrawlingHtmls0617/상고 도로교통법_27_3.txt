@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010도11015 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2064158';
+var contIdEtc = '';
+var saNo = '2010도11015';
+var sngoNm = '선고';
+var saNm = '특정경제범죄가중처벌등에관한법률위반(횡령)[피고인4,5,6,7,8,9,11,13,14,15,16,17,18,19,20에대한예비적죄명:특정경제범죄가중처벌등에관한법률위반(횡령)방조]·특정경제범죄가중처벌등에관한법률위반(사금융알선등)[피고인5,6,7,8,11에대한예비적죄명:특정경제범죄가중처벌등에관한법률위반(사금융알선등)방조]·범죄수익은닉의규제및처벌등에관한법률위반·업무상횡령·사문서위조·위조사문서행사·업무상배임·강제집행면탈·특정범죄가중처벌등에관한법률위반(도주차량)·도로교통법위반(음주운전)·뇌물공여·특정범죄가중처벌등에관한법률위반(알선수재)·사기·부정수표단속법위반·부동산실권리자명의등기에관한법률위반·근로기준법위반';
+try {
+	var sngoDay=('20101209' ? 
+			'20101209'.length==4 ? Date.parseExact('20101209','yyyy').toString('yyyy. M. d.') : 
+				'20101209'.length==6 ? Date.parseExact('20101209','yyyyMM').toString('yyyy. M. d.') : 
+					'20101209'.length==8 ? Date.parseExact('20101209','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010도11015 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010도11015';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010도11015</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(7)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(11)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(8)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2060394">대법원 2011. 9. 8. 선고 2011도5165 판결 [공2011하,2178]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2062850">대법원 2012. 8. 30. 선고 2011도2252 판결 [공2012하,1636]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2194169">대법원 2015. 2. 26. 선고 2014도15182 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|723804">안경옥 비자금 조성행위의 형사처불에 대한 한·독 판례 비교 및 검토 형사법의 신동향 통권41호 / 대검찰청  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|99도2889">대법원 1999. 9. 17. 선고 99도2889 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도2626">대법원 2006. 6. 27. 선고 2005도2626 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2007도9318">대법원 2008. 8. 21. 선고 2007도9318 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도6994">대법원 2009. 2. 12. 선고 2006도6994 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|88도48">대법원 1988. 4. 12. 선고 88도48 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2007도3005">대법원 2007. 7. 12. 선고 2007도3005 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2008도198">대법원 2008. 5. 8. 선고 2008도198 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="형법|355|0|null">형법 제355조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형법|30|0|null">형법 제30조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="형법|32|0|null">형법 제32조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="형법|355|0|null">형법 제355조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="특정경제범죄가중처벌등에관한법률|3|0|null">특정경제범죄 가중처벌 등에 관한 법률 제3조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="형법|30|0|null">형법 제30조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="형법|32|0|null">형법 제32조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="특정경제범죄가중처벌등에관한법률|8|0|null">특정경제범죄 가중처벌 등에 관한 법률 제8조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="형법|327|0|null">형법 제327조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99도2889">대법원 1999. 9. 17. 선고 99도2889 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007도9318">대법원 2008. 8. 21. 선고 2007도9318 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도2626">대법원 2006. 6. 27. 선고 2005도2626 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도6994">대법원 2009. 2. 12. 선고 2006도6994 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|88도48">대법원 1988. 4. 12. 선고 88도48 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008도198">대법원 2008. 5. 8. 선고 2008도198 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99도5513">대법원 2000. 4. 21. 선고 99도5513 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008도5634">대법원 2009. 4. 9. 선고 2008도5634 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특정경제범죄가중처벌등에관한법률|8|0|null">특정경제범죄 가중처벌 등에 관한 법률 제8조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|2010노88">대전고법 2010. 8. 4. 선고 2010노88 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 12. 9. 선고 2010도11015 판결</h2><p class="sub_title">[특정경제범죄가중처벌등에관한법률위반(횡령)[피고인4,5,6,7,8,9,11,13,14,15,16,17,18,19,20에대한예비적죄명:특정경제범죄가중처벌등에관한법률위반(횡령)방조]·특정경제범죄가중처벌등에관한법률위반(사금융알선등)[피고인5,6,7,8,11에대한예비적죄명:특정경제범죄가중처벌등에관한법률위반(사금융알선등)방조]·범죄수익은닉의규제및처벌등에관한법률위반·업무상횡령·사문서위조·위조사문서행사·업무상배임·강제집행면탈·특정범죄가중처벌등에관한법률위반(도주차량)·도로교통법위반(음주운전)·뇌물공여·특정범죄가중처벌등에관한법률위반(알선수재)·사기·부정수표단속법위반·부동산실권리자명의등기에관한법률위반·근로기준법위반][공2011상,179]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 법인의 운영자 또는 관리자가 법인과는 아무런 관련이 없거나 개인적인 용도로 착복할 목적하에 법인 자금으로 별도의 비자금을 조성한 경우, 업무상횡령죄의 ‘불법영득의사’가 인정되는지 여부(적극) 및 그 유무의 판단 기준</p>
+      <p></p>
+      <p>
+        </p><p>[2] 새마을금고의 임원인 피고인 등이 직원들로 하여금 고객들이 맡긴 정기예탁금을 부외거래시스템에 입금하게 하는 행위가 그 자체로 위 금고의 공식적인 자금에서 벗어난 별도의 비자금을 조성하는 행위로 볼 수는 없다는 이유로, 위 ‘업무상횡령’의 공소사실에 대하여 무죄를 선고한 원심판단을 수긍한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 새마을금고의 임원인 피고인 등이 부외거래시스템에 입금된 정기예탁금을 조합원들에게 대출해 주는 행위가 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정경제범죄 가중처벌 등에 관한 법률|8|">특정경제범죄 가중처벌 등에 관한 법률 제8조</a></span>에 규정된 ‘사금융알선’에 해당하지 아니한다고 하여, 위 법 위반(사금융알선등)의 공소사실에 대하여 무죄를 선고한 원심판단을 수긍한 사례
+        </p>
+      <p></p>
+      <p>
+        </p><p>[4] 강제집행 채권자의 채권의 존재가 인정되지 않을 경우 강제집행면탈죄의 성립 여부(소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 업무상횡령죄가 성립하기 위하여는 자기 또는 제3자의 이익을 꾀할 목적으로 업무상 임무에 위배하여 자신이 보관하는 타인의 재물을 자기의 소유인 것 같이 사실상 또는 법률상 처분하는 의사를 의미하는 불법영득의 의사가 있어야 한다. 법인의 운영자 또는 관리자가 법인의 자금을 이용하여 비자금을 조성하였다고 하더라도 그것이 당해 비자금의 소유자인 법인 이외의 제3자가 이를 발견하기 곤란하게 하기 위한 장부상의 분식에 불과하거나 법인의 운영에 필요한 자금을 조달하는 수단으로 인정되는 경우에는 불법영득의 의사를 인정하기 어렵다. 다만 법인의 운영자 또는 관리자가 법인을 위한 목적이 아니라 법인과는 아무런 관련이 없거나 개인적인 용도로 착복할 목적으로 법인의 자금을 빼내어 별도로 비자금을 조성하였다면 그 조성행위 자체로써 불법영득의 의사가 실현된 것으로 볼 수 있을 것인바, 이때 그 행위자에게 법인의 자금을 빼내어 착복할 목적이 있었는지 여부는 그 법인의 성격과 비자금의 조성 동기, 방법, 규모, 기간, 비자금의 보관방법 및 실제 사용용도 등 제반 사정을 종합적으로 고려하여 판단하여야 한다.</p>
+      <p></p><p>
+        </p><p>[2] 새마을금고의 임원인 피고인 등이 위 금고의 직원들로 하여금 고객들이 맡긴 정기예탁금을 정상거래시스템이 아닌 부외거래시스템에 입금하게 하는 행위가, 위 부외거래시스템의 도입 경위 및 운용 실태, 부외거래자금의 흐름이나 사용처 등의 여러 사정을 종합할 때 회계처리상 부외거래시스템의 계좌 혹은 통합전산망의 차명계좌에 예금액을 기재하는 행위에 불과하고 그 자체로 위 금고의 공식적인 자금에서 벗어난 별도의 비자금을 조성하는 행위로 볼 수는 없다는 이유로, 위 업무상횡령의 공소사실에 대하여 무죄를 선고한 원심판단을 수긍한 사례.</p>
+      <p></p><p>
+        </p><p>[3] 새마을금고의 임원인 피고인 등이 정상거래시스템이 아닌 부외거래시스템에 입금된 정기예탁금을 조합원들에게 대출해 주는 행위가, 피고인 등의 계산 또는 금고 이외의 제3자의 계산으로 대출하는 것으로 볼 수 없어 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정경제범죄 가중처벌 등에 관한 법률|8|">특정경제범죄 가중처벌 등에 관한 법률 제8조</a></span>에 규정된 사금융알선에 해당하지 아니한다고 하여, 특정경제범죄 가중처벌 등에 관한 법률 위반(사금융알선등)의 공소사실에 대하여 무죄를 선고한 원심판단을 수긍한 사례.
+        </p>
+      <p></p><p>
+        </p><p>[4] 강제집행면탈죄는 채권자의 권리보호를 그 주된 보호법익으로 하고 있는 것이므로 강제집행의 기본이 되는 채권자의 권리, 즉 채권의 존재는 강제집행면탈죄의 성립요건이라 할 것이고, 따라서 그 채권의 존재가 인정되지 않을 때에는 강제집행면탈죄가 성립하지 아니한다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|">형법 제355조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">제356조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|30|">형법 제30조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|32|">제32조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|">제355조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">제356조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정경제범죄 가중처벌 등에 관한 법률|3|">특정경제범죄 가중처벌 등에 관한 법률 제3조 제1항</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|30|">형법 제30조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|32|">제32조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정경제범죄 가중처벌 등에 관한 법률|8|">특정경제범죄 가중처벌 등에 관한 법률 제8조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|327|">형법 제327조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|99도2889|판결" href="#//">대법원 1999. 9. 17. 선고 99도2889 판결</a></span>(공1999하, 2269)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도2626|판결" href="#//">대법원 2006. 6. 27. 선고 2005도2626 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007도9318|판결" href="#//">대법원 2008. 8. 21. 선고 2007도9318 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도6994|판결" href="#//">대법원 2009. 2. 12. 선고 2006도6994 판결</a></span><br />[4]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|88도48|판결" href="#//">대법원 1988. 4. 12. 선고 88도48 판결</a></span>(공1988, 864)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007도3005|판결" href="#//">대법원 2007. 7. 12. 선고 2007도3005 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008도198|판결" href="#//">대법원 2008. 5. 8. 선고 2008도198 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인 1 외 19인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+        
+          피고인 1외 1인 및 검사
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【변 호 인】
+      
+        법무법인 한결 외 7인
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|2010노88|판결" href="#//">대전고법 2010. 8. 4. 선고 2010노88 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 검사의 상고이유에 대하여</p><p>
+        <span class="accrnt_txt">업무상횡령죄가 성립하기 위하여는 자기 또는 제3자의 이익을 꾀할 목적으로 업무상 임무에 위배하여 자신이 보관하는 타인의 재물을 자기의 소유인 것 같이 사실상 또는 법률상 처분하는 의사를 의미하는 불법영득의 의사가 있어야 한다.  법인의 운영자 또는 관리자가 법인의 자금을 이용하여 비자금을 조성하였다고 하더라도 그것이 당해 비자금의 소유자인 법인 이외의 제3자가 이를 발견하기 곤란하게 하기 위한 장부상의 분식에 불과하거나 법인의 운영에 필요한 자금을 조달하는 수단으로 인정되는 경우에는 불법영득의 의사를 인정하기 어렵다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99도2889|판결" href="#//">대법원 1999. 9. 17. 선고 99도2889 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007도9318|판결" href="#//">대법원 2008. 8. 21. 선고 2007도9318 판결</a></span> 등 참조). 
+        <span class="accrnt_txt">다만 법인의 운영자 또는 관리자가 법인을 위한 목적이 아니라 법인과는 아무런 관련이 없거나 개인적인 용도로 착복할 목적으로 법인의 자금을 빼내어 별도로 비자금을 조성하였다면 그 조성행위 자체로써 불법영득의 의사가 실현된 것으로 볼 수 있을 것인바, 이때 그 행위자에게 법인의 자금을 빼내어 착복할 목적이 있었는지 여부는 그 법인의 성격과 비자금의 조성 동기, 방법, 규모, 기간, 비자금의 보관방법 및 실제 사용용도 등 제반 사정을 종합적으로 고려하여 판단하여야 한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도2626|판결" href="#//">대법원 2006. 6. 27. 선고 2005도2626 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도6994|판결" href="#//">대법원 2009. 2. 12. 선고 2006도6994 판결</a></span> 등 참조). 한편 
+        <span class="accrnt_txt">강제집행면탈죄는 채권자의 권리보호를 그 주된 보호법익으로 하고 있는 것이므로 강제집행의 기본이 되는 채권자의 권리, 즉 채권의 존재는 강제집행면탈죄의 성립요건이라 할 것이고, 따라서 그 채권의 존재가 인정되지 않을 때에는 강제집행면탈죄가 성립하지 아니한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|88도48|판결" href="#//">대법원 1988. 4. 12. 선고 88도48 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008도198|판결" href="#//">대법원 2008. 5. 8. 선고 2008도198 판결</a></span> 등 참조).
+      </p><p>  원심은, 이 사건 새마을금고의 실질적 운영자인 
+        피고인 1과 상무 혹은 전무 등으로 재직한 
+        피고인 3, 
+        1이 금고의 담당 직원들로 하여금 고객들이 맡긴 정기예탁금을 부외거래시스템에 입금하게 하는 행위 자체가 금고에 대한 관계에서 횡령 행위로 인정되기 위해서는, 부외거래자금이 금고와는 아무런 관련이 없거나 개인적인 용도로 착복할 목적으로 조성된 것으로서, 고객의 정기예탁금이 부외거래시스템을 통하여 금고에 입금되면 그 돈은 정상거래시스템을 통하여 입금된 고객의 돈과는 별도로 보관·관리·처분되어 금고의 공식적인 자금에서 벗어난 별도의 비자금과 같은 성격을 띠게 되는 것이어야 한다고 전제한 다음, 그 판시와 같은 부외거래시스템의 도입 경위 및 운용 실태, 부외거래자금의 흐름이나 사용처 등의 여러 사정을 종합하면 
+        피고인 1 등이 이 사건 새마을금고의 직원들로 하여금 고객들이 맡긴 정기예탁금을 부외거래시스템에 입금하게 하는 행위는 회계처리상 부외거래시스템의 계좌 혹은 통합전산망의 차명계좌에 예금액을 기재하는 행위에 불과하고 그 자체로 금고의 공식적인 자금에서 벗어난 별도의 비자금을 조성하는 행위로 볼 수는 없다는 이유로, 
+        피고인 1, 
+        3, 
+        12의 특정경제범죄 가중처벌 등에 관한 법률 위반(횡령)의 점, 
+        피고인 5, 
+        6, 
+        7, 
+        8, 
+        13, 
+        14, 
+        15, 
+        16, 
+        17, 
+        18의 특정경제범죄 가중처벌 등에 관한 법률 위반(횡령) 방조의 점 및 
+        피고인 1, 
+        3, 
+        7에 대한 업무상횡령의 점에 관한 이 부분 공소사실에 대하여 각 무죄를 선고하였다. 나아가 원심은 같은 취지에서 부외거래시스템에 입금된 정기예탁금은 
+        피고인 1 등의 개인재산으로 귀속되는 것이 아니라 이 사건 새마을금고에 귀속되는 것으로 보아야 한다고 전제한 다음, 
+        피고인 1 등이 이러한 부외거래자금을 조합원들에게 대출해 주는 행위는 
+        피고인 1 등의 계산 또는 금고 이외의 제3자의 계산으로 대출하는 것으로 볼 수 없어 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정경제범죄 가중처벌 등에 관한 법률|8|">특정경제범죄 가중처벌 등에 관한 법률 제8조</a></span>에 규정된 사금융알선에 해당하지 아니한다고 하여, 
+        피고인 1, 
+        3의 특정경제범죄 가중처벌 등에 관한 법률 위반(사금융알선등) 및 
+        피고인 5, 
+        6, 
+        7, 
+        8의 특정경제범죄 가중처벌 등에 관한 법률 위반(사금융알선등) 방조의 점에 관한 이 부분 공소사실에 대하여 각 무죄를 선고하였다. 또한 원심은, 앞서 본 바와 같이 고객들이 맡긴 정기예탁금을 부외거래시스템에 입금하게 하는 행위만으로는 금고에 대한 횡령죄가 성립하지 아니하고, 검사가 제출한 증거만으로는 
+        피고인 6이 금고의 돈을 임의로 인출하여 이를 개인적인 용도로 소비한 적이 있음을 인정하기에 부족하며 달리 이를 인정할 증거가 없다는 이유로, 
+        피고인 6의 횡령에 따른 손해배상채권의 존재를 전제로 하는 강제집행면탈의 점에 관한 이 부분 공소사실에 대하여 무죄를 선고하였다.
+      </p><p>  관계 증거와 기록을 앞서 본 법리에 비추어 살펴보면, 원심의 위와 같은 사실인정과 판단은 정당한 것으로 수긍할 수 있고, 거기에 검사의 상고이유 주장과 같이 논리와 경험의 법칙에 위배하여 사실을 오인하거나 불법영득의사의 인정기준 등에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 있다고 할 수 없다.</p><p>  한편 상고법원은 상고이유에 의하여 불복신청한 한도 내에서만 조사·판단할 수 있으므로, 상고이유서에는 상고이유를 특정하여 원심판결의 어떤 점이 법령에 어떻게 위반되었는지에 관하여 구체적이고도 명시적인 이유의 설시가 있어야 하고, 상고인이 제출한 상고이유서에 위와 같은 구체적이고도 명시적인 이유의 설시가 없는 경우에는 적법한 상고이유가 제출된 것이라고 볼 수 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99도5513|판결" href="#//">대법원 2000. 4. 21. 선고 99도5513 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008도5634|판결" href="#//">대법원 2009. 4. 9. 선고 2008도5634 판결</a></span> 등 참조).
+      </p><p>  기록에 의하면, 검사는 상고장에 피고인들에 대한 원심판결 전부에 관하여 상고를 제기한다고 하면서도 상피고인 
+        피고인 2, 
+        4, 
+        9, 
+        10, 
+        11, 
+        19, 
+        20에 대하여는 상고장이나 상고이유서에 원심판결 중의 어떠한 점이 위법하거나 부당하다는 것인지에 관한 구체적이고 명시적인 상고이유를 기재하지 아니하고 있는바, 위 법리에 비추어 볼 때, 원심판결 중 위 피고인들에게 해당하는 부분에 대하여는 적법한 상고이유가 제출된 것으로 보기 어려우므로, 검사의 이 부분 상고는 받아들일 수 없다.
+      </p><p>  2. 
+        피고인 1의 상고이유에 대하여
+      </p><p>  원심은, 그 판시와 같은 여러 사정을 종합하여, 
+        피고인 1이, 
+        피고인 3과 공모하여 
+        공소외 1, 
+        2 명의의 대출 관련 서류를 위조하고 이를 행사하여 이 사건 금고로부터 그 판시 대출금 상당액을 횡령한 사실과 돈을 갚을 능력이나 의사가 없이 피해자 
+        공소외 3, 
+        4로부터 차용금 명목으로 그 판시 돈을 교부받아 이를 편취한 사실을 인정할 수 있다고 하여, 이 부분 각 공소사실을 유죄로 판단하였다.
+      </p><p>
+        피고인 1이 이 부분에 관하여 주장하는 상고이유는 사실심인 원심의 전권에 속하는 증거의 취사선택과 사실의 인정을 탓하는 취지에 불과하여 적법한 상고이유로 볼 수 없을 뿐만 아니라, 원심이 적법하게 채택한 증거들을 원심판결 이유에 비추어 살펴보면 원심이 그 판시와 같은 여러 사정을 들어 이 부분 각 공소사실을 유죄로 인정한 조처는 정당한 것으로 수긍할 수 있고, 거기에 상고이유 주장과 같이 논리와 경험의 법칙에 위배하여 사실을 오인하는 등으로 판결 결과에 영향을 미친 위법이 없다.
+      </p><p>  3. 
+        피고인 3의 상고이유에 대하여
+      </p><p>  원심은, 그 판시와 같은 여러 사정을 종합하여, 
+        피고인 3이 
+        피고인 1과 공모하여, 
+        공소외 1, 
+        2 명의의 대출 관련 서류를 위조하고 이를 행사하여 이 사건 금고로부터 그 판시 대출금 상당액을 횡령한 사실과 이 사건 새마을금고가 보유하고 있던 
+        피고인 1에 대한 대출채권의 담보를 소멸시키는 임무위배 행위를 하여 
+        피고인 1에게 그 판시 대출금 상당액의 재산상 이익을 취득하게 하고 위 금고에 같은 금액 상당의 재산상 손해를 가한 사실을 인정할 수 있다고 하여, 이 부분 각 공소사실을 유죄로 판단하였다.
+      </p><p>
+        피고인 3이 이 부분에 관하여 주장하는 상고이유는 사실심인 원심의 전권에 속하는 증거의 취사선택과 사실의 인정을 탓하는 취지에 불과하여 적법한 상고이유로 볼 수 없을 뿐만 아니라, 원심이 적법하게 채택한 증거들을 원심판결 이유에 비추어 살펴보면 원심이 그 판시와 같은 여러 사정을 들어 이 부분 각 공소사실을 유죄로 인정한 조처는 정당한 것으로 수긍할 수 있고, 거기에 상고이유 주장과 같이 논리와 경험의 법칙에 위배하여 사실을 오인하는 등으로 판결 결과에 영향을 미친 위법이 없다.
+      </p><p>  4. 결론</p><p>  그러므로 검사와 
+        피고인 1, 
+        3의 상고를 모두 기각하기로 하여, 관여 대법관이 일치된 의견으로 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신영철(재판장) 박시환 안대희(주심) 차한성 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

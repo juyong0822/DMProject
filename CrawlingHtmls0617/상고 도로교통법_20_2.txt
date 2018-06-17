@@ -1,0 +1,628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2006노1010 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2033906';
+var contIdEtc = '';
+var saNo = '2006노1010';
+var sngoNm = '선고';
+var saNm = '미성년자의제강간미수·무고';
+try {
+	var sngoDay=('20061208' ? 
+			'20061208'.length==4 ? Date.parseExact('20061208','yyyy').toString('yyyy. M. d.') : 
+				'20061208'.length==6 ? Date.parseExact('20061208','yyyyMM').toString('yyyy. M. d.') : 
+					'20061208'.length==8 ? Date.parseExact('20061208','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2006노1010 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2006노1010';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2006노1010</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(11)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|364|0|null">형사소송법 제364조 제6항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|305|0|null">형법 제305조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|300|0|null">형법 제300조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|297|0|null">형법 제297조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|156|0|null">형법 제156조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|25|0|null">형법 제25조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|55|0|null">형법 제55조 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|37|0|null">형법 제37조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|38|0|null">형법 제38조 제1항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|50|0|null">형법 제50조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|57|0|null">형법 제57조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="춘천지방법원강릉지원|2005고합87">춘천지방법원 강릉지원 2006. 5. 15. 선고 2005고합87 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2006. 12. 8. 선고 2006노1010 판결</h2><p class="sub_title">[미성년자의제강간미수·무고][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【항 소 인】
+      
+        검사
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【검    사】
+      
+        문대홍
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【변 호 인】
+      
+        변호사 임대영
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="춘천지방법원강릉지원|2005고합87|판결" href="#//">춘천지방법원 강릉지원 2006. 5. 15. 선고 2005고합87 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원심판결을 파기한다.</p><p>피고인을 징역 2년에 처한다.</p><p>원심판결 선고 전의 구금일수 138일을 위 형에 산입한다.  </p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 항소이유의 요지</b>
+      </p><p>  ① 피해자의 진술은 그 내용이 구체적이고 명료할 뿐만 아니라 일관성이 있고, 피해사실이 드러나는 과정이 자연스러우며, 주변의 정황들도 그에 부합한다는 점에서 신빙성이 있고, 만 11세에 불과한 피해자가 체험하지 아니한 성적 경험을 구체적이고 상세하게 진술한다는 것이 쉽지 아니할 것으로 보일 뿐만 아니라 피해자나 피해자의 아버지에게 수사기관에 허위의 사실을 진술하여 피고인으로 하여금 형사처벌을 받도록 할 만한 특별한 동기가 있다고 보기도 어렵고, ② 객관적인 자료인 영수증과 출석부는 피해자나 피해자의 아버지가 의도적으로 조작할 수 없는 것들이고 그 출처나 증거로 제출된 경위에 비추어 고도의 신빙성이 있어 피해자가 학원 수업이 끝난 19:15경 피고인이 운전하는 학원 승합차에 탄 사실이 객관적인 자료에 의하여 인정되며, ③ 피해자의 담임선생님의 진술과 수사기록에 첨부된 상담일지 등의 내용에 의하더라도 이 사건 직후 피해자의 생활태도에 상당한 변화가 있었음이 인정되고, ④ 한편 원심은 
+        공소외 1, 
+        2, 
+        3 등 참고인들의 진술을 근거로 피해자가 18:30경 
+        공소외 3 등과 함께 학원 승합차를 타고 가다가 도중에 먼저 내렸을 가능성도 배제할 수 없다고 판단하였으나, 위 참고인들은 모두 나이 어린 미성년자들이고 이 사건 발생일로부터 상당 기간이 경과한 후에 수사기관에 출석하여 진술한 점에 비추어, 학원 출석 여부, 학원 승합차에 누가 타고 있었는지, 학원 승합차의 운행 경로 등 일상적으로 다발하는 일들에 대하여 자신과 무관한 부분까지 상세하게 기억한다는 것 자체가 오히려 상식에 부합하지 아니할 뿐만 아니라, 위 참고인들의 진술에 의하여 인정되는 위와 같은 가능성 역시 객관적인 자료인 영수증과 출석부의 각 기재와 명백히 배치되는 것이어서 쉽게 받아들일 수 없음에도 불구하고, 원심은, 신빙성이 없는 위 참고인들의 진술을 믿어 오히려 신빙성이 있는 피해자의 진술과 영수증, 출석부 등 객관적인 증거들까지 배척한 다음 공소사실을 인정할 증거가 없다는 이유로 무죄를 선고함으로써 사실을 오인하여 판결에 영향을 미친 위법을 범하였다.
+      </p><p>
+        <b>2. 항소이유에 대한 판단</b>
+      </p><p>  가. 공소사실의 요지</p><p>    피고인에 대한 이 사건 공소사실의 요지는 아래 범죄사실란 기재와 같다. </p><p>  나. 피고인의 변소내용 </p><p>    피고인은 경찰에서부터 이 법정에 이르기까지 일관되게 위 공소사실과 같은 일시, 장소에서 피해자를 간음하려고 한 사실이 없고, 피해자는 이 사건 당일 19:15경이 아니라 18:30경에 출발하여 정상적인 경로로 운행된 학원 승합차를 타고 가다가 다른 일부 수강생들보다 먼저 내려 귀가하였다고 주장하며 공소사실을 다툰다.</p><p>  다. 원심의 판단</p><p>    원심은, 피해자 진술의 구체성과 명료성, 일관성, 피해사실이 드러나는 과정의 자연스러움, 피해자 진술에 부합하는 주변 정황 등을 모두 종합해 볼 때, 피고인의 변소와 달리 피해자가 2005. 4. 8. 19:15경 출발하는 학원 승합차를 타고 집으로 귀가하다가 피고인의 의도적인 운행 경로 변경으로 혼자 남게 되었고, 그때 피고인이 피해자를 간음하려고 한 것이 아닌가 하는 의심이 들기도 하나, 기록에 의하면, ① 피해자는 2005. 4. 8. 19:15경에 출발한 학원 승합차의 운행 경로 및 탑승한 수강생에 관하여, “동해시 
+        (동 이름 생략)동에 있는 학원에서 출발하여 (동해항을 지난 지점에 있는) 현진에버빌아파트에서 선영 언니가 먼저 내리고, 그 다음에 (동해항 쪽으로 되돌아가) 효가사거리에서 
+        (학교 이름 생략)고등학교 쪽(북삼동 쪽)으로 가서 부영아파트에서 은비 언니를 내려주고, 다시 삼척 방향으로 가다가 이도주공아파트에서 
+        (동 이름 생략)동으로 내려오는 길로 하여 피해자의 집 방향으로 가다가, 피해자의 집을 지나 이주민 단지에 살고 있는 학원 수강생을 태워야 한다는 이유로 이주민 단지까지 갔다”라고 하여, 이 사건이 발생하기 직전에 
+        공소외 1, 
+        2와 함께 학원 승합차에 타고 있었던 것으로 진술하고 있으나, 
+        공소외 1과 
+        공소외 2는 모두 그날 피해자 
+        공소외 4와 함께 학원 승합차를 탔는지조차 기억하지 못하고 있으며, 오히려 이러한 운행경로는 
+        공소외 2가 진술하는 앞서 본 운행경로와도 상이하고, 한편 
+        공소외 1은 자신이 
+        공소외 2의 진술대로 동해항 쪽이 아닌 북삼동 쪽으로 먼저 운행하는 학원 승합차에 탑승한 적은 단 한 번도 없으며(따라서 
+        공소외 2가 진술하는 경로변경 운행 당시 
+        공소외 1은 탑승치 않은 셈이다), 
+        공소외 2 역시 자신과 
+        공소외 1 및 피해자가 학원 승합차에 함께 탑승하였다가 피해자가 제일 나중에 내린 적은 단 한 번도 없었다고 각 진술하고 있는 사실(수사기록 206 내지 208쪽), ② 피해자는 동해시 
+        (상세번지 및 아파트명 생략)아파트에 있는 피고인의 처가의 바로 앞 단독주택에서 살고 있고, 피고인은 “2005. 4. 8. 19:00경 위 아파트 부근에서 자신의 처인 
+        공소외 5로부터 고구마를 받게 되었는데, 피해자는 그 곳에서 내리면서 ‘나도 고구마가 먹고 싶은데’라고 말하였으며, 그 당시 학원 승합차 안에는 
+        공소외 3이 타고 있었고, 그 후 동해시 
+        (동 이름 생략)동에 있는 주공아파트에 
+        공소외 3을 내려주었다”고 진술하고 있는 사실, ③ 
+        공소외 3은 “
+        (학교 이름 생략)초등학교 1을 다니면서 4학년 때 피해자와 같은 반이기도 하여 피해자를 잘 알고 있고, 2004. 3.경부터 위 학원에서 16:15부터 18:30까지 속셈과 영어 수업을 듣고 있으며, 이와 같이 수업을 마치고 18:30경에 출발하는 학원 승합차를 타고 집으로 오다가 도중에 피아노 학원에 들려 약 50분간 피아노를 배우는데 자신은 항상 18:30경에 출발하는 학원 승합차를 타지 단 한번도 19:15경에 출발하는 학원 승합차를 타본 적은 없고, 정확한 일자는 기억나지 않지만 2005. 4. 초경 18:30경 피고인이 운전하는 학원 승합차를 타고 피해자와 중학생 몇 명과 함께 집으로 돌아가던 중, 피해자가 ‘아저씨 배고프겠다’라는 말을 하자, 피고인이 ‘조금 있으면 마누라가 고구마를 가지고 올 거야’라고 답변하였고, 이에 피해자가 고구마를 달라고 장난치기도 하였으며, 잠시 후 위 
+        (아파트명 생략)아파트 앞길에서 피고인의 처가 고구마를 비닐봉지에 싸 들고 기다리다가 이를 피고인에게 주었으며, 피해자 
+        공소외 4는 그 곳에서 내렸고, 그 후 자신이 
+        (행정구역명 생략)파출소 앞에서 내리려고 할 때 피고인으로부터 학원에 또 가서 힘들겠다면서 고구마 1개를 받았으나, 평소와 달리 그 날은 장날이라서 사람이 많아 고구마를 손에 들고 있는 것이 창피하므로 이를 가방에 넣어 피아노 학원으로 갔다”라고 진술하고 있는 사실(수사기록 71 내지 75쪽), ④ 수사기관의 
+        (행정구역명 생략)번영회 회장 
+        공소외 6과의 전화 통화 결과, 
+        (행정구역명 생략)장은 동해시 
+        (동 이름 생략)동에 있는 
+        (행정구역명 생략)번영회가 주관하고 3일과 8일에 열리는 5일장으로서 지금까지 비가 오지 않는 날 외에는 전부 장이 열렸다는 것이고, 일기 예보를 확인한 결과 2005. 4. 8.에는 비가 오지 않은 것으로 확인되었으며, 위 일시 무렵에 열린 다른 
+        (행정구역명 생략)장은 2005. 4. 3. 일요일과 2005. 4. 13. 수요일이므로(수사기록 241쪽), 결국 
+        공소외 3이 기억하는 2005. 4. 초순경은 2005. 4. 8.인 것으로 짐작되는 사실, ⑤ 
+        공소외 3이 다니는 피아노 학원 원장 역시 수사기관과 통화하면서, “
+        공소외 3이 다른 학원의 버스를 타고 와 내리는 시간이 일정하기 때문에 그 수업시간이 19:05부터 19:50까지로 일정하고, 출석부에 
+        공소외 3이 2005. 4. 8. 출석한 것으로 기재되어 있으며, 언제인지는 모르나 
+        공소외 3이 2005. 4. 초경에 고구마를 가지고 학원으로 들어오다 학원의 다른 수강생인 
+        공소외 7과 
+        공소외 8이 고구마를 손으로 찔러 
+        공소외 3이 울면서 안으로 들어온 적이 있다”고 진술하고 있는 사실(수사기록 244, 245쪽), ⑥ 피고인의 조카인 
+        공소외 9는, 자신의 생일이 4. 4.이고, 토요일인 2005. 4. 9. 생일파티를 하기로 하여, 그 전날인 4. 8. 언니인 
+        공소외 10과 함께 생일파티를 준비하기 위하여 풍선을 불고 있었는데, 20:00경 삼촌인 피고인이 고구마를 갖다 주어 이를 먹고 풍선을 불었다고 진술하고 있으며, 
+        공소외 9의 일기장에 2005. 4. 8. 풍선을 불었고, 2005. 4. 9. 생일파티를 하였다는 내용이 기재되어 있는 사실(증인 
+        공소외 9의 원심에서의 진술, 수사기록 111~113쪽), ⑦ 피고인의 처인 
+        공소외 5는 2005. 4. 8. 19:00경 위 
+        (아파트명 생략)아파트 앞 
+        (상호 생략)슈퍼 앞에서 친정 어머니인 
+        공소외 11이 삶아 준 고구마를 피고인에게 건네 준 적이 있으며, 그 당시 피해자 
+        공소외 4가 내리면서 “나도 고구마가 먹고 싶은데”라는 말을 하는 것을 들었다고 진술하고 있고(수사기록 166쪽), 
+        공소외 11 또한 2005. 4. 3. 
+        (행정구역명 생략) 장날에 고구마를 사두었다가 2005. 4. 8. 이를 삶아서 딸인 
+        공소외 5에게 주었다고 진술하고 있으며(수사기록 169쪽), 
+        공소외 11이 작성한 가계부에 2005. 4. 3. 고구마 10,000원치 등을 샀다는 내용이 기재되어 있는 사실(수사기록 183쪽), ⑧ 한편, 피해자는 경찰에서 두 번째로 조사를 받을 당시, 피고인으로부터 위와 같이 2,000원을 받아 위 편의점에서 여러 종류의 캔 커피 중 무엇을 살까 고민하다가 ‘레쓰비’라는 캔 커피가 600원으로 제일 싸 그것을 가지고 나와서 계산을 한 후, 나머지 1,400원 중 400원은 피고인을 주었고, 1,000원은 피고인이 자신보고 뭐 사먹으라고 하여 주머니에 넣었다고 진술하고 있으나(수사기록 53쪽), 그 무렵 위 편의점에 작성된 ‘레쓰비’ 판매 영수증에는 그 대가로 거스름 돈 없이 현금 600원을 지급받은 것으로 기재되어 있는 사실(수사기록 66쪽) 등을 인정할 수 있고, 위 인정사실에 의하면, 피해자가 2005. 4. 8. 19:15경 출발하는 학원 승합차에 탔다가 혼자 남겨진 것이 아니라 피고인의 변소와 같이 같은 날 18:30경 출발하는 학원 승합차를 
+        공소외 3 등과 함께 타고 가다가 도중에 먼저 내렸을 가능성도 배제할 수 없으며, 이와 같이 피해자가 2005. 4. 8. 학원에서 수업을 마치고 귀가하기 위하여 학원 승합차에 탑승한 시각이 18:30경인지 19:15경인지 분명하지 않고, 도중에 일부 탑승객들을 두고 먼저 내렸는지, 마지막으로 혼자 남게 되었는지 여부조차 불분명한 이상, 피고인이 학원 승합차에 피해자를 ‘2005. 4. 8. 19:15경’ 탑승시키고 운행하던 중 다른 탑승객들이 먼저 내려 혼자 남게 된 위 피해자를 상대로 간음하려고 하였음을 전제로 하는 이 사건 각 공소사실은 이 법원으로 하여금 합리적인 의심을 할 여지가 없을 정도로 증명이 되었다고 보기 어렵다는 이유로 피고인에게 무죄를 선고하였다.
+      </p><p>  라. 당심의 판단</p><p>    그러나 다음과 같은 이유에서 원심의 위와 같은 판단은 수긍하기 어렵다.</p><p>    (1) 인정사실</p><p>
+        공소외 4의 당심에서의 진술 및 원심의 녹화 시디(CD)에 대한 검증결과 중 피해자 
+        공소외 4의 진술 부분, 
+        공소외 12에 대한 검찰 진술조서, 
+        공소외 13에 대한 경찰 피의자신문조서, 
+        공소외 13, 
+        14, 
+        15, 
+        12, 
+        16, 
+        17, 
+        18, 
+        2에 대한 각 경찰 진술조서의 각 진술기재, 압수조서, 
+        공소외 13이 제출한 훼미리마트 영수증, 학원 출석부 사본의 각 기재에 의하면, ① 피해자는 경찰에서 두 차례에 걸쳐 조사를 받으면서, 정확히 2005. 4. 8. 금요일 19:50경 피고인으로부터 간음을 당할 뻔했던 적이 있는데, 시간을 정확하게 기억하는 이유는 그 당시 학원 승합차의 앞 쪽에 있는 전자시계를 보았기 때문이고(다만 제1회 진술조서에서는 당시 승합차의 시동이 꺼진 상태였고 그 상태에서도 시계가 작동되었다고 진술하다가, 경찰관에 의하여 시동이 꺼진 상태에서 시계가 작동되지 않음이 확인된 후 시행된 제2회 진술조서에서는 시동이 꺼지기 전에 시간을 확인하였다고 진술을 번복하였다), 피고인이 위 승합차의 시동을 끄고 자신이 있는 쪽으로 오더니 피해자로 하여금 위 승합차의 뒷문 계단으로 내려오도록 한 다음 피해자의 등 뒤에서 서서 간음하려고 하다가 잘 되지 않자, 위 계단 쪽에 있는 좌석을 펼치고 피해자를 눕혀 다시 간음하려고 하였으나, 피해자로부터 경찰에 신고하겠다는 말을 듣고 이를 중단하였다고 진술한 사실, ② 
+        공소외 14는 
+        (학교 이름 생략)여자중학교 1학년에 재학 중이고 자신의 어머니의 친구인 
+        공소외 13의 딸인 피해자를 알고 지내던 중, 2005. 4.경 피해자와 함께 목욕탕을 갔다가, 피해자로부터 “언니, 성폭행 당해 봤어”라는 질문을 듣고 “너는 당해 봤어”라고 되묻자, 피해자가 진지한 표정으로 “내가 다니고 있는 학원의 운전사에게 당했다”라는 답변을 듣게 되었으며, 그 날 저녁 자신의 어머니에게 이를 알리게 되었고, 
+        공소외 13은 2005. 4. 24.경 
+        공소외 14의 어머니로부터 이러한 내용을 듣게 된 사실, ③ 그 후 
+        공소외 13은 
+        (이름 생략)학원 원장인 
+        공소외 16과 피고인에게 전화로 항의하였고, 다음날 진위 여부를 밝히기 위하여 
+        공소외 16, 피고인 및 피해자와 함께 2005. 4. 8. 당시의 학원 승합차의 운행 경로를 확인하던 중, 피해자는 그 당시 학원 승합차가 동해시 쇄운동에 있는 부영아파트 앞 버스 승강장 부근에 잠시 정차한 적이 있는데, 이는 피고인이 피해자에게 2,000원을 주면서 그 중 1,000원을 가지되, 남은 돈으로 캔 커피를 사오라는 심부름을 시켰기 때문이며, 그 부근의 편의점(Family Mart)에서 ‘레쓰비'라는 캔 커피를 하나 사서 이를 피고인에게 주었다는 말을 하였고, 그 후 경찰에서 두 번째 조사를 받을 당시에도 그러한 내용을 진술하였으며, 이에 반하여 피고인은 그와 같은 심부름 사실을 부인하였는데, 실제로 위 편의점의 아르바이트생인 
+        공소외 19가 2005. 4. 8. 19:37경(이는 19:15경에 출발하는 학원 승합차가 통상적으로 위 편의점 부근을 지나는 시각과 크게 차이가 나지 않는 것으로 보인다) 누구였는지는 정확히 기억하지 못하나 ‘레쓰비’라는 캔 커피 1개를 판매한 적은 있는 것으로 드러난 사실, ④ 한편 피해자는 2003.경부터 피고인의 매형인 
+        공소외 16이 운영하는 
+        (이름 생략)학원에 다니기 시작하였으며, 평소에는 16:15경부터 17:00경까지는 영어 수업을, 17:00경부터 18:30까지는 속셈과 평가 수업을 각 들었고, 학교 수업이 늦게 끝나는 등의 사유로 평상시보다 1시간 정도 늦게 학원에 도착하는 경우에는 속셈과 평가 수업을 먼저 듣고, 그 다음에 18:30경부터 19:15경까지 영어 수업을 듣기도 한 사실, ⑤ 위 학원에서 영어 수업을 담당하는 
+        공소외 12는, 일반적으로 출석부에 수강생이 출석을 하면 ‘·’ 라는 표시를, 결석을 하면 ‘/’ 라는 표시를 해왔으며, 2005. 4. 8. 작성된 위 학원의 출석부 중 피해자 부분에 대하여 처음에 ‘/’ 라는 표시가 기재되어 있다가 화이트로 지워지고 그 위로 ‘·’ 라는 표시가 기재되어 있는데, 이는 피해자가 1시간 늦게 학원에 와서 영어 수업을 나중에 들었기 때문인 것으로 보이고, 2005. 3. 말경 피해자로부터 학교에서 합창부 연습을 해야 하기 때문에 금요일 수업은 늦을 것 같은데 어떻게 해야 하느냐는 질문을 받고 늦게라도 수업에 출석하라고 이야기를 한 적이 있다고 진술하고 있는 사실, ⑥ 
+        (학교 이름 생략)초등학교 1에서 2005. 3. 1.부터 합창부를 담당하고 있는 
+        공소외 18 또한, 피해자가 2005. 4. 8. 합창부 수업에 출석을 하였는지 여부를 기억할 수는 없지만, 일반적으로 합창부는 월, 화, 수, 목 및 토요일의 경우 08:20경부터 09:10경까지 수업을 하나, 금요일의 경우 음악을 전공하는 사람을 초빙하여 학생들로 하여금 교정 지도를 받도록 하는 탓에 15:10경부터 16:30경까지 수업을 하고 있다고 진술하고 있는 사실, ⑦ 
+        (학교 이름 생략)초등학교 2 6학년에 재학 중이며 
+        (이름 생략)학원 원장인 
+        공소외 16의 조카이기도 한 
+        공소외 2는, 
+        (이름 생략)학원에서 19:15경까지 수업을 듣고 있으며, 피해자와 직접 대화를 한 사실은 없으나, 피해자가 가끔 1시간 정도 늦게 수업을 듣고 귀가하면서 함께 학원 승합차를 타고 귀가한 적이 있어 피해자를 알고 있으며, 19;15경에 출발하는 학원 승합차의 원래 운행 경로에 의하면, 피해자가 있을 때에는 피해자가 먼저 내리고, 마지막으로 자신이 내리게 되나, 2005. 4.경 정확한 이유는 모르나 평소 승합차의 운행 경로와 달리 동해항 쪽이 아닌 북삼동 쪽으로 먼저 운행하는 바람에 피해자보다 자신이 먼저 내린 적이 있고, 그 때 학원 승합차에는 피해자와 피고인만이 남아 있었다고 진술한 적이 있는 사실 등을 인정할 수 있다.
+      </p><p>    (2) 증거들의 신빙성 여부 </p><p>      (가) 피해자의 진술에 대하여 보건대, 위 인정사실과 같이 피해자는 일부 지엽적인 진술의 번복에도 불구하고 진술 전체를 놓고 볼 때 자신이 간음을 당할 뻔했던 시간이라든지 범행 전·후의 사정, 그리고 당시의 피고인의 행동 등에 관하여 비교적 상세하고 일관되게 진술하고 있는바, 그 내용이 구체적이고 명료할 뿐만 아니라 일관성이 있고, 피해사실이 드러나는 과정이 자연스러우며, 아래에서 보는 바와 같이 객관적인 자료들이나 주변의 정황들도 이에 부합하고, 만 11세에 불과한 피해자가 체험하지 아니한 성적 경험을 구체적이고 상세하게 진술한다는 것이 쉽지 아니할 것으로 보일 뿐만 아니라 피해자나 피해자의 아버지인 
+        공소외 13에게 수사기관에 허위의 사실을 진술하여 피고인으로 하여금 형사처벌을 받도록 할 만한 특별한 동기가 있다고 보기도 어려운 점에서 피해자의 각 진술은 신빙성이 있다고 할 것이다.
+      </p><p>      (나) 영수증(수사기록 25쪽)의 기재에 대하여 살피건대, 기록에 의하여 인정되는 다음과 같은 사정 즉, 
+        공소외 13은 위 인정사실에서 본 바와 같은 경위로 피해자로부터 이 사건 범행 당일 피고인의 심부름으로 캔 커피를 사다 주었다는 말을 듣고, 학원 승합차가 위 편의점 앞에 정차한 것으로 추정되는 2005. 4. 8. 19:30경부터 같은 날 19:40경 사이에 위 편의점에서 판매된 물품 내역을 조사하여 19:37경 위 편의점에서 ‘레쓰비 마일드’ 1개가 판매된 사실을 확인한 점, 피해자는 당시 캔 커피를 판매한 편의점 직원의 외모와 자신이 구입한 캔 커피의 색깔을 분명히 기억하고 있었고 이는 객관적인 사실과도 정확하게 부합하는 점(
+        공소외 13에 대한 경찰 진술조서), 위 편의점에서 캔 커피가 판매된 시각인 19:37은 
+        (이름 생략)학원에서 19:15경에 출발하는 학원 승합차가 평소 위 편의점 부근을 지나는 시각과 크게 차이가 나지 않는 것으로 보이는 점{
+        공소외 13이 원심에 제출한 단품별 주간매출 순위표(공판기록 258쪽)에 의하면, 2006. 2. 17.부터 2006. 3. 2.까지 14일간 위 편의점에서 판매된 레쓰비마일드 캔커피는 총 84개로 1일 평균 6개 가량 판매된 사실을 인정할 수 있는바, 비록 시기상 이 사건 범행 일시와 차이가 있으나 위 편의점에서 하루에 판매되는 캔커피의 수량이 그리 많지 아니함을 알 수 있다}, 위 영수증은 피해자나 피해자의 아버지인 
+        공소외 13이 의도적으로 조작할 수 있는 성질의 것이 아니고, 위 영수증의 출처나 증거로 제출된 경위에 비추어 고도의 신빙성이 있다 할 것이다(이에 반하여 피고인은 2005. 5. 6. 경찰에서 ‘피고인이 심부름을 시킨 적이 없기 때문에 만약 그 시간에 캔커피를 구입한 것이 확인된다면 피고인이 심부름을 시킨 것으로 인정하겠다’고 진술하였으나, 경찰이 피고인에게 위 영수증을 제시하고 피고인, 
+        공소외 13과 함께 위 편의점에 가서 영수증 발급 과정을 직접 확인한 후인 2005. 5. 11.에는 ‘
+        공소외 4가 캔커피를 산 사실은 인정한다’고 진술하였다가, 그럼 피고인이 피해자를 시켜서 캔커피를 샀다는 것을 인정하는 것이냐고 묻자, ‘그건 아니고, 누군가 그 시간대에 캔커피를 산 것은 맞는 것 같다’라고 진술하는 등 진술에 일관성이 없다. 한편 피고인은 그 무렵 경찰의 거짓말탐지기 검사 제의에 대하여 기분이 나쁘다거나 피해자도 검사를 받으면 같이 검사를 받겠다고 하면서 이를 거부하였다).
+      </p><p>      (다) 출석부(수사기록 311쪽)의 기재에 대하여 살피건대, 위 출석부에는 피해자가 이 사건 범행 당일 결석한 것으로 표시되었다가 다시 출석한 것으로 그 표시가 정정되어 있고, 그와 같이 표시가 정정된 이유에 대하여, 
+        (이름 생략)학원에서 영어 수업을 담당하고 있는 
+        공소외 12는 피해자가 1시간 늦게 학원에 와서 영어 수업을 나중에 들었기 때문인 것으로 보인다고 진술하고 있는바, 이는 피해자의 진술에 부합할 뿐만 아니라 
+        (학교 이름 생략)초등학교 1에서 2005. 3. 1.부터 합창부를 담당하고 있는 
+        공소외 18과 
+        (학교 이름 생략)초등학교 2 6학년에 재학 중이며 
+        (이름 생략)학원 원장인 
+        공소외 16의 조카이기도 한 
+        공소외 2의 각 진술과도 일치하는 점, 위 출석부의 기재는 피해자나 피해자의 아버지가 의도적으로 조작할 수 없는 객관적인 자료인 점에서 피해자가 학원 수업이 끝난 19:15경 피고인이 운전하는 학원 승합차에 탄 사실을 인정할 수 있는 고도의 신빙성이 있는 증거라고 할 것이다.
+      </p><p>      (라) 피고인이 인정하고 있는 바와 같이, 피고인은 피해자의 아버지인 
+        공소외 13이 이 사건에 대해 항의하기 위하여 
+        (이름 생략)학원 원장실로 찾아왔을 당시 
+        공소외 13과 학원 원장인 
+        공소외 16이 함께 있는 자리에서 ‘피해자가 잠지에 무엇인가 났다고 하면서 스스로 옷을 벗었다’라고 말한 사실이 있다(피고인은 이 사건 당일이 아닌 그 이전에 있었던 일을 말한 것이라고 주장한다). 
+      </p><p>      (마) 원심이 가장 결정적인 탄핵증거로 사용한 
+        공소외 3의 진술에 대하여 살피건대, ① 
+        공소외 13이 2005. 4. 24.경 피고인과 
+        공소외 16에게 이 사건에 대해 항의하였고, 피고인이 그로부터 10일이나 경과한 2005. 5. 6. 경찰에서 최초로 진술하면서 이 사건 범행 당일 19:00경 동해시 
+        (동 이름 생략)동 소재 
+        (아파트명 생략)아파트 부근에서 처인 
+        공소외 5로부터 고구마를 받았는데, 피해자는 그곳에서 내렸고 당시 학원 승합차 안에는 
+        공소외 3이 타고 있었다고 진술하였고, 
+        공소외 3은 다시 그로부터 이틀 후인 2005. 5. 8. 수사기관에서 처음 출석하여 피고인의 위 진술에 부합하는 취지로 진술한 점, ② 
+        공소외 3은 이 사건 범행 발생일로부터 1개월이 경과한 후에 수사기관에 출석하여 자신이 피고인으로부터 고구마를 받은 사실이 있고, 그날이 장날인 것으로 기억하며, 당시 피해자가 학원 승합차에 타고 있다가 자신보다 먼저 내렸다고 진술하였는바, 피해자는 이 사건 범행 당일 학원 승합차에 
+        공소외 1, 
+        2 등이 타고 있었다고 진술하면서도 
+        공소외 3에 대하여 언급한 적이 없을 뿐만 아니라, 
+        공소외 3 스스로 인정한 바와 같이 자신은 18:30경에 출발하는 학원 승합차를 타고 다닐 뿐 19:15경 출발하는 학원 승합차는 한 번도 탄 적이 없다는 것이나, 위에서 본 바와 같이 피해자가 이 사건 당일 19:15경에 출발하는 학원 승합차를 타고 귀가한 사실은 객관적인 자료에 의하여 인정되는 점, ③ 
+        공소외 3은 당시 만 10세에 불과한 아동으로서, 자신이 수사기관에 진술한 날로부터 무려 한 달 전의 일인데다가, 매일 학원 승합차를 타고 다른 피아노 학원으로 가는 일상적으로 반복되는 상황 가운데서 자신과 무관한 부분까지 상세하게 기억한다는 것 자체가 오히려 상식에 부합하지 아니할 뿐만 아니라(즉 자신이 피고인으로부터 고구마를 받은 사실 및 그날이 장날인 것까지는 기억할 수 있다고 하더라도 바로 그 날 학원 승합차에 피해자가 타고 있었는지 여부에 대하여는 잘 못 기억하고 있었을 가능성도 배제하기 어렵다), 또한 
+        공소외 2는 경찰에서 ‘언제인지 모르지만 북성동 
+        (아파트명 생략)아파트 앞에서 피고인이 부인에게 고구마를 받아 
+        공소외 2에게 한 개 주었고 당시 
+        공소외 4가 내리면서 달라고 했는데 피고인이 못 들었는지 주지 않았다’고 진술하였는데, 
+        공소외 2는 아래에서 보는 바와 같이 19:15경에 학원 수업이 끝나기 때문에 
+        공소외 3과는 같은 시간에 학원 승합차를 탈 수 없으므로 과연 
+        공소외 3이, 피고인이 그의 처로부터 고구마를 받는 것을 직접 목격한 것인지에 대하여 강한 의문이 드는 점, ④ 나아가 피고인이나 그 가족에 의하여 
+        공소외 3 자신의 기억이 왜곡되었을 가능성도 배제하기 어려운 점(피고인은 이 사건 발생일로부터 8개월이 지난 2005. 12. 28. 구속되었다) 등에 비추어 보면, 
+        공소외 3의 진술이 영수증, 학원출석부 등 신빙성 있는 증거에 의하여 인정되는 객관적인 사실을 부인할 정도로 신빙성이 있다고 보기 어렵다.
+      </p><p>      (바) 원심은 
+        공소외 1, 
+        2의 진술을 근거로 이 사건 당일 학원 승합차의 운행경로 및 탑승한 수강생에 대하여 위 각 진술과 배치되는 피해자의 진술이 신빙성이 없고, 피해자가 18:30경 
+        공소외 3 등과 함께 학원 승합차를 타고 가다가 도중에 먼저 내렸을 가능성도 배제할 수 없다고 판단하였으나, 
+        공소외 1, 
+        2는 모두 나이 어린 미성년자들이고 이 사건 발생일로부터 상당 기간이 경과한 후에 수사기관에 출석하여 진술한 점에 비추어, 학원 출석 여부, 학원 승합차에 누가 타고 있었는지, 학원 승합차의 운행 경로 등 일상적으로 다발하는 일들에 대하여 자신과 무관한 부분까지 상세하게 기억한다는 것 자체가 오히려 상식에 부합하지 아니할 뿐만 아니라(이 점에서 
+        공소외 2, 
+        1이 그날 피해자와 함께 학원 승합차를 탔는지 기억하지 못한다고 하여 피해자의 진술이 신빙성이 없다고 할 수 없다), 
+        공소외 16, 
+        17의 각 경찰 진술에 의하면 
+        공소외 2는 영어과목을 듣기 때문에 17:00경에 시작하여 평가수업, 수학수업을 듣고 19:15경 수업이 끝나고, 
+        공소외 1은 수학과목을 듣기 때문에 17:45경 시작하여 19:15경 수업이 끝나기 때문에 피해자가 정상적인 수업을 듣는다면 
+        공소외 2, 
+        1과 같은 시간에 수업이 끝나지는 않는다는 것인데, 이 사건 당일 피해자가 평소와 달리 19:15경 수업이 끝났다면 
+        공소외 2, 
+        1과 같은 시간에 학원 승합차를 타고 귀가하게 될 것이고, 따라서 학원 승합차의 운행경로에 대하여 일부 착각할 수는 있다고 하더라도 이 사건 당일 학원 승합차에 
+        공소외 2, 
+        1과 함께 타고 있었다는 피해자의 진술은 오히려 신빙성이 있어 보인다.
+      </p><p>      (사) 그밖에 
+        공소외 5, 
+        11, 
+        9의 각 진술은, 
+        공소외 5가 피고인의 처이고, 
+        공소외 11이 피고인의 장모이고, 
+        공소외 9가 피고인의 조카로서 피고인에게 유리한 진술을 할 개연성이 있다는 점에서 
+        공소외 5 등의 각 진술은 신빙성이 떨어진다.
+      </p><p>    (3) 그렇다면 피해자의 진술과 영수증 및 출석부의 각 기재 등 원심이 적법하게 조사·채택한 여러 증거들에 의하면, 피고인이 피해자를 간음하려다 미수에 그쳤다고 인정할 수 있으므로 위 공소사실은 범죄의 증명이 있어 유죄를 선고하여야 할 것인데도, 원심은, 피고인이 학원 승합차에 피해자를 ‘2005. 4. 8. 19:15경’ 탑승시키고 운행하던 중 다른 수강자들이 먼저 내려 혼자 남은 피해자를 상대로 간음하려 하였다고 인정할 증거가 없어 위 공소사실은 범죄의 증명이 없는 경우에 해당한다고 판단하고 말았으니 거기에는 사실을 오인하여 판결에 영향을 미친 위법이 있다 할 것이고, 이를 지적하는 검사의 항소논지는 이유 있다.</p><p>
+        <b>3. 결론</b>
+      </p><p>  따라서 검사의 항소는 이유 있으므로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|364|">형사소송법 제364조 제6항</a></span>에 의하여 원심판결을 파기하기로 하고, 변론을 거쳐 다시 다음과 같이 판결한다.
+      </p><span class="space"></span><p><strong id="ReasonSection">【범죄사실】</strong></p><p>피고인은 동해시 
+          (동 이름 생략)동에 있는 
+          (이름 생략)학원의 승합차 운전기사인 바,
+        </p><p>  1. 2005. 4. 8. 19:50경 동해시 
+          (동 이름 생략)동에 있는 ‘독도다방’ 앞길에 주차된 
+          (차량번호 생략) 카운티 승합차 뒷좌석에서, 
+          (이름 생략)학원 수강생인 피해자 
+          공소외 4(여, 11세)를 태우고 가던 중 피해자를 간음할 것을 마음먹고, 운전석에서 승객석 쪽으로 피해자에게 다가가 바지를 벗고, 피해자의 바지를 벗긴 다음 피해자를 간음하려고 하였으나, 삽입이 제대로 되지 아니하고, 피해자로부터 ‘경찰에 신고하겠다’는 말을 듣고 이를 그만두어 그 뜻을 이루지 못하고 미수에 그치고,
+        </p><p>  2. 사실은 전항 기재와 같이 
+          공소외 4를 간음하려고 한 적이 있음에도 불구하고, 
+          공소외 4의 아버지인 
+          공소외 13으로부터 
+          공소외 4를 간음하려고 하였다는 사실로 고소를 당하자, 형사처벌을 모면하기 위하여 
+          공소외 13을 무고할 것을 마음먹고, 
+          공소외 13으로 하여금 형사처벌을 받게 할 목적으로, 2005. 5. 27.경 동해시 
+          (동 이름 생략)동에 있는 동해경찰서 민원실에서, 그 곳에 설치된 컴퓨터를 이용하여 “피고소인 
+          공소외 13이 ‘고소인이 2005. 4. 8. 19:40경 강원 동해시 
+          (동 이름 생략)동에 있는 독도다방 앞 고소인이 운전하는 
+          (차량번호 생략) 승합차량 내 뒷자리에서 
+          공소외 13의 친딸인 
+          공소외 4(여, 11세)를 성폭행하였다’고 동해경찰서 지능범죄수사팀에 허위로 고소한 것에 대하여 고소인의 혐의가 없다고 밝혀질 경우, 고소인은 피고소인을 동해경찰서에 무고죄로 고소하오니 처벌해 달라”는 내용의 허위사실이 기재된 고소장을 작성한 다음, 이를 위 경찰서 민원실 담당 경찰관에게 제출, 접수하게 하여 
+          공소외 13을 무고하였다. 
+        </p><span class="space"></span><p><strong id="ReasonSection">【증거의 요지】</strong></p><p>1. 피고인의 원심 및 당심 법정에서의 각 일부 진술</p><p>1. 
+          공소외 13의 원심 및 당심 법정에서의 각 진술 
+        </p><p>1. 
+          공소외 4의 당심 법정에서의 진술  
+        </p><p>1. 원심의 녹화시디(CD)에 대한 검증 결과</p><p>1. 
+          공소외 12에 대한 검찰 진술조서
+        </p><p>1. 
+          공소외 13에 대한 각 경찰 피의자신문조서의 각 진술기재
+        </p><p>1. 
+          공소외 13,  
+          공소외 15,  
+          공소외 14,  
+          공소외 12,  
+          공소외 16,  
+          공소외 17,  
+          공소외 18,  
+          공소외 2에 대한 각 경찰 진술조서의 각 진술기재
+        </p><p>1. 수사보고(출석부 사진 편철)의 기재</p><p>1. 영수증의 기재</p><span class="space"></span><p><strong id="ReasonSection">【법령의 적용】</strong></p><p>1. 범죄사실에 대한 해당법조 및 형의 선택</p><p>  가. 미성년자의제강간미수의 점 : 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|305|">형법 제305조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|300|">제300조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|297|">제297조</a></span>
+        </p><p>  나. 무고의 점 : 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|156|">형법 제156조</a></span>(징역형 선택)
+        </p><p>1. 법률상 감경</p><p>  미성년자의제강간미수죄에 대하여 : 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|25|">형법 제25조 제2항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|55|">제55조 제1항 제3호</a></span>(미수) 
+        </p><p>1. 경합범 가중</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|37|">형법 제37조</a></span> 전단, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|38|">제38조 제1항 제2호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|50|">제50조</a></span>(형이 더 무거운 무고죄에 정한 형에 경합범 가중하되, 하한은 미성년자의제강간미수죄에 정한 형의 그것에 의한다)
+        </p><p>1. 미결구금일수의 산입</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|57|">형법 제57조</a></span>
+        </p><span class="space"></span><p><strong id="ReasonSection">【양형이유】</strong></p><p>피고인의 이 사건 범행은, 학원 승합차를 운전하던 중 혼자 남은 만 11세의 여학생을 간음하려다 미수에 그치고, 나아가 피해자의 아버지가 위 간음미수 범행에 대해 경찰에 고소하자 오히려 허위로 고소하였다고 주장하며 피해자의 아버지를 무고한 것으로, 피고인이 학원 승합차를 운전하며 거의 매일 피해자를 귀가시키고, 그로 인하여 학원 수강생인 피해자가 피고인을 신뢰하게 됨을 이용하여 이 사건 범행을 저질렀고, 피해자가 만 11세에 불과한 어린 학생이며, 이 사건 범행으로 인하여 피해자 및 그 가족에게 상당한 정신적 고통을 가한 점에서 그 죄질이 불량하고, 현재까지 피해자와 합의하지 못하였고, 피해자의 아버지가 피고인의 처벌을 강력하게 탄원하고 있는 점에 비추어 피고인에 대한 실형 선고가 불가피하다. </p><p>  다만 피고인이 초범이고, 피해자에 대한 간음행위가 미수에 그친 점, 기타 피고인의 연령, 성행, 환경 등 기록에 나타난 모든 양형조건을 종합하여 주문과 같이 형을 정한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   고영한(재판장) 한상규 이근수 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

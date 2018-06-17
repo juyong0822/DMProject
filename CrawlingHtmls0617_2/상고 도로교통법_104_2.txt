@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 96구23834 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1995479';
+var contIdEtc = '';
+var saNo = '96구23834';
+var sngoNm = '선고';
+var saNm = '공무원징계처분취소';
+try {
+	var sngoDay=('19970124' ? 
+			'19970124'.length==4 ? Date.parseExact('19970124','yyyy').toString('yyyy. M. d.') : 
+				'19970124'.length==6 ? Date.parseExact('19970124','yyyyMM').toString('yyyy. M. d.') : 
+					'19970124'.length==8 ? Date.parseExact('19970124','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결：확정';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 96구23834 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '96구23834';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />96구23834</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(1)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(0)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="행정소송법|27|0|null">행정소송법 제27조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96누730">1996. 3. 26. 그 상고심인 대법원 96누730</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|61|0|null">국가공무원법 제61조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|78|0|null">국가공무원법 제78조 제1항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|61|0|null">국가공무원법 제61조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|78|0|null">국가공무원법 제78조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|79|0|null">국가공무원법 제79조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|78|0|null">국가공무원법 제78조 제1항 제1호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style="display:none"><em>[원심판결]</em></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고법 1997. 1. 24. 선고 96구23834 판결：확정</h2><p class="sub_title">[공무원징계처분취소 ][하집1997-1, 575]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>  경찰관이 피의자로부터 금품을 받아 파면처분되었다가 재량권 남용을 이유로 한 파면무효 확정판결을 받은 후 다시 같은 사유로 해임처분을 받은 경우, 해임처분의 적법 여부(적극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>  경찰관이 피의자로부터 금품을 받아 파면처분되었다가 재량권 남용을 이유로 한 파면무효 확정판결을 받은 후 다시 같은 사유로 해임처분을 당한 사안에서, 그 돈을 받은 경위와 그 금액 및 그 후 사건을 처리한 과정 등을 함께 고려하여 그 해임 처분은 적법하다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="행정소송법|27|">행정소송법 제27조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원    고】
+      
+        
+          원고 (소송대리인 변호사 배영곤)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피    고】
+      
+        
+          피고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 원고의 청구를 기각한다. </p><p>  2. 소송비용은 원고의 부담으로 한다.</p>
+    
+      【청구취지】
+      <p>  피고가 1996. 4. 16. 원고를 해임한 처분을 취소한다. </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 이 사건 처분의 경위</p><p>  다음 사실은 당사자 사이에 다툼이 없다.</p><p>  가. 원고는 1980. 10. 30. 순경으로 임용된 뒤 1984. 7. 18. 경장으로 승진하고 1994. 1. 10.부터 
+        (지명 생략)경찰서 교통과 교통관리계에서 근무하다가 1995. 3. 1. 경사로 승진하여 
+        (지명 생략) 지방경찰청장 형사과 형사기동대에서 근무하였다.
+      </p><p>  나. 피고는 1995. 4. 14. 원고가 
+        (지명 생략)경찰서 교통과 교통관리계에서 근무하던 때인 1995. 2. 27. 
+        (지명 생략)경찰서 교통사고처리반 사무실에서 교통사고 피의자를 조사하면서 같은 경찰서 교통지도계의 동료 경찰관인 
+        소외 1을 통하여 교통사고 피의자인 
+        소외 2로부터 사건을 잘 처리하여 준다는 명목으로 400,000원을 받음으로써 직무와 관련하여 돈을 받았다는 이유로(이를 다음부터 이 사건 징계혐의사실이라 부른다) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|61|">국가공무원법 제61조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|78|">제78조 제1항 제2호</a></span>를 적용하여 원고를 파면하였다.
+      </p><p>  다. 그 뒤 원고가 위 파면처분에 불복하여 행정소송를 제기한 결과 1995. 11. 22. 서울고등법원 95구22100 사건에서 이 사건 징계혐의 사실은 인정되지만 파면처분이 재량권의 범위를 넘었다는 이유로 원고승소 판결을 받았고 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96누730" href="#//">1996. 3. 26. 그 상고심인 대법원 96누730</a></span> 사건에서 상고기각 판결을 받아 이 판결이 확정되었다.
+      </p><p>  라. 그러자, 피고는 다시 1996. 4. 16. 종전 파면 처분과 마찬가지로 이 사건 징계혐의사실을 인정할 수 있다는 이유로 원고를 해임하였다(다음부터 이 사건 해임처분이라 부른다). </p><p>  2. 이 사건 해임처분의 적법 여부</p><p>  가. 당사자의 주장</p><p>  피고는 이 사건 해임처분이 위 징계사유와 관계 법령에 따라 적법하게 이루어진 것이라고 주장하는데, 이에 대하여 원고는 이 사건 징계혐의 사실을 저지른 적이 없고 설사 그와 같은 사실이 있더라도 이 사건 해임처분은 재량권의 범위를 넘거나 재량권을 남용한 것이어서 위법하다고 주장한다.</p><p>  나. 관계 법령 </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|61|">국가공무원법 제61조 제1항</a></span>은 공무원은 직무와 관련하여 직접 또는 간접을 불문하고 사례·증여 또는 향응을 수수할 수 없다고 규정하고 있다. 그리고 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|78|">같은 법 제78조 제1항</a></span>은 공무원이 다음 각 호의 1에 해당하는 때에는 징계의결의 요구를 하여야 하고, 동 징계의결의 결과에 따라 징계처분을 하여야 한다고 규정하면서, 제1호로 이 법 및 이 법에 의한 명령에 위반하였을 때, 제2호로 직무상의 의무(다른 법령에서 공무원의 신분으로 인하여 부과된 의무를 포함한다.)에 위반하거나 직무를 태만한 때, 제3호로 직무의 내외를 불문하고 그 체면 또는 위신을 손상하는 행위를 한 때를 각 열거하고 있다. 또한 징계의 종류에 관하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|79|">같은 법 제79조</a></span>는 징계는 파면·해임·정직·감봉·견책으로 구분한다고 규정하고 있다.
+      </p><p>  다. 판    단</p><p>  (1) 이 사건 징계혐의 사실을 인정할 수 있는지 그 여부</p><p>  을 제1호증, 을 제2호증, 을 제4호증의 1, 2, 을 제5호증의 1, 2, 을 제6호증, 을 제7호증의 1, 2, 3의 각 기재, 증인 
+        소외 2의 증언, 변론의 전취지를 종합하면 다음 사실을 인정할 수 있고 이에 어긋나는 갑 제4호증의 기재와 증인 
+        소외 2의 증언 일부는 믿지 아니하며 달리 반증이 없다.
+      </p><p>  (가) 소외 
+        2는 1995. 2. 23. 21:30 무렵 음주한 상태로 
+        (차량번호 생략) 세피아 승용차를 운전하여 인천 남동구 구월 4동 1314 한라산갈비 앞 길을 지나가다가 때마침 신호를 기다리던 피해자 이종진이 운전하는 인천 5더9787호 베스타 차량을 들이받아 이를 700,000원 어치 정도 손괴하고도 그대로 도주하였다가 5분 만에 경찰관에게 붙잡힌바 있었다.
+      </p><p>  (나) 
+        (지명 생략)경찰서 교통과 교통지도계에서 경찰관으로 일하던 
+        소외 1은 1995. 2. 25. 오래 전부터 알고 지내던 위 이종진으로부터 위 교통사고를 당사자들끼리 서로 원만히 합의하려고 하니 어떻게 하면 사고처리가 빨리 끝날 수 있는지 알아보아 달라는 전화부탁을 받고 위 교통사고를 담당하는 경찰관인 원고에게 찾아가 위 사건내용을 알아 보면서 신속히 이를 처리해 달라고 말하였다.
+      </p><p>  (다) 그리고 
+        소외 1은 같은 달 27. 16:00 무렵 남부경찰서 교통지도계 사무실에서 이종진으로부터 위 
+        소외 2가 교통사고 담당경찰관에게 사건을 잘 처리하여 달라는 명목으로 400,000원을 주려고 하는데 담당자를 잘 모르니 이를 대신 전달하여 달라는 부탁을 받고 위 
+        소외 2로부터 400,000원이 들어 있는 돈봉투를 건네받아 이를 다시 누런 대봉투에 넣은 다음 
+        소외 2와 함께 원고에게 가서 책상 위에 있는 서류 속에 이를 끼워 넣는 방법으로 돈과 함께 위와 같은 취지를 묵시적으로 전달하였다.
+      </p><p>  (라) 원고는 1995. 2. 27. 위와 같이 
+        소외 2한테서 돈을 받고 
+        소외 2에 대한 피의자신문조서를 작성하면서 날짜를 소급하여 1995. 2. 24.자 피의자신문조서를 작성하는 한편 피해자 등에게 상해가 발생하지 않았다는 피의자와 피해자의 진술을 그대로 수용하여 이 부분에 대한 수사를 더 이상 진척시키지 아니함으로써 피의자에게 특정범죄가중처벌등에관한법률위반(대인 교통사고 후 도주) 혐의를 적용하지 아니하고 도로교통법위반 혐의 부분만 입건하여 사건을 처리하였다(위 사건의 경우 실제로 피해자 등에게 상해가 발생하였는지 그 여부는 확실히 판가름할 수 없으나, 위 사건의 피의자인 
+        소외 2와 피해자측인 이종진 등은 상해가 없이 물적피해만 발생하였다는 내용으로 경찰서에서 진술하기로 합의하고 그 대가로 4,500,000원을 주고 받았다).
+      </p><p>  따라서 위에서 인정한 사실로 보건대, 원고가 위 사건을 엄정히 처리하였는지 의심이 갈 뿐 아니라 설사 위 사건이 결국은 특정범죄가중처벌등에관한법률위반(대인 교통사고 후 도주) 혐의를 인정할 수 없는 사건으로 결말이 날 수밖에 없었다 하더라도 원고가 그 시점에서 더 이상 수사를 확대하지 아니하고 교통사고 피의자와 피해자의 진술을 그대로 수용하여 사건을 끝낸다는 대가로 위 돈을 받은 것으로 엿보이므로, 원고는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|61|">국가공무원법 제61조</a></span>의 청렴의무에 위배하여 직무와 관련하여 직접 또는 간접으로 사례·증여 또는 향응을 받았다 할 것이고, 이러한 비위사실은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|78|">같은 법 제78조 제1항 제1호</a></span>의 징계사유에 해당한다고 할 것이니 징계사유가 존재하지 아니한다는 원고의 첫째 주장은 이유 없다.
+      </p><p>  (2) 재량권을 넘거나 재량권을 남용하였는지 그 여부</p><p>  갑 제2호증, 갑 제3호증의 1, 2, 을 제12호증의 각 기재를 종합하면, 원고는 1980. 10. 30.부터 14년 남짓 경찰공무원으로 재직하면서 치안본부장 표창을 비롯하여 7회에 걸쳐 표창을 받았고 반면에 징계처분은 단 한번도 받지 아니한 사실을 인정할 수 있으나, 앞서 인정한 사실에서 보는 바와 같은 돈을 받은 경위, 그 금액, 그 후 사건을 처리한 과정 등을 함께 고려하여 보면 이 사건 해임 처분은 적절하고 재량권의 범위를 넘거나 재량권을 남용한 것이라 할 수 없으므로 결국 원고의 둘째 주장도 이유 없다.</p><p>  3. 맺음말</p><p>  그렇다면, 원고의 청구는 부당하므로 이를 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   이범주(재판장) 주기동 이홍철 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

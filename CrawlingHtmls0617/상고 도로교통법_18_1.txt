@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 88구10086 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1997679';
+var contIdEtc = '';
+var saNo = '88구10086';
+var sngoNm = '선고';
+var saNm = '기타징수금부과처분취소';
+try {
+	var sngoDay=('19890308' ? 
+			'19890308'.length==4 ? Date.parseExact('19890308','yyyy').toString('yyyy. M. d.') : 
+				'19890308'.length==6 ? Date.parseExact('19890308','yyyyMM').toString('yyyy. M. d.') : 
+					'19890308'.length==8 ? Date.parseExact('19890308','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '제3특별부판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 88구10086 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '88구10086';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />88구10086</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(14)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(0)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="공무원및사립학교교직원의료보험법|1|0|null">공무원및사립학교교직원의료보험법 제1조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="공무원및사립학교교직원의료보험법|42|0|null">공무원및사립학교교직원의료보험법 제42조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="공무원및사립학교교직원의료보험법|45|0|null">공무원및사립학교교직원의료보험법 제45조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="도로교통법|44|0|null">도로교통법 제44조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|118|0|null">도로교통법 제118조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|117|0|null">도로교통법 제117조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|113|0|null">도로교통법 제113조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|44|0|null">도로교통법 제44조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원및사립학교교직원의료보험법|42|0|null">공무원및사립학교교직원의료보험법 제42조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원및사립학교교직원의료보험법|45|0|null">공무원및사립학교교직원의료보험법 제45조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|34|0|null">헌법 제34조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원및사립학교교직원의료보험법|1|0|null">공무원및사립학교교직원의료보험법 제1조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style="display:none"><em>[원심판결]</em></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고법 1989. 3. 8. 선고 88구10086 제3특별부판결 : 상고</h2><p class="sub_title">[기타징수금부과처분취소][하집1989(1),535]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>단순한 교통질서위반행위가 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">공무원및사립학교교직원의료보험법 제42조 제1항</a></span> 소정의 범죄행위에 해당하는지 여부
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>도로교통법위반의 범칙행위는 그 본질상 단순한 교통질서위반행위에 불과하여 행위의 결과발생을 요건으로 하는 일반범죄행위와는 다를 뿐 아니라, 우연적으로 발생하는 보험사고에 대하여 상호구제를 목적으로 하는 의료보험제도의 본질 및 공무원및사립학교교직원의료보험법의 입법취지에 비추어 위 범칙행위는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">위 법 제42조 제1항</a></span> 소정의 범죄행위에 포함되지 아니한다고 봄이 상당하다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|1|">공무원및사립학교교직원의료보험법 제1조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">제42조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|45|">제45조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">도로교통법 제44조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원    고】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피    고】
+      
+          공무원및사립학교교직원 의료보험관리공단
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 피고가 1988.4.1. 원고에 대하여 한 보험급여 금 959,120원의 징수처분은 이를 취소한다.</p><p>  2. 소송비용은 피고의 부담으로 한다.</p>
+    
+      【청구취지】
+      <p>  주문과 같다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 성립에 다툼이 없는 갑 제1호증(납부고지서), 갑 제6호증(안내문), 갑 제7호증의 1(납부통고서, 을 제4호증과 같다),2(확인원, 을 제2호증과 같다),3(실황조사서), 을 제1호증(사건처리결과통보), 을 제3호증(진술서)의 각 기재에 변론의 전취지를 종합하면 원고는 
+        (명칭 생략)여자상업고등학교소속 의료보험 피보험자인 소외 
+        1의 남편으로서 1987.4.7. 8:50경 자기소유의 부산
+        (차량 번호 생략) 맵씨승용차를 운전하여 마산시 방면에서 부산쪽을 향하여 시속 약 50킬로미터의 속도를 운행하던 중 경남 김해군 신천면 국도상에 있는 신천교 앞에 이르러 도로의 맞은편에서 번호불상의 트럭이 중앙선을 침범한 채 진행하여 오고 있고 도로의 오른쪽에서 개가 갑자기 튀어나오는 것을 보고 이를 피하기 위하여 급제동하는 순간 그 탄력으로 위 승용차가 왼쪽으로 미끄러지면서 중앙선을 침범하여 반대편에 있는 위 신천교의 교각을 들이받은 뒤 3미터 아래의 개울로 떨어져 우측 대퇴골간부분쇄골절등의 부상을 입은 사실, 원고는 부산성분도병원에서 위 부상을 치료받고 공무원및사립학교교직원의료보험법이 정하는 바에 따라 
+        소외 1의 피부양자로서 피고로부처 금 959,120원의 보험금여를 지급받은 사실, 한편 소외 김해경찰서장은 1987.4.11. 원고가 앞서 본 사고시 안전운전의무위반의 범칙행위를 하였다는 이유로
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|118|"> 도로교통법 제118조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|117|"> 제117조</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|113|">제113조 제1호</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">제44조</a></span>에 따라 원고에게 금 20,000원의 범칙금통고처분을 하였는데 피고는 원고의 이러한 범칙행위는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">공무원및사립학교교직원의료보험법 제42조 제1항</a></span> 소정의 범죄행위에 해당하여 보험급여가 제한되는 경우라고 보고
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|45|"> 같은 법 제45조 제1항</a></span>에 따라 1988.4.1. 원고에 대하여 원고가 이미 급여받은 보험금 959,120원 전액의 징수처분을 한 사실을 인정할 수 있고 달리 반증이 없으며, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">공무원및사립학교교직원의료보험법 제42조 제1항</a></span>에 의하면 보험자는 보험급여를 받을 자가 자신의 범죄행위에 기인하거나 또는 고의로 사고를 발생시켰을 때에는 당해 보험급여를 하지 아니한다고 되어 있고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|45|">같은 법 제45조 제1항</a></span>에 의하면 보험자는 사위 기타 부정한 방법에 의하여 보험급여를 받은 자 또는 보험급여비용을 받은 요양취급기관에 대하여 그 급여 또는 급여비용에 상당하는 금액의 전부 또는 일부를 징수한다고 되어 있다.
+      </p><p>  2. 피고는 위 사유와 법조를 들어 이 사건 징수처분이 적법하다고 주장하고 이에 대하여 원고는 첫째로, 도로교통법상의 [범칙행위]와 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">공무원및사립학교교직원의료보험법 제42조 제1항 </a></span>소정의 [범죄행위]와는 본질적으로 다른 것임에도 불구하고 피고는 원고의 앞서 본 [범칙행위]가 공무원및사립학교교직원의료보험법 소정의 [범죄행위]에 해당한다고 보고 이 사건 징수처분을 하였으므로 이는 위법하고, 둘째로, 도로교통법상의 [범칙행위]가 [범죄행위]가 된다하더라도 보험급여가 제한되는 [범죄행위]는 형법에 규정된 소위 자연범적인 그것에만 국한되고 다른 법령에 규정된 벌칙위반의 행위 소위 법정범적인 것은 포함되지 아니하므로, 원고의 앞서 본 범칙행위는 보험급여가 제한되는 [범죄행위]에 해당하지 아니함에도 불구하고 이를 보험급여가 제한되는 [범죄행위]에 해당한다고 보고한 이 사건 징수처분은 위법하며, 셋째로, 도로교통법상의 [범칙행위]가 보험급여가 제한되는 [범죄행위]가 된다 하더라도 이 사건 사고는 반대방향에서 번호불상의 트럭이 중앙선을 침범한채 진행하여 오는 것을 보고 이를 피하려다가 불가항력적으로 일어난 것으로 소위 신뢰보호의 원칙이 적용되어 원고는 위 사고에 대하여 아무런 책임이 없음에도 불구하고 원고에게 범죄행위가 있는 것으로 보고한 이 사건 징수처분은 위법하다고 다투고 있다.
+      </p><p>  그러므로 먼저 앞서 본 원고의 범칙행위가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">공무원및사립학교교직원의료보험법 제42조 제1항 </a></span>소정의 [범죄행위]에 해당하는지의 여부에 관하여 보건대, 원고의 앞서 본 범칙행위는 모든 차의 운전사가 그 차의 조향장치, 제동장치 그밖의 장치를 정확히 조작하지 아니하거나 도로의 교통상황과 그 차의 구조 및 성능에 따르지 아니하고 다른 사람에게 위험과 장해를 주는 속도난 방법으로 운전하는 경우에 즉시 성립하는 것으로서 (
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">도로교통법 제44조</a></span>) 그 본질은 단순한 교통질서 위반행위에 불과하므로 행위의 결과발생을 요건으로 하는 일반범죄행위와는 다를 뿐만 아니라 국가는 사회보장, 사회복지의 증진에 노력할 의무를 진다고 규정하고 있는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|34|">헌법 제34조 제2항</a></span>의 규정취지와 우연적으로 발생하는 보험사고에 대하여 상호구제를 목적으로 하는 의료보험제도의 본질 그리고 공무원, 사립학교 교직원 및 그 부양가족의 질병, 부상, 분만, 사망 등에 대하여 보험급여를 실시함으로써 그들의 건강을 향상시키고 사회보장의 증진을 도모하는데 그 목적이 있는 공무원및사립학교교직원의료보험법의 입법위지 (
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|1|">같은 법 제1조</a></span> 참조)등에 비추어 보더라도 단순한 교통질서위반행위에 불과한 도로교통법상의 범칙행위는 보험급여가 제한되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">공무원및사립학교교직원의료보험법 제42조 제1항 </a></span>소정의 [범죄행위]에 포함되지 않는다고 봄이 상당하다 할 것이므로 원고의 앞서 본 범칙행위가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원및사립학교교직원의료보험법|42|">같은 법 제42조 제1항 </a></span>소정의 [범죄행위]에 해당한다고 보고 한 이 사건 징수처분은 원고의 나머지 주장에 관하여 나아가 따져볼 필요없이 이유없다 하겠다.
+      </p><p>  3. 그렇다면 피고의 이 사건 징수처분이 위법함을 이유로 그 취소를 구하는 원고의 이 사건 청구는 이유있어 이를 인용하고, 소송비용은 패소자인 피고의 부담으로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김영진(재판장) 김성수 이관형 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

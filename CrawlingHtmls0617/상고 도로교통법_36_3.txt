@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011도1094 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2060629';
+var contIdEtc = '';
+var saNo = '2011도1094';
+var sngoNm = '선고';
+var saNm = '도로교통법위반(무면허운전)';
+try {
+	var sngoDay=('20110513' ? 
+			'20110513'.length==4 ? Date.parseExact('20110513','yyyy').toString('yyyy. M. d.') : 
+				'20110513'.length==6 ? Date.parseExact('20110513','yyyyMM').toString('yyyy. M. d.') : 
+					'20110513'.length==8 ? Date.parseExact('20110513','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011도1094 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011도1094';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011도1094</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(4)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(11)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(9)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1970378">대법원 2011. 7. 28. 선고 2011도6762 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|668291">공시송달과 불출석재판  1회 공시송달 재판 사건 신동운 法文社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548361">한국. 대법원 법원행정처 법원실무제요.. [3-1]:. 형사(Ⅰ) 법원행정처  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548362">한국. 대법원 법원행정처 법원실무제요.. [3-2]:. 형사(Ⅱ) 법원행정처  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|668291">신동운 공시송달과 불출석재판 / 1회 공시송달 재판 사건 (판례분석) 신형사소송법 . Ⅱ   / 법문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|682503">신이철 상소제기기간의 기산점과 피고인의 출석과의 관계 일감법학 23호  / 건국대학교 법학연구소  2012 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도3892">대법원 2007. 7. 12. 선고 2006도3892 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009도12430">대법원 2010. 1. 28. 선고 2009도12430 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|91모23">대법원 1991. 12. 17.자 91모23 결정</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="형사소송법|63|0|null">형사소송법 제63조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="소송촉진등에관한특례법|23|0|null">소송촉진 등에 관한 특례법 제23조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="소송촉진등에관한특례규칙|18|0|null">소송촉진 등에 관한 특례규칙 제18조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="소송촉진등에관한특례규칙|19|0|null">소송촉진 등에 관한 특례규칙 제19조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="형사소송법|63|0|null">형사소송법 제63조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="소송촉진등에관한특례법|23|0|null">소송촉진 등에 관한 특례법 제23조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="소송촉진등에관한특례규칙|18|0|null">소송촉진 등에 관한 특례규칙 제18조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="소송촉진등에관한특례규칙|19|0|null">소송촉진 등에 관한 특례규칙 제19조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="소송촉진등에관한특례규칙|19|0|null">소송촉진 등에 관한 특례규칙 제19조 제2항 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="형사소송법|364|0|null">형사소송법 제364조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="소송촉진등에관한특례규칙|19|0|null">소송촉진 등에 관한 특례규칙 제19조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도3892">대법원 2007. 7. 12. 선고 2006도3892 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91모23">대법원 1991. 12. 17.자 91모23 결정</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|63|0|null">형사소송법 제63조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례법|23|0|null">소송촉진 등에 관한 특례법 제23조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례규칙|18|0|null">소송촉진 등에 관한 특례규칙 제18조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례규칙|19|0|null">소송촉진 등에 관한 특례규칙 제19조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례규칙|19|0|null">소송촉진 등에 관한 특례규칙 제19조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2010노2491">대구지법 2011. 1. 11. 선고 2010노2491 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2011. 5. 13. 선고 2011도1094 판결</h2><p class="sub_title">[도로교통법위반(무면허운전)][공2011상,1247]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 제1심 공판절차에서 피고인에게 공시송달을 하기 위한 요건</p>
+      <p></p>
+      <p>
+        </p><p>[2] 제1심의 법원사무관 등이 이미 송달불능된 피고인과 전화통화하면서 송달장소를 확인하는 등의 시도를 하지 아니한 채 단순히 제1회 공판기일에 출석할 것을 통지하는 데 그친 경우, 그 후 소재탐지촉탁, 구속영장 발부, 지명수배 의뢰 등의 절차를 거쳤다고 하더라도 공시송달의 방법으로 공소장 부본 등을 송달한 제1심의 조치는 위법하다고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 공시송달의 방법으로 소환한 피고인이 최초 공판기일에 불출석한 경우, 곧바로 피고인의 진술 없이 재판절차를 진행할 수 있는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[4] 위법한 공시송달 결정에 터잡아 공소장 부본 등을 송달하고 최초 공판기일에 피고인 출석 없이 재판절차를 진행한 위법이 제1심에 있는데도, 직권으로 위와 같은 위법을 시정하는 조치를 취하지 않은 원심판결에 법리오해의 위법이 있다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|63|">형사소송법 제63조 제1항</a></span>에 의하면, 피고인의 주거, 사무소, 현재지를 알 수 없는 때에는 공시송달을 할 수 있고, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|">소송촉진 등에 관한 특례법 제23조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|18|">소송촉진 등에 관한 특례규칙 제18조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">제19조</a></span>는 제1심 공판절차에서 사형·무기 또는 장기 10년이 넘는 징역이나 금고에 해당하는 사건이 아니라면 피고인의 소재를 확인하기 위하여 소재조사촉탁, 구인장의 발부, 기타 필요한 조치를 취하였음에도 피고인에 대한 송달불능보고서가 접수된 때부터 6월이 경과하도록 피고인의 소재가 확인되지 아니한 때에는 그 후 피고인에 대한 송달은 공시송달의 방법에 의하도록 규정하고 있다. 그러므로 기록상 피고인의 집 전화번호 또는 휴대전화번호 등이 나타나 있는 경우에는 위 전화번호로 연락하여 송달받을 장소를 확인하여 보는 등의 시도를 해보아야 하고, 그러한 조치를 취하지 아니한 채 곧바로 공시송달의 방법에 의한 송달을 하는 것은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|63|">형사소송법 제63조 제1항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|">소송촉진 등에 관한 특례법 제23조</a></span>에 위배되어 허용되지 아니한다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 제1심의 법원사무관 등이, 공소장에 피고인의 주거로 기재된 장소로 공소장 부본을 송달하였으나 이미 2회에 걸쳐 이사불명으로 송달불능되었던 피고인의 휴대전화로 전화를 걸어 통화하면서 피고인이 서류를 송달받을 수 있는 장소를 확인하는 등의 시도를 하지 아니한 채 단순히 제1회 공판기일에 출석할 것을 통지하는 데 그친 경우, 제1회 공판기일에 출석하지 아니한 피고인에 대하여 소재탐지촉탁, 구속영장 발부, 지명수배 의뢰 등의 절차를 거쳤다고 하더라도 공시송달의 방법으로 공소장 부본 등을 송달한 제1심의 조치는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|">소송촉진 등에 관한 특례법 제23조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|18|">소송촉진 등에 관한 특례규칙 제18조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">제19조</a></span>를 위반한 것이라고 한 사례.
+        </p>
+      <p></p><p>
+        </p><p>[3] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">소송촉진 등에 관한 특례규칙 제19조 제2항</a></span>의 규정에 의하면, 제1심 공판절차에서 피고인에 대한 소환이 공시송달로 행하여지는 경우에도 법원이 피고인의 진술 없이 재판을 하기 위하여는 공시송달의 방법으로 소환받은 피고인이 2회 이상 불출석할 것이 요구된다. 그러므로 공시송달의 방법으로 소환한 피고인이 불출석하는 경우 다시 공판기일을 지정하고 공시송달의 방법으로 피고인을 재소환한 후 그 기일에도 피고인이 불출석하여야 비로소 피고인의 불출석 상태에서 재판절차를 진행할 수 있다.
+        </p>
+      <p></p><p>
+        </p><p>[4] 위법한 공시송달 결정에 터잡아 공소장 부본과 공판기일 소환장을 송달하고 최초 공판기일에 피고인 출석 없이 재판절차를 진행한 위법이 제1심에 있는데도, 직권으로 제1심의 위법을 시정하는 조치를 취하지 않은 채 제1심이 조사·채택한 증거들에 기하여 검사의 양형부당 항소이유만을 판단한 원심판결에 법리오해의 위법이 있다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|63|">형사소송법 제63조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|">소송촉진 등에 관한 특례법 제23조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|18|">소송촉진 등에 관한 특례규칙 제18조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">제19조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|63|">형사소송법 제63조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|">소송촉진 등에 관한 특례법 제23조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|18|">소송촉진 등에 관한 특례규칙 제18조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">제19조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">소송촉진 등에 관한 특례규칙 제19조 제2항</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|364|">형사소송법 제364조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">소송촉진 등에 관한 특례규칙 제19조 제2항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도3892|판결" href="#//">대법원 2007. 7. 12. 선고 2006도3892 판결</a></span>(공2007하, 1315)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009도12430|판결" href="#//">대법원 2010. 1. 28. 선고 2009도12430 판결</a></span>(공2010상, 484)<br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91모23|결정" href="#//">대법원 1991. 12. 17.자 91모23 결정</a></span>(공1992, 564)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+        피고인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【변 호 인】
+      
+        변호사 신태시
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2010노2491|판결" href="#//">대구지법 2011. 1. 11. 선고 2010노2491 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 대구지방법원 본원 합의부에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 본다.</p><p>  1. 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|63|" style="text-decoration:underline">형사소송법 제63조 제1항</a></span>에 의하면, 피고인의 주거, 사무소, 현재지를 알 수 없는 때에는 공시송달을 할 수 있고, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|" style="text-decoration:underline">소송촉진 등에 관한 특례법 제23조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|18|" style="text-decoration:underline">소송촉진 등에 관한 특례규칙 제18조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|" style="text-decoration:underline">제19조</a></span>는 제1심 공판절차에서 사형·무기 또는 장기 10년이 넘는 징역이나 금고에 해당하는 사건이 아니라면 피고인의 소재를 확인하기 위하여 소재조사촉탁, 구인장의 발부, 기타 필요한 조치를 취하였음에도 불구하고 피고인에 대한 송달불능보고서가 접수된 때부터 6월이 경과하도록 피고인의 소재가 확인되지 아니한 때에는 그 후 피고인에 대한 송달은 공시송달의 방법에 의하도록 규정하고 있다. 그러므로 기록상 피고인의 집 전화번호 또는 휴대전화번호 등이 나타나 있는 경우에는 위 전화번호로 연락하여 송달받을 장소를 확인하여 보는 등의 시도를 해보아야 하고, 그러한 조치를 취하지 아니한 채 곧바로 공시송달의 방법에 의한 송달을 하는 것은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|63|" style="text-decoration:underline">형사소송법 제63조 제1항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|" style="text-decoration:underline">소송촉진 등에 관한 특례법 제23조</a></span>에 위배되어 허용되지 아니한다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도3892|판결" href="#//">대법원 2007. 7. 12. 선고 2006도3892 판결</a></span> 등 참조). 
+      </p><p>  또한 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|" style="text-decoration:underline">소송촉진 등에 관한 특례규칙 제19조 제2항</a></span>의 규정에 의하면, 제1심 공판절차에서 피고인에 대한 소환이 공시송달로 행하여지는 경우에도 법원이 피고인의 진술 없이 재판을 하기 위하여는 공시송달의 방법으로 소환받은 피고인이 2회 이상 불출석할 것이 요구된다. 그러므로 공시송달의 방법으로 소환한 피고인이 불출석하는 경우 다시 공판기일을 지정하고 공시송달의 방법으로 피고인을 재소환한 후 그 기일에도 피고인이 불출석하여야 비로소 피고인의 불출석 상태에서 재판절차를 진행할 수 있는 것이다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91모23|결정" href="#//">대법원 1991. 12. 17.자 91모23 결정</a></span> 참조). 
+      </p><p>  2. 기록에 의하면, 제1심은 공소장에 피고인의 주거로 기재된 ‘경북 영천시 
+        (이하 생략)’로 공소장 부본을 송달하였으나 2회에 걸쳐 이사불명으로 송달불능된 사실, 제1심은 2009. 10. 26. 피고인의 휴대전화(
+        휴대전화번호 생략)로 전화를 걸어 피고인과 통화하게 되었으나, 피고인이 서류를 송달받을 수 있는 장소를 확인하지 아니한 채 제1회 공판기일에 출석할 것을 통지하는 데 그친 사실, 그런데 피고인이 제1회 공판기일에 출석하지 아니하자 제1심은 2009. 10. 29. 위 주거를 관할하는 영천경찰서장에게 피고인에 대한 소재탐지를 촉탁하였고, 영천경찰서장은 2009. 11. 23. “위 주거지에 임하여 초인종을 수회 눌러도 대답이 없어 피고인의 소재를 파악하지 못하였다.”는 취지의 소재탐지촉탁 회신을 제1심에 제출한 사실, 이에 제1심은 2009. 11. 25. 피고인에 대한 구속영장을 발부함과 아울러 지명수배를 의뢰하였으나 피고인의 소재가 발견되지 아니하자 2010. 5. 28. 피고인에 대한 공소장 부본, 공판기일 소환장 기타 서류에 대한 송달을 공시송달로 할 것을 명하고 피고인을 소환한 최초의 공판기일인 2010. 6. 17. 10:00에 피고인이 불출석하자 그 공판기일에서 피고인의 출석 없이 개정하여 증거조사를 마치고 변론을 종결하여 선고기일을 지정한 다음 2010. 6. 24. 피고인에 대하여 벌금 300만 원을 선고한 사실을 알 수 있다. 
+      </p><p>  위 인정 사실에 비추어 보면, 공소장에 피고인의 주거로 기재된 장소로의 송달은 이미 2회에 걸쳐 이사불명으로 송달불능된 바 있었으므로, 피고인의 휴대전화로 전화를 하게 된 제1심의 법원사무관 등으로서는 피고인이 서류를 송달받을 수 있는 장소를 확인하는 등의 시도를 해보았어야 할 것이다. 그럼에도 제1심은 그러한 조치를 취하지 아니한 채 피고인의 주거, 사무소, 현재지를 알 수 없다고 단정하고 공시송달의 방법으로 공소장 부본 등을 송달하였으니, 이러한 제1심의 조치는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|23|">소송촉진 등에 관한 특례법 제23조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|18|">소송촉진 등에 관한 특례규칙 제18조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례규칙|19|">제19조</a></span>를 위반한 것이고, 또한 공시송달로 피고인을 소환한 최초의 공판기일에 피고인의 불출석 상태에서 재판절차를 진행한 것 역시 위법하므로, 결국 제1심의 소송절차는 어느 모로 보나 법령에 위배되어 판결에 영향을 미친 경우에 해당한다.
+      </p><p>  위와 같이 제1심이 위법한 공시송달 결정에 터잡아 공소장 부본과 공판기일 소환장을 송달하고 피고인의 출석 없이 심리·판단한 이상, 이는 피고인에게 출석의 기회를 주지 아니한 것이 되어 그 소송절차는 위법한 것이다. 한편 항소법원은 판결에 영향을 미친 사유에 관하여는 항소이유서에 포함되지 아니한 경우에도 직권으로 심판할 수 있으므로, 원심으로서는 검사만이 양형부당으로 항소하였더라도 마땅히 직권으로 제1심의 위법을 시정하는 조치를 취했어야 할 것이다. 즉 원심으로서는 다시 적법한 절차에 의하여 소송행위를 새로이 한 후 위법한 제1심판결을 파기하고, 원심에서의 진술 및 증거조사 등 심리결과에 기하여 다시 판결하여야 할 것이다.</p><p>  그럼에도 불구하고, 원심은 제1심의 위와 같은 위법을 간과한 채 제1심이 조사·채택한 증거들에 기하여 검사의 항소이유를 판단하였으니, 결국 원심판결에는 위법한 공시송달에 의하여 피고인의 진술 없이 이루어진 소송행위의 효력에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다. </p><p>  이 점을 지적하는 상고이유의 주장은 이유 있다. </p><p>  3. 그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   양창수(재판장) 김지형(주심) 전수안 이상훈 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

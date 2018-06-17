@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2007도828 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2066707';
+var contIdEtc = '';
+var saNo = '2007도828';
+var sngoNm = '선고';
+var saNm = '특정범죄가중처벌등에관한법률위반(도주차량)(인정된죄명:교통사고처리특례법위반)';
+try {
+	var sngoDay=('20070412' ? 
+			'20070412'.length==4 ? Date.parseExact('20070412','yyyy').toString('yyyy. M. d.') : 
+				'20070412'.length==6 ? Date.parseExact('20070412','yyyyMM').toString('yyyy. M. d.') : 
+					'20070412'.length==8 ? Date.parseExact('20070412','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007도828 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007도828';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2007도828</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(7)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|658419">하태훈 대법원 형사판결의 흐름과 변화 분석 정의로운 사법 : 이용훈대법원장재임기념   / 사법발전재단  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|620488">양경승 특가법상 도주차량운전죄에 있어 운전자의 구호조치의무의 내용과 도주의 의미 청연논총 (제7집)박국수  사법연수원장 퇴임기념 / 사법연수원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|562640">사법연수원 검찰실무:. 2016. Ⅱ 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|737627">이존걸 공소장변경의 필요성판단에 관한 기준 법학연구 제54집 / 한국법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|562651">사법연수원 형사소송절차실무:. 2016 사법연수원  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2002도2001">대법원 2002. 6. 28. 선고 2002도2001 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|93도656">대법원 1993. 5. 11. 선고 93도656 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도790">대법원 2005. 4. 14. 선고 2005도790 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="특정범죄가중처벌등에관한법률|5|3|null">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="도로교통법|50|0|null">도로교통법 제50조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형사소송법|254|0|null">형사소송법 제254조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="형사소송법|298|0|null">형사소송법 제298조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="특정범죄가중처벌등에관한법률|5|3|null">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="교통사고처리특례법|3|0|null">교통사고처리특례법 제3조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="교통사고처리특례법|3|0|null">교통사고처리특례법 제3조 제2항 제10호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002도2001">대법원 2002. 6. 28. 선고 2002도2001 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99도2530">대법원 1999. 11. 9. 선고 99도2530 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특정범죄가중처벌등에관한법률|5|3|null">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|50|0|null">도로교통법 제50조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특정범죄가중처벌등에관한법률|5|3|null">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2006노757">대구지법 2007. 1. 10. 선고 2006노757 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2007. 4. 12. 선고 2007도828 판결</h2><p class="sub_title">[특정범죄가중처벌등에관한법률위반(도주차량)(인정된죄명:교통사고처리특례법위반)][공2007.5.15.(274),743]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 사고 운전자가 피해자를 구호하는 등 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|">도로교통법 제50조 제1항</a></span>에 의한 조치를 취할 필요가 있었다고 인정되지 아니하는 경우, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|3">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항</a></span> 위반죄로 처벌할 수 있는지 여부(소극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 유죄로 인정한 교통사고처리특례법 위반죄의 범죄사실이, 기소된 특정범죄가중처벌 등에 관한 법률 위반(도주차량)의 공소사실에 포함되어 있으며, 교통사고처리특례법 위반의 점에 관하여 충분한 심리가 이루어졌다고 보아, 공소장변경 없이 피고인을 교통사고처리특례법 위반죄로 처벌하더라도 피고인의 방어권의 행사에 실질적 불이익을 초래할 염려가 없다고 본 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|3">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항</a></span>의 도주차량 운전자의 가중처벌에 관한 규정은 교통의 안전이라는 공공의 이익을 보호함과 아울러 교통사고로 사상을 당한 피해자의 생명·신체의 안전이라는 개인적 법익을 보호하기 위하여 제정된 것이므로, 그 입법 취지와 보호법익에 비추어 볼 때, 사고의 경위와 내용, 피해자의 상해의 부위와 정도, 사고 운전자의 과실 정도, 사고 운전자와 피해자의 나이와 성별, 사고 후의 정황 등을 종합적으로 고려하여 사고 운전자가 실제로 피해자를 구호하는 등 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|">도로교통법 제50조 제1항</a></span>에 의한 조치를 취할 필요가 있었다고 인정되지 아니하는 경우에는 사고 운전자가 피해자를 구호하는 등 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|">도로교통법 제50조 제1항</a></span>에 규정된 의무를 이행하기 이전에 사고현장을 이탈하였더라도 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|3">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항</a></span> 위반죄로는 처벌할 수 없다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 유죄로 인정한 교통사고처리특례법 위반죄의 범죄사실이, 기소된 특정범죄 가중처벌 등에 관한 법률 위반(도주차량)의 공소사실에 포함되어 있으며, 교통사고처리특례법 위반의 점에 관하여 충분한 심리가 이루어졌다고 보아, 공소장변경 없이 피고인을 교통사고처리특례법 위반죄로 처벌하더라도 피고인의 방어권의 행사에 실질적 불이익을 초래할 염려가 없다고 본 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|3">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|">도로교통법 제50조 제1항</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|254|">형사소송법 제254조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|298|">제298조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|3">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리특례법|3|">교통사고처리특례법 제3조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리특례법|3|">제2항 제10호</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002도2001|판결" href="#//">대법원 2002. 6. 28. 선고 2002도2001 판결</a></span>(공2002하, 1893)<br />[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|93도656|판결" href="#//">대법원 1993. 5. 11. 선고 93도656 판결</a></span>(공1993하, 1754)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도790|판결" href="#//">대법원 2005. 4. 14. 선고 2005도790 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+        피고인 및 검사
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2006노757|판결" href="#//">대구지법 2007. 1. 10. 선고 2006노757 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>상고를 모두 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>상고이유를 판단한다.</p><p>  1. 검사의 상고이유에 대하여</p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|3" style="text-decoration:underline">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항</a></span>의 도주차량 운전자의 가중처벌에 관한 규정은 교통의 안전이라는 공공의 이익을 보호함과 아울러 교통사고로 사상을 당한 피해자의 생명·신체의 안전이라는 개인적 법익을 보호하기 위하여 제정된 것이므로, 그 입법 취지와 보호법익에 비추어 볼 때, 사고의 경위와 내용, 피해자의 상해의 부위와 정도, 사고 운전자의 과실 정도, 사고 운전자와 피해자의 나이와 성별, 사고 후의 정황 등을 종합적으로 고려하여 사고 운전자가 실제로 피해자를 구호하는 등 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|" style="text-decoration:underline">도로교통법 제50조 제1항</a></span>에 의한 조치를 취할 필요가 있었다고 인정되지 아니하는 경우에는 사고 운전자가 피해자를 구호하는 등 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|50|" style="text-decoration:underline">도로교통법 제50조 제1항</a></span>에 규정된 의무를 이행하기 이전에 사고현장을 이탈하였더라도 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|3" style="text-decoration:underline">특정범죄 가중처벌 등에 관한 법률 제5조의3 제1항</a></span> 위반죄로는 처벌할 수 없다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002도2001|판결" href="#//">대법원 2002. 6. 28. 선고 2002도2001 판결</a></span> 참조).
+      </p><p>  원심은, 그 채용증거를 종합하여 그 판시 사실을 인정한 다음, 이 사건 사고로 인한 피해자의 상해 부위와 정도, 특히 이 사건 사고 당시 피해자에게는 외관상 확인할 수 있는 출혈, 멍, 부종 등의 외상이 없었고 이 사건 사고로 인한 피해자의 상해는 특별한 치료를 받지 않았음에도 불구하고, 별다른 후유증 없이 완쾌된 점과 이 사건 사고 후 피해자의 태도 등에 비추어 보면, 피해자가 이 사건 사고로 인하여 피고인 등으로부터 구호를 받아야 할 필요성이 있었다고 보기 어렵고, 그 밖에 달리 이를 인정할 만한 아무런 증거가 없다는 이유로, 피고인을 특정범죄 가중처벌 등에 관한 법률 위반(도주차량)죄로 처벌할 수 없다고 판단하였다. </p><p>  앞서 본 법리와 기록에 비추어 살펴보면, 원심의 위와 같은 인정 및 판단은 정당하고, 거기에 상고이유로 주장하는 바와 같은 사실오인 또는 도주차량에 관한 법리오해의 위법이 없다.</p><p>  2. 피고인의 상고이유에 대하여</p><p>  가. 법원은 공소사실의 동일성이 인정되는 범위 내에서 공소가 제기된 범죄사실에 포함된 보다 가벼운 범죄사실이 인정되는 경우에 심리의 경과에 비추어 피고인의 방어권 행사에 실질적 불이익을 초래할 염려가 없다고 인정되는 때에는 공소장이 변경되지 않았더라도 직권으로 공소장에 기재된 공소사실과 다른 공소사실을 인정할 수 있는 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99도2530|판결" href="#//">대법원 1999. 11. 9. 선고 99도2530 판결</a></span> 참조).
+      </p><p>  원심이 피고인을 유죄라고 인정한 교통사고처리특례법 위반죄는 이 사건 공소사실과 동일성이 인정되고 공소제기된 범죄사실에 포함되어 있으며, 기록에 의하면, 제1심에서 원심에 이르기까지 심리과정에서 피고인의 교통사고처리특례법 위반의 점에 관하여 충분한 심리가 이루어졌음을 알 수 있으므로, 피고인을 그 죄로 처벌하더라도 피고인에게 방어권의 행사에 실질적 불이익을 초래할 염려가 있다고 볼 수는 없다. 따라서 원심판결에 피고인의 방어권을 현저히 침해한 위법 등이 있다는 상고이유의 주장은 받아들일 수 없다.</p><p>  나. 원심이 적법하게 채택한 증거들을 기록에 비추어 살펴보면, 원심이, 피고인이 승객추락 등으로 인한 사고발생 방지의무를 위반하여 뒷문이 열린 상태에서 시내버스를 출발시킨 업무상 과실로 시내버스에서 내리던 피해자로 하여금 몸의 균형을 잃고 땅바닥에 넘어지게 하여 상해를 입게 하였다는 사실을 인정하여 이 사건 공소사실 중 교통사고처리특례법 위반의 점을 유죄로 판단한 것은 정당하고, 거기에 상고이유로 주장하는 바와 같은 채증법칙 위반으로 인한 사실오인 등의 위법이 없다.</p><p>  3. 결 론</p><p>  그러므로 검사 및 피고인의 상고를 모두 기각하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김영란(재판장) 김황식 이홍훈(주심) 안대희 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

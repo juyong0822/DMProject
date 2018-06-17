@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>광주지방법원 2008노2702 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2030563';
+var contIdEtc = '';
+var saNo = '2008노2702';
+var sngoNm = '선고';
+var saNm = '도로교통법위반(음주운전)·도로교통법위반(무면허운전)';
+try {
+	var sngoDay=('20090218' ? 
+			'20090218'.length==4 ? Date.parseExact('20090218','yyyy').toString('yyyy. M. d.') : 
+				'20090218'.length==6 ? Date.parseExact('20090218','yyyyMM').toString('yyyy. M. d.') : 
+					'20090218'.length==8 ? Date.parseExact('20090218','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '광주지방법원';
+var bubCd = '000510';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008노2702 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008노2702';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">광주지방법원<br />2008노2702</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(13)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|664642">김성환 강제채혈의 사전·사후 영장심사 및 위법수집증거 배제법칙 관련 문제점들에 대한 연구 사법 20호 / 사법발전재단  2012 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|215|0|null">형사소송법 제215조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|216|0|null">형사소송법 제216조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|216|0|null">형사소송법 제216조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|217|0|null">형사소송법 제217조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|216|0|null">형사소송법 제216조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|364|0|null">형사소송법 제364조 제6항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|152|0|null">도로교통법 제152조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|43|0|null">도로교통법 제43조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|70|0|null">형법 제70조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|69|0|null">형법 제69조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|57|0|null">형법 제57조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|334|0|null">형사소송법 제334조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|325|0|null">형사소송법 제325조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="광주지방법원|2008고단2607">광주지방법원 2008. 11. 12. 선고 2008고단2607 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>광주지방법원 2009. 2. 18. 선고 2008노2702 판결</h2><p class="sub_title">[도로교통법위반(음주운전)·도로교통법위반(무면허운전)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【항 소 인】
+      
+        피고인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【검    사】
+      
+        박성훈
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【변 호 인】
+      
+        변호사 강행옥
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="광주지방법원|2008고단2607|판결" href="#//">광주지방법원 2008. 11. 12. 선고 2008고단2607 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원심판결을 파기한다.</p><p>피고인을 벌금 3,000,000원에 처한다.</p><p>피고인이 위 벌금을 납입하지 아니하는 경우 50,000원을 1일로 환산한 기간 피고인을 노역장에 유치한다.</p><p>원심 판결 선고 전의 구금일수 1일을 위 벌금에 관한 노역장 유치기간에 산입한다.</p><p>피고인에게 위 벌금에 상당한 금액의 가납을 명한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 항소이유의 요지</p><p>  가. 사실오인 및 법리오해</p><p>   음주운전 부분에 대하여, 피고인에 대한 채혈이 적법한 절차에 의해 이루어지지 아니하였으므로, 혈중알콜농도 수치에 관한 국립과학수사연구소 감정서 및 이에 기초한 주취운전자적발보고서는 위법수집증거로 증거증력이 없고, 달리 이 부분 공소사실을 인정할 증거가 없음에도 불구하고, 원심은 사실을 오인함으로써 판결에 영향을 미친 위법을 범하였다.</p><p>  나. 양형부당  </p><p>   원심이 피고인에 대하여 선고한 형(징역 4월)이 너무 무거워서 부당하다.</p><p>2. 판단 </p><p> 가. 음주운전 부분에 대한 공소사실의 요지는, 피고인은 2007. 12. 28. 광주지방법원 목포지원에서 도로교통법위반(무면허운전) 등으로 징역 7월에 집행유예 2년을 선고받아 위 형이 2008. 1. 5. 확정되어 현재 그 유예기간 중에 있는 외에 같은 종류의 범죄전력이 2회 더 있는 자인바, 2008. 6. 25. 21:00경 나주시 세지면 월대1리에 있는 과수원 앞길부터 나주시 용산동에 있는 주공아파트를 경유하여 나주시 세지면 동곡리에 있는 송정마을 입구에 이르기까지 약 10㎞의 구간에서 혈중알콜농도 0.255%의 술에 취한 상태로 
+        (차량등록번호 생략) 봉고프런티어 화물차를 운전하였다는 것이다. 
+      </p><p> 나. 살피건대, 원심 및 당심이 적법하게 조사하여 채택한 증거들을 종합하면 다음과 같은 사실이 인정된다. </p><p>   (1) 피고인은 2008. 6. 25. 21:00경 
+        (차량등록번호 생략) 화물차량을 운전하여 나주시 영산포 방면에서 세지면 방면으로 편도 1차로를 따라 진행 중, 나주시 세지면 동고리 송곡마을 앞에 이르러 도로 우측 가드레일을 들이받은 후 차량이 논으로 빠지는 사고가 발생하였고, 피고인은 위 사고로 좌측 족부 제5중족골 분쇄 골절, 좌측 족관절 외과 골절 등 약 7주간의 치료를 요하는 상해를 입어 영산포 
+        ○○병원 응급실로 후송되었다.
+      </p><p>   (2) 같은 날 21:14경 위 사고 신고를 받고 응급실로 출동한 경찰관 
+        공소외 1은, 응급실에 있는 피고인이 술을 먹은 것 같아 보이고, 피고인을 후송해온 사람들도 피고인이 술을 마신 것 같다는 얘기를 하자, 피고인에 대해 음주측정을 하기로 하였다.
+      </p><p>   (3) 그러나, 피고인은 당시 의식을 잃고 있어, 음주측정기를 사용할 수 없었고, 채혈에 대해 피고인의 동의를 받을 수도 없었으므로, 
+        공소외 1은 피고인의 동서인 
+        공소외 2로부터 채혈동의를 얻은 후, 의사로 하여금 무알콜솜을 사용하여 피고인의 채혈을 하도록 하였으나, 채혈 전후에 법원으로부터 압수·수색 또는 검증 영장을 발부받지는 않았다.
+      </p><p>   (4) 위 피고인의 혈액은 국립과학수사연구소에 감정의뢰되었고, 혈중알콜농도 0.255%라는 감정결과가 나옴에 따라, 이를 기초로 하여 경찰관 
+        공소외 3 명의의 주취운전자 적발보고서가 작성되었다.  
+      </p><p> 다. 판단</p><p>  (1) 수사기관이 운전자의 의사에 반하여 혈액을 채취하는 것은 사람의 신체에 대한 직접적인 작용이 수반될 뿐 아니라, 대상자의 신체안전이나 인간존엄이라는 기본권에 대한 침해를 가져올 위험의 여지가 있다는 점에서 강제처분이라고 할 것이다.</p><p>  (2) 살피건대, 운전자의 의사에 반하여 채혈을 함에 있어서는 ① 원칙적으로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|215|">형사소송법 제215조</a></span>에 의한 사전 압수·수색·검증 영장을 필요로 하고, ② 영장에 의한 체포·구속이 이루어지는 경우 및 긴급체포, 현행범 체포의 경우 영장없이 이에 수반하는 압수·수색·검증(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|216|">형사소송법 제216조 제1</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|216|">2항</a></span>)이 허용되며, ③ 긴급체포된 자가 소유, 소지, 또는 보관하는 물건에 대하여는 체포한 때부터 24시간 이내에 영장없이 압수·수색·검증(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|217|">형사소송법 제217조</a></span>)하거나 범행중 또는 범행직후의 범죄장소에서 긴급을 요하여 영장을 받을 수 없는 경우 영장없이 압수·수색·검증(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|216|">형사소송법 제216조 제3항</a></span>)을 할 수 있으나 이 경우에는 반드시 사후에 영장을 발부받아야 한다. 
+      </p><p>  위 인정사실에 의하면, 이 사건 채혈은 법관으로부터 영장을 발부받지 않은 상태에서 이루어졌고, 위 제③항의 요건에 따라 사후에도 영장을 받은 바도 없을 뿐만 아니라, 위 제②항의 경우에도 해당되지 않으므로, 피고인의 혈중알콜농도에 대한 국립과학수사연구소 감정서 및 이에 기초한 주취운전자적발보고서는 위법수집증거로서 증거증력이 없고, 달리 이 부분 공소사실을 인정할 만한 증거가 없으며, 채혈이 피고인의 가족의 동의를 얻어서 이루어졌다는 사정만으로는 이를 달리 볼 수 없으므로, 피고인의 이 부분 주장은 이유 있다.</p><p>3. 결론    따라서, 피고인의 도로교통법위반(음주운전)죄에 대한 항소는 이유 있고, 이 부분 공소사실은 나머지 공소사실과 상상적 경합범 관계에 있어 원심판결은 전부가 그대로 유지할 수 없게 되었는바, 피고인의 양형부당 주장에 관한 판단을 생략한 채 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|364|">형사소송법 제364조 제6항</a></span>에 의하여 원심판결을 파기하고, 변론을 거쳐 다시 다음과 같이 판결한다.
+      </p><span class="space"></span><p><strong id="ReasonSection">【범죄사실】</strong></p><p>   피고인은 2007. 12. 28. 광주지방법원 목포지원에서 도로교통법위반(무면허운전) 등으로 징역 7월에 집행유예 2년을 선고받아 위 형이 2008. 1. 5. 확정되어 현재 그 유예기간 중에 있는 외에 같은 종류의 범죄전력이 2회 더 있는 자인바, 2008. 6. 25. 21:00경 나주시 세지면 월대1리에 있는 과수원 앞길부터 나주시 용산동에 있는 주공아파트를 경유하여 나주시 세지면 동곡리에 있는 송정마을 입구에 이르기까지 약 10㎞의 구간에서 자동차운전면허를 받지 아니하고 
+          (차량등록번호 생략) 봉고프런티어 화물차를 운전하였다. 
+        </p><span class="space"></span><p><strong id="ReasonSection">【증거의 요지】</strong></p><p>1. 피고인의 법정진술</p><p>1. 실황조사서</p><p>1. 자동차운전면허대장 </p><span class="space"></span><p><strong id="ReasonSection">【법령의 적용】</strong></p><p>1. 범죄사실에 대한 해당법조 및 형의 선택</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|152|">도로교통법 제152조 제1호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|43|">제43조</a></span> (벌금형 선택)
+        </p><p>1. 노역장유치</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|70|">형법 제70조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|69|">제69조 제2항</a></span>
+        </p><p>1. 미결구금일수 산입</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|57|">형법 제57조</a></span>
+        </p><p>1. 가납명령</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|334|">형사소송법 제334조 제1항</a></span>
+        </p><span class="space"></span><p><strong id="ReasonSection">【무죄부분】</strong></p><p>   이 사건 공소사실 중 도로교통법위반(음주운전)의 점의 요지는 제2항의 가.와 같은바, 위 제2항 나. 다.에서 살펴본 바와 같이 위 공소사실은 범죄의 증명이 없는 때에 해당하여, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|325|">형사소송법 제325조</a></span> 후단에 의하여 무죄를 선고하여야 할 것이나, 이 부분 공소사실과 상상적 경합관계에 있는 도로교통법위반(무면허운전)죄를 유죄로 인정한 이상 이 부분에 관하여 따로 주문에서 무죄를 선고하지는 아니한다. 
+        </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   배형원(재판장) 김현정 송명주 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

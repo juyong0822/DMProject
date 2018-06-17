@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>수원지방법원 2012노2375 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2038134';
+var contIdEtc = '';
+var saNo = '2012노2375';
+var sngoNm = '선고';
+var saNm = '공용물건손상·도로교통법위반(무면허운전)·공무집행방해·상해·도로교통법위반(음주측정거부)';
+try {
+	var sngoDay=('20120829' ? 
+			'20120829'.length==4 ? Date.parseExact('20120829','yyyy').toString('yyyy. M. d.') : 
+				'20120829'.length==6 ? Date.parseExact('20120829','yyyyMM').toString('yyyy. M. d.') : 
+					'20120829'.length==8 ? Date.parseExact('20120829','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '수원지방법원';
+var bubCd = '000250';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012노2375 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2012노2375';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">수원지방법원<br />2012노2375</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(21)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|749548">김택수 음주운전자에 대한 보호조치와 음주특정불응죄의 성립관계 형사판례연구 22호  / 박영사  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96도3069">대법원 1997. 6. 13. 선고 96도3069 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007도5928">대법원 2007. 9. 7. 선고 2007도5928 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2011도4328">대법원 2012. 2. 9. 선고 2011도4328 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="경찰관직무집행법|4|0|null">경찰관직무집행법 제4조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|325|0|null">형사소송법 제325조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|44|0|null">도로교통법 제44조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|148|2|null">도로교통법 제148조의2 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="경찰관직무집행법|4|0|null">경찰관직무집행법 제4조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|364|0|null">형사소송법 제364조 제6항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|37|0|null">형법 제37조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|141|0|null">형법 제141조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|152|0|20110608">도로교통법(구) 제152조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|43|0|null">도로교통법(구) 제43조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|136|0|null">형법 제136조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|257|0|null">형법 제257조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|148|2|20100723">도로교통법(구) 제148조의2 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|44|0|null">도로교통법(구) 제44조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|40|0|null">형법 제40조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|50|0|null">형법 제50조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|38|0|null">형법 제38조 제1항 제2호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="수원지방법원|2011고단5806">수원지방법원 2012. 5. 17. 선고 2011고단5806 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>수원지방법원 2012. 8. 29. 선고 2012노2375 판결</h2><p class="sub_title">[공용물건손상·도로교통법위반(무면허운전)·공무집행방해·상해·도로교통법위반(음주측정거부)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【항 소 인】
+      
+        검사
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【검    사】
+      
+        손지혜(기소), 이치현(공판)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【변 호 인】
+      
+        변호사 이경철(국선)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="수원지방법원|2011고단5806|판결" href="#//">수원지방법원 2012. 5. 17. 선고 2011고단5806 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>   원심판결을 파기한다.</p><p>   피고인을 징역 6월에 처한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 항소이유의 요지</b>
+      </p><p>  가. 사실오인 및 법리오해</p><p>     피고인은 당시 술에 취한 채 자해를 하고 차도로 뛰어들려고 하는 등 술에 취해 자기의 신체에 위해를 미칠 우려가 있는 사람이었으므로, 경찰관들이 피고인을 지구대로 데려간 행위는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="경찰관직무집행법|4|">경찰관직무집행법 제4조</a></span>에 의한 보호조치에 해당하여 위법한 체포라고 볼 수 없고, 그 후 이루어진 음주측정요구 또한 적법하다고 할 것이다. 그럼에도 불구하고 경찰관들이 피고인을 지구대로 데려간 행위가 위법한 체포에 해당한다는 전제하에 이 사건 공소사실 중 상해의 점, 공무집행방해의 점 및 도로교통법위반(음주측정거부)의 점을 각 무죄로 판단한 원심판결에는 사실오인 및 법리오해의 위법이 있다.   
+      </p><p>  나. 양형부당</p><p>     원심의 형(벌금 5,000,000원)은 너무 가벼워서 부당하다.</p><p>
+        <b>2. 사실오인 및 법리오해 주장에 관한 판단</b>
+      </p><p>  가. 이 부분 공소사실의 요지</p><p>     피고인은 2010. 4. 13. 23:10경 화성시 봉담읍 수영리에 있는 수영프라자 앞길에서 원심 판시 범죄사실 기재와 같이 음주측정을 하지 아니하고 약 3㎞ 정도를 도주하다가 순찰차에 막혀 더 이상 도주하지 못하자 운전석에서 뛰어내려 도주하려던 중 화성서부경찰서 교통관리계 소속 경장 
+        공소외 1에게 검거된 후, 같은 날 23:38경 화성시 봉담읍 상리에 있는 봉담지구대에서 화성서부경찰서 교통관리계 소속 경사 
+        공소외 2로부터 피고인이 운전석에서 하차하였으므로 운전자가 틀림없는데다가 피고인의 얼굴이 붉고 입에서 술냄새가 나는 등 술에 취한 상태에서 운전하였다고 인정할 만한 상당한 이유가 있어 음주측정기에 입김을 불어넣는 방법으로 음주측정에 응할 것을 요구받았으나 정당한 사유 없이 1차 측정을 거부하고, 같은 날 23:49경 위 장소에서 다시 
+        공소외 2로부터 “선생님, 음주측정을 거부하면 불이익이 있습니다”라는 말과 함께 2차 측정을 요구받자 이를 거부하면서 갑자기 격분하여 
+        공소외 2의 배를 주먹으로 1회 가격하고 
+        공소외 2의 멱살을 손으로 잡아 흔들어 음주측정을 요구하는 경찰관의 정당한 직무집행을 방해함과 동시에 
+        공소외 2에게 약 14일간의 치료를 요하는 복부좌상 등을 가하고, 계속되는 음주측정요구에 정당한 사유 없이 불응하였다.
+      </p><p>  나. 원심의 판단</p><p>     원심은, 증인 
+        공소외 1, 
+        2, 
+        3, 
+        4의 각 원심 법정진술에 의하여 인정되는 다음과 같은 사정들 즉, 피고인이 이 사건 화물차를 운전하여 도주하다가 검거된 후 
+        공소외 1 등으로부터 주취운전에 관한 증거수집을 위한 음주측정을 위하여 인근 파출소까지 동행하여 줄 것을 요구받고 이를 명백하게 거절하였음에도 단속경찰관들에 의해 적법한 체포절차나 임의동행절차에 의하지 않고 위법하게 체포된 상태에서 이 사건 음주측정요구를 받게 되었고, 그와 같은 위법한 체포상태를 면하려고 반항하는 과정에서 
+        공소외 2에게 이 사건 상해를 가하게 된 점에 비추어 보면, 단속경찰관들이 이 사건 당시 피고인을 인근 파출소로 강제연행한 행위는 현행범인 체포나 임의동행의 각 적법요건을 모두 갖추지 못하여 적법한 공무집행이라고 볼 수 없어 결국 위법한 체포에 해당하므로, 피고인이 위와 같은 위법한 체포상태에서 이루어진 음주측정요구에 응하지 않았다고 하여 피고인을 음주측정거부에 관한 도로교통법 위반죄로 처벌할 수 없고, 그와 같은 위법한 체포상태를 면하려고 반항하는 과정에서 
+        공소외 2에게 상해를 가한 것은 불법체포로 인한 신체에 대한 현재의 부당한 침해에서 벗어나기 위한 행위로서 정당방위에 해당하여 위법성이 조각되므로, 이 부분 공소사실은 모두 범죄로 되지 아니하는 경우에 해당한다는 이유로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|325|">형사소송법 제325조</a></span> 전단에 의하여 각 무죄를 선고하였다.
+      </p><p>  다. 당심의 판단</p><p>    1) 인정사실</p><p>       원심 및 당심이 적법하게 채택하여 조사한 증거들에 의하면 다음과 같은 사실들이 인정된다.</p><p>      가) 피고인은 2010. 4. 13. 23:10경 자기 소유의 
+        (차량번호 생략) 봉고프런티어 화물차를 운전하여 화성시 봉담읍 수영리에 있는 수영가구단지 앞길을 진행하던 중, 음주단속 중이던 화성서부경찰서 교통관리계 소속 의경 
+        공소외 3이 경찰용 불봉을 흔들며 차량 정지를 유도하였으나, 위 화물차를 정지하지 아니하고 위 화물차로 
+        공소외 3이 손에 잡고 흔들던 불봉을 들이받아 부수고는 약 3㎞를 도주하다가 같은 리에 있는 수영프라자 앞길에서 순찰차에 막혀 더 이상 도주하지 못하게 되자 운전석에서 내렸다{피고인은 수사기관에서부터 원심 법정에 이르기까지 자신은 차량을 운전하지 않았다고 주장하고 있으나, ① 
+        공소외 3은 원심 법정에서 피고인 차량의 운전석에 탑승한 사람은 남자였다고 진술한 사실(공판기록 79면), ② 차량의 운전석에서 내린 사람도 피고인이었던 사실, ③ 차량의 소유자 역시 피고인인 사실(증거기록 72면) 등에 비추어 보면, 피고인이 자신의 차량을 운전한 사실은 명백하다}. 
+      </p><p>      나) 경찰관 
+        공소외 1은 피고인의 입에서 술냄새가 많이 나는 등 피고인이 술에 취한 상태에서 운전을 하였다고 판단되어 피고인에게 음주측정을 요구하였으나 피고인은 계속 도망가려고 하였고, 이에 경찰관 
+        공소외 1이 피고인의 옷을 잡아 도망가지 못하게 하자 피고인은 근처에 있던 컴퓨터 가게의 간판에 머리를 부딪치며 자해를 하였다(공판기록 33, 44면).
+      </p><p>      다) 경찰관 
+        공소외 1이 피고인의 위와 같은 자해를 말리는 와중에 피고인의 차량에 동승하였던 피고인의 처가 경찰관 
+        공소외 1의 멱살을 잡아 피고인의 도주를 도와주었고 이에 피고인은 반대편 도로를 향해 달려갔다.  
+      </p><p>      라) 피고인이 도로를 향해 달려가다가 다리가 꼬여 넘어지자 경찰관 
+        공소외 1은 피고인을 그대로 두면 다시 차가 다니는 도로로 뛰어들어 사고가 발생할 우려가 있어 넘어져 있던 피고인을 위에서 누르고 더 이상 도망가지 못하게 제압하였다.
+      </p><p>      마) 곧이어 동료 경찰관들이 현장에 도착하였고, 경찰관 
+        공소외 1은 피고인이 돌발행동으로 사고우려가 높아 현장에서는 음주측정을 하기 힘들다고 판단하여 동료 경찰관들에게 피고인을 가까운 봉담지구대로 데려가라고 말하였고, 봉담지구대로 가는 도중 피고인의 자해 위험성이 높으니 이를 주의하라고 하였다(증거기록 43면). 
+      </p><p>      바) 경찰관 
+        공소외 1은 피고인을 봉담지구대로 보낸 다음 피고인의 처에게 피고인을 봉담지구대로 데려간 사실을 알렸다(증거기록 58면). 
+      </p><p>      사) 한편, 봉담지구대로 가는 순찰차 안에서도 피고인은 자꾸 뒷좌석 문을 열고 차 밖으로 나가려고 하고 또 자해를 하려고 하여 순찰차에 동승하고 있던 의경 
+        공소외 3은 피고인이 자해를 하지 못하도록 피고인의 팔을 잡고 있었다(증거기록 43면, 공판기록 78면). 
+      </p><p>      아) 봉담지구대로 도착한 피고인은 같은 날 23:38경 경찰관 
+        공소외 2로부터 음주측정기에 입김을 불어넣는 방법으로 음주측정에 응할 것을 요구받았으나 1차 측정을 거부하였고, 같은 날 23:49경 위 장소에서 다시 
+        공소외 2로부터 “선생님, 음주측정을 거부하면 불이익이 있습니다”라는 말과 함께 2차 측정을 요구받았으나 이를 거부하면서 갑자기 
+        공소외 2의 배를 주먹으로 1회 가격하고 
+        공소외 2의 멱살을 손으로 잡아 흔들어 
+        공소외 2에게 약 14일간의 치료를 요하는 복부좌상 등을 가하였다{한편, 피고인은 경찰관들이 음주측정요구 당시 물을 주지 않았다고 주장하는바, 음주측정요구 당시 물을 주었다는 
+        공소외 4의 원심 법정진술(공판기록 83면) 및 
+        공소외 1의 당심 법정진술(당심의 
+        공소외 1에 대한 증인신문조서 7면), 현장 사진의 영상(증거기록 24면) 등에 의하면 경찰관들이 피고인에게 음주측정을 요구할 당시 물을 준 사실은 충분히 인정된다}.
+      </p><p>      자) 이에 경찰관 
+        공소외 2는 피고인에게 “선생님은 저를 때렸기 때문에 공무집행방해로 현행범으로 체포한다”고 말하고 미란다원칙을 고지한 후 다시 3차 측정을 하려고 하였으나 갑자기 피고인이 바닥에 쓰러져 소리를 질렀고, 봉담지구대에 있던 피고인의 아들이 피고인에게 지병이 있어 위험하다고 하여 119 구급차를 불러 피고인을 인근 병원으로 후송하였다(공판기록 67면). 
+      </p><p>      차) 그러나 피고인은 인근 병원에 도착하자마자 아무런 치료를 받지 않고 그대로 귀가하였다(공판기록 88면).  </p><p>    2) 판단</p><p>      가) 경찰관은 수상한 거동 기타 주위의 사정을 합리적으로 판단하여 술 취한 상태로 인하여 자기 또는 타인의 생명·신체와 재산에 위해를 미칠 우려가 있는 자 등에 해당함이 명백하며 응급의 구호를 요한다고 믿을 만한 상당한 이유가 있는 자를 발견한 때에는 보건의료기관 또는 공공구호기관에 긴급구호를 요청하거나 24시간을 초과하지 않는 범위 내에서 경찰관서에 보호하는 등 적당한 조치를 할 수 있다(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="경찰관직무집행법|4|">경찰관직무집행법 제4조</a></span>). 
+      </p><p>         한편, 경찰공무원은 교통의 안전과 위험방지를 위하여 필요하다고 인정하거나 운전자가 술에 취한 상태에서 자동차 등을 운전하였다고 인정할 만한 상당한 이유가 있고 운전자의 음주운전 여부를 확인하기 위하여 필요한 경우에는 사후의 음주측정에 의하여 음주운전 여부를 확인할 수 없음이 명백하지 않는 한 당해 운전자에 대하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">도로교통법 제44조 제2항</a></span>에 의하여 음주측정을 요구할 수 있고, 당해 운전자가 이에 불응한 경우에는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|148|2">같은 법 제148조의2 제2호</a></span> 소정의 음주측정불응죄가 성립한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96도3069|판결" href="#//">대법원 1997. 6. 13. 선고 96도3069 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007도5928|판결" href="#//">대법원 2007. 9. 7. 선고 2007도5928 판결</a></span> 등 참조). 이와 같은 법리는 당해 운전자가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="경찰관직무집행법|4|">경찰관직무집행법 제4조</a></span>에 따라 보호조치된 사람이라고 하여 달리 볼 것이 아니므로, 경찰공무원이 보호조치된 운전자에 대하여 음주측정을 요구하였다는 이유만으로 그 음주측정 요구가 당연히 위법하다거나 그 보호조치가 당연히 종료된 것으로 볼 수는 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2011도4328|판결" href="#//">대법원 2012. 2. 9. 선고 2011도4328 판결</a></span> 참조).
+      </p><p>      나) 살피건대, 위 인정사실 및 앞서 언급한 증거들로부터 추인되는 다음과 같은 사정들 즉, ① 경찰관 
+        공소외 1을 비롯한 음주단속 경찰관들은 피고인이 술에 취한 상태에서 간판에 머리를 부딪치고 도로로 뛰어들어 자해하려고 하자 이를 제지하기 위해 피고인을 제압하여 순찰차에 태운 다음 봉담지구대로 데려갔던 점
+        <font class="txt_16"><span id="link"><a name="%EC%A3%BC1a" href="#%EC%A3%BC1">주1)
+			</a></span></font><span class="t01-text">,</span> ② 순찰차 안에서도 피고인은 술에 취해 자해를 하려 하였고, 봉담지구대로 도착한 다음에도 난동을 부리며 경찰관에게 상해를 가하였던 점, ③ 이 사건 바로 다음날 작성된 수사보고에도 ‘피고인의 검거 및 자해를 방지하기 위해 피고인을 제압하고 봉담지구대로 동행하였다’고 기재되어 있는 점(증거기록 3면) 등에 비추어 보면, 당시 피고인은 술에 취하여 자기 또는 타인의 생명·신체와 재산에 위해를 미칠 우려가 있는 자에 해당함이 명백하고 또한 응급의 구호를 요한다고 믿을 만한 상당한 이유가 있는 자에 해당하여 이러한 피고인을 봉담지구대로 데려간 경찰관들의 행위는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="경찰관직무집행법|4|">경찰관직무집행법 제4조</a></span>에 따른 보호조치로서 적법하고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="경찰관직무집행법|4|">같은 조 제4항</a></span>에 따른 가족 등에 대한 통지절차도 거쳤으며 보호시간이 24시간을 초과하지도 않았다. 
+      </p><p>       따라서 경찰관 
+        공소외 2가 봉담지구대로 적법하게 보호조치된 피고인에게 입에서 술냄새가 나는 등 술에 취한 상태에서 운전하였다고 인정할 만한 상당한 이유가 있어음주측정을 요구한 것은 적법하고, 그러한 음주측정요구에 불응하고 
+        공소외 2에게 상해를 가함과 동시에 경찰관의 직무집행을 방해한 행위는 도로교통법위반(음주측정불응)죄, 상해죄 및 공무집행방해죄를 구성하고 이러한 행위를 정당방위로 평가할 수도 없다.
+      </p><p>      다) 그럼에도 불구하고 원심은 이 사건 공소사실 중 도로교통법위반(음주측정불응)의 점, 상해의 점 및 공무집행방해의 점에 관하여 무죄로 판단하였는바, 이러한 원심의 판단에는 사실을 오인하고 경찰관직무집행법상의 보호조치에 관한 법리를 오해한 위법이 있다. </p><p>
+        <b>3. 결론</b>
+      </p><p>  그렇다면, 검사의 항소는 이유 있으므로 검사의 양형부당 주장에 대한 판단을 생략한 채 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|364|">형사소송법 제364조 제6항</a></span>에 의하여 원심판결을 전부 파기하고(원심이 유죄로 인정한 부분에 대해서도 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|37|">형법 제37조</a></span> 전단의 경합범으로 처리하여 하나의 형을 선고하여야 하므로 파기를 면할 수 없다), 변론을 거쳐 다시 다음과 같이 판결한다.
+      </p><span class="space"></span><p><strong id="ReasonSection">【범죄사실】</strong></p><p>   1. 도로교통법위반(무면허운전), 공용물건손상</p><p>     피고인은 자동차운전면허를 받지 아니하고 2010. 4. 13. 23:10경 
+          (차량번호 생략) 봉고 화물차를 운전하여 화성시 봉담읍 수영리에 있는 수영가구단지 앞길을 진행하던 중, 음주단속 중이던 화성서부경찰서 교통관리계 소속 의경 
+          공소외 3이 경찰용 불봉을 흔들며 차량 정지를 유도하였으나, 위 화물차를 정지하지 아니하고 위 화물차로 
+          공소외 3이 손에 잡고 흔들던 불봉을 들이받아 부수는 방법으로 공무소에서 사용하는 불봉 시가 9,000원 상당을 손상하여 그 효용을 해하였다.
+        </p><p>   2. 도로교통법위반(음주측정거부), 상해, 공무집행방해</p><p>     피고인은 2010. 4. 13. 23:10경 화성시 봉담읍 수영리에 있는 수영프라자 앞길에서 위 1항 기재와 같이 음주측정을 하지 아니하고 약 3㎞ 정도를 도주하다가 순찰차에 막혀 더 이상 도주하지 못하자 운전석에서 뛰어내려 도주하려던 중 화성서부경찰서 교통관리계 소속 경장 
+          공소외 1에게 검거되어 화성시 봉담읍 상리에 있는 봉담지구대로 보호조치되었다.
+        </p><p>     피고인은 같은 날 23:38경 봉담지구대에서 화성서부경찰서 교통관리계 소속 경사 
+          공소외 2로부터 피고인이 운전석에서 하차하였으므로 운전자가 틀림없는데다가 피고인의 얼굴이 붉고 입에서 술냄새가 나는 등 술에 취한 상태에서 운전하였다고 인정할 만한 상당한 이유가 있어 음주측정기에 입김을 불어넣는 방법으로 음주측정에 응할 것을 요구받았으나 정당한 사유 없이 1차 측정을 거부하고, 같은 날 23:49경 위 장소에서 다시 
+          공소외 2로부터 “선생님, 음주측정을 거부하면 불이익이 있습니다”라는 말과 함께 2차 측정을 요구받자 이를 거부하면서 갑자기 격분하여 
+          공소외 2의 배를 주먹으로 1회 가격하고 
+          공소외 2의 멱살을 손으로 잡아 흔들어 음주측정을 요구하는 경찰관의 정당한 직무집행을 방해함과 동시에 
+          공소외 2에게 약 14일간의 치료를 요하는 복부좌상 등을 가하고, 계속되는 음주측정요구에 정당한 사유 없이 불응하였다.
+        </p><span class="space"></span><p><strong id="ReasonSection">【증거의 요지】</strong></p><p>   1. 피고인의 원심 및 당심 일부 법정진술</p><p>   1. 증인 
+          공소외 1의 원심 및 당심 법정진술, 증인 
+          공소외 2, 
+          3, 
+          5, 
+          6, 
+          4의 각 원심 법정진술
+        </p><p>   1. 
+          공소외 2, 
+          3, 
+          1, 
+          4에 대한 각 경찰진술조서
+        </p><p>   1. 각 수사보고, 주취운전자정황진술보고서, 주취운전자적발보고서, 음주측정기사용대장, 자동차운전면허대장, 현장사진 </p><span class="space"></span><p><strong id="ReasonSection">【법령의 적용】</strong></p><p>   1. 범죄사실에 대한 해당법조</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|141|">형법 제141조 제1항</a></span>(공용물건손상의 점), 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|152|">구 도로교통법(2011. 6. 8. 법률 제10790호로 개정되기 전의 것) 제152조 제1호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|43|">제43조</a></span>(무면허운전의 점), 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|136|">형법 제136조 제1항</a></span>(공무집행방해의 점), 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|257|">형법 제257조 제1항</a></span>(상해의 점), 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|148|2">구 도로교통법(2010. 7. 23. 법률 제10382호로 개정되기 전의 것) 제148조의2 제2호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">제44조 제2항</a></span>(음주측정거부의 점)
+        </p><p>   1. 상상적 경합</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|40|">형법 제40조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|50|">제50조</a></span>(공무집행방해죄와 상해죄 상호간, 형이 더 무거운 상해죄에 정한 형으로 처벌)
+        </p><p>   1. 형의 선택</p><p>      각 징역형 선택</p><p>   1. 경합범가중</p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|37|">형법 제37조</a></span> 전단, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|38|">제38조 제1항 제2호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|50|">제50조</a></span>(형이 가장 무거운 상해죄에 정한 형에 경합범가중)
+        </p><span class="space"></span><p><strong id="ReasonSection">【양형의 이유】</strong></p><p>     이 사건 각 범행은 피고인이 자동차운전면허를 받지 아니하고 술에 취한 상태에서 운전을 하다 음주단속을 피하기 위해 음주단속 중이던 경찰관의 불봉을 들이받아 부수어 도주하고, 그 후 지구대로 가서도 경찰관의 음주측정요구에 계속 불응하며 경찰관을 폭행하여 상해를 가한 것으로 그 죄질이 매우 불량한 점, 피고인의 범행으로 자칫 음주단속 중인 경찰관이 치명적인 위해를 당할 수도 있었던 점, 지구대에서 경찰관이 피고인을 현행범인으로 체포하려하자 일부로 바닥에 쓰러지는 꾀병을 부려 도망가기도 하는 등 범행 후의 정황도 매우 좋지 아니한 점, 그럼에도 당심에 이르기까지 운전한 사실 조차 없다며 범행을 극구 부인하는 등 도무지 피고인에게 진지한 반성의 모습을 전혀 볼 수 없는 점, 음주운전의 위험성 및 음주단속의 실효성 등을 고려할 때 이 사건 범행과 같은 음주측정거부행위를 엄히 처벌할 필요가 있고, 공무집행방해죄 또한 정당한 공권력 행사를 무력화시켜 국가의 기능을 해하는 범죄로서 엄히 처벌할 필요가 있는 점, 피고인이 2008년 및 2009년 음주운전 내지 무면허운전으로 3회 처벌받은 전력이 있는 점, 기타 피고인의 연령, 성행, 환경 등 양형의 조건이 되는 여러 가지 사정들을 종합하여 주문과 같이 형을 정한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   안호봉(재판장) 심동영 양성욱 </span></center><span class="space"></span>
+  <p class="txt_16"><a name="%EC%A3%BC1" href="#%EC%A3%BC1a">주1)
+		</a>경찰관 공소외 2도 원심법정에서 ‘당시 피고인이 계속 난리를 부리는 등 긴급을 요하는 상황이라서 일단은 위험하니까 가까운 파출소로 안전하게 데려가야 한다는 생각에 파출소로 데려간 것이고 현행범 체포나 임의동행 등의 절차를 밟는 부분에 대해서는 미처 생각하지 못하였다’고 진술하였는바(공판기록 71면), 당시 음주단속 경찰관들이 피고인을 순찰차에 태워 지구대로 데려간 주된 목적은 피고인이 술에 취해 자기 또는 타인의 생명·신체와 재산에 위해를 미치는 것을 방지하기 위한 것임이 명백하다.</p><span class="space"></span></div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

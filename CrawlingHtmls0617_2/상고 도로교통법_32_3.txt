@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2014도3360 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2146583';
+var contIdEtc = '';
+var saNo = '2014도3360';
+var sngoNm = '선고';
+var saNm = '도로교통법위반(음주운전)';
+try {
+	var sngoDay=('20140612' ? 
+			'20140612'.length==4 ? Date.parseExact('20140612','yyyy').toString('yyyy. M. d.') : 
+				'20140612'.length==6 ? Date.parseExact('20140612','yyyyMM').toString('yyyy. M. d.') : 
+					'20140612'.length==8 ? Date.parseExact('20140612','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2014도3360 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2014도3360';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2014도3360</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(6)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|762703">2014도3360  혈중알코올농도의 입증 방법 @ 감자탕 골목 주취운전 사건  2014 6 12 2014도3360 공 2014하 1500 신동운 法文社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|790155">이태경 혈중알코올농도 상승기의 음주운전에 관한 처벌 : 대상판결: 2013. 10. 24. 선고 2013도6285 판결 재판실무연구 2015 / 광주지방법원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833004">임기환 혈중알코올농도 상승기에서 처벌기준 이상 판단기준 : 대법원 2013. 10. 24. 선고 2013도6285 판결 법과 정의 그리고 사람:. 박병대 대법관 재임기념 문집(2017)   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|768230">이상원 2014년 분야별 중요판례분석 , : 형사소송법 법률신문 4318호  / 법률신문사  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2013도6285">대법원 2013. 10. 24. 선고 2013도6285 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2013도8649">대법원 2013. 11. 28. 선고 2013도8649 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2013도10436">대법원 2013. 11. 28. 선고 2013도10436</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="도로교통법|44|0|null">도로교통법 제44조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="도로교통법|148|2|null">도로교통법 제148조의2 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형사소송법|308|0|null">형사소송법 제308조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="도로교통법|44|0|null">도로교통법 제44조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="도로교통법|148|2|null">도로교통법 제148조의2 제2항 제2호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="형사소송법|308|0|null">형사소송법 제308조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2013도6285">대법원 2013. 10. 24. 선고 2013도6285 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|148|2|null">도로교통법 제148조의2 제2항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도로교통법|44|0|null">도로교통법 제44조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2013노2309">대구지법 2014. 2. 13. 선고 2013노2309 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2014. 6. 12. 선고 2014도3360 판결</h2><p class="sub_title">[도로교통법위반(음주운전)][공2014하,1500]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 운전 시점과 혈중알코올농도 측정 시점 사이에 시간 간격이 있고 그때가 혈중알코올농도의 상승기인 경우, 운전 당시에도 혈중알코올농도가 처벌기준치 이상이었다고 볼 수 있는지 판단하는 기준</p>
+<p></p>
+<p></p><p>[2] 피고인이 혈중알코올농도 0.158%의 술에 취한 상태로 자동차를 운전하였다고 하여 도로교통법 위반(음주운전)으로 기소된 사안에서, 제반 사정에 비추어 피고인이 차량을 운전할 당시 적어도 혈중알코올농도 0.1% 이상의 술에 취한 상태에 있었다고 봄이 타당한데도, 이와 달리 보아 무죄를 인정한 원심판결에 음주운전에서 혈중알코올농도의 입증에 관한 법리오해 등 위법이 있다고 한 사례</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 운전 시점과 혈중알코올농도의 측정 시점 사이에 시간 간격이 있고 그때가 혈중알코올농도의 상승기로 보이는 경우라 하더라도, 그러한 사정만으로 실제 운전 시점의 혈중알코올농도가 처벌기준치를 초과한다는 점에 대한 입증이 불가능하다고 볼 수는 없다. 이러한 경우 운전 당시에도 처벌기준치 이상이었다고 볼 수 있는지 여부는 운전과 측정 사이의 시간 간격, 측정된 혈중알코올농도의 수치와 처벌기준치의 차이, 음주를 지속한 시간 및 음주량, 단속 및 측정 당시 운전자의 행동 양상, 교통사고가 있었다면 그 사고의 경위 및 정황 등 증거에 의하여 인정되는 여러 사정을 종합적으로 고려하여 논리와 경험칙에 따라 합리적으로 판단하여야 한다.</p>
+<p></p><p></p><p>[2] 피고인이 혈중알코올농도 0.158%의 술에 취한 상태로 자동차를 운전하였다고 하여 도로교통법 위반(음주운전)으로 기소된 사안에서, 피고인이 마지막으로 술을 마신 시각이라고 주장하는 때로부터 약 98분이 경과한 시각에 측정한 혈중알코올농도가 처벌기준치인 0.1%를 크게 상회하는 0.158%로 나타난 점, 피고인이 처음으로 음주를 한 시각을 기준으로 하면 1시간 50분 뒤에 운전이 이루어진 것이어서 운전 당시에 혈중알코올농도의 상승기에 있었다고 단정하기 어려운 점 등 제반 사정에 비추어 볼 때, 피고인이 차량을 운전할 당시 적어도 혈중알코올농도 0.1% 이상의 술에 취한 상태에 있었다고 봄이 타당한데도, 이와 달리 보아 무죄를 인정한 원심판결에 음주운전에서 혈중알코올농도의 입증에 관한 법리오해 등 위법이 있다고 한 사례.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">도로교통법 제44조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|148|2">제148조의2 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|308|">형사소송법 제308조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">도로교통법 제44조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|148|2">제148조의2 제2항 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|308|">형사소송법 제308조</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2013도6285|판결" href="#//">대법원 2013. 10. 24. 선고 2013도6285 판결</a></span>(공2013하, 2175)<br /><span id="link"><a name="linkContPanre" title="새창" type="대법원|2013도8649|판결" href="#//">대법원 2013. 11. 28. 선고 2013도8649 판결</a></span><br /> <span id="link"><a name="linkContPanre" title="새창" type="대법원|2013도10436" href="#//">대법원 2013. 11. 28. 선고 2013도10436</a></span></p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【피 고 인】
+피고인
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【상 고 인】
+검사
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2013노2309|판결" href="#//">대구지법 2014. 2. 13. 선고 2013노2309 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 대구지방법원 본원 합의부에 환송한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 이 사건 공소사실의 요지 및 원심의 판단</p><p>  가. 이 사건 공소사실의 요지는 ‘피고인은 2012. 9. 22. 08:30경 대구 북구 산격동에 있는 ○○○ 감자탕 음식점 앞 도로에서부터 △△△△ 상가 앞 도로까지 약 200m의 구간에서 혈중알코올농도 0.158%의 술에 취한 상태로 승용차를 운전하였다’는 것이고, 그 적용법조는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|148|2">도로교통법 제148조의2 제2항 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도로교통법|44|">제44조 제1항</a></span>(혈중알코올농도가 0.1% 이상 0.2% 미만인 경우)이다.</p><p>  나. 원심은 그 판시와 같은 이유를 들어 피고인의 최종 음주 시점은 주취운전자 정황진술 보고서에 기재되어 있는 2012. 9. 22. 04:30경으로 단정할 수 없고 오히려 2012. 9. 22. 08:00경 혹은 그 이후일 가능성을 배제할 수 없다고 전제한 다음, 다음과 같은 이유를 들어 피고인이 2012. 9. 22. 08:30경 음주운전을 한 시각의 혈중알코올농도가 음주측정을 한 시각인 2012. 9. 22. 09:48경의 혈중알코올농도 0.158%와 같다고 볼 수 없고 달리 피고인의 운전 당시의 혈중알코올농도가 0.1% 이상이었다고 단정할 수 없다고 판단하여 이 사건 공소사실에 대하여 무죄를 선고한 제1심판결을 그대로 유지하였다.</p><p>  ① 음주로 인한 혈중알코올농도는 피검사자의 체질, 음주한 술의 종류, 음주 속도, 음주 시 위장에 있는 음식의 정도 등에 따라 개인차가 있기는 하지만 통상 음주 후 30분 내지 90분 사이에 최고치에 이르렀다가 그 후로 시간당 약 0.008%~0.03%씩 점차 감소하는 것으로 알려져 있다.</p><p>  ② 음주 후 혈중알코올농도가 최고치에 도달할 때까지 시간당 어느 정도의 비율로 증가하는지에 대해서는 아직까지 과학적으로 알려진 신빙성 있는 통계자료가 없고, 음주측정기에 의하여 호흡측정을 한 혈중알코올농도 측정치로는 혈중알코올농도가 최고치에 도달한 이후 하강기에 해당하는 구간의 혈중알코올농도를 역추산할 수 있을 뿐 상승기에 해당하는 구간의 혈중알코올농도는 산정할 수 없다.</p><p>  ③ 따라서 피고인에게 가장 유리한 전제사실에 따라 최종음주 후 90분이 경과한 시점에서 혈중알코올농도가 최고치에 이른다는 것을 기초로 할 경우, 피고인이 차량을 운전한 시점인 2012. 9. 22. 08:30경은 피고인의 최종음주 시점일 가능성이 있는 2012. 9. 22. 08:00경 혹은 그 이후로부터 90분 이내로서 혈중알코올농도의 상승기에 해당할 가능성이 높다.</p><p>  2. 이 법원의 판단</p><p>  가. 우선 음주 종료 시점에 관한 상고이유를 살펴본다.</p><p>  기록에 비추어 살펴보면, 음주 종료 시점에 관한 원심의 위와 같은 판단은 수긍할 수 있다. 거기에 상고이유의 주장과 같이 논리와 경험칙을 위반하여 사실을 잘못 인정하는 등의 위법이 있다고 할 수 없다.</p><p>  나. 다음으로 음주운전에 있어서 혈중알코올농도의 입증에 관한 상고이유에 대하여 보면, 원심의 판단은 다음과 같은 이유로 그대로 수긍하기 어렵다.</p><p>  (1) 음주운전 시점이 혈중알코올농도의 상승시점인지 하강시점인지 확정할 수 없는 상황에서는 운전을 종료한 때로부터 상당한 시간이 경과한 시점에서 측정된 혈중알코올농도가 처벌기준치를 약간 넘었다고 하더라도, 실제 운전 시점의 혈중알코올농도가 처벌기준치를 초과하였다고 단정할 수는 없다. 개인마다 차이는 있지만 음주 후 30분~90분 사이에 혈중알코올농도가 최고치에 이르고 그 후 시간당 약 0.008%~0.03%(평균 약 0.015%)씩 감소하는 것으로 일반적으로 알려져 있는데, 만약 운전을 종료한 때가 혈중알코올농도의 상승기에 속하여 있다면 실제 측정된 혈중알코올농도보다 운전 당시의 혈중알코올농도가 더 낮을 가능성이 있기 때문이다.</p><p>  그러나 비록 <span class="accrnt_txt">운전 시점과 혈중알코올농도의 측정 시점 사이에 시간 간격이 있고 그때가 혈중알코올농도의 상승기로 보이는 경우라 하더라도, 그러한 사정만으로 실제 운전 시점의 혈중알코올농도가 처벌기준치를 초과한다는 점에 대한 입증이 불가능하다고 볼 수는 없다. 이러한 경우 운전 당시에도 처벌기준치 이상이었다고 볼 수 있는지 여부는 운전과 측정 사이의 시간 간격, 측정된 혈중알코올농도의 수치와 처벌기준치의 차이, 음주를 지속한 시간 및 음주량, 단속 및 측정 당시 운전자의 행동 양상, 교통사고가 있었다면 그 사고의 경위 및 정황 등 증거에 의하여 인정되는 여러 사정을 종합적으로 고려하여 논리와 경험칙에 따라 합리적으로 판단하여야 한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2013도6285|판결" href="#//">대법원 2013. 10. 24. 선고 2013도6285 판결</a></span> 등 참조).</p><p>  (2) 기록에 의하면 다음의 각 사정들이 인정된다.</p><p>  ① 피고인이 마지막으로 술을 마신 시각이라고 주장하는 2012. 9. 22. 08:10경으로부터 약 98분이 경과한 같은 날 09:48경 측정한 혈중알코올농도는 처벌기준치인 0.1%를 크게 상회하는 0.158%로 나타났다.</p><p>  ② 비록 ‘음주 후 30분~90분 사이에 혈중알코올농도가 최고치에 이른다’는 일반적인 기준을 피고인에게 유리하게 적용할 경우 운전 당시는 혈중알코올농도의 상승기라고 볼 여지가 있기는 하다. 그러나 피고인의 진술에 의하면 피고인은 2012. 9. 22. 06:40경부터 지인들과 식사 겸 술을 마셨다는 것이므로 처음으로 음주를 한 시각을 기준으로 하면 1시간 50분이나 뒤에 운전이 이루어진 것이어서 운전 당시에 반드시 혈중알코올농도의 상승기에 있었다고 단정하기 어렵다.</p><p>  ③ 피고인은 차량을 운전하다가 2012. 9. 22. 08:30경 진행방향 오른쪽에 주차되어 있는 차량을 충돌하고도 사고 사실을 전혀 인식하지 못하고 그대로 진행하여 갔는데, 사고가 음주를 마친 후 얼마 되지 아니한 시각에 발생한 점을 감안하면 피고인은 상당히 술에 취한 것으로 인하여 반응 능력이 떨어진 상태에 있었다고 볼 수 있다.</p><p>  ④ 피고인은 사고 후 사고지점에서 약 50m 정도 떨어져 있는 피고인이 운영하는 ‘□□□□□ □□점’에서 잠을 자고 있다가 경찰관에게 검거되었고, 당시 그곳 테이블에는 뚜껑이 열려져 있으나 마시지 아니한 맥주 1병과 뚜껑이 닫혀 있는 맥주 1병이 놓여 있기는 하였으나 피고인이 사고 후 ‘□□□□□ □□점’으로 가서 술을 더 마셨다고 보이지 아니한다. 피고인이 검거된 후인 2012. 9. 22. 09:48경 작성된 ‘주취운전자 정황진술 보고서’에는 ‘언행은 술 냄새가 나고 약간 어눌함, 보행은 약간 비틀거림, 혈색은 얼굴과 눈동자에 충혈’이라고 기재되어 있고, 피고인을 발견한 경찰관도 피고인이 만취 상태에 있었다고 진술하고 있다.</p><p>  (3) 이러한 사정들을 앞서 본 법리에 비추어 보면, 피고인은 이 사건 차량을 운전할 당시 적어도 혈중알코올농도 0.1% 이상의 술에 취한 상태에 있었다고 봄이 상당하다.</p><p>  그럼에도 원심은 이와 달리 그 판시와 같은 이유만으로 운전 당시 피고인의 혈중알코올농도가 0.1% 이상이었다고 보기 어렵다고 보아 피고인에게 무죄를 선고한 제1심판결을 그대로 유지하였다. 이러한 원심판결에는 논리와 경험칙을 위반하여 사실을 잘못 인정하거나 음주운전에 있어서 혈중알코올농도의 입증에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다고 할 것이다. 이 점을 지적하는 상고이유 주장은 이유 있다.</p><p>  3. 그러므로 원심판결을 파기하고 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김창석(재판장) 양창수(주심) 고영한 조희대 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

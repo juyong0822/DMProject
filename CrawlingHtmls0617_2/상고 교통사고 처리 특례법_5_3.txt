@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011도17117 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2062647';
+var contIdEtc = '';
+var saNo = '2011도17117';
+var sngoNm = '선고';
+var saNm = '교통사고처리특례법위반';
+try {
+	var sngoDay=('20120315' ? 
+			'20120315'.length==4 ? Date.parseExact('20120315','yyyy').toString('yyyy. M. d.') : 
+				'20120315'.length==6 ? Date.parseExact('20120315','yyyyMM').toString('yyyy. M. d.') : 
+					'20120315'.length==8 ? Date.parseExact('20120315','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011도17117 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011도17117';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011도17117</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(9)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="형법|17|0|null">형법 제17조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="교통사고처리특례법|3|0|null">교통사고처리 특례법 제3조 제2항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="교통사고처리특례법|4|0|null">교통사고처리 특례법 제4조 제1항 제1호 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="형법|17|0|null">형법 제17조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="형법|268|0|null">형법 제268조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="교통사고처리특례법|3|0|null">교통사고처리 특례법 제3조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="교통사고처리특례법|3|0|null">교통사고처리 특례법 제3조 제2항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="교통사고처리특례법|4|0|null">교통사고처리 특례법 제4조 제1항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="형사소송법|327|0|null">형사소송법 제327조 제2호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교통사고처리특례법|3|0|null">교통사고처리 특례법 제3조 제2항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교통사고처리특례법|4|0|null">교통사고처리 특례법 제4조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교통사고처리특례법|4|0|null">교통사고처리 특례법 제4조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="광주지방법원|2011노2629">광주지법 2011. 11. 25. 선고 2011노2629 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 3. 15. 선고 2011도17117 판결</h2><p class="sub_title">[교통사고처리특례법위반][공2012상,616]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|3|">교통사고처리 특례법 제3조 제2항 제1호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|4|">제4조 제1항 제1호</a></span>에서 보험 또는 공제에 가입한 경우에도 교통사고를 일으킨 차의 운전자에 대하여 공소를 제기할 수 있도록 규정한 ‘신호기에 의한 신호에 위반하여 운전한 경우’의 의미
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 택시 운전자인 피고인이 교통신호를 위반하여 진행한 과실로 교차로 내에서 갑이 운전하는 승용차와 충돌하여 갑 등으로 하여금 상해를 입게 하였다고 하여 교통사고처리 특례법 위반으로 기소된 사안에서, 제반 사정을 종합할 때 피고인의 신호위반행위가 교통사고 발생의 직접적인 원인이 되었다고 보아야 하는데도, 이와 달리 보아 공소를 기각한 원심판결에 인과관계에 관한 법리오해의 위법이 있다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|3|">교통사고처리 특례법 제3조 제2항 제1호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|4|">제4조 제1항 제1호</a></span>의 규정에 의하면, 신호기에 의한 신호에 위반하여 운전한 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|4|">같은 법 제4조 제1항</a></span>에서 정한 보험 또는 공제에 가입한 경우에도 공소를 제기할 수 있으나, 여기서 ‘신호기에 의한 신호에 위반하여 운전한 경우’란 신호위반행위가 교통사고 발생의 직접적인 원인이 된 경우를 말한다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 택시 운전자인 피고인이 교통신호를 위반하여 4거리 교차로를 진행한 과실로 교차로 내에서 갑이 운전하는 승용차와 충돌하여 갑 등으로 하여금 상해를 입게 하였다고 하여 교통사고처리 특례법 위반으로 기소된 사안에서, 피고인의 택시가 차량 신호등이 적색 등화임에도 횡단보도 앞 정지선 직전에 정지하지 않고 상당한 속도로 정지선을 넘어 횡단보도에 진입하였고, 횡단보도에 들어선 이후 차량 신호등이 녹색 등화로 바뀌자 교차로로 계속 직진하여 교차로에 진입하자마자 교차로를 거의 통과하였던 갑의 승용차 오른쪽 뒤 문짝 부분을 피고인 택시 앞 범퍼 부분으로 충돌한 점 등을 종합할 때, 피고인이 적색 등화에 따라 정지선 직전에 정지하였더라면 교통사고는 발생하지 않았을 것임이 분명하여 피고인의 신호위반행위가 교통사고 발생의 직접적인 원인이 되었다고 보아야 하는데도, 이와 달리 보아 공소를 기각한 원심판결에 신호위반과 교통사고의 인과관계에 관한 법리오해의 위법이 있다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|17|">형법 제17조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|3|">교통사고처리 특례법 제3조 제2항 단서 제1호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|4|">제4조 제1항 단서 제1호</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|17|">형법 제17조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|268|">제268조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|3|">교통사고처리 특례법 제3조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|3|">제2항 단서 제1호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|4|">제4조 제1항 단서 제1호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|327|">형사소송법 제327조 제2호</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+        검사
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="광주지방법원|2011노2629|판결" href="#//">광주지법 2011. 11. 25. 선고 2011노2629 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 광주지방법원 본원 합의부에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|3|" style="text-decoration:underline">교통사고처리 특례법 제3조 제2항 제1호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|4|" style="text-decoration:underline">제4조 제1항 제1호</a></span>의 규정에 의하면, 신호기에 의한 신호에 위반하여 운전한 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교통사고처리 특례법|4|" style="text-decoration:underline">위 특례법 제4조 제1항</a></span> 소정의 보험 또는 공제에 가입한 경우에도 공소를 제기할 수 있다 할 것이나, 여기서 신호기에 의한 신호에 위반하여 운전한 경우라 함은 신호위반행위가 교통사고 발생의 직접적인 원인이 된 경우를 말한다.
+        </span>
+      </p><p>  이 사건 공소사실의 요지는, ‘피고인은 2011. 5. 21. 02:27경 업무로 택시를 운전하여 광주 동구 소재 광남4거리 교차로를 북동 방면에서 문화전당 방면을 향하여 편도 3차로 중 3차로를 따라 진행하게 되었는데, 교통신호에 따라 안전하게 운전하여 사고를 방지하여야 할 업무상 주의의무가 있음에도 이를 게을리한 채 신호를 위반하여 진행한 과실로, 교차로 내에서 피해자 
+        공소외인 운전의 승용차와 충돌하여 
+        공소외인 등으로 하여금 상해를 입게 하였다’는 것이다.
+      </p><p>  이에 대하여 원심은, 그 채택 증거들을 종합하여 판시와 같은 사실 및 사정들을 인정한 다음, 이 사건 교통사고가 피고인의 신호위반 운행 중에 발생한 사고이기는 하지만 피고인의 신호위반행위가 이 사건 교통사고 발생의 직접적 원인이 된 것이라고 단정하기 어렵다는 이유를 들어 이 사건 공소를 기각한 제1심판결을 그대로 유지하였다.</p><p>  그러나 원심의 이와 같은 판단은 앞서 본 법리와 아래와 같은 사정에 비추어 볼 때 이를 그대로 수긍하기 어렵다.</p><p>  먼저, 원심판결 이유와 원심 및 제1심이 적법하게 채택한 증거들에 의하면, 피고인은 택시를 운전하여 이 사건 교차로를 향하여 시속 약 77km의 속도로 2차로를 따라 진행하다가 1, 2차로에 신호대기 중인 차량이 있는 것을 보고 사고 발생 6초 전에 3차로로 진로를 변경한 사실, 피고인은 사고 발생 3초 전에 시속 약 61km의 속도로 진행방향의 횡단보도 앞 정지선 직전에 이르렀는데 차량 신호등이 적색 등화임에도 횡단보도 앞의 정지선 직전에 정지하지 아니한 채 계속하여 택시를 운전하여 횡단보도로 진입한 사실, 피고인의 택시는 사고 발생 2초 전에 시속 약 57km의 속도로 위 횡단보도 위를 지나게 되었고 그 순간 피고인 진행방향의 차량 신호등이 적색 등화에서 녹색 등화로 바뀐 사실, 이후 피고인의 택시는 계속 직진하면서 사고 발생 1초 전에는 시속 약 51km의 속도로 감속되었다가 이어 시속 약 46km의 속도로 
+        공소외인의 승용차를 충돌한 사실, 사고 발생 당시 
+        공소외인의 승용차는 피고인 택시의 진행방향 왼쪽에서 오른쪽으로 교차로를 거의 통과한 상태였는데(
+        공소외인의 승용차가 교차로 내에서 진행한 거리는 약 20m 정도이다), 피고인의 택시는 교차로에 진입하자마자 
+        공소외인이 운전하던 승용차의 오른쪽 뒤 문짝 부분을 앞 범퍼 부위로 충돌한 사실 등을 알 수 있다.
+      </p><p>  그런데 이와 같이 피고인의 택시는 적색 등화임에도 불구하고 정지선 직전에 정지하지 아니한 채 상당한 속도로 정지선을 넘어 횡단보도에 진입하였고 횡단보도에 들어선 이후 녹색 등화로 바뀌자 교차로로 직진하여 그대로 진행하였을 뿐만 아니라 피고인의 택시가 교차로에 진입하자마자 교차로를 거의 통과하였던 
+        공소외인 운전의 승용차 오른쪽 뒤 문짝 부분을 피고인 택시의 앞 범퍼 부분으로 충돌하였던 점 등을 종합하여 보면, 피고인이 적색 등화에 따라 정지선 직전에 정지하였더라면 이 사건 교통사고는 발생하지 않았을 것임이 분명하고, 따라서 피고인의 신호위반행위는 이 사건 교통사고 발생의 직접적인 원인이 되었다고 보아야 할 것이다.
+      </p><p>  그럼에도 원심은 판시와 같은 이유를 들어 이 사건 공소를 기각한 제1심의 조치를 그대로 유지하였으니, 이러한 원심판결에는 신호위반과 교통사고 사이의 인과관계에 관한 법리를 오해함으로써 판결에 영향을 미친 위법이 있다고 할 것이다. 이러한 점을 지적하는 검사의 상고이유 주장은 이유 있다.</p><p>  그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박병대(재판장) 김능환 안대희(주심) 이인복 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

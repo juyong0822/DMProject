@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2013노1275 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2130077';
+var contIdEtc = '';
+var saNo = '2013노1275';
+var sngoNm = '선고';
+var saNm = '특정범죄가중처벌등에관한법률위반(운전자폭행등)(인정된죄명:폭행)';
+try {
+	var sngoDay=('20130613' ? 
+			'20130613'.length==4 ? Date.parseExact('20130613','yyyy').toString('yyyy. M. d.') : 
+				'20130613'.length==6 ? Date.parseExact('20130613','yyyyMM').toString('yyyy. M. d.') : 
+					'20130613'.length==8 ? Date.parseExact('20130613','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + '  ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2013노1275';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2013노1275</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="특정범죄가중처벌등에관한법률|5|10|null">특정범죄 가중처벌 등에 관한 법률 제5조의10 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="형법|260|0|null">형법 제260조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형법|260|0|null">형법 제260조 제3항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|327|0|null">형사소송법 제327조 제6호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|364|0|null">형사소송법 제364조 제6항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울북부지방법원|2012고합647">서울북부지법 2013. 3. 25. 선고 2012고합647 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고법 2013. 6. 13. 선고 2013노1275 판결 </h2><p class="sub_title">[특정범죄가중처벌등에관한법률위반(운전자폭행등)(인정된죄명:폭행)] 상고[각공2013하,653]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>  피고인이, 갑이 운전하는 시내버스에서 손으로 운전석에 앉아있는 갑의 머리를 때림으로써 운행 중인 자동차의 운전자를 폭행하였다고 하여 특정범죄 가중처벌 등에 관한 법률 위반으로 기소된 사안에서, 제반 사정을 종합할 때 피고인이 갑을 폭행할 때 버스가 운행 중이었다고 볼 수 없어 같은 법 위반죄의 책임을 지울 수 없다고 한 사례</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>  피고인이, 갑이 운전하는 시내버스에 강아지를 안고 승차하였다는 이유로 갑이 버스에서 내리라고 하자 화가 나 욕을 하고 지갑을 쥔 손으로 운전석에 앉아있는 갑의 머리를 1회 때림으로써 운행 중인 자동차의 운전자를 폭행하였다고 하여 특정범죄 가중처벌 등에 관한 법률(이하 ‘특가법’이라고 한다) 위반으로 기소된 사안에서, 특가법상 운전자폭행죄는 일반 폭행죄에 대한 가중적 구성요건으로서 특별한 사정이 없는 한 그 적용범위를 자동차가 실제 운행 중인 때에만 성립하는 것으로 제한하여야 하고 문언의 의미를 넘어 과도하게 확장하는 것은 적절하다고 할 수 없는데, 피고인이 갑을 폭행한 당시, 버스는 정차 중이었고 갑은 피고인이 내린 후 버스 문을 닫고 버스를 출발시키려고 하였는데, 피고인이 갑을 폭행하자 갑은 피고인이 버스에서 내려 도주하는 것을 막기 위해 급하게 버스를 출발시키고 이어서 버스 문을 닫은 것으로 보이는 등 제반 사정을 종합할 때, 피고인이 갑을 폭행할 때 버스가 운행 중이었다고 볼 수 없어 운전자 폭행에 의한 특가법 위반죄의 책임을 지울 수 없다고 한 사례.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p> <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특정범죄 가중처벌 등에 관한 법률|5|10">특정범죄 가중처벌 등에 관한 법률 제5조의10 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|260|">형법 제260조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|260|">제3항</a></span></p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【피 고 인】
+피고인
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【항 소 인】
+검사
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【검    사】
+황수희 외 1인
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party7">【변 호 인】
+변호사 오수미
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울북부지방법원|2012고합647|판결" href="#//">서울북부지법 2013. 3. 25. 선고 2012고합647 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기한다.</p><p>  이 사건 공소를 기각한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>    1. 항소이유의 요지</p><p>    이 사건 공소사실과 관련하여 관련 증거와 법리에 의하면 피고인이 운행 중인 버스의 운전자를 폭행한 사실이 인정됨에도 불구하고 피고인에 대하여 무죄를 선고한 원심판결에는 사실오인 내지 법리오해로 인하여 결과에 영향을 미친 위법이 있다.</p><p>    2. 판단</p><p>    가. 이 사건 공소사실의 요지</p><p>    피고인은 2012. 8. 26. 22:25경 서울 강북구 우이동 568-7 앞 4.19묘지입구 버스정류장 부근에서, 피해자 공소외인(59세)이 운전하는 선일교통 소속의 서울74사9430호 104번 시내버스에 강아지를 안고 승차하였다는 이유로 피해자가 버스에서 내리라고 하자 화가 나 “이 개새끼들, 104번 회사 새끼들”이라고 욕을 하고 지갑을 쥔 손으로 운전석에 앉아있는 피해자의 머리를 1회 때렸다.</p><p>    이로써 피고인은 운행 중인 자동차의 운전자인 피해자를 폭행하였다.</p><p>    나. 항소이유에 대한 판단</p><p>    검사 주장의 폭행이 있을 당시 버스가 운행 중이었는지에 관하여 보건대, 원심이 적법하게 채택하여 조사한 증거들에 의하면, 즉 ① 피고인은 강아지를 안고 정류장에 정차한 버스에 승차하려다가 운전자인 피해자가 안 된다고 말하면서 버스 문을 급하게 닫는 바람에 신체 일부가 버스 문틈에 끼이게 되었고, 이로 인해 버스 문이 열리자 그대로 차에 올라타 요금을 내고 버스 안 가운데쯤 위치한 좌석에 앉은 사실, ② 피해자는 운전석을 떠나 피고인이 앉은 자리로 쫓아가 강아지를 운반용구에 넣지 않고 안은 채 버스에 탈 수 없다면서 버스에서 내리라고 심하게 다그친 후 운전석으로 돌아온 사실, ③ 피고인은 버스에서 내리기 위해 운전석 쪽으로 가서 요금 환불을 기다리던 중 피해자에게 불만어린 말투로 욕설을 중얼거렸는데, 이를 들은 피해자가 환불을 위해 요금입출금기를 작동하던 중 격분하여 버릇없게도 나이 많은 사람에게 욕을 한다는 투로 큰 소리로 욕을 한 사실, ④ 피고인이 운전석 뒤쪽 요금입출금기 출금구에서 요금을 환불받은 후 운전석 쪽으로 오면서 지갑을 꺼내 들고 누가 더 나이가 많은지 확인해 보자면서 피해자 얼굴 앞에 지갑을 펼쳐 보이자 피해자가 두 차례 피고인의 손을 거세게 물리쳤고 이 과정에서 서로 거친 욕설을 주고받은 사실, ⑤ 그러자 피고인이 나이 확인하는 것을 포기하고 ‘에라 이 씨발놈아’라고 욕을 함과 동시에 지갑을 쥐고 있는 손으로 피해자의 머리를 스치듯 때리면서 버스 출입문 쪽으로 몸을 돌려 버스에서 내리려 한 사실, ⑥ 이에 피해자가 팔로 몸을 반쯤 돌린 피고인의 몸통 부분을 때린 후 버스를 급하게 출발시키고 이어서 버스 문을 닫은 후 운전자를 폭행했다면서 피고인에게 욕을 한 사실을 인정할 수 있다.</p><p>    살피건대, 특정범죄 가중처벌 등에 관한 법률상 운전자폭행죄는 일반 폭행죄에 대한 가중적 구성요건으로서 특별한 사정이 없는 한 그 적용범위를 자동차가 실제 운행 중인 때에만 성립하는 것으로 제한하여야 하고 문언의 의미를 넘어 과도하게 확장하는 것은 적절하다고 할 수 없는바, 위 인정 사실과 이에 의하여 알 수 있는 다음과 같은 사정, 즉 ① 피고인이 피해자를 폭행한 당시, 버스는 정차 중이었고 피해자는 피고인이 내린 후 버스 문을 닫고 버스를 출발시키려고 하였던 점, ② 그런데 피고인이 피해자를 폭행하자 피해자는 피고인이 버스에서 내려 도주하는 것을 막기 위해 우선 급하게 버스를 출발시키고 이어서 버스 문을 닫은 것으로 보이는 점 등을 종합해 보면, 피고인이 피해자를 폭행할 때 버스가 운행 중이었다고 볼 수 없다.</p><p>    따라서 피고인에게 운전자 폭행에 의한 특정범죄 가중처벌 등에 관한 법률 위반(운전자폭행등)죄의 책임을 지울 수 없으므로, 이와 다른 전제에 선 검사의 주장은 이유 없다.</p><p>    다. 직권판단</p><p>    한편 직권으로 살피건대, 이 사건 공소사실에서 버스가 운행 중이었다는 부분을 제외하면 이 사건 공소사실은 단순폭행의 점만 남게 되고 이는 피해자의 명시한 의사에 반하여 공소를 제기할 수 없는 경우인바, 피해자는 이 사건 공소제기 직후인 2012. 12. 23. 피고인과 합의하여 피고인의 처벌을 원하지 않는다는 의사를 명시적으로 표시하고 있으므로 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|327|">형사소송법 제327조 제6호</a></span>에 의하여 공소기각의 판결을 선고하여야 한다.</p><p>    그런데 원심은 폭행의 점에 대하여도 범죄의 증명이 없거나 범죄로 되지 아니하는 경우에 해당한다는 이유로 무죄를 선고하였다.</p><p>    따라서 원심판결에는 위와 같은 법리오해로 인하여 판결에 영향을 미친 위법이 있다.</p><p>    3. 결론</p><p>    그렇다면 원심판결에는 위에서 본 것과 같은 파기사유가 있으므로 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|364|">형사소송법 제364조 제6항</a></span>에 의하여 이를 파기하고, 변론을 거쳐 다시 다음과 같이 판결한다.</p><p>    새로 쓰는 판결</p><p>    이 사건 공소사실의 요지는 위 2.의 가.항 기재와 같고, 이 사건의 경우 위 2.의 나.항과 다.항에서 살핀 바와 같이 피해자의 명시한 의사에 반하여 죄를 논할 수 없는 사건에 대하여 처벌을 희망하는 의사표시가 철회되었을 때에 해당하므로 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|327|">형사소송법 제327조 제6호</a></span>에 의하여 이 사건 공소를 기각한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김동오(재판장) 정상규 권오석 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

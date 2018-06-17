@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2012누18402 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2201084';
+var contIdEtc = '';
+var saNo = '2012누18402';
+var sngoNm = '선고';
+var saNm = '시정명령및과징금납부명령취소청구의소';
+try {
+	var sngoDay=('20121206' ? 
+			'20121206'.length==4 ? Date.parseExact('20121206','yyyy').toString('yyyy. M. d.') : 
+				'20121206'.length==6 ? Date.parseExact('20121206','yyyyMM').toString('yyyy. M. d.') : 
+					'20121206'.length==8 ? Date.parseExact('20121206','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012누18402 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2012누18402';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2012누18402</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(0)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style="display:none"><em>[원심판결]</em></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2012. 12. 6. 선고 2012누18402 판결</h2><p class="sub_title">[시정명령및과징금납부명령취소청구의소][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원    고】
+원고 1 외 6인 (소송대리인 법무법인 화우(유한) 담당변호사 성승현 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피    고】
+공정거래위원회 (소송대리인 법무법인 정부법무공단 담당변호사 김현민)
+
+</strong></p>
+<span class="space"></span>【변론종결】
+<p>2012. 10. 18.</p>
+
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고들의 청구를 모두 기각한다. </p><p>2. 소송비용은 원고들이 부담한다. </p>
+【청구취지】
+<p>피고가 2012. 5. 30. 원고들에 대하여 의결 제2012-085호로 한 별지 기재 시정명령 및 과징금납부명령을 취소한다. </p>
+
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p><b>1. 처분의 경위</b></p><p> 가. 원고 1은 녹천자동차운전전문학원(이하 ‘녹천학원’이라 하고, 다른 운전전문학원을 가리킬 때에도 그 명칭에서 ‘자동차운전전문’ 부분을 생략하고 ○○학원으로만 표시한다)을, 원고 2, 원고 3, 원고 4, 원고 5는 공동으로 삼일학원을, 원고 6은 서울학원을, 주식회사 창동자동차학원은 창동학원을 각 운영하는 사업자들이다. </p><p> 나. 피고는 2012. 5. 30. 의결 제2012-085호로, ‘원고들이 소외 2, 소외 3(노원학원 및 성산학원을 공동으로 운영), 소외 4, 소외 5(양재학원을 공동으로 운영)와 함께 2011. 5. 16. 제1종 보통 및 제2종 보통(수동·자동) 관련 법정 최소 의무교육시간인 총 8시간을 교육과정으로 하는 기본형 상품의 경우 그 수강료(검정료 포함)를 470,000원으로 하기로 합의하였고(이하 ’이 사건 공동행위‘라 하고, 공동행위자 모두를 가리킬 때 가담 학원 수에 대응하여 ’7개 사업자‘라 한다), 이는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률(이하 ‘공정거래법’이라 한다) 제19조 제1항 제1호</a></span>에 위반된다.‘는 이유로, 원고들에 대하여 별지 기재와 같은 시정명령 및 과징금 납부명령을 하였다(이하 ‘이 사건 처분’이라 한다).</p><p>[인정근거]  다툼 없는 사실, 갑 제1호증의 기재</p><p><b>2. 이 사건 처분의 적법 여부</b></p><p> <b>가. 공동행위의 존부</b></p><p>  1) 원고의 주장 </p><p>   ① 소외 6을 제외한 모임 참가자들은 일관하여 당시 ‘도로교통법령 개정에 따라 전문학원 운영방안’이 배포되지 않았고, 수강료 등에 대해서는 논의조차 이루어지지 않았다고 진술하였고, 소외 6도 그 이후 ‘정확히 무슨 내용이었는지 기억이 나지 않는다.’고 진술을 번복한 점, ② 수강료는 서울지방경찰청의 행정지도에 의하여 결정되고 있는 점, ③ 모임 이후 원고들이 서울지방경찰청에 최초 신고한 각 수강료 사이의 편차 및 그 이후의 수강료 변경신고 내역 등에 비추어 보면, 원고들이 이 사건 합의를 하지 않았음을 충분히 알 수 있다. </p><p>  2) 인정사실</p><p>   가) 자동차운전전문학원제도</p><p>  지방경찰청장은 자동차운전에 관한 교육수준을 높이고 운전자의 자질향상을 도모하기 위하여 지방경찰청에 등록된 자동차운전학원 중 학감, 강사, 기능검정원 및 시설·설비 등 자격요건을 갖춘 학원을 자동차운전전문학원(이하 ‘운전전문학원’이라 한다)으로 지정할 수 있다.</p><p>  운전전문학원은 1995. 7. 1.부터 학과시험을 제외한 장내기능시험과 도로주행시험을 자체적으로 실시할 수 있고, 운전전문학원의 학감은 장내기능 검정에 합격한 자에게 수료증을 교부하며, 도로주행교육을 이수하고 도로주행 기능검정에 합격한 자에게는 졸업증을 교부한다.</p><p>   나) 운전전문학원의 수강료 결정</p><p>  운전전문학원의 수강료는 1998. 12. 31.까지는 경찰청에서 정하여 고시하였으나, 1999. 1. 1.부터 자율화 되어 개별 학원의 설립·운영자가 교습내용 및 교습시간 등을 고려하여 수강료를 결정할 수 있다. 다만, 학원의 설립·운영자는 수강료의 내용을 학원 등에 게시하고 이를 관할 지방경찰청에 신고하여야 한다.</p><p>  각 운전면허 종별 및 교육시간에 따라 수강료는 각각 다르게 결정되고, 학과교육, 장내기능교육과 도로주행교육별로 수강료가 별도로 책정되나 일반적인 수강생은 학과교육, 장내기능교육, 도로주행교육을 동시에 이수하게 되므로 실제로는 수강료의 총액 규모가 중요한 의미를 지닌다.</p><p>   다) 운전면허시험 간소화제도의 시행</p><p>  정부는 국민들이 적은 비용으로 운전면허를 취득할 수 있도록 「운전면허시험 간소화 방안」을 마련한 후, 2011. 4. 30. 도로교통법 시행령 및 시행규칙을 개정(2011. 6. 10. 시행)하였다. 이에 따라 운전전문학원에서의 운전면허 취득을 위한 의무교육시간이 제1종 보통면허 기준으로 장내기능 15시간, 도로주행 10시간 등 총 25시간에서 장내기능 2시간, 도로주행 6시간 등 8시간으로 변경되었다(학과교육은 5시간으로 기존과 동일). 이와 더불어 장내 기능시험 항목도 11개 항목에서 2개 항목으로 대폭 축소되었다.</p><p></p><div name="Table100" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="1">구분</td><td align="CENTER" valign="MIDDLE" rowspan="1">변경 전</td><td align="CENTER" valign="MIDDLE" rowspan="1">변경 후</td></tr><tr><td align="LEFT" valign="MIDDLE" rowspan="1">장내기능시험</td><td align="LEFT" valign="MIDDLE" rowspan="1">굴절, 곡선, 방향전환 코스 등 총 11개 항목 700m 구간 실시</td><td align="LEFT" valign="MIDDLE" rowspan="1">정차상태기기조작 및 운전상태 기기조작 등 2개 항목에 대해 50M 구간 실시</td></tr><tr><td align="LEFT" valign="MIDDLE" rowspan="2">운전학원 의무교육시간</td><td align="LEFT" valign="MIDDLE" rowspan="1">장내기능 15시간, 도로주행 10시간 등 총 25시간(1·2종 수동변속기)</td><td align="LEFT" valign="MIDDLE" rowspan="2">장내기능 2시간, 도로주행 6시간 등 총 8시간</td></tr><tr><td align="LEFT" valign="MIDDLE" rowspan="1">* 2종 자동변속기의 경우 장내기능 12시간, 도로주행 10시간</td></tr></tbody></table></div></div><p></p><p>   라) 원고들의 종전 수강료 </p><p>    한편, 위 법령 개정 이전에 7개 사업자가 책정한 제1종 보통 수강료는 총 25시간 교육에 검정료 등을 포함하여 약 770,000원 정도이었고 그 세부 내역은 아래와 같다.</p><p></p><div name="Table200" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="RIGHT" valign="MIDDLE" rowspan="1" colspan="3">(제1종 보통기준, 단위: 천 원)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">피심인</td><td align="CENTER" valign="MIDDLE" rowspan="2">학과교육비</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">실습교육비</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">검정료</td><td align="CENTER" valign="MIDDLE" rowspan="2">합계</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">시간당 수강료</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">장내기능</td><td align="CENTER" valign="MIDDLE" rowspan="1">도로주행</td><td align="CENTER" valign="MIDDLE" rowspan="1">장내기능</td><td align="CENTER" valign="MIDDLE" rowspan="1">도로주행</td><td align="CENTER" valign="MIDDLE" rowspan="1">가</td><td align="CENTER" valign="MIDDLE" rowspan="1">나</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">노원학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">28</td><td align="CENTER" valign="MIDDLE" rowspan="1">390</td><td align="CENTER" valign="MIDDLE" rowspan="1">280</td><td align="CENTER" valign="MIDDLE" rowspan="1">39</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">772</td><td align="CENTER" valign="MIDDLE" rowspan="1">30.8</td><td align="CENTER" valign="MIDDLE" rowspan="1">26.8</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">녹천학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">0</td><td align="CENTER" valign="MIDDLE" rowspan="1">420</td><td align="CENTER" valign="MIDDLE" rowspan="1">275</td><td align="CENTER" valign="MIDDLE" rowspan="1">45</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">780</td><td align="CENTER" valign="MIDDLE" rowspan="1">31.2</td><td align="CENTER" valign="MIDDLE" rowspan="1">26.6</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">삼일학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">28</td><td align="CENTER" valign="MIDDLE" rowspan="1">379</td><td align="CENTER" valign="MIDDLE" rowspan="1">286</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">763</td><td align="CENTER" valign="MIDDLE" rowspan="1">30.5</td><td align="CENTER" valign="MIDDLE" rowspan="1">26.6</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">서울학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">380</td><td align="CENTER" valign="MIDDLE" rowspan="1">290</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">780</td><td align="CENTER" valign="MIDDLE" rowspan="1">31.2</td><td align="CENTER" valign="MIDDLE" rowspan="1">26.8</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">성산학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">390</td><td align="CENTER" valign="MIDDLE" rowspan="1">295</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">785</td><td align="CENTER" valign="MIDDLE" rowspan="1">31.4</td><td align="CENTER" valign="MIDDLE" rowspan="1">27.4</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">양재학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">25</td><td align="CENTER" valign="MIDDLE" rowspan="1">380</td><td align="CENTER" valign="MIDDLE" rowspan="1">290</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">765</td><td align="CENTER" valign="MIDDLE" rowspan="1">30.6</td><td align="CENTER" valign="MIDDLE" rowspan="1">26.8</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">창동학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">380</td><td align="CENTER" valign="MIDDLE" rowspan="1">265</td><td align="CENTER" valign="MIDDLE" rowspan="1">39</td><td align="CENTER" valign="MIDDLE" rowspan="1">36</td><td align="CENTER" valign="MIDDLE" rowspan="1">750</td><td align="CENTER" valign="MIDDLE" rowspan="1">30.0</td><td align="CENTER" valign="MIDDLE" rowspan="1">25.8</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">평    균</td><td align="CENTER" valign="MIDDLE" rowspan="1">28.7</td><td align="CENTER" valign="MIDDLE" rowspan="1">384.1</td><td align="CENTER" valign="MIDDLE" rowspan="1">283.0</td><td align="CENTER" valign="MIDDLE" rowspan="1">38.2</td><td align="CENTER" valign="MIDDLE" rowspan="1">36.5</td><td align="CENTER" valign="MIDDLE" rowspan="1">770.7</td><td align="CENTER" valign="MIDDLE" rowspan="1">30.8</td><td align="CENTER" valign="MIDDLE" rowspan="1">26.7</td></tr></tbody></table></div></div><p></p><p>  * 시간당 수강료</p><p>    ‘가’ 방식: 수강료를 장내기능교육시간과 도로주행교육시간을 합한 교육시간으로 나눈 금액</p><p>    ‘나’ 방식: 실습교육비를 장내기능교육시간과 도로주행교육시간을 합한 교육시간으로 나눈 금액</p><p>    이후 ‘시간당 수강료’를 나타낼 때는 편의상 ‘가’ 방식 기준임</p><p>  * 녹천학원의 수강료 세부내역은 장내기능이 420,000원, 학과는 0원이나, 다른 학원과 형평 및 평균 금액의 적정성 확보를 위해 학과교육비를 30,000원으로 보고 장내기능 수강료를 390,000원으로 보고 시간당 수강료를 산정</p><p>   마) 2011. 5. 16. ‘소호정’ 모임</p><p>  2011. 5. 11. 전국자동차운전전문학원연합회 서울특별시협회(이하 ‘서울협회’라 한다) 소외 1 사무국장은 ‘도로교통법 시행령 및 시행규칙 공포와 관련 향후 전문학원운영 등에 관해 의견을 논의’하기 위하여 2011. 5. 16. ‘5월 회의’를 개최한다고 7개 사업자를 포함한 서울협회의 구성사업자들에게 모사전송과 유선으로 통보하였고, 회의개최 사실을 통보받은 구성사업자들 중 7개 사업자의 원장 또는 학감 등(서울협회 회장 겸 녹천학원 원장 원고 1, 삼일학원 원장 소외 6, 서울학원 원장 원고 6, 노원학원 부원장 소외 7, 성산학원 원장 소외 8, 양재학원 학감 소외 9, 창동학원 대표 소외 10)이 서울 서초구 양재동에 있는 ‘소호정’에서 개최된 5월 회의에 참석하였다. </p><p>  위 회의에서 소외 1은 미리 작성한 ‘2011년 5월 회의자료’를 참석자들에게 배포한 후 회의자료 내용을 설명하였고, 참석자들은 이에 대하여 특별히 다른 의견이나 이의를 제기하지는 않았다. 위 회의자료는 ‘도로교통법 시행령, 시행규칙 개정관련 내용’과 ‘도로교통법령 개정에 따라 전문학원 운영방안’(이하 ‘이 사건 운영방안’이라 한다) 등 2개의 안건으로 구성되어 있었다. 수강료 결정과 관련된 이 사건 운영방안의 주요내용은 아래 표와 같다.</p><p></p><div name="Table300" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="RIGHT" valign="MIDDLE" rowspan="1" colspan="0">(단위: 천 원)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">구분</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">교육비</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">검정료</td><td align="CENTER" valign="MIDDLE" rowspan="2">계</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">장내기능(교육시간)</td><td align="CENTER" valign="MIDDLE" rowspan="1">도로주행(교육시간)</td><td align="CENTER" valign="MIDDLE" rowspan="1">장 내 기 능</td><td align="CENTER" valign="MIDDLE" rowspan="1">도 로 주 행</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">A</td><td align="CENTER" valign="MIDDLE" rowspan="1">450(15)</td><td align="CENTER" valign="MIDDLE" rowspan="1">420(15)</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">940</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">B</td><td align="CENTER" valign="MIDDLE" rowspan="1">330(10)</td><td align="CENTER" valign="MIDDLE" rowspan="1">360(12)</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">760</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">C</td><td align="CENTER" valign="MIDDLE" rowspan="1">200(5)</td><td align="CENTER" valign="MIDDLE" rowspan="1">300(10)</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">590</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">D</td><td align="CENTER" valign="MIDDLE" rowspan="1">100(2)</td><td align="CENTER" valign="MIDDLE" rowspan="1">270(6)</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">470</td></tr></tbody></table></div></div><p></p><p>  이 사건 운영방안에 따르면 최소 의무교육시간인 8시간을 기준으로 한 교육과정 ‘D’반의 경우 수강료가 총 470,000원인데, 이를 시간당 수강료로 환산하면(위 ‘가’ 방식) 58,700원으로서 기존 시간당 평균 수강료 30,800원보다 무려 90.5%나 인상된 것이다.</p><p>   바) 7개 사업자의 수강료 최초 및 변경 신고</p><p>  7개 사업자는 합의 이후 2011년 5월 말부터 6월 초에 걸쳐 제1종 보통 및 제2종 보통면허 관련 기본형 상품(8시간 교육)의 수강료를 아래 각 표와 같이 서울지방경찰청에 신고하였다.</p><p></p><div name="Table400" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="RIGHT" valign="MIDDLE" rowspan="1" colspan="2">(단위: 천 원)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">학  원</td><td align="CENTER" valign="MIDDLE" rowspan="1">최초 신고 수강료</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="-1">수강료 변경내역</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">노원학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">476</td><td align="CENTER" valign="MIDDLE" rowspan="1">450</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">442</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.1.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.2.)</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.8.)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">녹천학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">475</td><td align="CENTER" valign="MIDDLE" rowspan="1">449</td><td align="CENTER" valign="MIDDLE" rowspan="1">444</td><td align="CENTER" valign="MIDDLE" rowspan="1">410</td><td align="CENTER" valign="MIDDLE" rowspan="1">419</td><td align="CENTER" valign="MIDDLE" rowspan="1">429</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="1">(5.25.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.4.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.7.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.11.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.19.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(7.8.)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">삼일학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">471</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">436</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="1">(5.31.)</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.3.)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">서울학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">448</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">428</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="1">(5.31.)</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.3.)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">성산학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">476</td><td align="CENTER" valign="MIDDLE" rowspan="1">452</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">442</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.1.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.3.)</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.8.)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">양재학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">437</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">변 동 없 음</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.2.)</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">창동학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">475</td><td align="CENTER" valign="MIDDLE" rowspan="1">440</td><td align="CENTER" valign="MIDDLE" rowspan="1">425</td><td align="CENTER" valign="MIDDLE" rowspan="1">405</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">420</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="1">(5.31.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.2.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.9.)</td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.13.)</td><td align="CENTER" valign="MIDDLE" rowspan="1"> </td><td align="CENTER" valign="MIDDLE" rowspan="1">(6.27.)</td></tr></tbody></table></div></div><p></p><p></p><div name="Table500" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="RIGHT" valign="MIDDLE" rowspan="1" colspan="2">(단위: 천 원)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">학  원</td><td align="CENTER" valign="MIDDLE" rowspan="2">신고일</td><td align="CENTER" valign="MIDDLE" rowspan="2">학과 교육비</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">실습교육비</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">검정료</td><td align="CENTER" valign="MIDDLE" rowspan="2">계</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">장내기능</td><td align="CENTER" valign="MIDDLE" rowspan="1">도로주행</td><td align="CENTER" valign="MIDDLE" rowspan="1">장내기능</td><td align="CENTER" valign="MIDDLE" rowspan="1">도로주행</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">노원학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">6.1</td><td align="CENTER" valign="MIDDLE" rowspan="1">28</td><td align="CENTER" valign="MIDDLE" rowspan="1">92</td><td align="CENTER" valign="MIDDLE" rowspan="1">276</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">476</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">녹천학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">5.25</td><td align="CENTER" valign="MIDDLE" rowspan="1">25</td><td align="CENTER" valign="MIDDLE" rowspan="1">100</td><td align="CENTER" valign="MIDDLE" rowspan="1">270</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">475</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">삼일학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">5.31</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">86</td><td align="CENTER" valign="MIDDLE" rowspan="1">270</td><td align="CENTER" valign="MIDDLE" rowspan="1">35</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">471</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">서울학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">5.31</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">87</td><td align="CENTER" valign="MIDDLE" rowspan="1">261</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">448</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">성산학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">6.1</td><td align="CENTER" valign="MIDDLE" rowspan="1">28</td><td align="CENTER" valign="MIDDLE" rowspan="1">92</td><td align="CENTER" valign="MIDDLE" rowspan="1">276</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">476</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">양재학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">6.2</td><td align="CENTER" valign="MIDDLE" rowspan="1">25</td><td align="CENTER" valign="MIDDLE" rowspan="1">88</td><td align="CENTER" valign="MIDDLE" rowspan="1">264</td><td align="CENTER" valign="MIDDLE" rowspan="1">20</td><td align="CENTER" valign="MIDDLE" rowspan="1">40</td><td align="CENTER" valign="MIDDLE" rowspan="1">437</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">창동학원</td><td align="CENTER" valign="MIDDLE" rowspan="1">5.31</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">95</td><td align="CENTER" valign="MIDDLE" rowspan="1">270</td><td align="CENTER" valign="MIDDLE" rowspan="1">30</td><td align="CENTER" valign="MIDDLE" rowspan="1">50</td><td align="CENTER" valign="MIDDLE" rowspan="1">475</td></tr></tbody></table></div></div><p></p><p>[인정근거]  다툼 없는 사실, 을 제1, 4호증의 각 기재, 변론 전체의 취지</p><p>  3) 판단</p><p>  위 인정사실 및 위 각 증거에 의하여 알 수 있는 다음의 각 사정을 종합하면, 원고들을 포함한 7개 사업자가 이 사건 공동행위를 한 사실을 인정할 수 있다. </p><p>  ① 관련 법령의 개정으로 수강생이 받아야 하는 의무교육시간이 대폭 축소됨에 따라 수익도 크게 감소될 것으로 예상되어 수강료를 인상할 필요성이 있었던 반면, 각 운전전문학원이 제공하는 서비스가 동질적인 탓에 수강료가 중요한 차별요소여서 이를 공동으로 결정하려는 유인이 매우 컸다. </p><p>  ② 당초 삼일학원 원장 소외 6은 “위 모임에서 소외 1이 ’도로교통법시행령, 시행규칙 개정 관련‘과 ’도로교통법령 개정에 따라 전문학원 운영방안‘이라는 2개의 안건을 설명하였고 참석자들이 이에 대하여 특별히 이의를 제기하지 않았다.”는 내용의 진술서를 작성하여 피고에게 제출하였다. 위 진술은 도로교통법시행령과 시행규칙이 2009. 4. 30. 개정되어 2009. 6. 10. 시행을 앞두게 되자 서울협회의 주도 아래 7개 사업자가 모여 향후 운전전문학원의 운영방안에 대하여 논의하게 된 점, 삼일학원에서 이 사건 운영방안이 발견된 점 등에 의하여 뒷받침되어 신빙성이 높아 보이는바, 이에 반하는 나머지 참석자들의 진술은 그대로 받아들이기 어렵다. </p><p>  ③ 서울지방경찰청이 사업자들에게 교육시간당 수강료를 낮추도록 지도한 사실은 인정되나, 이는 사업자들이 수강료를 신고하기 시작한 2011. 5. 25. 이후의 사정으로 보이고(갑 제8호증), 더 나아가 서울지방경찰청이 수강료의 구체적인 인상 수준에 관하여 행정지도를 한 사실은 없어 보인다.</p><p>  ④ 소호정 모임 이후 최초 신고된 수강료는 7개 사업자 중 양재학원과 서울학원을 제외한 5개 사업자의 경우 소호정 모임에서 논의된 최소의무교육시간 기준 수강료인 470,000원에 근접하였다(1,000원 내지 6,000원 정도 차이에 불과). 이에 비하여 양재학원의 수강료가 437,000원, 서울학원의 수강료가 448,000원으로서 470,000원 기준으로 약 7%, 4.7% 정도 차이가 난다는 사정만으로 원고들의 담합사실을 뒤집기에 부족하다. 한편, 최초 신고 이후 일부 학원의 수강료가 변경되었다는 사정은 이 사건 담합 이후의 사정일 뿐만 아니라 최초 신고된 수강료를 기준으로 하여 조정된 것으로 보이므로, 그와 같은 사정을 들어 이 사건 담합의 존재를 뒤집기는 어렵다. </p><p> <b>나. 경쟁제한성의 존부</b></p><p>  1) 원고들의 주장</p><p>  수강생의 거주지 분포에 비추어 볼 때 서울지역 운전전문학원 시장은 관련 지리적 시장이 될 수 없고, 비용 상승요인이 발생하였으므로 수강료의 인상이 소비자 후생을 크게 저해하였다고 단정할 수 없으며, 실제 결정된 수강료를 보면 7개 사업자의 합의가 가격의 결정에 영향을 미쳤다고 보기도 어려우므로, 이 사건 공동행위에는 경쟁제한성이 인정되지 않는다. </p><p>  2) 판단</p><p>   가) 지리적 관련시장의 획정</p><p>  이 사건 합의 당시 서울지역에서 운영 중에 있던 11개 운전전문학원의 대부분이 서울 외곽지역에 위치하고 있고 수강생은 자신들의 거주지역 또는 활동지역과 가까운 학원을 선택하는 경향이 있다는 사정은 인정된다. 그러나 인접지역에 위치한 운전전문학원 간에는 셔틀버스 운행지역의 중첩(을 제5호증의 1~11)으로 직접적인 경쟁관계가 성립하고 있고, 운전전문학원이 외곽지역에 위치하고 있는 점과 서울지역의 교통 편의성 등을 감안할 때 운전전문학원 사이에 의미 있는 가격 차이가 발생한다면 수강생은 다른 지역의 운전전문학원을 선택할 가능성이 있고, 도로교통법령의 개정에 따라 의무교육시간이 단축된 사정은 그러한 가능성을 더욱 높여줄 것으로 보인다. 이에 더하여 7개 사업자는 모두 서울협회의 구성사업자이고 도로교통법상 지방경찰청 단위로 운전전문학원에 대한 관리감독이 이루어지는 점을 고려하면, 이 사건의 지리적 관련시장은 서울지역의 운전전문학원으로 봄이 타당하다. </p><p>   나) 경쟁제한의 효과</p><p>  사업자들이 공동으로 가격을 결정하거나 변경하는 행위는 그 범위 내에서 가격경쟁을 감소시킴으로써 그들의 의사에 따라 어느 정도 자유로운 가격의 결정에 영향을 미치거나 미칠 우려가 있는 상태를 초래하게 되므로, 그와 같은 사업자들의 공동행위는 특별한 사정이 없는 한 부당하다고 볼 수밖에 없다. 실제 7개 사업자가 차지하는 시장점유율 합계가 60%를 초과할 뿐만 아니라, 이 사건 공동행위로 인한 시간당 수강료의 인상비율을 살펴보면, 7개 사업자의 시간당 수강료의 인상 수준은 계산방식에 따라 78.4%~97.6% 또는 62.3%~76.7% 정도에 이르고[인하된 수강료를 기준으로 할 경우에도 71.4%~79.2% 또는 47.7%~64.2%이다], 7개 사업자들이 피고 조사단계에서 주장한 계산방식에 따른 인상률에 의하더라도 평균 60.2% 또는 28.9%로서(갑 제1호증 29쪽 주34), 원고들이 주장하는 제반사정을 고려하더라도 결코 인상 수준이 낮다고 볼 수는 없으므로, 이 사건 공동행위로 인하여 경쟁제한의 효과가 발생하였다고 봄이 타당하다. </p><p>  한편, 비용 상승요인의 존부나 담합에 따라 형성된 가격의 적정성의 정도는 경쟁제한성과 직접적인 상관이 없으므로, 원고들이 주장하는 수강료의 인상요인이나 시간당 수강료가 과도하지 않다는 사정만으로는 경쟁제한의 효과가 발생하지 않았다고 단정할 수 없다. </p><p>  원고들은 2011. 6. 10.경 실제 적용된 수강료의 편차에 비추어 이 사건 공동행위가 가격의 결정에 영향을 미쳤다고 보기 어렵다는 이유로 경쟁제한성이 없다는 취지로도 주장하나, 합의의 실행 여부는 경쟁제한성의 판단과 무관할 뿐만 아니라, 앞서 본 바와 같은 사정에 비추어 보면 이 사건 공동행위가 수강료의 결정에 아무런 영향이 미치지 않았다고 볼 수도 없다. </p><p>  따라서 원고들의 이 부분 주장은 모두 이유 없다. </p><p> <b>다. 과징금 산정의 위법 여부</b></p><p>  1) 원고들의 주장</p><p>  ① 학과교육비는 이 사건 합의에 포함되지 않았음에도 위 부분을 관련매출액에 포함시킨 것은 위법하다. </p><p>  ② 원고들을 비롯한 운전전문학원들은 개정 수강료의 적용일을 개정 도로교통법령이 시행되는 2011. 6. 10.로 정함으로써 이 사건 공동행위의 시기를 위 일자로 정하는 명시적인 합의를 하였다고 할 것이므로 위반행위의 시기는 2011. 6. 10.로 보아야 한다. </p><p>  ③ 또한 7개 사업자는 2011. 6. 10.부터 적용하는 수강료를 470,000원으로 책정하기로 합의하였음에도 불구하고 2011. 6.부터 2011. 7. 사이에 6개 사업자가 당초 신고된 수강료를 변경하였고 7개 사업자가 실제 적용한 수강료도 425,000원~444,000원의 범위에 있어 2011. 6. 10. 당시부터 원고들을 포함한 운전전문학원들은 다른 사업자에 대하여 묵시적으로 합의에서 탈퇴한다는 내용의 의사표시를 한 것으로 보아야 하므로, 2011. 6. 10. 무렵에는 위반행위가 종료되었다고 보아야 한다. </p><p>  ④ 위 ②, ③항의 사정을 종합하면 이 사건 공동행위는 실행되지 못한 것이므로, 과징금 고시 Ⅳ. 3. 다. ⑴에 따라 임의적 조정과징금을 산정함에 있어 100분의 30 이내의 범위에서 과징금을 감경하여야 함에도, 피고가 아무런 감경을 하지 아니한 것은 재량권 한계를 일탈한 것으로 위법하다. </p><p>  2) 판단</p><p>   가) 관련매출액 산정의 위법 여부</p><p>  학과교육, 장내기능교육과 도로주행교육별로 수강료가 별도로 책정되는 사실은 인정된다. 그러나 위 인정사실 및 앞서 든 증거에 의하여 인정되는 다음의 각 사정, ① 일반적인 수강생은 학과교육, 장내기능교육, 도로주행교육을 동시에 이수하게 되므로 실제로는 수강료의 총액의 규모가 중요한 의미를 지니게 되고 실제 운전전문학원 수강생은 수강료를 총액으로 납부하고 있는 점, ② 운전전문학원도 수강료 총액을 먼저 책정한 후 이를 학과교육비, 실습교육비, 검정료 등으로 적당히 배분하고 있는 것으로 보이는 점(이 사건 전문학원 운영방안 중 D안의 경우 장내기능 교육비 100,000원, 도로주행교육비 270,000원, 검정료 장내기능 및 도로주행 각 50,000원, 합계 470,000원으로 되어 있는데, 실제 신고된 각 운전전문학원의 수강료를 보면 총액에서는 470,000원에 근접하고 있으나 각 구성항목의 수강료는 모두 다르다), ③ 녹천학원의 경우 이 사건 공동행위 이전에는 학과교육비를 면제하고 있었으나 이후 다른 운전전문학원과 유사한 수준으로 학과교육비를 책정하였던 점 등을 고려하면, 원고들을 포함한 7개 사업자가 담합한 수강료는 교육비나 검정료만이 아니라 학과교육비까지 포함한 전체 수강료로 봄이 타당하므로, 관련매출액 산정에 학과교육비가 제외되어야 한다는 원고들의 주장은 이유 없다. </p><p>  나) 위반행위의 시기</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">공정거래법 제19조 제1항</a></span>에 의하여 금지되는 행위는 사업자가 다른 사업자와 공동으로 부당하게 경쟁을 제한하는 합의를 함으로써 성립하고 합의에 따른 실행행위가 있었는지는 부당공동행위의 성립요건이 아니므로, 그러한 합의의 존재가 인정되는 이상, 부당한 공동행위의 기간이나 시기에 대한 명시적인 합의가 있는 등으로 경쟁제한의 효과가 합의일 이후에 발생하였다는 것과 같은 특별한 사정에 대한 구체적인 주장·입증이 없는 한 그 합의일로부터 경쟁제한의 효과가 발생하므로, 부당한 공동행위로 인한 과징금은 ‘합의일’을 기준으로 산정하여야 한다. </p><p>  7개 사업자의 담합으로 인상된 수강료의 적용 기준일이 개정된 도로교통법령이 시행되는 2011. 6. 10.인 사실은 앞서 본 바와 같다. 그러나 개정 도로교통법령에 따라 운전면허를 취득하기 위해서는 그 시행일인 2011. 6. 10.부터 새로운 교육과정에 따른 교육을 이수하면 되고 그를 위한 수강신청이나 등록이 위 일자 이후에 이루어질 필요는 없는 점, 2011. 4. 30. 도로교통법령이 이미 개정되었으므로 2011. 5. 16. 이후 운전전문학원에 수강을 신청하려는 수강생들은 이미 개정 법령을 잘 알고 있었을 것으로 보이는데, 새로운 교육과정에 따른 최소교육시간이 ⅓정도로 축소되어 구 법령에 따른 수강료(평균 약 770,000원)의 상당한 인하가 예상되고, 2011. 5. 16.부터 구 법령에 따라 교육을 이수하기 시작하여도 사실상 2011. 6. 10. 이전에 운전면허를 취득하기는 어려웠을 것으로 보이는 상황에서, 구 법령에 따른 수강료를 지급하고 수강을 신청하였을 것으로는 도저히 보기 어려운 점 등을 고려하면, 이 사건 공동행위로 인한 경쟁제한의 효과가 2011. 6. 10. 비로소 발생하였다고 보기 어려우므로, 원고들의 이 부분 주장은 받아들일 수 없다. </p><p>   다) 위반행위의 종기</p><p>  합의에 참가한 사업자들 중 일부가 합의에 기한 실행행위를 종료하였다고 하기 위해서는 다른 사업자에 대하여 명시적 또는 묵시적으로 합의에서 탈퇴한다는 내용의 의사표시를 하고 독자적인 판단에 따라 합의가 없었더라면 존재하였을 수준으로 가격을 책정하는 등 합의의 목적에 반하는 행위를 하여야 한다. </p><p>  그러나 수강료의 변경신고는 서울지방경찰청에 대하여 하는 것으로 그 신고를 다른 사업자에 대한 묵시적 의사표시라고 볼 수 없고 달리 원고들이 묵시적으로 이 사건 합의에서 탈퇴한다는 내용의 의사표시를 한 바 없다. 또한 원고들 중 최초 신고 후 수강료를 인하하였으나, 위 인하는 당초 합의하여 신고된 수강료를 기초로 일부 인하된 것이고, 인하된 수강료도 기존 수강료 기준으로 여전히 71.7%~79.2%(실습교육비 기준으로도 47.7%~64.2%) 인상된 것이며 수강료를 인하하지 아니한 양재학원의 수강료와 비슷한 수준이어서 독자적인 판단에 따라 합의가 없었더라면 존재하였을 수준으로 가격을 책정하였다고 보기도 어렵다. 따라서 2011. 6. 10. 무렵 이 사건 공동행위가 종료되었다는 원고들의 주장은 이유 없다. </p><p>   라) 임의적 조정과징금 산정의 위법</p><p>  앞서 본 바와 같이 이 사건 공동행위가 실행되지 못하였다는 원고들의 주장은 이유 없으므로, 이를 전제로 한 임의적 조정과징금 단계에서의 과징금 감경 주장은 더 나아가 살필 필요 없이 이유 없다. </p><p><b>3. 결론</b></p><p>  따라서 원고들의 청구는 모두 이유 없으므로 이를 기각하기로 하여 주문과 같이 판결한다. </p><p>[별지 생략]</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   조용호(재판장) 이원신 신동훈 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

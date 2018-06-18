@@ -1,7 +1,5 @@
-import io
 import time
-from gensim.models.doc2vec import TaggedDocument,Doc2Vec
-from konlpy.tag import Twitter
+from gensim.models.doc2vec import Doc2Vec
 import math
 
 keyword = {'상고 도로교통법' : 9, '상고 교통사고' : 7, '상고 교통법' : 11, '상고 교통법 운전자' : 7,
@@ -11,8 +9,6 @@ keyword = {'상고 도로교통법' : 9, '상고 교통사고' : 7, '상고 교�
            '상고 교통법 지역' : 16, '상고 교통법 장소' : 11, '상고 교통법 건물' : 9, '상고 교통법 보행자' : 6,
            '상고 교통법 위반' : 13, '상고 교통법 벌금' : 15, '상고 교통법 사망' : 11, '상고 교통법 보험' : 22
            }
-
-t = Twitter()
 
 doc_vectorizer = Doc2Vec(
     dm=0,            # PV-DBOW / default 1
@@ -27,31 +23,6 @@ doc_vectorizer = Doc2Vec(
     hs = 1,          # hierarchical softmax / default 0
     negative = 10,   # negative sampling / default 5
 )
-
-
-def generate_docs1():
-    docs = []
-    for key, value in keyword.items() :
-        for i in range(value):
-            file_name = u'../CrawlingFiles/'+key+'_'+str(i)+'_1.txt'
-            f = io.open(file_name, mode = 'r', encoding = 'utf-8')
-            read_file = f.read()
-            f.close()                           # for문 한번 돌 때마다 파일 하나 읽어옴
-
-            doc = read_file[read_file.index("가입") + 3: len(read_file) - 155]  # 쓸데없는 단어들 제거(로그인, 회원가입 등)
-            doc = t.morphs(doc)
-            print(len(doc))
-            # taggedDoc = t.pos(doc)  # 포스 태깅 완료(list)
-            word_list = []
-            stopwords = []
-            for word in doc:
-                if word not in stopwords :
-                    word_list.append(word)
-
-            td = TaggedDocument(word_list, [key + '_' + str(i) + '_1'])
-
-            docs.append(td)
-    return docs
 
 
 def cos_similarity(vec1, vec2):
@@ -70,6 +41,10 @@ def cos_similarity(vec1, vec2):
         vecProd += vec1[i] * vec2[i]
 
     return vecProd / (vec1_size * vec2_size)
+
+
+def generate_docs1():
+    pass        # generate docs to word list
 
 
 start = time.time()
@@ -91,6 +66,8 @@ print("During Time: {}".format(end-start))
 
 print(str(len(docs)) + "개 문서")
 
+"""
+
 i, j = 58, 59
 print(docs[i])
 print(docs[j])
@@ -105,3 +82,5 @@ i, j = 80, 100
 print(docs[i])
 print(docs[j])
 print(cos_similarity(doc_vectorizer.docvecs[i], doc_vectorizer.docvecs[j]))
+
+"""

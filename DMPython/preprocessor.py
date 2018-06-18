@@ -9,7 +9,9 @@ from sklearn.pipeline import Pipeline
 
 location = "..\\CrawlingHtmls0617_2\\"
 
-keyword = {'도로교통법': 105}
+doc_num = 1048
+
+keyword = {'손해배상': doc_num}
 
 t = Twitter()
 
@@ -17,9 +19,9 @@ stopwords = ['이', '있', '하', '것', '들', '그', '되', '수', '보', '나
              '호', '년', '월', '일', '가', '의', '를', '하다', '함', '오', '때', '한', '더', '그것',
              '대한', '그런', '또', '더', '중', '씨', '하나', '적', '데', '내', '어떤', '이런', '다시',
              '번', '경우', '제', '조', '항', '개', '갑', '을', '병', '정', '점', '원', '정도', '이하',
-             '하는', '각', '서', '만', '아래', '같은', '‘', '’']
+             '하는', '각', '서', '만', '아래', '같은', '‘', '’', '저']
 
-accept = [0] * 105
+accept = [0] * doc_num
 # add_words = ['항소', '이유', '형', '판례', '검사', '사건', '요지', '피고인', '사실']
 # for w in add_words:
 #    stopwords.append(w)
@@ -84,9 +86,9 @@ def generate_docs1():
 
 
 doc = generate_docs1()
-print(accept[80:105])
+print(accept[838:])
 doclist = []
-for i in range(len(doc)):
+for i in range(doc_num):
     doclist.append(TaggedDocument(doc[i], ['상고 도로교통법_' + str(i)]))
 
 doc_vectorizer = Doc2Vec(
@@ -115,7 +117,7 @@ print("During Time: {}".format(end-start))
 doc_vectors = []
 doc_vectors_accept = []
 
-for i in range(len(doclist)):
+for i in range(doc_num):
     doc_vectors.append(doc_vectorizer.docvecs[i])
     if accept[i]:
         doc_vectors_accept.append(1)
@@ -126,10 +128,10 @@ print(doc_vectors)
 print(doc_vectors_accept)
 
 
-x_train = doc_vectors[0:80]
-x_test = doc_vectors[80:105]
-y_train = doc_vectors_accept[0:80]
-y_test = doc_vectors_accept[80:105]
+x_train = doc_vectors[:838]
+x_test = doc_vectors[838:]
+y_train = doc_vectors_accept[:838]
+y_test = doc_vectors_accept[838:]
 x_train = np.array(x_train)
 x_test = np.array(x_test)
 y_train = np.array(y_train)

@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2007나65162 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2035273';
+var contIdEtc = '2035274';
+var saNo = '2007나65162';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20080108' ? 
+			'20080108'.length==4 ? Date.parseExact('20080108','yyyy').toString('yyyy. M. d.') : 
+				'20080108'.length==6 ? Date.parseExact('20080108','yyyyMM').toString('yyyy. M. d.') : 
+					'20080108'.length==8 ? Date.parseExact('20080108','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007나65162 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007나65162';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2007나65162</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(60)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661996">김진우 도급계약에서의 담보책임기간 민사판례연구 34권  / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|619113">김진우 청구권에 관한 제척기간과 소멸시효 재산법연구 26권 3호  / 법문사  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661995">구태회 입주자대표회의가 한 하자보수청구와 구분소유자에게 귀속하는 하자보수에 갈음한 손해배상청구권의 제척기간과의 관계 민사판례연구 34권  / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653190">곽병수 공동주택 하자담보책임의 내용과 범위 : 개정 주택법 제46조의 적용범위를 중심으로 건축관련판례 50선 : 대구판례연구회 300회 발표 기념 건축관련판례 50선 / 대구판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|621360">정영화 건설법령상 아파트(공동주택) 하자담보책임 법리에 대한 헌법심사 : 대법원 판례의 입주자대표회의 원고적격에 대한 비판 토지공법연구 49집  / 한국토지공법학회  2010 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|420|0|null">민사소송법 제420조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|null">집합건물의 소유 및 관리에 관한 법률 제9조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건축법|8|0|null">건축법 제8조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건축법|42|0|null">건축법 제42조 제2항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|667|0|null">민법 제667조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|671|0|null">민법 제671조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건축법|18|0|null">건축법 제18조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건설산업기본법|28|0|null">건설산업기본법 제28조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|29|0|null">주택법 제29조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|59|0|null">주택법 시행령 제59조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|60|0|null">주택법 시행령 제60조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|61|0|null">주택법 시행령 제61조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|59|0|null">주택법 시행령 제59조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|59|0|null">주택법 시행령 제59조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|59|0|null">주택법 시행령 제59조 제6항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|59|0|null">주택법 시행령 제59조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|62|0|null">주택법 시행령 제62조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|1|0|null">집합건물의 소유 및 관리에 관한 법률 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|null">집합건물의 소유 및 관리에 관한 법률 제9조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|6|0|null">집합건물의 소유 및 관리에 관한 법률 부칙 제6조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법시행령|59|0|null">주택법시행령 제59조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|162|0|null">민법 제162조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="수원지방법원성남지원|2005가합5399">수원지방법원 성남지원 2007. 6. 22. 선고 2005가합5399 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2035274">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2008. 1. 8. 선고 2007나65162 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고 입주자대표회의(소송대리인 변호사 이창록)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        대한주택공사(소송대리인 법무법인 하나로 담당변호사 백강수)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2007. 12. 4.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="수원지방법원성남지원|2005가합5399|판결" href="#//">수원지방법원 성남지원 2007. 6. 22. 선고 2005가합5399 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 아래에서 지급을 명하는 금액에 해당하는 원고 패소 부분을 취소한다.  </p><p>  피고는 원고에게 224,644,273원 및 이에 대하여 2005. 8. 4.부터 2008. 1. 8.까지는 연 5%, 그 다음날부터 갚는 날까지는 연 20%의 각 비율에 의한 금액을 지급하라. </p><p>2. 원고의 나머지 항소를 기각한다. </p><p>3. 소송총비용 중 70%는 원고가, 나머지 30%는 피고가 각 부담한다. </p><p>4. 제1항의 금액 지급 부분은 가집행할 수 있다.  </p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 원고에게 798,751,676원 및 이에 대하여 소장 부본 송달 다음날부터 2007. 4. 20.자 청구취지 및 청구원인 변경 신청서 송달일까지는 연 5%, 그 다음날부터 갚는 날까지는 연 20%의 각 비율에 의한 금액을 지급하라. </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>  이 법원이 이 부분에 설시할 판결 이유는, 제1심 판결 이유 중 해당 부분 이유 기재와 같으므로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span> 본문에 의하여 이를 그대로 인용한다. 
+      </p><p>2. 원고의 주장 및 관련 법령 내용</p><p>  가. 원고의 주장</p><p>     피고가 이 사건 아파트를 신축, 분양함에 있어 설계도면과 다르게 변경시공하거나 미시공 또는 부실시공을 한 잘못으로 공용부분에 하자가 발생하였고, 하자담보책임기간 별 보수비용은 703,399,267원(10년), 181,016,356원(5년), 47,445,715원(사용검사전 하자), 14,821,147원(3년), 3,498,465원(2년), 27,921,268원(1년) 합계 978,102,218원이다. 위 금액에서 전유 부분인 후면 발코니 슬래브철근 노출로 인한 하자보수비 437,064원과 긁어내기 비용이 중복으로 계상된 옥탁부 외벽체 견출불량 시공에 대한 하자보수비 22,449,085원을 공제하면, 이 사건 아파트 공용부분에 발생한 하자의 보수비는 955,216,069원{978,102,218원 - 22,886,149원(437,064원 + 22,449,085원)}이다. 주택법 및 집합건물의 소유 및 관리에 관한 법률(이하 집합건물법이라 한다) 부칙의 개정에도 불구하고, 구분소유자는 분양자에 대하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물법 제9조</a></span>에 따라 10년의 담보책임기간 안에 발생한 모든 하자에 관하여 하자보수에 갈음한 손해배상청구권이 있다. 피고는 하자보수에 갈음한 손해배상청구권을 양수받은 원고에게 이 사건 아파트 구분소유자로부터 원고가 양수받은 전유부분 지분비율에 따른 손해배상금 798,751,676원(955,216,069원 X 83.62%)을 지급할 의무가 있다. 
+      </p><p>  나. 관련 법령의 내용</p><p>    1) 주택법(2005. 5. 26. 법률 7520호로 개정된 것)</p><p>      가) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제46조</a></span> (담보책임 및 하자보수 등)
+      </p><p>         ① 사업주체(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건축법|8|">건축법 제8조</a></span>의 규정에 의하여 건축허가를 받아 분양을 목적으로 하는 공동주택을 건축한 건축주 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건축법|42|">제42조 제2항 제2호</a></span>의 행위를 한 시공자를 포함한다. 이하 이 조에서 같다)는 건축물 분양에 따른 담보책임에 관하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">제671조</a></span>의 규정을 준용하도록 한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">「집합건물의 소유 및 관리에 관한 법률」 제9조</a></span>의 규정에 불구하고 공동주택의 사용검사일(주택단지 안의 공동주택의 전부에 대하여 임시사용승인을 얻은 경우에는 그 임시사용승인일을 말한다) 또는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건축법|18|">건축법 제18조</a></span>의 규정에 의한 공동주택의 사용승인일부터 공동주택의 내력구조부별 및 시설공사별로 10년 이내의 범위에서 대통령령이 정하는 담보책임기간 안에 공사상 잘못으로 인한 균열·침하·파손 등 대통령령으로 정하는 하자가 발생한 때에는 공동주택의 입주자 등 대통령령이 정하는 자의 청구에 따라 그 하자를 보수하여야 한다. 
+      </p><p>         ② 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제1항</a></span>의 규정에 의한 사업주체(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|28|">건설산업기본법 제28조</a></span>의 규정에 의하여 하자담보책임이 있는 자로서 사업주체로부터 건설공사를 일괄 도급받아 건설공사를 수행한 자가 따로 있는 경우에는 그 자를 말한다)는 대통령령이 정하는 바에 의하여 하자보수보증금을 예치하여야 한다. 다만, 국가·지방자치단체·대한주택공사 및 지방공사인 사업주체의 경우에는 그러하지 아니하다.
+      </p><p>         ③ 사업주체는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제1항</a></span>의 규정에 의한 담보책임기간 안에 공동주택의 내력구조부에 중대한 하자가 발생한 때에는 하자발생으로 인한 손해를 배상할 책임이 있다.
+      </p><p>      나) 부칙 (법률 제7520호, 2005. 5. 26. 공포)</p><p>         ① (시행일) 이 법은 공포한 날부터 시행한다.</p><p>         ③ (담보책임 및 하자보수에 관한 경과조치) 이 법 시행 전에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|29|">「주택법」 제29조</a></span>의 규정에 의한 사용검사 또는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건축법|18|">「건축법」 제18조</a></span>의 규정에 의한 사용승인을 얻은 공동주택의 담보책임 및 하자보수에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제46조</a></span>의 개정규정을 적용한다.
+      </p><p>     2) 주택법 시행령(2005. 9. 16. 대통령령 제19053호로 개정된 것)</p><p>      가) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제59조</a></span> (사업주체의 하자보수)
+      </p><p>         ① 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">법 제46조 제1항</a></span>의 규정에 의하여 사업주체(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">동조 제2항</a></span> 본문의 규정에 의한 사업주체를 말한다. 이하 이 조와 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|60|">제60조</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|61|">제61조</a></span>에서 같다)가 보수책임을 부담하는 하자의 범위, 내력구조부별 및 시설공사별 하자담보책임기간 등은 별표 6 및 별표 7과 같다.
+      </p><p>         ② 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">법 제46조 제1항</a></span>에서 "공동주택의 입주자 등 대통령령이 정하는 자"라 함은 입주자·입주자대표회의·관리주체 또는「집합건물의 소유 및 관리에 관한 법률」에 의하여 구성된 관리단(이하 이 조에서 "입주자대표회의 등"이라 한다)을 말한다.
+      </p><p>         ③ 입주자대표회의 등은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제1항</a></span>의 규정에 의한 하자담보책임기간 내에 공동주택의 하자가 발생한 경우에는 사업주체에 대하여 그 하자의 보수를 요구할 수 있다. 이 경우 사업주체는 하자보수요구를 받은 날(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제4항</a></span>의 규정에 의하여 하자판정을 하는 경우에는 그 판정결과를 통보받은 날을 말한다. 이하 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제6항</a></span>에서 같다)부터 3일 이내에 그 하자를 보수하거나 보수일정을 명시한 하자보수계획을 입주자대표회의 등에 통보하여야 한다. 
+      </p><p>         ⑥ 입주자대표회의 등은 사업주체가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제3항</a></span> 후단의 규정에 의하여 하자보수요구를 받은 날부터 3일 이내에 하자의 보수 또는 하자보수계획의 통보를 하지 아니하거나 통보한 하자보수계획에 따라 하자보수를 이행하지 아니하는 경우에는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">법 제46조 제2항</a></span> 본문의 규정에 의한 하자보수보증금(이하 "하자보수보증금"이라 한다)을 사용하여 직접 보수하거나 제3자에게 보수하게 할 수 있다. 이 경우 입주자대표회의 등은 하자보수보증금의 사용내역을 사업주체에게 통보하여야 한다.
+      </p><p>      나) [별표6] 하자보수대상 하자의 범위 및 시설공사별 하자담보책임기간(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제59조 제1항</a></span> 관련)
+      </p><p>         1. 하자의 범위 : 공사상의 잘못으로 인한 균열·처짐·비틀림·침하·파손·붕괴·누수·누출, 작동 또는 기능불량, 부착·접지 또는 결선 불량, 고사 및 입상불량 등이 발생하여 건축물 또는 시설물의 기능·미관 또는 안전상의 지장을 초래할 정도의 하자</p><p>         2. 시설공사별 하자담보책임기간 : 17개 항목 시설공사별로 1년 내지 3년의 하자담보책임기간을 정하고 있음 (이하 생략)</p><p>      다) [별표 7] 내력구조부별 하자보수대상 하자의 범위 및 하자담보책임기간(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제59조 제1항</a></span> 관련)
+      </p><p>         1. 하자의 범위 </p><p>           가. 내력구조부에 발생한 결함으로 인하여 당해 공동주택이 무너진 경우</p><p>           나. 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|62|">제62조 제3항</a></span>의 규정에 의한 안전진단 실시결과 당해 공동주택이 무너질 우려가 있다고 판정된 경우
+      </p><p>         2. 내력구조부별 하자보수기간</p><p>           가. 기둥 ·내력벽(힘을 받지 않는 조적벽 등은 제외한다) : 10년</p><p>           나. 보· 바닥 및 지붕 : 5년의 규정</p><p>     3) 집합건물의 소유 및 관리에 관한 법률</p><p>      가) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">제9조</a></span>  (담보책임)
+      </p><p>         ① 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|1|">제1조</a></span> 또는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|1|2">제1조의 2</a></span>의 건물을 건축하여 분양한 자의 담보책임에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">제671조</a></span>의 규정을 준용한다. (2003. 7. 18. 개정)
+      </p><p>         ② 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">제1항</a></span>의 분양자의 담보책임에 관하여는 민법에 규정하는 것보다 매수인을 불리하게 한 특약은 효력이 없다.
+      </p><p>     나) 부칙 </p><p>
+        제6조 (주택법과의 관계) 집합주택의 관리 및 기준에 관한 주택법의 특별한 규정은 이 법에 저촉하여 구분소유자의 기본적인 권리를 해하지 않는 한 효력이 있다. 다만, 공동주택의 담보책임 및 하자보수에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조</a></span>의 규정이 정하는 바에 따른다. (2005. 5. 26. 개정)
+      </p><p>3. 판단</p><p>  가. 구분소유자의 분양자에 대한 하자보수에 갈음하는 손해배상청구권의 근거</p><p>    1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제1항</a></span>은 사업주체가 입주자 등에 대하여 지는 하자보수의무와 관련한 하자발생기간 및 하자의 범위에 관하여 규정하고 있는바, 위 조항은 사업주체의 하자보수의무만을 규정하고 있으므로 위 조항에 의하여 바로 입주자 등의 사업주체에 대한 하자보수에 갈음한 손해배상청구권이 인정된다고 보기 어렵다. 또, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제3항</a></span>은 내력구조부에 중대한 하자가 발생한 경우 하자로 인한 손해배상의무를 규정하고 있어, 위 조항이 일반적인 하자보수에 갈음한 손해배상청구권의 근거조항이라고 보기도 어렵다. 
+      </p><p>    2) 
+        집합건물법 부칙 제6조는 ‘집합주택의 관리 및 기준에 관한 주택법의 특별한 규정은 이 법에 저촉하여 구분소유자의 기본적인 권리를 해하지 않는 한 효력이 있되, 공동주택의 담보책임 및 하자보수에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조</a></span>의 규정이 정하는 바에 따른다’고 규정하고 있으므로, 위 조항에 의하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조</a></span> 규정이 정하는 바에 따라야 하는 것은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조</a></span>가 정한 사항에 한정된다고 보아야 한다. 앞서 본 대로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조</a></span>는 사업주체가 입주자 등에 대하여 지는 하자보수의무의 요건인 하자발생기간 및 하자 범위(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제1항</a></span>)와 내력구조부의 중대한 하자로 인한 손해배상의무(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제3항</a></span>)만 규정하고 있을 뿐, 하자보수에 갈음한 손해배상청구권에 관하여는 규정한 바 없으므로 
+        위 부칙 제6조가 구분소유자의 분양자에 대한 하자보수에 갈음한 손해배상청구권에 관한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물법 제9조</a></span>의 적용을 배제한 것이라고 볼 수 없다.
+      </p><p>    3) 구분소유자는 분양자에 대하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물법 제9조</a></span>에 의하여 적용되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span>에 따라 하자보수에 갈음한 손해배상청구권이 있으나, 하자보수의무는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법시행령|59|">주택법시행령 제59조 제1항</a></span>에 의하여 결정되므로 하자보수에 갈음하는 손해배상이 인정되는 하자도 위 주택법 시행령에서 인정되는 것에 한한다. 
+      </p><p>  나. 하자발생기간</p><p>    1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제1항</a></span>은 ‘공동주택의 사용검사일부터 … 10년 이내의 … 담보책임기간 안에 공사상 잘못으로 인한 … 하자가 발생’한 때에 사업주체가 담보책임을 부담한다고 규정하고 있고, 위 담보책임기간이란 제척기간이 아닌 하자발생기간으로 해석된다. 
+      </p><p>    2) 여기서 사용검사일을 담보책임기간의 기산일로 해석하면, 사업주체는 담보책임기간 안에 즉 사용검사일 이후에 발생한 하자에 대하여만 담보책임을 지게 되고, 이는 합리적인 이유 없이 공동주택의 구분소유자에게는 사용검사일 이전에 발생한 하자에 대한 담보추구권을 인정하지 않는 것이 되는 반면, 공동주택 아닌 집합건물의 소유자에게는 사용승인일 이전에 발생한 하자에 대한 담보추구권을 인정하는 차별을 하게 된다. 또 개정 주택법의 소급적용으로 공동주택 입주자가 종전에 집합건물법 및 민법에 따라 보유하던 사용검사일 전에 발생한 하자에 대한 담보추구권을 소급입법에 의하여 박탈하는 결과가 되며, 이는 합리적이고 정당한 이유 없이 공동주택 입주자의 재산권인 하자담보추구권을 과잉제한하게 되어 헌법에 위반될 소지가 있다. </p><p>반면, 현행 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제1항</a></span>은 담보책임기간의 기산점에 관한 아무런 제한을 두지 않은 채 사용검사일을 담보책임기간의 만료점을 계산하는 기준으로 정한 것일 뿐이라고 해석하면, 담보책임 있는 하자가 발생하는 시점(시점)에 대한 제한은 없게 되므로 사업주체는 사용검사일 전에 발생한 하자에 대하여도 담보책임을 지게 되므로 위헌소지를 차단할 수 있다. 
+      </p><p>  헌법에 부합하는 해석방법과 헌법에 어긋나는 해석방법이 모두 가능하다면 되도록 헌법에 부합하는 해석을 취함으로써 국민의 기본권을 보호하고 법률의 효력을 지속시킬 필요가 있다. 현행 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제1항</a></span> 중 ‘사용검사일부터’는 담보책임기간의 기산점이 아니라 만료점을 계산하는 기준일 뿐이라고 풀이하는 것이 합당하다. 
+      </p><p>  그렇다면, 공동주택 하자 발생일이 사용검사일 이전이냐 이후이냐 여부를 불문하고 주택법시행령 별표 6, 7이 정한 기간과 범위 안에서 발생한 하자에 관하여 분양자는 구분소유자에 대하여 하자보수에 갈음한 손해배상의무가 있다.</p><p>    3) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법시행령|59|">주택법시행령 제59조 제1항</a></span>은 별표 6, 7에서 사업주체가 보수책임을 부담하는 하자의 범위와 하자담보책임기간을 규정하면서, 별표 6에서는 1, 2, 3년차 하자만을 규정하고, 내력구조부의 5, 10년차 하자에 관하여는 별표 7에서 무너질 염려가 있는 등의 한정된 경우에만 보수책임을 인정함으로써 명문으로 내력구조부의 하자에 대한 책임을 제한하고 있다. 위 시행령에서 정하는 경우 외에는 내력구조부의 하자라 하더라도 별표6의 구분에 따라 1년 내지 3년의 하자담보책임기간이 적용된다고 보아야 한다.
+      </p><p>  다. 원고 청구에 관한 판단</p><p>    1) 제1심 감정인 
+        소외 1의 하자감정결과, 변론 전체의 취지를 종합하면, 이 사건 아파트의 내력구조부에 존재하는 하자가 아파트가 무너질 우려가 있다고 판정될 정도에는 이르지 아니하였다고 보이고, 달리 이를 인정할 증거가 없다. 원고가 하자담보책임기간이 5년, 10년이라고 주장하는 각 하자는 그 하자가 하자담보책임기간이 1년, 2년, 3년인 하자에 해당하는지를 살펴 그에 해당하면 그 부분의 하자로 인정할 수 있을 뿐이다. 
+      </p><p>    2) 하자보수에 갈음하는 손해배상금</p><p>      가) 앞서 본 사실, 갑 제3호증, 갑 제4호증의 1 내지 8의 각 기재, 제1심 감정인 
+        소외 1의 하자감정결과, 제1심 법원의 위 감정인에 대한 사실조회결과, 변론 전체의 취지를 종합하면 다음과 같은 사실을 인정할 수 있다. 이 사건 아파트에는 사용검사 이전과 이후 별표 1, 2의 각 기재와 같은 하자가 발생하여 주택의 기능, 미관 또는 안전상의 지장을 초래하고 있다. 원고는 피고에게 이 사건 아파트에 발생한 각 하자에 관하여 하자담보책임기간 내인, 1998. 4. 9. 하자담보책임기간이 1년인 하자에 대하여, 1999. 4. 7. 하자담보책임기간이 2년인 하자에 대하여, 2000. 3. 24. 하자담보책임기간이 3년인 하자에 대하여 각 하자보수를 요청하였다. 위 각 하자의 보수비용은 383,784,252원(사용검사 전 하자의 보수비 24,996,630원 + 하자담보책임기간이 1년인 하자의 보수비 28,319,111원 + 하자담보책임기간이 2년인 하자의 보수비 3,687,220원 + 하자담보책임기간이 3년인 하자의 보수비 326,781,291원)이다. 원고는 이 사건 아파트 525세대 중 439세대의 구분소유자들로부터 피고에 대하여 가지는 하자보수에 갈음하는 손해배상청구권을 양도받아 면적에 따른 양수비율이 83.62%에 해당한다. 
+      </p><p>  위 인정사실에 의하면, 원고가 입주 후 피고에게 하자담보책임 기간 내에 위 각 하자에 대한 보수를 계속 요구하였으므로 위 각 하자는 하자담보책임기간 내에 발생한 것으로 추정할 수 있다.  </p><p>      나) 따라서 피고는 원고에게 원고가 양도받은 하자보수에 갈음하는 손해배상금 320,920,391원(383,784,252원 × 83.62%)을 지급할 의무가 있다. </p><p>    3) 전체 도장을 하여야 하는지 여부</p><p>      가) 원고의 주장</p><p>        균열 부분에 대한 부분도장만을 한다면 기술적인 이유로 나머지 부분과 색상 및 무늬가 달라지는 등 외관상 보수의 흔적이 남게 되어 미관상의 하자는 여전히 존재하게 되고 그에 따라 이 사건 아파트의 거래가격이 하락하게 된다. 이 사건 아파트의 균열 보수는 전체를 도장하는 방법으로 하여야 한다. </p><p>      나) 판단</p><p>         균열 부분에 대한 보수방법으로 전제도장이 필요하다는 원고의 주장을 인정할 증거가 없다(제1심 감정인 
+        소외 1의 감정결과에 의하면, 외벽 면적에 비하여 균열의 보수가 필요한 부분의 면적이 그다지 넓지 않은 것으로 보인다). 원고의 주장은 이유 없다.  
+      </p><p>  라. 피고의 주장 및 판단</p><p>    1) 피고가 하자보수를 완료하여 하자가 남아 있지 않다는 주장에 대한 판단</p><p>      가) 주장</p><p>         이 사건 아파트에 1년, 2년, 3년의 하자담보책임기간 내에 발생한 하자의 보수를 완료하고 원고로부터 하자보수완료확인을 받았으므로 더 이상 하자가 남아있지 않다.</p><p>      나) 판단</p><p>         을 제1호증의 1, 2의 각 기재에 의하면, 피고는 원고로부터 이 사건 아파트에 발생한 하자담보책임기간이 1년, 2년인 하자의 보수를 요구받고, 
+        소외 2 주식회사로 하여금 하자를 보수하게 한 후 사용검사일로부터 1년 또는 2년이 경과하거나 경과할 즈음인 1998. 7. 15.에 하자담보책임기간이 1년인 하자에 관하여, 1999. 6. 14.에 하자담보책임기간이 2년인 하자에 관하여 각 이 사건 아파트 하자 보수를 
+        소외 2 주식회사에서 시행종료하였다는 내용의 하자보수종료확인서를 원고로부터 받은 사실을 인정할 수는 있다. 
+      </p><p> 그러나 원고가 작성한 하자보수종료확인서는 단순히 하자보수작업이 이루어져 외견상 보수를 마쳤다는 사실의 확인에 불과하여 피고가 모든 하자를 완전히 보수하여 더 이상 하자가 남아 있지 않음을 확인한 것으로 보기에는 부족하다. 피고의 주장은 이유 없다. </p><p>    2) 소멸시효 항변 </p><p>      가) 주장</p><p>         이 사건 아파트에 발생한 하자 중 사용검사일 이전에 발생한 하자는 사용검사일 다음날인 1997. 5. 17.부터, 하자담보책임기간이 1년, 2년, 3년인 각 하자는 그 기간이 모두 경과한 다음날인 2000. 5. 17.부터 기산하여도 각 5년의 소멸시효기간이 경과되었다. 원고의 하자보수에 갈음하는 손해배상청구권은 시효의 완성으로 소멸되었다. </p><p>      나) 판단</p><p>        (1) 개정 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">주택법 시행령 제59조 제3항</a></span>은, ‘
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">제1항</a></span>의 규정에 의한 하자담보책임기간 내에 공동주택의 하자가 발생한 경우’에는 입주자대표회의 등이 사업주체에 대하여 그 하자의 보수를 요구할 수 있다고 규정하고 있을 뿐, 그 기간 내에 하자보수를 요구하여야 한다거나 그 기간 동안 담보책임이 있다고 규정하고 있지 않으므로, 위 하자담보책임기간을 하자보수청구권 행사의 제척기간으로 해석할 수는 없고, 하자담보책임기간은 그 문언상 하자의 발생기간을 의미하는 것일 뿐 하자보수의무의 존속기간을 의미하는 것은 아니다. 한편 소멸시효는 채권자가 권리를 행사할 수 있는 때로부터 진행하는바, 아파트 구분소유자는 아파트를 인도받은 후, 인도 후 하자가 발생한 경우에는 하자가 발생한 때부터 하자보수청구권 또는 하자보수에 갈음하는 손해배상청구권을 행사하는데 아무런 법률상 장애사유가 없으므로 그 때부터 소멸시효는 진행된다.
+      </p><p>        (2) 한편, 구분소유자의 하자보수에 갈음한 손해배상청구권은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물법 제9조</a></span>에 의하여 인정되는 법정책임이므로(이에 따라 분양계약자가 아닌 집합건물의 구분소유자가 분양자에게 담보책임을 물을 수 있게 된다), 피고가 이 사건 아파트를 건축하여 분양한 행위가 상행위에 해당한다고 하더라도, 피고의 부실시공으로 발생한 하자 보수에 갈음한 손해배상채권은 상행위로 인한 채권이 아니다. 따라서 하자보수에 갈음하는 손해배상청구권은 5년의 상사 소멸시효가 아니라 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|162|">민법 제162조 제1항</a></span>에 따라 10년의 소멸시효가 적용된다. 
+      </p><p>        (3) 이 사건 아파트의 구분소유자들은 피고에 대한 하자보수에 갈음한 손해배상채권은 사용검사 전 발생한 하자에 대하여는 사용검사일인 1997. 5. 16.경에 인도었다고 보이므로 그날부터, 사용검사 후 발생한 하자로서 하자담보책임기간이 1년, 2년, 3년인 각 하자에 대하여는 각 발생일로부터 10년의 소멸시효가 진행한다. 그러므로 소멸시효 기산점이 가장 빠른 사용검사일로부터 계산하더라도 그 때부터 10년의 소멸시효기간이 경과하기 전인 2005. 7. 5. 이 사건 소가 제기되었으므로(원고가 소를 제기할 당시에는 구분소유자들이 손해배상채권을 행사한 것이 아니므로 이 때 소멸시효가 중단되지 않는다 하더라도, 이 사건 아파트 525세대 중 439세대의 구분소유자들이 2006. 12. 14. 원고에게 하자보수에 갈음하는 손해배상채권을 양도한 후, 2007. 3. 14. 청구취지 및 청구원인변경 신청서를 제1심 법원에 제출하였으므로 적어도 이때에는 소멸시효가 중단되었다고 보여 결론은 같다) 하자보수에 갈음하는 손해배상채권의 소멸시효가 완성되었다는 피고의 주장은 이유 없다. </p><p>    3) 허용 균열 범위내의 균열은 하자에 해당하지 않는다는 주장에 대한 판단</p><p>      가) 피고의 주장</p><p>         콘크리트 균열은 습도 및 온도 변화에 따라 건조 수축하는 콘크리트의 특성상 균열이 당연히 발생한다. 유해도나 환경을 고려하여 철근을 부식시킬 염려가 없고 콘크리트 구조물의 안전과 무관한 정도인 0.5㎜ 미만의 모든 균열은 허용 균열 범위 내로서 보수가 필요한 하자가 아니다.  </p><p>      나) 판단</p><p>         허용 균열 범위 내의 균열이라 하더라도 빗물의 침투 등으로 철근이 부식되고 균열이 확산됨에 따라 구조체의 내구력이 감소하는 등 건물의 기능상, 안전상 지장을 초래할 뿐 아니라 균열이 발생한 콘크리트 외벽이 노출되는 경우 미관상으로도 좋지 않으므로, 이를 보수가 불필요한 하자라고 볼 수 없다. 제1심 감정인 
+        소외 1의 감정결과에 의하면, 이 사건 아파트의 외벽 등에 발생한 균열은 보수가 필요한 하자인 사실이 인정된다. 피고의 주장은 이유 없다. 
+      </p><p>    4) 책임의 제한 주장에 대한 판단</p><p>      가) 주장</p><p>         이 사건 아파트는 입주일로부터 10년이 경과하여 자연발생적인 노화현상이 존재한다. 피고는 구분소유자들의 요청에 따라 성실히 하자보수를 시행하고 하자담보책임기간이 1년, 2년, 3년, 5년이 하자에 대하여 하자보수종료확인서까지 발급받았다. 이 사건 아파트의 경우 관리상의 잘못으로 인하여 하자가 확대되었을 사정도 배제할 수 없다. 위와 같은 사정에서 손해의 공평 부담과 신의칙에 근거하여 피고가 원고에게 배상하여야 할 손해액은 40% 정도 감액되어야 한다.</p><p>      나) 판단</p><p>         이 사건 아파트는 사용검사일로부터 제1심 감정인 
+        소외 1의 감정시까지 9년 정도가 경과하였고, 피고가 원고의 요청에 따라 하자담보책임기간이 1년, 2년인 하자에 대하여 하자보수종료확인서를 원고로 받은 사실은 앞서 본 바와 같고, 을 제2호증의 3 내지 5의 각 기재에 의하면, 피고는 2002. 7.경까지 
+        소외 3 주식회사를 통해 하자담보책임기간이 5년인 하자에 관하여도 하자보수를 하고 이 사건 아파트 관리소장으로부터 작업완료확인서를 교부받은 사실은 인정된다. 한편 갑 제4호증의 7 내지 10의 각 기재, 제1심 감정인 
+        소외 1의 감정결과에 의하면, 피고가 별표 1, 2의 각 기재 하자 중 일부를 보수한 사실은 있으나, 하자담보책임기간 내에 발생한 하자가 여전히 존재하는 사실, 원고는 피고가 하자담보책임기간이 3년인 하자에 대하여 성실한 하자보수를 하지 않자 피고에게 성실한 하자보수를 요청하였을 뿐만 아니라 2004. 6. 28.과 2004. 10. 25.에도 피고에게 피고가 하자보수를 실시한 옥상에서 여전히 누수가 발생하므로 재하자보수를 요청한 사실 또한 인정할 수 있다. 
+      </p><p>  이러한 사정들과 이 사건 아파트에 시간이 경과함에 따라 자연발생적인 노화현상이 발생할 수 있는 점 등을 참작할 때, 손해의 공평 부담 및 신의칙에 비추어 피고가 배상하여야 할 손해액을 앞서 본 하자보수비용의 70%로 제한함이 상당하다. </p><p>4. 결  론</p><p>  피고는 원고에게 하자보수에 갈음하는 손해배상금으로 224,644,273원(320,920,391원 × 70%) 및 이에 대하여 이 사건 소장 부본 송달 다음날인 2005. 8. 4.부터 피고가 채무의 존부 및 범위에 관하여 항쟁함이 상당한 당심 판결 선고일인 2008. 1. 8.까지는 민법이 정한 연 5%, 그 다음날부터 갚는 날까지는 소송 촉진 등에 관한 특례법이 정한 연 20%의 각 비율에 의한 지연손해금을 지급할 의무가 있다. 원고의 청구는 위 인정 범위 내에서 이유 있으므로 인용되어야 하고, 나머지 청구는 이유 없으므로 기각되어야 한다. 제1심 판결은 이와 일부 결론을 달리하여 부당하다. 원고의 항소를 일부 받아들여 피고에게 지급을 명한 금액에 해당하는 원고 패소 부분을 취소하고 위 금액의 지급을 명한다. 원고의 나머지 항소를 기각한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김문석(재판장) 이철의 박미리 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 94다56098 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2104259';
+var contIdEtc = '2105142';
+var saNo = '94다56098';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('19961210' ? 
+			'19961210'.length==4 ? Date.parseExact('19961210','yyyy').toString('yyyy. M. d.') : 
+				'19961210'.length==6 ? Date.parseExact('19961210','yyyyMM').toString('yyyy. M. d.') : 
+					'19961210'.length==8 ? Date.parseExact('19961210','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 94다56098 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '94다56098';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />94다56098</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(17)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(10)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|238593">민법 제574조의 적용범위 길기봉 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|432901">아파트 분양공고보다 공유대지면적이 감소된 경우의 법률관계 안정호 博英社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|499684">김대정 아파트분양계약의 사법상의 법률관계 한독법학 13호  / 한독법률학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|533543">남효순 (매도인의 하자담보책임과 채무불이행책임의 관계 및 손해배상의 범위) 하자담보책임상 귀책사유 있는 매도인의 손해배상책임 : 손해배상의 범위와 채무불이행책임의 경합 판례실무연구 VII  / 박영사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|525651">조한창 집합건물 분양계약의 해제 대법원판례해설 46호 (2004.07) / 법원도서관  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|240456">김동훈 약관규제의 판례와 이론 : 약관규제법 시행 10년의 성과 . 고시계 42권12호 (97.11) / 국가고시학회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|464449">손지열 약관에 대한 내용통제 민사재판의 제문제 10권  / 한국사법행정학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696147">윤진수 한국법상 약관규제법에 의한 소비자 보호 민사법학 62호  / 한국사법행정학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|540940">김천수 법률행위의 무효와 취소에 관한 판례분석 사법연구 8집  / 한학문화  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|534541">이정민 집합건물의 분양과 하자담보책임 : 집합건물법 제9조와 관련한 몇가지 법적 쟁점에 관하여 . 사법논집  . 제38집 38집  / 법원도서관  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603773">김재형 분양광고와 계약 : 청약ㆍ청약의 유인ㆍ손해배상을 중심으로 민사판례연구 31권  / 박영사  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476128">윤인태 집합건물 분양자의 하자담보책임 : 특히 아파트를 중심으로 . 판례연구 12집  / 부산판례연구회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251782">김효신 약관규제의 일반원칙과 수정해석 법학논고 13집  / 경북대학교 출판부  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|591496">윤진수 2007년도 주요 민법 관련 판례 회고 법학 49권 1호  / 서울대학교 법학연구소  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|586834">김상중 상가분양계약의 법률관계 : 수분양자의 보호에 관한 판례의 경향을 중심으로 재산법연구 24권 3호  / 법문사  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603884">천종호 아파트분양광고의 법적 성질과 분양계약에의 편입 판례연구 20집  / 부산판례연구회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|462296">조관행 약관규제의 법리와 불공정한 면책약관의 효력 재판자료 87집  / 법원도서관  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|551025">윤진수 계약 해석의 방법에 관한 국제적 동향과 한국법 비교사법 12권 4호 (2005.12) / 한국비교사법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622788">문광섭 임대주택법상 '임차인'에 관한 법률의 해석 및 법률행위의 해석 대법원판례해설 79호  / 법원도서관  2009 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|92다30580">
+대법원 1992. 12. 22. 선고 92다30580 판결(공1993상, 574)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|563|0|null">민법 제563조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="주택공급에관한규칙|9|0|19890329">주택공급에관한규칙(구) 제9조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="주택공급에관한규칙|19|0|null">주택공급에관한규칙(구) 제19조 제4항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|574|0|null">민법 제574조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|137|0|null">민법 제137조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|546|0|null">민법 제546조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|548|0|null">민법 제548조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="약관의규제에관한법률|5|0|null">약관의규제에관한법률 제5조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="약관의규제에관한법률|7|0|null">약관의규제에관한법률 제7조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택건설촉진법|33|0|19840410">주택건설촉진법 제33조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택건설촉진법|32|0|19840410">주택건설촉진법 제32조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|574|0|null">민법 제574조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|94나3041">
+서울고법  1994. 10. 11. 선고 94나3041 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2105142">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1996. 12. 10. 선고 94다56098 판결</h2><p class="sub_title">[손해배상(기)][집44(2)민,355;공1997.2.1.(27),288]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 아파트 분양계약서상의 공유대지 표기란이 공란인 경우, 분양공고상의 평형별 공유대지면적을 계약상의 분양면적으로 하기로 하는 묵시적 합의가 있었다고 본 사례</p>
+      <p></p>
+      <p>
+        </p><p>[2] 수량을 지정한 매매계약 후에 수량부족이 발생한 경우 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|574|">민법 제574조</a></span>에 의한 담보책임을 물을 수 있는지 여부(소극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[3] 주택건설사업자가 분양계약 당시 공유지분 산정의 기초가 된 아파트 대지의 일부를 분양계약 후에 기부채납함으로써 분양계약보다 적은 대지 공유지분을 이전등기하게 된 경우, 감소된 공유지분 범위 내에서 이행불능을 이유로 분양계약의 일부 해제를 인정한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[4] 아파트 분양계약상의 공유대지 증감에 관한 면책조항의 의미 및 효력</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>  [1] 주택건설사업주체의 입주자모집공고는 주택공급계약의 청약 그 자체라고는 할 수 없지만, 그 분양공고는 대량의 주택공급거래에서 불특정 다수의 수요자에게 주택공급계약의 내용을 일률적으로 미리 알리고 그 내용에 따른 주택공급청약을 하게 한 후 추첨을 거쳐 당첨자와 사이에 정형화된 주택공급계약을 체결하기 위한 절차로서, 사업주체로서는 당첨자와의 분양계약 체결시에 특단의 사정이 없는 한 입주자모집공고와 같은 내용의 계약을 체결하게 되고, 한편 구 주택공급에관한규칙(1989. 3. 29. 건설부령 제447호로 개정되기 전의 것)은 사업주체가 작성하는 주택공급계약서에는 분양가격과 납부시기, 공급되는 주택면적(전용면적 및 공용면적)과 대지면적 등을 반드시 포함시키도록 규정하고 있으며, 아파트 분양계약서상 공유대지의 증가나 감소가 있을 경우 그에 대한 대금청구를 할 수 없다는 조항을 두고 있다면 이는 계약상의 일정한 공유대지면적을 전제하지 아니하고는 성립될 수 없는 조항이므로, 비록 아파트 분양계약서상의 공유대지 표기란이 공란이었다 하더라도 분양계약자들과 주택건설사업자는 당해 아파트에 대한 분양계약을 체결함에 있어서 공유대지면적에 관하여는 분양공고의 내용을 계약내용의 일부로 흡수시키기로 하는 묵시적인 합의가 있었다고 본 원심판결을 수긍한 사례.</p>
+      <p></p><p>
+        </p><p>  [2] 아파트 분양계약이 수량을 지정한 매매에 해당된다 하더라도, 이전등기된 공유대지지분이 부족하게 된 원인이 분양계약 당시 분양계약자들과 주택건설사업자가 공유지분 산정의 기초가 되는 아파트 대지를 실제와 다르게 잘못 알고 있었기 때문이 아니라, 주택건설사업자가 분양계약 당시 공유지분 산정의 기초가 된 아파트 대지 중 일부를 분양계약 후에 비로소 공용시설용 대지에 편입하여 시에 기부채납하였기 때문이라면, 주택건설사업자에 대하여 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|574|">민법 제574조</a></span>에 의한 담보책임을 물을 수는 없다. 
+        </p>
+      <p></p><p>
+        </p><p>  [3] 주택건설사업자가 분양계약 당시 공유지분 산정의 기초가 된 아파트 대지의 일부를 분양계약 후에 시에 기부채납함으로써 분양계약자들 또는 공유대지지분등기 경료 전에 분양계약자로부터 분양계약상의 지위를 양도받은 자들에게 분양공고 및 분양계약 당시 보다 면적이 감소한 평형별 공유대지면적을 공급한 경우, 아파트 분양계약에 따른 공유대지지분 이전의무는 감소된 지분 범위 내에서 이행불능이 된 것으로 보아야 하므로, 분양계약자들 또는 공유대지지분등기 경료 전에 분양계약자로부터 분양계약상의 지위를 양도받은 자들의 해제 의사표시로써 감소된 공유지분 범위 내에서 분양계약의 일부 해제가 가능하고, 그와 같은 경우 주택건설사업자는 원상회복으로써 그들에게 감소된 공유지분에 상당하는 대금을 반환할 의무가 있다고 본 사례.</p>
+      <p></p><p>
+        </p><p>  [4] 아파트 분양계약 체결 당시에 작성된 계약서상에 "공유대지에 대한 공부 정리 결과 공유대지의 증가나 감소가 있을 경우 그에 상당한 금액을 서로 청구하지 않기로 한다."는 면책조항이 있는 경우, 그 조항의 '공유대지에 대한 공부 정리 결과 공유대지의 증가나 감소가 있을 경우'라 함은 바로 분양계약 당시 계획된 아파트 단지의 대지에 대하여 지적법에 따른 순수한 지적공부 정리 결과 객관적으로 불가피하게 발생하는 증감만을 뜻하는 것으로 보아야 하고 그와 같이 해석하는 한 그 면책조항이 형평의 원칙이나 신의칙에 반하는 것은 아니지만, 그 공유대지의 감소가 주택건설사업자가 분양계약 당시 공유지분 산정의 기초가 된 아파트 대지 중 일부를 분양계약 후 다른 용도로 사용함으로써 생겨난 것이라면 당해 면책조항에 의해 면책될 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>  [1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|563|">민법 제563조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택공급에관한규칙|9|">구 주택공급에관한규칙(1989. 3. 29. 건설부령 제447호로 개정되기 전의 것) 제9조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택공급에관한규칙|19|">제19조 제4항</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|574|">민법 제574조</a></span>[3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|137|">민법 제137조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|546|">제546조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|">제548조</a></span>[4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의규제에관한법률|5|">약관의규제에관한법률 제5조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의규제에관한법률|7|">제7조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|">민법 제2조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다30580|판결" href="#//">대법원 1992. 12. 22. 선고 92다30580 판결(공1993상, 574)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,피상고인】
+      
+          박종만 외 662인 (원고들 소송대리인 변호사 김현)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고,상고인】
+      
+          대한주택공사 (소송대리인 변호사 김수룡 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|94나3041|판결" href="#//">
+서울고법  1994. 10. 11. 선고 94나3041 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>피고의 원고 김진순에 대한 상고를 각하한다.  피고의 나머지 원고들에 대한 상고를 기각한다.  상고비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>  1. 피고의 원고 김진순에 대한 상고의 적법 여부에 관하여 판단한다.</p><p>  상고는 자기에게 불이익한 재판에 대하여 유리하게 취소·변경을 구하기 위하여 하는 것이므로 승소판결에 대한 불복상고는 허용될 수 없는 것이다.</p><p>  그런데 기록에 의하면, 원심은 원고 김진순의 항소 및 원심에서 확장된 청구를 전부 기각하였음이 분명하므로 피고로서는 원심판결에 대하여 상고의 이익이 없다 할 것이고, 따라서 피고의 위 원고에 대한 상고는 부적법한 것으로서 각하를 면할 수 없다.</p><p>  2. 피고 소송대리인들의 각 상고이유에 대하여 함께 판단한다.</p><p>  가. 상고이유 제1점에 대하여 </p><p>  원심판결 이유에 의하면, 원심은 그 채택한 증거들을 종합하여, 피고는 서울 노원구 상계동 일대 지역에 대규모 상계주공아파트 단지 건립을 추진하던 중 1986. 3. 25. 1단계 6개 단지 아파트 11,928세대의 주택건설 사업을 추진하는 한편, 같은 해 9. 12. 건설부장관으로부터 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|33|">주택건설촉진법(1984. 4. 10. 법률 제3724호) 제33조</a></span>에 의하여 2단계 주택건설 사업계획 승인을 받아서 2단계로 서울 노원구 상계동 360의 1 외 199필지 지상에 상계주공아파트 제7단지부터 제12단지까지 및 제15, 제16단지 등 모두 8개 단지에 이르는 17,123세대의 아파트를 건립하게 된 사실{총대지면적은 총사업면적 1,460,059㎡ 중 723,009㎡이고, 원고들(원고 김진순은 제외, 이하 같다) 소유의 아파트가 위치한 제12단지의 대지면적은 70,300㎡로서, 그 후 1987. 2. 17.과 같은 해 5. 20. 두 차례에 걸쳐 사업계획이 변경승인되었으나 위 대지면적과 아파트건립예정규모에 변동이 없었다.}, 피고는 2단계 아파트 건축착공예정일을 1987. 3월로, 준공예정일을 1988. 12월로 잡고 주택건설 사업계획을 수립한 상태에서 1987. 6월경 일간신문에 입주자모집공고를 한 사실, 피고는 위 분양공고에 분양대상 아파트의 평형별 건물면적(전용면적, 공용면적), 평형별 공유대지면적(공유지분), 분양가격과 입주금 납부시기 및 방법, 입주자의 신청범위와 신청일시 및 방법, 입주자 선정 방법, 입주예정일 등의 사항을 기재하여 공고한 사실, 원고들 소유의 아파트는 모두 위 상계주공아파트 제12단지 내에 있는데, 원고들 중 원심판시 별지 제2목록 기재 원고들(원심 공동원고 이봉순은 제외, 이하 같다)은 피고의 위 분양공고를 보고 공급신청을 하여 1987. 7. 9. 추첨 결과 분양당첨자로 선정되자, 같은 해 7. 15.과 같은 달 16.에 걸쳐서 피고와의 사이에 공고된 분양가격으로 각 아파트 분양계약을 체결한 다음 1988. 10월경까지 각 분양대금을 완납하고 각 분양 동호수의 아파트에 입주하였는데, 위 분양계약 체결 당시 작성된 분양계약서에는 분양아파트의 동호수와 건물면적(전용면적, 공용면적) 및 분양가격 등은 기재되어 있었으나 다만 공유대지면적 표기란은 공란으로 되어 있었던 사실, 한편 이 사건 아파트 분양계약 체결 당시에 분양계약자들이 당첨된 아파트에 관하여 건물 전용면적에 관한 소유권이전등기를 마치기 전에 계약상의 지위를 양도할 때에는 피고의 승인을 받아야 하며, 승인을 받지 아니한 경우 피고에게 그 양도사실을 대항하지 못하되, 다만 건물소유권이전등기 후 공유대지지분등기 전에 제3자에게 양도할 때에는 대지 공유지분 양도에 관하여는 피고의 별도의 승인을 요하지 아니하며, 이 경우 양수인은 분양계약자의 피고에 대한 권리의무를 포괄적으로 승계하기로 특약한 사실, 원고들 중 원심판시 별지 제3목록 기재 원고들은 원래의 아파트 분양계약자들이 대금을 완납하고 건물 전용면적에 관한 소유권이전등기를 마친 후 공유대지지분등기가 경료되기 전에 그들로부터 각 아파트 분양계약상의 지위를 양도받은 사실 등을 인정한 다음, 일반적으로 주택건설촉진법상 주택건설사업주체는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|32|">같은 법 제32조</a></span>에 따라 주택의 공급조건·방법 및 절차 등에 관한 사항을 규정하고 있는 주택공급에관한규칙(1986. 5. 31. 건설부령 제401호)에 의하여 반드시 위와 같은 입주자모집공고를 하도록 되어 있고, 그 공고에 기재하여야 할 주택공급에 관한 사항도 위 규칙에서 구체적으로 규정하고 있으며, 이러한 분양공고상의 주택공급조건에 따라서 수요자들이 주택공급신청을 하고 추첨절차를 밟도록 되어 있는 점, 또한 같은법시행규칙에 의하면 입주자 모집공고 후에는 입주자로 선정된 전원의 동의를 얻은 경우 등이 아닌 한 세대당 주택의 단위규모의 변경을 초래하는 주택건설사업계획을 변경할 수 없도록 되어 있어서 특별한 사정이 없는 한 입주자모집공고상의 주택공급조건이 사후에 달라질 수 없는 점 등에 비추어 보면, 
+        <span class="accrnt_txt">주택건설사업주체의 입주자모집공고는 주택공급계약의 청약 그 자체라고는 할 수 없다 할 것이지만, 위 분양공고는 대량의 주택공급거래에서 불특정 다수의 수요자에게 주택공급계약의 내용을 일률적으로 미리 알리고 그 내용에 따른 주택공급청약을 하게 한 후 추첨을 거쳐 당첨자와 사이에 정형화된 주택공급계약을 체결하기 위한 절차로서, 사업주체로서는 당첨자와의 분양계약 체결시에 특단의 사정이 없는 한 입주자모집공고와 같은 내용의 계약을 체결하게 되고, 한편 위 주택공급에관한규칙은 사업주체가 작성하는 주택공급계약서에는 분양가격과 납부시기·공급되는 주택면적(전용면적 및 공용면적)과 대지면적 등을 반드시 포함시키도록 규정하고 있으며, 이 사건 아파트 분양계약서상 공유대지의 증가나 감소가 있을 경우 그에 대한 대금청구를 할 수 없다는 조항을 두고 있는데 이는 계약상의 일정한 공유대지면적을 전제하지 아니하고는 성립될 수 없는 조항이므로, 비록 공유대지 표기란이 공란이었다 하더라도 분양계약자들과 피고는 이 사건 아파트에 대한 분양계약을 체결함에 있어서 공유대지면적에 관하여는 위 분양공고의 내용을 계약내용의 일부로 흡수시키기로 하는 묵시적인 합의가 있었다고 보아야 할 것</span>이니, 위 분양공고상의 공유대지면적이 원고들과 피고 사이의 약정 분양면적이 된다고 판단하였다.  
+      </p><p>  기록과 관계 법령의 규정 내용에 비추어 보면, 위 각 분양계약자들과 피고 사이에 위 분양공고상의 평형별 공유대지면적을 계약상의 분양면적으로 하기로 하는 묵시적 합의가 있었다고 본 원심의 판단은 정당한 것으로 수긍이 가고, 원심판결에 소론과 같은 위법이 있다고 볼 수 없다. 소론이 내세우는 대법원판결은 사안을 달리하는 이 사건에 적절한 것이 아니다. 논지는 모두 이유가 없다.    </p><p>  나. 상고이유 제2점에 대하여</p><p>  원심판결 이유에 의하면, 원심은 그 채택한 증거들을 종합하여, 피고는 이 사건 아파트 분양공고 및 분양계약 당시에는 각 단지의 건축부지의 구체적이고 확정적인 구획을 특정하지 아니한 채 택지개발사업을 통하여 조성한 서울 상계지구 일원의 택지 위에 대략의 위치만을 정하여 사업계획을 수립하고 건물이 완공되지 아니한 상태에서 사전에 계약목적물인 대지면적과 아파트의 평형별 면적을 특정하여 먼저 분양계약을 체결한 사실, 한편 피고는 위 분양공고상의 분양가격을 공고함에 있어서는 건물과 대지가격을 구분하지 않고 일괄하여 기재하였는데, 그 분양가격은 건물의 면적을 기준으로 하여 평당 단가(대지·건물공사비와 이윤)에 의하여 산정한 사실, 피고는 1989. 3월경부터 같은 해 5월경까지 사이에 분양계약자 내지 승계인인 원고들에게 이 사건 아파트 건물 중 전용면적에 관한 소유권이전등기를 마쳐주고, 토지지적공부 정리를 위하여 위 아파트의 공유대지지분에 관한 등기를 늦추다가 1992. 3. 18.경부터 같은 해 4. 2.경까지 사이에 위 아파트 공유대지지분에 관하여 공유대지권 등기를 마쳐 주었는데, 피고가 원고들에게 등기를 마쳐 준 공유대지면적은 아파트의 평형에 따라 공고된 공유대지면적보다 2.98㎡ 내지 4.92㎡씩 감소된 사실, 이와 같이 이 사건 아파트의 공유대지면적이 당초 분양공고와는 달리 등기부상 감소된 원인은 피고가 이 사건 주택건설사업을 시행함에 있어서 여러 차례에 걸쳐 택지개발계획을 변경하여 분양공고 및 분양계약 당시에 입주자들의 공유대지면적의 산정 기초가 된 아파트 대지면적을 축소하여 그 부분을 서울특별시에 기부채납하기로 되어 있는 도시계획도로·공원 등 새로이 설치하는 공공시설용지로 편입시킴으로써 공공시설용지를 확대하였기 때문인 사실, 그 결과 이 사건 아파트에 관한 공유대지지분권 등기를 경료할 당시에 이르러서는 제12단지의 아파트 대지면적은 전체적으로 이 사건 아파트의 분양공고 및 분양계약 당시 계획면적인 70,300㎡보다 10,000㎡ 이상이 축소된 59,801.6㎡ 밖에 되지 아니하여 원고들의 공유대지면적이 위와 같이 감소한 사실 등을 인정한 다음, 이 사건 아파트 분양계약상 평형별 세대당 건물면적이나 공유대지면적의 기재가 단순히 계약목적물을 특정하기 위한 방편에 불과하다고는 할 수 없고 이 사건 아파트 분양계약은 그 목적물이 일정한 면적(수량)을 가지고 있다는 데 주안을 두고 그 대금도 그 면적을 기준으로 하여 정한 경우로서 이른바 수량을 지정한 매매라고 아니할 수 없으므로 원고들로서는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|574|">민법 제574조</a></span>의 규정에 따라서 그 부족분의 비율로 대금의 감액을 구할 수 있다고 판단하였다. 
+      </p><p>  그러나 원심이 설시한 바와 같이 
+        <span class="accrnt_txt">가사 이 사건 각 아파트 분양계약이 수량을 지정한 매매에 해당된다 하더라도, 원고들에게 이전등기된 각 공유지분이 부족하게 된 원인이 분양계약 당시 분양계약자들과 피고가 공유지분 산정의 기초가 되는 아파트 대지를 실제와 다르게 잘못 알고 있었기 때문이 아니라, 원심이 확정한 바와 같이 피고가 분양계약 당시 공유지분 산정의 기초가 된 아파트 대지 중 일부를 분양계약 후에 비로소 공용시설용 대지에 편입하여 서울특별시에 기부채납하였기 때문이라면, 피고에 대하여 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|574|" style="text-decoration:underline">민법 제574조</a></span>에 의한 담보책임을 물을 수는 없다
+        </span> 할 것이므로, 원심판결에는 위 담보책임에 관한 법리를 오해한 위법이 있다 할 것이다.
+      </p><p>
+        <span class="accrnt_txt">다만, 사실관계가 원심이 적법하게 확정한 바와 같다면, 이 사건 각 아파트 분양계약에 따른 피고의 각 대지공유지분 이전의무는 위와 같이 감소된 지분 범위 내에서는 이행불능이 된 것으로 보아야 할 것이므로, 위 각 아파트 분양계약은 해제의 의사표시를 담은 원고들의 1994. 6. 16.자 청구취지확장및청구원인보정신청서가 피고에게 송달됨으로써 위 감소된 공유지분 범위 내에서는 적법하게 해제되었다 할 것이고, 따라서 피고는 원상회복으로써 원고들에게 위 감소된 각 공유지분에 상당하는 대금을 반환할 의무가 있다</span> 할 것이니, 원심판결의 위와 같은 위법은 판결 결과에 영향을 미친 것이라고 볼 수 없다. 논지는 모두 이유가 없다.
+      </p><p>  다. 상고이유 제3점에 대하여 </p><p>  원심판결 이유에 의하면, 원심은 그 채택한 증거들을 종합하여, 위 아파트 분양계약 체결 당시에 작성된 분양계약서상 "공유대지에 관한 지분소유권이전등기는 피분양자가 분양가격을 완납하고 공부 정리가 완료된 후에 이행하되, 위치를 지정 또는 할당(구획표시)하지 아니하고 공유대지에 대한 공부 정리 결과 공유대지의 증가나 감소가 있을 경우 이에 대한 상당 금액을 서로 청구하지 않기로 한다."는 조항이 기재된 사실을 인정한 다음, 이 사건 아파트 분양계약은 피고가 다수의 분양신청자들과 계약을 체결하기 위하여 일정한 형식에 의하여 미리 마련된 정형화된 계약서에 의하여 이루어진 것인데, 위 조항은 분양면적의 변경권을 사업주체인 피고에게 일방적으로 부여하고 불가피한 면적의 증감에 대하여서 분양신청자들이 예상할 수 있도록 그 사유와 정도를 사전에 정하여 명기하지도 아니하고 사업주체인 피고가 자의로 변경할 수 있도록 정하고 있을 뿐만 아니라 상당한 이유 없이 피고의 담보책임을 배제 또는 제한하는 것이어서 분양신청자에게 부당한 피해를 줄 우려가 있으므로 형평의 원칙 및 신의칙상 무효라고 아니할 수 없다고 판단하였다.</p><p>  그러나 대규모의 공동주택분양사업에 있어서는 사업주체가 분양계약 당시 계획한 아파트 단지의 대지면적을 사후에 의도적으로 증감시키거나 또는 사업계획 및 시행상의 착오나 실수로 인하여 그 대지면적이 증감되는 경우가 아니라고 할지라도, 그 대지에 관하여 지적법의 규정에 따라 전답이나 임야를 택지로 전환하거나 지적확정측량을 하는 등 지적공부를 정리한 결과 근소하게나마 그 면적이 증감될 수 있음을 능히 예상할 수 있는바, 이에 비추어 보면 
+        <span class="accrnt_txt">위 계약조항에서 '공유대지에 대한 공부 정리 결과 공유대지의 증가나 감소가 있을 경우'라 함은 바로 분양계약 당시 계획된 아파트 단지의 대지에 대하여 위와 같은 순수한 지적공부 정리 결과 객관적으로 불가피하게 발생하는 증감만을 뜻하는 것으로 해석하여야 할 것이고, 이와 같이 해석하는 한 위 면책조항이 형평의 원칙이나 신의칙에 반한 것이어서 무효라고 할 수는 없다</span> 할 것이므로, 원심판결에는 면책조항의 해석을 그르친 위법이 있다 할 것이다.
+      </p><p>
+        <span class="accrnt_txt">다만, 이 사건의 경우 원심이 적법하게 확정한 바와 같이 피고가 계획한 아파트 단지의 대지 중 일부를 분양계약 체결 후 다른 용도로 사용함으로써 그 공유대지면적이 감소된 것이어서 피고가 위 면책조항에 의하여 면책될 수 없음</span>이 분명한 이상 원심판결의 위와 같은 위법은 판결 결과에 영향을 미친 것이라고 볼 수 없다. 논지도 모두 이유가 없다.
+      </p><p>  3. 그러므로 피고의 원고 김진순에 대한 상고를 각하하고, 피고의 나머지 원고들에 대한 상고를 기각하며, 상고비용은 패소자의 부담으로 하기로 관여 법관의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신성택(재판장) 천경송 안용득(주심) 지창권 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

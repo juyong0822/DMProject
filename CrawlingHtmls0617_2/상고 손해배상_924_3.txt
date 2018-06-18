@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2013다34143 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2140774';
+var contIdEtc = '';
+var saNo = '2013다34143';
+var sngoNm = '선고';
+var saNm = '매매대금반환';
+try {
+	var sngoDay=('20140313' ? 
+			'20140313'.length==4 ? Date.parseExact('20140313','yyyy').toString('yyyy. M. d.') : 
+				'20140313'.length==6 ? Date.parseExact('20140313','yyyyMM').toString('yyyy. M. d.') : 
+					'20140313'.length==8 ? Date.parseExact('20140313','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2013다34143 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2013다34143';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2013다34143</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(10)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(9)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(8)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|843361">해제시 원상회복과 과실상계 신의칙 @ 대법원 2014313 선고 2013다34143 판결을 계기로 서종희 朝鮮大學校 法學硏究所</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|800358">이혁 지연손해금과 법정이자 판례연구 27집 / 부산판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|798108">양경승 명의수탁자의 부당이득반환의무 청연논총 (제13집)사법연수원 교수논문집 / 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|764953">한삼인 중요 쟁점문제[민법(채권법)] : 2014년도 민법(채권법) 중요 판례 고시계 60권 5호 / 국가고시학회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|786358">김주영 파생결합증권거래와 민법 제150조 : 조건성취, 불성취에 대한 반신의행위 BFL 75호 / 서울대학교 금융법센터  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|792874">이성용 택시운전업무종사자의 최저임금 및 퇴직금 : 대상판결: 대법원 2014. 10. 27. 선고 2012다70388 판결(공2014하, 2229) 재판과 판례 제24집 / 대구판례연구회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|819011">김재형 2014년 민법 판례 동향 민사재판의 제문제 24권  / 한국사법행정학회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|848740">이양희 타인권리 매매 해제 시 원상회복의무 대법원판례해설 제111호 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|759591">한삼인 2014년 민사(채권법) 중요 판례 인권과 정의 제448호 / 대한변호사협회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|762126">김동훈 원시적 불능에 관한 민법 개정시안에 대한 고찰 법조  (2014. 8) / 법조협회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|562642">사법연수원 민사실무:. 2016. Ⅱ 사법연수원  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다47586">대법원 1997. 12. 9. 선고 96다47586 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다43175">대법원 1998. 12. 23. 선고 98다43175 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다40714">대법원 1997. 1. 24. 선고 96다40714, 40721 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|548|0|null">민법 제548조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|741|0|null">민법 제741조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|548|0|null">민법 제548조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|548|0|null">민법 제548조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다37982">대법원 2008. 2. 14. 선고 2006다37982 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다47586">대법원 1997. 12. 9. 선고 96다47586 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다40714">대법원 1997. 1. 24. 선고 96다40714 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|548|0|null">민법 제548조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|544|0|null">민법 제544조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|546|0|null">민법 제546조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|394|0|null">민법 제394조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|109|0|null">민법 제109조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2012나51365">서울고법 2013. 4. 3. 선고 2012나51365 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2014. 3. 13. 선고 2013다34143 판결</h2><p class="sub_title">[매매대금반환][공2014상,842]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 계약 해제에 따른 원상회복의무의 법적 성격(=부당이득 반환)과 그 이익 반환의 범위 </p>
+<p></p>
+<p></p><p>[2] 계약 해제에 따른 원상회복의무의 이행으로서 매매대금 기타 급부의 반환을 구하는 경우, 과실상계가 적용되는지 여부(소극)</p>
+<p></p>
+<p></p><p>[3] 계약 해제의 원인이 된 채무불이행에 관하여 해제자가 ‘원인’의 일부를 제공하였다는 등의 사유로 신의칙 또는 공평의 원칙에 따라 과실상계에 준하여 원상회복청구권의 내용이 제한되는지 여부(소극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 계약 해제의 효과로서 원상회복의무를 규정하는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|">민법 제548조 제1항</a></span> 본문은 부당이득에 관한 특별규정의 성격을 가지는 것으로서, 그 이익 반환의 범위는 이익의 현존 여부나 청구인의 선의·악의를 불문하고 특단의 사유가 없는 한 받은 이익의 전부이다. </p>
+<p></p><p></p><p>[2] 과실상계는 본래 채무불이행 또는 불법행위로 인한 손해배상책임에 대하여 인정되는 것이고, 매매계약이 해제되어 소급적으로 효력을 잃은 결과 매매당사자에게 당해 계약에 기한 급부가 없었던 것과 동일한 재산상태를 회복시키기 위한 원상회복의무의 이행으로서 이미 지급한 매매대금 기타의 급부의 반환을 구하는 경우에는 적용되지 아니한다.</p>
+<p></p><p></p><p>[3] 계약의 해제로 인한 원상회복청구권에 대하여 해제자가 해제의 원인이 된 채무불이행에 관하여 ‘원인’의 일부를 제공하였다는 등의 사유를 내세워 신의칙 또는 공평의 원칙에 기하여 일반적으로 손해배상에 있어서의 과실상계에 준하여 권리의 내용이 제한될 수 있다고 하는 것은 허용되어서는 아니 된다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|">민법 제548조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|741|">제741조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">민법 제396조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|">제548조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|">민법 제2조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">제396조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|">제548조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1] <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다47586|판결" href="#//">대법원 1997. 12. 9. 선고 96다47586 판결</a></span>(공1998상, 213)<br /><span id="link"><a name="linkContPanre" title="새창" type="대법원|98다43175|판결" href="#//">대법원 1998. 12. 23. 선고 98다43175 판결</a></span>(공1999상, 228)<br />[2] <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다40714|판결" href="#//">대법원 1997. 1. 24. 선고 96다40714, 40721 판결</a></span></p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 상고인】
+원고 (소송대리인 법무법인 세종 담당변호사 최명호 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피상고인】
+피고
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2012나51365|판결" href="#//">서울고법 2013. 4. 3. 선고 2012나51365 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 원고 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다. </p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다. </p><p>  1. 원심은 그 판시와 같은 사실을 인정한 다음, 원고와 피고 사이의 이 사건 택지 분양권 매매계약(이하 ‘이 사건 매매계약’이라고 한다)이 있은 후에 피고가 소외 1에게 이 사건 택지에 관한 수분양자 명의변경 절차를 완료하여 줌으로써 원고 앞으로의 수분양자 명의변경 절차의 이행이 불가능하게 되었고, 이를 이유로 한 원고의 이 사건 매매계약 해제의 의사표시에 의하여 이 사건 매매계약은 적법하게 해제되었다고 판단하였다. </p><p>  나아가 원심은 원고가 계약해제에 따른 원상회복으로 피고에게 지급한 매매대금 145,000,000원의 반환을 구함에 대하여, 원고가 피고로부터 교부받은 분양권 확보에 필요한 서류들을 스스로 잘 관리하지 아니하고 이를 소외 2에게 맡겨두는 바람에 피고가 소외 2에게 이 사건 분양권을 전매할 권한이 있는 것으로 믿고서 소외 1 앞으로 수분양자 명의변경 절차를 마쳐주게 되었던 점 등 그 판시와 같은 사정들을 감안하면, 신의칙과 공평의 원칙을 고려하여 피고의 원상회복책임을 매매대금의 40%인 58,000,000원으로 제한함이 상당하다고 판단하였다.</p><p>  2. 그러나 위와 같이 원상회복책임을 제한하는 판단은 이를 수긍할 수 없다.</p><p>  가. 계약이 해제되면 그 효력이 소급적으로 소멸함에 따라 그 계약상 의무에 기하여 실행된 급부는 원상회복을 위하여 부당이득으로 반환되어야 한다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|">민법 제548조 제1항</a></span> 본문, <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다37982|판결" href="#//">대법원 2008. 2. 14. 선고 2006다37982 판결</a></span> 등 참조). 그리고 <span class="accrnt_txt">계약해제의 효과로서 원상회복의무를 규정하는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|" style="text-decoration:underline">민법 제548조 제1항</a></span> 본문은 부당이득에 관한 특별규정의 성격을 가지는 것으로서, 그 이익 반환의 범위는 이익의 현존 여부나 청구인의 선의·악의를 불문하고 특단의 사유가 없는 한 받은 이익의 전부이다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|96다47586|판결" href="#//">대법원 1997. 12. 9. 선고 96다47586 판결</a></span> 등 참조). </p><p>  한편 <span class="accrnt_txt">과실상계는 본래 채무불이행 또는 불법행위로 인한 손해배상책임에 대하여 인정되는 것이고, 이 사건과 같이 매매계약이 해제되어 소급적으로 효력을 잃은 결과 매매당사자에게 당해 계약에 기한 급부가 없었던 것과 동일한 재산상태를 회복시키기 위한 원상회복의무의 이행으로서 이미 지급한 매매대금 기타의 급부의 반환을 구하는 경우에는 적용되지 아니한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|96다40714|판결" href="#//">대법원 1997. 1. 24. 선고 96다40714 판결</a></span> 등 참조).</p><p>  나. 그리고 <span class="accrnt_txt">계약의 해제로 인한 원상회복청구권에 대하여 해제자가 그 해제의 원인이 된 채무불이행에 관하여 ‘원인’의 일부를 제공하였다는 등의 사유를 내세워 신의칙 또는 공평의 원칙에 기하여 일반적으로 손해배상에 있어서의 과실상계에 준하여 그 권리의 내용이 제한될 수 있다고 하는 것은 허용되어서는 아니된다</span>.</p><p>  (1) 법정해제권은 계약의 일방 당사자인 채무자에게 책임 있는 사유로 인한 채무불이행을 기본적 요건으로 한다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|544|">민법 제544조</a></span> 내지 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|546|">제546조</a></span>). 그 경우에 만일 계약의 상대방인 채권자가 가지는 급부반환청구권이 채무불이행의 ‘원인’을 일부 제공하였다는 등의 사유를 이유로 제한된다고 하면, 해제권의 발생원인인 채무불이행에 대하여 귀책사유가 있다고 판단되어 계약을 해제당하는 등 본래적인 법적 책임을 지는 채무자로서는 더욱이나 그의 급부반환청구권을 제한당해야 마땅하고, 거의 예외 없이 채권자의 급부반환청구권보다 그 내용이 더욱 축소되어야 할 것이다.</p><p>  그리고 채권자에게 위와 같은 채무불이행의 ‘원인’ 제공 등의 사유가 없다고 하는 보다 통상적인 경우에도, 채권자의 급부반환청구권을 제한하는 근거를 그대로 관철한다면 채무자의 원상회복청구권은 제한되어야 할 것이다. 그가 원상회복청구권의 발생원인인 채무불이행의 본래적인 책임귀속자이기 때문이다.   </p><p>  이렇게 보면 이제 계약 해제로 인한 원상회복관계는 ‘계약이 체결되지 아니하였던 것과 같은 상태’로의 복귀를 내용으로 한다고 더 이상 말하여질 수 없다. 그것은 별다른 근거 없이 ‘제한적 원상회복’으로 축소되고, 더욱 중요한 것으로 그것이 계약 해제에서의 원상회복의무의 일반적 양상이 되는 것이다. 이는 우리 법의 기본적 규율에서 전적으로 벗어난 것으로서, 앞서 본 판례의 태도에도 정면으로 반한다.</p><p>  (2) 이 사건에서는 매도인이 계약상 급부로서 받은 매매대금을 계약 해제를 원인으로 하여 반환할 의무, 즉 금전지급의무가 문제되고 있다. 이에는 금전의 지급으로 하는 것을 원칙으로 하는 손해배상책임(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|394|">민법 제394조</a></span> 참조)에 관하여 정하여진 과실상계(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">민법 제396조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> 참조)에 준하여 처리하는 것에 별다른 주저를 느끼지 못할지도 모른다.</p><p>  그런데 계약의 해제로 매수인이 자기 앞으로 행하여진 소유권이전등기를 말소하여야 하거나 목적물을 인도할 의무를 부담하는 경우에 매도인의 그 말소등기청구권 또는 인도청구권에 그 언필칭 신의칙 또는 공평의 원칙이라고 하는 것은 어떠한 내용으로 적용되어야 할 것인가? 이제 매수인은 부동산의 일부 지분에 관하여서만 또는 부동산의 특정한 일부에 관하여서만 소유권이전등기를 말소하면 되는가, 또는 매수인은 부동산의 일부만을 반환하면 족한가, 어떻게 정하여지는 특정한 일부를 반환하면 족한가? 법원이 과연 이러한 판단의 부담을 져야 할 것인지 의문이 아닐 수 없다. </p><p>  (3) 우리 법은 계약의 무효·취소 기타 효력불발생의 경우 일반에 대하여 그로 인한 계약관계의 원상회복에 관하여 위와 같은 신의칙 또는 공평 원칙의 적용을 예정하고 있지 아니하다.</p><p>  예를 들어 매매 등 계약이 일방 당사자의 기망으로 체결된 경우에 비록 그 계약의 취소 여부가 피기망자의 선택에 달려 있다고 하더라도 일단 피기망자가 취소를 선택하여 그 의사표시를 하였다면 이제 계약은 원상회복관계로 들어가고, 이 단계에서는 피기망자뿐만 아니라 기망자도 그 계약의 이행을 위하여 상대방에 대하여 행한 급부의 반환을 원상회복으로 청구할 수 있음은 물론이다. 만일 이와 같은 경우에 기망자가 피기망자에 대하여 가지는 급부반환청구권(이는 물론 부당이득반환청구권의 성질을 가진다)의 발생원인이 궁극적으로는 기망자 자신이 범한 위법한 기망행위에 있다는 사정을 주된 고려요소로 하여 원용되는 신의칙 또는 공평의 원칙을 들어서 손해배상에 있어서의 과실상계에 준하여 그 권리의 내용이 제한될 수 있다고 한다면(원심과 같은 태도를 취한다면 이를 부정하기는 어려울 것이다), 피기망자로서는 결과적으로 자신이 행한 급부를 반환받는 것 외에도 기망자가 행한 급부의 일부, 심지어는 전부를 그대로 적법하게 보유할 수 있게 된다. 이는 피기망자에 있어서는 원래의 계약에서 의도된 경제적 효과를 훨씬 넘는 망외의 이득으로서, 법이 허용할 것이 아니다. 또한 급부반환청구권을 제한당하는 기망자의 입장에서 보면, 위와 같은 법률효과는 우리 법이 예정하지 아니하는 민사적 제재를 새로 설정하는 것에 다름아니다.</p><p>  또한 우리 법은 스스로의 잘못으로 착오에 빠져 계약을 체결한 경우에도 그 잘못이 ‘중대한 과실’에 해당하지 아니하는 한(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|109|">민법 제109조</a></span> 단서 참조), 착오자가 착오를 이유로 그 계약을 취소할 수 있음을 인정함은 주지하는 대로이다. 만일 원심과 같은 태도를 취한다면, 착오자는 계약의 취소에도 불구하고 자신이 행한 계약상 급부의 원상회복의 국면에서 자신의 권리를 제한당하기 쉬울 것이다. 이는 착오자에게 취소권을 부여하는 우리 법의 결단에 현저히 어긋나는 바이다.</p><p>  (4) 한편 신의칙 또는 공평의 원칙은 무엇보다도 실제의 사건 처리에 있어서 융통성을 불어넣는 중요한 법적 수단이기는 하다. 그리고 이는 일정한 제한적인 경우에 사건의 공평한 처리에 대한 감정적 지향을 만족시킨다. 그러나 실정의 법제도는 오랜 세월의 정련된 사고(사고)와 구체적인 적용 및 이에 대한 반성을 거쳐 신중하게 마련된 것으로서, 실제로는 내용이 막연한 신의칙 등보다 더욱 현명하고 ‘공평한’ 것이다.</p><p>  다. 위와 같은 법리에 비추어 보면, 이 사건 매매계약의 해제로 인한 피고의 원상회복의무의 내용은 특단의 사유가 없는 한 피고가 원고로부터 지급받은 매매대금 전액을 반환하는 것이어야 하고, 이 사건 매매계약이 해제되기에 이른 데에 원고에게도 책임이 있다는 등 원심이 들고 있는 사정들은 그 범위를 정함에 있어서 고려되어야 할 것이 아니다.</p><p>  그럼에도 그 판시와 같은 이유만으로 피고의 매매대금 반환책임을 제한한 원심판결에는 계약 해제로 인한 원상회복의무에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다. 이 점을 지적하는 상고이유의 주장은 이유 있다.</p><p>  3. 그러므로 원심판결 중 원고 패소 부분을 파기하고 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   고영한(재판장) 양창수(주심) 박병대 김창석 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

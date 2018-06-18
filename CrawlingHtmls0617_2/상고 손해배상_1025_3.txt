@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2012도10822 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2061869';
+var contIdEtc = '';
+var saNo = '2012도10822';
+var sngoNm = '선고';
+var saNm = '특정경제범죄가중처벌등에관한법률위반(배임)·특정경제범죄가중처벌등에관한법률위반(횡령)';
+try {
+	var sngoDay=('20121227' ? 
+			'20121227'.length==4 ? Date.parseExact('20121227','yyyy').toString('yyyy. M. d.') : 
+				'20121227'.length==6 ? Date.parseExact('20121227','yyyyMM').toString('yyyy. M. d.') : 
+					'20121227'.length==8 ? Date.parseExact('20121227','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012도10822 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '01';
+var $duplicateCnt = -1;
+var paramSaNo = '2012도10822';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2012도10822</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(4)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(8)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(5)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(8)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /><a href="#//" title="새창" name="linkContPanre" type="2058612">대법원 2013. 2. 14. 선고 2011도10302 판결 [공2013상,519]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2115129">대법원 2013. 4. 11. 선고 2012도15890 판결 [공2013상,905]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2140471">대법원 2014. 2. 21. 선고 2011도8870 판결 [공2014상,781]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2233098">대법원 2017. 7. 20. 선고 2014도1104 전원합의체 판결 [공2017하,1760]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|698927">대표권 남용에 기한 약속어음발행이라는 사실을 상대방이 알고 있었던 경우 배임죄에서의 실해발생의 위험 유무 박진환 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|819249">배임 경영자에게 적용되는 업무상 배임죄의 구성요건요소로서의 재산상 손해와 이익이득액 손동권 博英社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|727103">대표이사의 대표권남용행위와 배임죄의 관계 허일태 司法發展財團</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|708064">이주원 특정경제범죄 가중처벌 등에 관한 법률위반(배임)죄에서 이득액 개념의 합리적 재해석 : 과연 손해발생의 위험액이 곧 이득액인가? . 인권과 정의 제436호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|723927">권오성 대표권 남용과 배임죄 법학논총 제30권 제4호 / 한양대학교법학연구소  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|819249">손동권 배임 경영자에게 적용되는 업무상 배임죄의 구성요건요소로서의 재산상 손해와 이익(이득액) 형사판례연구 24호  / 박영사  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|698927">박진환 대표권 남용에 기한 약속어음발행이라는 사실을 상대방이 알고 있었던 경우 배임죄에서의 실해발생의 위험 유무 대법원판례해설 제94호 / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|727103">허일태 대표이사의 대표권남용행위와 배임죄의 관계 형사재판의 제문제  . 제7권 형사실무연구회 편 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|822567">남기정 대표권 남용과 배임미수 사법 38호 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|732093">이훈종 표현대리인, 표현대표이사 및 권한을 남용한 대표이사를 통하여 어음을 취득한 상대방과 제삼취득자의 보호요건에 관한 연구 한양법학 제25권 제1집 통권 제45집 / 한양법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|708223">강동욱 특정경제범죄 가중처벌 등에 관한 법률 제3조 제1항의 개정안에 대한 논의 : 배임죄와 관련하여 . 한양법학 제24권 제3집 통권 제43집  / 한양법학회  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|94도3013">대법원 1995. 12. 22. 선고 94도3013 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009도7783">대법원 2009. 10. 29. 선고 2009도7783 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2010도4613">대법원 2010. 8. 26. 선고 2010도4613 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2011도8110">대법원 2011. 9. 29. 선고 2011도8110 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2010도176">대법원 2012. 2. 9. 선고 2010도176 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="형법|355|0|null">형법 제355조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="형법|355|0|null">형법 제355조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|35|0|null">민법 제35조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|756|0|null">민법 제756조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="어음법|11|0|null">어음법 제11조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="어음법|17|0|null">어음법 제17조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="어음법|77|0|null">어음법 제77조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|94도3013">대법원 1995. 12. 22. 선고 94도3013 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2011도8110">대법원 2011. 9. 29. 선고 2011도8110 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|35|0|null">민법 제35조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|756|0|null">민법 제756조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="어음법|11|0|null">어음법 제11조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="어음법|77|0|null">어음법 제77조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="어음법|17|0|null">어음법 제17조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2012노1550">서울고법 2012. 8. 24. 선고 2012노1550 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" />대법원 2012. 12. 27. 선고 2012도10822 판결</h2><p class="sub_title">[특정경제범죄가중처벌등에관한법률위반(배임)·특정경제범죄가중처벌등에관한법률위반(횡령)][공2013상,285]</p></div><div style="text-align: right;padding: 10px 30px 0 0">변경 : <span id="link"><a name="linkContPanre" title="새창" href="#//" type="대법원|2014도1104">2017. 7. 20. 선고 2014도1104 전원합의체 판결에 의하여 변경
+ <br /></a></span></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 배임죄 구성요건 중 ‘재산상의 손해를 가한 때’의 의미 및 재산상 손해가 있었는지를 판단하는 기준</p>
+      <p></p>
+      <p>
+        </p><p>[2] 회사의 대표이사가 대표권을 남용하여 회사 명의의 약속어음을 발행한다는 사정을 상대방이 알았거나 중대한 과실로 알지 못하여 회사가 상대방에 대해 채무를 부담하지 아니하는 경우, 회사에 대하여 배임죄에서의 재산상 실해 발생의 위험이 초래되었다고 볼 수 있는지 여부(원칙적 적극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 배임죄는 타인의 사무를 처리하는 자가 그 임무에 위배하는 행위로써 재산상 이익을 취득하거나 제3자로 하여금 이를 취득하게 하여 본인에게 손해를 가함으로써 성립하는 범죄로, 여기에서 ‘재산상의 손해를 가한 때’라 함은 현실적인 손해를 가한 경우뿐만 아니라 재산상 실해 발생의 위험을 초래한 경우도 포함되고, 재산상 손해의 유무에 대한 판단은 본인의 전 재산 상태와의 관계에서 법률적 판단에 의하지 아니하고 경제적 관점에서 파악하여야 하므로, 법률적 판단에 의하여 당해 배임행위가 무효라 하더라도 경제적 관점에서 파악하여 배임행위로 인하여 본인에게 현실적인 손해를 가하였거나 재산상 실해 발생의 위험을 초래한 경우에는 재산상의 손해를 가한 때에 해당되어 배임죄를 구성한다.</p>
+      <p></p><p>
+        </p><p>[2] 회사의 대표이사가 개인 채무를 담보하기 위하여 회사 명의의 약속어음을 발행하는 것은 대표권 남용행위이고, 만일 상대방이 그 사실을 알고 있었거나 중대한 과실로 알지 못하였다면 대표이사가 회사 명의의 약속어음을 발행한 것은 회사에 대하여 무효이므로 회사는 상대방에 대하여 어음금 채무를 지지 아니할 뿐만 아니라 위와 같은 사정하에서라면 회사는 상대방에 대하여 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|35|">민법 제35조 제1항</a></span>에 의한 손해배상책임 또는 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">민법 제756조 제1항</a></span>에 의한 사용자책임도 지지 아니한다. 그러나 약속어음은 원칙적으로 배서에 의하여 양도할 수 있고(
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|11|">어음법 제11조 제1항</a></span>, 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|77|">제77조 제1항</a></span>), 약속어음에 의하여 청구를 받은 자는 그 소지인이 채무자를 해할 것을 알고 어음을 취득한 경우가 아니라면 발행인 또는 종전의 소지인에 대한 인적 관계로 인한 항변으로써 소지인에게 대항하지 못하므로(
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|17|">어음법 제17조</a></span>, 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|77|">제77조 제1항</a></span>), 대표이사가 대표권을 남용하여 회사 명의의 약속어음을 발행하였다면, 비록 상대방이 그 사실을 알고 있었거나 중대한 과실로 알지 못하여 회사가 상대방에 대하여는 채무를 부담하지 아니한다 하더라도 약속어음이 제3자에게 유통될 경우 회사가 소지인에 대하여 어음금 채무를 부담할 위험은 이미 발생하였다 할 것이므로, 그 약속어음이 제3자에게 유통되지 아니한다는 특별한 사정이 없는 한 경제적 관점에서는 회사에 대하여 배임죄에서의 재산상 실해 발생의 위험이 초래되었다고 봄이 상당하다.
+        
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|">형법 제355조 제2항</a></span> [2]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|">형법 제355조 제2항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">제356조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|35|">민법 제35조 제1항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">제756조 제1항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|11|">어음법 제11조 제1항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|17|">제17조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|77|">제77조 제1항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|94도3013|판결" href="#//">대법원 1995. 12. 22. 선고 94도3013 판결</a></span>(공1996상, 620)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009도7783|판결" href="#//">대법원 2009. 10. 29. 선고 2009도7783 판결</a></span><br />                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010도4613|판결" href="#//">대법원 2010. 8. 26. 선고 2010도4613 판결</a></span><br />[2]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2011도8110|판결" href="#//">대법원 2011. 9. 29. 선고 2011도8110 판결</a></span><br />                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010도176|판결" href="#//">대법원 2012. 2. 9. 선고 2010도176 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+        피고인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【변 호 인】
+      
+        변호사 정수경
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2012노1550|판결" href="#//">서울고법 2012. 8. 24. 선고 2012노1550 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 
+        
+        <span class="accrnt_txt">배임죄는 타인의 사무를 처리하는 자가 그 임무에 위배하는 행위로써 재산상 이익을 취득하거나 제3자로 하여금 이를 취득하게 하여 본인에게 손해를 가함으로써 성립하는 범죄로, 여기에서 ‘재산상의 손해를 가한 때’라 함은 현실적인 손해를 가한 경우뿐만 아니라 재산상 실해 발생의 위험을 초래한 경우도 포함되고, 재산상 손해의 유무에 대한 판단은 본인의 전 재산 상태와의 관계에서 법률적 판단에 의하지 아니하고 경제적 관점에서 파악하여야 하므로, 법률적 판단에 의하여 당해 배임행위가 무효라 하더라도 경제적 관점에서 파악하여 배임행위로 인하여 본인에게 현실적인 손해를 가하였거나 재산상 실해 발생의 위험을 초래한 경우에는 재산상의 손해를 가한 때에 해당되어 배임죄를 구성한다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94도3013|판결" href="#//">대법원 1995. 12. 22. 선고 94도3013 판결</a></span> 등 참조).
+      
+      </p><p>  한편 
+        
+        <span class="accrnt_txt">회사의 대표이사가 개인 채무를 담보하기 위하여 회사 명의의 약속어음을 발행하는 것은 대표권 남용행위이고, 만일 상대방이 그 사실을 알고 있었거나 중대한 과실로 알지 못하였다면 대표이사가 회사 명의의 약속어음을 발행한 것은 회사에 대하여 무효이므로 회사는 상대방에 대하여 어음금 채무를 지지 아니할 뿐만 아니라 위와 같은 사정하에서라면 회사는 상대방에 대하여 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|35|" style="text-decoration:underline">민법 제35조 제1항</a></span>에 의한 손해배상책임 또는 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|" style="text-decoration:underline">민법 제756조 제1항</a></span>에 의한 사용자책임도 지지 아니한다
+        
+        </span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2011도8110|판결" href="#//">대법원 2011. 9. 29. 선고 2011도8110 판결</a></span> 등 참조). 
+        
+        <span class="accrnt_txt">그러나 약속어음은 원칙적으로 배서에 의하여 양도할 수 있고(
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|11|" style="text-decoration:underline">어음법 제11조 제1항</a></span>, 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|77|" style="text-decoration:underline">제77조 제1항</a></span>), 약속어음에 의하여 청구를 받은 자는 그 소지인이 채무자를 해할 것을 알고 어음을 취득한 경우가 아니라면 발행인 또는 종전의 소지인에 대한 인적 관계로 인한 항변으로써 소지인에게 대항하지 못하므로(
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|17|" style="text-decoration:underline">어음법 제17조</a></span>, 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="어음법|77|" style="text-decoration:underline">제77조 제1항</a></span>), 대표이사가 대표권을 남용하여 회사 명의의 약속어음을 발행하였다면, 비록 상대방이 그 사실을 알고 있었거나 중대한 과실로 알지 못하여 회사가 상대방에 대하여는 채무를 부담하지 아니한다 하더라도 약속어음이 제3자에게 유통될 경우 회사가 소지인에 대하여 어음금 채무를 부담할 위험은 이미 발생하였다 할 것이므로, 그 약속어음이 제3자에게 유통되지 아니한다는 특별한 사정이 없는 한 경제적 관점에서는 회사에 대하여 배임죄에서의 재산상 실해 발생의 위험이 초래되었다고 봄이 상당하다
+        
+        </span>.
+      
+      </p><p>  2. 원심은, 피고인이 
+        
+        공소외 1 주식회사로부터 개인적으로 회사 인수자금 50억 원을 차용하면서 그 지급을 담보하기 위하여, 피해자 
+        
+        공소외 2 주식회사의 실제 사주의 지위에서 
+        
+        공소외 3을 
+        
+        공소외 2 주식회사의 형식상 대표이사로 내세운 다음 
+        
+        공소외 4, 
+        
+        3과 함께 임무에 위배하여 
+        
+        공소외 1 주식회사에게 
+        
+        공소외 2 주식회사 명의로 액면 금 50억 원의 약속어음을 발행·교부한 이상 그 발행 시점에서 
+        
+        공소외 2 주식회사에 어음금 채무를 부담시키는 것이 되어 경제적 관점에서는 일응 재산상 실해 발생의 위험성이 있었다 할 것이고, 
+        
+        공소외 1 주식회사로부터 배서양도 받은 제3자가 대표권 남용에 의한 어음발행이라는 정을 알았다는 등의 사정으로 
+        
+        공소외 2 주식회사의 어음금 채무가 부정되더라도 이는 범죄성립 후의 사정변경에 불과하며, 
+        
+        공소외 1 주식회사로서는 주가 동향에 따라서는 제3자에게 위 약속어음을 배서양도하는 등으로 대여금 채권을 확보하려고 할 가능성이 있었던 반면, 위 약속어음을 유통시키지 아니할 것이라고 볼 만한 특별한 사정은 없으므로, 피고인 등의 위 약속어음의 발행은 
+        
+        공소외 2 주식회사에 대하여 재산상 실해 발생의 위험을 초래한 것으로서 배임죄를 구성한다고 판단하였다.
+      
+      </p><p>  원심판결 이유를 앞서 본 법리와 기록에 비추어 살펴보면, 원심의 위와 같은 판단은 정당하고, 거기에 상고이유에서 주장하는 바와 같이 업무상 배임죄에서의 재산상 손해에 관한 법리를 오해하는 등의 위법이 없다. 상고이유에서 들고 있는 대법원판결들은 사안을 달리하는 것이어서 이 사건에 원용하기에 적절하지 아니하다.</p><p>  3. 그러므로 상고를 기각하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   고영한(재판장) 양창수(주심) 박병대 김창석 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

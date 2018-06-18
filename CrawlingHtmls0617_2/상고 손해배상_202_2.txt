@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2007나53442 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2035373';
+var contIdEtc = '';
+var saNo = '2007나53442';
+var sngoNm = '선고';
+var saNm = '손해배상(기)등';
+try {
+	var sngoDay=('20080529' ? 
+			'20080529'.length==4 ? Date.parseExact('20080529','yyyy').toString('yyyy. M. d.') : 
+				'20080529'.length==6 ? Date.parseExact('20080529','yyyyMM').toString('yyyy. M. d.') : 
+					'20080529'.length==8 ? Date.parseExact('20080529','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007나53442 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007나53442';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2007나53442</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|649919">최승재 고객보호의무 위반과 변액보험에서의 획책된 과실 : 서울고등법원 2010. 3. 31. 선고 2009나97606 판결을 중심으로 민사재판의 제문제 20권 / 한국사법행정학회  2011 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|104|0|null">민법 제104조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2006가합84961">서울중앙지방법원 2007. 5. 17. 선고 2006가합84961 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2008. 5. 29. 선고 2007나53442 판결</h2><p class="sub_title">[손해배상(기)등][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        주식회사 하나은행 (소송대리인 법무법인 한빛 담당변호사 오성진외 1인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2008. 4. 3.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2006가합84961|판결" href="#//">서울중앙지방법원 2007. 5. 17. 선고 2006가합84961 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 아래에서 지급을 명하는 금원에 해당하는 원고 패소부분을 취소한다. </p><p>2. 피고는 원고에게 49,595,305원 및 이에 대하여 2006. 10. 17.부터 2008. 5. 29.까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 돈을 지급하라. </p><p>3. 원고의 나머지 항소를 기각한다.</p><p>4. 소송총비용은 이를 4분하여 그 3은 원고가, 나머지는 피고가 각 부담한다. </p><p>5. 제2항은 가집행할 수 있다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 원고에게 232,680,000원 및 이에 대하여 이 사건 소장 부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 돈을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 인정사실</p><p> 다음 각 사실은 당사자 사이에 다툼이 없거나, 갑 1, 2, 5, 10 내지 13, 18 내지 21호증, 을 1 내지 4호증(가지번호 있는 경우 각 포함)의 각 기재에 변론 전체의 취지를 종합하면 이를 인정할 수 있다. </p><p>  가. 원고는 2004. 8.경 예금 출금을 위하여 피고 은행의 논현동 지점을 방문하였다가 피고 은행의 직원인 
+        소외인으로부터 하나알리안츠 해피엔드 파생상품투자신탁G-1호(이하 ‘이 사건 투자신탁’이라 한다)에 대한 가입을 권유받았으나 가입여부를 결정하지는 못한 채 이 사건 투자신탁에 대한 상품설명서를 교부받아 돌아왔다. 
+      </p><p>  나. 원고는 위 상품설명서를 검토한 후 2004. 8. 9. 다시 위 논현동 지점으로 찾아가 
+        소외인에게 위 상품설명서에 대한 설명을 들은 다음 수익증권 종합통장을 개설하여 1억 원을 입금함으로써 만기가 2007. 8. 22.인 이 사건 투자신탁에 가입하였다. 당시 원고는 
+        소외인으로부터 상품설명서를 기초로 한 설명을 들었고 투자설명서나 약관을 교부하여 달라는 요청을 하지는 않았고 이를 받지도 못하였다.
+      </p><p>  다. 당시 
+        소외인은 원고에게 이 사건 투자신탁이 코스피(KOSPI) 200 지수의 등락률에 따라 만기시에 원본손실의 위험이 있는 주가지수연계증권이고 언제든지 환매가 가능하나, 만기가 도래하는 3년 동안 매 6개월 단위로 수익이 발생되는 경우에는 그 수익을 확정한 후 다음 펀드를 해지하고, 만일 손실이 발생되는 경우에는 6개월 단위로 만기까지 자동으로 연장되는 계약이라고 설명하였다.
+      </p><p>  라. 한편 이 사건 수익증권의 상품설명서에는 이 사건 투자신탁에 대하여 ‘코스피 200과 연계된 주가지수연계증권에 투자하여 20% 이내에서 상승하거나 하락할 경우 수익이 발생합니다. 3년간 매 6개월 단위로 총 6회 코스피 200의 종가가 기준 지수 대비 10% 이내에서 상승 또는 하락하는 경우 연 7% 내외의 수익이, 10% 초과 20% 이내에서 상승 또는 하락하는 경우 연 9% 내외의 수익이 조기에 확정될 수 있습니다. 단, 만기시점에 지수등락률이 20%를 초과할 경우 투자원금에서 손실이 발생할 수 있습니다.’, ‘환매기준일 : 제5영업일 기준가로 제5영업일 환매대금 지급’, ‘환매 수수료 : 장외파생상품의 투자일의 익영업일로부터 장외파생상품 만기일 전일까지 환매금액의 5%, 따라서 중도 환매시에 원금 손실을 초래할 수 있으며 펀드 조기 상환시에는 환매수수료가 없습니다.’라고 각 기재되어 있다.</p><p>  마. 그리고 이 사건 투자신탁약관에는 ① 수익자는 언제든지 수익증권의 환매를 청구할 수 있고, ② 수익증권의 환매가격은 수익자가 판매회사에 환매를 청구한 날부터 제5영업일에 공고되는 기준가격으로 하며, ③ 당일에 공고되는 기준가격은 그 직전일의 대차대조표상에 계상된 투자신탁의 자산총액에서 부채총액을 차감한 금액을 그 직전일의 수익증권 총좌수로 나누어 산출하며, 이 투자신탁을 최초로 설정하는 날의 기준가격은 1,000원으로 하고 이 경우 1좌는 1원으로 한다고 기재되어 있다. </p><p>  바. 피고 은행은 원고가 이 사건 투자신탁에 가입한 이후인 2004. 8. 16.부터 같은 달 27.까지 이 사건 투자신탁과 유사한 하나알리안츠 해피엔드2 파생상품투자신탁G-2호 상품을 판매하였는데, 그 상품안내서에는 ‘중도환매시에는 주가지수연계증권의 청산비용 및 시장 상황 등을 반영한 실제 거래가로 기준가가 산정되므로 이론가와 괴리가 있을 수 있습니다. 따라서 기준가격의 급격한 변동이 있을 수 있으며, 환매수수료 징구 등으로 투자원금의 손실이 발생할 수 있습니다.’라고 기재되어 있다.</p><p>  사. 원고가 이 사건 투자신탁에 가입한 이후로 주가지수가 급격하게 상승하고 매 6개월 코스피 200지수의 상승률이 20%를 초과함에 따라, 이 사건 투자신탁은 계속 손실이 발생하였고, 원고는 가입 후 1년이 경과한 후 원금의 약 50% 정도 손실이 발생하였다는 것을 알았으나 피고 은행에 원금 보장을 주장하면서도 중도 환매 요청을 하지 아니함에 따라 이 사건 투자신탁은 만기까지 자동으로 연장되어 그 계좌에 809,390원만 남게 되었다.      </p><p>2. 원고의 주장</p><p>  가. 약관의 규제에 관한 법률 또는 민법상의 무효 주장</p><p>     ① 약관의 규제에 관한 법률에 의하면, 사업자는 계약 체결시 고객에게 약관의 내용을 일반적으로 예상되는 방법으로 명시하고 중요 내용을 고객이 이해할 수 있도록 설명하여야 하며, 그러하지 않은 경우 이를 계약의 내용으로 주장할 수 없는데 피고 은행은 중도 환매시 환매수수료 이외에 원금손실이 추가로 발생할 수 있다는 점을 설명하지 않았으므로 이 부분은 계약의 내용이 될 수 없고, 나머지 부분만으로 이 사건 투자신탁약정이 목적 달성이 불가능하거나 일방 당사자에게 부당하게 불리하므로 이 사건 투자신탁약정은 무효이거나, 이 사건 투자신탁 약정은 고객이 수익을 취할 확률은 거의 없는 반면 손실을 볼 확률만 높고 설사 이익을 본다고 하더라도 정기예금 금리와 비교하여 그리 높지 않은 수익률에 불과함에도 원금의 전액에 대하여 손실을 볼 수 있으므로 부당하게 고객에게 불리한 약관이어서 무효이고, ② 피고 은행은 계약 체결 당시 이 사건 투자신탁의 위험성에 대하여 아무런 설명도 하지 아니하였고, 계약 체결 이후에도 그 운용현황에 대한 고지를 하지 아니하여 원고로 하여금 환매할 시기를 놓치게 하였고 원고는 이와 같은 고위험 자산에 투자한 경험이 전무한 상태이었으므로, 이 사건 투자신탁약정은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|104|">민법 104조</a></span>에 의하여도 무효이다.    
+      </p><p>  나. 기망으로 인한 취소 주장   </p><p>    이 사건 투자신탁은 중도환매시에도 만기상환시와 같은 계산방법으로 손실액을 계산하게 되어 결국 원금을 보장하여 주지 아니함에도 불구하고, 피고 은행의 직원 
+        소외인은 마치 중도환매 환매수수료를 제외하고는 원금손실이 초래되지는 않는 것처럼 원고를 기망하여 원고가 이 사건 투자신탁약정을 체결하게 하였으므로, 원고는 피고 은행과의 이 사건 투자신탁약정을 취소한다. 
+      </p><p>  다. 원리금 지급약정 주장</p><p>    이 사건 투자신탁에서 엄청난 손실을 발생하자 피고 은행의 부원장이 원고 등 피해고객에게 투자 원금 및 그에 대한 이자를 지급하기로 약정하였다. </p><p>  라. 불법행위로 인한 손해배상 주장</p><p>    피고 은행의 직원이 원고에게 한 위와 같은 행위는 적극적인 기망에 해당하거나 신의칙에 반한 행위 또는 부당권유행위에 해당하므로, 피고 은행은 그로 인한 원고의 손해를 배상하여야 한다. </p><p>3. 이 법원의 판단 </p><p>  가. 무효 및 취소 주장에 관한 판단</p><p>    갑 2, 5, 11, 12, 18, 19, 21, 29호증의 각 기재에 변론 전체의 취지를 종합하면, 피고 은행 직원인 
+        소외인은 당시의 주식 시장의 흐름에 비추어 이 사건 투자신탁에서 손실이 발생하리라고는 예상하지 못한 채 원고에게 이 사건 투자신탁의 가입을 권유하면서, 이 사건 투자신탁의 중도 환매시에도 원금손실의 가능성이 있고, 경우에 따라 이 사건 투자신탁의 만기 도래시 원금손실이 최대 100%까지 발생할 수 있다는 점이나 이 사건 투자신탁의 이익이 달성될 확률 등에 관하여 명확히 설명하지 않고서 단지 코스피 지수가 20% 이내로 변동할 경우 정기예금 금리 이상의 수익이 발생하고, 만일 6개월 후 수익이 발생하지 아니하면 최대 3년까지 만기가 연장됨으로써 수익이 발생할 가능성이 높다고 설명한 사실, 피고 은행은 첫 6월이 경과한 후 원고의 투자액에 몇 백만 원의 손실이 발생하였음에도 이를 원고에게 통지하지 아니하였고, 두 번째 6개월이 지난 후 원고의 문의에 따라 원금의 50% 정도 손실이 발생하였음을 알려준 사실을 인정할 수 있고, 한편 피고 은행은 이 사건 투자신탁의 판매 직후부터 판매된 이 사건 투자신탁과 유사한 위 하나알리안츠 해피엔드2 파생상품투자신탁의 상품설명서에는 중도환매시에도 실제 거래가로 기준가가 산정되어 원본의 손실이 발생할 수 있다는 점에 대하여 명확히 기재하고 있는 사실은 앞서 본 바이다. 
+      </p><p>    그러나 앞서 든 사실관계에서 인정되는 다음과 같은 사정, 즉 피고 은행은 원고에게 주가변동률에 따라 만기시에 원본손실의 가능성이 있다는 점에 대하여는 충분히 설명하였고, 원고 역시 만기시의 원본손실의 가능성을 충분히 인식하고 이 사건 투자신탁에 가입한 점, 원고가 이 사건 투자신탁에 가입한 기본적인 이유는 중도 환매시의 원금보장 때문이 아니라 정기예금 금리 이상의 수익을 실현하기 위한 것이라고 보아야 하는 점, 이 사건 투자신탁에 관한 상품설명서에 제5영업일 ‘기준가’로 환매대금을 지급하는 것으로 기재되어 있었던 점, 이 사건 투자신탁은 언제든지 환매가 가능하므로 만일 중도 환매시에 원금을 보장받는다면 만기에 손실이 생길 것으로 예측되는 경우는 만기일 직전에 환매를 요청함으로써 손실을 피할 수 있게 되는데 그러한 금융상품이 정기예금 이상의 금리를 보장하면서 성립하기는 매우 어렵다는 것은 일반적인 금융거래의 상식에 속한다고 보아야 하는 점, 이 사건 투자증권의 수익 내지 손실 여부는 코스피 200 주가지수의 변동률에 따라 좌우되는데 주가지수의 변동률은 당시의 경제상황 등 여러 불확정 요소에 의하여 변동되는 것으로 누구도 장래의 변동상황을 정확하게 예측할 수는 없다는 점, 이 사건 투자신탁상품은 주가가 20% 이내의 범위 내에서 안정적으로 등락을 거듭하는 경우 주식에 직접 투자하는 것에 비하여 주가 하락시에도 수익이 발생한다는 점에서, 정기예금에 예금하는 것에 비하여는 수익률이 높다는 점에서 훨씬 투자자에게 유리한 상품인 반면, 주가의 변동이 심하게 발생할 경우는 원금 전체의 손실이 일어날 수 있는 상품인데 원고가 이 사건 투자신탁에 가입한 이후 2004년 말부터 우리나라의 주가가 급격히 상승하면서 손실이 발생하게 된 것으로 이러한 사정을 피고 은행으로서도 예상하기는 어려웠을 것이라는 점, 피고 은행은 이 사건 투자신탁 상품안내서에 그 약관의 대체적인 내용을 요약하여 기재하여 놓았고 원고도 위 상품안내서를 검토한 점 등의 사정에 비추어 보면, 비록 위 
+        소외인이나 피고 은행이 원고가 이 사건 투자신탁에 가입할 무렵 이 사건 투자신탁의 중도 환매시 원금손실 가능성이나 만기시 원금손실이 최대 100%까지 발생할 수 있다는 점 그리고 이익이 달성될 확률 등에 관하여 명확하게 설명하지 아니한 점이 있다고 하더라도 이러한 행위가 고객에게 약관의 중요한 내용을 전혀 설명하지 아니하여 그 약관을 계약을 내용으로 삼을 수 없을 정도이거나, 중도 환매시의 원금손실 부분이 계약의 내용으로 편입될 수 없을 정도라고 하기 어렵고, 한편 이 사건 투자신탁약정이 고객에게만 부당하게 불리한 약정으로서 현저하게 공정을 잃은 약정으로 보기도 어렵다. 그리고 위 
+        소외인의 가입 권유와 설명이 신의칙에 비추어 시인될 수 있는 정도를 넘어서 허용될 수 없는 정도의 사기적 행위라거나 이 사건 투자신탁약정을 취소할 정도의 기망행위라고는 할 수 없다. 이 부분 원고의 주장은 이유 없다.  
+      </p><p>  나. 원리금 지급약정 주장에 관한 판단</p><p>     갑 5, 9, 13, 18, 24, 29호증의 각 기재만으로 피고 은행이 이 사건 투자신탁에서 생긴 원금의 손실 및 그에 대한 이자 상당액을 지급하기로 약정하였다는 원고의 주장을 인정하기에는 부족하고 달리 이를 인정할 증거가 없다. 이 부분 원고의 주장 역시 이유 없다. </p><p>  라. 불법행위로 인한 손해배상 주장에 관한 판단</p><p>    (1) 손해배상책임의 발생</p><p>       투자신탁회사의 임직원이 고객에게 투자신탁상품의 매입을 권유할 때에는 그 투자에 따르는 위험을 포함하여 당해 투자신탁의 특성과 주요내용을 설명함으로써 고객이 그 정보를 바탕으로 합리적인 투자판단을 할 수 있도록 고객을 보호하여야 할 주의의무가 있고, 이때 고객에게 어느 정도의 설명을 하여야 하는지는 투자 대상인 상품의 특성 및 위험도의 수준, 고객의 투자 경험과 능력 및 기관투자자인지 여부 등을 종합적으로 고려하여야 한다.</p><p>       그런데 위 
+        소외인은 원고에게 이 사건 투자신탁에 가입을 권유하면서 그 약관의 정확한 내용을 고지하지 아니하여 중도 환매시에는 원금 손실이 없는 것으로 오해할 여지를 제공하였고, 손실이 발생할 가능성에 대한 예측을 소홀히 하여 손실 발생의 가능성과 그 범위에 대한 명확한 설명을 하지 아니하였는데 이러한 행위는 원고에게 투자행위에 수반되는 위험성에 대한 올바른 인식형성을 방해하거나 또는 투자상황에 비추어 과대한 위험성을 수반하는 거래를 적극적으로 권유한 행위로서 원고에 대한 보호의무를 저버린 부당권유행위로 보여진다. 따라서 피고 은행은 위 
+        소외인의 사용자로서 원고가 위 불법행위로 입은 손해를 배상할 책임이 있다. 
+      </p><p>    (2) 손해배상의 범위</p><p>       나아가 그 손해배상의 범위에 관하여 보건대, 원고가 위 불법행위로 입은 손해는 원고의 이 사건 투자신탁 가입원금 1억 원에서 현재 원고의 이 사건 투자신탁계좌에 남아있는 809,390원을 제외한 99,190,610원이라고 할 것이다. </p><p>       원고는 위 투자원금에 대한 이 사건 투자신탁 가입일로부터 계약해제일까지 2005년도 국내 주식형 펀드의 평균수익률 57%에 따른 수익 1억 925만 원 및 정신적 손해에 대한 위자료 23,430,000원도 위 불법행위에 따른 손해라고 주장하나, 불법행위로 인한 재산적 손해에 있어서는 특별한 사정이 없는 한 그 재산적 손해의 배상에 의하여 정신적 고통도 회복된다고 봄이 상당하고, 나아가 원고가 재산상 손해의 원금에 대한 불법행위일 이후의 법정 지연손해금을 초과하여 주장과 같이 국내 주식형 펀드의 평균수익률에 해당하는 손해를 입었다고 볼 자료도 없으므로, 이 부분 주장은 이유 없다.  </p><p>       한편 원고로서도 이 사건 투자신탁의 약관이나 투자설명서의 교부를 요청하여 그 것과 상품설명서를 세밀히 검토하였다면 이 사건 투자신탁과 같은 상품은 중도 환매시 환매수수료 이외에도 손실이 발생할 수 있다는 것을 충분히 알 수 있었음에도 
+        소외인의 설명만을 듣고 이 사건 투자신탁에 가입하였고, 원고가 원금 손실을 알고 나서 즉시 환매요청을 하였다면 원고의 손해는 상당 부분 줄어들었을 것이라는 점, 원고의 손해가 발생한 근본적인 이유는 
+        소외인의 부실한 설명 때문이 아니라 그 이후 주가의 급격한 상승 때문이고, 만일 당시 예측한 대로 주가가 완만하게 등락을 거듭하였다면 충분히 수익을 획득할 수 있었으며 원고 역시 주가의 급격한 변동에 대한 대비는 없이
+      </p><p>피고 은행과 같은 예상 하에 이 사건 투자신탁에 가입하였을 것이라는 점 등을 고려하면 신의칙상 이 사건 손해액에 대한 피고 은행의 책임을 50%로 제한함이 상당하다. </p><p>4. 결론</p><p> 그렇다면 피고 은행은 원고에게 49,595,305원(99,190,610원 × 1/2) 및 이에 대하여 불법행위일 이후로 원고가 구하는 바에 따라 이 사건 소장 부본 송달 다음날임이 기록상 분명한 2006. 10. 17.부터 피고 은행이 그 이행의무의 존부와 범위에 대하여 항쟁함이 상당하다고 인정되는 당심 판결선고일인 2008. 5. 29.까지는 민법이 정한 연 5%, 그 다음날부터 다 갚는 날까지는 소송촉진 등에 관한 특례법이 정한 연 20%의 각 비율에 의한 지연손해금을 지급할 의무가 있으므로, 원고의 청구는 위 인정 범위 내에서 이유 있어 인용하고 나머지 청구는 이유 없어 기각할 것인바, 제1심 판결은 이와 결론을 달리하여 부당하므로, 제1심 판결 중 위에서 지급을 명한 돈에 해당하는 원고 패소부분을 취소하여 피고 은행에게 그 지급을 명하고, 원고의 나머지 항소는 이유 없으므로 기각하기로 하여 주문과 같이 판결한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   최재형(재판장) 문정일 임태혁 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

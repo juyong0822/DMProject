@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2007다4943 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2066809';
+var contIdEtc = '';
+var saNo = '2007다4943';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20070427' ? 
+			'20070427'.length==4 ? Date.parseExact('20070427','yyyy').toString('yyyy. M. d.') : 
+				'20070427'.length==6 ? Date.parseExact('20070427','yyyyMM').toString('yyyy. M. d.') : 
+					'20070427'.length==8 ? Date.parseExact('20070427','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007다4943 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007다4943';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2007다4943</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(7)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(28)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(4)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(19)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(5)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(12)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1964734">대법원 2007. 8. 23. 선고 2005다65449 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2063559">대법원 2009. 8. 20. 선고 2007다82530 판결 [공2009하,1506]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2129516">대법원 2012. 12. 27. 선고 2011다103564 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2144529">대법원 2014. 3. 27. 선고 2011다221 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2179268">대법원 2015. 5. 28. 선고 2014다88215 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2218138">대법원 2016. 9. 28. 선고 2016다213237 판결 [공2016하,1592]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2245410">대법원 2017. 6. 8. 선고 2016다13109 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|587502">선하증권의 히말라야약관himalaya clause에 대한 고찰 유중원 大韓辯護士協會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|598911">운송주선인의 책임과 히말라야약관 정하윤 東國大學校 比較法文化硏究所</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|598325">해상운송계약 관련자들의 책임 김수정 大邱判例硏究會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|589005">운송주선인의 법적 지위 및 히말라야 약관의 적용 범위 최세련 韓國海法學會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|586151">운송인과 운송주선인의 구분 전현정 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|581929">화주의 운송인 등에 대한 배상청구 이광후 大韓辯護士協會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|629414">국제해상운송에서 선박대리점ㆍ실제운송인ㆍ독립계약자의 법적 지위에 대한 고찰 유중원 서울地方辯護士會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|743957">양석완 상법상 이행보조자로서 선박사용인의 법적 지위 상사법연구 33권 2호 / 한국상사법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|617457">김인현 해상법 판례 50년의 회고와 전망 상사판례연구 23집 1권  / 한국상사판례학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|825824">김인현 동북아시아 해상법 통일화 방안 저스티스 통권 제158-2호 / 한국법학원  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|597064">양석완 송하인의 위험물에 관한 고지의무 한국해법학회지 30권 2호  / 한국해법학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636814">오영준 (2000년대 민사판례의 경향과 흐름)상법 민사판례연구 33-2권  / 박영사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581929">이광후 화주의 운송인 등에 대한 배상청구 인권과 정의 377호  / 대한변호사협회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630795">권기훈 해상운송에 있어서 독립적 계약자의 지위 한양법학 32집  / 한양법학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|749825">양석완 선하증권상 히말라야 약관의 요건과 적용범위 기업법연구 제28권 제3호 / 한국기업법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|744117">양석완 로테르담 규칙상 해상이행당사자의 적용에 따른 문제점 국제거래법연구 23집 1호 / 국제거래법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|589062">양석완 전자식 해상화물운송장에 관한 법적 쟁점 : 개성상법(2007.8.)을 중심으로 통상법률 81호  / 법무부  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|764514">김인현 한국근대 해상법 120년의 성과와 과제 저스티스 통권 제146-3호 / 한국법학원  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|835246">김윤종 서렌더 선하증권의 효력범위와 독립계약자의 히말라야 약관의 원용 여부 대법원판례해설 제109호 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|627659">양석완 계약운송인으로서 해상운송주선인의 법적 지위 상사법연구 29권 2호 / 한국상사법학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|659293">이창재 개정 상법상 항공화물운송인의 책임 성균관법학 24권 1호  / 성균관대학교 비교법연구소  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|586151">전현정 운송인과 운송주선인의 구분 대법원판례해설 67호 (2007.12) / 법원도서관  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|639857">서완석 미국 연방대법원의 Kirby 사건 판결에 관한 고찰 선진상사법률연구 52호  / 법무부  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|813809">임태혁 국제항공운송에서 운송계약의 당사자 및 운송물에  대한 소유권의 이전 국제규범의 현황과 전망 : 2009년 국제규범연구반 연구보고 및 국제회의 참가보고 . 상   / 법원행정처  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|524729">한국 국제규범의 현황과 전망 : 2009년 국제규범연구반 연구보고 및 국제회의 참가보고 . 상 법원행정처  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636265">김원수 복합운송인의 책임 판례연구 22집 / 부산판례연구회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653631">이창재 상법상 운송물 처분청구권과 수하인의 발전적 지위 : 국제운송규범과의 비교를 중심으로 성균관법학 23권 3호  / 성균관대학교 비교법연구소  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|544380">한국 . 대법원 법원행정처 재판실무편람 . 제32호 : 해상재판실무편람 법원행정처  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|621143">최준선 복합운송법의 제정 방향 상사법연구 29권 1호 / 한국상사법학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|750491">양석완 계약운송인과 실제운송인에 따른 책임기간의 시기(시기)와 히말라야 약관의 유효 요건 : 대법원 2009.8.20. 선고 2007다82530 판결 평석 상사판례연구 27집 3권 / 한국상사판례학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|594780">양석완 해상물건운송에 있어서 실제운송인의 법적 지위 상사판례연구 21집 3권  / 한국상사판례학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|757106">김인현 한중일 해상법 비교 연구 : 통일화를 중심으로 상사법연구 33권 4호 / 한국상사법학회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636272">전지환 master D/O를 징구하고 운송물을 인도한 보세창고업자의 손해배상책임 판례연구 22집 / 부산판례연구회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|823291">이정원 선하증권과의 상환없는 운송물 인도와 선박소유자의 책임 : 대법원 2014. 5. 9. 자 2014마223 결정을 중심으로 해사법연구 28권 3호 / 한국해사법학회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|591214">양석완 화물인도지시서의 법적 지위 : ship's delivery order를 중심으로 비교사법 15권 2호 (2008.06) / 한국비교사법학회  2008 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|63다126">대법원 1963. 4. 18. 선고 63다126 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|82누92">대법원 1983. 4. 26. 선고 82누92 판결</a></p><p class="areaChjPanre"><font>[6]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다75318">대법원 2004. 2. 13. 선고 2001다75318 판결</a></p><p class="areaChjPanre"><font>[7]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|95다25237">대법원 1997. 1. 24. 선고 95다25237 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="상법|125|0|null">상법 제125조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="상법|114|0|null">상법 제114조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="상법|116|0|null">상법 제116조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="상법|119|0|null">상법 제119조 제2항 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="상법|114|0|null">상법 제114조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="상법|115|0|null">상법 제115조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="상법|788|0|null">상법 제788조 </a></p><p class="areaChjJomun"><font>[5]</font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="상법|115|0|null">상법 제115조 </a></p><p class="areaChjJomun"><font>[6]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="상법|789|3|null">상법 제789조의3 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="상법|811|0|null">상법 제811조 </a></p><p class="areaChjJomun"><font>[7]</font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="상법|789|3|null">상법 제789조의3 제2항 </a></p><p class="areaChjJomun"><font>[8]</font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="상법|789|3|null">상법 제789조의3 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="상법|790|0|null">상법 제790조 제1항 </a></p><p class="areaChjJomun"><font>[9]</font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="상법|789|3|null">상법 제789조의3 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink17" name="linkContJomun" type="약관의규제에관한법률|6|0|null">약관의 규제에 관한 법률 제6조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink18" name="linkContJomun" type="약관의규제에관한법률|6|0|null">약관의 규제에 관한 법률 제6조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|63다126">대법원 1963. 4. 18. 선고 63다126 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|82누92">1983. 4. 26. 선고 82누92 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카1080">대법원 1987. 10. 13. 선고 85다카1080 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다75318">대법원 2004. 2. 13. 선고 2001다75318 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|95다25237">대법원 1997. 1. 24. 선고 95다25237 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|116|0|null">상법 제116조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|119|0|null">상법 제119조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|115|0|null">상법 제115조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|789|3|null">상법 제789조의3 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|811|0|null">상법 제811조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|789|3|null">상법 제789조의3 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|789|3|null">상법 제789조의3 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|790|0|null">상법 제790조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약관의규제에관한법률|6|0|null">약관의 규제에 관한 법률 제6조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약관의규제에관한법률|6|0|null">약관의 규제에 관한 법률 제6조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약관의규제에관한법률|6|0|null">약관의 규제에 관한 법률 제6조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="부산지방법원|2006나4936">부산지법 2006. 12. 21. 선고 2006나4936 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2007. 4. 27. 선고 2007다4943 판결</h2><p class="sub_title">[손해배상(기)][공2007.6.1.(275),783]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 물품운송계약의 의의 및 운송계약상 운송인의 확정 기준 </p>
+      <p></p>
+      <p>
+        </p><p>[2] 운송주선인이 운송인의 대리인으로서 운송계약을 체결한 경우, 운송의뢰인에 대한 관계에서 운송인의 지위를 취득하기 위한 요건   </p>
+      <p></p>
+      <p>
+        </p><p>[3] 운송주선업자가 운송의뢰인으로부터 운송을 의뢰받은 것인지 운송주선만을 의뢰받은 것인지 여부가 불명확한 경우의 판단 기준</p>
+      <p></p>
+      <p>
+        </p><p>[4] 선박대리점이 운송물에 대한 점유를 이전받기 전에 실제 운송인 및 터미널 운영업자의 과실로 화물이 소훼된 경우, 선박대리점에게 운송물의 멸실에 대한 책임을 물을 수 있는지 여부(소극)  </p>
+      <p></p>
+      <p>
+        </p><p>[5] 운송주선인이 자기나 그 사용인이 운송물의 수령, 인도, 보관, 운송인이나 다른 운송주선인의 선택 기타 운송에 관하여 주의를 게을리하지 않았음을 증명하였으므로 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|115|">상법 제115조</a></span>에 따른 손해배상책임을 지지 않는다고 한 사례   
+        </p>
+      <p></p>
+      <p>
+        </p><p>[6] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span>에서 정한 운송인의 ‘사용인 또는 대리인’의 범위에 자기 고유의 사업을 영위하는 독립적인 계약자도 포함되는지 여부(소극) 및 그러한 독립적 계약자가 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|811|">같은 법 제811조</a></span>에 기한 항변을 원용할 수 있는지 여부(소극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[7] 선하증권 뒷면에 운송인이 주장할 수 있는 책임제한 등의 항변을 운송관련자들이 원용할 수 있다는 취지의 이른바 ‘히말라야 약관’(Himalaya Clause)이 기재되어 있는 경우, 독립적인 계약자인 터미널 운영업자도 위 약관조항에 따라 운송인이 주장할 수 있는 책임제한을 원용할 수 있는지 여부(원칙적 적극)</p>
+      <p></p>
+      <p>
+        </p><p>[8] ‘운송인의 사용인 또는 대리인’ 이외의 운송관련자의 경우에도 운송인이 주장할 수 있는 책임제한을 원용할 수 있다고 한 약정이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3</a></span>의 규정에 반하여 운송인의 의무 또는 책임을 경감하는 특약으로서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|790|">같은 법 제790조 제1항</a></span>에 따라 무효인지 여부(소극)    
+        </p>
+      <p></p>
+      <p>
+        </p><p>[9] 이른바 ‘히말라야 약관’(Himalaya Clause)이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|">약관의 규제에 관한 법률 제6조 제1항</a></span>에서 정하는 ‘신의성실의 원칙에 반하여 공정을 잃은 조항’이라거나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|">같은 법 제6조 제2항의 각 호</a></span>에 해당하는 조항이라고 할 수 있는지 여부(소극)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 물품운송계약은 당사자의 일방에게 물품을 한 장소로부터 다른 장소로 이동할 것을 약속하고 상대방이 이에 대하여 일정한 보수를 지급할 것을 약속함으로써 성립하는 계약으로서, 운송계약에 따른 권리·의무를 부담하는 운송인은 운송의뢰인에 대한 관계에서 운송을 인수한 자가 누구인지에 따라 확정된다.    </p>
+      <p></p><p>
+        </p><p>[2] 운송주선인이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|116|">상법 제116조</a></span>에 따라 위탁자의 청구에 의하여 화물상환증을 작성하거나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|119|">같은 법 제119조 제2항</a></span>에 따라 운송주선계약에서 운임의 액을 정한 경우에는 운송인으로서의 지위도 취득할 수 있지만, 운송주선인이 위 각 조항에 따라 운송인의 지위를 취득하지 않는 한, 운송인의 대리인으로서 운송계약을 체결하였더라도 운송의뢰인에 대한 관계에서는 여전히 운송주선인의 지위에 있다.    
+        </p>
+      <p></p><p>
+        </p><p>[3] 운송주선업자가 운송의뢰인으로부터 운송관련 업무를 의뢰받았다고 하더라도 운송을 의뢰받은 것인지, 운송주선만을 의뢰받은 것인지 여부가 명확하지 않은 경우에는 당사자의 의사를 탐구하여 운송인의 지위를 취득하였는지 여부를 확정하여야 할 것이지만, 당사자의 의사가 명확하지 않은 경우에는 하우스 선하증권의 발행자 명의, 운임의 지급형태 등 제반 사정을 종합적으로 고려하여 논리와 경험칙에 따라 운송주선업자가 운송의뢰인으로부터 운송을 인수하였다고 볼 수 있는지 여부를 확정하여야 한다.   </p>
+      <p></p><p>
+        </p><p>[4] 선박대리점은 해상운송사업을 영위하는 자를 위하여 그 사업에 속하는 거래의 대리를 업무로 하는 자로서 운송인과의 계약에 따라 화물의 교부와 관련한 일체의 업무를 수행하는 것인데, 이러한 업무를 수행하는 선박대리점이 운송물에 대한 점유를 이전받기 이전에 실제 운송인 및 터미널 운영업자의 과실로 인하여 화물이 소훼되었다면, 선박대리점에게 운송물의 멸실에 대한 불법행위책임을 물을 수는 없다.    </p>
+      <p></p><p>
+        </p><p>[5] 운송주선인이 자기나 그 사용인이 운송물의 수령, 인도, 보관, 운송인이나 다른 운송주선인의 선택 기타 운송에 관하여 주의를 게을리하지 않았음을 증명하였으므로 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|115|">상법 제115조</a></span>에 따른 손해배상책임을 지지 않는다고 한 사례.    
+        </p>
+      <p></p><p>
+        </p><p>[6] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span>에서 정한 운송인의 ‘사용인 또는 대리인'이란 고용계약 또는 위임계약 등에 따라 운송인의 지휘·감독을 받아 그 업무를 수행하는 자를 말하고 그러한 지휘·감독과 관계없이 스스로의 판단에 따라 자기 고유의 사업을 영위하는 독립적인 계약자는 포함되지 아니하므로, 그러한 독립적인 계약자는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|811|">같은 법 제811조</a></span>에 기한 항변을 원용할 수 없다. 
+        </p>
+      <p></p><p>
+        </p><p>[7] 선하증권 뒷면에 ‘운송물에 대한 손해배상 청구가 운송인 이외의 운송관련자(anyone participating in the performance of the Carriage other than the Carrier)에 대하여 제기된 경우, 그 운송관련자들은 운송인이 주장할 수 있는 책임제한 등의 항변을 원용할 수 있고, 이와 같이 보호받는 운송관련자들에 하수급인(Subcontractors), 하역인부, 터미널 운영업자(terminals), 검수업자, 운송과 관련된 육상·해상·항공 운송인 및 직간접적인 하청업자가 포함되며, 여기에 열거된 자들에 한정되지 아니한다’는 취지의 이른바 ‘히말라야 약관’(Himalaya Clause)이 기재되어 있다면, 그 손해가 고의 또는 운송물의 멸실, 훼손 또는 연착이 생길 염려가 있음을 인식하면서 무모하게 한 작위 또는 부작위로 인하여 생긴 것인 때에 해당하지 않는 한, 독립적인 계약자인 터미널 운영업자도 위 약관조항에 따라 운송인이 주장할 수 있는 책임제한을 원용할 수 있다. </p>
+      <p></p><p>
+        </p><p>[8] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span>은 ‘운송인이 주장할 수 있는 책임제한’을 원용할 수 있는 자를 ‘운송인의 사용인 또는 대리인’으로 제한하고 있어 운송인의 사용인 또는 대리인 이외의 운송관련자에 대하여는 적용되지 아니한다고 할 것이므로, 당사자 사이에서 운송인의 사용인 또는 대리인 이외의 운송관련자의 경우에도 운송인이 주장할 수 있는 책임제한을 원용할 수 있다고 약정하더라도 이를 가리켜 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3</a></span>의 규정에 반하여 운송인의 의무 또는 책임을 경감하는 특약이라고는 할 수 없고, 따라서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|790|">상법 제790조 제1항</a></span>에 따라 그 효력이 없다고는 할 수 없다.  
+        </p>
+      <p></p><p>
+        </p><p>[9] 이른바 ‘히말라야 약관’(Himalaya Clause)은 운송인의 항변이나 책임제한을 원용할 수 있는 운송관련자의 범위나 책임제한의 한도 등에 관하여 그 구체적인 내용을 달리 하는 경우가 있으나, 해상운송의 위험이나 특수성과 관련하여 선하증권의 뒷면에 일반적으로 기재되어 국제적으로 통용되고 있을 뿐만 아니라, 간접적으로는 운송의뢰인이 부담할 운임과도 관련이 있는 점에 비추어 볼 때, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|">약관의 규제에 관한 법률 제6조 제1항</a></span>에서 정하는 ‘신의성실의 원칙에 반하여 공정을 잃은 조항’이라거나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|">같은 법 제6조 제2항의 각 호</a></span>에 해당하는 조항이라고 할 수 없다. 
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|125|">상법 제125조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|114|">상법 제114조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|116|">제116조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|119|">제119조 제2항</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|114|">상법 제114조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|115|">제115조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|788|">상법 제788조</a></span> [5]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|115|">상법 제115조</a></span> [6]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|811|">제811조</a></span> [7]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span> [8]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|790|">상법 제790조 제1항</a></span> [9]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|">약관의 규제에 관한 법률 제6조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|">제2항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|63다126|판결" href="#//">대법원 1963. 4. 18. 선고 63다126 판결</a></span>(집11-1, 민256)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|82누92|판결" href="#//">대법원 1983. 4. 26. 선고 82누92 판결</a></span>(공1983, 898)<br />[6]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다75318|판결" href="#//">대법원 2004. 2. 13. 선고 2001다75318 판결</a></span>(공2004상, 460)  [7]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다25237|판결" href="#//">대법원 1997. 1. 24. 선고 95다25237 판결</a></span>(공1997상, 621)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        주식회사 나이스무역 (소송대리인 법무법인 삼양 담당변호사 송대원외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+         유피에스에스씨에스코리아 주식회사 외 1인 (소송대리인 법무법인 세창외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="부산지방법원|2006나4936|판결" href="#//">부산지법 2006. 12. 21. 선고 2006나4936 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>상고를 모두 기각한다.  상고비용은 원고가 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>상고이유를 판단한다.</p><p>  1. 피고 유피에스에스씨에스코리아 주식회사에 관한 상고이유에 대하여</p><p>  가. 피고 유피에스에스씨에스코리아 주식회사의 운송인으로서의 책임에 관하여</p><p>  (1) 
+        <span class="accrnt_txt">물품운송계약은 당사자의 일방에게 물품을 한 장소로부터 다른 장소로 이동할 것을 약속하고 상대방이 이에 대하여 일정한 보수를 지급할 것을 약속함으로써 성립하는 계약으로서</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|63다126|판결" href="#//">대법원 1963. 4. 18. 선고 63다126 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|82누92|판결" href="#//">1983. 4. 26. 선고 82누92 판결</a></span> 참조), 
+        <span class="accrnt_txt">운송계약에 따른 권리·의무를 부담하는 운송인은 운송의뢰인에 대한 관계에서 운송을 인수한 자가 누구인지에 따라 확정된다.</span> 한편, 운송주선인은 자기의 명의로 물건운송의 주선을 영업으로 하는 사람으로서, 자기의 이름으로 주선행위를 하는 것이 원칙이지만 하주나 운송인의 대리인 또는, 위탁자의 이름으로 운송계약을 체결하였다고 하더라도 실제로 주선행위를 하였다면 운송주선인임에는 변함이 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카1080|판결" href="#//">대법원 1987. 10. 13. 선고 85다카1080 판결</a></span> 참조). 그런데 
+        <span class="accrnt_txt">운송주선인이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|116|" style="text-decoration:underline">상법 제116조</a></span>에 따라 위탁자의 청구에 의하여 화물상환증을 작성하거나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|119|" style="text-decoration:underline">상법 제119조 제2항</a></span>에 따라 운송주선계약에서 운임의 액을 정한 경우에는 운송인으로서의 지위도 취득할 수 있지만, 운송주선인이 위 각 조항에 따라 운송인의 지위를 취득하지 않는 한, 운송인의 대리인으로서 운송계약을 체결하였더라도 운송의뢰인에 대한 관계에서는 여전히 운송주선인의 지위에 있음에 지나지 아니한다고 할 것이다.
+        </span>
+      </p><p>  그리고 
+        <span class="accrnt_txt">운송주선업자가 운송의뢰인으로부터 운송관련 업무를 의뢰받았다고 하더라도 운송을 의뢰받은 것인지, 운송주선만을 의뢰받은 것인지 여부가 명확하지 않은 경우에는 당사자의 의사를 탐구하여 운송인의 지위를 취득하였는지 여부를 확정하여야 할 것이지만, 당사자의 의사가 명확하지 않은 경우에는 하우스 선하증권의 발행자 명의, 운임의 지급형태 등 제반 사정을 종합적으로 고려하여 논리와 경험칙에 따라 운송주선업자가 운송의뢰인으로부터 운송을 인수하였다고 볼 수 있는지 여부를 확정하여야 한다.</span>
+      </p><p>  (2) 위 법리와 원심판결 이유 및 기록에 의하면, 원고는 중화민국에 있는 수출회사와 사이에 안경렌즈첨가제인 IPP-27 3,000kg(이하 ‘이 사건 화물’이라고 한다)을 본선인도조건(F.O.B.)으로 수입하는 계약을 체결한 다음, 소외 김기영을 통하여 국제적인 운송업체인 유피에스 오션 프레이트 서비스(UPS OCEAN FREIGHT SERVICE, INC, 이하 ‘유피에스’라고만 한다)의 서울 소재 현지 법인인 피고 유피에스에스씨에스코리아 주식회사(UPS OCEAN FREIGHT SERVECES KOREA, 이하 ‘유피에스 코리아’라고만 한다)에 ‘Forwarding Order’라는 표제의 문서를 보내 이 사건 화물의 선적에 관하여 의뢰를 한 사실, 그런데 위 ‘Forwarding Order’에는 원고가 피고 유피에스 코리아에 운송을 의뢰하는 것인지, 운송주선을 의뢰하는 것인지에 관하여는 구체적인 내용이 기재되어 있지 않은 사실, 한편 ‘유피에스’의 중국대리점인 프릿츠 로지스틱스(FRITZ LOGISTICS CO., LTD.)는 피고 유피에스 코리아로부터 이 사건 화물의 운송에 관하여 연락을 받고, 2004. 9. 23. 중국 상하이항에서 이 사건 화물을 원심 공동피고 고려해운 주식회사(이하 ‘고려해운’이라고만 한다)의 선박에 선적하면서, ‘유피에스’를 대리하여 이 사건 화물에 대하여 하우스 선하증권을 발행하였는데, 위 선하증권에는 피고 유피에스 코리아가 인도지 대리점이라고 기재되어 있는 사실, 원고는 피고 유피에스 코리아로부터 위와 같은 내용의 선하증권을 교부받고도 이 사건 소 제기 전까지는 선하증권상의 운송인 표시에 대하여 별다른 이의를 제기하지 않은 사실을 인정할 수 있는바, 사실관계가 이와 같다면 원고가 당초 피고 유피에스 코리아에게 이 사건 화물의 운송관련 업무를 의뢰하였다는 사정만으로는 원고가 피고 유피에스 코리아와 사이에서 운송계약을 체결하였다고 단정할 수 없다고 할 것이고, 따라서 원고는 피고 유피에스 코리아에 대하여 이 사건 화물의 멸실에 관하여 운송인으로서의 손해배상책임을 물을 수 없다고 할 것이다.  </p><p>  원심이, 이 사건 화물의 멸실에 관하여 피고 유피에스 코리아가 운송인으로서의 손해배상책임이 있다는 원고의 주장에 대하여 판단하지 아니한 것은 잘못이라고 할 것이나, 위에서 본 바와 같이 원고의 주장은 배척될 것임이 분명하여 원심의 위 잘못은 판결 결과에 영향이 없다고 할 것이므로 원심판결에 상고이유의 주장과 같이 판결에 영향을 미친 운송인의 확정에 관한 법리오해 또는 판단누락 등의 위법이 있다고 할 수 없다.</p><p>  나. 피고 유피에스 코리아의 운송주선인 또는 선박대리점으로서의 책임에 관하여</p><p>  (1) 운송주선인은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|115|">상법 제115조</a></span>에 따라 자기나 그 사용인이 운송물의 수령, 인도, 보관, 운송인이나 다른 운송주선인의 선택 기타 운송에 관하여 주의를 게을리 하지 않았음을 증명한 경우에는 운송물의 멸실로 인한 손해를 배상할 책임이 없다.
+      </p><p>  한편, 
+        <span class="accrnt_txt">선박대리점은 해상운송사업을 영위하는 자를 위하여 그 사업에 속하는 거래의 대리를 업무로 하는 자로서 운송인과의 계약에 따라 화물의 교부와 관련한 일체의 업무를 수행하는 것인데, 이러한 업무를 수행하는 선박대리점이 운송물에 대한 점유를 이전받기 이전에 실제 운송인 및 터미널 운영업자의 과실로 인하여 화물이 소훼되었다면, 선박대리점에게 운송물의 멸실에 대한 불법행위책임을 물을 수는 없다고 할 것이다.</span>
+      </p><p>  (2) 위 법리와 원심판결이 인정한 사실관계에 비추어 보면, 피고 유피에스 코리아를 운송주선인으로 볼 여지가 없지 아니하나, 이 사건 화물은 그 성질상 영하 18도의 냉동상태로 보관되어야 하는 것인데도, 실제운송인인 고려해운이 양하 및 화물의 장치업무를 하는 피고 한국허치슨터미널 주식회사(이하 ‘허치슨터미널’이라고만 한다)에게 화물을 인도하면서 그와 같은 사항을 고지하지 아니하였고, 실제 운송인과의 용역계약에 따라 화물을 인도받아 보세장치장에 보관하고 있던 피고 허치슨터미널이 그 냉동컨테이너의 위험물관리코드를 제대로 살피지 아니한 채 이를 상온에 방치함으로써 자연발화하여 소훼된 것이므로, 이러한 사실관계에 비추어 피고 유피에스 코리아는 자기나 그 사용인이 운송물의 수령, 인도, 보관, 운송인이나 다른 운송주선인의 선택 기타 운송에 관하여 주의를 게을리하지 않았음이 증명되었다고 할 것이어서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|115|">상법 제115조</a></span>에 따른 손해배상책임을 지지 아니한다고 할 것이다. 
+      </p><p>  그리고 앞에서 인정한 사실관계에 비추어 보면, 피고 유피에스 코리아는 도착지에서 화물의 인도 등의 업무를 수행할 선박지 대리점으로서의 지위도 겸하고 있었던 것으로 볼 수 있지만, 이 사건 화물의 멸실은 피고 유피에스 코리아가 이 사건 화물에 대한 점유를 이전받기 이전에 발생된 것이므로 피고 유피에스 코리아에게 그에 대한 불법행위책임을 물을 수도 없다고 할 것이다.</p><p>  원심이, 피고 유피에스 코리아를 운송주선인이 아니라고 단정하고, 나아가 선박대리점으로서 이 사건 화물의 멸실에 관하여 불법행위책임이 있다는 원고의 주장에 대하여 판단하지 아니한 것은 잘못이라 할 것이나, 위에서 본 바와 같이 원고의 위 주장은 결국 받아들일 수 없는 것이어서 원심의 위와 같은 잘못은 판결의 결과에 영향이 없다고 할 것이므로 원심판결에 상고이유의 주장과 같이 판결에 영향을 미친 운송주선인으로서의 손해배상책임 또는 선박대리점의 불법행위책임에 관한 법리오해나 판단누락 등의 위법이 있다고 할 수 없다. </p><p>  2. 피고 허치슨터미널에 관한 상고이유에 대하여</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3">상법 제789조의3 제2항</a></span>은 “운송물에 관한 손해배상 청구가 운송인의 사용인 또는 대리인에 대하여 제기된 경우에 그 손해가 그 사용인 또는 대리인의 직무집행에 관하여 생긴 것인 때에는 그 사용인 또는 대리인은 운송인이 주장할 수 있는 항변과 책임제한을 원용할 수 있다. 그러나 그 손해가 그 사용인 또는 대리인의 고의 또는 운송물의 멸실, 훼손 또는 연착이 생길 염려가 있음을 인식하면서 무모하게 한 작위 또는 부작위로 인하여 생긴 것인 때에는 그러하지 아니하다.”고 규정하고 있는바, 
+        <span class="accrnt_txt">여기에서 ‘사용인 또는 대리인’이란 고용계약 또는 위임계약 등에 따라 운송인의 지휘·감독을 받아 그 업무를 수행하는 자를 말하고 그러한 지휘·감독과 관계없이 스스로의 판단에 따라 자기 고유의 사업을 영위하는 독립적인 계약자는 포함되지 아니하므로, 그러한 독립적인 계약자는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|811|" style="text-decoration:underline">상법 제811조</a></span>에 기한 항변을 원용할 수 없다고 할 것이다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다75318|판결" href="#//">대법원 2004. 2. 13. 선고 2001다75318 판결</a></span> 참조). 그러나 
+        <span class="accrnt_txt">선하증권 뒷면에 “운송물에 대한 손해배상 청구가 운송인 이외의 운송관련자(anyone participating in the performance of the Carriage other than the Carrier)에 대하여 제기된 경우, 그 운송관련자들은 운송인이 주장할 수 있는 책임제한 등의 항변을 원용할 수 있고, 이와 같이 보호받는 운송관련자들에 하수급인(Subcontractors), 하역인부, 터미널 운영업자(terminals), 검수업자, 운송과 관련된 육상·해상·항공 운송인 및 직·간접적인 하청업자가 포함되며, 여기에 열거된 자들에 한정되지 아니한다는 취지”의 이른바 히말라야 약관(Himalaya Clause)이 기재되어 있다면, 그 손해가 고의 또는 운송물의 멸실, 훼손 또는 연착이 생길 염려가 있음을 인식하면서 무모하게 한 작위 또는 부작위로 인하여 생긴 것인 때에 해당하지 않는 한, 독립적인 계약자인 터미널 운영업자도 위 약관조항에 따라 운송인이 주장할 수 있는 책임제한을 원용할 수 있다고 할 것이다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다25237|판결" href="#//">대법원 1997. 1. 24. 선고 95다25237 판결</a></span> 참조). 
+      </p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3" style="text-decoration:underline">상법 제789조의3 제2항</a></span>은 ‘운송인이 주장할 수 있는 책임제한’을 원용할 수 있는 자를 ‘운송인의 사용인 또는 대리인’으로 제한하고 있어 운송인의 사용인 또는 대리인 이외의 운송관련자에 대하여는 적용되지 아니한다고 할 것이므로 당사자 사이에서 운송인의 사용인 또는 대리인 이외의 운송관련자의 경우에도 운송인이 주장할 수 있는 책임제한을 원용할 수 있다고 약정하더라도 이를 가리켜 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|789|3" style="text-decoration:underline">상법 제789조의3</a></span>의 규정에 반하여 운송인의 의무 또는 책임을 경감하는 특약이라고는 할 수 없고, 따라서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|790|" style="text-decoration:underline">상법 제790조 제1항</a></span>에 따라 그 효력이 없다고는 할 수 없다고 할 것이다.
+        </span>
+      </p><p>  한편, 
+        <span class="accrnt_txt">이른바 히말라야 약관은 운송인의 항변이나 책임제한을 원용할 수 있는 운송관련자의 범위나 책임제한의 한도 등에 관하여 그 구체적인 내용을 달리 하는 경우가 있으나, 해상운송의 위험이나 특수성과 관련하여 선하증권의 뒷면에 일반적으로 기재되어 국제적으로 통용되고 있을 뿐만 아니라, 간접적으로는 운송의뢰인이 부담할 운임과도 관련이 있는 점에 비추어 볼 때, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|" style="text-decoration:underline">약관의 규제에 관한 법률 제6조 제1항</a></span>에서 정하는 ‘신의성실의 원칙에 반하여 공정을 잃은 조항’이라거나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|" style="text-decoration:underline">같은 법 제6조 제2항의 각 호</a></span>에 해당하는 조항에 해당한다고도 할 수 없다.
+        </span>
+      </p><p>  원심이 같은 취지에서, 고려해운과의 용역계약에 따라 이 사건 화물을 인도받아 보세장치장에 보관하고 있던 터미널 운영업자인 피고 허치슨터미널은 이 사건 화물에 대한 선하증권의 이면에 기재된 이른바 히말라야 약관에 따라 운송인의 책임제한에 관한 항변을 원용할 수 있다고 판단한 것은 정당하고, 원심의 이러한 판단에는 이른바 히말라야 약관이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약관의 규제에 관한 법률|6|">약관의 규제에 관한 법률 제6조</a></span>에 위반하여 효력이 없다는 원고의 주장을 배척한 취지가 포함되어 있다고 할 것이므로 원심판결에 상고이유의 주장과 같이 판결에 영향을 미친 이른바 히말라야 약관의 유효성 및 그 적용범위 등에 관한 법리오해나 판단누락 등의 위법이 있다고 할 수 없다.
+      </p><p>  3. 그러므로 상고를 모두 기각하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박시환(재판장) 김용담 박일환 김능환(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008다37414 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063596';
+var contIdEtc = '';
+var saNo = '2008다37414';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20090910' ? 
+			'20090910'.length==4 ? Date.parseExact('20090910','yyyy').toString('yyyy. M. d.') : 
+				'20090910'.length==6 ? Date.parseExact('20090910','yyyyMM').toString('yyyy. M. d.') : 
+					'20090910'.length==8 ? Date.parseExact('20090910','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008다37414 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008다37414';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008다37414</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(7)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(7)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061943">대법원 2010. 7. 8. 선고 2010다21276 판결 [공2010하,1540]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636809">김상중 (2000년대 민사판례의 경향과 흐름)민법총칙 민사판례연구 33-2권  / 박영사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|772337">고홍석 대법원 판례에 나타난 금융투자상품 거래에서의 적합성 원칙 민사판례연구 37권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548409">한국. 대법원 법원행정처 재판실무편람. 제20호:. 재개발.재건축재판실무편람 재개발.재건축재판실무편람 집필위원회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|726035">오윤식 노동조합의 사용자에 대한 비재산적 손해배상청구권 사법 27호 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631529">최우진 구체적 액수로 증명 곤란한 재산적 손해의 조사 및 확정 : 사실심 법원 권능의 내용과 한계 사법논집 . 제51집   / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638655">박영호 동산양도담보를 신뢰하여 금원을 대출하였다가 후에 동산을 타인에게 인도당한 경우에 양도담보권자가 입은 통상 손해액 대법원판례해설 85호  / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833690">김웅재 기망행위에 속아 물건을 고가에 매수한 뒤 그 물건가격이 변동한 경우 손해배상의 범위 및 손해배상액 산정의 기준시점 민사판례연구 39권  / 박영사  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다1313">대법원 2009. 4. 23. 선고 2009다1313 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|91다33070">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|760|0|null">민법 제760조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다17924">대법원 2006. 10. 26. 선고 2004다17924 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|2002가합6863">대전지방법원 2002가합6863</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다1313">대법원 2009. 4. 23. 선고 2009다1313 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다33070">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다50338">대법원 2008. 9. 11. 선고 2006다50338 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|99나4069">대전고등법원 99나4069</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|2004나4650">대전고등법원 2004나4650</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|47|0|null">집합건물의 소유 및 관리에 관한 법률 제47조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|760|0|null">민법 제760조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|2007나7834">대전고법 2008. 5. 15. 선고 2007나7834 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2009. 9. 10. 선고 2008다37414 판결</h2><p class="sub_title">[손해배상(기)][공2009하,1621]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 재건축조합원들을 위법하게 제명한 상태에서 제명된 조합원들이 분양받아야 할 아파트를 일반분양하는 것이 불법행위에 해당하는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 재건축조합이 조합원들을 위법하게 제명하여 그 수분양권을 박탈한 상태에서 ‘시공사’가 재건축조합과 함께 일반분양을 강행하는 경우, 제명된 조합원들에 대한 공동불법행위가 성립하는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[3] 불법행위로 인한 재산상 손해의 액수를 산정함에 있어 위법행위가 없었을 경우의 재산상태에 관하여 당사자가 주장하는 사정을 참작하기 위한 요건</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 재건축조합원들을 위법하게 제명한 상태에서 제명 조합원들이 분양받아야 할 아파트를 일반분양하는 것은 재건축조합원들의 수분양권을 위법하게 박탈하는 것으로서 불법행위가 될 수 있다.</p>
+      <p></p><p>
+        </p><p>[2] 수인이 공동하여 타인에게 손해를 가하는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">민법 제760조</a></span>의 공동불법행위에 있어서 행위자 상호간의 공모는 물론 공동의 인식을 필요로 하지 아니하고, 다만 객관적으로 그 공동행위가 관련 공동되어 있으면 족하고 그 관련 공동성 있는 행위에 의하여 손해가 발생함으로써 그에 대한 배상책임을 지는 공동불법행위가 성립하는바, 재건축조합이 재건축조합원들을 위법하게 제명하여 그 수분양권을 박탈한 상태에서 시공사가 재건축조합과 함께 일반분양을 강행하는 경우에는 제명된 조합원들에 대하여 공동불법행위가 성립할 수 있다.
+        </p>
+      <p></p><p>
+        </p><p>[3] 불법행위로 인한 재산상 손해는 위법한 가해행위로 인하여 발생한 재산상 불이익, 즉 그 위법행위가 없었더라면 존재하였을 재산상태와 그 위법행위가 가해진 현재의 재산상태의 차이를 말하는 것이므로, 손해액을 산정함에 있어서는 먼저 위법행위가 없었더라면 존재하였을 재산상태를 상정하여야 할 것인데, 위법행위가 없었을 경우의 재산상태를 상정함에 있어 고려할 사정들은 위법행위 전후의 여러 정황을 종합한 합리적인 추론에 의하여 인정될 수 있어야 하고, 당사자가 주장하는 사정이 그러한 추론에 의하여 인정되지 않는 경우라면 이를 위법행위가 없었을 경우의 재산상태를 상정하는 데에 참작할 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">민법 제760조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다1313|판결" href="#//">대법원 2009. 4. 23. 선고 2009다1313 판결</a></span>(공2009상, 755)<br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다33070|전원합의체 판결" href="#//">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></span>(공1992, 2235)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(선정당사자), 피상고인】
+      
+        
+          원고(선정당사자) (소송대리인 법무법인 새날로 담당변호사 조용무외 3인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고 1 재건축주택조합외 1인 (소송대리인 변호사 서희종외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|2007나7834|판결" href="#//">대전고법 2008. 5. 15. 선고 2007나7834 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고들 패소 부분을 파기하고, 이 부분 사건을 대전고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 이 사건 제명결의의 위법성에 관하여</p><p>  재건축조합이 재건축결의의 내용을 변경함에 있어서는 그것이 구성원인 조합원의 이해관계에 미치는 영향에 비추어 재건축결의시의 의결정족수를 규정한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">집합건물의 소유 및 관리에 관한 법률 제47조 제2항</a></span>을 유추적용하여 조합원 5분의 4 이상의 결의가 필요하고, 물가의 변동 등 건축 경기의 상황변화에 따른 통상 예상할 수 있는 범위를 넘는 주택의 공급가격의 변동은 철거 및 건축비용의 개산액과 비용분담에 관한 사항을 정한 재건축결의의 내용을 변경하는 것에 해당한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다17924|판결" href="#//">대법원 2006. 10. 26. 선고 2004다17924 판결</a></span> 등 참조). 또한 조합원 과반수를 제명하는 것은 재건축조합의 조합원총회 결의로도 불가능하므로, 조합원총회의 일부 의사결정을 대신하는 기관인 재건축조합 대의원회 등의 결의에 의하여 조합원 과반수를 제명할 수는 없다 할 것이다.
+      </p><p>  원심은 그 채용 증거들에 의하여 판시와 같은 사실을 인정한 다음, 피고조합의 최초 규약에 분양기준가액의 산출방식이 기재되어 있으나, 이 사건 재건축과 관련하여 피고조합이 각 건설회사들과 공사계약을 체결하고 해지하는 과정을 되풀이하면서 많은 시간이 흘러 물가상승 등으로 공사비가 상승하였고, 인근 소라아파트를 매입하여 그 부지를 재건축 사업에 포함시킴으로써 재건축 사업에 제공되는 대지의 면적, 건축 연면적, 재건축 세대수까지 증가하는 등으로 조합원들이 부담할 분양대금 등이 변경되었으며, 그 변경이 당초 재건축 결의 당시 통상 예견할 수 있는 정도를 훨씬 초과하므로, 조합원의 무상지분평수를 6.8평으로 정한 2000. 8. 12.자 이 사건 개정결의는 조합원 5분의 4 이상의 결의가 필요함에도 그 요건이 흠결되어 위법한 것인데, 피고조합은 분양신청을 하지 않은 조합원들을 제명하는 방법으로 조합원 분양율을 높여 당시 시공사이던 
+        소외 1 주식회사가 요구하는 분양률 80%의 조건을 이행하였다고 주장하기 위하여 불과 6, 7명의 대의원이 참석한 대의원회 결의를 통하여 원고와 선정자들을 포함하여 조합원 과반수에 해당하는 301명의 조합원에 대한 이 사건 제명결의를 하였으므로, 이 사건 제명결의는 위법한 2000. 8. 12.자 이 사건 개정결의에 기반을 둔 것일 뿐 아니라 조합원총회의 결의로도 허용되지 않는 내용의 결의를 하여 위법하다는 취지로 판단하였는바, 비록 피고조합이 기존 아파트가 철거되어 재건축을 포기할 수 없는 상황에서 이와 같이 반대 조합원들을 제명하게까지 된 사정을 감안하더라도, 앞서 본 법리 등에 비추어 보면 이 사건 제명결의가 위법하다고 한 원심의 판단은 정당한 것으로 수긍이 되고, 거기에 상고이유와 같은 재건축조합원의 제명에 관한 법리오해 등의 위법이 없다.
+      </p><p>  2. 불법행위의 성립 및 손해의 산정 시기에 관하여</p><p>
+        <span class="accrnt_txt">재건축조합원들을 위법하게 제명한 상태에서 제명 조합원들이 분양받아야 할 아파트를 일반분양하는 것은 재건축조합원들의 수분양권을 위법하게 박탈하는 것으로서 불법행위가 될 수 있다.</span>
+      </p><p>  원심이 적법한 증거조사를 거쳐 채택한 증거 등에 의하면, 이 사건 개정결의와 이 사건 제명결의가 이처럼 위법하게 이루어지게 된 근본적인 원인은 
+        원고 등이 포함된 전 조합장 
+        소외 2 측 조합원들과 현 조합장 
+        소외 3 측 조합원들 사이의 대립 때문이었던 사실 및 피고조합은 일반분양이 완료된 2003. 12. 20. 이전에 원고 등 제명 조합원 301명을 상대로 매도청구권을 행사하여 이 사건 아파트 건축 부지의 각 지분에 관한 지분이전등기를 청구하고 있었는데, 이에 대하여 제명 조합원들은 이 사건 개정결의 및 이 사건 제명결의가 위법, 무효이므로 피고조합의 청구에 응할 수 없다는 주장을 하고 있었고, 그리하여 2003. 7. 16.에는 일부 제명 조합원들에 대한 피고조합의 위 지분이전등기 청구를 기각하는 판결(
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|2002가합6863|판결" href="#//">대전지방법원 2002가합6863</a></span>)이 선고되기도 한 사실을 알 수 있고, 이에 의하면 일반분양이 원고 및 선정자들을 배제한 채 위법하게 이루어진 데 대한 피고조합의 귀책사유도 인정할 수 있다 할 것이므로, 같은 취지에서 2003. 12. 20.경 일반분양이 완료됨으로써 이 사건 불법행위가 완성되었고, 손해액은 2003. 12. 20.경 이 사건 아파트 수분양권의 가액에 의하여 산정하여야 한다고 판단한 원심판결은 정당하고, 거기에 상고이유와 같은 재건축의 법리 및 불법행위의 손해배상에 관한 법리 등에 위반한 위법이 있다고 할 수 없다.
+      </p><p>  한편, 비록 원고 및 선정자들이 조합원 무상지분평수 17평을 고집하면서 분양계약의 체결을 거부하고 있었고 이 사건 재건축은 아파트가 완공되기까지 이 사건 개정결의에 의하여 조합원 무상지분평수를 6.8평으로 한 내용이 변경되지 않은 상태로 시행되었다고 하더라도, 이 사건 제명결의 이후 일반분양에 이르기까지 사이의 제반 사정의 변경에도 불구하고 원고 및 선정자들이 끝까지 그 주장을 고집하면서 분양계약을 체결하지 않았을 것이라고 단정할 수는 없다 할 것이므로(피고들의 주장에 의하더라도 그 사이에 행정수도 이전 공약이라는 호재가 있었다는 것이다), ‘원고 및 선정자들이 이 사건 제명결의가 없었더라도 수분양권을 상실하였을 것이 분명하므로 수분양권의 가액으로 손해를 산정해서는 안된다’는 취지의 상고이유의 주장도 이를 받아들일 수 없다.</p><p>  3. 피고회사의 공동불법행위 성립 여부에 관하여</p><p>
+        <span class="accrnt_txt">수인이 공동하여 타인에게 손해를 가하는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|" style="text-decoration:underline">민법 제760조</a></span>의 공동불법행위에 있어서 행위자 상호간의 공모는 물론 공동의 인식을 필요로 하지 아니하고, 다만 객관적으로 그 공동행위가 관련 공동되어 있으면 족하고 그 관련 공동성 있는 행위에 의하여 손해가 발생함으로써 그에 대한 배상책임을 지는 공동불법행위가 성립하는바(
+          <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다1313|판결" href="#//" style="text-decoration:underline">대법원 2009. 4. 23. 선고 2009다1313 판결</a></span> 등 참조), 재건축조합이 재건축조합원들을 위법하게 제명하여 그 수분양권을 박탈한 상태에서 시공사가 재건축조합과 함께 일반분양을 강행하는 경우에는 제명된 조합원들에 대하여 공동불법행위가 성립할 수 있다 할 것이다.
+        </span>
+      </p><p>  원심판결 및 원심이 적법한 증거조사를 거쳐 채택한 증거 등에 의하면, 피고회사는 1993년경부터 1996년경까지 이 사건 재건축사업의 시공사였다가 부도로 인하여 이 사건 재건축에서 배제된 사실, 이후 피고회사는 이 사건 재건축사업이 중단되어 있던 2003. 4. 29.경 다시 피고조합과 사이에 제명 조합원 301명을 제외한 나머지 204명으로 조합원을 한정하는 내용의 공사도급계약을 체결하고 공동 사업시행자가 된 사실, 위 공사도급계약에서 피고회사는 피고조합으로 하여금 제명 조합원들의 부지 지분을 확보할 책임을 지도록 하였고, 이에 피고조합이 앞서 본 바와 같이 제명 조합원들에게 지분 매도청구권을 행사하여 141명과는 금전청산에 합의하였으나 합의가 되지 않은 제명 조합원들과의 소송에서는 위와 같이 패소판결을 받기도 하였던 사실, 이러한 상황에서 피고회사는 2003. 11. 29.경 대전광역시 대덕구에 일반분양분 세대의 입주자모집공고 승인신청을 하면서 피고조합과 연명으로 “현재 진행 중인 제명 조합원에 대한 매도청구소송에서 조합이 패소하여 제명 조합원의 지위가 회복되어 분양권을 가지게 될 경우 이에 따른 모든 민, 형사상 책임을 부담할 것을 약속한다”는 내용의 이행각서를 공증하여 제출하는 등으로 2003. 12. 3. 입주자모집공고 승인을 받은 사실을 알 수 있는바, 이와 같은 사실을 종합하여 보면 피고회사는 이 사건 제명결의 등이 위법한 것임을 알았거나 이를 충분히 알 수 있었던 상태에서 피고조합과 함께 일반분양을 강행함으로써 피고조합과 공동불법행위를 저질렀음을 인정할 수 있다.</p><p>  같은 취지에서 피고회사의 공동불법행위 책임을 인정한 원심판결은 정당하고, 거기에 상고이유와 같은 공동불법행위에 관한 법리오해 등의 위법이 있다고 할 수 없다.</p><p>  4. 원심의 부가적 판단 부분의 변론주의 위반 여부에 관하여</p><p>  원심은 피고회사가 피고조합과의 이 사건 아파트 공사도급계약을 통하여 피고조합의 원고 및 선정자들에 대한 채무에 대하여 이행인수를 하였다는 점을 자인하고 있으므로 원고 및 선정자들이 피고조합을 대위하여 피고회사에 대하여 이 사건 불법행위에 기한 손해배상의무의 이행을 구하는 것도 가능하다고 판단하였는바, 이와 같은 원심의 부가적 판단은 피고회사의 공동불법행위가 성립하지 않을 경우를 가정한 것으로서, 앞서 본 바와 같이 피고회사의 공동불법행위가 성립한다는 원심의 판단이 정당한 것으로 인정되는 이상, 위와 같은 부가적 판단은 그 당부에 관계없이 판결 결과에 아무런 영향을 미치지 않으므로, 원심이 변론주의에 위반한 판단을 하였다는 이 부분 상고이유의 주장은 받아들일 수 없다.</p><p>  5. 손해액의 산정에 있어 조합원 분담금의 조정 필요성에 관하여</p><p>
+        <span class="accrnt_txt">불법행위로 인한 재산상 손해는 위법한 가해행위로 인하여 발생한 재산상 불이익, 즉 그 위법행위가 없었더라면 존재하였을 재산상태와 그 위법행위가 가해진 현재의 재산상태의 차이를 말하는 것이므로</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다33070|전원합의체 판결" href="#//">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></span> 등 참조), 
+        <span class="accrnt_txt">손해액을 산정함에 있어서는 먼저 위법행위가 없었더라면 존재하였을 재산상태를 상정하여야 할 것인데, 위법행위가 없었을 경우의 재산상태를 상정함에 있어 고려할 사정들은 위법행위 전후의 여러 정황을 종합한 합리적인 추론에 의하여 인정될 수 있어야 하고, 당사자가 주장하는 사정이 그러한 추론에 의하여 인정되지 않는 경우라면 이를 위법행위가 없었을 경우의 재산상태를 상정하는 데에 참작할 수 없다 할 것이다.</span>
+      </p><p>  원심판결 이유에 의하면 원심은, 피고들의 다음과 같은 주장 즉, 이 사건 아파트 공사도급계약에서는 조합원 수를 204명으로 제한하고 조합원 수가 이를 초과할 경우에는 조합원 분담금을 조정하게 되어 있어, 만약 이 사건 제명결의가 위법, 무효일 경우 제명 조합원들이 모두 조합원 지위를 회복하게 됨으로써 조합원 수가 증가하게 되므로 기존 조합원 분담금을 조정하여 손해액을 산정해야 한다는 주장을 배척하고, 일반 분양가에서 기존 조합원 분담금을 공제하는 방식으로 손해액을 산정하였다.</p><p>  그런데 피고들의 위 주장은 피고회사가 피고조합 조합원 수의 변경에도 불구하고 피고회사의 수익은 변동이 없도록 나머지 계약조건을 동일하게 한 채 조합원 분담금만 증가시킨 공사도급계약을 체결할 수 있었을 것이라는 가정을 전제로 하고 있다. 뿐만 아니라 구체적인 조합원 분담금 조정방법에 관하여 보더라도, 이 사건 공사도급계약 자체에 아무런 기준이 설정되어 있지 않음은 물론 이해관계가 다를 수밖에 없는 당사자들 사이의 이해조정이 쉽지 아니하므로, 그 조정에 관한 합리적인 기준설정이 힘들 것임은 이를 어렵지 않게 예상할 수 있다. 그러므로 피고조합의 조합원들이 위법하게 제명되지 아니하여 전체 조합원이 505명으로 유지된 상태에서 이 사건 아파트 공사도급계약이 체결되었을 경우를 상정하더라도 피고들의 위 주장처럼 반드시 조합원 분담금이 기존 조합원 분담금보다 높은 수준으로 결정되었을 것이라고 합리적으로 추론하기 어렵고, 다만 피고회사로서는 이 사건 아파트 공사도급계약 당시 전체 조합원이 505명으로 유지된 상태에서 제반 계약조건을 산정할 기회를 갖지 못하였다고 볼 수 있지만 이는 뒤에서 보는 것처럼 손해의 공평한 부담이라는 차원에서 과실상계 등의 사유에 포함시켜 참작할 수 있을 것이다.</p><p>  따라서, 조합원 분담금을 기존보다 증가시켜 손해액을 산정하여야 한다는 피고들의 주장을 배척한 원심의 위 판단은 앞서 본 법리에 비추어 정당하고, 거기에 상고이유와 같은 손해의 산정에 관한 법리를 오해한 위법 등이 있다고 할 수 없다.</p><p>  6. 과실상계에 관하여</p><p>  불법행위로 인한 손해의 발생 또는 확대에 관하여 피해자에게도 과실이 있는 때에는 그와 같은 사유는 가해자의 손해배상의 범위를 정함에 있어 당연히 참작되어야 하고, 양자의 과실비율을 교량함에 있어서는 손해의 공평부담이라는 제도의 취지에 비추어 피해발생에 관련된 제반 상황이 충분히 고려되어야 할 것이며, 과실상계사유에 관한 사실인정이나 그 비율을 정하는 것이 사실심의 전권사항이라고 하더라도 그것이 형평의 원칙에 비추어 현저히 불합리하여서는 아니 된다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다50338|판결" href="#//">대법원 2008. 9. 11. 선고 2006다50338 판결</a></span> 등 참조).
+      </p><p>  원심판결 이유에 의하면 원심은, 과실상계에 관한 피고들의 주장에 대하여, 피고조합이 조합원 총회를 개최하여 조합원들에게 금전청산을 할지 재건축사업에 동참할지를 선택할 기회를 주려고 하는 노력 없이 일방적으로 위법하게 조합원 제명이라는 극단적인 수단을 동원하여 위와 같은 기회 자체를 박탈한 것은 용납될 수 없다는 이유로 위 주장을 배척하였다.</p><p>  그러나 과실상계에 관한 원심의 이러한 판단은 앞서 본 법리에 비추어 다음과 같은 이유로 이를 수긍할 수 없다.</p><p>  즉 원심판결 및 원심이 적법한 증거조사를 거쳐 채택한 증거 등에 의하면, 피고조합은 이미 조합원들이 이주를 완료하고 기존 아파트가 철거되어 재건축사업을 진행시키지 않을 수 없게 된 상황에서 1999. 9. 15. 
+        소외 1 주식회사와 공사계약을 체결하여 사업을 재개하고자 하였는데, 그러던 중 전 조합장 
+        소외 2 측과 당시 조합장 
+        소외 3 측은 피고조합의 임시총회결의와 관련하여 발생한 분쟁의 항소심(
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|99나4069" href="#//">대전고등법원 99나4069</a></span>) 조정 과정에서 2000. 8. 12.자로 임시총회를 개최하여 그 결과에 승복하기로 합의하였고, 이에 2000. 8. 12. 개최된 임시총회에서 
+        소외 2 측 조합장 후보로 
+        원고(선정당사자)가 출마하여 조합원 무상지분평수를 13평으로 보장하겠다는 공약을 내걸었으나 
+        소외 3이 재차 조합장으로 선출되고 무상지분평수를 6.8평으로 한 규약 개정안이 통과된 사실, 그럼에도 불구하고 2000. 9. 9.까지 3차례에 걸쳐 진행된 조합원 분양절차에서 원고 및 선정자들을 포함한 301명의 조합원들은 여전히 무상지분평수 17평을 주장하며 분양계약의 체결을 거부한 사실, 그런데 조합원 무상지분평수 17평은 당초의 재건축결의는 물론 조합규약에도 반영되어 있지 않은 내용이고 단지 
+        소외 3이 1996년경 조합장으로 입후보하면서 내세운 공약으로서 이에 대해 
+        소외 3이 조합원들 일부에게 확인서를 작성해주었을 뿐이며 그 후 조합원 내부의 분쟁과 공사 중단 등을 거친 끝에 피고조합이 
+        소외 1 주식회사와 공사계약을 체결하게 되면서 
+        소외 3은 조합원들에게 무상지분평수가 6.8평으로 결정될 수밖에 없는 사정을 설명하였던 사실, 한편 위와 같이 조합원들의 분양계약 체결이 저조하자 
+        소외 1 주식회사는 조합원 분양률이 공사계약에서 정한 80%에 미달하여 조합에 대한 대여금이나 공사대금의 회수 등이 불확실하다는 이유로 공사를 중단한 채 이를 재개하지 않았고, 이후 피고조합과 
+        소외 1 주식회사 사이의 소송(
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|2004나4650" href="#//">대전고등법원 2004나4650</a></span>)에서 2005. 7. 12. 피고조합이 
+        소외 1 주식회사에게 손해배상금으로 30억 원을 지급하기로 하는 조정이 성립된 사실을 알 수 있는바, 이와 같이 피고조합이 재건축을 중단할 수 없게 된 상황에서 법원의 조정과정을 통하여 어렵게 합의를 도출하는 등으로 사업의 추진을 위해 노력하였음에도 원고 및 선정자들 등은 현실성이 없어 보이는 무상지분평수 17평만을 고집하면서 재건축에 협조하지 않았고 그 결과 조합이 거액의 손해배상금을 지급하기에까지 이르게 된 점, 원고와 선정자들 등이 위법하게 제명된 근본적인 원인은 원고 등 조합원들이 
+        소외 2 측과 
+        소외 3 측으로 나뉘어 상호 반목, 대립하여 재건축을 정상적으로 진행시킬 수 없게 되었기 때문인 점 및 이로 인하여 피고회사로서도 원고와 선정자들 등 제명 조합원들을 포함한 조합원 수에 맞는 적정한 조합원 분담금 등의 계약조건을 산정할 기회를 제대로 갖지 못한 것으로 볼 수 있는 점 등에 비추어 원고 측의 잘못 등을 전혀 참작하지 않고 손해를 모두 피고들에게 부담하도록 하는 것은 손해분담의 공평이라는 손해배상제도의 이념에 비추어 불합리한 조치라 할 것이다.
+      </p><p>  따라서 원심으로서는 위와 같은 사유들을 참작하여 손해배상액을 적정한 금액으로 감액하였어야 할 것인바, 다만, 피고들의 불법행위가 성립하는 이상 손해배상액을 감액함에 있어 원고와 선정자들이 불법행위와 관계없이 지급받을 수 있는 금전청산금 상당의 금액은 보장되도록 해야 할 뿐 아니라, 나아가 이 사건 불법행위의 위법성이 결코 가볍지 않은 점에 비추어 손해배상액이 과도하게 감액되지 않게 할 필요가 있다.</p><p>  그럼에도 불구하고, 원심은 위와 같은 이유만으로 피고들의 과실상계 주장을 배척하고 말았으니, 이러한 원심판결에는 불법행위의 과실상계에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다 할 것이므로, 이를 지적하는 상고이유의 주장은 이유 있다.</p><p>  7. 결론</p><p>  그러므로 원심판결 중 피고들 패소 부분을 파기하고 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신영철(재판장) 박시환 안대희(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

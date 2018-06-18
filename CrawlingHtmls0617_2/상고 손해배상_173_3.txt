@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 66다1715 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2070513';
+var contIdEtc = '2070514';
+var saNo = '66다1715';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('19661018' ? 
+			'19661018'.length==4 ? Date.parseExact('19661018','yyyy').toString('yyyy. M. d.') : 
+				'19661018'.length==6 ? Date.parseExact('19661018','yyyyMM').toString('yyyy. M. d.') : 
+					'19661018'.length==8 ? Date.parseExact('19661018','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 66다1715 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '66다1715';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />66다1715</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(30)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|659569">홍정선 공용제한과 손실보상 : 동두천시 강변우회도로사건 (최신) 행정법판례특강 제2판 / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|224441">권형준 재산권의 보장과 정당한 보상 : 판례 및 사례평석을 중심으로 하여 . 고시계 41권 4호 (96.03) / 국가고시학회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|214403">홍준형 손실보상의 법적 근거 상 판례월보 297호  / 판례월보사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|170098">김영철 대법원판례에서 본 법관의 인권의식에 관한 연구, 2 법조 23권12호  / 법조협회  1974 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|43670">김영훈 행정상 손실보상에 관한 고찰 숭실대 법학논총 7집  / 숭실대학교 법학연구소  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|436711">박홍우 헌법 제23조 제3항에 따른 보상규정이 없는 경우의 문제해결방안 재판실무 (99.08)  / 창원지방법원  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|238466">정연주 우리 헌법상 재산권이론의 형성과 발전 한국에서의 기본권이론의 형성과 발전 : 연천허영박사화갑기념논문집 (97.05) / 박영사  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|527997">박창석 한국헌법사상 보상규정의 변천에 관한 연구 공법연구 32집 5호  / 한국공법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|98863">손진상 댐건설로 인한 손실보상에 관한 연구 고려대학교  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|43639">이상규 국가배상책임요건으로서의 과실과 위법성 변호사 : 법률실무연구 23집  / 서울지방변호사회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|212214">손병기 공간규제행정과 권익구제 : 헌법상 보상규정의 변천을 중심으로 현대공법과 개인의 권익보호 : , 균재 양승두교수화갑기념논문집(I)   / 홍문사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|447031">손병기 생활공간규제행정과 권익구제에 관한 연구 숭실대학교  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|485120">박홍우 헌법 제23조 3항에 따른 보상규정이 없는 경우의 문제해결방안 한국헌법학의 현황과 과제 : 금랑김철수 교수정년기념논문집 (1998.10) / 박영사  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|473550">홍정선 행정판례의 발전에 관한 일고 법학논집 제5권 제1호  / 이화여자대학교 법학연구소  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|466196">배병호 공법상 환매제도에 관한 연구 서울대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|264520">박평준 현행법상 공용제한에 대한 보상제도의 문제점 토지공법연구 3집  / 한국토지공법학회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|567237">사법연수원 행정소송법:. 2016 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44122">홍정선 수용유사 침해보상 월간고시 19권 2호 (92.01) :  : 창간 18주년 기념호 / 법지사  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461069">박평준 헌법상 손실보상문제의 쟁점 법학과 행정학의 현대적과제 (2000.02) / 유소 이방기 교수 정년기념논문집 간행위원회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|463493">박평준 한국헌법상 손실보상조항 공법연구 26집 1호  / 한국공법학회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|246108">박평준 공용수용과 손실보상, : 보상의 근거·원인을 중심으로 사법행정 39권 4호  / 한국사법행정학회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251458">이재성 판례에 비친 국민의 기본권보장 이재성판례평석집 11권 (제1권-제11권) / 한국사법행정학회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|519644">이은희 주한미군 재배치와 토지문제 민주법학 통권25호  / 관악사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|247957">최승원 손실보상논의의 새로운 가능성 탐구 행정법연구 창간호 (97.06) / 행정법이론실무학회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|172482">박윤흔 위헌법률심사권 2 법제월보 11권 4호  / 법제처  1969 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|237869">박평준 공용제한과 손실보상 현대행정법학이론 : 우제이명구박사화갑기념논문집[Ⅱ] II권  / 고시연구사  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|533180">김현철 보상규정 없는 재산권제약법률에 대한 헌법적 심사 헌법논총 15집  / 헌법재판소  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|521629">정회근 토지소유권의 제한과 손실보상 토지공법연구 20집  / 한국토지공법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|266976">송희성 재산권의 존속보장과 공용침해의 근거 사법행정 40권 12호  / 한국사법행정학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|242338">김동복 토지수용에 있어서의 손실보상에 관한 연구 법학논총 3집  / 조선대학교 법학연구소  1997 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="헌법|20|0|null">헌법 제20조 제3항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|15|0|null">헌법 제15조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|20|0|null">헌법 제20조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|400|0|null">민사소송법 제400조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|95|0|null">민사소송법 제95조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|89|0|null">민사소송법 제89조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구고등법원|66나146">대구고등법원 1966. 7. 14. 선고 66나146 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2070514">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1966. 10. 18. 선고 66다1715 판결</h2><p class="sub_title">[손해배상][집14(3)민,171]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p> 법적근거 없이한 징발과 불법행위</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 군사상의 긴급한 필요에 의하여 국민의 재산권을 사용 또는 사용하게 되었던 것이라 할지라도 그 수용 또는 사용이 법률의 근거 없이 이루어진 경우에는 재산권자에 대한 관계에 있어서는 불법행위가 된다.</p>
+      <p></p><p>
+        </p><p>나. 우리나라 헌법이 재산권의 보장을 명시(제헌당시 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|15|">제15조</a></span>, 80.10.27. 개정
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|22|">헌법 제22조</a></span>)하였는 만큼 제헌후 아직 징발에 관한 법률이 제정되기 전에 6.25.사변이 발발되었고 그로 인한 사실상의 긴급한 필요에 의하여 국민의 재산권을 수용 또는 사용하게 되었던 것이라 할지라도 그 수용 또는 사용이 법률의 근거없이 이루어진 것인 경우에는 그것을 재산권자에 대한 관계에 있어서는 불법행위라고 않을 수 없다.
+        
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|20|">헌법 제20조 3항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          최만 외 40인 (소송대리인 변호사 김정두)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          대한민국 (소송대리인 변호사 한승헌)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원 판 결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구고등법원|66나146|판결" href="#//">대구고등법원 1966. 7. 14. 선고 66나146 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>   상고를 기각한다.</p><p>   상고소송비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  피고 소송대리인의 상고이유에 대하여 판단한다.</p><p>  1. 우리나라 헌법이 모든 국민의 재산권은 보장되며, 공공필요에 의한 재산권의 수용, 사</p><p>용 제한은 법률로써 하되 정당한 보상을 지급하여야 한다는 취지를 명정(제헌 당초의 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|15|">제15조</a></span> 현행법 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|20|">제20조</a></span>)하였는만큼 제헌후 아직 징발에 관한 법률이 제정되기 전에 6.25사변이 발발되었고, 그로 인한 군사상의 긴급한 필요에 의하여 국민의 재산권을 수용, 또는 사용하게 되었던 것이라 할지라도, 그 수용, 또는 사용이 법률의 근거없이 이루어진 것인 경우에는 그것을 재산권자에 대한 관계에 있어서는 불법행위라고 않을 수 없다. 그러므로, 본건에서 원심이 원고들이 각 소유하고 있는 원판결 별지기재의 각 토지의 전부 또는 일부를 피고 산하기관인 공군 제107기지단이 1950.9.경부터 동촌비행장방수로 부지로서 점유사용하고 있다는 사실과 그 토지의 일부에 대하여서만 1965.5.10. 공군참모총장의 이름으로 징발영장이 발부된 사실이 있었음을 인정(1950.7.15. 공군참모총장이 적법히 징발하였던 것이라는 피고의 주장은 배척되었음)하므로써, 위 징발 영장이 발부된 토지들에 대한 점유시초부터 그 영장발부시까지의 피고의 점유나 나머지 토지들에 대한 점유시초부터 현재까지의 피고의 점유는 모두 권원없는 점유로서, 그 소유권자인 원고들에 대한 관계에서는 불법행위를 면치 못할 것인즉, 피고는 원고들에 대하여 그로 인한 손해를 배상할 의무가 있다고 판시하였음은 정당하였다 할것이니, 소론중 위 판시내용을 논난하는 부분(징발에 관한 법률이 제정되기 전의 징발은 조리에 따라 이를 할 수 있는 것이고,-소론 제2점-따라서 대통령긴급명령 제6호 「징발에 관한 특별조치령」의 발효이전의 참모총장의 징발처분은 특별한 양식이 없어도 유효하다-소론 제1점-는 취지를 주장하는 부분)의 논지는 이유없다.
+      
+      </p><p>  원심이 진술한바와 같이 공군 제107기자단의 적법한 징발령장에 발부없이 원고들의 각 소유인 본건토지들의 전부, 또는 일부의 점유사용을 불법행위라고 단정한 이상, 더나아가 위 공군제107기지단이 그 토지들을 점유할 당초에 대여하한 절차에 의하여 그 점유를 개시하였더면 그것이 적법하였을 것이었는가에 관하여 심리판단할 필요는 없었던 것이니, 소론중 이점에 관한 부분(제3점)의 논지도 이유 없다.</p><p>  그러하므로 관여법관 전원의 일치한 의견으로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|400|">민사소송법 제400조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|95|">제95조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|89|">제89조</a></span>에 의하여, 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법원판사   나항윤(재판장) 손동욱 한성수 방순원 </span></center><span class="space"></span>
+    <p>  대법원 판사 한성수는 출장 중이므로 서명날인 불능</p>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

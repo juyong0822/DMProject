@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다15363 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2060952';
+var contIdEtc = '';
+var saNo = '2010다15363';
+var sngoNm = '선고';
+var saNm = '퇴직금등';
+try {
+	var sngoDay=('20100610' ? 
+			'20100610'.length==4 ? Date.parseExact('20100610','yyyy').toString('yyyy. M. d.') : 
+				'20100610'.length==6 ? Date.parseExact('20100610','yyyyMM').toString('yyyy. M. d.') : 
+					'20100610'.length==8 ? Date.parseExact('20100610','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다15363,15370 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다15363';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다15363</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(11)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(11)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|689992">부당제소 원인제공자에 대한 손해배상책임 @ 특히 변호사 비용 사이의 인과관계를 중심으로 신헌기 釜山判例硏究會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|631363">상대방의 불법행위로 인한 결과 제거를 위하여 소송을 제기한 경우에 불법행위와 그 소송에 소요된 변호사비용 사이의 상당인과관계 여부 박영호 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631652">장재형 2010년 민사소송법 중요 판례 인권과 정의 415호  / 대한변호사협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638760">신헌석 저작재산권침해와 저작권법상 손해배상액 산정 사법 16호 / 사법발전재단  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|689992">신헌기 부당제소 원인제공자에 대한 손해배상책임 : 특히 변호사 비용 사이의 인과관계를 중심으로 . 판례연구 24집 / 부산판례연구회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769268">유제민 언론기관의 보도에 대한 전략적 봉쇄소송(SLAPP)과 위축효과(Chilling Effect) 사법논집 . 제59집   / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|736891">이종구 민사소송에서의 변호사비용부담에 관한 비교법적 연구 : 미국의 변호사비용에 대한 각자부담의 원칙과 편면적 패소자부담주의를 중심으로 . 경영법률 24집 3호 / 한국경영법률학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|762907">전효숙 저작권침해소송의 소송물 : 대법원 2013.7.12.선고2013다22775판결을 중심으로 법학논집 제19권 제2호 / 이화여자대학교 법학연구소  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632143">권택수 무효심판, 정정심판 및 침해소송 3자 사이에서 발생하는 실무상의 문제점 민사재판의 제문제 19권 / 한국사법행정학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631363">박영호 상대방의 불법행위로 인한 결과 제거를 위하여 소송을 제기한 경우에 불법행위와 그 소송에 소요된 변호사비용 사이의 상당인과관계 여부 대법원판례해설 83호  / 법원도서관  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725494">최성호 2013년 민사소송법 중요 판례 인권과 정의 제440호 / 대한변호사협회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632199">이시윤 민사절차상의 재판을 받을 권리 헌법논총 21집  / 헌법재판소  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|688085">이선희 독점규제법 위반으로 인한 손해배상소송에서 손해액 산정과 손해액 인정제도 경쟁법연구 26권  / 한국경쟁법학회  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다27889">대법원 1996. 11. 8. 선고 96다27889 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다64486">대법원 2002. 5. 31. 선고 2001다64486 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="헌법|27|0|null">헌법 제27조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민사소송법|248|0|null">민사소송법 제248조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="헌법|27|0|null">헌법 제27조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민사소송법|248|0|null">민사소송법 제248조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다27889">대법원 1996. 11. 8. 선고 96다27889 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다64486">대법원 2002. 5. 31. 선고 2001다64486 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나49423">서울고법 2009. 12. 30. 선고 2009나49423, 49430 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 6. 10. 선고 2010다15363,15370 판결</h2><p class="sub_title">[퇴직금등][공2010하,1368]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 변호사 비용이 손해배상청구의 원인이 된 불법행위 자체와 상당인과관계 있는 손해인지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 부당제소로 인한 불법행위의 성립 요건</p>
+      <p></p>
+      <p>
+        </p><p>[3] 갑이 을 회사의 이사회의사록을 변조하여 이사회결의 없이 을 회사 소유의 부동산을 병 회사에 매도하여 매수인인 병 회사가 을 회사를 상대로 그 부동산에 대한 소유권이전등기청구의 소를 제기하자 을 회사가 이에 응소하기 위하여 변호사 선임료 등을 지급한 사안에서, 갑의 이사회결의 없는 부동산 매도행위와 을 회사의 변호사 비용 지급 사이에 상당인과관계가 있음을 전제로 갑에게 불법행위로 인한 손해배상책임이 있다고 판단한 원심판결을 파기한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 무릇 불법행위로 인한 손해배상의 범위를 정함에 있어서는 불법행위와 손해와의 사이에 자연적 또는 사실적 인과관계가 존재하는 것만으로는 부족하고 이념적 또는 법률적 인과관계 즉 상당인과관계가 있어야 할 것이다. 그런데 변호사강제주의를 택하지 않고 있는 우리나라 법제 아래에서는 손해배상청구의 원인된 불법행위 자체와 변호사 비용 사이에 상당인과관계가 있음을 인정할 수 없으므로 변호사 비용을 그 불법행위 자체로 인한 손해배상채권에 포함시킬 수는 없다.</p>
+      <p></p><p>
+        </p><p>[2] 법적 분쟁의 당사자가 법원에 대하여 당해 분쟁의 종국적인 해결을 구하는 것은 법치국가의 근간에 관계되는 중요한 일이므로 재판을 받을 권리는 최대한 존중되어야 하고, 제소행위나 응소행위가 불법행위가 되는지를 판단함에 있어서는 적어도 재판제도의 이용을 부당하게 제한하는 결과가 되지 아니하도록 신중하게 배려하여야 할 것이다. 따라서 법적 분쟁의 해결을 구하기 위하여 소를 제기하는 것은 원칙적으로 정당한 행위이고, 단지 제소자가 패소의 판결을 받아 확정되었다는 것만으로 바로 그 소의 제기가 불법행위였다고 단정할 수는 없으나, 반면 소를 제기당한 사람 쪽에서 보면, 응소를 강요당하고 어쩔 수 없이 그를 위하여 변호사 비용을 지출하는 등의 경제적·정신적 부담을 지게 되는 까닭에 응소자에게 부당한 부담을 강요하는 결과를 가져오는 소의 제기는 위법하게 되는 경우가 있을 수 있으므로, 민사소송을 제기한 사람이 패소판결을 받아 확정된 경우에 그와 같은 소의 제기가 상대방에 대하여 위법한 행위가 되는 것은 당해 소송에 있어서 제소자가 주장한 권리 또는 법률관계가 사실적·법률적 근거가 없고, 제소자가 그와 같은 점을 알면서, 혹은 통상인이라면 그 점을 용이하게 알 수 있음에도 불구하고 소를 제기하는 등 소의 제기가 재판제도의 취지와 목적에 비추어 현저하게 상당성을 잃었다고 인정되는 경우에 한한다.</p>
+      <p></p><p>
+        </p><p>[3] 갑이 을 회사의 이사회의사록을 변조하여 이사회결의 없이 을 회사 소유의 부동산을 병 회사에 매도하여 매수인인 병 회사가 을 회사를 상대로 그 부동산에 대한 소유권이전등기청구의 소를 제기하자 을 회사가 이에 응소하기 위하여 변호사 선임료 등을 지급한 사안에서, 갑이 매매계약의 계약금으로 받은 금원을 곧바로 병 회사에 반환하고 병 회사에 위 매매계약이 이사회결의 없이 체결되어 무효라고 통지까지 하였음에도 병 회사가 소유권이전등기절차의 이행을 구하는 소송을 제기한 점에 비추어 보면, 을 회사가 위 소송에서 변호사 비용을 지급한 것은 병 회사의 부당한 제소로 인한 것이라고는 할 수 있어도 갑이 이사회결의 없이 위 부동산을 매도한 것과 상당인과관계가 있다고 보기는 어렵다고 하여, 갑의 이사회결의 없는 부동산 매도행위와 을 회사의 변호사 비용 지급 사이에 상당인과관계가 있음을 전제로 갑에게 불법행위로 인한 손해배상책임이 있다고 판단한 원심판결을 파기한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|27|">헌법 제27조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|248|">민사소송법 제248조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|27|">헌법 제27조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|248|">민사소송법 제248조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다27889|판결" href="#//">대법원 1996. 11. 8. 선고 96다27889 판결</a></span>(공1996하, 3546)<br />[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다64486|판결" href="#//">대법원 2002. 5. 31. 선고 2001다64486 판결</a></span>(공2002하, 1529)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(반소피고), 피상고인 겸 상고인】
+      
+        
+          원고 (소송대리인 변호사 이정락)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고(반소원고), 상고인 겸 피상고인】
+      
+        세종투자개발 주식회사 (소송대리인 법무법인 한백 담당변호사 최세모외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나49423|판결" href="#//">서울고법 2009. 12. 30. 선고 2009나49423, 49430 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 반소에 관한 원고(반소피고) 패소부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  피고(반소원고)의 상고를 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  원고(반소피고, 이하 ‘원고’라고 한다)와 피고(반소원고, 이하 ‘피고’라고 한다)의 상고이유를 함께 본다.</p><p>  1. 원심은 제1심판결의 이유를 인용하여, 원고가 피고의 이사회의사록을 변조하여 이사회결의를 거치지 아니하고 피고의 중요자산인 이 사건 부동산을 주식회사 고청건설(이하 ‘고청건설’이라고 한다)에 매도하는 불법행위를 저지른 사실, 이로 인하여 매수인인 고청건설이 피고를 상대로 이 사건 부동산에 관한 소유권이전등기청구의 소를 제기한 사실, 피고가 위 소송에 응소하기 위하여 변호사 선임료로 합계 528,000,000원을 지출한 사실, 위 소송에서 제1심 소송비용, 항소비용 및 항소심에서의 예비적 청구로 인한 소송비용은 모두 고청건설의 부담으로 한다는 판결이 선고되어 확정된 사실 등을 인정하였다.</p><p>  원심은 나아가, 피고가 지출하였다고 주장하는 감정평가비 35,142,800원은 위 감정이 법원의 감정절차에 따라 이루어진 것이라거나 위 소송에서 반드시 필요한 비용이었다는 점을 인정할 증거가 부족하여 원고의 위 불법행위와 상당인과관계 있는 손해라고 할 수 없고, 피고가 위 소송에 응소하기 위하여 지출한 변호사 비용은 원고의 위 불법행위와 상당인과관계가 있는 손해이므로 원고는 피고가 위 소송에서 지출한 변호사 비용 상당액의 손해를 배상할 책임이 있다고 할 것이나, 다만 피고가 지급한 변호사 선임료 528,000,000원 중 소송비용에 산입되는 것으로서 소송비용액확정결정을 받아서 고청건설로부터 지급받을 수 있는 변호사 보수 80,684,020원은 원고로부터 손해배상 받을 수 없고, 위 소송의 난이도나 소송대리인의 선임 필요성 등을 참작하면 나머지 변호사 선임료 중 20,000,000원만을 원고로부터 손해배상 받을 수 있다고 판단하였다.</p><p>  2. 그러나 원심의 판단은 다음과 같은 이유에서 그대로 수긍할 수 없다.</p><p>
+        <span class="accrnt_txt">무릇 불법행위로 인한 손해배상의 범위를 정함에 있어서는 불법행위와 손해와의 사이에 자연적 또는 사실적 인과관계가 존재하는 것만으로는 부족하고 이념적 또는 법률적 인과관계 즉 상당인과관계가 있어야 할 것이다. 그런데 변호사강제주의를 택하지 않고 있는 우리나라 법제 아래에서는 손해배상청구의 원인된 불법행위 자체와 변호사 비용 사이에 상당인과관계가 있음을 인정할 수 없으므로 변호사 비용을 그 불법행위 자체로 인한 손해배상채권에 포함시킬 수는 없다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다27889|판결" href="#//">대법원 1996. 11. 8. 선고 96다27889 판결</a></span> 등 참조).
+      </p><p>  또한, 
+        <span class="accrnt_txt">법적 분쟁의 당사자가 법원에 대하여 당해 분쟁의 종국적인 해결을 구하는 것은 법치국가의 근간에 관계되는 중요한 일이므로 재판을 받을 권리는 최대한 존중되어야 하고, 제소행위나 응소행위가 불법행위가 되는지를 판단함에 있어서는 적어도 재판제도의 이용을 부당하게 제한하는 결과가 되지 아니하도록 신중하게 배려하여야 할 것이다. 따라서 법적 분쟁의 해결을 구하기 위하여 소를 제기하는 것은 원칙적으로 정당한 행위이고, 단지 제소자가 패소의 판결을 받아 확정되었다는 것만으로 바로 그 소의 제기가 불법행위였다고 단정할 수는 없으나, 반면 소를 제기당한 사람 쪽에서 보면, 응소를 강요당하고 어쩔 수 없이 그를 위하여 변호사 비용을 지출하는 등의 경제적·정신적 부담을 지게 되는 까닭에 응소자에게 부당한 부담을 강요하는 결과를 가져오는 소의 제기는 위법하게 되는 경우가 있을 수 있으므로, 민사소송을 제기한 사람이 패소판결을 받아 확정된 경우에 그와 같은 소의 제기가 상대방에 대하여 위법한 행위가 되는 것은 당해 소송에 있어서 제소자가 주장한 권리 또는 법률관계가 사실적·법률적 근거가 없고, 제소자가 그와 같은 점을 알면서, 혹은 통상인이라면 그 점을 용이하게 알 수 있음에도 불구하고 소를 제기하는 등 소의 제기가 재판제도의 취지와 목적에 비추어 현저하게 상당성을 잃었다고 인정되는 경우에 한한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다64486|판결" href="#//">대법원 2002. 5. 31. 선고 2001다64486 판결</a></span> 등 참조)
+      </p><p>  그런데 기록에 의하면, 원고는 2005. 6. 30. 이 사건 부동산을 고청건설에 매도하는 계약을 체결한 후 2005. 7. 1. 고청건설로부터 위 매매계약의 계약금으로 송금 받은 25억 원을 곧바로 고청건설에게 반환하였고, 2005. 7. 15. 및 2005. 7. 16. 고청건설에게 위 매매계약이 이사회결의 없이 체결되어 무효라고 통지까지 하였음에도 불구하고, 고청건설이 그 후 2005. 7. 27. 이 사건 부동산에 관한 소유권이전등기절차의 이행을 구하는 소송을 제기하였음을 알 수 있다.</p><p>  이러한 사실관계를 위 법리에 비추어 살펴보면, 피고가 위 고청건설이 제기한 소송에서 변호사 비용을 지급한 것은 고청건설의 부당한 제소로 인한 것이라고는 할 수 있어도 원고가 이사회결의 없이 이 사건 부동산을 매도한 것과 상당인과관계가 있다고 보기는 어렵다고 할 것이다.</p><p>  그럼에도 불구하고 원심은, 원고의 이사회결의 없는 부동산 매도행위와 피고의 변호사 비용 지급 사이에 상당인과관계가 있음을 전제로 하여 피고가 지급한 변호사 비용 중 20,000,000원에 대하여 원고에게 불법행위로 인한 손해배상책임이 있다고 판단하였으니, 원심판결에는 상당인과관계에 관한 법리를 오해한 위법이 있고, 이는 판결 결과에 영향을 미쳤음이 분명하다.</p><p>  이 점을 지적하는 원고의 주장은 이유 있고, 반면에 피고의 상고이유들은 위 인정 사실에 반하여 원고의 불법행위와 피고가 지급한 변호사 비용 사이에 상당인과관계가 있음을 전제로 손해배상액 산정의 잘못 여부를 다투는 것이어서 모두 더 나아가 살필 필요 없이 이유 없다.</p><p>  3. 그러므로 원심판결 중 반소에 관한 원고 패소부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원으로 환송하되, 피고의 상고를 기각하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김영란(재판장) 이홍훈 김능환(주심) 민일영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

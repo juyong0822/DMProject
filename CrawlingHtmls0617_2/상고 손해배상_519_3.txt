@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011다77313 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2164026';
+var contIdEtc = '';
+var saNo = '2011다77313';
+var sngoNm = '선고';
+var saNm = '특허출원인명의변경·손해배상(지)';
+try {
+	var sngoDay=('20141113' ? 
+			'20141113'.length==4 ? Date.parseExact('20141113','yyyy').toString('yyyy. M. d.') : 
+				'20141113'.length==6 ? Date.parseExact('20141113','yyyyMM').toString('yyyy. M. d.') : 
+					'20141113'.length==8 ? Date.parseExact('20141113','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011다77313,77320 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011다77313';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011다77313</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(7)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(17)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(4)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(31)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|843061">정당한 권리자에 의한 특허권 이전청구의 허부 김관식 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|792878">직무발명의 이중양도로 인한 공동불법행위의 성립 및 특허권이전등록청구 @ 대상판결 대법원 2014 11 13 선고 2011다77313 2011다77320병합 판결 김승곤 大邱判例硏究會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827791">조영선 모인 특허권에 대한 이전청구의 법률문제 사법 39호 / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|843061">김관식 정당한 권리자에 의한 특허권 이전청구의 허부 특허판례연구   / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|852468">김태현 정당한 권리자의 모인출원 무권리자에 대한 특허권이전등록청구 : 대상판결 : 대법원 2014. 5. 16. 선고 2012다11310 판결, 비교판결①: 대법원 2004. 1. 16. 선고 2003다47218 판결 [사해행위취소] [집52(1)민,15; 공2004.2. 15.(196), 354], 비교판결②: 대법원 2014. 11. 13. 선고 2011다77313, 77320 판결 [특허출원인명의변경･손해배상(지)] [공2014하, 2310], 비교판결③: 대법원 1990. 11. 27. 선고 89다카12398 판결 [부동산소유권확인 재판과 판례 제26집  / 대구판례연구회  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|792878">김승곤 직무발명의 이중양도로 인한 공동불법행위의 성립 및 특허권이전등록청구 : 대상판결: 대법원 2014. 11. 13. 선고 2011다77313, 2011다77320(병합) 판결 재판과 판례 제24집 / 대구판례연구회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|789598">설민수 직무발명 보상금 소송의 쟁점: 산정방식과 그 구체적 산정요소를 중심으로 사법논집 . 제60집   / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|784386">김관식 모인특허출원에 대한 정당한 권리자의 구제 : 정당한 권리자의 이전청구의 허부를 중심으로 과학기술법연구 제21집 제1호 / 한남대학교 과학기술연구원  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|771082">손천우 직무발명에 관한 최근 판결동향 LAW &amp; TECHNOLOGY 제11권 제2호 / 서울대학교 기술과법센터  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다47218">대법원 2004. 1. 16. 선고 2003다47218 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="발명진흥법|12|0|null">발명진흥법 제12조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="발명진흥법|13|0|null">발명진흥법 제13조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="발명진흥법|13|0|null">발명진흥법 제13조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="발명진흥법|19|0|null">발명진흥법 제19조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="발명진흥법|58|0|null">발명진흥법 제58조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="발명진흥법시행령|7|0|null">발명진흥법 시행령 제7조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="특허법|33|0|20140611">특허법(구) 제33조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|262|0|null">민법 제262조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민법|278|0|null">민법 제278조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="발명진흥법|12|0|null">발명진흥법 제12조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="발명진흥법|13|0|null">발명진흥법 제13조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="발명진흥법시행령|7|0|null">발명진흥법 시행령 제7조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="특허법|101|0|20140611">특허법(구) 제101조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="민법|404|0|null">민법 제404조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="민법|741|0|null">민법 제741조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2012도6676">대법원 2012. 11. 15. 선고 2012도6676 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2012도6676">대법원 2012. 11. 15. 선고 2012도6676 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2012도6676">대법원 2012. 11. 15. 선고 2012도6676 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다47218">대법원 2004. 1. 16. 선고 2003다47218 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|33|0|20140611">특허법(구) 제33조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|2|0|null">특허법 제2조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|33|0|null">특허법 제33조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|2|0|null">발명진흥법 제2조 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|10|0|null">발명진흥법 제10조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|15|0|null">발명진흥법 제15조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|12|0|null">발명진흥법 제12조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|13|0|null">발명진흥법 제13조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|13|0|null">발명진흥법 제13조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|13|0|null">발명진흥법 제13조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법시행령|7|0|null">발명진흥법 시행령 제7조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|33|0|null">특허법 제33조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|37|0|null">특허법 제37조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|14|0|null">발명진흥법 제14조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|278|0|null">민법 제278조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|262|0|null">민법 제262조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="발명진흥법|13|0|null">발명진흥법 제13조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2011나4577">서울고법 2011. 8. 17. 선고 2011나4577, 4584 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2014. 11. 13. 선고 2011다77313,77320 판결</h2><p class="sub_title">[특허출원인명의변경·손해배상(지)][공2014하,2310]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 직무발명에 대한 특허를 받을 수 있는 권리 등을 사용자 등에게 승계시킨다는 취지를 정한 약정 또는 근무규정의 적용을 받는 종업원 등이 직무발명의 완성 사실을 사용자 등에게 통지하지 아니한 채 특허를 받을 수 있는 권리를 제3자에게 이중으로 양도하여 특허권 등록을 마치게 한 경우, 불법행위가 되는지 여부(적극)</p>
+<p></p>
+<p></p><p>[2] 2인 이상이 공동으로 발명을 하여 특허를 받을 수 있는 권리를 공유하는 경우, 공유자 사이의 지분 비율을 결정하는 기준</p>
+<p></p>
+<p></p><p>[3] 직무발명 사전승계 약정 등의 적용을 받는 종업원 등이 직무발명 완성사실을 사용자 등에게 알리지 아니한 채 특허를 받을 수 있는 권리를 제3자의 적극 가담 아래 이중으로 양도하여 제3자가 특허권 등록까지 마친 경우, 직무발명 완성사실을 알게 된 사용자 등이 종업원 등에게 권리 승계의 의사를 문서로 알리면 특허권이전등록청구권을 가지게 되는지 여부(적극) 및 위 청구권을 피보전채권으로 하여 종업원 등의 제3자에 대한 특허권이전등록청구권을 대위행사할 수 있는지 여부(적극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 직무발명에 대한 특허를 받을 수 있는 권리 등을 사용자·법인 또는 국가나 지방자치단체(이하 ‘사용자 등’이라 한다)에 승계시킨다는 취지를 정한 약정 또는 근무규정의 적용을 받는 종업원, 법인의 임원 또는 공무원(이하 ‘종업원 등’이라 한다)은 사용자 등이 이를 승계하지 아니하기로 확정되기 전까지 임의로 위 약정 등의 구속에서 벗어날 수 없는 상태에 있는 것이고, 위 종업원 등은 사용자 등이 승계하지 아니하는 것으로 확정되기까지는 발명의 내용에 관한 비밀을 유지한 채 사용자 등의 특허권 등 권리의 취득에 협력하여야 할 신임관계에 있다고 봄이 타당하다. 따라서 종업원 등이 이러한 신임관계에 의한 협력의무에 위배하여 직무발명을 완성하고도 그 사실을 사용자 등에게 알리지 아니한 채 발명에 대한 특허를 받을 수 있는 권리를 제3자에게 이중으로 양도하여 제3자가 특허권 등록까지 마치도록 하였다면, 이는 사용자 등에 대한 배임행위로서 불법행위가 된다.</p>
+<p></p><p></p><p>[2] 2인 이상이 공동으로 발명한 때에는 특허를 받을 수 있는 권리는 공유로 하는데[<span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|33|">특허법(2014. 6. 11. 법률 12753호로 개정되기 전의 것, 이하 같다) 제33조 제2항</a></span>], 특허법상 위 공유관계의 지분을 어떻게 정할 것인지에 관하여는 아무런 규정이 없으나, 특허를 받을 수 있는 권리 역시 재산권이므로 성질에 반하지 아니하는 범위에서는 민법의 공유에 관한 규정을 준용할 수 있다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|278|">민법 제278조</a></span> 참조). 따라서 특허를 받을 수 있는 권리의 공유자 사이에 지분에 대한 별도의 약정이 있으면 그에 따르되, 약정이 없는 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|262|">민법 제262조 제2항</a></span>에 의하여 지분의 비율은 균등한 것으로 추정된다.</p>
+<p></p><p></p><p>[3] 양도인이 특허를 받을 수 있는 권리를 양수인에게 양도하고, 그에 따라 양수인이 특허권의 설정등록을 받았으나 양도계약이 무효나 취소 등의 사유로 효력을 상실하게 된 경우에, 특허를 받을 수 있는 권리와 설정등록이 이루어진 특허권이 동일한 발명에 관한 것이라면, 양도계약에 의하여 양도인은 재산적 이익인 특허를 받을 수 있는 권리를 잃게 되고 양수인은 법률상 원인 없이 특허권을 얻게 되는 이익을 얻었다고 할 수 있으므로, 양도인은 양수인에 대하여 특허권에 관하여 이전등록을 청구할 수 있다.</p>
+<p>  한편 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">발명진흥법 제12조</a></span> 전문, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제13조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제3항</a></span> 전문, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법 시행령|7|">발명진흥법 시행령 제7조</a></span>가 종업원, 법인의 임원 또는 공무원(이하 ‘종업원 등’이라 한다)으로 하여금 사용자·법인 또는 국가나 지방자치단체(이하 ‘사용자 등’이라 한다)에 직무발명 완성사실을 문서로 통지하도록 하고, 사용자 등이 위 통지를 받은 날부터 4개월 이내에 발명에 대한 권리의 승계 여부를 종업원 등에게 알리지 아니한 경우 승계를 포기한 것으로 간주되는 효과가 부여되는 점 등에 비추어 보면, 사용자 등이 종업원 등의 위 통지가 없음에도 다른 경위로 직무발명 완성사실을 알게 되어 직무발명 사전승계 약정 등에 따라 발명에 대한 권리를 승계한다는 취지를 종업원 등에게 문서로 알린 경우에는 종업원 등의 직무발명 완성사실 통지 없이도 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">같은 법 제13조 제2항</a></span>에 따른 권리 승계의 효과가 발생한다.</p>
+<p>  그렇다면 직무발명 사전승계 약정 등의 적용을 받는 종업원 등이 직무발명을 완성하고도 그 사실을 사용자 등에게 알리지 아니한 채 발명에 대한 특허를 받을 수 있는 권리를 제3자의 적극 가담 아래 이중으로 양도하여 제3자가 특허권 등록까지 마친 경우에, 위 직무발명 완성사실을 알게 된 사용자 등으로서는 종업원 등에게 직무발명 사전승계 약정 등에 따라 권리 승계의 의사를 문서로 알림으로써 위 종업원 등에 대하여 특허권이전등록청구권을 가지게 된다. 그리고 위 이중양도는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>에서 정한 반사회질서의 법률행위로서 무효이므로, 사용자 등은 위 특허권이전등록청구권을 피보전채권으로 하여 종업원 등의 제3자에 대한 특허권이전등록청구권을 대위행사할 수 있다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">발명진흥법 제12조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제13조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|19|">제19조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|58|">제58조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법 시행령|7|">발명진흥법 시행령 제7조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|33|">특허법(2014. 6. 11. 법률 12753호로 개정되기 전의 것) 제33조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|262|">민법 제262조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|278|">제278조</a></span> [3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">발명진흥법 제12조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제13조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법 시행령|7|">발명진흥법 시행령 제7조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|101|">특허법(2014. 6. 11. 법률 12753호로 개정되기 전의 것) 제101조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|404|">제404조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|741|">제741조</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[3] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다47218|판결" href="#//">대법원 2004. 1. 16. 선고 2003다47218 판결</a></span>(공2004상, 354)</p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인 겸 부대상고인】
+주식회사 인터프랙스퀀텀 (소송대리인 법무법인(유한) 화우 담당변호사 이주흥외 4인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인 겸 부대피상고인】
+피고 1 외 2인 (소송대리인 법무법인 대륙아주 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2011나4577|판결" href="#//">서울고법 2011. 8. 17. 선고 2011나4577, 4584 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 Q22 합금 발명의 특허권에 관한 손해배상청구에 대한 피고들 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  원고의 부대상고를 기각한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유와 부대상고이유(상고이유서 제출기간 경과 후에 제출된 상고이유보충서들과 답변서의 각 기재는 상고이유와 부대상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 피고들의 상고이유에 대하여</p><p>  가. 손해배상책임의 발생에 관하여</p><p>  (1) Q22 합금 발명자의 확정</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|33|">특허법(2014. 6. 11. 법률 12753호로 개정되기 전의 것, 이하 같다) 제33조 제1항</a></span> 본문은 발명을 한 자 또는 그 승계인은 특허법에서 정하는 바에 따라 특허를 받을 수 있는 권리를 가진다고 규정하고 있는데, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|2|">특허법 제2조 제1호</a></span>는 ‘발명’이란 자연법칙을 이용하여 기술적 사상을 고도로 창작한 것을 말한다고 규정하고 있으므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|33|">특허법 제33조 제1항</a></span> 본문에서 정하고 있는 ‘발명을 한 자’는 바로 이러한 발명행위를 한 사람을 가리킨다. 따라서 발명자가 되기 위해서는 단순히 발명에 대한 기본적인 과제와 아이디어만을 제공하였거나, 연구자를 일반적으로 관리하였거나, 연구자의 지시로 데이터의 정리와 실험만을 하였거나 또는 자금·설비 등을 제공하여 발명의 완성을 후원·위탁하였을 뿐인 정도 등에 그치지 않고, 발명의 기술적 과제를 해결하기 위한 구체적인 착상을 새롭게 제시·부가·보완한 자, 실험 등을 통하여 새로운 착상을 구체화한 자, 발명의 목적 및 효과를 달성하기 위한 구체적인 수단과 방법의 제공 또는 구체적인 조언·지도를 통하여 발명을 가능하게 한 자 등과 같이 기술적 사상의 창작행위에 실질적으로 기여하기에 이르러야 한다. 한편 이른바 실험의 과학이라고 하는 화학발명의 경우에는 당해 발명의 내용과 기술수준에 따라 차이가 있을 수는 있지만 예측가능성 내지 실현가능성이 현저히 부족하여 실험데이터가 제시된 실험예가 없으면 완성된 발명으로 보기 어려운 경우가 많이 있는데, 그와 같은 경우에는 실제 실험을 통하여 발명을 구체화하고 완성하는 데 실질적으로 기여하였는지 여부의 관점에서 발명자인지 여부를 결정해야 한다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2012도6676|판결" href="#//">대법원 2012. 11. 15. 선고 2012도6676 판결</a></span> 등 참조).</p><p>  원심판결 이유 및 기록에 의하면, ① 피고 2, 3이 2007년 6월경 기존 상용합금인 AC8A 합금과 ZA27 합금이 혼합되어 가벼우면서도 강도가 높은 새로운 합금이 만들어질 수 있다는 사실을 발견한 이후, 피고 2가 AC8A 합금과 ZA27 합금을 각 6:4, 7:3 및 8:2의 비율로 혼합한 Q30 합금을 구상하고, 피고 1에게 Q30 합금의 물성분석 및 최적화작업을 수행하도록 의뢰한 사실, ② 2008년 8월경 Q30 합금이 강도는 월등하나 깨짐성이 있음을 알게 되어 특허출원 진행 및 상용화를 포기한 바 있고, 그 후 피고 2가 2008. 12. 10.경 주식회사 KH바텍으로부터 기존의 상용합금보다 강도가 더 강한 합금을 이용하여 휴대전화기 경첩을 주조하여 달라는 요청을 받고 과거 Q30 합금 개발 경험을 바탕으로 새로운 합금을 개발하고자 ‘Z시리즈’ 등을 착상하여 추진한 사실, ③ 또한 이와 비슷한 시기에 피고 1은 자신의 연구실에서 Q22 합금이 포함되어 있는 새로운 ‘Q시리즈’ 합금의 개발을 위한 실험을 수행하면서 각 실험 전후로 피고 2에게 그 내용 및 다음 실험의 일정 등을 구체적으로 보고한 사실, ④ 피고 2, 1 사이에 오간 이메일의 내용에 비추어 피고 1이 수행하는 실험의 구체적인 내용에 관하여 피고 2, 1 사이에 사전 및 사후로 의사교환과 협의가 있었던 것으로 보이는 사실, ⑤ 그러던 중 피고들이 함께 2009. 2. 16.경 원고 회사의 공장에서 새로운 Q시리즈 합금들의 시제품(휴대전화기용 외장 부품)을 주조하였고, 피고 1이 그 주조제품에 대한 물성분석을 마친 결과, Q22 합금의 개발이 완료된 사실 등을 인정할 수 있다.</p><p>  이러한 사정들을 앞서 본 법리에 비추어 종합적으로 고려하면, Q22 합금은 피고 2, 1이 그 발명의 기술적 과제를 해결하기 위한 구체적인 착상을 함께 구상하고, 발명의 전 과정에 걸쳐 실질적으로 상호 협력한다는 공통의 인식 아래 합금 발명의 완성에 유익한 공헌을 함으로써 완성하였다고 봄이 상당하다.</p><p>  그러므로 Q22 합금의 발명자는 피고 2, 1이라고 보아야 한다.</p><p>  (2) 피고 2가 원고 회사와 사이에 행한 이 사건 발명약정의 효력</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|2|">발명진흥법 제2조 제2호</a></span>는 “‘직무발명’이란 종업원, 법인의 임원 또는 공무원(이하 ‘종업원 등’이라 한다)이 그 직무에 관하여 발명한 것이 성질상 사용자·법인 또는 국가나 지방자치단체(이하 ‘사용자 등’이라 한다)의 업무 범위에 속하고 그 발명을 하게 된 행위가 종업원 등의 현재 또는 과거의 직무에 속하는 발명을 말한다.”고 규정하면서, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|10|">제10조 제3항</a></span>에서 “직무발명 외의 종업원 등의 발명에 대하여 미리 사용자 등에게 특허 등을 받을 수 있는 권리나 특허권 등을 승계시키거나 사용자 등을 위하여 전용실시권을 설정하도록 하는 계약이나 근무규정의 조항은 무효로 한다.”고 규정하고 있고, 위 조항은 직무발명을 제외하고 그 외의 종업원 등의 발명에 대하여는 그 발명 전에 미리 특허를 받을 수 있는 권리나 장차 취득할 특허권 등을 사용자 등에게 승계(양도)시키는 계약 또는 근무규정을 체결하여 두더라도 위 계약이나 근무규정은 무효라고 함으로써 사용자 등에 대하여 약한 입장에 있는 종업원 등의 이익을 보호하는 동시에 발명을 장려하고자 하는 데에 그 입법 취지가 있다. 위와 같은 입법 취지에 비추어 보면, 계약이나 근무규정이 종업원 등의 직무발명 이외의 발명에 대해서까지 사용자 등에게 양도하거나 전용실시권의 설정을 한다는 취지의 조항을 포함하고 있는 경우에 그 계약이나 근무규정 전체가 무효가 되는 것은 아니고, 직무발명에 관한 부분은 유효하다고 해석하여야 한다. 또한 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|15|">발명진흥법 제15조 제1항</a></span>은 “종업원 등은 직무발명에 대하여 특허 등을 받을 수 있는 권리나 특허권 등을 계약이나 근무규정에 따라 사용자 등에게 승계하게 하거나 전용실시권을 설정한 경우에는 정당한 보상을 받을 권리를 가진다.”고 규정하고 있으므로, 계약이나 근무규정 속에 대가에 관한 조항이 없는 경우에도 그 계약이나 근무규정 자체는 유효하되 종업원 등은 사용자 등에 대하여 정당한 보상을 받을 권리를 가진다고 해석해야 할 것이나, 직무발명에 대한 특허 등을 받을 수 있는 권리나 특허권 등의 승계 또는 전용실시권 설정과 위 정당한 보상금의 지급이 동시이행의 관계에 있는 것은 아니다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2012도6676|판결" href="#//">대법원 2012. 11. 15. 선고 2012도6676 판결</a></span> 참조).</p><p>  원심판결 이유에 의하면, 피고 2는 원고 회사와의 사이에 ‘원고 회사에서 재직하는 기간 중 자신이 독자적으로 또는 타인과 함께 개발한 모든 발명은 발명 즉시 원고 회사에 서면으로 공개하여야 하고, 그 발명에 대한 일체의 권리는 원고 회사에 독점적·배타적으로 귀속하는 것으로 한다’는 취지의 약정(이하 ‘이 사건 발명약정’이라고 한다)을 하였음을 알 수 있다.</p><p>  앞서 본 법리에 비추어 살펴보면, 피고 2가 원고 회사와 체결한 이 사건 발명약정은 피고 2의 직무발명에 관하여 미리 원고 회사에 특허 등을 받을 수 있는 권리나 특허권 등을 승계시키고자 하는 이른바 직무발명 사전승계 약정의 범위 내에서 유효하고, 또한 그 약정에 따라 피고 2가 그의 직무발명에 관하여 원고 회사에 특허 등을 받을 수 있는 권리나 특허권 등을 승계시키는 경우에는 원고 회사에 대하여 정당한 보상을 받을 권리를 가진다고 볼 것이다.</p><p>  (3) Q22 합금 발명의 직무발명 해당성</p><p>  원심판결 이유 및 기록에 의하면, ① 원고 회사는 2007. 4. 30. 정밀 알루미늄 다이캐스팅 부품의 제조·공급 등을 목적으로 설립된 법인으로서, 2007년 10월경 주식회사 퀀텀엔지니어링(이하 ‘피인수회사’라고 한다)으로부터 피인수회사의 자산을 양수하고, 정보통신기기용 부품의 제조 및 판매 등을 목적으로 하는 피인수회사의 사업을 그대로 영위하고 있는 사실, ② 피인수회사의 대표이사였던 피고 2는 2007년 6월경 이사였던 피고 3과 함께 우연히 상용합금인 AC8A 합금과 ZA27 합금이 혼합되어 기존 AC8A와 ZA27보다 가벼우면서도 강도가 높은 새로운 합금이 만들어진다는 것을 발견하고 이를 Q30 합금으로 명명한 사실, ③ 피고 2는 당시 피인수회사와 자산양도계약을 협상하고 있던 원고 회사의 모회사인 미국 인터프렉스(Interplex)사에게 Q30 합금의 발견 사실을 알리면서 Q30 합금의 특성 연구 등을 위한 자금지원을 요청하여, 인터프렉스사의 자금지원 아래 Q30 합금에 대한 연구를 하였고, 2007. 9. 14. 미국에서 피고 2, 3을 공동발명자로 하여 Q30 합금에 관하여 임시 특허출원을 한 바 있는 사실, ④ 이후 피고 2, 3은 2007. 10. 19. Q30 합금에 관한 특허출원권리 등 지적재산권 일체를 피인수회사에 양도하였고, 피인수회사의 Q30 합금에 관한 지적재산권은 원고 회사와 피인수회사 사이의 2007. 10. 29.자 자산양도계약 체결에 따라 원고 회사에 이전된 사실, ⑤ 그런데 피고 2는 원고 회사에 재직하던 중인 2008년 8월경 Q30 합금의 시험 결과 기존 합금에 비하여 강도는 월등하나 깨짐성이 있음을 알게 되어 인터프렉스사에 Q30 합금에 대한 특허출원 절차를 계속 진행하지 아니하는 것이 좋겠다는 제안을 하였고, 그에 따라 원고 회사는 Q30 합금에 대한 특허출원 절차를 더 이상 진행하지 아니한 사실 등을 알 수 있다. 또한 기록에 의하면, Q22 합금은 강도가 높으면서도 가벼운 특성이 필요한 휴대용 전자제품의 부품을 제조하는 데 적합한 경량 고강도 다이캐스팅용 합금으로 개발된 것인 사실 등을 알 수 있다.</p><p>  이러한 사정들을 종합하여 보면, 휴대용 전자제품의 부품 제조에 적합한 경량 고강도 다이캐스팅용 합금의 개발은 원고 회사의 업무에 속한다고 할 것이고, 피고 2는 정보통신기기용 부품의 제조 및 판매 등을 영위하는 원고 회사의 이사이자 원고 회사가 피인수회사를 인수하던 무렵부터 이미 기존 상용합금보다 가벼우면서도 강도가 높은 합금의 개발을 담당하고 있던 사람으로서, Q22 합금과 같이 휴대용 전자제품의 부품 제조에 적합한 경량 고강도 다이캐스팅용 합금의 개발을 시도하여 완성하려고 노력하는 것이 일반적으로 기대되는 이에 해당한다고 할 것이다.</p><p>  그렇다면 Q22 합금 발명 중 피고 2의 기여 부분은 원고 회사와의 관계에서 피고 2의 직무발명에 해당한다고 보아야 한다.</p><p>  (4) 피고들의 손해배상책임</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">발명진흥법 제12조</a></span> 전문(전문)은 “종업원 등이 직무발명을 완성한 경우에는 지체 없이 그 사실을 사용자 등에게 문서로 알려야 한다.”고 규정하고 있고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제13조</a></span>는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제1항</a></span>에서 “<span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">제12조</a></span>에 따라 통지를 받은 사용자 등(국가나 지방자치단체는 제외한다)은 대통령령으로 정하는 기간에 그 발명에 대한 권리의 승계 여부를 종업원 등에게 문서로 알려야 한다. 다만 미리 사용자 등에게 특허 등을 받을 수 있는 권리나 특허권 등을 승계시키거나 사용자 등을 위하여 전용실시권을 설정하도록 하는 계약이나 근무규정이 없는 경우에는 사용자 등이 종업원 등의 의사와 다르게 그 발명에 대한 권리의 승계를 주장할 수 없다.”는 규정을, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제2항</a></span>에서 “<span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제1항</a></span>에 따른 기간에 사용자 등이 그 발명에 대한 권리의 승계 의사를 알린 때에는 그때부터 그 발명에 대한 권리는 사용자 등에게 승계된 것으로 본다.”는 규정을 각 두고 있으며, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법 시행령|7|">발명진흥법 시행령 제7조</a></span>는 “<span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">법 제13조 제1항</a></span> 본문에서 ‘대통령령으로 정하는 기간’이란 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">법 제12조</a></span>에 따른 통지를 받은 날부터 4개월 이내를 말한다.”고 규정하고 있다. 따라서 직무발명에 대한 특허를 받을 수 있는 권리를 사용자 등에게 승계한다는 취지를 정한 약정 또는 근무규정이 있는 경우에는 사용자 등의 위 법령으로 정하는 기간 내의 일방적인 승계 의사 통지에 의하여 직무발명에 대한 특허를 받을 수 있는 권리 등이 사용자 등에게 승계된다. 또한 특허법상 공동발명자 상호 간에는 특허를 받을 권리를 공유하는 관계가 성립하고(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|33|">특허법 제33조 제2항</a></span>), 그 지분을 타에 양도하려면 다른 공유자의 동의가 필요하지만(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|37|">특허법 제37조 제3항</a></span>), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|14|">발명진흥법 제14조</a></span>가 “종업원 등의 직무발명이 제3자와 공동으로 행하여진 경우 계약이나 근무규정에 따라 사용자 등이 그 발명에 대한 권리를 승계하면 사용자 등은 그 발명에 대하여 종업원 등이 가지는 권리의 지분을 갖는다.”고 규정하고 있으므로, 직무발명이 제3자와 공동으로 행하여진 경우에는 사용자 등은 앞서 본 바와 같이 그 발명에 대한 종업원 등의 권리를 승계하기만 하면 공유자인 제3자의 동의 없이도 그 발명에 대하여 종업원 등이 가지는 권리의 지분을 갖는다고 보아야 한다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2012도6676|판결" href="#//">대법원 2012. 11. 15. 선고 2012도6676 판결</a></span> 참조).</p><p>  그렇다면 <span class="accrnt_txt">직무발명에 대한 특허를 받을 수 있는 권리 등을 사용자 등에게 승계시킨다는 취지를 정한 약정 또는 근무규정의 적용을 받는 종업원 등은 사용자 등이 이를 승계하지 아니하기로 확정되기 전까지 임의로 위 약정 등의 구속에서 벗어날 수 없는 상태에 있는 것이고, 위 종업원 등은 사용자 등이 승계하지 아니하는 것으로 확정되기까지는 그 발명의 내용에 관한 비밀을 유지한 채 사용자 등의 특허권 등 권리의 취득에 협력하여야 할 신임관계에 있다고 봄이 상당하다. 따라서 종업원 등이 이러한 신임관계에 의한 협력의무에 위배하여 직무발명을 완성하고도 그 사실을 사용자 등에게 알리지 아니한 채 그 발명에 대한 특허를 받을 수 있는 권리를 제3자에게 이중으로 양도하여 제3자가 특허권 등록까지 마치도록 하였다면, 이는 사용자 등에 대한 배임행위로서 불법행위가 된다고 할 것이다.</span></p><p>  이 사건에 관하여 보건대, 위에서 살펴본 바와 같이 Q22 합금은 피고 2, 1이 공동으로 발명한 것이고, 피고 2가 원고 회사와 체결한 이 사건 발명약정은 직무발명 사전승계 약정의 한도에서 유효하며, Q22 합금 발명 중 피고 2의 기여 부분은 원고 회사와의 관계에서 피고 2의 직무발명에 해당한다고 보아야 한다. 한편 원심판결 이유에 의하면, 피고들은 Q22 합금과 같이 강도가 높으면서도 가벼운 특성이 필요한 휴대용 전자제품의 부품을 제조하는 데 적합한 경량 고강도 다이캐스팅용 합금의 발명이 원고 회사에 긴요하다는 점을 잘 알고 있으면서도, 위 합금을 개발한 후 그에 대한 특허를 받을 수 있는 권리 중 피고 2 지분을 원고 회사에 이전하는 절차를 밟지 아니하고, 위 발명 전체에 대하여 피고 1 명의로 단독 특허등록을 받아 피고 1 명의의 사업체(MIB)를 통하여 피고들이 공동으로 수익을 얻고자 하였으며, 실제로 주식회사 상문, 주식회사 성풍비철금속과 사이에 Q22 합금에 대한 라이선스계약을 체결하기까지 한 사실 등을 알 수 있다.</p><p>  이러한 사실관계를 앞서 본 법리에 비추어 살펴보면, 피고들은 공모하여, 원고 회사의 이사로서 회사를 경영하는 지위에 있었고 그 직무에 관하여 Q22 합금을 공동으로 발명한 피고 2가, 사용자인 원고 회사가 위 발명에 대한 특허를 받을 수 있는 권리 중 피고 2의 지분을 승계하지 아니하기로 확정되기까지 그 발명의 내용에 관한 비밀을 유지한 채 원고 회사의 특허권 등 권리의 취득에 협력하여야 할 신임관계에 의한 협력의무에 위배하여, Q22 합금 발명 완성 사실을 원고 회사에 알리지 아니하고 그 발명에 대한 특허를 받을 수 있는 권리 중 피고 2의 지분을 피고 1에게 이중으로 양도하여 피고 1이 단독으로 특허권 등록을 마치도록 하고, 피고 2, 3의 주선으로 피고 1이 위 합금 발명에 관하여 다른 업체와 라이선스 계약을 체결하도록 함으로써, 원고 회사에 손해를 가하는 행위를 하였다고 인정하기에 충분하다.</p><p>  따라서 피고들은 공동불법행위자로서 원고 회사에 대하여 손해를 배상할 책임을 부담한다.</p><p>  나. 손해배상의 범위에 관하여</p><p>  한편 원심은 Q22 합금을 피고 2가 단독으로 발명하였다고 보는 전제에서 피고들이 운영하는 MIB 명의로 주식회사 성풍비철금속으로부터 위 합금 발명의 특허에 대한 기술료로 지급받은 15,658,814원 전액을 원고 회사에 귀속되어야 할 것임에도 그가 얻지 못한 손해액에 해당한다고 판단하였다.</p><p>  그러나 위에서 본 바와 같이 Q22 합금은 피고 2, 1이 공동으로 발명한 것으로서 이 중 피고 2 지분은 이 사건 발명약정에 의하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">발명진흥법 제12조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제13조 제1항</a></span>에서 정한 승계절차 등을 마침으로써 원고 회사가 이를 피고 2로부터 이전받을 권리가 있는 부분임에도, 피고 2가 위 약정상의 채무를 이행하지 아니한 채 피고 3, 1과 공모하여 위 지분을 피고 1에게 이중으로 양도하는 배임행위를 한 것이므로, 위 기술료 가운데 원고 회사가 피고들의 배임행위로 얻지 못한 이익 상당액은 피고 2 지분에 상응하는 금액에 한정된다고 할 것이다. 또한 <span class="accrnt_txt">2인 이상이 공동으로 발명한 때에는 특허를 받을 수 있는 권리는 공유로 하는데(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|33|" style="text-decoration:underline">특허법 제33조 제2항</a></span>), 특허법상 위 공유관계의 지분을 어떻게 정할 것인지에 관하여는 아무런 규정이 없으나, 특허를 받을 수 있는 권리 역시 재산권이므로 그 성질에 반하지 아니하는 범위에서는 민법의 공유에 관한 규정을 준용할 수 있다고 할 것이다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|278|" style="text-decoration:underline">민법 제278조</a></span> 참조). 따라서 특허를 받을 수 있는 권리의 공유자 사이에 지분에 대한 별도의 약정이 있으면 그에 따르되, 그 약정이 없는 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|262|" style="text-decoration:underline">민법 제262조 제2항</a></span>에 의하여 그 지분의 비율은 균등한 것으로 추정된다고 봄이 상당하다.</span></p><p>  그렇다면 원심으로서는 Q22 합금 발명에 대한 특허를 받을 수 있는 권리 중 피고 2의 지분을 심리하여 확정하고, 위 기술료 가운데 그 지분에 상응하는 금액만을 손해액으로 산정하여 배상을 명하였어야 할 것이다.</p><p>  다. 소결론</p><p>  결국 원심이 Q22 합금을 피고 2가 단독으로 발명하였다고 판단하고, 이를 전제로 피고들이 주식회사 성풍비철금속으로부터 위 합금 발명의 특허에 대한 기술료로 지급받은 15,658,814원 전액을 원고 회사가 입은 손해액이라고 판단한 것에는 발명자 판단에 관한 법리 등을 오해하여 심리를 다하지 아니함으로써 판결에 영향을 미친 위법이 있다. 이 점에 관한 피고들의 상고이유 주장은 이유 있다.</p><p>  2. 원고 회사의 부대상고이유에 대하여</p><p>  가. <span class="accrnt_txt">양도인이 특허를 받을 수 있는 권리를 양수인에게 양도하고, 그에 따라 양수인이 특허권의 설정등록을 받았으나 그 양도계약이 무효나 취소 등의 사유로 효력을 상실하게 된 경우에, 그 특허를 받을 수 있는 권리와 설정등록이 이루어진 특허권이 동일한 발명에 관한 것이라면, 그 양도계약에 의하여 양도인은 재산적 이익인 특허를 받을 수 있는 권리를 잃게 되고 양수인은 법률상 원인 없이 특허권을 얻게 되는 이익을 얻었다고 할 수 있으므로, 양도인은 양수인에 대하여 특허권에 관하여 이전등록을 청구할 수 있다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다47218|판결" href="#//">대법원 2004. 1. 16. 선고 2003다47218 판결</a></span> 참조).</p><p>  <span class="accrnt_txt">한편 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|" style="text-decoration:underline">발명진흥법 제12조</a></span> 전문, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|" style="text-decoration:underline">제13조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|" style="text-decoration:underline">제3항</a></span> 전문, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법 시행령|7|" style="text-decoration:underline">발명진흥법 시행령 제7조</a></span>가 종업원 등으로 하여금 사용자 등에게 직무발명 완성사실을 문서로 통지하도록 하고, 사용자 등이 위 통지를 받은 날부터 4개월 이내에 그 발명에 대한 권리의 승계 여부를 종업원 등에게 알리지 아니한 경우 그 승계를 포기한 것으로 간주되는 효과가 부여되는 점 등에 비추어 보면, 사용자 등이 종업원 등의 위 통지가 없음에도 다른 경위로 직무발명 완성사실을 알게 되어 직무발명 사전승계 약정 등에 따라 그 발명에 대한 권리를 승계한다는 취지를 종업원 등에게 문서로 알린 경우에는 종업원 등의 직무발명 완성사실 통지 없이도 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|" style="text-decoration:underline">같은 법 제13조 제2항</a></span>에 따른 권리 승계의 효과가 발생한다고 보아야 한다.</span></p><p>  <span class="accrnt_txt">그렇다면 직무발명 사전승계 약정 등의 적용을 받는 종업원 등이 직무발명을 완성하고도 그 사실을 사용자 등에게 알리지 아니한 채 그 발명에 대한 특허를 받을 수 있는 권리를 제3자의 적극 가담 아래 이중으로 양도하여 제3자가 특허권 등록까지 마친 경우에, 위 직무발명 완성사실을 알게 된 사용자 등으로서는 위 종업원 등에게 직무발명 사전승계 약정 등에 따라 권리 승계의 의사를 문서로 알림으로써 위 종업원 등에 대하여 특허권이전등록청구권을 가지게 된다고 봄이 상당하다. 그리고 위 이중양도는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|" style="text-decoration:underline">민법 제103조</a></span>에서 정한 반사회질서의 법률행위로서 무효라고 할 것이므로, 사용자 등은 위 특허권이전등록청구권을 피보전채권으로 하여 종업원 등의 그 제3자에 대한 특허권이전등록청구권을 대위행사할 수 있다고 할 것이다.</span></p><p>  나. 이 사건에 관하여 보건대, 피고 2가 원고 회사와 체결한 이 사건 발명약정은 직무발명 사전승계에 관한 약정의 범위 내에서 유효하다는 점, Q22 합금 발명 중 피고 2의 기여 부분은 원고 회사와의 관계에서 피고 2의 직무발명에 해당한다는 점, 그럼에도 불구하고 피고 2는 위 합금 발명 완성사실을 원고 회사에 통지하지 아니한 채 위 발명에 대한 특허를 받을 수 있는 권리 중 피고 2 지분을 피고 1에게 양도한 점 등은 위에서 본 바와 같다. 또한 위에서 피고들의 손해배상책임의 발생에 관하여 본 사실관계에 비추어 보면, 피고 2, 1 사이의 위 피고 2 지분의 이중양도는 피고 1의 적극 가담 아래 이루어진 것으로서 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>에서 정한 반사회질서의 법률행위에 해당하여 무효라고 봄이 상당하다. 나아가 기록에 의하면, 이 사건에서 사실심 변론종결 시까지 발명진흥법에서 정한 바에 따라 Q22 합금 발명에 대한 특허를 받을 수 있는 권리 중 피고 2 지분을 원고 회사에 승계하기 위한 어떠한 절차도 이행된 바 없음을 알 수 있다.</p><p>  그렇다면 원고 회사는 피고 2에게 Q22 합금 발명에 대한 권리 중 피고 2 지분에 관하여 직무발명 사전승계 약정에 따른 승계 의사를 문서로 알리고, 위 발명에 대하여 피고 1 앞으로 등록된 특허권 중 피고 2 지분에 관하여 피고 1을 상대로 피고 2를 대위하여 피고 2에게 이전등록할 것을 청구하고, 동시에 피고 2를 상대로 원고 회사에게 순차 이전등록할 것을 청구할 수 있음은 별론으로 하고, 위 특허권에 관하여 직접 원고 회사에게 이전등록할 것을 청구할 수는 없다고 할 것이다.</p><p>  다. 원심은, 피고 1의 Q22 합금 발명에 관한 특허출원이 ‘무권리자의 특허출원’에 해당한다고 하더라도, 발명자로부터 특허를 받을 수 있는 권리를 승계한 원고 회사가 특허법 소정의 절차에 따라 피고 1의 특허권 등록을 무효로 한 다음 원고 회사 명의로 특허출원을 하여 위 합금 발명에 관한 특허를 받을 수 있는지 여부는 별론으로 하고, 피고 1의 특허출원이 무권리자의 특허출원에 해당함을 이유로 원고 회사가 피고 1에게 그 특허권에 관하여 원고 회사 앞으로의 이전등록을 구할 수는 없다고 판단하였다. 원심의 이러한 판단은 Q22 합금 발명에 대한 특허를 받을 수 있는 권리가 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|12|">발명진흥법 제12조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="발명진흥법|13|">제13조 제1항</a></span>에서 정한 승계절차 없이 모두 원고 회사에게 귀속된다고 볼 수 있음을 전제로 한 것이어서 그 이유 설시에 부적절한 부분은 있으나, 그 결론에 있어서는 정당하다. 원고 회사의 부대상고이유 주장은 받아들일 수 없다.</p><p>  3. 결론</p><p>  그러므로 원심판결 중 특허권에 관한 손해배상청구에 대한 피고들 패소 부분을 파기하고, 이 부분 사건을 다시 심리·판단하도록 하기 위하여 원심법원에 환송하되, 원고 회사의 부대상고를 기각하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박보영(재판장) 민일영 김신 권순일(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

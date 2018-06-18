@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011다89910 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2060882';
+var contIdEtc = '';
+var saNo = '2011다89910';
+var sngoNm = '선고';
+var saNm = '주차권존재확인·손해배상(기)';
+try {
+	var sngoDay=('20121213' ? 
+			'20121213'.length==4 ? Date.parseExact('20121213','yyyy').toString('yyyy. M. d.') : 
+				'20121213'.length==6 ? Date.parseExact('20121213','yyyyMM').toString('yyyy. M. d.') : 
+					'20121213'.length==8 ? Date.parseExact('20121213','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011다89910,89927 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011다89910';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011다89910</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(2)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(7)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|692572">오정후 계약의 효력정지가처분의 민사소송법적 문제 비교사법 제20권 1호 / 한국비교사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687077">김선혜 2012년 민사(물권법) 중요 판례 인권과 정의 제432호 / 대한변호사협회  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|93다60144">대법원 1995. 3. 14. 선고 93다60144 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006두8334">대법원 2006. 9. 28. 선고 2006두8334 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|263|0|null">민법 제263조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="집합건물의소유및관리에관한법률|2|0|null">집합건물의 소유 및 관리에 관한 법률 제2조 제6호 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|214|0|null">민법 제214조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|263|0|null">민법 제263조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="집합건물의소유및관리에관한법률|2|0|null">집합건물의 소유 및 관리에 관한 법률 제2조 제6호 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민사소송법|208|0|null">민사소송법 제208조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민사소송법|208|0|null">민사소송법 제208조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|93다60144">대법원 1995. 3. 14. 선고 93다60144 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006두8334">대법원 2006. 9. 28. 선고 2006두8334 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="광주고등법원|2010나6900">광주고법 2011. 9. 23. 선고 2010나6900, 6917 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 12. 13. 선고 2011다89910,89927 판결</h2><p class="sub_title">[주차권존재확인·손해배상(기)][공2013상,141]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 한 필지 또는 여러 필지의 토지 위에 축조된 여러 동 건물의 구분소유자들이 토지를 공유하고 있는 경우, 각 구분소유자가 대지 전부를 용도에 따라 사용할 수 있는지 여부(원칙적 적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 여러 필지의 대지에 건축되어 있는 아파트와 상가의 각 구분건물에 관하여 대지 전체에 대한 일부 공유지분을 대지권으로 하는 등기가 마쳐져 있는데 상가 구분소유자 갑이 아파트입주자대표회의를 상대로 주차방해금지 등을 구한 사안에서, 갑의 대지사용권에 기한 주차장 사용이 승용 및 승합차를 기준으로 지정된 2대는 주차스티커를 발급받고 나머지 차량은 주차장운영내규에 따라 방문차량으로 통행, 출입, 주·정차하는 정도에 그쳐야 한다고 본 원심판결에 법리오해의 위법이 있다고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 판결 주문이 갖추어야 할 명확성의 정도</p>
+      <p></p>
+      <p>
+        </p><p>[4] 여러 필지의 대지에 건축되어 있는 아파트와 상가의 각 구분건물에 관하여 대지 전체에 대한 일부 공유지분을 대지권으로 하는 등기가 마쳐져 있는 상태에서 상가 구분소유자 갑이 아파트입주자대표회의를 상대로 주차방해금지 등을 구하였는데, 원심이 방해금지청구 부분을 일부 인용하면서 주문의 일부인 별지에 ‘단지 내 주차는 주차 면수의 범위 내에서 할 수 있으며, 빈 주차 면이 없을 경우 부득이 단지 외에 주차함을 원칙으로 하고, 아파트 차량 확인스티커를 부착하지 않은 차량은 한시적 정차는 허용하나 주차는 할 수 없다’라고 기재한 사안에서, 원심판결은 판결로서 갖추어야 할 명확성을 갖추지 못하여 그대로 유지될 수 없다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 1동 건물의 구분소유자들이 건물의 대지를 공유하고 있는 경우, 각 구분소유자는 별도의 규약이 존재하는 등 특별한 사정이 없는 한 대지에 대하여 가지는 공유지분의 비율에 관계없이 건물의 대지 전부를 용도에 따라 사용할 수 있는 적법한 권원을 가진다. 이러한 법리는 한 필지 또는 여러 필지의 토지 위에 축조된 여러 동 건물의 구분소유자들이 토지를 공유하고 있는 경우에도 마찬가지로 적용된다.</p>
+      <p></p><p>
+        </p><p>[2] 여러 필지의 대지에 건축되어 있는 아파트와 상가의 각 구분건물에 관하여 대지 전체에 대한 일부 공유지분을 대지권으로 하는 등기가 마쳐져 있는데 상가 구분소유자 갑이 아파트입주자대표회의를 상대로 주차방해금지 등을 구한 사안에서, 갑은 상가 구분소유자로서 별도의 규약이 존재하는 등 특별한 사정이 없는 한 대지에 대하여 가지는 공유지분의 비율에 관계없이 대지 전부를 용도에 따라 사용할 수 있는 적법한 권한을 가지고, 이러한 대지사용권에 기하여 갑 소유 차량들을 대지 일부인 주차장에 통행, 출입 및 주·정차시킬 수 있는 권리를 가짐에도, 갑이 대지사용권을 무제한으로 행사할 수 없다는 전제하에 갑의 대지사용권에 기한 주차장 사용이 승용 및 승합차를 기준으로 지정된 2대는 주차스티커를 발급받고 나머지 차량은 주차장운영내규에 따라 방문차량으로 통행, 출입, 주·정차하는 정도에 그쳐야 한다고 본 원심판결에 구분소유자의 대지사용권에 관한 법리오해의 위법이 있다고 한 사례.</p>
+      <p></p><p>
+        </p><p>[3] 판결 주문의 내용이 모호하면 기판력의 객관적 범위가 불분명해질 뿐만 아니라 집행력·형성력 등의 내용도 불확실하게 되어 새로운 분쟁을 일으킬 위험이 있으므로 판결 주문에서는 청구를 인용하고 배척하는 범위를 명확하게 특정하여야 한다.</p>
+      <p></p><p>
+        </p><p>[4] 여러 필지의 대지에 건축되어 있는 아파트와 상가의 각 구분건물에 관하여 대지 전체에 대한 일부 공유지분을 대지권으로 하는 등기가 마쳐져 있는 상태에서 상가 구분소유자 갑이 아파트입주자대표회의를 상대로 주차방해금지 등을 구하였는데, 방해금지청구 부분에 대한 원심판결의 인용 주문에서 “피고는 원고 및 원고의 피용자·점유보조자가 사용하는 차량들이 별지 기재와 같은 기준에 따라 아파트 단지 내 주차장에 출입, 통행 및 주차하는 것을 방해하여서는 아니 된다.”라고 하면서 원심판결 별지 ‘주·정차 기준’에 “원고는 승용 및 승합차를 기준으로 2대를 지정하여 피고로부터 아파트 차량 확인스티커를 발급받아 단지 내 주차장에 주차할 수 있고, 단지 내 주차는 주차 면수의 범위 내에서 할 수 있으며, 빈 주차 면이 없을 경우 부득이 단지 외에 주차함을 원칙으로 하고, 아파트 차량 확인스티커를 부착하지 않은 차량은 한시적 정차는 허용하나 주차는 할 수 없고, 방문차량은 입주자 우선 주·정차 후 주·정차할 수 있다.”라고 기재한 사안에서, 원심판결 주문의 일부인 원심판결 별지 ‘주·정차 기준’ 중 ‘빈 주차 면이 없을 경우 부득이 단지 외에 주차함을 원칙으로 하고’라는 부분은 원칙에 대한 예외가 허용되는 경우가 원심판결의 주문이나 이유에 구체적으로 명확하게 밝혀져 있지 않고, 또한 ‘한시적 정차’라는 부분 역시 원심판결 주문에서 의미를 명확하게 특정한 것으로 볼 수 없으며 원심판결 이유를 살펴보아도 의미를 명확하게 알 수 없으므로, 원심판결은 판결로서 갖추어야 할 명확성을 갖추지 못하여 그대로 유지될 수 없다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|263|">민법 제263조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|2|">집합건물의 소유 및 관리에 관한 법률 제2조 제6호</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|214|">민법 제214조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|263|">제263조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|2|">집합건물의 소유 및 관리에 관한 법률 제2조 제6호</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|208|">민사소송법 제208조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|208|">민사소송법 제208조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|93다60144|판결" href="#//">대법원 1995. 3. 14. 선고 93다60144 판결</a></span>(공1995상, 1598)<br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006두8334|판결" href="#//">대법원 2006. 9. 28. 선고 2006두8334 판결</a></span>(공2006하, 1849)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        현대아파트 입주자대표회의
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="광주고등법원|2010나6900|판결" href="#//">광주고법 2011. 9. 23. 선고 2010나6900, 6917 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 광주고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 상고이유(상고이유서 제출기간이 경과한 후에 원고가 제출한 ‘답변서’의 기재는 상고이유를 보충하는 범위 내에서)를 본다.</p><p>
+        <span class="accrnt_txt">1동의 건물의 구분소유자들이 그 건물의 대지를 공유하고 있는 경우, 각 구분소유자는 별도의 규약이 존재하는 등의 특별한 사정이 없는 한 그 대지에 대하여 가지는 공유지분의 비율에 관계없이 그 건물의 대지 전부를 용도에 따라 사용할 수 있는 적법한 권원을 가진다. 이러한 법리는 한 필지 또는 여러 필지의 토지 위에 축조된 수동의 건물의 구분소유자들이 그 토지를 공유하고 있는 경우에도 마찬가지로 적용된다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|93다60144|판결" href="#//">대법원 1995. 3. 14. 선고 93다60144 판결</a></span> 등 참조).
+      </p><p>  원심은 그 채택 증거에 의하여 판시와 같은 사실을 인정한 다음, 이 사건 대지에 건축되어 있는 이 사건 아파트나 이 사건 상가의 각 구분건물에 관하여 이 사건 대지 전체에 대한 일부 공유지분을 대지권으로 하는 등기가 마쳐져 있으므로 원고는 이 사건 상가의 구분소유자로서 이 사건 대지 전부에 대한 대지사용권을 가지고 있다 할 것이고, 피고가 원고에게 1대의 차량에 대해서만 주차스티커를 발급하여 이 사건 주차장의 사용을 제한하는 것은 원고의 수인한도를 넘어 대지사용권을 침해할 정도에 이른 것이라고 하면서도, 원고가 대지사용권을 무제한으로 행사할 수 없다는 이유로 원고의 대지사용권에 기한 이 사건 주차장 사용은 그 판시와 같이 승용 및 승합차를 기준으로 지정된 2대는 주차스티커를 발급받고 나머지 차량은 주차장운영내규에 따라 방문차량으로 통행, 출입, 주·정차하는 정도에 그쳐야 하는 것으로 봄이 상당하다고 판단하였다.</p><p>  또한 원심은, 피고가 원고의 수인한도를 넘어 원고 소유의 차량들이 이 사건 주차장에 출입과 통행 및 주차하는 것을 방해하였으므로 피고는 원고에게 그로 인하여 원고가 받은 정신적 고통으로 인한 손해를 배상할 의무가 있다고 한 다음, 원고와 피고의 관계, 피고의 주차방해 목적, 경위, 횟수 등 변론 전체에 나타난 제반 사정을 고려하여 피고가 원고에게 지급하여야 할 위자료를 100만 원으로 결정하였다.</p><p>  그러나 앞서 본 법리에 비추어 기록을 살펴보면, 원고는 이 사건 상가의 구분소유자로서 별도의 규약이 존재하는 등의 특별한 사정이 없는 한 이 사건 대지에 대하여 가지는 공유지분의 비율에 관계없이 그 대지 전부를 용도에 따라 사용할 수 있는 적법한 권한을 가지므로, 원고는 이러한 대지사용권에 기하여 원고 소유의 차량들을 이 사건 대지의 일부인 이 사건 주차장에 통행, 출입 및 주·정차시킬 수 있는 권리를 가진다고 할 것이다.</p><p>  그럼에도 원심은 그 판시와 같은 이유만으로 대지사용권에 기한 원고의 이 사건 주차장 사용은 그 판시와 같은 정도에 그쳐야 한다고 판단하고, 이러한 판단 등을 기초로 위자료를 결정하였으니, 이러한 원심의 조치에는 구분소유자의 대지사용권에 관한 법리를 오해하고, 위자료 산정의 고려사유에 관한 판단을 그르쳐 판결 결과에 영향을 미친 위법이 있다.</p><p>  2. 직권으로 본다.</p><p>
+        <span class="accrnt_txt">판결 주문의 내용이 모호하면 기판력의 객관적 범위가 불분명해질 뿐만 아니라 집행력·형성력 등의 내용도 불확실하게 되어 새로운 분쟁을 일으킬 위험이 있으므로 판결 주문에서는 청구를 인용하고 배척하는 범위를 명확하게 특정하여야 한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006두8334|판결" href="#//">대법원 2006. 9. 28. 선고 2006두8334 판결</a></span> 등 참조).
+      </p><p>  그런데 이 사건 방해금지청구 부분에 대한 원심판결의 인용 주문은 “피고는 원고 및 원고의 피용자·점유보조자가 사용하는 차량들이 별지 기재와 같은 기준에 따라 광주 서구 
+        (주소 생략) 소재 현대아파트 단지 내 주차장에 출입, 통행 및 주차하는 것을 방해하여서는 아니 된다.”는 것이고, 원심판결 별지 ‘주·정차 기준’에는 “원고는 승용 및 승합차를 기준으로 (단 화물차량의 경우 2.5t 이하의 차량으로서 1개의 주차구획에 주차할 수 있는 경우에 한하여 승용 및 승합차와 동등하게 취급함) 2대를 지정하여 피고로부터 아파트 차량 확인스티커를 발급받아 단지 내 주차장에 주차할 수 있고, 단지 내 주차는 주차 면수의 범위 내에서 할 수 있으며, 빈 주차 면이 없을 경우 부득이 단지 외에 주차함을 원칙으로 하고, 아파트 차량 확인스티커를 부착하지 않은 차량은 한시적 정차는 허용하나 주차는 할 수 없고, 방문차량은 입주자 우선 주·정차 후 주·정차할 수 있다.”고 기재되어 있다.
+      </p><p>  앞서 본 법리에 비추어 보면, 원심판결 주문의 일부인 원심판결 별지 ‘주·정차 기준’ 중 ‘빈 주차 면이 없을 경우 부득이 단지 외에 주차함을 원칙으로 하고’라는 부분은 그 원칙에 대한 예외가 허용되는 경우가 원심판결의 주문이나 이유에 구체적으로 명확하게 밝혀져 있지 않고, 또한 ‘한시적 정차’라는 부분 역시 원심판결의 주문에서 그 의미를 명확하게 특정한 것으로 볼 수 없으며 원심판결 이유를 살펴보아도 그 의미를 명확하게 알 수 없다.</p><p>  따라서 원심판결은 판결로서 갖추어야 할 명확성을 갖추지 못하여 그대로 유지될 수 없다.</p><p>  3. 결론</p><p>  그러므로 나머지 상고이유에 대한 판단을 생략한 채 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김소영(재판장) 신영철 이상훈(주심) 김용덕 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008다3527 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063438';
+var contIdEtc = '';
+var saNo = '2008다3527';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20091224' ? 
+			'20091224'.length==4 ? Date.parseExact('20091224','yyyy').toString('yyyy. M. d.') : 
+				'20091224'.length==6 ? Date.parseExact('20091224','yyyyMM').toString('yyyy. M. d.') : 
+					'20091224'.length==8 ? Date.parseExact('20091224','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008다3527 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008다3527';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008다3527</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(4)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(18)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(8)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2124100">대법원 2013. 5. 16. 선고 2012다202819 전원합의체 판결 [공2013하,1077]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2139180">대법원 2014. 1. 16. 선고 2011다108057 판결 [공2014상,389]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2232044">대법원 2017. 3. 30. 선고 2016다267920 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2245409">대법원 2017. 5. 31. 선고 2017다202166 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|630102">국제항공운송사고로 인한 손해배상과 국제사법적 사고의 빈곤 석광현 法律新聞社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|800358">이혁 지연손해금과 법정이자 판례연구 27집 / 부산판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638489">최우진 독일 손해배상소송에서의 비재산적 손해배상액 산정에 관한 사실심 법원 재량과 위자료표(Schmerzensgeldtabelle)의 활용 재판자료 . 제122집 : 외국사법연수논집(30） 재판자료 122집 외국사법연수논집 / 대법원 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|570280">서울중앙지방법원 손해배상소송실무:. (교통·산재) 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655554">이진수 위자료의 지연손해금 가산점과 과잉배상 판례연구 23집 / 부산판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725926">박준용 진실·화해를 위한 과거사정리 기본법에 따른 진실규명결정과 국가배상소송 판례연구 25집 / 부산판례연구회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|690728">김경례 의료사고의 손해배상과 위자료 산정 : 한국소비자원 의료피해구제 사례들의 일별 . 의료법학 13권 2호  / 대한의료법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683294">이영창 민청학련 사건을 통한 과거사 사건의 쟁점들에 대한 검토 대법원판례해설 91호  / 법원도서관  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|618468">최병규 상법 고시계 55권 5호  / 국가고시학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|651470">김미리 불법행위로 인한 위자료채무의 지연손해금 발생시기 대법원판례해설 87호  / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631529">최우진 구체적 액수로 증명 곤란한 재산적 손해의 조사 및 확정 : 사실심 법원 권능의 내용과 한계 사법논집 . 제51집   / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|627761">석광현 한국법원에서 제기된 중국법의 쟁점 : 계약법, 불법행위법, 혼인법과 외국판결의 승인ㆍ집행을 중심으로 법학 51권 3호  / 서울대학교 법학연구소  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|651763">김수학 김해공항 항공기사고의 국제재판관할권 재판과 판례 20집  / 대구판례연구회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|628821">김태선 징벌적 손해배상제도에 대한 고찰 : 민법개정에 따른 도입논의와 관련하여 민사법학 50호  / 한국사법행정학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661350">최우진 손해배상금 지급채무에 대한 이자 부가의 의미와 기산 시기 비교사법 19권 2호  / 한국비교사법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|674550">안병하 위자료 기능의 새로운 이해 사법 21호 / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|555338">한국. 대법원 법원행정처 재판실무편람. 제7호:. 국제거래재판실무편람 국제거래재판실무편람 집필위원회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|825798">이창현 위자료의 현실화 방안 저스티스 통권 제158-1호 / 한국법학원  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630102">석광현 국제항공운송사고로 인한 손해배상과 국제사법적 사고의 빈곤 법률신문 3816호  / 법률신문사  2010 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2006나112603">서울고법 2007. 12. 4. 선고 2006나112603 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2009. 12. 24. 선고 2008다3527 판결</h2><p class="sub_title">[손해배상(기)][공2010상,202]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 항공기 사고로 사망한 치과의사의 일실수입 산정에서 망인이 치과의사로서 65세가 될 때까지 일할 수 있고 그 소득액의 1/3이 생계비로 소요될 것이라고 본 원심의 판단을 수긍한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[2] 항공기 사고에 대한 위자료 산정의 특수한 참작요소</p>
+      <p></p>
+      <p>
+        </p><p>[3] 항공기 사고 피해에 대한 위자료 산정에 항공기 사고의 특수한 사정을 제대로 참작하지 않음으로써 그 재량의 한계를 일탈한 위법이 있다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 항공기 사고로 사망한 치과의사의 일실수입 산정에서 망인이 치과의사로서 65세가 될 때까지 일할 수 있고 그 소득액의 1/3이 생계비로 소요될 것이라고 본 원심의 판단을 수긍한 사례.</p>
+      <p></p><p>
+        </p><p>[2] 항공기 사고의 위자료를 산정함에 있어 일반적인 위자료 참작 요소 외에 피해자의 극심한 공포와 고통, 결과의 처참성, 사고수습 및 손해배상의 지연, 가해자측의 과실 정도와 사고 후의 태도, 항공보험을 통한 위험의 분담, 사고발생에 대한 제재와 예방의 필요 등 항공기 사고의 특수한 사정도 함께 참작하여 그 직권에 속하는 재량으로 위자료 액수를 정하여야 한다.</p>
+      <p></p><p>
+        </p><p>[3] 항공기 사고 피해에 대한 위자료 산정에 항공기 사고의 특수한 사정을 제대로 참작하지 않음으로써 손해의 공평한 분담이라는 이념과 형평의 원칙에 현저히 반하여 그 재량의 한계를 일탈한 위법이 있다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">제751조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">제751조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고 (소송대리인 법무법인 화우 담당변호사 양삼승외 3인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        중국국제항공공사 (소송대리인 법무법인 광장 담당변호사 김재환외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2006나112603|판결" href="#//">서울고법 2007. 12. 4. 선고 2006나112603 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>   원심판결 중 위자료에 관한 원고 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  원고의 나머지 상고를 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 경과한 이후 제출된 상고이유보충서의 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 상고이유 제1점에 대하여</p><p>  원심은, 치과의사로서 병원을 개업·운영해 오다가 2002. 4. 15. 이 사건 사고로 사망한 
+        소외 1의 사고 당시 월 소득은 2001년도 소득을 토대로 산정되는 판시 금액으로 보아야 한다는 원고의 주장에 대하여, 이에 부합하는 증거들 중 갑 제4, 6호증의 일부 기재는 망 
+        소외 1의 사망 후 그 유족인 원고가 세무서에 신고한 2001년도 소득에 관한 자료로서 그 소득액은 망 
+        소외 1이 그 사망 전 신고하였던 소득액에 비추어 실제보다 높게 신고된 것으로 보이고, 갑 제26호증의 1, 2, 3의 기재는 망 
+        소외 1이 작성한 상업장부, 진료차트 등을 토대로 한 자료이나 그 수입의 대부분을 차지하는 현금수입 내역의 신빙성을 확인할 방법이 없으며 그 필요경비 또한 세무서 신고 내역과 상당한 차이를 보이고 있으며, 제1심 감정인 
+        소외 2의 일부 소득감정 결과는 감정대상인 회계기록과 증빙자료 간의 차이, 회계기록의 불일치, 증빙자료의 부실, 금융자료와의 대사 불가능 등의 감정상 한계가 있다는 등의 이유로 위 부합 증거들을 모두 배척한 다음, 망 
+        소외 1이 사망하기 전에 신고한 2000년 소득액을 기초로 그 투하자본의 기여액을 공제하는 방법에 의하여 산정한 판시 금액을 이 사건 사고 당시의 월 소득액으로 인정하였는바, 관련 증거들을 기록에 비추어 살펴보면, 원심의 판단은 수긍할 수 있고, 상고이유의 주장과 같이 일실수입 손해액의 판단에 관한 법리를 오해하거나 채증법칙을 위반한 위법 등이 없다.
+      </p><p>  2. 상고이유 제2점에 대하여</p><p>  기록에 나타난 망 
+        소외 1의 연령, 직업, 경력, 건강상태 등에 비추어, 망 
+        소외 1이 치과의사로서 65세가 될 때까지 일할 수 있다고 본 원심의 판단은 수긍이 가고, 상고이유의 주장과 같은 사정만으로 그 가동기간을 70세까지로 볼 수 없다. 이 부분 상고이유의 주장은 이유 없다.
+      </p><p>  원심은 앞서 본 바와 같은 망 
+        소외 1의 월 소득 수준과 경험칙에 비추어 그 소득액의 1/3이 생계비로 소요될 것으로 판단하였는바, 이러한 원심의 판단은 정당하고, 상고이유의 주장과 같이 생계비 인정에 관한 법리를 오해한 위법 등이 없다.
+      </p><p>  3. 상고이유 제3점에 대하여</p><p>  원심은, 판시와 같은 항공기 추락과 함께 그에 탑승하였던 
+        소외 1과 그 아들 
+        소외 3, 
+        소외 4가 사망하게 된 이 사건 사고로 망 
+        소외 1, 
+        소외 3, 
+        소외 4(이하 ‘망인들’이라 한다)와 망 
+        소외 1의 모인 원고가 입은 정신적 고통에 대하여 항공사인 피고의 위자료지급의무를 인정한 다음, 이 사건 사고로 가족들 전원이 사망함으로써 망인들이 엄청난 충격을 받게 된 점, 대형참사를 수반한 항공기사고에 대하여는 항공안전을 담보하기 위해 다른 교통사고와는 달리 엄격한 책임을 물을 필요가 있는 점, 피고는 대형항공사로서 영국 로이드사에 보험가입이 되어 있어 이 사건 사고로 인한 경제적 손실이 크지 아니한 점, 다른 항공기사고의 경우 사망자에 대하여 1인당 9억 원 정도의 위자료가 지급된 전례가 있는 점 등을 고려하여 망 
+        소외 1에 대한 위자료를 3억 원, 망 
+        소외 3, 
+        소외 4에 대한 위자료를 각 2억 원, 원고에 대한 위자료를 1억 원으로 정해야 한다는 원고의 주장에 대하여, 망인들과 원고의 나이, 이 사건 사고의 경위 및 결과, 그 밖에 변론에 나타난 여러 사정을 참작하면 망인들의 위자료는 각 8,000만 원, 원고의 위자료는 2,000만 원으로 정함이 상당하므로, 위 인정 범위를 초과하는 원고의 주장은 이유 없다고 판단하였다.
+      </p><p>  그러나 원심의 판단은 다음과 같은 이유로 수긍하기 어렵다.</p><p>  이른바 항공기사고로 인한 불법행위의 경우에는 통상의 교통사고와 달리 위자료 산정에 있어 참작되어야 할 다음과 같은 특수한 사정이 있다. 우선 항공기사고는 대개 승객 대부분이 사망하거나 치명적 손상을 입게 되는 대형참사로 이어지므로 그 추락·충돌 과정에서 승객은 극심한 공포와 고통을 느끼게 되고, 사고로 인하여 승객의 사체가 심각하게 훼손되거나 시신이 완전히 수습되지 않는 처참한 결과가 많이 발생한다. 또 사고수습·원인규명·손해파악에 상당한 시간이 소요됨으로써 손해배상이 장기간 지연되는 경향이 있어 이에 따른 피해자측의 고통이 적지 아니하고 항공사측의 사고수습의 방식이나 태도에 따라 그 고통이 더욱 가중될 수 있다. 한편 통상 항공기사고는 피해자측에게 아무런 과실 없이 발생하므로 가해자측의 과실 정도만이 그 위자료 산정에 영향을 주게 된다. 뿐만 아니라 항공사는 항공보험에 가입하여 항공기사고로 인한 거액의 손해배상 위험에 대비하고 있는데, 항공보험은 사고발생지, 피해자의 거주지를 구분하지 아니하고 동일한 사고에 대하여는 같은 기준으로 손해배상을 한다는 전제 아래 보험요율과 보험료를 정하고 재보험을 통하여 그 위험을 다시 분산시키고 있으며, 그 보험료는 항공운임에 포함되어 승객들에게 전가되고 있다. 항공보험 및 재보험제도는 동일한 항공기사고의 피해자들에 대하여는 항공사가 항공보험으로 담보하고자 예정한 손해배상의 범위와 액수를 감안하여 유사한 피해배상이 이루어질 수 있는 기능을 하고 있다고 볼 수도 있다. 나아가 항공사측의 중대하고 전적인 과실로 대형참사를 초래한 항공기사고에 대하여는 고액의 위자료를 부과함으로써 가해자를 제재하고 유사한 사고발생을 억제·예방할 필요도 있다.</p><p>  따라서 
+        <span class="accrnt_txt">사실심 법원은 항공기사고의 위자료를 산정함에 있어 일반적인 위자료 참작 요소 외에 앞서 본 바와 같은 피해자의 극심한 공포와 고통, 결과의 처참성, 사고수습 및 손해배상의 지연, 가해자측의 과실 정도와 사고 후의 태도, 항공보험을 통한 위험의 분담, 사고발생에 대한 제재와 예방의 필요 등 변론에 나타난 항공기사고의 특수한 사정도 함께 참작하여 그 직권에 속하는 재량으로 위자료 액수를 정하여야 한다.</span>
+      </p><p>  그런데 원심판결의 이유와 기록에 의하면, 이 사건 사고는 항공기 승무원들의 중대하고 전적인 과실로 발생하였고 그 승객들에게는 아무런 과실이 없었던 점, 이 사건 사고 과정에서 발생한 항공기의 충돌·폭발·화재로 승객 대다수가 사망하고 사체가 대부분 심하게 손상되는 등 사고의 결과가 참혹하였고, 이에 따른 승객들의 공포와 고통 또한 극심하였을 것으로 보이는 점, 이 사건 사고로 인하여 망인들뿐 아니라 함께 탑승하였던 그 가족들 3명도 일시에 사망한 점, 피고는 항공보험을 통하여 항공기사고에 따른 손해배상의 위험을 충분히 담보해 둔 것으로 보이는 점, 그런데도 망인들과 원고의 손해는 장기간 전혀 전보되고 있지 아니한 점 등을 알 수 있는바, 이와 같은 항공기사고로서의 특수한 사정들과 앞서 본 법리에 비추어 보면, 원심은 위자료 산정에 있어 이 사건 변론에 나타난 항공기사고의 특수한 사정을 제대로 참작하지 아니함으로써 손해의 공평한 분담이라는 이념과 형평의 원칙에 현저히 반하여 그 재량의 한계를 일탈하였다고 볼 수 있다. 이에 관한 상고이유의 주장은 이유 있다.</p><p>  4. 결론</p><p>  그러므로 원심판결 중 위자료에 관한 원고 패소 부분을 파기하고 이 부분 사건을 다시 심리·판단하도록 원심법원에 환송하며, 원고의 나머지 상고를 기각하기로 관여 대법관의 의견이 일치하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김능환(재판장) 김영란(주심) 이홍훈 민일영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

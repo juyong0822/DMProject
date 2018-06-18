@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>인천지방법원 2010르130 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2029069';
+var contIdEtc = '';
+var saNo = '2010르130';
+var sngoNm = '선고';
+var saNm = '이혼·이혼등·손해배상(기)';
+try {
+	var sngoDay=('20101111' ? 
+			'20101111'.length==4 ? Date.parseExact('20101111','yyyy').toString('yyyy. M. d.') : 
+				'20101111'.length==6 ? Date.parseExact('20101111','yyyyMM').toString('yyyy. M. d.') : 
+					'20101111'.length==8 ? Date.parseExact('20101111','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '인천지방법원';
+var bubCd = '000240';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010르130(본소),2010르147(반소),2010르154(병합) ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010르130';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">인천지방법원<br />2010르130</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92므501">대법원 1993. 5. 25. 선고 92므501 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="가사소송법|12|0|null">가사소송법 제12조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|420|0|null">민사소송법 제420조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="가사소송규칙|23|0|null">가사소송규칙 제23조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="인천지방법원부천지원|2007드단9507">인천지방법원 부천지원 2009. 12. 2. 선고 2007드단9507(본소), 2008드단3018(반소), 2009드단5554(병합) 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>인천지방법원 2010. 11. 11. 선고 2010르130(본소),2010르147(반소),2010르154(병합) 판결</h2><p class="sub_title">[이혼·이혼등·손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(반소피고), 항소인 겸 피항소인】
+      
+        
+          원고 (소송대리인 법무법인 율곡 종합법률사무소 담당변호사 장백규)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고(반소원고), 피항소인 겸 항소인】
+      
+        
+          피고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 피항소인】
+      
+        손순옥 (소송대리인 법무법인 명인 담당변호사 민경식)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【사건본인】
+      
+        박주승 외 1인
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2010. 10. 21.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="인천지방법원부천지원|2007드단9507|판결" href="#//">인천지방법원 부천지원 2009. 12. 2. 선고 2007드단9507(본소), 2008드단3018(반소), 2009드단5554(병합) 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 재산분할 청구부분을 다음과 같이 변경한다.</p><p>
+        피고(반소원고)는 원고(반소피고)에게 재산분할로 550,903,991원 및 이에 대하여 이 판결 확정일 다음날부터 갚는 날까지 연 5%의 비율로 계산한 돈을 지급하라.  
+      </p><p>2. 원고(반소피고)의 나머지 항소와 당심에서의 확장된 위자료 청구 및 
+        피고(반소원고)의 항소를 모두 기각한다.
+      </p><p>3. 소송총비용 중 본소로 인한 부분은 각자 부담하고 반소로 인한 부분은 
+        피고(반소원고)가 부담한다. 
+      </p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p>  가. 본소 : 원고(반소피고, 이하 ‘원고’라 한다)와 
+        피고(반소원고, 이하 ‘피고’라 한다)는 이혼한다. 피고들은 연대하여 원고에게 위자료 1억 원 및 이에 대하여 청구취지 및 청구원인 재재변경신청서 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 돈을 지급하라(원고는 제1심에서 위자료로 50,000,000원을 청구해서 30,000,000원을 선고받은 후 항소하면서 제1심 판결 중 원고 패소 부분인 20,000,000원의 취소를 구함과 동시에 위자료로 70,000,000원을 청구하고 있으므로, 원고가 당심에서 청구취지를 1억 원으로 확장한 것으로 본다). 
+        피고는 원고에게 재산분할로 1,277,479,045원을 지급하고 
+        소외 2 주식회사의 주식 중 2만 주를 교부하라. 사건본인들의 친권자 및 양육자로 원고를 지정한다. 
+        피고는 원고에게 사건본인들의 양육비로 이 사건 소장부본 송달 다음날부터 사건본인들이 각 성년에 이르기까지 매월 500,000원을 지급하라.
+      </p>
+      <p>  나. 반소 : 
+        피고와 원고는 이혼한다. 원고는 
+        피고에게 위자료 10,000,000원 및 이에 대하여 이 사건 반소장 부본 송달 다음날부터 판결선고일까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라. 사건본인들의 친권자 및 양육자로 
+        피고를 지정한다. 원고는 
+        피고에게 사건본인들의 양육비로 이 사건 반소장 부본 송달 다음날부터 사건본인들이 각 성년에 이르기까지 매월 300,000원을 지급하라. 
+      </p>
+      <p>2. 항소취지</p>
+      <p>  가. 원고 : 제1심 판결 중 원고 패소 부분을 취소한다. 피고들은 연대하여 원고에게 위자료 70,000,000원 및 이에 대하여 이 사건 소장부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 돈을 지급하라. 
+        피고는 원고에게 재산분할로 1,277,479,045원을 지급하고 
+        소외 2 주식회사의 주식 중 2만 주를 교부하라.  
+      </p>
+      <p>  나. 
+        피고
+      </p>
+      <p>  (1) 본소 : 제1심 판결 중 피고 패소부분을 취소하고, 위 취소부분에 해당하는 원고의 청구를 기각한다.</p>
+      <p>  (2) 반소 : 제1심 판결 중 피고 패소부분을 취소한다. 청구취지 나항 기재와 같다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 이 법원이 이 사건에 관하여 설시할 이유는 제1심 판결 이유 중 “4. 재산분할” 부분을 아래 제2항 기재와 같이 고치는 이외에는 제1심 판결 이유와 같으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="가사소송법|12|">가사소송법 제12조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span>에 의하여 이를 인용한다.
+      </p><p>2. 재산분할청구에 대한 판단</p><p>   가. 기초사실</p><p>   다음 사실은 을 제2 내지 11, 29호증(가지번호 있는 것은 가지번호 포함)의 각 기재와 제1심 증인 
+        소외 1의 증언에 변론 전체의 취지를 종합하여 인정할 수 있다.
+      </p><p>   (1) 혼인생활 중 원고는 가사와 육아를 담당하였고 
+        피고는 형이 운영하는 
+        ○○금속이라는 스테인레스 가공업체에서 근무하다가 1999년경 
+        소외 2 주식회사를 설립한 다음 대표이사로서 
+        소외 2 주식회사를 운영하고 있다.
+      </p><p>   (2) 원고와 
+        피고는 
+        피고가 
+        ○○금속에서 근무하면서 번 돈 중 생활비에 충당하고 남은 돈을 저축하는 등의 방법으로 재산을 증식하여, 
+        피고는  1993. 9. 14. 부천시 원미구 중동 1055 중흥마을 
+        (이하 1 생략)에 관하여 매매를 원인으로 한 소유권이전등기를 마쳤다.
+      </p><p>   (3) 
+        피고는 2004. 6. 15. 화성시 장안면 석포리 
+        (지번 1 생략) 임야 793㎡(이후 화성시 장안면 석포리 
+        (지번 2 생략)로 등록전환되었다)에 관하여 매매를 원인으로 한 소유권이전등기를 마쳤다. 2004. 7. 20. 화성시 장안면 석포리 
+        (지번 3 생략) 임야 2849㎡(이후 화성시 장안면 석포리 
+        (지번 4, 5, 6, 7 생략)로 분할되었다)에 관하여 
+        피고와 
+        피고의 동생인 
+        소외 1은 각 995/2849 지분, 
+        소외 2 주식회사는 859/2849 지분에 관하여 각 매매를 원인으로 한 소유권이전등기를 마쳤다. 위 석포리 
+        (지번 1 생략) 토지와 
+        (지번 3 생략) 토지의 구입자금 중 3억 3,000만 원은 위 
+        (지번 3 생략) 토지를 담보로 하여 
+        소외 2 주식회사 이름으로 주식회사 중소기업은행으로부터 대출받은 돈으로 충당되었다. 당시 
+        소외 1은 
+        피고와 사이에 자신이 위 3억 3,000만 원 중 1억 원에 대한 지급의무를 부담하기로 약정하였다.  
+      </p><p>   (4) 이후 
+        피고는 화성시 장안면 석포리 
+        (지번 2, 4, 5, 6, 7 생략) 토지를 담보로 하여 
+        소외 2 주식회사 이름으로 주식회사 중소기업은행으로부터 대출받은 돈으로 화성시 장안면 석포리 
+        (지번 2, 5 생략) 지상에 A동, B동 건물을, 화성시 장안면 석포리 
+        (지번 4 생략) 지상에 건물을, 화성시 장안면 석포리 
+        (지번 6 생략) 지상에 건물을 각각 신축하였다. 
+        소외 2 주식회사는 2006. 7. 3. 화성시 장안면 석포리 
+        (지번 2, 5 생략) 지상 A동, B동 건물에 관하여, 
+        소외 1은 화성시 장안면 석포리 
+        (지번 4 생략) 지상 건물에 관하여, 
+        피고는 화성시 장안면 석포리 
+        (지번 6 생략) 지상 건물에 관하여 각각 소유권보존등기를 마쳤다. 
+      </p><p>   (5) 원고와 
+        피고는 
+        피고가 
+        소외 2 주식회사를 운영하면서 번 돈 중 생활비에 충당하고 남은 돈을 저축하는 등의 방법으로 재산을 증식하여, 원고는 2007. 5. 4. 부천시 원미구 중동 1052 중흥마을 
+        (이하 2 생략)에 관하여 매매를 원인으로 한 소유권이전등기를 마쳤다.
+      </p><p>   나. 분할대상 재산 및 가액</p><p>   (1) 적극재산</p><p>   (가) 원고</p><p>   ① 부천시 원미구 중동 1052 중흥마을 
+        (이하 2 생략) : 149,000,000 (을 제32호증의 2)
+      </p><p>   ② 삼성생명보험 주식회사에 대한 그린행복연금보험 해약 환급금 : 45,466,240원 (이 법원의 삼성생명보험 주식회사에 대한 사실조회결과)</p><p>   ③ 소계 : 194,466,240원</p><p>   (나) 
+        피고
+      </p><p>   ① 부천시 원미구 중동 1055 중흥마을 
+        (이하 1 생략) : 550,000,000 (감정인 오태헌의 감정결과)
+      </p><p>   ② 화성시 장안면 석포리 
+        (지번 2 생략) 임야 794㎡ : 323,158,000원  (감정인 오태헌의 감정결과)
+      </p><p>   ③ 화성시 장안면 석포리 
+        (지번 4 생략) 임야 1035㎡ : 274,127,142원 (감정인 오태헌의 감정결과, 전체액수는 421,245,000원이고 등기부상 
+        피고 지분 995/2849, 
+        소외 2 주식회사 지분 859/2849, 
+        소외 1 지분 995/2849인데, 뒤에서 보는 바와 같이 
+        피고가 
+        소외 2 주식회사의 재산을 실질적으로 지배하고 있으므로 
+        피고와 
+        소외 2 주식회사의 지분을 합한 지분에 해당하는 금액만큼을 재산분할 대상으로 인정함, 원 미만은 버린다, 이하 같다)
+      </p><p>   ④ 화성시 장안면 석포리 
+        (지번 5 생략) 대 795㎡ : 210,561,428원 (감정인 오태헌의 감정결과, 전체액수 323,565,000원이고 제3항 기재 토지와 동일한 지분구성이므로 
+        피고와 
+        소외 2 주식회사의 지분을 합한 지분에 해당하는 금액만큼을 재산분할 대상으로 인정함)
+      </p><p>   ⑤ 화성시 장안면 석포리 
+        (지번 6 생략) 대 995㎡ : 263,532,857원 (시가감정이 되어 있지 아니하여 전체액수는 인접지인 제4항 토지와 동일한 평방미터당 가격 407,000원을 적용하여 404,965,000원으로 정함. 제3항 기재 토지와 동일한 지분구성이므로 
+        피고와 
+        소외 2 주식회사의 지분을 합한 지분에 해당하는 금액만큼을 재산분할 대상로 인정함)
+      </p><p>   ⑥ 화성시 장안면 석포리 
+        (지번 7 생략) 임야 75㎡ : 17,863,215원 (감정인 오태헌의 감정결과, 전체액수 27,450,000원. 제3항 기재 토지와 동일한 지분구성이므로 
+        피고와 
+        소외 2 주식회사의 지분을 합한 지분에 해당하는 금액만큼을 재산분할 대상으로 인정함)
+      </p><p>   ⑦ 화성시 장안면 석포리 
+        (지번 2, 5 생략) 지상 A동 건물 : 129,370,500원 (감정인 오태헌의 감정결과, 
+        소외 2 주식회사 이름으로 소유권보존등기가 되어 있으나 뒤에서 보는 바와 같이 
+        피고가 
+        소외 2 주식회사의 재산을 실질적으로 지배하고 있으므로 이 부동산을 재산분할 대상에 포함함)
+      </p><p>   ⑧ 화성시 장안면 석포리 
+        (지번 2, 5 생략) 지상 B동 건물 : 128,205,000원 (감정인 오태헌의 감정결과, 
+        소외 2 주식회사 이름으로 소유권보존등기가 되어 있으나 뒤에서 보는 바와 같이 
+        피고가 
+        소외 2 주식회사의 재산을 실질적으로 지배하고 있으므로 이 부동산을 재산분할 대상에 포함함)
+      </p><p>   ⑨ 화성시 장안면 석포리 
+        (지번 6 생략) 지상 건물 : 214,230,000원 (감정인 오태헌의 감정결과)
+      </p><p>   ⑩ 강원 화천군 화천읍 동촌리 
+        (지번 8 생략) 임야 69,294㎡ 중 1/7 지분 : 7,622,340원 (감정인 오태헌의 감정결과, 전체금액 53,356,380원 중 
+        피고의 지분 해당금액)
+      </p><p>   ⑪ 강원 화천군 화천읍 동촌리 
+        (지번 9 생략) 임야 72,415㎡ 중 1/7 지분 : 8,793,250원 (감정인 오태헌의 감정결과, 전체금액 61,552,750원 중 
+        피고의 지분 해당금액)
+      </p><p>   ⑫ 강원 화천군 화천읍 동촌리 
+        (지번 10 생략) 임야 36,204㎡ 중 1/7지분 : 4,396,200원 (감정인 오태헌의 감정결과, 전체금액 30,773,400원 중 
+        피고의 지분 해당금액)
+      </p><p>   ⑬ 부천시 원미구 중동 1159-5 부광프라자 
+        (이하 3 생략) 중 1/2 지분 : 60,000,000 (감정인 오태헌의 감정결과, 전체금액 1억 2천만 원 중 
+        피고의 지분 해당금액)
+      </p><p>   ⑭ 부천시 오정구 삼정동 
+        (지번 11 생략) 사무실 임대차보증금 : 15,000,000원 (을 제5호증)
+      </p><p>   ⑮ 알리안츠생명보험 주식회사에 대한 무배당프랑스종신보험 기납입보험료 : 33,975,800원 (이 법원의 알리안츠생명보험 주식회사에 대한 사실조회결과, 예상 해약환급금에 대한 자료가 없으므로 기납입보험금을 기준으로 한다)</p><p>    현대해상화재보험 주식회사에 대한 무배당행복을다모은보험 예상 해약환급금 : 347,220원 (이 법원의 현대해상화재보험 주식회사에 대한 사실조회결과)</p><p>    교보생명보험 주식회사에 대한 개인연금저축21C보험, 무배당굿라이프보험, 무배당뉴베스트라이프보험, 무배당교보연금보험, 무배당교보변액유니버셜보험 예상 해약환급금 합계 : 71,442,406원 (이 법원의 교보생명보험 주식회사에 대한 사실조회결과, 2008. 10. 14. 기준 개인연금저축21C보험 예상 해약환급금 29,748,279원, 무배당굿라이프보험 예상 해약환급금 549,950원, 무배당뉴베스트라이프보험 예상 해약환급금 5,755,400원, 무배당교보연금보험 예상 해약환급금 24,340,105원, 무배당교보변액유니버셜보험 예상 해약환급금 11,048,672원)</p><p>    소계 : 2,312,625,358원</p><p>   (2) 소극재산</p><p>   ① 
+        피고의 신스틸 주식회사에 대한 어음금 채무 : 300,000,000원 {뒤에서 보는 바와 같이 원고와 
+        피고의 사실상 혼인파탄일은 2008. 4. 22.경인바, 신스틸 주식회사는 2007. 11. 7. 부천시 원미구 중동 1055 중흥마을 
+        (이하 1 생략)에 관하여 채무자 
+        피고, 채권최고액 3억 원의 근저당권설정등기를 마치고, 
+        소외 2 주식회사에 물품을 공급하면서 물품대금 상당의 어음을 받아온 점(을 제8호증), 뒤에서 보는 바와 같이 
+        소외 2 주식회사의 주식 전부가 사실상 
+        피고에게 귀속되고 
+        피고가 
+        소외 2 주식회사의 재산을 실질적으로 지배하고 있으므로 
+        소외 2 주식회사의 위 어음금 채무도 
+        피고의 채무로 볼 수 있는 점, 위와 같이 2007. 11. 7. 근저당설정 당시 채권최고액이 3억 원이고 
+        피고의 신스틸 주식회사에 대한 2009. 4. 15. 현재 어음금 채무가 316,812,398원인 점(이 법원의 신스틸 주식회사에 대한 사실조회결과)을 고려해 볼 때 위 기간 사이에 
+        피고의 신스틸 주식회사에 대한 어음금 채무 잔액은 3억 원 내외에서 증감변동했던 것으로 보이는 점에 비추어, 2008. 4. 22.경 
+        피고의 신스틸 주식회사에 대한 어음금 채무를 300,000,000원으로 본다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92므501|판결" href="#//">대법원 1993. 5. 25. 선고 92므501 판결</a></span> 참조)}
+      </p><p>   ② 
+        피고의 적극재산 제1항 기재 부동산을 담보로 한 주식회사 하나은행에 대한 대출금 : 142,602,000원 (이 법원의 주식회사 하나은행에 대한 사실조회결과)
+      </p><p>   ③ 
+        피고의 적극재산 제2 내지 9항 기재 부동산을 담보로 한 주식회사 중소기업은행에 대한 대출채무 : 573,749,135원 (을 제31호증)
+      </p><p>   ④ 소계 : 1,016,351,135원</p><p>   (3) 순재산 : 1,490,740,463원 </p><p>   (가) 원고의 순재산 : 194,466,240원</p><p>   (나) 
+        피고의 순재산 : 1,296,274,223원 (=2,312,625,358원 - 1,016,351,135원)
+      </p><p>   다. 당사자의 주장에 대한 판단</p><p>   (1) 원고의 주장에 대한 판단</p><p>   (가) 원고는, 화성시 장안면 석포리 
+        (지번 4, 5, 6, 7 생략) 토지 중 각 995/2849 지분 및 같은리 
+        (지번 4 생략) 지상 건물은 
+        피고가 동생인 
+        소외 1에게 명의신탁 한 재산이므로 이를 분할대상 적극재산에 포함해야 한다고 주장한다. 
+      </p><p>
+        피고의 동생인 
+        소외 1이 2004. 7. 20. 화성시 장안면 석포리 
+        (지번 4, 5, 6, 7 생략) 토지 중 각 995/2849 지분에 관하여 소유권이전등기를 마치고, 2006. 7. 3. 화성시 장안면 석포리 
+        (지번 4 생략) 지상 건물에 관하여 소유권보존등기를 마친 사실은 앞서 본 바와 같다. 
+      </p><p>   그러나 ① 위 2.가.(3)에서 본 바와 같이 화성시 장안면 석포리 
+        (지번 2, 4, 5, 6, 7 생략) 토지의 구입자금으로 주식회사 중소기업은행으로부터 대출받은 3억 3,000만 원 중 
+        소외 1이 1억 원의 지급의무를 부담하기로 
+        피고와 약정한 점, ② 이에 따라 
+        소외 1은 2004년 1월경부터 2006년 11월경까지 
+        피고에게 위 대출금 중 1억 원에 대한 이자로 매월 54만 원을 지급하고, 2007년 1월경 
+        피고에게 약 1억 원을 지급함으로써 위 대출금 중 1억 원의 지급의무를 모두 부담하였다고 보이는 점(이 법원의 주식회사 하나은행에 대한 사실조회결과), ③ 
+        소외 1은 화성시 장안면 석포리 
+        (지번 4 생략) 지상 건물을 강칠순에게 임대하고 보증금 1,000만 원을 받고 매월 월세 80만 원씩을 받아온 점(을 제24호증의 3, 제1심 증인 
+        소외 1의 증언), ④ 인천지방검찰청 부천지청은 2009. 4. 27. 위 석포리 
+        (지번 4, 5, 6, 7 생략) 토지와 
+        (지번 4 생략) 지상 건물에 관한 부동산실권리자명의등기에관한법률위반에 관하여 협의없음이라는 불기소처분을 한 점(이 법원의 인천지방검찰청 부천지청에 대한 사실조회결과)에 비추어 보면, 위 인정사실만으로는 
+        피고와 
+        소외 1 사이에 위 석포리 
+        (지번 4, 5, 6, 7 생략) 토지와 
+        (지번 4 생략) 지상 건물에 관한 명의신탁 약정이 있었다고 인정하기에 부족하고 달리 이를 인정할 증거가 없으므로, 원고의 위 주장은 이유 없다. 
+      </p><p>   (나) 원고는, 
+        피고의 적극재산 중 부천시 오정구 삼정동 
+        (지번 11 생략) 사무실 임대차보증금이 20,000,000원임은 
+        피고가 자인했다고 주장한다. 
+        피고의 2009. 4. 28.자 준비서면에서 
+        피고가 위 임대차보증금이 20,000,000원이라고 자인했으나 위 사무실에 관한 임대차계약서(을 제5호증)에 임대차보증금이 15,000,000원이라고 기재되어 있는 점에 비추어 보면 
+        피고의 위와 같은 자인은 착오에 의한 것으로 보인다(재산분할사건은 가사비송사건이어서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="가사소송규칙|23|">가사소송규칙 제23조 제1항</a></span>에 의하여 가정법원이 직권으로 사실을 조사하고 필요한 증거조사를 해야 하므로 가사소송이나 민사소송에서의 자백에 관한 규정이 재산분할사건에 적용되지 않는다). 달리 위 사무실의 임대차보증금이 20,000,000원임을 인정할 증거가 없으므로 원고의 위 주장은 이유 없다. 
+      </p><p>   (2) 
+        피고의 주장에 대한 판단
+      </p><p>   (가) 
+        피고는, 화성시 장안면 석포리 
+        (지번 4, 5, 6, 7 생략) 토지 중 각 859/2849 지분 및 같은리 
+        (지번 2, 5 생략) 지상 A, B동 건물이 
+        소외 2 주식회사 소유의 재산이므로, 분할대상 적극재산에 포함해서는 안된다고 주장한다.
+      </p><p>
+        소외 2 주식회사가 2004. 7. 20. 화성시 장안면 석포리 
+        (지번 4, 5, 6, 7 생략) 토지 중 각 859/2849 지분에 관하여 소유권이전등기를 마치고, 2006. 7. 3. 화성시 장안면 석포리 
+        (지번 2, 5 생략) 지상 A동, B동 건물에 관하여 소유권보존등기를 마친 사실은 앞서 본 바와 같다.
+      </p><p>   그러나 ① 
+        피고는 1999년경 
+        소외 3으로부터 서울 영등포구 문래동1가 
+        (이하 4 생략)에 있는 공장 및 기계 전부를 1억 5천만 원에 양수하여 
+        소외 2 주식회사를 설립한 점(갑 제18호증, 을 제24호증의 1), ② 
+        소외 2 주식회사의 주식등변동상황명세서에는 설립 당시 
+        소외 1(
+        피고의 동생)이 35%, 
+        소외 4(
+        소외 1의 처)가 10%, 
+        소외 5(
+        피고의 처제)가 25%, 
+        소외 6(
+        피고의 친구)이 30%의 지분을 소유하고 있는 것으로 기재되어 있는데(갑 제19호증), 
+        소외 1은 제1심에서 원고 대리인의 ‘회사 설립 당시 주주가 누구였느냐’는 질문에 
+        소외 1, 
+        4, 
+        5, 
+        피고라고 증언한 점, ③ 또한 
+        소외 1은 제1심에서 재판장의 ‘
+        소외 2 주식회사는 실제로 누구의 회사인가요’라는 질문에 
+        피고의 것이라고 증언한 점, ④ 
+        소외 5는 2005년경 자신의 소유 주식에 관하여 
+        피고의 소유임을 인정하고 
+        피고에게 무상으로 양도한 점(갑 제20호증), ⑤ 
+        소외 1, 
+        4, 
+        5, 
+        6은 
+        소외 2 주식회사의 경영에 참여한 적이 없으며, 
+        피고가 
+        소외 2 주식회사의 대표이사로 
+        소외 2 주식회사를 경영하면서 
+        소외 1, 
+        4, 
+        5, 
+        6에게 수익정산 및 이익배당을 한 번도 하지 않은 것으로 보이는 점(제1심 증인 
+        소외 1의 증언), ⑥ 
+        소외 1과 
+        4가 
+        소외 2 주식회사의 주식을 취득하기 위해 돈을 지출했다는 자료는 없는 점에 비추어 보면, 
+        소외 2 주식회사의 주식 전부는 사실상 
+        피고에게 귀속한다고 봄이 타당하다. 여기에다가 
+        피고가 
+        소외 2 주식회사의 설립시부터 현재까지 대표이사인 점을 보태어 보면, 
+        피고가 
+        소외 2 주식회사의 재산을 실질적으로 지배하고 있다고 보이므로, 
+        소외 2 주식회사 명의의 위 부동산을 분할대상 적극재산에 포함시키는 것이 타당하다. 따라서 
+        피고의 위 주장은 이유 없다. 
+      </p><p>   (나) 
+        피고는 화성시 장안면 석포리 
+        (지번 6, 7 생략) 토지 및 같은리 
+        (지번 6 생략) 지상 건물을 
+        소외 7에게 매도하고 대금을 모두 지급받고 소유권이전청구권가등기를 마쳤으므로, 위 부동산은 사실상 
+        피고의 재산이 아니어서 분할대상 적극재산에서 제외하여야 한다고 주장한다.
+      </p><p>   을 제2, 7, 23, 28호증(가지번호 있는 것은 가지번호 포함)의 각 기재에 의하면, ‘
+        소외 7이 2006. 6. 27. 화성시 장안면 석포리 
+        (지번 6, 7 생략) 토지 및 같은리 
+        (지번 6 생략) 지상 건물을 
+        피고로부터 4억 3,000만 원에 매수하면서, 2006. 6. 27. 계약금 3,000만 원, 2006. 8. 10. 중도금 8,000만 원, 2006. 10. 19. 잔금 6,000만 원을 지급하고, 주식회사 중소기업은행에 대한 대출금 채무 2억 6,000만 원을 인수하기로 한다’는 내용이 기재된 매매계약서가 작성된 사실, 
+        소외 7의 남편인 
+        소외 8이 2006. 8. 10. 
+        피고에게 8,000만 원을 입금한 사실, 
+        소외 7이 2006. 10. 20. 화성시 장안면 석포리 
+        (지번 6 생략) 토지와 건물에 관하여 소유권이전청구권가등기를 마친 사실은 인정된다. 
+      </p><p>   그러나 ① 위 매매계약서상 계약일은 ‘2006. 6. 27.’, 매매목적 토지의 지번은 ‘화성시 장안면 석포리 
+        (지번 6, 7 생략)’, 매매목적 토지의 지목은 ‘대’라고 기재되어 있고(을 제23호증), 화성시 장안면 석포리 
+        (지번 6 생략) 토지는 부동산등기부상 2006. 10. 20. 화성시 장안면 석포리 
+        (지번 6, 7 생략)로 분할되면서 토지 지목이 ‘임야’에서 ‘대’로 변경되었는데(을 제2호증), 
+        소외 7의 남편인 
+        소외 8은 당심에서 원고 대리인이 ‘위 매매계약서를 작성할 때 부동산 소재지의 
+        (지번 2, 7 생략)은 무엇을 보고 기재한 것인가요‘라고 질문하자 등기부등본을 보고 적었다고 증언한 점, ② 위 매매계약서상 계약일은 ‘2006. 6. 27.’, 매수인 주소는 ‘부천시 원미구 중동 1041 덕유마을 
+        (이하 5 생략)’라고 기재되어 있는데(을 제23호증), 
+        소외 7은 부천시 상동에 있는 라일락마을 아파트에서 살다가 위 아파트를 매도하고 부천시 원미구 중동 1041 덕유마을 
+        (이하 5 생략)를 매수하여 2006. 7. 31.경 위 덕유마을 
+        (이하 5 생략)로 이사를 온 점(당심 증인 
+        소외 8의 증언, 을 제28호증의 3), ③ 
+        피고는 위 매매계약에 따라 
+        피고가 
+        소외 7로부터 현금으로 받기로 한 1억 7,000만 원 중 9,000만 원의 수령과 관련한 금융자료를 제출하지 못하고 있는 점에 비추어 보면, 위 인정사실만으로는 
+        피고와 
+        소외 7 사이에 
+        피고의 주장과 같은 매매계약이 체결되었다고 인정하기에 부족하고 달리 이를 인정할 증거가 없으므로, 이를 전제로 한 
+        피고의 위 주장은 이유 없다. 
+      </p><p>   (다) 
+        피고는 주식회사 하나은행에 대한 대출금 채무 7,000만 원과 주식회사 중소기업은행에 대한 대출금 채무 3억 원을 분할대상 소극재산에 포함해야 한다고 주장한다.
+      </p><p>   을 제30호증의 1, 을 제31호증의 각 기재에 변론 전체의 취지를 종합하면, 
+        피고가 2009. 12. 28. 주식회사 하나은행으로부터 7,000만 원, 2010. 6. 10. 주식회사 중소기업은행으로부터 3억 원을 각 대출받은 사실은 인정된다. 그러나 원고가 이혼소송을 제기한 2007. 12. 26.경 이전부터 원고와 
+        피고는 별거 중이고, 
+        피고가 2008. 4. 22.경 반소로써 이혼을 구하고 있으므로, 적어도 2008. 4. 22.경부터 원고와 
+        피고의 혼인생활은 사실상 파탄에 이르렀다고 보인다. 따라서 
+        피고가 혼인파탄 후 증가한 위 대출금의 사용 용도 등에 대하여 구체적으로 증명하지 못하는 이상 증가한 대출금을 그대로 보유하고 있다고 봄이 타당하므로, 위 대출금 채무와 대출받은 돈을 모두 분할대상 재산에서 제외하기로 한다. 결국 
+        피고의 위 주장은 이유 없다. 
+      </p><p>   (라) 
+        피고는 
+        소외 2 주식회사의 2008. 4. 22.경 이후 증가한 어음금 채무를 분할대상 소극재산에 포함해야 한다고 주장한다. 을 제30호증의 2 내지 7의 각 기재에 변론 전체의 취지를 종합하면, 이 사건 변론종결일 현재까지 어음금 채무가 817,097,507원(그 중 578,119,440원은 주식회사 신스틸에 대한 어음금 채무) 발생한 사실을 인정할 수 있다. 그러나 앞서 본 바와 같이 원고와 
+        피고는 2008. 4. 22.경 사실상 혼인파탄에 이르렀고, 위 2008. 4. 22.경 주식회사 신스틸에 대한 어음금 채무는 300,000,000원인 점에 비추어 보면, 위 어음금 채무 합계 817,097,507원 중 517,097,507원(= 817,097,507원 - 300,000,000원)은 원고와 
+        피고의 혼인파탄일 이후에 증가한 어음금 채무로 
+        피고가 위와 같이 증가한 517,097,507원의 어음금 채무의 사용 용도 등에 대하여 구체적으로 증명하지 못하는 이상 증가한 어음금 상당의 물품을 그대로 보유하고 있다고 봄이 타당하므로, 위 517,097,507원의 어음금 채무와 같은 금액 상당의 물품을 모두 분할대상 재산에서 제외하기로 한다. 따라서 
+        피고의 위 주장은 이유 없다. 
+      </p><p>   (마) 
+        피고는 부천시 오정구 삼정동 
+        (지번 11 생략) 사무실 임대차보증금 15,000,000원을 반환받아 사용하고 알리안츠생명보험 주식회사 등에 대한 보험금을 환급받아 사용하였으므로 분할대상 적극재산에 포함해서는 안된다고 주장하나, 위 주장사실을 인정할 증거가 없으므로, 
+        피고의 위 주장은 이유 없다. 
+      </p><p>   (바) 
+        피고는, 부천시 원미구 중동 1052 중흥마을 
+        (이하 6 생략)는 원고가 
+        소외 9에게 명의신탁 한 재산이므로 이를 분할대상 적극재산에 포함해야 한다고 주장한다. 원고가 2007. 12. 17. 
+        소외 9에게 위 아파트에 관하여 매매를 원인으로 하여 소유권이전등기를 마친 사실은 인정된다. 그러나 위 인정사실만으로는 원고와 
+        소외 9 사이에 위 아파트에 관한 명의신탁 약정이 있었다고 인정하기에 부족하고, 달리 이를 인정할 증거가 없으므로, 
+        피고의 위 주장은 이유 없다. 
+      </p><p>   (사) 
+        피고는, 강원 화천군 화천읍 동촌리 
+        (지번 8, 9, 10 생략) 토지 중 각 1/7 지분은 
+        피고가 상속받은 것으로 
+        피고의 특유재산이어서 분할대상 적극재산에서 제외하여야 한다고 주장한다.
+      </p><p>   을 제12 내지 14호증의 각 기재에 변론 전체의 취지를 종합하면, 
+        피고가 1992년경 ‘조상 땅 찾기 운동’을 통하여 
+        피고의 할아버지 소유였던 강원 화천군 화천읍 동촌리 
+        (지번 8, 9, 10 생략) 토지 중 각 1/7 지분에 관하여 소유권보존등기를 마친 사실은 인정된다. 그러나 부부 일방의 특유재산일지라도 다른 일방이 적극적으로 그 특유재산의 유지에 협력하여 그 감소를 방지하였거나 그 증식에 협력하였다고 인정되는 경우에는 분할의 대상이 될 수 있는 것인바, 앞서 본 바와 같이 원고는 1986년경부터 
+        피고와 혼인생활을 유지하면서 3명의 자녀를 낳고, 가사와 양육을 전담해 오면서 위 부동산의 유지에 기여하였으므로, 위 부동산은 모두 재산분할 대상이 된다고 볼 것이어서, 
+        피고의 위 주장은 이유 없다.
+      </p><p>   라. 분할비율 및 방법</p><p>   (1) 분할비율 : 원고 50%, 
+        피고 50%
+      </p><p>   [판단근거 : 위 인정사실, 원고와 
+        피고의 혼인기간이 24년 정도인 점, 원고는 가사와 육아를 담당하고 
+        피고는 
+        소외 2 주식회사를 운영하면서 함께 부부공동재산형성에 기여한 점 등 여러 사정 참작]
+      </p><p>   (2) 분할방법 : 
+        소외 2 주식회사의 재산을 
+        피고에게 귀속시키고 나머지 분할대상 재산 및 채무를 현재대로 각자의 소유 및 책임으로 귀속시킨 다음, 원고와 
+        피고의 순재산 중 재산분할비율에 따라 원고에게 귀속될 액수와 원고의 현재 재산과의 차액에 해당하는 금액을 
+        피고가 원고에게 금전으로 지급하는 방법에 의한다.
+      </p><p>   (3) 
+        피고가 원고에게 지급하여야 할 재산분할금 : 550,903,991원
+      </p><p>   (계산식 : 1,490,740,463원 × 0.5 - 194,466,240원 = 550,903,991원)</p><p>   마. 소결</p><p>   따라서 
+        피고는 원고에게 재산분할로 550,903,991원 및 이에 대하여 이 판결 확정일 다음날부터 갚는 날까지 민법에 정해진 연 5%의 비율로 계산한 지연손해금을 지급할 의무가 있다.
+      </p><p>3. 그러므로 원고의 본소 청구 중 이혼청구는 이유 있어 인용하고, 위자료청구는 위 인정범위 내에서 이유 있어 인용하고 나머지 청구는 이유 없어 기각하며, 재산분할청구, 친권자 및 양육자 지정청구, 양육비와 면접교섭에 관하여는 위와 같이 정할 것인바, 제1심 판결 중 재산분할청구에 관한 부분은 이와 결론을 일부 달리하여 부당하므로 이를 위와 같이 변경하고, 원고의 나머지 항소와 당심에서의 확장된 위자료 청구 및 
+        피고의 항소는 이유 없으므로 이를 기각하기로 하여, 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   반정우(재판장) 김혜진 김동관 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

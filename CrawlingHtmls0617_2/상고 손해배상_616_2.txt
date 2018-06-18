@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2003나11280 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2026178';
+var contIdEtc = '';
+var saNo = '2003나11280';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20040406' ? 
+			'20040406'.length==4 ? Date.parseExact('20040406','yyyy').toString('yyyy. M. d.') : 
+				'20040406'.length==6 ? Date.parseExact('20040406','yyyyMM').toString('yyyy. M. d.') : 
+					'20040406'.length==8 ? Date.parseExact('20040406','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2003나11280 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2003나11280';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2003나11280</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="체육시설의설치이용에관한법률|27|0|null">체육시설의설치·이용에관한법률 제27조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="체육시설의설치이용에관한법률시행규칙|29|0|null">체육시설의설치·이용에관한법률 시행규칙 제29조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="체육시설의설치이용에관한법률|11|0|null">체육시설의설치·이용에관한법률 제11조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="체육시설의설치이용에관한법률시행규칙|8|0|null">체육시설의설치·이용에관한법률 시행규칙 제8조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원|2001가합8320">서울지방법원 2002. 12. 24. 선고 2001가합8320 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2004. 4. 6. 선고 2003나11280 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 항소인】
+      
+        
+          원고(소송대리인 변호사 김순갑)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 피항소인】
+      
+        정리회사 주식회사 쌍방울개발의 관리인 김종철의 소송수계인 주식회사 무주리조트(소송대리인 법무법인 세종 담당변호사 김진국외 1인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2004.3.9.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원|2001가합8320|판결" href="#//">서울지방법원 2002. 12. 24. 선고 2001가합8320 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 피고 패소부분을 취소하고, 그 취소부분에 해당하는 원고의 청구를 기각한다.</p><p>2. 원고의 항소를 기각한다.</p><p>3. 소송총비용은 원고의 부담으로 한다.</p>
+    
+      【청구취지】
+      <p>피고는 원고에게 1,936,596,658원 및 이에 대하여 2000. 12. 15.부터 제1심 판결선고일까지는 연 5%, 그 다음날부터 완제일까지는 연 25%의 각 비율에 의한 금원을 지급하라.</p>
+    
+    
+      【항소취지】
+      <p>원고 : 제1심 판결 중 원고 패소부분을 취소한다. 피고는 원고에게 1,651,275,554원 및 이에 대하여 2000. 12. 15.부터 2002. 12. 24.까지는 연 5%, 그 다음날부터 완제일까지는 연 25%의 각 비율에 의한 금원을 지급하라.</p>
+      <p>피고 : 주문 제1항과 같다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>다음과 같은 사실은 당사자 사이에 다툼이 없거나, 갑 제3호증, 갑 제11호증의 1, 2, 3, 6, 7, 8, 19, 33, 갑 제16, 19호증, 을 제1호증의 2, 3, 을 제2 내지 5호증의 각 기재, 갑 제11호증의 9 내지 15의 각 영상, 제1심 법원의 서울대학교 의과대학 법의학 교실에 대한 사인감정촉탁결과 및 제1심 법원의 거창병원장에 대한 사실조회결과에 변론 전체의 취지를 종합하면 이를 인정할 수 있고 반증이 없다.</p><p>가. 
+        소외 1은 2000. 12. 15. 14:00경 전북 무주군 설천면 심곡리 소재 피고 경영의 무주리조트 스키장 내 웨스턴 썬다운 슬로프(slope)에서 스키를 타고 내려오던 중 웨스턴 슬로프와 썬다운 슬로프가 합류되는 하단부 70m 지점에서 넘어지면서 진행 방향 오른쪽에 설치되어 있던 안전펜스에 부딪치는 바람에 목부분 다발성 열상, 찰과상 및 심한 팽창으로 인하여 호흡중추가 손상되는 중상을 입고 그로 인하여 사망하였다(이하 ‘이 사건 사고’라 한다).
+      </p><p>나. 무주리조트 스키장은 난이도에 따라 30개의 슬로프를 초급, 중급, 상급, 최상급의 슬로프로 구분하고 있는바, 웨스턴 슬로프는 면적 4,790㎡, 인장 300m, 평균 경사도 약 9°의 중급 슬로프이고, 썬다운 슬로프는 면적 5,280㎡, 인장 210m, 평균 경사도 약 19°의 중급 슬로프로서 웨스턴 슬로프로부터 내려오면서 썬다운 슬로프와 합류되게 되어 있다.</p><p>다. 웨스턴 썬다운 슬로프에는 슬로프 가장자리에 있는 나무들과의 경계를 표시하고 스키어들이 슬로프 밖으로 추락하는 것을 방지하기 위하여 안전펜스(그물 형태로 된 플라스틱 재질의 안전망과 이를 지지하는 지주봉으로 구성되어 있다)가 설치되어 있는데, 안전망은 지면으로부터 약 40cm 정도 떨어져 약 120cm 높이로 설치되어 있고 이 안전망을 지지하기 위하여 약 310cm 간격마다 FRP재질(유리섬유를 주보강제로 하여 불포화 폴리에스테르 수지를 적층하여 경화가공한 구조재료로서 철보다 강하고 알루미늄보다 가벼운, 내식 내열성 등이 우수한 강화플라스틱)로 된 지주봉이 세워져 있으며 안전망과 지주봉은 플라스틱 조임장치인 일명 타이랩으로 서로 연결, 고정되어 있다.</p><p>라. 위 스키장의 경영자인 주식회사 쌍방울개발은 1998. 9. 10. 서울지방법원에서 회사정리절차 개시결정을 받았고 2002. 10. 15. 서울지방법원에 의해 회사정리절차종결 결정이 내려진 후 주식회사 무주리조트로 상호가 변경되었다.</p><p>2. 원고의 주장</p><p>원고는, 이 사건 청구원인으로, 다음과 같은 스키장 슬로프 또는 안전펜스의 설치·보존상의 하자 내지 피고의 안전배려의무를 위반한 과실로 인하여 이 사건 사고가 발생하였으므로 피고는 이로 인하여 
+        소외 1 및 동인의 어머니인 원고가 입은 모든 손해를 배상할 책임이 있다고 주장한다.
+      </p><p>가. 
+        소외 1은 상급 수준의 스키어로서 평소 무리한 속도를 내지 않고 안전하게 스키를 타는 습관을 갖고 있는데, 사고 지점은 경사도가 약한데다 
+        소외 1이 사고 지점을 활강할 무렵 특별한 장애도 없었던 점에 비추어 보면 이 사건 사고는 슬로프면의 상태불량에 기인한 것이라고 볼 수밖에 없다.
+      </p><p>나. 피고는 슬로프의 안전시설로 강도가 높은 재질의 지주봉과 안전망만을 설치한 채 지주봉에 충격완화용 스펀지나 안전매트를 설치하지 아니하였고, 지주봉과 안전망을 연결하는 타이랩의 뾰족한 부분이 스키장 슬로프 안쪽으로 향하도록 방치하는 등 공작물의 설치, 보존상 하자를 초래함에 따라 
+        소외 1이 지주봉에 부딪치며 타이랩의 뾰쪽한 부분에 목 부위를 찔려 사망하게 되었다.
+      </p><p>다. 설령 
+        소외 1이 지주봉이나 타이랩에 부딪친 것이 아니고 안전망의 밑 부분에 부딪친 것이라 하더라도 피고는 안전망을 지상에서 40㎝ 정도 떨어진 위치에 설치함으로써 스키를 타는 사람들이 딱딱한 플라스틱 재질의 안전망 밑 부분에 부딪쳐 다칠 수 있는 위험을 야기한 하자 내지 잘못이 있다.
+      </p><p>라. 또한 이 사건 사고가 발생하였을 때 피고 소속 구조요원이 즉시 
+        소외 1을 응급실로 후송하지 못하고 시간을 지체하였고, 의무실에도 의사 1명과 간호보조원 1-2명만을 두고 있어 응급조치가 소홀하였으며, 그들이 사고 발생 40여 분이 지난 후에야 
+        소외 1을 구급차로 인근 거창병원으로 후송하는 등 안전배려의무를 다하지 아니하였다.
+      </p><p>3. 판단</p><p>가. 위 2의 가.항 주장에 대하여</p><p>슬로프면의 상태불량이 이 사건 사고의 원인이라는 원고의 주장은 원고의 막연한 추측에 불과한 것일 뿐, 이를 인정할 만한 아무런 증거가 없으므로 위 주장은 받아들일 수 없다.</p><p>나. 위 2의 나.항 주장에 대하여</p><p>먼저 이 사건 사고 당시 
+        소외 1이 안전망을 지지하는 지주봉에 부딪쳤거나 타이랩의 뾰쪽한 부분에 찔렸는지에 관하여 보건대, 이 사건 사고 당시 
+        소외 1이 지주봉에 부딪쳤거나 타이랩에 찔렸다는 점에 부합하는 갑 제11호증의 22, 갑 제17호증의 1, 3, 갑 제18호증의 3, 6의 각 기재와 갑 제17호증의 2의 일부 기재는 믿기 어렵고, 달리 이를 인정할 증거가 없으며, 오히려 갑 제11호증의 3, 19, 24, 25, 을 제3, 4호증의 각 기재, 갑 제11호증의 13 내지 16의 각 영상, 제1심 법원의 서울대학교 의과대학 법의학 교실에 대한 사인감정촉탁결과, 제1심 법원의 거창병원장에 대한 사실조회결과를 종합하면, 
+        소외 1은 위 사고 지점 부근에서 넘어지면서 진행방향 오른쪽에 설치되어 있던 안전망 밑 부분에 턱 밑 부위를 부딪친 사실이 인정되는바, 이에 의하면 원고의 주장대로 이 사건 사고 당시 지주봉에 스펀지나 안전매트가 설치되어 있지 않았고, 타이랩의 뾰쪽한 부분이 슬로프 안쪽으로 향해져 있었다 하더라도 이 점은 이 사건 사고발생과 인과관계가 없다 할 것이므로 그러한 인과관계가 있음을 전제로 한 원고의 위 주장은 더 나아가 살펴 볼 필요 없이 이유 없다.
+      </p><p>다. 위 2의 다.항 주장에 대하여</p><p>앞서 본 바와 같이 안전망이 지상에서 40㎝ 가량 떨어져 설치되어 있어 
+        소외 1이 그 안전망의 밑 부분에 턱 밑 부위를 부딪치게 되었던 사실은 인정되나, 뒤에서 보는 바와 같이 위 사실만으로는 위 안전망의 설치·보존상 하자가 있다거나 피고에게 스키장 이용자에 대한 안전배려의무를 다하지 못한 과실이 있다고 보기 어렵다.
+      </p><p>오히려, 갑 제11호증의 3, 19, 20, 32, 34, 을 제1호증의 4, 을 제2, 9, 10, 11호증의 각 기재와 을 제1호증의 5, 6의 각 영상에 의하면, 스키장의 경우 각 스키장마다 지형적 여건과 환경이 달라 안전시설에 관한 획일적인 기준을 정하는 것이 가능하지 않으며, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="체육시설의설치·이용에관한법률|27|">체육시설의설치·이용에관한법률 제27조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="체육시설의설치·이용에관한법률 시행규칙|29|">같은 법 시행규칙 제29조</a></span> [별표7]에 의하면, 스키장에는 스키지도요원과 스키구조요원을 배치하되, 스키지도요원은 슬로프 면적 5만㎡당 1인 이상, 스키구조요원은 운영 중인 슬로프별로 2인 이상을 각 배치하여야 한다고 규정되어 있고, 한편 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="체육시설의설치·이용에관한법률|11|">같은 법 제11조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="체육시설의설치·이용에관한법률 시행규칙|8|">같은 시행규칙 제8조</a></span> [별표4]에 의하면 안전시설로서 슬로프 내 이용자의 안전사고위험이 있는 곳에는 안전시설(안전망·안전매트 등)을 설치하여야 하고, 구급차와 긴급구조에 사용할 수 있는 설상차를 각 1대 이상 갖추어야 한다고 규정되어 있을 뿐, 그밖에 세부적인 안전시설 설치기준은 규정되어 있지 않은바, 위 스키장에는 구조요원 24명을 두고 있고, 구급차 2대와 설상차 13대를 구비하고 있으며, 이 사건 사고 당일 웨스턴 썬다운 슬로프에 6명의 구조요원이 근무하고 있었으므로 위 스키장은 위 규정이 요구하는 내용의 안전시설 및 안전요원을 갖추고 있었던 사실, 스키장에 설치되는 안전망은 스키어가 슬로프 밖으로 이탈하는 것을 막고 충돌시 충격을 완화하는 역할을 하는데, 안전망을 지면에 붙여 설치할 경우 스키 앞부분이 먼저 망에 걸리면서 그 충격이 스키어에게 가해질 염려가 있고 그로 인해 스키어가 앞으로 튕겨 나가는 등의 사태가 발생하면 큰 부상을 입을 수 있기 때문에 지면과 안전망 사이에 일정한 공간을 확보함으로써 스키어가 안전망에 충돌하는 순간 스키는 망 밑의 공간을 통해 빠져나가고 스키어는 안전망에 의해 보호를 받을 수 있도록 지면과 일정한 간격을 두고 안전망을 설치하는 사실, 이 사건 사고지점은 경사가 그리 심하지 않고 많이 구부러지지도 않은 곳인데, 사고 당시 
+        소외 1은 안전펜스에 가까운 곳에서 스키를 타던 중 제대로 회전을 하지 못하여 넘어져 미끄러지면서 안전망에 부딪친 사실, 위 스키장의 슬로프, 리프트 탑승장, 리프트 타워, 중앙매표소 등지에는 스키장의 안전수칙과 이용자수칙 게시판 10개와 리프트의 안전수칙과 이용자수칙 게시판 50개가 설치되어 있는 사실이 인정된다.
+      </p><p>공작물의 설치·보존상의 하자라 함은 공작물이 그 용도에 따라 통상 갖추어야 할 안전성을 갖추지 못한 상태에 있음을 말하는 것이고, 공작물의 설치 및 보존에 있어서 항상 완전무결한 상태를 유지할 정도의 고도의 안전성을 갖추지 아니하였다 하여 그 공작물의 설치·보존에 하자가 있는 것이라고는 할 수 없다.</p><p>위에서 인정한 사실에 의하면, 통상적으로 스키어들이 스키를 타는 도중에 균형을 잃거나 방향을 제어하지 못하여 안전망과 충돌하는 경우에 스키어들의 안전을 위해 설치한 망에 스키가 걸림으로써 오히려 스키어가 더 심한 부상을 입게 되는 것을 방지하고자 위와 같이 안전망을 지면과 일정한 간격을 두고 설치하였던 것이고, 이 사건 안전망의 경우 지면에서 40㎝ 정도 떨어져 설치되어 있는데, 위에서 본 바와 같은 안전망과 지면 사이에 공간을 두는 목적에 비추어 볼 때 그 정도의 간격은 적절하다고 보이고 이와 달리 그 간격이 지나치게 넓다고 보이지 않는바, 이 사건 사고는 위와 같이 안전망과 지면 사이에 공간을 두는 바람에 
+        소외 1의 턱 밑 부위가 안전망 밑 부분에 부딪쳐 발생한 것이라는 점에서 안전망과 지면 사이에 공간이 없었더라면 사고가 발생하지 않았으리라는 예측도 전혀 불가능한 것은 아니나, 위 안전망을 설치·관리하는 피고에게 안전망이 통상 갖추어야 할 정도의 안정성을 갖추도록 요구하는 외에 어떠한 형태의 사고도 일어나지 않도록 모든 경우에 대비한 시설을 갖출 것을 요구할 수는 없고, 안전망을 지면에 붙여 설치할 경우 오히려 더 많은 사고발생의 우려가 있으며 스키라는 운동은 그 특성상 슬로프에서 미끄러지거나 넘어지는 등의 위험이 수반되는 것으로서 이를 즐기는 사람들도 그러한 위험을 감수하고 스키를 타게 되는데, 이 사건 사고지점은 심하게 경사가 지거나 구부러진 곳이 아님에도 
+        소외 1은 안전펜스 옆에서 스키를 타다가 제대로 회전을 하지 못하여 안전망에 부딪치게 되었던 점을 감안하여 보면, 이 사건에 있어서 이 사건 사고가 발생하였다는 결과적인 면이나 안전망의 재질이 딱딱한 플라스틱이라는 점만을 들어 피고가 설치한 안전망에 통상 갖추어야 할 안정성이 결여된 하자가 있었다고 단정할 수 없고, 피고가 위 안전망을 설치·관리함에 있어 이용자에 대한 안전배려의무를 다하지 못한 과실이 있다고 볼 수도 없다. 따라서 원고의 위 주장 역시 이유 없다.
+      </p><p>라. 위 2의 라.항 주장에 대하여</p><p>원고는, 피고가 사고를 당하여 중상을 입은 
+        소외 1에 대해 적절한 응급조치나 신속한 후송조치를 취하지 아니한 채 방치하다가 사고 40여 분이 지난 후에야 뒤늦게 병원으로 후송함으로써 사망에 이르게 하였다고 주장하나, 이에 부합하는 갑 제11호증의 22, 갑 제18호증의 3, 5의 각 기재는 믿기 어렵고, 달리 이를 인정할 증거가 없다.
+      </p><p>반면, 갑 제11호증의 3, 18, 23, 28, 29, 30, 31, 갑 제16호증, 갑 제17호증의 2, 을 제3, 4, 5호증의 각 기재(다만 갑 제17호증의 2의 기재 중 앞서 믿지 아니한 부분 제외)에 의하면, 위 스키장에서 구조요원으로 근무하고 있던 
+        소외 2가 2000. 12. 15. 14:00경 사고 지점 위쪽 약 200m 지점에서 다른 부상자를 후송하던 중 이 사건 사고가 난 것을 목격하고 바로 사고 현장으로 간 사실, 그 때 사고를 당한 
+        소외 1의 상처 부위를 다른 스키어가 지혈하고 있었는데, 
+        소외 2는 
+        소외 1의 호흡과 의식이 없는 것을 보고 손가락으로 말려 들어간 
+        소외 1의 혀를 펴 기도를 확보하고 거즈로 출혈 부위를 지혈시키면서 무전으로 사고사실을 알리고 지원을 요청한 사실, 약 2분 후 동료 구조요원인 
+        소외 3, 
+        소외 4가 후송장비를 가지고 도착하자 
+        소외 2는 그들과 함께 
+        소외 1의 기도를 확보하고 심장 마사지를 10회 정도 실시한 후 그를 의무실로 후송한 사실, 당시 의무실에는 의사 
+        소외 5, 간호사 
+        소외 6, 
+        소외 7 및 간호학생들이 근무하고 있었는데, 
+        소외 1은 의무실에 도착했을 때 이미 온 몸에 청색증을 보이고 동공이 풀렸으며 호흡과 맥박이 없는 상태였던 사실, 의사 
+        소외 5와 간호사들은 
+        소외 1이 도착한 즉시 응급처치로 심폐소생술을 시행하였으나 소생기미가 보이지 않자 같은 날 14:20경 위 스키장 내에 대기하고 있던 구급차를 이용하여 
+        소외 1을 인근 거창병원으로 후송한 사실, 
+        소외 1을 병원으로 후송할 때 간호사 
+        소외 7과 간호학생 1명이 동승하여 계속하여 심폐소생술을 시행한 사실, 
+        소외 1은 같은 날 15:00경 거창병원에 도착하였으나 이미 사망한 사실, 
+        소외 1을 후송한 구급차에는 심폐소생술 의료장치와 같은 응급의료장치가 설치되어 있지 않았는데, 일반적으로 구급차에는 그와 같은 장비가 비치되어 있지 않는 사실이 인정된다.
+      </p><p>위 인정사실에 의하면, 사고 후 
+        소외 1에 대한 응급조치와 병원으로의 후송조치가 원고 주장과 같이 제대로 이루어지지 아니하였다고 보기 어렵고, 달리 사고를 당한 
+        소외 1에 대해 피고측에서 안전배려의무를 다하지 못한 잘못이 있음을 인정할 증거도 없다(원고는 병원 후송시 구급차에 간호사 1명과 간호학생 1명만이 동승하였고, 구급차에 응급의료장치도 설치되어 있지 아니하였으므로 피고가 안전배려의무를 충분히 이행하였다고 볼 수 없다고 주장하나, 위에서 본 사고 후의 피고측의 조치와 병원 후송 과정 및 일반적으로 구급차에는 심폐소생술 의료장치와 같은 응급의료장치가 비치되어 있지 않은 점 등에 비추어 볼 때, 원고 주장의 위 사정만으로는 피고에게 안전배려의무를 위반한 과실이 있다고 인정할 수 없고, 그러한 사정과 
+        소외 1의 사망 사이에 인과관계가 있음이 인정되지도 않는다).
+      </p><p>4. 결론</p><p>그렇다면, 원고의 이 사건 청구는 이유 없어 이를 기각할 것인바, 제1심 판결은 이와 일부 결론을 달리하여 부당하므로, 피고의 항소를 받아들여 제1심 판결 중 피고 패소부분을 취소하여 그 취소부분에 해당하는 원고의 청구를 기각하고, 원고의 항소는 이유 없으므로 이를 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   이상훈(재판장) 김대웅 박인식 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

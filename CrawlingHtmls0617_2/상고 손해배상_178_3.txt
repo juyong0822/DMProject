@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 86다카331 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2086915';
+var contIdEtc = '';
+var saNo = '86다카331';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('19870310' ? 
+			'19870310'.length==4 ? Date.parseExact('19870310','yyyy').toString('yyyy. M. d.') : 
+				'19870310'.length==6 ? Date.parseExact('19870310','yyyyMM').toString('yyyy. M. d.') : 
+					'19870310'.length==8 ? Date.parseExact('19870310','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 86다카331 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '86다카331';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />86다카331</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(23)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(40)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(8)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(1)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(10)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2086917">대법원 1987. 3. 10. 선고 86다카604 판결 [공1987.5.1.(799),630]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2088640">대법원 1987. 5. 12. 선고 85다카1195 판결 [집35(2)민,1;공1987.7.1.(803),956]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2099130">대법원 1987. 6. 23. 선고 87다카296 판결 [공1987.8.15.(806),1233]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2100197">대법원 1987. 7. 7. 선고 86다카2392 판결 [공1987.9.1.(807),1299]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2097507">대법원 1987. 7. 21. 선고 87다카229 판결 [공1987.9.15.(808),1385]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2090381">대법원 1988. 1. 19. 선고 87다카853 판결 [공1988.3.15.(820),448]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2090385">대법원 1988. 1. 19. 선고 87다카2202 판결 [공1988.3.15.(820),453]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2099326">대법원 1988. 3. 22. 선고 87다카1580 판결 [집36(1)민,131;공1988.5.1.(823),678]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2100662">대법원 1989. 1. 17. 선고 87다카2970 판결 [공1989.3.1.(843),293]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2090502">대법원 1989. 3. 14. 선고 86다카2731 판결 [집37(1)민,112;공1989.5.1.(847),588]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2088611">대법원 1989. 12. 12. 선고 88다카4093 판결 [공1990.2.1(865),248]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2100965">대법원 1990. 2. 27. 선고 88다카11220 판결 [공1990.4.15.(870),743]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2091164">대법원 1990. 11. 23. 선고 90다카21022 판결 [공1991.1.15.(888),170]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2091323">대법원 1990. 11. 27. 선고 90다카10312 판결 [공1991.1.15.(888),205]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2122428">대법원 1991. 5. 14. 선고 91다124 판결 [공1991.7.1.(899),1623]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2092671">대법원 1991. 8. 13. 선고 91다18712 판결 [공1991.10.1.(905),2357]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2088753">대법원 1991. 10. 25. 선고 91다25284 판결 [공1991.12.15.(910),2825]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2092426">대법원 1991. 11. 26. 선고 91다28702 판결 [공1992.1.15.(912),291]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2097008">대법원 1993. 3. 12. 선고 92다36175 판결 [공1993.5.1.(943),1163]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2099852">대법원 1994. 3. 11. 선고 93다57100 판결 [집42(1)민,204;공1994.5.1.(967),1184]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2101157">대법원 1997. 12. 26. 선고 97다42892 판결 [공1998.2.15.(52),505]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1969246">대법원 2009. 11. 26. 선고 2008다24494 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2063184">대법원 2012. 4. 13. 선고 2009다77198 판결 [공2012상,763]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|163632">일실이익산정에 있어서의 최저임금기준 변동걸 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|528830">서광민 손해의 개념 서강법학연구 6권  / 서강대학교 법학연구소  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|624048">박익환 재량에 기한 손해배상액의 산정 민사판례연구 32권  / 박영사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|93101">김현 인신손해액의 산정에 있어서 손익상계에 관한 연구 건국대학교  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39232">박우동 인신사고의 손해배상에 관한 판례동향 민사재판의 제문제 7권  / 한국사법행정학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39231">박우동 인신사고의 손해배상 민법학의 회고와 전망 : 민법전시행삼십주년기념논문집 (93.12) / 한국사법행정학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|491058">정용엽 원격의료의 민사책임 및 법제개선에 관한 연구 경희대학교  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34441">오용호 일실수익과 그 입증의 정도 민사판례연구 11권  / 박영사  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|805474">김원오 상표법에 도입된 법정손해배상제도의 해석과 바람직한 운용방안 특별법연구 13권 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|507244">이기춘 경찰질서법상 위험개념 및 표현위험과 위험의 의심 : 독일경찰법학의 위험개념 검토를 중심으로 . 공법연구 31집 4호  / 한국공법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34442">한일환 일실수익(이익)을 계산함에 있어 장차 증가될 수익이 통상손해에 속하는지 여부 판례연구 4집  / 서울지방변호사회  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564835">박성수 특허법 제128조 제3항 및 제5항에 의한 손해배상액 산정방법 대법원판례해설 62호 (2006.12) / 법원도서관  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|35510">이시윤 민소법의 최근 판례동향과 명시선서절차의 문제점 한국민사법학의 현대적 전개 : 연람 배경숙교수화갑기념논문집 (91.02) / 박영사  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|466465">배성호 변호사의 민사책임에 관한 연구 영남대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558408">임상혁 공해소송에서의 입증과 반증 고시계 50권 8호 (2006.08) / 국가고시학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833014">문현호 복합부위통증증후군 환자의 노동능력상실률 평가방법 : 대법원 2012. 4. 13. 선고 2009다77198, 77204 판결 법과 정의 그리고 사람:. 박병대 대법관 재임기념 문집(2017)   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125777">오용호 불법행위소송에 있어서의 입증에 관한 연구 : 입증의 정도를 중심으로 서울대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32372">오용호 민사소송에 있어서의 입증의 정도와 개연성에 관한 이론 상 인권과 정의 165호  / 대한변호사협회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|212151">홍기문 자유심증주의에 관한 몇 가지의 문제 민사법연구 3집  / 대한민사법학회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|231838">김병운 일용송전전공에 대한 월 가동일수 25일의 경험칙 인정여부 대법원판례해설 25호 (96.11) / 법원도서관  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|507340">윤태식 외국인의 인신 손해배상액 산정에 있어서의 과실이익과 위자료 법조 52권 9호 (2003.09) / 법조협회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34419">황병일 손해배상액 산정의 문제점 변호사 : 법률실무연구 21집  / 서울지방변호사회  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|159539">양창수 1987년 민법판례개관 하 법률신문 1731호  / 법률신문사  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34431">오용호 대학에 재학중인 피해자의 장래의 일실이익 대법원판례해설 11호 (90.07) / 법원도서관  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|855022">신동일 불공정거래행위로서의 개별적 거래거절로 인한 민사상 손해배상에 관한 연구 사법논집=. 제65집 제65집 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|563352">김재형 제3자에 의한 채권침해 : 판례의 전개를 중심으로. 민법학의 현대적양상 : 나암 서 민교수정년기념논문집 (2006.05) / 법문사  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|498634">송재섭 상표 희석화 이론의 해석과 적용 서울대학교 대학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631529">최우진 구체적 액수로 증명 곤란한 재산적 손해의 조사 및 확정 : 사실심 법원 권능의 내용과 한계 사법논집 . 제51집   / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683236">문현호 복합부위통증증후군 환자의 노동능력상실률 평가방법 대법원판례해설 91호  / 법원도서관  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39250">김학원 일실퇴직금의 청구요건과 그 산정방법 사법논집 24집  / 대법원 법원행정처  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40678">홍기문 증명책임에 관한 판례 민사소송법의 제문제 : 경허 김홍규박사화갑기념 Ⅰ (92.12) / 삼영사  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32186">오용호 일실수익과 그 입증의 정도 법조 38권 2호 (89.02) / 법조협회  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39278">박해성 노동능력을 상실한 자가 종전 직장에 그대로 다니는 경우의 일실이익 민사판례연구 14권  / 박영사  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163020">이보환 불법행위로 인한 특별손해 사법논집 19집  / 대법원 법원행정처  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|35518">이시윤 최근의 민소법의 판례동향과 강제집행법상의 명시선서절차의 문제점 판례월보 243호  / 판례월보사  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32136">오용호 미국의 불법행위법상의 Res Ipsa Loquitur원칙, 상 법조 39권 2호 (90.02) / 법조협회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34445">김성수 특수직업종사자에 대한 가동년한의 인정 대법원판례해설 11호 (90.07) / 법원도서관  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|190363">윤진영 재해보상과 과실책임 재판자료 40집 (하) / 법원행정처  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|456837">전경근 대형참사와 민사책임 : 인천 호프집화재사건과 관련하여 . 법학논총 6호  / 경원대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|35435">오용호 민사소송에 있어서의 입증의 정도 법조 40권 7호 (91.07) / 법조협회  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40666">홍기문 자유심증주의 월간고시 21권 6호 (94.05) / 법지사  1994 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카538">대법원 1986.3.25 선고 85다카538 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카2424">대법원 1987.3.10 선고 85다카2424 판결(동지)</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|67다1024">
+대법원 1967.9.26 선고 67다1024 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|81다1045">1982.4.13 선고 81다1045 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|86다카604">
+1987.3.10 선고 86다카604 판결(동지)</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카449">
+대법원 1985.9.24 선고 85다카449 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카595">
+1985.11.26 선고 85다카595 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|86다카2112">1987.3.10. 선고 86다카2112 판결(동지)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|4293민상853">당원 1961.12.7. 선고 4293민상853 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|4294민상1259">1962.3.22. 선고 4294민상1259 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|65다1577">1965.9.28. 선고 65다1577,1578 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|67다1295">1967.9.5. 선고 67다1295 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|67다1024">1967.9.26. 선고 67다1024 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|71다2151">1971.12.28. 선고 71다2151 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카449">당원 1985.9.24. 선고 85다카449 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카538">당원 1986.3.25. 선고 85다카538 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카449">당원 1985.9.24. 선고 85다카449 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카595">1985.11.26. 선고 85다카595 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례법|12|0|null">소송촉진등에관한특례법 제12조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|85나1692">
+서울고등법원 1985.12.19 선고 85나1692 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1987. 3. 10. 선고 86다카331 판결</h2><p class="sub_title">[손해배상][집35(1)민,134;공1987.5.1.(799),626]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 불법행위로 인한 부상으로 종전 직업에 종사할 수 없게 된 자에 대한 일실이익 산정방법</p>
+      <p></p>
+      <p>
+        </p><p>나. 손해액에 대한 주장입증이 미흡한 경우 석명의 요부</p>
+      <p></p>
+      <p>
+        </p><p>다. 향후소득에 관한 입증책임 및 그 증명도</p>
+      <p></p>
+      <p>
+        </p><p>라. 향후소득의 예측이 불가능한 경우의 법원의 조처</p>
+      <p></p>
+      <p>
+        </p><p>마. 피해자의 향후소득을 일률적으로 도시일용노동임금 상당액으로 추정함의 당부</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 사고당시 일정한 직업에 종사하여 수입을 얻고 있던 자가 사고로 인한 부상으로 신체기능장애가 생겨 그 직업에는 더 이상 종사할 수 없게 된 경우에 그 일실이익은 종전직업의 소득으로부터 잔존한 신체기능을 가지고 장차 다른 직업에 종사하여 얻을 수 있을 것이 예상되는 향후소득을 공제하는 방법으로 산정할 수 있음은 물론 종전 직업의 소득에 피해자의 노동능력상실율을 곱하는 방법으로 일실이익을 산정할 수도 있다고 할 것인바, 다만 예상되는 향후소득을 공제하는 방법에 의할 경우에는 그 향후소득의 예측이 합리적이고 객관성 있는 근거에 터잡은 것임을 요하며 또 노동능력상실율을 적용하는 방법에 의할 경우에도 그 노동능력상실율은 단순한 의학적 신체기능장애율이 아니라 피해자의 연령, 교육정도, 종전 직업의 성질과 직업경력 및 기능숙련정도, 신체기능장애정도 및 유사직종이나 타직종에의 전업가능성과 그 확률 기타 사회적, 경제적 조건을 모두 참작하여 경험칙에 따라 정한 수익상실율로서 법관의 자의가 배제된 합리적이고 객관성 있는 것임을 요한다고 할 것이므로, 당해사건에서 어느 방법을 채택할 것인가는 구체적으로 현출된 증거와 사실을 기초로 하여 어느 방법이 보다 합리적이고 객관성 있는 장래가득수익을 반영하는 것인가에 따라 결정하여야 한다.</p>
+      <p></p><p>
+        </p><p>나. 손해원인이 인정되는 이상 손해액에 관한 당사자의 주장과 입증이 미흡하더라도 법원은 적극적으로 석명권을 행사하고 입증을 촉구하여야 하며 경우에 따라서는 직권으로 손해액을 심리판단할 필요가 있다.</p>
+      <p></p><p>
+        </p><p>다. 일실이익을 종전직업의 소득에서 향후 소득을 공제하는 방법으로 산정할 경우에 그 향후소득에 대한 입증책임은 피해자에게 있으므로 만일 피해자가 이를 입증하지 못하면 그 불이익은 피해자에게 돌아갈 수 밖에 없을 것이나 향후의 예상소득에 관한 입증에 있어서의 증명도보다 이를 경감하여 피해자가 현실적으로 얻을 수 있을 구체적이고 확실한 소득의 증명이 아니라 합리성과 객관성을 잃지 않는 범위내에서의 상당한 개연성 있는 소득의 증명으로서 족하다.</p>
+      <p></p><p>
+        </p><p>라. 향후소득의 입증에 관한 석명권 행사와 입증촉구의 노력에도 불구하고 향후소득의 예측이 불가능한 경우에는 법원은 합리적이고 객관성있는  노동능력상실율을 가려낼 수 있는 한 직권으로 이를 적용하여서라도 일실이익을 산정하여야 할 것이며 향후소득의 예측이 불가능하다고 하여 바로 피해자의 청구를 배척하여서는 안된다.</p>
+      <p></p><p>
+        </p><p>마. 피해자가 사고의 후유증으로 인하여 종전 직업에 종사할 수 없게  되었다 하더라도 그 사실만으로 바로 그의 장래의 소득이 도시일용노동임금 상당액이라고 추정할 수는 없을 것이고 피해자가 장래 도시일용노동임금보다 소득이 많은 직업이나 직종에 종사하기 어렵고 일용노동에만 종사할 수 밖에 없을 것이라고 예측되는 특별한 사정이 있을 때에 한하여 그의 장래의 소득을 일용노동임금 상당액이라고 추정할 수 있다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">민법 제763조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">가.다.라.마.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카538|판결" href="#//">대법원 1986.3.25 선고 85다카538 판결</a></span><br />라. 마.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카2424|판결" href="#//">대법원 1987.3.10 선고 85다카2424 판결(동지)</a></span><br />나.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|67다1024|판결" href="#//">대법원 1967.9.26 선고 67다1024 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|81다1045|판결" href="#//">1982.4.13 선고 81다1045 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|86다카604|판결" href="#//">1987.3.10 선고 86다카604 판결(동지)</a></span> <br />마.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카449|판결" href="#//">대법원 1985.9.24 선고 85다카449 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카595|판결" href="#//">1985.11.26 선고 85다카595 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|86다카2112|판결" href="#//">1987.3.10. 선고 86다카2112 판결(동지)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          노남진   소송대리인 변호사 정성흠
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상 고 인】
+      
+          임창순   소송대리인 변호사 김평우, 송영식, 경수근, 최명규
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|85나1692|판결" href="#//">
+서울고등법원 1985.12.19 선고 85나1692 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결중 기대수익상실의 손해에 관한 피고의 패소부분을 파기하고, 그 부분 사건을 서울고등법원으로 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  피고 소송대리인의 상고이유를 본다.</p><p>  타인의 불법행위로 인하여 상해를 입은 피해자가 부상이 없었더라면 장차 얻을 수 있을 이익 즉 일실이익을 소극적 손해로서 주장하는 경우에 그 일실이익의 산정방법으로는 첫째로, 사고가 없었더라면 피해자가 얻을 수 있는 개개소득의 상실을 일실이익으로 보고 사고당시 소득과 사고후 향후소득과의 차액을 산출하는 방법과 둘째로, 일실이익의 본질을 소득창출의 근거가 되는 노동능력의 상실자체로 보고 상실된 노동능력의 가치를 사고당시의 소득이나 추정소득에 의하여 평가하는 방법을 생각할 수 있다.</p><p>  그런데 일실이익과 같은 장래의 기대수익의 인정은 불확정한 매래사실의 예측이므로 당해사건에서 현출된 구체적 사정을 기초로 하여 합리적이고 객관성있는 기대수익액을 산정할 수 있으면 그로서 족한 것이고 위에 말한 두가지방법중 어느 한쪽만이 유일한 산정방법이라고 단정할 수는 없을 것이다.</p><p>  사고당시 
+        <span class="accrnt_txt">일정한 직업에 종사하여 수입을 얻고 있던 자가 사고로 인한 부상으로 신체기능장애가 생겨 그 직업에는 더이상 종사할 수 없게 된 경우에 그 일실이익은 종전직업의 소득으로부터 잔존한 신체기능을 가지고 장차 다른 직업에 종사하여 얻을 수 있을 것이 예상되는 향후소득을 공제하는 방법으로 산정할 수 있음은 물론 종전직업의 소득에 피해자의 노동능력상실율을 곱하는 방법으로 일실이익을 산정할 수도 있다고 할 것인바, 다만 예상되는 향후소득을 공제하는 방법에 의할 경우에는 그 향후소득의 예측이 합리적이고 객관성있는 근거에 터잡은 것임을 요하며 또 노동능력상실율을 적용하는 방법에 의할 경우에도 그 노동능력상실율은 단순한 의학적 신체기능장애율이 아니라 피해자의 연령, 교육정도, 종전직업의 성질과 직업경력 및 기능숙련정도, 신체기능장애정도 및 유사직종이나 타직종에의 전업가능성과 그 확률 기타 사회적, 경제적 조건을 모두 참작하여 경험칙에 따라 정한 수익상실율로서 법관의 자의가 배제된 합리적이고 객관성 있는 것임을 요한다고 할 것이므로, 당해사건에서 어느 방법을 채택할 것인가는 구체적으로 현출된 증거와 사실을 기초로 하여 어느 방법이 보다 합리적이고 객관성 있는 장래가득수익을 반영하는 것인가에 따라 결정되어야 할 것이다.</span>
+      </p><p>
+        <span class="accrnt_txt">일실이익을 종전직업의 소득에서 향후소득을 공제하는 방법으로 산정할 경우에 그 향후소득에 대한 입증책임은 물론 피해자에게 있을 것이므로 만일 피해자가 이를 입증하지 못하면 그 불이익은 피해자에게 돌아갈 수 밖에 없을 것이다.</span>
+      </p><p>  그런데 손해원인 사실이 인정되고 따라서 가해자에게 손해배상책임이 있음이 분명한데도 그 손해액에 관한 입증이 미흡하다 하여 입증책임의 형식논리에 구애되어 피해자의 배상청구를 배척해 버리는 것은 아무래도 공평과 정의의 관념에 어긋나는 처사라고 하지 않을 수 없으므로 일찍부터 
+        <span class="accrnt_txt">당원은 손해원인이 인정되는 이상 손해액에 관한 당사자의 주장과 입증이 미흡하더라도 법원은 적극적으로 석명권을 행사하고 입증을 촉구하여야 하며 경우에 따라서는 직권으로 손해액을 심리판단할 필요가 있음을 천명해 온 바 있다.</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|4293민상853|판결" href="#//">당원 1961.12.7. 선고 4293민상853 판결</a></span>; 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|4294민상1259|판결" href="#//">1962.3.22. 선고 4294민상1259 판결</a></span>; 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|65다1577|판결" href="#//">1965.9.28. 선고 65다1577,1578 판결</a></span>; 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|67다1295|판결" href="#//">1967.9.5. 선고 67다1295 판결</a></span>; 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|67다1024|판결" href="#//">1967.9.26. 선고 67다1024 판결</a></span>; 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|71다2151|판결" href="#//">1971.12.28. 선고 71다2151 판결</a></span> 참조).
+      </p><p>  종래의 재판실무가 일실이익을 산정함에 있어서 그 향후소득을 도시 또는 농촌일용노임을 가지고 인정해 온 것은 이러한 최저일반노임의 입증으로서 일응 피해자가 그 입증책임을 다한 것으로 하여 향후 소득에 관한 피해자의 입증곤란을 완화해 주고자 하는데에 그 본래의 뜻이 있었다고 생각된다.</p><p>  그러나 피해자의 연령, 교육정도, 종전직업의 성질, 직업경력 및 기능숙력정도, 신체기능장애정도 및 유사직종이나 타직종에의 전업가능성과 확률 기타 사회적, 경제적 조건과 경험칙에 비추어 피해자가 장차 도시 또는 농촌일용노동에 종사할 것으로 예상되는 경우에만 위 일용노임을 가지고 향후소득으로 인정할 수 있는 것이며 그렇지 않는 경우에까지 일률적으로 위 일용노임을 가지고 향후소득으로 인정한다는 것은 합리성과 객관성을 결여하여 부당하다고 하지 않을 수 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카449|판결" href="#//">당원 1985.9.24. 선고 85다카449 판결</a></span> 참조).
+      </p><p>
+        <span class="accrnt_txt">이러한 경우에 법원으로서는 당사자가 도시 또는 농촌일용노임외에 별다른 향후소득의 입증을 하지 않고 있다고 하더라도 적극적으로 석명권을 행사하고 입증을 촉구하여 위에서 설시한 피해자의 연령, 교육정도등 여러사정에 비추어 장차 피해자가 종사가능하다고 보여지는 직업과 그 소득을 조사 심리하여야 할 것이며, 이러한 향후의 예상소득에 관한 입증에 있어서 그 증명도는 과거사실에 대한 입증에 있어서의 증명도 보다 이를 경감하여 피해자가 현실적으로 얻을 수 있을 구체적이고 확실한 소득의 증명이 아니라 합리성과 객관성을 잃지 않는 범위내에서의 상당한 개연성이 있는 소득의 증명으로서 족하다고 보아야 할 것이다.</span>
+      </p><p>  위와 같은 
+        <span class="accrnt_txt">석명권행사와 입증촉구의 노력에도 불구하고 향후소득의 예측이 불가능한 경우에는 법원은 합리적이고 객관성 있는 노동능력상실율(수익상실율)을 가려낼 수 있는 한 직권으로 이를 적용하여서라도 일실이익을 산정하여야 할 것이며 향후소득의 예측이 불가능하다고 하여 바로 원고의 청구를 배척하여서는 안될 것이다.</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카538|판결" href="#//">당원 1986.3.25. 선고 85다카538 판결</a></span> 참조).
+      </p><p>  원심판결이유에 의하면, 원심은 원고가 1979.3.12부터 이 사건 사고시까지 5년간 의정부시 금호동 150의 15에 있는 소외 안창환이 경영하는 세멘벽돌 및 부록크생산공장에서 위 벽돌등을 직접 만드는 한편 그 밑의 직원들을 지시감독하고 벽돌제작, 기계수리등 업무에 종사하면서 월 256,153원의 급여와 1년에 428,141원의 특별급여를 지급받고 있었는데 원심판시의 이 사건 사고로 입은 상해를 1984.10.8경까지 치료받았으나 앞으로도 척추유합술 등의 치료가 필요하고 그 치료등이 모두 종결된다 하더라도 좌우측 요추횡돌기 골절로 인한 요추운동장애등 후유증으로 인하여 더이상 위 직종에 종사할 수 없게 되고 일반도시일용노동에 종사하는 경우에도 그 노동능력의 47퍼센트(%)를 상실한 사실과 원심변론종결당시에 가까운 1985.10.24경의 일반도시일용노동에 종사하는 성인남자의 임금은 1일 6,000원인 사실을 인정한 후 원고는 이 사건 사고로 말미암아 이 사건 사고시부터 6개월간의 치료기간이 끝나는 때로부터 55세가 끝날 때까지 297개월간 이 사건 사고당시 얻고 있었던 월수입금 291,831원중에서 잔존하는 노동능력으로서 일반도시일용노동에 종사하여 얻게 되는 월수입금 79,500원을 공제한 212,331원씩의 각 가득수입을 상실하는 손해를 입었다고 판단하고 있다.</p><p>  그러나 
+        <span class="accrnt_txt">원고가 원판시 후유증으로 인하여 종전의 원판시 직업에 종사할 수 없게 되었다 하더라도 그 사실만으로 바로 그의 장래의 소득이 도시일용노동임금상당액이라고 추정할 수는 없을 것이고 원고는 장래 도시일용노동임금보다 소득이 많은 직업이나 직종에 종사하기 어렵고 일용노동에만 종사할 수 밖에 없을 것이라고 예측되는 특별한 사정이 있을 때에 한하여 그의 장래의 소득을 일용노동임금 상당액이라고 추정할 수 있을 것이다.</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카449|판결" href="#//">당원 1985.9.24. 선고 85다카449 판결</a></span>; 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카595|판결" href="#//">1985.11.26. 선고 85다카595 판결</a></span> 참조).
+      </p><p>  원심이 원고가 장래 도시일용노동임금보다 소득이 많은 직업이나 직종에 종사할 수 없고 도시일용노동에만 종사할 수 밖에 없을 것이라는 특별한 사정이 있는지의 여부도 심리하지 아니한 채 그의 향후 소득을 도시일용노동임금 상당액이라고 단정하고 그 일실이익이 그 판시와 같이 된다고 판단한 것은 일실이익산정에 관한 법리오해와 심리미진, 채증법칙 위반의 위법이 있다할 것이고, 이는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진등에관한특례법|12|">소송촉진등에관한특례법 제12조 제2항</a></span>에 규정된 파기사유에 해당한다 할 것이므로 이 점을 지적하는 논지는 그 이유가 있다.
+      </p><p>  그러므로 원심판결의 피고 패소부분중 일실이익상실손해에 관한 부분을 파기하고, 다시 심리판단케 하기 위하여 이 부분 사건을 원심인 서울고등법원에 환송하기로 하여 관여법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김달식(재판장) 윤일영 최재호 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

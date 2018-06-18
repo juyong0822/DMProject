@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2000나10002 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1990183';
+var contIdEtc = '';
+var saNo = '2000나10002';
+var sngoNm = '선고';
+var saNm = '사업 이관';
+try {
+	var sngoDay=('20010703' ? 
+			'20010703'.length==4 ? Date.parseExact('20010703','yyyy').toString('yyyy. M. d.') : 
+				'20010703'.length==6 ? Date.parseExact('20010703','yyyyMM').toString('yyyy. M. d.') : 
+					'20010703'.length==8 ? Date.parseExact('20010703','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결：상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2000나10002 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2000나10002';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2000나10002</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(8)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(9)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|518959">정해덕 선하증권상의 국제재판관할합의 국제사법연구 8호  / 법영사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|521509">석광현 전속적 국제재판관할합의의 유효요건 법률신문 3270호  / 법률신문사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|579606">조인영 화물의 불법인도시 신용장개설은행의 운송인에 대한 손해배상채권과 개설의뢰인에 대한 신용장대금채권과의 관계 법조 56권 11호 (2007.11) / 법조협회  2007 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사소송법|26|0|null">민사소송법 제26조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="상법|129|0|null">상법 제129조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="상법|820|0|null">상법 제820조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다20093">대법원 1997. 9. 9. 선고 96다20093 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|82다카1533">대법원 1983. 3. 22. 선고 82다카1533 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다13211">대법원 1999. 4. 23. 선고 98다13211 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|84다카1324">대법원 1987. 3. 24. 선고 84다카1324 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|78다15">1978. 12. 26 선고 78다1785 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|90다18678">대법원 1991. 7. 23. 선고 90다18678 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|84다카1324">대법원 1987. 3. 24. 선고 84다카1324 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다13211">대법원 1999. 4. 23. 선고 98다13211 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다26924">대법원 2000. 9. 8. 선고 99다26924 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="섭외사법|13|0|null">섭외사법 제13조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|476|0|null">민법 제476조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|479|0|null">민법 제479조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례법|3|0|null">소송촉진등에관한특례법 제3조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원|98가합74877">
+서울지법 2000. 1. 14. 선고 98가합74877 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고법 2001. 7. 3. 선고 2000나10002 판결：상고</h2><p class="sub_title">[ 사업 이관][하집2001-2,209]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1]선하증권의 이면약관에서 정한 전속재판의 관할합의의 규정이 그 지정된 외국법원에 대하여 합리적인 관련성을 결여하고, 또한 현저하게 불합리하고 불공정한 경우에 해당하여 무효라고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[2]해상운송인이 선하증권과 상환하지 아니하고 운송물을 선하증권 소지인이 아닌 자에게 인도한 경우, 고의 또는 중대한 과실에 의한 불법행위가 성립한다고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3]선하증권과 상환 없이 화물이 인도되어 그 소지인인 신용장 개설은행이 손해를 입은 경우, 신용장 개설은행이 담보를 제공받지 아니하였거나 화물의 행방을 알아보지 아니하였다는 사실 등만으로는 사회통념상 또는 신의성실의 원칙상 주의의무를 게을리한 잘못이 있다고 보기 어렵다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1]선하증권의 이면약관에서 정한 전속재판의 관할합의의 규정이 그 지정된 외국법원에 대하여 합리적인 관련성을 결여하고, 또한 현저하게 불합리하고 불공정한 경우에 해당하여 무효라고 한 사례.</p>
+      <p></p><p>
+        </p><p>[2]해상운송인이 선하증권과 상환하지 아니하고 운송물을 선하증권 소지인이 아닌 자에게 인도한 경우, 고의 또는 중대한 과실에 의한 불법행위가 성립한다고 한 사례.</p>
+      <p></p><p>
+        </p><p>[3]선하증권과 상환 없이 화물이 인도되어 그 소지인인 신용장 개설은행이 손해를 입은 경우, 신용장 개설은행이 담보를 제공받지 아니하였거나 화물의 행방을 알아보지 아니하였다는 사실 등만으로는 사회통념상 또는 신의성실의 원칙상 주의의무를 게을리한 잘못이 있다고 보기 어렵다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|26|">민사소송법 제26조</a></span>,        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|"> 민법 제103조</a></span>[2]        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|"> 민법 제750조</a></span>,        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|129|"> 상법 제129조</a></span>,        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|820|"> 제820조</a></span>[3]        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|"> 민법 제2조</a></span>,        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|"> 제396조</a></span>,        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|"> 제763조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,피항소인】
+      
+         주식회사 한국외환은행 (소송대리인 변호사 김기석 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고,항소인】
+      
+         카와사키 키센 가이샤 주식회사 (Kawasaki Kisen Kaisha, Ltd.)(소송대리인 법무법인 김신앤드류 담당변호사 정해덕)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원|98가합74877|판결" href="#//">
+서울지법 2000. 1. 14. 선고 98가합74877 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>1. 피고의 항소를 기각한다.</p><p>2. 항소비용은 피고의 부담으로 한다.</p>
+    
+      【청구취지및항소취지】
+      <p> 1. 청구취지</p>
+      <p>피고는 원고에게 금 2,569,476,891원 및 이에 대하여 1997. 10. 17.부터 이 사건 소장부본 송달일까지는 연 5%, 그 다음날부터 완제일까지는 연 25%의 각 비율에 의한 금원을 지급하라는 판결.</p>
+      <p>2. 항소취지</p>
+      <p>원심판결을 취소하고, 원고의 청구를 기각한다는 판결을 구함.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>1. 기초 사실</p><p>다음의 각 사실은 갑 제1호증의 1 내지 갑 제4호증(가지번호 서증 포함, 이하 같다), 갑 제7호증 내지 갑 제16호증의 2, 을 제1, 3, 4호증의 각 기재 및 원심 증인 김경구, 이병근의 각 증언에 원심 피고 울산해운 주식회사 대표이사 이윤우에 대한 본인신문 결과와 변론의 전취지를 종합하여 인정할 수 있다.</p><p>가.소외 동해펄프 주식회사(이하 '동해펄프'라 한다)는 홍콩 소재 소외 한화 주식회사(이하 '한화'라 한다)로부터 카수아리나 우드칩(Casuarina Woodchips)을 수입하기로 하는 계약을 체결하고, 그 대금 지급을 위하여 원고은행 세종로지점에 신용장 발행을 의뢰하였다.</p><p>나.위 원고 은행 세종로지점은 위와 같이 동해펄프로부터 신용장 발행의뢰를 받고, 1997. 8. 25. 한화의 거래은행인 소외 체이스 맨허탄은행 홍콩지점에게 신용장번호 M0615708NU00064, 발행일 1997. 8. 22., 유효기간 1998. 3. 31., 수익자 한화, 상환은행 체이스 맨허탄은행 뉴욕지점, 신용장대금 미화 2,749,740$(10%의 금액오차 허용)의 일람후 60일 결제조건의 기한부 신용장을 발행하였다.</p><p>다.소외 한화는 피고와 사이에 중국 해구항(Haikou Port)에서 울산항까지 위 우드칩을 운송하기로 하는 운송계약을 체결한 다음, 1997. 9. 11. 중국 해구항에서 카수아리나 우드칩 33,945.07만 t(이하 '이 사건 화물'이라 한다)을 피고 소유의 "레이초(Raicho) 77" 선박에 선적하였고, 피고의 선하증권 발행 대리인인 소외 차이나 오션 쉽핑 에이전시(China Ocean Shipping Agency)로부터 같은 회사가 피고를 대리하여 발행한 선하증권번호 PHB97-046, 수하인 원고, 통지처 동해펄프로 된 이 사건 지시식 선하증권을 교부받아 위 체이스 맨허탄은행 홍콩지점에 이를 양도하였다.</p><p>라.위 체이스 맨허탄은행 홍콩지점은 1998. 2. 18. 이 사건 신용장 및 이에 따른 선하증권 등 선적서류를 매입한 다음 같은 달 25. 같은 서류를 원고에게 송부하였고, 상환은행인 체이스 맨허탄은행 뉴욕지점을 통하여 원고에게 신용장대금의 지급청구를 하여 원고는 만기일인 1998. 4. 28. 위 은행 뉴욕지점에 신용장대금 미화 2,809,092.48$를 지급하였으며, 원고는 위 동해펄프의 부도로 신용장대지급금을 위 회사로부터 상환받지 못한 채 현재까지 이 사건 화물에 대한 위 선하증권을 소지하고 있다.</p><p>마.이 사건 화물은 1997. 9. 17. 양하항인 울산항에 도착하였는데, 소외 동해펄프는 1997. 9. 11. 피고에게 이건 화물이 양하항인 울산항에 도착하는 즉시 같은 소외 회사가 피고에게 보증서(Letter of Indemnity)를 제출하는 방법으로 선하증권 없이 이 사건 화물을 인도하여 줄 것을 요청하였고, 피고는 같은 달 18. 이 사건 선박의 선장에게 소외 동해펄프로부터 보증서를 교부받고, 선하증권 없이 이건 화물을 인도하여 줄 것을 지시하였으며, 이에 따라 소외 동해펄프는 같은 해 10. 17. 위 선박의 선장으로부터 이 사건 화물을 인도받았다.</p><p>2. 본안전 항변에 대한 판단</p><p>가.원고가 선하증권의 소지인으로서 운송인인 피고에 대하여 화물의 불법인도로 인한 손해배상을 구하는 이 사건에 있어서, 피고는 이 사건 선하증권의 이면약관 제27조가 전속재판의 관할합의에 대하여 규정하고 있고, 그 규정에 의하면 선하증권에 포함되거나 명시된 계약에서 발생하는 소송은 일본국법에 의하고, 운송인을 상대로 하는 소송은 일본국 동경지방법원이 관할한다고 되어 있으므로 대한민국 법원에 제기된 이 사건 소송은 관할권이 없는 법원에 제기된 소송으로 부적법하다고 다툰다.</p><p>나.원·피고 사이의 운송계약상 선하증권 이면에 기재된 관할의 합의에 관한 규정은 다음과 같다.</p><p>"27. 본 선하증권에 의하여 입증되거나 규정된 계약은 달리 정함이 없는 한 일본법에 의하여 규율되며, 운송인에 대한 어떠한 소송도 일본국 동경지방법원에 제기되어야 한다.</p><p>27. The contract evidenced by or contained in this Bill of Lading shall be governed by Japanese law as may be otherwise provided for herein and any action against the Carrier hereunder shall be brought before the Tokyo District Court in Japan."</p><p>다.대한민국 법원의 관할을 배제하고 외국의 법원을 관할법원으로 하는 전속적인 국제관할의 합의가 유효하기 위하여는, 당해 사건이 대한민국 법원의 전속관할에 속하지 아니하고, 지정된 외국법원이 그 외국법상 당해 사건에 대하여 관할권을 가져야 하는 외에, ① 당해 사건이 그 외국법원에 대하여 합리적인 관련성을 가질 것이 요구된다고 할 것이고, ② 한편, 전속적인 관할 합의가 현저하게 불합리하고 불공정한 경우에는 그 관할 합의는 공서양속에 반하는 법률행위에 해당하는 점에서도 무효{
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다20093|판결" href="#//">대법원 1997. 9. 9. 선고 96다20093 판결</a></span> (공1997하, 3037) 참조}라고 할 것이다.
+      </p><p>라.이 사건에 돌아와 살피건대, 이 사건이 일본국 동경지방법원과 관련성을 갖는다고 볼 만한 점은, 이 사건 화물의 수출자가 피고와 사이에 화물의 운송계약을 체결하고, 피고 소유의 선박에 의하여 화물을 운송하였다는 점 정도라 할 것인데, 한편 원고와 이 사건 화물의 수입자인 동해펄프는 모두 대한민국에 주된 사무소를 두고 대표자 및 사원들이 한국인들로 구성된 대한민국의 법인이고, 운송물의 목적지는 대한민국 울산항으로 일본국 동경과는 전혀 관련이 없고, 운송물이 멸실된 경위에 관하여는 원·피고 사이에 전혀 다툼이 없어 이 사건의 심리에 필요한 중요한 증거 방법은 모두 대한민국 내에 있는 한국인 증인들이거나 문서들이며, 운송인의 책임 범위나 면책 요건에 관한 일본국의 법이 대한민국의 법보다 운송인인 피고에게 더 유리하다고 볼 만한 자료도 없는 점 등에 비추어, 일본국 동경에서 소송을 수행하는 것이 피고에게도 반드시 편리하다고 볼 수 없으므로, 이 사건 전속적 관할 합의는 사건이 그 지정된 외국법원에 대하여 합리적인 관련성을 결여함으로써 전속적 관할 합의가 유효 요건을 구비하지 못하여 무효인 경우라고 할 것이다.</p><p>마.나아가 위 관할합의규정 자체에 관하여 보건대, 이 사건 관할합의는 운송인인 피고에 대한 소송은 반드시 피고의 주된 사무소가 소재하는 일본국 동경지방법원에 제기하도록 규정되어 있는 반면, 운송인이 제기하는 소송에 관하여는 침묵하고 있어 해석상 위 관할합의 규정과는 무관하게 운송인이 편리한 장소에서 소송을 제기할 수 있는 것으로 규정되어 있고, 이는 위 전속적 관할합의가 현저하게 불합리하고 불공정한 경우에 해당하여 그 관할합의는 공서양속에 반하는 법률행위로서 무효라고 보아야 할 것이다.</p><p>바.결국, 이 사건 선하증권 이면의 전속적 관할합의 조항이 유효함을 전제로 하는 피고의 위 관할위반 항변은 이유 없다.</p><p>3. 본안에 대한 판단</p><p>가. 준거법</p><p>피고는 위에서 본 이 사건 선하증권약관 제27조의 준거법약관에 의하여 이 사건 원고의 청구에는 일본국법이 준거법으로 적용된다고 주장하므로 살피건대, 선하증권약관에 선하증권에 의하여 입증되는 계약에 적용될 준거법이 규정되어 있어도 이 규정이 운송계약상의 채무불이행이 아니라 불법행위를 원인으로 한 손해배상청구에 있어서까지 그 준거법을 배타적으로 적용키로 한 취지라고 해석되지 않는다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|82다카1533|판결" href="#//">대법원 1983. 3. 22. 선고 82다카1533 판결</a></span> [집31(2)민017, 공1983, 734])고 할 것이므로 원고의 이 사건 청구는 피고가 선하증권과 상환함이 없이 화물을 인도함으로 인하여 선하증권 소지인의 이 사건 화물에 대한 소유권 등을 침해한 불법행위를 원인으로 한 손해배상청구인 이상 준거법은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="섭외사법|13|">섭외사법 제13조 제1항</a></span>에 의하여 불법행위지(양하지인 울산항)인 대한민국법이 된다고 할 것이다.
+      </p><p>나. 손해배상책임의 발생 및 범위</p><p>(1)위 인정 사실에서 본 바와 같이 해상운송인인 피고가 선하증권과 상환하지 아니하고 운송물을 선하증권 소지인 아닌 자에게 인도하는 것은 그로 인한 손해의 배상을 전제로 하는 것이어서, 그 결과 선하증권 소지인에게 운송물을 인도하지 못하게 되어 운송물에 대한 그의 권리를 침해하였을 때에는 고의 또는 중대한 과실에 의한 불법행위가 성립된다고 할 것{
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다13211|판결" href="#//">대법원 1999. 4. 23. 선고 98다13211 판결</a></span> (공1999상, 989) 참조}이고, 따라서 이로 인하여 원고가 입게 된 손해를 배상할 책임이 있다고 할 것이다.
+      </p><p>(2)원고의 손해는 원고의 피담보채권인 소외 동해펄프에 대한 신용장결제대금에 관한 구상금 채권액의 범위 내에서 이 사건 화물이 불법 인도되어 멸실된 당시의 시가 상당액이고, 그 시가는 원고가 통지은행인 소외 체이스 맨허탄은행에게 미달러화로 지급한 이 사건 우드칩 대금 상당액이라고 할 것인바, 이 사건 화물의 송장 가격은 미화 2,809,092.48$이고, 이에 멸실 당시인 1997. 10. 17.자 환율 달러당 금 914.70원을 적용하면 위 화물의 시가는 금 2,569,476,891원(＝2,809,092.48$×914.70원, 원 미만은 버림)이 되므로, 피고가 원고에게 배상할 손해액은 금 2,569,476,891원이 된다.</p><p>다. 피고의 주장에 대한 판단</p><p>(1)피고는 이 사건 선하증권약관 제3조에서 나용선약관(Demise Clause)이 규정되어 있으므로 정기용선자에 불과한 피고는 화물인도에 대한 책임을 부담하지 아니한다고 주장하나, 나용선약관이 선하증권에 삽입되어 있다고 하더라도 용선자가 운송인의 의무로부터 면책되는 것은 아니라고 할 것이고, 이 사건 선하증권에서는 소외 차이나 오션 쉽핑 에이젼시(China Ocean Shipping Agency)가 운송인인 피고를 대리하여 서명하였으므로 이 사건 운송계약의 당사자는 피고라 할 것이어서 위 피고의 주장은 이유 없다.</p><p>(2)피고는 원고의 이 사건 손해배상 채권은 위 동해펄프의 부도로 인한 신용장대금미결제로 인하여 발생한 것이고, 원고는 이로 인한 손해금을 소외 동해펄프에 대한 정리채권으로 신고하여 적법한 정리채권으로 인정받았고, 나아가 위 신고한 정리채권의 상당 부분이 원고와 동해펄프 사이의 협의에 의하여 지급되거나 출자전환으로 변제되었으므로 ① 우선 원고가 정리채권으로 신고하여 모두 채권으로 인정된 이상 동 범위에서 피고에 대한 손해배상 청구권은 소멸하였거나, ② 적어도 정리계획에 따라 기지급되거나 출자전환된 부분은 이미 채권의 만족이 있었으므로 그 범위에서 전액 채권이 소멸하였고, ③ 동해펄프의 회사정리계획상 이 사건 신용장 대지급채권에 대한 미수이자 중 원고가 위 회사로부터 지급받은 부분과 원고가 면제한 부분은 위 원고의 손해배상 채권에서 공제되어야 한다는 취지로 주장한다.</p><p>살피건대, 갑 제19호증의 1 내지 3, 갑 제20호증의 1, 2, 갑 제21, 22호증의 각 기재와 당심 증인 임상일의 증언에 변론의 전취지를 종합하면, 원고는 소외 동해펄프에 대한 회사정리절차 개시 당시 위 회사에 대하여 산업은행 지급보증 회사채 금 10,000,000,000원, 당좌대출금 채권 금 2,852,164,175원 및 이 사건 신용장의 대지급채권 금 3,877,109,440원(원고가 위 체이스 맨허탄은행에게 미달러화로 대지급한 미화 2,809,092.48$의 지급일인 1998. 4. 27. 당시 환율로 환산한 금액), 합계 금 16,729,273,615원의 채권을 가지고 있었고, 이를 정리채권을 신고하여 시인되었으며, 이후 산업은행의 보증채무 이행으로 위 금 100억 원의 회사채는 소멸하였고, 나머지 채권에 대하여는 정리계획에 따라 잔존채권의 45.61%에 해당하는 금 3,069,468,000원의 채권을 출자전환하고, 나머지 금 3,659,805,615원이 잔존 정리채권으로 남은 사실, 소외 동해펄프의 정리계획에 의하면, 정리채권에 대한 변제충당의 순서는 채권자의 지정충당에 의하도록 규정하였고, 원고는 이에 따라 위 출자전환 채권을 먼저 당좌대출금 채권 금 2,852,164,175원에 변제충당하고, 나머지 금 217,303,825원을 이 사건 신용장 대지급 채권에 충당하는 것으로 정리한 사실, 동해펄프의 위 정리계획에 의하면, 나머지 잔존 정리채권은 2000년부터 2009년까지 사이에 5년 거치 5년 분할상환방식으로 변제하도록 되어 있는 사실을 각 인정할 수 있다.</p><p>먼저, ① 피고가 주장하는 위 원고의 정리채권은 신용장의 대지급으로 인하여 발생한 것으로서 원고가 현재 이 사건에서 피고에게 지급을 구하는 불법행위로 인한 손해배상 채권과는 그 발생원인을 달리하므로 비록 소외 동해펄프에 대한 정리절차에서 원고의 위 신용장대지급 채권이 정리채권으로 신고되어 인정되었다고 하더라도 위와 같은 사유만으로 피고 주장과 같이 원고의 이 사건 불법행위 채권도 소멸하였다고 볼 수 없으므로 위 피고의 주장은 이유 없다.</p><p>다음으로, ② 원고가 위와 같이 정리절차에서 출자전환된 채권 부분을 먼저 당좌대출금 채권에 충당한 것에 대하여, 피고는 위와 같이 정리채권 중 출자전환된 부분을 원고가 임의로 이 사건 신용장 대지급관련 채권에 충당할 수 없고, 그 변제충당의 의사표시를 소외 동해펄프측에 한 사실도 없으므로 위 원고의 변제충당은 효력이 없으며, 이 사건의 경우 법정충당의 방법에 따라 위 신용장대지급관련 채권에 먼저 충당하거나 적어도 출자전환의 비율에 따라 각 채권에 일정부분이 충당되어야 한다고 주장한다.</p><p>그러나 변제충당지정은 상대방에 대한 의사표시로서 하여야 하는 것이기는 하나, 변제충당에 관한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|476|">민법 제476조</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|479|">제479조</a></span>의 규정은 임의규정이므로 변제자(채무자)와 변제수령자(채권자)는 계약(약정)에 의하여 위 각 규정을 배제하고 제공된 급부를 어느 채무에 어떤 방법으로 충당할 것인가를 결정할 수 있고{
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|84다카1324|판결" href="#//">대법원 1987. 3. 24. 선고 84다카1324 판결</a></span> (공1987, 701) 및 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|78다15|판결" href="#//">1978. 12. 26 선고 78다1785 판결</a></span> 참조}, 이와 같이 채권자와 채무자 사이에 미리 변제충당에 관한 약정이 있으며, 그 약정내용이 변제가 채권자에 대한 모든 채무를 소멸시키기에 부족한 때에는 채권자가 적당하다고 인정하는 순서와 방법에 의하여 충당하기로 한 것이라면, 변제수령권자가 위 약정에 터잡아 스스로 적당하다고 인정하는 순서와 방법에 좇아 변제충당을 한 이상 변제자에 대한 의사표시와 관계없이 그 충당의 효력이 있다고 할 것인데{
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|90다18678|판결" href="#//">대법원 1991. 7. 23. 선고 90다18678 판결</a></span> (공1991, 2220) 및 위 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|84다카1324|판결" href="#//">대법원 1987. 3. 24. 선고 84다카1324 판결</a></span> 참조}, 이 사건의 경우 위에서 본 바와 같이 인가된 정리계획에 금융기관의 대출과목에 대한 변제충당 순서는 정리담보권 및 정리채권별 변제금액 범위 내에서 금융기관이 정하는 바에 따르도록 하고 있고, 위 규정에 따라 원고가 채무자인 동해펄프측에 별도의 의사표시 없이 위 출자전환 부분을 먼저 당좌대출금 채권에 충당하였다고 하더라도 이는 충당으로서 유효하다고 할 것이므로 위 원고 주장의 변제충당이 잘못되었음을 전제로 하는 위 피고의 주장은 이유 없다.
+      </p><p>마지막으로 ③ 피고 주장과 같이 이 사건 동해펄프에 대한 정리절차에서 미수이자 부분이 일부 지급되거나 면제된 점은 위에서 본 바와 같이 위 정리절차에서 신고된 위 정리채권과 원고의 이 사건 불법행위 채권이 그 발생원인을 달리 하는 것인 이상 원고의 이 사건 손해배상 청구금원에서 공제할 성격의 금원도 아니라 할 것이므로 이 부분 피고의 주장도 이유 없다.</p><p>(3)피고는 ① 원고가 소외 동해펄프의 거래은행으로서 위 회사에 대하여 기한부신용장을 발행하는 등의 신용을 제공한 자이므로 그 신용상태의 조사와 감시를 게을리 하지 않았어야 함에도 위와 같은 주의를 기울이지 않았고, 나아가 원고는 동해펄프와 수차례 동종의 거래를 통하여 위 회사가 선하증권 없이 이 사건 화물을 인도받아 갈 것이라는 점을 미리 알았거나 알 수 있었으면서도 60일간의 기한부 신용장을 발행하여 주었으므로 이는 화물의 불법반출을 원고가 묵시적으로 동의 내지 승인하였다고 보아야 하고, 위와 같은 화물의 비정상적 인도를 예상하면서도 원고는 위 동해펄프의 신용상태도 파악하지 아니한 채 화물의 도착이나 행방에 관하여 주의를 기울이지 아니한 과실이 있고, ② 나아가 원고는 위에서 본 바와 같이 피고와 상의 없이 소외 동해펄프에 대한 정리채권을 일방적으로 출자전환하고 임의로 변제충당하는 등 피고의 위 동해펄프에 대한 구상권을 침해하고 있으며 이와 같은 사정은 이 사건 손해의 발생 및 확대에 기여하였으므로 피고의 손해배상액을 산정함에 있어 원고의 위와 같은 과실과 잘못이 참작되어야 한다고 주장한다.</p><p>그러나 ① 일반적으로 선하증권과 상환 없이 화물이 인도됨으로써 정당한 선하증권의 소지인인 신용장 개설은행이 손해를 입은 경우, 신용장 개설은행이 신용장대금 지급과 관련하여 별도의 담보를 제공받지 아니하였거나 수입보증금을 징수하지 않았다고 하더라도 그것이 손해 발생 또는 확대의 원인이 되었다고 할 수 없고, 또한 신용장 개설은행이 선적서류를 송부받고도 화물의 행방을 알아보지 아니하였다는 사실만으로는 신용장 개설은행에게 사회통념상 또는 신의성실의 원칙상 주의의무를 게을리한 잘못이 있다고 보기 어렵다고 할 것이고{
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다13211|판결" href="#//">대법원 1999. 4. 23. 선고 98다13211 판결</a></span> (공1999상, 989) 참조}, 이 사건에서 위와 같은 일반적인 원칙을 넘어 신용장 개설은행인 원고가 피고 주장과 같은 의무를 부담한다거나 화물의 불법적인 반출을 묵인하였다고 보아야 할 사정은 위 이윤우에 대한 본인신문 결과만으로는 이를 인정하기 어렵고, 달리 이를 인정할 증거가 없으므로 이 부분 피고의 과실상계 주장은 이유 없고, ② 나아가 피고의 과실로 원고에게 이 사건 손해가 발생한 이후 동해펄프에 대한 정리절차에서 이루어진 정리채권의 출자전환과 변제충당 과정에서 원고가 피고의 동해펄프에 대한 구상권을 침해하였다고는 인정할 수 없으므로 이 부분의 피고의 주장도 받아들이지 아니한다.
+      </p><p>3. 결  론</p><p>그렇다면 피고는 원고에게 금 2,569,476,891원 및 이에 대한 1997. 10. 17.부터 이 사건 소장부본 송달일인 1998. 9. 24.까지는 민법 소정 연 5%, 그 다음날부터 완제일까지는 소송촉진등에관한특례법 소정 연 25%의 각 비율에 의한 금원{피고는 이 사건에 있어 피고가 그 채무의 범위에 관하여 항쟁함이 상당한 이유가 있으므로 당심 판결선고일까지는 위 특례법 소정 지연손해금 이율을 적용하여서는 아니된다고 주장하나, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진등에관한특례법|3|">위 특례법 제3조 제2항</a></span> 소정 '채무자가 그 이행의무의 존부나 범위에 관하여 항쟁함이 상당하다고 인정되는 때'라고 하는 것은, 그 이행의무의 존부나 범위에 관하여 항쟁하는 채무자의 주장에 상당한 근거가 있는 것으로 인정되는 때를 가리키는 것으로 해석되므로, 채무자가 위와 같이 항쟁함이 상당한 것인지 여부는 당해 사건에 관한 법원의 사실인정과 그 평가에 관한 문제라고 할 것이고{
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다26924|판결" href="#//">대법원 2000. 9. 8. 선고 99다26924 판결</a></span> (공2000하, 2070) 참조}, 이 사건에 있어 위에서 본 바와 같이 피고의 사실적·법률적 주장이 전부 배척되는 이상 피고가 그 의무이행의 범위에 관하여 항쟁하는 것에 상당한 이유가 있다고 보기 어렵다고 할 것이므로 위 피고의 주장은 받아들이지 않는다}을 지급할 의무가 있다고 할 것인바, 원심판결은 이와 결론을 같이 하여 정당하므로 피고의 항소를 기각하기로 하여 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   오세빈(재판장) 김흥준 채동헌 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2012다67177 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2163807';
+var contIdEtc = '';
+var saNo = '2012다67177';
+var sngoNm = '선고';
+var saNm = '구상금';
+try {
+	var sngoDay=('20141030' ? 
+			'20141030'.length==4 ? Date.parseExact('20141030','yyyy').toString('yyyy. M. d.') : 
+				'20141030'.length==6 ? Date.parseExact('20141030','yyyyMM').toString('yyyy. M. d.') : 
+					'20141030'.length==8 ? Date.parseExact('20141030','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012다67177 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2012다67177';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2012다67177</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(10)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(17)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2173328">대법원 2014. 11. 13. 선고 2014다219415 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|769740">구 자동차손해배상 보장법 시행령2008 9 25 대통령령 제21036호로 전부 개정되기 전의 것 제3조 제2항 제2호의 해석 @ 2014 10 30 선고 2012다67177 판결 공2014하 2253 이준철 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|570280">서울중앙지방법원 손해배상소송실무:. (교통·산재) 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769740">이준철 구 자동차손해배상 보장법 시행령(2008. 9. 25. 대통령령 제21036호로 전부 개정되기 전의 것) 제3조 제2항 제2호의 해석 : 2014. 10. 30. 선고 2012다67177 판결: 공2014하, 2253 대법원판례해설 제101호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|567217">사법연수원 손해배상소송:. 2016 사법연수원  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="자동차손해배상보장법|3|0|null">자동차손해배상 보장법(구) 제3조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="자동차손해배상보장법|3|0|null">자동차손해배상 보장법 제3조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="자동차손해배상보장법|5|0|null">자동차손해배상 보장법(구) 제5조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="자동차손해배상보장법|5|0|null">자동차손해배상 보장법 제5조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제1항 제2호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령 제3조 제1항 제2호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제1항 제3호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령 제3조 제1항 제3호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제2항 제2호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령 제3조 제2항 제2호 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다81035">대법원 2009. 4. 23. 선고 2006다81035 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다67755">대법원 2004. 4. 16. 선고 2003다67755 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법|3|0|null">자동차손해배상 보장법(구) 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법|5|0|null">자동차손해배상 보장법(구) 제5조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법|5|0|null">자동차손해배상 보장법(구) 제5조 제2항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법|5|0|null">자동차손해배상 보장법(구) 제5조 제1항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법|5|0|null">자동차손해배상 보장법(구) 제5조 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제2항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제1항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법시행령|3|0|null">자동차손해배상 보장법 시행령(구) 제3조 제2항 제1호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울남부지방법원|2011나14379">서울남부지법 2012. 6. 28. 선고 2011나14379 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2014. 10. 30. 선고 2012다67177 판결</h2><p class="sub_title">[구상금][공2014하,2253]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>동일한 사고로 부상한 자에게 후유장해가 생긴 경우의 책임보험금 산정방법을 규정하고 있는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">구 자동차손해배상 보장법 시행령 제3조 제2항 제2호</a></span>를 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">같은 시행령 제3조 제1항 제2호</a></span>에 따라 산정된 부상보험금과 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">같은 항 제3호</a></span>에 따라 산정된 후유장해보험금의 합산액을 책임보험금으로 지급한다는 의미로 해석하여야 하는지 여부(적극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>  구 자동차손해배상 보장법(2008. 3. 28. 법률 제9065호로 전부 개정되기 전의 것, 이하 ‘법’이라 한다)이 자동차보유자로 하여금 자동차의 운행으로 다른 사람이 사망하거나 부상한 경우에 피해자에게 구 자동차손해배상 보장법 시행령(2008. 9. 25. 대통령령 제21036호로 전부 개정되기 전의 것, 이하 ‘시행령’이라 한다)이 정하는 금액을 지급할 책임을 지는 책임보험 또는 책임공제(이하 ‘책임보험 등’이라 한다)에 가입하도록 강제하고 있고, 시행령이 수차례에 걸쳐 개정되면서 책임보험 등의 보험금 또는 공제금(이하 ‘책임보험금’이라 한다)의 현실화, 합리화 및 적정화를 통한 피해자 보호를 강화하고자 책임보험금의 한도금액을 증액해 온 것은 맞지만, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|3|">법 제3조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">제5조 제1항</a></span>에 기한 책임보험자의 보험금지급책임은 유한보상책임으로서 책임보험약관과 시행령이 규정하고 있는 바에 따라 사망, 부상, 후유장해라는 항목별로 소정의 한도금액 범위 안에서 피해자가 입은 손해액의 지급의무를 부담하는 것에 그칠 뿐 자동차사고로 인하여 피해자가 입은 일체의 손해를 배상할 책임을 부담하는 것은 아니다. 또한 사실심법원이 제반 증거를 토대로 피해자가 입은 부상의 부위나 정도, 치료기간과 경과, 후유장해의 발생 여부나 발생 시점에 관한 의사의 의료적 판단 등의 사정을 면밀히 살펴 부상으로 인한 손해 부분과 후유장해로 인한 손해 부분을 구분한 다음, 이를 시행령 [별표 1]에서 정하는 부상보험금 항목과 [별표 2]에서 정하는 후유장해보험금 항목에 나누어 반영한 후 각 소정의 한도금액 범위 내에서 책임보험금을 산정하는 것이 법이 규정하고 있는 책임보험제도의 취지와 목적에 반한다고 볼 수 없다.</p>
+<p>  이와 같이 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">시행령 제3조 제2항 제2호</a></span>의 문언 자체가 비교적 명확한 개념으로 구성되어 있을 뿐만 아니라 여기에 앞서 본 사정들을 종합적으로 고려하여 보면, 동일한 사고로 인하여 부상한 자에게 후유장해가 생긴 경우의 책임보험금 산정 방법을 규정하고 있는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">시행령 제3조 제2항 제2호</a></span>는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">시행령 제3조 제1항 제2호</a></span>와 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">같은 항 제3호</a></span>에 따른 한도금액의 합산액 범위 안에서 피해자에게 발생한 손해액이 아니라 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">시행령 제3조 제1항 제2호</a></span>에 따라 산정된 부상보험금과 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">같은 항 제3호</a></span>에 따라 산정된 후유장해보험금의 합산액을 책임보험금으로 지급한다는 의미로 해석함이 타당하다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p><span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|3|">구 자동차손해배상 보장법(2008. 3. 28. 법률 제9065호로 전부 개정되기 전의 것) 제3조</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|3|">자동차손해배상 보장법 제3조</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">제5조 제1항</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">자동차손해배상 보장법 제5조 제1항</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">구 자동차손해배상 보장법 시행령(2008. 9. 25. 대통령령 제21036호로 전부 개정되기 전의 것) 제3조 제1항 제2호</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">자동차손해배상 보장법 시행령 제3조 제1항 제2호</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">제3호</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">자동차손해배상 보장법 시행령 제3조 제1항 제3호</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">제2항 제2호</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">자동차손해배상 보장법 시행령 제3조 제2항 제2호</a></span> 참조)</p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+근로복지공단
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인】
+전국택시운송사업조합연합회 (소송대리인 법무법인 홍윤 담당변호사 나병인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+<span id="link"><a name="linkContPanre" title="새창" type="서울남부지방법원|2011나14379|판결" href="#//">서울남부지법 2012. 6. 28. 선고 2011나14379 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원심판결의 피고 패소 부분 중 6,902,280원 및 이에 대한 지연손해금 지급 부분을 파기하고, 이 부분 사건을 서울남부지방법원 합의부에 환송한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 법해석의 목표는 어디까지나 법적 안정성을 저해하지 않는 범위 내에서 구체적 타당성을 찾는 데 두어야 하므로, 법을 해석하는 과정에서는 가능한 한 법률에 사용된 문언의 통상적인 의미에 충실하게 해석하는 것을 원칙으로 하고, 나아가 법률의 입법 취지와 목적, 그 제·개정 연혁, 법질서 전체와의 조화, 다른 법령과의 관계 등을 고려하는 체계적·논리적 해석방법을 추가적으로 동원함으로써, 위와 같은 법해석의 요청에 부응하는 타당한 해석이 되도록 하여야 한다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다81035|판결" href="#//">대법원 2009. 4. 23. 선고 2006다81035 판결</a></span> 등 참조).</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|3|">구 자동차손해배상 보장법(2008. 3. 28. 법률 제9065호로 전부 개정되기 전의 것, 이하 ‘법’이라 한다) 제3조</a></span>는 자기를 위하여 자동차를 운행하는 자는 그 운행으로 인하여 다른 사람을 사망하게 하거나 부상하게 한 때에는 원칙적으로 그 손해를 배상할 책임을 진다고 규정하고 있고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">제5조 제1항</a></span>은 자동차보유자는 자동차의 운행으로 다른 사람이 사망하거나 부상한 경우에 피해자에게 대통령령이 정하는 금액을 지급할 책임을 지는 책임보험 또는 책임공제(이하 ‘책임보험 등’이라 한다)에 가입하여야 하는 것으로 규정하고 있으며, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">구 자동차손해배상 보장법 시행령(2008. 9. 25. 대통령령 제21036호로 전부 개정되기 전의 것, 이하 ‘시행령’이라 한다) 제3조 제1항</a></span>은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">법 제5조 제1항</a></span>의 규정에 의하여 자동차보유자가 가입하여야 하는 책임보험 등의 보험금 또는 공제금(이하 ‘책임보험금’이라 한다)의 액수에 관하여 피해자가 부상한 경우에는 [별표 1]에서 정하는 금액의 범위 안에서 피해자에게 발생한 손해액(제2호), 부상에 대한 치료가 완료된 후 당해 부상이 원인이 되어 신체의 장해(이하 ‘후유장해’라 한다)가 생긴 경우에는 [별표 2]에서 정하는 금액의 범위 안에서 피해자에게 발생한 손해액(제3호)으로 각 규정하는 한편, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">같은 조 제2항 제2호</a></span>는 부상한 자에게 후유장해가 생긴 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">제1항 제2호</a></span> 및 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|">제3호</a></span>의 규정에 따른 금액의 합산액을 지급하는 것으로 규정하고 있다.</p><p>  한편 <span class="accrnt_txt">법이 자동차보유자로 하여금 자동차의 운행으로 다른 사람이 사망하거나 부상한 경우에 피해자에게 시행령이 정하는 금액을 지급할 책임을 지는 책임보험 등에 가입하도록 강제하고 있고, 시행령이 수차례에 걸쳐 개정되면서 책임보험금의 현실화, 합리화 및 적정화를 통한 피해자 보호를 강화하고자 책임보험금의 한도금액을 증액해 온 것은 맞지만, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|3|" style="text-decoration:underline">법 제3조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법|5|" style="text-decoration:underline">제5조 제1항</a></span>에 기한 책임보험자의 보험금지급책임은 유한보상책임으로서 책임보험약관과 시행령이 규정하고 있는 바에 따라 사망, 부상, 후유장해라는 항목별로 소정의 한도금액 범위 안에서 피해자가 입은 손해액의 지급의무를 부담하는 것에 그칠 뿐 자동차사고로 인하여 피해자가 입은 일체의 손해를 배상할 책임을 부담하는 것은 아니다. 또한 사실심법원이 제반 증거를 토대로 피해자가 입은 부상의 부위나 정도, 치료기간과 그 경과, 후유장해의 발생 여부나 발생 시점에 관한 의사의 의료적 판단 등의 사정을 면밀히 살펴 부상으로 인한 손해 부분과 후유장해로 인한 손해 부분을 구분한 다음, 이를 시행령 [별표 1]에서 정하는 부상보험금 항목과 [별표 2]에서 정하는 후유장해보험금 항목에 나누어 반영한 후 각 소정의 한도금액 범위 내에서 책임보험금을 산정하는 것이 법이 규정하고 있는 책임보험제도의 취지와 목적에 반한다고 볼 수 없다</span>.</p><p>  <span class="accrnt_txt">이와 같이 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|" style="text-decoration:underline">시행령 제3조 제2항 제2호</a></span>의 문언 자체가 비교적 명확한 개념으로 구성되어 있을 뿐만 아니라 여기에 앞서 본 사정들을 종합적으로 고려하여 보면, 동일한 사고로 인하여 부상한 자에게 후유장해가 생긴 경우의 책임보험금 산정방법을 규정하고 있는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|" style="text-decoration:underline">시행령 제3조 제2항 제2호</a></span>는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|" style="text-decoration:underline">시행령 제3조 제1항 제2호</a></span>와 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|" style="text-decoration:underline">같은 항 제3호</a></span>에 따른 한도금액의 합산액 범위 안에서 피해자에게 발생한 손해액이 아니라 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|" style="text-decoration:underline">시행령 제3조 제1항 제2호</a></span>에 따라 산정된 부상보험금과 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|" style="text-decoration:underline">같은 항 제3호</a></span>에 따라 산정된 후유장해보험금의 합산액을 책임보험금으로 지급한다는 의미로 해석함이 타당하다</span>. 동일한 사고로 인하여 부상한 자가 그 부상이 원인이 되어 사망한 경우에 지급되어야 할 책임보험금의 산정방법을 규정한 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">구 시행령(1999. 6. 30. 대통령령 제16463호로 전부 개정되기 전의 것) 제3조 제2항 제1호</a></span>의 해석에 관한 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다67755|판결" href="#//">대법원 2004. 4. 16. 선고 2003다67755 판결</a></span>은 이 사건과 사안을 달리한다.</p><p>  2. 원심판결 이유에 의하면 원심은, 이 사건 사고로 인한 피해자의 상해등급은 시행령 [별표 1]의 4급(책임보험 한도금액 9,000,000원)에, 후유장해등급은 시행령 [별표 2]의 8급(책임보험 한도금액 30,000,000원)에 각 해당하는 사실을 인정하면서도, 과실상계 후 피해자가 입은 손해액 합계 33,672,960원(= 요양기간 중 일실수입 6,729,856원 + 요양종결 후 일실수입 17,770,680원 + 적극적 손해 9,172,424원)이 위 상해등급에 따른 부상보험금과 위 후유장해등급에 따른 후유장해보험금의 한도금액 합계액 39,000,000원(= 9,000,000원 + 30,000,000원) 이내에 있다는 이유로 피고는 원고에게 구상금 33,672,960원 및 이에 대한 지연손해금을 지급할 의무가 있다고 판단하였다.</p><p>  그러나 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">시행령 제3조 제2항 제2호</a></span>의 해석에 관한 앞서 본 법리에 비추어 보면, 원심으로서는 피해자의 부상으로 인한 손해액이 위 상해등급에 따른 부상보험금의 한도금액을, 후유장해로 인한 손해액이 위 후유장해등급에 따른 후유장해보험금의 한도금액을 각 초과하는지 여부를 먼저 살펴본 다음 위 각 한도금액 범위 내에서 산정된 부상보험금과 후유장해보험금의 합산액을 피고가 원고에게 지급해야 할 책임보험금 액수로 확정하였어야 할 것이다.</p><p>  그럼에도 원심은 이와 달리 피고가 원고에게 지급해야 할 금액은 피해자의 상해등급에 따른 부상보험금과 후유장해등급에 따른 후유장해보험금의 각 한도금액 합계액의 범위 내에서 피해자가 입은 손해액이라고 판단하였다. 이러한 원심판결에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상 보장법 시행령|3|">시행령 제3조 제2항 제2호</a></span>의 해석에 관한 법리를 오해함으로써 판결에 영향을 미친 위법이 있다. 따라서 원심판결은 그중 피고가 상고한 범위 전부에 대하여 파기를 면할 수 없다.</p><p>  3. 그러므로 원심판결의 피고 패소 부분 중 6,902,280원 및 이에 대한 지연손해금 지급 부분을 파기하고, 이 부분 사건을 다시 심리·판단하도록 원심법원에 환송하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이인복(재판장) 김용덕 고영한(주심) 김소영 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

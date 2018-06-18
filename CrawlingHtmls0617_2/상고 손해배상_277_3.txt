@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다75945 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063182';
+var contIdEtc = '';
+var saNo = '2010다75945';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20120412' ? 
+			'20120412'.length==4 ? Date.parseExact('20120412','yyyy').toString('yyyy. M. d.') : 
+				'20120412'.length==6 ? Date.parseExact('20120412','yyyyMM').toString('yyyy. M. d.') : 
+					'20120412'.length==8 ? Date.parseExact('20120412','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다75945 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다75945';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다75945</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(4)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(10)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2194225">대법원 2015. 10. 29. 선고 2012다98850 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2189717">대법원 2015. 10. 29. 선고 2011다81213 판결 [공2015하,1734]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다5846">대법원 2004. 6. 11. 선고 2004다5846 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다38492">대법원 2006. 2. 24. 선고 2005다38492 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도4876">대법원 2008. 6. 19. 선고 2006도4876 전원합의체 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2008다72882">대법원 2009. 1. 30. 선고 2008다72882 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="새마을금고법|25|0|null">새마을금고법 제25조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="새마을금고법|29|0|null">새마을금고법 제29조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다15501">대법원 2006. 2. 10. 선고 2003다15501 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|97다55126">대법원 1998. 3. 27. 선고 97다55126 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009두11607">대법원 2009. 11. 26. 선고 2009두11607 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도4876">대법원 2008. 6. 19. 선고 2006도4876 전원합의체 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008다72882">대법원 2009. 1. 30. 선고 2008다72882 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다5846">대법원 2004. 6. 11. 선고 2004다5846 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다38492">대법원 2006. 2. 24. 선고 2005다38492 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008다72882">대법원 2009. 1. 30. 선고 2008다72882 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="광주지방법원순천지원|2000타경13013">광주지방법원 순천지원 2000타경13013</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다34045">대법원 2004. 3. 26. 선고 2003다34045 판결</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="광주고등법원|2008나4802">광주고법 2010. 8. 11. 선고 2008나4802 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 4. 12. 선고 2010다75945 판결</h2><p class="sub_title">[손해배상(기)][공2012상,751]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 대출자 명의를 달리하는 복수의 대출이 실질적으로 새마을금고법상 금지되는 동일인에 대한 대출한도 초과대출에 해당함을 이유로 대출에 관여한 금고 임직원에게 손해배상책임을 묻기 위한 요건</p>
+      <p></p>
+      <p>
+        </p><p>[2] 금융기관 임직원이 동일인 신용대출한도를 초과하여 대출할 경우 담보를 취득하도록 정하고 있는 여신업무규정을 위반하여 담보를 취득하지 않은 채 신용대출한도를 초과하여 대출한 경우, 금융기관 임직원의 채무불이행으로 인하여 금융기관이 입은 통상손해의 범위</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 새마을금고의 동일인 대출한도 제한규정은 특정 소수 대출채무자에게 과도하게 편중 대출하는 것을 규제하여 회원 대다수에게 대출 혜택을 부여함과 아울러 대출채무자에 대하여 통상의 대출한도를 미리 정함으로써 대출 당시에는 대출채무자의 변제능력이나 자력에 별다른 문제가 없더라도 향후 사정변경으로 대출금 회수가 곤란해지는 경우 등을 고려하여 새마을금고의 재정 부실화 가능성을 낮추어 새마을금고의 자산 건전성을 확보·유지하기 위하여 마련된 것이지 대출채권의 회수가능성을 직접적으로 고려하여 만들어진 것은 아니다. 이러한 점에 비추어 보면, 동일인 대출한도를 초과하였다는 사실만으로 곧바로 대출채권을 회수하지 못하게 될 손해가 생겼다고 볼 수는 없고, 대출자 명의를 달리하는 복수의 대출이 실질적으로 동일인에 대한 대출한도 초과대출에 해당함을 이유로 대출에 관여한 새마을금고 임직원에게 손해배상책임을 묻기 위해서는 복수의 대출이 실질적으로 동일인 대출한도 초과대출이라는 점에 더하여 대출 당시 대출채무자의 재무상태, 다른 금융기관 차입금, 기타 채무를 포함한 전반적인 금융거래상황, 사업현황 및 전망과 대출금 용도, 소요기간 등에 비추어 볼 때 채무상환능력이 부족하거나 제공된 담보의 경제적 가치가 부실해서 대출채권 회수에 문제가 있음에도 이루어진 대출이라는 점과 대출에 관여한 새마을금고 임직원이 그 대출이 동일인 대출한도 초과대출로서 채무상환능력이 부족하거나 충분한 담보가 확보되지 아니한 상태에서 이루어진다는 사정을 알았거나 알 수 있었음에도 대출을 실행하였다는 점에 대한 증명이 있어야 한다.</p>
+      <p></p><p>
+        </p><p>[2] 금융기관 임직원이 동일인 신용대출한도를 초과하여 대출할 경우 담보를 취득하도록 정하고 있는 여신업무에 관한 규정을 위반하여 아무런 담보를 취득하지 않은 채 신용대출한도를 초과하여 대출한 경우, 이러한 금융기관 임직원의 채무불이행으로 인하여 금융기관이 입은 통상손해는 임직원이 규정을 준수하여 적정한 담보를 취득하고 대출하였더라면 회수할 수 있었을 미회수 대출원리금이고, 특별한 사정이 없는 한 이러한 통상손해의 범위에는 약정이율에 의한 대출금 이자와 약정연체이율에 의한 지연이자가 포함된다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="새마을금고법|25|">새마을금고법 제25조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="새마을금고법|29|">제29조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다5846|판결" href="#//">대법원 2004. 6. 11. 선고 2004다5846 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다38492|판결" href="#//">대법원 2006. 2. 24. 선고 2005다38492 판결</a></span>(공2006상, 506)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도4876|전원합의체 판결" href="#//">대법원 2008. 6. 19. 선고 2006도4876 전원합의체 판결</a></span>(공2008하, 1181)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008다72882|판결" href="#//">대법원 2009. 1. 30. 선고 2008다72882 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인 겸 상고인】
+      
+        순천중부새마을금고
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인 겸 피상고인】
+      
+        
+          피고 1 외 5인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="광주고등법원|2008나4802|판결" href="#//">광주고법 2010. 8. 11. 선고 2008나4802 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 원심 별지 제1목록 순번 2번 대출에 관한 
+        피고 3, 
+        4 패소 부분, 원심 별지 제2목록 대출 및 원심 별지 제3목록 순번 7 내지 10번 대출에 관한 
+        피고 1, 
+        3, 
+        4 패소 부분을 파기하고, 이 부분 사건을 광주고등법원에 환송한다.  원고, 
+        피고 2, 
+        5, 
+        6의 각 상고와 
+        피고 1, 
+        3, 
+        4의 각 나머지 상고를 모두 기각한다.  상고비용 중 원고와 
+        피고 2, 
+        5, 
+        6 사이에서 생긴 부분은 각자가 부담한다.
+      </p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 경과한 후에 제출된 상고이유보충서의 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 원고의 상고이유에 대한 판단</p><p>  가. 상고이유 제1, 2점에 대하여</p><p>  이 부분 상고이유는 사실심의 전권에 속하는 증거의 취사선택과 사실인정을 탓하는 것으로서 받아들일 수 없다.</p><p>  나. 상고이유 제3점에 대하여</p><p>  채무불이행 또는 불법행위로 인한 손해배상사건에서 과실상계사유에 관한 사실인정이나 그 비율을 정하는 것은 그것이 형평의 원칙에 비추어 현저히 불합리하다고 인정되지 않는 한 사실심의 전권사항에 속한다고 할 것인데(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다15501|판결" href="#//">대법원 2006. 2. 10. 선고 2003다15501 판결</a></span> 등 참조), 원심판결 이유를 기록에 비추어 살펴보면, 
+        피고 1, 
+        2에 대한 책임제한 사유에 관한 사실인정이나 그 비율의 판단이 형평의 원칙에 비추어 현저히 불합리하다고 볼 수 없으므로, 이 점에 관한 상고이유의 주장은 받아들이지 아니한다.
+      </p><p>  그리고 이 부분 나머지 상고이유 주장은 
+        피고 3, 
+        4, 
+        5, 
+        6이 
+        피고 1, 
+        2의 불법·부당한 대출행위에 대하여 신원보증인으로서의 책임을 면할 수 없다고만 하고 있을 뿐, 원심판결의 어떤 점이 법령에 어떻게 위반되었는지에 관하여 구체적이고 명시적인 근거를 밝히지 않고 있으므로, 이를 적법한 상고이유의 기재로 보기 어렵다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다55126|판결" href="#//">대법원 1998. 3. 27. 선고 97다55126 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009두11607|판결" href="#//">대법원 2009. 11. 26. 선고 2009두11607 판결</a></span> 등 참조).
+      </p><p>  2. 
+        피고 1, 
+        3, 
+        4의 상고이유에 대한 판단
+      </p><p>  가. 원심 별지 제2목록 대출 부분에 관한 상고이유 제1점에 대하여</p><p>  원심판결 이유에 의하면, 원심은 그 채택 증거들을 종합하여 남제새마을금고가 1996. 11. 26. 
+        소외 1에게 7,000,000원을 변제기 1998. 11. 26.로 정하여 대출한 사실, 남제새마을금고는 
+        소외 1에 대한 위 대출금(이하 ‘원심 별지 제2목록 대출금’이라고 한다)이 변제되지 아니하였음에도 1996. 8. 16. 
+        소외 1 소유의 순천시 인제동 
+        (지번 1 생략) 대 144㎡ 및 그 지상 시멘트 블록조 시멘트 기와지붕 단층 주택 26.4㎡에 관하여 채권최고액 30,000,000원, 채무자 
+        소외 1인 각 근저당권을 설정받고 
+        소외 1에게 대출한 22,000,000원의 대출원리금이 변제되자 2000. 6. 28. 위 대지 및 건물에 관하여 설정되어 있던 근저당권을 모두 해지하여 준 사실, 원심 별지 제2목록 대출금이 1997. 10. 27.부터 연체되었고, 그 대출원리금 2,694,940원이 남아 있는 사실 등을 인정한 다음, 위 각 근저당권은 위 22,000,000원의 대출금 외에 원심 별지 제2목록 대출금도 담보하고 있었다고 보아야 하므로, 위 22,000,000원의 대출금채무가 변제되었다는 이유만으로 이미 연체되어 있는 원심 별지 제2목록 대출금채무의 변제 여부를 살피지 않고 곧바로 위 각 근저당권을 해지할 수 없다 할 것인데, 
+        피고 1은 위 각 근저당권을 해지하는 경우에는 원심 별지 제2목록 대출금에 대한 담보가 부족하게 된다는 사실을 알았거나 잘 알 수 있음에도 원심 별지 제2목록 대출금이 모두 변제되지 아니한 상태에서 위 각 근저당권을 임의로 해지함으로써 그 직무를 수행함에 있어 고의 또는 중대한 과실로 원고에게 위 2,694,940원의 손해를 입혔다고 판단하였다.
+      </p><p>  그러나 위와 같은 원심의 판단은 그대로 수긍하기 어렵다.</p><p>  먼저 기록을 살펴보아도 위 각 근저당권이 위 22,000,000원의 대출금 외에 원심 별지 제2목록 대출금도 담보하고 있었다고 볼 만한 자료를 찾아볼 수 없다. 뿐만 아니라 원고 스스로도 원심 별지 제2목록 대출이 신용대출임을 전제로 위 각 근저당권의 해지 당시 위 대지 및 건물에 관하여 후순위권리자가 없었고 원심 별지 제2목록 대출에 연체가 발생한 상태였으므로 
+        피고 1이 원심 별지 제2목록 대출금의 회수를 위하여 위 각 근저당권을 원심 별지 제2목록 대출금의 담보로 유용하는 등의 채권확보 방안을 강구하지 않고 위 각 근저당권을 해지한 것을 채무불이행이라고 주장하고 있다. 그럼에도 원심이 원고의 주장을 위 각 근저당권이 원래부터 원심 별지 제2목록 대출금도 담보하고 있었다는 주장으로 오해한 나머지 별다른 근거도 없이 위 각 근저당권이 원심 별지 제2목록 대출금도 담보하고 있다고 단정한 다음 
+        피고 1의 손해배상책임 및 
+        피고 3, 
+        4의 신원보증책임을 인정한 조치는 위법하다고 할 것이다. 이 점을 지적하는 이 부분 상고이유 주장은 이유가 있다.
+      </p><p>  나. 원심 별지 제3목록 순번 7 내지 10번 대출 부분에 관한 상고이유 제1점에 대하여</p><p>  (1) 원심은 그 채택 증거들을 종합하여 그 판시와 같은 사실을 인정하고, 이를 토대로 원심 별지 제3목록 기재 각 대출은 모두 실질적인 차주가 
+        소외 2임에도 동일인 대출한도 제한규정을 회피하고자 명의를 빌려 대출을 받은 것이라고 판단한 다음, ① 원심 별지 제3목록 순번 7 내지 10번의 각 대출을 받을 당시에는 이미 
+        소외 2가 원심 별지 제3목록 순번 1 내지 6번의 합계 240,000,000원을 대출받았다고 보아야 함에도 원고가 
+        소외 2에게 원심 별지 제3목록 순번 7 내지 10번의 각 대출을 한 것은 동일인 대출한도를 초과한 대출로서 여신업무규정, 여신업무방법서를 위반한 대출이라 할 것이고, ② 또한 
+        피고 1은 원심 별지 제3목록 순번 7 내지 10번 대출의 담보로서 
+        소외 2 소유의 순천시 덕월동 
+        (지번 2 생략), 
+        (지번 3 생략), 
+        (지번 4 생략), 
+        (지번 5 생략) 각 토지 및 같은 동 
+        (지번 2 생략) 지상 각 건물(이하 ‘이 사건 공동담보’라고 한다)에 관하여 설정된 각 근저당권 중에서 같은 동 
+        (지번 2 생략) 지상 제지하101호, 제101호 내지 제106호에 관한 각 근저당권을 해지할 당시 남제새마을금고의 대출업무담당자로서 위 각 근저당권의 일부 해지 전에 같은 동 
+        (지번 2 생략), 
+        (지번 3 생략), 
+        (지번 4 생략), 
+        (지번 5 생략) 각 토지 및 나머지 각 건물에 관한 근저당권만으로 원심 별지 제3목록 순번 7 내지 10번의 각 대출금채무가 충분히 담보되는지에 관하여 면밀히 검토하였어야 함에도 원심 별지 제3목록 순번 7 내지 10번의 각 대출을 실행한 지 불과 한 달도 되지 않아 위와 같이 근저당권을 해지하여 원심 별지 제3목록 순번 7 내지 10번의 각 대출금채무에 대한 담보를 부족하게 함으로써 그 직무를 수행함에 있어 중대한 과실로 원고에게 그 대출원리금 104,714,350원의 손해를 입게 하였다고 판단하였다.
+      </p><p>  (2) 그러나 위와 같은 원심의 판단은 쉽사리 수긍하기 어렵다.</p><p>  (가) 먼저 위 ① 부분 판단에 대하여 본다.</p><p>
+        <span class="accrnt_txt">새마을금고의 동일인 대출한도 제한규정은 특정 소수 대출채무자에게 과도하게 편중 대출하는 것을 규제하여 회원 대다수에게 대출 혜택을 부여함과 아울러 대출채무자에 대하여 통상의 대출한도를 미리 정함으로써 대출 당시에는 대출채무자의 변제능력이나 자력에 별다른 문제가 없더라도 향후 사정변경으로 그 대출금의 회수가 곤란해지는 경우 등을 고려하여 새마을금고의 재정 부실화 가능성을 낮추어 새마을금고의 자산 건전성을 확보·유지하기 위하여 마련된 것이지 대출채권의 회수가능성을 직접적으로 고려하여 만들어진 것은 아니다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도4876|전원합의체 판결" href="#//">대법원 2008. 6. 19. 선고 2006도4876 전원합의체 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008다72882|판결" href="#//">대법원 2009. 1. 30. 선고 2008다72882 판결</a></span> 등 참조). 
+        <span class="accrnt_txt">이러한 점에 비추어 보면, 동일인 대출한도를 초과하였다는 사실만으로 곧바로 대출채권을 회수하지 못하게 될 손해가 생겼다고 볼 수는 없고, 대출자 명의를 달리하는 복수의 대출이 그 실질에 있어서 동일인에 대한 대출한도 초과대출에 해당함을 이유로 위 대출에 관여한 새마을금고의 임직원에게 손해배상책임을 묻기 위해서는 그 복수의 대출이 실질에 있어서 동일인 대출한도 초과대출이라는 점에 더하여 대출 당시의 대출채무자의 재무상태, 다른 금융기관으로부터의 차입금, 기타 채무를 포함한 전반적인 금융거래상황, 사업현황 및 전망과 대출금의 용도, 소요기간 등에 비추어 볼 때 채무상환능력이 부족하거나 제공된 담보의 경제적 가치가 부실해서 대출채권의 회수에 문제가 있음에도 이루어진 대출이라는 점과 위 대출에 관여한 새마을금고의 임직원이 그 대출이 동일인 대출한도 초과대출로서 채무상환능력이 부족하거나 충분한 담보가 확보되지 아니한 상태에서 이루어진다는 사정을 알았거나 알 수 있었음에도 그 대출을 실행하였다는 점에 대한 증명이 있어야 할 것이다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다5846|판결" href="#//">대법원 2004. 6. 11. 선고 2004다5846 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다38492|판결" href="#//">대법원 2006. 2. 24. 선고 2005다38492 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008다72882|판결" href="#//">대법원 2009. 1. 30. 선고 2008다72882 판결</a></span> 등 참조). 그렇다면 원심으로서는 원심 별지 제3목록 순번 7 내지 10번의 담보대출이 실질에 있어서 동일인 대출한도 초과대출에 해당한다는 점뿐만 아니라 위 각 대출이 충분한 담보가 확보되지 아니한 상태에서 이루어진 대출이었는지, 나아가 
+        피고 1이 그러한 사정을 알았거나 알 수 있었는지를 심리하여 본 다음 
+        피고 1의 책임 유무를 판단하였어야 함에도 동일인 대출한도를 초과한 대출이라는 사실만으로 
+        피고 1에게 중대한 과실로 인한 손해배상책임이 인정된다고 본 것은 동일인 대출한도 초과대출 제한규정의 취지와 인과관계에 관한 법리를 오해함으로써 판결 결과에 영향을 미친 위법이 있다 할 것이다.
+      </p><p>  (나) 다음으로 위 ② 부분 판단에 대하여 본다.</p><p>  원심판결 이유 및 원심이 적법하게 채택한 증거들에 의하면, 원심 별지 제3목록 순번 7 내지 10번 대출 당시 이 사건 공동담보 위에는 채권자 합자회사 전일상호신용금고(이하 ‘전일상호신용금고’라고 한다) 명의의 채권최고액 360,000,000원인 1순위 근저당권과 채권최고액 350,000,000원인 3순위 근저당권이 등기되어 있었던 사실, 그런데 원심이 인정한 바와 같이 이 사건 공동담보에 설정된 남제새마을금고 명의의 2순위 근저당권 중 일부가 1997. 6. 5. 및 같은 달 11일 각 해지될 당시 같은 일자로 같은 부동산 위에 설정되어 있던 전일상호신용금고 명의의 1순위 및 3순위 근저당권도 모두 해지되었고, 같은 달 13일에는 이 사건 공동담보 중 남제새마을금고가 근저당권을 해지하지 않은 위 덕월동 
+        (지번 2 생략) 지상 제201호, 제301호, 제302호, 제401호에 관하여 설정되어 있던 전일상호신용금고 명의의 1순위 및 3순위 근저당권도 각 해지된 사실, 당시 남제새마을금고의 여신업무규정은 대출금의 상환 또는 기타 사유로 잔존 채권에 비하여 담보가액이 과다한 경우 저당권의 일부를 해지하여도 채권보전에 지장이 없는 경우에는 근저당권의 일부를 해지할 수 있다고 규정하고 있는 사실, 남제새마을금고가 
+        소외 3 명의로 원심 별지 제3목록 순번 11번의 100,000,000원을 대출하기 전인 1997. 6. 23. 위 덕월동 
+        (지번 2 생략) 토지 및 그 지상 제201호, 제301호, 제302호, 제401호에 대하여 자체적으로 감정평가한 금액이 555,857,500원이었던 사실, 한편 원고가 2000. 5. 1. 
+        <span id="link"><a name="linkContPanre" title="새창" type="광주지방법원순천지원|2000타경13013" href="#//">광주지방법원 순천지원 2000타경13013</a></span>로 신청하여 개시된 임의경매절차가 진행되던 중인 2000. 10. 11. 위 덕월동 
+        (지번 2 생략) 토지 부분에 대한 경매신청이 취하되어 위 덕월동 
+        (지번 2 생략) 토지에 관한 원고 명의의 근저당권은 아직 남아 있는 사실 등을 알 수 있다.
+      </p><p>  사정이 위와 같다면, 남제새마을금고가 1997. 6. 5. 및 같은 달 11일 이 사건 공동담보 중 일부에 관하여 근저당권을 해지한 것은 당시 전일상호신용금고 명의의 선순위 근저당권이 말소됨에 따라 1순위 근저당권자가 된 남제새마을금고가 이 사건 공동담보 중 일부에 관한 근저당권을 해지하여도 채권보전에 지장이 없다고 판단하여 당시의 여신업무규정에 따라 이루어졌을 여지가 없지 않고, 
+        피고 1, 
+        3, 
+        4가 원심에서 이러한 취지로 다투었음은 기록상 분명하다.
+      </p><p>  그렇다면 원심으로서는 당시 이 사건 공동담보 중 일부에 관한 근저당권이 어떠한 사유로 해지된 것인지, 만일 위와 같은 여신업무규정에 따라 해지된 것이라면 나머지 근저당권만으로는 채권보전에 지장이 있었는지를 심리·판단하였어야 함에도 그 판시와 같은 이유로 
+        피고 1의 손해배상책임 및 
+        피고 3, 
+        4의 신원보증책임이 인정된다고 단정한 것은 법리를 오해하여 필요한 심리를 다하지 아니함으로써 판결 결과에 영향을 미친 위법이 있다.
+      </p><p>  (3) 이러한 점들을 지적하는 이 부분 상고이유 주장은 이유가 있다.</p><p>  다. 원심 별지 제3목록 순번 6번 대출 부분에 관한 상고이유 제1점과 손해액 산정에 관한 법리오해를 주장하는 상고이유 제2점에 대하여</p><p>
+        <span class="accrnt_txt">금융기관의 임직원이 동일인 신용대출한도를 초과하여 대출할 경우 담보를 취득하도록 정하고 있는 여신업무에 관한 규정을 위반하여 아무런 담보를 취득하지 않은 채 신용대출한도를 초과하여 대출한 경우, 이러한 금융기관 임직원의 채무불이행으로 인하여 금융기관이 입은 통상의 손해는 위 임직원이 위와 같은 규정을 준수하여 적정한 담보를 취득하고 대출하였더라면 회수할 수 있었을 미회수 대출원리금이라 할 것이고, 특별한 사정이 없는 한 이러한 통상손해의 범위에는 약정이율에 의한 대출금의 이자와 약정연체이율에 의한 지연이자가 포함된다.</span>
+      </p><p>  원심판결 이유에 의하면, 남제새마을금고 및 원고의 여신업무 등과 관련된 규정들에서 동일인에 대한 신용대출한도는 30,000,000원이고 위 한도를 초과하는 경우에는 담보물을 취득하도록 규정하고 있는 사실을 알 수 있고, 원심이 
+        피고 1의 손해배상책임을 인정한 이 사건 각 동일인 대출한도 초과대출(앞서 본 바와 같은 이유로 파기하는 원심 별지 제3목록 순번 7 내지 10번 대출 부분은 제외)은 모두 위와 같은 규정을 위반하여 실질적으로 동일인에게 그 신용대출한도인 30,000,000원을 초과하여 대출하면서 담보를 취득하지 않은 채 이루어진 것임을 알 수 있다.
+      </p><p>  그렇다면 동일인 신용대출한도를 초과한 대출로 인하여 원고가 입은 손해의 범위에 정상이자율에 따른 이자와 연체이율에 따른 지연이자가 모두 포함된다고 본 원심판단은 그 이유설시에 다소 부적절한 점이 있으나 결론은 정당하고, 거기에 상고이유에서 주장하는 바와 같이 손해액의 산정에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 없다.</p><p>  한편 상고이유에서 지적하고 있는 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다34045|판결" href="#//">대법원 2004. 3. 26. 선고 2003다34045 판결</a></span>은 이 사건과 사안을 달리하는 것으로 이 사건에 원용하기에 적절하지 아니하다.
+      </p><p>  이 부분 상고이유의 주장은 이유가 없다.</p><p>  라. 원심 별지 제1목록 순번 2번 대출 부분에 관한 상고이유 제3점에 대하여</p><p>  원심은 그 판시와 같이 원심 별지 제1목록 순번 2번 대출 부분에 관하여 신원본인인 
+        피고 1의 손해배상책임을 인정한 다음, 이에 관하여 
+        피고 3, 
+        4의 신원보증인으로서 책임을 인정하였다.
+      </p><p>  그러나 원심이 인정한 판시 사실관계에 의하더라도, 위 대출이 이루어진 1999. 12. 29.은 
+        피고 3, 
+        4의 신원보증기간 내에 있지 아니하므로, 
+        피고 3, 
+        4는 위 대출에 관한 
+        피고 1의 손해배상책임에 대하여 신원보증인으로서 책임을 부담한다고 볼 수 없다(이러한 이유에서 원고는 이 사건 소 제기 당시부터 위 대출과 관련하여서는 
+        피고 3, 
+        4에 대하여 아무런 청구를 하지 아니하였다).
+      </p><p>  따라서 위 대출과 관련하여 
+        피고 3, 
+        4의 신원보증책임을 인정한 원심의 조치에 위법이 있음을 지적하는 
+        피고 3, 
+        4의 이 부분 상고이유 주장은 이유가 있다.
+      </p><p>  마. 원심 별지 제3목록 순번 6번 대출 부분에 관한 상고이유 제3점에 대하여</p><p>  원심은 원심 별지 제3목록 순번 6번 대출과 관련하여 미회수된 연체이자를 
+        피고 3, 
+        4의 이 부분 신원보증채무의 원금에 포함되는 것으로 본 다음, 원고의 이행청구가 있은 이후의 지연손해금을 가산하여 
+        피고 3, 
+        4에게 그 지급을 명하였다.
+      </p><p>  앞서 본 바와 같이 금융기관의 임직원이 동일인 신용대출한도를 초과하여 대출할 경우 담보를 취득하도록 정하고 있는 여신업무에 관한 규정을 위반하여 아무런 담보를 취득하지 않은 채 신용대출한도를 초과하여 대출한 경우, 이러한 채무불이행으로 인하여 금융기관이 입은 통상손해의 범위에 담보를 취득하고 대출하였더라면 회수할 수 있었을 연체이자가 포함된다고 보는 이상, 신원본인인 
+        피고 1의 손해배상채무를 전제로 한 
+        피고 3, 
+        4의 신원보증채무의 원금에는 미회수된 연체이자가 포함된다고 할 것이므로, 위와 같은 원심의 판단은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 신원보증채무의 이행지체에 관한 법리오해 등의 위법이 없다.
+      </p><p>
+        피고 3, 
+        4의 이 부분 상고이유의 주장은 이유가 없다.
+      </p><p>  3. 
+        피고 2, 
+        5, 
+        6의 상고이유에 대한 판단
+      </p><p>  가. 동일인 대출한도 위반으로 인한 손해발생에 관한 법리오해 등의 상고이유에 대하여</p><p>  원심판결 이유에 의하면, 원심은 남제새마을금고 및 원고의 동일인에 대한 신용대출한도는 30,000,000원이고, 위 한도를 초과하는 경우에는 담보물을 취득하여야 하므로, 
+        피고 2는 원고 남제지점 또는 남제새마을금고의 대출업무담당자로서 
+        피고 1과 
+        소외 2에 대하여 이미 신용대출한도인 각 30,000,000원의 대출이 이루어진 상태에서 동일인 신용대출한도를 초과한다는 점을 잘 알고 있었거나 잘 알 수 있었음에도 담보를 취득하지 않고 
+        피고 1에게 
+        소외 4 명의로 원심 별지 제1목록 순번 7번의 신용대출을, 
+        소외 2에게 
+        소외 5 명의로 원심 별지 제3목록 순번 12번, 13번의 신용대출을 각 실행한 고의 또는 중대한 과실로 인하여 원고에게 그 각 대출원리금 잔액 상당액의 손해를 입혔다고 판단하였다.
+      </p><p>  앞서 본 법리에 비추어 보면, 위와 같은 원심의 판단은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 동일인 대출한도 위반으로 인한 손해발생에 관한 법리오해 등의 위법이 없다.</p><p>  이 부분 상고이유의 주장은 이유가 없다.</p><p>  나. 손해액 산정에 관한 법리오해 등의 상고이유에 대하여</p><p>  앞서 본 바와 같이 금융기관의 임직원이 동일인 신용대출한도를 초과하여 대출할 경우 담보를 취득하도록 정하고 있는 여신업무에 관한 규정을 위반하여 아무런 담보를 취득하지 않은 채 신용대출한도를 초과하여 대출한 경우 이러한 채무불이행으로 인하여 금융기관이 입은 통상손해의 범위에 담보를 취득하고 대출하였더라면 회수할 수 있었을 약정이율에 의한 대출금의 이자와 약정연체이율에 의한 지연이자가 포함된다. 따라서 원심이 
+        피고 2가 담보를 취득하지 않고 동일인 신용대출한도를 초과하여 실행한 원심 별지 제1목록 순번 7번 대출, 원심 별지 제3목록 12번, 13번 대출로 인한 손해에 정상이자율에 따른 이자와 연체이율에 따른 지연이자가 포함된다고 본 결론은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 손해액의 산정에 관한 법리오해 등으로 판결 결과에 영향을 미친 위법이 없다.
+      </p><p>  이 부분 상고이유의 주장도 이유가 없다.</p><p>  4. 결론</p><p>  그러므로 나머지 상고이유에 대한 판단을 생략한 채 원심판결 중 원심 별지 제1목록 순번 2번 대출에 관한 
+        피고 3, 
+        4 패소 부분, 원심 별지 제2목록 대출 및 원심 별지 제3목록 순번 7 내지 10번 대출에 관한 
+        피고 1, 
+        3, 
+        4 패소 부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하며, 원고, 
+        피고 2, 
+        5, 
+        6의 각 상고와 
+        피고 1, 
+        3, 
+        4의 각 나머지 상고를 모두 기각하며, 상고비용 중 원고와 
+        피고 2, 
+        5, 
+        6 사이에서 생긴 부분은 패소자 각자가 부담하도록 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박보영(재판장) 박일환 신영철(주심) 민일영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

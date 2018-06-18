@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2011나4683 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2138736';
+var contIdEtc = '2138737';
+var saNo = '2011나4683';
+var sngoNm = '선고';
+var saNm = '부당이득금반환등·부당이득반환등';
+try {
+	var sngoDay=('20111208' ? 
+			'20111208'.length==4 ? Date.parseExact('20111208','yyyy').toString('yyyy. M. d.') : 
+				'20111208'.length==6 ? Date.parseExact('20111208','yyyyMM').toString('yyyy. M. d.') : 
+					'20111208'.length==8 ? Date.parseExact('20111208','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011나4683,2011나4690(병합) ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011나4683';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2011나4683</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(17)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|772337">고홍석 대법원 판례에 나타난 금융투자상품 거래에서의 적합성 원칙 민사판례연구 37권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|750484">최문희 계약의 구조에 대한 설명의무 : KIKO(키코) 사건에 관한 대법원 전원합의체 판결을 소재로 하여 상사판례연구 27집 1권 / 한국상사판례학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|722405">진상범 KIKO 사건에 관한 대법원 전원합의체 판결의 논점 , : 적합성 원칙과 설명의무를 중심으로 . BFL 63호 / 서울대학교 금융법센터  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|772273">최문희 키코(KIKO) 통화옵션계약의 적합성 원칙과 설명의무 민사판례연구 37권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725057">최문희 KIKO 사건에 관한 대법원 전원합의체 판결의 논점 , : 적합성 원칙과 설명의무를 중심으로 . BFL 64호 / 서울대학교 금융법센터  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2008가합120120">서울중앙지방법원 2008가합120120</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|420|0|null">민사소송법 제420조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|104|0|null">민법 제104조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|109|0|null">민법 제109조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|110|0|null">민법 제110조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="외국환거래법|11|0|null">외국환거래법 제11조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자본시장과금융투자업에관한법률|47|0|null">자본시장과 금융투자업에 관한 법률 제47조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자본시장과금융투자업에관한법률|58|0|null">자본시장과 금융투자업에 관한 법률 제58조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자본시장과금융투자업에관한법률시행령|53|0|null">자본시장과 금융투자업에 관한 법률 시행령 제53조 제1항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자본시장과금융투자업에관한법률|46|0|null">자본시장과 금융투자업에 관한 법률 제46조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자본시장과금융투자업에관한법률|47|0|null">자본시장과 금융투자업에 관한 법률 제47조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자본시장과금융투자업에관한법률|48|0|null">자본시장과 금융투자업에 관한 법률 제48조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2008가합124238">서울중앙지방법원 2010. 11. 29. 선고 2008가합124238, 2010가합53780(병합) 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2138737">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2011. 12. 8. 선고 2011나4683,2011나4690(병합) 판결</h2><p class="sub_title">[부당이득금반환등·부당이득반환등][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피항소인 겸 항소인】
+주식회사 세신정밀
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【원고, 항소인】
+원고 2 (소송대리인 법무법인 대륙아주 담당변호사 김성묵 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고, 피항소인】
+주식회사 한국스탠다드차타드제일은행 (소송대리인 변호사 김수형 외 3인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party7">【피고, 항소인 겸 피항소인】
+주식회사 신한은행 (소송대리인 법무법인 율촌 담당변호사 조장혁)
+
+</strong></p>
+<span class="space"></span>【변론종결】
+<p>2011. 8. 25.</p>
+
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【제1심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2008가합124238|판결" href="#//">서울중앙지방법원 2010. 11. 29. 선고 2008가합124238, 2010가합53780(병합) 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>   1. 제1심판결을 다음과 같이 변경한다.</p><p>  가. 피고 주식회사 신한은행은 원고 주식회사 세신정밀에 938,937,000원 및 그 중 14,040,000원에 대하여 2008. 6. 5.부터, 20,340,000원에 대하여 2008. 7. 7.부터, 12,840,000원에 대하여 2008. 8. 5.부터, 43,350,000원에 대하여 2008. 9. 5.부터, 106,932,000원에 대하여 2008. 10. 7.부터, 87,270,000원에 대하여 2008. 11. 5.부터, 151,302,000원에 대하여 2008. 12. 5.부터, 101,850,000원에 대하여 2009. 1. 6.부터, 401,013,000원에 대하여 2009. 6. 29.부터 2011. 12. 8.까지 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을 지급하라.</p><p>  나. 원고 2의 피고 주식회사 한국스탠다드차타드제일은행에 대한 청구 및 원고 주식회사 세신정밀의 피고 주식회사 신한은행에 대한 나머지 청구를 모두 기각한다.</p><p>   2. 소송총비용 중 원고 주식회사 세신정밀과 피고 주식회사 신한은행 사이에 생긴 부분은 이를 10분하여 그 7은 위 원고가, 나머지는 위 피고가 각 부담하고, 원고 2와 피고 주식회사 한국스탠다드차타드제일은행 사이에 생긴 부분은 위 원고가 부담한다.</p><p>   3. 제1의 가.항은 가집행할 수 있다.</p>
+【청구취지 및 항소취지】
+<p>   1. 원고들의 청구취지 및 항소취지</p>
+<p>  제1심판결을 다음과 같이 변경한다. 피고 주식회사 한국스탠다드차타드제일은행은 원고 2에게 919,940,000원 및 그 중 [별지3] 제1항 기재 7회차, 9회차 내지 12회차 각 지연이자 대상 원본 금액, 제2항 기재 1회차 내지 12회차 각 지연이자 대상 원본 금액에 대하여 각 결제일 란 기재 날부터 이 사건 2011. 5. 3.자 청구취지변경신청서부본 송달일까지 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을, 피고 주식회사 신한은행은 원고 주식회사 세신정밀에 3,129,790,000원 및 그 중 [별지3] 제3항 기재 2회차 내지 12회차 각 지연이자 대상 원본 금액에 대하여 각 결제일 란 기재 날부터 위 청구취지변경신청서부본 송달일까지 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을 각 지급하라(원고들은 제1심에서 주위적으로 부당이득반환 채권에 기하여, 피고 주식회사 신한은행이 원고 주식회사 세신정밀에 75,000,000원을 지급하고 피고 주식회사 한국스탠다드차타드제일은행이 원고 2에게 150,000,000원을 지급할 것 및 피고 주식회사 신한은행은 원고 주식회사 세신정밀의 피고 주식회사 신한은행에 대한 원심판결 [별지2] 기재 통화옵션계약에 따른 채무가 존재하지 아니함을 확인할 것을 구하고, 예비적으로 손해배상 채권에 기하여, 피고 주식회사 신한은행이 원고 주식회사 세신정밀에게 75,000,000원을 지급하고 피고 주식회사 한국스탠다드차타드제일은행이 원고 2에게 150,000,000원을 지급할 것을 구하다가, 당심에서 선택적으로 부당이득반환 채권 또는 손해배상 채권에 기하여 위와 같이 청구를 변경하였다).</p>
+<p>   2. 피고 주식회사 신한은행의 항소취지</p>
+<p>  제1심판결 중 피고 주식회사 신한은행의 패소 부분을 취소하고, 위 취소 부분에 해당하는 원고 주식회사 세신정밀의 청구를 기각한다.</p>
+
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p><b>1. 기초사실</b></p><p>  가. 제1심판결의 인용</p><p>  이 부분에 관하여 이 법원이 설시할 이유는, 제1심판결 ‘1. 기초사실’의 라.항 마지막 부분 “2010. 5. 중순경까지 1,100원대에서 움직이다가 2010. 11. 현재 환율은 1,100원대에서 변동하고 있다.”를 “2010. 5.경까지의 환율은 주로 1,100원대에서 변동하였다.”로 고치고, 마.항을 아래 나.항과 같이 고치며, 인정 근거로서 갑 64호증(가지번호 포함)을 추가하는 외에는 제1심판결의 ‘1. 기초사실’과 같으므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span> 본문에 의하여 이를 그대로 인용한다.</p><p>  나. 이 사건 각 통화옵션계약의 <font class="txt_16"><span id="link"><a name="%EC%A3%BC1a" href="#%EC%A3%BC1">주1)
+			</a></span></font><span class="t01-text">녹인</span> 조건 성취</p><p>  위와 같은 환율 상승으로 원고들은 이 사건 각 통화옵션계약의 녹인 조건 성취에 따른 달러화 2배 매도 의무 내지 차액결제 의무를 이행하였고, 그로 인한 최종 손익의 합계금은 [별지3] 기재와 같이 원고 2의 경우 마이너스(-) 919,940,000원(이 사건 ① 계약의 손해금 286,920,000원 + 이 사건 ② 계약의 손해금 633,020,000원), 원고 회사의 경우 마이너스(-) 3,129,790,000원이다.</p><p><b>2. 원고들의 청구원인(부당이득반환 또는 손해배상의 선택적 청구)</b></p><p>  가. 이 사건 각 통화옵션계약은 그 구조적인 설계에서부터 문제가 있어 환위험의 회피에 적합하지 아니한 상품으로서, 계약 내용이 불공정 약관에 해당하고, 민법상 신의성실의 원칙에도 반하며, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|104|">민법 제104조</a></span>의 불공정한 법률행위에 해당하여 무효이다. 그리고 피고들은 이 사건 각 통화옵션계약이 환 헤지에 부적합함에도 옵션의 이론가 내지 <font class="txt_16"><span id="link"><a name="%EC%A3%BC2a" href="#%EC%A3%BC2">주2)
+			</a></span></font><span class="t01-text">수수료</span>를 숨기고 제로 코스트(Zero Cost)를 표방하는 등 원고들을 기망하였고, 그로 인하여 원고들은 이 사건 각 통화옵션계약의 중요부분에 관하여 착오를 일으켜 이 사건 각 통화옵션계약을 체결하였으므로 원고들은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|109|">민법 제109조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|110|">제110조</a></span>에 기하여 이를 취소한다.</p><p>  나. 또한 이 사건 각 통화옵션계약은 피고들의 위와 같은 기망행위, 적합성 원칙 위반 및 설명의무 위반 등의 불법행위에 의하여 체결되었다.</p><p>  다. 따라서 이 사건 각 통화옵션계약의 무효 내지 취소로 인한 부당이득반환 또는 불법행위로 인한 손해배상에 기하여 이 사건 각 통화옵션계약의 체결에 따라 원고들이 지출한 최종 손해금으로서, 피고 제일은행은 원고 2에게 919,940,000원 및 그 중 [별지3] 제1항 기재 7회차, 9회차 내지 12회차 각 지연이자 대상 원본 금액, 제2항 기재 1회차 내지 12회차 각 지연이자 대상 원본 금액에 대하여 각 결제일 란 기재 날부터의 지연손해금을, 피고 신한은행은 원고 회사에 3,129,790,000원 및 그 중 [별지3] 제3항 기재 2회차 내지 12회차 각 지연이자 대상 원본 금액에 대하여 각 결제일 란 기재 날부터의 지연손해금을 지급할 의무가 있다.</p><p><b>3. 계약의 무효, 취소로 인한 부당이득반환 청구에 관한 판단</b></p><p>  가. 이 사건 각 통화옵션계약의 환위험 회피(hedge) 적합 여부에 대한 판단</p><p>  1) 제1심판결의 인용</p><p>  이 부분에 관하여 이 법원이 설시할 이유는, 제1심판결 제18면 제12행의 ‘헤지 코스트 6,000,000원로’를 ‘헤지 코스트로 6,000,000원’으로 고치고, 제21면 제9, 10행의 ‘콜옵션의 이론가(대고객 가격과 같음)’의 괄호 부분을 삭제하며<font class="txt_16"><span id="link"><a name="%EC%A3%BC3a" href="#%EC%A3%BC3">주3)
+			</a></span></font><span class="t01-text">,</span> 수수료의 과다 여부에 관한 원고들의 주장에 대하여 아래 2)항과 같은 판단을 추가하는 외에는 제1심판결 ‘3. 이 사건 각 통화옵션계약의 환위험 회피(hedge) 적합 여부에 관한 판단’과 같으므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span> 본문에 의하여 이를 그대로 인용한다.</p><p>  2) 수수료의 과다 여부에 관한 원고들의 추가 주장에 대한 판단</p><p>  원고들은, 이 사건 각 통화옵션계약이 풋옵션과 콜옵션을 맞교환하는 것으로서 이러한 옵션의 교환에 초점을 두고 콜옵션과 풋옵션의 가치를 비교하면 그 마진율(수수료율)이 257% 내지 615.6<font class="txt_16"><span id="link"><a name="%EC%A3%BC4a" href="#%EC%A3%BC4">주4)
+			</a></span></font><span class="t01-text">%</span>에 해당하여 지나치게 과다할 뿐 아니라, 피고들은 반대거래 등에서도 이익을 얻을 수 있으므로 이러한 점을 감안하면 피고들이 더욱 과다한 수수료를 수취한 셈이 된다고 주장한다.</p><p>  수수료(마진)에는 고객에 대한 신용위험 관리비용, 시장위험 관리비용[동적 헤지(dynamic hedge) 비용], 파생상품의 설계·판매·사후관리 등에 따른 업무원가, 순이윤 등이 포함되는바, 위와 같이 수수료를 구성하는 구체적인 비용 등을 개별적으로 나누어 그 자체의 과다 여부를 판단하는 것이 가능하거나 타당한지, 실제 비용 등이 과다하게 산정되고 피고들이 그와 관련하여 이익을 취득하였는지 등에 관하여 살펴본다.</p><p>  먼저 신용위험 관리비용은 보험금과 유사하게 은행들이 기업의 신용위험에 대비하여 은행의 정책적 판단에 의하여 설정한 목표, 관리능력, 시장 상황 등에 따라 일정한 금액을 적립하여 두고 어떤 한 기업이 채무를 이행하지 못하여 은행에 손실이 발생하면 그 비용으로 손실을 보전하는 것으로서 어느 정도 책정되어야 공정하거나 적절하다고 볼 수 있는지 일률적으로 단정하기 어려우므로(을가 54 내지 58호증, 을가 66호증, 변론 전체의 취지), 수수료 전체의 크기 외에 신용위험 관리비용 액수만을 따로 떼어 내어 일률적으로 그 금액의 다과를 따질 것은 아니다.</p><p>  시장위험 관리비용에 관하여 보면, 이 사건 각 통화옵션계약과 같은 옵션거래를 통하여 은행은 풋옵션이 행사되든 콜옵션이 행사되든 만기일에 외화를 매입하게 되는데, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="외국환거래법|11|">외국환거래법 제11조</a></span>의 위임에 따라 기획재정부장관이 제2006-26호로 고시한 <font class="txt_16"><span id="link"><a name="%EC%A3%BC5a" href="#%EC%A3%BC5">주5)
+			</a></span></font><span class="t01-text">외국환거래규정</span>이나 금융위원회가 제정한 <font class="txt_16"><span id="link"><a name="%EC%A3%BC6a" href="#%EC%A3%BC6">주6)
+			</a></span></font><span class="t01-text">은행업감독규정</span> 등에 따라 은행이 보유할 수 있는 외환 포지션이 제한되고, 또 은행은 보유하게 된 통화옵션에 대한 환율변동의 위험성도 제거하여야 하므로, 외환 건전성을 유지하여야 하는 은행으로서는 반대거래를 통한 헤지가 필요하고, 그 결과 향후 환율이 오른다고 하더라도 은행이 콜옵션 행사에 따른 이익을 그대로 얻을 수는 없다. 그런데 은행이 기업과 통화옵션계약을 체결할 때마다 백투백(back-to-back) <font class="txt_16"><span id="link"><a name="%EC%A3%BC7a" href="#%EC%A3%BC7">주7)
+			</a></span></font><span class="t01-text">거래</span>를 한다는 것은 현실적으로 어려우므로, 피고들을 비롯한 은행들은 통화파생상품 거래 전체를 포트폴리오로 묶어 관리하면서 옵션 포트폴리오의 가치에 영향을 미치는 리스크를 요소별(환율 변화에 따른 옵션의 가치, 금리, 변동성 등)로 분해하여 옵션의 만기까지 환율, 금리, 변동성의 변화에 따라 지속적으로 기초자산을 매도 또는 매수하는 방식의 동적 헤지를 하게 되고, 이 때 개별 통화옵션거래에 대하여 헤지 거래를 하는 것이 아니라 은행에 잔존하는 모든 통화옵션거래 전체 포지션에 대하여 한꺼번에 헤지 거래를 하는 방식을 취하고 있다. 그리하여 이와 같은 동적 헤지에 의할 경우 개별 통화파생상품 거래마다 별도의 헤지 비용을 구체적으로 산출하여 이를 수취한다는 것은 사실상 불가능하므로 그 금액만을 별도로 따질 수는 없고, 또한 동적 헤지를 할 경우 옵션의 만기까지 환율, 금리, 변동성의 변화에 따라 지속적으로 기초자산을 매도 또는 매수함으로써 옵션의 이론가 상당의 손익만을 확정시키게 되는 것이므로, 고객이 풋옵션을 행사하였다고 하여 은행이 손해를 보게 되는 것이 아님은 물론 은행이 콜옵션을 행사하였다고 하더라도 이를 통하여 수수료 외에 별도의 이익을 얻게 되는 것도 아니다(을가 43호증, 피고 제일은행의 2010. 6. 28.자 준비서면 첨부 소외 2 교수의 보고서 등 변론 전체의 취지). 이와 같은 반대거래는 은행간 시장에서 중개인을 통하여 호가되는 객관적인 시장가격을 적용받아 이루어진다. 그 결과 키코 통화옵션계약의 옵션 가격 산정 역시 은행이 일방적으로 자신에게 유리한 수치를 입력하여 산출할 수는 없고 기본적으로 객관적인 시장변수에 따라 이루어지게 되므로, 그 가격 산정 과정에서 어떠한 이익을 수취하기도 어렵다.</p><p>  업무원가와 순이윤에 관하여 보더라도, 은행들로서는 다른 은행들과의 자유경쟁 과정에서 기타 업무원가나 순이윤을 과도하게 책정할 수 없었던 것으로 보이고(이 사건에서도 이 사건 ③ 계약의 경우 아래에서 보는 바와 같이 피고 제일은행의 추가 거래 거절 후 피고 신한은행이 먼저 원고 2에게 적극적으로 권유하여 이루어졌다), 이 사건 각 통화옵션계약에서 업무원가와 순이윤이 과도하게 책정되었음을 인정할 아무 자료도 없다.</p><p>  이와 같이 수수료를 구성하는 개별 비용을 구체적으로 산정하는 것이 현실적으로 불가능하거나 적절하지 않고 달리 개별 비용이 과다하다는 점에 관한 다른 자료도 없으며 그와 관련하여 피고들이 어떠한 이익을 취득하였다고 보기도 어려우므로, 결국 이 사건 각 통화옵션계약의 수수료의 과다 여부는 전체 수수료의 규모(마진율)를 유사한 목적과 내용을 가진 다른 금융거래와 비교하는 등의 방법으로 판단할 수밖에 없다. 그런데 제1심판결에서 설시한 바와 같이 키코 통화옵션계약의 본질은 환전으로서 그 마진율은 콜옵션의 총 계약금액을 기준으로 산정하는 것이 합리적이다. 즉 이 사건 각 통화옵션계약이 풋옵션과 콜옵션의 조합으로 구성되어 있다고 하더라도, 풋옵션의 이론가에는 녹인 조건의 설정 및 변경으로 인한 이익이 반영되지 않는 등 원고들이 얻는 경제적 효용이 모두 반영되지 못한다. 그리고 신용위험 관리비용은 풋옵션의 이론가가 아니라 콜옵션 계약금액에 해당하는 신용위험 노출 금액(exposure)에 부도율과 부도시 손실률을 곱하여 산출하고(제1심판결 제15면 제4행 내지 제7행), 동적 헤지 비용도 풋옵션의 이론가가 아닌 콜옵션 계약금액을 토대로 산정한다<font class="txt_16"><span id="link"><a name="%EC%A3%BC8a" href="#%EC%A3%BC8">주8)
+			</a></span></font><span class="t01-text">.</span> 그런데 제1심판결에서 본 바와 같이 콜옵션의 총 계약금액을 토대로 산정한 이 사건 각 통화옵션계약의 각 마진율은 0.52% 내지 0.84%로서 이자율 스와프 상품이나 펀드 환전 수수료와 같은 다른 금융거래의 마진율에 비하여 과다하다고 보기 어렵다. 따라서 수수료의 과다에 관한 원고들의 위 주장은 이유 없다.</p><p>  나. 불공정 약관, 신의성실의 원칙 위반, 불공정한 법률행위로서 무효라는 주장에 대한 판단</p><p>  1) 제1심판결의 인용</p><p>  이 부분에 관하여 이 법원이 설시할 이유는, 원고들의 주장에 대하여 아래 2)항과 같은 판단을 추가하는 외에는 제1심판결 제4의 가.항 내지 다.항과 같으므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span> 본문에 의하여 이를 그대로 인용한다.</p><p>  2) 옵션의 가격에 관한 교섭이 없었음을 이유로 한 무효 주장에 대한 판단</p><p>  원고들은, 이 사건 각 통화옵션계약의 체결 과정에서 환율 변동의 확률분포를 고려하여 산정한 옵션의 가격에 관한 교섭이 전혀 없었던 결과 콜옵션의 가치가 풋옵션의 가치보다 최소 2배 이상 높은 현저하게 불공정한 계약이 체결되었던바, 이는 신의성실의 원칙에 반하거나 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|104|">민법 제104조</a></span>의 불공정한 법률행위에 해당할 뿐 아니라, 매매계약의 본질적인 요소인 가격에 대한 합의가 없어 무효라고 주장한다.</p><p>  이 사건 각 통화옵션계약을 체결하는 과정에서 환율 변동의 확률분포를 고려한 각 옵션 이론가에 관한 교섭은 없었던 것으로 보인다. 그러나 이와 같은 교섭이 없었다고 하더라도, 이 사건 각 통화옵션계약의 구조는 환율 변동의 확률적 분포를 고려하여 원고들과 피고들 쌍방의 기대이익이 대등하게 한 것이므로, 비록 환율에 대한 예상이 부적절하여 계약 체결 후 시장환율이 그 예상과 달리 변동함으로 인하여 결과적으로 쌍방의 이익에 불균형이 생겼다고 하더라도 그 때문에 계약 자체가 현저하게 불공정하게 체결되었다고 볼 수는 없다. 뿐만 아니라 앞서 본 바와 같이 이 사건 각 통화옵션계약의 수수료도 과다하다고 볼 수 없다.</p><p>  또한 이 사건 각 통화옵션계약이 풋옵션과 콜옵션의 상호 매매계약에 해당한다거나, 각 옵션의 가격에 대한 합의가 반드시 필요한 요소로서 그러한 합의가 없을 경우 계약 자체가 무효라고 볼 근거도 없다. 다만 은행업감독업무시행세칙 제65조 제6호 (마)목에서 “비정형 파생상품거래시에는 내재된 개별 거래별로 각각의 가격정보(금융기관의 거래원가가 아닌 대고객 거래가격 수준의 정보를 말한다)를 제공하여야 한다.”고 규정하고 있는바, 이에 의하더라도 은행에 대고객 거래가격 수준의 정보 제공의무가 인정될 뿐이고, 이에 의하여 개별 옵션의 가격에 대한 합의를 이 사건 각 통화옵션계약과 같은 파생상품거래의 필수적인 요소로 인정할 수는 없으므로, 원고들의 위 주장은 이유 없다.</p><p>  다. 이 사건 각 통화옵션계약의 취소 주장에 대한 판단</p><p>  1) 원고들의 주장</p><p>  이 사건 각 통화옵션계약의 구조상 녹아웃 조건이 성취되면 환 헤지를 할 수 없고 녹인 조건이 성취되면 새로운 위험을 부담하게 되어 원고들은 계약 체결 전보다 더 높은 위험에 노출되므로, 이 사건 각 통화옵션계약은 원고들이 계약을 체결하는 목적인 환 헤지에 적합하지 않음에도 피고들은 마치 이 사건 각 통화옵션계약이 환 헤지에 적합한 상품인 것처럼 기망하거나 원고들의 착오를 유발하였다.</p><p>  이 사건 각 통화옵션계약에 따라 피고들이 취득한 콜옵션의 가치와 원고들이 취득한 풋옵션의 가치 사이에는 현저한 불균형이 있고, 피고들은 그 차액 상당의 막대한 숨은 수수료를 콜옵션의 이론가 내지 대고객 가격에 반영하여 상품을 설계함으로써 이를 수취하였다. 이러한 상품을 판매하는 피고들로서는 고객들에게 환율 변동의 확률적 분포를 반영하여 평가한 옵션의 평가가치(옵션가격결정모형에 의한 평가가치<font class="txt_16"><span id="link"><a name="%EC%A3%BC9a" href="#%EC%A3%BC9">주9)
+			</a></span></font><span class="t01-text">)</span>와 수수료 등을 알려 주어 고객들로 하여금 합리적인 의사결정을 할 수 있도록 하여야 함에도, 옵션의 평가가치와 수수료를 숨기고 마치 원고들이 매입한 풋옵션과 매도한 콜옵션의 가치가 동등한 것처럼 제로 코스트만 강조함으로써 원고들의 착오를 유발하였다.</p><p>  따라서 원고들은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|109|">민법 제109조</a></span> 또는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|110|">제110조</a></span>에 따라 이 사건 소장부본의 송달로써 이 사건 각 통화옵션계약을 취소한다.</p><p>  2) 판단</p><p>  가) 환 헤지 부적합성에 관한 기망 또는 착오</p><p>  이 부분에 관하여 이 법원이 설시할 이유는 제1심판결 제4의 라. 2)항과 같으므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span> 본문에 의하여 이를 그대로 인용한다.</p><p>  나) 옵션의 이론가, 수수료, 제로 코스트 관련 기망 또는 착오</p><p>  ① 피고들이 옵션의 이론가 내지 수수료를 공개할 의무가 있는지</p><p>  앞서 본 것처럼 은행업감독업무시행세칙 제65조 제6호 (마)목에서는 통화옵션상품을 거래하는 은행으로 하여금 대고객 가격 수준의 정보를 제공하도록 규정하고 있다. 옵션의 대고객 가격은 옵션의 이론가에 은행의 비용과 이윤 등을 가감하여 결정되므로, 은행이 고객에게 풋옵션을 매도하는 경우, "대고객 가격 = 이론가 + 비용과 이윤"이고, 은행이 고객으로부터 콜옵션을 매수하는 경우, "대고객 가격 = 이론가 - 비용과 이윤"이 된다. 통상적으로 풋옵션 이론가에 비용과 이윤 등의 수수료 중 일부를 가산하여 풋옵션의 대고객 가격을 정하고, 콜옵션 이론가에서 나머지 수수료를 차감하여 콜옵션의 대고객 가격을 정함으로써 양 옵션의 대고객 가격을 동일하게 맞추나, 이와 달리 수수료 전부를 풋옵션 이론가에만 가산하여 풋옵션의 대고객 가격을 정하고 콜옵션 이론가는 차감하지 않고 그대로 콜옵션의 대고객 가격으로 정하는 것도 가능한데, 어떤 방식에 따르더라도 고객 입장에서는 개별 풋옵션의 대고객 가격의 합계액과 개별 콜옵션의 대고객 가격의 합계액이 동일하여 계약체결시 별도의 프리미엄을 지급하지 않는다는 점은 같다. 즉 은행은 각 만기별 풋옵션의 대고객 가격 총액과 각 만기별 콜옵션의 대고객 가격 총액이 같도록 설계하는 과정에서 수수료를 풋옵션의 이론가에 가산하는 방식을 택할 수도 있고 콜옵션의 이론가에서 차감하는 방식을 택할 수도 있는 것이다(을가 54 내지 58호증, 변론 전체의 취지).</p><p>  이 사건 각 통화옵션계약도 피고들이 취득한 콜옵션의 이론가가 원고들이 취득한 풋옵션의 이론가보다 높게 설계되어 있는데, 피고들은 그 차액 상당을 수수료로서 풋옵션의 대고객 가격 등에 반영하여 수취하였고, 갑 1, 2, 5, 34호증, 을가 53, 65호증, 을나 12호증(가지번호 포함)의 각 기재, 제1심 증인 소외 1(대법원판결의 소외인)의 증언, 원고 2 본인신문결과 및 변론 전체의 취지를 종합하면, 피고들은 이 사건 각 통화옵션계약 체결 당시 원고들에게 위와 같은 수수료 부과의 구조 및 수수료 부과 사실을 명시적으로 설명하지 않았으며, 별도의 프리미엄의 지급이 필요 없다는 취지로 설명하면서 이 사건 각 통화옵션계약의 체결을 권유한 사실이 인정된다.</p><p>  그런데 만약 은행이 옵션의 이론가를 고객에게 제공하게 되면 자연히 콜옵션 이론가와 풋옵션 이론가의 차액 상당인 수수료의 규모가 공개될 수밖에 없다. 하지만 은행업감독업무시행세칙 제65조 제6호 (마)목의 규정을 보면 금융기관은 ‘거래원가가 아닌 대고객 거래가격 수준의 정보’를 제공하도록 규정하고 있고, 여기서의 ‘거래원가’가 옵션의 이론가를 뜻하는지 아니면 파생상품 판매에 소요되는 비용이나 이윤, 즉 수수료를 의미하는지는 분명하지 아니하나 원가를 공개할 의무가 없다고 하는 위 규정의 취지는 적어도 은행이 파생상품을 판매하면서 수취하는 수수료의 규모를 공개할 필요는 없다는 뜻으로 이해할 수 있다. 왜냐하면 수수료의 내용을 차지하는 신용위험 관리비용, 동적 헤지 비용, 순이윤 등에 관한 정보는 은행이 통화옵션상품을 조달하기 위한 거래원가에 관한 정보로서 은행 입장에서는 영업비밀로 보호되어야 할 측면도 있다고 할 것인데, 만약 옵션의 이론가와 수수료를 합한 전체 가격만 고객에게 제공하는 것이 아니라 옵션의 이론가를 제공하여 수수료의 규모를 쉽게 짐작할 수 있게 하거나 직접적으로 수수료 규모를 밝히게끔 하는 것은 은행에 원가를 공개하라고 요구하는 것과 같은 의미이기 때문이다.</p><p>  한편 원고들은 은행업감독업무시행세칙 제65조 제6호 <font class="txt_16"><span id="link"><a name="%EC%A3%BC10a" href="#%EC%A3%BC10">주10)
+			</a></span></font><span class="t01-text">(다)목</span>에서 파생상품거래의 경우 고지하도록 되어 있는 ‘거래에 내재된 리스크’에 옵션의 이론가나 수수료가 포함되어 있다거나, 2009. 2.부터 시행된 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자본시장과 금융투자업에 관한 법률|47|">자본시장과 금융투자업에 관한 법률(이하 자본시장법이라 한다) 제47조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자본시장과 금융투자업에 관한 법률|58|">제58조 제1항</a></span> 및 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자본시장과 금융투자업에 관한 법률 시행령|53|">시행령 제53조 제1항 제2호</a></span><font class="txt_16"><span id="link"><a name="%EC%A3%BC11a" href="#%EC%A3%BC11">주11)
+			</a></span></font><span class="t01-text"> </span>에서 수수료 고지를 의무화하고 있다는 취지로도 주장하나, 위 ‘거래에 내재된 리스크’는 그 문언으로 보더라도 옵션의 이론가나 수수료가 포함된다고 보기는 어렵고, 위 자본시장법과 시행령의 규정은 이 사건 각 통화옵션게약의 체결 후에 비로소 시행되었을 뿐 아니라 위 규정들에서 말하는 ‘수수료’는 은행 등 금융기관이 알선자 내지 중개자로서 제공한 용역에 대한 대가를 의미하는 것으로 해석된다.</p><p>  따라서 장외파생상품의 계약당사자로서 고객으로부터 일정한 수수료를 수취하는 금융상품을 설계·판매하는 피고들에게 대고객 가격 수준의 정보 외에 옵션의 이론가나 수수료를 공개할 의무가 있다고 볼 수는 없다.</p><p>  ② 제로 코스트 관련 기망 내지 착오</p><p>  은행이 영리 추구 기업인 이상 통화옵션계약을 구성하는 옵션의 대고객 가격에 각종 비용 및 영업이익 등이 반영되어 있음은 당연하고, 금융거래관행, 신용위험 관리, 외국환거래규정에 따른 반대거래의 필요성 등에 비추어 이러한 업무방식이 부당하다고 보기는 어려운 점, 이 사건 각 통화옵션계약의 수수료를 옵션의 대고객 가격에 반영한 것은 기업이 풋옵션만을 구매하려면 거액의 프리미엄을 지급해야 하기 때문에 풋옵션만의 거래는 거의 활성화되지 않았고 그에 따라 풋옵션 프리미엄을 지출하지 않으면서도 환 헤지를 하고자 하는 수출기업의 수요에 부응하기 위한 측면이 있는 점, 은행업감독업무시행세칙 제65조 제6호 (마)목에서 "비정형 파생상품거래시에는 내재된 개별 거래별로 각각의 가격정보(금융기관의 거래원가가 아닌 대고객 거래가격 수준의 정보를 말한다)를 제공하여야 한다."고 규정한 것은 옵션의 이론가와 대고객 가격을 구별하고 있음을 전제로 한다고 이해되는 점, 다른 키코 통화옵션상품 관련 소송인 <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2008가합120120" href="#//">서울중앙지방법원 2008가합120120</a></span> 부당이득반환등 사건에서 기업측 전문가증인으로 출석하여 증언한 소외 3 교수도 ‘제로 코스트 구조라는 것은 은행의 비용 및 순마진을 옵션 프리미엄에 포함시켜 받는 방법을 말하는 것’이라고 증언하였던 점(을가 47호증) 등을 종합하여 보면, 장외파생상품시장에서 제로 코스트라고 함은 은행이 소요될 비용과 수취할 이익 등과 같은 수수료를 반영하여 콜옵션과 풋옵션의 각 대고객 가격을 동일하게 설계함으로써 고객이 별도로 프리미엄이나 비용 등을 지급할 필요가 없다는 의미로 이해된다.</p><p>  이와 달리 콜옵션과 풋옵션의 각 이론가가 동일한 것이 제로 코스트라고 하게 되면 은행은 아무 마진도 얻지 못하고 필요한 각종 비용도 충당하지 못하는 불합리한 결과에 이르게 되며, 앞서 본대로 피고들이 영리를 추구하는 기업인 이상 이 사건 각 통화옵션상품의 판매를 통해 일정한 이익을 얻는 것은 당연하고 누구든지 이를 충분히 예상할 수 있을 것이고, 원고들 역시 이 사건 각 통화옵션계약을 체결하면서 피고들이 아무런 비용이나 이윤을 부과하지 않았을 것으로 인식하였을 것이라고 보기 어려우므로, 피고들이 이 사건 각 통화옵션계약이 제로 코스트라고 하면서 별도의 수수료를 지급할 필요가 없다고 하였다거나 이 사건 각 통화옵션계약의 구조에 피고들의 이윤이 포함되어 있다는 점을 원고들에게 명시적으로 밝히지 않았다고 하더라도, 그것이 원고들에 대한 기망행위에 해당한다거나 이로 인하여 원고들이 이 사건 각 통화옵션계약의 체결에 따른 비용을 전혀 부담하지 않는다는 착오를 일으켰다고 볼 수 없다.</p><p>  ③ 대고객 가격 조작에 의한 기망이 있었다고 볼 수 있는지</p><p>  갑 5호증의 2, 을가 67호증, 을나 16호증의 1, 2의 각 기재에 변론 전체의 취지를 종합하면, 과거에는 제로 코스트 상품인 선물환이나 타깃 포워드(Target Forward) 또는 키코 통화옵션상품에 대해 풋옵션 및 콜옵션의 각 대고객 가격을 별도로 표시하지 않고 제로 코스트라고만 표시하였던 사실, 2005년 말경 위와 같이 고객에게 ‘개별 거래별로 각각의 가격 정보’를 제공하도록 하는 내용으로 은행업감독업무시행세칙이 개정되었으나 위 시행세칙 규정의 해석에 관하여 은행별로 입장이 달라 일부 은행들은 개별 옵션별 대고객 가격을 표시하라는 것으로 보고 계약 체결 이후 고객에게 교부하는 계약 확인 서류에 이를 표시해 주고 있는 반면 다른 은행들은 키코 통화옵션상품이 풋옵션과 콜옵션이 혼합되어 있는 하나의 거래로서의 제로 코스트 상품이라는 이유로 대고객 가격을 제로(0)라고만 표시하면 되는 것으로 해석하여 개별 옵션별 확인 서류를 따로 교부하지 않고 있으며 해외 은행들도 콜옵션과 풋옵션의 각 대고객 가격을 따로 표시하지 않고 제로 코스트라고만 표시하고 있는 사실, 이 사건 각 통화옵션계약은 환율이 수시로 변동하는 특성으로 인해 그 체결 시점이 중요하고, 대고객 가격은 행사환율과 녹인·녹아웃 환율 등 구체적인 계약조건이 확정된 이후에야 계산될 수 있는 것이어서 계약 당시에는 별도의 프리미엄을 지급하지 않는다는 제로 코스트 상품이라는 설명 외에 옵션별로 구체적인 대고객 가격을 알려주기 어려운 사실 및 피고 신한은행은 이 사건 ③ 계약 체결 후 원고 2에게 교부한 통화옵션거래 확인서에 개별 옵션별 대고객 가격을 표시하였던 사실을 각 인정할 수 있다.</p><p>  옵션의 대고객 가격은 옵션의 이론가에 은행의 비용과 이윤 등을 가감하여 앞서 본 방법으로 결정되는바, 피고들이 이처럼 원고들과의 협의 없이 옵션의 이론가에 수수료(비용과 이윤)를 가감하여 대고객 가격을 산정하면서 그 수수료를 풋옵션의 이론가와 콜옵션의 이론가 모두에 가감하거나 풋옵션의 이론가에만 가산하는 등으로 풋옵션과 콜옵션의 대고객 가격을 동일하게 맞추고 나아가 이를 위와 같은 확인서 형태로 제공한 것이 대고객 가격의 조작 등에 의한 기망이 될 수 있는지 여부가 문제된다.</p><p>  그러나 이 사건 각 통화옵션계약 체결 당시에는 위와 같이 각 옵션별 대고객 가격이 구체적으로 산정되기 전으로서 이 사건 각 통화옵션계약을 체결한 원고 2는 대고객 가격에 대하여는 아무 관심도 두지 않고 별도로 지급해야 할 프리미엄이 없다는 전제 하에 행사환율, 녹인 환율, 녹아웃 환율, 계약금액 등의 개별 거래 조건들에 관한 교섭을 통하여 계약을 체결하였으므로, 우선 이 점에서 대고객 가격의 조작으로 인한 기망은 이를 인정하기 어렵다. 또한 앞서 본 바와 같이 피고들에게 이 사건 각 통화옵션계약의 옵션 이론가나 수수료가 얼마인지를 밝힐 의무가 없고, 개별 옵션별로 옵션의 이론가에 어떠한 방식으로 수수료를 배분하여 대고객 가격을 결정할지에 관하여 달리 정해진 규정도 없는바, 실제로 피고들이 산정한 수수료가 앞서 본 바와 같이 과다하다고 볼 수도 없으므로(또한 옵션의 이론가는 옵션가격결정모형에 의하여 산정되는 것으로서 그 산정의 기초가 되는 수치들은 앞서 본 바와 같이 객관적인 시장변수에 의하여 결정된다), 이와 같이 대고객 가격을 구성하는 요소들을 알려주어야 할 의무나 위 요소들을 어떤 식으로 조합하여 대고객 가격을 결정하여야 하는지에 관한 규정이 없는 상태에서 이들 구성요소들 자체를 과다하지 않은 액수로 산정하거나 객관적인 수치를 대입하여 산출한 다음 이를 적절한 방법으로 조합하여 대고객 가격을 결정한 것을 고객에 대한 기망행위로 볼 수는 없다고 할 것이다.</p><p>  ④ 옵션의 이론가 내지 수수료에 관한 부분이 계약의 중요부분인지</p><p>  이 사건 각 통화옵션계약에서 콜옵션과 풋옵션의 각 이론가와 수수료가 중요한 계약 내용인지에 관하여 보건대, 앞서 본 대로 이 사건 각 통화옵션계약 체결 당시에는 환율의 안정적인 하락 전망이 지배적이었고, 그에 따라 스와프 포인트도 마이너스(-)였으며, 아래에서 보는 바와 같이 원고 2는 2006년경 피고 제일은행과 3건의 키코 통화옵션계약을 체결하여 모두 이익을 보고 이 사건 각 통화옵션계약의 체결에 있어서도 환율 하락을 예측하였던 것으로 보이는 점, 키코 통화옵션상품은 별도의 프리미엄을 지급할 필요 없이 단순선물환계약에 비해 행사환율을 높일 수 있는 장점을 갖고 있었고, 시중 은행들은 이러한 내용을 바탕으로 키코 통화옵션상품을 적극적으로 홍보하였던 점, 원고 2는 피고들을 비롯한 은행들이 제시하는 행사환율 및 녹인·녹아웃 환율 등의 조건을 비교하고 그에 관한 교섭을 통하여 유리한 조건의 계약을 체결하는 데에 주된 관심이 있었고 이 사건 소 제기 전까지 옵션의 이론가나 수수료의 규모 등에 관하여는 어떠한 관심을 표명하거나 이의를 제기한 바도 없었던 점(위와 같이 피고 신한은행은 계약 체결 후 개별 옵션별 대고객 가격을 기재한 통화옵션거래 확인서를 교부하였으나 원고 측은 이에 대하여 아무런 견해도 표명한 바 없다), 그 밖에 수수료 없는 구조로 키코 통화옵션상품을 설계하여 판매한 은행이 있다는 아무 증거도 없는 점 등을 종합하여 보면, 설령 피고들이 옵션의 이론가나 수수료 부과 여부, 수수료 규모 등에 관한 정보를 제공하였다고 하더라도 이러한 정보가 원고들의 키코 통화옵션상품 구매에 영향을 주었을 가능성은 거의 없이 여전히 원고들은 여러 은행에서 제시하는 행사환율과 같은 계약조건의 유·불리를 비교하여 거래하였을 것으로 보인다.</p><p>  그러므로 이러한 측면에서 옵션 이론가나 수수료 규모 등에 관한 사항이 이 사건 각 통화옵션계약의 중요한 부분이라고 보기도 어렵다.</p><p>  다) 소결</p><p>  따라서 피고들이 환 헤지의 부적합성, 옵션의 이론가, 수수료 및 제로 코스트 등과 관련하여 원고들을 기망하였거나 원고들이 착오를 일으켰다는 원고들의 주장도 이유 없다.</p><p><b>4. 불법행위로 인한 손해배상 청구에 관한 판단</b></p><p>  가. 피고들의 기망행위로 인한 손해배상 청구에 대한 판단</p><p>  원고들은 위 취소 주장에서와 마찬가지로, ① 피고들이 이 사건 각 통화옵션계약이 환 헤지에 적합한 계약인 것처럼 기망하고, ② 피고들이 옵션의 평가가치와 수수료를 숨기고 마치 원고들이 매입한 풋옵션과 매도한 콜옵션의 가치가 동등한 것처럼 제로 코스트만 강조함으로써 원고들을 기망하여 이 사건 각 통화옵션계약을 체결하였다고 주장하면서 그로 인한 손해로서 청구취지 기재 금원의 배상을 구한다.</p><p>  그러나 앞서 본 바와 같이 이 사건 각 통화옵션계약의 체결에 있어서 피고들에게 환 헤지 부적합성에 관한 기망, 옵션의 이론가, 수수료, 제로 코스트 관련 기망이 있었다고 볼 수 없으므로, 취소 사유로서 뿐 아니라 불법행위로서의 기망행위를 인정하기도 어렵다. 그러므로 원고들의 이 부분 손해배상 청구는 나머지 점에 관하여 더 나아가 살펴볼 필요 없이 이유 없다.</p><p>  나. 적합성 원칙 위반, 설명의무 위반으로 인한 손해배상 청구에 대한 판단</p><p>  1) 원고들의 주장</p><p>  이 사건 각 통화옵션계약은 환율이 급등하는 경우 원고들에게 무제한의 현실적 손해가 발생할 수 있는 위험이 내포되어 있고, 상품 자체의 이익구조가 원고들에게 일방적으로 불리하게 되어 있으며, 기간이 장기로 되어 있는 등 그 체결로써 원고들은 계약 체결 전보다 더 높은 위험에 노출되어 원고들의 환위험 회피 목적에 적합하지 않은 통화옵션상품이므로, 이러한 상품을 원고들에게 권유, 판매한 피고들의 행위는 적합성 원칙에 위반되는 불법행위에 해당한다.</p><p>  또한 피고들은 원고들과 이 사건 각 통화옵션계약을 체결하면서 거래계약서에 영문으로 된 금융전문 용어를 사용하고, 위 상품에 내포되어 있는 위험성이나 구조에 관하여 형식적으로만 설명하였을 뿐 명확하고 충분한 설명을 하지 아니하였을 뿐만 아니라, 옵션의 이론가와 수수료를 숨긴 채 막대한 수수료를 콜옵션의 이론가 내지 대고객 가격에 반영시킴으로써 환율 상승에 따라 원고들에게 더욱 불리한 상품구조가 된다는 점을 은폐하고, 단정적인 환율 하락만을 전망하는 등 설명의무를 위반한 불법행위를 저질렀다.</p><p>  따라서 피고들은 원고들에게 피고들의 적합성 원칙 및 설명의무 위반의 불법행위로 인하여 원고들이 입은 손해로서 청구취지 기재 금원을 배상할 의무가 있다.</p><p>  2) 판단의 기준</p><p>  이 사건 각 통화옵션계약과 같은 장외파생상품은 외환시장의 거래원리, 환율 변동의 전망, 옵션 가치의 평가 등 다양한 정보와 전문지식을 활용한 고도의 첨단 금융공학에 의하여 개발된 새로운 형태의 계약으로서, 환위험 관리뿐만 아니라 투자 내지 투기를 위한 금융상품으로도 이용될 수 있어 예측과 다른 상황이 발생하였을 경우 그로 인한 손실이 무제한 확대될 위험성이 있는바, 금융 비전문가인 기업으로서는 이와 같은 복잡한 계약의 내용, 구조, 위험 등을 정확히 파악하기가 쉽지 않을 수 있으므로, 자기의 책임하에 합리적인 판단과 의사 결정을 하기 위해서는 전문가로서 금융상품을 판매하는 금융기관으로부터 적절한 거래 정보를 받을 필요가 있다. 따라서 금융기관은 이와 같은 통화옵션상품을 판매할 때 신의칙상 고객의 거래 목적, 거래 경험, 재무상황 등의 여러 가지 사정을 고려하여 과대한 위험성을 수반하는 거래를 적극적으로 권유하지 않아야 할 의무가 있고, 고객이 통화옵션상품에 수반하는 위험성을 제대로 인식하지 못한 채 자신에게 적합하지 않은 거래조건을 요구하는 것으로 보이는 경우 그 위험을 명확히 고지할 의무도 있다고 봄이 상당하다(적합성 원칙).</p><p>  또한 금융기관이 일반 고객과 장외파생상품 등의 거래를 할 때에는 상대방이 그 거래의 구조와 위험성을 제대로 평가할 수 있도록 상품의 특성과 주요 내용 및 거래에 수반하는 위험을 명확히 설명함으로써 고객을 보호하여야 할 의무가 있다(설명의무).</p><p>  종래 판례를 통해 인정되어 왔던 적합성 원칙과 설명의무는 자본시장법에도 도입되었다. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자본시장과 금융투자업에 관한 법률|46|">자본시장법 제46조</a></span>에 의하면 금융투자업자는 투자자가 일반투자자인지 전문투자자인지 여부를 확인하여야 하고, 일반투자자에게 투자 권유를 하기 전에 각종 정보를 파악한 후 투자목적·재산상황 및 투자경험 등에 비추어 그 투자자에게 부적합하다고 인정되는 투자 권유를 하여서는 안 된다. 또한 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자본시장과 금융투자업에 관한 법률|47|">자본시장법 제47조</a></span>는 금융투자업자로 하여금 일반투자자를 상대로 투자권유를 하는 경우 금융투자상품의 내용, 투자에 따르는 위험 등을 일반투자자가 이해할 수 있도록 설명하도록 하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자본시장과 금융투자업에 관한 법률|48|">제48조</a></span>는 만약 투자자의 합리적인 투자판단 또는 해당 금융투자상품의 가치에 중대한 영향을 미칠 수 있는 중요사항을 거짓 또는 왜곡하여 설명하거나 누락한 경우에는 손해를 배상하도록 규정하고 있다. 이와 같은 자본시장법의 규정들은 비록 이 사건 각 통화옵션계약 체결 이후에 제정되었다고 하더라도 기본적으로는 종전부터 인정되던 법리를 확인한 내용 등으로서, 자본시장법 시행 전에 시행되었던 금융 규제 법령이나 일반적으로 받아들여지고 있었던 거래관행·실무 등에 배치되거나 과도한 규제를 부과하는 경우 등이 아닌 한 원칙적으로 그 시행 전의 금융거래에 적용되는 적합성 원칙과 설명의무의 내용을 해석하는 기준으로도 삼을 수 있다고 할 것이다.</p><p>  3) 인정사실</p><p>  이 부분에 관하여 이 법원이 설시할 이유는 제1심판결 제5의 나. 2), 나)항과 같으므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span> 본문에 의하여 이를 그대로 인용한다.</p><p>  4) 피고 제일은행의 적합성 원칙 및 설명의무 위반 여부</p><p>  가) 피고 제일은행이 적합성 원칙을 위반하였는지에 관하여 보건대, 피고 제일은행이 체결한 이 사건 ①, ② 계약은 모두 2배의 레버리지 구조로 되어 있어 콜옵션의 녹인 조건이 성취되면 원고 2가 상당한 손실을 볼 가능성이 있고, 환율 변동의 방향과 범위는 전문가조차 예측하기 어려운데 위 각 계약은 계약기간이 1년의 장기로 되어 있어 향후 발생할 구체적 권리·의무의 내용을 쉽게 예측하기 어려울 뿐만 아니라, 제로 코스트 구조로 인하여 원고 2가 현실적으로 은행에 지급하여야 하는 옵션 취득의 대가가 없으므로 원고 2로서는 계약 체결에 따른 위험성을 진지하게 고려하지 못하고 과소평가하여 콜옵션 조건 성취의 가능성을 가벼이 여기고 행사환율을 높이고 녹아웃 환율을 낮추는 데에만 주목할 가능성이 크다. 앞서 본 것처럼 실제로 원고 2는 환율이 안정적으로 하락세를 유지할 것이라는 전망을 갖고서 주로 행사환율을 높이는 데에 관심을 두었고, 피고 제일은행도 원고 2에게 환율 급등의 가능성에 대해서는 알려주지 않은 채 주로 별도의 프리미엄의 지급이 필요 없다는 취지로 설명하면서 이 사건 각 통화옵션계약의 체결을 권유하였던 것으로 보인다.</p><p>  그러나 이 사건 ①, ② 계약 체결 당시에 일반적으로 예상되던 환율 변동의 방향이나 정도를 감안하면, 위 각 계약은 환율 하락에 따른 환위험 회피 목적을 달성하기 위해 환율의 급등이라는, 위 각 계약 체결 당시로서는 상대적으로 낮은 가능성으로 인한 위험을 인수하는 한편 행사환율을 높이는 구조로 설계된 것으로 계약기간이나 구조, 조건들이 불합리한 것이라고 보기 어렵다. 이처럼 이 사건 ①, ② 계약은 만기환율이 녹아웃 환율 이상의 일정 범위에서의 환위험만을 회피하는 대신 통화선도거래보다 상당히 유리한 행사환율로 달러를 매도할 수 있고, 반면 환율이 녹인 환율 이상으로 상승하고 만기환율이 행사환율보다 높을 경우 풋옵션 계약금액의 2배를 행사환율로 매도하게 됨으로써 환차익을 얻지 못하게 되는 구조인데, 원고는 피고 제일은행으로부터 키코 통화옵션상품의 구조에 대하여 충분한 설명을 듣고 이를 이해하고 있는 상태에서 스스로의 결정에 따라 위 각 계약을 체결하였다. 그리고 피고 제일은행이 원고 2에게 교부한 거래제안서에도 ‘부분적인 헤지 전략’이라는 점을 기재하고 있을 뿐만 아니라, 원고 2는 이 사건 ①, ② 계약 체결 이전에 세 차례에 걸쳐 키코 통화옵션계약을 체결하여 이익을 본 경험이 있어 그 키코 통화옵션계약이 만료되자 이 사건 ①, ② 계약을 적극적으로 체결하고자 하였으며, 그 계약기간 및 계약금액, 계약 체결 시점 등을 스스로 정하였다. 또한 원고 2는 수출대금에 대한 환위험을 관리하여야 할 상황에서 행사환율이 높은 이 사건 ①, ② 계약을 체결할 필요성이 있었고, 그 계약기간 역시 원고 2의 수출거래 현황에 비추어 불합리한 것으로 보이지는 않는다.</p><p>  결국 이 사건 ①, ② 계약은 기본적으로 환 헤지를 목적으로 하는 상품으로서 기업이 은행으로부터 콜옵션을 행사받아 2배 매도의무를 이행하더라도 콜옵션 계약금액을 기준으로 현물을 보유하고 있으면 현물 구입을 위하여 현실적으로 금원을 추가 지출하게 되는 손해가 발생하지 아니하지만 기업이 현물을 보유하고 있지 않다면 환율의 변동에 따라 현실적으로 금원을 추가 지출하게 되는 손해가 발생하게 되므로 기업의 거래 목적, 당시 환율 전망 및 환율 변동 상황, 위험선호의 정도, 재산상황 등에 비추어 계약금액이 적정한지 여부가 중요하다고 할 것이다.</p><p>  그런데 이 사건 ① 계약은 그 콜옵션 계약금액이 원고 2의 수출거래금액에 대하여 오버헤지가 되지 않았음이 분명하다. 이 사건 ② 계약의 경우 그 계약 체결 당시 원고 2는 피고 제일은행에 2008년도 예상 수출액을 10,000,000달러라고 고지하였고 2008년도의 실제 수출액도 9,350,286달러로 확인되었던바, 이 사건 ② 계약의 콜옵션 계약금액은 월 40만 달러이지만 2007. 11.부터 2008. 8.까지 10개월 정도 이 사건 ① 계약과 겹치는 기간 동안의 이 사건 ①, ② 계약의 콜옵션 계약금액 합계는 월 1,000,000달러(연 12,000,000달러)에 이르러 수입액을 고려하지 않은 총 수출액을 기준으로 하더라도 일부 오버헤지 상태가 되는 것으로 보인다. 그러나 원고 2는 이 사건 ①, ② 계약 전 피고 제일은행과 체결한 3건의 통화옵션계약을 체결하면서 2006년도 수출실적 예상액을 13,000,000달러로 기재한 사업현황서를 제출하였던 점, 이 사건 ①, ② 계약은 콜옵션 계약금액의 합계액을 기존의 위 3건의 통화옵션계약과 같은 액수로 하여 각 그 만료 시점에 이를 대체하여 연이어 체결된 것이었으며, 원고 2는 위 3건의 통화옵션계약에서 이익을 보고 이 사건 ①, ② 계약의 체결을 적극적으로 추진하였던 점, 원고 2는 제1심 당사자본인신문에서 “매출이 급성장하고 있는 상태로서 2008년 초 피고 제일은행과의 통화옵션계약의 결재를 하기에 충분한 달러 유입액이 있었다.”고 진술하였으며, 이에 이 사건 소 제기 후에도 이 사건 ①, ② 계약의 경우에는 적정한 금액으로 계약이 체결되었다고 인정해온 점, 실제 원고 2는 피고 신한은행과 이 사건 ③ 계약을 체결한 후 향후 상당한 매출증가가 지속될 것으로 예상하는 내용으로 기재된 사업추진계획서와 2008년도 수출실적 목표액이 12,500,500달러라고 기재된 수출실적목표 등(을나 13, 14호증)을 교부한 점 및 과거의 수출실적 및 영업전망에 비추어 향후 유입될 것이라고 예상되는 외화에 대하여는 환 헤지가 가능하고 반드시 수출계약이 체결되어 있는 경우에 한하여만 환 헤지 목적의 계약을 체결해야 하는 것은 아닌 점 등을 종합하여 보면, 이 사건 ② 계약 역시 그 계약금액이 부적정한 것으로 볼 수는 없고, 따라서 피고 제일은행이 적합성 원칙을 위반하였다고 보기는 어렵다.</p><p>  나) 다음으로 피고 제일은행이 설명의무를 위반하였는지에 관하여 보건대, 앞서 본 것처럼 피고 제일은행은 환율이 급등할 가능성은 거의 고려하지 않고 주로 환율의 하락 전망이나 안정적인 변동의 가능성에 기초하여 원고 2에게 환율 상승이 있을 경우의 위험이나 손실의 정도에 대해 특별히 강조하지 않았으며, 이 사건 ①, ② 계약에 관하여 제로 코스트라고만 하였을 뿐 옵션의 가격과 수수료에 관하여는 상세히 설명하지 아니하였던 것으로 보인다.</p><p>  그러나 원고 2는 이 사건 각 통화옵션계약 체결 전 피고 제일은행과 사이에 3건의 통화옵션계약을 체결하고 그 각 계약에서 모두 이익을 보았고 그 과정에서 키코 통화옵션계약의 기본적인 구조를 숙지하였을 것으로 보이는 점, 이 사건 ① 계약 체결 당시 피고 제일은행의 담당자가 원고 2에게 보낸 거래제안서(을가 11호증)에 ‘관찰기간 동안 한번이라도 녹인 환율을 넘으면 거래금액의 2배를 행사환율에 매도하여야 한다.’는 등의 만기시 결제 시나리오와 ‘월별 거래금액이 고객이 수취하게 될 달러화 금액을 초과하지 않도록 주의하여야 한다.’는 등의 내용이 밑줄 및 굵은 글자 등으로 강조된 부분을 포함하여 기재되어 있었던 점, 원고 2는 계약 체결 당시 피고 제일은행의 담당자로부터 행사환율, 녹인 환율, 녹아웃 환율 등 조건에 따른 상품의 구조 및 내용을 설명받고 이에 대한 이해를 바탕으로 자신의 판단에 따라 행사환율 등의 계약 조건에 관한 협의 끝에 계약을 체결하였던 점, 한편 앞서 본 바와 같이 은행이 옵션의 이론가와 수수료의 규모를 공개해야 할 의무를 부담한다고 할 수 없고, 원고 2로서는 은행이 영리를 추구하는 기업으로서 이와 같은 통화옵션상품의 판매를 통해 일정한 이익을 얻는 것이라고 충분히 예상할 수 있었다고 보아야 할 것인 점 등을 종합하여 보면, 피고 제일은행이 설명의무를 위반하였다고 보기도 어렵다.</p><p>  5) 피고 신한은행의 적합성 원칙 및 설명의무 위반 여부</p><p>  가) 손해배상책임의 발생</p><p>  피고 신한은행은 이 사건 ③ 계약을 체결하면서 원고 2에게 위 계약이 가지는 위험성, 즉 환율이 녹아웃 환율보다 낮으면 거래가 소멸되고, 관찰기간 중 환율이 녹인 환율 이상에서 한 번이라도 거래가 되고 만기환율이 행사환율보다 높은 경우 2배 매도의무를 부담하게 된다는 점에 대해서 설명하였고, 위 원고로서는 계약의 기본 구조 및 내용을 이해한 상태에서 이 사건 ③ 계약을 체결하였다고 할 것이다. 또한 원고 2는 이 사건 ①, ② 각 계약에서 녹인이 발생하여 2배 매도의무를 이행하던 중 이 사건 ③ 계약을 체결하였으므로 그 기본적인 위험성에 대해서 인식하고 있었다.</p><p>  그러나 피고 신한은행의 소외 1 지점장은 원고 2가 피고 제일은행과 수출대금 전부에 대해서 키코 통화옵션계약을 체결한 후 환율이 상승하여 손실이 발생하고 있다는 사실을 알고, 종전에 체결한 키코 통화옵션계약의 계약 기간 중에 그 손실을 보전하기 위해 추가로 키코 통화옵션계약을 체결하자는 권유를 하였다. 즉 피고 제일은행은 이 사건 ①, ② 계약 후 추가거래를 신청하는 원고 2에 대하여 2008. 3.경 오버헤지 상태로서 투기적인 거래를 해서는 안된다는 이유로 추가적인 거래를 거절하였으나(갑 35호증, 변론 전체의 취지), 피고 신한은행은 원고 2가 콜옵션 계약금액이 월 1,000,000달러인 이 사건 ③ 계약을 체결할 경우 원고 2가 제시한 수출 목표액(12,500,500달러)에 의하더라도 피고 제일은행과의 이 사건 ①, ② 계약의 콜옵션 계약금액을 고려하면(이 사건 ③ 계약 체결 당시 이 사건 ① 계약은 4개월 가량, 이 사건 ② 계약은 6개월 가량 계약기간이 남아 있었다) 이 사건 ③ 계약의 녹인 조건이 성취될 경우 콜옵션 계약금액을 제대로 결제할 현물이 없어 오버헤지가 되는 상황임을 알면서 기존의 계약으로부터 발생한 손실을 보전할 투기적 목적으로 원고 2에게 추가 통화옵션계약 체결을 적극적으로 권유하여 이 사건 ③ 계약을 체결하도록 한 것이었다(피고 신한은행은 원고 2가 피고 제일은행과 사이에 키코 통화옵션거래를 하고 있다는 사실을 알고 있었던바, 이 사건 ③ 계약의 계약금액은 풋옵션 기준 월 500,000달러, 콜옵션 기준 월 1,000,000달러인데, 이는 이 사건 ①, ② 계약의 계약금액 합계에 맞추어 정한 것으로서 피고 신한은행은 이 사건 ③ 계약 체결 전에 이미 이 사건 ①, ② 계약의 계약금액에 대해서 알고 있었던 것으로 보인다).</p><p>  더구나 소외 1 지점장은 이 사건 ③ 계약의 체결 당시에는 2008년도 수출실적 목표액이 12,500,500달러라고 기재된 위 사업추진계획서 등(을나 13, 14호증)을 아직 교부받지도 않은 상태에서 “2005. 11.경 500만불 수출탑 수상, 2006년도 매출액이 약 7,180,000,000원, 생산량의 60~70%를 수출하고 있음”이라고 기재한 의견서(을나 9호증의 1)를 작성하여 여신심사부에 여신승인신청 하였고, 이에 위 의견서에 기재된 정도의 정보만으로 이 사건 ③ 계약이 체결되었다. 뿐만 아니라 이 사건 ③ 계약이 논의되던 당시에는 이미 환율이 2008. 3.경 1,000원대를 돌파하는 등 그 변동성이 컸던 시기였다.</p><p>  결국 이 사건 ③ 계약은 원고 2의 수출현황 및 계약 당시의 경제상황 등에 비추어 과다한 위험성을 수반하는 거래로서, 피고 신한은행으로서도 그러한 사정을 잘 알면서 금전적 이익을 얻게 하려는 투기적인 목적에서 추가로 위와 같은 계약금액의 계약 체결을 적극적으로 권유함으로써 적합성 원칙을 위반하였다고 할 것이다(피고 신한은행은 원고 2가 이 사건 ③ 계약 당시 매출의 지속적인 증가를 예상하고 있었다고 주장하며 을나 13호증을 제출하였지만, 을나 13호증은 위 ③ 계약 체결 이후인 2008. 5. 21.에 작성된 서류이고, 그 서류에 의하더라도 2007년도 매출액이 8,000,000,000원을 넘는 수준에 불과하므로, 설령 피고 신한은행이 원고 2의 매출이 지속적으로 증가할 것으로 예상하고 있었다고 하더라도 종전에 체결된 이 사건 ①, ② 계약의 계약금액과 합하여 볼 때 이 사건 ③ 계약은 매출 및 수출 증가의 합리적인 예상범위를 뛰어넘는 범위로 계약금액을 정한 것으로서 상당한 오버헤지 상태가 된다고 할 것이다). 뿐만 아니라 피고 신한은행은 이러한 제반 사정 하에서 추가적인 계약 체결로 인한 위험성을 원고 2에게 충분히 설명하지 아니한 것으로 보이므로 설명의무도 위반하였다고 할 것이다.</p><p>  따라서 피고 신한은행은 원고 2와 사이에 이 사건 ③ 계약을 체결하면서 적합성 원칙 및 설명의무를 위반함으로써 원고 2 및 그 후 이 사건 ③ 계약에 따라 발생하는 모든 채권·채무를 포괄적으로 인수한 원고 회사에 손해를 입혔다고 할 것이므로, 피고 신한은행은 위와 같이 포괄적인 채권·채무를 인수받은 원고 회사에 이 사건 ③ 계약의 체결로 인한 손해를 배상할 의무가 있다.</p><p>  나) 손해배상의 범위</p><p>  피고 신한은행이 이 사건 ③ 계약의 체결에 있어서 적합성 원칙 및 설명의무를 위반하여 원고 회사가 입은 손해는 이 사건 ③ 계약의 체결로 인하여 발생한 손실 상당액으로서 [별지3] 제3항과 같이 합계 3,129,790,000원이라 할 것이다.</p><p>  한편 이 사건 ③ 계약의 계약기간 중 이 사건 ①, ② 계약의 계약기간과 중복되지 아니하여 오버헤지가 발생하지 않는 부분 및 이 사건 ② 계약의 계약기간만 중복되어 오버헤지의 발생 부분이 줄어드는 부분이 있고, 그 외 위 손실에는 당사자가 이 사건 ③ 계약의 체결 당시 합리적으로 예상 가능한 범위의 환율 변동으로 인한 부분도 포함되어 있다고 할 것이나, 이와 같은 부분들에 관한 손실 역시 이 사건 ③ 계약을 체결하지 않았더라면 발생하지 않았을 손실이므로 피고 신한은행의 적합성 원칙 및 설명의무 위반으로 인하여 원고 회사가 입은 손해에 포함된다고 할 것이다.</p><p>  다만 앞에서 인정한 사실을 종합하여 파악할 수 있는 다음과 같은 사정 즉, 원고 2는 피고들로부터 이 사건 각 통화옵션계약의 구조 및 내용에 대해 수차례 설명을 듣고 이를 이해하였으며, 특히 피고 신한은행과 이 사건 ③ 계약을 체결하기 전에는 이 사건 ①, ② 각 계약으로부터 손실이 발생하여 2배 매도의무를 이행하여 위 계약으로 인한 위험성을 경험하였던 점, 비록 피고 신한은행이 위 원고에게 적합성 원칙 등을 위반하여 이 사건 ③ 계약의 체결을 권유하였다고 하더라도 원고 2 역시 손실을 보전하고자 하는 목적에서 환율이 하락할 것이라는 판단 하에 위 계약 체결을 스스로 결정한 점, 원고 회사가 이 사건 ③ 계약으로 큰 손실을 입게 된 데에는 당시 피고 신한은행으로서도 예상하기 어려웠던 서브프라임 모기지 사태에서 촉발된 세계적 금융위기가 크게 작용하였던 점 및 이 사건 ③ 계약에서 오버헤지가 발생한 정도 등을 참작하면, 손해의 공평한 분담이라는 견지에서 피고 신한은행의 원고 회사에 대한 손해배상책임을 원고 회사의 위 손해의 30%로 제한함이 상당하다고 할 것이다(이에 대하여 원고들은 이 사건 ③ 계약에 대한 원고들의 과실은 피고 신한은행의 부당권유 등에 의하여 야기된 것으로서 이에 대한 과실상계 등이 허용될 수 없다고 주장하나, 원고들의 과실이 피고 신한은행에 의하여 일방적으로 야기되었다고 보기 어려우므로 위 주장은 이유 없다).</p><p>  따라서 피고 신한은행은 원고 회사에 이 사건 ③ 계약으로 인하여 발생한 손해인 938,937,000원(3,129,790,000원의 30%) 및 그 중 14,040,000원(2회차 46,800,000원의 30%)에 대하여 그 결제일인 2008. 6. 5.부터, 20,340,000원(3회차 67,800,000원의 30%)에 대하여 2008. 7. 7.부터, 12,840,000원(4회차 42,800,000원의 30%)에 대하여 2008. 8. 5.부터, 43,350,000원(5회차 144,500,000원의 30%)에 대하여 2008. 9. 5.부터, 106,932,000원(6회차 356,440,000원의 30%)에 대하여 2008. 10. 7.부터, 87,270,000원(7회차 290,900,000원의 30%)에 대하여 2008. 11. 5.부터, 151,302,000원(8회차 504,340,000원의 30%)에 대하여 2008. 12. 5.부터, 101,850,000원(9회차 339,500,000원의 30%)에 대하여 2009. 1. 6.부터, 401,013,000원(10회차 409,710,000원, 11회차 581,000,000원, 12회차 346,000,000원의 각 30%)에 대하여 2009. 6. 29.부터 피고들이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 이 판결 선고일인 2011. 12. 8.까지 민법이 정한 연 5%, 그 다음날부터 다 갚는 날까지 소송촉진 등에 관한 특례법이 정한 연 20%의 각 비율에 의한 지연손해금을 지급할 의무가 있다.</p><p><b>5. 결론</b></p><p>  그렇다면 원고 2의 피고 제일은행에 대한 청구는 기각하고 원고 회사의 피고 신한은행에 대한 청구는 위 인정 범위 내에서 인용하며 나머지 청구는 기각할 것인바, 제1심판결은 이와 일부 결론을 달리하였으므로 당심에서 추가된 청구를 포함하여 제1심판결을 위와 같이 변경하기로 하여 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   이강원(재판장) 견종철 이원 </span></center><span class="space"></span>
+<p class="txt_16"><a name="%EC%A3%BC1" href="#%EC%A3%BC1a">주1)
+		</a>제1심판결에서는 ‘Knock-In'을 ’넉인‘으로, ’Knock-Out'을 ‘넉아웃’으로 표기하였으나 외래어표기법에 따른 바른 표기는 ‘녹인’, ‘녹아웃’이다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC2" href="#%EC%A3%BC2a">주2)
+		</a>‘옵션의 이론가’란 옵션가격산정모델을 이용하여 산출한 수치를 말한다. 원고들은 당심에서 ‘옵션의 이론가’란 표현이 이론상으로만 존재한다는 취지로 오해할 수 있으므로 ‘옵션의 평가가치 또는 공정가치’로 표현하여야 한다고 주장하나, 위와 같이 옵션가격산정모델을 이용하여 산출한 가격을 ‘옵션의 평가가치 내지 공정가치’로 표현하고 있는 실무례가 제시된 바도 없고 일반적으로 ‘옵션의 이론가’로 표현되고 있는 것으로 보이므로, 제1심판결과 마찬가지로 ‘이론가’라는 용어를 사용하기로 한다. 또한 콜옵션의 이론가와 풋옵션의 이론가의 차액을 ‘수수료’라고 할지 ‘마진’이라고 할지 등에 관하여 당사자들 사이에 다툼이 있으나 이 역시 제1심판결과 마찬가지로 편의상 ‘수수료’라고 한다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC3" href="#%EC%A3%BC3a">주3)
+		</a>뒤에서 보는 바와 같이 콜옵션의 이론가가 대고객 가격과 동일한 경우도 있으나 반드시 그러한 것은 아니다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC4" href="#%EC%A3%BC4a">주4)
+		</a>마진율 = (콜옵션의 이론가 - 풋옵션의 이론가)/풋옵션의 이론가      이 사건 ① 계약의 마진율 약 257% = (52,478 - 14,700)/14,700      이 사건 ② 계약의 마진율 약 615.6% = (46,885 - 6,552)/6,552      이 사건 ③ 계약의 마진율 약 449.8% = (100,160,364 - 18,218,364)/18,218,364</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC5" href="#%EC%A3%BC5a">주5)
+		</a>외국환거래규정 제2-9조(외국환포지션의 한도)   ① 외국환포지션의 한도는 다음 각 호와 같다.     1. 외국환매입초과포지션은 각 외국통화별 매입초과액의 합계액 기준으로 전월말 자기자본의 100분의 50에 상당하는 금액, 다만, 한국수출입은행의 경우는 외화자금 대출잔액의 100분의 150에 해당하는 금액으로 하며, 비거주자와의 차액결제선물환거래에 따른 동 선물환매입초과포지션은 2004년 1월 14일자 동 선물환매입초과포지션의 100분의 110에 해당하는 금액(2004년 1월 14일 이후에 설립된 경우 동 선물환매입초과포지션은 (0)으로 한다)으로 한다.     2. 외국환매각초과포지션은 각 외국통화별 매각초과액의 합계액 기준으로 전월말 자기자본의 100분의 50에 상당하는 금액 </p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC6" href="#%EC%A3%BC6a">주6)
+		</a>은행업감독규정   제63조(환율위험관리) ① 외국환업무취급기관은 외국환거래법시행령 제21조 제2호에 따라 외국환매입초과액과 매각초과액의 한도(이하 “외국환포지션 한도”라고 한다) 준수 여부를 매영업일 잔액을 기준으로 확인하여야 한다.   ② 외국환업무취급기관이 외국환포지션 한도를 위반한 경우에는 위반한 날로부터 3영업일 이내에 감독원장에게 이를 보고하여야 한다.   제67조(금융기관의 내부관리) ① 외국환업무취급기관은 외국환거래법시행령 제21조제6호에 따라 국가별 위험, 거액신용위험, 파생금융거래위험, 시장위험 등 외국환거래에 따르는 위험의 종류별로 관리기준을 자체적으로 설정·운영하여야 한다.   ② 외국환업무취급기관은 제1항의 규정에 의한 관리기준을 설정·변경하거나 동 기준을 초과하여 외국환거래를 취급하고자 할 경우에는 내부위험관리기구의 결의를 거쳐야 한다.   ③ 감독원장은 제1항의 규정에 의한 위험의 종류별로 예시기준을 정하여야 하며 외국환업무취급기관의 위험관리기준이 부적절하다고 판단될 경우에는 이의 시정을 요구할 수 있다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC7" href="#%EC%A3%BC7a">주7)
+		</a>은행이 고객인 기업과 체결한 거래와 형태나 조건이 동일한 반대거래를 체결하는 헤지 방법을 말한다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC8" href="#%EC%A3%BC8a">주8)
+		</a>키코 통화옵션계약은 단순 선물환에 비하여 배리어 옵션(barrier option) 구조로 인하여 반대거래 등 헤지에 소요되는 비용이 크고, 고객 맞춤형 상품으로서 상품의 설계, 계약조건 교섭, 사후관리 등에 있어서의 업무원가 역시 커 위와 같은 비용들을 포함한 수수료가 더 크다. 그 결과 이 사건 각 통화옵션계약에서도 대고객 가격을 구성하는 요소들 중 수수료의 크기가 풋옵션의 이론가보다 훨씬 크게 나타나고 있다. 그런데 원고들의 주장과 같이 수수료의 크기를 단순히 풋옵션의 이론가에 대비하게 되면, 일반적으로 풋옵션의 이론가가 키코 통화옵션계약보다 더 큰 단순 선물환(단순 선물환에서도 대고객 가격의 구성 요소는 옵션의 이론가와 수수료이다)에서 위와 같이 더 많은 비용이 드는 키코 통화옵션계약에서보다 더 큰 수수료를 수취할 수 있는 불합리한 결과가 된다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC9" href="#%EC%A3%BC9a">주9)
+		</a>앞서 본 바와 같이 이는 ‘옵션의 이론가’를 의미한다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC10" href="#%EC%A3%BC10a">주10)
+		</a>은행업감독업무시행세칙 제65조 제6호 (다)목   거래 상대방이 거래의 구조 및 리스크를 평가할 수 있도록 거래에 내재된 리스크 및 잠재적 손실에 영향을 미치는 중요한 요인 등 거래상의 중요 정보를 거래 상대방에게 적합한 방법으로 고지하여야 하고, 비정형 파생상품거래의 경우에는 동 거래에 내재되어 있는 개별 거래별로 관련 리스크를 분리하여 고지하여야 하며, 계약기간·유동성 등에 비추어 거래의 손익 변동성이 큰 비정형 파생상품거래인 경우 거래 상대방에 대한 손실위험 설명시 금융변수의 변동에 따른 단순한 현금흐름 변동 이외에 평가손익의 변동과 관련된 내용을 설명하여야 한다.</p><span class="space"></span><p class="txt_16"><a name="%EC%A3%BC11" href="#%EC%A3%BC11a">주11)
+		</a>자본시장법   제47조(설명의무)   ① 금융투자업자는 일반투자자를 상대로 투자권유를 하는 경우에는 금융투자상품의 내용, 투자에 따르는 위험, 그 밖에 대통령령으로 정하는 사항을 일반투자자가 이해할 수 있도록 설명하여야 한다.   제58조(수수료)   ① 금융투자업자는 투자자로부터 받는 수수료의 부과기준 및 절차에 관한 사항을 정하고, 인터넷 홈페이지 등을 이용하여 공시하여야 한다.   자본시장법 시행령   제53조(설명의무) ① 법 제47조 제1항에서 “대통령령으로 정하는 사항”이라 함은 다음 각 호의 사항을 말한다.   2. 법 제58조 제1항에 따른 수수료에 관한 사항</p><span class="space"></span></div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

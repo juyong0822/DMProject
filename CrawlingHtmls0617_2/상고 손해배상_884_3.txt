@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 80다904 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2086117';
+var contIdEtc = '2086118';
+var saNo = '80다904';
+var sngoNm = '선고';
+var saNm = '구상금';
+try {
+	var sngoDay=('19800812' ? 
+			'19800812'.length==4 ? Date.parseExact('19800812','yyyy').toString('yyyy. M. d.') : 
+				'19800812'.length==6 ? Date.parseExact('19800812','yyyyMM').toString('yyyy. M. d.') : 
+					'19800812'.length==8 ? Date.parseExact('19800812','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 80다904 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '80다904';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />80다904</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(4)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(32)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(1)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2095021">대법원 1993. 4. 27. 선고 92다8101 판결 [공1993.7.1.(947),1539]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2094572">대법원 1994. 8. 23. 선고 93다59595 판결 [공1994.10.1.(977),2500]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2119126">대법원 2005. 3. 25. 선고 2004다71232 판결 [공2005.5.1.(225),673]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1971550">대법원 2009. 2. 26. 선고 2008다86454 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|165206">이보환 자동차손해배상보장법상 운행의 의의와 범위 법조 30권 10호  / 법조협회  1981 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|455253">이충상 도로교통법의 '운전'에 해당하기 위한 요건 및 자동차손해배상보장법의 '운행'과의 차이 법조 49권 4호 (2000.04) / 법조협회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|231861">이광범 화물하차작업중 화물고정용 밧줄에 오토바이가 걸려 넘어진 경우 자동차손해배상보장법 제3조에서 말하는 '자동차의 운행으로 말미암은' 사고에 해당하는지 여부 및 상법 부칙(1991.12.31) 제2조 제1항의 의미 대법원판례해설 25호 (96.11) / 법원도서관  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|548997">강영훈 차량의 주차가 자동차손해배상보장법상의 운행에 해당하는지 여부 재판실무연구 3권  / 수원지방법원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827423">양진수 자동차를 운전하여야 할 지위에 있던 자가 임무에 위배하여 운전무자격자 등에게 운전을 위탁하였을 때 위 운전무자격자 등이 자동차의 용법에 따른 사용행위를 실제로 한 경우 위 운전무자격자 등이 운전자에 해당하는지 여부 및 운전보조자 해당 여부의 판단 기준 대법원판례해설 제107호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|6617">임충희 자동차대인배상책임보험법리에 관한 연구 성균관대학교  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251683">임정평 계약자유원칙론 형성소고 민법의 과제와 현대법의 조명 : 경암 홍천용박사화갑기념 (97.11) / 21세기 국제정경연구원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|245687">조경란 자동차종합보험 보통약관상 보험자가 보상책임을 지는 '피보험자가 피보험자동차의 사고로 법률상 손해배상책임을 짐으로써 입은 손해'의 의미 대법원판례해설 28호 (97.12) / 법원도서관  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|750409">이병석 자동차손해배상보험법상의 운행 규정에 관한 연구 상사법연구 33권 3호 / 한국상사법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571155">박종권 자동차사고책임 Jurist 412호 : 2007년1호(채권법)(v.2007-1) / 청림출판  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|2366">김종보 교통사고 피해자의 사법적 구제제도 : 대인배상 자동차 책임보험을 중심으로 한양대학교  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|431306">김성태 자동차사고로 인한 인적손해보상제도 연구 서울대학교  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|456182">정갑주 자동차손해배상보장법 제3조의 ‘운행’과 ‘운행으로 말미암아’의 개념 재판실무연구 1999  / 광주지방법원  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34697">서태환 자동차손해배상보장법 제3조의 책임범위 : 자기를 위하여 자동차를 운행하는 자의 의의 및 범위 군사법론문집 10집  / 공군본부 법무감실  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|266377">이동훈 자동차손해배상보장법상 자동차의 운행으로 말미암은 사고의 범위 : 지게차로 화물차에 각재를 적재한 후 다시 각재를 싣고 오는 사이에 적재된 각재다발이 떨어지면서 밑에 있던 사람을 사망하게 한 사고가 자동차손해배상보장법상 " 자동차의 운행으로 말미암은 사고"에 해당하는지 여부) . 실무연구자료 2권  / 대전지방법원  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32130">이신섭 엔진고장 수리를 위하여 도로상에 버스를 정차하면서 뒷바퀴에 설치한 큰 돌을 도로상에 방지한 채 출발하여 그 돌이 다른 대형 차량 바퀴에 부딪쳐 튕겨져 나가 맞은 편에서 오던 봉고차 안의 승객을 치사케 한 경 형평과 정의 4집  / 대구지방변호사회  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|190095">박준서 서울민사지방법원 교통부의 실무 재판자료 21집 (하) / 법원행정처  1984 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|35034">김백영 피보험자의 보험금 청구권의 행사요건 및 보험자의 보상범위 상사판례연구 3집  / 한국상사판례학회  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38347">김형배 우리 민법과 외국법의 영향 한국법학의 회고와 전망   / 법문사  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|446885">김영조 자동차사고의 민사상책임 경북대학교  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|605795">조규성 대법원판례를 중심으로 본 자동차손해배상보장법상의 '운행으로 인하여'의 판단기준에 관한 소고 상사판례연구 22집 2권  / 한국상사판례학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571307">박종권 자동차손해배상보장법상 지게차의 자동차운행성 여부 JURIST plus 412호 : 2007년1호(채권법)(v.2007-1) / 청림출판  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32158">이은영 자동차운행자의 민사책임 경제법·상사법론집 : 춘강 손주찬교수정년기념 (89.11) / 박영사  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|574447">홍승인 자동차 "운행" 개념에 관한 각국의 태도와 우리 나라에서의 해석 문제 경기법학논총 4호  / 경기대학교  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|190298">이신섭 정차중 뒷 바퀴에 고였던 큰 돌을 노상에 방치한 채 출발하여, 그 돌이 다른 대형차량바퀴에 튕겨져 나가 타인을 충격하여 치사케 한 경우, 이를 자동차손해배상보장법상의 자동차의 운행으로 말미암은 사고라 할 수 대법원판례해설 10호 (89.12) / 법원도서관  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|513012">김광석 자동차 '운행'으로 인한 사고의 의미 법률신문 3229호  / 법률신문사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|786617">김영훈 ｢특정범죄 가중처벌 등에 관한 법률｣ 제5조의10 제2항의 적용 범위 대법원판례해설 제104호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|446935">박종권 자동차사고와 의료과오의 경합에 관한 연구 동국대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|231552">김상용 자동차손해배상책임 고시연구 23권 11호 (96.10) / 고시연구사  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|515999">홍승인 보험에서의 자동차 "운행" 개념 : 각국의 태도와 우리나라의 해석기준 . 상사법연구 22권 4호 (2003.11) / 한국상사법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|547361">문수생 위법주차차량의 자동차손해배상보장법상의 책임 재판실무 2집  / 창원지방법원  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|538517">김광국 상법 726조의2에서의 "소유, 사용, 관리" 기업법연구 19권 1호  / 한국기업법학회  2005 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="자동차손해배상보장법|2|0|null">자동차손해배상보장법 제2조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="자동차손해배상보장법|3|0|null">자동차손해배상보장법 제3조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구고등법원|79나683">
+대구고등법원 1980.3.12. 선고 79나683 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2086118">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1980. 8. 12. 선고 80다904 판결</h2><p class="sub_title">[구상금][집28(2)민,211;공1980.10.1.(641),13085]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상보장법|2|">자동차손해배상보장법 제2조 제2항</a></span> 소정의 장치와 운행의 의미
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p> 버스 내의 화재가 다른 직접적인 원인이외에도 그 버스의 원동기에 의한 진동때문에 승객이 지참한 휘발유통의 마개 틈으로 휘발유가 스며나왔다고 버스의 조명시설이 승객의 소지품을 찾는데 적당치 못하였으며 출입문 등 차의 구조가 대피에 부적당한 상태였음이 위 화재발생의 간접적 원인이 되었다면 이는 버스의 위 장치들을 그 용법에 따라 사용함으로써 비롯되었다고 할 것이므로 위 화재 사고는 위 버스의 운행으로 승객들에게 사상의 손해를 입게한 경우이어서 버스 소유자는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상보장법|3|">자동차손해배상보장법 제3조</a></span> 소정의 배상책임을 져야 한다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상보장법|2|">자동차손해배상보장법 제2조 제2항</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          한일여객자동차 주식회사  소송대리인 변호사 서윤학
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          한국자동차보험 주식회사  소송대리인 변호사 김인규
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원 판 결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구고등법원|79나683|판결" href="#//">
+대구고등법원 1980.3.12. 선고 79나683 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.</p><p>  상고 소송비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  피고 소송대리인의 상고이유 제1점을 판단한다.</p><p>
+        <span class="accrnt_txt">원심이 자동차의 운행에 있어서의 당해 장치를 비단 그 원동기뿐만이 아니라 자동차를 구성하고 있는 창문과 차체로 차단된 공간으로서의 자동차 내부까지를 포함한 장치일체를 말하는 것이라고 볼 것이라는 전제하에 이건 버스차내의 화재는 그 판시 승객의 휘발유 지참행위와 성냥불꽃을 던진 행위가 그 주된 직접 원인이 되어 발생하였다 할지라도 그 인정사실과도 같이 위 버스의 원동기에 의한 진행시의 진동때문에 위 지참휘발유통이 흔들려 비닐마개 틈으로 휘발유가 스며나와 버스바닥에 흘러 퍼지게 되었고 그 버스의 조명시설이 승객의 소지품을 찾는데 적당치 못한 사정이었으며 그밖에 출입문 등 위 차의 구조가 승객의 탈출 등 대피에 부적당한 상태였음이 위 화재발생의 간접적 원인이 되었다 할 것인데 그러한 요인들은 위에서 본 장치일체의 그 용법에 따른 사용에서 비롯되었다 할 것이므로 위 사고는 위 버스의 운행으로 승객들에게 사상의 손해를 입게된 경우로서 위 버스 소유자인 원고는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상보장법|3|" style="text-decoration:underline">자동차손해배상보장법 제3조</a></span> 소정 배상책임을 지게된다
+        </span>고 하였음은 수긍되는 법률의 해석과 적법한 사실인정에 의한 정당한 판단이라 할 것이고 자동차손해배상보장법 소정의 자동차운행에 관한 법리를 오해한 위법있다고 볼 수 없다.
+      </p><p>  같은 상고이유 제2점을 판단한다.</p><p>  원심이 그 채택증거물에 의하여 인정한 이건 부상피해자들의 상해구분 급수에 관하여 피해자 이덕순 고철환에 대한 상해급부 부분에 있어서 원심이 위 인정에 배치되는 을 제4호증의 1,2의 각 기재중 믿지 아니한다고 배척한 가필기재 부분을 들고 원판결에 법령위반있다고 함에 있는 논지는 이유없다.</p><p>  같은 상고이유 제3점 및 보충 상고이유를 판단한다.</p><p>  그러나 갑 제1호증의 2 자동차손해배상 책임보험 보통보험 약관 제1조 및 제4조를 자세히 검토하여 보면 피보험자인 원고가 손해배상책임을 부담하게 되는 손해를 피고가 보상하는 책임을 진다고 한 것으로서 즉 원고가 부담 지급하게 될 손해로서 지급할 배상금을 말하는 것이요, 그 중 현실로 일부 지급된 배상금으로 한정한다는 취지는 아니라 할 것이므로 원심이 같이 보는 뜻에서 그 채택증거들에 의하여 인정한 이건 피해자들의 각 상해급수에 따라 원고가 배상금으로 이미 지급한 금액외에 지급할 예정인 금액까지를 합한 상해보험급별 금액한도액을 피고가 보상지급할 금액으로 인용하고 있음은 정당하다 할 것이고 여기에 소론 자동차손해배상보장법의 관계규정 및 상법규정에 위반한 위법있다고 할 수 없다.</p><p>  그러므로 상고를 기각하기로 하고 상고 소송비용은 패소자의 부담으로 하기로 하여 관여법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김윤행(재판장) 양병호 서윤홍 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

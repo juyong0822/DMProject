@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다3353 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2060126';
+var contIdEtc = '';
+var saNo = '2010다3353';
+var sngoNm = '선고';
+var saNm = '청구이의';
+try {
+	var sngoDay=('20100513' ? 
+			'20100513'.length==4 ? Date.parseExact('20100513','yyyy').toString('yyyy. M. d.') : 
+				'20100513'.length==6 ? Date.parseExact('20100513','yyyyMM').toString('yyyy. M. d.') : 
+					'20100513'.length==8 ? Date.parseExact('20100513','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다3353 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다3353';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다3353</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(6)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(12)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632186">황진희 개인파산, 개인회생절차가 집행절차 및 소송절차에 미치는 영향 재판실무연구 2010  / 광주지방법원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|552706">서울 중앙지방법원 파산부 실무연구회 개인파산·회생실무 박영사  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|568960">한국. 대법원 법원행정처 사법보좌관실무편람:. 채권집행 및 배당절차.. Ⅱ 법원행정처  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|663706">오수근 개인채무자의 도산 도산법   / 한국사법행정학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631376">조용현 채무자 회생 및 파산에 관한 법률 제566조 제4호에서 규정하는 ‘중대한 과실’의 의미 대법원판례해설 83호  / 법원도서관  2010 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다91330">대법원 2010. 3. 25. 선고 2009다91330 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="채무자회생및파산에관한법률|423|0|null">채무자 회생 및 파산에 관한 법률 제423조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="채무자회생및파산에관한법률|556|0|null">채무자 회생 및 파산에 관한 법률 제556조 제6항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="채무자회생및파산에관한법률|556|0|null">채무자 회생 및 파산에 관한 법률 제556조 제7항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="채무자회생및파산에관한법률|566|0|null">채무자 회생 및 파산에 관한 법률 제566조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="채무자회생및파산에관한법률|566|0|null">채무자 회생 및 파산에 관한 법률 제566조 제4호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="채무자회생및파산에관한법률|566|0|null">채무자 회생 및 파산에 관한 법률 제566조 제4호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다91330">대법원 2010. 3. 25. 선고 2009다91330 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|423|0|null">채무자 회생 및 파산에 관한 법률 제423조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|566|0|null">채무자 회생 및 파산에 관한 법률 제566조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="파산법|349|0|20050331">파산법(구) 제349조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="파산법|349|0|null">파산법(구) 제349조 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|566|0|null">채무자 회생 및 파산에 관한 법률 제566조 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|566|0|null">채무자 회생 및 파산에 관한 법률 제566조 제4호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|564|0|null">채무자 회생 및 파산에 관한 법률 제564조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|564|0|null">채무자 회생 및 파산에 관한 법률 제564조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|557|0|null">채무자 회생 및 파산에 관한 법률 제557조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|2009나11653">대전지법 2009. 12. 15. 선고 2009나11653 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 5. 13. 선고 2010다3353 판결</h2><p class="sub_title">[청구이의][공2010상,1113]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 파산채권은 면책신청의 채권자목록에 기재된 경우에만 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조</a></span>에 따라 그 책임이 면제되는지 여부(소극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] ‘채무자가 중대한 과실로 타인의 생명 또는 신체를 침해한 불법행위로 인하여 발생한 손해배상’을 비면책채권의 하나로 규정한 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span>에서 규정하는 ‘중대한 과실’의 의미
+        </p>
+      <p></p>
+      <p>
+        </p><p>[3] 벌점 누적으로 운전면허가 취소된 자가 차량을 운전하고 가던 중 졸음운전으로 진행방향 우측 도로변에 주차되어 있던 차량의 뒷부분을 들이받아 동승한 피해자에게 상해를 입힌 사안에서, 그 사고가 가해자의 ‘중대한 과실’에 의하여 발생하였다고 보기 어렵다는 이유로, 그로 인한 손해배상채권이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span>에 정한 비면책채권에 해당하지 않는다고 한 사례
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|423|">채무자 회생 및 파산에 관한 법률 제423조</a></span>에 “채무자에 대하여 파산선고 전의 원인으로 생긴 재산상의 청구권은 파산채권으로 한다”, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">제566조</a></span>에 “면책을 받은 채무자는 파산절차에 의한 배당을 제외하고는 파산채권자에 대한 채무의 전부에 관하여 그 책임이 면제된다. 다만, 다음 각 호의 청구권에 대하여는 책임이 면제되지 아니한다”고 규정하고 있으므로, 파산채권은 그것이 면책신청의 채권자목록에 기재되지 않았다고 하더라도 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">위 법률 제566조</a></span> 단서의 각 호에 해당하지 않는 한 면책의 효력으로 그 책임이 면제된다.
+        </p>
+      <p></p><p>
+        </p><p>[2] ‘채무자가 중대한 과실로 타인의 생명 또는 신체를 침해한 불법행위로 인하여 발생한 손해배상’을 비면책채권의 하나로 규정한 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span>에서 규정하는 ‘중대한 과실’이란, 채무자가 어떠한 행위를 함에 있어서 조금만 주의를 기울였다면 생명 또는 신체 침해의 결과가 발생하리라는 것을 쉽게 예견할 수 있음에도 그러한 행위를 만연히 계속하거나 조금만 주의를 기울여 어떠한 행위를 하였더라면 생명 또는 신체 침해의 결과를 쉽게 회피할 수 있음에도 그러한 행위를 하지 않는 등 일반인에게 요구되는 주의의무에 현저히 위반하는 것을 말한다.
+        </p>
+      <p></p><p>
+        </p><p>[3] 벌점 누적으로 운전면허가 취소된 자가 차량을 운전하고 가던 중 졸음운전으로 진행방향 우측 도로변에 주차되어 있던 차량의 뒷부분을 들이받아 동승한 피해자에게 상해를 입힌 사안에서, 벌점 누적으로 운전면허가 취소된 것이라면 도로교통법상의 무면허운전이 위 사고의 직접 원인으로 작용하였다고 보기 어렵고 전방주시를 태만히 한 상태에서 졸음운전을 하였다는 점만으로 주의의무를 현저히 위반하는 중대한 과실이 있다고 어렵다는 이유로, 그로 인한 손해배상채권이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span>에 정한 비면책채권에 해당하지 않는다고 한 사례.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|423|">채무자 회생 및 파산에 관한 법률 제423조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|556|">제556조 제6항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|556|">제7항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">제566조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다91330|판결" href="#//">대법원 2010. 3. 25. 선고 2009다91330 판결</a></span>(공2010상, 810)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        동부화재해상보험 주식회사 (소송대리인 변호사 김삼현)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|2009나11653|판결" href="#//">대전지법 2009. 12. 15. 선고 2009나11653 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 대전지방법원 본원 합의부에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|423|" style="text-decoration:underline">채무자 회생 및 파산에 관한 법률 제423조</a></span>에 “채무자에 대하여 파산선고 전의 원인으로 생긴 재산상의 청구권은 파산채권으로 한다”, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|" style="text-decoration:underline">제566조</a></span>에 “면책을 받은 채무자는 파산절차에 의한 배당을 제외하고는 파산채권자에 대한 채무의 전부에 관하여 그 책임이 면제된다.  다만, 다음 각 호의 청구권에 대하여는 책임이 면제되지 아니한다”고 규정하고 있으므로, 파산채권은 그것이 면책신청의 채권자목록에 기재되지 않았다고 하더라도 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|" style="text-decoration:underline">위 법률 제566조</a></span> 단서의 각 호에 해당하지 않는 한 면책의 효력으로 그 책임이 면제된다.
+        </span>
+      </p><p>  따라서 이 점을 지적하는 상고이유의 주장은 정당하다.</p><p>  2. 파산제도의 주된 목적은 모든 채권자가 평등하게 채권을 변제받도록 보장함과 동시에 채무자에게 면책절차를 통하여 남아 있는 채무에 대한 변제 책임을 면제하여 경제적으로 재기·갱생할 수 있는 기회를 부여하는 것이라는 점, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="파산법|349|">구 파산법(2005. 3. 31. 법률 제7428호로 폐지된 것) 제349조</a></span>에서 비면책채권의 하나로 “파산자가 악의로 가한 불법행위로 인한 손해배상(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="파산법|349|">제3호</a></span>)”을 규정하였다가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">2005. 3. 31. 법률 제7428호로 채무자 회생 및 파산에 관한 법률이 제정되면서 제566조</a></span>에서 “채무자가 고의로 가한 불법행위로 인한 손해배상(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">제3호</a></span>)”과 더불어 “채무자가 중대한 과실로 타인의 생명 또는 신체를 침해한 불법행위로 인하여 발생한 손해배상(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">제4호</a></span>)”을 규정하기에 이른 점, 현행 채무자 회생 및 파산에 관한 법률은 일정한 불허가사유에 해당하는 때를 제외하고는 면책을 허가하도록 하는(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|564|">제564조 제1항</a></span>) 한편, 면책불허가사유가 있는 경우라도 파산에 이르게 된 경위, 그 밖의 사정을 고려하여 상당하다고 인정되는 경우에는 이른바 재량면책을 허가할 수 있도록 규정하고(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|564|">같은 조 제2항</a></span>), 구 파산법하에서는 가능하던 면책절차 중의 강제집행 등을 금지·중지(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|557|">법 제557조</a></span>)함으로써 채무자의 경제적 재기를 뒷받침하고 있는 점 등에 비추어 볼 때, 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|" style="text-decoration:underline">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span>에서 규정하는 ‘중대한 과실’이라 함은, 채무자가 어떠한 행위를 함에 있어서 조금만 주의를 기울였다면 생명 또는 신체 침해의 결과가 발생하리라는 것을 쉽게 예견할 수 있음에도 그러한 행위를 만연히 계속하거나 조금만 주의를 기울여 어떠한 행위를 하였더라면 생명 또는 신체 침해의 결과를 쉽게 회피할 수 있음에도 그러한 행위를 하지 않는 등 일반인에게 요구되는 주의의무에 현저히 위반하는 것을 말한다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다91330|판결" href="#//">대법원 2010. 3. 25. 선고 2009다91330 판결</a></span> 참조).
+      </p><p>  원심판결 이유와 기록에 의하면, 원고는 자동차 운전면허가 없는 상태에서 2000. 6. 11. 11:20경 
+        소외 1 소유의 
+        (차량 등록번호 1 생략) 차량에 
+        소외 2를 태우고 보령시 신흑동 소재 어항고개 앞 노상을 대천해수욕장 방면에서 어항 방면으로 진행하던 중 졸음운전으로 인해 진행방향 우측 도로변에 주차되어 있던 
+        소외 3 소유의 
+        (차량 등록번호 2 생략) 차량의 뒷부분을 들이받아 
+        소외 2로 하여금 우측 고관절 후방 탈구 등의 상해를 입게 한 사실, 원고는 벌점 누적으로 운전면허가 취소되었다고 주장한 사실을 알 수 있다.
+      </p><p>  위 법리에 비추어 살펴보면, 벌점 누적으로 운전면허가 취소된 것이라면 도로교통법상 무면허운전이 위 사고의 직접 원인으로 작용하였다고 보기 어렵고 전방주시를 태만히 한 상태에서 졸음운전 하였다는 점만으로 주의의무를 현저히 위반하는 중대한 과실이 있다고 보기 어렵다.</p><p>  그런데도 원심이 이 사건 채무는 중대한 과실로 타인의 신체를 침해한 불법행위로 인하여 발생한 손해배상채무라고 봄이 상당하므로 면책의 대상에서 제외된다고 판단한 데에는, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|566|">채무자 회생 및 파산에 관한 법률 제566조 제4호</a></span>에서 규정하는 비면책채권에 관한 법리를 오해함으로써 판결 결과에 영향을 미친 위법이 있다.
+      </p><p>  3. 그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신영철(재판장) 박시환 안대희(주심) 차한성 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대구고등법원 73나865 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1991452';
+var contIdEtc = '';
+var saNo = '73나865';
+var sngoNm = '선고';
+var saNm = '손해배상및부당이득금반환청구사건';
+try {
+	var sngoDay=('19750409' ? 
+			'19750409'.length==4 ? Date.parseExact('19750409','yyyy').toString('yyyy. M. d.') : 
+				'19750409'.length==6 ? Date.parseExact('19750409','yyyyMM').toString('yyyy. M. d.') : 
+					'19750409'.length==8 ? Date.parseExact('19750409','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대구고등법원';
+var bubCd = '000300';
+var panTypeNm = '제3민사부판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 73나865 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '73나865';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대구고등법원<br />73나865</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(9)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="중앙도매시장법|3|0|null">중앙도매시장법 제3조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="중앙도매시장법|5|0|null">중앙도매시장법 제5조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="중앙도매시장법|6|2|null">중앙도매시장법 제6조의2 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|390|0|null">민법 제390조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중앙도매시장법|5|0|null">중앙도매시장법 제5조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중앙도매시장법|3|0|null">중앙도매시장법 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중앙도매시장법|6|2|null">중앙도매시장법 제6조의2 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중앙도매시장법|6|2|null">중앙도매시장법 제6조의2 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="농업협동조합법|6|0|null">농업협동조합법 제6조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|95|0|null">민사소송법 제95조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|89|0|null">민사소송법 제89조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원경주지원|73가합24">대구지방법원 경주지원(73가합24 판결)</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대구고법 1975. 4. 9. 선고 73나865 제3민사부판결 : 상고</h2><p class="sub_title">[손해배상및부당이득금반환청구사건][고집1975민(1),133]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>중앙도매시장 업무대행권의 재위임계약이 무효인지의 여부와 그 계약위반으로 인한 손해배상청구권의 발생여부</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|3|">중앙도매시장법 3조</a></span>에 의하면 중앙도매시장은 지방공공단체에 한하여 개설할 수 있고 중앙도매시장이나 분장을 개설하고자 할 때는 상공부장관의 허가를 받아야 한다고 규정되어 있고, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|5|">동법 5조</a></span>에 의하면 개설자는 지방장관의 허가를 얻어 공익상 적당하다고 인정하는 법인으로 하여금 도매업무의 전부 또는 일부를 대행케할 수 있다고 되어 있으며, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|6|2">동법 6조의 2</a></span>에 의하면 개설자 또는 대행기관이외엔 당해시장의 취급물품에 대하여 도매시장 유사업무를 하는 시장 또는 도매행위를 할 수 없다고 규정되어 있는바, 시(시)로부터 중앙도매시장 청과부의 업무대행권을 위임받은 단위농업협동조합이 그 업무대행권을 다시 위임하는 계약이 체결되었더라도 이는 위 관계법규에 위반되는 무효의 계약이라고 할 것이므로 그 계약의무위반을 이유로 채무불이행이나 불법행위를 원인으로 하는 손해배상청구권이 발생 할 수 없다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|3|">중앙도매시장법 제3조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|5|">제5조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|6|2">제6조의2</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|390|">민법 제390조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+          포항단위농업협동조합
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+제1심 
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원경주지원|73가합24|판결" href="#//">대구지방법원 경주지원(73가합24 판결)</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원고의 항소 및 당심에서의 확장청구 및 예비적 청구를 모두 기각한다.</p><p>  항소비용 및 확장청구로 인하여 생긴 소송비용은 이를 모두 원고의 부담으로 한다.</p>
+    
+      【청구취지】
+      <p>  당심에서 청구취지를 확장하여 피고는 원고에게 금 17,000,000원 및 이에 대한 1973.1.1부터 완제일까지 연 5푼의 율에 의한 금원을 지급하라(예비적으로 피고는 원고에게 금 4,869,742원을 지급하라). 소송비용은 피고의 부담으로 한다라는 판결 및 가집행선고를 구하다.</p>
+    
+    
+      【항소취지】
+      <p>  원판결을 취소한다는 것을 더 보태는 것이외에는 청구취지기재와 같다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  포항시가 개설한 포항시 중앙도매시장(1973.2.6. 농수산물 도매시장법시행으로 포항시 농수산물도매시장으로 개칭되다)청과부의 업무대행자인 피고조합(1973.10.13.자 명칭개정전에는 포항동 농업협동조합이라 불리워졌다)은 1971.1.1. 원고를 위 조합 농산물공판장 죽도분장장에 임명하였다가, 동년 9.12 해임하고, 1972.4.20.재임명한 후, 동년 11.11. 재차 해임한 사실에 관하여는 당사자사이에 다툼이 없는바, 원고 소송대리인은, 원고는 1969.9.5소외 영일군 농업협동조합과 사이에 농산물공판장 죽도분장업무대행계약을 체결하고,원고소유 건물에다 위 죽도분장을 설치하여 대행업무를 수행하여 오던중 1970.12.말경 소외조합이 대행하던 위 공판장(포항시 중앙도매시장 청과부)의 대행업무가 피고조합으로 이관됨에 따라 피고조합은 1970.12.30. 및 1971.1.초순경 두차례에 걸쳐 원고와 사이에 공판장운영계약을 체결하고, 피고조합은 위 소외조합과 원고사이에 체결된 분장업무대행계약을 그대로 인정하여 동 소외조합의 채무를 양수하고, 피고조합이 공판장을 운영하는 동안에 있어서는 원고로 하여금 위 공판장 죽도분장장의 직에 계속 임명하여 죽도분장의 업무대행을 계속케할 것을 약정하였음에도 불구하고 아무런 이유없이 1972.11.11. 원고를 위 분장장의 직에서 해임하여 원고가 대행하여 온 분장업무의 운영권을 박탈하였으므로, 피고조합은 그와 같은 원고와 사이의 공판장운영계약에 의한 채무를 이행하지 아니함으로 인하여 원고가 입은 손해를 배상하여야 할 것이라고 주장하므로 살피건대, 성립에 다툼이 없는 갑 1호증의 1내지 갑 3호증의 4, 갑 5호증의 각 기재에 의하면, 피고조합은 1970.12.30. 당시 시행되던 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|5|">중앙도매시장법 5조</a></span>에 의하여 포항시 중앙도매시장개설자인 포항시와 사이에 1971.1.1.부터 동년 12.31.까지 포항시 죽도동 81-1에 포항시 중앙도매시장 청과부를 설치하고, 그 업무를 대행할 것을 내용으로 하는 업무대행계약을 체결하고, 이어서 동년 12.31. 위 계약기간을 1972.1.1.부터 1976.12.31.까지로 갱신하기로 하는 취지의 업무대행계약을 체결하여 피고조합이 위 시장청과부의 업무대행권을 위임받은 사실,
+      </p><p>  한편 포항시 죽도동 2-3에서 갑을상회라는 상호로 청과물도매상을 경영하던 원고는, 1969.9.5.경 당시 포항시 중앙도매시장 청과부 업무대행자이던 소외 영일군 농업협동조합으로부터 그의 영업수완과 능력을 인정받아 위 죽도동 2-3에 위 소외조합 농산물공판장 죽도분장의 업무대행권을 재위임받아 이를 운영하여 오다가 포항시 중앙도매시장 청과부의 업무대행권이 피고조합으로 이관되자 1970.12.30 및 1971.1.초순경  다시 피고조합과 사이에 (1)피고조합이 공판장을 운영할 때까지 장장은 원고에게 위임한다.(2)분장의 운영권은 기득권이 있는 원고에게 우선적으로 인정한다. (3)당시 피고조합장이 
+        소외 1이 퇴직시는 분장업무를 원형대로 환원한다. (4)원고는 청과물 출하자로부터 수수료조로 총판매액의 5/100를 수취하여 그중 2/10는 피고조합에 납부한다(후에 요율이 변경되어 총판매액의 6/100을 수취하여 그중 3/10을 피고조합에 납부하기로 하였다)고 하는 내용의 계약을 체결하여 원고는 포항시 중앙도매시장 청과부대행자인 피고조합으로부터 다시 그 청과부 및 분장업무대행권을 재위임받은 사실을 인정할 수 있는바 한편, 성립에 다툼이 없는 갑 6호증, 7호증, 10호증, 20호증, 동 을 5호증, 6호증의 1 내지 3, 을 10호증의 1, 을 14호증의 2, 당심증인 
+        소외 2, 
+        3의 각 증언에 의하여 진정성립이 인정되는 을 13호증의 각 기재와 위 증인 
+        소외 2, 
+        3 및 당심증인 
+        소외 4의 각 증언(다만 
+        소외 4의 증언중 뒤에 믿지아니하는 부분제외)에 변론의 전취지를 종합하면, 당시 피고조합은 실제 내부적으로는 원고에 있어 일정한 수수료를 받고, 위 청과부 죽도분장업무를 자기의 계산으로 운영케하면서도 다만 그것이 개인의 자격이 아니고, 피고조합원의 자격으로 이를 운영하는 형식을 취하여  1971.1.1자 및 1972.4.20.자로 원고를 피고조합직원으로 발령하였던 것이나 끝내 관계당국으로부터 위 죽도분장 개설허가를 받지못한채로 사실상 분장업무를 계속한 탓으로 감사결과 위법임이 지적되어 조만간 위 죽도분장은 폐쇄될 위치에 놓여지고, 당시 분장장이었던 원고가 단위조합직원채용고시에 합격한 사실이 없어 자격을 구비하지 못하였고, 상사인 조합장에 대하여 마치 위 분장이 자기 개인의 권리에 속하는 양 월권행위를 자행한다는 이유로 1972.11.7. 피고조합 임시총회결의에서 원고를 해임하기에 이른 사실을 인정할 수 있고, 이에 배치되는 갑 15호증의 기재 및 당심증인 
+        소외 4의 증언(위에 믿는 부분제외), 원심의 원고 본인신문결과는 당원이 이를 믿지아니하고, 갑 18,19,21의 각 호증의 기재와 원심 및 당심증인 
+        소외 5, 당심증인 
+        소외 1의 각 증언은 위 인정에 장애가 되지하니하고 달리 이를 뒤집을 만한 증거없는바, 당시 시행되던 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|3|">중앙도매시장법 3조</a></span>에 의하면 중앙도매시장은 지방공공단체에 한하여 이를 개설할 수 있고, 중앙도매시장이나 그 분장을 개설코져 할 때에는 상공부장관의 허가를 받아야한다고 규정하고 있고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|5|">동법 5조</a></span>에 의하면, 개설자는 지방장관의 허가를 얻어 공익상 적당하다고 인정하는 법인으로 하여금 도매업무의 전부 또는 일부를 대행케할 수 있다고 하였고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|6|2">동법 6조의 2</a></span>에 의하면, 개설자 또는 대행기관이외에는 당해시장의 취급물품에 대하여 도매시장 유사업무를 하는 시장 또는 도매행위를 할 수 없다고 규정되어 있으므로 포항시로부터 포항시 중앙도매시장 청과부의 업무대행권을 위임받은 피고조합으로서는 그 업무대행권을 개인에게 다시 위임할 수 없는 것임은 물론 이건 문제가 된 위 청과부 죽도분장은 관계장관의 개설허가를 받은 시장이 아니므로, 피고조합의 권한외에 속할뿐 아니라 원고로서는 개인의 자격으로 청과부(분장)의 업무를 대행할 수 없는 것임은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|5|">위 중앙도매시장법 5조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중앙도매시장법|6|2">6조의 2</a></span>의 규정에 의하여 명백하다 할 것인즉, 가사 원고와 피고조합사이에 위와 같은 업무대행계약이 체결되었다 하더라도 이는 위 중앙도매시장법 관계규정에 위배되는 무효인 계약으로서 그 효력이 생길 수 없다할 것인즉, 원고와 피고조합사이의 위 계약이 유효한 것임을 전제로 그 계약의무불이행을 원인으로 하는 원고소송대리인의 위 주장은 그 이유가 없다.
+      </p><p>  또 원고 소송대리인은, 피고조합은 포항시와 공동으로 원고소유의 포항시 죽도동 2-3 지상건물을 불법으로 철거하고, 유사도매행위자인 
+        소외 6을 피고조합 죽도분장책임자로 불법채용하여 그 분장업무를 담당케하고, 원고의 분장업무대행을 방해하였으니 피고조합의 위와 같은 불법행위로 인한 손해금의 지급을 구한다고 주장하나 앞서 당원이 배척한 증거외에 갑 12,13,14호증의 각 기재만으로는 피고조합의 불법행위사실을 인정할 자료가 되지 못하고, 달리 이를 수긍할 아무런 자료가 없을뿐더러 원고의 분장업무대행 자체가 위법행위임은 앞에서 본 바와 같으므로 자기의 불법행위를 계속하지 못하므로 손해가 생겼다하여 이를 소구할 수는 없는 법리라 할 것이므로 원고 소송대리인의 위 주장 또한 그 이유없다.
+      </p><p>  다음 원고 소송대리인은 이건 소송계속중 1973.4.28 피고조합과 사이에 화해계약을 체결하여 원고가 이건 소를 취하하는 대신 피고조합은 동년 5.1부터 원고를 위 분장장에 재임명하기로 하였음에도 불구하고 이를 이행하지 아니하므로 동일 이후의 분장업무를 대행하지 못한 손해의 지급을 구하나 을 5호증의 기재 및 원심증인 
+        소외 7의 증언만으로는 이를 인정하기에 부족하고, 달리 위 화해계약의 성립을 인정할 아무런 자료가 없으므로 위 주장 또한 이를 받아들이지 아니한다.
+      </p><p>  끝으로 원고 소송대리인은 위 주장이 모두 그 이유가 없는 것이라면, 원고는 피고조합직원인 위 죽도분장장으로서 매월 금 60,000원의 보수를 지급받고 있었던 바, 피고조합에 있어 계약을 위반하여 원고를 부당하게 해임하고, 더구나 
+        소외 2는 정당원의 자격이 있는 사람으로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="농업협동조합법|6|">농업협동조합법 6조 2항</a></span>에 의하여 피고조합의 이사가 될 수 없는 것인데도 피고조합 이사회결의에 참석하여 원고를 부당하게 해임한 것이므로 이로 인하여 해임된 다음달인 1972.12.부터 1976.12.31.까지 얻을 수 있었던 이익금 2,869,742원과, 거래상인들로부터 회수하지 못한 미수금 2,000,000원 도합 금 4,869,742원의 지급을 예비적으로 구하나 피고조합이 원고를 그 직원의 신분에서 해임한 사정은 앞에 인정한 바이며, 달리 그 해임조치가 위법 또는 부당하다는 점에 관하여는 위에서 당원이 배척한 증거외에 이를 인정할 아무런 증거없고, 원고를 해임한 것은 피고조합 이사회결의에 의한 것이 아니고, 1972.11.7.자 적법한 임시총회결의에 의한 것인 사실 역시 앞서 본 바와 같으므로 원고에 대하여 부당한 면직처분이 있었음을 전제로 하는 원고 소송대리인의 위 예비적 청구 또한 그 이유없어 이를 채택하지 아니한다.
+      </p><p>  그렇다면 원고의 이건 청구는 더 나아가 살필 것없이 모두 실당하여 이를 기각할 것인바, 원판결(당심에서의 확장청구 및 예비적 청구 제외)은 이와 결론을 같이하여 정당하고, 이에 대한 원고의 항소 및 당심에서의 확장청구 및 예비적 청구는 그 이유없으므로 이를 기각하고, 소송비용의 부담에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|95|">민사소송법 95조</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|89|">89조</a></span>를 적용하여 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   박돈식(재판장) 이정락 권연상 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

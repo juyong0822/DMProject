@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008다36930 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2064217';
+var contIdEtc = '';
+var saNo = '2008다36930';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20110113' ? 
+			'20110113'.length==4 ? Date.parseExact('20110113','yyyy').toString('yyyy. M. d.') : 
+				'20110113'.length==6 ? Date.parseExact('20110113','yyyyMM').toString('yyyy. M. d.') : 
+					'20110113'.length==8 ? Date.parseExact('20110113','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008다36930 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008다36930';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008다36930</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(2)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(17)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|635198">주식회사 외부감사인의 감사절차상 과실과 손해배상책임 여부 채동헌 韓國上場會社協議會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|689992">신헌기 부당제소 원인제공자에 대한 손해배상책임 : 특히 변호사 비용 사이의 인과관계를 중심으로 . 판례연구 24집 / 부산판례연구회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769753">김희중 관리인이 회생채권의 존재 또는 그러한 회생채권이 주장되는 사실을 알고 있거나 이를 쉽게 알 수 있었음에도 회생채권자 목록에 회생채권을 기재하지 아니하였는데, 회생채권자가 회생채권의 신고를 통해 권리보호조치를 취할 수 있었는데도 이를 하지 아니함으로써 회생채권이 실권된 경우, 관리인의 불법행위책임이 성립하는지 여부 : 2014. 9. 4. 선고  2013다29448 판결: 공2014하, 1999 대법원판례해설 제101호 / 법원도서관  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다41746">대법원 2006. 4. 14. 선고 2003다41746 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다21821">대법원 2007. 7. 13. 선고 2005다21821 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="주식회사의외부감사에관한법률|1|0|20090203">주식회사의외부감사에관한법률(구) 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="주식회사의외부감사에관한법률|5|0|null">주식회사의외부감사에관한법률(구) 제5조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="주식회사의외부감사에관한법률|1|0|20090203">주식회사의외부감사에관한법률(구) 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="주식회사의외부감사에관한법률|5|0|null">주식회사의외부감사에관한법률(구) 제5조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="주식회사의외부감사에관한법률|17|0|null">주식회사의외부감사에관한법률(구) 제17조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|390|0|null">민법 제390조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="주식회사의외부감사에관한법률|5|0|20090203">주식회사의외부감사에관한법률(구) 제5조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="주식회사의외부감사에관한법률|1|0|20090203">주식회사의외부감사에관한법률(구) 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="주식회사의외부감사에관한법률|5|0|null">주식회사의외부감사에관한법률(구) 제5조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="주식회사의외부감사에관한법률|17|0|null">주식회사의외부감사에관한법률(구) 제17조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="민법|390|0|null">민법 제390조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다41746">대법원 2006. 4. 14. 선고 2003다41746 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다21821">대법원 2007. 7. 13. 선고 2005다21821 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|17|0|20090203">주식회사의외부감사에관한법률(구) 제17조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|1|0|null">주식회사의외부감사에관한법률(구) 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|5|0|null">주식회사의외부감사에관한법률(구) 제5조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|5|0|null">주식회사의외부감사에관한법률(구) 제5조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2007나80079">서울고법 2008. 5. 2. 선고 2007나80079 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2011. 1. 13. 선고 2008다36930 판결</h2><p class="sub_title">[손해배상(기)][공2011상,293]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 구 주식회사의 외부감사에 관한 법률에 따른 감사업무 수행에서 감사인의 주의의무 및 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|">같은 법 제5조 제2항</a></span>에 의한 회계감사기준과 그 시행을 위한 회계감사준칙이 감사인의 주의의무 위반의 판단 기준이 되는지 여부(적극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 구 주식회사의 외부감사에 관한 법률상의 감사인이 금융기관 등에 대한 조회절차를 실시하면서 조회서에 조회처의 정확한 주소가 표시되도록 할 의무가 있는지 여부(적극) 및 조회서의 주소를 제대로 확인하지 않은 잘못을 이유로 감사인에게 손해배상책임을 인정하기 위한 요건과 그 판단 방법</p>
+      <p></p>
+      <p>
+        </p><p>[3] 구 주식회사의 외부감사에 관한 법률상의 감사인에게 금융기관에 대한 조회서에 조회처의 정확한 주소가 표시되도록 할 의무를 부과하는 취지가 직접적으로 피감사회사 내부자의 장래 부정행위를 예방하는 데 있는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[4] 구 주식회사의 외부감사에 관한 법률상의 감사인이 피감사회사의 재무제표에 대한 회계감사를 실시하면서 조회처 주소를 제대로 확인하지 않고 예금잔액조회를 하여 피감사회사 자금팀장의 횡령 등 범행을 발견하지 못한 사안에서, 조회처 주소를 제대로 확인하지 않은 감사인의 잘못과 특정 회계연도에 대한 외부감사가 종료한 후에 자금팀장의 횡령 등 범행이 계속됨으로 인하여 피감사회사에게 확대된 횡령금액 상당의 손해 사이에는 상당인과관계가 없다고 본 원심판결이 정당하다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 감사인은 구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것)에 따라 주식회사에 대한 감사업무를 수행함에 있어서 일반적으로 공정·타당하다고 인정되는 회계감사기준에 따라 감사를 실시함으로써 피감사회사의 재무제표에 대한 적정한 의견을 표명하지 못함으로 인한 이해관계인의 손해를 방지하여야 할 주의의무가 있다(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|">같은 법 제1조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|">제5조 제1항</a></span>). 한편 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|">같은 법 제5조 제2항</a></span>에 의하면 회계감사기준은 한국공인회계사회가 정하며, 그에 따라 마련된 구 회계감사기준(2005. 3. 29. 폐지되기 전의 것, 이하 ‘회계감사기준’이라고 한다) 제34조 제1항에 의하면 한국공인회계사회가 회계감사기준의 시행에 관하여 필요한 세부사항을 별도로 정할 수 있는바, 위와 같은 회계감사기준 및 한국공인회계사회가 그 시행을 위하여 마련한 회계감사준칙은 특별한 사정이 없는 한 일반적으로 공정·타당하다고 인정되는 것으로서 감사인의 위와 같은 주의의무 위반 여부에 대한 판단의 주요한 기준이 된다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것)상의 감사인은 일반적으로 금융기관 등에 대한 조회절차를 실시할 때 스스로 조회처의 주소를 파악하는 경우뿐만 아니라 피감사회사 직원 등의 도움을 받아 조회처의 주소를 파악하는 경우에도 이를 다시 확인하는 등으로 조회서에 정확한 조회처의 주소가 표시되도록 할 의무가 있다. 그러나 한편, 감사인이 금융기관에 대한 조회서의 주소를 제대로 확인하지 아니한 잘못이 있다고 하더라도 그와 관련한 피감사회사의 모든 손해에 대하여 감사인이 손해배상책임을 져야 한다고 볼 수는 없고, 그 손해배상책임을 인정하기 위해서는 감사인의 잘못과 피감사회사의 손해 사이에 상당인과관계가 있음이 인정되어야 하며, 상당인과관계의 유무를 판단함에 있어서는 일반적인 결과 발생의 개연성은 물론이고, 감사인의 의무를 부과하는 법령 기타 행동규범의 목적, 가해행위의 태양 및 피침해이익의 성질 및 피해의 정도 등을 종합적으로 고려하여야 한다.</p>
+      <p></p><p>
+        </p><p>[3] 구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것)상의 감사인에게 금융기관에 대한 조회서에 정확한 조회처의 주소가 표시되도록 할 의무가 부과되는 취지는, 감사인으로 하여금 해당 금융기관 계좌에 관하여 왜곡되지 아니한 감사증거를 확보하도록 하여 궁극적으로 재무제표가 피감사회사의 재무상태와 경영성과 및 기타 재무정보를 적정하게 표시하고 있는지 여부를 검증하고 그에 대한 올바른 의견을 표명하도록 하는데 있고, 특별한 사정이 없는 한 위와 같은 재무제표의 검증 및 그에 대한 의견표명을 떠나 직접적으로 피감사회사의 내부자가 저지르는 장래의 부정행위를 예방하고자 하는 데에 있다고 보기는 어렵다.</p>
+      <p></p><p>
+        </p><p>[4] 구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것)상의 감사인이 피감사회사의 재무제표에 대한 회계감사를 실시하면서 피감사회사 자금팀장이 제공한 허위의 조회처 주소를 신뢰한 나머지 이를 제대로 확인하지 않고 예금잔액조회를 하여 위 자금팀장의 횡령 등 범행을 발견하지 못한 사안에서, 조회처 주소를 제대로 확인하지 않은 감사인의 잘못과 특정 회계연도에 대한 외부감사가 종료한 후에 자금팀장의 횡령 등 범행이 계속됨으로 인하여 피감사회사에게 확대된 횡령금액 상당의 손해 사이에는 상당인과관계가 없다고 본 원심판결이 정당하다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|">구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것) 제1조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|">제5조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|">구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것) 제1조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|">제5조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">제17조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|390|">민법 제390조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|">구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것) 제5조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|">구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것) 제1조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|">제5조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">제17조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|390|">민법 제390조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다41746|판결" href="#//">대법원 2006. 4. 14. 선고 2003다41746 판결</a></span>(공2006상, 797)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다21821|판결" href="#//">대법원 2007. 7. 13. 선고 2005다21821 판결</a></span>(공2007하, 1257)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        하나캐피탈 주식회사 외 5인 (소송대리인 법무법인 지평지성 담당변호사 조용환 외 4인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        삼일 회계법인 (소송대리인 변호사 손지열 외 5인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2007나80079|판결" href="#//">서울고법 2008. 5. 2. 선고 2007나80079 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 원고들이 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지나서 제출된 상고이유보충서의 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 증명책임에 관한 주장에 대하여</p><p>  원심판결이 인용한 제1심판결의 이유 기재에 일부 적절하지 아니한 표현이 있으나, 원심의 판시를 전체적으로 살펴보면, 원심은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">구 주식회사의 외부감사에 관한 법률(2009. 2. 3. 법률 제9408호로 개정되기 전의 것, 이하 ‘구 외감법’이라고 한다) 제17조</a></span>에 기한 원고들의 손해배상청구에 대하여 피고에게 감사인으로서의 임무를 게을리하지 아니하였음을 증명할 책임이 있음을 전제로 판단한 것으로 보인다. 따라서 원심판결에 증명책임에 관한 법리를 오해하여 판결에 영향을 미친 잘못이 없다.
+      </p><p>  2. 내부통제제도 및 통제위험의 평가절차, 예금통장의 실사와 관련한 주의의무 위반에 관한 주장에 대하여</p><p>  가. 
+        <span class="accrnt_txt">감사인은 구 외감법에 따라 주식회사에 대한 감사업무를 수행함에 있어서 일반적으로 공정·타당하다고 인정되는 회계감사기준에 따라 감사를 실시함으로써 피감사회사의 재무제표에 대한 적정한 의견을 표명하지 못함으로 인한 이해관계인의 손해를 방지하여야 할 주의의무가 있다(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|" style="text-decoration:underline">구 외감법 제1조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|" style="text-decoration:underline">제5조 제1항</a></span>).
+        </span>
+      </p><p>  한편 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|5|" style="text-decoration:underline">구 외감법 제5조 제2항</a></span>에 의하면 회계감사기준은 한국공인회계사회가 정하며, 그에 따라 마련된 회계감사기준(2005. 3. 29. 폐지되기 전의 것, 이하 ‘회계감사기준’이라고 한다) 제34조 제1항에 의하면 한국공인회계사회가 회계감사기준의 시행에 관하여 필요한 세부사항을 별도로 정할 수 있는바, 위와 같은 회계감사기준 및 한국공인회계사회가 그 시행을 위하여 마련한 회계감사준칙은 특별한 사정이 없는 한 일반적으로 공정·타당하다고 인정되는 것으로서 감사인의 위와 같은 주의의무 위반 여부에 대한 판단의 주요한 기준이 된다고 할 것이다.
+        </span>
+      </p><p>  나. 원심은 적법하게 채택한 판시 각 증거에 의하여, 피고 소속의 공인회계사로서 원고 하나캐피탈 주식회사(이하 ‘원고 하나캐피탈’이라고 한다)에 대한 외부감사업무를 수행한 
+        소외 1 등은, 원고 하나캐피탈이 내부감사조직인 감사팀으로부터 월별로 자금 잔액 확인 등의 감사나 코오롱 그룹 계열사로서 그룹 구조조정본부 차원의 감사를 받고 있다는 점과 금융감독원의 종합검사를 받는 등 회사의 자금관리에 관하여 다각적인 감사를 받고 있음을 확인하였으며, 원고 하나캐피탈의 임원들로부터 원고 하나캐피탈의 내부회계관리제도가 적절히 운용되고 있고 중요한 취약점이 없으며, 모든 회계장부 및 관련 서류, 이사회 회의록 등을 제시하였음을 확인하는 경영자 확인서를 받은 사실, 
+        소외 1 등은 원고 하나캐피탈의 내부회계관리규정과 이사회 회의록, 내부회계관리자가 이사회 및 감사에게 제출한 ‘내부회계관리제도 운용실태 보고서’, 감사가 이사회에 제출한 ‘내부회계관리제도 운용실태 평가보고서’를 검토하는 방식으로 내부회계관리제도의 운영 및 평가 실태에 대한 감사를 수행하여 특이사항이 없음을 확인하고, 원고 하나캐피탈의 자금관리 담당부서에서 통장의 보관, 거래 및 기록을 분리하여 시행하였고, 기획팀이 이를 다시 확인하였으며, 감사팀에서 매월 잔액증명서를 징구하여 자금의 실재성에 대해 독립적으로 확인하는 등 업무분장상 문제가 없음을 확인한 사실을 인정한 뒤, 판시 각 회계감사기준 및 회계감사준칙의 규정 등에 비추어 피고가 원고 하나캐피탈에 대한 외부감사를 수행함에 있어 내부통제제도의 평가에 관하여 감사절차 위반 또는 주의의무 해태가 있다고 할 수 없고, 또한 피고가 2003년 내지 2004년(기록에 의하면 이는 2002년 내지 2003년의 오기로 보인다)의 회계연도의 중간감사를 실시하지 않았다는 사정만으로 내부통제제도 및 통제위험의 평가절차를 소홀히 한 것으로 볼 수 없다는 취지로 판단하였다.
+      </p><p>  나아가 원심은 적법하게 채택한 판시 각 증거에 의하여, 피고가 원고 하나캐피탈의 내부통제제도를 평가하고 내부통제위험이 높지 않다고 평가한 사실, 피고 소속의 공인회계사 
+        소외 1이 원고 하나캐피탈이 다량의 현금 및 현금등가물을 보유하고 있는 점에 의문을 갖고 그 경위에 대하여 질문하여 원고 하나캐피탈 측으로부터 판시와 같은 다량의 현금 및 현금등가물을 보유하게 된 경위에 관한 답변을 들은 사실, 피고는 원고 하나캐피탈의 현금 및 현금등가물의 실재성 확인을 위하여 현금 및 현금등가물을 예치하여 둔 모든 금융기관으로부터 잔고증명서를 받아 원고 하나캐피탈 작성의 재무제표와 대조하여 잔액의 일치를 확인한 사실 등을 인정한 뒤, 피고로서는 원고 하나캐피탈 측이 보관하고 있어 조작이 용이한 통장 원본 내지는 사본을 제출받는 대신 신뢰도가 높은 금융기관에 대한 예금 잔액조회와 같은 절차를 통하여 잔액의 실재성을 입증할 수 있는 것이고 그로써 현금 및 현금등가물의 실재성에 관한 충분하고 적합한 감사증거가 확보되었다고 볼 수 있어 판시 회계감사준칙의 규정에 비추어 피고가 예금통장에 대한 실사를 실시하지 아니한 데에 감사절차 위반 내지 주의의무 해태가 있다고 할 수 없다는 취지로 판단하였다.
+      </p><p>  앞서 본 법리와 기록에 비추어 보면, 원심의 위와 같은 판단은 정당한 것으로 수긍할 수 있고, 거기에 감사인의 주의의무에 관한 법리를 오해하였거나 논리와 경험법칙에 위배하고 자유심증주의의 한계를 벗어나 사실을 인정하는 등의 잘못이 없다.</p><p>  3. 금융기관 조회서에 관한 주소확인의무 위반 및 상당인과관계에 관한 주장에 대하여</p><p>  가. 기록에 의하면, 2003. 7. 14. 개정되어 2003년 및 2004년의 각 회계연도에 관하여 적용된 회계감사준칙 505-30에서는 “감사인은 조회절차를 실시할 경우 조회처의 선택, 조회서의 작성과 발송 및 조회서 회수 과정을 통제하여야 한다. 조회서의 발송이나 회수 중 조회서의 절취·변조로 인하여 조회결과가 왜곡될 가능성을 최소화하기 위하여 감사인과 회신자와의 의사소통에 대한 적절한 통제가 이루어져야 한다. 감사인은 조회서를 직접 발송하였고, 조회처의 주소가 정확히 표시되었으며 조회서의 회신은 감사인에게 직접 수신되도록 요청했음을 확신할 수 있어야 한다. 또 조회서는 감사인이 의도한 담당자로부터 회신되었는지 고려한다.”라고 규정하고 있음을 알 수 있는바, 위 회계감사준칙의 규정 및 감사절차에 있어서 금융기관 등에 대한 조회절차의 중요성, 감사인은 적정한 감사를 위하여 적합한 감사증거를 확보하여야 하고 감사증거가 왜곡될 가능성에 대비하여야 하는 점 등을 고려하면, 
+        <span class="accrnt_txt">감사인은 일반적으로 금융기관 등에 대한 조회절차를 실시함에 있어 스스로 조회처의 주소를 파악하는 경우뿐만 아니라 피감사회사 직원 등의 도움을 받아 조회처의 주소를 파악하는 경우에도 이를 다시 확인하는 등으로 조회서에 정확한 조회처의 주소가 표시되도록 할 의무가 있다고 함이 상당하다.</span> 또한 1999년 내지 2002년의 각 회계연도의 회계감사에 적용되던 개정 전의 회계감사준칙에는 비록 위 개정 후의 회계감사준칙 505-30과 같은 명문의 규정은 존재하지 않았으나, 위와 같은 사정을 고려하면 감사인은 1999년 내지 2002년의 각 회계연도의 회계감사에 있어서도 같은 내용의 의무를 부담한다고 볼 것이다.
+      </p><p>  따라서 원심이 피고가 원고 하나캐피탈에 대한 회계감사를 실시함에 있어 원고 하나캐피탈 측에서 제공한 현대증권 과천지점 등의 주소를 확인하지 아니하였음에도, 원고 하나캐피탈이 제시한 금융기관 목록 등을 검토한 후 조회서를 등기우편으로 조회처에 발송하였다는 등의 이유만으로 조회서의 작성, 발송 및 회수 절차를 피고의 지배 내에 두어 필요한 통제를 다하였으므로 피고에게 감사절차 위반 등의 잘못이 없다는 취지로 판단한 것은 잘못이다.</p><p>  나. 
+        <span class="accrnt_txt">그러나 한편, 감사인이 금융기관에 대한 조회서의 주소를 제대로 확인하지 아니한 잘못이 있다고 하더라도 그와 관련한 피감사회사의 모든 손해에 대하여 감사인이 손해배상책임을 져야 한다고 볼 수는 없고, 그 손해배상책임을 인정하기 위해서는 감사인의 잘못과 피감사회사의 손해 사이에 상당인과관계가 있음이 인정되어야 할 것이며, 상당인과관계의 유무를 판단함에 있어서는 일반적인 결과 발생의 개연성은 물론이고, 감사인의 의무를 부과하는 법령 기타 행동규범의 목적, 가해행위의 태양 및 피침해이익의 성질 및 피해의 정도 등을 종합적으로 고려하여야 할 것이다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다41746|판결" href="#//">대법원 2006. 4. 14. 선고 2003다41746 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다21821|판결" href="#//">대법원 2007. 7. 13. 선고 2005다21821 판결</a></span> 등 참조).
+      </p><p>  원심이 확정한 바에 따르면, 피고는 1999 회계연도부터 2004 회계연도까지의 원고 하나캐피탈의 재무제표에 대하여 구 외감법 등에 따른 회계감사를 실시하였는데, 원고 하나캐피탈의 자금팀장으로 근무하던 
+        소외 2는 원고 하나캐피탈의 사용인감을 보관·관리하고 원고 하나캐피탈의 기획팀에서 관리하던 법인인감도 최종적으로 자신이 관리하던 금고에 보관하고 있음을 기화로, 1998. 12. 무렵부터 2004. 7. 무렵까지 위 각 인감을 임의로 사용하여 개설한 대우증권 및 현대증권 계좌 등을 통하여 거액을 횡령하는 등의 범행을 저지른 사실, 
+        소외 2는 2000. 2.경부터 원고 하나캐피탈의 내부 감사팀에게 현대증권의 잔고증명은 자신이 직접 발급받아 주겠다고 말한 뒤 현대증권 과천지점장 명의의 예금잔액 증명서를 수차례 위조하여 감사팀 직원에게 교부하는 등의 수법으로 내부 감사팀의 현대증권 과천지점 계좌에 대한 잔고 확인작업을 저지한 사실, 또한 
+        소외 2는 피고의 외부감사가 진행되자 현대증권 계좌에서 회사 자금을 인출하여 주식투자를 시작한 2000년부터 매 회계연도에 대한 외부감사 시에 피고에게 현대증권 과천지점의 주소를 허위로 알려주어 피고로 하여금 위 허위 주소에 예금잔액 조회서를 발송하게 하고 그 조회서의 우편배달 시간에 맞추어 위 허위 주소지에서 자신이 마치 현대증권 과천지점의 담당직원인 것처럼 행세하며 위 조회서를 수령한 뒤 허위의 예금잔액 증명서를 작성하여 피고에게 회신함으로써 피고의 외부감사에 의한 범행의 적발도 모면한 사실을 알 수 있다.
+      </p><p>  그런데 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|">구 외감법 제1조</a></span>가 감사인이 주식회사에 대한 회계감사를 실시하여 회계처리의 적정을 기하게 함으로써 이해관계인의 보호와 기업의 건전한 발전에 기여함을 구 외감법의 목적으로 규정하고 있는 점, 회계감사기준 제3조 제1항은 ‘감사대상 재무제표가 회사의 재무상태와 경영성과 및 기타 재무정보를 기업회계기준에 따라 적정하게 표시하고 있는지에 대하여 독립적인 감사인이 의견을 표명함으로써 재무제표의 신뢰성을 제고하고 재무제표의 이용자가 회사에 관하여 올바른 판단을 할 수 있도록 함’을 감사의 목적으로 규정하고 있고, 회계감사준칙에서는 감사인이 부정의 예방에 대한 책임을 지지 아니한다는 취지를 명시하고 있는 점(2003. 7. 14. 개정 전 회계감사준칙 240-6 및 개정 후 회계감사준칙 240-13), 피감사회사 임직원 등 내부자에 의한 횡령 등 부정행위가 발생하지 아니하도록 내부통제제도를 설계하고 이를 지속적으로 운영·감시할 책임은 피감사회사의 이사 등 경영자 및 내부의 감사 등이 부담하는 점 등을 종합하여 보면, 위와 같이 
+        <span class="accrnt_txt">감사인에게 금융기관에 대한 조회서에 정확한 조회처의 주소가 표시되도록 할 의무가 부과되는 취지는, 감사인으로 하여금 해당 금융기관 계좌에 관하여 왜곡되지 아니한 감사증거를 확보하도록 함으로써 궁극적으로 재무제표가 피감사회사의 재무상태와 경영성과 및 기타 재무정보를 적정하게 표시하고 있는지 여부를 검증하고 그에 대한 올바른 의견을 표명하도록 함에 있고, 특별한 사정이 없는 한 위와 같은 재무제표의 검증 및 그에 대한 의견표명을 떠나 직접적으로 피감사회사의 내부자가 저지르는 장래의 부정행위를 예방하고자 하는 데에 있다고 보기는 어렵다.</span>
+      </p><p>  이에 더하여, 앞서 본 바와 같이 피감사회사 내부자에 의한 횡령 등 부정행위가 발생하지 아니하도록 내부통제제도를 설계하고 이를 운영·감시할 책임은 피감사회사의 이사 등 경영자 및 내부의 감사 등이 부담하므로, 일반적으로 내부통제제도가 올바로 운영되는 이상 감사인이 금융기관에 대한 조회서의 주소를 확인하지 아니하였다고 하더라도 내부통제제도에 의하여 내부자의 부정행위가 발각되지 아니하고 계속될 개연성이 높다고 할 수 없고, 이 사건에 있어서도 
+        소외 2의 범행이 적발되지 아니하고 계속됨으로 인하여 결과적으로 원고 하나캐피탈에 손해가 발생하게 된 것은 원고 하나캐피탈의 허술한 인감관리 및 내부감사 등 부실한 내부통제제도의 운영·감시에 기인한다고 볼 수 있는 점, 나아가 원고 하나캐피탈의 자금 관련 업무를 총괄하였던 
+        소외 2가 제공하는 허위의 금융기관 주소를 신뢰한 나머지 이를 확인하지 아니한 피고의 위와 같은 잘못의 정도 및 태양 등을 종합적으로 고려하여 보면, 이 사건에서 피고가 2000 회계연도 이래 각 회계연도에 대한 외부감사를 실시함에 있어서 현대증권 과천지점에 대한 예금잔액 조회서에 정확한 주소가 표시되도록 할 의무를 다하였다면 
+        소외 2의 횡령 등 범행이 발견될 수 있었다고 하더라도, 그러한 의무를 다하지 아니한 피고의 잘못과 특정 회계연도에 대한 피고의 외부감사가 종료한 이후에 
+        소외 2의 횡령 등 범행이 계속됨으로 인하여 원고 하나캐피탈에게 확대된 횡령금액 상당의 손해 사이에 상당인과관계가 있다고 보기는 어렵다.
+      </p><p>  원심의 이유 설시에 일부 적절하지 아니한 부분이 있으나, 피고의 위와 같은 잘못과 원고 하나캐피탈이 주장하는 손해 사이의 상당인과관계를 인정하지 아니하여 그에 대한 피고의 책임을 부정한 원심의 결론은 수긍할 수 있고, 거기에 판결 결과에 영향을 미친 법리 오해 등의 잘못이 없다.</p><p>  다. 또한 원심은 원고 하나캐피탈을 제외한 나머지 원고들이 피고가 작성한 이 사건  감사보고서를 신뢰하여 하나은행과 주식양도계약을 체결하고 원고 하나캐피탈의 재무상황에 대한 진술 및 보장약정을 함으로써 손해를 입었다고 주장함에 대하여, 원고 하나캐피탈을 제외한 나머지 원고들이 허위 계상된 자산을 발견하지 못하고 작성한 이 사건 감사보고서를 신뢰하여 이 사건 주식양도계약을 체결하였거나 진술 및 보장 약정을 체결하였다는 점을 인정할 증거가 없고, 오히려 판시 각 증거들에 의하여 인정되는 원고들 사이의 관계, 이 사건 주식양도계약 체결의 동기와 경위에 비추어 보면, 원고 하나캐피탈을 제외한 나머지 원고들은 이 사건 감사보고서를 검토하고 이를 신뢰하여 이 사건 주식양도계약을 체결하기로 결정한 것이라기보다는 자금조달 비용 하락, 은행 보유 영업자산 활용, 전문 인력 수혈 및 원고 하나캐피탈을 제외한 나머지 원고들의 투자금 회수, 코오롱 그룹의 대외 신인도 제고 등의 목적으로 계약한 것으로 보이므로, 이 사건 감사절차에 있어서 피고의 잘못과 원고 하나캐피탈을 제외한 나머지 원고들이 주장하는 손해 사이에 상당인과관계가 없다는 취지로 판단하였는바, 앞서 본 법리와 기록에 비추어 보면 위와 같은 원심의 판단 또한 수긍할 수 있고, 거기에 상당인과관계에 관한 법리를 오해한 잘못이 없다.</p><p>  4. 원고 하나캐피탈을 제외한 나머지 원고들 주장의 손해의 성격에 관한 주장에 대하여</p><p>  위와 같이 피고의 주의의무 위반과 원고 하나캐피탈을 제외한 나머지 원고들 주장의 손해 사이에 상당인과관계가 인정되지 아니하는 이상, 위 원고들이 주장하는 손해가 특별손해에 해당하는지 여부는 위 원고들의 청구가 배척되어야 한다는 결론에 아무런 영향을 줄 수 없으므로, 원심판결에 손해의 성격에 관한 법리를 오해하여 판결 결과에 영향을 미친 잘못이 없다.</p><p>  5. 결론</p><p>  그러므로 상고를 모두 기각하고, 상고비용은 패소자들이 부담하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박시환(재판장) 안대희 차한성(주심) 신영철 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

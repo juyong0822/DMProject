@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 92나67782 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1997634';
+var contIdEtc = '';
+var saNo = '92나67782';
+var sngoNm = '선고';
+var saNm = '손해배상(기)청구사건';
+try {
+	var sngoDay=('19940622' ? 
+			'19940622'.length==4 ? Date.parseExact('19940622','yyyy').toString('yyyy. M. d.') : 
+				'19940622'.length==6 ? Date.parseExact('19940622','yyyyMM').toString('yyyy. M. d.') : 
+					'19940622'.length==8 ? Date.parseExact('19940622','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '제3민사부판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 92나67782 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '92나67782';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />92나67782</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(14)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|453730">손용근 의료과오소송의 입증경감에 관한 판례의 최근 동향 민사법연구 7집  / 대한민사법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|493565">김영철 산업재해소송과 관련된 문제점과 대책 : 노동성 질환과 관련하여 . 송무자료집 . 제6집   / 대검찰청 고등검찰청  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|234818">손용근 민사소송에 있어서 입증방해에 관한 이론과 판례의 검토 저스티스 29권 3호  / 한국법학원  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|237265">손용근 의료과오소송에 있어서 증명의 경감 비교사법 3권1호 (96.06) / 한국비교사법학회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|203870">추호경 최근 의료과오재판의 경향 및 문제점 대한법의학회지 18권 2호 (94.10) / 대한법의학회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|485612">김영철 산업재해소송과 관련된 문제점과 대책 : 과로성 질환과 관련하여 . 법조 51권 2호 (2002.02) / 법조협회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|438471">최재천 의료과실소송에 있어서의 입증방해 판례월보 351호  / 판례월보사  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|535400">최성호 입증방해의 효과에 관한 고찰 경기법조 10호  / 수원지방변호사회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|504686">임좌혁 의료과오소송에 있어서 입증책임에 관한 연구 배재대학교 대학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|211909">임통일 의료과오의 인과관계와 입증책임 판례연구 8집  / 서울지방변호사회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|477452">양창수 최근중요민사판례동향 , : 의료과오 . 민법연구  . 제4권   / 박영사  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|106927">손용근 의료과오소송에 있어서 입증의 경감에 관한 연구 연세대학교  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|213818">석희태 보사부의료분쟁조정법안의 특징과 문제점 , 하 법률신문 2351호  / 법률신문사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|237705">최재천 의료과오로 인한 손해배상책임 고시계 42권 7호 (97.06) / 국가고시학회  1997 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민사소송법|261|0|null">민사소송법 제261조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다15031">대법원 1993.7.27. 선고 92다15031 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울민사지방법원|87가합4980">제1심 서울민사지법(1992.10.31. 선고 87가합4980 판결)</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고법 1994. 6. 22. 선고 92나67782 제3민사부판결 : 상고</h2><p class="sub_title">[손해배상(기)청구사건][하집1994(1),149]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>경추간반탈출증의 수술 후 하반신 완전마비와 사지의 불완전마비가 온 경우 의료과오의 입증책임</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>의료과오를 원인으로 하는 소송사건에 있어서는 그 증거가 모두 병원 또는 의사측에 편중되어 있고, 환자로서는 그 의료행위의 과정도 알 수 없는 것이므로, 환자의 수술 후의 건강상태가 수술 직전에 비하여 '예상하지 않은 뜻밖의 상태'로 바뀌었다면, 병원측에서 그와 같은 수술 후의 상태는 현재의 의학수준상 피할 수 없는 것이고, 수술담당의사측으로서는 아무런 시술상의 과실이 없었다는 것을 주장 입증하지 아니하는 한 의료과오의 책임을 면할 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|261|">민사소송법 제261조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인 겸 피항소인】
+      
+        
+          원고 1외 2인
+        
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 피항소인】
+      
+        
+          피고 1 학교법인외 1인
+        
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울민사지방법원|87가합4980|판결" href="#//">제1심 서울민사지법(1992.10.31. 선고 87가합4980 판결)</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 원심판결을 다음과 같이 변경한다.</p><p>  가. 원고 
+        
+        1에게 피고 
+        
+        1 학교법인은 금 449,339,613원, 피고 
+        
+        2는 피고 
+        
+        1 학교법인과 연대하여 위 금원 중 금 439,075,643원 및 위 각 금원 중 별지 제3 손해액계산표의 '손해액'란 기재 각 금원(피고 
+        
+        2에 대하여는 수술비 반환금 10,263,970원은 제외)에 대하여 같은 계산표 '지연이자기산일'란 기재 각 날짜부터 1994.6.22.까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라.
+      
+      </p><p>  나. 피고들은 연대하여 원고 조명옥에게 금 5,000,000원, 원고 
+        
+        3에게 금 1,000,000원 및 위 각 금원에 대하여 1985.6.1.부터 1994.6.22.까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라.
+      
+      </p><p>  2. 원고 
+        
+        1, 조명옥의 나머지 청구를 각 기각한다.
+      
+      </p><p>  3. 소송총비용은 이를 5등분하여 그 3은 피고들의, 나머지는 원고들의 각 부담으로 한다.</p><p>  4. 제1항은 가집행할 수 있다.</p>
+    
+      【청구취지】
+      <p>  피고들은 연대하여 원고 
+        
+        1에게 금 684,306,165원, 원고 조명옥에게 금 10,000,000원, 원고 
+        
+        3에게 금 1,000,000원 및 위각 금원에 대하여 별지 제4 청구금액내역표의 각 '(A), (B)'란 기재 해당금액들의 각 '(C), (D)'란 기재 비율에 의한 금원을 지급하고, 피고 
+        
+        1 학교법인(이하 피고 법인이라 한다)은 원고 
+        
+        1에게 금 10,263,970원 및 위 각 금원에 대하여 위 청구금액내역표 중 '수술비반환액'의 각 '(A), (B)'란 해당 기재 금액들의 각 '(C), (D)'란 기재 비율에 의한 금원을 지급하라(원고 
+        
+        1은 당심에 이르러 피고 
+        
+        2에 대하여 청구를 일부 감축하였다).
+      
+      </p>
+    
+    
+      【항소취지】
+      <p>  원고들 : 원심판결을 변경하여 청구취지와 같은 판결을 구한다.</p>
+      <p>  피고들 : 원심판결 중 피고들 패소부분을 취소하여 이에 대한 원고들의 청구를 각 기각한다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 손해배상 책임 등의 발생</p><p>  가. 기초사실</p><p>  다음과 같은 사실은 당사자 사이에 다툼이 없거나, 갑 제1,13,16호증의 각 기재에 변론의 전취지를 종합하여 이를 인정할 수 있다.</p><p>  (1) 원고 
+        
+        1은 1981년경부터 경부동통, 우측상지의 방사통 및 저린감이 있고, 우측상지의 삼두박근이 약화되어 이를 치료하기 위하여 1985.3.15. 피고 법인이 운영하는 
+        
+        (병원명 생략)병원의 신경외과 의사인 소외 박용구의 진찰을 받은 사실
+      
+      </p><p>  (2) 위 박용구는 위 원고를 검진한 결과 제6 내지 7 경추간반탈출증으로 진단하고, 제5 내지 제7 경추간관절에서도 후방골극(spur)이 관찰되었고, 후방 종인대의 골화증(O.P.L.L.)도 의심이 있는 것으로 진단하여, 같은 달 19. 동인에 대하여 물리치료를 시행하기 위하여 위 병원에 입원시킨 사실</p><p>  (3) 위 병원의 신경외과 과장으로 재직하던 피고 
+        
+        2는 위 원고에 대한 물리치료로서는 치유가 되기 어렵다고 판단하고 이를 근원적으로 치료하기 위하여 같은 해 4.2. 위 원고에 대하여 전방경추융합술(목의 전방의 피부를 절개하여 제6 경추와 제7 경추 사이의 추간반을 제거하고 그 자리에 골편을 삽입하는 수술, 이하 이 사건 수술이라 한다)을 시행한 사실
+      
+      </p><p>  (4) 그런데 이 사건 수술 직후 위 원고가 수술시의 마취에서 깨어나서부터 위 원고에게는 하반신 마비증상이 발생하였고, 피고 
+        
+        2는 같은 달 4. 동인에 대한 컴퓨터 단층촬영을 실시한 후 재수술을 시도하였으나 위 하반신 마비증상은 회복되지 아니하고 위 원고에게 하반신 완전마비를 비롯한 사지의 부전마비증세가 영구적으로 남게 된 사실
+      
+      </p><p>  (5) 원고 조명옥은 위 원고의 처, 원고 
+        
+        3은 그의 아들인 사실
+      
+      </p><p>  나. 의료상 과실의 존재 여부</p><p>  (1) 인정사실</p><p>  갑 제5,8,13,16,17호증, 을 제1 내지 7호증의 각 기재의 원심증인 서정호, 이광우, 김남규의 각 증언 및 원심법원의 수술도구검증결과, 원심법원 및 당원의 서울대학교병원장에 대한 신체감정촉탁결과에 변론의 전취지를 종합하면, 다음과 같은 사실을 인정할 수 있다.</p><p>  (가) 추간반탈출증은 추간반이 외력에 견디지 못하여 그것을 둘러싼 피막을 찢고 탈출한 상태를 말하는 것으로 주로 후면으로 탈출하여 척수신경근을 압박하여 신경장애를 일으키는데, 그 증세가 심한 경우에는 후방탈출 추간반(디스크)을 제거하는 사실</p><p>  (나) 피고 
+        
+        2는 이 사건 수술을 함에 있어 "경추척추증에 대한 변형시킨 스미스-로빈슨 방법"을 사용하였는데, 위 수술방법은 원래 1955년 스미스와 로빈슨에 의하여 개발된 경추부 추간반 질환에 대한 전방경추용합술을 메이필드와 뉴욕 의과대학의 벤자멘 등이 에어드릴을 이용하여 경추부 추간반과 후방골각을 제거하도록 수술방법을 변형시킨 것인 사실
+      
+      </p><p>  (다) 위 수술과정은 환자를 전신마취시켜 반듯이 눕히고 경부 중앙선에서 우측으로 주름선을 따라 옆으로 약 5센치 정도의 피부를 절개하여 해부학적 공간을 따라 경추 전면에 도달한 후 #15 수술칼 및 수술도구인 디스크 훠　(DISC FORCEP)을 사용하여 디스크를 대강 제거한 다음 수술용 현미경을 사용하여 에어드릴로 디스크를 완전히 제거한 후 그 공간에 환자의 장골능에서 떼어낸 골편을 삽입하는 골이식 융합술인 사실</p><p>  (라) 원고 
+        
+        1이 이 사건 수술 직후 하지 완전마비 등 사지 부전마비증상을 나타내자 피고 
+        
+        2는 같은 달 3. 재수술을 시행하였지만 이식골의 위치도 이상이 없었고 마비를 초래할 만한 원인을 발견하지 못한 사실(재수술시 척수신경 전방 5밀리미터의 공간에 피가 응고되어 있는 것을 발견하고 이를 제거하였는데 이것은 척수를 압박할 만한 크기의 혈종이 아니었다).
+      
+      </p><p>  (마) 위 원고의 최종진단명은 제6 및 제7 경추 부위의 척수위축증(부적합한 혈류를 동반한 국소적 위축)으로 진단된 사실</p><p>  (바) 원고 
+        
+        1의 골화증은 돌연한 척수병변의 원인은 되지 아니하고, 달리 위 원고에게 이 사건 수술 이전에 척수병변을 야기할 만한 척수공동증(척수내 공동이 형성되어 신경을 파괴하는 병) 등의 흔적은 발견되지 아니한 사실
+      
+      </p><p>  (사) 이 사건 수술과 같은 경추부의 전방융합술의 시술과정에서 척수위축으로 인한 하반신마비가 생기는 경우로서 ① 외과성, 즉 외과수술로 인한 것 ② 세균감염으로 인한 것 ③ 탈수초성으로 인한 것 ④ 혈관성으로 인한 것 ⑤ 원인불명인 것(혈관내 혈류부족으로 인한 경우 포함) 등이 있을 수 있는 사실</p><p>  (아) 위 중 ② 세균감염의 경우에는 열이 몹시 나는 전구증상이, ③ 탈수초성의 경우에는 먼저 눈이 안 보이는 전구증상이, ④ 혈관성으로 인한 것인 경우에는 전신홍반 및 낭창이 나타나는 전구증상이 각 나타나는데, 위 원고에게는 이러한 전구증상이 없었던 사실</p><p>  (자) 그런데 경수에 혈액을 공급하는 전면척추동맥은 척추동맥으로부터 척수의 중심부를 타고 하향 파생된 동맥으로 1개 내지 3개의 신경근 동맥과 합쳐지는데, 위 신경근 동맥이 압박을 받으면 동맥경련 또는 혈전증이 생겨 척수병변을 발생시킬 수 있고, 전면척수동맥이 수술중 외과적인 원인에 의하여 손상되면 운동마비감각장애 등의 증상을 일으키는 사실</p><p>  (차) 이 사건과 같은 수술 후 극심한 합병증이 발생할 확률은 1퍼센트 미만인 것으로 알려진 사실</p><p>  (카) 피고 
+        
+        2는 1982년도 위 수술방법을 습득하여 시행한 이래 위 원고를 수술하기 전 약 50명의 환자에 대하여 이 사건 수술을 시행하였고, 이 사건 수술 이후에 1991.12.경까지 약 70명의 환자를 수술하였으나, 이 사건과 같은 척수마비가 발생한 것은 위 원고의 경우가 유일한 사실
+      
+      </p><p>  (타) 한편 이 사건 소제기 후 의사기록(차트) 등에 대한 원심법원의 서증조사기일에 제출된 1987.3.16.자 최종 작성된 피고 
+        
+        2 명의의 의사기록(차트)(갑 제8호증의 1) 및 레지던트 소외
+        
+        인 명의의 의사기록(차트)(갑 제8호증의 10) 중 원고 
+        
+        1에 대한 진단명의 일부가 흑색 볼펜으로 가필되어 원래의 진단명을 식별할 수 없도록 변조되어 있는 사실
+      
+      </p><p>  (2) 판  단</p><p>  위 인정사실에 의하면, 위 원고는 이 사건 수술 직후 갑자기 사지부전마비의 증상을 나타낸 점, 최종 진단명이 혈류부족으로 인한 제6 및 제7 경추부위의 척수위축증으로서 그 진단 부위가 이 사건 수술부위인 점, 이 사건 수술 전이나 수술 후에도 위 원고에게 척수위축으로 인한 하반신마비를 초래할 만한 특별한 원인이나 증상이 관찰되지 아니한 점, 시술상 잘못 이외의 알 수 없는 원인으로 발생하는 합병증의 확률이 1퍼센트 미만으로 추정되는 점, 피고 
+        
+        2가 9년 간 시행한 약 120명의 환자에 대한 이 사건과 같은 수술에서 사지마비증상이 초래된 것은 위 원고의 경우가 유일하고, 이 사건 소제기 후 위 원고에 대한 의사기록(차트) 중 위 원고의 진단명 중 일부가 위 병원측 사람의 소행으로 흑색 볼펜으로 가필되어 원래의 진단명을 식별할 수 없게 변조된 점(입증방해) 등에 비추어 보면, 위 원고에 대한 사지부전마비의 발생원인은 피고 
+        
+        2가 시술과정에서 수술기구 등으로 위 원고의 전면척추동맥 또는 신경근 동맥을 과다 압박 또는 손상하게 하여 척수혈류장애를 초래하였거나, 또는 위 원고의 제6 경추 또는 제7 경추 부위의 척수를 손상시킨 시술상 과실로 인한 것으로 일응 추정된다 할 것이다.
+      
+      </p><p>  그리고 의료과오를 원인으로 하는 소송사건에 있어서는 그 증거가 모두 병원 또는 의사측에 편중되어 있고, 환자로서는 그 의료행위의 과정도 알 수 없는 것이므로, 환자의 수술 후의 건강상태가 수술 직전에 비하여 '예상하지 않은 뜻밖의 상태'로 바뀌었다면, 병원측에서 그와 같은 수술 후의 상태는 현재의 의학수준상 피할 수 없는 것이고, 수술담당의사측으로서는 아무런 시술상의 과실이 없었다는 것을 주장 입증하지 아니하는 한 의료과오의 책임을 면할 수 없다고 할 것이다.</p><p>  따라서 피고 
+        
+        2의 시술상 과실의 추정을 번복할 만한 입증이 없는 한 피고 법인은 피고 
+        
+        2의 사용자로서, 피고 
+        
+        2는 불법행위자로서 위 인정 불법행위로 인하여 원고들이 입은 손해를 배상할 책임이 있다 할 것이고, 또 뒤에서 보는 바와 같이 이 사건 수술 후의 입원치료비로서 지급받은 금원을 부당이득으로서 반환하여 줄 의무가 있다고 할 것이다.
+      
+      </p><p>  (3) 피고들의 항변에 대한 판단</p><p>  피고들은, 원고 
+        
+        1의 하반신마비는 비록 이 사건 수술 직후에 발생하였다고 하여도 피고 
+        
+        2의 집도상의 과실로 발생한 것이 아니라, 동인에게 잠재된 척수혈류장애에 기하여 자연적으로 척수마비가 발생한 것이거나, 동인에게는 경추간반탈출증과 동반하여 퇴행성 척추증인 경추골화증이 있는데 이러한 퇴행성 질환은 경추뿐만 아니라 신체의 전반적인 노화현상과 동반하므로 동맥경화 등 임상적으로 뚜렷이 나타나지 않는 혈관질환이 잠재할 가능성이 있고 위 혈관질환으로 인한 척추마비증은 현대의학수준으로서는 불가항력이라고 항변하나, 피고들의 전거증으로도 이를 인정하기 부족하고, 달리 이를 인정할 증거가 없으므로, 피고들의 위 항변은 이유가 없다.
+      
+      </p><p>  2. 손해배상의 범위 등</p><p>  가. 원고 
+        
+        1의 일실수입
+      
+      </p><p>  (1) 인정사실 및 평가내용</p><p>  (가) 성  별 : 남 자</p><p>      생년월일 : 1938.4.7.</p><p>      사고 당시의 연령 : 46년 11개월</p><p>      기대여명 : 25년 가량</p><p>  (나) 직업:1981.8.경부터 사고 당시까지 4년 간 동대문시장에서 
+        
+        (상호 생략)라는 상호로 종업원 2명을 고용하고 화섬직물 도매상을 경영
+      
+      </p><p>  (다) 가동능력에 대한 금전적 평가</p><p>  위 원고의 수입액은 동인과 같은 정도의 학력, 경력, 수완에 따른 경영능력을 가진 다른 사람을 고용하여 위 원고 대신에 위 사업을 경영하게 하기 위하여 지급하여야 할 보수액 상당으로서 직종별 임금실태조사보고서상 판매외무원 및 제조업체판매대리인(432번, 판매외무원 및 제조업체판매대리인의 직종은 해당구역 내에서 주문을 받고 소매상 산업소비자 도매상 및 기타 사업체에 화학, 기계, 전기 및 전자장비 및 기계를 제외한 상품을 판매하고, 도.소매상 또는 기타 사업체에 하나 또는 그 이상의 국내외 제조업체의 상품을 판매하는 데 관련된 직업을 포함한다. 1986년도 노동부 국립중앙직업안정소 발간 한국직업사전 참조)의 급여액으로 봄이 상당하다 할 것인바, 직종별임금실태조사보고서상 위 판매외무원 및 제조업체판매대리인의 급여액이 경력에 따라 구분되어 있으므로 위 원고의 일실수익을 동인의 경력연수의 증가에 따라 구분하여 산정하여(대법원 1988.4.12. 선고 87다카1129 판결 참조) 판매외무원 및 제조업체판매대리인의 1985년부터 1992년까지의 월 급여액을 계산하면, 별지 제1 급여계산서의 '임금'란 기재와 같다.</p><p>  (라) 후유장애 및 가동능력상실률</p><p>       후유장애 : 하반신 완전마비를 비롯한 사지의 부전마비</p><p>       가동능력상실률 : 100%</p><p>  (마) 가동연한</p><p>       만 60세가 되는 날까지(경험칙)</p><p>〔증  거〕</p><p>  갑 제1,6,18,27 내지 35호증의 각 기재, 원심법원의 서울대학교병원장에 대한 신체감정촉탁 결과</p><p>  (2) 계 산</p><p>    ① 위 원고가 구하는 1985.5.1.부터 같은 해 말까지</p><p>     금 3,359,752원(1985년도 급여액 금 464,429원 중 위 원고가 구하는 금 419,969원×8)</p><p>    ② 1986.1.1.부터 1988.12.31.까지</p><p>     금 15,118,884원(위 금 419,969원×36)</p><p>    ③ 1989.1.1.부터 같은 해 말까지</p><p>     금 7,398,780원(1989년도 급여액 금 765,982원 중 위 원고가 구하는 금 616,565원×12)</p><p>    ④ 1990.1.1.부터 같은 해 말까지</p><p>    금 8,434,668원(1990년도 급여액 금 784,314원 중 위 원고가 구하는 금 702,889원×12)</p><p>    ⑤ 1991.1.1.부터 같은 해 말까지</p><p>    금 13,728,432원(1991년도 급여액 금 1,144,036원×12)</p><p>    ⑥ 1992.1.1.부터 1993.말까지</p><p>    금 30,293,400원(1992년도 급여액 금 1,262,225원×24)</p><p>    ⑦ 1994.1.1.부터 정년인 1998.4.7.까지(위 원고는 위 부분 일실수익에 관한 지연손해금을          1994.1.1.부터 구하고 있다)</p><p>    금 58,260,140원(위 급여액 금 1,262,225원×46.1567)</p><p>    ⑧ 합 계</p><p>    금 136,594,056원(금 3,359,752원+금 15,118,884원+금 7,398,780원+금 8,434,668원+금 13,728,432원+금 30,293,400원+금 58,260,140원)(위 원고는 화섬직물 도매상을 경영하여 이 사고 무렵 1년 간의 총매출액이 금 55,800,000원으로 월평균 5,580,000원의 매출을 올리고 있었는데, 이 중 인건비, 차량유지비, 전화비, 교제비 등 1개월 간의 비용 금 2,700,000원을 공제한 월평균 금 2,880,000원의 순수입을 얻고 있었으므로 위 수입액을 기초로 일실수입을 산정하여야 한다고 주장하나, 갑 제21호증의 1 내지 3의 각 기재 및 원심증인 김만욱, 김수원의 증언만으로 위 수입사실을 인정하기에 부족하고, 달리 이를 인정할 증거가 없으므로 위 주장은 이유 없다.)</p><p>  나. 개호비</p><p>  원심 및 당심증인 정삼순의 각 증언과, 위 신체감정촉탁결과에 변론의 전취지를 종합하면, 원고 
+        
+        원고 1은 위에서 살핀 바와 같은 후유장애로 이 사고 이후 그 여명기간인 25년 동안 식사, 보행, 훨체어 승하차, 배뇨 배변 등에 있어 도와줄 성년 남자 1인의 개호가 24시간 필요한 사실, 위 원고는 1986.9.30.부터 1988.5.30.까지 서울대학병원의 간병인협회 소속 소외 이양금에게 월 금 600,000원의 개호비를 지급하고 동인의 개호를 받은 사실, 위 원고는 그 후부터 이 사건 변론종결일까지 같은 간병인협회 소속 소외 정삼순을 고용하여 개호를 받아 왔는데 개호비로 1990.4.말까지 월 금 600,000원 및 연간 상여금 600,000원을, 같은 해 5.초부터 1991.말까지 월 금 800,000원 및 연간 상여금 1,000,000원을, 같은 해 10.초부터 1992.12.말까지는 월 금 900,000원 및 연간 상여금 1,000,000원을, 1993.1.1.부터 같은 해 말까지는 월 금 1,000,000원 및 연간 상여금 1,000,000원을, 1994.1.1.부터 이 사건 변론종결일까지 월 금 1,300,000원을 각 지급한 사실 및 향후에도 위 원고에게는 위 정삼순과 같은 간병인의 개호가 필요하고, 개호비로서 적어도 월 금 1,300,000원이 소요될 것이 예상되는 사실을 인정할 수 있고, 달리 반증이 없다.
+      
+      </p><p>  개호비는 통상적으로 일용노동에 종사하는 성인 1인의 1일 임금을 기준으로 산정할 수 있으나, 이 사건과 같이 위 원고가 직업적인 간병인을 고용하여 개호에 대한 대가로 보수를 동인에게 실제로 지급하였거나 지급하기로 약정하였다면, 그 보수는 상당성이 인정되는 범위 안에서 이 사건 개호비 손해에 해당된다 할 것인데, 위 개호인의 보수는 이 사건 후유장애와 그 개호기간, 1일 개호시간 및 개호내용에 비추어 이 사건 개호비 손해로 봄이 상당하다 할 것이다.</p><p>  따라서 위 원고는 이 사고 이후 1986.9.30.부터 여명기간 동안 위 인정의 개호비 손해를 입었다 할 것인데, 위 원고가 구하는 1994.4.30.까지의 개호비는 별지 제2 개호비 계산서 기재의 '소계'란과 같고(그 합계액은 금 75,183,332원), 그 이후 여명인 2010.4.경까지의 개호비를 1994.5.1.을 기준으로 하여 일시금으로 구하므로 월 12분의 5푼의 비율에 의한 단리할인법에 따라 그 금원을 산정하면 금 182,378,560원이 된다(금 1,300,000원×140.2912).</p><p>  다. 물리치료비 등</p><p>  갑 제19호증의 1 내지 15, 갑 제20호증의 2 내지 8의 각 기재와 위 신체감정촉탁결과에 의하면, 위 원고는 위 후유장애로 인하여 여명 동안 매월 1회씩 재활의학과 및 비뇨기관 전문의의 검진 및 물리치료가 필요한데 그 비용은 월 금 150,000원 정도가 소요되는 사실, 위 원고가 1988.3.16.부터 1990.7.20.까지 위 비용으로 피고 병원에 금 288,850원(갑 제19호증의 1 내지 15), 카톨릭대학 의과대학 부속 성모병원에 금 531,500원(갑 제20호증의 2), 서울대학교병원에 금 976,690원(갑 제20호증의 3 내지 6), 서울중앙병원에 금 356,700원(갑 제20호증의 7, 8)을 각 지출한 사실을 인정할 수 있으므로, 동 금액이 합계 금 2,153,740원이 됨은 계산상 분명하다.</p><p>  그런데 위 지출비용 외에 위 원고가 이 사건 변론종결일까지 실제로 물리치료비를 지출하였다는 점에 관하여 이를 인정할 아무런 증거가 없으므로, 위 향후 물리치료비는 이 사건 변론종결일 이후에 여명기간 동안 소요될 비용의 합계라 할 것이므로, 이를 월 12분의 5푼의 비율에 의한 단리할인법에 의하여 위 원고가 구하는 1994.5.1.을 기준으로 한 현가를 계산하면 금 20,745,555원이 된다{금 150,000원×(140.2912-1.9875)}.</p><p>  라. 휠체어 구입비</p><p>  위 신체감정촉탁결과에 변론의 전취지를 종합하면, 위 원고는 여명 동안 휠체어를 사용하여야 하는데, 휠체어는 1개에 금 400,000원, 수명이 3년인 사실 및 위 원고가 1985.7.1. 휠체어 1개를 구입한 사실을 인정할 수 있다.</p><p>  그러나 위 원고가 이 사건 변론종결시까지 이미 구입한 휠체어의 수명이 지난 이후 실제로 휠체어를 추가 구입하여 그 비용을 지출하였다는 입증이 없으므로 위 향후 휠체어비용은 이 사건 변론종결 익일부터 여명기간에 지출할 휠체어비용의 합계이므로 이를 위 원고가 구하는 1992.1.1.을 기준으로 하여 현가를 산정하면, 위 원고가 이 사건 사고로 인하여 입은 휠체어 비용의 손해액(기 구입분 포함)은 금 2,020,400원이 된다{400,000원×(1+0.8695+0.7692+0.6896+0.6250+0.5714+0.5263)}.</p><p>  마. 피고 법인에 대한 기지급한 치료비반환청구</p><p>  의사가 환자에게 부담하는 진료채무는 질병의 치료와 같은 결과를 반드시 달성하여야 할 결과채무가 아니라 환자의 치유를 위하여 선량한 관리자의 주의의무를 가지고 현재의 의학수준에 비추어 필요하고 적절한 진료조치를 다하여야 할 채무, 즉 수단채무라고 보아야 할 것이므로, 위와 같은 주의의무를 다하였는데도 그 진료 결과 질병이 치료되지 아니하였다면 치료비의 반환을 청구할 수 없으나, 의사가 앞서 인정한 바와 같이 주의의무를 다하지 아니한 탓으로 오히려 환자의 신체기능이 회복불가능하게 손상되었고, 또 위 손상 이후에는 그 후유장애의 치유 또는 더 이상의 악화를 방지하는 정도의 치료만이 계속되어 온 것이라면 이와 같은 목적의 의사의 치료행위는 진료채무의 본지에 따른 것이 되지 못하거나 손해전보의 일환으로 행하여 진 것에 불과하여, 병원측에 대하여 위 치료행위에 대한 치료비조로 이미 지급한 치료비 상당 금원의 반환을 구할 수 있다 할 것이다(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다15031|판결" href="#//">대법원 1993.7.27. 선고 92다15031 판결</a></span> 참조).
+      
+      </p><p>  갑 제3호증의 3 내지 5,7,9의 각 기재에 변론의 전취지를 종합하면, 위 원고가 이 사고 발생 이후 1985.4.9.부터 같은 달 20.까지 입원치료비로 지급한 금원이 금 10,803,970원인 사실은 인정할 수 있으나, 피고 법인은 위에서 살핀 바와 같은 피고 
+        
+        2의 과실로 인하여 위 원고에게 회복할 수 없는 후유장애가 발생한 후 그 후유장애의 치료 또는 더 이상의 악화를 방지하는 정도의 치료만을 하여 온 것이므로 그 비용은 진료채무의 본지에 따른 치료행위에 대한 것이 아니거나 손해배상채무자가 스스로 손해확대방지를 위한 손해전보의 일환으로 행하여 진 치료행위에 대한 것이라 보여지는바, 따라서 피고 법인은 위 원고로부터 지급받은 위 금 10,803,970원 중 위 원고가 구하는 금 10,263,970원을 법률상 원인 없이 수령하였다 할 것이니 위 원고에게 이를 부당이득으로서 반환할 의무가 있다 할 것이다.
+      
+      </p><p>  바. 위자료</p><p>  (1) 위자료 산정시 참작 사유</p><p>  원심 설시와 같다</p><p>  (2) 위자료액</p><p>  원고 
+        
+        1에게 금 20,000,000원, 원고 조명옥에게 금 5,000,000원, 원고 
+        
+        3에게 금 1,000,000원
+      
+      </p><p>  3. 결  론</p><p>  그렇다면 피고 법인은 원고 
+        
+        1에게 별지 제3 손해액계산표의 '합계'란 기재의 금 449,339,613원, 피고 
+        
+        2는 피고 법인과 연대하여 위 금원 중 금 439,075,643원(금 449,339,613원-수술비반환금 금 10,263,970원) 및 위 각 금원 중 같은 손해액계산표의 '손해액'란 기재 각 금원에 대하여 같은 '지연이자기산일'란 기재 날짜부터 이 판결선고일인 1994.6.22.까지는 민법 소정의 연 5푼의, 그 다음날부터 완제일까지는 소송촉진등에관한특례법 소정의 연 2할 5푼의 각 비율에 의한 각 지연손해금을, 피고들은 연대하여 원고 조명옥에게 금 5,000,000원, 원고 
+        
+        3에게 금 1,000,000원 및 위 각 금원에 대하여 원고들이 구하는 1985.6.1.부터 위 1994.6.22.까지는 민법 소정의 연 5푼의, 그 다음날부터 완제일까지는 소송촉진등에관한특례법 소정의 연 2할 5푼의 각 비율에 의한 각 지연손해금을 각 지급할 의무가 있다.
+      
+      </p><p>  따라서 원고 
+        
+        1, 조명옥의 이 사건 청구는 위 인정범위 내에서 이유 있어 이를 인용하고, 나머지 청구는 이유 없어 이를 기각하며, 원고 
+        
+        3의 청구는 이유 있어 이를 인용할 것인바, 원심판결은 이와 결론을 일부 달리하여 위 인정금액보다 적게 원고들의 청구를 인용하여 부당하므로 원고들의 항소와 당심에서의 청구취지변경에 따라 원심판결을 위 인정과 같이 변경하기로 하여 주문과 같이 판결한다. [별지생략]
+      
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   권광중(재판장) 홍기종 임한흠 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

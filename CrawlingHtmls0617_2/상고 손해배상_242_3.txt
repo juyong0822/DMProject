@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다21276 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2061943';
+var contIdEtc = '';
+var saNo = '2010다21276';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20100708' ? 
+			'20100708'.length==4 ? Date.parseExact('20100708','yyyy').toString('yyyy. M. d.') : 
+				'20100708'.length==6 ? Date.parseExact('20100708','yyyyMM').toString('yyyy. M. d.') : 
+					'20100708'.length==8 ? Date.parseExact('20100708','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다21276 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다21276';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다21276</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(7)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(6)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(12)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(7)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2137963">대법원 2013. 6. 13. 선고 2012다91262 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|640581">선정원 과잉진료와 과잉원외처방으로 인한 부당이득의 환수처분과 손해배상청구 행정법연구 29호  / 행정법이론실무학회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|651470">김미리 불법행위로 인한 위자료채무의 지연손해금 발생시기 대법원판례해설 87호  / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|726035">오윤식 노동조합의 사용자에 대한 비재산적 손해배상청구권 사법 27호 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|743972">장덕조 2013년도  보험법 판례의 동향과 그 연구 상사판례연구 27집 2권 / 한국상사판례학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833690">김웅재 기망행위에 속아 물건을 고가에 매수한 뒤 그 물건가격이 변동한 경우 손해배상의 범위 및 손해배상액 산정의 기준시점 민사판례연구 39권  / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|720495">김정중 요양급여기준을 위반한 원외(원외) 처방전 발급행위의 위법성 등 대법원판례해설 제95호  / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|690722">송명호 국민건강보험공단의 요양급여비용 환수과정에 있어서 법적용 정밀성에 관한 검토 : 특히 임의비급여를 중심으로 . 의료법학 13권 2호  / 대한의료법학회  2012 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|91다33070">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2008다37414">대법원 2009. 9. 10. 선고 2008다37414 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다91828">대법원 2010. 4. 29. 선고 2009다91828 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|99다50538">대법원 2000. 1. 21. 선고 99다50538 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다32197">대법원 2005. 10. 7. 선고 2005다32197 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다66066">대법원 2005. 11. 10. 선고 2003다66066 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|14|0|20051011">국민건강보험요양급여의기준에관한규칙(구) 제14조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|1|0|null">민법 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민법|734|0|null">민법 제734조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="국민건강보험법|43|0|null">국민건강보험법 제43조 제3항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|94다28000">대법원 1994. 11. 11. 선고 94다28000 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다68485">대법원 2004. 10. 15. 선고 2002다68485 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다31439">대법원 2006. 10. 26. 선고 2005다31439 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다33070">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008다37414">대법원 2009. 9. 10. 선고 2008다37414 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다91828">대법원 2010. 4. 29. 선고 2009다91828 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다32197">대법원 2005. 10. 7. 선고 2005다32197 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|43|0|null">국민건강보험법 제43조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|734|0|null">민법 제734조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나33596">서울고법 2010. 1. 22. 선고 2009나33596 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 7. 8. 선고 2010다21276 판결</h2><p class="sub_title">[손해배상(기)][공2010하,1540]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 불법행위로 인한 재산상 손해의 액수를 산정함에 있어 위법행위가 없었을 경우의 재산상태에 관하여 당사자가 주장하는 사정을 참작하기 위한 요건</p>
+      <p></p>
+      <p>
+        </p><p>[2] 국민건강보험법령에 따라 요양급여의 대상이 되는 약제와 그 상한금액을 고시함에 있어서 의약품 제조업자가 ‘원료 직접 생산 의약품에 대한 특례규정’을 적용받기 위하여 적극적인 기망행위를 하였음을 이유로 국민건강보험공단에 대한 불법행위책임을 인정한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 피해자의 부주의를 이용하여 고의로 불법행위를 저지른 자가 그 피해자의 부주의를 이유로 과실상계를 주장할 수 있는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[4] 국민건강보험공단이 요양기관에게 의약품을 판매한 제약회사를 상대로 불법행위로 인한 손해배상청구를 구하는 경우, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|43|">국민건강보험법 제43조 제3항</a></span>을 적용 내지 유추적용할 수 있는지 여부(소극) 및 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|734|">민법 제734조</a></span>의 사무관리 규정이나 조리에 의하여 과다 납부된 본인일부부담금에 대한 손해배상까지 청구할 수 있는지 여부(소극)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 불법행위로 인한 재산상 손해는 위법한 가해행위로 인하여 발생한 재산상 불이익, 즉 그 위법행위가 없었더라면 존재하였을 재산상태와 그 위법행위가 가해진 현재의 재산상태의 차이를 말하는 것이므로, 손해액을 산정함에 있어서는 먼저 위법행위가 없었더라면 존재하였을 재산상태를 상정하여야 하는데, 위법행위가 없었을 경우의 재산상태를 상정함에 있어 고려할 사정들은 위법행위 전후의 여러 정황을 종합한 합리적인 추론에 의하여 인정될 수 있어야 하고, 당사자가 주장하는 사정이 그러한 추론에 의하여 인정되지 않는 경우라면 이를 위법행위가 없었을 경우의 재산상태를 상정하는 데 참작할 수 없다.</p>
+      <p></p><p>
+        </p><p>[2] 국민건강보험법령에 따라 요양급여의 대상이 되는 약제와 그 상한금액을 고시하면서 행정청이 완제의약품의 제조자가 원료의약품까지 생산하는 경우 최고가를 인정하는 ‘원료 직접 생산 의약품에 대한 특례규정’에 대한 유권해석을 통해 원료의약품을 직접 생산하는 경우뿐만 아니라 원료의약품 생산회사의 지분을 과반수 이상 보유하고 있는 경우에도 위 특례규정을 적용하였는데, 의약품 제조업자가 원료제조회사의 주식 과반수를 계속하여 보유할 의사가 없이 의약품에 관한 최고가의 상한금액을 인정받은 다음 바로 이를 반환할 의도로 일시적·형식적으로 주식을 취득하였으면서도 주식 보유에 관한 근거서류를 심사기관에 제출하면서 마치 계속하여 원료제조회사 주식의 과반을 보유할 것처럼 위 특례규정의 적용을 요청하였다면, 이는 위 특례의 적용을 심사하는 건강보험심사평가원 또는 보건복지부장관을 착오에 빠뜨리는 적극적인 기망행위에 해당하므로, 위 기망행위로 인하여 국민건강보험공단에 발생한 손해에 대하여 불법행위책임을 부담하고, 그 손해액은 위 의약품의 상한금액으로 인정된 금액의 범위에서 요양기관에 실제로 지급한 요양급여비용과 기망행위가 없었더라면 상한금액으로 결정되었을 금액을 기준으로 산정한 요양급여비용과의 차액이라고 한 사례.</p>
+      <p></p><p>
+        </p><p>[3] 손해배상청구소송에서 피해자에게 과실이 인정되면 법원은 손해배상의 책임 및 그 금액을 정함에 있어서 이를 참작하여야 하며, 배상의무자가 피해자의 과실에 관하여 주장하지 않는 경우에도 소송자료에 의하여 과실이 인정되는 경우에는 이를 법원이 직권으로 심리·판단하여야 할 것이지만, 피해자의 부주의를 이용하여 고의로 불법행위를 저지른 자가 피해자의 바로 그 부주의를 이유로 자신의 책임을 감하여 달라고 주장하는 것은 허용될 수 없다.</p>
+      <p></p><p>
+        </p><p>[4] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|43|">국민건강보험법 제43조 제3항</a></span>에서는 국민건강보험공단이 요양급여비용을 요양기관에게 지급시 이미 과다 납부된 본인부담금이 있는 경우 이를 공제하여 그 금액을 가입자에게 환급하도록 규정하고 있으나, 이는 요양기관에 대한 공단의 요양급여비용 지급과정에서 과다 납부된 본인일부부담금의 환수를 위한 절차적 편의를 위하여 마련된 규정일 뿐, 공단이 요양기관에게 의약품을 판매한 제약회사를 상대로 불법행위로 인한 손해배상청구를 구하고 있는 경우에는 위 규정이 적용 내지 유추적용될 여지가 없고, 그 밖에 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|734|">민법 제734조</a></span>의 사무관리 규정이나 조리에 의하여 공단이 타인의 권리를 소송상 행사할 수 있다거나 건강보험가입자들을 위한 소송수행권이 인정된다고 볼 수도 없다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험요양급여의기준에관한규칙|14|">구 국민건강보험 요양급여의 기준에 관한 규칙(2005. 10. 11. 보건복지부령 제328호로 개정되기 전의 것) 제14조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">민법 제396조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|1|">민법 제1조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|734|">제734조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|43|">국민건강보험법 제43조 제3항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다33070|전원합의체 판결" href="#//">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></span>(공1992, 2235)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008다37414|판결" href="#//">대법원 2009. 9. 10. 선고 2008다37414 판결</a></span>(공2009하, 1621)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다91828|판결" href="#//">대법원 2010. 4. 29. 선고 2009다91828 판결</a></span>(공2010상, 990)<br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다50538|판결" href="#//">대법원 2000. 1. 21. 선고 99다50538 판결</a></span>(공2000상, 482)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다32197|판결" href="#//">대법원 2005. 10. 7. 선고 2005다32197 판결</a></span>(공2005하, 1772)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다66066|판결" href="#//">대법원 2005. 11. 10. 선고 2003다66066 판결</a></span>(공2005하, 1939)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인 겸 피상고인】
+      
+        국민건강보험공단 (소송대리인 법무법인 바른 담당변호사 김동건외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인 겸 상고인】
+      
+        주식회사 휴온스 (소송대리인 변호사 박정일)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나33596|판결" href="#//">서울고법 2010. 1. 22. 선고 2009나33596 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결의 원고 패소 부분 중 원고의 부담금에 관한 손해배상청구 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  원고의 나머지 상고와 피고의 상고를 모두 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 살펴본다.</p><p>  1. 원고의 상고이유 제1점에 관하여</p><p>  가. 행정처분이 위법하다고 하여도 그 하자가 중대하고 명백하여 당연무효라고 보아야 할 사유가 있는 경우를 제외하고는 아무도 그 하자를 이유로 무단히 그 효과를 부정하지 못하며, 행정행위의 하자가 취소사유에 불과한 때에는 그 처분이 취소되지 않는 한 그로 인한 이득을 법률상 원인 없는 이득이라고 말할 수 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다28000|판결" href="#//">대법원 1994. 11. 11. 선고 94다28000 판결</a></span> 등 참조).
+      </p><p>  한편 하자 있는 행정처분이 당연무효가 되기 위해서는 그 하자가 법규의 중요한 부분을 위반한 중대한 것으로서 객관적으로 명백한 것이어야 하며, 하자가 중대하고 명백한지 여부를 판별함에 있어서는 그 법규의 목적, 의미, 기능 등을 목적론적으로 고찰함과 동시에 구체적 사안 자체의 특수성에 관하여도 합리적으로 고찰함을 요하는바, 행정청이 어느 법률관계나 사실관계에 관하여 어느 법률의 규정을 적용하여 행정처분을 한 경우에 그 법률관계나 사실관계에 관하여는 그 법률의 규정을 적용할 수 없다는 법리가 명백히 밝혀져 그 해석에 다툼의 여지가 없음에도 불구하고 행정청이 위 규정을 적용하여 처분을 한 때에는 그 하자가 중대하고도 명백하다고 할 것이나, 그 법률관계나 사실관계에 관하여 그 법률의 규정을 적용할 수 없다는 법리가 명백히 밝혀지지 아니하여 그 해석에 다툼의 여지가 있는 때에는 행정관청이 이를 잘못 해석하여 행정처분을 하였더라도 이는 그 처분 요건사실을 오인한 것에 불과하여 그 하자가 명백하다고 할 수 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다68485|판결" href="#//">대법원 2004. 10. 15. 선고 2002다68485 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다31439|판결" href="#//">대법원 2006. 10. 26. 선고 2005다31439 판결</a></span> 등 참조).
+      </p><p>  나. 원심판결 이유에 의하면, 원심은 그 채용 증거들에 의하여 그 판시와 같은 사실들을 인정한 다음, 2005. 4. 22. 약제전문평가위원회의 심의 당시까지도 피고는 주식회사 대희화학(이하 ‘대희화학’이라 한다)의 주식 52.5%를 보유하고 있는 상태였을 뿐만 아니라 피고가 위 주식을 처분한 것은 이 사건 제1고시가 있기 하루 전이었던 점 등에 비추어 이 사건 제1고시가 중대하고 명백한 하자로 인하여 당연무효에 해당하는 것이라고 볼 수는 없고, 이 사건 제2고시는 종전의 행정처분인 이 사건 제1고시의 내용을 변경하는 새로운 행정처분일 뿐 종전의 행정처분의 효력을 소급적으로 소멸시키는 행정행위의 취소에 해당하지 않으므로, 위 고시에 터 잡아 피고가 요양기관들과 의약품거래를 함으로써 어떠한 이득을 얻었다고 하더라도 이를 들어 법률상 원인 없이 이득을 얻은 것이라고 볼 수는 없다고 판단하였는바, 앞서 본 법리를 기록에 비추어 살펴보면, 원심의 이러한 조치는 정당하고, 거기에 원고가 상고이유에서 주장하는 바와 같이 부당이득의 법리나 행정행위의 하자에 관한 법리 등을 오해한 잘못이 없다.</p><p>  2. 피고의 상고이유 제1, 2점에 관하여</p><p>  가. 원심은, ① 원료 직접 생산 의약품에 대한 특례는 완제의약품의 제조자가 원료의약품까지 생산하는 경우 그 원료합성기술에 들인 노력을 보상하고 기술개발을 장려하기 위하여 일반적인 복제의약품과는 달리 예외적으로 최고가를 인정하는 제도인 점, ② 행정청이 이 사건 특례규정에 대한 유권해석을 통해 원료의약품을 직접 생산하는 경우뿐만 아니라 원료의약품 생산회사의 지분을 과반수 이상 보유하고 있는 경우에도 이 사건 특례규정을 적용하여 왔다면, 그와 반대로 원료의약품 생산회사의 지분을 과반수 이상 보유하고 있지 아니한 경우에는 이 사건 특례규정을 적용하지 아니하였을 것임이 명백한 점, ③ 피고가 원료의약품 생산회사인 대희화학의 지분을 과반수 이상을 보유하고 있음을 들어 이 사건 특례규정의 적용을 적극적으로 요구한 이상 그 지분을 처분하는 등 행정처분의 근거가 되는 사실관계에 변동이 발생하였다면 이러한 사정을 행정청에 고지하여야 할 조리상의 의무가 있다고 봄이 상당한 점, ④ 피고는 당초 약제전문평가위원회의 검토 단계에서 상한금액이 금 109원으로 검토되자 대희화학의 지분을 추가매수하여 이의신청을 하는 등 적극적인 행위를 하였음에도 불구하고, 지분을 처분하는 단계에서는 위 위원회나 건강보험심사평가원 등에게 그와 같은 처분사실을 고지하는 등의 아무런 조치도 취하지 아니한 채 이 사건 제1고시에 터잡아 이 사건 의약품의 판매행위를 계속하여 왔던 점 등에 비추어 보면, 피고는 신의칙상의 고지의무 위반에 따른 불법행위책임을 부담한다고 판단하였다.</p><p>  나. 원심판결 이유 및 기록에 의하면, 피고는 이 사건 의약품에 관한 약제결정신청을 하기 직전에 원료제조회사인 대희화학의 주식 50%를 양수하고 심사진행과정에서 다시 2.5%를 양수하여 과반을 소유한 후 곧바로 이를 건강보험심사평가원에 알린 사실, 건강보험심사평가원의 약제평가위원회 회의 결과 이 사건 의약품에 관하여 479원의 최고가 상한금액을 인정받게 되자, 피고는 보건복지부장관의 약제급여 목록 및 급여상한금액표의 개정 고시가 있기 하루 전날 다시 위 주식을 매도인에게 전부 반환한 사실, 피고는 제약회사로서 약제에 관한 요양급여 및 상한금액의 산정기준 등에 관하여 자세하게 알고 있었던 사실 등을 알 수 있다.</p><p>  이러한 사실관계에 비추어 보면, 피고는 원료제조회사인 대희화학의 주식 과반수를 계속하여 보유할 의사가 없이 이 사건 의약품에 관한 최고가의 상한금액을 인정받은 다음 바로 이를 반환할 의도로 일시적·형식적으로 주식을 취득하였으면서도 주식 보유에 관한 근거서류를 심사기관에 제출하면서 마치 계속하여 대희화학 주식의 과반을 보유할 것처럼 이 사건 특례규정의 적용을 요청하였는바, 이러한 피고의 행위는 위 특례의 적용을 심사하는 건강보험심사평가원 또는 보건복지부장관을 착오에 빠뜨리는 적극적인 기망행위에 해당한다고 봄이 상당하다. 따라서 이 사건 제1고시의 공정력으로 인하여 피고가 얻은 이득이 법률상 원인 없는 이득에 해당하지 않는다고 하더라도, 피고의 위와 같은 기망행위로 인하여 원고에게 손해가 발생하였다면 피고는 원고에게 불법행위로 인한 손해배상책임을 부담한다고 할 것이다.</p><p>  그렇다면 원심은 그 이유설시에 있어 다소 부적절한 면이 있으나 피고가 불법행위책임을 부담한다고 본 결론에 있어서는 정당하고, 거기에 피고가 상고이유에서 주장하는 것과 같은 고지의무와 불법행위책임의 손해발생에 관한 법리오해나 채증법칙 위반 등의 잘못이 없다.</p><p>  3. 원고의 상고이유 제2점에 관하여</p><p>  가. 
+        <span class="accrnt_txt">불법행위로 인한 재산상 손해는 위법한 가해행위로 인하여 발생한 재산상 불이익, 즉 그 위법행위가 없었더라면 존재하였을 재산상태와 그 위법행위가 가해진 현재의 재산상태의 차이를 말하는 것이므로</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다33070|전원합의체 판결" href="#//">대법원 1992. 6. 23. 선고 91다33070 전원합의체 판결</a></span> 등 참조), 
+        <span class="accrnt_txt">손해액을 산정함에 있어서는 먼저 위법행위가 없었더라면 존재하였을 재산상태를 상정하여야 하는데, 위법행위가 없었을 경우의 재산상태를 상정함에 있어 고려할 사정들은 위법행위 전후의 여러 정황을 종합한 합리적인 추론에 의하여 인정될 수 있어야 하고, 당사자가 주장하는 사정이 그러한 추론에 의하여 인정되지 않는 경우라면 이를 위법행위가 없었을 경우의 재산상태를 상정하는 데 참작할 수 없다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008다37414|판결" href="#//">대법원 2009. 9. 10. 선고 2008다37414 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다91828|판결" href="#//">대법원 2010. 4. 29. 선고 2009다91828 판결</a></span> 등 참조).
+      </p><p>  나. 원심은, ① 피고의 불법행위가 없었더라면 이 사건 의약품의 상한금액이 금 479원이 아니라 금 109원으로 결정되었을 것이나, 위 상한금액의 차이는 피고가 얻을 수 있었던 이득의 최고치를 산정하는 근거가 될 수 있을 뿐인데다가 피고가 설사 그러한 이득을 얻었다고 하더라도 그러한 이득액 상당이 곧바로 원고의 손해액으로 귀착된다고 할 수는 없는 점, ② 피고가 이 사건 특례규정의 적용을 받지 못하여 그 상한금액이 109원으로 결정되었을 경우에도 이 사건 의약품을 제조·판매하였을 것이라는 특별한 사정을 인정할 만한 증거가 없는 점, ③ 요양기관들은 이 사건 의약품이 판매되지 않았다면 그와 동일제제인 다른 의약품을 구매하였을 것이 분명한 점 등에 비추어 볼 때, 원고가 입은 손해는 이 사건 의약품이 이 사건 제1고시에 터잡아 판매됨에 따라 원고가 부담한 공단부담금과 동일제제의 9개 의약품이 같은 기간 동안 이 사건 의약품 판매량과 같은 수량(3,047,557정)만큼 판매되었을 경우에 원고가 부담하였을 공단부담금(같은 기간 9개 의약품의 총판매대금을 총판매량으로 나눈 1정당 평균 판매금액에 기해 산정)의 차액이라고 봄이 상당하다고 판단하였다.</p><p>  다. 원심의 이러한 판단은 피고가 이 사건 의약품의 상한금액이 109원으로 결정되었다면 위 의약품을 제조·판매하지 않았을 것이라는 가정을 전제로 하고, 다시 피고가 같은 기간 동안 판매한 이 사건 의약품 3,047,557정이 동일제제 9개 의약품들에 의해 판매금액 비율로 균등하게 대체되어 판매되었을 것이라는 가정에 기초하고 있다. 그러나 앞서 본 법리와 기록에 비추어 살펴보면, 이 사건에서 피고의 위법행위가 없었더라면 존재하였을 원고의 재산상태는 피고가 이 사건 의약품에 관하여 기망행위로 이 사건 특례규정의 적용을 주장하지 않았을 경우의 상태로 보아야 하고, 이 사건 의약품 자체를 피고가 제조·판매하지 않는 것으로 상정하는 것은 합리적인 추론의 범위를 넘어서는 것이며, 위 3,047,557정이 상한금액이 122원부터 479원까지 큰 차이를 보이고 있는 동일제제 9개 의약품들에 의해 어떤 비율로 대체되었을 것인지도 쉽사리 예측할 수 없는 것이어서, 원심 판시의 위와 같은 사정들은 이를 위법행위가 없었을 경우의 재산상태를 상정하는 데 참작할 수 없다고 봄이 상당하다.</p><p>  그러므로 원고가 피고의 기망행위로 인하여 입게 된 손해는 이 사건 의약품의 상한금액으로 인정된 479원의 범위에서 요양기관에 실제로 지급한 요양급여비용과 피고의 기망행위가 없었더라면 상한금액으로 결정되었을 109원을 기준으로 산정한 요양급여비용과의 차액이라고 할 것이다.</p><p>  그럼에도 불구하고 이와 달리 원고의 손해액을 산정한 원심판결에는 불법행위로 인한 손해액의 산정에 관한 법리를 오해하여 판결 결과에 영향을 미친 잘못이 있다고 할 것이다. 이 점을 지적하는 원고의 주장은 이유 있다.</p><p>  4. 원고의 상고이유 제4점 및 피고의 상고이유 제3점에 관하여</p><p>  가. 
+        <span class="accrnt_txt">손해배상청구소송에서 피해자에게 과실이 인정되면 법원은 손해배상의 책임 및 그 금액을 정함에 있어서 이를 참작하여야 하며, 배상의무자가 피해자의 과실에 관하여 주장하지 않는 경우에도 소송자료에 의하여 과실이 인정되는 경우에는 이를 법원이 직권으로 심리·판단하여야 할 것이지만, 피해자의 부주의를 이용하여 고의로 불법행위를 저지른 자가 피해자의 바로 그 부주의를 이유로 자신의 책임을 감하여 달라고 주장하는 것은 허용될 수 없다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다32197|판결" href="#//">대법원 2005. 10. 7. 선고 2005다32197 판결</a></span> 등 참조).
+      </p><p>  나. 원심은, ① 국민건강보험법 등 관계 법령에는 이 사건 특례규정에 의하여 최고가의 상한금액을 인정받은 의약품에 대하여 위 특례규정의 적용을 받을 수 없는 사유가 발생하였을 때 의약품 제조업자로 하여금 보건복지부장관 등에게 그 사유를 고지하도록 하는 명시적인 규정은 없었던 점, ② 보건복지부장관은 2007. 10.에 이르러 이 사건 제2고시를 하기 전까지는 원료조달방법의 변경이나 원료의약품 생산회사에 대한 지분율 변동 등의 사유를 들어 상한금액을 조정하는 조치를 취한 전례가 없었던 점, ③ 이 사건 제1고시 이후 보건복지부장관 등은 2년여가 경과하도록 이 사건 의약품에 대한 상한금액 결정의 타당성이나 원료의약품의 수급관계 등에 관하여 사후적인 관리·감독조치를 취하지 아니하였는바 이러한 사정으로 인하여 원고의 손해가 더욱 확대된 것으로 보이는 점 등을 종합하여 보면, 손해의 공평타당한 분담이라는 손해배상제도의 이념에 비추어 피고의 손해배상책임을 80%로 제한함이 상당하다고 판단하였다.</p><p>  다. 그러나 원심이 들고 있는 피고의 손해배상책임의 범위를 제한하는 사유를 앞서 본 법리에 비추어 보면, 원고가 사후적인 관리·감독조치를 소홀히 하였더라도 이러한 틈을 이용하여 고의로 기망행위를 저지른 피고에게 원고의 부주의를 이유로 책임의 감액을 인정하는 것은 허용될 수 없고, 원고가 지분율 변동 등의 사유를 들어 상한금액을 조정하는 단속조치를 취한 전례가 없다는 사유를 손해배상책임의 제한사유로 삼는 것 역시 손해의 공평한 분담이라는 견지에서 상당하다고 인정되는 제한사유라고 볼 수 없으며, 피고는 이 사건 특례규정을 적용받기 위하여 적극적으로 기망행위를 하였으므로 상한금액 결정 후 사정변경을 이유로 한 고지의무 위반의 문제를 논할 여지가 없다는 점에서 이러한 사유 역시 손해배상책임의 범위를 제한하는 사유로 삼을 수 없다.</p><p>  그럼에도 불구하고 이와 달리 원심이 판시 사정에 따른 피고의 감액 주장을 받아들여 피고의 손해배상책임의 범위를 전체 손해액의 80%로 제한한 것은 손해배상액 산정에서 책임제한의 법리를 오해하고 필요한 심리를 다하지 아니하여 판결 결과에 영향을 미친 것이라고 할 것이다. 같은 취지의 원고 주장은 이유 있고, 반대로 책임제한의 비율이 과소하다는 취지의 피고 주장은 받아들일 수 없다.</p><p>  5. 원고의 상고이유 제3점에 관하여</p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|43|" style="text-decoration:underline">국민건강보험법 제43조 제3항</a></span>에서는 원고가 요양급여비용을 요양기관에게 지급시 이미 과다 납부된 본인부담금이 있는 경우 이를 공제하여 그 금액을 가입자에게 환급하도록 규정하고 있으나, 이는 요양기관에 대한 원고의 요양급여비용 지급과정에서 과다 납부된 본인일부부담금의 환수를 위한 절차적 편의를 위하여 마련된 규정일 뿐, 원고가 요양기관에게 이 사건 의약품을 판매한 제약회사를 상대로 불법행위로 인한 손해배상청구를 구하고 있는 이 사건에는 위 규정이 적용 내지 유추적용될 여지가 없다고 할 것이고, 그 밖에 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|734|" style="text-decoration:underline">민법 제734조</a></span>의 사무관리 규정이나 조리에 의하여 원고가 타인의 권리를 소송상 행사할 수 있다거나 건강보험가입자들을 위한 소송수행권이 인정된다고 볼 수도 없다.
+        </span>
+      </p><p>  원고의 이 부분 주장을 배척한 원심의 조치는 정당한 것으로 수긍할 수 있고, 거기에 원고가 상고이유에서 주장하는 바와 같은 국민건강보험법상 본인부담금 환급제도와 민법상 사무관리에 관한 법리 등을 오해한 잘못이 없다.</p><p>  6. 결론</p><p>  그러므로 원심판결의 원고 패소 부분 중 원고의 부담금에 관한 손해배상청구 부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하고, 원고의 나머지 상고와 피고의 상고는 이유 없어 이를 모두 기각하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이홍훈(재판장) 김영란 김능환 민일영(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

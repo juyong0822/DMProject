@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2012다105482 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2197481';
+var contIdEtc = '';
+var saNo = '2012다105482';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20160310' ? 
+			'20160310'.length==4 ? Date.parseExact('20160310','yyyy').toString('yyyy. M. d.') : 
+				'20160310'.length==6 ? Date.parseExact('20160310','yyyyMM').toString('yyyy. M. d.') : 
+					'20160310'.length==8 ? Date.parseExact('20160310','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012다105482 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2012다105482';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2012다105482</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(7)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(26)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(31)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2214213">대법원 2016. 8. 17. 선고 2014다235080 판결 [공2016하,1319]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|833697">전기통신사업법 제83조 제3항에 따라 수사기관의 통신자료제공요청에 응한 전기통신사업자의 책임 허문희 博英社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|812954">전기통신사업자의 통신자료 제공과 이용자에 대한 손해배상책임 김희중 사법발전재단</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|833805">독일 법이론과 판례의 관점에서 ‘회피 연아’ 사건의 비판적 분석 @ 대법원 2016 3 10 선고 2012다105482 권형둔 博英社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769267">오기두 전기통신사업자의 이용자 정보 보호책임 사법논집 . 제59집   / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|565778">한국. 법원행정처 압수‧수색영장실무:. 개정2판 압수‧수색영장실무 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|812954">김희중 전기통신사업자의 통신자료 제공과 이용자에 대한 손해배상책임 올바른 재판 따뜻한 재판:. 이인복 대법관 퇴임기념 논문집   / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|826867">김문희 전기통신사업자의 이용자 정보 보호책임 판례연구 28집 / 부산판례연구회  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|830811">정윤주 인터넷 자료의 동일성․무결성 증거조사 및 증거 확보 방안 (2016년도)법관연수 어드밴스(Advance) 과정 연구논문집 : 특정 주제 연수(형사법 신종증거론, 법적 판단과 의사결정론, 재판의 본질 그리고 법관의 역할) 특정주제연수 / 사법연수원  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|835251">정남철 (개인정보 보호법의 제 문제)교육통계조사  개인정보보호 - 독일의 교육통계조사제도와의 비교법적 고찰을 중심으로 사법 40호 / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833697">허문희 전기통신사업법 제83조 제3항에 따라 수사기관의 통신자료제공요청에 응한 전기통신사업자의 책임 민사판례연구 39권  / 박영사  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2012다49933">대법원 2014. 7. 24. 선고 2012다49933 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2008헌마324">헌법재판소 2010. 2. 25. 선고 2008헌마324, 2009헌바31 전원재판부 결정</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="헌법|10|0|null">헌법 제10조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="헌법|17|0|null">헌법 제17조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="헌법|21|0|null">헌법 제21조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="헌법|37|0|null">헌법 제37조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="헌법|750|0|null">헌법 제750조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="헌법|751|0|null">헌법 제751조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="헌법|10|0|null">헌법 제10조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="헌법|17|0|null">헌법 제17조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="헌법|21|0|null">헌법 제21조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="헌법|37|0|null">헌법 제37조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="전기통신사업법|54|0|20100322">전기통신사업법(구) 제54조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="전기통신사업법|83|0|null">전기통신사업법 제83조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="전기통신사업법|54|0|null">전기통신사업법(구) 제54조 제4항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="전기통신사업법|83|0|null">전기통신사업법 제83조 제4항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="전기통신사업법|54|0|null">전기통신사업법(구) 제54조 제8항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="전기통신사업법|83|0|null">전기통신사업법 제83조 제8항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="통신비밀보호법|2|0|null">통신비밀보호법 제2조 제11호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink17" name="linkContJomun" type="통신비밀보호법|6|0|null">통신비밀보호법 제6조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink18" name="linkContJomun" type="통신비밀보호법|9|0|null">통신비밀보호법 제9조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink19" name="linkContJomun" type="통신비밀보호법|13|0|null">통신비밀보호법 제13조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink20" name="linkContJomun" type="형사소송법|106|0|null">형사소송법 제106조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink21" name="linkContJomun" type="형사소송법|107|0|null">형사소송법 제107조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink22" name="linkContJomun" type="형사소송법|198|0|null">형사소송법 제198조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink23" name="linkContJomun" type="형사소송법|219|0|null">형사소송법 제219조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink24" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink25" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2012다49933">대법원 2014. 7. 24. 선고 2012다49933 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2008헌마324">헌법재판소 2010. 2. 25. 선고 2008헌마324, 2009헌바31 전원재판부 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2010헌마439">헌법재판소 2012. 8. 23. 선고 2010헌마439 전원재판부 결정</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|10|0|null">헌법 제10조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|17|0|null">헌법 제17조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|21|0|null">헌법 제21조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|37|0|null">헌법 제37조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="전기통신사업법|54|0|null">전기통신사업법(구) 제54조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="전기통신사업법|83|0|20100322">전기통신사업법 제83조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="전기통신사업법|54|0|null">전기통신사업법 제54조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="전기통신사업법|54|0|null">전기통신사업법 제54조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="전기통신사업법|54|0|null">전기통신사업법 제54조 제8항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="통신비밀보호법|2|0|null">통신비밀보호법 제2조 제11호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="통신비밀보호법|13|0|null">통신비밀보호법 제13조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="통신비밀보호법|6|0|null">통신비밀보호법 제6조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="통신비밀보호법|9|0|null">통신비밀보호법 제9조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|106|0|null">형사소송법 제106조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|107|0|null">형사소송법 제107조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|219|0|null">형사소송법 제219조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="전기통신사업법|54|0|null">전기통신사업법 제54조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|198|0|null">형사소송법 제198조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2011나19012">서울고법 2012. 10. 18. 선고 2011나19012 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2016. 3. 10. 선고 2012다105482 판결</h2><p class="sub_title">[손해배상(기)]〈통신자료 제공 관련 손해배상청구 사건〉[공2016상,556]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 개인정보자기결정권의 보호대상이 되는 개인정보의 의미와 공적 생활에서 형성되었거나 이미 공개된 개인정보가 이에 포함되는지 여부(적극) 및 익명표현의 자유가 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|21|">헌법 제21조</a></span>에서 보장하는 표현의 자유의 보호영역에 포함되는지 여부(적극) / 개인정보자기결정권이나 익명표현의 자유가 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|37|">헌법 제37조 제2항</a></span>에 따라 법률로써 제한될 수 있는지 여부(적극)</p>
+<p></p>
+<p></p><p>[2] 전기통신사업자가 검사 또는 수사관서의 장의 요청에 따라 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">구 전기통신사업법 제54조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제4항</a></span>에서 정한 형식적·절차적 요건을 심사하여 이용자의 통신자료를 제공한 경우, 이용자의 개인정보자기결정권이나 익명표현의 자유 등을 위법하게 침해한 것으로 볼 수 있는지 여부(원칙적 소극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|10|">헌법 제10조</a></span>의 인간의 존엄과 가치, 행복추구권과 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|17|">헌법 제17조</a></span>의 사생활의 비밀과 자유에서 도출되는 개인정보자기결정권은 자신에 관한 정보가 언제 누구에게 어느 범위까지 알려지고 또 이용되도록 할 것인지를 정보주체가 스스로 결정할 수 있는 권리이다. 개인정보자기결정권의 보호대상이 되는 개인정보는 개인의 신체, 신념, 사회적 지위, 신분 등과 같이 인격주체성을 특징짓는 사항으로서 개인의 동일성을 식별할 수 있게 하는 일체의 정보를 의미하며, 반드시 개인의 내밀한 영역에 속하는 정보에 국한되지 않고 공적 생활에서 형성되었거나 이미 공개된 개인정보까지도 포함한다.</p>
+<p>  또 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|21|">헌법 제21조</a></span>에서 보장하고 있는 표현의 자유는 개인이 인간으로서의 존엄과 가치를 유지하고 국민주권을 실현하는 데 필수불가결한 자유로서, 자신의 신원을 누구에게도 밝히지 않은 채 익명 또는 가명으로 자신의 사상이나 견해를 표명하고 전파할 익명표현의 자유도 보호영역에 포함된다.</p>
+<p>  한편 헌법상 기본권의 행사는 국가공동체 내에서 타인과의 공동생활을 가능하게 하고 다른 헌법적 가치나 국가의 법질서를 위태롭게 하지 않는 범위 내에서 이루어져야 하므로, 개인정보자기결정권이나 익명표현의 자유도 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|37|">헌법 제37조 제2항</a></span>에 따라 법률로써 제한될 수 있다.</p>
+<p></p><p></p><p>[2] 검사 또는 수사관서의 장이 수사를 위하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">구 전기통신사업법(2010. 3. 22. 법률 제10166호로 전부 개정되기 전의 것) 제54조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제4항</a></span>에 의하여 전기통신사업자에게 통신자료의 제공을 요청하고, 이에 전기통신사업자가 위 규정에서 정한 형식적·절차적 요건을 심사하여 검사 또는 수사관서의 장에게 이용자의 통신자료를 제공하였다면, 검사 또는 수사관서의 장이 통신자료의 제공 요청 권한을 남용하여 정보주체 또는 제3자의 이익을 부당하게 침해하는 것임이 객관적으로 명백한 경우와 같은 특별한 사정이 없는 한, 이로 인하여 이용자의 개인정보자기결정권이나 익명표현의 자유 등이 위법하게 침해된 것이라고 볼 수 없다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|10|">헌법 제10조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|17|">제17조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|21|">제21조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|37|">제37조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|750|">민법 제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|751|">제751조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|10|">헌법 제10조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|17|">제17조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|21|">제21조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|37|">제37조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">구 전기통신사업법(2010. 3. 22. 법률 제10166호로 전부 개정되기 전의 것) 제54조 제3항</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|83|">제83조 제3항</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제4항</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|83|">제83조 제4항</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제8항</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|83|">제83조 제8항</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|2|">통신비밀보호법 제2조 제11호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|6|">제6조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|9|">제9조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|13|">제13조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|106|">형사소송법 제106조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|107|">제107조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|198|">제198조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|219|">제219조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">제751조</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2012다49933|판결" href="#//">대법원 2014. 7. 24. 선고 2012다49933 판결</a></span>(공2014하, 1646)<br /><span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2008헌마324|전원재판부 결정" href="#//">헌법재판소 2010. 2. 25. 선고 2008헌마324, 2009헌바31 전원재판부 결정</a></span>(헌공161, 595)</p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+원고 (소송대리인 법무법인 이공 담당변호사 박주민 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인】
+네이버 주식회사 (소송대리인 법무법인(유한) 태평양 담당변호사 한위수 외 4인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2011나19012|판결" href="#//">서울고법 2012. 10. 18. 선고 2011나19012 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유에 대하여 판단한다.</p><p>  1. <span class="accrnt_txt"><span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|10|" style="text-decoration:underline">헌법 제10조</a></span>의 인간의 존엄과 가치, 행복추구권과 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|17|" style="text-decoration:underline">헌법 제17조</a></span>의 사생활의 비밀과 자유에서 도출되는 개인정보자기결정권은 자신에 관한 정보가 언제 누구에게 어느 범위까지 알려지고 또 이용되도록 할 것인지를 그 정보주체가 스스로 결정할 수 있는 권리이다. 개인정보자기결정권의 보호대상이 되는 개인정보는 개인의 신체, 신념, 사회적 지위, 신분 등과 같이 인격주체성을 특징짓는 사항으로서 그 개인의 동일성을 식별할 수 있게 하는 일체의 정보를 의미하며, 반드시 개인의 내밀한 영역에 속하는 정보에 국한되지 않고 공적 생활에서 형성되었거나 이미 공개된 개인정보까지도 포함한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2012다49933|판결" href="#//">대법원 2014. 7. 24. 선고 2012다49933 판결</a></span> 등 참조).</p><p>  <span class="accrnt_txt">또 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|21|" style="text-decoration:underline">헌법 제21조</a></span>에서 보장하고 있는 표현의 자유는 개인이 인간으로서의 존엄과 가치를 유지하고 국민주권을 실현하는 데 필수불가결한 자유로서, 자신의 신원을 누구에게도 밝히지 않은 채 익명 또는 가명으로 자신의 사상이나 견해를 표명하고 전파할 익명표현의 자유도 그 보호영역에 포함된다</span>(<span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2008헌마324|전원재판부 결정" href="#//">헌법재판소 2010. 2. 25. 선고 2008헌마324, 2009헌바31 전원재판부 결정</a></span> 등 참조).</p><p>  <span class="accrnt_txt">한편 헌법상 기본권의 행사는 국가공동체 내에서 타인과의 공동생활을 가능하게 하고 다른 헌법적 가치나 국가의 법질서를 위태롭게 하지 않는 범위 내에서 이루어져야 하는 것이므로, 개인정보자기결정권이나 익명표현의 자유도 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|37|" style="text-decoration:underline">헌법 제37조 제2항</a></span>에 따라 법률로써 제한될 수 있다.</span></p><p>  2. 원심은 다음과 같이 피고가 원고의 개인정보를 충실히 보호할 의무에 위배하여 개인정보자기결정권과 익명표현의 자유를 침해하였으므로 피고는 원고에 대하여 손해배상책임을 부담한다고 판단하였다.</p><p>  가. 먼저 원심은 채택 증거에 의하여 다음의 사실을 인정하였다.</p><p>  1) 피고는 인터넷 포털사이트인 ‘네이버’를 운영하는 인터넷 종합 정보제공 사업자로서, 전기통신사업법에 의한 전기통신사업자이다. 네이버가 제공하는 각종 서비스를 이용하기 위해서는 피고가 정한 양식에 따른 가입 신청을 하고 약관에 동의하여 회원 가입을 하여야 하는데, 피고의 이용약관 제7조는 “피고는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관계 법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위해 노력합니다. 개인정보의 보호 및 사용에 대해서는 관련 법 및 피고의 개인정보 취급방침이 적용됩니다.”라고 정하고 있고, 피고의 ‘개인정보 취급방침’에서는 피고가 이용자들의 개인정보를 ‘개인정보의 수집 및 이용목적’에서 고지한 범위 내에서 사용하며, 이용자의 사전 동의 없이는 그 범위를 초과하여 이용하거나 원칙적으로 이용자의 개인정보를 외부에 공개하지 않는다고 하면서, 그 예외로 ‘이용자들이 사전에 공개에 동의한 경우’, ‘법령의 규정에 의거하거나 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우’를 규정하고 있다. 또한 피고의 ‘개인정보 취급방침’에는 사내 개인정보보호 전담기구 등을 통하여 개인정보 취급방침의 이행사항 등을 확인하여 문제가 발견될 경우 즉시 수정하고 바로잡도록 노력한다는 규정도 두고 있다.</p><p>  2) 원고는 2004. 10. 10. 위 약관에 동의하고 회원으로 가입하여 피고와 서비스 이용계약을 체결한 후 네이버에 개설된 이 사건 카페의 회원으로 활동하였는데, 2010. 3. 4.경 인터넷 검색을 하다가 밴쿠버 동계올림픽 선수단 귀국 당시 소외 1 문화체육관광부장관이 금메달리스트인 소외 2 선수를 환영하면서 두 손으로 어깨를 두드리자 소외 2 선수가 이를 피하는 듯한 장면을 편집한 사진이 게시되어 있는 것을 발견하고, 이를 이 사건 카페의 유머게시판에 올렸다.</p><p>  3) 문화체육관광부장관은 2010. 3. 5. 이 사건 게시물을 인터넷에 올린 사람들에 대해 명예훼손죄로 고소하였고, 이에 서울종로경찰서장은 2010. 3. 8. 피고에게 ‘요청사유: 정보통신망 이용촉진 및 정보보호 등에 관한 법률 위반(명예훼손), 해당 이용자와의 연관성: 용의자 수사’ 등을 기재한 자료제공요청서로 원고의 인적 사항을 제공해 달라고 요청하였으며, 피고는 이틀 뒤 종로경찰서장에게 원고의 ‘네이버 아이디, 성명, 주민등록번호, 이메일 주소, 휴대폰 번호, 네이버 가입일자’를 제공하였다.</p><p>  4) 종로경찰서장은 위와 같이 제공된 통신자료에 의하여 원고를 소환하여 명예훼손 혐의에 대해 조사를 하였으나, 그 후 2010. 4. 28. 원고에 대한 고소가 취하되어 사건이 종결되었다.</p><p>  나. 원심은 위와 같은 사실관계를 토대로 하여, 전기통신사업자인 피고에게는 전기통신사업법에 의한 수사기관의 개인정보 제공 요청에 대해 개별 사안에 따라 그 제공 여부 등을 적절히 심사하여 이용자의 개인정보를 실질적으로 보호할 수 있는 역량을 갖추어야 하고, 구체적으로는 침해되는 법익 상호 간의 이익 형량을 통한 위법성의 정도, 사안의 중대성과 긴급성 등을 종합적으로 고려하여 개인정보를 제공할 것인지 여부 및 어느 범위까지의 개인정보를 제공할 것인지에 관한 세부적 기준을 마련하는 등으로 이용자의 개인정보를 보호하기 위한 충분한 조치를 취할 의무가 있는데, 이 사건 게시물은 공적 인물인 장관을 대상으로 한 것으로서 표현 대상과 내용, 표현 방법, 원고가 위 게시물을 게재한 동기와 경위 등에 비추어 위 게시물이 장관의 명예를 훼손하는 것이라고 보기 어려울 뿐만 아니라, 원고는 위 게시물을 직접 생산하거나 편집한 바 없이 다른 인터넷 사이트에 게시된 것을 이 사건 카페의 유머게시판에 그대로 옮긴 것에 불과하여 위 게시물로 인한 법익침해의 위험성이 원고의 개인정보 보호에 따른 이익보다 훨씬 중대한 것이라거나 수사기관에게 개인정보를 급박하게 제공하여야 할 특별한 사정이 있다고 보이지 않는다는 등의 이유로, 피고가 수사기관에 원고의 주민등록번호와 전화번호 등 인적 사항 일체를 제공한 행위는 원고의 개인정보를 충실히 보호하여야 할 의무에 위배하여 원고의 개인정보자기결정권과 익명표현의 자유를 위법하게 침해한 것이라고 판단하였다.</p><p>  3. 그러나 원심의 이러한 판단은 다음과 같은 이유에서 수긍할 수 없다.</p><p>  가. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">구 전기통신사업법 제54조 제3항</a></span>(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|83|">2010. 3. 22. 법률 제10166호로 전부 개정된 후에는 제83조 제3항</a></span>으로 되었다. 이하에서는 개정 전의 구법 조항에 따른다)은 ‘전기통신사업자는 법원, 검사 또는 수사관서의 장, 정보수사기관의 장으로부터 재판, 수사, 형의 집행 또는 국가안전보장에 대한 위해를 방지하기 위한 정보수집을 위하여 이용자의 성명, 주민등록번호, 주소, 전화번호, 컴퓨터시스템이나 통신망의 정당한 이용자를 식별하기 위한 이용자 식별부호인 아이디, 이용자의 가입 또는 해지 일자 등 통신자료의 열람이나 제출을 요청받은 때에 이에 응할 수 있다’고 규정하여, 전기통신사업자에게 이용자에 관한 통신자료를 수사기관의 요청에 응하여 합법적으로 제공할 수 있도록 하고 있다(<span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2010헌마439|전원재판부 결정" href="#//">헌법재판소 2012. 8. 23. 선고 2010헌마439 전원재판부 결정</a></span> 참조).</p><p>  그리고 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제4항</a></span>은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">위 제3항</a></span>의 규정에 의한 통신자료 제공의 요청은 원칙적으로 요청사유, 해당 이용자와의 연관성, 필요한 자료의 범위를 기재한 서면(이하 ‘자료제공요청서’라 한다)으로 하도록 규정하고 있다.</p><p>  나. 위 각 규정에 따라 전기통신사업자가 수사기관의 통신자료 제공 요청에 응하여 통신자료를 제공한 것이 위법하다고 하기 위해서는, 수사기관의 통신자료 제공 요청이 있을 때 전기통신사업자가 개별 사안의 구체적 내용을 살펴 그 제공 여부 등을 실질적으로 심사할 의무가 있다고 인정되어야 할 것이다. 그러나 다음과 같은 이유에서 일반적으로 전기통신사업자에게 그러한 의무가 있다고 볼 수는 없다.</p><p>  1) <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제4항</a></span>은 검사 또는 수사관서의 장이 수사 등을 위하여 요청사유, 해당 이용자와의 연관성, 필요한 자료의 범위를 기재한 자료제공요청서로 통신자료 제공을 요청하면 전기통신사업자는 이에 응할 수 있다고만 규정하고 있을 뿐, 전기통신사업자가 개별 사안의 구체적 내용을 살펴 그 제공 여부 등을 실질적으로 심사하도록 정하고 있지 않다. 이는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제8항</a></span>에 의하여 설치되는 통신비밀 전담기구나 피고가 운영하는 개인정보보호 전담기구의 기능과 역할을 살펴보더라도 마찬가지이다.</p><p>  현실적으로 사법기관도 아닌 전기통신사업자에게 수사기관에 통신자료가 제공됨으로써 해당 이용자가 입게 되는 기본권 침해 등의 피해법익과 통신자료 제공으로 달성하려는 보호법익 사이의 이익 형량이나 사안의 중대성과 긴급성 등 개별 사안의 구체적인 내용에 대한 실질적인 심사를 요구하거나 기대하기는 어렵다. 오히려 전기통신사업자에 의하여 이러한 심사가 행해질 경우 그 과정에서 혐의사실의 누설이나 그 밖에 별도의 사생활 침해 등을 야기할 가능성이 더 크다.</p><p>  2) <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>에 의하여 통신자료의 제공을 요청받은 전기통신사업자에게 위와 같은 실질적인 심사를 요구하는 것은, 통신자료에 대하여는 전기통신에 관한 다른 개인정보와는 다르게 그 제공방법과 절차를 정한 입법 취지에도 부합하지 않는다.</p><p>  즉 통신비밀보호법에 의하면, 수사기관이 전기통신사업자에게 가입자의 전기통신 일시, 전기통신 개시·종료시간, 발·착신 통신번호 등 상대방의 가입자 번호, 사용도수, 컴퓨터통신 또는 인터넷의 사용자가 전기통신역무를 이용한 사실에 관한 컴퓨터통신 또는 인터넷의 로그기록자료, 정보통신망에 접속된 정보통신기기의 위치를 확인할 수 있는 발신기지국의 위치추적자료, 컴퓨터통신 또는 인터넷의 사용자가 정보통신망에 접속하기 위하여 사용하는 정보통신기기의 위치를 확인할 수 있는 접속지의 추적자료 등 ‘통신사실 확인자료’의 제공을 요청하려면 법원의 허가를 받아야 하고(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|2|">제2조 제11호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|13|">제13조</a></span> 등), 전기통신의 감청 등 통신제한조치를 집행하거나 통신기관 등에 그 집행을 위탁하거나 협조를 요청하는 때에도 역시 법원의 허가를 받아야 한다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|6|">제6조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="통신비밀보호법|9|">제9조</a></span> 등).</p><p>  또 송수신이 완료된 전기통신의 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|106|">형사소송법 제106조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|107|">제107조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|219|">제219조</a></span>에 따라 수사기관이 법관으로부터 발부받은 영장에 의하여 이를 압수하도록 되어 있다.</p><p>  이처럼 현재 또는 과거에 이루어진 전기통신의 내용이나 외형적 정보에 대하여는 법원의 허가나 법관의 영장에 의하여만 이를 제공받을 수 있도록 한 반면, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제4항</a></span>은 이용자의 인적 사항에 관한 정보에 해당하는 통신자료에 대하여는 수사기관의 서면요청만으로도 전기통신사업자가 이를 제공할 수 있도록 하고 있는데, 이는 수사상 신속과 다른 범죄의 예방 등을 위하여 해당 개인정보의 내용과 성격 등에 따라 통신자료에 대하여는 법원의 허가나 법관의 영장 없이도 일정한 사항을 기재한 수사기관의 자료제공요청서라는 서면요청에 의해 통신자료를 제공하여 수사에 협조할 수 있도록 한 것이라고 볼 것이다.</p><p>  따라서 이러한 형식적·절차적 요건 이외에 별도로 전기통신사업자에게 위와 같은 실질적 심사의무를 부과하는 것은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조</a></span>의 입법 취지에도 부합하지 않는다고 볼 수 있다.</p><p>  3) <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>에서 수사기관의 요청에 의하여 전기통신사업자가 제공할 수 있는 이용자의 통신자료는 그 이용자의 인적 사항에 관한 정보로서, 이는 주로 수사의 초기단계에서 범죄의 피의자와 피해자를 특정하기 위하여 가장 기초적이고 신속하게 확인하여야 할 정보에 해당하는데, 위 규정에 의한 전기통신사업자의 통신자료 제공으로 범죄에 대한 신속한 대처 등 중요한 공익을 달성할 수 있음에 비하여, 통신자료가 제공됨으로써 제한되는 사익은 해당 이용자의 인적 사항에 한정된다.</p><p>  그리고 수사기관은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|198|">형사소송법 제198조 제2항</a></span> 등에 의해 수사과정에서 취득한 비밀을 엄수하도록 되어 있어, 해당 이용자의 인적 사항이 수사기관에 제공됨으로 인한 사익의 침해 정도가 상대적으로 크지 않다고 할 수 있다. 따라서 전기통신사업자로서는 수사기관이 형식적·절차적 요건을 갖추어 통신자료 제공을 요청할 경우 원칙적으로 이에 응하는 것이 타당하다.</p><p>  다. 물론 전기통신사업자가 수사기관의 통신자료 제공 요청에 따라 통신자료를 제공함에 있어서, 수사기관이 그 제공 요청 권한을 남용하는 경우에는 이용자의 인적 사항에 관한 정보가 수사기관에 제공됨으로 인하여 해당 이용자의 개인정보와 관련된 기본권 등이 부당하게 침해될 가능성도 있다.</p><p>  그러나 수사기관의 권한 남용에 대한 통제는 국가나 해당 수사기관에 대하여 직접 이루어져야 함이 원칙이다. 수사기관이 통신자료 제공을 요청하는 경우에도 전기통신사업자에게 실질적 심사의무를 인정하여 일반적으로 그 제공으로 인한 책임을 지게 하는 것은 국가나 해당 수사기관이 부담하여야 할 책임을 사인(사인)에게 전가시키는 것과 다름없다. 따라서 수사기관의 권한 남용에 의해 통신자료가 제공되어 해당 이용자의 개인정보에 관한 기본권 등이 침해되었다면 그 책임은 이를 제공한 전기통신사업자가 아니라, 이를 요청하여 제공받은 국가나 해당 수사기관에 직접 추궁하는 것이 타당하다.</p><p>  라. 그러므로 <span class="accrnt_txt">검사 또는 수사관서의 장이 수사를 위하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|" style="text-decoration:underline">전기통신사업법 제54조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|" style="text-decoration:underline">제4항</a></span>에 의하여 전기통신사업자에게 통신자료의 제공을 요청하고, 이에 전기통신사업자가 위 규정에서 정한 형식적·절차적 요건을 심사하여 검사 또는 수사관서의 장에게 이용자의 통신자료를 제공하였다면, 검사 또는 수사관서의 장이 통신자료의 제공 요청 권한을 남용하여 정보주체 또는 제3자의 이익을 부당하게 침해하는 것임이 객관적으로 명백한 경우와 같은 특별한 사정이 없는 한, 이로 인하여 해당 이용자의 개인정보자기결정권이나 익명표현의 자유 등이 위법하게 침해된 것이라고 볼 수 없다.</span></p><p>  이 사건에서는 명예훼손을 당하였다고 주장하는 피해자의 고소에 따라 수사관서의 장인 종로경찰서장이 그 수사를 위하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제4항</a></span>에 따라 전기통신사업자인 피고에게 이 사건 게시물에 관한 통신자료의 제공을 요청하자, 피고가 위 규정에서 정한 요건과 절차에 따라 종로경찰서장에게 원고의 성명, 주민등록번호 등 통신자료를 제공한 것이고, 이때 피고가 원고의 이메일 주소도 제공하였으나 그 이메일 주소는 원고의 네이버 아이디에 ‘@naver.com’이 붙어 있는 것이어서 원고의 네이버 아이디와 별개의 개인정보를 담고 있다고 평가하기 어려워 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>에서 정한 제공의 범위를 초과하였다고 볼 수 없으며, 달리 종로경찰서장이 그 권한을 남용하여 통신자료 제공을 요청하는 것임이 객관적으로 명백하였다거나 그로 인하여 원고의 이익을 부당하게 침해할 우려가 있었다는 등의 특별한 사정을 찾을 수 없다.</p><p>  따라서 피고가 종로경찰서장의 요청에 따라 원고의 통신자료를 제공한 것은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">제4항</a></span>에 의한 적법한 행위로서, 그로 인하여 피고가 원고에 대해 손해배상책임을 부담한다고 볼 수 없다.</p><p>  마. 그럼에도 원심은 이와 달리 피고가 원고의 개인정보자기결정권 및 익명표현의 자유를 위법하게 침해하였다고 판단하여 피고의 원고에 대한 손해배상책임을 인정하였으므로, 이러한 원심의 판단에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전기통신사업법|54|">전기통신사업법 제54조 제3항</a></span>에 따른 전기통신사업자의 통신자료 제공을 위한 심사의 범위, 손해배상책임의 성립요건 등에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다.</p><p>  4. 그러므로 나머지 상고이유에 대한 판단을 생략한 채 원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 다시 심리·판단하도록 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김소영(재판장) 이인복(주심) 이기택 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

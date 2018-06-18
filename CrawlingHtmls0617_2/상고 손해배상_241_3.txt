@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 86다카2972 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2087941';
+var contIdEtc = '';
+var saNo = '86다카2972';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('19890328' ? 
+			'19890328'.length==4 ? Date.parseExact('19890328','yyyy').toString('yyyy. M. d.') : 
+				'19890328'.length==6 ? Date.parseExact('19890328','yyyyMM').toString('yyyy. M. d.') : 
+					'19890328'.length==8 ? Date.parseExact('19890328','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 86다카2972 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '86다카2972';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />86다카2972</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251189">문일봉 강행법규에 반하는 부제소특약의 효력 판례월보 335호  / 판례월보사  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|123667">김선화 국가배상법 제2조에 관한 연구 : 입법론적인 고찰을 중심으로 국민대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|475724">조병훈 국가배상법 제16조의 위헌여부 법학논총 23집  / 단국대학교  1997 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국가배상법|16|0|null">국가배상법 제16조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="국가배상법시행규칙|9|0|null">국가배상법시행규칙 제9조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가배상법|16|0|null">국가배상법 제16조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례법|12|0|null">소송촉진등에관한특례법 제12조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|86나2716">
+서울고등법원 1986.11.19. 선고 86나2716 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1989. 3. 28. 선고 86다카2972 판결</h2><p class="sub_title">[손해배상(기)][집37(1)민,151;공1989.5.15.(848),658]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p> 국가배상신청중 일부를 형식적 이유로 기각한 배상심의회의 결정에 따라 신청인이 배상금을 지급 받기에 앞서 국가배상법시행규칙상의 동의 및 청구서를 제출한 경우 그 동의의 효과</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p> 국가배상심의회가 장해배상청구부분 등에 대하여는 인용을 하고 개호비 청구 부분에 대하여는 국가배상법상 인정되는 항목이 아니라는 형식적인 이유로 이를 기각하는 결정을 하자 신청인이 이에 동의하여 배상금을 지급받기 위하여 배상심의회에 제출한 국가배상법시행규칙 별지 제23호 서식에 의한 동의 및 청구서에, 동의를 의미하는 표기 이외에, 배상금을 지급받을 때에는 그 사건에 대하여 화해계약을 하는 것이며 다시 손해배상 청구를 하지 아니하겠다는 취지의 기재가 있고 신청인이 그러한 취지에서 위 동의 및 청구서를 작성하여 제출하였다면 개호비부분에 대한 배상심의회의 기각결정이 본안에 대한 심사를 한 것이 아니어서 기판력을 갖지 않게 된 여부에 불구하고 신청인은 그에 대하여 다시 배상청구를 할 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|16|">국가배상법 제16조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법시행규칙|9|">국가배상법시행규칙 제9조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          김재수  소송대리인 변호사 임규오
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          대한민국
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|86나2716|판결" href="#//">
+서울고등법원 1986.11.19. 선고 86나2716 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고 사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  피고 소송수행자의 상고이유를 본다.</p><p>  원심판결 이유에 의하면, 원심은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|16|">국가배상법 제16조</a></span>는 배상심의회의 배상결정은 신청인이 이에 동의한 때 등에는 민사소송법의 규정에 의한 재판상의 화해가 성립된 것으로 본다고 규정되어 있는 데 배상심의회가 원고의 개호비 청구부분에 대하여 국가배상법상 인정되는 배상항목이 아니라는 이유로 이를 전부 기각하는 결정을 하였고 신청인인 원고가 이에 동의하여 그 지급을 받은 후 소로써 다시 이 사건 청구를 하고 있어 형식적으로 일견 위 배상결정의 기판력에 저촉되는 것처럼 보이기는 하나, 위 개호비 청구부분에 대한 위 심의회의 기각이유는 개호비에 대하여는 국가배상법상 배상기준이 정하여져 있지 아니하므로 배상심의회에서 심의하거나 배상결정을 할 수 없다는 형식적 판단에 불과할 뿐 원고에게 개호인이 필요한지의 여부와 필요하다면 그에 소요되는 비용이 얼마인지 등에 관하여 심리를 한후 피고가 그 개호비부분 손해를 배상할 의무가 없다고 판단한 것은 아니며 기판력의 범위는 주문의 문언을 그 이유와 대조하여 주문의 내용을 명백히 함으로써 정하여지는 것이고 또 원고에 대한 개호비 지급의무의 존부에 대한 판단을 구하는 것이 위 배상결정의 기판력에 의하여 금지될 것은 아닌 점 등에 비추어 위 배상결정의 기판력은 위 개호비부분 손해가 국가배상법상 인정된 배상항목이 아니기 때문에 위 심의회에서 지급 결정할 성질이 아니라는 점에 한하여 미칠 뿐이며 피고가 원고에게 개호비를 지급할 의무가 있는지의 여부에 관하여는 그 기판력이 미칠 여지가 없다고 보아야 할 것이라는 이유로 원고의 이 사건 개호비 부분 손해배상청구가 위 배상결정의 기판력에 저촉되어 부적법하다는 피고의 본 안전항변을 배척하고 있다.
+      </p><p>  그러나 권리관계의 존부에 대하여 심판하지 아니한 재판이나 결정이 기판력을 가지지 않게 되는 것이 원심설시와 같다 하더라도 
+        <span class="accrnt_txt">원고가 배상금을 지급 받기에 앞서 국가배상법시행규칙 별지 제23호 서식에 따라 작성하여 배상심의회에 제출한 동의 및 청구서(을 제1호증의1)의 문언을 보면 "신청인은 아래사건에 대한 배상결정에 이의 없음. 신청인은 그 배상결정액을 받고자 함"이라는 동의를 의미하는 표기 이외에 "그 지급을 받을 때에는 그 사건에 대하여 화해계약을 하는 것이며 그 사건에 관하여 어떠한 방법으로라도 다시 청구 아니하겠음을 서약함"이라고 표기되어 있는 바, 이와 같은 표기가 단순히 배상결정에 동의하는데 그치는 것이 아니라 그 문언대로 화해계약을 함과 아울러 다시 손해배상청구를 아니하겠다는 뜻으로서 신청인이 그러한 취지에서 위 동의 및 청구서를 작성하여 배상심의회에 제출한 것이라면 개호비부분에 대한 배상심의회의 기각결정이 본안에 대한 심사를 한 것이 아니어서 기판력을 갖지 않게 된 여부에 불구하고 신청인인 원고는 그에 대하여 다시 배상청구를 할 수 없다고 하여야 할 것이다.</span>
+      </p><p>  그런데 위 동의 및 청구의 대상이 되는 배상결정서(갑 제8호증의 15, 위 시행규칙 별지 제20호 서식에 의하여 작성된 것) 기재내용을 보면 주문에서 신청인에게 지급할 결정금액을 표기함과 아울러 요양비, 장해배상, 위자료 및 개호비 등 각 손해원인별인용 및 기각이유(개호비에 대하여는 국가배상법상불인정으로 표기됨)와 신청액 및 인용액(개호비에 대하여는 기각한다는 취지)등이 상세히 표기되어 있는 바, 이를 위 동의 및 청구서 기재와 대비하여 아울러 검토하여 볼 때 
+        <span class="accrnt_txt">위 동의 및 청구서 기재 가운데 화해계약을 하는 것이고 다시 청구 아니하겠다는 "그 사건"에는 원고의 신청에 대해 배상심의회에서 결정한 주문과 각 손해원인별로 인용 또는 기각한 모든 부분이 포함된다고 보는 것이 그 문언의 취지에 맞는다고 보여질 뿐 배상심의회가 심의결정한 내용 중 어느 일부분을 제외하는 것으로 해석하여야 할 만한 사유를 찾아볼 수 없다.</span>
+      </p><p>  또한 신청인으로서는 그 지급총액과 아울러 앞에서 본 바와 같이 각 손해원인별 인용 기각여부와 기각이유 그리고 각 손해원인별 신청금액에 대한 인용금액등 그 지급금액을 결정하게 된 이유를 상세히 알게 된 상태에서 이에 동의하고 결정금액을 지급받을 것인가 아니면 이에 동의하지 아니하고 그 이상의 금액을 지급 받기 위하여 소로서 청구할 것인가에 대하여 선택을 하게 되는 것으로서 신청인인 원고가 위와 같이 동의 및 청구서를 제출하는 경우에는 이 사건 개호비부분에 대한 기각이유가 실질적 심사를 거친 결과인지의 여부에 불구하고 그와 같이 기각된 결과를 알면서 이를 받아들여 그 결과대로 양보한다는 취지로 보아야 할 것이며 그와 같이 해석하는 것이 배상심의회의 결정에 동의하는 신청인에게는 배상금을 즉시 지급하여 사건을 간이 신속하게 해결하려는 배상심의회의 존치이유에도 합치될 뿐 아니라 달리 신청인인 원고가 위와 같이 화해계약을 하고 다시 신청 아니하겠다고 한 것이 이 사건 개호비에 대하여는 이를 제외하고 다시 소로써 청구하겠다는 취지로 해석될 수 있다거나 개호비 부분이 앞서 본바와 같은 이유로 기각된 경우에는 그에 대한 화해 및 불제소 의사표시를 하여도 효력이 미치지 않는다고 볼 만한 사정이 있다고 보여지지 아니한다.</p><p>  그렇다면 이 사건 피고의 본안전항변은 적법하다고 보아야 할 것이고 원심이 이를 배척한 것은 위 동의 및 청구서의 문언해석을 잘못하고 기판력의 범위에 관한 법리를 오해하여 판결결과에 영향을 미치게 하였음이 명백하므로 이는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진등에관한특례법|12|">소송촉진등에 관한 특례법 제12조</a></span> 소정의 파기사유에 해당하며 이 점을 지적하는 논지는 이유 있다.
+      </p><p>  그러므로 원심판결을 파기하고, 사건을 원심법원에 환송하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   배석(재판장) 이회창 김상원 김주한 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

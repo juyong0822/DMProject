@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>부산고등법원 90나8213 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1996608';
+var contIdEtc = '';
+var saNo = '90나8213';
+var sngoNm = '선고';
+var saNm = '손해배상(자)';
+try {
+	var sngoDay=('19910314' ? 
+			'19910314'.length==4 ? Date.parseExact('19910314','yyyy').toString('yyyy. M. d.') : 
+				'19910314'.length==6 ? Date.parseExact('19910314','yyyyMM').toString('yyyy. M. d.') : 
+					'19910314'.length==8 ? Date.parseExact('19910314','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '부산고등법원';
+var bubCd = '000400';
+var panTypeNm = '제4민사부판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 90나8213 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '90나8213';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">부산고등법원<br />90나8213</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(1)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|546524">김대연 지배ㆍ종속회사에 관한 연구 , : 결합기업에서의 법인격부인이론 . 법학연구 44권 1호 (2003.12) / 부산대학교  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|532022">김대연 종속회사의 파산과 지배회사의 책임 : 종속회사 채권자의 보호방안을 중심으로 . 상사법연구 23권 3호 (2004.11) / 한국상사법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|211404">정희장 해외 현지법인소속 자동차사고에 대한 국내회사의 손해배상책임 판례연구 5집  / 부산판례연구회  1995 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="자동차손해배상보장법|3|0|null">자동차손해배상보장법 제3조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|95|0|null">민사소송법 제95조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|96|0|null">민사소송법 제96조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|89|0|null">민사소송법 제89조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|92|0|null">민사소송법 제92조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|93|0|null">민사소송법 제93조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="부산지방법원|89가합537">부산지방법원(89가합537 판결)</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>부산고법 1991. 3. 14. 선고 90나8213 제4민사부판결 : 상고</h2><p class="sub_title">[손해배상(자)][하집1991(1),292]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>내국법인과 외국법인이 공동설립한 외국현지법인 소유차량에 대하여 내국법인도 현지법인과 함께 공동운행자의 지위에 있다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>내국법인인 피고회사가 노동력이 값싼 인도네시아국에 생산공장을 건립하기 위하여 그 나라의 법령에 따라 인도네시아국 법인과의 합작투자형태를 취하여 현지법인을 공동설립하여 그 주식의 80퍼센트를 소유하고 있으며 이사 4인과 감사2인으로 구성된 현지회사의 임원 중 대표이사는 피고의 대표이사가, 이사 중 1인은 그 해외사업부장이, 수석이사는 그 부사장이 각 겸직하면서 사원을 파견하여 기술지도를 하고 자재 및 부품 등을 조달해주며 제품모델을 제작 공급해주고 생산제품도 피고를 통하여 수출하는 등 피고에 의하여 중요한 의사결정과 업무지시 및 감독이 이루어지고 있다면, 현지법인은 외형상으로만 피고와 별개 독립의 법인격을 가지는 데 불과할 뿐, 그 사회적 실체는 피고의 일부분으로서의 자회사에 해당하고 사실상 피고의 생산공장의 형태를 벗어나지 못하고 있다 할 것이므로, 피고는 현지법인 소유차량의 운행에 대하여 현지법인과 함께 공동운행자의 지위에 있다고 보아야 한다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="자동차손해배상보장법|3|">자동차손해배상보장법 제3조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인】
+      
+        
+          원고, 피항소인 1 외 3인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인】
+      
+          주식회사 태화
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+제1심  
+        <span id="link"><a name="linkContPanre" title="새창" type="부산지방법원|89가합537|판결" href="#//">부산지방법원(89가합537 판결)</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 원판결 중 피고에 대하여 원고 
+        1에게 금 18,101,712원, 원고 
+        2에게 금 41,227,034원 및 위 각 금원에 대한 1988.6.13.부터 1991.3.14.까지는 연 5푼, 그 다음날부터 완제일까지는 연 2할5푼의 각 비율에 의한 금원을 초과하여 지급을 명한 피고패소부분을 취소하고 그 취소부분에 해당하는 위 원고들의 청구를 각 기각한다.
+      </p><p>  2. 피고의 원고 
+        1, 
+        2에 대한 각 나머지 항소와 나머지원고들에 대한 각 항소를 모두 기각한다.
+      </p><p>  3. 소송비용 중 원고 
+        1, 
+        2와 피고사이에서 생긴 부분은 제1, 2심 모두 이를 5등분하여 그 4는 피고의, 나머지는 같은 원고들의 각 부담으로 하고, 피고의 나머지 원고들에 대한 항소로 인한 비용은 피고의 부담으로 한다.
+      </p>
+    
+      【청구취지】
+      <p>  피고는 원고 
+        1에게 금 28,070,935원, 원고 
+        2에게 금 52,696,257원, 원고 
+        3, 
+        4에게 각 금 2,000,000원 및 위 각 돈에 대한 1988.6.13.부터 이 사건 소장부본송달일까지는 연 5푼, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라.
+      </p>
+      <p>  소송비용은 피고의 부담으로 한다라는 판결과 가집행선고.</p>
+    
+    
+      【항소취지】
+      <p>  원판결 중 피고패소부분을 취소하고, 그 취소부분에 해당하는 원고들의 청구를 각 기각한다.</p>
+      <p>  소송비용은 제 1,2심 모두 원고들의 부담으로 한다는 판결.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 본안전항변에 대한 판단</p><p>  피고는 본안에 앞서 망 소외 
+        1은 1986.11.3. 피고회사에 입사하였다가 1987.9.30. 피고회사를 사직하고 같은 해 11.경 피고회사와 인도네시아국 법인인 주식회사 가르다 누사 인도 프리마와 간에 공동설립한 인도네시아 현지법인 "
+        이하 소외 2 회사라 한다"의 사원으로 종사하다가 
+        소외 2 회사의 소유차량을 운전한 
+        소외 2 회사 소속의 인도네시아인인 소외 
+        3이 인도네시아국 자카르타시에서 일으킨 교통사고로 사망하였으므로 
+        망 소외 1의 유족들인 원고들이 제기한 이 사건 소는 국내법원에 재판권이 없거나, 그렇지 않다고 하더라고 피고는 정당한 당사자가 아니므로 부적법한 소로서 각하되어야 한다고 주장하므로 살피건대, 이 사건 원고들이 내국인이고 피고회사 또한 본점 소재지가 대한민국 내에 있는 내국법인임이 기록상 명백한 이 사건 청구에 있어서 내국인인 원고들이 외국법인인 
+        소외 2 회사를 상대로 하지 아니하고 내국법인인 피고를 상대로 하는 이상 이 사건의 재판권이 국내법원에 있음은 법리상 명백하며, 이행의 소에 있어서는 원고에 의하여 이행의무자로 주장된 자가 피고적격을 가지는 것이어서 피고주장의 위 기타 사유들은 본안에서 청구권의 유무로서 판단될 사유일 뿐이고 본안전에 재판권 및 당사자적격의 유무로서 판단될 사항은 아니라고 할 것이므로 피고의 위 항변들은 모두 이유가 없다.
+      </p><p>  2. 본안에 대한 판단</p><p>  가. 손해배상책임의 발생</p><p>  각 성립에 다툼이 없는 갑 제1호증의 1 내지 3(각 호적등본), 갑 제2호증(보고서), 갑 제3호증(사망확인서, 을 제2호증의 14와 같다), 을 제1호증(사직서, 을 제2호증의 11과 같다). 을 제2호증의 1(기록표지), 6(사고관련자료), 7(사망자 신상관련사항), 8(사고개황), 10(인사기록카드), 12(자카르타일간신문, 같은 호증의 18과 같다), 13(신문기사 번역문), 15(사망확인서), 16(경찰사고확인서),17(사망자여권사본), 원심증인 조원제의 증언에 의하여 진정성립이 인정되는 을 제2호증의 5(진술서), 20(결정서), 을 제3호증(
+        소외 2 회사 정관 및 번역문), 을 제4호증(회신)의 각 기재, 원심증인 조원제, 
+        소외 4 및 당심증인 강신규, 최영우의 각 증언(다만, 원심증인 
+        소외 4, 당심증인 최영우의 각 증언 중 뒤에서 일부씩 믿지 아니하는 부분 제외), 이 법원의 한국은행 부산지점장에 대한 사실조회결과에 변론의 전취지를 종합하면, 인도네시아국에 있는 소외 피.티(P.T,"주식회사"라는 뜻임) 
+        소외 2 주식회사(이하, 소외 
+        2 회사라 한다)소유인 비(B) 9730-엘앰(LM)호 도요다끼장 픽업트럭의 운전사이며 
+        소외 2 회사 소속직원인 인도네시아인인 소외 
+        3은 1988.6.12. 12:40경 위 회사의 업무를 위하여 위 차량을 운전하여 인도네시아국 자카르타와 땅거랑간의 고속도로의 추월선을 따라 위 땅거랑방면에서 자카르타방면으로 시속 약 120킬로미터로 운행 중 위 고속도로상 13킬로미터 지점에 이르렀을 때 앞서 가던 모래실은 트럭인 인도네시아국 비(B) 9538 액스.더블유(XW) 미쓰비시 트럭을 발견하고 위 트럭을 보통의 경우와는 달리 주행선으로 추월하게 되었으면 앞차량과의 안전거리를 유지하면서 전방주시를 잘 하고 앞차량에 적절한 신호를 해주어 주의를 환기시키면서 추월하여 사고를 미연에 방지하여야 할 주의의무가 있음에도 불구하고 이를 게을리한 채 앞서가는 위 미쓰비시 트럭을 추월코자 차선을 주행선으로 변경하자 앞에 가던 위 트럭도 마침 차선을 추월선에서 주행선으로 변경하므로 
+        소외 3은 다시 추월선으로 차선을 변경하던 중 앞차와의 거리를 유지하지 못한 과실로 위 픽업트럭의 우측 앞 부분으로 위 미쓰비시트럭의 좌측 뒤 적재함 부분을 들이받아 그 충격으로 위 픽업트럭 조수석에 앉아있던 망 소외 
+        1을 그 자리에서 사망하게 한 사실, 피고회사는 신발제조, 판매 및 수출입업을 주업종으로 하는 국내법인으로서 근래 국내근로자의 임금인상으로 노동집약산업인 신발산업의 대외경쟁력이 약화되자 해외의 값싼 노동력을 이용하여 채산성을 향상시킬 목적으로 인도네시아국에 신발생산공장을 건립하고자 하였던바, 인도네시아국에서는 현지인과의 합작투자형태를 취하지 아니하면 외국기업의 현지법인설립을 인가하지 아니하고 있는 법령상의 제약이 있었으므로 적법요건을 갖추고자 합작투자형태의 현지법인을 설립하기로 하고 피고회사가 총 자본금 미화 1,000,000불 중 80퍼센트인800,000불을 출자하고 인도네시아 법인인 소외 피티가루다 누사 프리마가 20퍼센트인 200,000불을 출자하여 1987.11.경 인도네시아국 자카르타에 본사를 두고 당그란에 생산공장을 두는 
+        소외 2 회사를 설립하게 된 사실, 
+        소외 2 회사의 경영진은 이사 4인과 감사 2인으로 구성되어 있는데 
+        소외 2 회사 창립시부터 이 사건 사고 당시까지의 대표이사는 피고회사의 대표이사인 소외 
+        5가, 이사중 1인은 당시 피고회사의 해외사업부장인 소외 
+        4가, 수석감사는 피고회사의 부사장인 소외 
+        6이 각 겸직하고 있었으며, 현재로는 
+        소외 2 회사의 대표이사에 피고회사의 상무이사인 소외 
+        7이, 이사 중 1인으로 피고회사의 대표이사인 
+        소외 5가, 수석 감사인 
+        소외 6이 각 겸직하고 있으며, 위 사고 당시 관리직 사원이 4명이었는데 그 중 부장으로 피고회사의 해외사업부장으로 있던 소외 
+        7이, 나머지 3인중 2인은 피고회사의 해외사업부 사원으로 근무해 온 소외 
+        8과 이 사건 피해자인 위 망 소외 
+        1이, 형식적으로는 피고회사을 사직하고 
+        소외 2 회사에 입사하는 식으로 하되 실질적으로는 파견근무와 같은 것으로서 파견근무를 종료하게 되는 경우에는 피고회사로의 복귀를 내락받고 
+        소외 2 회사에 근무를 하여 온 사실, 위 사고 당시 
+        소외 2 회사의 위 생산공장에는 현지근로자 약 3,500명을 고용하고 있었는데 그들을 기술지도하기 위하여 피고회사에서 연간 약 50명 정도의 사원을 현지에 파견하여 순회근무시켜 오는 한편 
+        소외 2 회사의 신발제조업무에 있어서 중요한 내용을 이루는 신발모델을 피고회사에서 제작하여 
+        소외 2 회사에 공급하고 신발제조에 필요한 자재 및 부품을 피고회사에서 조달해 주고 있으며 
+        소외 2 회사는 정관상 그 사업목적이 신발제조업
+      </p><p>으로 한정되어 있어 생산된 신발제품은 피고회사를 통하여 수출하고 있는 사실, 
+        소외 2 회사는 1988.6.13. 위 망 
+        소외 1의 교통사고 소식을 피고회사의 해외사업부장에게 서면으로 보고하고 위 망 
+        소외 1의 유족에게 장례비조로 금 3,000,000원을 전달하는 한편 
+        소외 2 회사 명의로 위 사고에 따른 보상금을 지급하되 그 보상금액은 한국 근로기준법 및 산업재해보상보험법에 규정한 바에 따라 산정하여 그 중 뒤에서 원고 
+        1이 자인하는 바와 같이 1988.12.2. 미화 36,023불(당시 환율로 환산한 금 24,625,322원)을 지급한 사실, 원고 
+        1은 위 망인의 처, 원고 
+        2는 그의 아들로서 호주상속인, 원고 
+        3, 
+        4는 그의 부모인 사실을 각 인정할 수 있고, 위 인정사실에 일부 어긋나는 원심증인 
+        소외 4, 당심증인 최영우의 각 일부증언은 믿지 아니하고 달리 반증없다.
+      </p><p>  위 인정사실에 의하면, 
+        소외 2 회사는 그 설립목적이 피고회사의 정관에 정한 업무내용 중 생산공장의 업무에 속하는 신발제조에 있고 그 소재지를 인도네시아국 자카르타에 두고 있는 외양을 갖추고는 있으나 피고회사가 
+        소외 2 회사 주식의 80퍼센트를 소유하고 있는 사정, 그 임원과 직원의 구성 및 겸직현황, 업무연락과 보고의 체계, 현지근로자의 관리 및 기술지도의 실태 등에 비추어 중요한 의사결정과 업무지시 및 감독은 피고회사의 본점소재지인 국내에서 그 경영진에 의하여 이루어지고 있어 외형상으로만 별개독립의 법인격을 가지는 데 불과할 뿐 그 사회적 실체는 모회사인 피고회사의 일부분으로서의 자회사에 해당하고 사실상 피고회사의 생산공장의 형태를 벗어나지 못하고 있다 할 것이므로 결국 피고회사는 자기를 위하여 
+        소외 2 회사 소속인 위 가해자동차를 
+        소외 2 회사와 더불어 공동운행하는 자로서 그 운행으로 일으킨 이사건 사고로 말미암아 원고들이 입은 모든 손해를 배상할 책임이 있다 하겠다.
+      </p><p>  다만 앞서 본 을 제2호증의 13의 기재에 변론의 전취지를 종합하면, 위 가해차량운전사인 소외 
+        3은 
+        소외 2 회사 소속의 현지인 근로자로서 위 망 
+        소외 1의 하급자이며 위 차량의 정식운전사가 아니고 운전면허도 없는 자인데 위 망인의 요청으로 부득이 운전을 하게 되었고, 위 망인은 위 차량의 운전석 옆 좌석에 앉아 졸고 있다가 운전에 미숙한 위 소외인이 무리한 추월을 시도하다가 당황하여 주행차선으로 복귀하던 중 앞서가던 차량을 추돌함으로써 이 사건 사고를 당한 사실을 인정할 수 있는바, 이에 의하면 위 망인에게도 운전면허가 없는 위 소외인에게 무리하게 운전을 하게 하고 그러한 사정을 알고 있었으리라고 보여짐에도 안전운전을 지시, 감독하지 아니한 채 방심하여 졸고 있다가 이 사건 사고를 당한 잘못이 있다 할 것이므로 위 망인의 그러한 과실을 뒤에서 피고가 배상할 손해액을 정함에 있어서 참작하기로 하되 그 과실상계의 비율은 20퍼센트정도로 함이 상당하다.
+      </p><p>  나. 손해배상의 범위</p><p>  (1) 재산상손해</p><p>  (가) 일실수입</p><p>  앞에 나온 갑 제1호증의 1, 갑 제2호증, 각 성립에 다툼이 없는 갑 제5호증(급여지급서), 갑 제8호증의 1,2(거래가격표시 및 내용), 갑 제9호증의 1,2(생명표표지 및 내용), 갑 제10호증(외국환환율고시)의 각 기재에 원심증인 
+        소외 4의 증언 및 변론의 전취지를 종합하면, 망 소외 
+        1은 1957.8.11.생으로서 이 사건 사고 당시 30세 10월 남짓한 남자이고, 그 평균여명은 37.18년인 사실, 이 사건 변론종결일에 가까운 1990.1.1. 현재의 위 망인이 거주하는 도시지역 성인남자의 일반일용노임이 1일 금 11,050원인 사실, 위 망인은 위 사건 사고 당시 
+        소외 2 회사의 총무담당사원으로 근무하면서 월급료로서 금 미화 900달러와 식비 등 복리비로 월 금 미화60달러 등 합계 월 금 미화 960달러를 받고 있었던 사실, 
+        소외 2 회사의 사원의 정년은 정함이 없고 피고회사의 사원의 정년은 55세인 사실, 이 사건 사고 당시인 1988.6.11.의 외국환환율은 미화 1달러당 금 728원 60전(한국은행 집중기준율에 따른다)인 사실을 인정할 수 있고, 위 망인의 생계비로 그 수입의 1/3이 소요될 사실은 당사자간에 다툼이 없고, 앞서 본 위 망인의 연령, 여명기간 및 이 사건변론에 나타난 위 망인의 직업, 경력, 건강상태 등을 참작하면, 위 망인은 
+        소외 2 회사에서 55세에 이르기까지 근무할 수 있으며 그 다음날부터는 도시일용노동자로서 60세에 이르기까지 가동할 수 있다고 인정되고, 도시일용노동자가 월 25일씩 일할 수 있음은 경험칙상 명백하다.
+      </p><p>  위 인정사실에 의하면 위 망인은 이 사건 사고로 인하여 위 사고일로부터 그의 평균여명범위 내로서 정년인 55세까지 289개월(월미만은 뒤에 기간에 산입한다)간은 위 직종에 종사하여 얻을 수 있었을 월수입 중 자신의 생계비를 공제한 월 금 466,304원(960×728.6×2/3)의 수입을, 그 다음날부터 그의 평균여명범위 내로서 가동연한인 60세까지 60개월(월 미만 버림)간은 도시일용노동에 종사하여 얻을 수 있었을 월수입 중 자신의 생계비를 공제한 월 금 184,166원(11,050×25×2/3)의 수입을 각 월차적으로 상실하는 손해를 입었다할 것인바, 위 손해 전부를 월5/12푼의 비율에 의한 중간이자를 단리로 공제하는 호프만식 계산법에 의하여 이 사건 사고일 현재의 일시금의 현가로 계산하면, 금 93,067,585원{466,304×189.41100090+184,166×(215.17296719-189.41100090)}이 되고, 여기서 앞서 본 
+        망 소외 1의 과실을 참작하면 그 중 피고가 배상할 금액은 금 74,454,068원(93,067,585×0.8)이 된다.
+      </p><p>  (2) 위자료</p><p>  망 소외 
+        1이 이 사건 사고로 인하여 사망함으로써 위 망인은 물론 그와 앞서 본 신분관계에 있는 나머지 원고들이 상당한 정신적 고통을 받았을 것임은 경험칙상 명백하므로 피고는 이를 금전으로 위자할 의무가 있다 할 것인데 이 사건 변론에 나타난 위 망인 및 원고들의 나이, 가족관계, 재산 및 교육정도, 이 사건 사고의 경위와 그 결과 등 여러 사정을 참작하면, 피고는 망 소외 
+        1에게 금 5,000,000원, 원고 
+        1에게 금 3,000,000원, 나머지 원고들에게 각 금 1,500,000원을 지급함이 상당하다 할 것이다.
+      </p><p>  (3)상속관계</p><p>  앞에서 인정한 신분관계에 의하면 망 소외 
+        1의 이 사건 사고로 인한 합계 금 79,454,068언(재산상손해 74,454,068+위자료 5,000,000원)의 손해배상청구권은 그 재산상속인인 원고 
+        1, 
+        2가 이를 공동상속하여 각 금 39,727,034원(79,454,068×1/2)을 각 승계취득하였다 할 것이다.
+      </p><p>  (4) 공제</p><p>  원고 
+        1이 1988.12.2. 소외 
+        2 회사로부터 그의 남편인 망 소외 
+        1에 대한 이 사건 사고로 인한 손해배상금의 일부로서 금 24,625,322원(미화 36,023달러)을 수령하였음은 위 원고가 자인하고 있으므로 앞서 인정한 위 원고에 대한 재산상 손해금 39,727,034원에서 위 금원을 공제하면, 금 15,101,712원(39,727,034-24,625,322)이 된다.
+      </p><p>  피고는 원고들에게 
+        소외 2 회사가 이 사건 사고에 대한 보상조로 금 34,173,752원을 지급하였으므로 위 금원을 공제하여야 한다고 주장하나 이에 부합하는 원심증인 조원제의 일부증언은 아래 인정하는 사실에 비추어 믿을 수 없고 달리 이를 인정할 증거없으며, 오히려 각 성립에 다툼이 없는 갑 제4호증(서신), 갑 제6호증의 1내지 4(외국환매입증명서), 을 제2호증의 19(보상금계약내용 및 송금)의 각 기재에 변론의 전취지를 종합하면, 원고 
+        1이 1988.12.2.위 원고가 자인하고 있는 금 24,625,322원만을 수령한 사실을 인정할 수 있으므로 피고의 위 주장 중 위 인정금원을 넘어서는 부분은 이유없다.
+      </p><p>  3. 결론</p><p>  그렇다면 피고는 원고 
+        1에게 금 18,101,712원(상속분 15,101,712원+위자료 3,000,000), 원고 
+        2에게 금 41,227,034원(상속분 39,727,034원+위자료 1,500,000원), 원고 
+        3, 
+        4에게 위자료로 각 금 1,500,000원 및 위 각 돈에 대한 이 사건 사고일 이후로서 원고들이 구하는 1988.6.13.부터 원고 
+        3, 
+        4에 대한 위 각 금원에 대하여는 원심판결선고일인 1990.6.20.까지,원고 
+        1, 
+        2에 대한 위 각 금원에 대하여는 피고가 손해배상책임의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 당심판결선고일인 1991.3.14.까지 각 민법 소정 연 5푼의, 그 각 다음날부터 완제일까지는 소송촉진등에관한특례법 소정의 연 2할 5푼의 각 비율에 의한 지연손해금을 지급할 의무가 있다 할 것이므로 원고들의 이 사건 청구는 위 인정범위 내에서 이유있어 이를 인용하고 나머지 청구는 이유없어 각 기각할 것인바, 원판결 중 원고 
+        1, 
+        2에 대한 부분은 이와 결론을 일부 달리하여 부당하므로 피고의 같은 원고들에 대한 각 항소를 일부씩 받아들여 위 인용금원을 초과하여 지급을 명한 피고패소부분을 취소하여 그 부분에 해당하는 위 원고들의 청구를 각 기각하고, 나머지 원고들에 대한 원판결은 정당하므로 피고의 원고 
+        1, 
+        2에 대한 각 나머지 항소와 나머지 원고들에 대한 각 항소는 이유없어 모두 기각하며, 소송비용의 부담에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|95|">민사소송법 제95조</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|96|">제96조</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|89|">제89조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|92|"> 제92조</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|93|">제93조</a></span>를 적용하여 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   민수명(재판장) 배종근 홍광식 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

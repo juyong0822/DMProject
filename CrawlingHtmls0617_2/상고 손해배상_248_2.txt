@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 93나6722 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1997649';
+var contIdEtc = '';
+var saNo = '93나6722';
+var sngoNm = '선고';
+var saNm = '손해배상(기)청구사건';
+try {
+	var sngoDay=('19940406' ? 
+			'19940406'.length==4 ? Date.parseExact('19940406','yyyy').toString('yyyy. M. d.') : 
+				'19940406'.length==6 ? Date.parseExact('19940406','yyyyMM').toString('yyyy. M. d.') : 
+					'19940406'.length==8 ? Date.parseExact('19940406','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '제3민사부판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 93나6722 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '93나6722';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />93나6722</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(7)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|538501">임상혁 거창사건 관련 판결과 소멸시효 항변 법과 사회 27호  / 박영사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|525871">김태명 현행 보호감호제도의 실태와 문제점 사회과학연구 19집  / 가톨릭대학교 출판부  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|431086">송기춘 국가의 기본권보장의무에 관한 연구 서울대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|479396">오세율 소멸시효의 주장과 신의칙 위반 재판과 판례 8집  / 대구판례연구회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|507785">권혁재 소멸시효를 원용하는 소송상 항변권의 행사에 있어서 권리남용의 문제 민사법이론과 실무 6집  / 민사법의 이론과 실무 학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571666">김제완 국가권력에 의한 특수유형 불법행위에 있어서 손해배상청구권의 소멸시효 : 거창사건 항소심판결(부산고법 2004.5.7. 선고, 2001나15255)에 대한 비판적 검토 인권과 정의 368호  / 대한변호사협회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251744">한인섭 5·18재판과 과거청산의 과제 법과 사회 15호  / 박영사  1997 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국가보상법|2|0|null">국가보상법 제2조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|168|0|null">민법 제168조 제3호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|184|0|null">민법 제184조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|766|0|null">민법 제766조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="예산회계법|96|0|null">예산회계법 제96조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|66|0|null">헌법 제66조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|76|0|null">헌법 제76조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|55|0|null">헌법 제55조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울민사지방법원|91가합87072">제1심 서울민사지법(1992.12.23. 선고 91가합87072 판결)</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고법 1994. 4. 6. 선고 93나6722 제3민사부판결 : 상고</h2><p class="sub_title">[손해배상(기)청구사건][하집1994(1),284]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>소위 삼청교육 중 사상자의 손해배상청구권과 시효소멸 여부</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>대통령이 소위 삼청교육과 관련한 사상자에 대하여 신고를 받아 피해 보상을 하겠다는 의사를 국민에 대한 시국관련특별담화의 형식으로 표시하고, 위 특별담화의 구체적 작업으로 주무부 장관인 국방부장관이 담화문의 형식으로 정부가 삼청교육관련 피해자들에게 응분의 보상을 하기로 결정하였음과 삼청교육 관련 사망자 및 부상자를 대상으로 하여 신고기간을 정하여 신고하여 줄 것을 밝힌 바가 있으므로, 이는 위 신고기간 내에 신고한 피해자들에 대한 관계에 있어서는 사법상으로 적법한 손해배상채무의 승인이나 시효이익의 포기라고 할 것이다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가보상법|2|">국가보상법 제2조 제1항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|168|">민법 제168조 제3호</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|184|">제184조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+          대한민국
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울민사지방법원|91가합87072|판결" href="#//">제1심 서울민사지법(1992.12.23. 선고 91가합87072 판결)</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 원심판결 중 다음에서 지급을 명하는 금액에 해당하는 원고 패소부분을 취소한다.</p><p>  피고는 원고에게 금 17,350,627원 및 이에 대한 1980.10.12.부터 1994.4.6.까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라.</p><p>  2. 원고의 나머지 항소를 기각한다.</p><p>  3. 소송총비용은 이를 5등분하여 그 1은 원고의, 나머지는 피고의 각 부담으로 한다.</p><p>  4. 제1항 중 금원 지급을 명하는 부분은 가집행할 수 있다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>  원심판결을 취소한다.</p>
+      <p>  피고는 원고에게 금 22,387,136원 및 이에 대한 1980.10.12.부터 1994.4.6.까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라(당심에 이르러 청구취지가 이와 같이 감축되었다).</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 손해배상책임의 발생</p><p>  가. 기초사실</p><p>  아래 사실은 당사자 사이에 다툼이 없거나, 갑 제2호증의 1 내지 15, 갑 제7호증의 각 기재, 이 법원의 원고본인신문결과 및 국방부장관에 대한 사실조회결과에 변론의 전취지를 종합하여 이를 인정할 수 있고, 달리 반증이 없다.</p><p>  (1) 원고가 1980.9.30. 23.00경 택시를 타고 집으로 돌아가던 중 택시기사와 시비를 한 것이 빌미가 되어 서울 관악경찰서 사당파출소에 가게 되었는데 그곳에서 관악경찰서로 연행이 된 사실</p><p>  (2) 당시 국가보위비상대책위원회에 의하여 계획된 이른바 삼청교육이 시행중이었는데 위 계획은 불량배를 일제 검거하여 교화시키기 위한 목적으로 입안되었고, 그 시행에 관련된 부서를 보면, 대상자의 검거 및 분류는 내무부에서, 순화교육과 근로봉사는 국방부에서, 보호감호는 법무부에서 각 맡아 하도록 되어 있었던 사실</p><p>  (3) 원고는 위와 같이 위 경찰서에 연행된 다음 위 계획에 따라 삼청교육대상자인지 여부의 분류 작업을 위하여 위 경찰서 유치장에 10여 일 간 구금된 후 같은 해 10.12.경 이른바 순화교육과 근로봉사를 내용으로 하는 삼청교육대상자로 분류되었고, 그 교육을 받기 위하여 경기도 포천군에 소재한 군부대인 공수13여단으로 호송이 되었는데, 위 군부대에 도착한 후 삼청교육을 시키기 위하여 배치된 성명불상의 공수부대원들에 의하여 곤봉과 군화발 등으로 전신을 구타당하여 척추와 목 등에 상해를 입고 교육이 불가능하다는 판정을 받고 당일 위 관악경찰서로 다시 이송된 후 3일 만에 풀려나게 된 사실</p><p>  (4) 원고는 위 석방 직후 강남시립병원에서 3개월 간 입원 치료받은 사실</p><p>  나. 피고의 손해배상책임</p><p>  위 인정사실에 의하면, 피고는 그 소속 공무원인 위 성명불상 군인들이 위와 같이 원고에게 가혹행위를 함으로써 원고에게 상해를 입혔을 뿐만 아니라 막대한 정신적인 고통을 가하였다고 할 것이므로 그 소속 공무원들의 위와 같은 직무수행상의 불법행위로 인하여 원고가 입은 모든 손해를 배상할 책임이 있다고 할 것이다.</p><p>  다. 피고의 항변과 그에 대한 판단</p><p>  이에 대하여 피고는 원고가 손해를 입었다고 하더라도 그 손해배상청구권은 시효로 인하여 소멸하였다고 항변한다.</p><p>  살피건대 국가에 대한 불법행위로 인한 손해배상청구권은 피해자가 그 손해 및 가해자를 안 날로부터 3년이 지나거나 불법행위를 한 날로부터 5년이 지나면 시효로 인하여 소멸한다고 할 것인바(
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항, 제2항</a></span>
+, 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="예산회계법|96|">예산회계법 제96조 제2항, 제1항</a></span>), 원고가 위 불법행위의 종료 이후 5년이 경과한 후에 이 사건 소를 제기한 사실은 역수상 명백하다.
+      
+      </p><p>  그러나, 갑 제2호증의 12(삼청교육관련부상자신고서), 갑 제4호증(국방부장관 담화문), 갑 제5호증(대통령의 시국관련 특별담화문), 갑 제6호증(증인 오자복 신문조서)의 각 기재에 변론의 전취지를 종합하면, 대통령이 1988.11.26. 소위 삼청교육과 관련한 사상자에 대하여 신고를 받아 피해보상을 하겠다는 의사를 국민에 대한 시국관련특별담화의 형식으로 표시하였고, 위 특별담화의 구체화 작업으로 정부 내의 주무부서인 국방부장관이 같은 해 12.3. 담화문의 형식으로 정부가 삼청교육관련 피해자들에게 응분의 보상을 하기로 결정하였음과 삼청교육관련 사망자 및 부상자를 대상으로 하여 신고기간을 같은 해 12.12.부터 1989.1.20.까지로 하여 신고하여 줄 것을 밝힌 사실, 원고도 위 기간 내인 1989.1.5.에 소정의 서류를 갖추어 해당 관서인 서울 서초구청에 피해신고를 한 사실이 각 인정된다.</p><p>  위 인정사실에 의하면, 대통령은 정부의 수반일 뿐만 아니라(
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|66|">헌법 제66조 제4항</a></span>) 재정 및 경제에 관한 긴급처분, 명령권을 가지고 있는 점(
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|76|">헌법 제76조 제1항</a></span>), 예산상 예비비 제도(
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|55|">헌법 제55조</a></span>)가 있는 점, 더 나아가 대통령이 고도의 정치적 판단에 의한 정치적 행위를 할 수 있는 지위에 있는 점 등에 비추어 국가의 채무를 승인할 정당한 권한을 갖춘 자라고 할 것이고, 한편 위와 같은 대통령의 대국민특별담화는 고도의 정치적 행위의 성질을 가진다고 보여지므로 대통령의 국법상 행위의 요건에 관한 헌법상의 규정(제82조 등)에 의한 형식을 갖추었는지 여부나 국가의 채무부담행위에 관한 예산회계법령에 정한 구체적인 절차를 거친 여부에 관계없이 절차상 적법하게 대통령의 국법상의 행위로 인정이 된다 할 것이며, 나아가 그 특별담화의 내용이 삼청교육과 관련한 사상자에 대하여 신고를 받아 피해보상을 할 것이라고 구체적으로 밝히고 있을 뿐 아니라 그 후속조치로서 주무부서의 장인 국방부장관이 별도의 대국민 담화를 발표하고 발표내용에 따른 신고까지 받은 바 있다면, 피고측의 위와 같은 일련의 행위는 적어도 위 신고기간 내에 신고한 피해자들에 대한 관계에 있어서는 사법상으로 적법한 손해배상채무의 승인이나 시효이익의 포기라고 할 것이다.
+      
+      </p><p>  따라서 피고의 소멸시효 항변은 결국 이유 없다.</p><p>  2. 손해배상의 범위</p><p>  가. 일실수입</p><p>  원고가 이 사건 불법행위로 상실한 가동능력에 대한 금전적 총평가액 상당의 일실수입 손해는 다음 (1)과 같은 인정사실 및 평가내용을 기초로 하여 다음 (2)와 같이 월 12분의 5푼의 비율에 의한 중간이자를 공제하는 단리할인법에 따라 위 불법행위 당시의 현가로 계산하면 금 2,350,627원이 된다.</p><p>  (1) 인정사실 및 평가내용</p><p>  가) 성  별 : 남 자</p><p>      생년월일 : 1928.1.3.</p><p>      나  이 : 52세 9월 남짓(불법행위 당시)</p><p>      기대여명 : 20.65년</p><p>  나) 가동능력에 대한 금전적 평가</p><p>  도시일용노임에 월 평균 가동일수 25일(경험칙)을 곱한 금액들로서 별표 가동능력에 대한 금전적 평가란 기재와 같다.</p><p>  다) 후유장애 및 가동능력상실률</p><p>      후유장애 : 요통 및 좌하지 방사통, 요추운동장애</p><p>      가동능력상실률 : 23%(맥브라이드 불구평가표상 척추손상항 V-A항)</p><p>  라) 가동기간 : 60세가 될 때까지(경험칙)</p><p>〔증  거〕</p><p>  갑 제1호증, 갑 제8 내지 15호증의 각 1,2의 각 기재, 원심법원의 순천향대학병원장에 대한 신체감정촉탁결과, 변론의 전취지.</p><p>  (2) 계  산</p><p>  별표 기재와 같다(합계 금 2,350,627원, 원고가 구하는 바에 따라 1980.11.1.부터 일실수입을 계산하고 원 미만은 버림).</p><p>  나. 위자료</p><p>  (1) 참작사유 : 원고의 나이, 가족관계, 이 사건 불법행위의 경위 및 원고가 받았던 가혹행위의 태양, 원고가 입은 상해의 부위 및 정도, 치료기간, 기타 이 사건 변론에 나타난 여러가지 사정</p><p>  (2) 결정금액 : 금 15,000,000원</p><p>  3. 결  론</p><p>  그렇다면, 피고는 원고에게 위 일실수입과 위자료를 합한 금 17,350,627원(금 2,350,627원+금 15,000,000원) 및 이에 대한 위 불법행위일인 1980.10.12.부터 이 사건 판결선고일인 1994.4.6.까지는 민법 소정의 연 5푼의, 그 다음날부터 완제일까지는 소송촉진등에관한특례법 소정의 연 2할 5푼의 각 비율에 의한 지연손해금을 지급할 의무가 있다 할 것이므로, 원고의 이 사건 청구는 위 인정범위 내에서 이유 있어 이를 인용하고, 나머지 청구는 이유 없어 이를 기각할 것인바, 원심판결은 이와 결론을 일부 달리하여 원고의 청구를 모두 기각하여 부당하므로 원고의 항소를 일부 받아들여 원심판결 중 당심 인용금액에 해당하는 원고 패소부분을 취소하여 피고에게 그 지급을 명하고, 원고의 나머지 항소는 이유 없어 이를 기각하기로 하여 주문과 같이 판결한다. [별지생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   권광중(재판장) 홍기종 임한흠 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

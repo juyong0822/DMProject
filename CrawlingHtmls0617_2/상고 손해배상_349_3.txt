@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2013다205778 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2226513';
+var contIdEtc = '';
+var saNo = '2013다205778';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20170209' ? 
+			'20170209'.length==4 ? Date.parseExact('20170209','yyyy').toString('yyyy. M. d.') : 
+				'20170209'.length==6 ? Date.parseExact('20170209','yyyyMM').toString('yyyy. M. d.') : 
+					'20170209'.length==8 ? Date.parseExact('20170209','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2013다205778 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2013다205778';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2013다205778</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(33)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(30)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="교육공무원법|32|0|20110519">교육공무원법(구) 제32조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="교육공무원법|34|0|null">교육공무원법 제34조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="교육공무원법|35|0|null">교육공무원법 제35조 제2호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="교육공무원임용령|13|0|20160802">교육공무원임용령(구) 제13조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="국가공무원법|2|0|20110523">국가공무원법(구) 제2조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="국가공무원법|2|0|null">국가공무원법(구) 제2조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="국가공무원법|47|0|null">국가공무원법 제47조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="공무원수당등에관한규정|7|2|20110704">공무원수당 등에 관한 규정(구) 제7조의2 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 제6항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정 제7조의2 제8항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="공무원보수규정|5|0|20110704">공무원보수규정(구) 제5조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="공무원보수규정|33|0|null">공무원보수규정(구) 제33조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정(구) 제36조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정(구) 제36조 제4항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정(구) 제36조 제5항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="공무원보수규정|39|0|null">공무원보수규정(구) 제39조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink17" name="linkContJomun" type="교육공무원법|32|0|20110519">교육공무원법(구) 제32조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink18" name="linkContJomun" type="교육공무원법|34|0|null">교육공무원법 제34조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink19" name="linkContJomun" type="교육공무원법|35|0|null">교육공무원법 제35조 제2호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink20" name="linkContJomun" type="교육공무원임용령|13|0|20160802">교육공무원임용령(구) 제13조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink21" name="linkContJomun" type="국가공무원법|2|0|20110523">국가공무원법(구) 제2조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink22" name="linkContJomun" type="국가공무원법|2|0|null">국가공무원법(구) 제2조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink23" name="linkContJomun" type="국가공무원법|47|0|null">국가공무원법 제47조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink24" name="linkContJomun" type="공무원수당등에관한규정|7|2|20110704">공무원수당 등에 관한 규정(구) 제7조의2 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink25" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 제6항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink26" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정 제7조의2 제8항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink27" name="linkContJomun" type="공무원보수규정|5|0|20110704">공무원보수규정(구) 제5조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink28" name="linkContJomun" type="공무원보수규정|33|0|null">공무원보수규정(구) 제33조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink29" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정(구) 제36조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink30" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정(구) 제36조 제4항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink31" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정(구) 제36조 제5항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink32" name="linkContJomun" type="공무원보수규정|39|0|null">공무원보수규정(구) 제39조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교육공무원법|32|0|20110519">교육공무원법(구) 제32조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교육공무원법|32|0|null">교육공무원법(구) 제32조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교육공무원임용령|13|0|20160802">교육공무원임용령(구) 제13조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|47|0|null">국가공무원법 제47조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교육공무원법|34|0|null">교육공무원법 제34조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교육공무원법|35|0|null">교육공무원법 제35조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|47|0|null">국가공무원법 제47조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교육공무원법|35|0|null">교육공무원법 제35조 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원보수규정|5|0|null">공무원보수규정 제5조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교육공무원법|32|0|null">교육공무원법 제32조 제1항 제4호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 제6항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|2|0|20110523">국가공무원법(구) 제2조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가공무원법|2|0|null">국가공무원법(구) 제2조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원보수규정|33|0|null">공무원보수규정 제33조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정 제36조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정 제36조 제5항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원보수규정|39|0|null">공무원보수규정 제39조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원보수규정|36|0|null">공무원보수규정 제36조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공무원수당등에관한규정|7|2|null">공무원수당 등에 관한 규정(구) 제7조의2 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2012나31498">서울중앙지법 2013. 5. 2. 선고 2012나31498 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2017. 2. 9. 선고 2013다205778 판결</h2><p class="sub_title">[손해배상(기)][공2017상,522]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">구 공무원수당 등에 관한 규정 제7조의2 제1항</a></span>이 정한 성과상여금 지급대상 교육공무원으로서 ‘공무원보수규정 [별표 11]을 적용받는 교원’의 의미 및 기간제교원이 포함되는지 여부(소극)</p>
+<p></p>
+<p></p><p>[2] 교육부장관이 갑 등을 비롯한 국·공립학교 기간제교원을 구 공무원수당 등에 관한 규정에 따른 성과상여금 지급대상에서 제외하는 내용의 ‘교육공무원 성과상여금 지급 지침’을 발표한 사안에서, 국가가 갑 등에 대하여 불법행위로 인한 손해배상책임을 진다고 볼 수 없다고 한 사례</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">구 공무원수당 등에 관한 규정(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것, 이하 같다) 제7조의2 제1항</a></span> [별표 2의2]는 성과상여금 지급대상인 교육공무원으로 ‘공무원보수규정 [별표 11]을 적용받는 공무원’을 규정하고, 구 공무원보수규정(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것, 이하 같다) [별표 11]의 비고란에서 기간제교원에 관한 사항을 언급하고 있기는 하나, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|32|">구 교육공무원법(2011. 5. 19. 법률 제10634호로 개정되기 전의 것) 제32조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원임용령|13|">구 교육공무원임용령(2016. 8. 2. 대통령령 제27418호로 개정되기 전의 것) 제13조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|47|">국가공무원법 제47조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|34|">교육공무원법 제34조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|35|">제35조 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">구 공무원수당 등에 관한 규정 제7조의2 제1항</a></span> [별표 2의2], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">제6항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|5|">구 공무원보수규정 제5조</a></span> [별표 11], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|33|">제33조</a></span> [별표 31], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제36조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제4항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제5항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|39|">제39조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">구 국가공무원법(2011. 5. 23. 법률 제10699호로 개정되기 전의 것) 제2조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">제3항</a></span>의 문언·체제·취지 등에 비추어 알 수 있는 제반 사정에 비추어 보면, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">구 공무원수당 등에 관한 규정 제7조의2 제1항</a></span>이 정한 성과상여금 지급대상 교육공무원으로서 ‘공무원보수규정 [별표 11]을 적용받는 교원’이란 호봉 승급에 따른 급여체계의 적용을 받는 정규 교원만을 의미하고 기간제교원은 포함되지 아니한다.</p>
+<p></p><p></p><p>[2] 교육부장관이 갑 등을 비롯한 국·공립학교 기간제교원을 구 공무원수당 등에 관한 규정(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것, 이하 같다)에 따른 성과상여금 지급대상에서 제외하는 내용의 ‘교육공무원 성과상여금 지급 지침’을 발표한 사안에서, 위 지침에서 갑 등을 포함한 기간제교원을 성과상여금 지급대상에서 제외한 것은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">구 공무원수당 등에 관한 규정 제7조의2 제1항</a></span>의 해석에 관한 법리에 따른 것이므로, 국가가 갑 등에 대하여 불법행위로 인한 손해배상책임을 진다고 볼 수 없다고 한 사례.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|32|">구 교육공무원법(2011. 5. 19. 법률 제10634호로 개정되기 전의 것) 제32조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|34|">교육공무원법 제34조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|35|">제35조 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원임용령|13|">구 교육공무원임용령(2016. 8. 2. 대통령령 제27418호로 개정되기 전의 것) 제13조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">구 국가공무원법(2011. 5. 23. 법률 제10699호로 개정되기 전의 것) 제2조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|47|">국가공무원법 제47조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">구 공무원수당 등에 관한 규정(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것) 제7조의2 제1항</a></span> [별표 2의2], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">제6항</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">제7조의2 제8항</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|5|">구 공무원보수규정(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것) 제5조</a></span> [별표 11], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|33|">제33조</a></span> [별표 31], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제36조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제4항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제5항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|39|">제39조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|32|">구 교육공무원법(2011. 5. 19. 법률 제10634호로 개정되기 전의 것) 제32조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|34|">교육공무원법 제34조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|35|">제35조 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원임용령|13|">구 교육공무원임용령(2016. 8. 2. 대통령령 제27418호로 개정되기 전의 것) 제13조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">구 국가공무원법(2011. 5. 23. 법률 제10699호로 개정되기 전의 것) 제2조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|47|">국가공무원법 제47조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">구 공무원수당 등에 관한 규정(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것) 제7조의2 제1항</a></span> [별표 2의2], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">제6항</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">제7조의2 제8항</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|5|">구 공무원보수규정(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것) 제5조</a></span> [별표 11], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|33|">제33조</a></span> [별표 31], <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제36조 제3항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제4항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제5항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|39|">제39조</a></span></p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+원고 1 외 1인
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【원고, 상고인 겸 피상고인】
+원고 2 외 1인 (소송대리인 법무법인 여는 담당변호사 신인수 외 2인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고, 피상고인 겸 상고인】
+대한민국 (소송대리인 정부법무공단 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2012나31498|판결" href="#//">서울중앙지법 2013. 5. 2. 선고 2012나31498 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 서울중앙지방법원 합의부에 환송한다.  원고 2, 원고 4의 상고를 모두 기각한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 피고의 상고이유에 대하여</p><p>  가. 원심은, 피고 소속 교육부장관(종전의 교육과학기술부장관을 포함한다. 이하 같다)이 원고들을 비롯한 국·공립학교 기간제교원들의 2005. 1. 1.부터 2010. 12. 31.까지의 근무기간에 대하여, 구 「공무원수당 등에 관한 규정」(2011. 7. 4. 대통령령 제23015호로 개정되기 전의 것, 이하 ‘이 사건 규정’이라 한다)에 따른 성과상여금 지급대상에서 제외하는 것을 내용으로 하는 이 사건 지침을 발표한 사실 등 그 판시와 같은 사실을 인정한 다음, ① 이 사건 규정 등 관련 규정의 해석상 기간제교원도 정규 교원과 마찬가지로 성과상여금 적용대상이 된다고 보아야 하는 점, ② 최근의 교육 실무에 비추어 볼 때 기간제교원이 정규 교원보다 단순하거나 보충적인 업무만을 담당한다고 보기 어려운 점, ③ <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">이 사건 규정 제7조의2</a></span>는 근무성적·업무실적 등이 우수한 사람에게 성과상여금을 지급하도록 규정하고 있으므로, 근무성적이나 업무실적과 같은 업무 자체에 대한 평가가 성과상여금의 주된 기준이 되어야 하는 점, ④ 이 사건 지침은 기간제근로자에 대한 차별적 처우를 금지한 「기간제 및 단시간근로자 보호 등에 관한 법률」의 입법 취지에도 반하는 점 등을 종합하여 보면, 피고 소속 장관이 이 사건 지침을 통해 근무성적이나 업무실적과 관계없이 기간제로 임용되었다는 이유만으로 기간제교원을 성과상여금 지급대상에서 일률적으로 배제하여 성과상여금에 관한 심사 기회 자체를 박탈한 것은 합리적 이유 없이 기간제교원을 차별한 것으로 불법행위에 해당한다고 보아야 한다고 판단하였다.</p><p>  나. 그러나 원심의 이러한 판단은 다음과 같은 이유에서 수긍하기 어렵다.</p><p>  (1) <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|32|">구 교육공무원법(2011. 5. 19. 법률 제10634호로 개정되기 전의 것) 제32조 제1항</a></span>은 고등학교 이하 각급학교 교원의 임용권자는, 교원이 휴직하게 되어 후임자의 보충이 불가피한 때(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|32|">제1호</a></span>) 등 일정한 경우 예산의 범위 안에서 교원의 자격증을 가진 자 중에서 기간을 정하여 교원을 임용할 수 있도록 규정하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원임용령|13|">구 교육공무원임용령(2016. 8. 2. 대통령령 제27418호로 개정되기 전의 것) 제13조 제3항</a></span>은 기간제교원의 임용기간은 1년 이내로 하며 필요한 경우 3년의 범위 내에서 이를 연장할 수 있도록 규정하고 있다.</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|47|">국가공무원법 제47조 제1항</a></span>은 공무원의 봉급·수당 등에 관한 사항을 대통령령으로 정하도록 규정하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|34|">교육공무원법 제34조 제2항</a></span>은 교육공무원의 보수는 자격 및 경력과 직무의 곤란성 및 책임의 정도에 따라 대통령령으로 정하도록 규정하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|35|">제35조</a></span>는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|34|">제34조 제2항</a></span>의 대통령령에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|47|">국가공무원법 제47조</a></span>에 정한 사항 등 이외에 ‘기간제교원의 보수에 관한 사항’(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|35|">제2호</a></span>) 등에 관하여도 규정하도록 위임하고 있다. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">이 사건 규정 제7조의2 제1항</a></span>은 “소속 장관은 [별표 2의2]에 따른 공무원 중 근무성적, 업무실적 등이 우수한 사람에게는 예산의 범위에서 성과상여금을 지급한다.”라고 규정하고, 이 사건 규정 [별표 2의2]는 교육공무원의 경우 ‘공무원보수규정 [별표 11]을 적용받는 공무원’, ‘[별표 12]를 적용받는 장학관·교육연구관·장학사 및 교육연구사’를 성과상여금 적용대상으로 정하고 있다. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|5|">공무원보수규정 제5조</a></span>는 공무원의 봉급월액은 [별표 1] 공무원별 봉급표 구분표에 따른 [별표 3]부터 [별표 14]까지의 해당 봉급표에 명시된 금액으로 하도록 규정하고 있는데, [별표 11]은 ‘고등학교 이하의 각급 학교에 근무하는 교원’에게 적용되는 호봉 및 그에 따른 봉급을 규정한 것으로서, 그 ‘비고란’에는 “유치원·초등학교·중학교·고등학교의 기간제교원에 대해서는 제8조에 따라 산정된 호봉의 봉급을 지급하되, 고정급으로 한다. 다만 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|32|">교육공무원법 제32조 제1항 제4호</a></span>에 따른 기간제교원의 봉급은 14호봉을 넘지 못한다.”라고 규정하고 있다. 또한 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">이 사건 규정 제7조의2 제6항</a></span>은 성과상여금의 지급기준, 지급범위 및 지급방법 등에 필요한 사항은 행정안전부장관이 정하는 범위에서 소속 장관이 정하도록 규정하고 있다.</p><p>  한편 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">구 국가공무원법(2011. 5. 23. 법률 제10699호로 개정되기 전의 것, 이하 같다) 제2조 제2항</a></span>은 일반직공무원·특정직공무원·기능직공무원을 ‘경력직공무원’으로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가공무원법|2|">제3항</a></span>은 정무직공무원·별정직공무원·계약직공무원·고용직공무원을 ‘특수경력직공무원’으로 각 정하고 있는데, 계약직공무원에 관하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|33|">공무원보수규정 제33조</a></span> [별표 31]은 한시계약직공무원을 제외한 계약직공무원을 연봉제 적용대상으로 규정하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제36조 제3항</a></span> 내지 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제5항</a></span>은 계약직공무원에 대한 신규채용 시 연봉 책정에 관하여 정하고 있으며, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|39|">제39조</a></span>는 연봉제 적용대상 공무원에 대하여 전년도의 업무실적 평가 결과에 따라 성과연봉을 지급하도록 규정하고 있다.</p><p>  (2) <span class="accrnt_txt"><span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2" style="text-decoration:underline">이 사건 규정 제7조의2 제1항</a></span> [별표 2의2]는 성과상여금 지급대상인 교육공무원으로 ‘공무원보수규정 [별표 11]을 적용받는 공무원’을 규정하고, 공무원보수규정 [별표 11]의 비고란에서 기간제교원에 관한 사항을 언급하고 있기는 하나, 앞서 본 관련 규정의 문언·체제·취지 등에 비추어 알 수 있는 다음과 같은 사정에 비추어 보면, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2" style="text-decoration:underline">이 사건 규정 제7조의2 제1항</a></span>이 정한 성과상여금 지급대상 교육공무원으로서 ‘공무원보수규정 [별표 11]을 적용받는 교원’이란 호봉 승급에 따른 급여체계의 적용을 받는 정규 교원만을 의미하고 기간제교원은 포함되지 아니한다고 보아야 한다.</span></p><p>  ① 이 사건 규정 [별표 2의2]는 성과상여금 지급대상인 교육공무원에 관하여 ‘공무원보수규정 [별표 11]을 적용받는 공무원’으로 정하고 있다. 그런데 이 사건 규정 [별표 2의2]가 교육공무원 이외에 성과상여금 지급대상에 포함시키고 있는 공무원에는, 구 국가공무원법상 여러 유형의 공무원 중 일반직공무원·특정직공무원·기능직공무원·별정직공무원·고용직공무원의 전부 또는 일부가 포함되나 정무직공무원과 계약직공무원은 그 지급대상에서 제외하고 있다. 성과상여금 지급대상에 포함된 공무원들은 모두 근무연차에 따라 호봉이 승급되는 공무원들을 그 대상으로 하고 있는 반면, 그 지급대상에서 제외된 계약직공무원은 기간제교원과 마찬가지로 계약기간 자체가 1년 이내의 단기간이고 임용기간이 만료하면 당연퇴직하도록 정하고 있는 점을 고려하면, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">이 사건 규정 제7조의2</a></span>는 성과상여금의 지급대상을 원칙적으로 호봉 승급에 따른 급여체계의 적용을 받는 공무원으로 정한 것으로 볼 수 있다.</p><p>  ② <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|5|">공무원보수규정 제5조</a></span>는 공무원의 봉급월액은 [별표 1] 공무원별 봉급표 구분표에 따라 [별표 3]부터 [별표 14]까지의 해당 봉급표에 명시된 금액으로 하도록 규정하고, 그중 교육공무원에 대하여 [별표 11]이 적용되는데, 이와 같이 [별표 11]을 별도로 정한 것은 교육공무원의 경우 그 계급과 호봉체계가 다른 경력직공무원과 상이한 점을 고려한 것으로 보인다.</p><p>  ③ 한편 공무원보수규정 [별표 11]이 그 비고란에서 기간제교원의 봉급을 특정 호봉의 고정급으로 한다고 규정하고 있기는 하다. 그런데 기간제교원과 임용사유와 임용기간 및 임용기간 만료 후 지위 등이 유사한 계약직공무원에 대하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|33|">공무원보수규정 제33조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|36|">제36조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|39|">제39조</a></span>에서 별도의 보수체계를 정하고 있는데, 이는 계약직공무원에게는 다른 일반경력직공무원과 같이 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원보수규정|5|">공무원보수규정 제5조</a></span>에 따른 [별표 3] 내지 [별표 14]의 규정이 적용되지 아니함을 전제한 것으로 볼 수 있다. 그럼에도 불구하고 공무원보수규정 [별표 11]에서 기간제교원에 관한 내용을 ‘비고란’에서 정하고 있는 취지는, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교육공무원법|35|">교육공무원법 제35조</a></span>에서 ‘기간제교원의 보수에 관한 사항’을 대통령령으로 정하도록 규정하고 있으므로, 정규 교원과는 그 법률상 지위가 상이하여 정규 교원의 보수체계를 그대로 적용할 수 없는 기간제교원에 대하여 신규채용 시 호봉을 획정하고, 그 호봉에 해당하는 보수월액으로 기간제교원의 보수를 정함으로써 기간제교원의 보수를 정하는 기준을 정한 것에 불과하고, 나아가 기간제교원에 대하여 정규 교원에 대한 성과상여금 등 보수체계를 모두 그대로 적용하려는 취지로 보기는 어렵다.</p><p>  ④ 이러한 사정을 종합하면 성과상여금은 원칙적으로 전년도의 근무성과를 평가하여 그 평가 결과에 따라 다음 연도에 차등하여 지급하는 급여로서 공무원들의 근무의욕을 고취시켜 업무수행능력의 지속적 향상을 유도하려는 데 그 지급 취지가 있는데, 기간제교원은 1년 이내의 단기간 채용되어 임용기간이 만료하면 당연퇴직하도록 정하고 있으므로 이러한 기간제교원에 대하여 성과상여금을 지급하는 것은 위 제도의 취지에 부합한다고 보기 어렵고, 성과상여금은 그 성격에 비추어 지급대상, 지급액 등에 관하여 광범위한 형성의 재량이 인정된다고 할 것인데, 교육부장관이 그 지침에서 기간제교원을 제외했다 하여 평등원칙에 반한다고 보기도 어렵다.</p><p>  (3) 그렇다면 피고 소속 교육부장관이 이 사건 지침에서 원고들을 포함한 기간제교원을 성과상여금 지급대상에서 제외한 것은 앞서 본 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공무원수당 등에 관한 규정|7|2">이 사건 규정 제7조의2 제1항</a></span>의 해석에 관한 법리에 따른 것으로서 이를 이유로 원고들에 대하여 불법행위로 인한 손해배상책임을 진다고 볼 수 없다.</p><p>  그럼에도 원심은 이와 달리 기간제교원도 성과상여금 지급대상에 포함된다는 잘못된 전제에서, 피고 소속 교육부장관이 이 사건 지침을 통하여 원고들을 성과상여금 지급대상에서 제외한 것이 불법행위에 해당한다고 판단하였으니, 이러한 원심의 판단에는 이 사건 규정이 정한 성과상여금 지급대상에 관한 법리 등을 오해하여 판결에 영향을 미친 잘못이 있다.</p><p>  2. 원고 2, 원고 4의 상고이유에 대하여</p><p>  원고 2, 원고 4의 상고이유는, 피고에게 불법행위로 인한 손해배상책임이 인정됨을 전제로 하여 피고의 일부 소멸시효 완성 주장이 신의칙에 반하여 허용될 수 없음에도 불구하고 이를 받아들인 원심의 판단에 신의칙 위반 등에 관한 법리오해가 있다는 취지이나, 위에서 본 바와 같은 이유로 피고에게 손해배상책임을 인정한 원심판결을 파기하는 이상 이와 다른 전제에 선 위 원고들의 상고이유는 나아가 판단할 필요 없이 받아들일 수 없다.</p><p>  3. 결론</p><p>  그러므로 피고의 나머지 상고이유에 대한 판단을 생략한 채, 원심판결 중 피고 패소 부분을 파기하고 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하며, 원고 2, 원고 4의 상고를 모두 기각하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김신(재판장) 김용덕 김소영 이기택(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

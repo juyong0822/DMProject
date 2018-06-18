@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2009다10249 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2064242';
+var contIdEtc = '';
+var saNo = '2009다10249';
+var sngoNm = '선고';
+var saNm = '신용장대금등';
+try {
+	var sngoDay=('20110127' ? 
+			'20110127'.length==4 ? Date.parseExact('20110127','yyyy').toString('yyyy. M. d.') : 
+				'20110127'.length==6 ? Date.parseExact('20110127','yyyyMM').toString('yyyy. M. d.') : 
+					'20110127'.length==8 ? Date.parseExact('20110127','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009다10249 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009다10249';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2009다10249</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(13)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(7)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(9)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2063269">대법원 2012. 10. 25. 선고 2009다77754 판결 [공2012하,1886]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|689997">신용장거래로 인한 법률관계와 준거법결정 김원수 釜山判例硏究會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|658833">신용장거래에서 개설은행과 매입은행의 주의의무와 준거법  평석을 중심으로 이정원 한국중재학회</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|743267">장준혁 준거법에 관한 국제사법의 2001년 개정과 후속 판례의 회고 국제사법연구 제20권 제1호 / 한국국제사법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|668809">노태악 2011년 국제사법 주요 판례 소개 국제사법연구 제17호 / 한국국제사법학회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683999">한나라 신용장 거래에 따른 법률관계의 준거법 판례연구회 논문집 창간호 / 서울동부지방법원  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|658833">이정원 신용장거래에서 개설은행과 매입은행의 주의의무와 준거법 : 평석을 중심으로 중재연구 22권 1호  / 한국중재학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|823763">이형근 도산국제사법과 도산법정지법(도산법정지법)의 원칙 율촌판례연구   / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|720321">권창영 편의치적선의 민사집행법상 지위 사법논집 . 제56집 56집 / 대법원 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|668801">이헌묵 화환신용장의 중간은행의 법률관계와 독립적 은행보증의 제2의 은행의 법률관계에 대한 준거법 국제사법연구 제17호 / 한국국제사법학회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|689997">김원수 신용장거래로 인한 법률관계와 준거법결정 판례연구 24집 / 부산판례연구회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|792409">정구태 ［특집 Ⅰ : 약관의 불공정성 통제에 관한 최근 동향과 과제］국제항공여객운송계약에서의 오버부킹과 약관규제법의 적용 여부 : 서울중앙지방법원 2012. 12. 5. 선고 2012나24544 판결 외법논집 제39권 제4호 / 한국외국어대학교 법학연구소  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683288">이상주 신용장 원본의 교부나 제시 없는 신용장 개설통지나 매입이 적법·유효한지 여부 대법원판례해설 91호  / 법원도서관  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|555338">한국. 대법원 법원행정처 재판실무편람. 제7호:. 국제거래재판실무편람 국제거래재판실무편람 집필위원회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|679496">이헌묵 법정지법의 적용에 있어서 절차와 실체의 구분 민사소송  : 한국민사소송법학회지 제16권 2호  / 한국사법행정학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|562641">사법연수원 민사실무:. 2016. Ⅰ 사법연수원  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|84다카696">대법원 1985. 5. 28. 선고 84다카696 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다37879">대법원 1997. 8. 29. 선고 96다37879 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다63691">대법원 2002. 6. 28. 선고 2000다63691 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다60296">대법원 2002. 10. 11. 선고 2000다60296 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|95다34385">대법원 1997. 5. 9. 선고 95다34385 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|97헌바49">헌법재판소 2000. 3. 30. 선고 97헌바49 전원재판부 결정</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2002헌가15">헌법재판소 2003. 4. 24. 선고 2002헌가15 전원재판부 결정</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국제사법|26|0|null">국제사법 제26조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="국제사법|26|0|null">국제사법 제26조 제2항 제3호 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="소송촉진등에관한특례법|3|0|null">소송촉진 등에 관한 특례법 제3조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다37879">대법원 1997. 8. 29. 선고 96다37879 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다60296">대법원 2002. 10. 11. 선고 2000다60296 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|84다카696">대법원 1985. 5. 28. 선고 84다카696 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다63691">대법원 2002. 6. 28. 선고 2000다63691 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|95다34385">대법원 1997. 5. 9. 선고 95다34385 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|97헌바49">헌법재판소 2000. 3. 30. 선고 97헌바49 전원재판부 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2002헌가15">헌법재판소 2003. 4. 24. 선고 2002헌가15 전원재판부 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다29948">대법원 1992. 11. 27. 선고 92다29948 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다22833">대법원 2001. 7. 13. 선고 2001다22833 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국제사법|26|0|null">국제사법 제26조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국제사법|26|0|null">국제사법 제26조 제2항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소송촉진등에관한특례법|3|0|null">소송촉진 등에 관한 특례법 제3조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="부산고등법원|2007나13503">부산고법 2008. 12. 19. 선고 2007나13503 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2011. 1. 27. 선고 2009다10249 판결</h2><p class="sub_title">[신용장대금등][공2011상,390]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 분할 환어음의 발행이 허용된 신용장거래에서 수익자가 신용장 한도금액을 초과하여 분할 환어음을 발행하고 선적서류 중 일부를 위조하여 서로 다른 은행에게 이를 매도한 경우, 신용장 개설은행이 선행 매입은행에 대한 신용장대금의 상환을 내세워 후행 매입은행의 신용장대금 상환청구를 거절할 수 있는지 여부</p>
+      <p></p>
+      <p>
+        </p><p>[2] 신용장 개설은행과 매입은행 사이의 신용장대금 상환의 법률관계에 관한 준거법(=신용장 개설은행의 소재지법)</p>
+      <p></p>
+      <p>
+        </p><p>[3] 원본채권의 준거법이 외국법인 경우, 신용장에 따른 대금지급의무의 지체에 대한 지연손해금의 지급을 명함에 있어 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|3|">소송촉진 등에 관한 특례법 제3조 제1항</a></span>을 적용할 수 있는지 여부(소극)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 국제상업회의소(International Chamber of Commerce)의 제5차 개정 신용장통일규칙(The Uniform Customs and Practice for Documentary Credits, 1993 Revision, ICC Publication No. 500) 제9조 제a항 제iv호, 제10조 제d항, 제14조 제a항 등의 규정을 종합하면, 화환신용장에 의한 거래에서 신용장의 제 조건과 문면상 일치하게 표시된 서류와 상환으로 환어음을 매입한 매입은행이 신용장 개설은행에 대하여 신용장대금의 상환을 청구하는 경우에 특별한 사정이 없는 한 신용장 개설은행은 상환의무를 면할 수 없다. 따라서 분할 환어음의 발행이 허용된 신용장거래에서 수익자가 신용장 한도금액을 초과하여 분할 환어음을 발행하고 선적서류 중 일부를 위조하여 서로 다른 은행에게 이를 매도한 경우, 위조된 선적서류를 매입한 선행 매입은행의 신용장대금 청구에 대하여 신용장 개설은행이 선적서류에 상당한 주의를 기울였으면 충분히 발견할 수 있었던 신용장조건과 불일치하는 하자가 있음을 간과하고 신용장대금을 상환하였다면, 신용장 개설은행은, 후행 매입은행이 상당한 주의를 기울였음에도 신용장 한도금액을 초과하여 환어음이 발행되었고 다른 은행이 환어음 일부를 선행하여 매입하였다는 사실 등을 알지 못한 채 신용장의 제 조건과 문면상 일치하게 표시된 서류와 상환으로 환어음 등을 선의로 매입한 후 신용장대금의 상환을 구하는 것에 대하여 선행 매입은행에게 신용장대금을 상환한 점을 내세워 신용장 한도금액이 초과하였다는 이유로 이를 거절하지 못한다. 그리고 여기서 신용장 개설은행과 매입은행에게 요구되는 상당한 주의는 상품거래에 관한 특수한 지식경험이 없는 은행원으로서의 일반적인 지식경험에 의하여 기울여야 할 객관적이고 합리적인 주의를 말하며, 은행원은 이러한 주의를 기울여 신용장과 기타 서류에 기재된 문언을 형식적으로 엄격하게 해석하여 신용장조건과의 합치 여부를 가려낼 의무가 있다.</p>
+      <p></p><p>
+        </p><p>[2] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|">국제사법 제26조 제1항</a></span>은 외국적 요소가 있는 법률관계에서 당사자가 준거법을 선택하지 아니한 경우에 계약은 그 계약과 가장 밀접한 관련이 있는 국가의 법에 의하여야 한다고 규정하고, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|">제26조 제2항 제3호</a></span>에서는 위임사무의 준거법은 위임사무 이행의무 당사자의 계약체결 당시의 주된 사무소 등의 소재지법을 가장 밀접한 관련이 있는 법으로 추정하고 있다. 그런데 신용장에 기한 환어음 등을 매입하는 매입은행은 신용장 개설은행의 수권에 의하여 매입하긴 하지만, 이는 어디까지나 자기의 계산에 따라 독자적인 영업행위로서 매입하는 것이고 신용장 개설은행을 위한 위임사무의 이행으로서 신용장을 매입하는 것은 아니므로, 신용장 개설은행과 매입은행 사이의 신용장대금 상환의 법률관계에 관한 준거법의 결정에는 위임사무의 이행에 관한 준거법의 추정 규정인 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|">국제사법 제26조 제2항 제3호</a></span>를 적용할 수 없고, 환어음 등의 매입을 수권하고 신용장대금의 상환을 약정하여 신용장대금 상환의무를 이행하여야 하는 신용장 개설은행의 소재지법이 계약과 가장 밀접한 관련이 있는 국가의 법으로서 준거법이 된다.
+        </p>
+      <p></p><p>
+        </p><p>[3] 지연손해금은 채무의 이행지체에 대한 손해배상으로서 본래의 채무에 부수하여 지급되는 것이므로 본래의 채권채무관계를 규율하는 준거법에 의하여 결정되어야 한다. 한편 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|3|">소송촉진 등에 관한 특례법 제3조 제1항</a></span>에서 정하는 법정이율에 관한 규정은 비록 소송촉진을 목적으로 소송절차에 의한 권리구제와 관련하여 적용되는 것이기는 하지만 그 실질은 금전채무의 불이행으로 인한 손해배상의 범위를 정하기 위한 것이다. 따라서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|3|">소송촉진 등에 관한 특례법 제3조 제1항</a></span>에서 정한 법정이율에 관한 규정을 절차법적인 성격을 가지는 것이라고만 볼 수는 없다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] 신용장통일규칙(The Uniform Customs and Practice for Documentary Credits, 1993 Revision, ICC Publication No. 500) 제9조 제a항 제iv호, 제10조 제d항, 제14조 제a항 [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|">국제사법 제26조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|">제2항 제3호</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|3|">소송촉진 등에 관한 특례법 제3조 제1항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|84다카696|판결" href="#//">대법원 1985. 5. 28. 선고 84다카696 판결</a></span>(공1985, 893)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다37879|판결" href="#//">대법원 1997. 8. 29. 선고 96다37879 판결</a></span>(공1997하, 2832)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다63691|판결" href="#//">대법원 2002. 6. 28. 선고 2000다63691 판결</a></span>(공2002하, 1784)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다60296|판결" href="#//">대법원 2002. 10. 11. 선고 2000다60296 판결</a></span>(공2002하, 2663)<br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다34385|판결" href="#//">대법원 1997. 5. 9. 선고 95다34385 판결</a></span>(공1997상, 1717)<br />        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|97헌바49|전원재판부 결정" href="#//">헌법재판소 2000. 3. 30. 선고 97헌바49 전원재판부 결정</a></span>(헌공44, 310)<br />        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2002헌가15|전원재판부 결정" href="#//">헌법재판소 2003. 4. 24. 선고 2002헌가15 전원재판부 결정</a></span>(헌공80, 373)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인 겸 피상고인】
+      
+        주식회사 부산은행 (소송대리인 법무법인 청해 담당변호사 서영화 외 4인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인 겸 상고인】
+      
+        주식회사 미쓰비시도쿄유에프제이은행 (소송대리인 변호사 손지열 외 5인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 피상고인】
+      
+        주식회사 제주은행 (소송대리인 법무법인 삼양 담당변호사 노홍수 외 4인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="부산고등법원|2007나13503|판결" href="#//">부산고법 2008. 12. 19. 선고 2007나13503 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 상고인 각자가 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지나서 제출된 상고이유보충서의 기재는 상고이유를 보충하는 범위 내에서)를 살펴본다.</p><p>  1. 피고 주식회사 미쓰비시 도쿄 유에프제이 은행의 상고이유에 관하여</p><p>  가. 
+        <span class="accrnt_txt">국제상업회의소(International Chamber of Commerce)의 제5차 개정 신용장통일규칙(The Uniform Customs and Practice for Documentary Credits, 1993 Revision, ICC Publication No. 500, 이하 ‘신용장통일규칙’이라 한다) 제9조 제a항 제iv호, 제10조 제d항, 제14조 제a항 등의 규정을 종합하면, 화환신용장에 의한 거래에서 신용장의 제 조건과 문면상 일치하게 표시된 서류와 상환으로 환어음을 매입한 매입은행이 신용장 개설은행에 대하여 신용장대금의 상환을 청구하는 경우에 특별한 사정이 없는 한 신용장 개설은행은 상환의무를 면할 수 없다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다37879|판결" href="#//">대법원 1997. 8. 29. 선고 96다37879 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다60296|판결" href="#//">대법원 2002. 10. 11. 선고 2000다60296 판결</a></span> 등 참조). 
+        <span class="accrnt_txt">따라서 분할 환어음의 발행이 허용된 신용장거래에서 수익자가 신용장 한도금액을 초과하여 분할 환어음을 발행하고 선적서류 중 일부를 위조하여 서로 다른 은행에게 이를 매도한 경우, 위조된 선적서류를 매입한 선행 매입은행의 신용장대금 청구에 대하여 신용장 개설은행이 선적서류에 상당한 주의를 기울였으면 충분히 발견할 수 있었던 신용장조건과 불일치하는 하자가 있음을 간과하고 신용장대금을 상환하였다면, 신용장 개설은행은, 후행 매입은행이 상당한 주의를 기울였음에도 신용장 한도금액을 초과하여 환어음이 발행되었고 다른 은행이 환어음 일부를 선행하여 매입하였다는 사실 등을 알지 못한 채 신용장의 제 조건과 문면상 일치하게 표시된 서류와 상환으로 환어음 등을 선의로 매입한 후 신용장대금의 상환을 구하는 것에 대하여 선행 매입은행에게 신용장대금을 상환한 점을 내세워 신용장 한도금액이 초과하였다는 이유로 이를 거절하지 못한다. 그리고 여기서 신용장 개설은행과 매입은행에게 요구되는 상당한 주의는 상품거래에 관한 특수한 지식경험이 없는 은행원으로서의 일반적인 지식경험에 의하여 기울여야 할 객관적이고 합리적인 주의를 말하며, 은행원은 이러한 주의를 기울여 신용장과 기타 서류에 기재된 문언을 형식적으로 엄격하게 해석하여 신용장조건과의 합치 여부를 가려낼 의무가 있다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|84다카696|판결" href="#//">대법원 1985. 5. 28. 선고 84다카696 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다63691|판결" href="#//">대법원 2002. 6. 28. 선고 2000다63691 판결</a></span> 등 참조).
+      </p><p>  나. 원심판결 이유 및 원심이 적법하게 채택한 증거들에 의하면, 다음과 같은 사실을 알 수 있다.</p><p>  (1) 피고 주식회사 미쓰비시 도쿄 유에프제이 은행(이하 ‘피고 미쓰비시은행’이라 한다)이 수익자를 주식회사 성보(이하 ‘성보’라 한다)로 하여 발행한 이 사건 제1신용장은 최대 한도금액을 미화 871,500달러로 하고 분할 선적 및 분할 환어음의 발행을 허용하는 자유매입신용장으로서, 매입 시 필요한 서류로 ‘수하인을 송하인 지시식으로 하여 송하인이 백지배서한 무고장 선적 선하증권’을 요구하고 있다.</p><p>  (2) 피고 주식회사 제주은행(이하 ‘피고 제주은행’이라 한다)은 성보로부터 2005. 10. 7. 성보가 이 사건 제1신용장과 관련하여 발행한 어음금액 미화 244,639.18달러의 환어음 및 선적서류를 매입하였다. 그런데 피고 제주은행이 매입한 선적서류 중 선하증권은 성보의 대표이사 고승대가 운송인인 일신해운 주식회사로부터 다른 운송 건으로 회사 내부 보관용으로 받아 두었던 선하증권을 이용하여 발행인의 서명을 임의로 기재하는 등으로 위조한 것으로서, 그 우측 상단에는 일신해운 주식회사가 유통이 불가능하다는 것을 나타내는 의미로 기재한 ‘Non-Negotiable’이라는 문구가 기재되어 있는 반면, 그 본문의 송하인란에는 ‘성보’가, 수하인란에는 송하인 지시식 선하증권임을 나타내는 ‘TO ORDER OF SHIPPER’라고 기재되어 있고, 그 뒷면에는 성보가 무기명식으로 배서하였다.</p><p>  한편 이 사건 제1신용장에는 ‘매입은행은 신용장 뒷면에 환어음 매입금액을 기재하여야 한다’고 기재되어 있는데, 피고 제주은행은 이 사건 제1신용장 원본 뒷면에 자신이 환어음을 매입한 사실을 기재하지 않았다.</p><p>  (3) 피고 미쓰비시은행은 피고 제주은행의 위 환어음 및 선적서류의 매입에 기한 신용장대금 청구에 따라 피고 제주은행에게 미화 244,639.18달러를 지급하였다.</p><p>  (4) 성보는 다시 이 사건 제1신용장에 기한 환어음 등을 분할 발행하였고, 원고는 이 사건 제1신용장 원본 뒷면에 매입사실의 기재가 없어 피고 제주은행의 선행 매입사실을 알지 못한 채 성보로부터 2005. 10. 17. 어음금액 미화 750,789.78달러의 환어음 및 선적서류를, 2005. 10. 18. 어음금액 미화 108,019.52달러의 환어음 및 선적서류를 각 매입하였다.</p><p>  (5) 원고의 신용장대금 청구에 대하여, 피고 미쓰비시은행은 피고 제주은행에 제1신용장대금의 일부인 미화 244,639.18달러를 이미 지급하였기 때문에 제1신용장 한도금액을 초과한다는 등의 이유로 그 지급을 전부 거절하였다.</p><p>  다. 먼저, 이 사건 제1신용장에서 요구하는 송하인 지시식 및 백지배서식 선하증권은 송하인이 선하증권 뒷면에 백지배서를 하여 양도하면 선하증권의 소지인이 운송물에 대한 소유권을 취득하게 되는 것으로 자유롭게 유통할 수 있는 것인데, 성보가 위조한 선하증권은 그 수하인란에는 송하인 지시식이라고 기재되어 있는 반면 선하증권의 우측 상단에는 배서금지 또는 유통이 불가능하다는 의미인 ‘Non-negotiable’ 이라는 문구가 기재되어 있어 선하증권의 문면 자체에 상호 모순이 있을 뿐만 아니라 이 사건 제1신용장에서 요구하는 조건과도 불일치한다. 선하증권에 기재된 ‘Non-negotiable’이라는 문구는 그 문언 자체가 ‘매입할 수 없다’ 또는 ‘유통할 수 없다’는 것을 나타내므로, 그와 같은 기재가 있는 경우에는 적어도 ‘자유로운 유통을 허용하는 선하증권’과는 배치된다는 것을 상품거래에 관한 특수한 지식경험이 없는 은행원이라도 일반적으로 쉽게 알 수 있는 것이다.</p><p>  한편 분할 환어음이 허용되는 신용장거래에서 매입은행이 신용장 한도 잔액을 개설은행에게 확인하여야 할 관행이 존재한다고 볼 아무런 자료가 없는 이 사건에서, 신용장 원본에서 ‘매입은행은 신용장 뒷면에 환어음 매입금액을 기재하여야 한다’고 규정하고 있으면 일반적인 은행원으로서는 금융기관인 선행 매입은행이 있었다면 매입사실을 기재하였을 것이라고 기대하는 것이 상당하고, 그 밖에 성보가 신용장 한도금액을 초과하여 환어음을 발행하였다는 점 및 피고 제주은행이 환어음을 선행 매입하였다는 점 등을 원고가 알거나 알 수 있었다고 볼 자료도 없으므로, 원고가 신용장 원본의 뒷면에 매입사실의 기재가 없는 것을 믿고 성보로부터 환어음 등을 매입한 것에 어떤 잘못이 있다고 할 수 없다.</p><p>  결국 피고 미쓰비시은행은 피고 제주은행이 제시하는 선하증권에 신용장조건에 불일치하는 하자가 있음을 과실로 간과하고 피고 제주은행에게 신용장대금을 지급한 것이고, 반면 원고는 과실 없이 선의로 성보로부터 환어음 등을 매입한 것이라고 봄이 상당하므로, 앞서 본 법리에 비추어 보면 이러한 경우 피고 미쓰비시은행은 피고 제주은행에 대한 신용장대금의 지급을 내세워 원고의 신용장대금 지급청구를 거절할 수 없다고 할 것이다.</p><p>  라. 그 밖에 피고 미쓰비시은행은, 피고 미쓰비시은행이 피고 제주은행의 신용장대금 상환청구에 따라 신용장대금을 지급한 것은, 개설의뢰인인 도요타 츄쇼 코퍼레이션(Toyota Tsusho Corporation, 이하 ‘도요타’라 한다)의 신용장조건 불일치 하자에 대한 추인의 의사에 따라 적법하게 행한 것이므로 그 신용장대금의 지급효과를 원고에게 대항할 수 있다는 취지의 주장도 하나, 기록에 의하면 피고 미쓰비시은행이 도요타에게 선하증권의 통수 부족에 대한 하자의 수락 여부를 조회한 사실이 인정될 뿐이고, 도요타가 선하증권상에 ‘Non-negotiable’의 기재가 있음에도 이에 대하여 신용장조건과 불일치한다고 주장할 수 있는 권리를 포기하고 신용장대금을 지급하기로 하였다고 인정할 자료가 없다.</p><p>  마. 그렇다면 원심판결 중 피고 미쓰비시은행이 피고 제주은행이 제시하는 선하증권에 신용장조건과 불일치하는 하자가 있다는 것을 알 수 있었다는 점 외에 선하증권이 위조된 사실도 알거나 알 수 있었다고 본 부분의 당부에 관하여는 살펴볼 것도 없이 원고의 신용장대금 지급청구를 인용한 원심의 결론은 정당하다.</p><p>  2. 원고의 상고이유에 관하여</p><p>  가. 피고 미쓰비시은행에 대한 청구에서 준거법을 다투는 점에 관하여</p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|" style="text-decoration:underline">국제사법 제26조 제1항</a></span>은 외국적 요소가 있는 법률관계에서 당사자가 준거법을 선택하지 아니한 경우에 계약은 그 계약과 가장 밀접한 관련이 있는 국가의 법에 의하여야 한다고 규정하고, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|" style="text-decoration:underline">제26조 제2항 제3호</a></span>에서는 위임사무의 준거법은 위임사무 이행의무 당사자의 계약체결 당시의 주된 사무소 등의 소재지법을 가장 밀접한 관련이 있는 법으로 추정하고 있다.
+        </span>
+      </p><p>
+        <span class="accrnt_txt">그런데 신용장에 기한 환어음 등을 매입하는 매입은행은 신용장 개설은행의 수권에 의하여 매입하긴 하지만, 이는 어디까지나 자기의 계산에 따라 독자적인 영업행위로서 매입하는 것이고 신용장 개설은행을 위한 위임사무의 이행으로서 신용장을 매입하는 것은 아니므로, 신용장 개설은행과 매입은행 사이의 신용장대금 상환의 법률관계에 관한 준거법의 결정에는 위임사무의 이행에 관한 준거법의 추정 규정인 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|26|" style="text-decoration:underline">국제사법 제26조 제2항 제3호</a></span>를 적용할 수 없고, 환어음 등의 매입을 수권하고 신용장대금의 상환을 약정하여 신용장대금 상환의무를 이행하여야 하는 신용장 개설은행의 소재지법이 계약과 가장 밀접한 관련이 있는 국가의 법으로서 준거법이 된다고 할 것이다.
+        </span>
+      </p><p>  원심이 같은 취지에서 대한민국 법인인 원고가 이 사건 각 신용장에 기한 환어음 및 선적서류 등의 매입은행으로서 위 각 신용장의 개설은행인 일본국 법인인 피고 미쓰비시은행에 대하여 그 신용장대금의 상환을 구하는 이 사건은 위 각 신용장이 외국법인인 피고 미쓰비시은행에 의하여 개설된 점 등에 비추어 외국적 요소가 있는 법률관계에 관한 사건에 해당하고, 당사자 사이에 이 사건 각 신용장에는 제5차 개정 신용장통일규칙이 적용된다는 기재 외에 달리 준거법에 관한 약정이 없으므로, 원고와 피고 미쓰비시 은행 사이의 신용장 매입대금상환 청구의 준거법은 신용장 개설은행인 피고 미쓰비시 은행의 소재지인 일본국법이라고 본 것은 정당하다.</p><p>  나. 피고 미쓰비시은행에 대한 청구에서 지연손해금의 이율을 다투는 점에 관하여</p><p>
+        <span class="accrnt_txt">지연손해금은 채무의 이행지체에 대한 손해배상으로서 본래의 채무에 부수하여 지급되는 것이므로 본래의 채권채무관계를 규율하는 준거법에 의하여 결정되어야 한다. 한편 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|3|" style="text-decoration:underline">소송촉진 등에 관한 특례법 제3조 제1항</a></span>에서 정하는 법정이율에 관한 규정은 비록 소송촉진을 목적으로 소송절차에 의한 권리구제와 관련하여 적용되는 것이기는 하지만 그 실질은 금전채무의 불이행으로 인한 손해배상의 범위를 정하기 위한 것이다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다34385|판결" href="#//">대법원 1997. 5. 9. 선고 95다34385 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|97헌바49|전원재판부 결정" href="#//">헌법재판소 2000. 3. 30. 선고 97헌바49 전원재판부 결정</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2002헌가15|전원재판부 결정" href="#//">헌법재판소 2003. 4. 24. 선고 2002헌가15 전원재판부 결정</a></span> 등 참조). 
+        <span class="accrnt_txt">따라서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|3|" style="text-decoration:underline">소송촉진 등에 관한 특례법 제3조 제1항</a></span>에서 정한 법정이율에 관한 규정을 절차법적인 성격을 가지는 것이라고만 볼 수는 없다.
+        </span>
+      </p><p>  원심이 같은 취지에서 피고 미쓰비시은행에게 위 신용장에 따른 대금지급의무의 지체에 대한 지연손해금의 지급을 명함에 있어 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소송촉진 등에 관한 특례법|3|">소송촉진 등에 관한 특례법 제3조 제1항</a></span>의 규정을 적용하지 아니하고 원본채권의 준거법인 일본국법을 적용한 것은 정당하다.
+      </p><p>  다. 피고 제주은행에 대한 상고이유에 관하여</p><p>  채무불이행 또는 불법행위로 인한 손해배상청구권은 현실적으로 손해가 발생한 때에 성립하는 것이고, 현실적으로 손해가 발생하였는지 여부는 사회통념에 비추어 객관적이고 합리적으로 판단하여야 하는 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다29948|판결" href="#//">대법원 1992. 11. 27. 선고 92다29948 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다22833|판결" href="#//">대법원 2001. 7. 13. 선고 2001다22833 판결</a></span> 등 참조).
+      </p><p>  원심판결 이유에 의하면, 원심은, 피고 제주은행이 이 사건 제1신용장에 기한 환어음 및 위조 선하증권 등 선적서류 매입 당시에 원고의 주장과 같은 잘못을 하였다 하더라도, 피고 미쓰비시은행의 원고에 대한 제1신용장 한도금액 초과를 이유로 한 지급거절사유가 정당하지 못하여 원고가 피고 미쓰비시은행으로부터 이 사건 제1신용장대금을 지급받을 수 있으므로, 피고 제주은행의 그와 같은 잘못으로 인하여 원고 주장의 신용장대금채권이 침해되었다고 볼 수 없다는 이유로 원고의 피고 제주은행에 대한 청구를 배척하였다.</p><p>  앞서 본 법리 및 기록에 비추어 보면, 위와 같은 원심의 판단은 정당하고, 원고가 상고이유로 주장하는 선행 매입은행의 후행 매입은행을 위한 서류조사의무의 부담 여부는 원고의 청구를 배척하는 결론에 아무런 영향을 미치지 못한다.</p><p>  3. 결론</p><p>  그러므로 상고를 모두 기각하고, 상고비용은 상고인 각자의 부담으로 하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이홍훈(재판장) 김능환 민일영(주심) 이인복 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

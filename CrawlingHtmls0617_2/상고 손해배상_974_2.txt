@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2010나30272 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2142147';
+var contIdEtc = '2142146';
+var saNo = '2010나30272';
+var sngoNm = '선고';
+var saNm = '손해배상등';
+try {
+	var sngoDay=('20111014' ? 
+			'20111014'.length==4 ? Date.parseExact('20111014','yyyy').toString('yyyy. M. d.') : 
+				'20111014'.length==6 ? Date.parseExact('20111014','yyyyMM').toString('yyyy. M. d.') : 
+					'20111014'.length==8 ? Date.parseExact('20111014','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010나30272 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010나30272';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2010나30272</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(35)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2007고단7222">2008. 8. 20. 서울중앙지방법원 2007고단7222, 2008고단2559(병합)</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2008노2947">서울중앙지방법원 2008노2947호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008도11504">대법원 2008도11504호</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|26|0|20070411">약사법(구) 제26조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법시행규칙|23|0|20051007">약사법 시행규칙(구) 제23조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법시행규칙|24|0|null">약사법 시행규칙(구) 제24조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|23|2|20010814">약사법 제23조의2 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|756|0|null">민법 제756조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|35|0|null">민법 제35조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|2|0|null">약사법 제2조 제17호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|34|0|null">약사법 제34조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|69|0|null">약사법 제69조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|74|0|null">약사법 제74조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|76|0|null">약사법 제76조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="약사법|95|0|null">약사법 제95조 제1항 제6호의2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|2|0|null">국민건강보험법 제2조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|12|0|null">국민건강보험법 제12조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|13|0|null">국민건강보험법 제13조 제1항 제12호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|16|0|null">국민건강보험법 제16조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|19|0|null">국민건강보험법 제19조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|1|0|null">국민건강보험법 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|13|0|null">국민건강보험법 제13조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|14|0|null">국민건강보험법 제14조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|38|0|null">국민건강보험법 제38조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|52|0|null">국민건강보험법 제52조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|70|0|null">국민건강보험법 제70조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|77|0|null">국민건강보험법 제77조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|78|0|null">국민건강보험법 제78조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|43|0|null">국민건강보험법 제43조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|734|0|null">민법 제734조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2009가합46236">서울중앙지방법원 2010. 2. 5. 선고 2009가합46236 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2142146">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2011. 10. 14. 선고 2010나30272 판결</h2><p class="sub_title">[손해배상등][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피항소인 겸 항소인】
+국민건강보험공단 (소송대리인 법무법인 바른 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피항소인】
+주식회사 메디카코리아 (소송대리인 변호사 박종명)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고, 피항소인 겸 항소인】
+주식회사 랩프런티어 외 5인 (소송대리인 법무법인 원 외 2인)
+
+</strong></p>
+<span class="space"></span>【변론종결】
+<p>2011. 8. 26.</p>
+
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【제1심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2009가합46236|판결" href="#//">서울중앙지방법원 2010. 2. 5. 선고 2009가합46236 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>   1. 제1심 판결 중 피고 주식회사 랩프런티어, 피고 3, 4, 5, 6, 7의 패소 부분을 취소하고 이 부분에 해당하는 원고의 피고 주식회사 랩프런티어, 피고 3, 4, 5, 6, 7에 대한 청구를 모두 기각한다. </p><p>   2. 원고의 피고들에 대한 항소를 모두 기각한다.</p><p>   3. 소송총비용은 원고가 부담한다. </p>
+【청구취지 및 항소취지】
+<p>   1. 청구취지(원고는 당심에서 청구를 감축했다)(원고는 피고 메디카코리아에 대한 청구를 주위적 및 예비적 청구로 명시하지는 않았으나, 각 청구는 소송물이 다르므로 청구취지에 구별해 표시한다)</p>
+<p>     피고 주식회사 메디카코리아(이하 ‘피고 메디카코리아’)에 대한 주위적 청구 및 피고 주식회사 랩프런티어(이하 ‘피고 랩프런티어’), 피고 3, 4, 5, 6, 7(피고 메디카코리아를 제외한 피고들을 ‘나머지 피고들’)에 대한 청구 : 피고들은 각자 원고에게 60,752,576원과 이에 대한 2006. 7. 11.부터 소장 송달일까지는 연 5%, 다음날부터 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라.</p>
+<p>     피고 메디카코리아에 대한 예비적 청구 : 피고 메디카코리아는 나머지 피고들과 각자 원고에게 60,752,576원과 이에 대한 2006. 7. 11.부터 소장 송달일까지는 연 5%, 다음날부터 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라.</p>
+<p>   2. 항소취지</p>
+<p>   원고 : 피고 메디카코리아에 대한 제1심 판결을 취소하고 원고의 피고 메디카코리아에 대한 청구를 인용한다. 제1심 판결 중 나머지 피고들에 대한 원고 패소 부분을 취소하고 이 부분에 해당하는 원고의 나머지 피고들에 대한 청구를 각 인용한다.</p>
+<p>   나머지 피고들 : 주문 제1항과 같다.</p>
+
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>   1. 인정되는 사실</p><p>    가. 생물학정 동등성 시험(이하 ‘생동성시험’)의 의의</p><p>      생동성시험은 생물학적 동등성을 입증하기 위한 생체시험으로서 동일 주성분을 함유한 두 제제의 생체이용률이 통계학적으로 동등하다는 것을 보여주는 시험을 말한다.</p><p>      의약품의 제조를 업으로 하고자 하는 자는 보건복지부령이 정하는 바에 따라 식품의약품안전청장(이하 ‘식약청장’)으로부터 허가를 받아야 하고 품목별로 품목허가를 받거나 품목신고를 해야 하며, 허가받은 사항 또는 신고한 사항을 변경하고자 하는 경우 변경허가를 받거나 변경신고를 해야 하고[<span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|26|">약사법(2007. 4. 11. 법률 제8365호로 전문개정되기 전의 것) 제26조</a></span>], 이러한 품목허가를 받고자 하는 품목이 1989. 1. 1. 이후 제조(수입)품목허가를 받은 전문의약품인 신약(오리지널의약품)과 동일한 의약품(복제의약품)인 경우 품목허가신청서에 식약청장이 정하는 생동성시험계획서, 생동성에 관한 시험자료, 비교임상시험계획서 또는 비교임상시험성적서에 관한 자료를 첨부해야 하고[<span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법 시행규칙|23|">약사법 시행규칙(2005. 10. 7. 보건복지부령 제332호로 개정되기 전의 것) 제23조 제1항 제1호 다목</a></span>], 식약청장이 정하는 의약품동등성 입증이 필요한 의약품인 경우에도 생동성시험계획서 등의 자료를 첨부해야 하며(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법 시행규칙|23|">같은 호 바목</a></span>), 품목신고하고자 하는 의약품이 식약청장이 정하는 의약품동등성 입증이 필요한 의약품인 경우 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법 시행규칙|23|">제23조 제1항 제1호 바목</a></span>에 해당하는 자료를 추가해 첨부하도록 규정돼 있다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법 시행규칙|24|">위 시행규칙 제24조 제2항</a></span>).</p><p>       의약분업이 2000. 7. 1.부터 시행된 이후 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|23|2">2001. 8. 14. 법률 제6511호로 개정된 약사법 제23조의2</a></span>에 따르면, 약사는 원칙적으로 의사 또는 치과의사가 처방전에 기재한 의약품을 성분, 함량 및 제형이 동일한 다른 의약품으로 대체해 조제하고자 하는 경우에는 사전에 그 처방전을 발행한 의사 또는 치과의사의 동의를 받아야 하지만, 식약청장이 생동성을 인정한 품목에 해당하는 경우에는 그 처방전을 발행한 의사 또는 치과의사의 사전 동의 없이 대체조제할 수 있고, 생동성을 인정받은 복제의약품에 대해 그 약가상한금액을 최고가의 80%까지 올려주는 약가우대정책(2002. 12. 31. 개정된 보건복지부 고시인 ‘신의료기술 등의 결정 및 조정기준’)이 2003. 1. 1.부터 2006. 2. 22.까지 시행됐다가 폐지됐다. </p><p>       나. 피고 메디카코리아와 피고 랩프런티어 사이에 체결된 연구용역계약 및 의약품의 제조허가 등</p><p>       피고 메디카코리아는 위더스메디팜 주식회사(이하 ‘위더스메디팜’)가 제조하는 복제의약품인 플루겐정을 판매하기 위해 위더스메디팜이 플루겐정을 위탁 제조하는 것을 전제로 2004. 5. 18.자로 품목신고를 했고 식약청장은 2004. 6. 4. 플루겐정에 대해 생동성인정품목으로 공고했으며, 이에 기초해 보건복지부장관은 2004. 8. 9. 플루겐정을 요양급여대상으로 등재 고시(상한가 개당 267원, 2004. 9. 1.시행)했다. 위더스메디팜은 이미 식약청장으로부터 플루겐정에 대한 생동성을 인정받았는데, 생동성을 인정받은 품목의 제조업소에 그 품목과 동일한 처방 및 동일한 제조방법으로 완제품 포장을 제외한 전 공정을 위탁 제조하는 의약품인 경우에는 생동성시험자료 등의 제출이 면제돼 피고 메디카코리아가 품목신고를 할 당시 별도로 생동성시험자료 등을 제출하지 않았다. </p><p>      그 후 피고 메디카코리아는 플루겐정을 직접 제조하기로 계획해 2005. 1. 11.경 피고 랩프런티어와 자신이 제조하는 플루겐정(제품명임, 성분명은 탈니플루메이트 370mg)과 오리지널 의약품 간의 생동성시험을 의뢰하는 연구용역 계약을 체결했다.</p><p>      플루겐정에 대한 생동성시험을 진행할 당시 피고 3은 피고 랩프런티어의 대표이사, 피고 3은 기술고문이자 외부 심사위원회의 위원장, 피고 5는 수석연구원, 피고 6은 시험책임자, 피고 7은 분석연구원이었으며, 그 연구용역대금은 40,000,000원(부가가치세 별도)이었다. </p><p>     피고 3은 2005. 8. 10.부터 2005. 9. 26.까지 시험연구원들과 함께 생동성시험을 한 다음 그 시험결과보고서를 피고 메디카코리아에 제출했고, 피고 메디카코리아는 2005. 9. 30. 그 시험결과보고서를 식약청에 제출했으며 2005. 11. 25. 플루겐정의 제조방법을 위탁 제조에서 자체 제조로 변경하는 내용으로 플루겐정 제조방법 등 변경신고를 했다. 보건복지부장관은 2006. 2. 17. 요양급여대상목록상의 플루겐정의 상한가를 263원으로 변경하는 내용으로 고시(2006. 3. 1. 시행)했다. </p><p>     다. 식약청장의 생동성인정품목공고 삭제처분 등 </p><p>     식약청은 2006. 3.경부터 피고 랩프런티어가 보관하고 있던 컴퓨터 하드디스크에 저장된 플루겐정 생동성시험자료를 CD로 제출받아 식약청에 제출된 플루겐정 생동성시험결과보고서에서의 시험자료와 대조하는 방식으로 조사한 결과 동일한 샘플을 두 번 분석한 뒤 분석한 데이터를 사용하지 않고 다른 샘플의 데이터를 사용한 경우(별지 1  시험데이터조작유형 중 유형3)가 139건이 있다고 판단했다.</p><p>     이에 식약청장은 2006. 4. 25.경 플루겐정의 생동성시험자료가 조작됐다는 이유로 플루겐정에 대한 생동성인정품목공고 삭제처분을 했고, 보건복지부장관은 2006. 6. 16. 플루겐정의 가격을 82원으로 변경하는 내용을 고시하면서 그 시행일을 2006. 7. 1.로 정했으며, 2007. 9. 20. 플루겐정을 요양급여대상에서 삭제하는 내용을 고시했다. </p><p>    라. 관련 형사사건의 진행경과</p><p>      한편 피고 3, 4, 5, 6은 <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2007고단7222" href="#//">2008. 8. 20. 서울중앙지방법원 2007고단7222, 2008고단2559(병합)</a></span> 사건에서 플루겐정을 포함해 53개 의약품의 시험결과보고서를 별지 1 기재와 같은 방법으로 조작해서 식약청의 직무집행을 방해했다는 범죄사실로 피고 3은 징역 2년에 집행유예 3년, 피고 4는 징역 1년에 집행유예 2년, 피고 5는 벌금 10,000,000원, 피고 6은 벌금 5,000,000원을 각 선고받았고, 항소심법원에서 2008. 11. 26. 위 피고들의 항소가 기각됐으며(<span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2008노2947" href="#//">서울중앙지방법원 2008노2947호</a></span>), 2009. 7. 9. 위 피고들의 상고가 기각됨으로써(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2008도11504" href="#//">대법원 2008도11504호</a></span>) 위 피고들에 대한 유죄판결이 확정됐다(피고 7은 기소유예처분을 받아 형사기소되지 않았다).</p><p>    마. 원고가 플루겐정과 관련해 지출한 요양급여비용</p><p>       피고 메디카코리아는 위더스메디팜에 위탁제조하거나 위탁제조가 종료된 후에는 자체 제조한 플루겐정을 의약품도매상인 주식회사 하나메딕스를 통해 요양기관들에 판매했는데, 피고 메디카코리아의 자체 제조가 허용된 2005. 11. 25.부터 2006. 6. 2.까지 환자들에게 투약·판매된 플루겐정의 수량은 330,889개, 그에 따른 요양급여비용은 60,752,576원이고, 그 전체 요양급여비용 중 환자본인부담금은 18,225,773원, 원고가 부담한 공단부담금은 42,526,803원이다.</p><p>   [인정근거 : 다툼 없는 사실, 갑 제1 내지 4, 15, 16호증(각 가지번호 포함, 이하 같다), 을가 제7 내지 9호증, 이 법원의 각 사실조회결과, 변론 전체의 취지]</p><p>   2. 원고의 나머지 피고들에 대한 청구</p><p>    가. 원고의 청구원인</p><p>        ‘피고 3, 4, 5, 6, 7(이하 ’피고 3 등‘)은 플루겐정에 대한 생동성시험결과 이상한 시험데이터가 발생하거나 비동등으로 나온 사실을 피고 메디카코리아에 통보하면 시험용역비를 지급받지 못하거나 향후 피고 메디카코리아로부터 다른 복제의약품에 대한 생동성시험의뢰가 중단될 것을 우려해 시험데이터를 조작해서 시험자료가 적정한 것처럼 만들었다. 따라서 피고 3 등은 고의로 생동성시험자료를 조작한 자로 공동불법행위책임을 져야 하고, 피고 랩프런티어는 그 사용자임을 이유로 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">민법 제756조</a></span>에 의해(다만 피고 3은 피고 랩프런티어의 대표이사이므로 피고 3에 관해서는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|35|">민법 제35조</a></span>에 의해) 피고 3 등과 각자 원고에게 손해를 배상할 의무가 있다. 이러한 피고 3 등의 공동불법행위가 없었더라면 플루겐정이라는 의약유사품에 대한 제조품목허가가 나지 않았을 것이고 요양급여목록에 등재되지도 않았을 것이며, 원고가 약제비를 요양기관들에게 요양급여비용으로 지급하지도 않았을 것이다. 그런데 원고는 피고 3 등의 공동불법행위로 인해 플루겐정과 관련해서 원고 공단부담금 42,526,803원뿐만 아니라 환자본인부담금 18,225,773원을 포함한 요양급여비용 합계 60,752,576원이 지출되는 손해를 입었으므로 나머지 피고들은 각자 원고에게 위 금원 및 이에 대한 지연손해금을 지급할 의무가 있다.‘</p><p>     나. 민법상 불법행위 해당여부</p><p>       원고의 위 주장은 피고 3 등의 행위가 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>의 불법행위에 해당함을 전제로 하고 있으므로 우선 피고 3 등의 행위가 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>에 해당하는지를 살펴본다.</p><p>      이 사건에서 원고가 주장하는 피고 3 등의 가해행위는 플루겐정에 관한 생동성시험자료조작행위이고 원고가 주장하는 손해는 플루겐정에 대한 환자본인부담금을 포함한 전체 요양급여비용의 지출이다. 그런데 생동성시험자료조작행위라는 개념은 지나치게 모호하고 다의적인 개념으로서 앞서 본 본 형사판결에 나타난 것만으로도 여러 유형을 포섭하고 있는데, 아래에서 보는 여러 사정 등을 종합해 볼 때, 생동성시험을 진행하면서 원래의 시험데이터를 토대로 통계처리를 하더라도 동등한 것으로 나올 때 시험데이터를 조작하거나 시험데이터를 수정하거나 자료 불일치 현상이 일어난 경우만으로는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>에서 말하는 위법한 가해행위에 해당한다고 보기 부족하다. 즉 1) 생동성시험과 관련된 법 규정은 약사법 및 약사법시행규칙이 있는데(규정 내용은 별지 2 참조), 여기에는 시험기관이 생동성시험을 진행하거나 시험성적서 또는 시험결과보고서를 작성할 때 준수해야 할 부분에 관해 아무런 규정이 없고, 식약청 고시인 「생물학적동등성시험기준」에 생동성시험의 구체적인 절차나 기준에 마련돼 있을 뿐이며, 현재로서는 생동성시험자료조작행위를 처벌하는 약사법상의 규정이 없어(한편 약사법은 2011. 6. 7. 제10788호로 개정되면서 비로소 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|2|">제2조 제17호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|34|">제34조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|34|2">제34조의2</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|69|">제69조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|74|">제74조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|76|">제76조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|76|2">제76조의2</a></span>에서 생동성시험에 관한 규정을 두게 됐고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="약사법|95|">제95조 제1항 6의2</a></span>에서 생동성시험성적서를 거짓으로 작성 · 발급한 자를 처벌하는 규정을 두게 됐으나 그 시행일자는 2012. 6. 8.로 돼 있다), 현재까지도 생동성시험절차의 엄격한 준수 자체를 요구하는 법규 자체가 존재하지 않는 상태인 점, 2) 보건복지부는 건강보험에 필요한 제도와 정책을 결정하고 원고는 그 정책을 집행하는 기관이며[국민건강보험법에 의하면, 그 법에 의한 건강보험사업은 보건복지부장관이 관장하고(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|2|">제2조</a></span>), 원고는 건강보험의 보험자이며(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|12|">제12조</a></span>), 보건복지부장관은 원고의 업무에 대한 지정권(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|13|">제13조 제1항 제12호</a></span>), 원고의 정관변경에 대한 인가권(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|16|">제16조 제2항</a></span>), 원고의 이사장에 대한 임명제청권(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|19|">제19조 제2항</a></span>) 등을 가지고 있다], 식약청은 보건복지부 산하 기관인데, 보건복지부와 식약청은 생동성시험자료조작행위에 대한 제재나 예방과 관련된 여러 권한들(품목허가취소, 생동성인정품목공고삭제, 요양급여목록삭제, 회수 및 폐기명령 등)을 이미 가지고 있는 점, 3) 위와 같은 생동성시험자료조작의 경우에도 품목허가취소나 생동성인정품목공고삭제 등 행정처분의 사유로 될 수 있고 위계에 의한 공무집행방해 행위에 해당돼 형사처벌의 대상이 될 수도 있으나, 행정법상 행정행위취소권의 요건이나 형법상 공무집행방해죄의 구성요건, 민법상 불법행위로 인한 손해배상청구권의 요건 및 판단절차는 서로 엄격히 구분되는 점, 4) 국민건강보험법에 의하면, 원고는 국민의 질병 · 부상에 대한 예방 · 진단 · 치료 · 재활과 출산 · 사망 및 건강증진에 대해 보험급여를 실시함으로써 국민보건을 향상시키고 사회보장을 증진함을 목적으로 하는 공적 재단법인(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|1|">제1조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|13|">제13조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|14|">제14조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|38|">제38조</a></span> 등)으로, 사위 기타 부당한 방법으로 보험급여를 받은 자 또는 보험급여비용을 받은 요양기관에 대해 그 급여 또는 급여비용에 상당하는 금액의 전부 또는 일부를 징수할 수 있는 권한을 가지고 있고(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">제52조</a></span>), 국민으로부터 보험료를 징수할 때도 세금처럼 국세체납처분의 예에 의하여 징수할 수 있으며(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|70|">제70조 제3항</a></span>), 가입자 및 피부양자의 자격 · 보험료등 · 보험급여 및 보험급여비용에 관한 원고의 처분에 이의가 있는 자는 건강보험분쟁조정위원회에서의 심판청구를 거쳐 행정소송을 제기할 수 있는 등(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|77|">제77조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|78|">제78조</a></span>), 특별한 법적 보호를 받고 있으나 원고가 민법상 불법행위책임을 청구하는 이 사건에서 통상의 민사소송의 경우와 달리 입증책임을 완화할 특별한 사정이 있다거나 그 필요성이 인정되지는 않는 점 등이 그것이다. 따라서 생동성시험이 복제의약품의 안전성 · 유효성에 대한 최소한의 기준인 점을 감안한다 하더라도, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>에서 말하는 위법한 가해행위에 해당하는 생동성시험조작행위는 적어도 생동성시험 자체를 진행하지 않고 다른 복제의약품에 관한 생동성시험 데이터를 임의로 끌어다 쓰거나, 생동성시험을 진행했으나 원래의 시험데이터를 토대로 통계처리를 하면 동등한 것으로 나오지 않는 경우에 데이터를 조작해 마치 동등한 것으로 나온 것처럼 만드는 등 민사법의 시각에서 위법행위로 평가되는 것이어야 하며 이러한 구체적인 행위 유형 및 그 위법성에 대한 주장·입증책임은 원고에게 있다. </p><p>       이 사건에서 보건대, 피고 3 등의 플루겐정 생동성시험자료조작이 생동성시험 자체를 진행하지 않고 다른 복제의약품에 관한 생동성시험 데이터를 끌어다 쓰는 유형이 아님은 앞서 바와 같고 그 외 어떻게 생동성시험자료조작행위가 있었는지에 대한 구체적인 주장·입증이 없다. 즉 식약청은 플루겐정 생동성시험자료를 조사한 결과 분석한 데이터를 사용하지 않고 다른 샘플의 데이터로 사용한 경우가 139건이 있다고 해 앞서 본 처분을 했고 형사판결에서는 시험자료조작이 문제된 의약품 53건에 대한 자료조작이 각 어떤 유형인지 명확히 구분되지 않은 채 모두 위계에 의한 공무집행방해 행위로 인정됐다. 이처럼 별개의 절차에서 인정된 사실이 행정처분이나 위계에 의한 공무집행방해라는 형사처벌을 정당화하는 것은 별론으로 하고 그 자체로서 곧바로 이 사건 민사소송절차에서 원고가 자신의 법익이 침해됐다며 청구원인으로 내세운 원고에 대한 민사상 불법행위의 요건사실로 충분한 것은 아니다. 그러므로 피고 3 등에 관한 형사판결만으로는 이 사건에 있어서 피고 3 등이 플루겐정 생동성시험자료조작에 관여한 행위가 원고에 대한 관계에서 민법상 불법행위에 해당한다고 단정하기에 부족하며 달리 이를 인정할 증거가 없다(원고는 피고 3 등의 구체적인 위법행위 내용을 밝히기 위해 식약청에 보관 중인 생동성시험보고서를 토대로 주장을 정리하고 입증하겠다고 했으나 식약청과 협조가 되지 않는다는 이유로 이 사건에 관한 직접적인 증거라고 할 수 있는 생동성시험보고서를 제출하지 않았고 그밖에 이 점에 관해 추가로 구체적인 주장·입증을 하지 못했다). </p><p>      따라서 위법한 가해행위가 존재함을 전제로 한 원고의 피고 3 등에 대한 손해배상청구원인에 관한 주장내용은 더 나아가 살펴볼 필요 없이 이유 없고, 피고 랩프런티어에 대한 사용자책임에 관한 주장도 이유 없다.</p><p>     다. 환자본인부담금 부분에 대한 추가 판단</p><p>       원고는 환자본인부담금을 원고의 손해액에 포함시켜 주장하고 있는데, 아래에서 보는 바와 같은 이유로도 원고의 이 부분 주장은 이유 없다. </p><p>       즉 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|43|">국민건강보험법 제43조 제3항</a></span>에서는 원고가 요양급여비용을 요양기관에게 지급시 이미 과다 납부된 본인부담금이 있는 경우 이를 공제해 그 금액을 가입자에게 환급하도록 규정하고 있으나, 이는 요양기관에 대한 원고의 요양급여비용 지급과정에서 과다 납부된 본인일부부담금의 환수를 위한 절차적 편의를 위해 마련된 규정일 뿐, 원고가 요양기관에게 플루겐정을 판매한 제약회사 등을 상대로 불법행위로 인한 손해배상청구를 구하고 있는 이 사건에는 위 규정이 적용 내지 유추적용될 여지가 없고, 그 밖에 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|734|">민법 제734조</a></span>의 사무관리 규정이나 조리에 의해 원고가 타인의 권리를 소송상 행사할 수 있다거나 건강보험가입자들을 위한 소송수행권이 인정된다고 볼 수도 없다. </p><p>   3. 피고 메디카코리아에 대한 청구</p><p>    가. 주위적 청구(공동불법행위를 원인으로 한 손해배상청구)</p><p>     (1) 원고의 청구원인</p><p>        ‘피고 메디카코리아는 플루겐정에 관해 피고 랩프런티어로부터 생동성이 인정된다는 시험결과보고서를 제출받을 당시 시험자료 조작사실을 알았음에도 이를 묵인해  피고 3 등의 위법행위를 공모 또는 방조했고, 설사 시험자료 조작사실을 몰랐다고 하더라도 생물학적동등성시험기준(2002. 11. 22. 식약청 고시 제2002-60호) 및 의약품임상시험관리기준(2000. 1. 4. 식약청 고시 제1999-67호)에 따라 시험기관을 관리·감독할 의무가 있음에도 생동성 시험자료의 제출이나 보완을 요청하는 등의 조치를 하지 않아 피고 3 등의 위법행위를 발생시켰고, 이로 말미암아 원고는 플루겐정에 관한 요양급여비용과 본인일부부담금(이하 ‘요양급여비용 등’)을 지급하는 손해를 입었다. 따라서 피고 메디카코리아는 원고에게 공동불법행위자로서, 나머지 피고들과 각자 위법행위로 말미암은 손해로서 플루겐정에 관해 지급된 요양급여비용 등을 각 지급할 의무가 있다.‘  </p><p>       (2) 판단</p><p>         나머지 피고들의 불법행위가 인정되지 않음은 앞서 본 바와 같으므로 피고 메디카코리아에 대한 청구는 나머지 점에 더 나아가 살펴볼 필요 없이 이유 없다.</p><p>     나. 예비적 청구에 관한 판단</p><p>       (1) 원고의 제1예비적 주장</p><p>          (가) 원고의 청구원인</p><p>       ‘요양기관은 제약회사로부터 매입한 약품가격과 동일하게 원고와 건강보험가입자에게 요양급여비용과 본인일부부담금을 청구함으로써 의약품판매로 어떠한 이익도 남기지 못하기 때문에 요양급여비용 등의 지급으로 말미암아 실질적으로 이득을 얻는 주체는 제약회사인데, 플루겐정에 관한 제조품목허가취소, 약제목록등재삭제의 효력이 소급적으로 발생함에 따라 해당 복제의약품에 관한 요양급여비용 등의 지급은 법률적 원인을 상실했다. 따라서 피고 메디카코리아는 원고에게 플루겐정에 관해 지급된 요양급여비용 등 상당액을 부당이득으로 반환할 의무가 있다.’  </p><p>          (나) 판단</p><p>         원고의 위 주장은 원고가 피고 메디카코리아에 대해 직접 부당이득반환을 청구할 수 있음을 전제로 한다. 그런데 플루겐정에 관한 요양급여비용 등은 피고 메디카코리아가 아닌 요양기관에게 지급됐으므로, 원고의 주장과 같이 요양기관에게 지급된 요양급여비용 등이 법률상 원인 없는 것이라고 가정하더라도 원고가 요양기관에 대해서 부당이득으로 요양급여비용의 반환을 청구하는 것은 별론으로 하고, 피고 메디카코리아가 법률상 원인 없이 타인의 재산으로 인해 이익을 얻고 이로 인해 원고에게 손해를 가하였다고 볼 수는 없다.</p><p>          따라서 원고의 제1예비적 주장은 이유 없다.</p><p>       (2) 원고의 제2예비적 주장 </p><p>         (가) 원고의 청구원인</p><p>          ‘플루겐정에 관한 제조품목허가취소, 약제목록등재삭제의 효력이 소급적으로 발생함에 따라, 원고는 요양기관에 대하여 해당 복제의약품에 관한 요양급여비용 등 지급액 상당의 부당이득반환청구권을 갖는다. 또한 요양기관은 피고 메디카코리아로부터 플루겐정을 사실은 해당 복제의약품이 허위의 생동성시험보고서를 토대로 제조품목허가를 받아 시중에 유통될 수 없는 의약품인데도 정상적으로 제조품목허가를 받은 것으로 기망당하거나 착오해서 매수했다. 따라서 원고는 요양기관에 대한 위 부당이득반환청구권을 보전하기 위해 요양기관을 대위해서 피고 메디카코리아에게 해당 복제의약품에 관한 매매계약이 사기 또는 착오로 취소됐다는 이유로 요양급여비용 등 상당의 부당이득금을 청구하거나, 정상적으로 제조품목허가받은 해당 복제의약품을 제공하지 못한 채무불이행으로 말미암은 요양급여비용 등 상당의 손해배상금을 청구한다.’</p><p>        (나) 판단</p><p>           원고는 요양기관에 대한 플루겐정의 요양급여비용 등 상당의 부당이득반환청구권을 보전하기 위해 요양기관을 대위해 피고 메디카코리아에게 부당이득반환청구와 손해배상청구를 하고 있다. 위와 같이 금전채권의 보전을 위해 채권자대위권을 행사하기 위해서는 채무자인 요양기관이 무자력임이 인정되어야 하나, 이를 인정할 아무런 자료가 없으므로, 원고의 이 부분 청구는 부적법하다. </p><p>           이에 대해 원고는, 피보전채권인 원고의 요양기관에 대한 부당이득반환채권과 피대위권리인 요양기관의 피고 메디카코리아에 대한 부당이득반환채권, 손해배상채권은 모두 피고 3 등의 위법행위로 말미암아 발생했으므로 밀접한 관련이 있는 점, 요양급여비용 등을 지급받은 요양기관은 다수이나 요양기관이 피고 메디카코리아에 대해 가지는 부당이득반환채권 또는 손해배상채권의 액수는 소액이기 때문에 개별적인 환수절차를 밟기가 어려운 점, 원고가 요양기관에 대하여 부당이득반환청구를 하는 경우 요양기관은 다시 피고 메디카코리아에게 부당이득반환청구를 할 것인 점 등에 비추어 볼 때, 원고가 요양기관을 대위함에 있어 요양기관의 무자력을 요건으로 하지 않는다고 주장하나, 위와 같은 사정만으로는 원고가 요양기관의 권리를 대위해 행사하지 않으면 원고의 채권에 관한 완전한 만족을 얻을 수 없게 될 위험이 있어 요양기관의 권리를 대위해 행사하는 것이 원고의 채권에 관한 현실적 이행을 유효·적절하게 확보하기 위해 필요하다고 보기 어려울 뿐만 아니라, 원고가 자력 있는 요양기관을 대위해 부당이득반환채권 또는 손해배상채권을 행사하는 것은 요양기관의 자유로운 재산관리행위에 대한 부당한 간섭이 되기도 하므로, 원고의 위 주장은 이유 없다.</p><p>   4. 결론</p><p>     그렇다면 피고 메디카코리아에 대한 소 중 채권자대위를 원인으로 한 예비적 청구부분은 부적법하여 각하하고, 원고의 피고 메디카코리아에 대한 주위적 청구 및 나머지 예비적 청구, 나머지 피고들에 대한 청구는 이유 없어 모두 기각할 것인바, 피고 메디카코리아에 대한 제1심 판결은 이와 결론을 같이 해 정당하므로 원고의 피고 메디카코리아에 대한 항소를 기각하고, 나머지 피고들에 대한 제1심 판결은 이와 결론을 일부 달리 하여 부당하므로 나머지 피고들의 항소를 받아들여 제1심 판결 중 나머지 피고들의 패소 부분을 취소하고 이 부분에 해당하는 원고의 나머지 피고들에 대한 청구를 각 기각하며, 원고의 나머지 피고들에 대한 항소도 이유 없어 모두 기각하기로 하여 주문과 같이 판결한다.</p><p>   [별지 2 관련 법령 생략]</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   윤성근(재판장) 문보경 강혁성 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

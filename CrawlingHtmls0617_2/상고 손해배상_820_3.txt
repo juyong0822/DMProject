@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2012다65973 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2208717';
+var contIdEtc = '';
+var saNo = '2012다65973';
+var sngoNm = '선고';
+var saNm = '기타(금전)';
+try {
+	var sngoDay=('20160714' ? 
+			'20160714'.length==4 ? Date.parseExact('20160714','yyyy').toString('yyyy. M. d.') : 
+				'20160714'.length==6 ? Date.parseExact('20160714','yyyyMM').toString('yyyy. M. d.') : 
+					'20160714'.length==8 ? Date.parseExact('20160714','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012다65973 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2012다65973';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2012다65973</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(2)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2245125">대법원 2017. 11. 29. 선고 2016다259769 판결 [공2018상,25]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|824522">기업인수합병시 이행보증금의 법적 성격과 감액 가능성에 대한 연구 @ 대법원 2016714 선고 2012다65973판결을 중심으로 최승재 三宇社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|835235">위약벌과 손해배상액 예정의 구별 박정제 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|835235">박정제 위약벌과 손해배상액 예정의 구별 대법원판례해설 제109호 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|832940">권영준 세밀한 정의를 향한 여정 : 박병대 대법관의 민사판결 분석 법과 정의 그리고 사람:. 박병대 대법관 재임기념 문집(2017)   / 사법발전재단  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다42632">대법원 2001. 1. 19. 선고 2000다42632 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다9034">대법원 2009. 7. 9. 선고 2009다9034 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2014다3115">대법원 2016. 3. 24. 선고 2014다3115 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|398|0|null">민법 제398조 제4항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|398|0|null">민법 제398조 제4항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다9034">대법원 2009. 7. 9. 선고 2009다9034 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2014다3115">대법원 2016. 3. 24. 선고 2014다3115 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2014다3115">위 대법원 2014다3115 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|398|0|null">민법 제398조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|398|0|null">민법 제398조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|398|0|null">민법 제398조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2011나26010">서울고법 2012. 6. 14. 선고 2011나26010 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2016. 7. 14. 선고 2012다65973 판결</h2><p class="sub_title">[기타(금전)][공2016하,1111]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 위약금이 위약벌로 해석되기 위한 요건 및 위약금의 법적 성질을 판단하는 방법</p>
+<p></p>
+<p></p><p>[2] 기업인수를 위한 주식 매매와 관련하여 매수인들을 대리한 갑 주식회사와 매도인들을 대리한 을 은행이 양해각서를 체결하면서 ‘매수인들의 책임 있는 사유로 양해각서가 해제되는 경우 매수인들이 기납부한 이행보증금 및 그 발생이자는 위약벌로 매도인들에게 귀속된다’는 조항을 둔 사안에서, 이행보증금은 손해배상액의 예정으로서의 성질을 가진다고 한 사례</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 위약금은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">민법 제398조 제4항</a></span>에 의하여 손해배상액의 예정으로 추정되므로, 위약금이 위약벌로 해석되기 위해서는 특별한 사정이 주장·증명되어야 하며, 계약을 체결할 당시 위약금과 관련하여 사용하고 있는 명칭이나 문구뿐만 아니라 계약 당사자의 경제적 지위, 계약 체결의 경위와 내용, 위약금 약정을 하게 된 경위와 교섭과정, 당사자가 위약금을 약정한 주된 목적, 위약금을 통해 이행을 담보하려는 의무의 성격, 채무불이행이 발생한 경우에 위약금 이외에 별도로 손해배상을 청구할 수 있는지 여부, 위약금액의 규모나 전체 채무액에 대한 위약금액의 비율, 채무불이행으로 인하여 발생할 것으로 예상되는 손해액의 크기, 당시의 거래관행 등 여러 사정을 종합적으로 고려하여 위약금의 법적 성질을 합리적으로 판단하여야 한다.</p>
+<p></p><p></p><p>[2] 기업인수를 위한 주식 매매와 관련하여 매수인들을 대리한 갑 주식회사와 매도인들을 대리한 을 은행이 양해각서를 체결하면서 ‘매수인들의 책임 있는 사유로 양해각서가 해제되는 경우 매수인들이 기납부한 이행보증금 및 그 발생이자는 위약벌로 매도인들에게 귀속된다’는 조항을 둔 사안에서, 위 조항을 양해각서의 다른 조항들과 함께 살펴보면 매수인들의 귀책사유로 양해각서가 해제됨으로써 발생하게 될 모든 금전적인 문제를 오로지 이행보증금의 몰취로 해결하고 기타의 손해배상이나 원상회복청구는 명시적으로 배제하여 매도인들에게 손해가 발생하더라도 매도인들은 이에 대한 손해배상청구를 할 수 없도록 한 것인 점, 당사자들이 진정으로 의도하였던 바는 이행보증금을 통하여 최종계약 체결을 강제하는 한편 향후 발생할 수 있는 손해배상의 문제도 함께 해결하고자 하였던 것으로 보이는 점 등을 종합하면, 이행보증금은 손해배상액의 예정으로서의 성질을 가진다고 한 사례.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">제398조 제4항</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">제398조 제4항</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다42632|판결" href="#//">대법원 2001. 1. 19. 선고 2000다42632 판결</a></span>(공2001상, 513)<br /><span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다9034|판결" href="#//">대법원 2009. 7. 9. 선고 2009다9034 판결</a></span><br /> <span id="link"><a name="linkContPanre" title="새창" type="대법원|2014다3115|판결" href="#//">대법원 2016. 3. 24. 선고 2014다3115 판결</a></span></p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 상고인】
+한화케미칼 주식회사 (소송대리인 법무법인(유한) 화우 외 2인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피상고인】
+한국산업은행 외 1인 (소송대리인 법무법인 광장 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2011나26010|판결" href="#//">서울고법 2012. 6. 14. 선고 2011나26010 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 서울고등법원에 환송한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지난 후에 제출된 상고이유보충서 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 상고이유 제3점에 대하여</p><p>  원심은 그 채택 증거를 종합하여 판시와 같은 사실을 인정한 다음, ① 한화컨소시엄을 대리한 원고는 2008. 11. 14. 피고들을 대리한 피고 한국산업은행(이하 ‘피고 산업은행’이라고만 한다)과 사이에 피고들이 보유하고 있는 대우조선해양 주식회사(이하 ‘대상회사’라고 한다) 발행의 이 사건 주식 매매와 관련하여 이 사건 양해각서를 체결한 점, ② 이 사건 양해각서에는, 이 사건 양해각서가 매도인들과 매수인들 사이에서 법적인 구속력이 있고, 원고 측은 매매대금의 5%에 해당하는 이행보증금을 납부한 다음 대상회사 및 그 계열회사에 대한 확인실사를 할 수 있으나, 확인실사가 이루어지지 않는 경우에도 2008. 12. 29.까지 최종계약을 체결하기로 하는 대신, 거래종결시한으로 정한 2009. 3. 30.까지 원고 측에게 책임 없는 사유로 확인실사나 가격조정절차가 완료되지 아니하면 원고 측이 최종계약을 해제하고 계약금 원금 및 이자 전액을 돌려받을 수 있다고 규정하고 있는 점, ③ 확인실사가 반드시 최종계약 체결 전에 선행되어야 하는 것은 아니고, 사적 자치의 원칙상 당사자 의사에 따라 최종계약 체결 이후에 확인실사를 하기로 정할 수도 있는 점 등을 이유로, 원고 측은 이 사건 양해각서에서 정한 바에 따라 최종계약 체결기한인 2008. 12. 29. 무렵 확인실사가 완료 또는 개시되었는지 여부를 불문하고 그 체결기한까지 최종계약을 체결할 의무를 부담한다고 판단하였다. 이어 원심은, 원고 측이 대상회사의 자산가치 하락, 자금조달비용의 급증, 확인실사 미실시 등의 사정을 들어 매각대금의 분할 납부, 이 사건 주식의 분할매각, 확인실사 후 최종계약 체결 등 본입찰제안서나 이 사건 양해각서 등의 내용과 명백히 상반되는 주장 및 요구를 하며 2008. 12. 29.까지 최종계약 체결을 거부한 데에는 정당한 이유가 없고 원고 측의 책임 있는 사유로 양해각서가 해제되었으므로, 이는 이 사건 양해각서 제12조 제2항이 규정하고 있는 ‘매수인들이 본입찰제안서, 본 양해각서 및 매수인들이 본건 거래의 조건에 관한 매수인들의 최종 입장으로서 매도인들에게 서면으로 통지한 내용과 상반된 주장을 하는 등 매수인들의 책임 있는 사유로 양해각서가 해제되는 경우에는, 매수인들이 기납부한 이행보증금 및 그 발생이자는 위약벌로 매도인들에게 귀속된다’는 조항에 해당한다고 판단하였다.</p><p>  원심판결 이유를 기록에 비추어 살펴보면, 원심의 위와 같은 판단은 정당하고, 거기에 상고이유 주장과 같이 이 사건 양해각서 제12조 제2항이 규정한 이행보증금의 매도인 귀속 요건이나 정당한 사유의 해석에 관한 법리를 오해하거나 논리와 경험의 법칙을 위반하여 자유심증주의의 한계를 벗어난 잘못이 없다.</p><p>  한편 원고는 이 부분 상고이유로, 이 사건 양해각서 중 확인실사의 완료 여부를 불문하고 원고 측이 2008. 12. 29.까지 최종계약을 체결할 의무를 부담하게 한 조항이 사적 자치의 합리적인 범위를 벗어나 계약불체결의 자유를 본질적으로 침해하고 양해각서의 본질에 반하므로 무효라는 주장도 하나, 앞서 살펴본 바와 같이 원고와 피고 산업은행 사이의 합의에 따라 확인실사의 완료 여부를 최종계약의 체결이 아닌 그 거래종결의 선행조건으로 정하였다고 하여 그것이 사적 자치의 합리적인 범위를 벗어나 계약불체결의 자유를 본질적으로 침해하거나 양해각서의 본질에 반하여 무효라고 볼 수 없으므로, 원고의 위 주장도 받아들일 수 없다.</p><p>  2. 상고이유 제2점에 대하여</p><p>  가. 이 사건 양해각서 제12조 제2항에서와 같이 ‘매수인들의 책임 있는 사유에 의하여 양해각서가 해제되는 경우에 매수인들이 납부한 이행보증금 및 그 발생이자는 매도인들에게 귀속된다’고 정한 것이 위약벌 약정인지 아니면 손해배상액 예정인지는 구체적 사건에서 개별적으로 결정할 의사해석의 문제이다. 그런데 <span class="accrnt_txt">위약금은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|" style="text-decoration:underline">민법 제398조 제4항</a></span>에 의하여 손해배상액의 예정으로 추정되므로, 위약금이 위약벌로 해석되기 위해서는 특별한 사정이 주장·증명되어야 하며</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다9034|판결" href="#//">대법원 2009. 7. 9. 선고 2009다9034 판결</a></span>, <span id="link"><a name="linkContPanre" title="새창" type="대법원|2014다3115|판결" href="#//">대법원 2016. 3. 24. 선고 2014다3115 판결</a></span> 등 참조), <span class="accrnt_txt">계약을 체결할 당시 위약금과 관련하여 사용하고 있는 명칭이나 문구뿐만 아니라 계약 당사자의 경제적 지위, 계약 체결의 경위와 내용, 위약금 약정을 하게 된 경위와 그 교섭과정, 당사자가 위약금을 약정한 주된 목적, 위약금을 통해 그 이행을 담보하려는 의무의 성격, 채무불이행이 발생한 경우에 위약금 이외에 별도로 손해배상을 청구할 수 있는지 여부, 위약금액의 규모나 전체 채무액에 대한 위약금액의 비율, 채무불이행으로 인하여 발생할 것으로 예상되는 손해액의 크기, 그 당시의 거래관행 등 여러 사정을 종합적으로 고려하여 위약금의 법적 성질을 합리적으로 판단하여야 한다.</span></p><p>  한편 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">민법 제398조</a></span>가 규정하는 손해배상액의 예정은 채무불이행의 경우에 채무자가 지급하여야 할 손해배상액을 미리 정해두는 것으로서 그 목적은 손해의 발생사실과 손해액에 대한 증명 곤란을 배제하고 분쟁을 사전에 방지하여 법률관계를 간이하게 해결하는 것 외에 채무자에게 심리적으로 경고를 줌으로써 채무이행을 확보하려는 데 있다. 따라서 채무자가 실제로 손해발생이 없다거나 손해액이 예정액보다 적다는 것을 증명하더라도 이 점만으로 채무자는 그 예정액의 지급을 면하거나 감액을 청구하지 못한다. 여기서 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">민법 제398조 제2항</a></span>에 의하여 법원이 예정액을 감액할 수 있는 ‘부당히 과다한 경우’란 손해가 없다든가 손해액이 예정액보다 적다는 것만으로는 부족하고, 계약자의 경제적 지위, 계약의 목적 및 내용, 손해배상액 예정의 경위 및 거래관행 기타 여러 사정을 고려하여 그와 같은 예정액의 지급이 경제적 약자의 지위에 있는 채무자에게 부당한 압박을 가하여 공정성을 잃는 결과를 초래한다고 인정되는 경우를 뜻하는 것으로 보아야 한다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2014다3115|판결" href="#//">위 대법원 2014다3115 판결</a></span> 등 참조).</p><p>  나. 원심은 그 판시와 같은 이유로, 이 사건 양해각서 체결 당시 당사자들 사이에 계약체결을 강제하기 위하여 이행보증금을 감액이 허용되지 아니하는 위약벌로 정하기로 하는 데 대한 의사의 합치가 있었다고 할 것이어서 이 사건 양해각서상의 이행보증금 몰취 조항은 위약벌로 봄이 상당하고, 이 사건 양해각서상의 위약벌 약정이 일반 사회관념에 비추어 현저히 공정성을 잃었다거나 공서양속에 반하여 그 전부 또는 일부가 무효라고 볼 수 없다고 판단하는 한편 설령 이행보증금 등의 몰취에 관한 조항이 손해배상액의 예정에 해당한다고 하더라도, 그 액수가 부당히 과다하다고 할 수 없으므로 이를 감액하지 아니함이 상당하다고 판단하였다.</p><p>  다. (1) 그러나 원심판결 이유 및 원심이 적법하게 채택한 증거들에 의하여 알 수 있는 다음과 같은 사정들을 앞서 본 법리에 비추어 살펴보면 위와 같은 원심의 판단은 그대로 수긍하기 어렵다.</p><p>  ① 이 사건 양해각서 제12조 제2항에는 ‘매수인의 귀책사유로 이 사건 양해각서가 해제되는 경우 매수인들이 기납부한 이행보증금 및 그 발생이자는 위약벌로 매도인들에게 귀속된다.’고 규정되어 있으나, 한편 제11조에는 ‘본 양해각서가 해제되는 경우, 매도인들이나 매수인들은 본 양해각서에서 규정한 권리의 행사 이외에는 본건 거래와 관련하여 상대방 당사자(또는 그의 임·직원, 자문사 등을 포함함)에게 어떠한 손해, 손실 또는 비용에 대한 배상이나 보전 기타 여하한 사유를 원인으로 한 청구도 하지 아니한다’고 규정되어 있고, 제12조 제4항에는 ‘매도인들과 매수인들은 본 양해각서가 해제될 경우, 본조 제2항, 제3항에 규정된 구제수단만이 유일한 구제수단이며, 기타의 손해배상이나 원상회복 등 일체의 다른 권리를 주장할 수 없음을 확인한다’고 규정되어 있다. ② 위 조항들을 함께 살펴보면, 매수인들의 귀책사유로 양해각서가 해제됨으로써 발생하게 될 모든 금전적인 문제를 오로지 이 사건 이행보증금의 몰취로 해결하고 기타의 손해배상이나 원상회복청구는 명시적으로 배제하여, 매도인들에게 손해가 발생하더라도 매도인들은 이에 대한 손해배상청구를 할 수 없도록 한 것으로 보인다. ③ 이 사건 양해각서 체결 당사자들이 진정으로 의도하였던 바는 이행보증금을 통하여 최종계약 체결을 강제하는 한편 향후 발생할 수 있는 손해배상의 문제도 함께 해결하고자 하였던 것으로 보이고, 이는 이 사건 양해각서 제12조 제4항에서 이행보증금 몰취를 유일한 ‘구제수단’으로 규정하면서 ‘기타’의 손해배상을 주장할 수 없다는 데에서 잘 드러난다. ④ 양해각서 단계에서 기업인수가 결렬될 경우 피고들이 입는 손해의 산정이 어려우므로 이행보증금에 손해배상에 관한 법률관계를 간편하게 처리하기 위한 기능이 있다는 점은 부정하기 어려우며, 막대한 금액이 걸린 계약을 체결하면서 오로지 사전적인 채무이행 확보에만 관심을 가지고 사후적인 손해의 처리는 전혀 고려의 대상에 두지 않았다고 당사자의 의사를 해석하는 것은 부자연스럽다. ⑤ 또한 손해배상액 예정의 목적은 손해의 발생사실과 손해액에 대한 증명 곤란을 배제하고 분쟁을 사전에 방지하여 법률관계를 간이하게 해결하는 것 외에도 채무자에게 심리적으로 경고를 줌으로써 채무이행을 확보하려는 데에도 있는 것이므로, 당사자가 채무이행의 확보에 중점을 두었다고 하여도 손해배상액의 예정으로서의 실질이 부정되지 아니한다. ⑥ 원고 측으로서는 대상회사의 재무상태 등에 대한 정보를 제대로 인식, 이해하지 못한 상황에서 이 사건 양해각서를 체결한 것으로 보인다. ⑦ 한편 피고들이 원고 측을 포함한 본입찰 적격자들에게 송부한 본입찰안내서에 첨부된 양해각서 초안에도 이행보증금을 위약벌로 몰취하는 조항(제12조 제2항)이 포함되어 있었으나, 당시 함께 송부된 본입찰안내서에 위 양해각서 초안에 수정제안사항이 있을 경우 양해각서 초안 수정요청서를 제출할 수 있지만 피고들이 수용하기 어려운 내용을 제시하는 경우 우선협상대상자 선정 대상에서 제외될 수 있다는 내용이 기재되어 있는 상황이었으므로, 우선협상대상자로 선정되기를 원하는 원고 측으로서는 위 위약벌 몰취 조항에 대하여 별다른 이의를 할 수 있는 상황이 아니었던 것으로 보인다. ⑧ 나아가 당초 본입찰안내서에 첨부된 양해각서 초안에는 대상회사에 대한 확인실사 및 가격조정 완료 후 최종계약을 체결하는 것으로 예정되어 있었다가(원고 측으로서도 최종계약 체결 전에 확인실사가 완료된다는 인식 아래에 입찰에 응하였을 것으로 보인다), 이 사건 양해각서의 협의 과정에서 피고 산업은행의 요구로 갑자기 이 사건 양해각서 제7조 제4항에 확인실사 실시와 상관없이 2008. 12. 29.까지 최종계약을 체결하기로 하는 조항이 삽입되어 거래구조가 근본적으로 변경되었는바, 그 과정에서 원고 측은 확인실사 없이 최종계약을 체결하는 위험에 대한 합리적 판단을 하지 못한 채 이러한 계약체결의무를 부담함은 물론, 이에 덧붙여 종전의 거래조건을 전제로 하였던 이행보증금 몰취 약정까지 그대로 하게 된 것으로 보인다.</p><p>  위와 같은 사정들을 종합하여 볼 때, 이 사건 이행보증금은 손해배상액의 예정으로서의 성질을 가지는 것으로 보아야 하고, 이는 이 사건 양해각서에서 ‘이행보증금 및 그 발생이자는 위약벌로 매도인들에게 귀속된다’고 규정하고 있다고 하여 달리 볼 것이 아니다.</p><p>  (2) 나아가, 원심판결 이유 및 원심이 적법하게 채택한 증거들에 의하면 다음과 같은 사정들을 알 수 있다.</p><p>  ① 워크아웃기업의 경우 협상 단계에서 미처 예상하지 못했던 우발채무가 발생하거나 자산가치가 실제보다 과장된 것으로 드러날 가능성도 배제할 수 없고, 특히 대상회사는 2001. 8. 26. 워크아웃절차를 종료한 후 7년이나 지나 기업인수가 추진되었다. ② 이 사건 양해각서에는 대상회사의 자산가치에 대한 진술 및 보장조항이 없고 매수인에 대한 편면적 위약금 규정만이 존재할 뿐이다. ③ 앞서 본 바와 같이 양해각서 초안에는 대상회사에 대한 확인실사 및 가격조정 완료 후 최종계약을 체결하는 것으로 예정되어 있었다가, 이 사건 양해각서의 협의 과정에서 피고 산업은행의 요구로 이 사건 양해각서에 확인실사 실시와 상관없이 2008. 12. 29.까지 최종계약을 체결하기로 하는 조항이 삽입되어 거래구조가 변경되었음에도 불구하고, 종전의 거래조건을 전제로 하였던 매도인 면책규정 등 매수인에게 불리한 규정들이 이 사건 양해각서에 포함되게 되었다. ④ 원고 측은 막대한 이행보증금을 지급하고도 확인실사의 기회를 전혀 갖지 못하였다. ⑤ 원심은 이 사건 양해각서 제8조 제2항 제7호 (마)목 및 제9호에 의하여 원고 측이 대상회사 노조의 실사저지 해소를 위하여 신의성실의 원칙에 따라 협조할 의무를 부담함에도 이를 다하지 않았다고 판단하였으나, 위 조항은 확인실사 및 가격조정이 완료되지 않은 상태에서 최종계약을 체결할 경우를 대비하여 최종계약 자체에 삽입할 내용으로 추가된 것에 불과한 것으로 보이고, 최종계약이 체결되지 않은 이상 원고 측이 대상회사 노조의 실사저지 해소를 위하여 신의성실의 원칙에 따라 협조할 의무를 부담한다고 보기 어렵다. ⑥ 이 사건 양해각서가 해제되어 최종계약 체결이 무산된 것 자체로 인하여 피고들이 입은 손해는 통상적으로 최종계약이 유효하게 체결될 것으로 믿었던 것에 의하여 입었던 손해, 즉 신뢰이익 상당 손해에 한정된다고 할 것이다.</p><p>  위와 같은 사정들을 종합하여 볼 때, 이 사건 양해각서에서 이행보증금 몰취 조항을 두게 된 주된 목적이 최종계약의 체결이라는 채무이행을 확보하려는 데에 있었다고 하더라도, 3,150여억 원에 이르는 이행보증금 전액을 몰취하는 것은 부당하게 과다하다고 할 것이다.</p><p>  (3) 그런데도 원심은 이와 달리 판단하였으니, 이러한 원심의 판단에는 손해배상액의 예정 및 손해배상예정액 감액에 관한 법리를 오해하여 판결에 영향을 미친 잘못이 있다.</p><p>  3. 결론</p><p>  그러므로 나머지 상고이유에 대한 판단을 생략한 채 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박상옥(재판장) 이상훈 김창석(주심) 조희대 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008도3792 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2062823';
+var contIdEtc = '';
+var saNo = '2008도3792';
+var sngoNm = '선고';
+var saNm = '업무상배임';
+try {
+	var sngoDay=('20090625' ? 
+			'20090625'.length==4 ? Date.parseExact('20090625','yyyy').toString('yyyy. M. d.') : 
+				'20090625'.length==6 ? Date.parseExact('20090625','yyyyMM').toString('yyyy. M. d.') : 
+					'20090625'.length==8 ? Date.parseExact('20090625','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008도3792 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008도3792';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008도3792</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(4)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2060353">대법원 2009. 12. 24. 선고 2007도2484 판결 [공2010상,285]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655279">오영근 2011년 형법 중요 판례 인권과 정의 424호  / 대한변호사협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|792861">곽병수 업무상배임죄에 있어서의 재산상 손해 : 대상판결: 대법원 2015. 9. 10. 선고 2015도6745 판결 재판과 판례 제24집 / 대구판례연구회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|626086">오영근 2009년도 형법판례 회고 형사판례연구 18호  / 박영사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|625231">김용수 영업사원들의 시장유통가 판매와 업무상배임죄 판례연구 24집(2010.09) / 서울지방변호사회  2010 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2][3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2004도7053">대법원 2005. 4. 15. 선고 2004도7053 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도3145">대법원 2006. 7. 27. 선고 2006도3145 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도6439">대법원 2007. 7. 26. 선고 2005도6439 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="형법|355|0|null">형법 제355조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형법|355|0|null">형법 제355조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99도2831">대법원 2000. 3. 28. 선고 99도2831 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도6439">대법원 2007. 7. 26. 선고 2005도6439 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형사소송법|364|0|null">형사소송법 제364조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="형법|355|0|null">형법 제355조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울남부지방법원|2007노1415">서울남부지법 2008. 4. 23. 선고 2007노1415 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2009. 6. 25. 선고 2008도3792 판결</h2><p class="sub_title">[업무상배임][공2009하,1249]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 업무상 배임죄에서 행위자나 제3자가 취득하는 재산상 이익의 의미 및 배임행위로 인하여 행위자나 제3자가 재산상 이익을 취득하지 않은 경우 업무상 배임죄의 성립 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 입주자대표회의 회장이 열 사용요금의 납부를 위한 지출결의서의 날인을 거부함으로써 아파트 입주자들에게 그 연체료를 부담시킨 사안에서, 열 사용요금 납부연체료를 지급받은 공급업체가 연체료 상당의 재산상 이익을 취득한 것으로 볼 수 없다는 이유로 업무상 배임죄의 성립을 인정한 원심판결을 파기한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 업무상배임죄는 타인의 사무를 처리하는 자가 그 업무상의 임무에 위배하는 행위로써 재산상의 이익을 취득하거나 제3자로 하여금 이를 취득하게 하여 본인에게 손해를 가한 때에 성립하는데, 여기서 ‘본인에게 재산상의 손해를 가한다’ 함은 총체적으로 보아 본인의 재산상태에 손해를 가하는 경우, 즉 본인의 전체적 재산가치의 감소를 가져오는 것을 말하는 것이고, 이와 같은 법리는 타인의 사무를 처리하는 자 내지 제3자가 취득하는 재산상의 이익에 대하여도 동일하게 적용되는 것으로 보아야 한다. 또한, 업무상 배임죄는 본인에게 재산상의 손해를 가하는 외에 배임행위로 인하여 행위자 스스로 재산상의 이익을 취득하거나 제3자로 하여금 재산상의 이익을 취득하게 할 것을 요건으로 하므로, 본인에게 손해를 가하였다고 하더라도 행위자 또는 제3자가 재산상 이익을 취득한 사실이 없다면 배임죄가 성립할 수 없다.</p>
+      <p></p><p>
+        </p><p>[2] 입주자대표회의 회장이 지출결의서에 날인을 거부함으로써 아파트 입주자들에게 그 연체료를 부담시킨 사안에서, 열 사용요금 납부 연체로 인하여 발생한 연체료는 금전채무 불이행으로 인한 손해배상에 해당하므로, 공급업체가 연체료를 지급받았다는 사실만으로 공급업체가 그에 해당하는 재산상의 이익을 취득하게 된 것으로 단정하기 어렵고, 나아가 공급업체가 열 사용요금 연체로 인하여 실제로는 아무런 손해를 입지 않았거나 연체료 액수보다 적은 손해를 입었다는 등의 특별한 사정이 인정되는 경우에 한하여 비로소 연체료 내지 연체료 금액에서 실제 손해액을 공제한 차액에 해당하는 재산상의 이익을 취득한 것으로 볼 수 있을 뿐이라는 이유로, 공급업체가 연체료 상당의 재산상 이익을 취득한 것으로 보아 업무상 배임죄의 성립을 인정한 원심판결을 파기한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|">형법 제355조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">제356조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|">형법 제355조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">제356조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2][3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004도7053|판결" href="#//">대법원 2005. 4. 15. 선고 2004도7053 판결</a></span>(공2005상, 791)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도3145|판결" href="#//">대법원 2006. 7. 27. 선고 2006도3145 판결</a></span>(공2006하, 1587)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도6439|판결" href="#//">대법원 2007. 7. 26. 선고 2005도6439 판결</a></span>(공2007하, 1413)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+        피고인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【변 호 인】
+      
+        법무법인 다우 담당변호사 고헌영
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울남부지방법원|2007노1415|판결" href="#//">서울남부지법 2008. 4. 23. 선고 2007노1415 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 서울남부지방법원 합의부에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 이 사건 공소사실의 요지는 다음과 같다.</p><p>  피고인은 이 사건 아파트 입주자대표회의 회장으로서 아파트의 열 사용요금을 지정된 납입기한까지 납입하여야 할 업무상 임무가 있음에도 불구하고, ① 2006. 3. 2.경 2006. 1월분 열 사용요금 137,652,360원을 납입기한까지 납입하지 아니하여, 피해자인 이 사건 아파트 입주자들에게 그 연체료 2,753,047원을 부담하게 함으로써 동액 상당의 재산상 손해를 가하고 SH공사로 하여금 동액 상당의 재산상 이익을 취득하게 하고, ② 2006. 4. 3.경 2006. 2월분 열 사용요금 및 전월분 연체료 합계 122,101,670원을 납입기한까지 납입하지 아니하여, 피해자인 이 사건 아파트 입주자들에게 그 연체료 2,386,972원을 부담하게 함으로써 동액 상당의 재산상 손해를 가하고 SH공사로 하여금 동액 상당의 재산상 이익을 취득하게 하였다.</p><p>  2. 상고이유에 대한 판단</p><p>  가. 업무상 배임죄에 있어 업무위배행위와 고의 등에 관한 법리오해, 채증법칙 위반으로 인한 사실오인 및 심리미진 주장에 대하여</p><p>  원심판결 이유에 의하면 원심은, 제1심이 적법하게 채택하여 조사한 증거들을 종합하여, 이 사건 열 사용요금을 납부하기 위하여는 이 사건 아파트 입주자대표회의 회장인 피고인이 지출결의서 등에 날인을 해주어야 했던 사실, 피고인이 이 사건 열 사용요금의 납부마감일을 잘 알고 있는 상태에서 열 사용요금의 납부를 위한 지출결의서 등에 날인을 요청받았음에도, 종전 아파트 관리업체 등과의 법률적 분쟁 등을 이유로 날인을 거부한 사실을 인정한 다음, 피고인이 입주자대표회의 회장으로서 열 사용요금 납부가 납기 내에 제대로 이루어지도록 할 임무에 위배하여 입주자들에게 연체료 상당의 재산상 손해를 가하였고, 피고인에게 배임의 고의도 인정된다는 취지로 판단하였다.</p><p>  기록에 비추어 살펴보면, 원심의 위와 같은 사실인정과 판단은 정당한 것으로 수긍할 수 있고, 거기에 상고이유의 주장과 같은 법리오해나 채증법칙 위반으로 인한 사실오인, 심리미진 등의 위법이 없다.</p><p>  나. 위법성조각사유에 대한 심리미진 주장에 대하여</p><p>  상고심은 항소법원 판결에 대한 사후심이므로 항소심에서 심판대상이 되지 않은 사항은 상고심의 심판범위에 들지 않는 것이어서 피고인이 항소심에서 항소이유로 주장하지 아니하거나 항소심이 직권으로 심판대상으로 삼은 사항 이외의 사유에 대하여는 이를 상고이유로 삼을 수 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99도2831|판결" href="#//">대법원 2000. 3. 28. 선고 99도2831 판결</a></span> 등 참조).
+      </p><p>  기록에 의하면, 피고인이 위법성조각사유를 항소이유로 주장하지 않았고, 원심이 이를 직권으로 심판대상으로 삼은 바도 없음을 알 수 있다. 따라서 피고인이 상고이유로 내세우는 위법성조각사유에 대한 심리미진 주장은 적법한 상고이유가 될 수 없고, 직권으로 살펴보아도 원심판결에 상고이유의 주장과 같은 위법사유가 보이지 아니하며, 또한 원심판결이 항소이유에 포함되지 아니한 위 주장에 관한 판단을 하지 아니하였다고 하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형사소송법|364|">형사소송법 제364조</a></span>에 위배하여 판단을 누락한 것이라고 할 수 없다.
+      </p><p>  3. 직권판단</p><p>  원심판결 이유에 의하면, 원심은, 피고인의 배임행위로 인하여 SH공사에 전체적 재산가치의 증가가 발생한 점이 인정된다는 이유로, SH공사가 이 사건 열 사용요금 연체로 인하여 납부받은 연체료 전액에 해당하는 재산상 이익을 취득하였다고 판단하였다.</p><p>  그러나 이러한 원심의 판단은 다음과 같은 이유로 수긍하기 어렵다.</p><p>
+        <span class="accrnt_txt">업무상 배임죄는 타인의 사무를 처리하는 자가 그 업무상의 임무에 위배하는 행위로써 재산상의 이익을 취득하거나 제3자로 하여금 이를 취득하게 하여 본인에게 손해를 가한 때에 성립하는데(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|" style="text-decoration:underline">형법 제356조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|" style="text-decoration:underline">제355조 제2항</a></span>), 여기서 본인에게 재산상의 손해를 가한다 함은 총체적으로 보아 본인의 재산상태에 손해를 가하는 경우, 즉 본인의 전체적 재산가치의 감소를 가져오는 것을 말하는 것이고, 이와 같은 법리는 타인의 사무를 처리하는 자 내지 제3자가 취득하는 재산상의 이익에 대하여도 동일하게 적용되는 것으로 보아야 한다. 또한, 업무상 배임죄는 본인에게 재산상의 손해를 가하는 외에 배임행위로 인하여 행위자 스스로 재산상의 이익을 취득하거나 제3자로 하여금 재산상의 이익을 취득하게 할 것을 요건으로 하므로, 본인에게 손해를 가하였다고 할지라도 행위자 또는 제3자가 재산상 이익을 취득한 사실이 없다면 배임죄가 성립할 수 없다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도6439|판결" href="#//">대법원 2007. 7. 26. 선고 2005도6439 판결</a></span> 참조).
+      </p><p>  이 사건에서, 열 사용요금 납부 연체로 인하여 발생한 연체료는 금전채무 불이행으로 인한 손해배상에 해당하므로, SH공사가 연체료를 지급받았다는 사실만으로 SH공사가 그에 해당하는 재산상의 이익을 취득하게 된 것으로 단정하기 어렵고, 나아가 SH공사가 열 사용요금 연체로 인하여 실제로는 아무런 손해를 입지 않았거나 연체료 액수보다 적은 손해를 입었다는 등의 특별한 사정이 인정되는 경우에 한하여 비로소 연체료 내지 연체료 금액에서 실제 손해액을 공제한 차액에 해당하는 재산상의 이익을 취득한 것으로 볼 수 있을 뿐이라고 할 것이며, 그와 같이 SH공사가 재산상 어떠한 이익을 취득하였다고 볼 만한 특별한 사정이 있다는 사실에 대한 입증책임은 검사에게 있다고 할 것이나, 기록상 그와 같은 사실을 인정할 증거를 찾아볼 수 없다.</p><p>  결국, 이 사건에서 피고인의 배임행위로 인하여 SH공사가 연체료 상당의 재산상 이익을 취득한 것으로 볼 수는 없음에도, 원심은 앞서 본 바와 같은 이유로 이와 달리 판단하여 공소사실을 모두 유죄로 판단하였으니, 이러한 원심판결에는 배임죄에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 있다.</p><p>  4. 결 론</p><p>  그러므로 원심판결을 파기하고 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이홍훈(재판장) 김영란 김능환 차한성(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

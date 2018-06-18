@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2009나87876 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2034887';
+var contIdEtc = '';
+var saNo = '2009나87876';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20100812' ? 
+			'20100812'.length==4 ? Date.parseExact('20100812','yyyy').toString('yyyy. M. d.') : 
+				'20100812'.length==6 ? Date.parseExact('20100812','yyyyMM').toString('yyyy. M. d.') : 
+					'20100812'.length==8 ? Date.parseExact('20100812','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009나87876 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009나87876';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2009나87876</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769272">이숙연 금융투자상품의 투자자 보호에 대한 연구 사법논집 . 제59집   / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|719968">박미선 펀드판매에 있어서 펀드운용사와 펀드판매사의 책임 재판과 판례 제22집 / 대구판례연구회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|750481">강대섭 2013년 자본시장법(구증권거래법) 판례의 분석과 연구 상사판례연구 27집 1권 / 한국상사판례학회  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다53197">대법원 2007. 9. 6. 선고 2004다53197 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다50312">대법원 2003. 1. 10. 선고 2000다50312 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다33502">대법원 2002. 10. 11. 선고 2002다33502 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|420|0|null">민사소송법 제420조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="간접투자자산운용업법|56|0|null">간접투자자산운용업법(구) 제56조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="간접투자자산운용업법|56|0|null">간접투자자산운용업법(구) 제56조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="간접투자자산운용업법|90|0|null">간접투자자산운용업법(구) 제90조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="간접투자자산운용업법|86|0|null">간접투자자산운용업법(구) 제86조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="간접투자자산운용업법|57|0|null">간접투자자산운용업법(구) 제57조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울남부지방법원|2008가합21038">서울남부지방법원 2009. 8. 14. 선고 2008가합21038 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2010. 8. 12. 선고 2009나87876 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 항소인】
+      
+        
+          원고 1 외 7인 (법무법인 한누리 담당변호사 김주영 외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 피항소인】
+      
+        우리자산운용 주식회사 외 1 (소송대리인 법무법인 세종 담당변호사 김민경 외 2인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2010. 6. 10.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울남부지방법원|2008가합21038|판결" href="#//">서울남부지방법원 2009. 8. 14. 선고 2008가합21038 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 원고 석전1동새마을금고에 대한 피고들 패소부분, 
+        원고 6(대법원판결의 원고 5), 
+        8(대법원판결의 원고 7)에 대한 피고 우리자산운용 주식회사의 패소부분, 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        6, 
+        7(대법원판결의 원고 6), 
+        8에 대한 부분 중 아래에서 지급을 명하는 금원을 초과하는 피고들 패소부분을 각 취소하고, 그 취소부분에 해당하는 원고들의 예비적 청구를 기각한다.
+      </p><p>      피고 주식회사 경남은행은 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        6, 
+        7, 
+        8에게 별지 2의 “피고 은행의 배상액“란 기재 각 금원 및 이에 대하여 별지 2의 ”상품 매입일“란 기재일부터 2010. 8. 12.까지는 연 5%의, 그 다음 날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을, 피고 우리자산운용 주식회사는 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        7에게 피고 주식회사 경남은행과 각자 위 각 금원 중 별지 2의 ”피고 자산운용회사의 배상액“란 기재 각 금원 및 이에 대하여 별지 2의 ”상품 매입일“란 기재일부터 2010. 8. 12.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 각 지급하라.
+      </p><p>2. 원고들의 항소, 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        7에 대한 피고 우리자산운용 주식회사의 나머지 항소, 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        6, 
+        7, 
+        8에 대한 피고 주식회사 경남은행의 나머지 항소를 각 기각한다.
+      </p><p>3. 소송총비용은 별지 3과 같이 부담한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>
+        <b>주위적 청구취지 :</b> 피고 주식회사 경남은행(이하 ‘피고 은행’이라고 한다)은 원고들에게 별지 1의 ‘주위적 청구금액’란 기재 각 금원 및 이에 대하여 이 사건 소장부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 돈을 지급하라.
+      </p>
+      <p>
+        <b>예비적 청구취지 :</b> 피고들은 연대하여 원고들에게 별지 1의 ‘예비적 청구금액’란 기재 각 금원 및 이에 대하여 별지 ‘상품 매입일’란 기재 각 일자부터 이 사건 청구취지변경신청서 부본 송달일까지는 연 5%의, 그 다음 날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라(원고들은 당심에서 예비적 청구를 변경하였다).
+      </p>
+      <p>
+        <b>원고들의 항소취지 :</b> 제1심 판결 중 아래에서 지급을 명하는 부분에 해당하는 원고 패소부분을 취소한다. 피고들은 각자 원고들에게 별지 1의 ‘항소금액’란 기재 각 금원 및 이에 대하여 별지 1의 ‘상품 매입일’란 기재 각 일자부터 이 사건 청구취지변경신청서부본 송달일까지는 연 5%의, 그 다음 날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라.
+      </p>
+      <p>
+        <b>피고들의 항소취지 :</b> 제1심 판결 중 피고들 패소부분을 취소하고, 위 취소부분에 해당하는 원고들의 예비적 청구를 기각한다.
+      </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 제1심 판결의 인용</b>
+      </p><p>    이 법원이 인정사실에 관하여 설시할 이유는 제1심 판결문 제5면 제15행의 “입게”를 “얻게”로, 제10면 제12행의 “투자자”를 “투자가”로 제22면 제8행의 “경과시점부커”를 “경과시점부터”로, 제24면 원고별 각 펀드가입내역 중 
+        원고 7에 대한 가입원금 “5000,000,000”을 “500,000,000”으로, 제24면·제26면의 각 표의 원고란 중 “
+        원고 2”를 “
+        원고 2”로 각 고치고, 제19면 제8행의 “무디스로부터”를 삭제하는 것 이외에는 제1심 판결문의 “기초사실”란의 기재와 같으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span> 본문에 의하여 이를 그대로 인용한다.
+      </p><p>
+        <b>2. 예비적 청구에 대한 판단</b>
+      </p><p>
+        <b>가. 원고들의 주장요지</b>
+      </p><p>    피고들은 펀드 판매를 위탁하거나 판매하는 회사들로서 투자자인 원고를 보호할 의무가 있고(투자자보호 의무), 이에 기하여 거래의 위험성에 관하여 설명할 의무(설명의무), 고객의 의향과 실정에 적합하도록 권유할 의무(적합성의 원칙)가 있는데, ① 피고 은행은 이러한 투자자보호의무를 위반하여 경험이 부족한 일반 투자자인 원고에게 거래행위에 필연적으로 수반되는 위험성에 관한 올바른 인식형성을 방해하고, 고객인 원고의 투자상황에 비추어 과대한 위험을 수반하는 거래를 마치 아무런 위험이 없는 것처럼 허위·과장하여 적극적으로 권유하였으며, ② 피고 자산운용회사도 판매를 위탁한 회사로서 위와 같은 고객보호의무를 다하기 위하여서는 정확한 정보를 제공하여야 할 것인데도 이 사건 펀드에 관하여 대한민국 국채와 유사하여 원금손실위험이 없다는 내용의 광고지와 Q＆A 자료를 만들어 판매회사인 피고 은행을 통해 투자자인 원고에게 제공함에 따라 원고로 하여금 이 사건 펀드를 원금이 보장되는 상품으로 오인하도록 하여 투자자들에게 잘못된 정보를 제공함으로써 투자자보호의무를 위반하였으므로, 피고들은 위와 같은 불법행위로 인하여 원고가 입은 손해를 배상할 의무가 있다.</p><p>
+        <b>나. 손해배상책임의 발생</b>
+      </p><p>    (1) 피고 자산운용회사에 대한 판단</p><p>    ㈎ 증권투자신탁은 일반 공중을 위한 간접 증권투자제도로서 증권의 종류나 매매의 시기 및 방법 등에 의하여 그 수익률이 변동함으로 인하여 항상 위험이 따르고 그 위험은 원칙적으로 투자자가 부담할 수밖에 없으나(자기책임의 원칙), 증권회사와 투자자 사이에는 전문성 및 정보에 관하여 현저한 차이가 있으므로(정보의 비대칭성), 자기책임의 원칙은 위험부담의 중요한 사항인 투자신탁의 구성, 투자대상, 투자비중 등에 관하여 정확한 정보가 제공되고 이에 따라 투자자의 투자결정이 적정하게 이루어질 것을 전제로 한다.</p><p>    한편, 증권투자신탁에서 위탁회사가 판매회사와 사이에 수익증권 판매위탁계약을 체결함으로써 수익증권의 판매업무를 직접 담당하지 않는 경우에도, 투자신탁의 설정자 및 운용자인 위탁회사는 수익증권의 판매에 직접적인 이해관계가 있는 당사자로서 신탁약관을 제정하여 미리 금융감독위원회의 승인을 얻은 후 그 약관에 따라 수탁회사와 함께 신탁계약을 체결함으로써 수탁회사와 공동으로 신탁을 설정하고, 투자설명서를 작성하여 판매회사에 제공하여야 하며, 판매회사는 투자자에게 간접투자증권의 취득을 권유함에 있어 이를 제공하고(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="간접투자자산운용업법|56|">구 간투법 제56조 제1</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="간접투자자산운용업법|56|">2항</a></span>), 신탁이 설정된 이후에는 신탁재산의 투자운용결정 및 지시를 하며(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="간접투자자산운용업법|90|">구 간투법 제90조 제1항</a></span>), 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="간접투자자산운용업법|86|">구 간투법 제86조 제1항</a></span>에 따라 선량한 관리자로서 신탁재산을 관리할 책임을 지고 간접투자자의 이익을 보호하여야 하므로, 투자자에게 투자종목이나 대상 등에 관하여 올바른 정보를 제공함으로써 투자자가 그 정보를 바탕으로 합리적인 투자판단을 할 수 있도록 투자자를 배려하고 보호하여야 할 주의의무가 있고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다53197|판결" href="#//">대법원 2007. 9. 6. 선고 2004다53197 판결</a></span> 참조), 자산운용회사로서는 판매회사에 신탁재산에 관한 유리성(안정성·수익성 등)에 과도하게 치우친 설명·정보제공을 하거나 위험성에 관하여 과소하게 설명·정보제공을 하여서는 아니 된다(제공된 정보의 균형성).
+      </p><p>    ㈏ 이 사건에 관하여 보건대, 위에서 인정한 사실에다가 피고 자산운용회사가 작성한 이 사건 광고지나 Q＆A 자료, 상품요약서, 상품제안서를 종합하여 알 수 있는 사정, 즉 ⓛ 이 사건 펀드 투자금의 대부분이 편입된 이 사건 장외파생상품은 같은 상품의 다른 Tranche와는 달리 유독 그 명칭에서부터 ‘원금 비보호(Non-Principal Protected)’라는 문구가 기재되어 있고, 이 사건 장외파생상품의 운용사인 CSFBi가 피고 자산운용회사에 송부한 파생상품거래확인서의 추가정보부록에도 ’투자시 고려사항‘이라는 제목으로 투자의 위험 및 장단점을 평가하는데 필요한 금융 및 경영문제에 대한 지식 및 경험을 보유한 투자자들에게만 적합하다는 취지로 기재되어 있으므로, 전문가인 피고 자산운용회사가 스스로 사후검증(Back-Testing) 절차를 거쳐 이 사건 펀드의 위험성을 판단하였다 하더라도, 실제로 위험을 부담하는 투자자들도 이 사건 펀드가 구조적으로 가지고 있는 위험성을 이해할 수 있을 만한 능력이 있어야 함에도, 피고 자산운용회사는 피고 은행을 비롯한 판매 회사에 배포한 이 사건 Q＆A 자료를 통해 피고 은행을 비롯한 판매 회사가 주로 여유 자금을 장기간 안정적으로 운용하려는 투자자들을 대상으로 이 사건 펀드의 판매활동을 하도록 한 점, ② 피고 자산운용회사가 작성한 이 사건 광고지나 Q＆A 자료, 상품요약서, 상품제안서 등에는 원금손실의 가능성이 기재되어 있으나 그 글자체가 작거나 상대적으로 강조가 되지 아니하여 쉽게 알아 볼 수 없는 한편, 이 사건 펀드가 매 분기 확정수익을 지급하고, 그 이율이 국고채나 후순위채와 비교하여 높다거나 이 사건 장외파생상품이 무디스로부터 A3 신용등급을 받았다는 것을 상대적으로 강조한 점[Q＆A 자료의 Q4에는 “이 사건 펀드는 은행예금보다 원금보존의 가능성이 더 높다”고 기재되어 있다(기록 793면)], ③ 위와 같은 자료에 국고채나 후순위채 이율과 이 사건 펀드의 분기별 확정수익과는 그 성질을 달리하는 것으로서 이율만을 놓고 단순히 비교할 수 없는 것임에도 이 사건 펀드의 분기별 확정수익률이 상대적으로 높다는 것을 강조하는 문구와 표현을 사용한 점, ④ 비록 무디스가 당시 이 사건 장외파생상품에 부여한 신용등급이 우리나라 국채의 신용등급과 같다고 하더라도 구조화 채권과 일반 채권은 그 등급판정방법이 달라 단순히 비교할 수 있는 것이 아님에도 만연히 우리나라 국채의 신용등급과 같다는 것을 강조하여, 일반 투자자들로 하여금 마치 우리나라 국채가 부도가 나지 않는 한 이 사건 펀드도 원금 손실이 되지 않는 것이라고 오인할 수 있는 표현을 사용한 점[이 사건 펀드(제1호)의 상품제안서 7면(기록 118면)에는 “펀드의 원금 손실 가능성은 대한민국 국채의 부도 확률과 유사한 수준의 안정성을 갖고 있는 것으로 평가함”이라고 기재되어 있고, 17면(기록 128면)에는 무디스 신용등급 A3(이 사건 펀드 및 대한민국 국채 등)의 부도확률은 0.28%라고 기재되어 있어, 위 자료에 의하면 마치 이 사건 펀드의 부도확률이 0.28%인 것처럼 오인할 여지가 있다. 또한 이 사건 펀드(제2호)의 상품제안서 7면(기록 141면)에는 “펀드의 원금 손실 가능성은 대한민국 국채의 부도 확률과 유사한 수준의 안정성을 갖고 있는 것으로 평가함”이라고 기재되어 있고, 19면(기록 153면)에는 무디스 신용등급별 손실률 표에 의하면 A3(이 사건 펀드 및 대한민국 국채 등)의 손실률은 0.0214~0.5005%라고 기재되어 있어, 위 자료에 의하면 마치 이 사건 펀드의 부도확률이 1%에도 미치지 못하는 것처럼 오인할 여지가 있다], ⑤ 이 사건 펀드의 구조가 매우 복잡하여 이에 관하여 자세한 설명을 기재할 수는 없다고 하더라도 적어도 이 사건 펀드가 일정한 조건하에 만기에 예정된 수익금을 받을 수 있는 구조가 아니라 운용상 만기에 투자원금에 손실이 생기는 상황이라 할지라도 이와는 전혀 별개로 매 분기마다 확정된 수익금을 지급하게 된다는 사실 및 그 개략적인 이유에 대한 설명을 기재하여 일반인으로 하여금 매 분기마다 확정수익금이 지급되는 것은 투자원금에서 수익이 발생되기 때문이라고 오인하지 않도록 하여야 할 것임에도 불구하고, 이 사건 상품요약서, 상품제안서는 물론 투자설명서에도 그러한 설명은 기재되어 있지 아니한 점[오히려 투자기간 중 매 분기마다 지급하는 금원을 ’이자‘라고 표현하고 있다] 등에 비추어 보면, 피고 자산운용회사는 설명의무를 위반하여 판매회사인 피고 은행으로 하여금 투자자에게 당해 거래에 수반하는 위험성이나 투자내용에 관하여 정확한 인식을 형성하는데 장애를 초래할 정도의 균형성을 상실한 정보를 피고 은행에게 제공하였다고 인정된다. 따라서, 피고 자산운용회사는 위와 같은 불법행위로 인하여 아래에서 보는 바와 같이 이 사건 펀드 판매를 담당한 피고 은행과 각자 원고에게 원고가 입은 손해를 배상할 책임이 있다.</p><p>    (2) 피고 은행에 대한 판단 </p><p>    ㈎ 증권회사의 임직원이 고객에게 적극적으로 투자를 권유하였으나, 투자 결과 손실을 본 경우에 투자자에 대한 불법행위책임이 성립하기 위해서는 거래경위와 거래방법, 고객의 투자상황(재산상태, 연령, 사회적 경험 정도 등), 거래의 위험도 및 이에 관한 설명의 정도 등을 종합적으로 고려한 후, 당해 권유행위가 경험이 부족한 일반 투자자에게 거래행위에 필연적으로 수반되는 위험성에 관한 올바른 인식형성을 방해하거나 또는 고객의 투자상황에 비추어 과다한 위험성을 수반하는 거래를 적극적으로 권유한 경우에 해당하여, 결국 고객에 대한 보호의무를 저버려 위법성을 띤 행위인 것으로 평가될 수 있는 경우라야 하고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다50312|판결" href="#//">대법원 2003. 1. 10. 선고 2000다50312 판결</a></span> 참조), 이는 피고 은행이 구 간투법에 기하여 투자자에게 간접투자신탁 상품의 매입을 권유하는 경우에도 마찬가지로 적용된다. 
+      </p><p>    한편, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="간접투자자산운용업법|56|">구 간투법 제56조 제2항</a></span>은 “판매회사는 투자자에게 간접투자증권의 취득을 권유함에 있어 투자설명서를 제공하고, 그 주요내용을 설명하여야 한다”, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="간접투자자산운용업법|57|">같은 법 제57조 제1항</a></span>은 “판매회사 및 판매회사에서 판매업무를 담당하는 임·직원은 다음 각 호의 행위를 하여서는 아니 된다. 1. 투자원금의 보장 등 수익을 보장하는 권유행위 4. 허위표시 또는 중요한 사항에 대하여 오해를 유발할 수 있는 표시행위” 등의 내용을 규정하고 있다. 
+      </p><p>    ㈏ 이 사건에 관하여 보건대, 위에서 본 바와 같이 ① 이 사건 펀드는 그 구조가 매우 복잡하고 난해하여 투자 경험이 없는 일반인이 이해하기 힘들 뿐 아니라 파생상품에 관한 기본적인 지식이 있는 사람도 이를 완전히 이해하기 어려운 사실, ② 이와 같은 복잡성 때문에 이 사건 펀드가 거의 대부분을 투자한 이 사건 장외파생상품의 파생상품거래확인서의 추가정보부록에는 ’투자시 고려사항‘이라는 제목으로 투자의 위험 및 장단점을 평가하는데 필요한 금융 및 경영문제에 대한 지식 및 경험을 보유한 투자자들에게만 적합하다는 취지로 기재되어 있는 사실, ③ 피고 은행의 담당직원조차도 이 사건 펀드의 구조에 관한 교육을 제대로 받지 아니하여 그 특성이나 위험성을 이해하지도 못한 채 단순히 “우리파워인컴 펀드는 대한민국 신용등급(무디스 A3)으로 고정금리 ‘5년 만기 국고채금리 ＋ 1.2%’ 수준의 수익금을 6년 동안 매 분기마다 확정적으로 지급하는 안전한 파생상품이다”라고 하면서 이 사건 펀드가 고수익 상품으로서 안전하다는 점만 강조한 사실, ④ 피고 은행의 담당직원은 원고들에게 이 사건 펀드가 일정한 조건하에 만기에 예정된 수익금을 받을 수 있는 구조가 아니라 운용상 만기에 투자원금이 손실을 보는 상황이라 할지라도 이와는 전혀 별개로 매 분기마다 ‘5년 만기 국고채금리 ＋ 1.2%’ 수준의 수익금을 지급하게 된다는 사실 및 그 개략적인 이유에 대한 설명은 전혀 하지 아니한 사실, ⑤ 따라서 일반인의 입장에서는 매 분기마다 확정 수익금이 지급되는 것은 투자원금에서 수익이 발생되기 때문이라고 생각하기 쉬운 사실을 각 인정할 수 있는바, 이 사건에 나타난 이 사건 펀드의 구조, 거래경위와 거래방법, 원고들의 투자상황, 거래의 위험도 및 이에 관한 설명의 정도 등을 종합적으로 고려해 볼 때, 원고들에 대한 피고 은행의 담당직원의 이러한 펀드 가입권유행위는 원고에게 거래행위에 필연적으로 수반되는 위험성에 관한 올바른 인식형성을 방해하거나 또는 원고들의 투자상황에 비추어 과대한 위험성을 수반하는 거래를 적극적으로 권유한 행위로서 고객인 원고들에 대한 보호의무를 저버린 것으로 불법행위를 구성한다. </p><p>    따라서 피고 은행은 담당직원의 사용자로서 위와 같은 불법행위로 인하여 원고가 입은 손해를 배상할 책임이 있다. </p><p>    (3) 소결론</p><p>    따라서 피고들은 설명의무 및 투자자 보호의무를 위반한 공동불법행위로 인하여 각자 원고가 입은 손해를 배상할 책임이 있다.</p><p>
+        <b>다. 손해배상의 범위</b>
+      </p><p>   (1) 손해액</p><p>   ㈎ 원고들은, 피고들의 불법행위가 아니었다면 원고들은 피고들이 제시한 국고채 또는 국고채 상당의 금리가 보장되는 금융상품에 투자하였을 것이므로, 원고들이 입은 손해는 이 사건 펀드의 가입원금에다가 매입 당시 국고채이율인 연 5.49%를 더한 금액에서 원고들이 수령한 중도해지환급금(중도해지하지 아니한 원고 석전1동새마을금고에 대하여는 이 사건 변론종결일에 가까운 2010. 4. 27.경을 기준으로 한 펀드평가액)과 펀드수익금을 공제한 금액이라고 주장한다.</p><p>    살피건대, 원고들이 이 사건 펀드에 관하여 완전한 설명을 들었더라면 국고채 내지 유사한 상품에 가입하였을 것이라는 사실을 인정할 만한 아무런 증거가 없으므로, 원고의 위 주장은 받아들이지 아니한다.</p><p>    ㈏ 원고 석전1동새마을금고에 대한 판단</p><p>    원고 석전1동새마을금고가 원본손실액 상당의 손해(= 가입원금 - 기준가 환산금액)를 청구하려면 그 손해가 피고들의 불법행위와 상당인과관계가 있는 것으로서 구체적(확정적)이고도 현실적이어야 한다.</p><p>    그런데 앞서 든 증거들에 의하면, 이 사건 펀드의 만기는 2012. 1. 6.이고, 피고 은행이 2008. 8. 25.경 위 원고에게 이 사건 펀드의 중도 해지와 환매를 권유하였으나 위 원고는 이 사건 변론종결일에 이르기까지 이 사건 펀드를 환매하지 않은 사실, 이 사건 펀드의 원금손실 여부는 만기의 펀드 이벤트 수(=위험 포트폴리오 이벤트 개수의 합 - 보험 포트폴리오 이벤트 개수의 합)가 원금보존 추구 이벤트 수 미만인지 여부에 따라 결정되고, 원본 손실액도 중도 해지시 및 만기의 기준가에 따라 증감하는 사실 및 이 사건 펀드의 원금 손실 여부와 그 액수를 결정하는 이벤트의 수와 기준가는 투자대상 및 가격변동에 따라 등락을 거듭할 수 있는 가변적 상태에 있어 만기에 도달하거나 중도 해지하여 현실적으로 환매하지 아니하는 이상 이를 예측할 수도 없는 사실이 인정된다. 이러한 사실관계에 비추어 보면, 위 원고가 이 사건 펀드를 중도 환매하지 않고 또 그 만기가 도래하지 않은 이상, 위 원고가 이 사건 펀드의 투자로 인하여 손해를 입었다고 단정할 수 없음은 물론 그 손해가 확정되었다고 볼 수도 없다. 따라서 위 원고의 청구는 받아들일 수 없다. </p><p>    ㈏ 계산(이하 원고 석전1동새마을금고를 제외한 나머지 원고에 한함)</p><p>    피고들은, 원고들이 수령한 분기별 확정수익금은 손익공제의 대상이 되므로, 원고들이 입은 손해액인 이 사건 펀드 가입원금에서 해지환급금을 공제한 금원에다가 과실상계를 하고 난 다음 손익공제로서 분기별 확정수익금을 공제하여야 한다고 주장한다.</p><p>    살피건대, 불법행위로 인한 손해배상액의 산정에 있어 손익공제가 허용하기 위하여는 손해배상책임의 원인인 불법행위로 인하여 피해자가 새로운 이득을 얻었고, 그 이득과 불법행위 사이에 상당인과관계가 있어야 하는바(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다33502|판결" href="#//">대법원 2002. 10. 11. 선고 2002다33502 판결</a></span> 등 참조), 이 사건 펀드의 분기별 확정수익금은 이 사건 펀드 가입 당시 지급이 예정되어 있었던 것으로서 피고들의 불법행위로 인하여 원고들이 이 사건 펀드에 가입하게 되어 원고들이 받은 이익으로 보아야 하므로, 이를 손익상계하여야 한다는 피고들의 주장은 이유 있다.
+      </p><p>    따라서 원고들이 입은 손해액은 아래 표 기재와 같이 일응 이 사건 펀드의 가입원금에서 원고가 수령한 중도해지환급금을 공제한 나머지가 된다(단위 : 원).</p><p>
+        </p><div name="Table266" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고  </td><td align="CENTER" valign="MIDDLE" rowspan="1">가입 원금  </td><td align="CENTER" valign="MIDDLE" rowspan="1">환매 수령금</td><td align="CENTER" valign="MIDDLE" rowspan="1">손해액</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고 1</td><td align="RIGHT" valign="MIDDLE" rowspan="1">1,500,000,000   </td><td align="RIGHT" valign="MIDDLE" rowspan="1">486,293,850</td><td align="RIGHT" valign="MIDDLE" rowspan="1">1,013,706,150   </td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고 2</td><td align="RIGHT" valign="MIDDLE" rowspan="1">  40,000,000    </td><td align="RIGHT" valign="MIDDLE" rowspan="1">  5,480,076</td><td align="RIGHT" valign="MIDDLE" rowspan="1">34,519,924 </td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고 3</td><td align="RIGHT" valign="MIDDLE" rowspan="1">  25,000,000    </td><td align="RIGHT" valign="MIDDLE" rowspan="1">  3,425,045</td><td align="RIGHT" valign="MIDDLE" rowspan="1">21,574,955 </td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고 4</td><td align="RIGHT" valign="MIDDLE" rowspan="1">100,000,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> 30,821,210</td><td align="RIGHT" valign="MIDDLE" rowspan="1">69,178,790 </td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고 6</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> 50,000,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> 19,803,940</td><td align="RIGHT" valign="MIDDLE" rowspan="1">30,196,060 </td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고 7</td><td align="RIGHT" valign="MIDDLE" rowspan="1">500,000,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> 88,789,050</td><td align="RIGHT" valign="MIDDLE" rowspan="1">411,210,950</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고 8</td><td align="RIGHT" valign="MIDDLE" rowspan="1">100,000,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> 46,095,490</td><td align="RIGHT" valign="MIDDLE" rowspan="1">53,904,510 </td></tr></tbody></table></div></div>
+      <p></p><p>    (2) 책임의 제한</p><p>    원고들은 자기책임의 원칙 아래 투자신탁의 개념이나 투자하는 신탁상품의 내용, 손익구조, 투자위험성 등에 관한 내용을 사전에 정확히 파악하여 신중히 검토한 다음 투자하여야 할 것인데도 이를 게을리 하여 펀드가입시의 거래신청서 확인사항에 투자원금의 손실이 발생할 수 있다고 기재되어 있고, 약관 및 투자설명서를 반드시 읽어볼 것을 권고하고 있는데도 이를 교부받아 그 내용을 확인해 보지 아니한 점, 원고들이 투자한 금액은 2,500만 원부터 15억 원까지로서 상당히 큰 금액이므로 상대적으로 투자에 있어 신중을 기하여야 함에도 이 사건 펀드에 관한 검토를 제대로 하지 않은 점, 원고들에게 손해가 발생한 근본적인 이유는 피고 은행 직원의 부실한 설명 이외에 미국 서브프라임 모기지의 부실로 인하여 발생한 전 세계적인 금융위기 때문이기도 한 점 등을 고려하면, 이러한 원고들의 과실을 위 손해액 산정에 참작하기로 하되, 이 사건 각 펀드 가입 전에는 투자 경험이 없고 투자금액도 비교적 크지 않은 
+        원고 2, 
+        3, 
+        8에 대하여는 각 과실비율을 60%로 보아 피고 은행의 책임을 40%로 제한하고, 이 사건 각 펀드 가입 전 투자 경험은 있으나 투자금액은 비교적 크지 않은 
+        원고 4, 
+        6에 대하여는 각 과실비율을 70%로 보아 피고 은행의 책임을 30%로 제한하며, 이 사건 각 펀드 가입 전 파생상품에 투자 경험도 있으면서 이 사건 투자금액도 15억 원 또는 5억 원으로 비교적 큰 
+        원고 1, 
+        7에 대하여는 과실비율을 75%로 보아 피고 은행의 책임을 25%로 제한함이 상당하다.
+      </p><p>    한편, 피고 자산운용회사는 설명의무를 위반하여 판매회사인 피고 은행으로 하여금 투자자에게 당해 거래에 수반하는 위험성이나 투자내용에 관하여 정확한 인식을 형성하는데 장애를 초래할 정도의 균형성을 상실한 정보를 피고 은행에게 제공한 것에 책임이 있는바, 거래경위와 거래방법·고객의 투자상황(재산상태, 연령, 사회적 경험 정도 등) 등을 고려하지 아니하고 설명의무위반으로 인한 책임만을 부담함이 정당하므로, 그 책임은 (피고 은행과 각자) 25%로 제한함이 상당하다.</p><p>    (3) 손익상계</p><p>    원고들이 수령한 분기별 확정수익금을 과실상계한 금액에서 공제한다(계산의 편의상 1원 미만은 버린다).</p><p>
+        </p><div name="Table404" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고</td><td align="CENTER" valign="MIDDLE" rowspan="2">손해액</td><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">피고 은행의 과실</td><td align="CENTER" valign="MIDDLE" rowspan="2">손익상계</td><td align="CENTER" valign="MIDDLE" rowspan="1">피고 은행의 배상액</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="2">피고 자산운용회사의 배상액</td><td align="CENTER" valign="MIDDLE" rowspan="1">피고 자산운용회사의 과실</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고 1</td><td align="CENTER" valign="MIDDLE" rowspan="2">1,013,706,150</td><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">253,426,537</td><td align="RIGHT" valign="MIDDLE" rowspan="2">-233,813,250</td><td align="RIGHT" valign="MIDDLE" rowspan="1">19,613,287</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">253,426,537</td><td align="RIGHT" valign="MIDDLE" rowspan="1">19,613,287</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고 2</td><td align="CENTER" valign="MIDDLE" rowspan="2">34,519,924</td><td align="CENTER" valign="MIDDLE" rowspan="1">40%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">13,807,969</td><td align="RIGHT" valign="MIDDLE" rowspan="2">-6,441,021</td><td align="RIGHT" valign="MIDDLE" rowspan="1">7,366,948</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">8,629,981</td><td align="RIGHT" valign="MIDDLE" rowspan="1">2,188,960</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고 3</td><td align="CENTER" valign="MIDDLE" rowspan="2">21,574,955</td><td align="CENTER" valign="MIDDLE" rowspan="1">40%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">8,629,982</td><td align="RIGHT" valign="MIDDLE" rowspan="2">-4,025,615</td><td align="RIGHT" valign="MIDDLE" rowspan="1">4,604,367</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">5,393,738</td><td align="RIGHT" valign="MIDDLE" rowspan="1">1,368,123</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고 4</td><td align="CENTER" valign="MIDDLE" rowspan="2">69,178,790</td><td align="CENTER" valign="MIDDLE" rowspan="1">30%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">20,753,637</td><td align="RIGHT" valign="MIDDLE" rowspan="2">-15,587,550</td><td align="RIGHT" valign="MIDDLE" rowspan="1">5,166,087</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">17,294,697</td><td align="RIGHT" valign="MIDDLE" rowspan="1">1,707,147</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고 6</td><td align="CENTER" valign="MIDDLE" rowspan="2">30,196,060</td><td align="CENTER" valign="MIDDLE" rowspan="1">30%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">9,058,818</td><td align="RIGHT" valign="MIDDLE" rowspan="2">-7,793,830</td><td align="RIGHT" valign="MIDDLE" rowspan="1">1,264,988</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">7,549,015</td><td align="RIGHT" valign="MIDDLE" rowspan="1">-244,815</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고 7</td><td align="CENTER" valign="MIDDLE" rowspan="2">411,210,950</td><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">102,802,737</td><td align="RIGHT" valign="MIDDLE" rowspan="2">-85,023,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">17,779,737</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">102,802,737</td><td align="RIGHT" valign="MIDDLE" rowspan="1">17,779,737</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="2">원고 8</td><td align="CENTER" valign="MIDDLE" rowspan="2">53,904,510</td><td align="CENTER" valign="MIDDLE" rowspan="1">40%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">21,561,804</td><td align="RIGHT" valign="MIDDLE" rowspan="2">-15,587,550</td><td align="RIGHT" valign="MIDDLE" rowspan="1">5,974,254</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">25%</td><td align="RIGHT" valign="MIDDLE" rowspan="1">13,476,127</td><td align="RIGHT" valign="MIDDLE" rowspan="1">-2,111,423</td></tr></tbody></table></div></div>
+      <p></p><p>    (4) 소결</p><p>    따라서, 피고 은행은 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        6, 
+        7, 
+        8에게 별지 2의 “피고 은행의 배상액“란 기재 각 금원 및 이에 대하여 불법행위일로서 원고들의 각 펀드가입일인 별지 2의 ”상품 매입일“란 기재일부터 피고 은행이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 당심 판결 선고일인 2010. 8. 12.까지는 민법이 정한 연 5%의, 그 다음 날부터 다 갚는 날까지는 소송촉진 등에 관한 특례법이 정한 연 20%의 각 비율로 계산한 지연손해금을 지급할 의무가 있고, 피고 자산운용회사는 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        7에게 피고 은행과 각자 별지 2의 “피고 은행의 배상액“란 기재 각 금원 중 별지 2의 ”피고 자산운용회사의 배상액“란 기재 각 금원 및 이에 대하여 별지 2의 ”상품 매입일“란 기재일부터 2010. 8. 12.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 지연손해금을 지급할 의무가 있다.
+      </p><p>
+        <b>3. 결론</b>
+      </p><p>    그렇다면, 원고의 주위적 청구는 이유 없으므로 이를 각 기각하고, 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        6, 
+        7, 
+        8의 피고 은행에 대한 예비적 청구 및 
+        원고 1, 
+        2, 
+        3, 
+        4, 
+        7의 피고 자산운용회사에 대한 예비적 청구는 각 위 인정범위 내에서 이유 있으므로 이를 인용하고, 나머지 예비적 청구 및 원고 석전1동새마을금고의 예비적 청구는 각 이유 없으므로 이를 기각할 것인바, 제1심 판결은 예비적 청구에 관하여 이와 결론을 일부 달리하여 부당하므로, 피고들의 항소를 일부(원고 석전1동새마을금고에 대한 피고들의 항소는 전부, 
+        원고 6, 
+        8에 대한 피고 자산운용회사의 항소는 전부) 받아들이고, 원고들의 항소를 기각하기로 하여, 주문과 같이 판결한다.
+      </p><p>[별지 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김주현(재판장) 조미옥 권창영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

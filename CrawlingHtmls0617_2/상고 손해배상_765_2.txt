@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대구지방법원 2008나2041 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2035265';
+var contIdEtc = '';
+var saNo = '2008나2041';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20080528' ? 
+			'20080528'.length==4 ? Date.parseExact('20080528','yyyy').toString('yyyy. M. d.') : 
+				'20080528'.length==6 ? Date.parseExact('20080528','yyyyMM').toString('yyyy. M. d.') : 
+					'20080528'.length==8 ? Date.parseExact('20080528','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대구지방법원';
+var bubCd = '000310';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008나2041 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008나2041';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대구지방법원<br />2008나2041</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2005타경31262">대구지방법원 2005타경31262호로 임의경매개시결정</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|85|0|null">민사집행법 제85조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2007가소73964">대구지방법원 2007. 12. 26. 선고 2007가소73964 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대구지방법원 2008. 5. 28. 선고 2008나2041 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        대한민국
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2008. 5. 14.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2007가소73964|판결" href="#//">대구지방법원 2007. 12. 26. 선고 2007가소73964 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 아래에서 지급을 명하는 금원에 해당하는 원고 패소부분을 취소한다.</p><p>   피고는 원고에게 7,000,000원과 이에 대하여 2006. 2. 16.부터 2008. 5. 28.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라.</p><p>2. 원고의 나머지 항소를 기각한다. </p><p>3. 소송총비용 중 1/2은 원고가, 나머지는 피고가 각 부담한다.</p><p>4. 제1항의 금원지급부분은 가집행할 수 있다. </p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 원고에게 14,000,000원과 이에 대하여 2006. 2. 16.부터 이 사건 소장부본 송달일까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>  다음 사실은 당사자 사이에 다툼이 없거나, 갑 제1 내지 3호증, 을 제1 내지 5호증의 각 기재, 제1심 법원의 신천4동장에 대한 사실조회 및 사실조회보완결과에 변론 전체의 취지를 종합하면 이를 인정할 수 있다.</p><p>  가. 소외 주식회사 국민은행(이하 ‘국민은행’이라 한다)은 
+        소외 1 소유이던 대구 동구 신천동 
+        (지번 생략)
+        ○○아파트 제4층 제2호(이하 ‘이 사건 아파트’라 한다)에 관하여 채권최고액 금 58,500,000원, 채무자 
+        소외 1, 근저당권자 국민은행으로 하여 대구지방법원 동대구등기소 2002. 9. 12. 접수 제41737호로 근저당권설정등기를 마쳤다.
+      </p><p>  나. 원고는 2005. 2. 12. 
+        소외 1과 사이에 이 사건 아파트에 관하여 임대차보증금 14,000,000원, 임대차기간 2005. 2. 25.부터 2007. 2. 25.까지로 정하여 임대차계약을 체결하고, 2005. 3. 2. 이 사건 아파트의 등기부상 주소지인 ‘4층 2호’로 전입신고를 마쳤으며, 같은 날 확정일자를 부여받았다.
+      </p><p>  다. 그 후 근저당권자인 국민은행은 2005. 5. 26. 이 사건 아파트에 관하여 
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2005타경31262|결정" href="#//">대구지방법원 2005타경31262호로 임의경매개시결정</a></span>을 받아, 이를 원인으로 하여 대구지방법원 동대구등기소 2005. 6. 1. 접수 제23550호로 임의경매개시결정의 기입등기를 마쳤다.
+      </p><p>  라. 대구지방법원 소속 집행관 
+        소외 2는 경매법원으로부터 이 사건 아파트에 대한 부동산현황조사명령을 받고, 2005. 6. 2.과 같은 달 9. 이 사건 아파트 소재지 현장을 방문하여 임대차관계를 조사하였고, 관할 신천4동사무소에서 이 사건 아파트의 등기부상의 호수인 4층 2호가 아닌 실제 관리호수인 ‘402호’에 대하여 세대열람을 한 결과, 전입된 세대주가 존재하지 않음을 확인한 후 더 이상의 조사를 하지 않은 채 다음과 같은 내용이 기재된 부동산현황조사보고서를 작성하였다. 
+      </p><p>    ○ 조사의 장소 : 부동산 소재지 현장</p><p>    ○ 조사의 방법 : 현지출장</p><p>    ○ 부동산의 점유관계 </p><p>      ● 소재지 : 대구광역시 동구 신천동 
+        (지번 생략)
+        ○○아파트 4층 2호
+      </p><p>      ● 기타 : 임대차서류는 제출되지 않으며 동사무소 확인결과 전입된 자는 없다고 함</p><p>  마. 원고는 2005. 8. 23. 이 사건 아파트에 대한 경매가 진행 중이라는 것을 알지 못한 채 이 사건 아파트에서 전출하여 서울 영등포구 신길동 
+        (주소 생략)으로 전입신고를 하였고, 그로부터 2일 후인 2005. 8. 25. 원고의 모인 
+        소외 3이 이 사건 아파트에 ‘402호’를 주소로 하여 전입신고를 하였다. 
+      </p><p>  바. 한편 경매법원은 위 부동산임의경매 사건에서 배당요구종기를 2005. 8. 24.까지로 정하였고, 그 후 이 사건 아파트는 2005. 12. 26. 
+        소외 4에게 매각되었으며, 위 법원은 2006. 2. 15. 배당기일에 대구광역시 동구청장에게 1순위로 금 47,600원을, 국민은행에게 2순위로 금 35,948,188원을 각 배당하는 내용의 배당표를 작성하였다.
+      </p><p>  사. 이에 대하여 원고는 배당기일에 출석하여 국민은행에 대한 배당액 중 금 14,000,000원에 대하여 이의를 제기하고, 2006. 2. 21.자로 국민은행을 상대로 배당이의 소를 제기하였으나, 2007. 5. 30. 원고가 배당요구종기일 전에 전출함으로써 주택임대차보호법상의 대항력을 상실하였다는 이유로 원고 패소판결이 확정되었다. </p><p>2. 판단</p><p>  가. 손해배상책임의 성립</p><p>    1) 집행관이 현황조사에 있어서 조사할 사항은 부동산의 현상, 점유관계, 차임 또는 보증금의 액수, 그 밖의 현황인데(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|85|">민사집행법 제85조 제1항</a></span>), 그 중 임대차관계에 관하여는 ① 임차목적물의 용도, 주민등록상의 동·호수와 등기부 등 공부상에 표시된 동·호수가 상이한 경우에는 실제 동·호수, 주민등록상의 동·호수와 공부상의 동·호수, ② 임대차계약의 내용(임차인 성명, 임차보증금, 임차기간, 확정일자 유무 등), ③ 매각부동산에 여러 명의 임차인이 있는 경우에는 각 임차인의 해당 임차부분, 입주인원수, 임차목적물이 주택인 경우 임차인 본인 및 그 가족들의 전·출입 상황을 각 조사하고, 매각부동산이 주택인 경우 그 소재지에 전입신고된 세대주 전원에 대한 주민등록 등·초본, 상가건물인 경우 임차인 전원에 대한 등록사항 등의 현황서 및 건물도면의 등본을 첨부하는 것이 일반적인 조사방법이다. 
+      </p><p>    2) 그런데 위에서 인정한 사실에 의하면, 이 사건 아파트의 등기부 및 주민등록상의 동·호수는 ‘4층 2호’이고, 실제 관리호수는 ‘402호’이므로, 현황조사명령을 받은 집행관으로서는 이 사건 아파트의 임대차관계를 조사함에 있어서 실제 동·호수, 주민등록상의 동·호수와 등기부상의 동·호수를 명확하게 파악하고, 등기부상의 동·호수인 ‘4층 2호’(위 경매 목적물의 표시도 ‘4층 2호’로 되어 있다)로 주민등록 열람을 함으로써 전입세대가 존재하는지 여부를 확인한 후 주민등록상 ‘4층 2호’로 전입신고되어 있는 원고의 임대차계약의 내용을 조사하고 원고의 주민등록 등·초본을 발급받아 이를 첨부하여야 함에도 불구하고, 관할 동사무소에서 ‘402호’로 전입신고된 세대주가 존재하는지 여부를 확인한 결과 ‘전입된 자가 없다’는 내용의 주소별 세대열람내역만을 믿은 나머지 더 이상의 조사를 하지 아니한 채 이 사건 아파트에 전입신고된 임차인이 없다는 취지로 현황조사보고를 하였는바, 이러한 집행관의 행위는 경매목적 부동산의 현황을 조사하는 집행관으로서 지켜야 할 직무상의 의무를 위반한 위법한 행위라고 할 것이다. </p><p>    3) 또한, 앞에서 본 각 증거에 의하면, 위 경매사건에서 원고가 배당요구종기까지 배당요구를 하지 않았을 뿐 아니라 그 이전에 전출하여 대항력을 상실함으로써 결과적으로 소액임차보증금을 배당받지 못하였지만, 원고는 이 사건 아파트에 대한 경매가 진행 중임을 알지 못한 채 전출을 한 것으로 보이고, 만약 집행관이 이 사건 부동산에 원고의 전입신고가 되어 있음을 확인하고 이러한 내용을 현황조사보고서에 기재하였더라면, 경매법원은 원고에게 임차목적물에 대하여 경매절차가 진행 중인 사실과 배당요구를 안내하는 내용의 통지를 하였을 것이며, 이러한 통지를 받은 원고는 배당요구종기인 2005. 8. 24.까지 주민등록을 유지하고, 배당요구종기까지 배당요구를 하였을 것으로 보는 것이 일반인의 경험칙에 부합된다. 그러므로 위와 같은 집행관의 위법한 행위와 원고가 입게 된 손해 사이에는 상당인과관계가 있다고 할 것이다. </p><p>  나. 책임의 제한</p><p>  다만, ① 원고는 임대차계약 체결 당시 이미 이 사건 아파트에 대하여 수개의 압류, 가압류, 근저당권 등기가 경료되어 있어서 언제든지 경매에 들어갈 위험성이 있다는 것을 알고 있었으므로 수시로 등기부를 열람하는 등 경매 여부를 확인하였어야 함에도 이를 게을리한 채 주민등록을 전출함으로써 대항력을 상실하게 된 점, ② 대항요건을 갖춘 소액임차인이더라도 경매법원에 배당요구를 하여야 배당을 받을 수 있고, 그와 같은 배당요구는 자기의 책임으로 스스로 하여야 하는 것이므로, 집행관의 현황조사의 결과 임차인으로 조사·보고되어 있는지 여부와는 관계없이 스스로 집행법원에 배당요구를 하여야 하며, 주택임차인에 대한 경매절차 진행사실의 통지는 법률상 규정된 의무가 아니라 당사자의 편의를 위하여 안내하여 주는 것일 뿐인 점, ③ 집행관이 2회에 걸쳐 원고의 주소지를 방문하였으나, 원고나 그 가족들을 만나지 못한 점 등에 비추어 볼 때, 비록 집행관의 과실로 인하여 원고가 손해를 입었다고 하더라도 이로 인하여 발생한 모든 손해를 피고에게만 부담시키는 것은 손해의 공평한 분담 및 형평의 원칙에 어긋난다고 할 것이므로, 피고의 책임 비율을 50%로 제한한다. </p><p>3. 결론</p><p>  그렇다면, 피고는 원고에게 700만 원(1,400만 원 × 0.5)과 이에 대하여 원고가 구하는 바에 따라 배당기일 다음날인 2006. 2. 16.부터 피고가 그 이행의무의 존부나 범위에 관하여 항쟁함이 상당하다고 인정되는 당심 판결선고일인 2008. 5. 28.까지는 민법이 정한 연 5%, 그 다음날부터 다 갚는 날까지는 소송촉진 등에 관한 특례법이 정한 연 20%의 각 비율로 계산한 지연손해금을 지급할 의무가 있으므로, 원고의 이 사건 청구는 위 인정 범위 내에서 이유 있어 이를 인용하고, 나머지 청구는 이유 없어 이를 기각하여야 할 것인바, 제1심 판결 중 위와 같이 지급을 명하는 금원에 해당하는 원고 패소부분은 이와 결론을 달리하여 부당하므로 원고의 항소를 일부 받아들여 이를 취소하고, 원고의 나머지 항소는 이유 없어 이를 기각하기로 하여 주문과 같이 판결한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   조창학(재판장) 허용구 송민화 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

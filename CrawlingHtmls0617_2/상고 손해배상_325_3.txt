@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2014다67614 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2203741';
+var contIdEtc = '';
+var saNo = '2014다67614';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20160527' ? 
+			'20160527'.length==4 ? Date.parseExact('20160527','yyyy').toString('yyyy. M. d.') : 
+				'20160527'.length==6 ? Date.parseExact('20160527','yyyyMM').toString('yyyy. M. d.') : 
+					'20160527'.length==8 ? Date.parseExact('20160527','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2014다67614 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2014다67614';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2014다67614</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|842531">2016년 분야별 중요판례분석  해상법 김인현 法律新聞社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|837016">영국법상 낭비된 비용wasted expenditure과 기대이익 상실로 인한 손해와의 관계 권창영 한국해사문제연구소</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국제사법|25|0|null">국제사법 제25조 제1항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|413|0|null">민법 제413조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="국제사법|25|0|null">국제사법 제25조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다47677">대법원 2009. 3. 26. 선고 2006다47677 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2012나89230">서울고법 2014. 8. 22. 선고 2012나89230 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2016. 5. 27. 선고 2014다67614 판결</h2><p class="sub_title">[손해배상(기)][공2016하,855]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 영국법상 계약위반으로 인한 손해배상의 범위 및 채권자가 계약을 준비·이행하면서 지출하였으나 채무자의 계약위반으로 ‘낭비된 비용(wasted expenditure)’을 기대이익의 상실로 인한 손해액으로 배상받을 수 있는 경우</p>
+<p></p>
+<p></p><p>[2] 영국법상 ‘joint and several liability’의 의미 및 이는 주관적 공동관계 없이 수인의 독립적인 행위로 동일한 손해(the same damage)를 발생시킨 경우에 성립하는지 여부(적극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 영국법상 계약위반으로 인한 손해배상은 계약이 정상적으로 이행되었더라면 당사자가 있어야 할 상태로 만들어 주는 계약당사자의 이행이익을 보호하는 것이 원칙으로, 이는 계약이 이행되었더라면 채권자가 장래에 얻을 수 있었던 기대이익의 상실로 인한 손해의 배상 및 채무자의 계약위반의 결과 채권자가 실제로 입게 된 현실적인 손해의 배상을 포함한다. 그리고 계약이 이행되었더라면 채권자가 얻을 수 있었던 장래의 기대이익이 상실되지 않았거나 상실된 이익을 증명할 수 없는 경우에는, 채권자가 계약을 준비·이행하면서 지출한, 채무자의 계약위반으로 ‘낭비된 비용(wasted expenditure)’을 기대이익의 상실로 인한 손해액으로 배상받을 수 있다.</p>
+<p></p><p></p><p>[2] 영국법상 수인의 채무자들이 각각 동일한 내용의 채무를 이행할 책임을 부담하되, 채무자 중 1인이 채무를 만족시키는 행위를 하면 나머지 채무자도 채무를 면하는 ‘joint and several liability’는, 수인의 채무자들 사이에 주관적 공동관계가 존재하는 경우뿐만 아니라, 주관적 공동관계 없이 수인의 독립적인 행위로 동일한 손해(the same damage)를 발생시킨 경우에도 성립한다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|25|">국제사법 제25조 제1항</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|413|">민법 제413조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|25|">국제사법 제25조 제1항</a></span></p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+에이 피 묄러 머스크 에이에스 (소송대리인 법무법인 세경 담당변호사 김창준 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인】
+씨제이대한통운 주식회사 외 1인 (소송대리인 변호사 박형신 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고들 보조참가인】
+대련중공기중집단유한공사 (소송대리인 법무법인(유한) 로고스 담당변호사 임형민 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2012나89230|판결" href="#//">서울고법 2014. 8. 22. 선고 2012나89230 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용 중 보조참가로 인한 부분은 피고들 보조참가인이, 나머지는 피고들이 각 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 피고 씨제이대한통운 주식회사(이하 ‘피고 대한통운’이라고 한다)의 과실 관련 상고이유에 관하여(피고 대한통운의 상고이유 제3점)</p><p>  원심은 그 판시와 같은 사정들을 들어, 이 사건 사고는 이 사건 크레인의 로프처짐 센서에 관한 피고 대한통운의 크레인 관리·운용상의 과실 등으로 인하여 발생한 것이라고 판단하였다.</p><p>  관련 법리와 기록에 비추어 살펴보면, 이러한 원심의 판단은 정당하고, 거기에 상고이유의 주장과 같이 논리와 경험의 법칙에 반하여 자유심증주의의 한계를 벗어나는 등의 잘못이 없다.</p><p>  2. 피고 해산된 한국컨테이너부두공단의 소송수계인 여수광양항만공사(이하 ‘피고 항만공사’라고 한다)의 불법행위책임 관련 상고이유에 관하여(피고 항만공사의 상고이유 제1점 내지 제3점)</p><p>  원심은 그 판시와 같은 사정들을 들어, ① 이 사건 사고는 이 사건 크레인의 소유자인 피고 항만공사가 이 사건 크레인의 구조 등에 비추어 그 붕괴로 인한 손해를 방지하기 위하여 요구되는 예방조치의무를 다하지 못한 과실 등이 원인이 되어 발생한 것이고, ② 피고 항만공사의 이러한 주의의무위반은 원고에 대한 관계에서 불법행위를 구성하며, ③ 피고 항만공사가 이 사건 크레인에 관하여 검사·감독을 받았다거나, 피고 항만공사의 인적·물적 조직이 크레인의 하자를 조사할 능력이 되지 못한다는 사정만으로는 피고 항만공사가 이 사건 크레인 소유자로서의 주의의무를 다하였다거나 이러한 주의의무가 면제·감경된다고 볼 수 없으며, ④ 피고 항만공사의 이러한 주의의무위반과 원고의 손해 사이에는 상당인과관계가 인정된다고 판단하였다.</p><p>  관련 법리와 기록에 비추어 살펴보면, 이러한 원심의 판단은 정당하고, 거기에 상고이유의 주장과 같이 논리와 경험의 법칙에 반하여 자유심증주의의 한계를 벗어나거나 민법상 불법행위책임에 관한 법리 등을 오해하는 등의 잘못이 없다.</p><p>  3. 영국법상 손해배상의 원칙 및 ‘낭비된 비용’ 관련 상고이유에 관하여(피고 대한통운의 상고이유 제1점, 제2점)</p><p>  가. <span class="accrnt_txt">영국법상 계약위반으로 인한 손해배상은 계약이 정상적으로 이행되었더라면 당사자가 있어야 할 상태로 만들어 주는 계약당사자의 이행이익을 보호하는 것이 원칙으로, 이는 계약이 이행되었더라면 채권자가 장래에 얻을 수 있었던 기대이익의 상실로 인한 손해의 배상 및 채무자의 계약위반의 결과 채권자가 실제로 입게 된 현실적인 손해의 배상을 포함한다. 그리고 계약이 이행되었더라면 채권자가 얻을 수 있었던 장래의 기대이익이 상실되지 않았거나 상실된 이익을 증명할 수 없는 경우에는, 채권자가 계약을 준비·이행하면서 지출한, 채무자의 계약위반으로 ‘낭비된 비용(wasted expenditure)’을 기대이익의 상실로 인한 손해액으로 배상받을 수 있다.</span></p><p>  나. 원심판결 이유 및 원심이 적법하게 채택한 증거에 의하면 다음과 같은 사실을 알 수 있다.</p><p>  (1) 원고는 2005. 12. 8. 피고 대한통운과 사이에, 피고 대한통운이 관리·운영하는 광양항 컨테이너 부두(이하 ‘이 사건 컨테이너 부두’라고 한다)에 관한 이용계약(이하 ‘이 사건 터미널이용계약’이라고 한다)을 체결하였다. 이 사건 터미널이용계약은 제21.1조에서 ‘피고 대한통운은 이 사건 컨테이너 터미널이나 그가 주의·보호·관리하는 범위에서 발생하는, 원고가 소유·운항 또는 조종하는 선박, 화물, 컨테이너 및 그와 관련된 장치에 대한 지연 또는 손상에 따른 손해가 피고 대한통운 내지 그의 고의·과실에 의해 발생한 것이 아님을 증명하지 않는 한 이에 관한 모든 책임을 부담한다’고 규정하고, 제31조에서 ‘이 사건 터미널이용계약은 영국법을 준거법으로 하고 영국법에 따라 해석된다’고 규정하고 있다.</p><p>  (2) 원고는 2006. 11. 24. 등록선주로부터 ‘머스크 미틸리니호(M/V Maersk Mytilini, 이하 ‘이 사건 선박’이라고 한다)’를 1일 용선료 23,450달러에 정기용선하여 컨테이너 화물의 운송에 사용하고 있었는데, 이 사건 선박이 싱가포르, 대련 등을 거쳐 2007. 10. 20. 광양항에 입항하자, 피고 대한통운은 피고 항만공사로부터 임차한 이 사건 크레인 등을 사용하여 이 사건 선박에 컨테이너의 양화·적화작업을 실시하였다.</p><p>  (3) 이 사건 선박은 광양항을 출항하여 부산항, 탄중, 수에즈 운하를 거쳐 포트사이드, 피레우스, 콘스탄자, 일치체프스키 등으로 운항하면서 컨테이너를 운송할 예정이었는데, 이 사건 선박이 2007. 10. 20. 14:20경 광양항을 출항하려 하자 피고 대한통운 소속 운전기사는 선박이 출항할 수 있도록 양화 및 적화작업에 사용된 이 사건 크레인의 붐(boom)대를 원위치로 올리려고 하였고, 그 과정에서 붐대가 이 사건 선박 위로 추락하는 이 사건 사고가 발생하였다.</p><p>  (4) 이 사건 사고 당시 이 사건 선박에 적재되어 있던 총 1,854개의 컨테이너(이하 ‘이 사건 컨테이너’라고 한다)는 각각 선적항, 양하항 및 운임이 달리 정해져 있었는데, 원고는, 이 사건 사고가 발생한 2007. 10. 20. 14:20경부터 이 사건 선박의 수리가 완료된 2007. 11. 13. 23:30경까지(이하 ‘이 사건 선박의 불가동기간’이라고 한다) 이 사건 선박의 운항이 불가능해지자, 이 사건 컨테이너를 원고가 운항하는 다른 3척의 대체선박(이하 ‘이 사건 대체선박’이라고 한다)에 환적한 후 이를 운송하고 운임을 수령하였다.</p><p>  (5) 이 사건 사고로 원고에게 총 미화 1,339,140달러(용선료 571,711달러 + 선체수리비 363,483달러 + 컨테이너 손상 66,153달러 + 수리기간 중 연료비 292,405달러 + 선원들 초과수당 3,317달러 + 선박관리회사 수수료 14,666달러 + 검정조사비 27,405달러) 및 59,046,957원(환적비 25,303,976원 + 화물폐기비용 16,660,000원 + 본선 청소비 10,730,000원 + 청수공급비용 1,344,000원 + 검정조사비 5,008,981원) 상당의 손해가 발생하였다.</p><p>  다. 이러한 사실관계를 앞서 본 법리에 비추어 살펴본다.</p><p>  (1) 용선료</p><p>  이 사건 사고 당시 이 사건 선박에 선적되어 있던 총 1,854개에 달하는 이 사건 컨테이너는 컨테이너마다 선적항, 양하항 및 운임이 각각 달리 정해져 있기 때문에 이 사건 선박의 불가동기간 동안 원고가 이 사건 선박에 적재된 컨테이너의 운송으로 얻을 수 있는 운임 및 그 운송에 소요되는 비용을 정확히 증명한다는 것은 사실상 불가능하다고 보이고, 따라서 그 기간 동안 원고가 이 사건 선박의 운항으로 얼마만큼의 기대이익을 얻을 수 있었는지 여부를 증명할 수 없는 경우에 해당한다고 봄이 상당하므로, 원고는 이러한 기대이익 대신 이 사건 선박의 불가동기간 동안 자신이 지출한 용선료를 피고 대한통운에게 ‘낭비된 비용’으로 청구할 수 있다.</p><p>  그리고 원고가 비록 예정된 운임을 수령하였다 하더라도, 이러한 운임은 이 사건 선박의 운항으로 얻은 것이 아니라 이 사건 사고 후 이 사건 대체선박의 운항으로 얻은 것이므로, 이 사건 선박의 불가동기간 동안 원고가 이 사건 선박 운항으로 수입을 얻을 기회를 박탈당한 일실이익 내지 기대이익 상당의 손해는 원고가 취득한 운임으로 상쇄 내지 전보된다고 볼 수 없다.</p><p>  원심이 같은 취지에서, 이 사건 선박의 불가동기간 동안 원고가 지출한 용선료는 영국법상 ‘낭비된 비용’에 해당한다고 보아 피고 대한통운의 배상책임을 인정한 것은 정당하고, 거기에 상고이유의 주장과 같이 영국법상 손해배상의 원칙 및 ‘낭비된 비용’에 관한 법리를 오해하는 등의 잘못이 없다.</p><p>  (2) 용선료 이외의 손해항목</p><p>  원심이 피고 대한통운에게 배상책임을 인정한 용선료 이외의 손해항목들, 즉 선체수리비, 컨테이너손상, 수리기간 중 연료비, 환적비, 화물폐기비용, 본선 청소비, 청수공급비용, 선원초과수당, 선박관리회사 수수료 및 검정조사비(이하 ‘이 사건 기타 손해’라고 한다)는 원고가 이 사건 터미널이용계약을 준비·이행하기 위하여 지출한 비용이 아니라, 이 사건 사고로 인하여 비로소 원고에게 발생한 손해 내지 그 손해의 회복을 위해 지출된 비용이라 할 것이므로 영국법상 ‘낭비된 비용’에 해당한다고 볼 수 없다.</p><p>  그러나 이 사건 기타 손해는 이 사건 컨테이너 부두에서 원고가 운항하는 선박, 화물 또는 컨테이너에 대한 손상에 따른 현실적인 손해로서 이 사건 터미널이용계약 제21.1조에 따라 피고 대한통운은 그에 대한 손해배상책임을 부담한다. 따라서 원심이 이 사건 기타 손해를 ‘낭비된 비용’으로 본 것은 잘못이라 할 것이나, 이에 대하여 피고 대한통운의 손해배상책임을 인정한 것은 결론에 있어 정당하고, 거기에 상고이유 주장과 같이 관련 법리를 오해하여 판결에 영향을 미친 잘못이 없다.</p><p>  4. 피고들의 부진정연대책임 관련 상고이유에 관하여(피고 대한통운의 상고이유 제4점, 피고 항만공사의 상고이유 제4점)</p><p>  부진정연대채무 관계는 서로 별개의 원인으로 발생한 독립된 채무라 하더라도 동일한 경제적 목적을 가지고 있고 서로 중첩되는 부분에 관하여 일방의 채무가 변제 등으로 소멸할 경우 타방의 채무도 소멸하는 관계에 있으면 성립한다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다47677|판결" href="#//">대법원 2009. 3. 26. 선고 2006다47677 판결</a></span> 등 참조).</p><p>  그리고 <span class="accrnt_txt">영국법상 수인의 채무자들이 각각 동일한 내용의 채무를 이행할 책임을 부담하되, 채무자 중 1인이 채무를 만족시키는 행위를 하면 나머지 채무자도 채무를 면하는 ‘joint and several liability’는, 수인의 채무자들 사이에 주관적 공동관계가 존재하는 경우뿐만 아니라, 주관적 공동관계 없이 수인의 독립적인 행위로 동일한 손해(the same damage)를 발생시킨 경우에도 성립한다.</span></p><p>  이 사건에서 피고 대한통운의 과실로 인한 손해배상채무는 이 사건 터미널이용계약상 채무불이행책임이고, 피고 항만공사의 손해배상채무는 불법행위책임으로서 각각 별개의 원인으로 발생한 독립된 채무이지만, 그 각각의 원인과 상당인과관계가 인정되는 손해, 즉 이 사건 사고로 원고에게 발생한 손해의 전보라는 동일한 경제적 목적을 가진 급부를 부담하는 채무이고, 피고들의 배상책임이 동일한 손해의 전보를 목적으로 중첩되는 이상 피고들 중 일방의 채무가 변제로 소멸하면 타방의 채무도 소멸하는 이른바 부진정연대의 관계에 있다고 봄이 상당하다.</p><p>  그리고 이처럼 피고들 사이에 주관적 공동관계 없이 그들의 독립적인 행위로 동일한 손해를 발생시킨 이상 영국법상 피고 대한통운에게는 피고 항만공사와의 ‘joint and several liability’가 성립된다 할 것이고, 이러한 피고 대한통운의 ‘joint and several liability’는 피고 항만공사의 채무와는 별개의 독립된 채무로서 양자가 서로 중첩되는 부분에 관하여 일방의 채무가 변제 등으로 소멸할 경우 타방의 채무도 소멸하는 관계에 있으므로, 민법상 부진정연대채무에 해당하는 것으로 봄이 상당하다.</p><p>  원심이 같은 취지에서, 원고와 피고 대한통운 사이의 법률관계가 비록 영국법을 준거법으로 하고 있더라도, 피고 대한통운이 원고에게 부담하는 채무와 피고 항만공사가 원고에게 부담하는 채무는 부진정연대채무 관계에 있다고 판단한 것은 정당하고, 거기에 상고이유의 주장과 같이 부진정연대채무와 영국법상 손해배상에 관한 법리를 오해하는 등의 잘못이 없다.</p><p>  5. 결론</p><p>  그러므로 상고를 모두 기각하고 상고비용 중 보조참가로 인한 부분은 피고들 보조참가인이, 나머지는 피고들이 각 부담하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박보영(재판장) 박병대 김신 권순일(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2001나56517 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2032171';
+var contIdEtc = '';
+var saNo = '2001나56517';
+var sngoNm = '선고';
+var saNm = '임금등';
+try {
+	var sngoDay=('20030207' ? 
+			'20030207'.length==4 ? Date.parseExact('20030207','yyyy').toString('yyyy. M. d.') : 
+				'20030207'.length==6 ? Date.parseExact('20030207','yyyyMM').toString('yyyy. M. d.') : 
+					'20030207'.length==8 ? Date.parseExact('20030207','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2001나56517,2001나56524(병합) ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2001나56517';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2001나56517</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|561181">임원의 퇴직금 지급 @ 임금 등 @ 임금 등 이승길 중앙경제사</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|561181">이승길 임원의 퇴직금 지급 노동법률 185호  / 중앙경제사  2006 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원|2000가합29665">서울지방법원 2001. 7. 26. 선고 2000가합29665, 2001가합21422(병합) 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2003. 2. 7. 선고 2001나56517,2001나56524(병합) 판결</h2><p class="sub_title">[임금등][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 항소인】
+      
+        
+          원고(소송대리인 변호사 송영식)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 피항소인】
+      
+        
+          피고 1 주식회사외 2인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 피항소인】
+      
+        
+          피고(소송대리인 변호사 조영길)
+        
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2002. 8. 23.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원|2000가합29665|판결" href="#//">서울지방법원 2001. 7. 26. 선고 2000가합29665, 2001가합21422(병합) 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>
+        <b>1. 제1심 판결을 다음과 같이 변경한다.</b>
+      </p><p>
+        <b>2. 피고 
+          1 주식회사는 원고에게 106,825,000원과 이에 대하여 1997. 3. 28.부터 2001. 7. 26.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 25%의 각 비율에 의한 금액을 지급하라.
+        </b>
+      </p><p>
+        <b>3. 원고의 피고 
+          1 주식회사에 대한 나머지 청구와 피고 
+          2·
+          3·
+          4에 대한 청구를 각 기각한다.
+        </b>
+      </p><p>
+        <b>4. 제1심과 항소심의 소송비용 중 30%는 피고 
+          1 주식회사가 부담하고, 나머지는 원고가 부담한다.
+        </b>
+      </p><p>
+        <b>5. 제2항은 가집행할 수 있다.</b>
+      </p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지 : 연대하여 364,999,000원과 1997. 3. 28.부터 완제일까지 연 25%의 금액.</p>
+      <p>2. 원고의 항소취지 : 제1심 판결 중 원고 패소부분의 취소 및 연대하여 209,253,416원과 그 지연손해금의 추가 인용.</p>
+      <p>3. 피고 1., 2., 3.의 항소취지 : 제1심 판결 중 위 피고들 패소부분의 취소 및 그 부분 원고 청구의 기각.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 인정 사실</b>
+      </p><p>  원고는 피고 회사에 1974. 8. 1. 입사하여 영업부 차장 또는 부장으로 근무하다가 19 79. 2. 27.부터 이사 또는 대표이사로 일하였고, 1997. 3. 26. 퇴직하였다. 원고가 퇴직할 무렵 피고 
+        2는 피고 회사의 대표이사였고, 피고 
+        3은 이사였으며, 피고 
+        4는 감사였다.
+      </p><p>  피고 회사는 직원이 퇴직할 경우에 근속기간 1년마다 퇴직 당시의 임금 1개월분씩의 퇴직금을 지급하는데(을62·63), 원고가 1979. 2. 27. 이사로 취임할 때 직원퇴직금을 지급하지 않았다. 원고는 1993. 9. 27. 피고 회사로부터 주택자금 1억원을 무이자로 차용하고, 그 중 4,000만원만 갚았다.</p><p>
+        </p><div name="Table199" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="1">구분    </td><td align="CENTER" valign="MIDDLE" rowspan="1">이사임기</td><td align="CENTER" valign="MIDDLE" rowspan="1">임원의 퇴직금</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">개정전</td><td align="CENTER" valign="MIDDLE" rowspan="1">2년   </td><td align="LEFT" valign="MIDDLE" rowspan="1">퇴직전 1년간 급여액의 30% 금액에 근속년수를 곱한 금액의 범위내에서 이사회가 결정하는 금액</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">개정후</td><td align="CENTER" valign="MIDDLE" rowspan="1">1년   </td><td align="LEFT" valign="MIDDLE" rowspan="1">퇴직전 1년간 급여액의 10% 금액에 근속년수를 곱한 금액의 범위내에서 이사회가 결정하는 금액</td></tr></tbody></table></div></div>
+      <p></p><p>  피고 회사의 정관이 1995. 5. 21. 개정·시행되었는데, 개정 전후의 내용은 별표와 같다(갑2-1,2).</p><p>  원고의 퇴직 당시 급여는 매월 기본급 300만원과 수당 100만원씩이고, 1년 상여금이 월 기본급의 500%(그 중 연말 상여금 100%, 설날 상여금 150%)인데, 피고 회사는 원고에게 1996. 11.경부터 퇴직시까지의 4개월분 급여와 연말 및 설날 상여금을 지급하지 아니하였다.</p><p>  피고 회사는 원고에게 지급할 퇴직금액을 89,675,000원으로 결정하여 대여금 잔액의 변제에 충당한 것으로 처리하였다가(1심 증인 임대상), 2001. 9. 4.자 이사회에서 원고에게 퇴직금을 지급하지 않기로 결의하였다(을66).</p><p>
+        <b>2. 판단</b>
+      </p><p> 가. 임금</p><p>   피고 회사는 원고에게 미지급 보수 1,600만원[(기본급 300만원+수당100만원)×4개월]과 상여금 750만원(연말상여금 300만원+설날상여금 450만원)을 지급할 의무가 있다. </p><p>   원고가 1996. 11. 9. 피고 회사의 대표이사직을 사임하였다거나, 피고 회사가 1996. 9. 2. 주주총회를 개최하여 원고를 해임하기로 결의하였다고 인정하기 어렵다.</p><p> 나. 퇴직금</p><p>   피고 회사가 1979. 2. 원고가 이사로 취임할 당시에 원고에게 직원퇴직금을 지급하지 않았고, 1997. 3. 26. 원고가 퇴직한 뒤 상당한 기간 내에 정관에 따른 퇴직금 한도액을 감축하기로 결정하지 아니한 이상, 피고 회사는 원고에게 직원 및 임원 근속기간을 합쳐 정관의 퇴직금 한도에 상당하는 금액을 지급할 의무가 있다고 봄이 상당하다. 퇴직 당시 1년간 급여액 6,300만원[(300만원+100만원)×12+(300만원×5)]의 10% 상당액에 1974. 7. 1.부터 1997. 3. 26.까지의 근속년수를 곱한 금액인 143,325,000원[=630만원×(22+9/12)]을 원고의 퇴직금으로 지급하여야 한다.</p><p>   정관의 개정으로 1995. 5. 21.부터 퇴직금 한도액이 감축되었지만, 퇴직금청구권은 퇴직시에 발생하는 것이고 퇴직 당시의 1년간 급여액을 기준으로 계산되는 것이므로, 정관 개정 전 근속기간에 대한 퇴직금 한도액과 정관 개정 후 근속기간에 대한 퇴직금 한도액으로 나누어 계산할 수 없다. 그러한 정관개정을 무효라고 보기도 어렵다.</p><p>   피고 회사의 이사회가 원고에게 지급할 퇴직금 액수를 상당한 기간 내에 의결하지 않았지만, 그럼에도 불구하고 원고의 퇴직금청구권이 생긴다고 보는 이상, 피고 회사의 이사나 감사인 피고 
+        2·
+        3·
+        4가 이사회 결의를 게을리하였다고 하여 그들에게 퇴직금 상당의 손해배상책임을 지울 수 없다.
+      </p><p> 다. 피고 회사의 상계 주장에 대한 판단</p><p>   원고가 피고 회사로부터 차용한 돈의 잔액 6,000만원을 공제한다. </p><p>   그러나, 피고 회사가 원고에게 대여한 돈의 잔액이 6,000만원 외에 204만원 더 남아 있다거나 원고에게 무이자로 대여한 돈에 대하여 원고가 내야 할 소득세 20,734,158원을 피고 회사가 납부하였다고 인정할 증거가 부족하다. 그리고, 원고가 피고 회사의 제품을 정상적인 판매절차를 거치지 아니한 채 대리점 가격으로 판매하여 피고 회사가 271,311,120원 상당의 손실을 입었다거나 원고가 대금회수를 지연하여 피고 회사가 70,768,314원의 손실을 입었다거나 원고가 판매대금 24,476,010원을 수금하고도 피고 회사에 입금시키지 않았다고 인정할 증거가 부족하다.</p><p> 라. 결론</p><p>   결국 원고의 청구는 피고 회사에 대하여 106,825,000원(=1,600만원+750만원+143,325,000원-6,000만원)의 한도 내에서만 이유 있고, 나머지 청구는 이유 없으므로, 피고 회사의 항소를 일부 받아들이고, 피고 
+        2·
+        3의 항소를 받아들여 제1심 판결을 주문과 같이 변경한다. 
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   조대현(재판장) 고충정 박대준 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

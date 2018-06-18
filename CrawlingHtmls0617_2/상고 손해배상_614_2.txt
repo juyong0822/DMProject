@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2003나10720 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2036644';
+var contIdEtc = '';
+var saNo = '2003나10720';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20040709' ? 
+			'20040709'.length==4 ? Date.parseExact('20040709','yyyy').toString('yyyy. M. d.') : 
+				'20040709'.length==6 ? Date.parseExact('20040709','yyyyMM').toString('yyyy. M. d.') : 
+					'20040709'.length==8 ? Date.parseExact('20040709','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2003나10720 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2003나10720';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2003나10720</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(2)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(11)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|593882">김영훈 보험업법 제102조에 따른 손해배상책임의 한계 민사판례연구 30권  / 박영사  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687150">안경희 민법과 젠더 : 부부간의 일상가사대리권을 중심으로 . 이화젠더법학 제4권 제2호 / 이화여자대학교 젠더법학연구소  2012 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="보험업법|158|0|20030529">보험업법(구) 제158조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|756|0|null">민법 제756조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|756|0|null">민법 제756조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="보험업법|2|0|null">보험업법(구) 제2조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|126|0|null">민법 제126조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|827|0|null">민법 제827조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2000가합14697">서울동부지방법원 2002. 12. 27. 선고 2000가합14697 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2004. 7. 9. 선고 2003나10720 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인 겸 부대피항소인】
+      
+        
+          원고(소송대리인 성심종합 법무법인 담당변호사 김무식)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인 겸 부대항소인】
+      
+        삼성생명보험 주식회사(소송대리인 법무법인 충정 담당변호사 최병문외 1인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2004. 6. 15.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2000가합14697|판결" href="#//">서울동부지방법원 2002. 12. 27. 선고 2000가합14697 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 피고 패소부분을 취소하고, 그 취소부분에 해당하는 원고의 청구를 기각한다.</p><p>2. 원고의 항소를 기각한다.</p><p>3. 소송 총비용은 원고의 부담으로 한다.</p>
+    
+      【청구취지, 항소취지 및 부대항소취지】
+      <p>1. 청구취지 및 항소취지</p>
+      <p>  제1심 판결 중 원고 패소부분을 취소한다. 주위적 및 예비적으로, 피고는 원고에게 111,447,000원 및 이에 대한 이 사건 소장 부본 송달 다음날부터 제1심 판결 선고일까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 25%의 각 비율에 의한 금원을 지급하라.  </p>
+      <p>2. 부대항소취지</p>
+      <p>  주문 제1항과 같다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>  다음 각 사실은 당사자 사이에 다툼이 없거나, 갑 제1호증의 1 내지 4, 갑 제4호증의 1, 2, 을 제1호증의 1 내지 4, 을 제2 내지 5호증의 각 1, 을 제12 내지 30호증의 각 1 의 각 기재에 변론 전체의 취지를 종합하면 이를 인정할 수 있다.</p><p>  가. 피고는 보험사업을 영위하는 법인이고, 
+        소외 1은 1998. 4. 10.부터 1999. 12.경까지 사이에 피고의 동부법인영업국 새서울 법인영업소 소속의 보험모집인(생활설계사)으로 근무하던 자인바, 원고는 
+        소외 1과 1987. 5. 6. 혼인하였다가 2000. 8. 28. 이혼하였다.
+      </p><p>  나. 
+        소외 1은 원고를 대리하여 피고와 사이에 별지 제1 목록 기재와 같은 내용의 4건의 보험계약(이하 ‘이 사건 각 보험계약’이라 한다)을 체결하였다.
+      </p><p>  다. 이후 
+        소외 1은 다시 원고의 대리인이라 칭하며 이 사건 각 보험계약의 해약환급금을 담보로 별지 제2 목록 기재와 같이 약관대출(대출금 합계 42,460,000원)을 받고, 별지 제3 목록 기재와 같이 이 사건 각 보험계약을 해지한 후 해약환급금(약관대출금 공제 후 실수령액 합계 5,657,487원)을 수령하였다. 
+      </p><p>2. 주위적 청구에 관한 판단</p><p>  가. 원고의 주장</p><p>    (1) 원고가 피고의 보험모집인인 
+        소외 1에게 별지 제1 목록 제4항 기재 보험[슈퍼재테크보험(거치형), 이하 ‘이 사건 제4보험’이라 한다]의 보험료 명목으로 70,000,000원을 교부하였으나, 
+        소외 1은 그중 10,000,000원만을 보험료로 피고에게 납입하고 나머지 60,000,000원은 임의로 횡령하였으므로, 피고는 보험사업자로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|158|">구 보험업법(2003. 5. 29. 법률 제6891호로 전면개정되기 전의 것, 이하 같다) 제158조 제1항</a></span>에 따라, 또는 
+        소외 1의 사용자로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">민법 제756조 제1항</a></span>에 따라 원고의 위 손해를 배상해야 할 의무가 있다.
+      </p><p>    (2) 
+        소외 1은 원고의 승낙 없이 임의로 원고를 대리하여 약관대출을 신청하여 대출금을 수령하였을 뿐 아니라 이 사건 각 보험계약을 해지하고 그 해약환급금을 수령함으로써 원고에게 기납입한 보험료 51,447,000원 상당의 손해를 가하였으므로 피고는 역시 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|158|">구 보험업법 제158조 제1항</a></span> 또는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">민법 제756조 제1항</a></span>에 따라 원고의 위 손해를 배상해야 한다. 가사, 
+        소외 1의 약관대출 및 보험계약해지가 보험모집인의 모집과 관련된 행위에 해당되지 않는다고 하더라도, 
+        소외 1이 이 사건 각 보험계약의 보험증권을 소지하고 있지 아니하였음에도 원고에게 
+        소외 1의 대리권 존부를 확인하지도 아니한 채 만연히 약관대출금 및 해약환급금을 지급한 피고의 과실로 원고가 위 보험료 상당의 손해를 입었다고 할 것이므로 피고는 원고에게 위 손해를 배상할 의무가 있다.
+      </p><p>  나. 보험료 횡령부분</p><p>    (1) 인정사실</p><p>  다음 각 사실은 갑 제1호증의 4, 갑 제3호증, 갑 제7호증의 1 내지 12의 각 기재에 변론 전체의 취지를 종합하면 이를 인정할 수 있다.</p><p>     (가) 원고는 1999. 1. 4. 자신의 부(부)인 
+        소외 2로부터 100,000,000원을 차용한 뒤, 그 다음날 집에서 남편인 
+        소외 1에게 보험에 가입해 달라고 하면서 보험료조로 위 100,000,000원을 교부하였다.
+      </p><p>     (나) 이에 
+        소외 1은 원고를 대리하여 별지 제1목록 제2, 3항 기재 각 보험[슈퍼재테크보험(적립형), 더블찬스연금보험 2종, 이하 각 ‘이 사건 제2보험’, ‘이 사건 제3보험’이라 한다] 및 이 사건 제4보험에 가입하고 300,000원과 29,447,000원, 10,000,000원을 위 제2, 3, 4보험에 대한 보험료로 피고에게 각 납입하였으나, 나머지 60,000,000원은 보험가입절차를 밟지 아니하고 임의로 자신의 중소기업은행 계좌에 입금한 뒤 개인적인 용도로 사용하여 횡령하였다.
+      </p><p>     (다) 
+        소외 1은 위와 같이 60,000,0000원을 횡령한 사실을 숨기기 위하여 원고에게 이 사건 제4보험의 보험료로 70,000,000원을 납입하였다고 말하는 한편, 위 제4보험의 보험증권의 “보험가입금액 1,000만원”과 보험료 “10,000,000원”이라고 기재되어 있는 오른쪽 상단 끝 부분을 칼로 오려낸 뒤 재발급 받은 원고의 모인 
+        소외 3의 보험가입금액 70,000,000원인 슈퍼재테크보험(거치형)의 보험증권의 “보험가입금액 7,000만원”과 보험료 “70,000,000원”이라고 기재되어 있는 오른쪽 상단 끝 부분을 칼로 오려 내어 이를 위 제4보험의  보험증권에 스카치테이프로 붙여 보험증권(갑 제1호증의 4)을 변조한 후 원고에게 위 변조한 보험증권을 교부하였다. 
+      </p><p>    (2) 판단</p><p>     (가) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|158|">구 보험업법 제158조 제1항</a></span>은 "보험사업자는 그 임원·직원·보험모집인 또는 보험대리점이 모집을 함에 있어서 보험계약자에게 가한 손해를 배상할 책임을 진다“라고 규정하고 있는바, 보험모집인이 보험모집을 함에 있어서 보험계약자에게 손해를 가한 경우에, 소속 보험사업자의 배상책임을 규정하고 있는 위 조항이 사용자의 배상책임에 관한 일반규정인 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">민법 제756조</a></span>에 우선하여 적용되어야 할 것이나, 보험사업자가 위 규정에 따른 손해배상책임을 지기 위해서는 보험모집인의 행위가 ‘보험모집에 관한 행위이거나 적어도 외형상 객관적으로 보험모집에 관련된 행위’에 해당되어야 할 것이다.  
+      </p><p>     (나) 돌이켜 이 사건에 관하여 보건대, 
+        소외 1이 피고의 보험모집인으로 재직하던 중 원고로부터 보험에 가입해 달라는 부탁과 함께 60,000,000원을 수령한 사실은 앞서 본 바와 같으나, 한편 앞서 든 증거들에 의하면, 위 60,000,000원을 포함하여 원고가 같은 날 
+        소외 1에게 보험료조로 교부한 100,000,000원은 원고의 부(부)인 
+        소외 2가 원고 명의로 보험에 가입하여 남편인 
+        소외 1의 영업실적도 높이면서 원고의 생활에 도움이 되라고 원고에게 대여한 금원인 사실, 원고가 
+        소외 1에게 보험상품을 특정하고 보험가입금액을 얼마로 하여 각 보험에 가입해 달라고 하며 금원을 교부한 것이 아니라 집에서  위 60,000,000원을 포함하여 100,000,000원을 보험내용에 대한 별다른 언급 없이 보험료조로 일괄 지급한 것으로 보이고, 따라서 당시 원고는 이 사건 각 보험계약의 보험청약서도 작성하지 아니하였고 보험료 영수증을 지급 받지도 아니한 사실이 인정되는바, 위와 같은 이 사건 각 보험계약체결 및 위 금원의 수수 경위에 원고와 
+        소외 1 및 
+        소외 2의 신분관계를 종합하여 보면, 
+        소외 1의 위 금전수수 행위는 가족관계에 터잡아 부인인 원고를 위하여 보험을 통한 자금운용을 해 주기 위한 원고의 대리인 또는 사자의 행위에 불과할 뿐, 이를 피고의 보험모집인으로서의 사무집행에 관한 행위라고 보기는 어렵다고 할 것이다.
+      </p><p>     (다) 그러므로 
+        소외 1의 위 금전수수행위가 피고의 보험모집인의 보험모집과 관련한 행위라는 전제에 선 원고의 위 주장은 나아가 살펴볼 필요 없이 이유 없다.
+      </p><p>  다. 약관대출금 및 해약환급금 수령부분</p><p>    (1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|158|">구 보험업법 제158조 제1항</a></span>에 따른 손해배상책임
+      </p><p>  살피건대, 
+        소외 1이 약관대출 신청을 하고 약관대출금을 수령하는 행위와 이 사건 각 보험계약을 해지하고 해약환급금을 수령하는 행위는 모두 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|2|">구 보험업법 제2조 제3항</a></span>소정의 “보험모집인이 사업자를 위하여 보험계약의 체결을 중개하는 행위”에 해당하지 아니할 뿐 아니라 외형상 객관적으로 보험모집과 관련한 행위에 해당한다고 보기도 어렵다고 할 것이므로(더구나 
+        소외 1은 1999. 12.경 피고의 보험모집인에서 해촉되었는바, 이 사건 제1, 2보험을 해지할 당시는 피고의 보험모집인의 지위에 있지도 아니하였다), 원고의 위 주장은 이유 없다.
+      </p><p>    (2) 불법행위를 원인으로 한 손해배상책임 </p><p>  갑 제2호증의 1 내지 3, 갑 제3호증, 갑 제7호증의 1 내지 12, 을 제2 내지 4호증의 각 1 내지 5, 을 제5호증의 1 내지 6, 을 제12호증의 1 내지 5, 을 제13호증의 1 내지 3, 을 제14호증의 1 내지 5, 을 제15호증의 1 내지 6, 을 제16호증의 1 내지 4, 을 제17호증의 1 내지 6, 을 제18호증의 1 내지 4, 을 제19, 20, 21호증의 각 1 내지 5, 을 제 22호증의 1 내지 4, 을 제23, 24호증의 각 1 내지 5, 을 제25호증의 1 내지 4, 을 제26호증의 1 내지 5, 을 제27호증의 1 내지 6, 을 제28호증의 1 내지 4, 을 제 29호증의 1 내지 5, 을 제30호증의 1 내지 4, 을 제31호증의 각 기재에 변론 전체의 취지를 종합하면, 원고가 대리권을 수여하지 아니하였는데도 
+        소외 1이 임의로 원고의 인감도장을 날인하여 원고 명의의 위임장을 위조한 후 위 위임장과 원고의 인감증명서, 본인의 주민등록증 및 주민등록등본을 구비하여 별지 제2목록 기재와 같이 약관대출을 신청하고 약관대출금을 수령하였으며, 별지 제3목록 기재와 같이 이 사건 각 보험계약을 해지한 후 해약환급금을 수령한 사실, 이 사건 각 보험계약의 보험약관 및 피고의 보험금 등 지급업무메뉴얼에는 대리인이 약관대출을 받거나 보험계약을 해지할 시 보험증권, 보험계약자의 인감증명서 및 인감도장과 대리인의 주민등록증을 구비할 것을 요구하고 있는 사실, 그런데 
+        소외 1은 약관대출을 받을 때 약 5회만 보험증권을 제출하였고, 위 각 보험계약을 해지할 때에도 이 사건 제3보험의 보험증권만을 제출하였을 뿐 나머지 보험의 보험증권은 제출하지 아니한 사실, 피고가 
+        소외 1에게 약관대출금 및 해약환급금을 교부할 때 원고 본인에게 직접 대리권 수여 여부를 확인하지 아니한 사실이 인정된다. 
+      </p><p>  그러나 한편, 아래 3의 나.항에서 인정되는 바와 같은 사정에 의하면, 
+        소외 1이 약관대출 신청 및 보험계약을 해지할 때 일부 보험증권을 소지하지 아니하였고, 이를 이유로 피고가 원고 본인에게 직접 대리권 수여 여부를 확인하지 아니하였다는 사실만으로 피고에게 약관대출금 또는 해약환급금 지급업무와 관련하여 주의의무를 위반한 과실이 있다고 보기는 어려우며, 달리 피고에게 과실이 있음을 인정할 만한 증거가 없다. 따라서 원고의 위 주장은 이유 없다.
+      </p><p>3. 예비적 청구에 관한 판단</p><p>  가. 당사자들의 주장</p><p>  원고는, 
+        소외 1이 원고의 허락도 없이 임의로 원고의 대리인임을 칭하여 약관대출을 신청하고 그 대출금을 수령하였으며, 나아가 이 사건 각 보험계약을 해지하고 그 해약환급금을 수령한 것은 무권대리행위로서 원고에 대하여 아무런 효력이 없고, 원고가 이 사건 소장 부본의 송달로 비로소 이 사건 각 보험계약을 해지하였으므로, 피고는 원고에게 기납입보험료 111,447,000원을 반환할 의무가 있다고 주장한다.
+      </p><p>  이에 대하여 피고는, 원고가 
+        소외 1의 약관대출신청, 이 사건 각 보험계약의 해지 및 해약환급금 수령에 관하여 적어도 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">민법 제126조</a></span>의 표현대리책임을 진다고 주장한다.
+      </p><p>  나. 판단</p><p>  살피건대, 원고가 
+        소외 1에게 약관대출 신청 및 이 사건 각 보험계약을 해지할 대리권을 수여하지 아니하였음은 앞서 본바와 같으나, 한편, 
+        소외 1은 원고의 남편으로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|827|">민법 제827조</a></span>에 정해진 일상가사대리권을 갖고 있었으므로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">민법 제126조</a></span>의 표현대리가 성립하기 위한 기본적 대리권이 존재한다고 할 것이다. 나아가 이 사건 각 보험계약의 보험약관 및 피고의 보험금 등 지급업무메뉴얼은 대리인이 약관대출을 받거나 보험계약을 해지할 시 보험증권을 소지할 것을 요구하고 있는 것은 사실이나, 보험증권은 보험계약의 성립을 증명하기 위하여 보험자가 발행하는 증거증권이고, 보험자가 보험금 등의 급여를 함에 있어서 그 증권 제시자의 자격을 조사할 권리가 있을 뿐 의무는 없는 면책증권에 불과한 점에 비추어 보면, 위 규정은 보험자인 피고의 이익을 위한 규정으로서 보험증권에 절대적인 상환증권성을 부여하는 것이 아니라 보험계약자 또는 대리인 등이 보험증권을 제출할 수 없는 경우에는 다른 방법으로 그 권리를 증명하여 약관대출을 받거나 보험계약을 해지하고 해약환급금을 수령할 수 있다는 취지라고 보아야 할 것인 점, 
+        소외 1이 원고를 대리하여 이 사건 각 보험계약을 체결하고, 수회에 걸쳐 약관대출을 신청하고 약관대출금을 수령하는 등 사실상 이 사건 각 보험계약의 당사자와 같이 보였던 점, 
+        소외 1은 약관대출을 받고 이 사건 각 보험계약을 해지할 때 보험증권을 제외하고 필요한 모든 서류(때로는 보험증권을 첨부하여)를 피고에게 제출한 점, 이 사건 각 보험계약의 해지 시 원고가 약관대출금을 공제하고 실수령할 해약환급금은 5,657,487원에 불과하였던 점, 대리인이 약관대출을 받거나 보험계약을 해지할 시 반드시 본인의 의사를 직접 확인해야 한다는 업무방침이 있는 것도 아닌 점 등 제반 사정에 비추어 볼 때, 
+        소외 1이 약관대출 신청 및 보험계약을 해지할 때 보험증권을 일부 소지하지 아니하였다고 하더라도 원고의 위임장, 인감증명서, 본인의 주민등록증 및 주민등록등본 등 다른 서류들을 통하여 그 권한이 충분히 증명되었다고 할 것이므로, 피고로서는 약관대출을 신청하여 그 대출금을 수령하고, 또한 이 사건 각 보험계약을 해지하고 그 해약환급금을 수령함에 있어 
+        소외 1에게 원고를 대리할 권한이 있다고 믿을 만한 정당한 이유가 있었다고 할 것이다. 
+      </p><p>  따라서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">민법 제126조</a></span>의 표현대리의 법리에 의하여 
+        소외 1의 약관대출 신청과 이 사건 각 보험계약의 해지 및 그 해약환급금 수령행위는 유효하다고 할 것이므로, 이를 지적하는 피고의 위 항변은 이유 있고, 결국 원고의 주장은 이유 없다.
+      </p><p>4. 결론</p><p>  그렇다면, 원고의 주위적 청구 및 예비적 청구는 모두 이유 없어 이를 기각할 것인바, 이와 결론을 일부 달리한 제1심 판결은 부당하므로 제1심 판결 중 피고 패소부분을 취소하고 그 취소부분에 해당하는 원고의 주위적 청구를 기각하며, 원고의 항소는 이유 없어 이를 기각하기로 하여 주문과 같이 판결한다. </p><p>[별지 목록 각 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김종백(재판장) 이원범 성수제 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

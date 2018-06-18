@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008다51120 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063562';
+var contIdEtc = '';
+var saNo = '2008다51120';
+var sngoNm = '선고';
+var saNm = '임대차보증금반환등·임대차보증금반환';
+try {
+	var sngoDay=('20090820' ? 
+			'20090820'.length==4 ? Date.parseExact('20090820','yyyy').toString('yyyy. M. d.') : 
+				'20090820'.length==6 ? Date.parseExact('20090820','yyyyMM').toString('yyyy. M. d.') : 
+					'20090820'.length==8 ? Date.parseExact('20090820','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008다51120,51137,51144,51151 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008다51120';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008다51120</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(20)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(7)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(7)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(16)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1969059">대법원 2010. 8. 26. 선고 2010다37479 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2200047">대법원 2016. 4. 12. 선고 2013다31137 판결 [공2016상,637]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2239930">대법원 2017. 9. 26. 선고 2014다27425 판결 [공2017하,2063]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|622643">허위ㆍ과장광고와 그로 인한 계약의 취소 또는 불법행위 책임의 성립 여부 왕정옥 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716204">김상중 계약 성립에 관한 기본 판결례의 소개와 분석 비교사법 제20권 4호 / 한국비교사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622643">왕정옥 허위ㆍ과장광고와 그로 인한 계약의 취소 또는 불법행위 책임의 성립 여부 대법원판례해설 81호  / 법원도서관  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638659">문현호 줄기세포를 이용한 임상시험과 설명의무 대법원판례해설 85호  / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|669545">정수진 교통사고 소송에서의 과실의 개념 : 공동불법행위 성립요건으로서의 과실과 과실상계에서의 과실의 비교 . 법조  (2012. 9) / 법조협회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|772272">김태진 M&amp;A계약 체결시 고지의무 위반에 관한 고찰 민사판례연구 37권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665572">홍성재 계약상 의무위반과 구제법리 재산법연구 27권 2호  / 법문사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|544378">한국. 대법원 법원행정처 재판실무편람/ 제21호: 손해배상재판실무편람 법원행정처  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|681673">김재형 언론보도에 의한 초상권 침해에 관한 법적 검토 언론중재 32권 4호 (2012 겨울호) / 언론중재위원회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|826597">손현찬 손해배상소송에서 책임제한의 법리와 증명도가 경감된 손해액 산정의 법리 재판과 판례 제25집 / 대구판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696148">지원림 민법의 사회상과 정보제공의무 민사법학 62호  / 한국사법행정학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|615118">김영호 신의칙위반의 소송상 주장방법과 쟁점 상사판례연구 22집 4권  / 한국상사판례학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|684631">송양호 CISG상의 손실경감의무에 관한 연구 국제거래법연구 21집 2호 / 국제거래법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636286">김문희 재산적 손해 발생 사실은 인정되나 구체적인 손해액을 증명하기 곤란한 경우 그 손해액 판단방법 판례연구 22집 / 부산판례연구회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|625819">추신영 제3자의 게시물로 인한 인터넷 종합정보제공사업자의 불법행위책임 인권과 정의 409호  / 대한변호사협회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631529">최우진 구체적 액수로 증명 곤란한 재산적 손해의 조사 및 확정 : 사실심 법원 권능의 내용과 한계 사법논집 . 제51집   / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|649691">권영준 계약관계에 있어서 신뢰보호 법학 52권 4호  / 서울대학교 법학연구소  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665597">어수용 계약체결과정에서의 설명의무와 선택권의 보호 재산법연구 27권 3호  / 법문사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|613722">유병현 2009년도 민사소송법 학계의 회고와 법률 및 판례의 동향 고시계 55권 2호  / 국가고시학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661167">지원림 계약 및 법률행위법 개정의 방향과 내용 : 민법개정위원회 제1,2기 제1분과위원회의 결과보고 고려법학 64호  / 고려대학교 법학연구원  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|822574">양경승 변론주의와 직권주의의 구별기준 및 상고심의 심리대상 사법논집 . 제62집   / 법원도서관  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|94다53372">대법원 1996. 2. 9. 선고 94다53372 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다38971">대법원 1998. 7. 10. 선고 96다38971 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다6951">대법원 2004. 6. 24. 선고 2002다6951, 6968 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다48508">대법원 2005. 11. 24. 선고 2004다48508 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다30113">대법원 1996. 10. 25. 선고 96다30113 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다79518">대법원 2002. 10. 25. 선고 2001다79518 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다32999">대법원 2007. 6. 14. 선고 2005다32999 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|760|0|null">민법 제760조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|760|0|null">민법 제760조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|760|0|null">민법 제760조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다2181">대법원 2001. 5. 8. 선고 2001다2181 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다47014">대법원 2006. 1. 26. 선고 2005다47014, 47021, 47038 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다31264">대법원 1998. 12. 23. 선고 98다31264 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다1313">대법원 2009. 4. 23. 선고 2009다1313 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다31264">대법원 1998. 12. 23. 선고 98다31264 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다32999">대법원 2007. 6. 14. 선고 2005다32999 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|94다53372">대법원 1996. 2. 9. 선고 94다53372 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다38971">대법원 1998. 7. 10. 선고 96다38971 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다6951">대법원 2004. 6. 24. 선고 2002다6951, 6968 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다48508">대법원 2005. 11. 24. 선고 2004다48508 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다30113">대법원 1996. 10. 25. 선고 96다30113 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다79518">대법원 2002. 10. 25. 선고 2001다79518 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다30113">대법원 1996. 10. 25. 선고 96다30113 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다32999">대법원 2007. 6. 14. 선고 2005다32999 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다55601">대법원 2001. 5. 29. 선고 99다55601, 55618 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다1313">대법원 2009. 4. 23. 선고 2009다1313 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|760|0|null">민법 제760조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2006나57522">서울고법 2008. 5. 2. 선고 2006나57522, 57539, 57546, 57553 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2009. 8. 20. 선고 2008다51120,51137,51144,51151 판결</h2><p class="sub_title">[임대차보증금반환등·임대차보증금반환][공2009하,1516]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 수도권 신공항 건설사업시행자 갑이 점포 임대차계약의 교섭단계에 있는 자들에게 모노레일 설치에 관한 잘못된 정보를 제공하여 신의칙상 고지의무 내지 설명의무를 위반하고, 인천국제공항공사도 갑의 임대차를 조장·방치한 사안에서, 갑과 인천국제공항공사는 공동불법행위자로서 연대하여 임차인들에게 그로 인한 손해를 배상할 의무가 있다고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[2] 모노레일 미설치로 점포 임차인들이 입은 손해액은, 먼저 임차인들에게 손해액을 입증할 수 있는 기회를 부여하고 만약 임차인들이 입증을 게을리하거나 입증이 부족한 경우에는 임차인들에게 입증을 촉구하는 등으로 구체적인 손해액에 관하여 심리하여야 하며 그 후에도 구체적인 손해액을 알 수 없을 경우 관련된 모든 간접사실들을 종합하여 산정하여야 한다고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 공동불법행위자 중의 일부에게 피해자의 부주의를 이용하여 고의로 불법행위를 저지른 사유가 있을 때, 그러한 사유가 없는 다른 불법행위자가 과실상계를 주장할 수 있는지 여부(적극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 수도권 신공항 건설사업시행자 갑이 임대차계약의 교섭단계에 있는 자들에게 객관적으로 PMS(People Mover System, 모노레일) 완공이 가능한지 여부를 정확히 확인해보려는 별다른 노력도 기울여보지 않고 상업시설을 경유하는 PMS가 설치될 것이라는 잘못된 정보를 제공한 것은, 통상의 선전·영업활동을 넘어서서 임차인들에게 의사결정에 영향을 줄 수 있는 중요한 사정에 관한 신의칙상 고지의무 내지 설명의무를 위반한 것이며, 인천국제공항공사도 PMS 설치에 대한 정확하고 충분한 정보를 갑에게 고지하지 아니하고 PMS 설치에 대한 확정된 계획이 없음에도 2단계 공사기간 내에 PMS가 완공될 예정이라는 안내문을 설치하여 갑의 임대차를 조장·방치함으로써 갑이나 임차인들에 대한 신의칙상의 의무를 위반하였으므로, 갑과 인천국제공항공사는 공동불법행위자로서 연대하여 임차인들에게 그로 인한 손해를 배상할 의무가 있다고 한 사례.</p>
+      <p></p><p>
+        </p><p>[2] 모노레일 미설치로 점포 임차인들이 입은 손해액은, 모노레일이 설치되었을 경우의 상업시설의 임차가치와 모노레일이 설치되지 아니한 현재 상태대로의 상업시설 임차가치의 차액이 된다고 할 것인데, 먼저 임차인들에게 손해액을 입증할 수 있는 기회를 부여하고 만약 임차인들이 입증을 게을리하거나 입증이 부족한 경우에는 임차인들에게 입증을 촉구하는 등으로 구체적인 손해액에 관하여 심리하여야 하며 그 후에도 구체적인 손해액을 알 수 없을 경우 관련된 모든 간접사실들을 종합하여 산정하여야 한다고 한 사례.</p>
+      <p></p><p>
+        </p><p>[3] 불법행위로 인한 손해배상 사건에서 피해자의 과실을 들어 과실상계를 함에 있어서는 피해자의 부주의를 이용하여 고의로 불법행위를 저지른 자가 바로 그 피해자의 부주의를 이유로 자신의 책임을 감하여 달라고 주장할 수 없으나, 그러한 사유가 없는 불법행위자는 과실상계의 주장을 할 수 있다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">제760조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">제760조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">민법 제396조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">제760조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다53372|판결" href="#//">대법원 1996. 2. 9. 선고 94다53372 판결</a></span>(공1996상, 884)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다38971|판결" href="#//">대법원 1998. 7. 10. 선고 96다38971 판결</a></span>(공1998하, 2054)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다6951|판결" href="#//">대법원 2004. 6. 24. 선고 2002다6951, 6968 판결</a></span>(공2004하, 1201)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다48508|판결" href="#//">대법원 2005. 11. 24. 선고 2004다48508 판결</a></span><br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다30113|판결" href="#//">대법원 1996. 10. 25. 선고 96다30113 판결</a></span>(공1996하, 3434)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다79518|판결" href="#//">대법원 2002. 10. 25. 선고 2001다79518 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다32999|판결" href="#//">대법원 2007. 6. 14. 선고 2005다32999 판결</a></span>(공2007하, 1045)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인 겸 상고인】
+      
+        
+          원고 1외 39인 (소송대리인 법무법인 케이알 담당변호사 박혁묵외 2인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【원고, 상고인】
+      
+        
+          원고 41외 2인 (소송대리인 법무법인 케이알 담당변호사 박혁묵외 2인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【원고, 피상고인】
+      
+        
+          원고 44외 4인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【피고, 상고인 겸 피상고인】
+      
+        인천국제공항공사외 1인 (소송대리인 법무법인 화우외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2006나57522|판결" href="#//">서울고법 2008. 5. 2. 선고 2006나57522, 57539, 57546, 57553 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 주위적 청구 부분을 파기하고, 이 부분 사건을 서울고등법원으로 환송한다.  
+        피고 2 주식회사의 상고를 기각한다.
+      </p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 피고 인천국제공항공사(이하 ‘피고 공사’라 한다)의 상고이유에 대하여</p><p>  가. 공동불법행위 성립에 관하여</p><p>  수인이 공동하여 타인에게 손해를 가하는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">민법 제760조</a></span>의 공동불법행위에 있어서 행위자 상호간의 공모는 물론 공동의 인식을 필요로 하지 아니하고, 다만 객관적으로 그 공동행위가 관련 공동되어 있으면 족하고 그 관련 공동성 있는 행위에 의하여 손해가 발생함으로써 그에 대한 배상책임을 지는 공동불법행위가 성립하는 것이며(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다2181|판결" href="#//">대법원 2001. 5. 8. 선고 2001다2181 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다47014|판결" href="#//">대법원 2006. 1. 26. 선고 2005다47014, 47021, 47038 판결</a></span> 등 참조), 공동불법행위에 있어 방조라 함은 불법행위를 용이하게 하는 직접·간접의 모든 행위를 가리키는 것으로서 작위에 의한 경우 뿐만 아니라 작위의무 있는 자가 그것을 방지하여야 할 여러 조치를 취하지 아니하는 부작위로 인하여 불법행위자의 실행행위를 가능하게 하거나 용이하게 하는 경우도 포함하고, 형법과 달리 손해의 전보를 목적으로 하여 과실을 원칙적으로 고의와 동일시하는 민법의 해석으로서는 과실에 의한 방조도 가능하다고 할 것이며, 이 경우의 과실의 내용은 불법행위에 도움을 주지 않아야 할 주의의무가 있음을 전제로 하여 이 의무에 위반하는 것을 말하고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다31264|판결" href="#//">대법원 1998. 12. 23. 선고 98다31264 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다1313|판결" href="#//">대법원 2009. 4. 23. 선고 2009다1313 판결</a></span> 등 참조), 방조자에게 공동불법행위자로서의 책임을 지우기 위해서는 방조행위와 피방조자의 불법행위 사이에 상당인과관계가 있어야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다31264|판결" href="#//">대법원 1998. 12. 23. 선고 98다31264 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다32999|판결" href="#//">대법원 2007. 6. 14. 선고 2005다32999 판결</a></span> 등 참조).
+      </p><p>  원심판결 이유에 의하면 원심은, 그 채용증거들을 종합하여 판시사실을 인정한 후, 
+        피고 2 주식회사(이하 ‘피고 회사’라 한다)가 이 사건 임대차계약의 교섭단계에 있는 원고들에게 PMS(People Mover System, 모노레일) 설치에 관한 정확하고도 충분한 정보를 구체적으로 고지하거나 설명하지 아니한 채 객관적으로 PMS 완공이 가능한지 여부를 정확히 확인해보려는 별다른 노력도 기울여 보지 아니하고 이 사건 상업시설을 경유하는 PMS가 설치될 것이라는 잘못된 정보를 제공한 것은 통상의 선전·영업활동을 넘어서서 임차인들에게 의사결정에 영향을 줄 수 있는 중요한 사정에 관한 신의칙상 고지의무 내지 설명의무를 위반한 것이며, 피고 공사도 PMS 설치에 대한 정확하고 충분한 정보를 피고 회사에게 고지하지 아니하고 PMS 설치에 대한 확정된 계획이 없음에도 2단계 공사기간 내에 PMS가 완공될 예정이라는 안내문을 설치하여 피고 회사의 임대차를 조장·방치함으로써 피고 회사나 원고들에 대한 신의칙상의 의무를 위반하였으므로, 피고들은 공동불법행위자로서 연대하여 원고들에게 그로 인한 손해를 배상할 의무가 있다고 판단하였다.
+      </p><p>  앞서 본 법리와 기록에 비추어 살펴보면, 원심의 이러한 사실인정과 판단은 정당한 것으로 수긍할 수 있고, 거기에 상고이유의 주장과 같은 채층법칙 위반, 법리오해 등의 위법이 없다.</p><p>  나. 손해배상의 범위에 관하여</p><p>  불법행위로 인한 재산상 손해는 위법한 가해행위로 인하여 발생한 재산상 불이익, 즉 그 위법행위가 없었더라면 존재하였을 재산상태와 그 위법행위가 가해진 현재의 재산상태의 차이를 말하는 것이고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다53372|판결" href="#//">대법원 1996. 2. 9. 선고 94다53372 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다38971|판결" href="#//">대법원 1998. 7. 10. 선고 96다38971 판결</a></span> 등 참조), 불법행위로 인한 손해배상청구소송에 있어, 재산적 손해의 발생사실이 인정되고 그의 최대한도인 수액은 드러났으나 구체적인 손해의 액수를 입증하는 것이 사안의 성질상 곤란한 경우, 법원은 증거조사의 결과와 변론 전체의 취지에 의하여 밝혀진 당사자들 사이의 관계, 불법행위와 그로 인한 재산적 손해가 발생하게 된 경위, 손해의 성격, 손해가 발생한 이후의 제반 정황 등의 관련된 모든 간접사실들을 종합하여 상당인과관계 있는 손해의 범위인 수액을 판단할 수 있다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다6951|판결" href="#//">대법원 2004. 6. 24. 선고 2002다6951, 6968 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다48508|판결" href="#//">대법원 2005. 11. 24. 선고 2004다48508 판결</a></span> 등 참조).
+      </p><p>  위 법리와 기록에 비추어 보면, 이 사건에서 피고들의 불법행위로 인하여 원고들이 입은 손해액은 PMS가 설치되었을 경우의 이 사건 상업시설의 임차가치와 PMS가 설치되지 아니한 현재 상태대로의 이 사건 상업시설 임차가치의 차액이 된다고 할 것인데, 그 최대한도인 수액이 드러난 바 없고 구체적인 손해액을 입증하는 것이 사안의 성질상 곤란하다고 보기 어려울 뿐만 아니라, 원고들이 원고들의 신청사항에 대한 감정이 가능하다는 취지가 기재된 공인 감정기관 작성의 질의회신문을 첨부하여 PMS가 설치된 경우와 그렇지 아니한 경우의 이 사건 상업시설의 가치 및 임대료의 차액, 감액 비율에 대한 감정신청을 하였으므로, 원심으로서는 먼저 원고들에게 손해액을 입증할 수 있는 기회를 부여하고 만약 원고들이 입증을 게을리하거나 입증이 부족한 경우에는 원고들에게 입증을 촉구하는 등으로 구체적인 손해액에 관하여 심리하여야 하며 그 후에도 구체적인 손해액을 알 수 없을 경우 관련된 모든 간접사실들을 종합하여 손해액을 산정할 수 있다 할 것이다.</p><p>  그럼에도 불구하고 원심은 구체적인 손해액에 대하여는 심리하지도 않은 채 만연히 구체적 손해액을 입증하는 것이 곤란하다는 전제하에, PMS 설치로 인한 유동성 유입효과가 이 사건 상업시설의 시장가치에 미치는 영향이 클 것이라는 예상을 근거로 이 사건 각 임대료의 25%를 손해액이라고 판단하였는바, 이러한 원심의 판단에는 손해배상의 범위에 관한 법리를 오해하고 채증법칙을 위반하여 필요한 심리를 다하지 아니함으로써 판결 결과에 영향을 미친 위법이 있다.</p><p>  다. 과실상계에 관하여</p><p>  민법상의 과실상계제도는 채권자가 신의칙상 요구되는 주의를 다하지 아니한 경우 공평의 원칙에 따라 손해의 발생에 관한 채권자의 그와 같은 부주의를 참작하게 하려는 것이므로, 단순한 부주의라도 그로 말미암아 손해가 발생하거나 확대된 원인이 되었다면 피해자에게 과실이 있는 것으로 보아 과실상계를 할 수 있고, 피해자에게 과실이 인정되면 법원은 손해배상의 책임 및 그 금액을 정하면서 이를 참작하여야 하며, 배상의무자가 피해자의 과실에 관하여 주장하지 않는 경우에도 소송자료에 의하여 과실이 인정되는 경우에는 이를 법원이 직권으로 심리·판단하여야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다30113|판결" href="#//">대법원 1996. 10. 25. 선고 96다30113 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다79518|판결" href="#//">대법원 2002. 10. 25. 선고 2001다79518 판결</a></span> 등 참조). 한편 
+        <span class="accrnt_txt">불법행위로 인한 손해배상 사건에서 피해자의 과실을 들어 과실상계를 함에 있어서는 피해자의 부주의를 이용하여 고의로 불법행위를 저지른 자가 바로 그 피해자의 부주의를 이유로 자신의 책임을 감하여 달라고 주장할 수 없으나, 그러한 사유가 없는 불법행위자는 과실상계의 주장을 할 수 있다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다30113|판결" href="#//">대법원 1996. 10. 25. 선고 96다30113 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다32999|판결" href="#//">대법원 2007. 6. 14. 선고 2005다32999 판결</a></span> 등 참조).
+      </p><p>  기록에 의하면, 원고들이 PMS 설치 계획에 대하여 그 설치 주체인 피고 공사에게 제대로 확인해 보지 아니하고 피고 회사의 설명과 광고만 믿고 이 사건 각 임대차계약을 체결한 사정이 보이며, 그러한 사정은 이 사건 손해의 발생 및 확대에 영향을 주었다고 봄이 상당하고, 피고 공사가 원고들의 부주의를 이용하여 고의로 불법행위를 저지른 것으로는 보이지 아니하므로, 원심으로서는 원고들의 위와 같은 잘못이 인정되는 이상 이를 직권으로 참작하였어야 한다.</p><p>  그럼에도 불구하고, 원심이 이 사건 손해배상책임의 존부 및 범위를 심리·판단함에 있어 이를 전혀 참작하지 아니한 것은 과실상계에 관한 법리를 오해한 위법이 있고, 이는 판결 결과에 영향을 미쳤음이 분명하다.</p><p>  2. 원고들(원고 44~48은 제외)의 상고이유에 대하여</p><p>  가. 불법행위 성립에 관하여</p><p>  상품의 선전 광고에 있어서 거래의 중요한 사항에 관하여 구체적 사실을 신의성실의 의무에 비추어 비난받을 정도의 방법으로 허위로 고지한 경우에는 기망행위에 해당한다고 할 것이나, 그 선전 광고에 다소의 과장 허위가 수반되는 것은 그것이 일반 상거래의 관행과 신의칙에 비추어 시인될 수 있는 한 기망성이 결여된다고 할 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다55601|판결" href="#//">대법원 2001. 5. 29. 선고 99다55601, 55618 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다1313|판결" href="#//">대법원 2009. 4. 23. 선고 2009다1313 판결</a></span> 등 참조).
+      </p><p>  원심판결 이유에 의하면 원심은, 그 채용증거들을 종합하여 판시사실을 인정한 후, 통상 상가에 어떠한 시설, 점포들이 들어올 것이라는 사실은 상가의 수익성 판단의 전제사실로서 그에 따라 운영을 어떻게 하고, 수익은 얼마나 될 것인지와 같은 사항은 궁극적으로 투자자들인 원고들의 책임과 판단으로 결정될 성질의 것이라고 판시한 다음, 피고 회사가 이 사건 상업시설에 항공체험시설과 전망대를 설치하기로 확정된 것처럼 선전, 광고한 행위는 불법행위를 구성하지 아니한다고 판단하였다.</p><p>  살피건대, 이 사건 상업시설에 항공체험시설과 전망대를 설치하기로 확정되었는지 여부가 상가의 수익성 판단의 전제사실로서 그에 관한 허위광고가 당연히 불법행위를 구성하지 아니한다고 볼 수는 없으므로 이 부분 원심 판시내용은 적절하지 못한 면이 있으나, 기록에 의하면 피고 회사가 수도권 신공항 건설사업 실시계획 승인신청 당시에 피고 공사와의 협의를 통해 이 사건 상업시설에 위 시설들을 설치할 계획을 가지고 실시계획 승인신청서에 이를 포함시켰으며, 그 후 실제로 피고 회사가 피고 공사에게 이 사건 상업시설 8, 9층에 피고 공사의 홍보전시관(항공체험시설과 전망대를 의미한다)을 설치 운영해 줄 것을 요청하였고, 피고 공사가 이를 긍정적으로 검토하였으나 공사비 부담 등을 이유로 응하지 아니함으로 인하여 결국 위 시설들의 설치가 이루어지지 아니한 사실을 알 수 있으므로, 피고 회사의 위 시설들에 대한 분양광고나 홍보가 위와 같이 실행계획만 있는 상태에서 마치 입점이 확정된 것처럼 과장된 표현을 사용하였다 하더라도 신의성실의 의무에 비추어 비난받을 정도의 방법으로 허위로 고지함으로써 사회적으로 용인될 수 있는 상술의 정도를 넘는 기망행위에 해당한다고 볼 수 없다 할 것이니, 원심의 판단은 결론적으로 정당하다고 할 것이고, 거기에 상고이유의 주장과 같은 채증법칙 위반, 법리오해 등의 위법이 없다.</p><p>  나. 기망을 이유로 한 계약취소에 관하여</p><p>  원심판결 이유에 의하면 원심은, 그 채용증거들을 종합하여 판시사실을 인정한 후, PMS 완공에 관한 피고 회사의 선전, 광고가 객관적으로 허위·과장 광고임은 명백하고, 그 허위 또는 과장의 정도와 PMS가 이 사건 상업시설의 가치를 판단함에서 차지하는 비중을 참작하면 그 허위 또는 과장은 일반 상거래의 관행과 신의칙에 비추어 사회적으로 용인될 수 있는 한도 내에 있다고 할 수 없으나, 취소사유로 되는 기망행위에 해당한다고 보기에는 부족하다고 판단하였다.</p><p>  기록에 비추어 살펴보면, 원심의 이러한 사실인정과 판단은 정당한 것으로 수긍할 수 있고, 거기에 상고이유의 주장과 같은 법리오해 등의 위법이 없다.</p><p>  다. 손해배상의 범위에 관하여</p><p>  원심이 구체적 손해액을 이 사건 각 임대료의 25%라고 판단한 것이 위법함은 앞서 본 바와 같고, 이러한 원심의 손해액 산정상의 위법은 원심판결의 피고 공사 패소 부분 뿐만 아니라, 원고들 패소 부분의 판결 결과에도 영향을 미쳤음이 분명하므로 원심판결의 원고들 패소 부분 또한 피고 공사 패소 부분과 마찬가지로 파기를 면할 수 없다.</p><p>  3. 피고 회사의 상고에 대하여</p><p>  피고 회사는 법정기간 내에 상고이유서를 제출하지 아니하였을 뿐만 아니라 상고장에도 상고이유의 기재가 없다.</p><p>  4. 결론</p><p>  그러므로 원심판결 중 주위적 청구부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원으로 환송하며, 피고 회사의 상고를 기각하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   차한성(재판장) 김영란 이홍훈(주심) 김능환 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

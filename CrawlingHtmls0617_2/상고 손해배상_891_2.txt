@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2009누5451 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2200995';
+var contIdEtc = '';
+var saNo = '2009누5451';
+var sngoNm = '선고';
+var saNm = '양도소득세등부과처분취소';
+try {
+	var sngoDay=('20091216' ? 
+			'20091216'.length==4 ? Date.parseExact('20091216','yyyy').toString('yyyy. M. d.') : 
+				'20091216'.length==6 ? Date.parseExact('20091216','yyyyMM').toString('yyyy. M. d.') : 
+					'20091216'.length==8 ? Date.parseExact('20091216','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009누5451 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009누5451';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2009누5451</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(4)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|89누7566">대법원 1990. 2. 13. 선고 89누7566 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|90누1663">1990. 10. 12. 선고 90누1663 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|93다39379">대법원 1994. 2. 8.선고 93다39379 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005두10545">대법원 2007. 4. 26. 선고 2005두10545 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|26|2|null">국세기본법 제26조의2 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소득세법|96|0|null">소득세법(구) 제96조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|116|0|null">민법 제116조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|26|2|null">국세기본법 제26조의2 제1항 제1호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="의정부지방법원|2008구합1127">의정부지방법원 2009. 1. 20. 선고 2008구합1127 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2009. 12. 16. 선고 2009누5451 판결</h2><p class="sub_title">[양도소득세등부과처분취소][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피항소인】
+원고 (소송대리인 변호사 김상근 외 4인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 항소인】
+남양주세무서장
+
+</strong></p>
+<span class="space"></span>【변론종결】
+<p>2009. 11. 11.</p>
+
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【제1심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="의정부지방법원|2008구합1127|판결" href="#//">의정부지방법원 2009. 1. 20. 선고 2008구합1127 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결을 취소한다. </p><p>2. 원고의 청구를 기각한다.</p><p>3. 소송총비용은 원고의 부담으로 한다.</p>
+【청구취지 및 항소취지】
+<p>1. 청구취지</p>
+<p>  피고가 2006. 5. 4. 원고에게 한 1999년 귀속 양도소득세 776,100,000원 및 증권거래세 17,875,000원 부과처분을 취소한다. </p>
+<p>2. 항소취지</p>
+<p>  주문 기재와 같다. </p>
+
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 처분의 경위</p><p>  가. 원고는, 1999. 12. 17.자로 제이씨캐피탈 주식회사(이하, ‘제이씨캐피탈’이라고 한다), 소외 4, 세흥피엔씨 주식회사(이하, ‘세흥피엔씨’라고 한다), 소외 6에게 아래 표 기재와 같이 신세기통신 주식회사(이하, ‘신세기통신’이라고 한다) 발행 주식 524,510주를 양도한 사실과 관련하여, 2000. 2. 29. 피고에게 양도가액을 14,760,790,000원으로 한 양도소득세 및 증권거래세(이하 ‘양도소득세 등’이라고 한다)의 과세표준을 신고하고 그 세액을 납부하였다. </p><p> </p><div name="Table229" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="1">계약일</td><td align="CENTER" valign="MIDDLE" rowspan="1">양도인</td><td align="CENTER" valign="MIDDLE" rowspan="1">양수인</td><td align="CENTER" valign="MIDDLE" rowspan="1">주식수</td><td align="CENTER" valign="MIDDLE" rowspan="1">주당가격(원)</td><td align="CENTER" valign="MIDDLE" rowspan="1">양도가액(원)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="4">1999. 12. 17.</td><td align="CENTER" valign="MIDDLE" rowspan="4">원고</td><td align="CENTER" valign="MIDDLE" rowspan="1">제이씨캐피탈</td><td align="RIGHT" valign="MIDDLE" rowspan="1">300,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">27,500</td><td align="RIGHT" valign="MIDDLE" rowspan="1">8,250,000,000</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">소외 4</td><td align="RIGHT" valign="MIDDLE" rowspan="1">120,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">29,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">3,480,000,000</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">세흥피엔씨</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> 80,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">29,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">2,320,000,000</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">소외 6</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> 24,510</td><td align="RIGHT" valign="MIDDLE" rowspan="1">29,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">  710,790,000</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="3">계</td><td align="RIGHT" valign="MIDDLE" rowspan="1">524,510</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">14,760,790,000</td></tr></tbody></table></div></div><p></p><p>  나. 그러나 피고는, 원고가 위 신세기통신 발행 주식 524,510주 중 제이씨캐피탈, 소외 4, 세흥피엔씨에게 양도한 500,000주(이하, ‘이 사건 주식’이라고 한다)는 실제로는 대유리젠트증권 주식회사(이하, ‘대유리젠트증권’이라고 한다), 한누리투자증권 주식회사(이하, ‘한누리투자증권’이라고 한다)에게 17,300,000,000원에 매도하고도, 양도소득세 등의 과세표준 신고시 실제 계약내용보다 저가로 양도한 것처럼 신고하여 세금을 탈루하였다고 보고, 이에 따라 위 524,510주 전체 주식의 실제 양도가액을 18,010,790,000원(대유리젠트증권 및 한누리투자증권에 양도된 500,000주의 가격 17,300,000,000원 + 소외 6에게 양도된 24,510주의 가격 710,790,000원)으로 판단하여 이를 기초로 2006. 5. 4. 원고에게 1999년 귀속 양도소득세 776,100,000원, 1999년 12월 귀속 증권거래세 17,875,000원을 경정·부과하였다(이하, ‘이 사건 처분’이라고 한다).</p><p>  다. 원고는 이에 불복하여 2006. 7. 27. 이의신청을 제기하였으나 2006. 9. 14. 기각결정을 받고, 2006. 12. 11. 심판청구를 제기하였으나 2007. 11. 30. 기각결정을 받아 2008. 2. 28. 이 사건 소를 제기하였다. </p><p>  [인정 근거] 다툼이 없는 사실, 갑 제1, 2, 5호증, 을 제1, 2호증의 각 기재(각 가지번호 포함, 이하 같다), 변론 전체의 취지</p><p>2. 이 사건 처분의 적법 여부</p><p>  가. 원고의 주장</p><p>   (1) 귀속 소득금액</p><p>      신세기통신 발행 주식 524,510주에 대하여 피고가 실제 양도가액이라고 판단한 금액과 원고가 피고에게 신고한 양도가액의 차액 3,250,000,000원(18,010,790,000원 - 14,760,790,000원)이 발생한 이유는 원고로부터 매각을 지시받은 소외 1이 위 주식 중 이 사건 주식에 대하여는 임의로 아래에서 보는 바와 같이 중간거래인을 개입시켜 1차 매매와 2차 매매의 두 단계에 걸쳐 매매가 이루어지도록 한 후 원고에게는 1차 매매의 가격인 14,050,000,000원(위 표에서 소외 6에게 양도한 것을 제외한 나머지인 이 사건 주식 양도가액의 합계액)이 양도가액인 것으로 보고하고 2차 매매의 가격인 17,300,000,000원과의 차액인 3,250,000,000원(17,300,000,000원 - 14,050,000,000원)을 횡령하였기 때문인바, 원고는 1차 매매계약의 당사자일 뿐 2차 매매계약의 당사자가 아니므로 원고에게는 1차 매매에 따른 양도소득만 귀속되고 2차 매매에 따른 양도소득은 귀속되지 아니하였으며, 또한 원고가 2차 매매에 따른 양도소득을 사실상 지배·관리·처분할 수 있는 지위에 있지도 아니하므로, 원고에게 2차 매매에 따른 양도소득이 귀속되었음을 전제로 하여 1차 매매의 양도가액과의 차액인 위 3,250,000,000원에 대해서도 양도소득세 등을 부과한 이 사건 처분은 위법하다.</p><p>   (2) 제척기간 도과</p><p>      설령, 소외 1이 횡령한 위 차액 3,250,000,000원까지도 법률상 원고의 소득금액으로 인정할 수밖에 없다 하더라도, 원고는 위 차액의 존재사실을 모른 상태에서 소외 1이 아닌 소외 5에게 지시하여 과세표준을 신고하였고, 따라서 이는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">국세기본법 제26조의2 제1항 제1호</a></span>에서 정한 ‘사기 기타 부정한 행위로써 국세를 포탈하거나 환급, 공제받는 경우’로 볼 수 없다 할 것이므로, 10년이 아닌 5년의 부과제척기간을 적용하여야 하는바, 이 사건 부과처분은 5년의 부과제척기간을 도과한 후의 것이므로 위법하다. </p><p>   (3) 가산세 부과의 위법성</p><p>       또한, 원고는 소외 1이 위와 같이 횡령을 하면서 사실과 다르게 과세표준을 신고하였음을 알지 못하였고 이와 같이 알지 못한 것에 대하여 어떠한 잘못도 없으므로, 이 사건 처분 중 가산세를 부과한 부분은 위법하다. </p><p>  나. 관계 법령</p><p>      별지 기재와 같다. </p><p>  다. 인정사실</p><p>   (1) 원고는 현대산업개발 주식회사(이하, ‘현대산업개발’이라고 한다)의 대표이사로서 1999. 10.경 당시 현대산업개발의 재정팀장으로 근무하던 소외 1에게 원고 소유의 신세기통신 발행 주식의 대략적인 양을 정하여 준 후 이를 최대한 좋은 가격에 팔아보라고 지시하면서 매도 상대방, 매도 시점 등 위 주식의 매도에 관한 일체의 권한을 위임하였다. </p><p>   (2) 소외 1은 원고의 위 지시에 따라 1999. 12. 17. 신세기통신 발행 주식 524,510주를 그 중 30만 주는 대유리젠트증권에게 10,500,000,000원에, 20만 주는 한누리투자증권에게 6,800,000,000원에, 24,510주는 소외 6에게 710,790,000원에 각 매도하였는데, 그 과정에서 소외 1은 대유리젠트증권의 과장인 소외 2 및 한누리투자증권의 상무이사인 소외 3에게 이 사건 주식인 위 30만 주 및 20만 주에 대하여 형식상의 중간거래인을 세워줄 것을 부탁하였다. </p><p>   (3) 이에 소외 2는 자신이 설립한 회사인 제이씨케피탈의 명의를, 소외 3은 자신의 고등학교 동창인 소외 4 및 세흥피엔씨(소외 4가 설립한 회사임)의 명의를 각 빌려서 중간거래인으로 내세워, 외형상 이 사건 주식 중 30만 주에 대하여는 원고 ― 제이씨캐피탈 ― 대유리젠트증권의 순으로, 이 사건 주식 중 20만 주에 대하여는 원고 ― 소외 4·세흥피엔씨 ― 한누리투자증권의 순으로 이전된 것처럼 2단계의 계약서가 작성되었는바, 1차 매매계약의 내용은 위 1.가.항 기재 표와 같고 2차 매매계약의 내용은 아래 표의 기재와 같다(이하 각 ‘1차 매매’ 및 ’2차 매매‘라 한다).</p><p> </p><div name="Table598" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="1">계약일</td><td align="CENTER" valign="MIDDLE" rowspan="1">양도인</td><td align="CENTER" valign="MIDDLE" rowspan="1">양수인</td><td align="CENTER" valign="MIDDLE" rowspan="1">주식수</td><td align="CENTER" valign="MIDDLE" rowspan="1">주당가격(원)</td><td align="CENTER" valign="MIDDLE" rowspan="1">양도가액(원)</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="3">1999. 12. 17.</td><td align="CENTER" valign="MIDDLE" rowspan="1">제이씨캐피탈</td><td align="CENTER" valign="MIDDLE" rowspan="1">대유리젠트증권</td><td align="RIGHT" valign="MIDDLE" rowspan="1">300,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">35,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">10,500,000,000</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">소외 4</td><td align="CENTER" valign="MIDDLE" rowspan="2">한누리투자증권</td><td align="RIGHT" valign="MIDDLE" rowspan="1">120,000</td><td align="RIGHT" valign="MIDDLE" rowspan="2">34,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">4,080,000,000</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">세흥피엔씨</td><td align="RIGHT" valign="MIDDLE" rowspan="1">80,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1">2,720,000,000</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1" colspan="3">계</td><td align="RIGHT" valign="MIDDLE" rowspan="1">500,000</td><td align="RIGHT" valign="MIDDLE" rowspan="1"> </td><td align="RIGHT" valign="MIDDLE" rowspan="1">17,300,000,000</td></tr></tbody></table></div></div><p></p><p>   (4) 소외 1은 대유리젠트증권과 한누리투자증권으로부터 2차 매매의 양도가액을 현금과 수표로 모두 지급받은 후, 위와 같이 중간거래인의 명의를 빌릴 수 있도록 도와 준 대가로 소외 2에게 2,000만 원, 소외 4에게 2억 원을 주었으며, 소외 3에게는 원고의 신세기통신 2,255주를 시세보다 낮은 가격인 29,000원에 매수할 수 있도록 해 주었다.</p><p>   (5) 그 후, 소외 1은 원고로부터 위와 같이 매도한 신세기통신 발행 주식 524,510주의 양도소득세 등 과세표준 신고를 지시받자, 이 사건 주식에 대한 1차 매매 계약서 및 소외 6에 대한 매매계약서(24,510주)를 현대산업개발 경리팀에서 근무하는 소외 5에게 건네주어 이 사건 주식에 대하여는 양도금액이 적게 작성된 1차 매매계약서에 의해 양도소득세 등 과세표준을 신고하도록 하였다.</p><p>[인정 근거] 갑 제3, 7, 8, 9호증, 을 제3 내지 5호증의 각 기재, 변론 전체의 취지</p><p>  라. 판단</p><p>   (1) 귀속 소득금액 주장에 대한 판단</p><p>       계약의 당사자를 확정하기 위해서는 단순히 계약서상의 명의에 의존할 것이 아니라 실질과세의 원칙상 당사자의 의사나 매매대금의 실질적인 출연자 등 계약의 실질적인 내용을 종합적으로 고려하여 판단하여야 하고(<span id="link"><a name="linkContPanre" title="새창" type="대법원|89누7566|판결" href="#//">대법원 1990. 2. 13. 선고 89누7566 판결</a></span>, <span id="link"><a name="linkContPanre" title="새창" type="대법원|90누1663|판결" href="#//">1990. 10. 12. 선고 90누1663 판결</a></span> 등 참조), 양도소득세의 산정기준이 되는 양도가액은 양도자와 양수자간에 실제로 거래한 가액인 실지거래가액에 의하여야 하는바(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="소득세법|96|">구 소득세법 제96조 제1항</a></span>), 위 인정사실에 의하면 이 사건 주식에 대한 1차 매매의 매수인이자 2차 매매의 매도인인 제이씨캐피탈과 소외 4 및 세흥피엔씨는 명의대여자에 불과하고, 1차 매매와 2차 매매는 1999. 12. 17. 같은 날 동시에 이루어 졌으며 매매대금이 각 단계별로 지급된 것이 아니라 2차 매매의 매수인으로부터 1차 매매의 매도인인 원고의 대리인 소외 1에게 직접 지급되었으며, 매매계약이 위와 같이 두 단계로 이루어진 이유는 소외 1의 부탁을 받은 2차 매매 매수인들의 담당자들과의 합의에 기인한 것임을 알 수 있으므로, 이 사건 주식에 대한 1차 매매계약과 2차 매매계약은 가장행위에 불과하고 이 사건 주식에 대한 매매계약의 실질은 원고와 대유리젠트증권 및 한누리투자증권과 사이에 직접 이루어진 것으로 보아야 하며, 실지거래가액 또한 대유리젠트증권 및 한누리투자증권이 지급한 금액으로 보아야한다. </p><p>       그런데, 한편 위 인정사실에 의하면 원고는 소외 1에게 신세기통신 발행 주식 524,510주의 매도에 관한 포괄적 대리권을 수여하였다고 봄이 타당하고, 사정이 이와 같다면 원고의 대리인인 소외 1은 위 주식의 매매계약에 따른 대금을 수령할 권한도 있다고 보아야 할 것인데(<span id="link"><a name="linkContPanre" title="새창" type="대법원|93다39379|판결" href="#//">대법원 1994. 2. 8.선고 93다39379 판결</a></span> 참조), 소외 1이 위 매매계약일 무렵 이 사건 주식에 대한 매매대금으로 17,300,000,000원(2차 매매계약 매매대금)을 지급받았음은 위에서 본 바와 같으므로, 결국 소외 1이 이 사건 주식 매매대금을 지급받음과 동시에 실지거래가액 17,300,000,000원 전액이 원고 소득으로 귀속되었다고 봄이 타당하며, 설령 소외 1이 이 사건 주식의 매매대금 중 1차 매매가격과 2차 매매가격의 차액인 3,250,000,000원을 횡령하였고 또한 1차 매매가격을 진정한 양도가액으로 알고 있었기 때문에 위 횡령 사실조차 몰랐다는 원고의 주장이 사실이라고 하더라도, 이는 원고로부터 포괄적 권한을 위임한 받은 소외 1이 그 위임의 취지에 반하여 배임행위를 저지른 것을 원인으로 한 원고와 소외 1 사이의 내부적인 정산관계에 불과할 뿐이고, 그 밖에 가장매매인인 소외 4, 세흥씨앤씨가 별도로 이 사건 주식 중 20만 주의 2차 매매에 대한 양도소득세 등을 신고·납부하였다는 등 원고 주장 사유가 있다 하더라도 그러한 사유만으로 원고에게 위와 같이 실지거래가액 전부가 귀속됨을 인정함에 방해가 되지 않는다. </p><p>       따라서, 이 사건 주식에 대한 1차 매매가격과 2차 매매가격의 차액인 3,250,000,000원도 원고에게 귀속되는 소득이라 할 것이므로, 이에 반하는 원고의 위 주장은 받아들이지 않는다. </p><p>   (2) 제척기간 도과 주장에 대한 판단      </p><p>       소득세 및 증권거래세는 납세의무자 스스로 과세요건이 충족되었는지 조사·확인하고 이에 관계 세법을 적용하여 과세표준과 세액을 신고함으로써 조세채무를 확정짓는 방식인 신고납세방식에 의하고, 납세의무자의 납세신고행위는 조세채권채무관계를 발생시키는 법률요건으로서 사인의 공법행위에 해당하며, 사인의 공법행위는 법령에 의하여 대리가 허용되지 않는 경우나 성질상 허용되지 않는 경우를 제외하고는 대리가 가능하다 할 것이고 대리에 따른 법률관계는 민법의 일반원칙에 의한다고 할 것이다.</p><p>       그러므로 살피건대, 소득세 및 증권거래세 과세표준 신고의 경우 법령에 의하여 대리가 허용되지 않거나 성질상 대리가 허용되지 않는 경우에 해당하지 아니하고, 한편 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|116|">민법 제116조 제1항</a></span>에 의하면 의사표시의 효력이 의사의 흠결, 사기, 강박 또는 어느 사정을 알았거나 과실로 알지 못한 것으로 인하여 영향을 받을 경우 그 사실의 유무는 대리인을 표준으로 결정하여야 한다고 규정하고 있는 이상 이는 조세에 대한 과세표준의 신고행위에 있어서도 동일하게 적용된다 할 것인바, 위 인정사실에 의하면 원고로부터 신세기통신 발행 주식 524,510주에 대한 양도소득세 등의 과세표준 신고를 지시받은 소외 1은 그 중 소외 6에게 매도한 24,510주에 대해서는 그에 관하여 진정하게 작성된 계약서를, 이 사건 주식에 대해서는 양도금액이 적게 작성된 1차 매매 계약서를 현대산업개발 경리팀 직원 소외 5에게 건네주어 그에 기해 원고의 양도소득세 등의 과세표준을 신고하도록 하였다는 것이고, 위 양도소득세 등의 과세표준 신고라는 법률행위는 소외 1이 원고를 대리하여 한 것으로서 소외 5는 단지 소외 1의 지시에 따라 신고서의 작성 및 제출이라는 사실행위를 수행한 사자에 불과하다 할 것인데, 설령 원고가 과세표준 신고를 할 당시까지 2차 매매 사실을 전혀 알지 못했다 할지라도 신고 대리인인 소외 1은 이 사건 주식의 매매가 실질에 있어서는 한 단계의 거래였음에도 이를 가장된 두 단계의 거래인 것처럼 매매계약서를 작성하고 원고에게 귀속된 양도소득금액이 1차 매매계약서에 기재된 금액에 불과한 것처럼 과세관청에 신고하였고 이와 같은 신고가 진실에 반한다는 사정을 알고 있었므로, 이는 결국 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">국세기본법 제26조의2 제1항 제1호</a></span>에서 정한 ‘사기 기타 부정한 행위로써 국세를 포탈하거나 환급, 공제받는 경우’에 해당한다 할 것이어서 10년의 부과제척기간을 적용하는 것이 타당하고, 피고는 당해 국세를 부과할 수 있는 날로부터 10년 이내에 이 사건 처분을 하였음이 역수상 명백하다(이에 대하여 원고는, 자신이 직접 소외 5에게 과세표준 신고를 지시하였고 소외 1이 이를 대리한 바 없다고 주장하나, 이에 부합하는 갑 제13호증의 기재는 믿을 수 없고 갑 제12호증의 기재만으로는 이를 인정하기 부족하다). </p><p>       따라서, 원고의 대리인인 소외 1이 과세표준 신고를 한 이상 10년의 부과제척기간을 적용하여야 할 것이므로, 이에 반하는 원고의 위 주장 또한 받아들이지 않는다. </p><p>   (3) 가산세 부과의 위법성 주장에 대한 판단</p><p>      세법상 가산세는 과세권의 행사 및 조세채권의 실현을 용이하게 하기 위하여 납세자가 정당한 이유 없이 법에 규정된 신고 납세 등 각종 의무를 위반한 경우에 개별세법이 정하는 바에 따라 부과되는 행정상 제재로서 납세자의 고의 과실은 고려되지 아니하는바(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2005두10545|판결" href="#//">대법원 2007. 4. 26. 선고 2005두10545 판결</a></span> 참조), 설령 원고가 소외 1이 허위의 2단계매매계약서를 작성하여 사실과 달리 과세표준 신고한 사실을 몰랐다 하더라도, 원고는 현대산업개발의 대표이사이고 소외 1은 위 회사의 재정팀장으로서 원고의 지시에 의해 비자금을 조성하는 역할도 수행하는 등 원고의 지배범위 내에 있었고, 원고 스스로도 인터넷을 통하여 이 사건 주식의 당시 시가의 대강을 알고 있었으므로(갑 제6호증), 원고로서는 조금만 주의를 기울였다면 소외 1이 허위의 2단계매매계약서를 작성하고 사실과 달리 과세표준을 신고한다는 사실을 알아내어 이를 방지하거나 시정할 수 있었다 할 것이어서, 단지 원고가 소외 1의 위와 같은 행위를 몰랐다는 사정만으로 법에 규정된 신고 납세 의무를 위반함에 있어 원고에게 정당한 이유가 있다고 볼 수 없다. </p><p>      따라서, 이에 반하는 원고의 위 주장 또한 받아들이지 않는다.</p><p>3. 결론</p><p>   그렇다면, 원고의 이 사건 청구는 이유 없어 이를 기각하여야 할 것인바, 제1심 판결은 이와 결론을 달리하여 부당하므로 이를 취소하고 원고의 청구를 기각하기로 하여, 주문과 같이 판결한다.</p><p>[별지 생략]</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   황찬현(재판장) 이현우 이화용 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

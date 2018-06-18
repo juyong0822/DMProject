@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다71318 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2059614';
+var contIdEtc = '';
+var saNo = '2010다71318';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20130328' ? 
+			'20130328'.length==4 ? Date.parseExact('20130328','yyyy').toString('yyyy. M. d.') : 
+				'20130328'.length==6 ? Date.parseExact('20130328','yyyyMM').toString('yyyy. M. d.') : 
+					'20130328'.length==8 ? Date.parseExact('20130328','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다71318 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다71318';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다71318</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(2)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(5)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(12)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|803495">개정 실화책임법과 공작물책임 검토 @ 대법원 2013328 선고 2010다71318 판결을 중심으로 이경태 중앙대학교 법학전문대학원</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661997">이상우 실화책임과 공작물책임 : 개정 실화책임에 관한 법률의 적용범위 및 직접화재부분과 연소부분의 구별기준을 중심으로 민사판례연구 34권  / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|786537">방웅환 화재사고에 있어서 공작물의 설치 또는 보존상의 하자와 인과관계 대법원판례해설 제103호 / 법원도서관  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다58056">대법원 2012. 6. 28. 선고 2010다58056 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="실화책임에관한법률|1|0|null">실화책임에 관한 법률 제1조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="실화책임에관한법률|2|0|null">실화책임에 관한 법률 제2조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="실화책임에관한법률|3|0|null">실화책임에 관한 법률 제3조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|758|0|null">민법 제758조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|93다40454">대법원 1996. 5. 10. 선고 93다40454 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다6951">대법원 2004. 6. 24. 선고 2002다6951, 6968 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다48508">대법원 2005. 11. 24. 선고 2004다48508 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다24499">대법원 2005. 1. 14. 선고 2003다24499 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다101343">대법원 2010. 4. 29. 선고 2009다101343 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|765|0|null">민법 제765조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="실화책임에관한법률|3|0|null">실화책임에 관한 법률 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="실화책임에관한법률|1|0|20090508">실화책임에 관한 법률 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="실화책임에관한법률|2|0|null">실화책임에 관한 법률 제2조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|758|0|null">민법 제758조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나63924">서울고법 2010. 7. 16. 선고 2009나63924 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2013. 3. 28. 선고 2010다71318 판결</h2><p class="sub_title">[손해배상(기)][공2013상,735]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>2009. 5. 8. 법률 제9648호로 전부 개정된 실화책임에 관한 법률하에서 공작물의 설치·보존상의 하자에 의하여 발생한 화재로부터 연소한 부분에 대한 손해배상책임에 관하여 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>이 적용되는지 여부(적극)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>2009. 5. 8. 법률 제9648호로 전부 개정된 실화책임에 관한 법률(이하 ‘개정 실화책임법’이라고 한다)은 구 실화책임에 관한 법률(2009. 5. 8. 법률 제9648호로 전부 개정되기 전의 것)과 달리 손해배상액의 경감에 관한 특례 규정만을 두었을 뿐 손해배상의무의 성립을 제한하는 규정을 두고 있지 아니하므로, 공작물의 점유자 또는 소유자가 공작물의 설치·보존상의 하자로 인하여 생긴 화재에 대하여 손해배상책임을 지는지는 다른 법률에 달리 정함이 없는 한 일반 민법의 규정에 의하여 판단하여야 한다. 따라서 공작물의 설치·보존상의 하자에 의하여 직접 발생한 화재로 인한 손해배상책임뿐만 아니라 그 화재로부터 연소한 부분에 대한 손해배상책임에 관하여도 공작물의 설치·보존상의 하자와 손해 사이에 상당인과관계가 있는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>이 적용되고, 실화가 중대한 과실로 인한 것이 아닌 한 그 화재로부터 연소한 부분에 대한 손해의 배상의무자는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|3|">개정 실화책임법 제3조</a></span>에 의하여 손해배상액의 경감을 받을 수 있다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p> 구 실화책임에 관한 법률(2009. 5. 8. 법률 제9648호로 전부 개정되기 전의 것),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|1|">실화책임에 관한 법률 제1조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|2|">제2조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|3|">제3조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다58056|판결" href="#//">대법원 2012. 6. 28. 선고 2010다58056 판결</a></span>(공2012하, 1285)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        금양화학 주식회사 (소송대리인 법무법인 바른 담당변호사 주경진)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【원고, 피상고인 겸 상고인】
+      
+        
+          원고 2 외 3인 (소송대리인 법무법인 바른 담당변호사 주경진)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 상고인 겸 피상고인】
+      
+        금호화성 주식회사 (소송대리인 법무법인 광장 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나63924|판결" href="#//">서울고법 2010. 7. 16. 선고 2009나63924 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결의 
+        원고 2, 
+        4, 
+        5 패소 부분 중 영업손실에 관한 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  
+        원고 2, 
+        4, 
+        5의 나머지 상고 및 원고 금양화학 주식회사, 
+        원고 3의 상고와 피고의 상고를 모두 기각한다.  원고 금양화학 주식회사, 
+        원고 3과 피고 사이에 생긴 상고비용은 각자가 부담한다.
+      </p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 원고들의 상고이유에 대하여</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|765|">민법 제765조</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|3|">실화책임에 관한 법률 제3조</a></span> 소정의 손해배상액 경감사유에 관한 사실인정이나 그 비율을 정하는 것은 형평의 원칙에 비추어 현저히 불합리하다고 인정되지 아니하는 한 사실심의 전권사항에 속한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|93다40454|판결" href="#//">대법원 1996. 5. 10. 선고 93다40454 판결</a></span> 등 참조).
+      </p><p>  원심판결 이유에 의하면, 원심은 이 사건 화재의 구체적인 발생원인이 밝혀지지 않은 점, 피고 공장은 정기적으로 안전점검을 받았고, 점검 당시 별다른 특이사항이 발견되지 않은 점, 원고들이 취급하는 물품 역시 가연성 및 인화성이 높아 그 손해가 더욱 확대되었다고 보이는 점 등을 비롯하여 이 사건 화재의 원인과 규모, 피해의 대상과 정도, 연소 및 피해 확대의 원인, 피해 확대를 방지하기 위한 피고의 노력 등 이 사건 기록 및 변론에 나타난 모든 사정을 고려하여, 피고가 부담할 손해배상책임을 원고들이 입은 손해의 50%로 경감하였다.</p><p>  앞에서 본 법리와 기록에 비추어 살펴보면, 원심의 위와 같은 손해배상책임 경감사유에 관한 사실인정이나 그 비율판단은 정당하다고 수긍할 수 있는 범위 내로서 형평의 원칙에 비추어 현저히 불합리하다고 볼 수 없고, 거기에 상고이유로 주장하는 바와 같이 손해배상책임의 감경에 관한 법리오해의 위법이 없다.</p><p>  2. 
+        원고 2, 
+        4, 
+        5의 상고이유에 대하여
+      </p><p>  불법행위로 인한 손해배상청구소송에 있어, 재산적 손해의 발생사실이 인정되고 그의 최대한도인 수액은 드러났으나 구체적인 손해의 액수를 입증하는 것이 사안의 성질상 곤란한 경우에 한하여, 법원은 증거조사의 결과와 변론 전체의 취지에 의하여 밝혀진 당사자들 사이의 관계, 불법행위와 그로 인한 재산적 손해가 발생하게 된 경위, 손해의 성격, 손해가 발생한 이후의 제반 정황 등의 관련된 모든 간접사실들을 종합하여 상당인과관계 있는 손해의 범위인 수액을 판단할 수 있다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다6951|판결" href="#//">대법원 2004. 6. 24. 선고 2002다6951, 6968 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다48508|판결" href="#//">대법원 2005. 11. 24. 선고 2004다48508 판결</a></span> 등 참조).
+      </p><p>  위 법리와 기록에 비추어 보면, 이 사건 화재로 위 원고들이 입은 구체적인 영업손실액을 산정하는 것이 충분히 가능하다고 보이는 이상, 원심으로서는 먼저 위 원고들에게 손해액을 입증할 수 있는 기회를 부여하고 만약 위 원고들이 입증을 게을리하거나 입증이 부족한 경우에는 위 원고들에게 입증을 촉구하는 등으로 구체적인 손해액에 관하여 심리하여야 하며 그 후에도 구체적인 손해액을 알 수 없을 경우 관련된 모든 간접사실들을 종합하여 손해액을 산정할 수 있다 할 것이다.</p><p>  그럼에도 불구하고 원심이 위 원고들이 구체적 영업손실액을 입증하지 않고 있다는 이유만으로 구체적인 영업손실액에 대하여 위 원고들에게 입증을 촉구하거나 심리하지도 않은 채 위 원고들의 영업손실액에 대한 주장을 받아들일 수는 없다고 판단하면서도, 위 원고들이 이 사건 화재로 상당 기간 영업을 하지 못하여 수익을 얻지 못하는 손해를 입은 사실 자체가 인정되는 이상 이러한 영업손실액을 위 원고들에 대한 손해배상액 경감 시에는 유리한 사유로 참작하기로 하여, 위 원고들에 대한 손해배상액을 이들이 입은 전체 손해액의 50%로 경감한 금액에다 원심이 임의로 정한 일정한 금액을 합한 액수로 정한 것은 손해배상의 범위에 관한 법리를 오해하거나, 필요한 심리를 다하지 아니함으로써 판결 결과에 영향을 미친 위법이 있다.</p><p>  3. 피고의 상고이유에 대하여</p><p>  가. 상고이유 제1점에 대하여</p><p>  구 실화책임에 관한 법률(2009. 5. 8. 법률 제9648호로 전부 개정되기 전의 것, 이하 ‘구 실화책임법’이라고 한다)은 “
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>의 규정은 실화의 경우에는 중대한 과실이 있을 때에 한하여 이를 적용한다.”고 규정하고 있었으나, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|1|">2009. 5. 8. 법률 제9648호로 전부 개정된 실화책임에 관한 법률(이하 ‘개정 실화책임법’이라고 한다)은 제1조</a></span>에서 “이 법은 실화의 특수성을 고려하여 실화자에게 중대한 과실이 없는 경우 그 손해배상액의 경감에 관한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|765|">민법 제765조</a></span>의 특례를 정함을 목적으로 한다.”고 규정하고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|2|">제2조</a></span>에서 “이 법은 실화로 인하여 화재가 발생한 경우 연소로 인한 부분에 대한 손해배상청구에 한하여 적용한다.”고 규정하고 있다.
+      </p><p>  위와 같이 
+        <span class="accrnt_txt">개정 실화책임법은 구 실화책임법과 달리 손해배상액의 경감에 관한 특례 규정만을 두었을 뿐 손해배상의무의 성립을 제한하는 규정을 두고 있지 아니하므로, 공작물의 점유자 또는 소유자가 공작물의 설치·보존상의 하자로 인하여 생긴 화재에 대하여 손해배상책임을 지는지 여부는 다른 법률에 달리 정함이 없는 한 일반 민법의 규정에 의하여 판단하여야 한다. 따라서 공작물의 설치·보존상의 하자에 의하여 직접 발생한 화재로 인한 손해배상책임뿐만 아니라 그 화재로부터 연소한 부분에 대한 손해배상책임에 관하여도 공작물의 설치·보존상의 하자와 그 손해 사이에 상당인과관계가 있는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|" style="text-decoration:underline">민법 제758조 제1항</a></span>이 적용되고, 실화가 중대한 과실로 인한 것이 아닌 한 그 화재로부터 연소한 부분에 대한 손해의 배상의무자는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|3|" style="text-decoration:underline">개정 실화책임법 제3조</a></span>에 의하여 손해배상액의 경감을 받을 수 있다.
+        </span>
+      </p><p>  위 법리에 비추어 보면, 원심이 2007. 8. 31. 이후 발생한 이 사건 화재에 관하여는 개정 실화책임법에 따라 공작물의 설치·보존상의 하자로 직접 발생한 화재로 인한 손해배상책임뿐만 아니라 그 화재로부터 연소한 부분에 대한 손해배상책임에 관하여도 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>을 적용할 수 있고, 다만 연소 부분에 대하여는 그 손해배상액을 경감할 수 있다고 판단한 것은 정당한 것으로 수긍이 가고, 거기에 상고이유로 주장하는 바와 같은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|1|">개정 실화책임법 제1조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="실화책임에 관한 법률|2|">제2조</a></span> 등의 해석·적용에 관한 법리를 오해한 위법이 없다.
+      </p><p>  나. 상고이유 제2, 3점에 대하여</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>에서 말하는 공작물의 설치·보존상의 하자라 함은 공작물이 그 용도에 따라 통상 갖추어야 할 안전성을 갖추지 못한 상태에 있음을 말하는 것으로서, 이와 같은 안전성의 구비 여부를 판단함에 있어서는 당해 공작물의 설치·보존자가 그 공작물의 위험성에 비례하여 사회통념상 일반적으로 요구되는 정도의 방호조치 의무를 다하였는지의 여부를 기준으로 판단하여야 하고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다24499|판결" href="#//">대법원 2005. 1. 14. 선고 2003다24499 판결</a></span> 등 참조), 또한 공작물의 설치 또는 보존상의 하자로 인한 사고라 함은 공작물의 설치 또는 보존상의 하자만이 손해발생의 원인이 되는 경우만을 말하는 것이 아니며, 다른 제3자의 행위 또는 피해자의 행위와 경합하여 손해가 발생하더라도 공작물의 설치 또는 보존상의 하자가 공동원인의 하나가 되는 이상 그 손해는 공작물의 설치 또는 보존상의 하자에 의하여 발생한 것이라고 보아야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다101343|판결" href="#//">대법원 2010. 4. 29. 선고 2009다101343 판결</a></span> 등 참조).
+      </p><p>  원심판결 이유에 의하면, 원심은 채용한 증거들을 종합하여 그 판시와 같은 사실을 인정한 다음, 피고 공장은 공장건물의 외벽 등을 내화구조로 하거나 공장 내부에 스프링클러와 같은 자동소화장치를 설치하는 등 화재 확산을 방지하기 위한 조치가 되어 있었어야 함에도 불구하고, 가연성 물질인 우레탄폼으로 채워져 있어 화재 발생 시 연소가 급격히 확대될 가능성이 높은 샌드위치 패널로 외벽을 설치하고, 스프링클러 등의 시설도 설치하지 아니한 설치·보존상의 하자가 있었고, 그러한 하자로 인하여 원고 금양화학 주식회사에 603,110,235원, 
+        원고 2에게 266,885,804원, 
+        원고 3에게 657,677,959원, 
+        원고 4에게 723,912,070원, 
+        원고 5에게 301,238,400원의 손해가 발생하였다고 판단하였다.
+      </p><p>  앞서 본 법리와 기록에 비추어 살펴보면, 위와 같은 원심의 사실인정과 판단은 정당한 것으로 수긍이 되고, 거기에 상고이유에서 주장하는 바와 같은 공작물책임에 관한 법리오해나 채증법칙 위반, 손해배상책임의 범위에 관한 심리미진의 위법이 없다.</p><p>  4. 결론</p><p>  그러므로 원심판결의 
+        원고 2, 
+        4, 
+        5 패소 부분 중 영업손실에 관한 부분을 파기하고, 이 부분 사건을 다시 심리·판단하도록 원심법원에 환송하되, 위 원고들의 나머지 상고 및 원고 금양화학 주식회사, 
+        원고 3의 상고와 피고의 상고를 모두 기각하고, 원고 금양화학 주식회사, 
+        원고 3과 피고 사이에 생긴 상고비용은 각자가 부담하도록 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박병대(재판장) 양창수 고영한 김창석(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 81구510 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2018671';
+var contIdEtc = '';
+var saNo = '81구510';
+var sngoNm = '선고';
+var saNm = '입찰보증금국가귀속등처분취소';
+try {
+	var sngoDay=('19820216' ? 
+			'19820216'.length==4 ? Date.parseExact('19820216','yyyy').toString('yyyy. M. d.') : 
+				'19820216'.length==6 ? Date.parseExact('19820216','yyyyMM').toString('yyyy. M. d.') : 
+					'19820216'.length==8 ? Date.parseExact('19820216','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 81구510 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '81구510';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />81구510</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(12)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(0)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|4292행상125">
+대법원 1961. 10. 5. 선고 4,292행상125 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="예산회계법|70|5|null">예산회계법 제70조의5 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="계약사무처리규칙|10|0|19810228">계약사무처리규칙 제10조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="계약사무처리규칙|11|0|19810228">계약사무처리규칙 제11조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="계약사무처리규칙|14|0|19810228">계약사무처리규칙 제14조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="계약사무처리규칙|15|0|19810228">계약사무처리규칙 제15조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="예산회계법시행령|102|0|null">예산회계법시행령 제102조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="예산회계법시행령|77|0|null">예산회계법시행령 제77조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="예산회계법|70|18|null">예산회계법 제70조의18 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="예산회계법시행령|89|0|null">예산회계법시행령 제89조 제1항 제5호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="행정소송법|14|0|null">행정소송법 제14조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|89|0|null">민사소송법 제89조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|92|0|null">민사소송법 제92조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style="display:none"><em>[원심판결]</em></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 1982. 2. 16. 선고 81구510 판결</h2><p class="sub_title">[입찰보증금국가귀속등처분취소][판례집불게재]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원    고】
+      
+          한도강재공업주식회사(소송대리인 변호사 박충순)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피    고】
+      
+          조달청장
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>  1982. 1. 26.</p>
+    
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  피고가 1981. 7. 24.자로 원고에게 한 1981. 7. 25부터 1982. 7. 24까지의 부정당업자의 입찰참가자격제한처분을 취소한다. </p><p>  원고의 이사건 입찰보증금국고귀속처분 및 일반경쟁입찰참가자 자격등록취소처분의 각 취소청구의 소를 각하한다.</p><p>  소송비용은 2분하여 그 1은 원고의, 그 나머지는 피고의 각 부담으로 한다.</p>
+    
+      【청구취지】
+      <p>  피고가 원고에게 1981. 7. 24.자로 한 입찰보증금 47,500,000원의 국고귀속처분과 1981. 7. 25.부터 1982. 7. 24.까지의 부정당업자의 입찰참가자격제한 처분 및 1981. 7. 30.자로 한 일반경쟁입찰참가자자격등록취소 처분을 각 취소한다.</p>
+      <p>  소송비용은 피고의 부담으로 한다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 이 사건 입찰보증금 국고귀속처분 및 일반경쟁 입찰참가자격등록취소 처분의 각 취소청구의 소에 관하여 본다.</p><p>  원고소송대리인은 원고가 1981. 6. 30. 피고시행의 아파트세대현관문 26,290조의 구매에 관한 경쟁 입찰에 참가하여 낙찰하고도 정당한 이유없이 계약을 체결하지 아니하였다 하여 피고가 원고에게 1981. 7. 24.자로 입찰보증금 47,500,000원의 국고귀속처분을 하고 1981. 7. 30.자로 일반경쟁 입찰 참가자 자격등록취소처분을 하였으나 원고가 위 계약을 이행하지 아니하였음은 입찰공고에도 없던 예정가격과 낙찰금액의 차액(차액보증금)을 선납케하는등의 사유에 말미암은 것으로 그 정당한 이유가 있고 그렇지 않다 하더라도 피고의 위 각 처분은 재량권행사의 범위를 일탈한 것으로 어느모로나 위법하여 취소를 면치 못한다는 취지로 주장하나, 먼저직권으로 살피건대, 정부가 공권력의 주체로서가 아니라 사법상 재산권의 주체로서도 어떤 행위를 할 수 있는 것이고 이에 관하여 분쟁이 일어나면 민사소송사항으로 처리된다 할 것인데 그렇다면 어떤 행위는 행정처분으로서 행정소송의 대상이 되고 어떤 것은 민사소송의 대상이 되는가 하는 구별의 표준은 결국 그 행위의 내용과 방법 및 분쟁이 일어났을때에 그 해결에 관한 특별규정이 있느냐 없느냐 하는 점들을 여러모로 살펴서 결정할 문제라 할 것인바(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|4292행상125|판결" href="#//">
+대법원 1961. 10. 5. 선고 4,292행상125 판결</a></span>
+참조) 이사건의 경우 피고가 대한주택공사를 대행하여 그 수요물품구매에 관한 입찰을 시행함에 있어 원고가 그 낙찰자로서 계약을 체결하지 아니하자 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="예산회계법|70|5">예산회계법 제70조의5 제3항</a></span>
+에 따라 입찰보증금을 국고에 귀속시킨것임이 기록상 뚜렷한바이니 이는 공권력을 행사한 것도 아니고 그것이 공권력 작용과 일체성을 가진것도 아니요 순전히 사법상의 재산권의 주체로서 행위를 한 것에 지나지 못하는 것이며 그렇기 때문에 위 결정에 관한 분쟁에 대하여 예산회계법령이 이의 또는 소원의 제도를 두지 아니한 것이므로 따라서 이에 관한 분쟁은 민사소송의 대상이 될 수밖에 없고, 또 한편 일반경쟁입찰참가자자격의 등록은 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="계약사무처리규칙|10|">계약사무처리규칙(1981. 2. 28. 공포 재무부령 제1,472호) 제10조</a></span>
+, 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="계약사무처리규칙|11|">제11조</a></span>
+, 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="계약사무처리규칙|14|">제14조</a></span>
+, 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="계약사무처리규칙|15|">제15조</a></span>
+의 각 규정에 의하면 예산회계법령상의 일반경쟁입찰에 있어서 행정사무 집행의 편의와 사실증명의 자료로 삼기 위한 것이고 그 등록이나 취소로 인하여 어떠한 권리가 부여되거나 변동 또는 상실되는 효력이 생기는 것이 아니므로 그 등록을 취소하였다 하여도 이를 행정소송의 대상으로 삼을 수는 없다 하겠고 그것이 행정소송의 대상이 된다한들 이사건의 경우 그 취소소송에 앞서 거쳐야 할 전심절차를 밟지 아니하였음도 기록상 뚜렷하다.
+
+      </p><p>  2. 이사건 부정당업자의 입찰참가자격 제한처분에 관하여 본다.
+</p><p>  (1) 성립에 다툼이 없는 갑제1호증의 1, 갑제2호증의 1 내지 3, 갑제4호증의 1, 2, 을제2호증, 을 제13 내지 제15 각 호증의 각 기재내용에 변론의 전취지를 종합하면 원고가 1981. 6. 30. 피고시행의 아파트 세대현관문 26,290조의 구매에 관한 일반경쟁입찰에 참가하여 낙찰금액 금 688,535,100원에 낙찰하였으므로 위 낙찰금액이 예정가격인 금 988,504,000원의 100분의 85미만이어서 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="예산회계법시행령|102|">예산회계법시행령 제102조 제1항</a></span>
+에 따라 예정가격과 낙찰금액과의 차액인 금 299,968,900원을 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="예산회계법시행령|77|">같은령 제77조</a></span>
+의 규정에 의한 계약보증금과 함께 현금이나 체신관서 또는 은행발행자기앞수표로 납부하여야 함에도 이를 납부하지 아니한채 계약을 체결하지 아니하자 피고가 이를 이유로 1981. 7. 24.자로 원고에게 주문에 기재된 바와같이 입찰참가자격제한처분을 한 사실이 인정되고 이 인정에 일부배치되는 갑제17호증의 기재내용부분은 믿기 어렵고 달리 이 인정에 배치되는 아무런 증거도 없으니 원고는 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="예산회계법|70|18">예산회계법 제70조의18 제1항</a></span>
+, 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="예산회계법시행령|89|">같은법시행령 제89조 제1항 제5호</a></span>
+에 해당하는 자라 할 것이고 따라서 위 법령의 각 조항을 적용하여 한 피고의 이사건 처분은 일응 적법하다 하겠다.
+
+      </p><p>  (2) 그러나, 성립에 다툼이 없는 갑제5 내지 제8, 제10 각호증, 갑제13호증의 1 내지 4, 변론의 전취지에 의하여 진정성립이 인정되는 갑제12호증의 1, 2, 갑제13호증의 5 내지 8, 을 제11호증의 각 기재내용에 증인 김원구의 증언 및 변론의 전취지를 종합하면 원고는 창호, 강구조물, 철물공사등을 목적으로 설립되어 1976. 8. 12. 법인설립등기를 마친이래 서울 구로구 신도림동 390의 21 대지330평 지상에 공장과 생산시설 205평 2홉을 갖추고 직원 42명, 일반 노무직 50 내지 70명을 고용하여 철문과 문틀을 제조하여 소외 라이프주택개발주식회사, 우창건설주식회사, 영동개발진흥주식회사, 삼환기업주식회사등 민간업체에 납품하는 일방 소외 대한주택공사에 1979. 7. 30. 금 327,899,400원어치의, 1979. 9. 30.부터 1980. 6. 30.까지 사이에 금 237,787,032원어치의, 서울특별시주택건설사업소에 1977. 12. 8. 금 80,423,200원어치의, 1978. 7. 25. 금 52,713,100원어치의, 서울특별시에 1980. 7. 16. 금 88,999,200원어치의 각 아파트 세대철문등에 관한 관급계약을 맺어 각 그무렵 납품하여 오다가 1981. 6. 30. 피고시행의 위 일반경쟁입찰에 참가하여 낙찰하였으나 당시 불황속에 계약보증금과 차액보증금을 합한 약 3억원이 넘는 금액을 단기간에 마련할 수 없어 결국 위 계약 체결에까지 이르지 못한 것이되 그 뒤 그 계약을 체결하였던 소외 남영건설공업주식회사도 제대로 납품을 하지 못하기에 이르러 원고가 위 회사를 대행하여 위 회사의 이름으로 납품하고 있는 사실이 인정되고 이 인정에 배치되는 아무런 증거도 없으며 그 위에 피고로부터 입찰참가자격을 제한 받은자는 그 자격제한 기간에 있어서는 국가에서 시행하는 모든 입찰에의 참가자격이 제한되는 것이고 보면 피고가 원고에게 1년이나 입찰참가자격을 제한 하였음은 비례의 원칙이 어긋난채 그 재량권행사의 범위를 크게 벗어난 것이라 하지 않을 수 없다(더구나 원고는 이사건 처분으로 1981. 7. 25.부터 이제까지 6개월 남짓 그 입찰참가자격을 제한 받았다)
+</p><p>  3. 그렇다면 피고의 이사건 입찰참가자격제한처분은 위법하여 취소를 면치 못할 것인즉 그 취소를 구하는 원고의 이사건 청구는 이유있어 이를 인용하고 원고의 이사건 입찰보증금 국고귀속처분 및 일반경쟁입찰참가자격 등록취소 처분의 각 취소청구의 소는 부적법하여 이를 각하하며 소송비용의 부담에 관하여 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="행정소송법|14|">행정소송법 제14조</a></span>
+, 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|89|">민사소송법 제89조</a></span>
+, 
+
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|92|">제92조</a></span>
+를 적용하여 주문과 같이 판결한다.
+
+      </p><p>1982. 2. 16.
+</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김용준(재판장) 김대진 임창원 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

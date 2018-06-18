@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 69다962 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2073312';
+var contIdEtc = '2073313';
+var saNo = '69다962';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('19690826' ? 
+			'19690826'.length==4 ? Date.parseExact('19690826','yyyy').toString('yyyy. M. d.') : 
+				'19690826'.length==6 ? Date.parseExact('19690826','yyyyMM').toString('yyyy. M. d.') : 
+					'19690826'.length==8 ? Date.parseExact('19690826','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 69다962 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '69다962';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />69다962</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(59)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(1)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1994334">서울고등법원 1977. 4. 1. 선고 77나114 제8민사부판결 : 상고 [고집1977민(1),200]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2077355">대법원 1977. 4. 12. 선고 76다2920 판결 [집25(1)민,152;공1977.5.15.(560) 10037]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2089062">대법원 1989. 5. 23. 선고 87다카2723 판결 [집37(2)민,91;공1989.7.15.(852),974]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|163180">공동불법행위의 책임 장경학 法律新聞社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|234103">김상용 공동불법행위 저스티스 29권 1호  / 한국법학원  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630800">신국미 간호과오의 유형별 분석과 법적 책임 한양법학 32집  / 한양법학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34142">김형배 연대채무의 성질과 부진정연대채무 고시계 36권 4호 (91.03) / 국가고시학회  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163299">임정평 공동불법행위론에 있어서 공해에 대한 소고 중 사법행정 27권 4호  / 한국사법행정학회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461020">전경운 복수원인자에 의한 환경침해책임 비교사법 6권 1호 (99.06) / 한국비교사법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|491058">정용엽 원격의료의 민사책임 및 법제개선에 관한 연구 경희대학교  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|536087">이호룡 국가배상책임의 제한과 사인인 공동불법행위자의 귀책부분 아닌 부담분에 대한 반환 청구 고시연구 32권 3호 (2005.03) / 고시연구사  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39117">권오승 공동불법행위 사법연구 1집  / 한학문화  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163185">홍천룡 건설공사에 있어서 제3자의 손해에 대한 사법적 구제 민법학논총(1권) : 후암 곽윤직교수화갑기념 (85.12) / 박영사  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|214320">엄영진 공동불법행위 고시연구 22권 11호 (95.10) / 고시연구사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39163">진순석 복수의 공해원인자의 책임문제 형평과 정의 7집  / 대구지방변호사회  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163300">임정평 공동불법행위론에 있어서 공해에 대한 소고 하 사법행정 27권 5호  / 한국사법행정학회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39257">권용우 무효등기를 믿고 거래한 최종매수인의 손해 월간고시 20권 2호 (93.01) : 창간 19주년 기념호 / 법지사  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163081">박돈식 민법 제756조 소정 사용자의 배상책임에 관한 고찰 사법논집 1집  / 대법원 법원행정처  1970 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|465724">범경철 의료과오소송에 관한 연구 전북대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|257225">최순용 방송작가의 저작권침해와 방송사등의 책임 법조 48권 3호 (99.03) / 법조협회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|555308">송오식 자동차사고와 의료과오의 경합 민사법연구 13집2호  / 대한민사법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|447612">김철수 의료분쟁해결에 있어서 의사의 민사책임 경희대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38837">권오승 부진정연대채무 월간고시 18권 8호 (91.07) / 법지사  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|259752">하윤수 불법행위경합론에 관한 고찰 : 하나의 손해를 둘러싸고 법이론과 실무 2집  / 영남민사법학회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|455978">황형모 공동불법행위자 사이의 구상요건과 그 1인에 대한 채무면제의 효력 판례연구 11집  / 부산판례연구회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163415">김오수 의약품제조자의 민사책임 재판자료 27집  / 법원행정처  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163241">고현철 의료사고와 국가의 책임 재판자료 27집  / 법원행정처  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163301">임정평 공동불법 행위론에 있어서 공해에 대한 소고 민사법과 환경법의 제문제 : 송간안이준박사화갑기념논문   /  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|546144">김인섭 의료과오에 있어서 책임의 주체 : 책임주체의 확대와 의료계약의 일방적 해지 . 사회과학논총 9집  / 관동대학교  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|212662">김규완 일반불법행위책임법상의 청구권기초 채권법에 있어서 자유와 책임 : 김형배교수화갑기념논문집   / 박영사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162671">송동원 광산에서의 덕대계약에 관한 관습 재판자료 11집 (2)-과태료분석 / 법원행정처  1981 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162757">안종혁 손해배상에 관한 「합의」의 효력 사법논집 9집  / 대법원 법원행정처  1978 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|223867">김교창 복수의 피보험자에 대한 재해면책약관의 적용 판례연구 9집  / 서울지방변호사회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|43628">손동원 공해에 있어서의 국가책임과 기업책임과의 관계 법무자료(제141집) ; 국가배상제도의 제문제 (91.06) / 법무부 법무국  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|475678">임정평 공동불법행위류형논고 법학논총 21집  / 단국대학교  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|63864">하윤수 원인경합에 있어서의 책임분할에 관한 연구 동아대학교  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163328">천경송 공해와 공동불법행위론 : 공해의 복수원인자의 책임 사법논집 9집  / 대법원 법원행정처  1978 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|465293">김기상 공동불법행위에 관한 소고 민사법의실천적과제 : 한도 정환담교수 화갑기념 (00.02) / 법문사  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|201433">최병조 토지매수인에 의한 지상물철거행위의 법률효과 민사판례연구 16권  / 박영사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|601278">손용근 손해배상 소송상의 의료과실(1) : 논점의 분석과 제언에 중점 두어 한양법학 25집  / 한양법학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39120">임정평 공동불법행위책임의 일고찰 민법학의 회고와 전망 : 민법전시행삼십주년기념논문집 (93.12) / 한국사법행정학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|778256">정태윤 청헌 김증한 교수님의 공동부법행위론의 재조명 민사법학 69호  / 한국사법행정학회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|127678">정태륜 공동불법행위에 관한 연구 서울대학교  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|514246">손철우 다액의 채무를 부담하는 불진정연대채무자가 일부 변제한 경우 그 변제의 효력 민사판례연구 25권  / 박영사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163169">백정현 공동불법행위자의 민사책임 중앙대 법정논총 23권 (83.12) / 중앙대학교  1983 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251863">정태륜 공동불법행위자의 구상권의 근거 중앙대 법학논문집 22집  / 중앙대학교 법학연구소  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661985">이재찬 불진정연대채무자 중 1인이 한 상계의 다른 채무자에 대한 효력 민사판례연구 34권  / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163165">주상수 공동불법행위자 상호간의 내부 구상관계 사법논집 13집  / 대법원 법원행정처  1982 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38839">김용균 부진정연대채무자의 1인에 대한 면제의 효력 사법행정 34권 11호  / 한국사법행정학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|535402">백정현 공동불법행위에 있어서의 몇 가지 문제 경기법조 10호  / 수원지방변호사회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|446935">박종권 자동차사고와 의료과오의 경합에 관한 연구 동국대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163154">김기수 공동불법행위 고시계 25권 2호 (80.01) / 국가고시학회  1980 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32175">송덕수 손해배상에 관한 합의의 효력 고시연구 17권 3호 (90.02) / 고시연구사  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34400">김대웅 제조물책임에 관한 소고 사법연수생논문집 19기  / 사법연수원  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163339">천경송 공해의 복수원인자의 책임(공동불법행위론) 재판자료 2집  / 법원행정처  1979 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|161875">이재성 연대채무와 각자 전액지급청구의 가부 민사재판의 이론과 실제 3권  / 법조문화사  1978 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571304">박종권 자동차사고로 인한 부진정연대채무자의 1인에 대한 면제의 효력 JURIST plus 412호 : 2007년1호(채권법)(v.2007-1) / 청림출판  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162758">김연태 손해배상책임과 합의 : 인신사고를 중심으로 . 재판자료 20집 (상) / 법원행정처  1984 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|126822">조성민 공동불법행위의 책임론에 관한 연구 한양대학교  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|106927">손용근 의료과오소송에 있어서 입증의 경감에 관한 연구 연세대학교  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38838">김용균 부진정연대채무자의 1인에 대한 면제의 효력 대법원판례해설 19-1호 (93.12) / 법원도서관  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|501458">남현우 환경침해의 사법상 구제에 관한 연구 충남대학교 대학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163219">이보환 의료과오로 인한 민사책임의 법률적 구성 재판자료 27집  / 법원행정처  1985 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="광산보안법|5|0|null">광산보안법 제5조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="광산보안법|5|0|null">광산보안법 제5조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|757|0|null">민법 제757조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|419|0|null">민법 제419조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|68나2049">
+서울고등 1969. 4. 30. 선고 68나2049 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2073313">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1969. 8. 26. 선고 69다962 판결</h2><p class="sub_title">[손해배상][집17(3)민,061]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p> 광업권자가 그 갱내의 광물 채굴작업을 제3자에게 도급시켜 그 수급자가 그 작업에 있어서의 모든 감독책임을 지기로 하고 그 갱내의 보안상의 의무와그 작업중의 사고로 인한 재해보상의 책임을 부담하기로 한 도급계약이 있다고 하여 광업권자의 광산보안법상의 보안의무에 아무런 영향이 없다.</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p> 광업권자가 그 갱내의 광물 채굴작업을 제3자에게 도급시켜 그 수급자가 그 작업에 있어서의 모든 감독책임을 지기로 하고 그 갱내의 보안상의 의무와그 작업중의 사고로 인한 재해보상의 책임을 부담하기로 한 도급계약이 있다고 하여 광업권자의 광산보안법상의 보안의무에 아무런 영향이 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="광산보안법|5|">광산보안법 제5조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          정유덕 외 4명
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          대한석탄공사
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+제1심 서울민사지방, 제2심 
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|68나2049|판결" href="#//">
+서울고등 1969. 4. 30. 선고 68나2049 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>   상고를 기각한다.</p><p>   상고소송비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  피고 소송대리인의 상고이유를 판단한다.</p><p>  제1점, 광산보안법에 의하면 광업권자에게는 광산보안상 특별한 의무를 규정하고 있는 바 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="광산보안법|5|">그 제5조 제1조</a></span>에 갱내의 낙반을 방지하기 위하여 필요한 조치를 취하여야할 주의의무가 있다고 명시하고 있고 본건 사고 갱내에서 광물을 채굴하여 취득할 수 있는 권리는 광업권자인 피고만이 가지고 있는 것이므로 원심이 본건 낙반사고로 인하여 생한 손해의 배상책임이 그 낙반사고를 미연에 방지할 수 있는 조치를 취하지 아니한 피고에게 있다고 판시한 것은 정당하다 할 것이다. 그리고 광업권자가 그 갱내의 광물 채굴작업을 제3자에게 도급시켜 그 수급자가 그 작업에 있어서의 모든 감독책임을 지기로하고 그 갱내 보안상의 의무와 그 작업중의 사고로 인한 재해보상의 책임을 부담하기로 약정하였다 하더라도 이는 광업권자와 위 수급자간의 내부적인 책임부담의 약정에 지나지 아니한다고 하여 위에서 설시한 바와 같은 광업권자의 광산보안법상의 보안 의무에 아무런 영향도 미칠 수 없다고 하여야 할것이다. 따라서 광업권자인 피고와 소외 금성기업사간에 소론과 같은 도급계약이 있고 재해보상에 대한 책임을 동 소외인이 부담하기로 약정하였다고 하여 광업권자로서의 특별한 보안 의무를 다 하지 못한 피고의 본건 책임을 배제하는 것이 아니라는 전제 아래 원고들의 청구를 인용한 원판결은 정당하다할 것이고 이와 견해를 달리하여 광업권자인 피고에게는 도급인으로서 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|757|">민법 제757조</a></span>의 규정에 의하여 본건 책임이 없다고 하여 원판결에 손해배상 책임에 관한 법리 오해와 심리미진의 위법이 있다는 논지는 받아들일 것이 되지 못한다.
+      
+      </p><p>  제2점, 공동불법행위자 간에는 반드시 의사의 공통이나 공동의 인식이 필요한 것이 아니고 객관적으로 권리침해가 공동으로 행하여진 것이라고 보여지는 경우에는 공동불법 행위가 성립한다고 할 수 있을 것이며 따라서 피해자에게 가하여진 동일한 손해의 발생원인에 그 원인이 될 수 있는 수개의 행위가 관여하고 있는 경우에는 공동불법행위가 성립한다고 보아야 할 것이고 이와 같은 공동불법행위에 있어서는 그로인한 손해의 배상책임은 그 상호간에 부진정연대채무관계가 성립한다고 함이 상당할 것이며 그중의 한 채무자에 대한 채무 면제의 효력에 관하여는 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|419|">민법제419조</a></span>가 적용되지 아니하고 다른 채무자에게는 그 효력이 미치지 아니한다고 하여야 할 것이다. 따라서 본건 사고에 관하여 광업권자로서의 피고의 손해배상 책임과 본건 광물채굴 작업에 종사한 소외 금성기업사의 손해배상책임이 위 설시한 바와 같은 공동불법행위의 손해배상책임이 된다는 견해 아래 피고와 더불어 소외 금성기업사가 원고들에게 대하여 공동불법행위자의 지위에 있다 할것이고 위 양자의 책임은 이른바 부진정연대책임이라 할 것이므로 소외 금성기업사에 대한 원고들의 손해배상 청구권포기 (채무면제)의 효력은 피고에게 미칠 수 없는 것이라고 한 원판결 판시는 정당하다 할 것이고 원판결에 공동불법 행위자의 책임에 관한 법리를 오해한 위법이 있다는 논지는 받아들일 수 없다.
+      
+      </p><p>  그러므로 관여법관의 일치된 의견으로 상고를 기각하기로 하고 상고소송비용은 패소자의 부담으로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법원판사   방순원(재판장) 손동욱 나항윤 유재방 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

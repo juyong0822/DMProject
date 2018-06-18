@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 92다52665 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2104774';
+var contIdEtc = '';
+var saNo = '92다52665';
+var sngoNm = '선고';
+var saNm = '손해배상(기)등';
+try {
+	var sngoDay=('19930813' ? 
+			'19930813'.length==4 ? Date.parseExact('19930813','yyyy').toString('yyyy. M. d.') : 
+				'19930813'.length==6 ? Date.parseExact('19930813','yyyyMM').toString('yyyy. M. d.') : 
+					'19930813'.length==8 ? Date.parseExact('19930813','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 92다52665 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '92다52665';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />92다52665</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(13)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(36)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2098047">대법원 1995. 7. 28. 선고 95도1157 판결 [공1995.9.1.(999),3039]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2100772">대법원 1995. 7. 28. 선고 95다19515 판결 [공1995.9.1.(999),2982]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2097883">대법원 1995. 9. 29. 선고 95다7031 판결 [공1995.11.15.(1004),3613]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2104589">대법원 1997. 9. 9. 선고 97도1561 판결 [공1997.10.15.(44),3202]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1988357">서울지방법원 2000. 3. 31. 선고 97가합61423 판결：확정 [하집2000-1,58]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2056040">대법원 2001. 5. 29. 선고 99다55601 판결 [공2001.7.15.(134),1449]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2058048">대법원 2002. 2. 5. 선고 2001도5789 판결 [공2002.4.1.(151),714]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2065795">대법원 2004. 1. 15. 선고 2001도1429 판결 [공2004.2.15.(196),368]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1971512">대법원 2008. 10. 23. 선고 2007다44194 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2058856">대법원 2008. 11. 27. 선고 2008다56118 판결 [공2008하,1785]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061702">대법원 2009. 3. 16. 선고 2008다1842 판결 [공2009상,552]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2058638">대법원 2009. 4. 23. 선고 2009다1313 판결 [공2009상,755]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2139331">대법원 2014. 1. 23. 선고 2012다84417 판결 [공2014상,470]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|555618">백화점의 사기세일로 인한 불법행위책임 안원모 延世大學校</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|760040">장원경 집단적 분쟁의 손해배상액 산정에 표집기법의 활용 저스티스 통권 제144호 / 한국법학원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|601014">윤혜선 소비자정보규제법제의 구조와 체계 : 효율적 정보규제를 위한 법리적 분석과 법정책적 대안 경제규제와 법 제1권 제2호2008년 11월 / 서울대학교공익산업법센터  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638683">이수영 전철역 신설예정이라는 아파트 분양광고가 ‘허위·과장의 광고’에 해당하는지 여부 대법원판례해설 85호  / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665557">박영목 아파트 분양 광고와 시공사의 법적 책임 재산법연구 27권 1호  / 법문사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|226193">이호조 아파트 단지의 공유대지에 관하여 변호사 : 법률실무연구 26집  / 서울지방변호사회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|567806">김상중 상품의 표시ㆍ광고와 계약의 내용 : 건물분양계약을 중심으로 한 단상적 고찰 서강법학연구 8권  / 서강대학교 법학연구소  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|493174">강창경 소비자집단피해에 대한 입법 방향 : 소비자피해의 실질적 구제를 중심으로 . 강의중교수정년기념논문집   / 교학연구사  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|123649">황철 상업광고의 법률문제에 관한 연구 국민대학교  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|462270">박해식 부당표시광고에 대한 규제 : 표시광고의공정화에관한법률을 중심으로 . 재판자료 87집  / 법원도서관  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|562996">이충훈 사이버몰운영자의 표시ㆍ광고 책임 인터넷 법률 36호  / 법무부 법무심의관실  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|588725">황도수 광고의 제한과 표현의 자유 언론관계소송 재판실무연구 / 한국사법행정학  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|628845">홍성재 계약체결상의 과실책임 법리의 고찰 민사법학 50호  / 한국사법행정학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|515629">정진명 전자거래에서의 표시ㆍ광고의 법적 문제 인터넷 법률 21호  / 법무부 법무심의관실  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|582717">한위수 광고의 규제와 표현의 자유 헌법논총 18집  / 헌법재판소  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|512333">박수영 부당한 표시ㆍ광고행위의 성립요건과 유형 기업법연구 13집  / 한국기업법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603773">김재형 분양광고와 계약 : 청약ㆍ청약의 유인ㆍ손해배상을 중심으로 민사판례연구 31권  / 박영사  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|472652">정준우 인터넷 광고의 법적 문제점과 그 해결방안 인터넷 법률 5호  / 법무부 법무심의관실  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|764497">이은영 한국소비자법 35년, 회고와 과제 저스티스 통권 제146-3호 / 한국법학원  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|462252">김영갑 경제법학의 현황과 발전방향 재판자료 87집  / 법원도서관  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|211861">오세빈 독점규제법 위반행위에 대한 사법적 규제 사법연구자료 21집  / 대법원 법원행정처  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622063">김상중 계약체결 이전 단계의 정보제공의무 : 외국 입법례와 비교에 의한 규정 신설의 제안을 중심으로 고려법학 56호  / 고려대학교 법학연구원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|500706">옥필훈 경제범죄의 실태와 대책에 관한 연구 전북대학교 대학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570442">김구년 독점규제법상 손해배상청구소송의 제문제 비교사법 14권 1호  / 한국비교사법학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|534664">장승혁 과장광고와 사기죄의 성부 판례와실무 2004년  /  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|205706">최상호 계약상의 정보제공의무에 관한 연구 : 사기와 착오법리의 적용관계를 중심으로 법학논고 9집  / 경북대학교 출판부  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|516053">정준우 전자상거래소비자보호법상의 소비자정보 개시규정과 그 문제점 기업법연구 15집  / 한국기업법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603884">천종호 아파트분양광고의 법적 성질과 분양계약에의 편입 판례연구 20집  / 부산판례연구회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|212644">최상호 계약상의 정보제공의무에 관한 연구 채권법에 있어서 자유와 책임 : 김형배교수화갑기념논문집   / 박영사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603525">이승준 과장ㆍ허위광고와 사기죄의 기망 : 판례를 중심으로 형사법연구 제21권 제1호 / 한국형사법학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|245002">김영갑 독점규제법상의 손해배상책임 저스티스 30권 4호  / 한국법학원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|447061">손수진 부당광고의 규제에 관한 연구  : 독점규제 및 공정거래에 관한 법률을 중심으로 한양대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|567380">연기영 청약의 유인 Jurist 411호 : 2006년3호(계약법)(v.2006-3) / 청림출판  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|559350">박동진 과장광고의 기망성 Jurist 409호 : 2006년1호(민법총칙)(v.2006-1) / 청림출판  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236583">최금숙 불공정광고, 허위광고 및 과대광고로 인한 소비자피해의 구제 한독법학 12호  / 한독법률학회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|505550">엄동섭 하자 있는 의사표시에 관한 판례분석 사법연구 6집  / 한학문화  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|466559">정준우 공정거래법상 부당한 표시ㆍ광고 규제규정의 합리적 운용에 관한 고찰 한양법학 9집  / 한양법학회  1998 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|91도2994">
+대법원 1992.9.14. 선고 91도2994 판결(공1992,2929)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|110|0|null">민법 제110조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|92나23102">
+서울고등법원 1992.10.30. 선고 92나23102 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1993. 8. 13. 선고 92다52665 판결</h2><p class="sub_title">[손해배상(기)등][집41(2)민,297;공1993.10.1.(953),2417]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 상품의 허위, 과장광고가 기망행위가 되는 경우</p>
+      <p></p>
+      <p>
+        </p><p>나. 대형백화점의 이른바 변칙세일이 기망행위에 해당한다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 상품의 선전, 광고에 있어 다소의 과장이나 허위가 수반되는 것은 그것이 일반 상거래의 관행과 신의칙에 비추어 시인될 수 있는 한 기망성이 결여된다고 하겠으나, 거래에 있어서 중요한 사항에 관하여 구체적 사실을 신의성실의 의무에 비추어 비난받을 정도의 방법으로 허위로 고지한 경우에는 기망행위에 해당한다.</p>
+      <p></p><p>
+        </p><p>나. 대형백화점의 이른바 변칙세일이 기망행위에 해당한다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|110|">민법 제110조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">제751조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91도2994|판결" href="#//">대법원 1992.9.14. 선고 91도2994 판결(공1992,2929)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          박신자 외 51인  원고들 소송대리인 변호사 조영황 외 2인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고  주식회사 외 2인  피고들 소송대리인 변호사 이범렬
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|92나23102|판결" href="#//">
+서울고등법원 1992.10.30. 선고 92나23102 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.</p><p>  상고비용은 피고들의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 상고이유 제1점 및 제2점에 대하여</p><p>  가. 원심은 다음과 같은 사실을 인정하였다.</p><p>  (1) 피고들 경영의 각 백화점에서는, 입점업체에게 백화점 내의 일정 구역을 매장으로 할애하여 각 입점업체로 하여금 자기의 브랜드를 부착한 자기의 상품을 자기의 책임하에 자기의 판매사원으로 하여금 판매하도록 하고 백화점측에 대하여 매장사용에 대한 대가로 판매액의 일정비율에 해당하는 수수료를 지불하도록 하되, 백화점측은 담당구매관을 통하여 입점업체가 백화점에 반입하는 물품의 타당성을 확인한 후 상급관리자들의 결제를 받고 검품과에서 물품의 이상유무를 확인한 후 백화점의 태그(tag, 물품표)를 붙여 해당 매장에 보내어 판매하도록 하면서, 그 수수료의 관리를 위하여 각 매장별로 경리직원 1명씩을 파견하여 매출액을 수금 집계한 후 월별로 약정된 수수료를 공제한 매출대금을 입점업체에 지급하는 이른바 특정(수수료)매장의 형태를 채택하였다.</p><p>  (2) 한편 위 입점업체들은 주로 브랜드의 지명도가 상대적으로 낮은 영세업체와 하이패션계통의 여성의류 제조업체들로서, 고객들이 저가품보다는 고가품을, 정상판매보다는 할인판매를 선호하는 경향이 뚜렷하다는 점에 착안하여, 이미 시중에 출하된 상품의 경우에는 종전판매가격을 실제보다 높게 표시하여 할인판매를 가장한 정상판매를 기도하거나 할인율을 기망하고, 새로이 출하하는 신상품의 경우에도 당초 제품을 출하할 때부터 제조업체에서 실제로 판매를 희망하는 가격을 일단 할인판매가격으로 표시하고 여기에 제조업체가 임의로 책정한 할인율을 감안하여 역산, 도출된 가격을 위 할인판매가격과 나란히 표시함으로써 마치 위와 같이 역산, 도출된 가격이 종전판매가격 내지 정상판매가격인 것 같이 꾸며 백화점의 각 매장에 진열하고 매장의 광고대에 위 두 가격을 비교한 할인판매율을 표시함으로써, 당해 상품들이 종전에는 높은 가격으로 판매되던 것인데 할인특매기간에 한하여 특별히 대폭 할인된 가격으로 판매되는 것처럼 광고를 하고, 할인판매기간이 끝난 후에도 판매가격을 환원하지 아니하고 할인특매기간 중의 가격으로 판매를 계속하는 이른바 '변칙세일' 방법을 일종의 판매기법으로 써 왔다.</p><p>  (3) 피고들 경영의 각 백화점의 담당구매관들은 앞에서 본 바와 같이 물품의 반입 과정에서부터 관여할 뿐만 아니라 각 입점업체와 어떤 상품을 얼마씩에 매장에 진열할 것인가, 그 판매가격에서 백화점이 취득하는 수수료율은 얼마로 할 것인가 등에 관하여 협의를 하여 왔으며, 각 백화점의 매장관리인들인 소외 
+        1, 
+        2, 
+        3 등은 자신들의 매장에서 위와 같은 변칙세일이 행해지고 있다는 사실을 업무처리상 직·간접적으로 들어서 알고 있었으면서도, 소비자들이 세일을 선호하여 정상적인 가격으로만 판매하는 경우 매출액이 크게 떨어지기 때문에 매출액증대를 위하여 위와 같은 변칙세일을 승인하고, 매장관리의 일환으로 백화점 명의로 일간지나 광고전단 등을 통하여 소비자들에게 할인특매행사에 관한 광고를 하고 통일된 가격표를 작성해줌과 아울러 매장내광고대(p.o.p)를 작성하여 게시하도록 하였다.
+      </p><p>  (4) 원고들은 피고 등이 대형유통업체로서 고도의 신용을 바탕으로 정찰제와 품질보증제를 시행하고 있는 것으로 알고, 그들이 표시한 할인판매가격이 종전판매가격 내지 정상가격을 특별히 세일기간에 한하여 그 표시 할인율과 같이 할인되어 가격이 낮게 책정된 것으로 오인하고 원심판시와 같은 내역으로 상품을 각 구입하였다.</p><p>  나. 기록에 비추어 살펴보니, 원심의 위와 같은 사실인정은 옳고, 거기에 소론과 같이 채증법칙위배로 인한 사실오인의 위법이 있다고 할 수 없다. 논지들은 모두 이유가 없다.</p><p>  2. 상고이유 제3점에 대하여</p><p>
+        <span class="accrnt_txt">상품의 선전, 광고에 있어 다소의 과장이나 허위가 수반되는 것은 그것이 일반 상거래의 관행과 신의칙에 비추어 시인될 수 있는 한 기망성이 결여된다고 하겠으나, 거래에 있어서 중요한 사항에 관하여 구체적사실을 신의성실의 의무에 비추어 비난받을 정도의 방법으로 허위로 고지한 경우에는 기망행위에 해당한다</span>고 할 것이고, 한편 현대산업화 사회에 있어 소비자가 갖는 상품의 품질이나 가격등에 대한 정보는 대부분 생산자 및 유통업자의 광고에 의존할 수밖에 없는 것이므로, 이 사건 백화점들과 같은 대형유통업체의 매장에서 판매되는 상품의 품질과 가격에 대한 소비자들의 신뢰나 기대는 백화점들 스스로의 대대적인 광고에 의하여 창출된 것으로서 특히 크고 이는 보호되어야 할 것이다.
+      </p><p>  원심이 같은 취지에서, 
+        <span class="accrnt_txt">위와 같은 변칙세일은 물품구매동기에 있어서 중요한 요소인 가격조건에 관하여 기망이 이루어진 것으로서 그 사술의 정도가 사회적으로 용인될 수 있는 상술의 정도를 넘은 것이어서 위법성이 있다</span>고 판단하였음은 옳고, 거기에 소론과 같이 상거래의 본질 또는 허용될 수 있는 기망행위의 범위에 관한 법리오해의 위법이 있다고 할 수 없다. 논지도 이유가 없다.
+      </p><p>  3. 이에 상고를 모두 기각하고 상고비용은 패소한 피고들의 부담으로 하기로 관여 법관의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박우동(재판장) 김상원 박만호(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

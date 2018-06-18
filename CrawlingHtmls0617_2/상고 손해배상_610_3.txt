@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다51406 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063713';
+var contIdEtc = '';
+var saNo = '2010다51406';
+var sngoNm = '선고';
+var saNm = '손해배상(의)';
+try {
+	var sngoDay=('20101125' ? 
+			'20101125'.length==4 ? Date.parseExact('20101125','yyyy').toString('yyyy. M. d.') : 
+				'20101125'.length==6 ? Date.parseExact('20101125','yyyyMM').toString('yyyy. M. d.') : 
+					'20101125'.length==8 ? Date.parseExact('20101125','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다51406 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다51406';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다51406</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(6)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(12)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(6)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1968549">대법원 2011. 12. 27. 선고 2010다32078 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2137938">대법원 2013. 5. 24. 선고 2012다46910 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631643">김천수 2010년 민사(채권법) 중요 판례 인권과 정의 415호  / 대한변호사협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665595">소재선 불법행위책임의 손해배상범위결정에 있어서의 민법 제393조 준용의 타당성에 관한 고찰 재산법연구 27권 3호  / 법문사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|570280">서울중앙지방법원 손해배상소송실무:. (교통·산재) 사법발전재단  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다16237">대법원 2002. 4. 26. 선고 2000다16237 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다20580">대법원 2006. 8. 25. 선고 2006다20580 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다95714">대법원 2010. 3. 25. 선고 2009다95714 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|94다39413">대법원 1995. 3. 14. 선고 94다39413 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|87다카74">대법원 1988. 4. 27. 선고 87다카74 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다8503">대법원 2006. 5. 11. 선고 2003다8503 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다12270">대법원 1998. 7. 24. 선고 98다12270 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다20580">대법원 2006. 8. 25. 선고 2006다20580 등 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다16237">대법원 2002. 4. 26. 선고 2000다16237 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|94다39413">대법원 1995. 3. 14. 선고 94다39413 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|87다카74">대법원 1988. 4. 27. 선고 87다카74 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다8503">대법원 2006. 5. 11. 선고 2003다8503 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="부산고등법원|2009나7885">부산고법 2010. 5. 27. 선고 2009나7885 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 11. 25. 선고 2010다51406 판결</h2><p class="sub_title">[손해배상(의)][공2011상,17]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 불법행위 피해자가 관례적이며 상당한 결과의 호전을 기대할 수 있는 수술을 거부함으로써 손해가 확대된 경우, 그 손해 부분의 부담자(=피해자) 및 그러한 수술로 피해자의 후유증이 개선될 수 있는 경우, 가동능력 상실률의 결정 기준(=수술 시행 후 잔존 후유증)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 요실금 테이프 수술을 받은 환자에게 수술 후 방광게실과 만성 방광염이 발생한 사안에서, 피해자의 만성 방광염은 방광게실로 인하여 생긴 것으로 보이고 그 방광게실은 제거수술로 개선될 가능성이 있다고 볼 여지가 충분하므로, 방광게실 제거수술로 피해자의 방광게실 등이 개선될 수 있는지, 수술 후 후유증이 남는지 여부 등을 심리·확정한 후 그에 근거하여 피해자의 노동능력상실률을 정하여야 한다고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 불법행위 피해자가 일반병실이 아닌 상급병실에 입원함으로써 추가로 부담하게 되는 입원료 상당의 손해가 불법행위와 상당인과관계가 있는 손해인지 여부(원칙적 소극)</p>
+      <p></p>
+      <p>
+        </p><p>[4] 불법행위 피해자가 지출한 한방치료비 등이 불법행위와 상당인과관계가 있는지 여부의 판단 방법</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 불법행위 피해자는 그로 인한 손해의 확대를 방지하거나 감경하기 위하여 노력하여야 할 일반적 의무가 있으므로, 피해자는 관례적이고 상당한 결과의 호전을 기대할 수 있는 수술을 용인할 의무가 있다. 따라서 그와 같은 수술을 거부함으로써 손해가 확대된 경우 그 손해 부분은 피해자가 부담하여야 하고, 그러한 수술로 피해자의 후유증이 개선될 수 있는 경우에 신체 손상으로 인한 일실이익 산정의 전제가 되는 가동능력 상실률은 다른 특별한 사정이 없는 한 그 수술을 시행한 후에도 여전히 남을 후유증을 기준으로 하여 정하여져야 한다.</p>
+      <p></p><p>
+        </p><p>[2] 요실금 테이프 수술을 받은 환자에게 수술 후 방광게실과 만성 방광염이 발생한 사안에서, 피해자의 만성 방광염은 방광게실로 인하여 생긴 것으로 보이고 그 방광게실은 치료가 종결된 것이 아니라 방광게실 제거수술을 하면 개선될 가능성이 있다고 볼 여지가 충분하므로, 방광게실 제거수술을 시행하면 피해자의 방광게실 등이 개선될 수 있는지, 수술 후에도 후유증이 남는지 여부 등을 심리·확정한 후 그에 근거하여 피해자의 노동능력상실률을 정하여야 한다고 한 사례.</p>
+      <p></p><p>
+        </p><p>[3] 불법행위 피해자가 일반병실에 입원하지 아니하고 상급병실에 입원하여 치료를 받음으로써 추가로 부담하게 되는 입원료 상당의 손해는, 당해 진료행위의 성질상 상급병실에 입원하여 진료를 받아야 하거나, 일반병실이 없어 부득이 상급병실을 사용할 수밖에 없었다는 등의 특별한 사정이 인정되지 아니한다면, 그 불법행위와 상당인과관계가 있는 손해라고 할 수 없다.</p>
+      <p></p><p>
+        </p><p>[4] 치료비는 불법행위와 상당인과관계가 있는 범위 내에서만 배상청구가 가능한 것이므로, 상당성 여부를 판단함에 있어서는 당해 치료행위의 필요성, 기간과 함께 그 진료행위에 대한 보수액의 상당성이 검토되어야 하며 그러기 위해서는 부상의 정도, 치료내용, 횟수, 의료사회 일반의 보편적인 치료비 수준(특히 건강보험수가) 등 여러 사정을 고려하여 비상식적인 고액 진료비나 저액 진료비의 가능성을 배제하여 합리적으로 그 범위를 정해야 하고, 이는 한방치료의 경우에도 마찬가지이다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">제396조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [2]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">제396조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [3]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [4]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다16237|판결" href="#//">대법원 2002. 4. 26. 선고 2000다16237 판결</a></span><br />                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다20580|판결" href="#//">대법원 2006. 8. 25. 선고 2006다20580 판결</a></span>(공2006하, 1617)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다95714|판결" href="#//">대법원 2010. 3. 25. 선고 2009다95714 판결</a></span>(공2010상, 812)<br />[3]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다39413|판결" href="#//">대법원 1995. 3. 14. 선고 94다39413 판결</a></span>(공1995상, 1603)<br />[4]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|87다카74|판결" href="#//">대법원 1988. 4. 27. 선고 87다카74 판결</a></span>(공1988, 900)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다8503|판결" href="#//">대법원 2006. 5. 11. 선고 2003다8503 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        
+          원고 1외 2인 (소송대리인 법무법인 구덕 담당변호사 권기우)
+        
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고 (소송대리인 법무법인 국제 담당변호사 한원우)
+        
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="부산고등법원|2009나7885|판결" href="#//">부산고법 2010. 5. 27. 선고 2009나7885 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 부산고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>    상고이유를 판단한다.</p><p>  1. 상고이유 제3점에 관하여</p><p>  의사가 진찰·치료 등의 의료행위를 함에 있어서는 사람의 생명·신체·건강을 관리하는 업무의 성질에 비추어 환자의 구체적인 증상이나 상황에 따라 위험을 방지하기 위하여 요구되는 최선의 조치를 취하여야 할 주의의무가 있고, 의사의 이와 같은 주의의무는 의료행위를 할 당시 의료기관 등 임상의학 분야에서 실천되고 있는 의료행위의 수준을 기준으로 삼되, 그 의료수준은 통상의 의사에게 의료행위 당시 일반적으로 알려져 있고 또 시인되고 있는 이른바 의학상식을 뜻하므로 진료환경 및 조건, 의료행위의 특수성 등을 고려하여 규범적인 수준으로 파악되어야 한다(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다12270|판결" href="#//">대법원 1998. 7. 24. 선고 98다12270 판결</a></span> 등 참조).
+      
+      </p><p>  위 법리에 비추어 원심판결 이유를 살펴보면, 원심이 그 판시와 같이 요실금 테이프 수술(이하 ‘이 사건 수술’이라 한다)에서 방광손상이 생기는 경위, 발생 비율, 손상의 정도 등의 사정을 종합하여 피고가 이 사건 수술에서 요구되는 주의의무를 소홀히 하여 
+        
+        원고 1의 방광을 손상시킨 과실이 있다고 판단한 조치는 수긍할 수 있다. 원심판결에 피고가 상고이유로 주장하는 자유심증주의의 한계를 벗어난 사실인정 또는 의료과실에 관한 법리오해의 잘못이 있다고 할 수 없다.
+      
+      </p><p>  2. 상고이유 제1점에 관하여</p><p>
+        <span class="accrnt_txt">불법행위 피해자는 그로 인한 손해의 확대를 방지하거나 감경하기 위하여 노력하여야 할 일반적 의무가 있다고 할 것이므로, 피해자는 관례적이고 상당한 결과의 호전을 기대할 수 있는 수술을 용인할 의무가 있다. 따라서 그와 같은 수술을 거부함으로써 손해가 확대된 경우 그 손해 부분은 피해자가 부담하여야 하고</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다20580|판결" href="#//">대법원 2006. 8. 25. 선고 2006다20580 등 판결</a></span>), 
+        
+        <span class="accrnt_txt">그러한 수술로 피해자의 후유증이 개선될 수 있는 경우에 신체 손상으로 인한 일실이익 산정의 전제가 되는 가동능력 상실률은 다른 특별한 사정이 없는 한 그 수술을 시행한 후에도 여전히 남을 후유증을 기준으로 하여 정하여져야 할 것이다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다16237|판결" href="#//">대법원 2002. 4. 26. 선고 2000다16237 판결</a></span> 등 참조. 한편 그 수술비용이 다른 요건을 갖추는 한 손해배상의 범위에 들어감은 물론이다).
+      
+      </p><p>  원심판결 이유와 기록에 의하면, 원심은 제1심의 신체감정촉탁 결과에 따라 
+        
+        원고 1의 노동능력상실률을 만성 방광염에 대하여 15%, 방광게실에 대하여 맥브라이드 장해등급표 비뇨생식기 II(방광)-C-2의 방광파열을 준용하여 26%로 각각 평가한 후 복합장해율 계산방식에 따라 합계 37.1%로 인정하였음을 알 수 있다.
+      
+      </p><p>  그러나 원심판결 이유와 그 채택 증거에 의하면, 
+        
+        원고 1에 대한 신체감정을 실시한 비뇨기과 의사는 “현재 치료 종결 여부의 판단은 불가능하고, 향후 환자가 원하면 방광게실에 대한 수술적인 교정이 필요할 수 있다”는 의견을 밝힌 사실, 방광게실이 있으면 소변이 고여 방광염 등 요로감염의 빈도가 증가하게 되고, 감염증상이 있으면 방광게실 제거수술의 적응증이 되는 사실, 방광게실 제거수술은 복강경 수술 등 안전하고 효과적인 수술 방법이 개발되어 있는 사실, 
+        
+        원고 1의 만성 방광염은 이 사건 수술 후 방광게실과 함께 발생한 사실을 알 수 있다.
+      
+      </p><p>  그렇다면 
+        
+        원고 1의 만성 방광염은 방광게실로 인하여 생긴 것으로 보이고, 
+        
+        원고 1의 방광게실은 치료가 종결된 것이 아니라 방광게실 제거수술을 하면 개선될 가능성이 있다고 볼 여지가 충분하므로, 앞서 본 법리에 비추어 원심으로서는 방광게실 제거수술을 시행하게 된다면 
+        
+        원고 1의 방광게실 등이 개선될 수 있는지, 수술 후에도 후유증이 남는지 여부 등에 대하여 더 심리하여 확정한 후 그에 근거하여 
+        
+        원고 1의 노동능력상실률을 정하였어야 한다.
+      
+      </p><p>  그럼에도 
+        
+        원고 1의 치료가 종결되었음을 전제로 노동능력상실률을 37.1%로 인정한 원심판결에는 노동능력상실률 산정에 관한 법리를 오해하고 필요한 심리를 다하지 아니하여 판결 결과에 영향을 미친 잘못이 있다. 이 점을 지적하는 상고이유의 주장은 이유 있다.
+      
+      </p><p>  3. 상고이유 제2점에 관하여</p><p>  원심판결 이유에 의하면, 원심은 이 사건 질 성형수술비, 상급병실 사용료 차액, 신체감정비용, 한방치료비는 이 사건 의료과실과 상당인과관계가 없어 피고가 배상할 것이 아니라는 피고의 주장을 모두 배척하였다.</p><p>  그러나 원심의 위와 같은 판단은 다음과 같은 이유로 수긍하기 어렵다.</p><p>  가. 성형수술비 부분</p><p>  원심이 적법하게 채택한 증거에 의하면 다음과 같은 사실을 알 수 있다.</p><p>  일자별로 진료비가 정리된 진료비(약제비) 납입확인서(갑제7호증의1. 기록 45면)에는 이 사건 수술일인 2008. 3. 15.자 수술이 건강보험 요양급여 대상으로 처리되어 수술비 총액 1,130,020원 중 환자본인 부담금액 410,100원만이 신용카드로 결제되고 나머지는 건강보험자 부담금액으로 처리된 것으로 기재되어 있는 반면, 피고가 이 사건 수술과는 별도로 시술한 질 성형수술비 관련 증거라고 주장하는 진료비 영수증(갑제9호증의3. 기록 66면)에는 2008. 3. 15.자 수술비 1,800,000원 전액이 건강보험 비급여 대상으로 처리되어 
+        
+        원고 1이 이를 현금으로 지급하였다고 기재되어 있다. 또한 이 사건 수술 후 
+        
+        원고 1을 진료한 의사 이민석은 원심에서 ‘
+        
+        원고 1을 2008. 3. 24. 진료할 당시 요실금 테이프 수술부위인 질의 전벽이 아닌 질의 후벽 부분에 질 성형수술이 되어 있는 상태였다’는 취지로 증언하였고(기록 527면), 피고가 운영하는 의원 소속 간호사들도 
+        
+        원고 1이 이 사건 수술과 별도로 질 성형수술도 받았다는 사실을 확인하고 있다(을제11호증의1, 2. 기록 681면).
+      
+      </p><p>  그렇다면 위 진료비 영수증(갑제9호증의3)에 기재된 1,800,000원은 이 사건 수술과 관련이 없는 수술비로서 피고의 이 사건 의료과실과 상당인과관계가 없는 비용이라고 볼 가능성이 높다고 할 것이다.</p><p>  그럼에도 위 비용이 피고의 이 사건 의료과실과 상당인과관계가 있는 손해에 포함된다고 판단한 원심판결에는 불법행위와 상당인과관계에 있는 치료비에 관한 법리를 오해하고 필요한 심리를 다하지 아니함으로써 판결 결과에 영향을 미친 잘못이 있다.</p><p>  나. 상급병실 사용료 차액 부분</p><p>
+        <span class="accrnt_txt">불법행위 피해자가 일반병실에 입원하지 아니하고 상급병실에 입원하여 치료를 받음으로써 추가로 부담하게 되는 입원료 상당의 손해는, 당해 진료행위의 성질상 상급병실에 입원하여 진료를 받아야 하거나, 일반병실이 없어 부득이 상급병실을 사용할 수밖에 없었다는 등의 특별한 사정이 인정되지 아니한다면, 그 불법행위와 상당인과관계가 있는 손해라고 할 수 없다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다39413|판결" href="#//">대법원 1995. 3. 14. 선고 94다39413 판결</a></span> 등 참조).
+      
+      </p><p>  원심이 적법하게 채택한 증거에 의하면, 
+        
+        원고 1이 이 사건 수술 후 부산대학교병원에서 진료받으면서 지출한 비용 중 입원료에는 건강보험 요양급여 외에도 상급병실 입원료와 같이 건강보험에 해당하지 아니하는 이른바 비급여 1,950,000원이 포함되어 있는 사실을 알 수 있고(갑제7호증의10. 기록 54면), 피고는 원심에서 위 상급병실 사용료 차액은 이 사건 의료과실과 상당인과관계가 있는 손해가 아니라고 주장한 바도 있다.
+      
+      </p><p>  따라서 원심으로서는 위 입원료가 상급병실에 대한 것인지 여부, 만일 그렇다면 상급병실 사용의 필요성 및 필요한 기간 등에 대하여 좀 더 심리하여 확정한 후에 피고가 배상하여야 할 손해인지 여부를 판단하였어야 한다.</p><p>  그럼에도 원심은 위와 같은 점에 관하여 충분히 심리·확정하지 아니한 채 상급병실이용료 전액이 손해배상의 대상이 되는 치료비에 해당한다고 판단하였으니, 원심판결에는 불법행위와 상당인과관계에 있는 치료비에 관한 법리를 오해하고 상당인과관계 판단에 필요한 심리를 다하지 아니하여 판결 결과에 영향을 미친 잘못이 있다.</p><p>  다. 신체감정비용에 산입될 치료비 부분</p><p>  원심이 적법하게 채택한 증거와 기록에 의하면 다음과 같은 사실을 알 수 있다.</p><p>  제1심법원은 2008. 6. 18. 부산대학교병원에 비뇨기과 의사 이정주, 재활의학과 의사 신용범을 지정하여 신체감정촉탁을 하였다. 그런데 
+        
+        원고 1은 2008. 7. 8. 부산대학교병원에서 재활의학과 진료를 받았는데 그 비용 21,230원은 건강보험 비급여로 처리되어 
+        
+        원고 1이 부담하였고(갑제10호증의3. 기록 200면), 2008. 8. 1. 부산대학교병원에서 비뇨기과 진료를 받았는데 그 비용 5,740원 역시 건강보험 비급여로 처리되어 
+        
+        원고 1이 부담하였다(갑제10호증의4. 기록 201면).
+      
+      </p><p>  한편 기록에 의하면 
+        
+        원고 1은 2008. 10. 16.자 청구취지정정 및 원인보충서에서 위 비용들을 기왕치료비에 추가하여 청구하였으며, 이에 대하여 피고는 원심에서 위 비용들은 신체감정을 위하여 지출된 것이므로 소송비용에 해당할 뿐 이 사건 의료과실과 상당인과관계가 있는 손해가 아니라는 취지로 주장한 바 있고, 
+        
+        원고 1은 신체감정을 위하여 지출한 비용의 영수증은 별도로 보관하고 있다고 주장하였다(2009. 7. 30.자 준비서면, 기록 513면).
+      
+      </p><p>  위 비용들이 피고의 주장과 같이 이 사건 소송에서 행하여진 신체감정으로 발생한 것이라면, 이는 소송비용으로서 소송비용의 확정 등에 관한 별도의 절차를 통하여 상환되어야 할 것이고 다른 특별한 사정이 없는 한 손해배상의 내용이 된다고 할 수 없으므로, 원심으로서는 
+        
+        원고 1이 실제로 신체감정을 받은 날짜 및 그 내용을 확인하고, 
+        
+        원고 1에 대하여 신체감정 관련 영수증의 제출을 촉구하는 등의 방법으로 위 비용들이 신체감정 비용에 해당하는지 여부를 판단하였어야 한다.
+      
+      </p><p>  그럼에도 위와 같은 점에 관하여 충분히 심리·확정하지 아니한 채 위 비용들이 손해배상의 대상이 되는 치료비에 해당한다고 하는 원심의 판단에는 불법행위와 상당인과관계에 있는 치료비에 관한 법리를 오해하거나 필요한 심리를 다하지 아니하여 판결 결과에 영향을 미친 잘못이 있다.</p><p>  라. 한방치료비 부분</p><p>
+        <span class="accrnt_txt">치료비는 불법행위와 상당인과관계가 있는 범위 내에서만 배상청구가 가능한 것이므로, 상당성 여부를 판단함에 있어서는 당해 치료행위의 필요성, 기간과 함께 그 진료행위에 대한 보수액의 상당성이 검토되어야 할 것이며 그러기 위해서는 부상의 정도, 치료내용, 횟수, 의료사회일반의 보편적인 치료비 수준(특히 건강보험수가) 등 여러 사정을 고려하여 비상식적인 고액 진료비나 저액 진료비의 가능성을 배제하여 합리적으로 그 범위를 정해야 할 것이고</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|87다카74|판결" href="#//">대법원 1988. 4. 27. 선고 87다카74 판결</a></span>, 
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다8503|판결" href="#//">대법원 2006. 5. 11. 선고 2003다8503 판결</a></span> 등 참조), 
+        
+        <span class="accrnt_txt">이는 한방치료의 경우에도 마찬가지이다.</span>
+      </p><p>  원심이 적법하게 채택한 증거와 기록에 의하면, 
+        
+        원고 1은 2008. 4. 25.부터 2008. 5. 27.까지 부산대학교병원에서 입원치료를 받았는데, 2008. 7. 29.에 이르러서야 한방치료를 받은 사실, 
+        
+        원고 1이 제출한 한방치료비 영수증(갑제10호증의2, 5. 기록 199면, 202면)에 의하면, 진찰료가 없고 전액 투약비용이며, 건강보험 비급여 대상으로 처리되어 
+        
+        원고 1이 부담한 사실을 알 수 있고, 피고는 원심에서 위 한방치료비는 이 사건 의료과실과 상당인과관계가 있는 손해가 아니라고 주장하였다.
+      
+      </p><p>  그렇다면 원심으로서는 
+        
+        원고 1이 받은 한방치료의 내용, 한약제의 성분 및 효과, 해당 한약제가 
+        
+        원고 1이 입은 상해인 방광염, 방광게실이 없는 경우에도 일반적인 신체기능 유지·증진을 위하여 사용되는 것인지 여부, 건강보험 비급여 대상으로 처리된 이유 등에 관하여 좀 더 심리하여 상당인과관계 여부를 판단하였어야 한다.
+      
+      </p><p>  그럼에도 원심은 위와 같은 점에 관하여 충분히 심리·확정하지 아니한 채 위 비용들이 손해배상의 대상이 되는 치료비에 해당한다고 판단하였으니, 원심판결에는 불법행위와 상당인과관계에 있는 치료비에 관한 법리를 오해하고 필요한 심리를 다하지 아니함으로써 판결 결과에 영향을 미친 잘못이 있다. 이 점을 지적하는 상고이유 주장도 이유 있다.</p><p>  4. 결론</p><p>  그러므로 원심판결 중 피고 패소 부분을 파기하고 그 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김지형(재판장) 양승태 전수안 양창수(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

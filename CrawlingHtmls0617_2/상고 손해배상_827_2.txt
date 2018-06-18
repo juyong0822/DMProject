@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2009나24721 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2029878';
+var contIdEtc = '';
+var saNo = '2009나24721';
+var sngoNm = '선고';
+var saNm = '구상금';
+try {
+	var sngoDay=('20090923' ? 
+			'20090923'.length==4 ? Date.parseExact('20090923','yyyy').toString('yyyy. M. d.') : 
+				'20090923'.length==6 ? Date.parseExact('20090923','yyyyMM').toString('yyyy. M. d.') : 
+					'20090923'.length==8 ? Date.parseExact('20090923','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009나24721 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009나24721';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2009나24721</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(29)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2003가합2288">대구지방법원 2003가합2288호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구고등법원|2004나8266">대구고등법원 2004나8266</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다58859">대법원 2001. 6. 12. 선고 2000다58859 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건설업법|25|0|null">건설업법(구) 제25조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건설업법|25|0|null">건설업법(구) 제25조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건설업법|37|0|null">건설업법(구) 제37조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건설산업기본법|32|0|null">건설산업기본법 제32조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건설산업기본법|32|0|null">건설산업기본법 제32조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건설산업기본법|44|0|null">건설산업기본법 제44조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|481|0|null">민법 제481조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|482|0|null">민법 제482조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2007가합72231">서울중앙지방법원 2008. 10. 22. 선고 2007가합72231 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2009. 9. 23. 선고 2009나24721 판결</h2><p class="sub_title">[구상금][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 항소인】
+      
+        한솔건설 주식회사외 1 (소송대리인 법무법인 충정 담당변호사 조상연외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고(항소인 겸 피항소인) 주식회사 미도의 소송수계인 겸 피고(항소인)】
+      
+        주식회사 미도종합건설 (소송대리인 법무법인 렉스 담당변호사 조대환외 2인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2009. 7. 22.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2007가합72231|판결" href="#//">서울중앙지방법원 2008. 10. 22. 선고 2007가합72231 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 피고 주식회사 미도의 소송수계인 겸 피고 패소부분을 취소하고, 위 취소부분에 해당하는 원고들의 청구를 각 기각한다.</p><p>2. 원고들의 피고 주식회사 미도의 소송수계인에 대한 항소를 기각한다.</p><p>3. 소송총비용은 원고들이 부담한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지 </p>
+      <p>  피고 주식회사 미도의 소송수계인 겸 피고는 원고들에게 각 203,074,201원(피고 주식회사 미도의 소송수계인 부분 각 190,010,861원, 피고 부분 각 13,063,340원) 및 위 각 금원에 대하여 2000. 11. 1.부터 2008. 9. 19.자 청구취지 및 원인변경신청서 송달일까지는 연 5%의, 그 다음 날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을 각 지급하라.</p>
+      <p>2. 항소취지</p>
+      <p>  가. 원고 : 제1심 판결 중 피고 주식회사 미도의 소송수계인에 대한 원고들 패소부분을 취소한다. 피고 주식회사 미도의 소송수계인은 원고들에게 각 46,552,630원 및 이에 대한 2000. 11. 1.부터 2008. 9. 19.자 청구취지 및 원인변경신청서 부본 송달일까지는 연 5%의, 그 다음 날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을 지급하라.</p>
+      <p>  나. 피고 : 제1심 판결 중 피고 주식회사 미도의 소송수계인 겸 피고 패소부분을 취소하고, 위 취소부분에 해당하는 원고들의 청구를 모두 기각한다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>  가. 원고들의 연대보증계약체결 </p><p>   1) 주식회사 고합엔지니어링(상호가 1996. 4. 6. 고합종합건설 주식회사로, 1999. 1. 6. 주식회사 경일건설로, 2001. 2. 5. 고합종합건설 주식회사로 각 변경되었고, 이하 ‘소외 회사’라 한다)은 1996. 1. 30. 대구기계공구상협동조합(이하 ‘소외 조합’이라 한다)으로부터 대구 북구 산격동 종합유통단지 33블록 2로트 지상 대구종합유통단지 산업용재관 지원동 및 상가동 건물(이하 ‘이 사건 건물’이라 한다) 신축공사(이하 ‘이 사건 공사’라 한다)를 대금 48,357,100,000원으로 정하여 도급받았다(이하 ‘이 사건 도급계약’이라 한다).</p><p>   2) 원고들은 같은 날 소외 조합에 대하여 소외 회사의 소외 조합에 대한 이 사건 도급계약상의 의무를 연대보증하였다(이하 ‘이 사건 연대보증계약’이라 한다).</p><p>  나. 피고들의 하도급계약체결</p><p>   1) 제1심 공동피고 주식회사 미도(2000. 5. 26. 변경전 상호 주식회사 미도산업개발주식회사, 이하 ‘제1심 공동피고 미도’라고 한다)는 1996. 11. 11. 소외 회사로부터 이 사건 공사 중 상가동 철근콘크리트공사(콘크리트 타설 수량은 지하층 45,842㎡, 지상층 14,158㎡)를 대금 1,409,900,800원으로 정하여 하도급받았다(이하 ‘이 사건 하도급계약’이라 한다).</p><p>   2) 제1심 공동피고 미도는 소외 회사와 위 상가동 철근콘크리트 공사에 관하여 콘크리트 타설 수량을 1997. 3. 28. 47,017㎡로, 1997. 12. 31. 66,569㎡로, 1998. 4. 30. 57,532㎡로 각 변경하였다.</p><p>   3) 1998. 5. 1. 폐업한 제1심 공동피고 미도의 이 사건 하도급계약을 승계한 피고 주식회사 미도종합건설(이하 ‘피고 미도종합건설’이라 한다)은 1998. 5. 22. 소외 회사와 지상층 콘크리트타설 수량을 9,037㎡로 변경하였다.</p><p>  다. 소외 조합의 원고들에 대한 손해배상청구 및 소외 회사의 회사정리절차  </p><p>   1) 소외 회사는 1998. 11. 30. 이 사건 건물을 완공하여 소외 조합에 인도하였으나, 제1심 공동피고 미도 및 피고 미도종합건설(이하 ‘피고들’이라 한다)이 시공한 위 상가동에 ① 콘크리트 벽, 보, 파라펫 균열 및 ② 바닥 균열의 하자가 발생한 것을 비롯하여 이 사건 건물에 각종 하자가 발생하였다.</p><p>   2) 소외 조합은 1999. 3. 3. 원고들에게 소외 회사의 부도로 이 사건 건물에 발생한 하자의 보수가 이루어지지 않고 있음을 알리면서 하자보수를 요구하였다.</p><p>   3) 소외 회사는 1999. 7. 19. 수원지방법원으로부터 회사정리절차개시결정을 받았고, 위 개시결정에 따른 정리채권신고기간은 1999. 8. 28.까지인데, 소외 조합과 원고들은 ① 소외 조합이 소외 회사에 대하여 가지는 이 사건 건물에 발생한 하자의 보수에 갈음하는 손해배상채권과 ② 원고들이 소외 조합에게 이 사건 연대보증계약에 의하여 이 사건 건물에 발생한 하자의 보수에 갈음하는 손해배상채무를 이행함으로써 원고들이 소외 회사에 대하여 가지는 구상권을 각 위 정리채권신고기간 내에 신고하지 아니하여, 위 각 채권이 실권되었다.    </p><p>   4) 소외 조합은 2003. 2. 8. 
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2003가합2288" href="#//">대구지방법원 2003가합2288호</a></span>로 원고들에 대하여 이 사건 연대보증계약에 따라 이 사건 건물에 발생한 하자보수에 갈음하는 손해배상청구소송을 제기하여, 위 사건의 항소심인 대구고등법원으로부터 2007. 4. 12. 원고들은 연대하여 소외 조합에게 1,384,922,000원 및 이에 대한 지연손해금을 지급하라는 판결(
+        <span id="link"><a name="linkContPanre" title="새창" type="대구고등법원|2004나8266|판결" href="#//">대구고등법원 2004나8266</a></span>)을 선고받았고, 2007. 9. 20. 대법원의 상고기각으로 위 판결이 확정되었다.
+      </p><p>   5) 원고들은 2007. 4. 27.경 소외 조합에게 위 소송의 판결에 따른 손해배상금으로 각 2,128,296,460원을 지급하였다.</p><p>  라. 피고 미도종합건설의 제1심 공동피고 미도의 소송수계</p><p>  피고 미도종합건설은 2008. 7. 29. 제1심 공동피고 미도를 흡수합병하고, 당심 계속중인 2009. 4. 1. 제1심 공동피고 미도의 소송을 수계하였다.</p><p>[인정근거] 다툼없는 사실, 갑 제1호증, 갑 제3호증, 갑 제9호증의 각 기재 및 변론전체의 취지   </p><p>2. 관련 규정</p><p>  ㆍ 구 건설업법(1996. 12. 30. 법률 제5230호 건설산업기본법으로 전문개정되기 전의 것)</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">제25조 제1항</a></span> : 하수급인은 그가 하도급받은 건설공사의 시공에 있어서는 발주자에 대하여 수급인과 동일한 의무를 진다.
+      </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">제2항</a></span> : 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">제1항</a></span>의 규정은 수급인과 하수급인의 법률관계에 영향을 미치지 아니한다.
+      </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|37|">제37조 제3항</a></span> : 수급인은 하수급인이 고의·과실로 인하여 하도급받은 공사를 조잡하게 하여 타인에게 손해를 가한 때에는 하수급인과 연대하여 그 손해를 배상할 책임이 있다.
+      </p><p>  ㆍ 건설산업기본법 </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|32|">제32조 제1항</a></span> : 하수급인은 그가 하도급받은 건설공사의 시공에 있어서는 발주자에 대하여 수급인과 동일한 의무를 진다.
+      </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|32|">제2항</a></span> : 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|32|">제1항</a></span>의 규정은 수급인과 하수급인의 법률관계에 영향을 미치지 아니한다.
+      </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|44|">제44조 제3항</a></span> : 수급인은 하수급인이 고의 또는 과실로 하도급받은 건설공사의 시공을 조잡하게 하여 타인에게 손해를 가한 때에는 하수급인과 연대하여 그 손해를 배상할 책임이 있다.
+      </p><p>3. 원고들의 주장</p><p>  가. 피고들은 ① 이 사건 공사의 하수급인으로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|32|">건설산업기본법 제32조 제1항</a></span>(이하 ‘
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span>’이라 한다)에 의하여 소외 조합에 대하여 소외 회사와 동일한 의무를 지므로, 소외 조합에 대하여 위 상가동 철근콘크리트 공사로 인하여 발생한 하자의 보수에 갈음하는 손해를 배상할 의무를 부담하고, ② 고의·과실로 인하여 위 상가동 철근콘크리트 공사를 조잡하게 하여 소외 조합에 위와 같은 손해를 가하였으므로, 소외 회사는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|37|">구 건설업법 제37조 제3항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|44|">건설산업기본법 제44조 제3항</a></span>(이하 ‘
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|37|">구 건설업법 제37조 제3항</a></span>’이라 한다)에 의하여 피고들과 연대하여 소외 조합에 대하여 그 손해를 배상할 책임이 있다. 
+      </p><p>  나. 원고들은 소외 회사의 연대보증인으로서 그 연대보증채무의 이행으로 소외 조합에게 이 사건 공사로 인하여 발생한 하자의 보수에 갈음하는 손해배상금을 모두 지급하였고, 그에 따라 피고들도 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span>에 의한 소외 조합에 대한 자신의 하자보수에 갈음하는 손해배상으로 ① 콘크리트 벽, 보, 파라펫 균열 하자 보수비용 233,482,370원과 ② 바닥 균열 하자 보수비용 685,226,080원을 지급할 의무를 면하게 되었다. 
+      </p><p>  다. 원고들은 소외 조합에 대하여 연대보증채무를 이행함으로써 ① 소외 회사에 대하여 구상권이 있고, 원고들은 소외 조합에 대하여 변제할 정당한 이익이 있는 자로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|481|">민법 제481조</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|482|">제482조 제1항</a></span>에 의하여 소외 조합을 대위하여 피고들에 대하여 소외 조합의 피고들에 대한 하자보수에 갈음하는 손해배상청구권을 행사하고, ② 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span>에 의한 소외 조합에 대한 자신의 하자보수에 갈음하는 손해배상채무를 면한 피고들에 대하여 부당이득반환청구권이 있으며, ③ 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|37|">구 건설업법 제37조 제3항</a></span>에 의하여 소외 회사와 피고들은 소외 조합에 대하여 공동불법행위자로서의 책임이 있거나, 또는 주관적 공동이 없는 공동불법행위자와 사실상 같은 지위에 있어 부진정연대채무 관계에 있으므로, 소외 회사의 연대보증인인 원고들은 피고들에 대하여 직접 구상권 내지 부당이득반환청구권이 있다.  
+      </p><p>  라. 따라서 피고 주식회사 미도의 소송수계인 겸 피고는 원고들에게 각 203,074,201원{원고들이 소외 조합에 지급한 손해배상금 중 피고들이 시공한 위 상가동의 ① 콘크리트 벽, 보, 파라펫 균열 하자의 보수비용 233,482,370원과 ② 바닥의 균열 하자의 보수비용 685,226,080원 중 172,777,032원 합계 406,148,402원(그 중 제1심 공동피고 미도 부분 207,355,690원, 피고 미도종합건설 부분 26,126,680원)을 이분한 금액} 및 이에 대한 지연손해금을 지급할 의무가 있다.</p><p>4. 판단</p><p>  가. 먼저, 원고들이 소외 회사에 대한 구상권을 가지고 소외 조합의 피고들에 대한 건설업법 및 건설산업기본법에 의한 권리(하자보수에 갈음하는 손해배상청구권)를 대위할 수 있는지에 관하여 보건대, 원고들이 소외 회사에 대한 구상권자로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|482|">민법 제482조 제1항</a></span>에 의하여 소외 조합을 대위할 수 있는 권리는 소외 조합의 소외 회사에 대한 채권 및 그 담보에 관한 권리라고 할 것인데, 소외 조합의 피고들에 대한 건설업법 및 건설산업기본법에 의한 권리는 위 각 법률에 의하여 특별히 인정되는 권리이고, 특히 발주자(도급인)는 수급인을 대위하여 하수급인에게 하자보수에 갈음하는 손해배상청구권을 행사할 수 있음에도 위 각 법률에 의하여 발주자(도급인)가 하수급인에 대하여 직접 하자보수에 갈음하는 손해배상청구권을 가지게 된 것인바, 소외 조합이 위 각 법률에 의하여 피고들에 대하여 가지는 하자보수에 갈음하는 손해배상청구권은 소외 조합의 소외 회사에 대한 채권도 아니고 그 채권을 담보하기 위한 권리도 아니라고 할 것이므로, 원고들의 이 부분 주장은 이유 없다.
+      </p><p>  나. 다음으로, 원고들이 피고들에 대하여 부당이득반환청구권을 가지는지 여부에 관하여 보건대, 원고들이 소외 조합에 대하여 연대보증인으로서의 의무를 이행함으로써 소외 회사의 소외 조합에 대한 하자보수에 갈음하는 손해를 배상할 책임이 소멸되었다면, 이 사건 연대보증계약에 의하여 소외 조합에 대한 위 손해를 배상한 것이므로, 위 출재가 법률상 원인 없이 이루어진 것도 아니고, 또 원고들로서는 소외 회사에 대하여 구상권을 행사할 수 있으므로 원고들에게 손해가 있다고도 볼 수 없으며, 원고들의 소외 조합에 대한 연대보증채무의 이행으로 피고들의 소외 조합에 대한 건설업법 및 건설산업기본법에 의한 의무가 사실상 소멸되었다 하더라도, 피고들의 소외 회사에 대한 이 사건 하도급계약에 의한 하자보수에 갈음하는 손해배상책임까지 소멸되었다고 볼 수는 없어, 피고들이 원고들의 연대보증채무의 이행으로 이득을 취하였다고 볼 수도 없으므로, 원고들이 피고들에게 부당이득반환청구권이 있음을 전제로 하는 원고들의 이 부분 주장도 이유 없다. </p><p>  다. 끝으로, 소외 회사와 피고들이 소외 조합에 대하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|37|">구 건설업법 제37조 제3항</a></span>에 의한 공동불법행위책임이 있는지 또는 부진정연대채무관계에 있어 원고들이 피고들에 대하여 직접 구상권 내지 부당이득반환청구권이 있는지에 관하여 본다.
+      </p><p>  살피건대, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|37|">구 건설업법 제37조 제3항</a></span>의 '공사를 조잡하게' 한다는 것은, 건축법 등 각종 법령·설계도서·건설관행·건설업자로서의 일반 상식 등에 반하여 공사를 시공함으로써 건축물 자체 또는 그 건설공사의 안전성을 훼손하거나 다른 사람의 신체나 재산에 위험을 초래하는 것을 의미한다 할 것인데(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다58859|판결" href="#//">대법원 2001. 6. 12. 선고 2000다58859 판결</a></span> 참조), 피고들의 위 상가동 철근콘크리트 공사로 ① 콘크리트 벽, 보, 파라펫 균열과 ② 바닥 균열이 발생하였다 하더라도, 이로 인하여 건축물 자체 또는 이 사건 공사의 안전성을 훼손하거나 다른 사람의 신체나 재산에 위험을 초래하였음을 인정할 증거가 없으므로, 소외 회사와 피고들이 소외 조합에 대하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|37|">구 건설업법 제37조 제3항</a></span>에 의한 공동불법행위책임이 있음을 전제로 하는 원고들의 이 부분 주장도 이유 없다.
+      </p><p>  또한, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">구 건설업법 제25조 제1항</a></span>의 규정 내용과 아울러 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">같은 조 제2항</a></span>과 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설산업기본법|32|">건설산업기본법 제32조 제2항</a></span>에서 ‘
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건설업법|25|">제1항</a></span>의 규정은 수급인과 하수급인의 법률관계에 영향을 미치지 아니한다.’라고 규정하고 있는 점을 종합하여 보면, 위 규정은 하수급인이 하도급받은 건설공사의 시공에 있어서 하수급인으로 하여금 발주자에 대하여 수급인과 동일한 의무를 지게 하는 한편 이로써 수급인과 하수급인의 법률관계에는 영향을 미치지 아니하도록 함으로써 하도급을 양성화하여 그 법률관계를 명확히 하는 규정으로 보이는바, 수급인(소외 회사)의 연대보증인(원고들)이 발주자(소외 조합)에 대하여 하자보수에 갈음하는 손해배상의무를 이행하였다고 하더라도 그 연대보증인(원고들)이 위 규정에 의하여 하수급인(피고들)에 대하여 직접 구상권이나 부당이득반환청구권을 취득한다고 볼 수는 없으므로, 위 규정에 의하여 원고들이 피고들에 대하여 직접 구상권 또는 부당이득반환청구권을 갖게 되었음을 전제로 한(이 사건에서 원고들은 소외 회사를 대위하여 청구하는 것이 아니다) 원고들의 주장 또한 이유 없다. 
+      </p><p> 5. 결론</p><p>  그렇다면, 원고들의 피고 주식회사 미도의 소송수계인 겸 피고에 대한 이 사건 청구는 이유 없어 이를 기각할 것인바, 이와 일부 결론을 달리한 제1심 판결은 부당하므로, 피고 주식회사 미도의 소송수계인 겸 피고의 항소를 받아들여 그 패소부분을 취소하고, 그 취소부분에 해당하는 원고들의 청구를 모두 기각하며, 원고의 피고 주식회사 미도의 소송수계인에 대한 항소를 기각하기로 하여 주문과 같이 판결한다.    </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   강형주(재판장) 하상혁 최봉희 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

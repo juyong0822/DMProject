@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008다20751 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2060242';
+var contIdEtc = '';
+var saNo = '2008다20751';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20090611' ? 
+			'20090611'.length==4 ? Date.parseExact('20090611','yyyy').toString('yyyy. M. d.') : 
+				'20090611'.length==6 ? Date.parseExact('20090611','yyyyMM').toString('yyyy. M. d.') : 
+					'20090611'.length==8 ? Date.parseExact('20090611','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008다20751 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008다20751';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008다20751</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(6)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(22)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2060466">대법원 2009. 6. 25. 선고 2006다18174 판결 [공2009하,1189]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|655561">사실상 도로’의 도시정비법상 정비기반시설 포함 여부 김종수 釜山判例硏究會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|609868">최선웅 최근 행정관련판례 동향 행정법연구 24호  / 행정법이론실무학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655561">김종수 사실상 도로’의 도시정비법상 정비기반시설 포함 여부 판례연구 23집 / 부산판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|686518">김경란 공법상 계약, 주된 행정행위에 부가된 부담 및 부담에 갈음한 합의 재판실무연구 제5권 / 수원지방법원  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2007두6663">대법원 2007. 7. 12. 선고 2007두6663 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="도시및주거환경정비법|65|0|null">도시 및 주거환경정비법 제65조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="도시및주거환경정비법|3|0|20021230">도시 및 주거환경정비법 부칙 제3조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="도시및주거환경정비법|6|0|null">도시 및 주거환경정비법 부칙 제6조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="도시및주거환경정비법|7|0|null">도시 및 주거환경정비법 부칙 제7조 제1항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="도시및주거환경정비법|65|0|null">도시 및 주거환경정비법 제65조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005두5369">대법원 2007. 6. 15. 선고 2005두5369 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007두6663">대법원 2007. 7. 12. 선고 2007두6663 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택건설촉진법|33|0|20030529">주택건설촉진법(구) 제33조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도시및주거환경정비법|65|0|null">도시 및 주거환경 정비법 제65조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도시및주거환경정비법|7|0|null">도시 및 주거환경 정비법 부칙 제7조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도시및주거환경정비법|3|0|null">도시 및 주거환경 정비법 부칙 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도시및주거환경정비법|6|0|null">도시 및 주거환경 정비법 부칙 제6조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택건설촉진법|33|0|null">주택건설촉진법(구) 제33조 제8항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도시계획법|52|0|20000128">도시계획법(구) 제52조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2007나20763">서울고법 2008. 1. 31. 선고 2007나20763 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2009. 6. 11. 선고 2008다20751 판결</h2><p class="sub_title">[손해배상(기)][공2009하,1107]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 도시 및 주거환경정비법 시행 전 사업계획승인을 받은 재건축사업의 민간 사업시행자가 위 법 시행 후 정비사업의 시행으로 용도폐지되는 국가 등 소유의 정비기반시설의 양도 또는 귀속에 관하여 계약을 체결하는 경우, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|65|">위 법 제65조 제2항</a></span> 후단이 적용되는지 여부(적극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|65|">도시 및 주거환경정비법 제65조 제2항</a></span> 후단 규정을 위반하여 사업시행자가 국가 또는 지방자치단체와 체결한 매매계약 등의 효력(무효)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 도시 및 주거환경정비법 시행 전에 사업계획승인을 받은 재건축사업의 민간 사업시행자가 같은 법 시행 후 정비사업의 시행으로 용도가 폐지되는 국가 또는 지방자치단체 소유의 정비기반시설의 양도 또는 귀속에 관하여 국가 또는 지방자치단체와 계약을 체결하는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|65|">같은 법 제65조 제2항</a></span> 후단이 적용된다고 봄이 상당하다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|65|">도시 및 주거환경정비법 제65조 제2항</a></span> 후단 규정의 입법 취지에 비추어 보면, 이는 민간 사업시행자에 의하여 새로 설치될 정비기반시설의 설치비용에 상당하는 범위 안에서 용도폐지될 정비기반시설의 무상양도를 강제하는 강행규정이므로, 위 규정을 위반하여 사업시행자와 국가 또는 지방자치단체 간에 체결된 매매계약 등은 무효이다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|65|">도시 및 주거환경정비법 제65조 제2항</a></span>,         부칙(2002. 12. 30.) 제3조,         제6조,         제7조 제1항 [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|65|">도시 및 주거환경정비법 제65조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007두6663|판결" href="#//">대법원 2007. 7. 12. 선고 2007두6663 판결</a></span>(공2007하, 1284)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고 재건축주택조합 (소송대리인 법무법인 로고스외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        서울특별시 양천구 (소송대리인 변호사 고승덕)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2007나20763|판결" href="#//">서울고법 2008. 1. 31. 선고 2007나20763 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 원심의 판단</p><p>  원심은, 그 채용증거들을 종합하여, 원고는 서울 양천구 신월4동 423-3 외 14필지 8,088.12㎡ 지상에 민영주택건설사업을 시행하는 1단지 사업 및 신월4동 414-4 외 2필지 1,921.39㎡ 지상에 민영주택건설사업을 시행하는 3단지 사업을 추진하기 위하여 설립된 재건축조합인데, 피고로부터 2003. 6. 30. 주택건설사업계획승인을 받은 사실, 피고는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|33|">구 주택건설촉진법(2003. 5. 29. 법률 제6916호로 주택법으로 전문 개정되어 2003. 11. 30.부터 시행되기 전의 것, 이하 같다) 제33조</a></span>에 따라 위 주택건설사업계획을 승인하면서, 위 3단지 사업계획승인의 이행조건으로 ‘사업부지 내의 용도폐지 되는 공공용지(도로 : 신월4동 857 중 일부) 및 신월4동 424-8 대지를 착공 전까지 매입완료하고, 사업부지 내 용도폐지 대상 공공용지(도로)는 사업계획승인 후 용도 폐지 관련규정 절차를 거쳐 착공 전까지 소유권을 확보할 것’을 부과한 사실, 그 후 피고는 2004. 6. 14. 위 1단지 사업계획 변경승인을 하면서 사업계획 변경승인조건으로 ‘사업부지에 설치될 내부도로는 주변지역 주민들의 기존 통행동선 유지를 위하여 기존도로와 유사한 기능으로 조성하여 상시 개방하고, 보도 폭을 2m 이상으로 할 것’을 부과한 사실, 위 각 조건에 기하여 원고는 2004. 12. 피고와 사이에 사업부지 내에 위치한 도로로서 용도폐지 될 신월동 857-1 토지 559.5㎡(이하 ‘이 사건 공공용지’라 한다)를 990,315,000원에 매수하기로 하는 매매계약(이하 ‘이 사건 매매계약’이라 한다)을 체결하고, 2004. 12. 8. 피고에게 위 매수대금 990,315,000원을 납부한 사실 등을 인정한 다음, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시 및 주거환경 정비법(이하 ‘도시정비법’이라 한다) 제65조 제2항</a></span> 후단은 ‘정비사업의 시행으로 인하여 용도가 폐지되는 국가 또는 지방자치단체 소유의 정비기반시설은 그가 새로이 설치한 정비기반시설의 설치비용에 상당하는 범위 안에서 사업시행자에게 무상으로 양도된다’고 규정하고 있으나, 
+        도시정비법 부칙 제7조(사업시행방식에 관한 경과조치) 제1항은 ‘종전법률에 의하여 사업계획의 승인이나 사업시행인가를 받아 시행중인 것은 종전의 규정에 의한다’고 규정하고 있고, 용도가 폐지되는 정비기반시설의 귀속문제는 사업계획승인과 관련된 것으로서 위 부칙에서 말하는 ‘사업시행방식’에 관한 것이므로, 원고가 도시정비법 시행 이전인 2003. 6. 30. 피고로부터 주택건설사업계획승인을 받은 이상, 이 사건 매매계약과 관련하여 도시정비법이 아닌 구 주택건설촉진법의 규정이 적용된다는 이유로, 이 사건 매매계약이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span>에 위배되지 않는다고 판단하여, 원고의 청구를 기각하였다.
+      </p><p>  2. 이 법원의 판단</p><p>  그러나 이러한 원심의 판단은 다음과 같은 이유로 수긍할 수 없다.</p><p>
+        도시정비법 부칙 제7조 제1항은 ‘사업시행방식에 관한 경과조치’라는 표제로 ‘종전법률에 의하여 사업계획의 승인이나 사업시행인가를 받아 시행중인 것은 종전의 규정에 의한다’고 규정하고 있는바, 도시정비법이 시행되기 전의 재건축사업에 대하여 사업계획의 승인을 얻으면 원칙적으로 행정청의 관여는 종료되고 조합원은 이로써 분양받을 권리(입주자로 선정된 지위)를 취득하게 되며(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005두5369|판결" href="#//">대법원 2007. 6. 15. 선고 2005두5369 판결</a></span> 참조), 원래 재건축조합의 운영과 조합원 사이의 권리분배 및 신축된 건물 또는 대지의 소유권 이전 방식 등은 일반 민법 등에 의하여 자율적으로 이루어질 것이 예정되었던 것인 점 등 여러 사정을 고려하면, 도시정비법 시행 전에 이미 사업계획의 승인을 얻은 재건축조합에 대하여 도시정비법에 의한 절차나 방식에 따라 잔존 사업을 시행할 필요성이나 합리성이 있다고 보기는 어렵다. 다만, 
+        도시정비법 부칙 제3조는 ‘일반적 경과조치’라는 표제로 도시정비법 시행 당시 구 주택건설촉진법의 재건축 관련 규정(이하 ‘종전법률’이라 한다)에 의하여 행하여진 처분·절차 그 밖의 행위는 도시정비법의 규정에 의하여 행하여진 것으로 보도록 규정하고 있고, 
+        도시정비법 부칙 제6조는 ‘주거환경개선사업 등에 관한 경과조치’라는 표제로 종전법률에 의하여 사업계획승인이나 사업시행인가를 받아 시행중인 재건축사업은 도시정비법에 의한 주택재건축사업으로 보도록 규정하고 있으므로, 재건축조합의 경우 
+        도시정비법 부칙 제7조 제1항이 규정하는 ‘사업시행방식’에 해당하지 아니한 사항에 관하여는 도시정비법 본칙 또는 다른 부칙 조항이 적용된다고 보아야 할 것이다.
+      </p><p>  그런데 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span>은 ‘시장·군수 또는 주택공사 등이 아닌 사업시행자가 정비사업의 시행으로 새로이 설치한 정비기반시설은 그 시설을 관리할 국가 또는 지방자치단체에 무상으로 귀속되고, 정비사업의 시행으로 인하여 용도가 폐지되는 국가 또는 지방자치단체 소유의 정비기반시설은 그가 새로이 설치한 정비기반시설의 설치비용에 상당하는 범위 안에서 사업시행자에게 무상으로 양도된다’고 규정하고 있는바, 위 조항은 종래 민간 사업시행자가 사업지구 내에 공공시설을 설치할 경우 그 공공시설 및 그 부지의 소유권을 아무런 보상 없이도 국가나 지방자치단체에 귀속시킬 수 있도록 행정청에 재량권을 부여한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|33|">구 주택건설촉진법 제33조 제8항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시계획법|52|">구 도시계획법(2000. 1. 28. 법률 제6243호로 전문 개정되어 2002. 2. 4. 법률 제6655호로 폐지되기 전의 것, 이하 같다) 제52조 제2항</a></span> 등을 둘러싼 위헌성 논란 내지 행정청의 재량권 일탈 논란 소지를 제거하고, 민간 사업시행자에 의하여 새로 설치된 정비기반시설이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span> 전단 규정에 따라 관리청에 무상으로 귀속됨으로 인하여 야기되는 민간 사업시행자의 재산상 손실을 고려하여, 그 민간 사업시행자가 새로 설치한 정비기반시설의 설치비용에 상당하는 범위 안에서 정비사업의 시행으로 용도가 폐지되는 국가 또는 지방자치단체 소유의 정비기반시설을 그 민간 사업시행자에게 무상으로 양도되도록 같은 항 후단 규정을 둠으로써 위와 같은 재산상의 손실을 합리적인 범위 안에서 보전해 주고, 민간 사업시행자와 국가나 지방자치단체 사이의 재산적 권리관계를 보다 형평에 맞게 합리적으로 조정하기 위하여 마련된 규정이므로, 이는 정비사업의 시행으로 인하여 용도가 폐지되는 국가 또는 지방자치단체 소유의 정비기반시설의 양도 또는 귀속에 관한 실체적 권리관계를 규정한 조항이지 ‘사업시행방식’에 관한 사항을 규정한 조항이라고 볼 수 없다고 할 것이다. 특히, 도시정비법 부칙은 구 도시재개발법(1997. 12. 13. 법률 제5453호로 개정되기 전의 것) 부칙 단서 규정과 달리 도시정비법 시행 후 최초로 사업시행의 인가를 받은 사업부터 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span> 후단의 규정을 적용한다는 내용의 경과규정을 별도로 두지 아니하고 있는데, 그 취지는 종래 위헌성 논란 내지 행정청의 재량권 일탈 논란이 있었던 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|33|">구 주택건설촉진법 제33조 제8항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시계획법|52|">구 도시계획법 제52조 제2항</a></span> 등을 적용하기보다는 보다 합리적인 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span>을 적용하기 위함이라고 해석되므로, 용도폐지 될 국가 또는 지방자치단체 소유의 정비기반시설의 양도 또는 귀속에 관한 사항을 ‘사업시행방식’에 해당하는 것으로 보아 종전법률을 적용하려는 것은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span> 및 부칙 규정의 입법 취지 등에 비추어도 타당한 해석이라고 할 수 없다.
+      </p><p>  따라서, 
+        <span class="accrnt_txt">도시정비법 시행 이전에 사업계획승인을 받은 재건축사업의 민간 사업시행자가 도시정비법 시행 후 정비사업의 시행으로 인하여 용도가 폐지되는 국가 또는 지방자치단체 소유의 정비기반시설의 양도 또는 귀속에 관하여 국가 또는 지방자치단체 사이에 계약을 체결하는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|" style="text-decoration:underline">도시정비법 제65조 제2항</a></span> 후단이 적용된다고 봄이 상당하다.
+        </span>
+      </p><p>
+        <span class="accrnt_txt">그리고 위와 같은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|" style="text-decoration:underline">도시정비법 제65조 제2항</a></span> 후단 규정의 입법취지에 비추어 보면, 이는 민간 사업시행자에 의하여 새로 설치될 정비기반시설의 설치비용에 상당하는 범위 안에서 용도폐지 될 정비기반시설의 무상양도를 강제하는 강행규정이라 할 것이므로
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007두6663|판결" href="#//">대법원 2007. 7. 12. 선고 2007두6663 판결</a></span> 참조), 
+        <span class="accrnt_txt">위 규정을 위반하여 사업시행자와 국가 또는 지방자치단체 사이에 체결된 매매계약 등은 무효라고 할 것이다.</span>
+      </p><p>  이러한 법리와 앞서 본 사실관계에 비추어 살펴보면, 도시정비법 시행 후에 원고와 피고 사이에 체결된 이 사건 매매계약에 적용되는 법률 조항은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span> 후단이라고 할 것인바, 이 사건 공공용지 중 원고가 새로이 설치한 도로의 설치비용에 상당하는 부분을 원고가 피고로부터 유상으로 매수하는 내용의 이 사건 매매계약은 강행규정인 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span> 후단에 위배되어 무효라 할 것이고, 기록상 이 사건 공공용지 중 위와 같이 무효로 되는 부분을 특정할 만한 자료가 없는 이상 이 사건 매매계약의 일부만을 무효로 할 수 없으므로, 이 사건 매매계약은 그 전체가 무효라고 할 것이다.
+      </p><p>  그럼에도 불구하고, 원심은 이 사건 매매계약에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span>이 적용되지 아니함을 전제로 이 사건 매매계약이 유효하다고 판단하였으니, 원심판결에는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경 정비법|65|">도시정비법 제65조 제2항</a></span>의 해석·적용 및 매매계약의 유효요건에 관한 법리를 오해한 위법이 있고, 이러한 위법은 판결에 영향을 미쳤음이 분명하다.
+      </p><p>  3. 결 론</p><p>  그러므로 나머지 상고이유에 대한 판단을 생략한 채 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박일환(재판장) 박시환 안대희 신영철(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

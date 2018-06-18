@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2006다21002 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2062353';
+var contIdEtc = '';
+var saNo = '2006다21002';
+var sngoNm = '선고';
+var saNm = '손해배상(지)';
+try {
+	var sngoDay=('20061222' ? 
+			'20061222'.length==4 ? Date.parseExact('20061222','yyyy').toString('yyyy. M. d.') : 
+				'20061222'.length==6 ? Date.parseExact('20061222','yyyyMM').toString('yyyy. M. d.') : 
+					'20061222'.length==8 ? Date.parseExact('20061222','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2006다21002 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2006다21002';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2006다21002</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(13)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(16)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(6)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2059306">대법원 2007. 2. 22. 선고 2005다74894 판결 [공2007.4.1.(271),493]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|577550">가 음반제작자가 저작자의 이용허락을 얻어 제작한 원반을 이용하여 스스로 편집음반을 제작ㆍ판매하는 것이 음반제작자가 저작인접권자로서 갖는 복제ㆍ배포권의 범위에 당연히 포함되는지 여부 나 음악저작물에 관한 이용허락계약에 있어서 그 이용허락의 범위가 불명확한 경우 그 구체적인 범위 오영준 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|572901">이른바 곡비지급에 따른 음악저작물의 이용허락계약과 신탁계약 효력 배대헌 한국저작권위원회</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|786572">최승재 저작권신탁계약종료 시 저작권신탁관리업자가 체결한 계약의 효력 대법원판례해설 제103호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|593871">이준형 건축설계계약의 중도해소와 설계도서의 이용권 민사판례연구 30권  / 박영사  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|589098">배대헌 '기술로 문화산업을 이끄는' 저작권법에 대한 논의 산업재산권 25호  / 한국산업재산권법학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|590268">방석호 국내 음악저작물시장에서의 신탁관리와 개선방안의 모색 성균관법학 19권 2호  / 성균관대학교 비교법연구소  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|583717">유대종 풀 브라우징(Full-Browsing)과 콘텐츠 이용허락범위에 관한 소고 창작과 권리 50호  / 세창출판사  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662753">계승균 저작물 이용허락계약해석에 관한 비판적 고찰 창작과 권리 67호  / 세창출판사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|586819">윤인태 음반제작자 또는 그 허락을 받은 제3자의 편집앨범 제작 판례연구 19집  / 부산판례연구회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|544373">한국 . 대법원 법원행정처 재판실무편람 . 제8호 : 지적재산권재판실무편람 법원행정처  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581998">배대헌 저작인접권자ㆍ이용자의 법률관계 저작권문화 통권162호2008년 2월 / 저작권심의조정위원회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|599396">조용순 콘텐츠 제작에 따른 저작권법 문제에 관한 소고 정보법학 제12권 제2호  / 한국정보법학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|698877">김병식 저작권신탁계약의 해지 및 그에 따른 법률관계 대법원판례해설 제94호 / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|572901">배대헌 이른바 '곡비'지급에 따른 음악저작물의 이용허락계약과 신탁계약 효력 (계간)저작권 77호  / 한국저작권위원회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577550">오영준 가. 음반제작자가 저작자의 이용허락을 얻어 제작한 원반을 이용하여 스스로 편집음반을 제작ㆍ판매하는 것이 음반제작자가 저작인접권자로서 갖는 복제ㆍ배포권의 범위에 당연히 포함되는지 여부, 나. 음악저작물에 대법원판례해설 66호 (2007.07) / 법원도서관  2007 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="저작권법|2|0|20061228">저작권법(구) 제2조 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="저작권법|42|0|null">저작권법(구) 제42조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="저작권법|62|0|null">저작권법(구) 제62조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="저작권법|67|0|null">저작권법(구) 제67조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="저작권법|42|0|20061228">저작권법(구) 제42조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="저작권법|2|0|20061228">저작권법(구) 제2조 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="저작권법|42|0|null">저작권법(구) 제42조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="저작권법|62|0|null">저작권법(구) 제62조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="저작권법|67|0|null">저작권법(구) 제67조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="저작권법|2|0|20061228">저작권법(구) 제2조 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="저작권법|42|0|null">저작권법(구) 제42조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="저작권법|67|0|null">저작권법(구) 제67조 </a></p><p class="areaChjJomun"><font>[5]</font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="저작권법|21|0|20061228">저작권법(구) 제21조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="저작권법|41|0|null">저작권법(구) 제41조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|2|0|null">저작권법 제2조 제7호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|67|0|null">저작권법 제67조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|62|0|null">저작권법 제62조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|42|0|null">저작권법 제42조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|41|0|null">저작권법 제41조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|21|0|null">저작권법 제21조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2005나48392">서울고법 2006. 3. 15. 선고 2005나48392 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2006. 12. 22. 선고 2006다21002 판결</h2><p class="sub_title">[손해배상(지)][공2007.2.1.(267),209]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 음반제작자가 저작인접물인 음반을 복제·배포하기 위하여 음반에 수록된 저작물의 저작재산권자로부터 이용허락을 받아야 하는지 여부(적극)    </p>
+      <p></p>
+      <p>
+        </p><p>[2] 음악저작물에 대한 이용허락계약에 있어 이용허락 범위의 해석 방법   </p>
+      <p></p>
+      <p>
+        </p><p>[3] 음반제작자가 작사자 및 작곡자의 음악저작물 이용허락을 받아 제작한 원반(원반)을 복제하여 편집음반을 제작·판매할 수 있다고 본 사례  </p>
+      <p></p>
+      <p>
+        </p><p>[4] 여러 원반(원반)에 수록된 곡들을 선정하여 다른 신곡들과 함께 편집음반에 수록하면서 원곡(원곡)의 일부를 생략하였더라도 편집음반의 제작이 원곡(원곡)에 대한 이용허락의 범위를 벗어나지 않았다고 본 사례</p>
+      <p></p>
+      <p>
+        </p><p>[5] 편집저작물의 작성권에 관한 특약 없이 음악저작물의 저작재산권을 신탁받은 사람이 편집저작물의 작성권 침해를 이유로 손해배상을 청구할 수 있는지 여부(소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 음반제작자의 저작인접권은 음(음)을 음반에 맨 처음 고정시키는 행위를 통하여 생성된 음반에 관하여 발생하는 권리로서 작사자나 작곡자 등 저작자의 저작물에 관한 저작재산권과는 별개의 독립된 권리이기는 하나, 저작인접물인 음반의 복제·배포에는 필연적으로 음반에 수록된 저작물의 이용이 수반되므로, 음반제작자 자신도 그 저작물의 저작재산권자로부터 이용허락을 받지 않으면 그 음반을 복제·배포할 수 없다.    </p>
+      <p></p><p>
+        </p><p>[2] 음반제작자와 저작재산권자 사이에 체결된 이용허락계약을 해석함에 있어 이용허락의 범위가 명백하지 아니한 경우에는 당사자가 이용허락계약을 체결하게 된 동기 및 경위, 이용허락계약에 의하여 달성하려는 목적, 거래관행, 당사자의 지식, 경험 및 경제적 지위, 수수된 급부가 균형을 유지하고 있는지 여부, 이용허락 당시 당해 음악저작물의 이용방법이 예견 가능하였는지 및 그러한 이용방법을 알았더라면 당사자가 다른 내용의 약정을 하였을 것이라고 예상되는지 여부, 당해 음악저작물의 이용방법이 기존 음반시장을 대체하는 것인지 아니면 새로운 시장을 창출하는 것인지 여부 등 여러 사정을 종합하여 그 이용허락의 범위를 사회 일반의 상식과 거래의 통념에 따라 합리적으로 해석하여야 한다.</p>
+      <p></p><p>
+        </p><p>[3] 음반제작자가 원반(원반)의 기획, 녹음 및 편집, 홍보 등 대부분의 제작업무를 담당하면서 그 비용을 부담하였고, 원반(원반)에 수록된 곡들의 작사자 및 작곡자가 음반제작자의 기획·제작 및 홍보능력에 의지하여 음반제작자에게 별다른 제한을 두지 않고 자신의 음악저작물에 대한 이용을 허락하였다고 보이며, 음악저작물에 대한 이용허락 당시 음반제작자가 별도의 편집음반에 원반(원반)에 수록된 곡들을 포함할 수 있다는 정도는 예견할 수 있었다는 점 등을 이유로, 음반제작자가 작사자 및 작곡자의 음악저작물 이용허락을 받아 제작한 원반(원반)을 복제하여 편집음반을 제작·판매할 수 있다고 본 사례. </p>
+      <p></p><p>
+        </p><p>[4] 여러 원반(원반)에 수록된 곡들을 선정하여 다른 신곡들과 함께 편집음반에 수록하면서 원곡(원곡)의 일부를 생략한 경우에도, 생략된 부분이 원곡(원곡)의 저작자들의 창작 부분이 아니라 저작물을 편곡하여 원반(원반)을 제작하는 과정에서 프로듀서 등의 창작활동으로 형성된 부분이고, 편집음반에 수록된 곡들이 모두 저작자들이 자신의 저작물을 가창(가창)하도록 허락한 가수에 의하여 실연되었다는 점 등을 이유로, 편집음반의 제작이 원곡(원곡)에 대한 이용허락의 범위를 벗어나지 않았다고 본 사례.    </p>
+      <p></p><p>
+        </p><p>[5] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|41|">저작권법(2006. 12. 28. 법률 제8101호로 전문 개정되기 전의 것) 제41조 제2항</a></span>은 저작재산권의 전부를 양도하는 경우에 특약이 없는 때에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|21|">같은 법 제21조</a></span>의 규정에 의한 2차적 저작물 또는 편집저작물을 작성할 권리는 포함되지 아니한 것으로 추정한다고 규정하고 있는바, 저작재산권의 수탁자가 저작자들로부터 음악저작물에 대한 저작재산권을 신탁받으면서 음악저작물에 관한 편집저작물을 작성할 권리까지 이전받지 않았다면, 저작재산권의 수탁자는 편집저작물 작성권을 침해당하였음을 이유로 손해의 배상을 청구할 수 없다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">저작권법(2006. 12. 28. 법률 제8101호로 전문 개정되기 전의 것) 제2조 제7호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|42|">제42조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|62|">제62조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|67|">제67조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|42|">저작권법(2006. 12. 28. 법률 제8101호로 전문 개정되기 전의 것) 제42조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">저작권법(2006. 12. 28. 법률 제8101호로 전문 개정되기 전의 것) 제2조 제7호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|42|">제42조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|62|">제62조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|67|">제67조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">저작권법(2006. 12. 28. 법률 제8101호로 전문 개정되기 전의 것) 제2조 제7호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|42|">제42조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|67|">제67조</a></span> [5]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|21|">저작권법(2006. 12. 28. 법률 제8101호로 전문 개정되기 전의 것) 제21조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|41|">제41조 제2항</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        사단법인 한국음악저작권협회 (소송대리인 법무법인 신우 담당변호사 이일우외 5인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        피고 1외 1인 (소송대리인 변호사 고봉석)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2005나48392|판결" href="#//">서울고법 2006. 3. 15. 선고 2005나48392 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>상고를 기각한다.  상고비용은 원고가 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>상고이유(상고이유서 제출기간 경과 후에 제출된 상고보충이유서의 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 저작재산권 신탁 후 저작자가 체결한 이용허락계약의 효력에 대하여</p><p>  기록에 비추어 살펴보면, 원심이 그 채용 증거를 종합하여 그 판시와 같은 사실을 인정한 다음, 원고가 2003. 7. 1.경 신보인세제(신보인세제)를 시행하기 이전에는 원심판결의 [별지] 목록 기재 각 음악저작물 중 위탁 여부란 “0”표시의 음악저작물(이하 ‘이 사건 음악저작물’이라 한다)의 각 작사자 및 작곡자(이하 ‘이 사건 저작자들’이라 한다)에게 ‘저작자 자신이 신보음반의 제작자에 대하여 음악저작물의 이용을 허락할 수 있는 권리’를 묵시적으로 유보시킨 채 이 사건 저작자들로부터 이 사건 음악저작물에 대한 저작재산권을 신탁받은 것이므로, 그 신탁 후 이 사건 저작자들과 피고 1 사이에 체결된 이 사건 음악저작물에 대한 이용허락계약의 효력을 다툴 수 없다는 취지로 판단하였음은 정당한 것으로 수긍할 수 있고, 거기에 상고이유에서 주장하는 바와 같은 저작재산권의 신탁이나 저작재산권신탁계약의 해석 등에 관한 법리오해, 채증법칙 위반 및 심리미진 등의 위법이 없다.</p><p>  2. 음반제작자의 복제·배포권 및 음악저작물에 대한 이용허락의 범위에 대하여</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">저작권법 제2조 제7호</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|67|">제67조</a></span>는 음(음)을 음반에 맨 처음 고정한 음반제작자는 그 음반을 복제·배포할 권리를 가진다고 규정하는 동시에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|62|">같은 법 제62조</a></span>에서 음반제작자 등의 저작인접권에 관한 규정이 저작권에 영향을 미치는 것으로 해석되어서는 아니 된다고 규정하고 있는바, 
+        <span class="accrnt_txt">음반제작자의 저작인접권은 음을 음반에 맨 처음 고정시키는 행위를 통하여 생성된 음반에 관하여 발생하는 권리로서 작사자나 작곡자 등 저작자의 저작물에 관한 저작재산권과는 별개의 독립된 권리이기는 하나, 저작인접물인 음반의 복제·배포에는 필연적으로 그 음반에 수록된 저작물의 이용이 수반되므로, 음반제작자 자신도 그 저작물의 저작재산권자로부터 이용허락을 받지 않으면 그 음반을 복제·배포할 수 없다.</span> 그리고 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|42|">저작권법 제42조 제2항</a></span>은 저작재산권자로부터 저작물의 이용허락을 받은 자는 허락받은 이용방법 및 조건의 범위 안에서 그 저작물을 이용할 수 있다고 규정하고 있는바, 
+        <span class="accrnt_txt">음반제작자와 저작재산권자 사이에 체결된 이용허락계약을 해석함에 있어서 그 이용허락의 범위가 명백하지 아니한 경우에는 당사자가 그 이용허락계약을 체결하게 된 동기 및 경위, 그 이용허락계약에 의하여 달성하려는 목적, 거래관행, 당사자의 지식, 경험 및 경제적 지위, 수수된 급부가 균형을 유지하고 있는지 여부, 이용허락 당시 당해 음악저작물의 이용방법이 예견 가능하였는지 및 그러한 이용방법을 알았더라면 당사자가 다른 내용의 약정을 하였을 것이라고 예상되는지 여부, 당해 음악저작물의 이용방법이 기존 음반시장을 대체하는 것인지 아니면 새로운 시장을 창출하는 것인지 여부 등 여러 사정을 종합하여 그 이용허락의 범위를 사회 일반의 상식과 거래의 통념에 따라 합리적으로 해석하여야 한다.</span>
+      </p><p>  원심판결 이유에 의하면, 원심은 그 채용 증거를 종합하여 그 판시와 같은 사실을 인정한 다음, 피고 1이 1997년경부터 2001년경까지 이 사건 저작자들로부터 이용허락을 받아 ‘베이비복스 1집 내지 5집’에 수록된 총 58곡의 원반(원반, Master Tape, 이하 ‘이 사건 원반’이라고 한다)을 제작하면서 이 사건 원반의 기획, 악단의 편성 및 섭외, 녹음 및 편집, 홍보 등 대부분의 제작업무 및 이에 소요되는 제반 비용을 부담하였고, 이 사건 저작자들 중 이 사건 원반의 제작에 참여한 자에 대하여는 별도의 작업비용을 지급하였던 점, 피고 1과 이 사건 저작자들은 위 이용허락 당시 거래관행에 따라 그 이용기간, 최초로 지급되는 정액의 금원(통상 ‘곡비’라고 부른다) 외의 사용료 지급 여부 및 그 방식, 음악편집권의 주체 및 편집횟수, 매체선택을 포함한 이 사건 원반의 이용방법 등에 관하여 명시적으로 약정하지는 아니하였지만, 이 사건 저작자들로서는 음반을 출시한다고 하더라도 투자된 비용을 회수하고 이윤을 창출할 수 있을지가 불확실하여 그로 인한 저작권사용료 수입의 극대화보다는 자신의 음악저작물이 널리 알려짐으로써 출판, 공연, 방송 등을 통하여 저작권사용료 수입을 극대화하는 것에 더 큰 관심을 가지고 음반제작자의 기획·제작 및 홍보능력에 의지하여 그에게 자신의 음악저작물에 관하여 실연, 악단의 편성, 녹음, 편집, 홍보방법 등에 있어서 별다른 제한을 두지 않고 이용을 허락한 것으로 보이는 점, 피고 1과 이 사건 저작자들은 이 사건 음악저작물에 대한 이용허락 당시 장차 음반제작자인 피고 1이 음반시장의 변화에 대응하여 이 사건 음악저작물의 실연자로 예정된 ‘베이비복스’가 부른 노래만으로 구성된 별도의 편집음반에 이 사건 음악저작물을 포함시킬 수 있다는 정도는 예견할 수 있었던 점, 피고 1이 이 사건 원반 중 이 사건 음악저작물을 포함한 39곡의 원반을 복제하여 제작·판매한 ‘베이비복스 5.5집 스페셜 앨범’(이하 ‘이 사건 편집음반’이라고 한다)은 모두 ‘베이비복스’에 의하여 실연된 곡들을 수록한 것으로서, 대부분 기존의 ‘베이비복스 1집 내지 5집’에 실린 곡들로 이루어져 음반시장의 측면에서는 ‘베이비복스 1집 내지 5집’을 대체하는 성격이 짙은 점 등의 여러 사정을 종합하여, 이 사건 음악저작물에 대한 이용허락의 범위에는 이 사건 편집음반의 제작·판매도 포함되어 있다는 취지로 판단하였다.</p><p>  위 법리와 기록에 비추어 살펴보면, 원심의 위와 같은 판단은 정당한 것으로 수긍할 수 있고, 거기에 상고이유에서 주장하는 바와 같은 음악저작물에 대한 이용허락의 범위 등에 관한 법리오해, 채증법칙 위반 및 심리미진 등의 위법이 없다.</p><p>  그리고 피고 1이 이 사건 저작자들로부터 이용허락을 받아 이 사건 원반을 제작한 이상 그 이용허락의 구체적인 범위와 관계없이 음반제작자의 복제·배포권의 행사로서 당연히 이 사건 편집음반을 제작·판매할 수 있다고 본 원심의 판단은, 원심판결의 내용 자체로 보더라도 위에서 본 판단에 덧붙여서 한 부가적 판단임이 명백하므로, 위에서 본 바와 같이 원심의 주된 판단이 정당한 이상 위 부가적 판단에 잘못이 있더라도 판결 결과에는 아무런 영향을 미치지 못한다. 이 부분 상고이유의 주장은 받아들일 수 없다.</p><p>  3. 음반의 복제 등의 범위 및 편집저작물 작성권 침해 여부에 대하여</p><p>  기록에 비추어 살펴보면, 원심이 그 채용 증거를 종합하여 그 판시와 같은 사실을 인정한 다음, 이 사건 편집음반은 가수의 노래와 반주는 바꾸지 않고 재생시간을 고려하여 수록된 곡과 곡 사이의 브릿지 부분과 전주와 후주 부분 중 일부를 생략하고 있으나, 그와 같이 생략된 부분은 이 사건 저작자들의 창작 부분이라기보다는 저작물을 편곡하여 원반을 제작하는 과정에서 프로듀서 등의 창작활동으로 형성된 부분이고, 이 사건 편집음반에 수록된 곡들은 모두 이 사건 저작자들이 자신의 저작물을 가창하도록 허락하였던 ‘베이비복스’에 의하여 실연된 것으로서 이 사건 음악저작물이 원래 서로 다른 음반에 수록된 곡들 및 다른 신곡 2곡과 혼재되어 이 사건 편집음반에 수록되었다는 사정만으로 이 사건 저작자들의 고유한 음악적 영감 등이 변질되거나 음악적 느낌이 저감되었다고 보기 어렵다는 이유로, 이 사건 편집음반의 제작이 음반의 복제의 범위를 벗어나 전혀 새로운 음반을 만들어 냄으로써 이 사건 음악저작물에 대한 이용허락의 범위를 일탈한 것이라는 원고의 주장을 배척하였음은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 음반의 복제 및 음악저작물에 대한 이용허락의 범위에 관한 법리오해나 심리미진 등의 위법이 없다.</p><p>  그리고 이 사건 저작자들의 이 사건 음악저작물에 대한 이용허락의 범위에 이 사건 편집음반의 제작·판매도 포함되어 있음은 앞서 살펴본 바와 같고, 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|41|" style="text-decoration:underline">저작권법 제41조 제2항</a></span>은 저작재산권의 전부를 양도하는 경우에 특약이 없는 때에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|21|" style="text-decoration:underline">같은 법 제21조</a></span>의 규정에 의한 2차적 저작물 또는 편집저작물을 작성할 권리는 포함되지 아니한 것으로 추정한다고 규정하고 있는바, 기록을 살펴보아도 원고가 이 사건 저작자들로부터 이 사건 음악저작물에 대한 저작재산권을 신탁받으면서 이 사건 음악저작물에 관한 편집저작물을 작성할 권리까지 이전받았다고 인정할 만한 자료가 없으므로, 이 사건 편집음반이 편집저작물에 해당하는지 여부는 별론으로 하고, 이 사건 음악저작물의 저작재산권을 신탁받은 원고가 편집저작물 작성권을 침해당하였음을 이유로 피고들에게 그 손해의 배상을 구할 수는 없다.
+        </span> 이 점을 다투는 상고이유의 주장은 이유 없다.
+      </p><p>  4. 저작권사용료 상당의 부당이득반환에 대하여</p><p>  기록에 비추어 살펴보면, 피고 1이 신보인세제 시행 이전에 이 사건 저작자들에게 이른바 ‘곡비’라는 명목으로 지급한 정액의 금원에는 피고 1이 이 사건 음악저작물에 대한 작사·작곡 등을 의뢰할 당시 이미 예정되거나 또는 앞으로 예견할 수 있는 범위 내에서 이루어지는 이 사건 음악저작물의 이용에 대한 저작권사용료가 포함되어 있다고 봄이 상당하고, 이 사건 편집음반의 제작·판매가 피고 1이 이 사건 저작자들로부터 이 사건 음악저작물에 대한 이용허락을 받을 당시 예견할 수 있었던 이용허락의 범위에 속하고, 원고가 이 사건 저작자들로부터 이 사건 음악저작물에 대한 저작재산권을 신탁받으면서 이 사건 저작자들에게 이용허락권을 묵시적으로 유보함으로써 위 이용허락의 효력을 다툴 수 없음은 앞서 본 바와 같으므로, 피고들이 이 사건 편집음반을 제작·판매함으로써 법률상 원인 없이 이 사건 음악저작물에 대한 저작권사용료 상당의 이득을 얻고 원고에게 동액 상당의 손해를 가하였다고 볼 수 없다.</p><p>  같은 취지의 원심의 판단은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 저작권사용료 상당의 부당이득반환에 관한 채증법칙 위반이나 심리미진 등의 위법이 없다.</p><p>  5. 결 론</p><p>  그러므로 상고를 기각하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박일환(재판장) 김용담(주심) 박시환 김능환 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

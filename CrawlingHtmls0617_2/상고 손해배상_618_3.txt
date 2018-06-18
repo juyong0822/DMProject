@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 90다카8845 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2091547';
+var contIdEtc = '';
+var saNo = '90다카8845';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('19901023' ? 
+			'19901023'.length==4 ? Date.parseExact('19901023','yyyy').toString('yyyy. M. d.') : 
+				'19901023'.length==6 ? Date.parseExact('19901023','yyyyMM').toString('yyyy. M. d.') : 
+					'19901023'.length==8 ? Date.parseExact('19901023','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 90다카8845 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '90다카8845';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />90다카8845</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(7)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(76)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(6)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1999034">서울고등법원 1990. 2. 13. 선고 89나32908 제11민사부판결 : 일부파기환송 [하집1990(1),262]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2096671">대법원 1993. 6. 8. 선고 93다3073 판결 [집41(2)민,100;공1993.8.15(950),2002]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2102569">대법원 1996. 6. 14. 선고 96다6264 판결 [공1996.8.1.(15),2178]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1996547">서울고등법원 1996. 7. 12. 선고 95나41279 판결：확정 [하집1996-2, 318]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2103396">대법원 1996. 8. 23. 선고 96다273 판결 [공1996.10.1.(19),2839]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2102977">대법원 1997. 11. 25. 선고 97도2227 판결 [공1998.1.1.(49),178]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2177025">대법원 2015. 6. 11. 선고 2011도10872 판결 [공2015하,1004]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|561386">김원오 회복저작물의 저작권에 저촉되는 제3자의 등록상표의 사용에 관한 소고 : 대법원 2001.11.27. 선고 98후2962 판결 평석을 중심으로 . (계간)저작권 75호  / 한국저작권위원회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|36975">이형하 언론 출판의 자유와 저작권의 상충과 조정 : 헌법상 언론 출판의 자유를 이유로 하여 저작권 침해에 대한 면책특권을 인정할것인가? 헌법논총 2집  / 헌법재판소  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|720678">김병식 기업 내 저작물의 복제와 저작재산권의 제한 대법원판례해설 제96호  / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|247758">이광범 명예훼손, 프라이버시 침해와 그 구제방법 : 대법원판례의 성과와 과제를 중심으로 헌법문제와 재판 , 하 (96.10) / 사법연수원  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|557944">조영호 서적의 제호가 저자의 저술업이라는 영업의 표지가 될 수 있는지 여부 정보법 판례백선 . Ⅰ   / 박영사  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|528164">계승균 In dubio pro auctore 창작과 권리 34호 36호 (2004.09) / 세창출판사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44770">이해완 저작권의 침해와 그 구제 재판자료 57집 (하) / 법원행정처  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769782">김창권 시각적 저작물의 복제와 실질적 유사성의 인정기준 및 공표된 저작물의 인용 : 2014. 8. 26. 선고 2012도10786 판결: 공2014하, 1944 대법원판례해설 제102호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|805488">박태일 2015년 지식재산권 분야 판례의 동향 특별법연구 13권 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|487568">김원오 패러디 항변을 둘러싼 저작권법상 쟁점과 과제 저작권 56호  / 한국저작권위원회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|473651">이인호 명예훼손과 음란의 법리에 대한 비판적 고찰 : 유명가수 섹스비디오유포 사건을 중심으로 . 인권과 정의 297호  / 대한변호사협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|524138">김원오 저작권과 상표권의 충돌 양상과 권리 조정상의 법적 쟁점 지적재산권의 현재와 미래 : 소담 김명신선생 화갑기념논문집   / 법문사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|550025">김원오 지적재산권 상호간의 경계획정의 원리와 권리충돌 해법의 모색 산업재산권 18호  / 한국산업재산권법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|552642">권두상 지적재산권과 서적의 제호 : "영어공부 절대로 하지 마라!" 사건을 중심으로 . 지식과 권리 2005.가을ㆍ겨울호  / 대한변리사회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|590397">남형두 북한 저작권법 연구 : 조용필의 평양공연은 북한에서도 저작권법상 보호받을 수 있는가? 법조 56권 4호 (2007.04) / 법조협회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|554128">한규현 서적 제호의 지적재산권법에 의한 보호가능성 지식사회와 기업법   / 박영사  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|561387">허희성 학술저작물의 판례평석에 대한 평석 (계간)저작권 75호  / 한국저작권위원회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|258726">이성룡 언론의 명예훼손에 대한 구제방법과 손해배상소송 실무의 개관 인권과 정의 271호  / 대한변호사협회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256234">배병일 언론과 명예훼손책임 (한터)이철원교수정년기념논문집 (98.09) / [발행처불명]  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|452178">임치용 번역저작권 국민과 사법  : 윤관 대법원장 퇴임기념 (99.01)  / 박영사  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|475261">신평 헌법적 관점에서 본 명예훼손 연구 : 의견과 사실의 이분론을 중심으로 영남대학교  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|540406">신창환 썸네일 이미지 검색 서비스의 저작권 침해 여부 (계간)저작권 70호  / 한국저작권위원회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683620">박준석 한국 저작권법 상의 '저작권 제한'에 관한 고찰 (계간)저작권 100호 / 한국저작권위원회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636836">윤종수 인터넷 시대의 저작재산권의 제한 인터넷과 법률 . Ⅲ   / 법문사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44756">김정술 저작권과 저작인접권의 내용 재판자료 57집 (하) / 법원행정처  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|221800">이상정 사진저작물 저작권관계자료집 18집  / 저작권심의조정위원회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44723">이상정 사진저작물의 이용형태별 저작권문제 점검 저작권 19호  / 한국저작권위원회  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|590380">윤경 검색 서비스를 위한 썸네일(Thumbnail) 이미지 제공이 정당한 사용인지 여부 (계간)저작권 76호  / 한국저작권위원회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|518499">정상조 인터넷링크의 법적 문제점 정보법학 6권 2호  / 한국정보법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44798">허희성 저작권의 보호대상은 내용이 아닌 표현형식 저작권 24호  / 한국저작권위원회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|743684">계승균 정원(정원)과 건축저작물 창작과 권리 76호  / 세창출판사  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44788">박성호 포스터모더니즘과 저작권 국제법률경영 18호 겨울호  / 국제법률경영연구원  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563531">한국. 대법원 법원행정처 재판실무편람. 제6호:. 언론재판실무편람 언론재판실무편람 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633787">정상조 방송통신과 지적재산권 : 기술과 시장 그리고 법의 상호작용 . 경제규제와 법 제3권 제2호2010년 11월 / 서울대학교공익산업법센터  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|652399">조영호 서적 제호의 보호에 관한 판례연구 : 대법원 2004.7.9.선고 2002다56024 판결, 대법원 2005.8.25.선고 2005다22770 판결과 관련하여 재판실무연구 2011 / 광주지방법원  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|548645">계승균 표절과 저작권 (계간)저작권 72호  / 한국저작권위원회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|641985">오세용 중국 저작권법상 '저작물의 공정이용' 규정에 대한 검토 : 한국 저작권법과의 비교법적 고찰을 중심으로 LAW &amp; TECHNOLOGY 제7권 제3호 / 서울대학교 기술과법센터  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|545102">최성준 썸네일 이미지 검색 서비스의 저작권 침해 여부 지적재산권 제9호  / 지적재산권법제연구원  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|546698">정상조 인터넷이 저작권법에 미친 영향 : 회고와 전망 . 저스티스 87호  / 한국법학원  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|757141">이상정 음란물의 저작물성 창작과 권리 78호  / 세창출판사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|43039">이형하 언론 출판의 자유와 저작권의 상충과 조정 헌법재판연구(I) I  / 헌법재판연구회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|518032">전지연 하이퍼링크의 형사법적 책임 : 사이버음란물의 링크를 중심으로 . 법학연구 13권 4호  / 연세대학교 법학연구소  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|237675">이광범 불법행위로서의 명예훼손과 그 구제방법 : 대법원판례의 성과와 과제를 중심으로 재판자료 77집 (하) / 법원도서관  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630917">이현경 블로그에서 음악 저작물의 사용과 공정인용 LAW &amp; TECHNOLOGY 제7권 제1호 / 서울대학교 기술과법센터  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|629418">김상균 썸네일 이미지 검색서비스의 저작권법 위반 여부에 관한 고찰 판례연구 22집(2008.08) / 서울지방변호사회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630769">정상조 인터넷 산업의 발전과 규제 : 기술과 시장 그리고 법의 상호작용 저스티스 121호  / 한국법학원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|594203">계승균 저작인격권의 특질에 관한 소고 법학논총 28집 1호  / 전남대학교 법학연구소  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|845276">김병식 기업내 저작물의 복제와 저작재산권의 제한 : 대법원 2013. 2. 15. 선고 2011도5835 판결 이상훈 대법관 재임기념 문집   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|473366">이상정 동일성유지권에 관한 일고 저스티스 34권 2호  / 한국법학원  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|243061">허희성 절판된 소설에 대한 피보존의 권리 저작권 40호  / 한국저작권위원회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|221789">박성호 포스트모던 시대의 예술과 저작권 저작권관계자료집 18집  / 저작권심의조정위원회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|238334">이상정 제호의 보호에 관한 판례, 실무의 경향과 그 비판 저작권 38호  / 한국저작권위원회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|254071">허희성 저작권의 신탁관리계약에는 저작재산권에 대한 소권까지 포함된다 저작권 42호  / 한국저작권위원회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44764">이형하 저작권법상의 자유이용 재판자료 57집 (하) / 법원행정처  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44797">심창섭 저작권에 의하여 보호되는 저작물의 범위 : 특히 학술적인 내용에 있어서 . 대법원판례해설 19-2호 (93.12) / 법원도서관  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683617">남형두 저작물성, 그 확대와 균형의 역사 (계간)저작권 100호 / 한국저작권위원회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|641993">주선아 우리 저작권법에서의 '공표'의 의의 : 미국 저작권법상의 '발행'과 관련하여 LAW &amp; TECHNOLOGY 제7권 제4호 / 서울대학교 기술과법센터  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|588714">정상규 보도관련자의 책임범위 언론관계소송 재판실무연구 / 한국사법행정학  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|233615">한위수 명예훼손에 관련된 민ㆍ형사상의 판례와 쟁점 언론중재 16권 4호 (96.12) / 언론중재위원회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|572201">김윤명 UCC의 법률 문제에 관한 소고 인터넷 법률 38호  / 법무부 법무심의관실  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|494546">한위수 논평과 명예훼손 민사법학 21호  / 한국사법행정학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125937">김광삼 언론에 의한 명예훼손과 프라이버시침해에 관한 민사책임 전북대학교  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|480550">함석천 언론소송의 실무 언론중재 21권 3호 (2001.09) / 언론중재위원회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|664515">정태호 중국에서의 지식재산권의 귄리충돌문제의 본질적인 해석에 관한 고찰 정보법학 제16권 제1호  / 한국정보법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|670767">한지영 저작권법상 인용에 관한 고찰 창작과 권리 68호 / 세창출판사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|724740">박성호 저작권법 제35조의3 '공정이용' 조항의 신설에 따른 제28조 적용범위의 재조정 법률신문 4181호  / 법률신문사  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|785939">이성웅 지식재산기업의 자본조달을 위한 저작권 유동화의 규제법리 : 일본법과의 비교연구를 중심으로 법학연구 제23권 제4호 / 경상대학교 법학연구소  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44709">이형하 미국저작권법상의 공정사용 재판자료 58집 (9) / 법원행정처  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|626952">안효질 공공 소프트웨어 사업의 지식재산권 귀속에 대한 분석 : 용역계약일반조건의 내용을 중심으로 안암법학 33호  / 무지개출판사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683623">오승종 저작재산권 침해의 판단과 구제 (계간)저작권 100호 / 한국저작권위원회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|592935">윤종수 UCC 저작권의 차별적 취급과 보상체제 저스티스 106호  / 한국법학원  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|498497">한국. 대법원 법원행정처 재판실무편람. 제6호:. 언론재판실무편람 법원행정처  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|640708">이종문 교육출판물을 이용한 온라인 강의 사업과 저작권침해 여부 LAW &amp; TECHNOLOGY 제7권 제5호 / 서울대학교 기술과법센터  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|514261">박익환 사진의 저작권보호 민사판례연구 25권  / 박영사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495547">함석천 사자 명예훼손과 사실·논평의 구별 기준에 관한 소고 실무연구 II  / 서울지방법원 남부지원  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564356">김원오 저작권과 산업재산권간의 충돌 조정장치에 관한 소고 저작권연구 4호  / 한국저작권법학회  2006 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="저작권법|2|0|null">저작권법 제2조 제1호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="저작권법|24|0|null">저작권법 제24조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="저작권법|25|0|null">저작권법 제25조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="저작권법|13|0|null">저작권법 제13조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|2|0|null">저작권법 제2조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|24|0|null">저작권법 제24조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|25|0|null">저작권법 제25조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|13|0|null">저작권법 제13조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|89나32908">
+서울고등법원 1990.2.13. 선고 89나32908 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1990. 10. 23. 선고 90다카8845 판결</h2><p class="sub_title">[손해배상(기)][집38(3)민,7;공1990.12.15.(886),2382]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 저작물의 내용 중에 부도덕하거나 위법한 부분이 포함되어 있는 경우라도 저작권법상 저작물로서 보호되는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>나. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|24|">저작권법 제24조</a></span> 소정의 시사보도를 위한 타인 저작물의 자유이용이 허용되는 "정당한 범위"
+        </p>
+      <p></p>
+      <p>
+        </p><p>다. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|25|">저작권법 제25조</a></span> 소정의 보도, 비평을 위한 저작물 인용의 요건인 "정당한 범위"
+        </p>
+      <p></p>
+      <p>
+        </p><p>라. 사진저작물의 제호 개변으로 인한 동일성 유지권 침해에 해당하지 않는다고 본 사례</p>
+      <p></p>
+      <p>
+        </p><p>마. 사진저작자의 누드사진을 게재한 일본잡지의 상업적 편집의도를 비평한 잡지기사가 사진저작자의 명예를 훼손한 것이 아니라고 본 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 저작권법의 보호대상인 저작물이라 함은 사상 또는 감정을 창작적으로 표현한 것으로서 문학, 학술 또는 예술의 범위에 속하는 것이면 되고 윤리성 여하는 문제되지 아니하므로 설사 그 내용중에 부도덕하거나 위법한 부분이 포함되어 있다 하더라도 저작권법상 저작물로 보호된다 할 것이다.</p>
+      <p></p><p>
+        </p><p>나. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|24|">저작권법 제24조</a></span> 소정의 시사보도를 위한 이용으로 타인 저작물의 자유이용이 허용되기 위하여는 사회통념과 시사보도의 관행에 비추어 보도의 목적상 정당한 범위 안에서의 이용이어야 한다고 할 것인바, 잡지에 게재된 사진이 칼라로 된 양질의 사진으로서 그 크기나 배치를 보아 전체적으로 3면의 기사 중 비평기사 보다는 사진이 절대적 비중을 차지하는 화보형식으로 구성되어 있는 경우 위 사진들은 보도의 목적이라기 보다는 감상용으로 인용되었다고 보이므로 보도를 위한 정당한 범위 안에서 이용되었다고 볼 수 없다.
+        </p>
+      <p></p><p>
+        </p><p>다. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|25|">저작권법 제25조</a></span> 소정의 보도, 비평 등을 위한 인용의 요건 중의 하나인 "정당한 범위"에 들기 위하여서는 그 표현형식상 피인용저작물이 보족, 부연, 예증, 참고자료 등으로 이용되어 인용저작물에 대하여 부종적 성질을 가지는 관계(즉, 인용저작물이 주이고, 피인용저작물이 종인 관계)에 있다고 인정되어야 할 것이다.
+        </p>
+      <p></p><p>
+        </p><p>라. 일본의 시사주간지에 "한국으로부터의 누드, 비장사진을 일거 대공개"라는 제호로 게재된 저작물인 사진 중 일부를 국내 잡지에 전재하면서 "사진예술작품들 일본으로 건너가 포르노성 기획으로 둔갑"이라는 제호를 붙인 경우 사진저작자의 저작물의 제호를 개변함으로써 제호애 대한 동일성유지권을 침해한 것이라기 보다는 위 잡지들에 게재한 인용저작물의 제호라고 보아야 할 것이므로 제호의 변경이나 개변이 있었다고 볼 수 없다.</p>
+      <p></p><p>
+        </p><p>마. 일본 사진전문주간지에 우리나라 사진작가의 누드사진이 실렸다고 보도하면서 그 기사내용과 함께 그 잡지에 게재된 사진 중 일부를 인용하고 나아가 그 잡지의 편집저의가 독자의 호기심을 자극하여 잡지의 상업성을 충족시키고자 한국작가의 사진예술을 악용하였다는 내용의 비평, 논평을 가한 잡지기사는 그 인용내용이 위 일본잡지가 상업성의 충족을 위하여 사진저작자의 사진예술을 악용하였다는 비평으로서 사진저작자의 명예를 훼손한 것이 아니다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">저작권법 제2조 제1호</a></span> 나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|24|">제24조</a></span> 다.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|25|">제25조</a></span> 라.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|13|">제13조</a></span> 마.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          이재길  소송대리인 변호사 박원순 외 1인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          이정숙 외 3인  피고들 소송대리인 법무법인 태평양합동법률사무소 담당변호사 김인섭 외 4인 
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|89나32908|판결" href="#//">
+서울고등법원 1990.2.13. 선고 89나32908 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결의 피고들 패소부분중 위자료에 관한 부분을 파기하여 이 부분 사건을 서울고등법원에 환송한다.</p><p>  피고들의 나머지 상고를 모두 기각한다.</p><p>  각 상고기각부분에 관한 상고비용은 피고들 각자의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 상고이유 제1점을 본다.</p><p>  가. 원심판결 이유에 의하면, 원심은 일본국 광문사가 발행하는 시사주간지 "플래쉬(FLASH)" 51호(1987.12.8.자)에 "한국 가라노 누-드 비장 사진오 일거 대공개"라는 제목으로 제32면 내지 제35면에서 원고를 소개하는 기사와 함께 원고가 제작한 사진중 "환상" 5점, "무구" 3점, "요정" 1점, "귀여움" 2점 등 도합 11점을 게재한 사실을 인정하고, 원고의 위 사진들은 형법의 제재를 받아야 할 음란물이라고 볼 수 없을 뿐더러 예술의 범위에 속하는 창작물로 저작권법의 보호대상이 된다고 판단하였다.</p><p>  판단하건대, 
+        <span class="accrnt_txt">저작권법의 보호대상인 저작물이라 함은 사상 또는 감정을 창작적으로 표현한 것으로서 문학, 학술 또는 예술의 범위에 속하는 것이면 되고 윤리성 여하는 문제되지 아니하므로 설사 그 내용 중에 부도덕하거나 위법한 부분이 포함되어 있다 하더라도 저작권법상 저작물로 보호된다 할 것이다.</span>
+      </p><p>  기록에 의하여 살펴보면, 원심의 위와 같은 판단은 정당하고 거기에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">저작권법 제2조</a></span>의 소정의 저작물에 관한 법리오해의 위법이 있다고 할 수 없으니 이점을 지적하는 논지는 이유없다.
+      </p><p>  나. 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|24|" style="text-decoration:underline">저작권법 제24조</a></span> 소정의 시사보도를 위한 이용으로 타인저작물의 자유이용이 허용되기 위하여는 사회통념과 시사보도의 관행에 비추어 보도의 목적상 정당한 범위 안에서의 이용이어야 한다.
+        </span>
+      </p><p>  그런데 원심이 적법하게 인정하고 있는 바와 같이 피고 주식회사 직장인이 경영하고 피고 이정숙이 그 발행인으로 있는 월간지 "직장인" 1988.6.호에 "한국여대생. 연예인 누드사진이 포르노로 둔갑"이라는 제목아래 위 "플래쉬"지에 게재된 원고의 사진 중 환상 4점, 무구 3점, 요정 1점 등 8점이, 또 피고 주식회사 여원이 경영하고 피고 김재원이 그 발행인 으로 있는 월간지 "뷰티라이프" 1988.6.호에 "사진예술작품들 일본으로 건너가 포르노성 기획으로 전락"이라는 제목 아래 위 원고의 사진 중 환상 1점, 무구 1점, 귀여움 2점 등 4점이 각 원고의 동의를 받지 아니하고 게재되었는바, 기록에 나타난 
+        <span class="accrnt_txt">위 잡지들이 게재한 사진들을 보면 모두 칼라로 된 양질의 사진이고 사진의 크기나 배치를 보아도 어떤 것은 잡지지면의 전면크기이고, 어떤 것은 몇장의 사진으로 지면의 전부 또는 반정도를 점하기도 하여 전체적으로 3면의 기사(표제지면 제외) 중 비평기사 보다는 사진이 절대적 비중을 차지하는 화보형식으로 구성되어 있어서 위 사진들은 보도의 목적이라기 보다는 감상용으로 인용되었다고 보이므로 결국 보도를 위한 정당한 범위 안에서 이용되었다고 볼 수 없다 할 것이다.</span>
+      </p><p>  원심이 같은 견해로 판단한 것은 정당하고 거기에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|24|">저작권법 제24조</a></span>에 관한법리오해의 위법이 있다고 할 수 없으므로 이점을 지적하는 논지도 이유없다.
+      </p><p>  다. 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|25|" style="text-decoration:underline">저작권법 제25조</a></span> 소정의 보도, 비평 등을 위한 인용의 요건 중 하나인 "정당한 범위"에 들기 위하여서는 그 표현형식상 피인용저작물이 보족, 부연예증, 참고자료 등으로 이용되어 인용저작물에 대하여 부종적 성질을 가지는 관계(즉, 인용저작물이 주이고, 피인용저작물이 종인 관계)에 있다고 인정되어야 할 것이다.
+        </span>
+      </p><p>  원심판결은 피고들의 발행잡지에 위 사진들을 게재함에 있어 그 방법과 범위가 보도, 비평의 인용에 있어서 정당한 범위이거나 공정한 관행에 합치되게 게재하였다고 보기 어렵다고 판단하였는바, 기록에 비추어 살펴보면 이 사건 기사 중 사진부분을 제외 한 해설기사는 "직장인" 및 "뷰티라이프"의 해당 2면 중 3분의 1 정도에 그치고 그것도 대부분이 위 "플래쉬"지의 해설을 그대로번역한 것인바, 이 사실과 위에서 본 이 사건 게재사진들의 성상, 크기, 배치 등을 종합해 보면 이 사건 인용저작물이 종이고, 피인용저작물이 주의 관계에 있다고 보여져 피고들의 이 사건 저작물의 인용은 보도, 비평 등을 위한 정당한 범위에 합치되지 않는다고 할 것이므로 원심판결은 이유설시에 있어 다소 미흡한 점이 있지만 그 판단의 결론은 정당하고 거기에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|25|">저작권법 제25조</a></span>에 관한 법리오해의 위법이 있다고 할 수 없다.
+      </p><p>  따라서 이점을 지적하는 논지도 이유없다.</p><p>  2. 상고이유 제2점을 본다.</p><p>  원심판결 이유에 의하면, 원심은 피고들의 이 사건 저작재산권의 침해로 인하여 원고가 입은 손해액을 사진 1점당 금 300,000원으로 봄이 상당하다고 판단하였는바, 기록에 비추어 살펴보아도 원심의 판단은 정당하고 거기에 손해배상액의 산정을 그르친 위법이 있다고 할 수 없으므로 이점을 지적하는 논지도 이유없다.</p><p>  3. 상고이유 제3점을 본다.</p><p>  원심판결 이유에 의하면, 원심은 피고들이 원고의 승낙없이 원래의 제목과 달리 위 "직장인"지에 "한국여대생.연예인 누드사진이 포르노로 둔갑" 이라는 제목으로, 위 "뷰티라이프"지에 "사진예술작품들 일본으로 건너가 포르노성 기획으로 전락"이라는 제목으로 각 원고의 창작예술물인 사진들을 인용게재하여, 원고의 저작인격권을 침해하고 원고의 명예도 훼손하였다고 판단하고, 한편 위와 같은 보도 및 사진게재는 진실한 사실로서 오로지 공공의 이익에 관한 것이므로 명예훼손의 위법성이 조각된다는 피고들의 주장에 대하여 위 보도 내지 사진게재가 진실함은 물론 공공의 이익만을 위한 것이라고 인정할 수 없다 하여 이를 배척하였다.</p><p>  첫째, 
+        <span class="accrnt_txt">원심판결은 피고들의 위와 같은 사진게재행위가 원고의 저작인격권 중 동일성유지권(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|13|" style="text-decoration:underline">저작권법 제13조</a></span>)을 침해하였다는 취지로 보이는바, 피고들 잡지의 위 제호들은 원고의 저작물의 제호를 개변함으로써 제호에 대한 동일성유지권을 침해한 것이라기 보다는 위 잡지들에 게재한 인용저작물의 제호라고 보아야 할 것이기 때문에 제호의 변경이나 개변이 있었다고 볼 수 없고,
+        </span> 달리 기록에 의하여 살펴보아도 위 잡지들이 이 사건 사진들을 변개하여 인용한 점도 찾아볼 수 없다.
+      </p><p>  둘째, 원고의 명예를 훼손하였다고 판단한 부분에 관하여 본다.</p><p>  기록에 의하여 살펴보면, 위 
+        <span class="accrnt_txt">"직장인"과 "뷰티라이프"지의 기사내용은 일본 사진전문주간지인 위 "플래쉬"지에 우리나라 사진작가의 누드사진이 실렸다는 보도로 "플래쉬"지의 기사내용과 함께 원고의 사진을 위에서 본 바와 같이 인용하고 나아가 "플래쉬"지의 편집저의가 독자의 호기심을 자극하여 잡지의 상업성을 충족시키고자 한국작가의 사진예술을 악용하였다는 내용의 비평, 논평을 가한 것으로서 그 인용내용이 원고의 명예를 훼손한 것에 있지 아니하고 위 "플래쉬"지가 상업성의 충족을 위하여 원고의 사진예술을 악용하였다는 비평이라 할 것이다.</span>
+      </p><p>  그럼에도 불구하고 원심이 피고들의 이 사건 사진인용게재가 원고의 저작인격권을 침해하고 원고의 명예를 훼손하였다고 판시하였으니 원심의 인정이나 판단에는 저작인격권의 침해와 명예훼손에 관한 법리를 오해하였거나 명예훼손인정에 있어서 채증법칙을 위배한 잘못이 있다 할 것이니 이점을 지적하는 논지는 이유있다.</p><p>  4. 그러므로 나머지 상고이유에 대하여 더 판단할 필요없이 원심판결의 피고들 패소부분 중 위자료에 관한 부분을 파기하여 이 부분 사건을 다시 심리판단케 하기 위하여 원심법원에 환송하고, 나머지 상고는 모두 이유없어 이를 기각하여 이에 관한 상고비용은 각 패소자들의 부담으로 하기로 관여 법관의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이회창(재판장) 배석 김상원 김주한 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

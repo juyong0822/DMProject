@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2004나85363 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2033075';
+var contIdEtc = '';
+var saNo = '2004나85363';
+var sngoNm = '선고';
+var saNm = '카드이용대금등';
+try {
+	var sngoDay=('20060607' ? 
+			'20060607'.length==4 ? Date.parseExact('20060607','yyyy').toString('yyyy. M. d.') : 
+				'20060607'.length==6 ? Date.parseExact('20060607','yyyyMM').toString('yyyy. M. d.') : 
+					'20060607'.length==8 ? Date.parseExact('20060607','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2004나85363 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2004나85363';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2004나85363</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|125|0|null">민법 제125조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|126|0|null">민법 제126조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2004가단52147">서울중앙지방법원 2004. 10. 21. 선고 2004가단52147 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2006. 6. 7. 선고 2004나85363 판결</h2><p class="sub_title">[카드이용대금등][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        우리신용카드 주식회사의 소송수계인 주식회사 우리은행(소송대리인 법무법인 자하연 담당변호사 윤기원외 3인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        대한민국
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2006. 5. 10.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2004가단52147|판결" href="#//">서울중앙지방법원 2004. 10. 21. 선고 2004가단52147 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고의 항소를 기각한다.</p><p>2. 항소비용은 원고가 부담한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 원고에게 90,950,000원 및 이에 대하여 2003. 12. 28.부터 갚는 날까지 연 27%의 비율로 계산한 돈을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 기초사실</b>
+      </p><p>   다음 사실은 당사자 사이에 다툼이 없거나 갑 제1, 2호증의 각 1 내지 4, 갑 제3, 4, 5호증, 을 제1 내지 7호증의 각 기재, 제1심 증인 
+        소외 2의 증언, 당원의 진주세무서장에 대한 사실조회결과에 변론 전체의 취지를 종합하여 인정할 수 있다.
+      </p><p>
+        <b>가. 
+          소외 1에 의한 법인카드 발급과정
+        </b>
+      </p><p>  (1) 피고 산하의 공군 제3훈련비행단(이하 ‘제3훈련비행단’이라 한다) 소속의 인사처장으로 제3훈련비행단 내부의 인사관리업무를 담당하고 있던 
+        소외 1 소령은 2003. 4. 2. 원고 진주지점을 방문하여 부대 내 골프장 관리에 필요하다고 하면서 국내 총 월 사용한도(이하 사용한도라 함은 ‘국내 총 월 사용한도’를 지칭한다)를 5,000만 원으로 하여 제3훈련비행단 명의의 법인카드 발급신청을 하였다.
+      </p><p>  (2) 당시 
+        소외 1은 기업카드 회원가입신청서, 위임장, 제3훈련비행단의 고유번호증, 자신의 신분증 사본 등의 서류를 원고 진주지점 직원인 
+        소외 2에게 제출하였는데, 회원가입신청서의 대표자 주민등록번호란에는 “
+        소외 6 520927-
+        (주민번호 생략)”이라고 기재하고, 신청인란에는 “공군 제3훈련비행단장”이라고 기재한 후 그 옆에 제3훈련비행단의 관인을 날인하였으며, 위임장(위임한 날짜는 2003. 4. 2.이다)에도 “공군 제3훈련비행단 우리 법인카드 발행의 제반절차를 인사처장 공군소령 
+        소외 1에게 위임함”이라고 기재하고 위임자란에 제3훈련비행단장의 관인을 날인하였다. 법인카드를 발급받기 위하여 제출하여야 하는 서류 중의 하나로 수익사업을 하지 않는 기관에 대해 사업자등록증을 대신하는 고유번호증에는 “발행인 사천세무서장, 발행일 1999. 2. 2, 고유번호 619-83-00845, 단체명 공군 제3훈련비행단”으로 기재되어 있었으나, 대표자 성명은 
+        소외 6 대신 “부대장”으로 기재되고, 주민등록번호는 공란으로 되어 있었다.
+      </p><p>  (3) 당시 법인카드 발급업무를 담당했던 원고 진주지점 직원인 
+        소외 2는 
+        소외 1로부터 제3훈련비행단 명의의 가입신청서 및 위임장, 제3훈련비행단의 고유번호증, 
+        소외 1의 신분증 사본 등의 서류를 교부받고 법인카드 발급절차에 착수하였는데, 
+        소외 2는 
+        소외 1이 기재한 사무실 번호로 전화하여 
+        소외 1이 제3훈련비행단의 인사처장으로 근무하고 있다는 사실을 확인(이외에도 원고 지점 차장인 
+        소외 3은 부대 내 직원을 통해 근무사실을 확인하였다)한 후 2003. 4. 18. 
+        소외 1에게 법인카드(카드번호 
+        생략, 이하 ‘이 사건 법인카드’라 한다)를 발급하여 주었다.
+      </p><p>
+        <b>나. 이 사건 법인카드의 사용한도 증액</b>
+      </p><p>   그 후 
+        소외 1은 2003. 10. 22. 원고 진주지점에 “공군 제3훈련비행단 우리 법인카드 추가 발행에 관한 제반절차(한도증액 6,900만 원 : 1,500만 원 3매, 800만 원 3매)를 인사처장 공군소령 
+        소외 1에게 위임한다”는 제3훈련비행단장의 관인이 날인된 위임장(위임한 날짜는 2003. 10. 17.이다), 제3훈련비행단장 명의의 법인카드 한도증액 및 추가 발급 요청서(시행일은 2003. 10. 21.이다), 신고내용을 한도증액, 회원 명을 제3훈련비행단으로 하고 제3훈련비행단장의 관인을 날인한 비씨카드회원 제 신고서와 자신의 신분증 사본 등을 제출하면서 법인카드 사용한도를 1억 1,900만 원으로 증액하여 줄 것을 요청하였고, 원고는 2003. 10. 28.자로 대표자의 성명과 주민등록번호 등을 확인하지 아니하고 별다른 조건 없이 그 요청에 응하여 사용한도를 증액하고 카드를 추가로 발행하여 주었다.
+      </p><p>
+        <b>다. 
+          소외 1의 이 사건 법인카드 사용과 미결제
+        </b>
+      </p><p>
+        소외 1은 2003. 5. 3.부터 2003. 12. 1.까지 이 사건 법인카드를 116회 이용하여 합계 339,614,500원을 사용하였고, 그 중 248,664,500원은 우리은행 
+        (계좌번호 생략)계좌를 통해 결제되었으며, 나머지 90,950,000원은 그 결제일인 2003. 12. 27.까지 결제되지 아니하였다. 한편, 
+        소외 1은 원고로부터 이 사건 법인카드를 발급받아 사용한 것을 비롯하여 제3훈련비행단의 위임장 등을 제출하는 등의 방식으로 다른 신용카드회사로부터도 제3훈련비행단 명의의 법인카드를 발급받아 수십억 원 상당의 상품권 등을 구입하여 유통하는 방법으로 돈을 융통한 다음 갑자기 전역신청을 한 후 2003. 11. 22.부터 잠적하였다가 2005. 7. 19. 검거되었다.
+      </p><p>
+        <b>라. 제3훈련비행단의 법인카드 발급절차 및 
+          소외 1의 관인 위조 등
+        </b>
+      </p><p>   제3훈련비행단은 수년 전부터 부대의 재무관리의 편의를 위하여 소액의 법인카드(카드당 월 사용한도는 30만 원에서 1,000만 원 정도였다)를 사용하여 왔는데, 공군 부대의 대외적인 재정행위는 부대 재무관인 관리처장이 담당하도록 되어 있었으므로 부대 명의의 법인카드의 발급신청 및 대금결제 사무는 관리처장이 담당하고 있었으며, 이 사건 이후 제3훈련비행단은 이미 발급받은 법인카드를 모두 폐기하고, 자체적으로 법인카드를 발급받지 않고 있다. 
+        소외 1은 카드발급과 증액 신청 당시 그가 위조한 제3훈련비행단장의 관인을 사용하였고, 위 단장으로부터 카드발급과 증액에 대한 어떠한 위임도 받지 아니하였으며, 관할 세무서는 대표자를 “부대장”으로 표시한 고유번호증을 발급하지 아니하고 있다. 한편, 원고 진주지점은 
+        소외 1이 제3훈련비행단의 인사처장의 직위에 있음을 전화로 확인하였을 뿐 제3훈련비행단을 직접 방문하거나 제3훈련비행단에 대하여 따로 
+        소외 1이 제3훈련비행단을 대리하여 이 사건 법인카드를 발급받거나 그 사용한도액의 증액신청을 할 권한이 있음을 확인하지는 아니하였다.
+      </p><p>
+        <b>2. 원고의 주장 및 판단</b>
+      </p><p>
+        <b>가. 원고의 주장 요지</b>
+      </p><p>   원고는, ① 
+        소외 1에게 이 사건 법인카드를 발급받을 적법한 대리권이 있고 그에 따라 발급된 위 법인카드를 통하여 이루어진 거래행위에 대하여 피고는 그 카드사용대금을 원고에게 지급할 의무가 있으며, ② 
+        소외 1에게 위 법인카드를 발급받을 적법한 대리권이 없었다고 하더라도, 
+        소외 1은 위 법인카드 발급 신청 당시 제3훈련비행단의 관인이 날인된 가입신청서와 위임장, 고유번호증, 신분증 사본을 제시하여 제3훈련비행단장이 위 법인카드발급에 관한 대리권을 수여하였음을 표시하였고, 또한 
+        소외 1은 제3훈련비행단의 인사처장으로 복지후생분야에 대한 일반적인 관리업무를 수행하고 있으므로 기본대리권이 있으며, 원고는 
+        소외 1로부터 제3훈련비행단의 관인이 날인된 가입신청서와 위임장, 고유번호증, 신분증 사본을 제출받아 그 진위를 확인하고, 원고의 직원이 
+        소외 1이 제3훈련비행단의 인사처장임을 확인한 후 위 법인카드를 교부한 이상 원고로서는 
+        소외 1이 대리권 없음을 알거나 알 수도 없었고, 
+        소외 1이 제3훈련비행단을 대리하여 법인카드를 발급받을 권한이 있다고 믿을 만한 정당한 사유가 있었으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|125|">민법 제125조</a></span> 또는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">제126조</a></span>의 표현대리 규정에 따라 피고는 
+        소외 1이 발급받아 사용한 위 법인카드 사용대금을 지급할 의무가 있으며, ③ 설사 표현대리책임이 인정되지 않는다고 하더라도, 피고 소속의 공무원인 
+        소외 1이 아무런 권한 없이 법인카드 가입신청서와 위임장을 위조하여 신용카드를 발급받고 이를 사용함으로써 원고에게 신용카드 사용대금 상당의 손해를 입혔는데, 
+        소외 1이 제3훈련비행단 명의로 법인카드를 발급받은 행위는 외관상 피고의 직무집행행위에 해당하므로 
+        소외 1의 사용자인 피고는 
+        소외 1의 직무집행행위로 인하여 원고가 입은 손해를 배상할 책임이 있고, ④ 그렇지 않다고 하더라도, 피고는 공무원인 
+        소외 1에 대한 관리감독을 소홀히 하였고, 특히 이 사건 발생 당시 제3훈련비행단의 비행단장 
+        소외 6, 감찰실장 직무대리 
+        소외 5, 관리처장 
+        소외 4, 행정실장 
+        소외 7 등은 
+        소외 1이 이 사건 법인카드 이외에도 다른 법인카드를 무단으로 발급받은 사실을 알았거나 이미 알고 있었음에도, 
+        소외 1에 대한 관리감독을 소홀히 하거나 묵인하고 혹은 사후조치를 소홀히 하여 
+        소외 1로 하여금 이 사건 법인카드를 무단으로 발급받게 하고 사용한도액을 증액하여 사용하도록 하였으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>의 일반불법행위책임을 부담한다고 주장한다.
+      </p><p>
+        <b>나. 유권대리 주장에 대한 판단(원고의 위 ① 주장과 관련)</b>
+      </p><p>   살피건대, 위 기초사실에 의하면, 
+        소외 1은 아무런 권한 없이 제3훈련비행단 명의의 신청서 및 위임장 등을 위조하여 원고로부터 이 사건 법인카드를 발급받은 것이므로, 
+        소외 1의 카드사용행위는 피고에 대하여 효력이 없고, 따라서 원고의 위 유권대리 주장은 이유 없다.
+      </p><p>
+        <b>다. 표현대리주장에 대한 판단(원고의 위 ② 주장과 관련)</b>
+      </p><p>  (1) 먼저 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|125|">민법 제125조</a></span> 소정의 표현대리 주장에 대해여 살피건대, 위와 같이 제3훈련비행단 명의의 신청서 및 위임장 등이 위조되었으므로, 원고 주장 사유만으로는 제3훈련비행단장이 
+        소외 1에게 대리권을 수여하였음을 원고에 대하여 표시하였다고 볼 수 없고, 달리 제3훈련비행단장의 대리권 수여의 표시를 인정할 증거가 없으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|125|">민법 제125조</a></span> 소정의 표현대리가 성립할 여지는 없다 할 것이다.
+      </p><p>  (2) 다음으로 
+        소외 1에게 제3훈련비행단의 인사처장으로 부대 내부의 시설관리 등에 관하여 일정한 대리권이 있다고 하더라도, 금융기관인 원고로서는 법인인감증명서 등이 없어 그 대리권 여부를 확인하기 어려운 공공기관에 법인카드를 발급하여 줌에 있어서 당해 법인의 법인카드 발급신청 담당부서가 어디인지를 확인하고, 당해 부서에 법인카드 발급신청 의사와 대리권 수여 여부 등을 확인할 주의의무가 있다 할 것인데, 제1항에서 인정한 사실로 알 수 있는 다음과 같은 사정, 즉 ① 원고 진주지점은 
+        소외 1이 제3훈련비행단에서 카드발급신청업무를 담당하는지 여부나 
+        소외 1이 이 사건 법인카드 및 추가발급 법인카드를 각 발급받거나 사용한도액을 증액받기 위하여 제출한 서류에 날인된 제3훈련비행단의 관인의 진위 확인을 위해 아무런 조치를 취하지 아니한 사정, ② 
+        소외 1에게 이 사건 법인카드를 발급해주면서 제3훈련비행단 관리처에 법인카드 발급신청의사나 
+        소외 1에게 대리권을 수여하였는지 여부에 관하여 확인하지 않은 사정, ③ 원고가 이 사건 법인카드를 발급함에 있어 다른 카드회사에서 적용되는 방문 접수규정과 같은 정도의 절차를 진행하지 않은 사정, ④ 일반적으로 법인카드 회원가입에 관한 사항에는 가입신청서에 대표자의 주민등록번호 및 법률상으로 대표권한이 있는 실질적인 대표자를 기재하여야 하나 
+        소외 1이 2003. 4. 2. 가입신청을 할 당시 첨부한 고유번호증의 발행일은 1999. 2. 2. 일뿐만 아니라 대표자 성명을 부대장으로 표시하고 대표자 주민등록번호를 기재하지 아니하였고, 사용한도 증액을 신청할 때에는 대표자의 성명과 그 주민등록번호를 기재하지 아니한 사정, ⑤ 
+        소외 1은 2003. 4. 2. 사용한도가 5,000만 원인 이 사건 법인카드를 발급받은 후 2003. 10. 22. 그 한도액을 1억 1,900만 원으로 하여 현저히 큰 액수로 증액요청을 하였던 사정, ⑥ 
+        소외 2 외에 원고 지점이나 본점에서 가입신청과 증액신청에 대한 심사시 대표자 관련서류의 철저한 확인을 위한 별다른 조치를 취하지 않은 것으로 보이는 사정 등을 종합하면, 
+        소외 1에게 이 사건 법인카드 발급신청 및 사용한도 증액신청과 관련된 대리권이 있는지에 관하여 의심할 여러 정황이 있었음에도 원고 진주지점은 이 사건 법인카드의 발급신청 명의인이 국가기관으로서 대금 결제능력에 의심이 없고 발급신청자가 현역 공군 소령이고 제3훈련비행단의 인사처장이어서 일반인보다 신뢰도가 높다는 이유만으로 섣불리 
+        소외 1에게 대리권이 있다고 믿고 이 사건 법인카드를 발급해주었다고 보이는바, 그렇다면 설사 원고가 
+        소외 1에게 이 사건 법인카드의 발급신청 및 사용한도 증액신청에 관한 대리권이 있다고 믿었다고 하더라도 그와 같이 믿은 데 정당한 이유가 있다고 보기 어려우므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">민법 제126조</a></span> 소정의 표현대리도 성립할 여지는 없다 할 것이다.
+      </p><p>  (3) 이에 대하여 원고는, 제3훈련비행단의 인사처에 근무하던 장교와 사병들도 
+        소외 1에게 법인카드를 발급받을 권한이 있다고 믿었고, 나아가 
+        소외 1이 법인카드 발급을 신청한 원고를 비롯한 8개 카드회사 모두가 법인카드를 발급해 준 것을 보면, 원고가 이 사건 법인카드를 발급할 당시 
+        소외 1에게 제3훈련비행단장을 대리하여 법인카드의 발급을 신청할 권한이 있다고 믿은 데 정당한 사유가 있다고 주장하나, 갑 제6호증, 갑 제7호증의 1 내지 26, 갑 제8호증의 1 내지 5, 갑 제9호증의 1 내지 4, 갑 제10호증의 1, 2, 을 제2호증의 각 기재만으로는 이를 인정하기에 부족하다.
+      </p><p>  (4) 따라서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|125|">민법 제125조</a></span> 또는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">제126조</a></span>의 표현대리 규정에 따라 피고는 
+        소외 1이 발급받아 사용한 위 법인카드 사용대금을 지급할 의무가 있다는 원고의 위 부분 주장 역시 이유 없다.
+      </p><p>
+        <b>라. 사용자책임 주장에 대한 판단(원고의 위 ③ 주장과 관련)</b>
+      </p><p>   살피건대, 
+        소외 1의 제3훈련비행단에서의 직무권한의 범위가 법인카드의 발급신청 등과 무관한 내부의 인사관리업무에 국한되고, 법인카드의 발급신청 등의 사무는 재무관인 관리처장이 담당하고 있는 사실은 제1항에서 본 바와 같으므로, 이 사건 법인카드의 발급신청 및 사용한도액 증액신청은 인사처장의 직무권한 내에 속하지 않음은 물론 외관상으로도 인사처장의 직무집행과 관련된 것이라고 할 수 없고, 설사 
+        소외 1의 행위가 외관상 직무집행의 범위 내에 속하는 것으로 보인다고 하더라도 위 ‘다.항’에서 본 바와 같이 원고로서는 조금만 주의를 기울였다면 
+        소외 1의 행위가 그 직무권한 내에서 적법하게 행하여진 것이 아니라는 사정을 알 수 있었음에도 이를 전혀 확인하지 아니하고 만연히 직무권한 내의 행위라고 믿고 이 사건 법인카드를 발급해주고 그 사용한도액을 증액하여 주었다고 할 것인바, 따라서 원고로서는 
+        소외 1의 행위가 정당한 사무집행의 범위에 속하지 아니함을 중대한 과실로 알지 못하였다고 봄이 상당하므로(원고가 내세우는 갑 제7호증의 1 내지 26, 갑 제8호증의 1 내지 5, 갑 제9호증의 1 내지 4, 갑 제10호증의 1, 2, 을 제2호증의 각 기재만으로는 원고의 중과실을 뒤집기에 부족하다), 결국 피고가 
+        소외 1의 사용자로서 이 사건 카드대금 상당의 손해배상책임을 져야 한다는 원고의 위 주장 역시 이유 없다.
+      </p><p>
+        <b>마. 관리·감독, 사후처리에 과실이 있다는 주장에 대한 판단(원고의 위 ④ 주장과 관련)</b>
+      </p><p>   살피건대, 갑 제11호증, 갑 제12호증의 1, 2, 갑 제13호증의 1 내지 18의 각 기재에 의하면, 제3훈련비행단의 관리처장 
+        소외 4는 이 사건 법인카드에 따른 사고가 발생하기 이전인 2003. 6. 4.경 
+        소외 1이 외한은행으로부터도 제3훈련비행단 명의의 법인카드를 무단으로 발급받은 것을 알게 되어 
+        소외 1에 대하여 그 경위를 조사하게 되었는데, 
+        소외 1이 부대관련 비용의 집행 등을 위하여 만들었다고 변명하면서 그때까지의 이용대금을 곧 결제하고 앞으로 사용을 중지하겠다고 하므로 별다른 조치를 취하지 않고 넘어간 사실, 또한 제3훈련비행단 감찰실장 직무대리 
+        소외 5는 
+        소외 1이 잠적하기 전인 2003. 10. 18. 현대카드사로부터 
+        소외 1이 법인카드를 무단으로 발급받은 사실을 통지받았으면서도 그러한 사실을 2003. 11. 4.경에야 비행단장에게 보고하고, 그 보고를 받은 비행단장 
+        소외 6 역시 적절한 조치를 취하지 아니한 채 
+        소외 1이 개인적으로 문제를 해결하기를 기다리다가 
+        소외 1이 잠적하자 비로소 사건을 전면적으로 조사하기 시작한 사실, 
+        소외 1이 부대장인 
+        소외 6이나 그 처의 접대를 위하여 불법으로 발급받은 법인카드로 소액(소액)을 결제해준 사실, 행정실장 
+        소외 7은 2003. 8.경 그가 직접 관인을 날인하지 아니하고 인사처장인 
+        소외 1이 관인을 날인할 수 있는 환경을 제공한 사실을 인정할 수 있으나, 이러한 사실에 대하여 피고나 제3훈련비행단의 내부에서 부적절한 업무처리를 이유로 징계하는 것은 별론으로 하고, 당시 
+        소외 4, 
+        5, 
+        6, 
+        7 등으로서는 
+        소외 1이 외환카드나 현대카드 이외에 이 사건 법인카드까지 발급받은 사실을 알았거나 알 수 있었다고 보기 어려운 점에 비추어 
+        소외 4, 
+        5, 
+        6, 
+        7이 
+        소외 1에 대한 관리·감독을 소홀히 하거나 사후처리를 소홀히 하였다고 할 수 없으므로(피고 또는 제3훈련비행단으로서는 2003. 6. 4. 또는 2003. 10. 18. 현재 외환카드회사와 현대카드회사를 제외하고는 
+        소외 1이 예금계좌를 개설하거나 신용카드를 발급받은 금융기관을 구체적으로 알지 못한 상황에서 우리나라 전체 금융기관에 
+        소외 1이 불법으로 예금계좌를 개설하거나 신용카드를 발급받은 사실이 있는지를 확인하거나 금융기관의 피해를 방지해주기 위하여 
+        소외 1의 불법행위를 고지해 줄 의무가 있다고도 볼 수 없으며, 더욱이 
+        소외 4, 
+        5, 
+        7이 
+        소외 1을 관리·감독할 지위에 있었다고 보기도 어렵다), 원고의 위 주장도 더 나아가 살펴 볼 필요 없이 이유 없다.
+      </p><p>
+        <b>3. 결론</b>
+      </p><p>   그렇다면, 원고의 피고에 대한 이 사건 청구는 이유 없어 기각할 것인바, 이와 결론을 같이한 제1심 판결은 정당하므로, 원고의 항소를 기각한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   박해성(재판장) 윤종구 최성배 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2009다82244 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2062389';
+var contIdEtc = '';
+var saNo = '2009다82244';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20100311' ? 
+			'20100311'.length==4 ? Date.parseExact('20100311','yyyy').toString('yyyy. M. d.') : 
+				'20100311'.length==6 ? Date.parseExact('20100311','yyyyMM').toString('yyyy. M. d.') : 
+					'20100311'.length==8 ? Date.parseExact('20100311','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009다82244 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009다82244';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2009다82244</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(18)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|650133">헌법상 기본권과 근로자의 경업금지의무 김태욱 민주사회를위한변호사모임</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|631349">근로자에 대한 경업금지약정의 유효성 판단 기준 박선준 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|662212">근로자 경업금지의무에 관한 판례소고 신권철 사법발전재단</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|756419">근로자의 경업피지의무 정영훈 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|685640">사용자의 영업이익과 근로자의 경업금지의무 박수근박수근 서울地方辯護士會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|630364">경업금지약정의 효력과 보호할 가치 있는 사용자의 이익 최승재 法律新聞社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716204">김상중 계약 성립에 관한 기본 판결례의 소개와 분석 비교사법 제20권 4호 / 한국비교사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563532">한국. 대법원 법원행정처 재판실무편람. 제42호:. 임시의 지위를 정하기 위한 가처분 재판실무편람 임시의 지위를 정하기 위한 가처분 재판실무편람 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|758147">남문기 국제 M&amp;A 거래에 있어 지적재산권과 관련한 실무상의 주요 쟁점 국제거래법연구 23집 2호 / 국제거래법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|852461">진원두 영업양도인의 경업금지의무 : 대법원 2015. 9. 10. 선고 2014다80440 판결 재판과 판례 제26집  / 대구판례연구회  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|641159">박영목 계약을 통한 사적 자유의 제한과 그 한계 : 광고계약을 중심으로 고려법학 61호  / 고려대학교 법학연구원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|645701">김동진 퇴직근로자의 정보사용과 업무상배임죄 : 영업비밀분쟁에 관한 새로운 해결방법 법조 통권657호  / 법조협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696148">지원림 민법의 사회상과 정보제공의무 민사법학 62호  / 한국사법행정학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|640732">윤영미 민법상 일반조항과 기본권 공법연구 39집 4호 / 한국공법학회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|623843">이달휴 근로자의 경업금지의무와 계약 노동법학 통권34호  / 한국노동법학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630364">최승재 경업금지약정의 효력과 '보호할 가치 있는 사용자의 이익 법률신문 3895호  / 법률신문사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|544373">한국 . 대법원 법원행정처 재판실무편람 . 제8호 : 지적재산권재판실무편람 법원행정처  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|750557">송양호 상법상 경업금지 법리의 새로운 전개 경영법률 24집 4호 / 한국경영법률학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|685640">박수근(박수근) 사용자의 영업이익과 근로자의 경업금지의무 판례연구 제26집 1  / 서울지방변호사회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631349">박선준 근로자에 대한 경업금지약정의 유효성 판단 기준 대법원판례해설 83호  / 법원도서관  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|709040">천경훈 전후 일본의 재벌해체와 채무귀속 : 일제강제징용사건의 회사법적 문제에 관한 검토 . 법학 54권 3호  / 서울대학교 법학연구소  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630315">박형준 경업금지와 영업방해 조세 273호  / 조세통람사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662212">신권철 근로자 경업금지의무에 관한 판례소고 노동법실무연구  . 제1권  : 김지형 대법관 퇴임기념 제1권  / 사법발전재단  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|752792">김하열 법인으로서의 주식회사에 관한 법적 쟁점 : 주식회사 기본권 -헌법재판소의 판례를 중심으로- BFL 69호 / 서울대학교 금융법센터  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도9089">대법원 2008. 4. 24. 선고 2006도9089 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="부정경쟁방지및영업비밀보호에관한법률|2|0|null">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제2호 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도8278">대법원 2008. 7. 10. 선고 2006도8278 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도9089">대법원 2008. 4. 24. 선고 2006도9089 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부정경쟁방지및영업비밀보호에관한법률|2|0|null">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제2호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|2008나10349">대전고법 2009. 9. 16. 선고 2008나10349 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 3. 11. 선고 2009다82244 판결</h2><p class="sub_title">[손해배상(기)][공2010상,725]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 사용자와 근로자 사이의 경업금지약정의 유효성에 관한 판단 기준 및 여기에서 말하는 ‘보호할 가치 있는 사용자의 이익’의 의미</p>
+      <p></p>
+      <p>
+        </p><p>[2] 근로자 갑이 을 회사를 퇴사한 후 그와 경쟁관계에 있는 중개무역회사를 설립·운영하자 을 회사 측이 경업금지약정 위반을 이유로 하여 갑을 상대로 손해배상을 청구한 사안에서, 갑이 고용기간 중에 습득한 정보나 을 회사의 거래처와의 신뢰관계는 경업금지약정에 의해 보호할 가치가 있다고 보기 어렵고, 경업금지약정이 갑의 이러한 영업행위까지 금지하는 것으로 해석된다면 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>에 정한 선량한 풍속 기타 사회질서에 반하는 법률행위로서 무효라고 할 것이므로, 위 손해배상청구는 이유 없다고 한 사례
+        </p>
+      <p></p>
+      <p>
+        </p><p>[3] 업무상배임죄의 성립요건으로서 ‘그 임무에 위배하는 행위’의 의미</p>
+      <p></p>
+      <p>
+        </p><p>[4] 근로자 갑이 을 회사를 퇴사한 후 그와 경쟁관계에 있는 중개무역회사를 설립하고 고용기간 중에 습득한 기술상 또는 경영상의 정보 등을 사용하여 영업을 한 부분이 업무상 배임에 해당하는지 여부가 문제된 사안에서, 갑의 영업행위가 을 회사에 대한 업무상 배임에 해당하여 불법행위를 구성한다고 보기는 어렵다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 사용자와 근로자 사이에 경업금지약정이 존재한다고 하더라도, 그와 같은 약정이 헌법상 보장된 근로자의 직업선택의 자유와 근로권 등을 과도하게 제한하거나 자유로운 경쟁을 지나치게 제한하는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>에 정한 선량한 풍속 기타 사회질서에 반하는 법률행위로서 무효라고 보아야 하며, 이와 같은 경업금지약정의 유효성에 관한 판단은 보호할 가치 있는 사용자의 이익, 근로자의 퇴직 전 지위, 경업 제한의 기간·지역 및 대상 직종, 근로자에 대한 대가의 제공 유무, 근로자의 퇴직 경위, 공공의 이익 및 기타 사정 등을 종합적으로 고려하여야 하고, 여기에서 말하는 ‘보호할 가치 있는 사용자의 이익’이라 함은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제2호</a></span>에 정한 ‘영업비밀’뿐만 아니라 그 정도에 이르지 아니하였더라도 당해 사용자만이 가지고 있는 지식 또는 정보로서 근로자와 이를 제3자에게 누설하지 않기로 약정한 것이거나 고객관계나 영업상의 신용의 유지도 이에 해당한다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 근로자 갑이 을 회사를 퇴사한 후 그와 경쟁관계에 있는 중개무역회사를 설립·운영하자 을 회사 측이 경업금지약정 위반을 이유로 하여 갑을 상대로 손해배상을 청구한 사안에서, 갑이 고용기간 중에 습득한 기술상 또는 경영상의 정보 등을 사용하여 영업을 하였다고 하더라도 그 정보는 이미 동종업계 전반에 어느 정도 알려져 있었던 것으로, 설령 일부 구체적인 내용이 알려지지 않은 정보가 있었다고 하더라도 이를 입수하는데 그다지 많은 비용과 노력을 요하지는 않았던 것으로 보이고, 을 회사가 다른 업체의 진입을 막고 거래를 독점할 권리가 있었던 것은 아니며 그러한 거래처와의 신뢰관계는 무역 업무를 수행하는 과정에서 자연스럽게 습득되는 측면이 강하므로 경업금지약정에 의해 보호할 가치가 있는 이익에 해당한다고 보기 어렵거나 그 보호가치가 상대적으로 적은 경우에 해당한다고 할 것이고, 경업금지약정이 갑의 이러한 영업행위까지 금지하는 것으로 해석된다면 근로자인 갑의 직업선택의 자유와 근로권 등을 과도하게 제한하거나 자유로운 경쟁을 지나치게 제한하는 경우에 해당되어 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>에 정한 선량한 풍속 기타 사회질서에 반하는 법률행위로서 무효라고 할 것이므로, 경업금지약정이 유효함을 전제로 하는 손해배상청구는 이유 없다고 한 사례.
+        </p>
+      <p></p><p>
+        </p><p>[3] 업무상배임죄는 타인의 사무를 처리하는 자가 그 임무에 위배하는 행위로써 재산상 이익을 취득하거나 제3자로 하여금 이를 취득하게 하여 본인에게 손해를 가함으로써 성립하는데, 여기에서 ‘그 임무에 위배하는 행위’란 사무의 내용, 성질 등 구체적 상황에 비추어 법률의 규정, 계약의 내용 혹은 신의칙상 당연히 할 것으로 기대되는 행위를 하지 않거나 당연히 하지 않아야 할 것으로 기대되는 행위를 함으로써 본인과 사이의 신임관계를 저버리는 일체의 행위를 말한다.</p>
+      <p></p><p>
+        </p><p>[4] 근로자 갑이 을 회사를 퇴사한 후 그와 경쟁관계에 있는 중개무역회사를 설립하고 고용기간 중에 습득한 기술상 또는 경영상의 정보 등을 사용하여 영업을 한 부분이 업무상 배임에 해당하는지 여부가 문제된 사안에서, 이미 공지되었거나 다른 경쟁업체가 상당한 비용이나 노력을 들이지 않고도 쉽게 얻을 수 있는 정보이므로 을 회사의 영업비밀이라 할 수 없고, 을 회사만이 가지고 있는 보호할 가치 있는 정보 내지 을 회사의 영업상 중요한 자산인 자료에 해당한다고 보기 어렵다는 점 등을 고려하여, 갑의 영업행위가 을 회사에 대한 업무상 배임에 해당하여 불법행위를 구성한다고 보기는 어렵다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제2호</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">형법 제356조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">형법 제356조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도9089|판결" href="#//">대법원 2008. 4. 24. 선고 2006도9089 판결</a></span>(공2008상, 809)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고 주식회사 (소송대리인 법무법인 바른 담당변호사 박재윤외 2인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        
+          피고 (소송대리인 법무법인 율촌 담당변호사 송인보외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|2008나10349|판결" href="#//">대전고법 2009. 9. 16. 선고 2008나10349 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.  상고비용은 원고가 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 본다.</p><p>  1. 상고이유 제1점에 대하여</p><p>
+        <span class="accrnt_txt">사용자와 근로자 사이에 경업금지약정이 존재한다고 하더라도, 그와 같은 약정이 헌법상 보장된 근로자의 직업선택의 자유와 근로권 등을 과도하게 제한하거나 자유로운 경쟁을 지나치게 제한하는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|" style="text-decoration:underline">민법 제103조</a></span>에 정한 선량한 풍속 기타 사회질서에 반하는 법률행위로서 무효라고 보아야 하며, 이와 같은 경업금지약정의 유효성에 관한 판단은 보호할 가치 있는 사용자의 이익, 근로자의 퇴직 전 지위, 경업 제한의 기간·지역 및 대상 직종, 근로자에 대한 대가의 제공 유무, 근로자의 퇴직 경위, 공공의 이익 및 기타 사정 등을 종합적으로 고려하여야 하고, 여기에서 말하는 ‘보호할 가치 있는 사용자의 이익’이라 함은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|" style="text-decoration:underline">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제2호</a></span>에 정한 ‘영업비밀’뿐만 아니라 그 정도에 이르지 아니하였더라도 당해 사용자만이 가지고 있는 지식 또는 정보로서 근로자와 이를 제3자에게 누설하지 않기로 약정한 것이거나 고객관계나 영업상의 신용의 유지도 이에 해당한다 할 것이다.
+        </span>
+      </p><p>  원심판결 이유에 의하면, 피고가 2002. 9. 30. 원고와 사이에 “피고가 원고를 퇴직 후 2년 이내에는 원고와 경쟁관계에 있는 회사에 취업하거나 직·간접 영향을 미쳐서는 안된다”는 내용이 포함된 연봉·근로계약(이하 ‘이 사건 경업금지약정’이라 한다)을 체결하였고, 피고는 2004. 2. 28. 원고를 퇴직한 후 2004. 4. 30.경 ‘
+        (상호 생략)’라는 중개무역회사를 설립, 운영하면서 중국 업체에 도급을 주어 원고가 미국의 배셋(BASSET)사에 납품한 바 있는 손톱깎이 세트, 손톱미용 세트 등과 일부 유사한 제품을 배셋사에 납품하였음을 알 수 있다.
+      </p><p>  원심은, 피고용인이 퇴사 후에 고용기간 중에 습득한 기술상 또는 경영상의 정보 등을 사용하여 영업을 하였다고 하더라도 피고용인이 고용되지 않았더라면 그와 같은 정보를 습득할 수 없었다는 사정만으로 곧바로 위 정보가 영업비밀에 해당한다고 볼 수는 없고, 그러한 정보가 동종 업계 등에 널리 알려져 있지 않고, 독립된 경제적 가치를 가지며, 상당한 노력에 의하여 비밀로 유지되고 있는 경우에만 영업비밀에 해당함을 전제로(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도8278|판결" href="#//">대법원 2008. 7. 10. 선고 2006도8278 판결</a></span> 참조), 그 판시와 같은 이유로 원고가 주장하는 ‘배셋사의 바이어 명단, 납품가격, 아웃소싱 구매가격, 물류비, 가격산정에 관한 제반자료, 원고의 중국 하청업자인 존 울리(John Woolley), 미스터 종(본명 종지봉)에 대한 자료’(이하, ‘이 사건 각 정보’라고 한다)가 영업비밀에 해당한다고 보기 어렵다고 판단하였는바, 원심판결 이유를 위 법리 및 기록에 비추어 살펴보면, 원심의 위와 같은 판단은 정당한 것으로 수긍할 수 있다.
+      </p><p>  한편 원심판결 이유 및 기록에 의하면, 이 사건 각 정보는 이미 동종업계 전반에 어느 정도 알려져 있었던 것으로, 설령 일부 구체적인 내용이 알려지지 않은 정보가 있었다고 하더라도 이를 입수하는데 그다지 많은 비용과 노력을 요하지는 않았던 것으로 보이므로, 이 사건 경업금지약정에 의해 보호할 가치가 있는 이익에 해당한다고 보기 어렵거나 그 보호가치가 상대적으로 적은 경우에 해당한다고 할 것이고, 또한 원고가 주장하는 바와 같은 원고의 주요 거래처인 미국 배셋사의 바이어나 중국의 무역업자인 존 울리(John Woolley), 종지봉 등과의 신뢰관계의 경우, 미국 배셋사는 종래부터 제품별로 국내외 여러 업체에 사양을 제시하고 가격과 품질 면에서 경쟁력이 있는 조건을 제시하는 업체로부터 납품을 받았고, 중국 무역업자 역시 독립적으로 국내 여러 업체들로부터 주문을 받아 중국 제품을 공급하는 영업을 하고 있었으므로, 비록 원고가 이들과 거래관계를 맺고 있었다고 하더라도 다른 업체의 진입을 막고 거래를 독점할 권리가 있었던 것은 아니며, 그러한 거래처와의 신뢰관계는 무역 업무를 수행하는 과정에서 자연스럽게 습득되는 측면이 강하므로, 이 역시 이 사건 경업금지약정에 의해 보호할 가치가 있는 이익에 해당한다고 보기 어렵거나 그 보호가치가 상대적으로 적은 경우에 해당한다고 할 것이다.</p><p>  이러한 사정에 원심판결 이유 및 기록에 의하여 인정되는 다음과 같은 사정, 즉 피고가 이 사건 경업금지약정의 체결로 인해 특별한 대가를 수령한 것으로는 보이지 않는데도 퇴직 후 2년이라는 긴 시간 동안 경업이 금지되어 있는 점, 피고는 1986. 1. 5. 원고에 입사하여 1999. 9. 6.부터 2004. 2. 28.까지 원고의 무역부장으로 근무하였는데, 원고에서 무역 업무를 통하여 습득한 일반적인 지식과 경험을 이용하는 업무에 종사할 수 없다면 직장을 옮기는 것이 용이하지 않고, 원고를 그만둘 경우 생계에 상당한 위협을 받을 수 있는 점, 피고가 원고를 퇴직하고 같은 업종의 회사를 설립하여 원고가 거래하던 배셋사에 납품할 수 있었던 것이 오로지 피고가 배셋사의 바이어 등과 신뢰관계가 있었기 때문이었다기보다는 해외 구매업체들이 중국 쪽으로 구매처를 옮기는 추세에서 주로 국내 하청업체들로부터 제품을 공급받아 오던 원고와는 달리 피고가 전적으로 중국의 하청업체들로부터 공급받은 제품을 납품함으로써 가격 경쟁력을 갖출 수 있었던 데에 기인한 것으로 보이는 점, 비록 피고가 회사를 설립하여 원고와 동종 사업을 영위하고자 원고를 그만 두었고, 퇴직일에 임박하여 미리 그 사업을 준비하는 행위를 하였다고 하더라도 그 배신성이 크다고 보기는 어려운 점 등을 종합하여 앞서 본 법리에 비추어 살펴보면, 이 사건 경업금지약정이 피고의 위와 같은 영업행위까지 금지하는 것으로 해석된다면 근로자인 피고의 직업선택의 자유와 근로권 등을 과도하게 제한하거나 자유로운 경쟁을 지나치게 제한하는 경우에 해당되어 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>에 정한 선량한 풍속 기타 사회질서에 반하는 법률행위로서 무효라고 할 것이고, 따라서 이 사건 경업금지약정이 유효함을 전제로 하는 위 약정 위반으로 인한 손해배상청구는 이유 없다 할 것이다.
+      </p><p>  이 부분 원심판결의 이유에는 경업금지약정의 유효성 판단에 있어 중요한 일부 요소들에 대한 판단을 누락하는 등의 부적절한 설시가 있으나, 이 사건 경업금지약정의 효력을 배제하여 위 약정 위반을 이유로 한 손해배상청구를 기각한 결론은 정당하다.</p><p>  원심판결에는 이 부분 상고이유의 주장과 같이 판결 결과에 영향을 미친 경업금지약정의 효력에 관한 법리오해 등의 위법이 없다.</p><p>  2. 상고이유 제2점에 대하여</p><p>  원심은, 피고가 원고를 퇴직한 후 중개무역회사를 설립, 운영하면서 원고가 배셋사에 납품한 바 있는 손톱깎이 세트, 손톱미용 세트 등과 일부 유사한 제품을 배셋사에 납품하고 있는 사실은 인정되나, 피고가 납품하고 있는 제품이 원고가 제작한 상품과 동일한 상품 또는 원고의 상품을 모방한 제품이라는 사실을 인정할 증거가 부족하다고 판단하였다.</p><p>  원고가 상고이유에서 들고 있는 증거들을 보태어 기록에 비추어 살펴보면, 원심의 위와 같은 사실인정은 사실심인 원심의 전권사항에 속하는 것으로서 자유심증주의의 범위를 벗어나지 아니하여 정당한 것으로 수긍할 수 있다.</p><p>  원심판결에는 이 부분 상고이유의 주장과 같이 채증법칙 위반 등의 위법이 없으므로, 이 부분 상고이유의 주장은 적법한 상고이유가 될 수 없다.</p><p>  3. 상고이유 제3점에 대하여</p><p>
+        <span class="accrnt_txt">업무상배임죄는 타인의 사무를 처리하는 자가 그 임무에 위배하는 행위로써 재산상 이익을 취득하거나 제3자로 하여금 이를 취득하게 하여 본인에게 손해를 가함으로써 성립하는데, 여기에서 ‘그 임무에 위배하는 행위’란 사무의 내용, 성질 등 구체적 상황에 비추어 법률의 규정, 계약의 내용 혹은 신의칙상 당연히 할 것으로 기대되는 행위를 하지 않거나 당연히 하지 않아야 할 것으로 기대되는 행위를 함으로써 본인과 사이의 신임관계를 저버리는 일체의 행위를 말한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도9089|판결" href="#//">대법원 2008. 4. 24. 선고 2006도9089 판결</a></span> 참조).
+      </p><p>  앞서 살펴 본 여러 사정과 기록에 의하면, 이 사건 각 정보는 이미 공지되었거나 다른 경쟁업체가 상당한 비용이나 노력을 들이지 않고도 쉽게 얻을 수 있는 것으로서 원고의 영업비밀이라 할 수 없고, 원고만이 가지고 있는 보호할 가치 있는 정보 내지 원고의 영업상 중요한 자산인 자료에 해당한다고 보기 어려우며, 그 밖에 피고가 원고에서 업무상 지득하게 된 지식, 경험이나 미국의 배셋사 또는 중국 하청업체 관계자와의 신뢰관계 등은 원고의 보호할 가치 있는 이익에 해당된다고 보기 어려울 뿐만 아니라, 설령 이 사건 각 정보나 그 밖에 피고가 업무상 지득한 지식, 경험, 미국의 배셋사 또는 중국 하청업체 관계자와의 신뢰관계를 원고의 정당한 보호 이익으로 본다고 하더라도 그 보호의 필요성이 상대적으로 경미하여 결과적으로 이 사건 경업금지약정의 효력이 인정되지 않는 이상, 피고가 원고를 퇴직한 후 자신의 중개 무역업을 영위함에 있어 원고의 이익을 위하여 위와 같은 정보나 거래처와의 신뢰관계 등을 이용하지 아니할 임무가 있다고 보기는 어려운 점, 피고가 납품한 제품이 원고의 제품과 동일하거나 이를 모방한 제품이라고 단정할 수 없고, 원고가 독점적인 권리를 가지고 있는 것이라고 보기도 어려운 점, 피고가 2004. 3. 15. 미국의 배셋사로부터 손톱깎이 등의 샘플 검사결과 통지를 받은 사실은 있으나 그와 같은 사실만으로 피고가 원고에서 퇴직하기 전에 미국 배셋사에 샘플검사를 의뢰하였다고 단정하기 어려울 뿐만 아니라, 설령 피고가 퇴직 전에 미국 배셋사 관계자와 접촉하여 그와 같은 샘플검사를 의뢰한 것이라고 하더라도 그 당시는 이미 피고가 퇴직의사를 밝힌 뒤 퇴사가 임박한 시기였을 것으로 보이는 점 등을 알 수 있으므로, 이러한 사정을 앞서 본 법리에 비추어 보면, 피고의 이 사건 영업행위가 원고에 대한 업무상 배임에 해당하여 불법행위를 구성한다고 보기는 어렵다고 할 것이다.</p><p>  이 부분 원심판결의 이유는 다소 부족한 점이 있으나, 업무상 배임으로 인한 불법행위가 성립하지 않는다고 판단한 결론은 정당하다.</p><p>  원심판결에는 이 부분 상고이유의 주장과 같이 판결 결과에 영향을 미친 채증법칙 위반, 불법행위의 성립에 관한 법리오해 등의 위법이 없다.</p><p>  4. 상고이유 제4점에 대하여</p><p>  앞서 본 바와 같이 피고에 대하여는 경업금지약정 위반으로 인한 손해배상책임이나 부정경쟁행위 또는 업무상 배임행위 등의 불법행위로 인한 손해배상책임이 인정되지 않으므로, 원심이 그 손해배상액의 산정에 관하여 나아가 판단하지 아니한 것은 정당하다 할 것이다.</p><p>  원심판결에는 이 부분 상고이유의 주장과 같이 손해배상액 산정에 관한 법리오해 등의 위법이 없다.</p><p>  5. 결론</p><p>  그러므로 상고를 기각하고, 상고비용은 패소자가 부담하도록 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   양창수(재판장) 양승태 김지형(주심) 전수안 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

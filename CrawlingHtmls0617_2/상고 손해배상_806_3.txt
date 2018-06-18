@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2015다1284 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2187606';
+var contIdEtc = '';
+var saNo = '2015다1284';
+var sngoNm = '선고';
+var saNm = '집행판결청구';
+try {
+	var sngoDay=('20151015' ? 
+			'20151015'.length==4 ? Date.parseExact('20151015','yyyy').toString('yyyy. M. d.') : 
+				'20151015'.length==6 ? Date.parseExact('20151015','yyyyMM').toString('yyyy. M. d.') : 
+					'20151015'.length==8 ? Date.parseExact('20151015','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2015다1284 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2015다1284';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2015다1284</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(13)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2195348">대법원 2016. 1. 28. 선고 2015다207747 판결 [공2016상,348]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|821749">연구논단 민사소송법 제217조의2의 적용범위와 관련하여 최우영 法律新聞社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|805992">징벌적 배상이 아닌 전보배상전보배상을 명한 외국판결의 경우 인용된 손해배상액이 과다하다는 이유로 승인을 제한할 수 있는지 여부 김진오 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|805992">김진오 징벌적 배상이 아닌 전보배상(전보배상)을 명한 외국판결의 경우, 인용된 손해배상액이 과다하다는 이유로 승인을 제한할 수 있는지 여부 대법원판례해설 제105호 / 법원도서관  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다74213">대법원 2004. 10. 28. 선고 2002다74213 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다68620">대법원 2012. 5. 24. 선고 2009다68620 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민사집행법|27|0|null">민사집행법 제27조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민사집행법|27|0|null">민사집행법 제27조 제2항 제2호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민사소송법|217|0|null">민사소송법 제217조 제1항 제3호 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민사소송법|217|0|null">민사소송법 제217조 제1항 제3호 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다74213">대법원 2004. 10. 28. 선고 2002다74213 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다68620">대법원 2012. 5. 24. 선고 2009다68620 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|27|0|null">민사집행법 제27조 제2항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|0|null">민사소송법 제217조 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|27|0|null">민사집행법 제27조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|217|2|null">민사소송법 제217조의2 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2014나1463">서울고법 2014. 12. 11. 선고 2014나1463 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2015. 10. 15. 선고 2015다1284 판결</h2><p class="sub_title">[집행판결청구]〈외국법원 확정재판 등 승인 사건〉[공2015하,1666]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 외국법원의 확정재판 등이 당사자가 실제로 입은 손해를 전보하는 손해배상을 명하는 경우, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>을 근거로 승인을 제한할 수 있는지 여부(소극)</p>
+<p></p>
+<p></p><p>[2] 외국법원의 확정재판 등을 승인한 결과가 선량한 풍속이나 그 밖의 사회질서에 어긋나는지를 심리한다는 명목으로 실질적으로 확정재판 등의 옳고 그름을 전면적으로 재심사하는 것이 허용되는지 여부(소극)</p>
+<p></p>
+<p></p><p>[3] 외국법원의 확정재판 등을 승인한 결과가 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋나는지 판단하는 방법</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>은 “법원은 손해배상에 관한 확정재판 등이 대한민국의 법률 또는 대한민국이 체결한 국제조약의 기본질서에 현저히 반하는 결과를 초래할 경우에는 해당 확정재판 등의 전부 또는 일부를 승인할 수 없다.”라고 규정하고 있는데, 이는 징벌적 손해배상과 같이 손해전보의 범위를 초과하는 배상액의 지급을 명한 외국법원의 확정판결 또는 이와 동일한 효력이 인정되는 재판(이하 ‘확정재판 등’이라 한다)의 승인을 적정 범위로 제한하기 위하여 마련된 규정이므로, 외국법원의 확정재판 등이 당사자가 실제로 입은 손해를 전보하는 손해배상을 명하는 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>을 근거로 승인을 제한할 수 없다.</p>
+<p></p><p></p><p>[2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|27|">민사집행법 제27조 제2항 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|">민사소송법 제217조 제1항 제3호</a></span>에 의하면 외국법원의 확정판결 또는 이와 동일한 효력이 인정되는 재판(이하 ‘확정재판 등’이라 한다)의 효력을 인정하는 것이 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋나지 아니하여야 한다는 점이 외국판결의 승인 및 집행의 요건인데, 확정재판 등을 승인한 결과가 선량한 풍속이나 그 밖의 사회질서에 어긋나는지를 심리한다는 명목으로 실질적으로 확정재판 등의 옳고 그름을 전면적으로 재심사하는 것은 “집행판결은 재판의 옳고 그름을 조사하지 아니하고 하여야 한다.”라고 규정하고 있는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|27|">민사집행법 제27조 제1항</a></span>에 반할 뿐만 아니라, 외국법원의 확정재판 등에 대하여 별도의 집행판결제도를 둔 취지에도 반하는 것이므로 허용되지 아니한다.</p>
+<p></p><p></p><p>[3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|">민사소송법 제217조 제1항 제3호</a></span>는 외국법원의 확정판결 또는 이와 동일한 효력이 인정되는 재판(이하 ‘확정재판 등’이라 한다)의 승인이 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋나지 아니할 것을 외국재판 승인요건의 하나로 규정하고 있는데, 여기서 확정재판 등을 승인한 결과가 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋나는지는 승인 여부를 판단하는 시점에서 확정재판 등의 승인이 우리나라의 국내법 질서가 보호하려는 기본적인 도덕적 신념과 사회질서에 미치는 영향을 확정재판 등이 다룬 사안과 우리나라와의 관련성의 정도에 비추어 판단하여야 한다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|27|">민사집행법 제27조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|27|">제27조 제2항 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|">민사소송법 제217조 제1항 제3호</a></span> [3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|">민사소송법 제217조 제1항 제3호</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다74213|판결" href="#//">대법원 2004. 10. 28. 선고 2002다74213 판결</a></span>(공2004하, 1937)<br />[3] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다68620|판결" href="#//">대법원 2012. 5. 24. 선고 2009다68620 판결</a></span></p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+커민스알리슨 코포레이션(Cummins-Allison Corporation) (소송대리인 법무법인 광장 담당변호사 장성원 외 2인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인】
+주식회사 에스비엠 (소송대리인 변호사 신진욱 외 3인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2014나1463|판결" href="#//">서울고법 2014. 12. 11. 선고 2014나1463 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.  상고비용은 피고가 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지난 후에 제출된 상고이유보충서 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>의 적용 범위에 관한 상고이유에 대하여</p><p>  가. <span class="accrnt_txt"><span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2" style="text-decoration:underline">민사소송법 제217조의2 제1항</a></span>은 “법원은 손해배상에 관한 확정재판 등이 대한민국의 법률 또는 대한민국이 체결한 국제조약의 기본질서에 현저히 반하는 결과를 초래할 경우에는 해당 확정재판 등의 전부 또는 일부를 승인할 수 없다.”라고 규정하고 있는데, 이는 징벌적 손해배상과 같이 손해전보의 범위를 초과하는 배상액의 지급을 명한 외국법원의 확정판결 또는 이와 동일한 효력이 인정되는 재판(이하 ‘확정재판 등’이라 한다)의 승인을 적정범위로 제한하기 위하여 마련된 규정이므로, 외국법원의 확정재판 등이 당사자가 실제로 입은 손해를 전보하는 손해배상을 명하는 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2" style="text-decoration:underline">민사소송법 제217조의2 제1항</a></span>을 근거로 그 승인을 제한할 수 없다.</span></p><p>  나. 원심판결 이유 및 원심이 적법하게 채택한 증거에 의하면, 다음과 같은 사실을 알 수 있다.</p><p>  (1) 원고는 다음과 같은 미합중국(이하 ‘미국’이라 한다) 특허권, 즉 ① (등록번호 1 생략) 특허(다양한 액면의 지폐를 자동식별·계산하는 장치·방법에 관한 특허, 이하 ‘806특허’라 한다), ② (등록번호 2 생략) 특허(지폐 더미의 액면을 신속하게 식별하고 그 진위를 판정하여 재분류하는 장치·방법에 관한 특허, 이하 ‘456특허’라 한다), ③ (등록번호 3 생략) 특허(다양한 액면의 지폐식별 및 그 진위판정에 관한 특허), ④ (등록번호 4 생략) 특허(여러 나라의 다양한 지폐액면을 식별하는 장치·방법에 관한 특허, 이하 ‘354특허’라 한다)를 기초로 지폐·동전을 계수·분류하는 기계를 제조·판매하는 미국 법인이고, 피고는 2003년부터 미국에 지폐계수기를 수출·판매하는 대한민국 법인으로, 피고는 2004. 5. 19. 미국 법인인 암로-아시안 트레이드 인코포레이션(Amro-Asian Trade Incorporation, 이하 ‘암로’라고만 한다)과 지폐계수기 판매계약을 체결하여 그 이후부터 암로를 통하여 지폐계수기를 미국에 판매하였다.</p><p>  (2) 354특허는 그 출원일 이전에 이미 ‘JetScan 4062’라는 선행기술이 존재하였으나, 354특허의 출원은 미국 (출원번호 1 생략) 출원의 계속출원으로 인정되어 그 출원일이 모출원(모출원)인 (출원번호 1 생략) 출원의 접수일인 1995. 3. 7.로 소급되었고, 이에 따라 선행기술의 출원일인 1994. 11.로부터 1년 이내에 출원된 것으로 되어 미국 특허법상 신규성 요건을 충족함으로써 특허로 등록되었다. 그리고 806특허에는 ‘분당 800장 이상의 속도로 지폐의 액면을 식별한다’는 내용이 포함되어 있는데, 이는 발명이 가지는 구성요소의 범위를 수치로 한정하는 내용이다.</p><p>  (3) 원고는 2007. 9.경 피고 및 암로를 상대로 미국 텍사스 동부지방법원 러프킨지원(United States District Court for the Eastern District of Texas Lufkin Division, 이하 ‘미국 제1심법원’이라 한다)에 미국에서 판매되는 피고의 지폐계수기(이하 ‘피고 제품’이라 한다)가 원고의 특허권을 침해하였음을 이유로 특허침해에 따른 손해배상 등을 구하는 소를 제기하였는데, 미국 제1심법원은 2009. 10. 30. ‘① 피고는 암로와 연대하여 원고에게, 미화 12,962,700.47달러(특허침해로 인한 손해배상금 11,898,279달러 + 판결선고 전 이자 977,508달러 + 소송비용 86,913.47달러) 및 이에 대한 판결선고 후 이자를 지급하고, ② 원고의 특허 중 354특허 및 456특허가 무효임을 선언한다’는 등의 내용이 포함된 판결(이하 ‘미국 제1심판결’이라 한다)을 선고하였다.</p><p>  (4) 미국 제1심판결은 피고 제품 판매량 중 특허침해가 없었다면 원고에게 귀속되었을 판매량에 관한 일실이익을 먼저 산정하고, 원고에게 귀속되지 않았을 판매량에 관해서는 합리적인 실시료를 계산하여 일실이익과 합리적 실시료를 합산하는 방식으로 원고의 손해액을 산정하였는데, 일실이익 산정에 있어 원고가 판매할 수 있었던 제품의 전체 가격을 기준으로 하는 전시장가치법(The Entire Market Value Rule)을 적용하였다. 이러한 일실이익과 합리적 실시료는 모두 전보배상에 해당하는 것이고, 징벌적 손해배상 등 제재적 성격의 손해액이 포함되어 있지 않다.</p><p>  (5) 피고는 미국 제1심판결에 불복하여 연방순회항소법원(United States Court of Appeals for the Federal Circuit, 이하 ‘미국 제2심법원’이라 한다)에 항소하였는데, 미국 제2심법원은 2012. 5. 25. 미국 제1심판결 중 특허침해로 인한 손해배상 부분은 유지하고, 354특허의 무효선언 부분은 파기한다는 취지의 판결(이하 ‘이 사건 미국판결’이라 한다)을 선고하였고, 이 사건 미국판결은 피고의 상고포기로 확정되었다.</p><p>  다. 이러한 사실관계를 앞서 본 법리에 비추어 살펴본다.</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>은 손해배상을 명한 외국법원의 확정재판 등이 전보적 손해배상을 명한 경우에까지 승인을 제한할 수 있도록 한 규정이라고 볼 수 없는데, 이 사건 미국판결이 인정한 원고의 손해액이 전보배상의 범위를 초과한다고 볼 수 없으므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>을 근거로 이 사건 미국판결의 승인을 제한할 수는 없다.</p><p>  같은 취지의 원심의 판단은 정당한 것으로 수긍할 수 있고, 거기에 상고이유 주장과 같이 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>의 해석에 관한 법리 등을 오해한 위법이 없다.</p><p>  2. 이 사건 미국판결의 특허권인정에 관한 상고이유에 대하여</p><p>  가. <span class="accrnt_txt"><span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|27|" style="text-decoration:underline">민사집행법 제27조 제2항 제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|" style="text-decoration:underline">민사소송법 제217조 제1항 제3호</a></span>에 의하면 외국법원의 확정재판 등의 효력을 인정하는 것이 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋나지 아니하여야 한다는 점이 외국판결의 승인 및 집행의 요건인데, 그 확정재판 등을 승인한 결과가 선량한 풍속이나 그 밖의 사회질서에 어긋나는지 여부를 심리한다는 명목으로 실질적으로 그 확정재판 등의 옳고 그름을 전면적으로 재심사하는 것은 “집행판결은 재판의 옳고 그름을 조사하지 아니하고 하여야 한다.”라고 규정하고 있는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|27|" style="text-decoration:underline">민사집행법 제27조 제1항</a></span>에 반할 뿐만 아니라, 외국법원의 확정재판 등에 대하여 별도의 집행판결제도를 둔 취지에도 반하는 것이므로 허용되지 아니한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다74213|판결" href="#//">대법원 2004. 10. 28. 선고 2002다74213 판결</a></span> 참조).</p><p>  나. 원심은, 피고의 다음과 같은 주장, 즉 계속발명에 대하여 신규성을 인정하거나 수치한정발명의 진보성을 인정하는 미국 특유의 제도에 의하여 인정되는 특허를 침해하였다는 이유로 손해배상을 명한 이 사건 미국판결을 승인하는 것은, 대한민국의 법률 및 대한민국이 가입한 국제조약에서 ‘특허’로 보호하는 범위를 넘어서는 것이므로 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋난다는 주장에 대하여, ① 외국판결이 우리나라가 채택하지 아니한 제도에 근거한 내용을 포함하고 있다고 하더라도 그러한 사정만으로 바로 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|">민사소송법 제217조 제1항 제3호</a></span> 소정의 요건을 갖추지 아니한 것으로 볼 수 없는 점, ② 우리나라의 특허법령에 따라 354특허의 신규성과 806특허의 진보성 인정 여부를 다시 판단하는 것은 이 사건 미국판결의 옳고 그름을 조사하는 것에 해당하여 실질재심사금지 원칙에 반하므로 허용될 수 없는 점, ③ 특허권의 속지주의 원칙상 특허권은 등록된 국가의 영역 내에서만 그 효력이 미치는 것이므로 미국 특허권의 요건은 미국 특허법이 아닌 우리나라 특허법에 의하여 판단될 수는 없고, 따라서 미국 특허법상 특허 요건을 우리나라에서도 인정할 것인지에 관한 판단도 우리나라 특허법이 아닌 공서양속 기준에 따라 제한적으로 판단하여야 하는 점, ④ 미국의 계속출원제도와 우리나라 특허법 및 ‘공업소유권의 보호를 위한 파리협약’상의 우선권제도(Right of Priority)는 출원일의 소급범위에서 차이가 있다 하더라도, 원 출원 출원일의 이익유지를 목적으로 하는 것이라는 점에서는 서로 유사한 제도이고, 우리나라 역시 수치한정발명에 대해 일정한 요건하에 진보성을 인정하고 있는 점 등에 비추어, 354특허와 806특허의 유효성을 인정한 이 사건 미국판결을 승인하는 것이 선량한 풍속이나 그 밖의 사회질서에 어긋난다고 볼 수 없다고 판단하였다.</p><p>  앞서 본 법리와 기록에 비추어 살펴보면, 이러한 원심의 판단은 정당하고, 거기에 상고이유 주장과 같이 외국판결의 승인에 관한 법리 등을 오해한 위법이 없다.</p><p>  3. 이 사건 미국판결이 채택한 손해배상액 산정방식에 관한 상고이유에 대하여</p><p>  원심은, 원고의 일실이익을 산정함에 있어 전시장가치법에 따라 원고 제품의 전체 판매가격을 기준으로 손해액을 산정한 이 사건 미국판결은 우리나라 손해배상의 기본원리인 제한배상주의에 반하는 과다한 배상액을 인정한 것이므로, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|">민사소송법 제217조 제1항 제3호</a></span> 내지 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2 제1항</a></span>에 따라 그 승인이 제한되어야 한다는 피고의 주장에 대하여, 다음과 같은 사정 즉, ① 우리나라의 특허법 체계하에서도 침해된 특허기술이 제품 구입의 결정적 계기가 된 경우에는 해당 특허의 기여율이 100%로 인정될 수 있는데, 이는 특허 부분이 소비자의 수요의 기초를 구성하는 경우 제품 전체의 가치를 기준으로 손해액을 산정하는 미국법상의 전시장가치법과 본질적으로 차이가 없는 점, ② 특허권자의 일실이익 산정에 있어 침해행위자의 판매가격이 아니라 특허권자의 판매가격을 기준으로 하는 경우 특허권자의 일실이익이 침해행위자의 매출액을 초과할 수 있으므로, 이 사건 미국판결에서 원고의 손해액이 피고의 매출액 내지 이익을 초과한다는 사정만으로는 특허권자의 일실이익이 공평의 이념에 반할 정도로 과다하다고 볼 수 없는 점, ③ 이 사건 미국판결에서 인정된 원고의 손해액은 모두 전보적 손해배상액에 해당하고 제재적 성격의 손해액이 포함되어 있지 않은데, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|2">민사소송법 제217조의2</a></span>의 입법 취지가 징벌적 손해배상이 아닌 전보적 손해배상의 경우에도 손해액이 과다하다는 이유만으로 외국판결의 승인을 제한할 수 있도록 한 것이라고 볼 수 없는 점 등에 비추어, 이 사건 미국판결이 인정한 손해액이 전보배상의 범위를 초과한다거나 이 사건 미국판결의 손해액 산정방식이 우리나라 법원에서 사용하는 방식과 본질적인 차이가 있다고 보기 어려우므로, 그에 기초하여 내려진 이 사건 미국판결을 승인하는 것이 선량한 풍속이나 그 밖의 사회질서에 어긋난다고 볼 수 없다고 판단하였다.</p><p>  앞서 본 법리와 기록에 비추어 살펴보면, 이러한 원심의 판단은 정당하고, 거기에 상고이유 주장과 같이 외국판결의 승인에 관한 법리 등을 오해한 위법이 없다.</p><p>  4. 내국 관련성에 관한 상고이유에 대하여</p><p>  <span class="accrnt_txt"><span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|217|" style="text-decoration:underline">민사소송법 제217조 제1항 제3호</a></span>는 외국법원의 확정재판 등의 승인이 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋나지 아니할 것을 외국재판 승인요건의 하나로 규정하고 있는데, 여기서 그 확정재판 등을 승인한 결과가 대한민국의 선량한 풍속이나 그 밖의 사회질서에 어긋나는지 여부는 그 승인 여부를 판단하는 시점에서 그 확정재판 등의 승인이 우리나라의 국내법 질서가 보호하려는 기본적인 도덕적 신념과 사회질서에 미치는 영향을 그 확정재판 등이 다룬 사안과 우리나라와의 관련성의 정도에 비추어 판단하여야 한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다68620|판결" href="#//">대법원 2012. 5. 24. 선고 2009다68620 판결</a></span> 참조).</p><p>  원심은, 이 사건 미국판결이 우리나라의 선량한 풍속이나 그 밖의 사회질서에 반하는지 여부는 판결을 승인한 결과를 기준으로 판단하여야 하는데, 이 사건 미국판결이 승인될 경우 피고의 파산이라는 결과로 이어진다는 점에서 우리나라와의 관련성이 크다고 보아야 하므로 이 사건 미국판결을 승인하는 것은 선량한 풍속이나 그 밖의 사회질서에 위반된다는 피고의 주장에 대하여, ① 이 사건 미국판결에서 문제 된 사안은 미국 법인이 미국에서 등록한 특허권을 우리나라 법인인 피고가 미국에서 침해한 사안으로, 불법행위지와 결과발생지가 모두 미국이고, 특허권의 유·무효 등도 미국 특허법에 따라 판단되어야 하는 사안이므로 우리나라와의 관련성이 크다고 볼 수 없는 점, ② 이 사건 미국판결이 인정한 손해액이 전보배상의 범위를 초과한다고 볼 수 없고, 그 손해액 산정방식이 우리나라 법원에서 사용하는 방식과 본질적인 차이가 있다고 볼 수 없는 이상 이 사건 미국판결을 승인하는 것이 공서양속에 반한다고 볼 수 없는 점 등에 비추어, 설령 이 사건 미국판결을 승인할 경우 피고가 파산위기에 처할 수 있다 하더라도 이러한 사정만으로 이 사건 미국판결의 승인을 제한할 수 없다고 판단하였다.</p><p>  앞서 본 법리와 기록에 비추어 살펴보면, 이러한 원심의 판단은 정당하고, 거기에 상고이유 주장과 같이 외국판결의 승인에 관한 법리를 오해한 위법이 없다.</p><p>  5. 결론</p><p>  그러므로 상고를 기각하고 상고비용은 패소자가 부담하도록 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박상옥(재판장) 이상훈 김창석(주심) 조희대 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

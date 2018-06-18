@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008다51359 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2064655';
+var contIdEtc = '';
+var saNo = '2008다51359';
+var sngoNm = '선고';
+var saNm = '청구이의';
+try {
+	var sngoDay=('20091029' ? 
+			'20091029'.length==4 ? Date.parseExact('20091029','yyyy').toString('yyyy. M. d.') : 
+				'20091029'.length==6 ? Date.parseExact('20091029','yyyyMM').toString('yyyy. M. d.') : 
+					'20091029'.length==8 ? Date.parseExact('20091029','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008다51359 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008다51359';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008다51359</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(13)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(4)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(7)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(8)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1970266">대법원 2012. 3. 15. 선고 2011다83776 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2170451">대법원 2014. 8. 20. 선고 2014다30650 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|704368">판결의 집행에 있어서 권리남용법리의 적용요건 권혁재 국가고시학회</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|573787">한국. 대법원 법원행정처 법원실무제요. [1-2]:. 민사소송(Ⅱ) 법원행정처  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|528479">법원도서관 간결한 판결사례집:. 민사 법원도서관  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636809">김상중 (2000년대 민사판례의 경향과 흐름)민법총칙 민사판례연구 33-2권  / 박영사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|549115">한국. 대법원 법원행정처 법원실무제요 [1-2]: 민사소송(Ⅱ) 법원행정처  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|573785">한국. 대법원 법원행정처 법원실무제요. [1-1]:. 민사소송(Ⅰ) 법원행정처  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|570100">법원공무원교육원 공탁실무:. 2017 법원공무원교육원  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|651817">최성호 변론주의의 근거와 적극적 석명에 대한 검토 경기법조 18호 / 수원지방변호사회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|822571">김유환 집행관계소송 사법논집 . 제62집   / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636518">최승재 저작권 및 상표권 남용행위에 대한 연구 : "지식재산권의 부당한 행사에 대한 심사지침(2010년) 개정을 위하여 법조 통권655호  / 법조협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|613722">유병현 2009년도 민사소송법 학계의 회고와 법률 및 판례의 동향 고시계 55권 2호  / 국가고시학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683611">권혁재 판결의 집행에 있어서 권리남용 법리의 적용요건 인권과 정의 431호  / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|822574">양경승 변론주의와 직권주의의 구별기준 및 상고심의 심리대상 사법논집 . 제62집   / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|551573">한국. 대법원 법원행정처 법원실무제요. [2-1]:. 민사집행(I): 집행총론 법원행정처  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다14616">대법원 1996. 7. 26. 선고 96다14616 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|97다37784">대법원 1997. 11. 11. 선고 97다37784 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|99다32899">대법원 2001. 11. 13. 선고 99다32899 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다57697">대법원 2004. 5. 14. 선고 2003다57697 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사집행법|44|0|null">민사집행법 제44조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|487|0|null">민법 제487조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민사집행법|24|0|null">민사집행법 제24조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민사소송법|203|0|null">민사소송법 제203조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|493|0|null">민법 제493조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원|98가단163411">서울지방법원 98가단163411호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원|2001나4124">서울지방법원 2001나4124</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다15719">대법원 2002다15719</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다14616">대법원 1996. 7. 26. 선고 96다14616 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|97다37784">대법원 1997. 11. 11. 선고 97다37784 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2003가단47094">서울중앙지방법원 2003가단47094</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다32899">대법원 2001. 11. 13. 선고 99다32899 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다57697">대법원 2004. 5. 14. 선고 2003다57697 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|493|0|null">민법 제493조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2007나33322">서울중앙지법 2008. 5. 13. 선고 2007나33322 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2009. 10. 29. 선고 2008다51359 판결</h2><p class="sub_title">[청구이의][공2009하,1980]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 확정판결의 변론 종결 전에 이루어진 일부이행을 채권자가 변론 종결 후 수령함으로써 변제의 효력이 발생한 경우, 그 한도 내에서 청구이의 사유가 될 수 있는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 채무의 일부에 대한 변제공탁이 일부 변제로 유효하게 되기 위한 요건</p>
+      <p></p>
+      <p>
+        </p><p>[3] 확정판결의 내용이 실체적 권리관계에 배치될 때 그 확정판결의 집행이 권리남용으로서 허용되지 않는 경우</p>
+      <p></p>
+      <p>
+        </p><p>[4] 채권자의 다른 의사와 구분되는 별도의 상계 의사를 확인하지 않은 채 상계를 인정할 수 있는지 여부(소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 확정판결에 대한 청구이의 사유는 그 확정판결의 변론 종결 후에 생긴 것이어야 한다. 그러나 확정판결의 변론 종결 전에 이루어진 일부이행을 채권자가 변론 종결 후 수령함으로써 변제의 효력이 발생한 경우에는 그 한도 내에서 청구이의 사유가 될 수 있다고 보아야 한다.</p>
+      <p></p><p>
+        </p><p>[2] 변제공탁이 유효하려면 채무 전부에 대한 변제의 제공 및 채무 전액에 대한 공탁이 있음을 요하고 채무 전액이 아닌 일부에 대한 공탁은 그 부분에 관하여서도 효력이 생기지 않으나, 채권자가 공탁금을 채권의 일부에 충당한다는 유보의 의사표시를 하고 이를 수령한 때에는 그 공탁금은 채권의 일부의 변제에 충당되고, 그 경우 유보의 의사표시는 반드시 명시적으로 하여야 하는 것은 아니다.</p>
+      <p></p><p>
+        </p><p>[3] 확정판결의 내용이 실체적 권리관계에 배치되는 경우 그 판결에 의하여 집행할 수 있는 것으로 확정된 권리의 성질과 그 내용, 판결의 성립 경위 및 판결 성립 후 집행에 이르기까지의 사정, 그 집행이 당사자에게 미치는 영향 등 제반 사정을 종합하여 볼 때, 그 확정판결에 기한 집행이 현저히 부당하고 상대방으로 하여금 그 집행을 수인하도록 하는 것이 정의에 반함이 명백하여 사회생활상 용인할 수 없다고 인정되는 경우에는 그 집행은 권리남용으로서 허용되지 않는다.</p>
+      <p></p><p>
+        </p><p>[4] 민사소송절차에서 권리의 발생·변경·소멸이라는 법률효과의 판단의 요건이 되는 주요사실에 대한 주장·입증에는 변론주의의 원칙이 적용되는바, 상계는 상계적상에 있는 채권을 가진 채권자가 별도로 의사표시를 하여야 하는 것이고(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|493|">민법 제493조 제1항</a></span>) 그 의사표시 여부는 원칙적으로 채권자의 자유에 맡겨져 있는 것이므로, 비록 상계의 의사표시가 묵시적으로도 가능하다 하더라도, 다른 의사와 구분되는 별도의 상계 의사를 확인하지 않은 채 이를 인정할 수는 없다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|44|">민사집행법 제44조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|487|">제487조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|">민법 제2조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|24|">민사집행법 제24조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|203|">민사소송법 제203조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|493|">민법 제493조 제1항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다14616|판결" href="#//">대법원 1996. 7. 26. 선고 96다14616 판결</a></span>(공1996하, 2606)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다37784|판결" href="#//">대법원 1997. 11. 11. 선고 97다37784 판결</a></span>(공1997하, 3781)<br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다32899|판결" href="#//">대법원 2001. 11. 13. 선고 99다32899 판결</a></span>(공2002상, 29)<br />[4]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다57697|판결" href="#//">대법원 2004. 5. 14. 선고 2003다57697 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인 겸 피상고인】
+      
+        
+          원고 주식회사 (소송대리인 변호사 현종찬)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【원고 보조참가인】
+      
+        
+          참가인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 피상고인 겸 상고인】
+      
+        
+          피고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2007나33322|판결" href="#//">서울중앙지법 2008. 5. 13. 선고 2007나33322 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 원고가 1999. 9. 3. 원고 보조참가인에게 5,000,000원을 지급하고, 2002. 10. 17. 서울지방법원 2002년금제3989호로 5,164,451원을 공탁함으로써 변제된 금원에 해당하는 부분을 제외한 나머지 피고 패소 부분을 파기하고, 이 부분 사건을 서울중앙지방법원 합의부에 환송한다.  원고의 상고와 피고의 나머지 상고를 모두 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지나서 제출된 원고의 보충상고이유서의 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 원심의 사실인정 및 판단</p><p>  원심은 그 거시 증거들을 종합하여, 피고 및 피고의 전 남편 
+        소외 1, 자녀들인 
+        소외 2, 
+        소외 3이 1997. 4. 12.경 교통사고를 당하여 각 상해를 입은 사실, 변호사인 원고 보조참가인은 피고 등의 소송대리인으로서 가해자의 보험자인 원고를 상대로 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원|98가단163411" href="#//">서울지방법원 98가단163411호</a></span>로 손해배상청구소송을 제기하여 1998. 8. 12. 법원으로부터 ‘원고는 
+        소외 3에게 2,200만 원, 피고에게 2,500만 원, 
+        소외 1에게 270만 원, 
+        소외 2에게 1,000만 원을 1999. 9. 2.까지 지급한다’는 내용의 조정에 갈음하는 결정을 받은 사실, 원고 보조참가인은 위 결정문을 수령한 후 
+        소외 1에게 이에 관한 이의 여부를 알려달라고 하였는데 
+        소외 1은 피고와 
+        소외 3으로부터 이의하겠다는 의사를 전달받고도 
+        소외 3만이 이의한다고 알린 사실, 이에 원고 보조참가인은 1999. 8. 31. 
+        소외 3 부분에 대하여 이의한다는 이의신청서를 법원에 제출하고 원고에게는 피고, 
+        소외 1, 
+        소외 2에 대한 위 결정금액을 수령하겠다고 통지하였는데 피고는 독자적으로 1999. 9. 1. 법원에 이의신청서를 제출한 사실, 원고 보조참가인은 위 조정에 갈음하는 결정의 이의신청기간이 경과한 후 
+        소외 1에게 위 결정금액의 수령을 위한 인감증명서를 가져다 달라고 하였으나 
+        소외 1은 자신과 
+        소외 2의 인감증명서만을 가져왔고, 이에 원고 보조참가인은 피고의 인감증명서는 나중에 보완하기로 하고 1999. 9. 3. 원고로부터 피고, 
+        소외 1, 
+        소외 2에 관한 위 각 결정금액을 지급받으면서 원고에게 피고, 
+        소외 1, 
+        소외 2의 위 교통사고에 관한 일체의 청구권을 포기한다는 내용의 ‘영수증 및 권리포기서’를 작성해준 사실, 원고 보조참가인은 피고의 몫으로 지급받은 2,500만 원 중 원고 보조참가인의 보수 500만 원을 제외한 2,000만 원을 
+        소외 1의 의뢰에 따라 
+        소외 1이 피고 몰래 개설한 피고 명의의 은행계좌로 송금하였고, 
+        소외 1은 위 계좌에 입금된 금원을 피고의 허락 없이 임의로 소비한 사실, 한편 위 손해배상 청구소송 중 피고에 관한 부분은 피고의 이의신청에 따라 계속 진행된 끝에, 원고 보조참가인의 피고 부분의 위 청구권 포기의 의사표시는 피고의 이의신청 사실을 모른 원고 보조참가인의 착오에 의한 것으로서 적법하게 취소되었다는 이유로 ‘원고는 피고에게 21,236,426원 및 이에 대한 1997. 4. 12.부터 2002. 1. 25.까지 연 5%, 그 다음날부터 완제일까지 연 25%의 각 비율에 의한 금원을 지급하라’는 내용의 판결이 선고되어 확정된 사실(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원|2001나4124" href="#//">서울지방법원 2001나4124</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다15719" href="#//">대법원 2002다15719</a></span>), 원고는 2002. 10. 17. 피고에 대한 위 판결 원금 및 그 때까지의 지연손해금 31,164,451원 중 원고 보조참가인에게 지급한 2,500만 원을 공제한 5,164,451원을 서울지방법원 2002년금제3989호로 변제공탁한 사실을 각 인정하였다.
+      </p><p>  원심은 이와 같은 사실관계를 기초로, 원고의 다음과 같은 주장 즉, 위 확정판결에 의한 채무는 원고가 1999. 9. 3. 피고의 소송대리인이었던 원고 보조참가인에게 2,500만 원을 지급하고 2002. 10. 17. 나머지 5,164,451원을 변제공탁함으로써 모두 변제되었을 뿐 아니라, 실체관계에 배치되는 위 확정판결에 기한 강제집행은 권리남용에 해당한다는 주장에 대하여, 원고가 1999. 9. 3. 원고 보조참가인에게 2,500만 원을 지급하였다는 사유는 위 확정판결의 변론종결 전에 생긴 것으로서 이를 청구이의의 이유로 삼을 수 없으며, 2002. 10. 17.자 변제공탁은 위 확정판결에 의한 채무 전액이 아닌 일부에 대한 것으로서 무효라는 이유로 원고의 위 변제 주장을 배척하는 한편, 피고의 강제집행이 현저히 부당하고 상대방으로 하여금 그 집행을 수인하도록 하는 것이 정의에 반함이 명백하여 사회생활상 용인할 수 없는 경우에 해당한다고 보기 어렵다 하여 위 권리남용 주장도 배척하였다.</p><p>  원심은 그러나, 원고 보조참가인은 변호사인 소송대리인으로서 그 위임받은 사건에 대하여 변제의 영수를 할 수 있으므로 원고가 1999. 9. 3. 원고 보조참가인에게 2,500만 원을 지급한 것은 피고에게도 그 효력이 미치는데, 비록 그 지급의 법률적인 원인이 취소되어 소멸하였더라도 원고는 피고에 대하여 2,500만 원 상당의 부당이득반환채권을 가지고 있다고 할 것이고, 위 2,500만 원의 지급으로써 원인채무가 소멸하였다는 원고의 주장에는 위 부당이득반환채권으로 위 확정판결에 의한 채권과 상계한다는 취지가 포함되어 있다고 한 다음, 이 사건 소장이 피고에게 송달된 2007. 6. 8.이 도래함으로써 원고의 위 2,500만 원의 부당이득반환채권과 그 때까지의 위 확정판결에 의한 원리금 54,836,524원이 모두 변제기에 도달하여 상계적상에 있었으므로 이를 상계하면 피고의 위 확정판결에 의한 채권은 29,836,524원 및 판결 원금 21,236,426원에 대한 2007. 6. 9.부터 완제일까지 연 25%의 비율로 계산한 금원이 남게 되고, 따라서 위 확정판결에 기한 피고의 강제집행은 상계 후 남은 위 금원을 초과하는 부분에 한하여 불허되어야 한다고 판단하였다.</p><p>  2. 원고의 상고이유 제1, 2점에 대하여</p><p>  가. 변제 주장에 관하여</p><p>
+        <span class="accrnt_txt">확정판결에 대한 청구이의 사유는 그 확정판결의 변론 종결 후에 생긴 것이어야 한다. 그러나 확정판결의 변론 종결 전에 이루어진 일부이행을 채권자가 변론 종결 후 수령함으로써 변제의 효력이 발생한 경우에는 그 한도 내에서 청구이의 사유가 될 수 있다고 보아야 한다.</span>
+      </p><p>  한편 
+        <span class="accrnt_txt">변제공탁이 유효하려면 채무 전부에 대한 변제의 제공 및 채무 전액에 대한 공탁이 있음을 요하고 채무 전액이 아닌 일부에 대한 공탁은 그 부분에 관하여서도 효력이 생기지 않으나, 채권자가 공탁금을 채권의 일부에 충당한다는 유보의 의사표시를 하고 이를 수령한 때에는 그 공탁금은 채권의 일부의 변제에 충당되고, 그 경우 유보의 의사표시는 반드시 명시적으로 하여야 하는 것은 아니다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다14616|판결" href="#//">대법원 1996. 7. 26. 선고 96다14616 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다37784|판결" href="#//">대법원 1997. 11. 11. 선고 97다37784 판결</a></span> 등 참조).
+      </p><p>  이러한 법리에 비추어, 원고가 1999. 9. 3. 원고 보조참가인에게 지급한 2,500만 원 중 2,000만 원 부분에 대하여 원심이 적법한 청구이의 사유가 될 수 없다고 한 것은 정당하여 수긍이 된다. 그러나 원심이 1999. 9. 3. 원고 보조참가인에게 지급한 2,500만 원 중 500만 원 및 원고의 2002. 10. 17.자 5,164,451원의 변제공탁에 대하여 일부 변제로서의 효력을 인정하지 않은 것은 다음과 같은 이유로 이를 수긍하기 어렵다.</p><p>  먼저 원심이 적법한 증거조사를 거쳐 채택한 증거 등에 의하면 원고 보조참가인은 위 손해배상 청구소송 후 피고와 
+        소외 3을 상대로 위 손해배상청구소송의 성공보수금의 지급을 구하는 소(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2003가단47094" href="#//">서울중앙지방법원 2003가단47094</a></span>)를 제기하였는데, 그 소송에서 원고 보조참가인은 피고에 대한 성공보수금을 계산함에 있어 1999. 9. 3. 원고로부터 2,500만 원을 지급받으면서 자신의 보수금으로 공제한 500만 원을 제외하였고, 그 결과 피고에 대하여 위 500만 원을 제외한 나머지 부분에 대해서만 승소 판결을 받은 사실을 알 수 있는바, 만약 피고가 위 성공보수금 청구 소송에서 원고 보조참가인의 위와 같은 계산을 이의 없이 받아들였다면 이를 원고의 위 교통사고 손해배상금의 일부 변제로서 수령하였다고 볼 여지가 있으므로, 원심으로서는 피고가 위 성공보수금 청구 소송에서 원고가 원고 보조참가인의 위 계산을 이의 없이 받아들였는지 여부 등을 나아가 살펴보았어야 할 것이다.
+      </p><p>  다음으로, 원심이 적법한 증거조사를 거쳐 채택한 증거 등에 의하면 피고는 원고의 2002. 10. 17.자 변제공탁금 5,164,451원을 수령한 것으로 보이는바, 비록 위 공탁이 채무 일부의 공탁이라고 하더라도 피고가 이를 채권의 일부에 충당한다는 유보의 의사표시를 하고 수령한 때에는 채권의 일부의 변제에 충당되는 것이므로, 원심으로서는 피고가 위 변제공탁금을 언제, 어떤 경위로 수령하였는지, 수령 당시 채무 일부에 충당한다는 명시적인 의사를 표시하였는지를 살펴보았어야 한다. 뿐만 아니라, 앞서 본 바와 같이 피고는 원고가 1999. 9. 3. 원고 보조참가인에게 지급한 2,500만 원을 전달받지 못하여 이를 계속 다투어 왔고, 이에 위 손해배상 청구소송에서도 위 2,500만 원이 피고에게 변제되지 않았음을 전제로 원고로 하여금 피고에게 21,236,426원 및 이에 대한 지연손해금의 지급을 명하는 판결이 선고되었으며, 이후로도 피고는 위 공탁금 외에는 위 확정판결에 의한 채권을 변제받은 바 없다 하여 원고에게 이를 청구해왔으므로, 피고의 위 공탁금 수령에는 적어도 묵시적인 이의유보의 의사표시가 있었다고 볼 수 있다.</p><p>  따라서 원고가 지급한 1999. 9. 3.자 2,500만 원 중 500만 원 및 원고의 2002. 10. 17.자 변제공탁금은 위 확정판결에 의한 채무 일부의 변제에 충당되었다고 볼 여지가 있고, 이들 부분에 관한 원고의 변제 주장까지 배척한 원심판결에는 채무의 일부 변제 및 일부 변제공탁에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다고 할 것이므로, 위 확정판결금 채무의 변제에 관한 원고의 상고이유의 주장은 위 500만 원 및 위 변제공탁금 부분에 한하여 이유 있다.</p><p>  나. 권리남용 주장에 관하여</p><p>
+        <span class="accrnt_txt">확정판결의 내용이 실체적 권리관계에 배치되는 경우 그 판결에 의하여 집행할 수 있는 것으로 확정된 권리의 성질과 그 내용, 판결의 성립 경위 및 판결 성립 후 집행에 이르기까지의 사정, 그 집행이 당사자에게 미치는 영향 등 제반 사정을 종합하여 볼 때, 그 확정판결에 기한 집행이 현저히 부당하고 상대방으로 하여금 그 집행을 수인하도록 하는 것이 정의에 반함이 명백하여 사회생활상 용인할 수 없다고 인정되는 경우에는 그 집행은 권리남용으로서 허용되지 않는다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다32899|판결" href="#//">대법원 2001. 11. 13. 선고 99다32899 판결</a></span> 등 참조).
+      </p><p>  위 법리에 비추어 보면, 원심이 원고도 피고의 인감증명서를 제출받지 않은 채 조정결정금을 지급하였고, 이를 
+        소외 1이 피고 몰래 착복하여 피고에게 실제로 지급된 금원이 전혀 없었던 점 등의 사정을 들어 원고의 권리남용 주장을 배척한 것은 정당하여 수긍이 되고, 거기에 권리남용에 관한 법리오해 등의 위법이 있다고 할 수 없다.
+      </p><p>  3. 원고의 상고이유 제3점 및 피고의 상고이유에 대하여</p><p>
+        <span class="accrnt_txt">민사소송절차에서 권리의 발생·변경·소멸이라는 법률효과의 판단의 요건이 되는 주요사실에 대한 주장·입증에는 변론주의의 원칙이 적용되는바</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다57697|판결" href="#//">대법원 2004. 5. 14. 선고 2003다57697 판결</a></span> 등 참조), 
+        <span class="accrnt_txt">상계는 상계적상에 있는 채권을 가진 채권자가 별도로 의사표시를 하여야 하는 것이고(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|493|" style="text-decoration:underline">민법 제493조 제1항</a></span>) 그 의사표시 여부는 원칙적으로 채권자의 자유에 맡겨져 있는 것이므로, 비록 상계의 의사표시가 묵시적으로도 가능하다 하더라도, 다른 의사와 구분되는 별도의 상계 의사를 확인하지 않은 채 이를 인정할 수는 없다
+        </span> 할 것이다.
+      </p><p>  그런데 원심판결에 의하더라도 원고는 명시적으로 상계 또는 그 전제로서의 부당이득반환채권에 관한 주장을 한 바 없다는 것이고, 원고의 주장은 위 확정판결에 의한 채무가 변제로 소멸하였다는 취지일 뿐인바, 상계는 확정판결의 변론종결 전에 상계적상에 있는 채권을 가지고 있었던 경우에도 변론종결 후에 그 의사표시를 하고 이를 청구이의 사유로 삼을 수 있는 것으로서 확정판결에 의한 채무가 변제로 소멸하였다는 주장 속에 당연히 포함되어 있는 내용으로 보기는 어렵다.</p><p>  따라서 원고가 상계 및 그 요건사실에 관한 주장을 한 것으로 볼 수 없어 원심판결에는 변론주의에 위반한 위법이 있다고 할 것이므로, 이를 지적하는 피고의 상고이유는 나머지 상고이유를 살펴 볼 필요 없이 이유 있고, 상계를 전제로 한 원고의 상고이유의 주장은 이유 없다.</p><p>  결국 위 확정판결에 기한 강제집행은 위 확정판결의 판결 원리금 중 원고가 1999. 9. 3. 원고 보조참가인에게 지급한 500만 원 및 원고의 2002. 10. 17.자 변제공탁금으로써 변제되고 남은 금원을 초과하는 부분에 한하여 이를 불허할 것인바, 원심은 그보다 더 많은 부분이 변제된 것으로 보아 강제집행을 불허하는 범위를 더 넓게 인정하였으므로, 원심판결 중 위 500만 원 및 위 변제공탁금으로 변제된 금원에 해당하는 부분을 제외한 나머지 피고 패소 부분은 파기를 면할 수 없다고 할 것이다.</p><p>  4. 결론</p><p>  그러므로, 원심판결 중 위 5,000,000원 및 위 변제공탁금으로 변제된 금원에 해당하는 부분을 제외한 나머지 피고 패소 부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하며, 원고의 상고와 피고의 나머지 상고를 모두 기각하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신영철(재판장) 박시환 안대희(주심) 차한성 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 84다카1954 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2086466';
+var contIdEtc = '';
+var saNo = '84다카1954';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('19850625' ? 
+			'19850625'.length==4 ? Date.parseExact('19850625','yyyy').toString('yyyy. M. d.') : 
+				'19850625'.length==6 ? Date.parseExact('19850625','yyyyMM').toString('yyyy. M. d.') : 
+					'19850625'.length==8 ? Date.parseExact('19850625','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 84다카1954 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '84다카1954';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />84다카1954</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(9)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(147)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(7)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(8)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2105026">대법원 1992. 12. 8. 선고 92다34568 판결 [공1993.2.1.(937),437]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2118965">대법원 2004. 12. 10. 선고 2002다60467 판결 [공2005.1.15.(218),87]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1966385">대법원 2006. 7. 6. 선고 2004다8272 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1967069">대법원 2006. 8. 25. 선고 2004다24144 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1980335">서울고등법원 2006. 9. 13. 선고 2006나14648 판결 : 상고 [각공2006.11.10.(39),2325]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2066618">대법원 2007. 9. 20. 선고 2007다25865 판결 [공2007.10.15.(284),1632]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1969941">대법원 2008. 9. 11. 선고 2006다68834 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1969047">대법원 2008. 12. 11. 선고 2005다51471 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1969440">대법원 2009. 12. 10. 선고 2007다58285 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|483019">평이사·감사의 회사에 대한 책임의 범위 강위두 韓國商事判例學會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|187670">평이사의 감시의무 강희갑 判例月報社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|187654">이사의 감독의무위반과 회사에 대한 책임 양승규 서울대학교 법학연구소</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|484966">이사의 감독의무위반과 회사에 대한 책임 양승규 三知院</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|544454">강희갑 주식회사의 이사의 의무와 회사에 대한 손해배상책임 명지법학 3호  / 명지대학교 법학연구센터  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|540047">이세인 분식회계 관련 이사 등의 손해배상책임과 소멸시효 기업소송연구   / 다사랑  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|187571">황영목 이사의 감시의무 재판자료 37집 (상) / 법원행정처  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701638">김효신 미국 회사법상 이사의 감시의무와 그 시사점 법학논총 37권 1호 / 단국대학교  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|593915">서정 임원배상책임보험 민사판례연구 29권  / 박영사  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630793">고재종 회사법상 이사 등의 특별배임죄 성립 여부 한양법학 32집  / 한양법학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39908">홍복기 사외이사제도에 관한 연구 동아대 동아법학 7호  / 동아대학교 출판부  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|480361">한국. 법원행정처 공탁실무자료집: 공탁사무와 관련된 판례, 예규, 선례의요지 법원행정처  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|514258">심준보 회사 채무의 불이행과 이사의 제3자에 대한 책임 민사판례연구 25권  / 박영사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|487584">김교창 이사의 책임에 관한 한ㆍ일의 소송사례 인권과 정의 306호  / 대한변호사협회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570599">맹수석 금융기관의 특수성과 책임구조에 관한 연구 대전지방변호사회지 4호  / 대전지방변호사회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|454717">나승성 사외이사 제도에 관한 연구 법조 49권 3호 (2000.03) / 법조협회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|478241">성승제 임원보수의 합리적 기준 설정에 관한 법적연구 한양대학교 대학원  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|576808">안수현 내부통제의 회사법제 정비를 위한 검토 상사판례연구 20집 2권  / 한국상사판례학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|106947">오욱환 주식회사 감사제도에 관한 연구 성균관대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|531145">남기윤 인적주식회사(인적주식회사)에 관한 일반적 고찰 경영법률연구총서 . I - V 3권  / 한국경영법률학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564289">구회근 이사의 회사에 대한 손해배상책임에 관한 분석 : 대법원판례를 중심으로 . 기업소송연구 2005(2006.03) / 다사랑  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|568560">김광록 상법총칙상 상행위의 범위를 중심으로 본 상사시효에 관한 판례 회고 상사판례연구 19집 4권  / 한국상사판례학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622820">조성권 대도시 내에서 등록세중과를 명하기 위하여 설립등기를 마친 후 폐업을 하여 사업실적이 없는 상태에 있는 기존법인의 주식을 제3자가 전부 인수한 다음 기존법인의 상호, 정관, 임원, 자본, 목적 사업을 전부 변경 대법원판례해설 80호  / 법원도서관  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|98779">손수일 기업지배권변동을 수반하는 기업인수 및 합병의 적정성 확보를 위한 회사법적 구제방안 서울대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|671680">김순석 이사의 감시의무 상법판례백선   / 법문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|640260">양명조 2011년 개정 상법상 주식회사 이사의 자기거래에 있어서의 공정성 요건 법조 통권660호  / 법조협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|691420">박수영 일본법상 이사의 감시의무 법학연구 통권 제37집 / 전북대학교 출판부  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125838">김영선 이사의 책임에 대한 보상제도와 보험에 관한 연구 서울대학교  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256224">김대연 주주대표소송과 이사의 책임 (한터)이철원교수정년기념논문집 (98.09) / [발행처불명]  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|515970">안성포 이사의 면책에 관한 입법론적 고찰 : 책임면제와 화해를 중심으로 . 상사법연구 22권 2호 (2003.08) / 한국상사법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|209182">홍복기 이사와 감사의 제3자에 대한 책임 고시계 40권 5호 (95.04) / 국가고시학회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|447096">나세근 이사의 제삼자에 대한 손해배상책임에 관한 연구 성균관대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38457">윤진수 소멸시효 민법학의 회고와 전망 : 민법전시행삼십주년기념논문집 (93.12) / 한국사법행정학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|604701">최동렬 이사의 감시의무위반으로 인한 상법 제401조에 의한 책임 및 감사의 상법 제414조에 의한 책임의 인정기준 대법원판례해설 77호 (2009.07) / 법원도서관  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236313">강위두 감사의 회사에 대한 손해배상책임의 법적 성질과 그 면제 법률신문 2599호  / 법률신문사  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|456000">김영호 기업의 지배구조와 이사회의 운영  1 동아법학 26호  / 동아대학교 출판부  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|484970">양승규 기업경영에 대한 효율적 감독과 감시 : 사외이사,감사,외부감사인의 역할과 기능정립을 중심으로 . 상법의 논점 (2000.10) / 삼지원  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|479433">유진희 우리나라 기업지배구조 개혁의 성과와 과제 상사법연구 20권 2호 (2001.08) / 한국상사법학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|517629">이태종 제일은행 경영진에 대한 주주대표소송 BFL 제2호  / 서울대학교 금융법센터  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461057">양동석 정치헌금과 회사의 기부 비교사법 6권 2호 (99.12)  / 한국비교사법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|542829">박강익 상법상 주식회사 이사의 의무와 미국법상의 충실의무 법학연구 18집  / 한국법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|187198">민형기 주주의 대표소송 재판자료 38집 (하) / 법원행정처  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|520651">곽민섭 이사의 의무와 책임 : 선관주의의무와 충실의무를 중심으로 . 재판실무연구 2003  / 광주지방법원  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|598213">최문희 이사의 회사에 대한 손해배상책임 면제 규정의 재해석 : 판례와 학설에 대한 비판적 고찰 상사법연구 27권 4호 / 한국상사법학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|605009">김태선 이사의 감시의무 기업지배구조연구 31호 여름 2009 / 좋은기업지배구조연구소  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|532042">정쾌영 이사의 책임제한에 관한 연구 기업법연구 18권 1호  / 한국기업법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|526733">김건식 은행이사의 선관주의의무와 경영판단 원칙 민사판례연구 26권  / 박영사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251071">김교창 사외이사의 역할, 책임 및 행동기준 인권과 정의 263호  / 대한변호사협회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|506698">허덕회 이사의 법령위반행위에 대한 책임 상사법연구 22권 1호 (2003.05) / 한국상사법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|249341">양승규 상법개정안, : 사실상 이사의 책임 공인회계사 통권60호  / 한국공인회계사회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|229537">이강룡 이사의 제3자에 대한 책임에 관한 연구 충남대 법학연구 5권 1호  / 충남대학교 법학연구소  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|580756">이두형 금융기관 임직원의 법적 책임 경기법조 14호 / 수원지방변호사회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|486498">최문희 주식회사 이사의 책임제한에 관한 연구 서울대학교 대학원  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653627">서완석 이사의 사내정보수집권 성균관법학 23권 3호  / 성균관대학교 비교법연구소  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|671339">김홍기 상사소멸시효와 민사소멸시효 상법판례백선   / 법문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|765063">서성호 모회사이사의 자회사경영감시의무위반과 손해배상금ㆍ지연손해금의 법적성질 : 일본 복강어시장주주대표소송사건의 검토 를 중심으로 기업법연구 제29권 제1호 / 한국기업법학회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|792777">탁상진 청구의 교환적 변경과 소멸시효의 중단 : 대상판결: 대법원 2010. 6. 24. 선고 2010다17284 판결(공2010하, 1447) 재판과 판례 제24집 / 대구판례연구회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|248127">하경일 법인의 불법행위와 대표기관의 손해배상책임 경영법무 통권50호  / 한국경영법무연구소  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|700406">정지영 미국 회사법상 이사의 회사에 대한 책임 : 미국법상 이사 의무의 종류 및 의무위반의 판단기준에 관한 고찰 . 재판자료 . 제126집 : 외국사법연수논집(32） 제126집  / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|100778">오세창 주식회사의 업무집행감독에 관한 연구 : 감사 및 이사회의 업무집행감독권을 중심으로 대구대학교  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|549086">구회근 이사의 회사에 대한 손해배상책임 및 판례에 나타난 구체적인 사례 사법연수원 논문집 제3집  / 사법연수원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|470297">정완용 이사의 제삼자에 대한 책임의 법적성질에 관한 일고찰 경희법학 31권 1호  / 경희대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476795">김학묵 주식회사 이사의 책임 성균관법학 7호  / 성균관대학교 비교법연구소  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|474055">김형배 이사의 3자에 대한 책임 재판실무연구 2000  / 광주지방법원  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|589165">임치용 도산기업과 경영자 책임 인권과 정의 383호  / 대한변호사협회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581870">박형준 법정관리기업 인수ㆍ합병(M&amp;A)의 실무와 전망 사법논집  . 제44집 44집 / 법원도서관  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|187569">양승규 이사의 감독의무위반과 회사에 대한 책임 민사판례연구 8권  / 박영사  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|229259">남기윤 인적주식회사에 관한 일반적 고찰 경영법률 6집  / 한국경영법률학회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|543312">정대 상호저축은행 이사의 책임에 관한 고찰 상사판례연구 18집 2권  / 한국상사판례학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|479478">우홍구 이사의 감시의무 일감법학 4권  / 건국대학교 법학연구소  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563979">오세빈 주주대표소송의 실무상 문제점에 관한 연구 한양대학교  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|187576">이주흥 이사의 손해배상책임, : 독일법을 중심으로 . 사법행정 27권 8호  / 한국사법행정학회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|2216">김용석 주식회사의 업무집행감독에 관한 연구 조선대학교  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|98758">김영균 주식회사의 감사제도 경북대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|626836">이철송 상법상의 입법착오의 시정을위한연구(2) : 회사편을 중심으로 비교사법 17권 3호  / 한국비교사법학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|528774">최병규 분식회계와 이사의 책임 기업소송연구   / 다사랑  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32706">이주흥 회사채권자의 이사에 대한 손해배상청구에서의 손해의 의미와 범위, 상 법조 39권 1호 (90.01) / 법조협회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|257941">강희철 개정 회사법 : 개정 상법상의 주식회사 이사의 의무와 책임 인권과 정의 270호  / 대한변호사협회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|538293">이세인 상법상 이사 및 감사의 책임규정과 소멸시효 : 분식회계로 인한 책임을 중심으로 . 법조 54권 5호 (2005.05) / 법조협회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|266586">이형기 증권거래법상의 민사책임에 관한 고찰 인권과 정의 277호  / 대한변호사협회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|551287">성승제 이사의 주의의무와 대법원 2002.3.15. 선고, 2000다9086 판결 상사판례연구 17집  / 한국상사판례학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|238861">강희갑 주식회사 감사의 회사에 대한 손해배상책임 고시연구 24권 9호 (97.08) / 고시연구사  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|534771">문영화 신용협동조합 감사의 임무해태로 인한 조합에 대한 손해배상책임 대법원판례해설 49호 (2004.12) / 법원도서관  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|512250">김재걸 이사의 종업원선발행위(종업원 뽑아가기)에 의한 책임과 회사의 손해에 관한 법률적 논고 : 일본의 판례를 중심으로 하여 . 기업법연구 11집  / 한국기업법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|479499">권종호 감사·감사위원회 및 외부감사인의 직무범위와 책임 일감법학 5권  / 건국대학교 법학연구소  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495800">유진희 21세기 한국상사법학의 과제와 전망 : 최근의 회사법 개정을 중심으로 . 안암법학 13호  / 무지개출판사  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|551304">정준우 부실감사에 대한 감사위원의 법적 책임 상사판례연구 18집 3권  / 한국상사판례학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|553630">구회근 이사의 제3자에 대한 손해배상책임에 관한 판례 분석 : 대법원판례를 중심으로 . 저스티스 90호  / 한국법학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|187592">박재윤 이사의 제삼자에 대한 책임 재판자료 38집 (하) / 법원행정처  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|512213">김동근 상법상 업무집행지시자 등의 책임 기업법연구 9집  / 한국기업법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603787">김성태 분식회계로 인한 이사의 민사책임 민사판례연구 31권  / 박영사  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|714815">김제완 중개계약의 종료와 공인중개사의 보수청구권 인권과 정의 제438호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|532036">정준우 현행 주식회사 감사제도의 문제점과 그 개선방안 기업법연구 18권 1호  / 한국기업법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|578360">김건식 이사의 감시의무와 내부통제 상사판례연구 Ⅶ권  / 박영사  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|616394">유중원 이사(감사)의 회사에 대한 책임과 경영판단의 원칙 판례연구 23집(2009.12) / 서울지방변호사회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696336">황은규 청구의 교환적 변경과 소멸시효의 중단 민사판례연구 35권  / 박영사  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|516974">채동헌 이사의 감사에 대한 보고의무위반과 배임죄 성립여부 대법원판례해설 45호 (2004.01) / 법원도서관  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|671691">윤성승 주주의 간접손해 상법판례백선   / 법문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32702">홍복기 사내이사에 관한 연구 현대상사법의 제문제 : 설성이윤영선생정년기념 (88.11) / 법지사  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32713">양승규 대표이사의 직무집행에 대한 감독 고시연구 16권 4호 (89.03): 창간 15주년 기념 / 고시연구사  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|109776">이상훈 다수주주권남용에 대한 회사법상의 소에 관한 연구: 회사이익개념을 중심으로 서울대학교  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39597">이기수 상법의 체계와 조류 , 중 월간고시 21권 5호 (94.04) / 법지사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39617">정동윤 상법45년 : 그 회고와 전망 . 한국법학의 회고와 전망   / 법문사  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|520875">김재걸 주식회사의 사외이사의 책임에 관한 법적 고찰 : 일본의 판례를 중심으로 하여 . 상사법연구 21권 2호 (2002.08) / 한국상사법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|541583">성승제 이사의 감시의무와 신뢰보호의 원칙 비교사법 11권 4호 (2004.12) / 한국비교사법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|215626">홍복기 사외이사제도와 그 문제점 상사법연구 7집  / 한국상사법학회  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|448586">나승성 주식회사지배구조에 관한 연구 고려대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761767">김정호 이사의 책임제한 고려법학 제74호 / 고려대학교 법학연구원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564143">이경렬 경영판단의 과오와 업무상배임죄의 성부 법조 55권 12호 (2006.12) / 법조협회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631527">임종효 양육비청구권에 관한 기초 이론 및실무상 쟁점 사법논집 . 제51집   / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|599700">양기진 이사의 감시의무 고시계 54권 4호  / 국가고시학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|604699">박연욱 보험자가 보험금을 수령한 질권자에 대하여 가지는 부당이득반환청구권의 소멸시효기간 대법원판례해설 77호 (2009.07) / 법원도서관  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|255067">전삼현 이사의 충실의무에 관한 재고찰 인권과 정의 268호  / 대한변호사협회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|447038">박인현 주식회사 이사회제도에 관한 비교법적 연구 영남대학교  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251175">김용덕 개인기업적인 회사와 이해관계인들 상호간의 이해조정에 관련된 제문제에 관한 판례의 동향 민사판례연구 , XX 20권  / 박영사  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|529008">최동식 이사의 회사에 대한 손해배상책임의 면제 회사법연구 보조자료   / 사법연수원  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|230061">정진세 이사의 제삼자에 대한 책임 고시계 41권 8호 (96.07) / 국가고시학회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|509761">고재종 이사의 임무해태에 따른 책임의 성립여부에 관한 고찰 외법논집 14집  / 한국외국어대학교 법학연구소  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577331">김하늘 가. 무보험자동차에 의한 상해담보특약에도 중복보험에 관한 상법 제672조 제1항이 준용되는지 여부(적극), 나. 복수의 무보험자동차에 의한 상해보험특약의 보험자들 중 일방 보험자가 다른 보험자에 대하여 가지는 대법원판례해설 63호 (2007.07) / 법원도서관  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581844">송옥렬 주주의 부와 회사의 손해에 관한 판례의 재검토 사법 2호  / 사법발전재단  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|578363">최문희 이사의 손해배상책임 제한의 법리 상사판례연구 Ⅶ권  / 박영사  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|541342">이욱래 적대적 M&amp;A에 대응한 이사의 방어행위에 대한 법적 평가 BFL 제12호  / 서울대학교 금융법센터  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|465723">박수영 이사배상책임보험에 관한 연구 전북대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|520631">성승제 주식회사의 비전형적인 임원에 대한 일고찰 : 미등기임원에 대한 법적 규율의 필요성을 중심으로 . 법조 53권 5호 (2004.05) / 법조협회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|543655">정준우 주주대표소송의 원고적격에 관한 쟁점사항 검토 기업법연구 19권 2호  / 한국기업법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236772">강위두 상법 제414조의 감사의 회사에 대한 손해배상책임의 법적 성질과 총주주의 동의에 의한 그 책임의 면제 상사법연구 16권 1호  / 한국상사법학회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|672844">양만식 이사의 임무태만책임의 법적 성질과 구조 기업법연구 제26권 제3호 / 한국기업법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476148">김대연 이사의 정보접근권 비교사법 8권 1호(통권14호) (2001.06) / 한국비교사법학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|541650">정대 미국의 금융기관 이사의 주의의무에 관한 고찰 비교사법 9권 2호 (2002.08) / 한국비교사법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|535382">김용재 금융기관 이사의 책임에 관한 연구 정보와 법 연구 5호  / 국민대학교 정보와 법 연구소  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|626774">전우정 삼성전자 판례에 나타난 법원의 경영판단의 원칙에 대한 태도와 이사의 책임 제한 고려법학 57호  / 고려대학교 법학연구원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|619712">장홍선 상법 제399조에 기한 이사의 회사에 대한 손해배상 책임과 경영판단의 원칙 판례연구 21집  / 부산판례연구회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564727">김현용 단체협약에 기한 근로자의 유족들의 회사에 대한 위로금채권이 상법 제64조의 상사소멸시효가 적용되는 상사채권인지 여부 대법원판례해설 60호 (2006.12) / 법원도서관  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|521372">고경우 금융기관의 대표자 또는 임원의 대출업무에 관한 선관주의의무와 그 임무해태 여부의 판단기준 판례연구 15집  / 부산판례연구회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|612005">최문희 경영자의 배임죄와 회사법상 이사의 의무 : 전환사채의 저가발행 판례를 소재로 하여 저스티스 112호  / 한국법학원  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|617454">김택주 회사법판례의 변화와 전망 상사판례연구 23집 1권  / 한국상사판례학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|512233">한국. 대법원 법원행정처 재판실무편람/ 제9호: 회사재판실무편람 법원행정처  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|685840">정준우 주식회사 감사기관의 책임에 관한 비판적 검토 한양법학 제23권 제4집 통권 제40집  / 한양법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|127653">김지환 주식회사의 지배구조에 관한 연구 성균관대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725910">김홍기 상사계약의 체결과 그 효과의 귀속에 관한 연구 : 판례의 분석을 중심으로 . 비교사법 제21권 1호 / 한국비교사법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|224901">안택식 감사와 외부감사인의 부실감사로 인한 손해배상책임 상장협 32호  / 한국상장회사협의회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251559">양승규 기업의 부실 경영자의 손해배상책임 서울대 법학 39권 1호 (98.05) / 서울대학교 법학연구소  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125947">정병석 독일법상 주식회사 감사회의 감독권에 관한 연구 서울대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38458">오종근 소멸시효에 관한 판례분석 사법연구 1집  / 한학문화  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|474037">김대연 사외이사의 법적 지위 법학논고 16집  / 경북대학교 출판부  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|523590">김대연 회사의 내부통제시스템과 이사의 감시의무 상사판례연구 12집  / 한국상사판례학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581428">양만식 현대 주식회사에서의 이사의 책임범위와 신뢰보호 기업법연구 제21권 제3호 / 한국기업법학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|511906">이재혁 주식회사 감사위원회제도의 개선방안에 관한 연구 성균관대학교  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|511675">김대연 업무집행지시자 등의 책임 기업법연구 4집  / 한국기업법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|554684">박찬주 경영판단과 위험선호적 의사결정 인권과 정의 357호  / 대한변호사협회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495801">김재범 주식회사 업무집행에 대한 평이사의 감시의무 안암법학 13호  / 무지개출판사  2001 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|68다305">
+대법원 1969.1.28. 선고 68다305 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|34|0|null">민법 제34조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|65|0|null">민법 제65조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="상법|399|0|null">상법 제399조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|162|0|null">민법 제162조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|766|0|null">민법 제766조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="상법|399|0|null">상법 제399조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="상법|414|0|null">상법 제414조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|399|0|null">상법 제399조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|414|0|null">상법 제414조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="물품세법|1|0|null">물품세법 제1조 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="직물류세법|1|0|19700101">직물류세법 제1조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="직물류세법|1|0|19700101">직물류세법 제1조 제1항 제8호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="직물류세법시행령|1|0|null">직물류세법시행령 제1조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="직물류세법시행령|1|0|null">직물류세법시행령 제1조 제1항 제8호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|412|0|19840410">상법 제412조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구고등법원|84나264">
+대구고등법원 1984.8.23. 선고 84나264 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1985. 6. 25. 선고 84다카1954 판결</h2><p class="sub_title">[손해배상][집33(2)민,103;공1985.8.15.(758),1049]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 부채과다로 업무수행을 하지않고, 대표이사. 기타 이사도 없는 상태에 있는 회사의 권리능력 유무</p>
+      <p></p>
+      <p>
+        </p><p>나. 평이사가 업무 담당이사의 위법한 업무집행에 대하여 감시를 소홀히 한 경우, 회사에 대한 손해배상책임 유무(적극)</p>
+      <p></p>
+      <p>
+        </p><p>다. 주식회사의 이사 또는 감사의 임무해태로 인한 회사에 대한 손해배상책임의 소멸시효기간</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 회사가 부채과다로 사실상 파산지경에 있어 업무도 수행하지 아니하고 대표이사나 그 외의 이사도 없는 상태에 있다고 하여도 적법한 해산절차를 거쳐 청산을 종결하기 까지는 법인의 권리능력이 소멸한 것으로 볼 수 없다.</p>
+      <p></p><p>
+        </p><p>나. 주식회사의 업무집행을 담당하지 아니한 평이사는 이사회의 일원으로서 이사회를 통하여 대표이사를 비롯한 업무담당이사의 업무집행을 감시하는 것이 통상적이긴 하나 평이사의 임무는 단지 이사회에 상정된 의안에 대하여 찬부의 의사표시를 하는데에 그치지 않으며 대표이사를 비롯한 업무담당이사의 전반적인 업무집행을 감시할 수 있는 것이므로, 업무담당 이사의 업무집행이 위법하다고 의심할만한 사유가 있음에도 불구하고 평이사가 감시의무를 위반하여 이를 방치한 때에는 이로 말미암아 회사가 입은 손해에 대하여 배상책임을 면할 수 없다.</p>
+      <p></p><p>
+        </p><p>다. 주식회사의 이사 또는 감사의 회사에 대한 임무해태로 인한 손해배상책임은 일반불법행위 책임이 아니라 위임관계로 인한 채무불이행 책임이므로 그 소멸시효기간은 일반채무의 경우와 같이 10년이라고 보아야 한다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|34|">민법 제34조</a></span> 나.        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|65|">민법 제65조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span> 다.        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|162|">민법 제162조</a></span>,          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">제766조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제414조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">다.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|68다305|판결" href="#//">대법원 1969.1.28. 선고 68다305 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          주식회사 서울신탁은행  소송대리인 변호사 유현석
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          홍지관 외 12인  피고들 소송대리인 변호사 문양
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구고등법원|84나264|판결" href="#//">
+대구고등법원 1984.8.23. 선고 84나264 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 대구고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 피고들 소송대리인의 상고이유 제1점을 본다.</p><p>
+        <span class="accrnt_txt">회사가 부채과다로 사실상 파산지경에 있어 업무도 수행하지 아니하고 대표이사나 그외의 이사도 없는 상태에 있다고 하여도 적법한 해산절차를 거쳐 청산을 종결하기 까지는 법인의 권리능력이 소멸한 것으로 볼 수 없으므로</span>, 이 사건에서 소외 대명모방주식회사(이하 소외회사라 한다)가 소론 주장과 같이 부채과다로 사실상 활동을 전혀하지 않는 법인이라고 하여도 이런 사실만으로 그 권리능력이 소멸되어 존재하지 않는다고까지 말할 수는 없다.
+      </p><p>  원심이 위 소외회사의 이 사건 손해배상채권을 대위행사하는 원고의 청구를 받아들인 조치에 논지가 주장하는 것처럼 존재하지 않는 피대위자의 권리행사를 인용한 법리오해의 위법이 있다고 할 수 없으니 논지는 이유없다.</p><p>  2. 같은 상고이유 제2점을 본다.</p><p>  원심판결 이유에 의하면 원심은 피고 홍지관 등 이 소외회사의 주권발행전에 주식을 양수한 주주아닌 자들에 의하여 개최된 주주총회에서 이사 또는 감사로 선임된 자들이므로 적법한 이사 또는 감사가 아니라는 피고들 주장에 대하여, 소외회사에서 피고 홍지관등이 이사 또는 감사로 선임등기가 되어 있을 때까지 주권을 발행한 바 없는 사실은 인정되나 위 홍 지관등이 원시주주로부터 주권발행전의 주식을 양수한 자들만의 모임에서 이사 또는 감사로 선임되었다고 인정할 만한 증거가 없다 하여 배척하고 있는바, 기록에 의하여 살펴보면 위와 같은 원심판단은 정당하고 소론 주장과 같은 채증법칙위반이나 이사 또는 감사선임의 절차 및 적법여부에 관한 법리오해의 위법이 없으니 논지는 이유없다.</p><p>  3. 같은 상고이유 제3점, 제5점 및 제6점을 함께 본다.</p><p>  (1) 원심판결 이유에 의하면 원심은 소외회사가 각종사류의 수탁가공업을 하여 오던중 1967.6.1부터 1969.12.31까지 사이에 원심판결 제1목록(1) 내지 (3)의 기재내역과 같이 피고 홍 지관, 최춘식, 전국현, 임상국 등이 경영하던 소외 동양모직과 피고 정상묵, 길인득, 김낙현, 소외 망 전경백 및 그밖의 소외인들로부터 각 원료의 제공과 함께 모 또는 반제모의 혼방비율 50%이하인 혼방사의 가공위탁을 받아 가공한 다음 위 위탁자들에게 반출하고, 1970.1.1부터 1970.6.30까지 사이에 같은 목록 (4)의 기재내역과 같이 위 동양모직, 피고 길인득, 김낙현 및 그밖의 소외인들로부터 같은 방법으로 모 또는 반제모의 혼방비율 40% 이하의 혼방사의 가공위탁을 받아 가공하여 위 위탁자들에게 반출한 사실, 당시 시행되던 물품세법과 직물류세법의 규정에 의하면 혼방비율 50%이하의 혼방사(1969.12.31까지)나 40%이하의 혼방사(1970.1.1이후)에 관하여 제공된 원료로 가공을 위탁받아 공임을 받고 가공하여 위탁자에게 반출하는 때에는 이를 소관 세무서장에게 신고하여 승인을 얻고 지정기간내에 위탁자에게 반입되었음을 증명한 경우에 한하여 위탁자를 제조자로 보아 그에게 과세하나 이러한 신고등 절차를 밟지 아니한 경우에는 위탁받아 가공한자를 제조자로 간주하고 그에게 과세하도록 되어 있으므로, 소외 회사로서는 위와 같이 위탁받아 가공하여 반출한 수량전부에 대하여 소관세무서장에게 신고하여야 함에도 불구하고 그중 원심판결 첨부 제2목록기재 수량에 관해서만 소외 회사가 스스로 제조한 것으로 신고하여 도합 107,163,279원의 물품세 또는 직물류세를 납부하고 동액상당의 금원을 가공임과 함께 위탁자들로부터 수금하여 충당하였을 뿐 그 나머지 수량에 관하여는 신고를 하지 아니한 사실, 그후 이러한 사실이 조세당국에 발각되어 소외 회사가 위와 같이 임가공 반출한 물품전량에 관하여 제조자로 간주되어 1967.6.1부터 1971.6.30까지의 누락분에 관한 추가과세로서 도합 307,157,643원의 물품세 또는 직물류세가 부과되고 이중 132,326,749원이 징수된 사실, 피고 홍지관은 소외 회사의 대표이사, 피고 이덕진은 상무이사, 피고 전국현, 소외 망 전경백 및 피고 길인득은 1969.이후부터 피고 홍지관 대신 대표이사 직무를 사실상 대행한 자들로서 위임가공제품의 잔량을 신고할 임무가 있고, 또 피고 임상국, 정상묵을 제외한 이사들인 피고들은 소외 회사의 업무집행에 관한 결정권을 가진 이사회의 구성원으로서 위 제품전량이 신고되도록 업무집행에 관한 결의를 하여야 할 임무가 있으며, 피고 임상국, 정상묵은 감사로서 생산제품에 관한 세무신고가 정당하게 집행되지 않고 있음을 주주총회에 보고하여 시정을 촉구할 임무가 있음에도 불구하고 각 임무에 위배하여 소외 회사의 가공료수입에 관한 세금을 포탈하고 위탁자가 부담하여야 할 물품세 또는 직물류세의 탈세를 돕고자 위와 같이 가공한 물품중 일부를 은폐하여 신고를 하지 아니하였던 사실을 인정하고, 위 피고들 및 소외 망 전경백은 소외 회사의 이사 또는 감사로서 공동으로 그 임무에 위배하여 가공위탁자들이 납부하여야 할 물품세 또는 직물류세를 소외 회사로 하여금 부과징수 당하게 함으로써 추가납부할 세액 126,690,775원 상당의 손해를 입게 하였으니 위 사람들은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제414조</a></span>의 각 규정에 의하여 연대하여 소외 회사가 입은 손해를 배상할 책임이 있다고 판단하고 있다.
+      </p><p>  (2) 첫째로, 논지는 물품세법상 모의 혼합비율이 50% 이상인 혼방사는 비과세물건으로서 신고의무가 없으므로 소외 회사는 이러한 신고의무없는 것에 한하여 신고하지 아니한 것이고 신고의무있는 과세물건에 대하여는 모두 신고하여 납세하였는데 원심은 허무의 증거에 의하여 제조반출량 전부가 과세물건인 것으로 오인한 위법을 저질렀다는 것이다.</p><p>  그러나 원심이 채용한 증거에 의하면 원심판시와 같이 소외 회사는 위탁가공한 혼방사중 일부를 자가제조로 신고하여 물품세 및 직물류세를 납부하고 나머지 일부는 제조반출 사실자체를 은폐하여 신고하지 아니하였으며 과세관청은 이와 같이 신고하지 아니한 수량 전부를 물품세 및 직물류세의 과세대상 물건으로 인정하여 이에 대한 과세 및 징수처분을 한 사실이 인정되는 바, 위와 같이 과세관청이 소외 회사에 대하여 과세물건에 대한 탈세를 한 것으로인정하여 과세처분을 한 사실이 증명되는 이상 소외 회사의 이사 또는 감사인 피고들이 탈세를 하여 그 임무에 위배하였음을 주장하는 원고로서는 일단 그 입증을 다한 셈이므로, 과세관청의 위 인정과는 달리 소외 회사가 신고하지 아니한 물품은 모의 혼합비율이 50%이상의 비과세물건으로서 이를 신고하지 아니하여도 탈세가 아니라는 사실은 이를 주장하는 피고들에게 그 입증의 필요가 돌아간다고 할 것이다(위 과세처분을 대상으로 하여 그 취소를 구하는 항고소송에서 과세요건에 관한 입증책임이 과세관청에게 있는 것과는 다르다). </p><p>그런데 기록을 살펴보아도 원심이 적법히 배척한 증거외에 위 피고들 주장을 수긍할만한 증거를 발견할 수 없으므로 원심이 위 주장을 받아들이지 아니한 조치는 정당하고 위 논지는 이유없다.</p><p>  (3) 둘째로, 논지는 간접세에 속한 소비세인 혼방사의 수탁 제조반출에 대한 물품세 또는 직물류세는 현물을 보지 않고는 과세할 수 없는 것임에도 불구하고 갑 제19호증에 기재된 제조반출량 전부를 아무 근거없이 모의 혼합비율이 50% 이하인 과세물건으로 추정하여 추계과세를 한 것은 당연무효의 처분이라고 하나, 가사 과세관청이 과세자료로 삼은 갑제19호증의 기재만으로는 모의 혼합비율이 불분명함에도 불구하고 과세관청이 별다른 증거없이 그 혼합비율이 50% 이하인 과세물건이라고 단정한 잘못이 있다고 하여도 이러한 정도의 과세자료에 관한 사실오인의 하자만으로 위 물품세 및 직물류세 부과처분을 당연무효라고 볼 수는 없으니 위 논지도 이유없다.</p><p>  (4) 셋째로, 논지는 가사 이 사건 과세처분이 유효하다고 하여도 위법한 처분임에는 틀림없으니 소외 회사의 대표이사인 오종환이 이를 다투어 행정소송을 제기하였더라면 과세처분이 취소되거나 과세액이 대폭 감소될 수 있었을 터인데 이를 게을리한 과실이 있으므로 과실상계를 하여야 할 것임에도 불구하고 원심이 피고들의 과실상계 주장을 배척한 것은 위법하다는 것이다.</p><p>  1969.12.31까지 시행되던 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="물품세법|1|">물품세법 제1조 제1항 제3종 제3류 제3호</a></span>, 같은법시행령 별표 1 제3종 제3류 제3호 바목의 규정에 의하면 모 또는 반제모와 기타의 섬유를 혼방한 사류는 모 또는 반제모의 혼합비율이 기타의 섬유와 같거나 보다 낮은 것, 즉 혼합비율이 50% 이하인 것에 한하여 물품세과세대상으로 삼고 있으며, 또 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="직물류세법|1|">1970.1.1 이후 시행된 직물류세법 제1조 제1항 제1호</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="직물류세법|1|">제8호</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="직물류세법시행령|1|">같은법시행령 제1조 제1항 제1호</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="직물류세법시행령|1|">제8호</a></span>의 규정에 의하면 모의 혼합비율이 100분의 40을 기준으로 하여 세율의 차이를 두고 있음이 인정된다.
+      </p><p>  그러므로 과세관청은 모 또는 반제모와 기타의 섬유를 혼방한 혼방사중 위 물품세법이 규정한 혼합비율 이하의 것에 대하여만 과세할 수 있고 또 직물류세법이 정한 혼합비율을 기준으로 세율을 정하여야 하므로, 과세관청의 과세처분에 대하여 항고소송이 제기된 경우에 과세관청은 위와 같은 과세요건과 세율의 인정이 적법함을 입증할 책임이 있음은 더 말할 필요도 없다(피고인이 임무를 위배하여 탈세하였음을 전제로 손해배상을 청구하는 이 사건 민사소송절차에서 앞서 보는바와 같이 그 과세처분이 비과세물건에 대한 것으로서 탈세행위가 되지 않는다는 점에 대한 입증의 필요가 피고들에게 있는 것과는 다르다).</p><p>  그런데 기록(특히 갑 제11호증 기재와 원심증인 김길남의 증언)에 의하면 소관 세무서장은 소외 회사에 대한 이 사건 과세처분을 함에 있어서 소외 민유식이 작성한 집계표(갑 제9호증)에 의하여 제조반출량을 파악하고 위 집계표 기재상으로는 혼방비율이 전혀 나타나 있지 않음에도 불구하고 관계인이 세무조사에 협조하지 아니하여 조사가 어렵다는 이유로 그 기재량 전부를 혼방비율이 50%이하 또는 40%이하로 인정하여 과세대상으로 삼거나 세율을 적용한 사실이 인정되는 바, 막연하게 관계인이 세무조사에 협조하지 아니한다는 것만으로 조사불능이라고 하여 제조반출량 전량을 혼방비율 50% 또는 40% 이하라고 간주할 수 없다고 할 것이므로 만일 위 과세처분에 대하여 항고소송을 제기하였더라면 과세관청은 위 제조반출량 전량의 혼방비율이 과세요건 및 세율기준에 합치됨을 입증할 책임이 있고 이를 입증하지 못하는 한 위 과세처분은 위법함을 면할 수 없었다고 할 것이다.</p><p>  결국 소외 회사가 위 과세처분에 대하여 항고소송을 제기하고 위와 같은 위법성을 지적하여 다투었더라면 위 과세처분이 변경될 가능성이 전혀 없었던 것은 아니라고 보임에도 불구하고 기록에 의하면 소외 회사의 후임 대표이사인 소외 오종환은 위 과세처분에 대하여 부산지방국세청장에게 재조사청구를 한외에 그 이상의 불복절차를 취하지 아니하고 위 과세처분을 그대로 확정시킨 사실이 인정되므로 이러한 소외 회사측의 과실은 피고들의 배상책임을 정함에 있어서 마땅히 참작되어야 할 것이다.</p><p>  그럼에도 불구하고 원심은 소외 회사의 후임 대표이사가 행정소송을 제기하여 다투었다고 하여도 위 과세처분액이 원심인정액보다 감액되었으리라고 인정한 증거가 없다하여 피고의 과실상계 항변을 배척하고 말았으니 이는 과세처분의 위법과 관련된 과실상계의 법리를 오해하여 판결에 영향을 미친 잘못을 저지른 것이라고 하겠으니 이 점에 관한 논지는 이유있다.</p><p>  4. 같은 상고이유 제4점을 본다.</p><p>  (1) 
+        <span class="accrnt_txt">주식회사의 업무집행을 담당하지 아니한 평이사는 이사회의 일원으로서 이사회를 통하여 대표이사를 비롯한 업무담당이사의 업무집행을 감시하는 것이 통상적이긴 하나 평이사의 임무는 단지 이사회에 상정된 의안에 대하여 찬부의 의사표시를 하는데에 그치지 않으며 대표이사를 비롯한 업무담당이사의 전반적인 업무집행을 감시할 수 있는 것이므로, 업무담당이사의 업무집행이 위법하다고 의심할만한 사유가 있음에도 불구하고 평이사가 감시의무를 위반하여 이를 방치한 때에는 이로 말미암아 회사가 입은 손해에 대하여 배상책임을 면할 수 없다</span>고 할 것이다.
+      </p><p>  기록에 의하면 피고들 중 일부는 소외 회사의 업무집행을 담당하지 아니한 평이사들이긴 하나 평이사라는 이유만으로 그 책임을 면할 수 없을뿐 아니라 이들은 앞서 본바와 같이 소외 회사에게 이 사건에서 문제된 혼방사의 가공위탁을 한 위탁업체와 관련이 있는 자들로서 업무담당이사의 위 가공위탁과 관련된 부정한 업무집행을 알 수 있었던 사실이 인정되므로, 위와 같은 이사로서의 감시의무위반책임을 인정한 원심판단은 정당하고 이와 다른 견지에서 원심판결을 탓하는 논지는 이유없다.</p><p>  (2) 이 사건 당시 시행되던 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|412|">상법 제412조(1984.4.10 법률 제3724호로 개정되기 전의 규정)</a></span>에 의하면 감사의 감독권은 회계장부와 서류의 열람 또는 등사와 이사에 대한 회계보고의 요구 및 직무수행상 필요한 경우의 회사의 업무 및 재산상태의 조사등 회계감사에 국한되고 일반적인 업무감사권은 부여되어있지 않으나, 원심이 채용한 증거를 기록에 의하여 살펴보면 피고들 중 감사인 피고 임 상국과 같은 정상묵은 가공위탁업체인 동양모직주식회사 및 신방모방공업사의 경영에 관여한 자들로서 소외 회사가 수탁가공하여 반출하고도 신고를 은폐한 사실을 능히 알 수 있는 지위에 있어 회계감사권의 발동으로 이를 밝힐 수 있었는데도 위 감독의무를 위반한 사실이 넉넉히 인정되므로, 위 피고들에 대하여 감사로서의 감독의무 위반을 인정한 원심판단은 정당하고 이와 다른 견지에서 원심판결을 탓하는 논지는 역시 이유 없다.
+      </p><p>  5. 같은 상고이유 제7점을 본다.</p><p>
+        <span class="accrnt_txt">주식회사의 이사 또는 감사의 회사에 대한 임무해태로 인한 손해배상책임은 일반 불법행위책임이 아니라 위임관계로 인한 채무불이행책임이므로 그 소멸시효기간은 일반채무의 경우와 같이 10년이라고 보아야 할 것</span>이다.
+      </p><p>  같은 취지로 판단한 원심조치는 정당하고 불법행위로 인한 손해배상채권의 단기소멸시효기간이 적용되어야 한다는 전제아래 원심판결을 탓하는 논지는 이유없다.</p><p>  이밖에 논지는 채권소멸시효는 채권자 본인이 제소한 경우에만 중단되고 채권자를 대위하여 제소한 경우에는 중단의 효력이 없다고 주장하나, 근거없는 독자적 견해에 불과하여 채용할 수 없다.</p><p>  또 논지는 1967.6.1부터 1967.12.31까지의 사업년도분 신고은폐부분에 대하여는 이미 이 사건 제소전에 10년이 경과하였으므로 이 부분에 대한 손해배상채권은 소멸시효가 완성되었다고 주장하나, 원고가 주장하는 이 사건 손해배상청구권은 피고들의 임무해태로 말미암아 소외회사가 과세관청으로부터 물품세 및 직물류세를 부과징수당함으로써 입게된 손해에 대한 배상청구권이므로 그 소멸시효기간은 배상청구권을 행사할 수 있는 위 손해발생시부터 진행되는 것이고 당초의 신고은폐시점부터 진행되는 것은 아니므로 위 논지도 이유없다.</p><p>  6. 같은 상고이유 제8점을 본다.</p><p>  기록에 의하여 살펴보아도 소외 회사의 피고들에 대한 손해배상채권을 대위행사하는데에 불과한 원고에 대하여 채권자 또는 피해자로서 이 사건 손해발생에 기여한 어떠한 과실점을 인정할 여지가 없으므로 소론 과실상계 항변에 관한 판단유탈은 원심판결 결론에 영향이 없으니 이점 논지도 이유없다.</p><p>  7. 그러므로 원심판결을 위 3항 (4)에서 설시한 이유로 파기하고 다시 심리케 하고자 원심법원에 환송하기로 하여 관여법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이일규(재판장) 전상석 이회창 정기승 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

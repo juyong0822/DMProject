@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2007다3483 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2061966';
+var contIdEtc = '';
+var saNo = '2007다3483';
+var sngoNm = '선고';
+var saNm = '손해배상(기)등';
+try {
+	var sngoDay=('20100715' ? 
+			'20100715'.length==4 ? Date.parseExact('20100715','yyyy').toString('yyyy. M. d.') : 
+				'20100715'.length==6 ? Date.parseExact('20100715','yyyyMM').toString('yyyy. M. d.') : 
+					'20100715'.length==8 ? Date.parseExact('20100715','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007다3483 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007다3483';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2007다3483</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(13)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|638657">실제 인물이나 사건을 모델로 한 영화의 명예훼손책임 인정 여부에 관한 판단 기준 이수영 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|668642">모델영화의 명예훼손책임 인정여부에 관한 판단기준 박현경 江原大學校 比較法學硏究所</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|633969">영화ㆍ드라마로 인한 명예훼손 사건의 법리 김기수 서울南部地方法院</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632138">김인겸 언론사건에 관한 실무적 고찰 민사재판의 제문제 19권 / 한국사법행정학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636491">한위수 2010년도 국내 언론관계 판결동향 언론중재 31권 1호  / 언론중재위원회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|649914">김재형 2010년 민법 판례 동향 민사재판의 제문제 20권 / 한국사법행정학회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|630740">신현범 역사드라마가 허위사실을 적시하였는지 여부에 대한 판단 기준 대법원판례해설 84호  / 법원도서관  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563532">한국. 대법원 법원행정처 재판실무편람. 제42호:. 임시의 지위를 정하기 위한 가처분 재판실무편람 임시의 지위를 정하기 위한 가처분 재판실무편람 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|635873">민성철 허위ㆍ과장의 비교광고에 대한 경쟁자의 손해배상청구권의 성립요건에 대한 비교법적 검토 저스티스 123호  / 한국법학원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769268">유제민 언론기관의 보도에 대한 전략적 봉쇄소송(SLAPP)과 위축효과(Chilling Effect) 사법논집 . 제59집   / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638657">이수영 실제 인물이나 사건을 모델로 한 영화의 명예훼손책임 인정 여부에 관한 판단 기준 대법원판례해설 85호  / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633969">김기수 영화ㆍ드라마로 인한 명예훼손 사건의 법리 재판실무연구 2010 / 서울남부지방법원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563531">한국. 대법원 법원행정처 재판실무편람. 제6호:. 언론재판실무편람 언론재판실무편람 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631201">김윤명 스포츠게임에 있어서 퍼블리시티권에 관한 고찰 창작과 권리 61호  / 세창출판사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|763801">문재완 인터넷상 인격권 침해와 시간의 경과 : 유럽연합에서의 논의를 중심으로 외법논집 제39권 제1호 / 한국외국어대학교 법학연구소  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806093">박태일 저작물이 화체된 유체물의 폐기와 작가의 일반적 인격권 침해 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|97다19038">대법원 1998. 2. 27. 선고 97다19038 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2007도8411">대법원 2010. 4. 29. 선고 2007도8411 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007도8411">대법원 2010. 4. 29. 선고 2007도8411 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|97다19038">대법원 1998. 2. 27. 선고 97다19038 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|22|0|null">헌법 제22조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2005나68532">서울고법 2006. 12. 6. 선고 2005나68532 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 7. 15. 선고 2007다3483 판결</h2><p class="sub_title">[손해배상(기)등]〈영화 ‘실미도’ 사건〉[공2010하,1622]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 실제 인물이나 사건을 모델로 한 영화의 명예훼손책임 인정 여부에 관한 판단 기준</p>
+      <p></p>
+      <p>
+        </p><p>[2] 영화의 내용이 특정인의 명예를 훼손하는 내용을 담고 있는지 여부에 관한 판단 기준</p>
+      <p></p>
+      <p>
+        </p><p>[3] 영화 내용에 관하여 명예훼손이 성립하지 않는 경우에도, 그 광고·홍보 자체만을 들어 별도로 명예훼손책임을 물을 수 있는지 여부(원칙적 소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 실제 인물이나 사건을 모델로 한 영화가 허위의 사실을 적시하여 개인의 명예를 훼손하는 행위를 한 경우에도 그것이 공공의 이해에 관한 사항으로서 그 목적이 공공의 이익을 위한 것일 때에는 행위자가 적시된 사실을 진실이라고 믿었고 또 그렇게 믿을 만한 상당한 이유가 있으면 그 행위자에게 불법행위책임을 물을 수 없다고 할 것인바, 그와 같은 상당한 이유가 있는지 여부를 판단함에 있어서는 적시된 사실의 내용, 진실이라고 믿게 된 근거나 자료의 확실성, 표현 방법, 피해자의 피해 정도 등 여러 사정을 종합하여 판단하여야 하고, 특히 적시된 사실이 역사적 사실인 경우 시간이 경과함에 따라 점차 망인이나 그 유족의 명예보다는 역사적 사실에 대한 탐구 또는 표현의 자유가 보호되어야 하며 또 진실 여부를 확인할 수 있는 객관적 자료의 한계로 인하여 진실 여부를 확인하는 작업이 용이하지 아니한 점 등도 고려되어야 한다. 아울러 영리적 목적 하에 일반 대중을 관람층으로 예정하여 제작되는 상업영화의 경우에는 역사적 사실을 토대로 하더라도 영화제작진이 상업적 흥행이나 관객의 감동 고양을 위하여 역사적 사실을 다소간 각색하는 것은 의도적인 악의의 표출에 이르지 않는 한 상업영화의 본질적 영역으로 용인될 수 있으며, 또한 상업영화를 접하는 일반 관객으로서도 영화의 모든 내용이 실제 사실과 일치하지는 않는다는 전제에서 이러한 역사적 사실과 극적 허구 사이의 긴장관계를 인식·유지하면서 영화를 관람할 것인 점도 그 판단에 참작할 필요가 있다.</p>
+      <p></p><p>
+        </p><p>[2] 영화의 내용이 특정인의 명예를 훼손하는 내용을 담고 있는지의 여부는 당해 영화의 객관적인 내용과 아울러 일반의 관객이 보통의 주의로 영화를 접하는 방법을 전제로, 영화 내용의 전체적인 흐름, 이야기와 화면의 구성방식, 사용된 대사의 통상적인 의미와 그 연결 방법 등을 종합적으로 고려하여 그 영화 내용이 관객에게 주는 전체적인 인상도 그 판단 기준으로 삼아야 하고, 여기에다가 당해 영화가 내포하고 있는 보다 넓은 주제나 배경이 되는 사회적 흐름 등도 함께 고려하여야 한다.</p>
+      <p></p><p>
+        </p><p>[3] 실제 인물이나 역사적 사건을 모델로 한 영화라 하더라도 상업영화의 경우에는 대중적 관심을 이끌어 내고 이를 확산하기 위하여 통상적으로 광고·홍보행위가 수반되는바, 영화가 허위의 사실을 표현하여 개인의 명예를 훼손한 경우에도 행위자가 그것을 진실이라고 믿었고 또 그렇게 믿을 만한 상당한 이유가 있어 그 행위자에게 명예훼손으로 인한 불법행위책임을 물을 수 없다면 그 광고·홍보의 내용이 영화에서 묘사된 허위의 사실을 넘어서는 등의 특별한 사정이 없는 한 그 광고·홍보행위가 별도로 명예훼손의 불법행위를 구성한다고 볼 수 없다. 나아가 이러한 상업영화에 있어서 그 내용의 특정 부분을 적시하지 않은 채 진실이라고 광고·홍보하였다고 하더라도 특별한 사정이 없는 한 그 영화의 모든 내용이 진실이라는 의미라고 보아서는 아니 되고 전체적으로 역사적 사실에 바탕을 두었으며 극적 허구와의 조화 속에서 확인된 사실관계를 최대한 반영하였다는 취지로 이해하여야 할 것이다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span> [2]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span> [3]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다19038|판결" href="#//">대법원 1998. 2. 27. 선고 97다19038 판결</a></span>(공1998상, 865)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007도8411|판결" href="#//">대법원 2010. 4. 29. 선고 2007도8411 판결</a></span>(공2010상, 1059)            </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고 1외 5인 (소송대리인 법무법인(유한) 에이펙스 담당변호사 이상익)
+        
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        주식회사 시네마서비스외 2인 (소송대리인 법무법인 신우 담당변호사 김성기외 5인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2005나68532|판결" href="#//">서울고법 2006. 12. 6. 선고 2005나68532 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 원고들이 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 훈련병들의 출신 내지 경력에 관한 채증법칙 위반에 관하여</p><p>  이 부분 상고이유의 주장은 결국 사실심인 원심의 전권에 속하는 증거의 취사선택과 사실의 인정을 다투는 취지에 불과하므로 적법한 상고이유가 될 수 없다.</p><p>  2. 명예훼손에 관한 위법성조각사유 등에 관하여</p><p>  ‘모든 국민은 학문과 예술의 자유를 가진다’라고 규정한 대한민국 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|22|">헌법 제22조</a></span>가 보장하는 예술의 자유는 창작소재, 창작형태 및 창작과정 등에 대한 임의로운 결정권을 포함한 예술창작활동의 자유와 창작한 예술작품을 일반 대중에게 전시·공연·보급할 수 있는 예술표현의 자유 등을 포괄하는 것이지만, 이러한 예술의 자유가 무제한적인 기본권은 아니기 때문에 타인의 권리와 명예를 침해하여서는 아니 된다. 따라서 실제 인물이나 사건을 모델로 한 영화가 허위사실을 적시하여 역사적 사실을 왜곡하는 등의 방법으로 그 모델이 된 인물의 명예를 훼손하는 경우에는 비록 그것이 예술작품의 창작과 표현 활동의 영역에서 발생한 일이라 하더라도 그 행위자에게 명예훼손으로 인한 불법행위책임 등을 물을 수 있다(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007도8411|판결" href="#//">대법원 2010. 4. 29. 선고 2007도8411 판결</a></span> 참조).
+      
+      </p><p>  다만, 
+        
+        <span class="accrnt_txt">실제 인물이나 사건을 모델로 한 영화가 허위의 사실을 적시하여 개인의 명예를 훼손하는 행위를 한 경우에도 그것이 공공의 이해에 관한 사항으로서 그 목적이 공공의 이익을 위한 것일 때에는 행위자가 적시된 사실을 진실이라고 믿었고 또 그렇게 믿을 만한 상당한 이유가 있으면 그 행위자에게 불법행위책임을 물을 수 없다고 할 것인바, 그와 같은 상당한 이유가 있는지 여부를 판단함에 있어서는 적시된 사실의 내용, 진실이라고 믿게 된 근거나 자료의 확실성, 표현 방법, 피해자의 피해 정도 등 여러 사정을 종합하여 판단하여야 하고, 특히 적시된 사실이 역사적 사실인 경우 시간이 경과함에 따라 점차 망인이나 그 유족의 명예보다는 역사적 사실에 대한 탐구 또는 표현의 자유가 보호되어야 하며 또 진실 여부를 확인할 수 있는 객관적 자료의 한계로 인하여 진실 여부를 확인하는 작업이 용이하지 아니한 점 등도 고려되어야 한다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다19038|판결" href="#//">대법원 1998. 2. 27. 선고 97다19038 판결</a></span> 참조). 
+        
+        <span class="accrnt_txt">아울러 영리적 목적 하에 일반 대중을 관람층으로 예정하여 제작되는 상업영화의 경우에는 역사적 사실을 토대로 하더라도 영화제작진이 상업적 흥행이나 관객의 감동 고양을 위하여 역사적 사실을 다소간 각색하는 것은 의도적인 악의의 표출에 이르지 않는 한 상업영화의 본질적 영역으로 용인될 수 있으며, 또한 상업영화를 접하는 일반 관객으로서도 영화의 모든 내용이 실제 사실과 일치하지는 않는다는 전제에서 이러한 역사적 사실과 극적 허구 사이의 긴장관계를 인식·유지하면서 영화를 관람할 것인 점도 그 판단에 참작할 필요가 있다</span>.
+      
+      </p><p>  원심판결 이유에 의하면, 원심은 피고들이 이 사건 망인들을 포함한 훈련병들 전원에 대하여 살인범이나 사형수 또는 사회의 낙오자들로 표현한 것은 이 사건 망인들 또는 원고들의 명예를 훼손한 것으로 볼 여지가 있다고 하면서도, 그 판시와 같은 사정 즉, 이 사건 영화 제작 이전에 존재하던 실미도 사건에 관한 국회회의록, 언론보도, 고위공직자의 진술 등 공적인 자료에는 훈련병들의 신분에 관해 ‘공군 관리 하에 수용된 특수범 내지 죄수들’, ‘군특수범’, ‘사형수나 무기수로 극형에 처해져 복역하고 있던 죄수들’, ‘사형수 출신의 부대원들’, ‘범법자, 깡패들’이라고 되어 있었고, 이 사건 영화의 원작인 소설 ‘실미도’에도 ‘사형수나 무기수뿐만 아니라 뒷골목에서 곧바로 합류한 사람’, ‘모두가 사회의 암이고 쓰레기 인생들’이라고 각 기재되어 있는 점, 피고들이 이 사건 영화를 제작할 당시에는 정부에 의한 공식적인 사실 확인이 이루어지지 않아 훈련병들의 전과관계와 모집경위는 물론이고 그 신원마저 명확하게 알 수 없는 상황이었는데, 이러한 사정에서는 위에서 언급한 자료들 이외에 다른 사실 확인 방법이 없었을 것이라고 보이는 점, 피고들로서는 이 사건 망인들이 구체적으로 누구인지 여부조차 알 수 없었기 때문에 그 유족인 원고들의 진술을 쉽게 청취할 수도 없었고, 원고들로서도 이 사건 영화의 상영 이전에는 이 사건 망인들이 
+        
+        ○○부대 훈련병으로 모집되었다는 사실조차 모르고 있었던 점, 역사적 사실의 각색이 어느 정도 용인될 수밖에 없는 상업영화에 있어서 영화제작자에게 국가기관이나 언론기관이 행하는 것과 같은 정도의 충분한 사실 확인 작업을 요구하는 것은 불합리한 점, 피고들이 이 사건 영화에서 망인들의 실명을 직접적으로 거론하거나 그들과 극중 배역을 연관지을만한 직접적인 묘사를 하지는 않은 점, 이 사건 영화를 전체적으로 볼 때 훈련병들의 모집경위나 출신을 추하게 표현함으로써 그들에 대한 혐오나 멸시 등 비방의 의도를 드러내기보다는 남북 분단이라는 현실에서 권력에 의해 억울하게 희생된 사람들이라는 점을 부각시키기 위한 의도에서 훈련병들에 대해 호의적인 태도를 취하고 있는 점, 실미도 사건이 있은 지 30년 이상이 경과한 후에 제작된 이 사건 영화에 대하여 그 세부적인 내용이 역사적 진실과 일치하지 않는다는 이유로 인격권 침해 내지 명예훼손의 성립을 인정하게 된다면 역사적 사실에 대한 탐구 또는 표현·창작의 자유가 크게 위축되어 부당한 결과가 초래될 수 있는 점 등의 여러 사정을 종합하여, 피고들이 이 사건 영화 내용 중 문제되는 부분이 진실이라고 믿을 상당한 이유가 있었다고 봄이 상당하므로, 피고들에게는 불법행위책임이 인정되지 아니한다고 판단하였다.
+      
+      </p><p>  위와 같은 법리에 비추어 원심판결 이유를 살펴보면 원심의 위와 같은 판단은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 명예훼손에 관한 법리오해 등의 위법이 없다.</p><p>  3. ‘적기가’를 부르는 장면의 위법성에 관하여</p><p>
+        <span class="accrnt_txt">영화의 내용이 특정인의 명예를 훼손하는 내용을 담고 있는지의 여부는 당해 영화의 객관적인 내용과 아울러 일반의 관객이 보통의 주의로 영화를 접하는 방법을 전제로, 영화 내용의 전체적인 흐름, 이야기와 화면의 구성방식, 사용된 대사의 통상적인 의미와 그 연결 방법 등을 종합적으로 고려하여 그 영화 내용이 관객에게 주는 전체적인 인상도 그 판단 기준으로 삼아야 하고, 여기에다가 당해 영화가 내포하고 있는 보다 넓은 주제나 배경이 되는 사회적 흐름 등도 함께 고려하여야 한다</span>.
+      
+      </p><p>  원심판결 이유에 의하면, 원심은 이 사건 영화에서 훈련병들이 북한 군가인 ‘적기가’를 부르는 장면이 세 번 나오는데, 그 판시와 같은 사정, 즉 훈련병들이 북파공작을 목적으로 한 특수부대원들이었고 그러한 목적 하에서 북한 군가를 배워 알고 있었던 점, 이 사건 영화에서 훈련병들이 부르는 노래가 북한 군가인 ‘적기가’라는 것을 표시한 바가 없어서 일반 관객의 입장에서도 위 노래가 북한 군가임을 바로 알기는 어려웠던 것으로 보이는 점, 달리 훈련병들이 북한체제에 대하여 우호적인 모습을 보이는 장면은 없는 점, 이 사건 영화에서 훈련병들은 용공주의자가 아니라 오히려 그 반대되는 모습으로, 즉 부여된 임무를 수행한 후 이 사회에서 떳떳하게 살기를 원하는 모습으로 그려지고 있는 점, 이 사건 영화를 본 관객들은 훈련병들에 대한 경멸이나 혐오의 감정보다는 대체로 이들에 대한 추모의 감정을 드러내고 있는 점 등의 사정을 종합하여, 이 사건 영화에서 훈련병들이 북한 군가인 ‘적기가’를 부르는 장면을 삽입한 것은 명예훼손의 대상이 되는 사실의 묘사에 해당하지 않거나 훈련병들 또는 원고들의 명예를 훼손한 행위에 해당하지 않는다고 판단하였다.</p><p>  위와 같은 법리에 비추어 원심판결 이유를 살펴보면 이러한 원심의 판단은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 명예훼손에 관한 법리오해나 채증법칙 위반 등의 위법이 없다.</p><p>  4. 시작자막 및 광고·홍보의 위법성에 관하여</p><p>
+        <span class="accrnt_txt">실제 인물이나 역사적 사건을 모델로 한 영화라 하더라도 상업영화의 경우에는 대중적 관심을 이끌어 내고 이를 확산하기 위하여 통상적으로 광고·홍보행위가 수반되는바, 영화가 허위의 사실을 표현하여 개인의 명예를 훼손한 경우에도 행위자가 그것을 진실이라고 믿었고 또 그렇게 믿을 만한 상당한 이유가 있어 그 행위자에게 명예훼손으로 인한 불법행위책임을 물을 수 없다면 그 광고·홍보의 내용이 영화에서 묘사된 허위의 사실을 넘어서는 등의 특별한 사정이 없는 한 그 광고·홍보행위가 별도로 명예훼손의 불법행위를 구성한다고 볼 수 없다. 나아가 이러한 상업영화에 있어서 그 내용의 특정 부분을 적시하지 않은 채 진실이라고 광고·홍보하였다고 하더라도 특별한 사정이 없는 한 그 영화의 모든 내용이 진실이라는 의미라고 보아서는 아니 되고 전체적으로 역사적 사실에 바탕을 두었으며 극적 허구와의 조화 속에서 확인된 사실관계를 최대한 반영하였다는 취지로 이해하여야 할 것이다</span>.
+      
+      </p><p>  원심판결 이유에 의하면, 원심은 이 사건 영화에 관한 시작자막 및 광고·홍보가 영화에서 묘사된 내용 이외의 것을 담고 있지는 않다는 전제에서, 이 사건 영화의 내용에 관하여 피고들의 명예훼손이 성립하지 않는다고 보는 이상 위 시작자막과 광고·홍보 자체만을 들어 피고들에게 명예훼손으로 인한 불법행위책임을 묻기는 어렵다고 판단하였다.</p><p>  위와 같은 법리에 비추어 원심판결 이유를 살펴보면 이러한 원심의 판단은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 명예훼손에 관한 법리오해 등의 위법이 없다.</p><p>  5. 결론</p><p>  그러므로 상고를 모두 기각하고 상고비용은 패소자들이 부담하도록 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신영철(재판장) 박시환 안대희(주심) 차한성 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

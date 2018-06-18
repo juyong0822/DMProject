@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2005다16034 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2067595';
+var contIdEtc = '';
+var saNo = '2005다16034';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20071115' ? 
+			'20071115'.length==4 ? Date.parseExact('20071115','yyyy').toString('yyyy. M. d.') : 
+				'20071115'.length==6 ? Date.parseExact('20071115','yyyyMM').toString('yyyy. M. d.') : 
+					'20071115'.length==8 ? Date.parseExact('20071115','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2005다16034 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2005다16034';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2005다16034</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(8)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(7)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|609451">집단따돌림으로 인한 학생의 자살과 교사 등의 책임 남준희 全北大學校 出版部</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|589207">집단따돌림으로 인하여 피해 학생이 자살한 경우 자살의 결과에 대하여 교장이나 교사에게 보호감독의무 위반 책임을 묻기 위한 요건 및 그 판단 기준 지영난 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665607">김창구 미성년자의 불법행위에 대한 감독자 책임 : 민법 제755조의 개정(안)을 중심으로 재산법연구 27권 3호  / 법문사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|589207">지영난 집단따돌림으로 인하여 피해 학생이 자살한 경우, 자살의 결과에 대하여 교장이나 교사에게 보호감독의무 위반 책임을 묻기 위한 요건 및 그 판단 기준 대법원판례해설 71호 (2008.07) / 법원도서관  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662645">제철웅 성년후견인의 민법 제755조의 책임 : 그 정당성에 대한 비판적 검토 . 법조  (2012. 7) / 법조협회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|594852">이우석 집단 따돌림과 학교의 정보제공의무 경성법학 17집 1호  / 경성대학교 법학연구소  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|524605">사법발전재단 청소년이 꼭 알아두어야할 법원과 재판이야기 : 세상을 움직인 재판 . 3 사법발전재단  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|658172">김창구 학교폭력에 대한 감독자의 책임과 교권의 확립 법률신문 4012호  / 법률신문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|737515">이은영 우리나라 불법행위법의 최근 동향 법학연구 통권 제38집 / 전북대학교 출판부  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|601119">박진애 학교사고에 대한 지방자치단체의 책임 : 서울특별시가 설립한 공립학교에서의 살해사건 성균관법학 20권 3호  / 성균관대학교 비교법연구소  2008 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|755|0|null">민법 제755조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|756|0|null">민법 제756조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|755|0|null">민법 제755조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|756|0|null">민법 제756조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다13646">대법원 1993. 2. 12. 선고 92다13646 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다44205">대법원 2000. 4. 11. 선고 99다44205 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2004나46689">서울고법 2005. 1. 26. 선고 2004나46689 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2007. 11. 15. 선고 2005다16034 판결</h2><p class="sub_title">[손해배상(기)]〈집단따돌림 자살 사건〉[공2007하,1900]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 이른바 집단따돌림의 의미  </p>
+      <p></p>
+      <p>
+        </p><p>[2] 집단따돌림으로 인하여 피해 학생이 자살한 경우, 자살의 결과에 대하여 교장이나 교사에게 보호감독의무 위반 책임을 묻기 위한 요건 및 그 판단 기준</p>
+      <p></p>
+      <p>
+        </p><p>[3] 중학교 3학년 여학생이 급우들 사이의 집단따돌림으로 인하여 자살한 사안에서, 따돌림의 정도와 행위의 태양, 피해 학생의 평소 행동 등에 비추어 담임교사에게 피해 학생의 자살에 대한 예견가능성이 있었다고 인정하지 아니하여 자살의 결과에 대한 손해배상책임을 부정한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 집단따돌림이란 학교 또는 학급 등 집단에서 복수의 학생들이 한 명 또는 소수의 학생들을 대상으로 의도와 적극성을 가지고, 지속적이면서도 반복적으로 관계에서 소외시키거나 괴롭히는 현상을 의미한다. </p>
+      <p></p><p>
+        </p><p>[2] 집단따돌림으로 인하여 피해 학생이 자살한 경우, 자살의 결과에 대하여 학교의 교장이나 교사의 보호감독의무 위반의 책임을 묻기 위하여는 피해 학생이 자살에 이른 상황을 객관적으로 보아 교사 등이 예견하였거나 예견할 수 있었음이 인정되어야 한다. 다만, 사회통념상 허용될 수 없는 악질, 중대한 집단따돌림이 계속되고 그 결과 피해 학생이 육체적 또는 정신적으로 궁지에 몰린 상황에 있었음을 예견하였거나 예견할 수 있었던 경우에는 피해 학생이 자살에 이른 상황에 대한 예견가능성도 있는 것으로 볼 수 있을 것이나, 집단따돌림의 내용이 이와 같은 정도에까지 이르지 않은 경우에는 교사 등이 집단따돌림을 예견하였거나 예견할 수 있었다고 하더라도 이것만으로 피해 학생의 자살에 대한 예견이 가능하였던 것으로 볼 수는 없으므로, 교사 등이 집단따돌림 자체에 대한 보호감독의무 위반의 책임을 부담하는 것은 별론으로 하고 자살의 결과에 대한 보호감독의무 위반의 책임을 부담한다고 할 수는 없다.</p>
+      <p></p><p>
+        </p><p>[3] 중학교 3학년 여학생이 급우들 사이의 집단따돌림으로 인하여 자살한 사안에서, 따돌림의 정도와 행위의 태양, 피해 학생의 평소 행동 등에 비추어 담임교사에게 피해 학생의 자살에 대한 예견가능성이 있었다고 인정하지 아니하여 자살의 결과에 대한 손해배상책임은 부정하면서, 다만 학생들 사이의 갈등에 대한 대처를 소홀히 한 과실을 인정하여 교사의 직무상 불법행위로 발생한 집단따돌림의 피해에 대하여 지방자치단체의 손해배상책임을 긍정한 사례. </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|755|">민법 제755조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">제756조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|755|">민법 제755조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|756|">제756조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인 겸 상고인】
+      
+        
+          원고 (소송대리인 변호사 박민재외 2인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인 겸 피상고인】
+      
+        강원도 (소송대리인 법무법인 아시아 담당변호사 박우순)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2004나46689|판결" href="#//">서울고법 2005. 1. 26. 선고 2004나46689 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  원고의 상고를 기각한다. </p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 피고의 상고이유 제1점에 대하여</p><p>
+        <span class="accrnt_txt">집단따돌림이란 학교 또는 학급 등 집단에서 복수의 학생들이 한 명 또는 소수의 학생들을 대상으로 의도와 적극성을 가지고, 지속적이면서도 반복적으로 관계에서 소외시키거나 괴롭히는 현상을 의미한다고 할 것인바,</span> 원심이 그 채택 증거들을 종합하여 망인이 
+        소외 1 등으로부터 집단따돌림을 당하였다고 인정한 것은 옳고, 거기에 상고이유 주장과 같은 채증법칙 위반, 심리미진 등의 위법이 있다고 할 수 없다.
+      </p><p>  2. 피고의 상고이유 제2, 3점에 대하여</p><p>  가. 지방자치단체가 설치·경영하는 학교의 교장이나 교사는 학생을 보호감독할 의무를 지는 것이지만, 이러한 보호감독의무는 교육법에 따라 학생을 친권자 등 법정 감독의무자에 대신하여 감독을 하여야 하는 의무로서 학교 내에서의 학생의 전 생활관계에 미치는 것은 아니고 학교에서의 교육활동 및 이와 밀접불가분의 관계에 있는 생활관계에 한하며, 그 의무 범위 내의 생활관계라고 하더라도 교육활동의 때와 장소, 가해자의 분별능력, 가해자의 성행, 가해자와 피해자와의 관계 기타 여러 사정을 고려하여 사고가 학교생활에서 통상 발생할 수 있다고 하는 것이 예측되거나 또는 예측가능성(사고발생의 구체적 위험성)이 있는 경우에 한하여 교장이나 교사는 보호감독의무 위반에 대한 책임을 진다고 할 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다13646|판결" href="#//">대법원 1993. 2. 12. 선고 92다13646 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다44205|판결" href="#//">대법원 2000. 4. 11. 선고 99다44205 판결</a></span> 등 참조).
+      </p><p>  따라서 
+        <span class="accrnt_txt">집단따돌림으로 인하여 피해 학생이 자살한 경우, 자살의 결과에 대하여 학교의 교장이나 교사의 보호감독의무 위반의 책임을 묻기 위하여는 피해 학생이 자살에 이른 상황을 객관적으로 보아 교사 등이 예견하였거나 예견할 수 있었음이 인정되어야 한다. 다만 사회통념상 허용될 수 없는 악질, 중대한 집단따돌림이 계속되고 그 결과 피해 학생이 육체적 또는 정신적으로 궁지에 몰린 상황에 있었음을 예견하였거나 예견할 수 있었던 경우에는 피해 학생이 자살에 이른 상황에 대한 예견가능성도 있는 것으로 볼 수 있을 것이나, 집단따돌림의 내용이 이와 같은 정도에까지 이르지 않은 경우에는 교사 등이 집단따돌림을 예견하였거나 예견할 수 있었다고 하더라도 이것만으로 피해 학생의 자살에 대한 예견이 가능하였던 것으로 볼 수는 없으므로, 교사 등이 집단따돌림 자체에 대한 보호감독의무 위반의 책임을 부담하는 것은 별론으로 하고 자살의 결과에 대한 보호감독의무 위반의 책임을 부담한다고 할 수는 없다.</span>
+      </p><p>  나. 원심이 적법하게 인정한 사실에 의하면, 
+        소외 1, 
+        2, 
+        3과 망인 등 4인은 같은 반 친구들로 2001. 3.경부터 배타적으로 어울리는 작은 집단을 형성하여 지내다가 
+        소외 1이 위 집단을 주도하면서 망인을 집단에서 배척하였다가 다시 끼워주는 것을 되풀이하였고, 여름방학 이후부터는 망인이 말을 걸어도 아무런 대답을 하지 않는 등 망인을 의도적으로 배제하고, 망인이 교복을 줄여 입은 모습을 보면서 놀리거나 점심시간에 학교급식소에서 망인이 같은 식탁에 앉아 식사하려고 할 때 다른 식탁으로 옮겨 피하기도 한 사실, 이런 상황에서 2001. 9. 24. 망인의 필통이 없어지자 망인은 
+        소외 1과 
+        소외 2가 이를 숨긴 것으로 알고 다른 학생들 앞에서 이들에게 따졌다가 자신의 오해로 밝혀져 이들에게 사과하였으나 이들이 망인의 사과를 받아주지 않고 오히려 망인을 몰아세움으로써 
+        소외 1 등과의 관계가 더욱 악화된 사실, 위와 같은 일이 발생한 후 망인은 2001. 9. 26.경에는 교복 대신 검은 스웨터를 입고 오고 자율학습 시간에 자주 교실을 드나드는 등 상당히 불안한 모습을 보였으며, 
+        소외 3에게 자신과 함께 놀아 줄 것을 요청하였는데 이를 알게 된 
+        소외 1, 
+        2로부터 ‘
+        (이름 1 생략)가 니 쫑이냐’라는 말과 함께 면박을 당한 사실, 망인은 2001. 9. 27. 등교길에 다른 반 친구에게 전날 
+        소외 1 등으로부터 면박 당한 일을 이야기하면서 ‘왕따 당하니까 괴롭고 힘들다. 
+        (이름 2 생략)이가 하나가 니 쫑이냐고 말하여 상처받았다’고 말한 사실, 같은 날 점심시간에 
+        소외 1과 
+        소외 2가 다른 학생들에게 ‘망인의 성격이 이상하다, 같이 놀지 마라’며 학교급식소로 몰려가 자신만이 남게 되자, 어머니인 원고에게 전화하여 ‘엄마, 나 사실은 왕따야. 전학시켜 줘. 죽을 것 같아’라고 울면서 이야기한 사실, 같은 날 하교길에 
+        소외 1과 
+        소외 2가 망인에게 약을 올리며 몰아세우기도 했는데, 망인은 귀가한 직후인 같은 날 17:00경 자신이 살던 아파트에서 투신하여 자살한 사실, 망인의 어머니인 원고는 망인이 3학년에 들어와 1학기부터 
+        소외 1 등과의 교우관계로 문제가 있는 것으로 생각하여 망인에게 필요하면 학교에 도움을 요청하겠다고 하였으나 망인이 스스로 해결하겠다고 하여 달리 담임교사 등과 상담하지 않았고, 망인이 자살 당일 전화할 때까지 망인이 집단따돌림을 당하고 있고 이로 인하여 심한 고통을 받고 있음을 알지 못하였던 사실, 망인의 담임교사는 2001. 3.경 
+        (학교명 생략)중학교에서 폭행사건으로 문제를 일으키고 전학 온 
+        소외 1에 대하여 1교사 1학생 결연 상담 제도에 따라 
+        소외 1의 학교생활 전반에 관하여 상담지도를 하였는데, 망인이 학기초에 
+        소외 1과 급속히 가까워지자 이를 염려하여 망인에게 시간을 두면서 천천히 사귈 것을 권유하기도 한 사실, 담임교사는 
+        소외 1 등이 망인과 집단을 형성하여 친밀하게 지내면서 망인을 집단에서 배척하였다가 다시 끼워주는 등의 갈등이 있음을 알았으나 학창 시절 교우관계에서 겪는 과정의 일부라고 생각하여 별다른 조치를 취하지는 않았고, 필통분실 사건에 대하여도 알지 못하였으나, 2001. 9. 26. 망인이 상당히 불안한 상태에 있다고 느껴 망인에 대한 상담이 필요하다고 판단하였고, 2001. 9. 27. 임원회의에 참석한 원고로부터 망인이 그날 점심 때 울면서 전화한 사정을 듣게 되자, 
+        소외 1 등이 봄부터 망인을 집단에 끼워주었다 빼놨다 하는 것을 알고 있었는데 그러면서도 잘 지낼테니 걱정하지 말아라, 자신이 잘 이야기해 보겠다고 한 사실, 망인은 담임교사와 자주 상담을 하였으나 주로 공부문제에 관하여만 상담하였을 뿐 교우관계에 관한 어려움을 이야기 한 일은 없는 사실을 알 수 있다.
+      </p><p>  다. 이러한 사실관계를 위 법리에 비추어 살펴보면, 망인의 자살에 직접적인 계기가 된 필통분실 사건 이후 
+        소외 1 등의 망인에 대한 행동은, 망인이 필통을 감춘 것으로 오해한 데 대한 사과를 받아주지 않고 망인을 계속 비난한 것으로 이를 사회통념상 허용될 수 없는 악질, 중대한 따돌림에 이를 정도라고는 보기 어렵고, 그 이전에 망인을 집단에서 배제한 행위도 빈번하지는 않았던 것으로 보이며, 행위의 태양도 폭력적인 방법에 의하지 않고 무관심으로 소외시키는 것이 주된 것이었던 점, 망인의 행동에 관하여 보면, 자살 전날 교복 대신 검정 스웨터를 입고 등교하여 불안한 모습을 보인 점이 평소와 다른 행동으로 보이지만, 결석이나 지각을 하지도 않고, 가정에서도 특별히 우울한 모습을 엿볼 수 없었던 점 등에 비추어, 당시 사회적으로 학생들의 집단따돌림으로 인한 피해 사례들이 보고되고 있었다고 하더라도 이 사건 사고 발생 당시 담임교사가 망인의 자살에 대한 예견가능성이 있었다고 인정하기는 어렵다고 할 것이다.
+      </p><p>  다만, 앞서 본 사실에 의하면, 담임교사로서는 망인이 
+        소외 1 등과 친밀한 관계를 맺고 싶어함에도 이러한 관계를 맺지 못하고 집단에서 배척되었다가 끼워졌다 하는 등의 갈등이 있음을 알고 있었음에도 이러한 일들이 학창 시절 교우관계에서 발생할 수 있는 일상적인 문제로 생각하고 이에 대한 대처를 소홀히 한 과실을 인정할 수 있으므로, 그의 직무상 불법행위로 발생한 집단따돌림의 피해에 대하여는 그가 소속한 지방자치단체인 피고가 손해배상책임을 부담한다고 할 것이다.
+      </p><p>  그럼에도 불구하고, 원심은 위와 같은 집단따돌림으로 인한 피해를 넘어서서 자살의 결과에 대하여까지도 피고에게 손해배상책임을 인정하였으니, 원심판결에는 교사의 보호감독의무 위반 책임에 관한 법리를 오해한 위법이 있고, 이는 판결에 영향을 미쳤음이 분명하다. 상고이유 중 이 점을 지적하는 부분은 이유 있다.</p><p>  3. 원고의 상고이유에 대하여</p><p>  원고의 상고이유 주장은 피고에게 망인의 자살 결과에 대한 손해배상책임이 있음을 전제로 하여 원심이 피고의 책임을 전체 손해의 30%로 제한함으로써 책임을 너무 적게 인정하였다는 것이나, 위에서 본 바와 같은 이유로 피고에게 망인의 자살 결과에 대한 손해배상책임을 인정한 원심판결을 파기하는 이상 이와 다른 전제에 선 위 상고이유의 주장은 나아가 판단할 필요없이 받아들일 수 없다.</p><p>  4. 결 론</p><p>  그러므로 원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하며 원고의 상고를 기각하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김지형(재판장) 고현철(주심) 양승태 전수안 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2008나89189 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1985402';
+var contIdEtc = '';
+var saNo = '2008나89189';
+var sngoNm = '선고';
+var saNm = '진료비지급';
+try {
+	var sngoDay=('20090827' ? 
+			'20090827'.length==4 ? Date.parseExact('20090827','yyyy').toString('yyyy. M. d.') : 
+				'20090827'.length==6 ? Date.parseExact('20090827','yyyyMM').toString('yyyy. M. d.') : 
+					'20090827'.length==8 ? Date.parseExact('20090827','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + '  ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008나89189';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2008나89189</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(15)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(7)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(34)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|628597">최규진 국민건강보험법 제52조 제1항의 해석에 관한 판례 동향 법조 통권652호  / 법조협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|640581">선정원 과잉진료와 과잉원외처방으로 인한 부당이득의 환수처분과 손해배상청구 행정법연구 29호  / 행정법이론실무학회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761562">현두륜 요양급여기준의 법적 성격과 요양급여기준을 벗어난 원외처방행위의 위법성 : 대법원 2013. 3. 28. 선고 2009다78214 판결을 중심으로 의료법학 제15권 제1호 / 대한의료법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|736719">노호창 공적 건강보장에 있어서의 자유제한과 그 정당성 사회보장법연구 2014 제3권 제1호  / 서울대 사회보장법연구회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|720495">김정중 요양급여기준을 위반한 원외(원외) 처방전 발급행위의 위법성 등 대법원판례해설 제95호  / 법원도서관  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006두6642">대법원 2006. 12. 8. 선고 2006두6642 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국민건강보험법|52|0|null">국민건강보험법 제52조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="국민건강보험법|52|0|null">국민건강보험법 제52조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="국민건강보험법|39|0|null">국민건강보험법 제39조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|5|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제5조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|10|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제10조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|11|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제11조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="국민건강보험법|39|0|null">국민건강보험법 제39조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="국민건강보험법|52|0|null">국민건강보험법 제52조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|5|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제5조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|10|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제10조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|11|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제11조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="민법|492|0|null">민법 제492조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="민법|741|0|null">민법 제741조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005두7037">대법원 2005. 9. 29. 선고 2005두7037 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006두6642">대법원 2006. 12. 8. 선고 2006두6642 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006두6642">위 대법원 2006두6642</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울행정법원|2004구합18108">서울행정법원 2004구합18108 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006두6642">대법원 2006. 12. 8. 선고 2006두6642 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2006헌마417">헌법재판소 2007. 8. 30. 선고 2006헌마417 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99두12267">대법원 2001. 7. 13. 선고 99두12267 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|40|0|null">국민건강보험법 제40조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|55|0|null">국민건강보험법 제55조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|39|0|null">국민건강보험법 제39조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|39|0|null">국민건강보험법 제39조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="의료보험법|45|0|19990208">의료보험법(구) 제45조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민의료보험법|44|0|19990208">국민의료보험법(구) 제44조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|52|0|null">국민건강보험법 제52조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|52|0|null">국민건강보험법 제52조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|79|0|null">국민건강보험법 제79조 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|52|0|null">국민건강보험법 제52조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|162|0|null">민법 제162조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|40|0|null">국민건강보험법 제40조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|33|0|null">국민건강보험법 제33조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|35|0|null">국민건강보험법 제35조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|78|0|null">국민건강보험법 제78조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|70|0|null">국민건강보험법 제70조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|85|0|null">국민건강보험법 제85조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|36|0|null">헌법 제36조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험법|1|0|null">국민건강보험법 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|10|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제10조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|11|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제11조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국민건강보험요양급여의기준에관한규칙|5|0|null">국민건강보험 요양급여의 기준에 관한 규칙 제5조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울서부지방법원|2007가합8006">서울서부지법 2008. 8. 28. 선고 2007가합8006
+					판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><input type="hidden" class="contImagePath" name="img1" value="10f0410dr001-01.gif" /><div class="tit_area" id="bmunStart"><h2>서울고법 2009. 8. 27. 선고 2008나89189 판결 </h2><p class="sub_title">[진료비지급] 상고[각공2010상,543]</p></div><div class="page_area"><div class="page">
+		<span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+			<p>
+				</p><p>
+					[1] 국민건강보험공단이 의료기관의 과잉 원외처방을 이유로
+					<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">국민건강보험법 제52조 제1항</a></span>
+					또는
+					<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">제2항</a></span>
+					에 근거하여 의료기관으로부터 약제비용에 상당하는 금액을 징수한 처분의 효력(=당연무효)
+				</p>
+			<p></p>
+			<p>
+				</p><p>[2] 요양기관이 요양급여기준에 위배되는 원외처방을 한 경우, 국민건강보험공단에
+					대하여 불법행위가 성립하는지 여부(원칙적 적극)</p>
+			<p></p>
+			<p>
+				</p><p>[3] 의료기관이 요양급여기준에 위배되는 원외처방을 하였음을 이유로
+					국민건강보험공단이 약제비 상당의 요양급여비용을 의료기관으로부터 징수한 사안에서, 그 징수처분은 당연무효이므로 의료기관은
+					공단에 대하여 부당이득반환채권을 가지게 되나, 요양급여기준에 위배되는 원외처방을 한 의료기관으로서는 공단에 대하여
+					불법행위에 기한 손해배상책임을 부담하므로, 공단은 의료기관의 부당이득반환청구에 대하여 위 손해배상채권으로 상계할 수
+					있다고 한 사례</p>
+			<p></p>
+		
+		<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+				</p><p>
+					[1]
+					<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">국민건강보험법 제52조 제1항</a></span>
+					에 의한 부당이득의 징수 대상자는 사위 기타 부당한 방법으로 ‘보험급여비용을 받은 요양기관’인바, 설령 의료기관이 과잉
+					원외처방을 함으로써 국민건강보험공단의 비용지출을 증가시켰다고 하더라도 그로 인하여 공단으로부터 약제비 상당의
+					보험급여비용을 받은 요양기관은 약국 등 제3자이지 의료기관이 아니고, 과잉 원외처방과 관련하여 약국 등 보험급여비용을
+					받은 요양기관이 스스로 사위 기타 부당한 방법으로 급여비용을 받은 것도 아니므로, 의료기관은 물론이고 약국 등 보험급여를
+					받은 자 역시 위 조항에 근거한 징수의무를 부담한다고 볼 수 없다. 나아가 의료기관이 과잉 원외처방을 하였다는 것만으로
+					허위의 진단을 한 것으로 볼 수 없어
+					<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">같은 법 제52조 제2항</a></span>
+					에 따라 보험급여를 받은 자와 연대하여 징수의무를 부담한다고 볼 수도 없다. 따라서 공단이
+					<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">같은 법 제52조 제1항</a></span>
+					또는
+					<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">제2항</a></span>
+					에 근거하여 의료기관으로부터 위 약제비용에 상당하는 금액을 징수한 처분은 법률상 근거가 없을 뿐만 아니라 그 하자가
+					중대하고 명백하여 당연무효이다.
+				</p>
+			<p></p><p>
+				</p><p>
+					[2] 국민건강보험법은 보험급여의 기준을 법으로 정하여 건강보험제도 자체의 목적을 위하여 설정된 일정한 범위 내에서만
+					건강보험 요양급여를 인정하고 요양급여의 범위나 방법에 대한 판단에 있어 의료기관의 재량권을 제한하고 있고, 요양급여기준은
+					법이 요양급여의 기준을 법정하도록 한 것과 마찬가지로 불필요한 요양급여를 방지하고 요양급여와 비용의 합리성을 확보하여
+					한정된 건강보험재정으로 최대한의 건강보험 혜택을 부여하고자 하는 것인바, 결국 위 요양급여기준은
+					<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|39|">국민건강보험법 제39조 제2항</a></span>
+					의 위임에 따른 것으로 법률상 위임근거가 있는 법규명령이고 강행규정으로서의 성질을 가진다. 따라서 요양기관이
+					요양급여기준에 정한 바에 따르지 아니하고 임의로 이에 어긋나는 원외처방을 하는 것은, 그것이 환자에 대한 최선의 진료를
+					위하여 의학적 근거와 임상적 경험에 바탕을 둔 것으로서 정당행위에 해당한다는 등의 특별한 사정이 없는 한, 일응 위법성이
+					인정된다.
+				</p>
+			<p></p><p>
+				</p><p>[3] 의료기관이 요양급여기준에 위배되는 원외처방을 하였음을 이유로
+					국민건강보험공단이 약국에게 지급한 약제비 상당의 요양급여비용을 의료기관으로부터 징수한 사안에서, 그 징수처분은
+					당연무효이므로 의료기관은 공단에 대하여 부당이득반환채권을 가지게 되나, 요양급여기준에 위배되는 원외처방을 한
+					의료기관으로서는 공단에 대하여 불법행위에 기한 손해배상책임을 부담하므로, 공단은 의료기관의 부당이득반환청구에 대하여 위
+					손해배상채권으로 상계할 수 있다고 한 사례.</p>
+			<p></p>
+		<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>				[1]				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">국민건강보험법 제52조					제1항</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">제2항</a></span>				[2]				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|39|">국민건강보험법 제39조					제2항</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|5|">국민건강보험					요양급여의 기준에 관한 규칙 제5조 제1항</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|10|">제10조</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|11|">제11조</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>				[3]				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|39|">국민건강보험법 제39조					제2항</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">제52조</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|5|">국민건강보험					요양급여의 기준에 관한 규칙 제5조 제1항</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|10|">제10조</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|11|">제11조</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|492|">민법 제492조</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|741|">제741조</a></span>				,				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>			</p>
+		<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">				[1]				<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006두6642|판결" href="#//">대법원 2006. 12. 8. 선고 2006두6642 판결</a></span>			</p></span><span class="space"></span>
+	<span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+		<span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+			【원고, 피항소인】
+			
+				서울대학교병원 (소송대리인 변호사 현두륜)
+			
+		</strong></p>
+		<span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+			【피고, 항소인】
+			
+				국민건강보험공단 (소송대리인 법무법인 광장 담당변호사 권광중)
+			
+		</strong></p>
+		<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+			【제1심판결】
+			
+				<span id="link"><a name="linkContPanre" title="새창" type="서울서부지방법원|2007가합8006|판결" href="#//">서울서부지법 2008. 8. 28. 선고 2007가합8006
+					판결</a></span>
+			<span class="space"></span>
+		</strong></p>
+		<span class="space"></span>
+			【변론종결】
+			<p>2009. 7. 16.</p>
+		
+		<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주 문】</strong></p><p>1. 제1심판결 중 피고에 대하여 원고에게 186,710원 및 이에 대한 2007.
+				8. 1.부터 2009. 8. 27.까지는 연 5%, 그 다음 날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한
+				금원을 초과하여 지급을 명한 피고 패소 부분을 취소하고, 그 취소 부분에 해당하는 원고의 청구를 기각한다.</p><p>2. 피고의 나머지 항소를 기각한다.</p><p>3. 가. 가지급물반환신청에 기하여 원고는 피고에게 4,106,512,164원 및
+				이에 대하여 2008. 12. 27.부터 2009. 8. 27.까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연
+				20%의 각 비율로 계산한 금원을 지급하라.</p><p> 나. 피고의 나머지 가지급물반환신청을 기각한다.</p><p> 다. 위 가항은 가집행할 수 있다.</p><p>4. 소송총비용(가지급물반환 신청비용 포함) 중 95%는 원고가, 나머지는 피고가 각
+				부담한다.</p>
+		
+			【청구취지, 항소취지 및 가지급물반환신청취지】
+			<p>1. 청구취지</p>
+			<p>피고는 원고에게 4,106,712,020원 및 그 중 1,755,550원에 대하여는
+				2002. 1. 1.부터, 93,134,840원에 대하여는 2003. 1. 1.부터, 1,228,398,470원에 대하여는
+				2004. 1. 1.부터, 751,592,430원에 대하여는 2005. 1. 1.부터, 1,550,309,000원에
+				대하여는 2006. 1. 1.부터, 171,981,650원에 대하여는 2007. 1. 1.부터, 309,540,080원에
+				대하여는 2007. 8. 1.부터, 각 이 사건 소장 부본 송달일(2007. 8. 10.)까지는 연 5%, 그 다음 날부터
+				다 갚는 날까지는 연 20%의 각 비율로 계산한 금원을 지급하라.</p>
+			<p>2. 항소취지</p>
+			<p>제1심판결을 취소한다. 원고의 청구를 기각한다.</p>
+			<p>3. 가지급물반환신청취지</p>
+			<p>원고는 피고에게 4,106,712,020원 및 이에 대하여 2008. 12.
+				27.부터 2009. 8. 27.까지는 연 5%, 그 다음 날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 금원을
+				지급하라.</p>
+		
+		<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이 유】</strong></p><p> 1. 인정 사실</p><p> 다음의 각 사실은 당사자 사이에 다툼이 없거나, 갑 제1호증의 1, 2, 을
+				제15호증, 을 제16호증의 4, 을 제23호증의 1 내지 3의 각 기재에 변론 전체의 취지를 종합하여 인정할 수 있다.</p><p>
+				가. 원고는 서울대학교병원 설치법에 의하여 설립된
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|40|">국민건강보험법(이하
+					‘법’이라고만 한다) 제40조 제1항 제1호</a></span>
+				소정의 요양기관이고, 피고는 법 제3장의 규정에 따라 설립된 건강보험의 보험자이며, 건강보험심사평가원(이하
+				‘심사평가원’이라 한다)은 요양급여비용을 심사하고 요양급여의 적정성을 평가하기 위하여
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|55|">법 제55조</a></span>
+				에 의하여 2000. 6. 29. 설립된 법인이다.
+			</p><p> 나. 법상 건강보험사업의 주체는 보험자인 피고(보험급여의 관리, 보험급여비용 지급,
+				징수금 부과 및 징수), 의료공급자인 요양기관(의약분업으로 의료법에 의하여 개설된 의료기관과 약사법에 의한 약국이 구분된
+				요양기관으로 법상 당연 지정되어 있다), 가입자(수급권자)인 국민의 3각 관계로 이루어져 있다.</p><p>
+				다. 보험급여 지급은, 가입자가 요양기관을 방문하여 진료를 받은 후, 요양기관이 심사평가원에 요양급여비용에 대한 심사청구를
+				하고, 심사평가원은 그 청구된 내용이
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|39|">법 제39조 제2항</a></span>
+				,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|39|">제3항</a></span>
+				의 위임에 따라 제정된 ‘국민건강보험 요양급여의 기준에 관한 규칙’ 및 보건복지가족부장관이 고시한 ‘요양급여의 적용기준 및
+				방법에 관한 세부사항’(이하 위 규칙과 고시를 합하여 ‘요양급여기준’이라 한다) 등의 기준에 부합하는지 여부를 심사하여
+				지급금액을 확정하여 심사결과를 요양기관 및 피고에게 통보하고, 피고는 이에 따라 요양기관에게 요양급여비용을 지급하는
+				과정으로 이루어져 있다. 이 사건과 관련된 법, 시행규칙 및 요양급여기준 규정은 [별지 1] 기재와 같다.
+			</p><p>
+				라. 과거 의약분업이 실시되기 전에는 의료기관이 진료·처방·조제까지 실시하였으므로 의료기관이 국민의료보험관리공단에 약제비에
+				관한 요양급여지급청구를 하였고, 국민의료보험관리공단은 약제비 청구가 법령의 기준에 위반된다고 판단되는 경우에는
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="의료보험법|45|">구
+					의료보험법(1999. 2. 8. 법률 제5854호로 폐지되기 전의 법률, 이하 ‘구 의료보험법’이라 한다) 제45조
+					제1항</a></span>
+				및
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민의료보험법|44|">구
+					국민의료보험법(1999. 2. 8. 법률 제5854호로 폐지되기 전의 법률, 이하 ‘구 국민의료보험법’이라 한다)
+					제44조 제1항</a></span>
+				(
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제1항</a></span>
+				과 유사함)에 의하여 약제비 상당의 요양급여비용을 의료기관으로부터 징수하였는바, 이는 위 규정들에 의한 ‘부정한 방법으로
+				보험급여비용을 지급받은 요양기관’이 ‘요양급여를 청구한 의료기관’과 같았기 때문이다.
+			</p><p>
+				마. 그런데 의약분업이 2000. 7.부터 실시되어 요양급여 실시가 의료기관의 진료와 약국의 조제로 구분된 결과, 약제비에
+				해당하는 요양급여비용을 지급받은 요양기관은 당해 의료기관이 아니라 약국이 되었으나, 피고는 여전히 의약분업 이전과 같이
+				의료기관의 처방전 발급이 요양급여기준에 위반된다고 통보받은 경우
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제1항</a></span>
+				에 근거하여 약국이 지급받은 약제비 상당의 요양급여비용을 그 처방전을 발급한 의료기관으로부터 징수하여 왔다.
+			</p><p> 바. 의약분업 실시 후의 처방전 발급, 요양급여(진료비 및 약제비)청구, 삭감 및
+				징수처분의 관계는 아래 도표와 같은바, 이와 같이 피고는 의료기관이 수령하였던 진료비(이 사건에서는 문제되지 않는다)는
+				물론, 약국이 수령하였던 약제비까지도 의료기관으로부터 삭감 또는 징수하였다.</p><p>
+				<img name="img1" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=1985402&amp;attachImgNm=10f0410dr001-01.gif" alt="본문내 삽입된 이미지" />
+			</p><p>
+				사. 이러한 피고의 약제비 징수 조치에 대하여 의료기관들이 그 징수처분을 다투는 소를 제기하여, 의료기관에게 약제비
+				징수처분을 하는 것은 위법하여 취소되어야 한다는 취지의 판결(
+				<span id="link"><a name="linkContPanre" title="새창" type="대법원|2005두7037|판결" href="#//">대법원 2005. 9. 29. 선고 2005두7037 판결</a></span>
+				)에 이어, 아래에서 보는 바와 같이 위 징수처분은 하자가 중대하고 명백하여 당연무효라는 판결(
+				<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006두6642|판결" href="#//">대법원 2006. 12. 8. 선고 2006두6642 판결</a></span>
+				)이 선고되기에 이르렀다.
+			</p><p>
+				아. 한편, 원고는 의약분업 실시 이후인 2001. 6.경부터 2007. 5.경까지 건강보험 가입자 및 피부양자들에 대하여
+				처방전을 발급하고 심사평가원에 심사청구를 하였는데, 심사평가원은 원고 소속 의사들이 원외처방전을 발급함에 있어
+				요양급여기준에 위반하여 식품의약품안전청장(이하 ‘식약청장’이라 한다)으로부터 허가받은 범위를 초과하는 등의 처방을 한
+				부분을 삭감하여야 한다는 심사결과를 피고에게 통보하였고, 그에 따라 피고는 2001. 11. 13.경 원고에게 차기
+				요양급여비용 지급시 심사평가원으로부터 삭감통보를 받은 약제비용을 차감함으로써 이를 징수하겠다는 취지의 통보를 하고
+				징수처분을 한 이후, 계속하여 2007. 7.경까지 원고에게 지급할 요양급여비용에서 위 약제비용을 징수, 차감한 나머지
+				금원만을 지급하여 왔다(피고는
+				<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006두6642|판결" href="#//">위 대법원 2006두6642</a></span>
+				사건의 제1심인
+				<span id="link"><a name="linkContPanre" title="새창" type="서울행정법원|2004구합18108|판결" href="#//">서울행정법원 2004구합18108 판결</a></span>
+				이 선고된 후인 2006. 3. 3. 이후에는 위 징수처분과 아울러 일부 요양급여비용에 대하여 불법행위로 인한
+				손해배상채권과의 상계를 함께 통보하기도 하였다).
+			</p><p> 자. 피고가 원고에게 위와 같은 방법에 의하여 2001. 6.경부터 2007.
+				5.경까지의 요양급여비용 중 징수처분에 의하여 지급을 차감·거절한 액수는 합계 금 4,044,586,658원에 이른다.</p><p> 2. 본안전 항변에 관한 판단</p><p> 피고는, 원고가 이 사건 소를 통하여 지급을 구하는 요양급여비용 지급청구권은
+				국민건강보험법에 따라 인정되는 권리로서 심사평가원의 심사결정에 의하여 구체적으로 발생하는 권리에 해당하는데, 원고의
+				요양급여규정 위반으로 피고가 추가 지출하게 된 금액에 관한 공정력 있는 심사평가원의 심사결정에 대하여 원고가 이의신청이나
+				행정소송 등의 불복을 하지 아니하여 그 심사결정이 확정되었는바, 심사평가원의 심사내용을 다투지 아니한 채 곧바로 피고에
+				대하여 이 사건 소를 제기한 것은 부적법하다는 취지로 주장한다.</p><p> 살피건대, 원고의 이 사건 소는 아래에서 보는 바와 같이 피고의 징수처분이
+				당연무효임을 이유로 한 부당이득반환청구로서, 반드시 심사평가원의 심사결정에 대한 불복을 거쳐야만 하는 것이 아니므로, 위
+				주장은 이유 없다.</p><p> 3. 청구원인에 관한 판단</p><p>
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제1항</a></span>
+				은, 피고가 사위 기타 부당한 방법으로 보험급여비용을 받은 요양기관에 대하여 그 급여 또는 급여비용에 상당하는 금액의 전부
+				또는 일부를 징수한다고 규정하고,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">같은 조 제2항</a></span>
+				은,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">제1항</a></span>
+				의 경우에 있어 요양기관의 허위의 진단에 의하여 보험급여가 실시된 때에는 피고는 요양기관에 대하여 보험급여를 받은 자와
+				연대하여 징수금을 납부하게 할 수 있다고 규정한다.
+			</p><p>
+				그런데
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제1항</a></span>
+				에 의한 부당이득의 징수 대상자는 사위 기타 부당한 방법으로 ‘보험급여비용을 받은 요양기관’인바, 설령 원고가 과잉
+				원외처방을 함으로써 피고의 비용지출을 증가시켰다고 하더라도 그로 인하여 피고로부터 약제비 상당의 보험급여비용을 받은
+				요양기관은 약국 등 제3자이지 원고가 아니고, 과잉 원외처방과 관련하여 약국 등 보험급여비용을 받은 요양기관이 스스로 사위
+				기타 부당한 방법으로 급여비용을 받은 것도 아니므로, 원고는 물론이고 약국 등 보험급여를 받은 자 역시
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제1항</a></span>
+				에 근거한 징수의무를 부담한다고 볼 수 없다.
+			</p><p>
+				나아가
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제2항</a></span>
+				의 적용 여부에 관하여 보더라도, 원고가 과잉 원외처방을 하였다는 것만으로 허위의 진단을 한 것으로 볼 수 없어
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제2항</a></span>
+				에 따라 보험급여를 받은 자와 연대하여 징수의무를 부담한다고 볼 수도 없다.
+			</p><p>
+				따라서 피고가
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조 제1항</a></span>
+				또는
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">제2항</a></span>
+				에 근거하여 원고로부터 위 약제비용에 상당하는 금액을 징수한 처분은 법률상 근거가 없을 뿐만 아니라 그 하자가 중대하고
+				명백하여 당연무효라고 할 것이다(
+				<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006두6642|판결" href="#//">대법원 2006. 12. 8. 선고 2006두6642 판결</a></span>
+				참조).
+			</p><p> 그렇다면 피고의 위 징수처분이 무효가 됨으로써 충당 또는 차감행위 역시 효력을 잃게
+				되는 것이고, 피고는 지급을 거절하였던 위 요양급여비용 합계 4,044,586,658원 상당의 부당이득금 및 이에 대한
+				지연손해금을 원고에게 지급할 의무가 있다(원고는 피고가 지급을 거절한 요양급여비용이 위 인정 금액을 넘는
+				4,106,712,020원이라고 주장하나, 을 제15호증의 기재만으로 피고가 지급을 거절한 요양급여비용이 위 인정 금액을
+				넘는 4,106,712,020원이라고 인정하기에 부족하고, 달리 이를 인정할 증거가 없으므로, 위 인정 금액을 넘는 부분에
+				관한 원고의 주장은 이유 없다).</p><p> 4. 항변에 관한 판단</p><p> 가. 시효소멸 항변</p><p>
+				(1) 피고는,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|79|">법 제79조 제1항 제3호</a></span>
+				에 의하면 ‘보험급여비용을 받을 권리’는 3년간 행사하지 아니하면 소멸시효가 완성되는 것이므로, 이 사건 소가 제기된
+				2007. 8. 3.로부터 3년 전인 2004. 8. 3. 이전에 ‘원외처방 약제비’로 차감·징수한 부분에 해당하는 원고의
+				요양급여비용 청구는 시효완성으로 소멸된 것이라고 항변한다.
+			</p><p>
+				(2) 살피건대, 위에서 본 바와 같이 원고의 이 사건 청구는 ‘보험급여비용을 받을 권리’가 아니라, 피고가
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조</a></span>
+				에 근거하여 심사평가원으로부터 삭감통보를 받은 약제비용을 차감·징수한 처분이 당연무효임을 이유로 그 차감·징수한 부분에
+				상당하는 부당이득의 반환을 청구하는 것이어서,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|162|">민법 제162조 제1항</a></span>
+				에 정한 10년의 소멸시효가 적용된다 할 것이고, 원고가 반환을 구하고 있는 것은 2001. 6.경부터 2007.
+				5.경까지의 요양급여비용 중 징수처분에 의하여 지급이 차감·거절된 금액으로서 아직 10년의 소멸시효가 완성되지 않았으므로,
+				피고의 위 주장은 이유 없다.
+			</p><p> 나. 채무불이행에 기한 손해배상채권에 의한 상계 항변</p><p> (1) 피고의 주장</p><p>
+				피고는,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|40|">법 제40조</a></span>
+				에 의한 의료기관인 원고로서는 건강보험제도의 적용을 받기 위하여 요양급여기준을 준수할 의무가 있고, 그 의무는 법규정에
+				의하여 직접 발생하거나, 또는 법규정을 전제로 국민건강보험제도 관련자들 사이의 묵시적 합의에 의하여 발생한 것이거나,
+				아니면 넓은 의미의 채권관계에서 발생한 부수적 주의의무로 인정되는 것인데, 원고가 위와 같은 준수의무를 위반하여
+				요양급여기준에 어긋나는 원외처방전을 발행하여 피고로 하여금 약제비용 4,044,586,658원 상당의 손해를 입게
+				하였으니, 원고에 대한 위 채무불이행에 기한 위 금액 상당의 손해배상채권을 자동채권으로 하여 원고에 대한 위 채무와
+				대등액에서 상계한다고 주장한다.
+			</p><p> (2) 판단</p><p>
+				피고는 위 법에 의하여 설립된 공법인이고, 피고의 회계연도는 정부의 회계연도에 따르고 보건복지가족부장관의 예산안 승인 및
+				결산보고를 거쳐야 하며(
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|33|">법 제33조</a></span>
+				내지
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|35|">제35조</a></span>
+				), 요양기관은 그 지정이 강제되고(
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|40|">법 제40조</a></span>
+				), 피고가
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|52|">법 제52조</a></span>
+				에 의하여 요양기관에게 보험급여 징수처분을 한 경우 이를 다투는 요양기관은 행정소송을 제기하여야 하고(
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|78|">법 제78조</a></span>
+				), 피고는 위 금원을 국세체납처분의 예에 의하여 징수할 수 있으며(
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|70|">법 제70조</a></span>
+				), 보건복지가족부장관은 요양기관 업무정지 또는 과징금처분을 할 수 있는바(
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|85|">법 제85조</a></span>
+				), 위 규정에 비추어 보면, 요양기관과 피고 사이에서는 위 법이 정하는 공법상의 법률관계가 발생할 뿐, 사법상의 채무가
+				발생한다고 볼 수 없고, 달리 원고와 피고 사이에 그 위반행위에 대하여 사법상 손해배상책임을 부담하기로 하는 합의 또는
+				이러한 책임을 전제로 하는 법률관계의 형성에 관한 합의가 존재한다거나, 사법상의 채권관계에서의 부수적 주의의무가 있는
+				것이라고 인정할 근거가 없으므로, 이와 다른 전제에 선 피고의 위 주장은 이유 없다.
+			</p><p> 다. 불법행위에 기한 손해배상채권에 의한 상계 항변 및 재항변</p><p> (1) 피고의 주장</p><p> 피고는, 요양급여기준은 강행규정으로서의 성격을 가지는데, 원고 소속 의사들이
+				요양급여기준에 위배되는 원외처방전을 발급한 것은 강행규정 위반행위로서 위법하고, 이로 인하여 피고는 위 처방전에 따라 약국
+				등에게 불필요한 약제비 4,044,586,658원을 지급하는 손해를 입게 되었으니, 원고에 대한 위 불법행위에 기한 위
+				금액 상당의 손해배상채권을 자동채권으로 하여 원고에 대한 위 채무와 대등액에서 상계한다고 주장한다.</p><p> (2) 판단</p><p>
+				국민건강보험은
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|36|">헌법 제36조 제3항</a></span>
+				에 따라 국민의 보건에 관한 국가의 보호를 구현하기 위하여 보험급여를 실시함으로써 국민보건을 향상시키고 사회보장을 증진함을
+				목적으로 하므로(
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|1|">법 제1조</a></span>
+				), 위 법은 모든 국민에게 국민건강보험의 가입을 강제하고, 법정 기준에 따라 보험료를 산정하여 강제로 징수하며,
+				보험급여의 기준도 법으로 정하여 건강보험제도 자체의 목적을 위하여 설정된 일정한 범위 내에서만 건강보험 요양급여를 인정하고
+				요양급여의 범위나 방법에 대한 판단에 있어 의료기관의 재량권을 제한하고 있는 것이고, 요양급여기준은 법이 요양급여의 기준을
+				법정하도록 한 것과 마찬가지로 불필요한 요양급여를 방지하고 요양급여와 비용의 합리성을 확보하여 한정된 건강보험재정으로
+				최대한의 건강보험 혜택을 부여하고자 하는 것인바(
+				<span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2006헌마417|결정" href="#//">헌법재판소 2007. 8. 30. 선고 2006헌마417 결정</a></span>
+				참조), 결국 위 요양급여기준은
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험법|39|">법 제39조 제2항</a></span>
+				의 위임에 따른 것으로 법률상 위임근거가 있는 법규명령이고 강행규정으로서의 성질을 가지는 것이라 할 것이고(구 의료보험법에
+				관한
+				<span id="link"><a name="linkContPanre" title="새창" type="대법원|99두12267|판결" href="#//">대법원 2001. 7. 13. 선고 99두12267 판결</a></span>
+				등 참조), 더욱이
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|10|">‘국민건강보험 요양급여의 기준에
+					관한 규칙’ 제10조</a></span>
+				,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|11|">제11조</a></span>
+				,
+				<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국민건강보험 요양급여의 기준에 관한 규칙|5|">제5조 제1항</a></span>
+				[별표1] 제3의 가(2)항 등에 의하면, 요양기관 등은 요양급여대상 또는 비급여대상으로 결정되지 않은 새로운 행위·약제
+				및 치료재료에 대하여 보건복지가족부장관에게 요양급여대상 여부의 결정을 신청하여 그 결정을 받아 피고나 환자 측으로부터
+				비용을 보전받을 수 있고, 안전성·유효성 등에 관한 사항이 정하여져 있는 의약품 중 진료상 반드시 필요하다고
+				보건복지가족부장관이 정하여 고시하는 의약품의 경우에는 허가사항의 범위를 초과하여 처방·투여할 수 있을 뿐만 아니라,
+				중증환자에게 처방·투여하는 약제로서 보건복지가족부장관이 정하여 고시하는 약제의 경우에는 건강보험심사평가원장이 공고한 범위
+				안에서 처방·투여할 수 있도록 되어 있으며, 요양급여기준은 의약계 전문가의 의견 등을 반영하여 마련된 것으로서 일응
+				객관적이고 합리적인 것이라 할 것이므로, 요양기관이 요양급여기준에 정한 바에 따르지 아니하고 임의로 이에 어긋나는
+				원외처방을 하는 것은, 그것이 환자에 대한 최선의 진료를 위하여 의학적 근거와 임상적 경험에 바탕을 둔 것으로서 정당행위에
+				해당한다는 등의 특별한 사정이 없는 한, 일응 위법성이 인정된다 할 것이다(또한, 을 제4호증의 1, 2의 각 기재에 변론
+				전체의 취지를 종합하면, 심사평가원은 의약분업 실시 이후 이미 수차례의 공문을 통하여 요양급여기준 및 고시 내용을
+				벗어나거나 의학적 관점에서 적절하지 못한 처방 등 상병명과 처방내역을 비교하여 부적절하거나 과다 처방된 것으로 인정되는
+				경우에는 부적정한 약제비 및 처방료, 조제료를 조정하겠다는 취지의 내용을 대한의사협회, 대한병원협회 등을 통하여 각
+				의료기관에게 고지한 사실을 인정할 수 있으므로, 원고가 요양급여기준에 위반된 원외처방을 함에 있어 고의·과실도 인정된다).
+			</p><p> 그런데 위 거시증거 및 변론 전체의 취지를 종합하면, 원고는 2001. 6.부터
+				2007. 5.까지 내원한 환자들에 대하여 요양급여기준에 어긋나는 원외처방전을 발행하여 피고로 하여금 약국 등지에 약제비용
+				명목으로 4,044,586,658원을 지급하게 함으로써 피고에게 위 금액 상당의 손해를 입게 한 것이므로, 위와 같은
+				원외처방이 환자에 대한 최선의 진료를 위하여 의학적 근거와 임상적 경험에 바탕을 둔 것으로서 정당행위에 해당한다는 등의
+				특별한 사정에 관하여 원고의 주장·입증이 없는 한, 원고는 피고에게 일응 불법행위에 기한 손해배상으로 위
+				4,044,586,658원을 지급할 의무가 있다고 할 것이다.</p><p> 결국, 원고의 피고에 대한 앞서 본 이 사건 4,044,586,658원 상당의
+				부당이득반환채권은, 위와 같은 특별한 사정이 없는 한 피고의 원고에 대한 같은 금액 상당의 위 불법행위에 기한
+				손해배상채권과 상계적상에 있다고 할 것이고, 상계 의사표시가 포함된 피고의 이 사건 2007. 10. 5.자 답변서의
+				송달로 인하여 원고의 피고에 대한 위 부당이득반환채권은 상계로 소멸하였다고 할 것이므로, 피고의 위 상계 항변은 일응 이유
+				있다.</p><p> (3) 원고의 재항변에 대한 판단</p><p> (가) 이에 대하여 원고는, 요양급여기준이 의사의 환자에 대한 ‘최선의
+				진료의무’보다 우선할 수 없고, 원고 소속 의사들이 요양급여기준과 달리 약을 원외처방한 것은 환자에 대한 최선의 진료를
+				위하여 의학적 근거와 임상적 경험을 바탕으로 한 것이어서, 이는 불법행위에 있어서 위법성 조각사유인 정당행위에 해당하므로,
+				위와 같은 상계가 인정되어서는 아니 된다고 재항변한다.</p><p> (나) 살피건대, 의사에게 환자에 대한 ‘최선의 진료의무’가 있다고 하여 그것만으로
+				바로 요양급여기준을 어긴 원외처방의 위법성이 조각되는 것은 아니고, 구체적인 의료행위에 관하여 요양급여기준과 달리 약을
+				원외처방한 것이 당해 환자에 대한 최선의 진료를 위하여 의학적 근거와 임상적 경험에 바탕을 둔 것이었다는 구체적 사정에
+				관하여 주장·입증이 있어야만 할 것인바, 위에서 본 바와 같은 요양급여기준에 어긋나는 총 4,044,586,658원 상당의
+				원외처방 전부가 환자에 대한 최선의 진료를 위하여 의학적 근거와 임상적 경험에 바탕을 둔 것으로서 정당행위에 해당한
+				것이었다는 점에 관하여는, 아래 (다)항에서 인정한 경우들 외에는, 이를 인정할 구체적 사정에 관한 원고의 주장·입증이
+				없다.</p><p>
+				(다) 다만, 갑 제4호증의 1 내지 3, 갑 제5호증, 갑 제6호증의 1 내지 4, 갑 제7호증의 1 내지 4, 갑
+				제8호증의 1 내지 5의 각 기재 및 제1심 증인
+				소외 1
+				의 증언에 변론 전체의 취지를 종합하면, 원고는 환자
+				소외 2
+				,
+				3
+				,
+				4
+				,
+				5
+				,
+				6
+				에 대하여 [별지 2] ‘처방내용’란 기재와 같은 처방을 하였고, 이에 대하여 피고는 [별지 2] ‘피고
+				주장(거절사유)’란 기재와 같은 사유를 들어 총 186,710원(=
+				소외 2
+				모빅캅셀 7.5㎎ 28,360원 +
+				소외 3
+				스틸녹스정 4,870원 +
+				소외 4
+				카프릴정 25㎎/A 22,950원 +
+				소외 5
+				메소칸캅셀 127,980원 +
+				소외 6
+				엠티엑스정 2,550원) 상당의 보험급여를 차감·거절하였는데, ① 먼저,
+				소외 2
+				환자의 경우를 보면, 요양급여기준상 15세 이하 어린이에게 투약하지 못하게 되어있는 모빅캅셀을 만 3세인
+				소외 2
+				에게 투여하도록 처방하였는데, 이는 모빅캅셀에 앞서 비스테로이드성 소염진통제인 테노캠을 처방하였으나 환자가 복용 후 구토와
+				복통증상을 호소하고 간수치가 상승하였기 때문에 이러한 부작용을 줄일 수 있는 모빅캅셀을 처방한 것으로서, 이에 관하여는
+				이미 효능 및 안전성에 대한 임상정보가 상당량 축적되어 있는 상태였고, ②
+				소외 3
+				환자의 경우, 진단명과 관계없는 스틸녹스정을 처방하였는데, 이는 기왕의 질환인 당뇨병과 고협압 외에 추가로 불면증을
+				호소하여 기왕의 질환에 대한 약 처방과 함께 새로운 증상인 불면증에 적합한 약인 스틸녹스정을 처방한 것이었으며, ③
+				소외 4
+				환자의 경우, 요양급여기준상 소아에게 투약하지 못하게 되어있는 카프릴정을 만 6세인
+				소외 4
+				에게 처방하였는바, 이는
+				소외 4
+				가 단심실 환자로서 3차례에 걸쳐 폰탄수술을 받았으나 수술 후에도 심실에 상당한 부담이 있고 심실비대를 야기할 가능성도
+				높았기 때문에 원고가 적극적으로 혈관수축 작용을 하는 물질의 생성을 억제하는 약품인 카프릴정을 처방한 것으로서, 카프릴정은
+				이미 많은 소아에게 광범위하게 처방되고 있고, 외국에서는 소아뿐만 아니라 신생아에게까지 투여하고 있는 상황이며, ④
+				소외 5
+				환자의 경우, 병용이 금지된 동맥경화용제인 메소칸캅셀을 플라비스정과 병용 처방하였는바, 이는 평소 뇌경색, 고지질혈증,
+				심장부정맥, 고혈압 등을 앓고 있어 뇌졸중 발생의 위험이 큰 환자에게 항혈소판제 한 가지를 사용하였지만 환자의 증상이
+				조절되지 않아 할 수 없이 항혈전제인 메소칸캅셀을 추가로 처방한 것인데, 메소칸캅셀과 플라비스정은 같은 동맥경화용제로
+				분류되어 있기는 하지만 서로 작용기전이 다르고 효능에 있어서 차이가 있고, ⑤
+				소외 6
+				환자의 경우 테노캄정과 병용하여 사용하는 것이 금지된 methotreaxate 성분인 엠티엑스정을 병용하여 처방하였는바,
+				이는 소아 류마티스관절염 환자에게 비스테로이드성 소염진통제를 사용하였으나 그 약물로 증상이 호전되지 않아
+				methotreaxate 성분인 엠티엑스정을 병용 투여한 것인데, 이러한 치료법은 소아 류마티스학 교과서에도 나와 있을
+				정도로 병용 투여가 치료에 효과적이고 일반적인 것으로 인정되어 있는 사실을 인정할 수 있는바, 이에 의하면, 위
+				소외 2
+				,
+				3
+				,
+				4
+				,
+				5
+				,
+				6
+				에 대한 원고의 위와 같은 원외처방은, 비록 그것이 요양급여기준에 위반되었다고 하더라도, 환자에 대한 최선의 진료를 위하여
+				의학적 근거와 임상적 경험에 바탕을 둔 것으로서 정당행위에 해당하여 위법성이 조각되는 것이라 할 것이다.
+			</p><p> (라) 결국 원고의 위 재항변은, 정당행위에 해당한다는 구체적 사정에 관한
+				주장·입증이 있는 위 5건의 원외처방으로 인한 186,710원의 범위 내에서 이유 있고, 나머지 주장은 이유 없다.</p><p> 라. 소결론</p><p> 따라서 피고는 원고에게 위에서 인정된 186,710원 상당의 부당이득금 및 이에
+				대하여 2007. 8. 1.부터 피고가 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 당심 판결 선고일인 2009.
+				8. 27.까지는 민법에 정한 연 5%, 그 다음 날부터 다 갚는 날까지는 ‘소송촉진 등에 관한 특례법’에 정한 연
+				20%의 각 비율로 계산한 금원을 지급할 의무가 있다.</p><p> 5. 가지급물반환신청에 대한 판단</p><p> 한편, 아래에서 보는 바와 같이, 제1심판결 중 위 인용금액을 초과하여 지급을 명한
+				피고 패소 부분은 당심 판결의 선고로 취소되고 그 부분에 해당하는 제1심의 가집행선고도 실효되는 것인바, 을 제23호증의
+				1, 4의 각 기재에 변론 전체의 취지를 종합하면, 원고가 제1심판결의 가집행선고에 기하여 2008. 12. 26.
+				피고로부터 제1심 인용금액 중 4,106,712,020원을 지급받은 사실을 인정할 수 있고, 당심의 인용금액에 관하여 위
+				가지급물 지급일인 2008. 12. 26.까지의 원리금을 계산하면 199,856원[= 186,710원 + (186,710원
+				x 0.05 x 514/365)]이 되므로, 원고는 가지급물 반환으로 피고에게 4,106,512,164원(=
+				4,106,712,020원 - 199,856원) 및 이에 대하여 피고가 구하는 바에 따라 위 가지급물 지급일 다음 날인
+				2008. 12. 27.부터 원고가 가지급물반환의무의 존부 및 범위에 관하여 항쟁함이 상당한 당심 판결 선고일인 2009.
+				8. 27.까지는 민법에 정한 연 5％, 그 다음 날부터 다 갚는 날까지는 ‘소송촉진 등에 관한 특례법’에 정한 연
+				20%의 각 비율로 계산한 금원을 지급할 의무가 있다고 할 것이다.</p><p> 6. 결론</p><p> 그렇다면 원고의 이 사건 청구는 위 인정 범위 내에서 이유 있어 이를 인용하고,
+				나머지 청구는 이유 없어 이를 기각할 것인바, 제1심판결은 이와 결론을 일부 달리하여 부당하므로 피고의 항소를 일부
+				받아들여 제1심판결 중 위 인정 금원을 초과하여 지급을 명한 피고 패소 부분을 취소하고 그 취소 부분에 해당하는 원고의
+				청구를 기각하며, 피고의 나머지 항소는 이유 없어 기각하고, 피고의 가지급물반환신청은 위 인정 범위 내에서 이유 있어 이를
+				인용하며, 나머지 신청은 이유 없어 이를 기각하기로 하여 주문과 같이 판결한다.</p><p>[별지 생략]</p>
+		<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   조인호(재판장) 정도영 최호식 </span></center><span class="space"></span>
+	</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

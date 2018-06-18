@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>부산고등법원 2007나11033 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2035778';
+var contIdEtc = '';
+var saNo = '2007나11033';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20080403' ? 
+			'20080403'.length==4 ? Date.parseExact('20080403','yyyy').toString('yyyy. M. d.') : 
+				'20080403'.length==6 ? Date.parseExact('20080403','yyyyMM').toString('yyyy. M. d.') : 
+					'20080403'.length==8 ? Date.parseExact('20080403','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '부산고등법원';
+var bubCd = '000400';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007나11033 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007나11033';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">부산고등법원<br />2007나11033</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|619726">최인석 언론의 범죄혐의 보도와 손해배상책임 판례연구 21집  / 부산판례연구회  2010 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다37647">대법원 2003. 1. 24. 선고 2000다37647 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다50213">대법원 2002. 5. 10. 선고 2000다50213 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다58823">대법원 2008. 1. 24. 선고 2005다58823 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|496|0|null">민법 제496조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="창원지방법원|2006가합4359">창원지방법원 2007. 6. 7. 선고 2006가합4359 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>부산고등법원 2008. 4. 3. 선고 2007나11033 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        
+          피고 1외 2인 (소송대리인 변호사 김대영외 2인)
+        
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2008. 3. 20.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="창원지방법원|2006가합4359|판결" href="#//">창원지방법원 2007. 6. 7. 선고 2006가합4359 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 제1심 판결 중 아래에서 지급을 명하는 금원에 해당하는 원고 패소부분을 취소한다.</p><p>     피고들은 각자 원고에게 1,000만 원 및 이에 대하여 2006. 6. 29.부터 2008. 4. 3.까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 금원을 지급하라. </p><p>  2. 원고의 피고들에 대한 나머지 항소를 모두 기각한다.</p><p>  3. 소송총비용 중 원고와 
+        피고 1(대법원판결의 소외인) 사이에 생긴 부분은 이를 5분하여 그 4는 원고가, 나머지는 
+        피고 1이 각 부담하고, 원고와 
+        피고 2 주식회사(대법원판결의 피고 1), 
+        피고 3(대법원판결의 피고 2) 사이에 생긴 부분은 이를 10분하여 그 9는 원고가, 나머지는 
+        피고 2 주식회사, 
+        피고 3이 각 부담한다.
+      </p><p>  4. 제1항의 금원지급부분은 가집행할 수 있다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p>  원고에게, 
+        피고 1은 1억 원, 
+        피고 2 주식회사, 
+        피고 3은 
+        피고 1과 각자 그 중 9,000만 원 및 위 각 금원에 대하여 이 사건 소장 부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 금원을 각 지급하라(원고는 당심에서 피고들에 대한 청구취지를 감축하였다).
+      </p>
+      <p>2. 항소취지</p>
+      <p>  제1심 판결 중 아래에서 지급을 명하는 부분에 해당하는 원고 패소부분을 취소한다. 피고들은 각자 원고에게 9,000만 원 및 이에 대하여 이 사건 소장 부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 금원을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 인정사실</p><p>  다음 각 사실은 당사자 사이에 다툼이 없거나, 갑 제1호증의 1 내지 3, 갑 제2호증, 갑 제3호증의 1 내지 3, 갑 제4 내지 8호증, 갑 제9호증의 1 내지 3, 갑 제10, 12 내지 15, 17, 18호증, 을 제4호증의 1, 2, 을 제5, 6, 9호증의 각 일부 기재 및 제1심 증인 
+        소외 1의 일부 증언, 제1심의 KT 영남고객센터장, (주)케이티프리텔 사장에 대한 각 사실조회결과에 변론 전체의 취지를 종합하여 이를 인정할 수 있다.
+      </p><p>  가. 원고는 1995. 5.경부터 창원시 
+        (동명칭 생략)에서 개업하고 있는 변호사이고, 
+        피고 1은 1997.경부터 2004. 7. 31.까지 원고의 변호사사무실에서 사무장으로 근무하고, 다시 2005. 8. 1.부터 같은 직위로 근무하다가 2006. 2. 24. 해고되었다.
+      </p><p>  나. 
+        피고 1은 2006. 2. 24. 23:03경부터 같은 날 23:21경까지 사이에 약 6회에 걸쳐 원고의 휴대폰으로 전화를 걸어, “어~이 
+        ○○○이, 너 죽어”, “변호사를 못하도록 매장을 시키고야 말겠다”, “법원 앞에서 1인 시위라도 하여 망신을 주고 변호사를 못하게 하겠다”는 내용으로 말하였다.
+      </p><p>  다. 
+        피고 1은 2006. 3. 13. 
+        (사건번호 생략)으로 원고를 상대로 위 가.항의 해고로 인한 일실수입 등 합계 93,480,807원의 지급을 구하는 손해배상소송을 제기하는 한편(이 소송은 2006. 10. 24. 소취하로 종결되었다), 같은 날 창원지방검찰청에, 아무런 증거자료를 첨부하지 않은 채, ‘원고가 1997. 3.경부터 2001. 10.경까지 
+        소외 2, 
+        소외 3 등을, 2002. 3.경부터 2003. 초경까지 
+        소외 4 및 경찰관 출신 서 모 씨를, 2005. 8. 1.경부터 현재까지 
+        소외 5 등을 고용하여 그들로 하여금 사건을 유치하게 하고 소개비로 수임료의 20%를 지급하였으니 조사하여 처벌하여 달라’는 취지의 고발장을 제출하고, 2006. 3. 15. 대한변호사협회에도 같은 내용으로 진정을 하였다.
+      </p><p>  라. 
+        피고 1은 검찰에 위 고발장 등을 접수한 2006. 3. 13. 16:50경 창원지방법원 기자실로 찾아가 그곳에 있던 
+        피고 2 주식회사(이하 ‘
+        피고 2 주식회사’라 한다) 소속 기자인 
+        피고 3에게 소장, 고발장, 진정서 등을 내보이면서, “나를 고용한 변호사가 나를 마음대로 해고하고 브로커를 고용하여 사건을 수임하는 등 많은 문제가 있어 검찰에 고발하고 경남지방변호사회에 진정서를 제출하였으며, 민사소송도 제기하였다”, “검찰수사가 진행되면 큰일이 벌어질 것이다”, “이런 사건은 언론에서 관심을 가져주어야 한다”는 등의 말을 하여 이를 기사화해 줄 것을 요구하였다.
+      </p><p>  마. 
+        피고 3은 
+        피고 1로부터 위와 같은 말을 듣고 그 자리에서 검찰 민원실 등에 전화하여 그 고발장 등 접수사실을 확인하는 한편, 원고에게 전화를 걸어 ‘불법 브로커’ 고용 등의 주장은 사실무근이라는 답변을 들은 후, 그 고발내용의 진실 여부에 관한 더 이상의 사실확인 없이 
+        피고 1로부터 들은 내용을 토대로 기사를 작성하여 
+        피고 2 주식회사 발행의 
+        ○○신문 2006. 3. 14.자 사회면에, “변호사 사무장이 변호사 고발”, “불법 브로커 고용·부당해고 주장”이라는 제목으로 보도를 하였는데, 그 내용은 제1심 판결의 별지 1 기재와 같다. 
+        피고 3은 그 다음날인 2006. 3. 15.에도, “전직 변호사 사무장, 변호사 고발 사건”, “검찰 수사 착수”라는 제목으로 관련 기사를 보도하였는데, 그 내용은 제1심 판결의 별지 2 기재와 같다.
+      </p><p>  바. 
+        피고 1은 검찰 고발 후 원고의 ‘불법 브로커’ 고용에 관한 아무런 객관적인 자료도 제출하지 않고 있다가 검찰의 고발인 조사가 시작되자, 변호사협회에 등록된 원고의 사무장들을 ‘브로커’라고 한 자신의 판단이 잘못되었다면서 2006. 3. 29. 원고에 대한 고발을 취하하였는데, 
+        피고 3은 이를 기사화하여 2006. 3. 30.자 
+        ○○신문에 「전직 사무장 변호사 고발 취소, 검찰 “결정적 정보 못 얻어 허탈”」이라는 제목으로 이를 보도하였으며, 그 내용은 제1심 판결의 별지 3 기재와 같다. 한편, 
+        피고 1의 원고에 대한 위 변호사법위반 고발사건에 관하여 검찰은 
+        피고 1의 추측 진술 이외에는 아무런 증거가 없다는 이유로 각하처분을 하였다.
+      </p><p>  사. 
+        피고 1은 원고를 상대로 경남지방노동위원회에 부당해고 구제신청을 하였으나 원고가 자신의 사무실은 상시근로자수가 5인 미만으로서 근로기준법이 적용되지 않는다고 주장하자, 위 피고는 원고 사무실에 자신 외에도 
+        소외 6 외 3명이 더 근무하여 상시근로자의 수가 5명이 된다고 주장하며 그 증거를 수집할 목적으로, 2006. 4. 25. 18:30경 원고가 퇴근하고 없는 틈을 이용하여 창원시 
+        (상세주소 생략)에 있는 원고의 사무실에 들어가 사무원인 
+        소외 6 등과 대화를 나누는 척하면서 그 대화내용을 녹음하였다. 그러나 위 부당해고 구제신청은 2006. 6. 14. 원고가 고용한 상시근로자수가 5인 미만이라는 이유로 각하되었다.  
+      </p><p>  아. 원고는 2006. 5. 17. 
+        피고 1이 제기한 민사소송에서 같은 피고가 사무장으로 재직시 횡령·배임·사기 등을 저질렀다는 내용의 준비서면을 제출하였고, 이에 위 피고는 같은 날 23:01경 원고에게 휴대폰으로 전화를 하여, “
+        ○○○이 너 끝까지 갈거냐? 끝까지 가면 너 죽어”, “너 끝까지 가면 검찰에 또 고발하겠다”는 취지의 말을 하였다.
+      </p><p>2. 
+        피고 1에 대한 청구에 대한 판단
+      </p><p>  가. 손해배상책임의 발생</p><p>    (1) 위 인정사실에 의하면, 
+        피고 1의 위 제1의 나. 및 아.항의 각 행위는 원고에 대하여 인격적인 모욕을 가하면서 해악을 고지한 경우에 해당하고, 위 제1의 바.항의 행위는 원고의 허락 없이 증거를 수집할 목적으로 원고의 사무실에 들어가 몰래 녹음까지 한 것이어서 무단 방실침입에 해당하여 각 불법행위를 구성한다. 또한, 위 제1의 라.항의 행위는 원고의 명예, 신용 등을 훼손하기에 충분한 일방적인 고발사실 등을 제보하여 이를 보도되게 함으로써 원고에 대한 사회적 가치 내지 평가를 침해한 행위라 할 것이므로, 이 역시 불법행위를 구성한다 할 것이다(그와 같은 제보내용이 사실에 부합하는지 여부는 불법행위를 구성하는 데 영향이 없다).
+      </p><p>      따라서 
+        피고 1은 위와 같은 각 불법행위로 인하여 원고가 입은 정신적 손해를 배상할 책임이 있다.
+      </p><p>    (2) 원고는 나아가, 2005. 3. 14.경 
+        피고 1이 원고의 휴대폰에, “
+        ○○○이, 이제 너는 죽었다”, “너 같은 놈은 변호사를 하면 안 돼”, “곧 당신의 
+        □□□□에 대한 수임료채권을 가압류한다”는 등의 음성메시지를 남겨 모욕·협박하였다고 주장하며 그로 인한 손해의 배상도 아울러 구하나, 이를 인정할 만한 증거가 없으므로 위 부분에 관한 원고의 주장은 이유 없다. 
+      </p><p>  나. 손해배상의 범위</p><p>
+        피고 1이 원고로부터 해고된 데 악의를 품고 위와 같은 행위에 이른 점, 위 피고는 원고가 속칭 브로커를 고용하여 사건을 유치한다는 것에 대하여 객관적인 자료가 없으면서도 원고를 검찰에 고발하고, 그 고발내용을 전파력이 큰 언론기관을 통해 이를 보도되도록 한 점, 위 피고의 위와 같은 행위로 인하여 원고는 명예 및 신용 훼손, 모욕감 등으로 정신적 고통을 당하였을 것으로 넉넉히 인정되는 점, 특히 변호사라는 원고의 직업 성격상 ‘불법 브로커 고용’이라는 제보내용에 의한 원고의 명예나 신용 훼손의 정도가 클 것으로 보이고 그 회복도 쉽지 않을 것으로 보이는 점, 기타 이 사건 변론에서 나타난 제반사정을 참작하면, 
+        피고 1이 원고에게 배상하여야 할 위자료의 액수는 2,000만 원으로 정함이 상당하다.  
+      </p><p>  다. 
+        피고 1의 상계항변에 관한 판단
+      </p><p>
+        피고 1은, 원고가 자신을 부당해고하였고 그 사이 원고로부터 온갖 모욕과 배신을 당하여 심한 정신적 고통을 당하였으므로, 이에 기한 위자료 채권으로 상계하면 원고의 청구는 이유 없다는 취지로 주장한다.
+      </p><p>    그러나 앞서 본 바와 같은 위 피고의 손해배상채무는 고의의 불법행위로 인한 것이어서 이에 대해 자신의 채권으로 상계하는 것은 허용되지 아니할 뿐만 아니라(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|496|">민법 제496조</a></span> 참조), 원고가 위 피고를 부당해고하였다고 볼 만한 증거도 없으므로, 
+        피고 1의 위 주장은 이유 없다.
+      </p><p>3. 
+        피고 2 주식회사, 
+        피고 3에 대한 청구에 대한 판단
+      </p><p>  가. 당사자들의 주장</p><p>    (1) 원고의 주장</p><p>      (가) 
+        피고 2 주식회사, 
+        피고 3은 위와 같은 원고에 관한 기사를 보도하기 전에 관련 자료의 존재 여부, 사무실의 규모 및 수임건수, 브로커로 지칭된 사무장들의 변호사협회 등록 여부 등을 확인하여 
+        피고 1이 주장하는 내용의 진위 여부를 확인하였어야 한다.
+      </p><p>      (나) 위 피고들이 기사에서 당사자의 실명을 거론하지 않고 ‘A변호사’, ‘B사무장’ 등으로 지칭하긴 하였으나 변호사업계 등에서는 당사자가 누구인지 곧바로 확인된다. 그럼에도 위 피고들은 1차 보도 이후에도 다시 연이어 기사를 내보내는 등 위법한 기사로 원고의 명예를 훼손하였다.</p><p>      (다) 따라서 위 피고들은 위와 같은 기사로 인한 명예훼손 등에 관하여 
+        피고 1과 공동불법행위자로서 원고에게 손해를 배상할 의무가 있다.
+      </p><p>    (2) 
+        피고 2 주식회사, 
+        피고 3의 주장
+      </p><p>      (가) 2006. 3. 14.자 보도는 ‘
+        피고 1이 원고를 검찰에 고발하고, 법원에 손해배상소송 등을 제기하였다’는 내용, 그 다음날 보도는 ‘검찰이 수사에 착수하였다’는 내용, 2006. 3. 31.자 보도는 ‘
+        피고 1이 원고에 대한 고발을 취하하였다’는 내용 등에 불과하여 원고의 사회적 가치나 평가를 침해할 정도의 구체적 사실을 적시한 경우에 해당하지 않는다.
+      </p><p>      (나) 보도내용 중 원고의 실명을 거론함이 없이 단순히 ‘A변호사’, ‘B사무장’ 등으로만 표시하였을 뿐이므로 그 피해자를 특정하지 않았다.</p><p>      (다) 
+        피고 1의 제보 이후 법원, 검찰, 지방변호사회 등에 확인을 거쳐 위 
+        피고 1이 원고를 고발한 것이 사실이라는 점을 확인하고 원고로부터도 의견을 들은 후 위 별지 1, 2, 3 기재와 같이 보도(이하 ‘이 사건 기사’라 한다)를 하였고, 이러한 보도경위 및 내용에 비추어 이 사건 기사내용은 공공의 이익에 관한 것으로서 그 내용이 진실한 것이고, 그 내용이 진실한 것이 아니라고 하더라도 진실한 것으로 믿을 만한 정당한 사유가 있었으므로 위법성이 조각된다.
+      </p><p>  나. 판단</p><p>    (1) 구체적 사실의 적시 여부</p><p>      언론보도에 의한 명예훼손에 있어 사실의 적시란 반드시 사실을 직접적으로 표현한 경우에 한정할 것은 아니고, 간접적이고 우회적인 표현에 의하더라도 그 표현의 전 취지에 비추어 그와 같은 사실의 존재를 암시하고, 또 이로써 특정인의 사회적 가치 내지 평가가 침해될 가능성이 있을 정도의 구체성이 있으면 족하고, 신문 등 언론매체가 특정인에 대한 기사를 게재한 경우 그 기사가 특정인의 명예를 훼손하는 내용인지의 여부는 일반 독자가 기사를 접하는 통상의 방법을 전제로 그 기사의 전체적인 취지와의 연관 하에서 기사의 객관적 내용, 사용된 어휘의 통상적인 의미, 문구의 연결방법 등을 종합적으로 고려하여 그 기사가 독자에게 주는 전체적인 인상을 기준으로 판단하여야 하고, 여기에다가 당해 기사의 배경이 된 사회적 흐름 속에서 당해 표현이 가지는 의미를 함께 고려하여야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다37647|판결" href="#//">대법원 2003. 1. 24. 선고 2000다37647 판결</a></span> 등 참조). 
+      </p><p>      이 사건에 관하여 보건대, 이 사건 기사는 비록 
+        피고 1로부터 들은 고발내용 등을 
+        피고 1의 입을 빌어 전하는 형식을 취하고 있고 후속 보도로 검찰 수사 착수, 고발 취하 등의 객관적 사실을 다루고 있기는 하나, 그 기사내용에는 원고가 ‘불법 브로커’를 고용하여 수임하는 등의 불법을 저질렀다는 
+        피고 1의 고발내용과 그에 대한 수사 착수사실이 구체적으로 적시되어 있고, 고발 취하 후에 보도된 기사에는 “검찰이 결정적 정보 못 얻어 허탈해 하고 있다” 등의 다분히 주관적인 내용까지 추가되어 있어, 그 기사를 읽는 독자들로 하여금 원고가 그와 같은 범법행위를 저질렀다는 인상을 갖도록 하기에 충분하다 할 것이므로 전체적으로 보아 원고의 사회적 가치 내지 평가를 저하시킬 만한 구체적인 사실의 적시가 있었다고 할 것이다. 
+      </p><p>    (2) 피해자의 특정 여부</p><p>      명예훼손에 의한 불법행위에 있어 피해자의 특정은 반드시 사람의 성명이나 단체의 명칭을 명시해야만 하는 것은 아니고, 사람의 성명을 명시하지 않거나 또는 두문자(두문자)나 이니셜만 사용한 경우라도 그 표현의 내용을 주위사정과 종합하여 볼 때 그 표시가 피해자를 지목하는 것을 알아차릴 수 있을 정도이면 피해자가 특정되었다고 할 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다50213|판결" href="#//">대법원 2002. 5. 10. 선고 2000다50213 판결</a></span> 등 참조).
+      </p><p>      이 사건 기사내용을 보면, ‘A변호사’, ‘B사무장’ 등으로 익명처리를 하고 있긴 하나, 그들의 직업이 특정되어 있고 
+        피고 1의 나이 및 민사사무장으로 근무한 시기 등을 적시해 놓고 있어 변호사업계 종사자나 그 주변 사람들이 ‘A변호사’가 원고를 가리키는 것으로 쉽게 알아차릴 수 있었다고 봄이 상당하여 그 피해자 또한 특정되었다 할 것이다.
+      </p><p>    (3) 위법성 조각 여부</p><p>      언론을 통해 사실을 적시함으로써 타인의 명예를 훼손하는 행위를 한 경우에도 그것이 공공의 이해에 관한 사항으로서 그 목적이 오로지 공공의 이익을 위한 것인 때에는 진실한 사실이라는 것이 증명되면 그 행위에 위법성이 없고, 또한 그 진실성이 증명되지 아니하더라도 행위자가 그것을 진실이라고 믿을 만한 상당한 이유가 있는 경우에는 위법성이 없다고 보아야 할 것이나, 그 표현 내용이 진실이라고 믿을 만한 상당한 이유가 있는지의 여부는 적시된 사실의 내용, 진실이라고 믿게 된 근거나 자료의 확실성과 신빙성, 사실 확인의 용이성, 피해자의 피해 정도 등 여러 사정을 종합하여 행위자가 적시 내용의 진위 여부를 확인하기 위하여 적절하고도 충분한 조사를 다하였는가, 그 진실성이 객관적이고도 합리적인 자료나 근거에 의하여 뒷받침되는가 하는 점에 비추어 판단하여야 하는바(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다58823|판결" href="#//">대법원 2008. 1. 24. 선고 2005다58823 판결</a></span> 등 참조), 이러한 법리하에 아래에서 
+        피고 2 주식회사, 
+        피고 3이 이 사건 기사를 보도한 행위가 위법성 조각의 요건을 갖추었는지 여부를 살펴본다.
+      </p><p>      (가) 사실의 공익성 여부</p><p>        변호사가 업무수행과 관련하여 불법행위를 저지르고 함께 근무하던 직원이 수사기관에 그러한 내용을 고발하였다는 내용 등은 변호사업의 특수성과 수임비리에 따른 폐해를 척결할 필요성 등을 고려하면 이 사건 기사는 공공의 이익에 관한 것을 다루고 있다고 인정된다.</p><p>      (나) 사실의 진실성 여부</p><p>        이 사건 기사의 전체적인 내용은, 
+        피고 1이 원고를 ‘불법 브로커’를 고용하여 사건을 수임한 혐의 등으로 검찰에 고발하였다가 이를 취하하였는데 검찰이 수사에 착수하였다가 위 
+        피고 1로부터 결정적인 정보를 얻지 못하여 허탈해 하고 있다는 것인바, 
+        피고 1의 원고에 대한 고발 및 그로 인한 검찰의 수사 착수, 
+        피고 1의 고발 취하 등은 앞서 본 바와 같이 진실한 사실이라 할 것이나, 이 사건 기사의 주된 내용을 이루는 
+        피고 1의 고발내용, 즉 “원고가 ‘불법 브로커’를 고용하여 사건을 수임하였다”는 
+        피고 1의 고발내용 그 자체는 
+        피고 1의 일방적 주장을 담은 고발장 등 외에는 이를 진실한 사실이라고 인정할 만한 증거가 없고, 오히려 앞서 본 바와 같이, 
+        피고 1은 변호사협회에 등록된 원고의 사무장들을 ‘브로커’라고 한 자신의 판단이 잘못되었다면서 2006. 3. 29. 원고에 대한 고발을 취하하였고, 검찰은 
+        피고 1의 추측 진술 이외에는 그 고발내용을 인정할 증거가 없다는 이유로 각하처분을 한 사실을 인정할 수 있을 뿐이다. 
+      </p><p>        그 외에도, 이 사건 기사 중 
+        피고 1의 고발 취하 후에 보도된 내용 중에는 “검찰이 결정적 정보를 못 얻어 허탈해 하고 있다”, “창원지검의 한 관계자는 고발 취소로 별다른 정보를 얻지 못하여 아쉬워하고 있다”, “법조 주변에서는 ‘A씨가 고발장을 제출하였다가 이제 와서 별다른 이유 없이 고발을 취소한 것은 납득하기 힘든 행동으로 말 못할 사정이 있을 것’이라는 추측이 많다”는 등의 내용도 포함되어 있는바, 이는 다분히 추상적이고 주관적인 내용으로서 그러한 발언들이 실제로 있었는지 여부를 알 수 없고, 나아가 고발내용이 마치 진실한 사실인 듯한 인상을 불러 일으키는 위 발언들의 뉘앙스를 뒷받침할 아무런 자료도 없다.
+      </p><p>        한편, 이 사건 기사에는 ‘불법 브로커’ 고용이 사실무근이라는 원고의 반론을 함께 싣고 있으나, 이는 이 사건 기사의 제목이나 주된 내용에 비추어 볼 때 부수적인 것에 불과하여 
+        피고 1의 고발내용을 부각시킨 이 사건 기사의 전체적인 진실성에 관한 평가를 뒤바꾸지는 못한다 할 것이다.
+      </p><p>        따라서 이 사건 기사는 그 내용이 진실하다는 증명이 없는 경우에 해당한다.</p><p>      (다) 진실이라고 믿을 상당한 이유가 있는지 여부</p><p>
+        피고 3이 
+        피고 1로부터 제보를 받고 검찰 민원실 등에 고발사실 등을 확인하고 원고에게 그 사실 여부를 확인한 사실은 앞서 본 바와 같으나, 정작 
+        피고 1의 고발내용 자체가 진실이라는 점을 확인하기 위해서 객관적인 자료를 확인하는 등의 충분한 취재활동을 하였음을 인정할 증거가 없고, 오히려, 앞서의 거시증거들에 변론 전체의 취지를 종합하면, 
+        피고 3은 
+        피고 1의 제보 직후 그 자리에서 간단히 전화로 고발사실 등을 확인하고 원고의 발언을 청취하는 절차를 취하였을 뿐, 고발내용과 전혀 배치되는 원고의 발언에도 불구하고 바로 
+        피고 1의 제보내용을 주로 인용하여 기사를 작성하여 다음날 보도되도록 한 사실을 인정할 수 있는바, 위 고발내용의 보도가 원고의 명예나 신용에 미치는 영향이 심각하다는 점, 그 보도가 추가적인 사실확인 없이 속보를 요할 만큼 시급한 것은 아니라는 점 등을 위 인정사실에 보태어 보면, 
+        피고 3이 이 사건 기사의 주된 내용을 이루는 
+        피고 1의 고발내용이 진실이라고 믿은 데 상당한 이유가 있었다고 보기 어려우므로, 결국 이 사건 기사 보도의 위법성이 조각된다는 
+        피고 2 주식회사, 
+        피고 3의 위 주장은 이유 없다.
+      </p><p>    (4) 소결론</p><p>      따라서 
+        피고 2 주식회사, 
+        피고 3이 이 사건 기사를 보도한 행위는 원고의 명예나 신용을 훼손하여 그 사회적 가치 내지 평가를 침해하는 불법행위에 해당한다 할 것이고, 위 피고들 주장의 위법성조각사유는 인정되지 않으므로, 위 피고들은 공동불법행위자로서 
+        피고 1과 각자 위와 같은 불법행위로 인하여 원고가 입은 정신적 손해를 배상할 의무가 있다.
+      </p><p>  나. 손해배상의 범위</p><p>
+        피고 3이 주로 
+        피고 1의 일방적인 고발내용 및 그 주장 등에 근거하여 이 사건 기사를 작성·보도하였다는 점, 
+        피고 3은 
+        피고 1의 고발이 취하된 후에도 위 고발내용이 진실일 것이라는 인상을 주는 주관적이고 추측성의 발언을 실어 후속보도를 한 점, 위 고발내용에 관한 
+        피고 2 주식회사의 보도는 광범위하고 신속한 전파력을 가지는 점, 이로 인한 원고의 명예나 신용 훼손의 정도가 크고 그 회복도 쉽지 않을 것으로 보이며, 원고가 겪은 정신적 고통도 클 것으로 보이는 점, 기타 이 사건 변론에서 나타난 제반사정을 참작하면, 
+        피고 2 주식회사, 
+        피고 3이 원고에게 배상하여야 할 위자료의 액수는 
+        피고 1에 대하여 인정된 위 2,000만 원 중 1,000만 원으로 정함이 상당하다.
+      </p><p>4. 결론</p><p>  그렇다면, 원고에게, ① 
+        피고 1은 위자료 2,000만 원 및 그 중 제1심 판결에서 인용된 부분인 1,000만 원에 대하여는 원고가 구하는 이 사건 소장 부본 송달 다음날인 2006. 6. 29.부터 위 피고가 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 제1심 판결 선고일인 2007. 6. 7.까지는 민법 소정의 연 5%, 그 다음날부터 다 갚는 날까지는 ‘소송촉진 등에 관한 특례법’ 소정의 연 20%의 각 비율로 계산한 지연손해금을, 당심에서 추가로 지급을 명하는 부분인 1,000만 원(= 2,000만 원 - 1,000만 원)에 대하여는 위 2006. 6. 29.부터 위 피고가 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 당심 판결 선고일인 2008. 4. 3.까지는 위 연 5%, 그 다음날부터 다 갚는 날까지는 위 연 20%의 각 비율로 계산한 지연손해금을, ② 
+        피고 2 주식회사, 
+        피고 3은 
+        피고 1과 각자 위 2,000만 원 중 1,000만 원 및 이에 대하여 위 2006. 6. 29.부터 위 피고들이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 당심 판결 선고일인 2008. 4. 3.까지는 위 연 5%, 그 다음날부터 다 갚는 날까지는 위 연 20%의 각 비율로 계산한 지연손해금을, 각 지급할 의무가 있으므로, 원고의 피고들에 대한 청구는 위 각 인정범위 내에서 이유 있어 이를 각 인용하고 나머지 청구는 이유 없어 이를 각 기각할 것인바, 제1심 판결의 원고 패소부분 중 이와 결론을 일부 달리한 부분은 부당하므로, 원고의 피고들에 대한 항소를 일부 받아들여 제1심 판결 중 당심에서 추가로 인정한 금원에 해당하는 원고 패소부분을 취소하고 피고들에 대하여 위 금원의 지급을 명하며, 제1심 판결 중 나머지 부분은 정당하므로 원고의 피고들에 대한 나머지 항소는 이유 없어 이를 모두 기각하기로 하여, 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   한범수(재판장) 성창익 권재창 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

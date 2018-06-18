@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2008다16851 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063734';
+var contIdEtc = '';
+var saNo = '2008다16851';
+var sngoNm = '선고';
+var saNm = '부당이득금등';
+try {
+	var sngoDay=('20101209' ? 
+			'20101209'.length==4 ? Date.parseExact('20101209','yyyy').toString('yyyy. M. d.') : 
+				'20101209'.length==6 ? Date.parseExact('20101209','yyyyMM').toString('yyyy. M. d.') : 
+					'20101209'.length==8 ? Date.parseExact('20101209','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008다16851 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008다16851';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2008다16851</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(12)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(22)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(6)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1971449">대법원 2011. 4. 14. 선고 2009다82060 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833056">조용현 구분소유자의 손해배상청구권과 입주자대표회의의 하자보수보증금청구권의 관계 : 대법원 2012. 9. 13. 선고 2009다23160 판결 법과 정의 그리고 사람:. 박병대 대법관 재임기념 문집(2017)   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|845271">주채광 공동주택의 경우 하자판정의 기준도면이 착공도면인지 준공도면인지 여부 : 대법원 2014. 10. 15. 선고 2012다18762 판결 이상훈 대법관 재임기념 문집   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701012">이영창 개정 집합건물법상 하자담보책임 대법원판례해설 제93호 / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661993">고은설 일조가 부족한 아파트의 분양자책임 : 하자담보책임을 중심으로 민사판례연구 34권  / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701670">남기연 문신시술과 민사책임에 관한 연구 법학논총 36권 2호 / 단국대학교  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|684047">권오걸 자유심증에서의 경험칙과 한계 법학연구 제48집 / 한국법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665260">김미리 집합건물의 시공자가 구 집합건물의 소유 및 관리에 관한 법률 제9조에 의한 분양자의 하자담보책임을 부담하는지 여부 및 상행위인 건설도급계약에 기한 수급인의 하자담보책임의 소멸시효기간 대법원판례해설 89호  / 법원도서관  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|845264">이영창 집합건물법상 하자담보책임 : 대법원 2012. 7. 12. 선고 2010다108234 판결 이상훈 대법관 재임기념 문집   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|758054">권민재 아파트 분양계약의 경우 하자 판정의 기준이 되는 설계도면 : 대법원 2014. 10. 15. 선고 2012다18762 판결 재판과 판례 제23집 / 대구판례연구회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548408">한국. 대법원 법원행정처 재판실무편람. 제4호:. 건설재판실무편람 건설재판실무편람 집필위원회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769752">주채광 공동주택의 경우 하자판정의 기준도면이 착공도면인지 준공도면인지 여부 : 2014. 10. 15. 선고  2012다18762 판결: 공2014하, 2168 대법원판례해설 제101호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769725">김상훈 분양카탈로그와 상이하게 시공된 사항이 하자인지 여부 : 2014. 11. 13. 선고 2012다29601 판결: 공2014하, 2320 대법원판례해설 제101호 / 법원도서관  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다24891">대법원 2004. 1. 27. 선고 2001다24891 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="주택건설촉진법|38|0|20030529">주택건설촉진법(구) 제38조 제14항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="주택건설촉진법|15|0|null">주택건설촉진법(구) 제15조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="주택건설촉진법|16|0|null">주택건설촉진법(구) 제16조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제3항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="공동주택관리령|16|0|20031129">공동주택관리령(구) 제16조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="주택법시행령|59|0|null">주택법 시행령 제59조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="공동주택관리령|16|2|null">공동주택관리령(구) 제16조의2 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="주택법시행령|59|0|null">주택법 시행령 제59조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="공동주택관리령|17|0|null">공동주택관리령(구) 제17조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="주택법시행령|60|0|null">주택법 시행령 제60조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="민법|667|0|null">민법 제667조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="민법|668|0|null">민법 제668조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="민법|669|0|null">민법 제669조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="민법|670|0|null">민법 제670조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink17" name="linkContJomun" type="민법|671|0|null">민법 제671조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink18" name="linkContJomun" type="민법|667|0|null">민법 제667조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink19" name="linkContJomun" type="민법|671|0|null">민법 제671조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink20" name="linkContJomun" type="민사소송법|202|0|null">민사소송법 제202조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink21" name="linkContJomun" type="주택건설기준등에관한규칙|7|0|20031215">주택건설기준등에관한규칙(구) 제7조 제1항 제2호 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다24891">대법원 2004. 1. 27. 선고 2001다24891 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택건설기준등에관한규칙|7|0|null">주택건설기준 등에 관한 규칙 제7조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택건설기준등에관한규칙|7|0|null">주택건설기준 등에 관한 규칙 제7조 제1항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|16|0|null">주택법 제16조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2006나70099">서울고법 2008. 1. 15. 선고 2006나70099 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 12. 9. 선고 2008다16851 판결</h2><p class="sub_title">[부당이득금등][공2011상,85]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 구 주택건설촉진법과 현행 주택법 등의 하자보수 관련 규정이 공동주택 공사 수급인의 도급인에 대한 민법상 하자담보책임에 영향을 미치는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] ‘건축물의 하자’의 의미와 그 판단 기준</p>
+      <p></p>
+      <p>
+        </p><p>[3] 재개발 아파트 공사의 감리회사가 그 아파트에 인접한 비탈면에 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">‘주택건설기준 등에 관한 규칙’ 제7조 제1항 제2호</a></span> 본문에 정한 수해방지 등을 위한 소단이 설치되지 않았음에도 이에 대하여 감리완료보고서 등에서 별다른 언급을 하지 않은 점 등을 들어 위 비탈면이 소단을 설치하지 않아도 되는 경우를 정한 같은 호 단서를 충족한 사실이 추정된다고 한 원심판단은, 그 단서 규정이 감리완료보고서 작성 후 신설된 규정인 점 등에 비추어 논리와 경험칙에 어긋난 사실인정 등으로 위법하다고 한 사례
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 구 주택건설촉진법(2003. 5. 29. 법률 제6916호 주택법으로 전부 개정되기 전의 것), 구 공동주택관리령(2003. 11. 29. 대통령령 제18146호 
+          주택법 시행령 부칙 제2조로 폐지) 등의 관련 규정에 의하면, 공동주택의 입주자·입주자대표회의 또는 관리주체는 공사의 내용과 하자의 종류 등에 따라 1년 내지 3년(다만 내력구조부의 결함으로 인하여 공동주택이 무너지거나 무너질 우려가 있는 경우에는 5년 또는 10년)의 범위에서 정하여진 기간 내에 발생한 하자에 대하여 사업주체에게 하자의 보수를 요구할 수 있는데, 이는 행정적인 차원에서 공동주택의 하자보수 절차·방법 및 기간 등을 정하고 하자보수보증금으로 신속하게 하자를 보수할 수 있도록 하는 기준을 정하는 데 그 취지가 있을 뿐이므로, 구 주택건설촉진법 등의 관련 규정은 공동주택 공사 수급인의 도급인에 대한 민법에 따른 하자담보책임에 영향을 미칠 수 없고, 이는 현행 주택법 등의 관련 규정이 시행된 이후에도 마찬가지이다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 건축물의 하자라고 함은 일반적으로 완성된 건축물에 공사계약에서 정한 내용과 다른 구조적·기능적 결함이 있거나, 거래관념상 통상 갖추어야 할 품질을 제대로 갖추고 있지 아니한 것을 말하는 것으로, 하자 여부는 당사자 사이의 계약 내용, 해당 건축물이 설계도대로 건축되었는지 여부, 건축 관련 법령에서 정한 기준에 적합한지 여부 등 여러 사정을 종합적으로 고려하여 판단되어야 한다.</p>
+      <p></p><p>
+        </p><p>[3] 재개발 아파트 공사를 감리한 회사가 그 재개발 아파트에 인접한 비탈면에 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">주택건설기준 등에 관한 규칙 제7조 제1항 제2호</a></span> 본문에 정한 수해방지 등을 위한 소단이 설치되지 않았음에도 감리완료보고서 등에서 소단 미설치에 대한 별다른 언급을 하지 않았고, 재개발사업의 승인권자인 구청도 소단 미설치에 대한 조치를 취하지 않은 채 아파트의 사용승인을 해준 점 등을 들어, 위 비탈면이 소단을 설치하지 않아도 되는 경우를 정한 같은 호 단서를 충족한 사실이 추정된다고 한 원심판단은, 그 단서 규정이 감리완료보고서 작성 후 비로소 신설된 규정인 점 등에 비추어 논리와 경험칙에 어긋난 사실인정 등으로 인하여 위법하다고 한 사례.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|38|">구 주택건설촉진법(2003. 5. 29. 법률 제6916호 주택법으로 전부 개정되기 전의 것) 제38조 제14항</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제1항</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|15|">제15조</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제2항</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|16|">제16조</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">주택법 제46조 제1항</a></span> 및         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제3항</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공동주택관리령|16|">구 공동주택관리령(2003. 11. 29. 대통령령 제18146호 주택법 시행령 부칙 제2조로 폐지) 제16조 제1항</a></span> [별표 7](현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">주택법 시행령 제59조 제1항</a></span> [별표 6] 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공동주택관리령|16|2">제16조의2</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|59|">주택법 시행령 제59조 제1항</a></span> [별표 7] 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공동주택관리령|17|">제17조</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법 시행령|60|">주택법 시행령 제60조</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|668|">제668조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|669|">제669조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|670|">제670조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">제671조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">제671조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|202|">민사소송법 제202조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준등에관한규칙|7|">구 주택건설기준 등에 관한 규칙(2003. 12. 15. 건설교통부령 제382호로 개정되기 전의 것) 제7조 제1항 제2호</a></span>, 부칙(2001. 3. 26.)      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다24891|판결" href="#//">대법원 2004. 1. 27. 선고 2001다24891 판결</a></span>(공2004상, 430)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인 겸 상고인】
+      
+        신당제3구역주택재개발조합 (소송대리인 변호사 김남식 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인 겸 피상고인】
+      
+        에스케이(SK)건설 주식회사 외 1인 (소송대리인 법무법인 남산 외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2006나70099|판결" href="#//">서울고법 2008. 1. 15. 선고 2006나70099 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 원심판결 첨부 별지 2. 시공하자 내역표 순번 9 기재 시공하자(비탈면 소단 미설치)에 관한 손해배상청구 부분을 파기하고, 그 부분 사건을 서울고등법원에 환송한다.  피고들의 상고를 모두 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 피고들의 상고이유 제1점 및 피고 현대건설 주식회사의 상고이유 제3점에 관하여</p><p>  이 부분 상고이유는 결국 사실심인 원심의 전권에 속하는 증거취사 및 사실인정을 탓하는 것으로서 적법한 상고이유가 될 수 없을 뿐만 아니라, 원심판결 이유를 기록에 비추어 살펴보더라도 원심의 사실인정과 판단은 정당한 것으로 수긍할 수 있으므로, 거기에 상고이유에서 주장하는 바와 같은 채증법칙 위배 등의 위법이 없다.</p><p>  2. 피고 현대건설 주식회사의 상고이유 제2점에 관하여</p><p>  이 부분 상고이유는 원심의 가정적 판단에 관한 것으로 그 당부의 판단이 판결에 영향을 미칠 수 없으므로 이 부분 상고이유를 받아들일 수 없다.</p><p>  3. 피고 에스케이건설 주식회사의 상고이유 제2점 및 피고 현대건설 주식회사의 상고이유 제4점에 관하여</p><p>
+        <span class="accrnt_txt">구 주택건설촉진법(2003. 5. 29. 법률 제6916호 주택법으로 전부 개정되기 전의 것), 구 공동주택관리령(2003. 11. 29. 대통령령 제18146호로 폐지) 등의 관련 규정에 의하면, 공동주택의 입주자·입주자대표회의 또는 관리주체는 공사의 내용과 하자의 종류 등에 따라 1년 내지 3년(다만, 내력구조부의 결함으로 인하여 공동주택이 무너지거나 무너질 우려가 있는 경우에는 5년 또는 10년)의 범위에서 정하여진 기간 내에 발생한 하자에 대하여 사업주체에게 하자의 보수를 요구할 수 있는바, 이는 행정적인 차원에서 공동주택의 하자보수 절차·방법 및 기간 등을 정하고 하자보수보증금으로 신속하게 하자를 보수할 수 있도록 하는 기준을 정하는 데 그 취지가 있을 뿐이므로</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다24891|판결" href="#//">대법원 2004. 1. 27. 선고 2001다24891 판결</a></span> 등 참조) 
+        <span class="accrnt_txt">구 주택건설촉진법 등의 관련 규정은 공동주택 공사 수급인의 도급인에 대한 민법에 따른 하자담보책임에 영향을 미칠 수 없고, 이는 현행 주택법 등의 관련 규정이 시행된 이후에도 마찬가지라 할 것이다.</span>
+      </p><p>  위 법리에 비추어 원심판결 이유를 살펴보면, 원심이 그 판시와 같은 근거를 들어 이 사건 참여계약에 의해 도급인의 지위에 있는 원고가 수급인인 피고들에 대하여 하자담보책임을 물을 수 있다고 판단한 것은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 하자담보추급권의 귀속에 관한 법리오해 등의 위법이 없다.</p><p>  또한 원심판결 이유에 의하면, 원심은 피고들이 주장하는 사정만으로는 원고, 피고들, 이 사건 아파트 입주자 사이에 피고들이 이 사건 아파트 입주자에게 직접 하자보수의무를 이행하고 원고의 피고들에 대한 하자담보추급권을 배제하기로 하는 의사의 합치가 있었다는 점을 인정하기 어렵다고 판단하였는바, 이에 관한 상고이유는 사실심인 원심의 전권에 속하는 증거취사 및 사실인정을 탓하는 것으로서 적법한 상고이유가 될 수 없을 뿐만 아니라, 원심판결 이유를 기록에 비추어 살펴보더라도 원심의 위와 같은 판단은 정당한 것으로 수긍할 수 있으므로, 거기에 상고이유로 주장하는 바와 같은 채증법칙 위배 등의 위법이 없다.</p><p>  그 밖에 이 사건 참여계약이 제3자인 이 사건 아파트 입주자를 위한 계약임을 전제로 하여 이 사건 시공하자를 이유로 한 손해배상청구는 제3자인 이 사건 아파트 입주자의 권리를 침해하는 것이라거나 또는 이 사건 시공하자를 이유로 한 손해배상청구가 권리남용에 해당되거나 신의칙 및 공서양속에 위반된다는 피고들의 상고이유는 피고들의 독자적인 견해에 불과하므로 받아들이기 어렵다.</p><p>  4. 피고 현대건설 주식회사의 상고이유 제5점에 관하여</p><p>
+        <span class="accrnt_txt">건축물의 하자라고 함은 일반적으로 완성된 건축물에 공사계약에서 정한 내용과 다른 구조적·기능적 결함이 있거나, 거래관념상 통상 갖추어야 할 품질을 제대로 갖추고 있지 아니한 것을 말하는 것으로, 하자 여부는 당사자 사이의 계약 내용, 해당 건축물이 설계도대로 건축되었는지 여부, 건축 관련 법령에서 정한 기준에 적합한지 여부 등 여러 사정을 종합적으로 고려하여 판단되어야 한다.</span>
+      </p><p>  원심판결 첨부 별지 2. 시공하자 내역표 순번 1, 6, 7 기재 시공하자 부분에 관하여는 그 시공 부분이 관련 법령에서 정한 기준을 충족시키지 못하는 것으로 평가되는 점 등 기록에 나타난 여러 사정을 위 법리에 비추어 살펴보면 원심의 사실인정과 판단은 정당하고, 거기에 하자의 의미나 판단 기준에 관한 법리오해 등의 위법이 없다.</p><p>  또한 원심판결 첨부 별지 2. 시공하자 내역표 순번 3 기재 시공하자 부분에 관하여 원심은 위 피고의 하자보수에 갈음한 손해배상책임을 인정하였을 뿐이므로, 위 피고에게 아무런 이득이 없으므로 부당이득이 성립하지 않는다는 상고이유 주장은 원심의 판단내용을 오해한 것이고, 나머지 위 시공하자 부분에 관한 상고이유는 사실심인 원심의 전권에 속하는 증거취사 및 사실인정을 탓하는 것으로서 적법한 상고이유가 될 수 없을 뿐만 아니라, 원심판결 이유를 기록에 비추어 살펴보더라도 원심의 사실인정과 판단은 정당한 것으로 수긍할 수 있으므로, 거기에 상고이유에서 주장하는 바와 같은 하자에 관한 법리오해 등의 위법이 없다.</p><p>  5. 원고의 상고이유에 관하여</p><p>  원심판결 이유에 의하면, 원심은 원심판결 첨부 별지 2. 시공하자 내역표 순번 9 기재 시공하자에 관한 손해배상청구 부분에 대하여 다음과 같은 이유로 원고의 주장을 배척하였다. 즉, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">주택건설기준 등에 관한 규칙(이하 ‘규칙’이라 한다) 제7조 제1항</a></span>은 “주택단지에 비탈면이 있는 경우에는 다음 각 호에서 정하는 바에 따라 수해방지 등을 위한 조치를 하여야 한다.”라고 규정하면서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">제2호</a></span> 본문으로 “비탈면의 높이가 3m를 넘는 경우에는 높이 3m 이내마다 그 비탈면의 면적의 5분의 1 이상에 해당하는 면적의 단을 만들 것.”이라고 규정하고 있는데, 이 사건 아파트에 인접한 비탈면이 위 규칙을 충족시키지 못하고 있고 위 규칙에 맞게 위 비탈면을 시공하는 데 550,910,735원이 소요되는 사실을 인정하면서도, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">규칙 제7조 제1항 제2호</a></span> 단서는 “다만, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|16|">주택법 제16조</a></span>의 규정에 의한 사업계획의 승인권자가 그 비탈면의 토질·경사도 등으로 보아 건축물의 안전상 지장이 없다고 인정하는 경우에는 그러하지 아니하다.”라고 규정하고 있고, 원심의 주식회사 건화종합건축사사무소에 대한 사실조회 결과에 의하면, 이 사건 아파트공사를 감리한 주식회사 건화종합건축사무소는 이 사건 아파트에 인접한 비탈면에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">규칙 제7조 제1항 제2호</a></span> 본문에 의한 소단이 설치되지 않았음에도 같은 호 단서가 적용된다고 보아서 감리완료보고서 등에서 소단 미설치에 대한 별다른 언급을 하지 않았고, 이 사건 재개발사업의 승인권자인 서울 중구청도 소단 미설치에 대한 조치를 취하지 않은 채 이 사건 아파트에 대한 사용승인을 해준 사실을 인정할 수 있는바, 위 인정 사실에 비추어 보면 이 사건 아파트에 인접한 비탈면은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">규칙 제7조 제1항 제2호</a></span> 단서를 충족한 사실이 추정된다는 것이다.
+      </p><p>  그러나 원심의 위와 같은 판단은 다음과 같은 이유로 수긍하기 어렵다.</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설기준 등에 관한 규칙|7|">규칙 제7조 제1항 제2호</a></span> 단서는 위 규칙이 2001. 3. 26. 건설교통부령 제273호로 일부 개정되면서 비로소 신설되어 위 개정 규칙 부칙에 의하여 같은 날 시행된 규정이고, 한편 원심이 적법하게 조사한 증거에 의하면, 주식회사 건화종합건축사무소는 2000. 11. 감리완료보고서를 작성하였음을 알 수 있다.
+      </p><p>  그렇다면 위 단서 규정은 주식회사 건화종합건축사무소가 감리완료보고서를 작성할 무렵에는 존재하지 않았던 규정이므로 주식회사 건화종합건축사무소가 위 단서 규정이 적용된다고 보아서 감리완료보고서 등에 소단 미설치에 대한 별다른 언급을 하지 않았다는 원심의 사실인정은 논리칙에 어긋나는 것이고, 감리완료보고서 등에 소단 미설치에 대한 별다른 언급이 없는 상태에서 이 사건 재개발사업의 승인권자인 서울 중구청이 소단 미설치에 대한 조치를 취하지 않은 채 이 사건 아파트에 대한 사용승인을 해준 사실만으로는 이 사건 아파트에 인접한 비탈면이 위 단서 규정을 충족한 사실이 경험칙상 추정된다고 볼 수도 없다고 할 것이다.</p><p>  그럼에도 원심은 잘못되거나 불충분한 사정들을 근거로 막연하게 위 단서 규정을 충족한 사실을 추정하여 이 부분에 관한 원고의 손해배상청구를 배척하고 말았으니 원심판결에는 그 별지 2. 시공하자 내역표 순번 9 기재 시공하자에 관한 심리를 다하지 아니하고 논리와 경험칙에 어긋난 사실인정 등으로 인하여 판결에 영향을 미친 위법이 있다. 이를 지적하는 원고의 상고이유 주장은 이유 있다.</p><p>  6. 결론</p><p>  그러므로 원심판결 중 원심판결 첨부 별지 2. 시공하자 내역표 순번 9 기재 시공하자(비탈면 소단 미설치)에 관한 손해배상청구 부분을 파기하고, 그 부분 사건을 다시 심리·판단하게 하기 위하여 서울고등법원에 환송하며, 피고들의 상고를 모두 기각하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박시환(재판장) 안대희 차한성(주심) 신영철 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

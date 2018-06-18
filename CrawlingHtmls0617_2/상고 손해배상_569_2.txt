@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2004나1150 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2025650';
+var contIdEtc = '';
+var saNo = '2004나1150';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20041007' ? 
+			'20041007'.length==4 ? Date.parseExact('20041007','yyyy').toString('yyyy. M. d.') : 
+				'20041007'.length==6 ? Date.parseExact('20041007','yyyyMM').toString('yyyy. M. d.') : 
+					'20041007'.length==8 ? Date.parseExact('20041007','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2004나1150 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2004나1150';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2004나1150</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(9)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다24598">대법원 2003. 7. 22. 선고 2003다24598</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|510|0|20020126">민사소송법(구) 제510조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|511|0|null">민사소송법(구) 제511조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|49|0|null">민사집행법 제49조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|50|0|null">민사집행법 제50조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|298|0|null">민사집행법 제298조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|301|0|null">민사집행법 제301조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원|2002가단52655">서울지방법원 2003. 11. 27. 선고 2002가단52655 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2004. 10. 7. 선고 2004나1150 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 항소인】
+      
+        진혜숙(소송대리인 법무법인 이일종합법률사무소 담당변호사 김성만)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 피항소인】
+      
+        대한민국
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2004. 9. 2.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원|2002가단52655|판결" href="#//">서울지방법원 2003. 11. 27. 선고 2002가단52655 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 피고에 대한 부분을 취소한다.</p><p>2. 원고의 피고에 대한 청구를 기각한다.</p><p>3. 소송 총비용은 원고의 부담으로 한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p>   피고는 원고에게 100,000,000원 및 이에 대하여 2000. 9. 27.부터 제1심 판결선고일까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금액을 지급하라.</p>
+      <p>2. 항소취지</p>
+      <p>   원고 : 제1심 판결 중 피고에 대한 원고 패소 부분을 취소하고, 피고는 원고에게 34,909,000원 및 이에 대하여 2001. 8. 16.부터 제1심 판결 선고일까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금액을 지급하라.</p>
+      <p>   피고 : 주문과 같다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 기초사실</b>
+      </p><p>  다음 사실은 당사자 사이에 다툼이 없거나, 갑 1호증, 갑 2, 3, 4호증의 각 1, 2, 갑 5호증의 1 내지 4, 갑 6호증의 1 내지 5, 갑 7호증, 갑 8호증의 1, 2, 갑 9호증의 1 내지 42, 갑 10 내지 16호증, 갑 17호증의 1 내지 6, 갑 18호증의 1, 2, 3, 갑 19호증의 각 기재에 변론 전체의 취지를 종합하면, 이를 인정할 수 있다.</p><p>  가. 
+        소외 1은 1981. 2. 9. 소외 삼성전자 주식회사(이하 ‘소외 회사’라 한다)에 입사하여 2001. 8. 15.까지 근무하다가 퇴직하였는데, 원고는 1999. 10.경 
+        소외 1에 대하여 약정금채권이 있음을 주장하면서 서울지방법원 
+        (사건번호 생략)호로 채권자 원고, 채무자 
+        소외 1, 제3채무자 소외 회사, 청구금액 5억 원으로 하여, 채무자가 제3채무자로부터 매월 또는 매분기에 수령하는 기본 급여와 상여금, 각종 수당 등 총급여액의 1/2과 채무자가 퇴직하는 경우 수령하게 되는 퇴직금(명예퇴직금 포함) 총액의 1/2에 해당하는 임금채권에 대한 채권가압류신청을 하여, 1999. 10. 28. 위 법원으로부터 채권가압류결정(이하 ‘이 사건 채권가압류’라 한다)을 받았고, 위 결정은 1999. 11. 9. 제3채무자인 소외 회사에 송달되었다.
+      </p><p>  나. 원고는 그 후 본안 소송으로 
+        소외 1을 상대로 서울지방법원 
+        (사건번호 생략)호로 5억 원의 약정금청구의 소를 제기하여 2000. 9. 8. 원고 청구기각 판결을 선고받았으나, 서울고등법원 
+        (사건번호 생략)호 사건으로 항소하고, 청구취지를 1억 원으로 감축하여 2001. 7. 31. “제1심 판결을 취소한다. 피고는 원고에게 금 1억 원 및 이에 대한 1994. 8. 1.부터 1999. 11. 29.까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 25%의 각 비율에 의한 금원을 지급하라”는 판결을 선고받았으며, 위 판결은 2001. 10. 31. 대법원에서 
+        소외 1의 상고가 기각되어 확정되었다.
+      </p><p>  다. 한편, 이 사건 채권가압류의 채무자인 
+        소외 1은 위 가압류결정에 대하여 이의를 제기하였고, 이에 따라 진행된 서울지방법원 
+        (사건번호 생략)호 가압류이의사건에서 위 법원은 2000. 9. 8. “1. 위 가압류결정을 취소한다. 2. 채권자(이 사건 원고)의 가압류신청을 기각한다. 3. 소송비용은 채권자의 부담으로 한다. 4. 제1항은 가집행할 수 있다”는 판결을 선고하였다.
+      </p><p>  라. 그런데 이 사건 채권가압류이의사건의 담당재판부인 서울지방법원 민사합의 22부 소속 참여사무관 
+        소외 2와 법원서기 
+        소외 3은 
+        소외 1이 위 가집행선고부 가압류취소판결 이후 별도로 가압류집행취소신청을 하지 않았음에도 불구하고, 위 가집행선고부 가압류취소판결정본을 제3채무자인 소외 회사에 송달하여, 2000. 9. 26. 위 판결정본이 소외 회사에 송달되었다.
+      </p><p>  마. 위 판결정본을 송달받은 다음날인 2000. 9. 27. 소외 회사는 채무자인 
+        소외 1의 대리인으로부터 이 사건 가압류에 관하여 가압류취소판결이 선고되었으니 지급이 유보되어 있던 급여를 지급해 달라는 청구를 받고, 그동안 지급을 유보하고 있던 급여 23,452,060원을 
+        소외 1에게 지급하였고, 그 이후 2001. 8. 15. 퇴직시까지 
+        소외 1에게 정상적으로 임금 및 퇴직금을 지급하였다.
+      </p><p>  바. 그 후 채권자인 원고가 위 가압류취소판결에 대하여 항소함에 따라 진행된 서울고등법원 
+        (사건번호 생략)호 사건에서 2001. 7. 31. “제1심 판결을 취소하고 위 가압류결정을 금 1억 원의 범위 내에서 인가한다”는 판결이 선고되었고, 이에 다시 
+        소외 1이 대법원에 상고하였으나 2001. 10. 31. 상고기각 판결이 선고되어 위 항소심 판결이 확정되었다.
+      </p><p>  사. 원고는 2002. 3. 6. 위 판결정본에 기하여 인천지방법원 부천지원 
+        (사건번호 생략)호로 이 사건 채권가압류의 청구금액 중 1억 원의 채권에 관하여 가압류를 본압류로 전이하는 채권압류 및 전부명령을 신청하여 2002. 3. 11. 위 법원으로부터 이를 인용하는 채권압류 및 전부명령 결정을 받았고, 위 결정은 2002. 4. 9. 소외 회사에 송달되어 2002. 3. 16. 확정되었으나, 소외 회사는 법원으로부터 이 사건 가압류취소판결정본을 송달받은 후에 채무자인 
+        소외 1에게 임금 및 퇴직금을 지급한 것은 채권의 준점유자에 대한 변제로서 유효하다고 주장하면서 전부금의 지급을 거부하였다. 이에 원고가 소외 회사를 상대로 전부금청구의 소를 제기하였으나 그 소송의 항소심에서 소외 회사의 주장이 받아들여져 원고 패소판결이 선고되었고, 그후 대법원의 상고기각 판결로 위 판결이 확정되었다.
+      </p><p>  아. 한편, 이 사건 가압류결정이 소외 회사에 송달된 1999. 11. 9.부터 
+        소외 1이 소외 회사를 퇴직한 2001. 8. 15.까지 그가 소외 회사로부터 수령할 기본 급여, 상여금, 각종 수당 등의 1/2과 퇴직시 수령할 퇴직금(명예퇴직금 포함)의 1/2을 합한 금액은 65,091,900원이고, 
+        소외 1은 재산을 모두 정리한 후 퇴직 이전인 2001. 8. 8.자로 모든 가족이 미국으로 이민을 가 현재 국내에 남아 있는 재산이 없다.
+      </p><p>
+        <b>2. 손해배상책임의 성립 여부</b>
+      </p><p>
+        <b>가. 원고의 주장</b>
+      </p><p>   원고는, 이 사건 채권가압류에 대하여 가집행선고부 가압류취소판결이 선고되었다 하더라도 채무자인 
+        소외 1이 판결정본을 집행법원에 제출하여 별도로 가압류집행취소신청을 하지 않는 한 가압류 이의 사건의 재판부는 소송당사자가 아닌 제3채무자에는 그 판결 정본을 송달할 의무나 필요가 없었음에도 불구하고, 위 재판부의 참여사무관과 법원서기인 
+        소외 2와 
+        소외 3이 과실로 법령에 위배하여 제3채무자에 불과한 소외 회사에도 판결 정본을 송달함으로써 
+        소외 1에게 채권의 준점유자의 지위를 부여하게 된 결과, 소외 회사의 
+        소외 1에 대한 임금과 퇴직금의 지급이 유효하게 되고, 결국 원고는 본안 소송에서 승소하고서도 판결 금원 상당을 
+        소외 1로부터 지급받지 못하게 되었으므로, 피고에 대하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조</a></span>에 따라 
+        소외 2, 
+        소외 3의 위법행위로 원고가 입은 손해인 위 
+        (사건번호 생략)호 사건에서 인용된 1억 원 및 그 지연손해금 상당의 금원의 지급을 구한다고 주장한다.
+      </p><p>
+        <b>나. 판단</b>
+      </p><p>      (1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조</a></span> 소정의 국가배상책임이 성립하기 위하여는 공무원이 과실로 법령에 위반하여 타인에게 손해를 가할 것을 그 요건으로 하고 있으므로 이 사건에서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조</a></span>에 의한 국가배상책임이 성립하기 위하여는 우선 위 법원사무관 등이 판결문에 표시된 제3채무자에게 판결을 송달한 행위가 법령에 위반한 행위에 해당하여야 할 것이고, 나아가 그 행위와 원고의 손해와의 사이에 인과관계가 존재하여야 할 것이므로 이에 관하여 살펴 본다.
+      </p><p>    무릇, 가압류의 취소를 명하는 가집행선고부 판결이 있다고 하더라도, 채무자가 그 판결 정본을 집행법원에 제출하면서 가압류의 집행취소를 신청하여, 집행법원이 이에 따른 가압류의 집행취소절차(채권가압류의 경우 통상 집행법원이 제3채무자에게 가압류집행취소통지서를 송달하는 방법에 의한다)를 밟기에 이르지 아니한 이상 가압류 집행의 효력은 여전히 유지되는 것이고, 이러한 절차가 취하여지지 않은 채 집행법원 아닌 가압류이의 사건의 제1심법원이 소송당사자 아닌 제3채무자에게 위 가집행선고부 판결 정본을 송달하였다 하더라도 그것만으로 위 가압류의 집행이 당연히 취소되었다고 할 수 없는 것이므로, 소외 회사가 
+        소외 1에게 가압류된 임금과 퇴직금을 지급한 것을 유효한 변제라고는 볼 수 없다. 
+      </p><p>    한편, 채권의 준점유자에 대한 변제는 변제자가 선의이며 과실이 없는 때에는 채권을 소멸시키는 효력이 있고, 여기서 채권의 준점유자라 함은 변제자의 입장에서 볼 때 일반의 거래관념상 채권을 행사할 정당한 권한을 가진 것으로 믿을 만한 외관을 가지는 자를 의미하는 것이며, 가압류로 인하여 채권의 추심 기타 처분행위에 제한을 받다가 가압류를 취소하는 가집행선고부 판결을 선고받아 다시 채권을 제한 없이 행사할 수 있을 듯한 외관을 가지게 된 채권자 또한 채권의 준점유자로 볼 수 있을 것인 바, 채권가압류에 대한 이의소송은 원칙상 그 채권가압류를 실제로 발한 법원의 전속관할에 속하고, 채권가압류의 집행취소 역시 그 채권가압류를 실제로 발한 법원이 집행기관으로서 이를 실시하게 되어 있는 점, 채무자가 채권가압류의 집행취소의 절차를 신청하더라도 법원사무관 등이 작성한 집행취소통지서를 제3채무자에게 송달하여 그 사실을 알려주는 것 이외에 특별히 다른 절차의 필요가 없는 점, 채권가압류에 대한 이의 소송에서 제3채무자는 소송당사자가 아니므로 그에 대하여 판결 정본을 송달할 이유가 없음에도 이 사건 채권가압류이의소송의 수소법원의 송달담당자인 위 
+        소외 2 등이 위 가집행선고부 판결정본을 소외 회사에 송달한 결과 소외 회사도 위 판결이 선고된 사실을 알게 되었던 점 등에 비추어 보면, 소외 회사가 이 사건 채권가압류를 취소하는 주문이 기재된 위 가집행선고부 판결정본을 송달받음에 의하여 이 사건 채권가압류집행이 위 가집행선고부 판결에 의하여 실효되었다고 믿고 
+        소외 1의 청구에 따라 그에게 임금 및 퇴직금을 지급하기에 이른 소외 회사에게 어떤 과실이 있다고 보기 어려우므로 소외 회사의 
+        소외 1에 대한 변제는 채권의 준점유자에 대한 변제로서는 유효하다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다24598" href="#//">대법원 2003. 7. 22. 선고 2003다24598</a></span> 사건 참조).
+      </p><p>    (2) 그런데 위와 같이 
+        소외 2 등이 제3채무자에게 판결정본을 송달한 행위가 과연 법령에 위반하거나 법령위반과 동일시할만한 객관적 정당성을 잃은 행위인지에 관하여 본다.
+      </p><p>  채권가압류에 대한 이의사건에서 가집행선고부 가압류취소판결이 선고되었을 경우 담당 재판부의 사무관이 소송당사자가 아닌 판결문의 당사자 표시란에 기재된 제3채무자에게 판결 정본을 송달할 의무가 있는 것이 아님은 분명하나, 앞서 본 바와 같이 본디 가집행선고부 보전처분취소판결이 내려졌다 하여도 그 자체만으로 보전처분집행의 취소의 효과가 발생하는 것은 아니고 채무자가 별도로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|510|">구 민사소송법(2002. 1. 26. 법률 제6626호로 전면개정되기 전의 것) 제510조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|511|">제511조</a></span>(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|49|">민사집행법 제49조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|50|">제50조</a></span>에 해당)에 의해 판결 정본을 집행기관에 제출하여 집행취소를 구하는 신청을 하고, 이에 따라 집행법원의 사무관 등의 집행기관이 보전처분의 집행상태를 소멸시키는 구체적 절차를 마친 후에야 그 집행취소의 효과가 발생한다고 할 것이다. 그리고 구체적 집행취소의 방법은 각 보전처분의 집행 태양에 따라 당초 그 집행에 등기, 등록을 요하는 경우에는 집행법원이 보전처분기입등기의 말소등기, 등록을 촉탁하는 방법으로, 집행관의 집행행위를 요하는 경우에는 집행관이 현장에 임하여 보전처분에 관한 공시문을 제거하고 집행관의 점유를 해제하는 등 그 집행상태를 제거하는 조치를 취함으로써 한다고 할 것인데 반하여, 이 사건과 같이 채권가압류의 경우에는 집행법원의 사무관이 단지 채권가압류취소통지를 제3채무자에게 송달함으로써 행하여 지는데, 이는 당초 집행법원으로부터 채권가압류결정을 송달받고 그 결정 취지에 따라 채무자에게 채권의 변제를 유보하고 있던 제3채무자에게 가압류결정이 판결로서 취소되어 이제는 더 이상 채무자에의 채권의 지급을 금지하는 효력이 없다는 사실과 나아가 이후에는 채무자의 변제요구에 응하여 채권의 변제를 하여도 더 이상 이중변제의 위험에 처하지 않는다는 사실을 인식시키는 행위에 다름아니라고 할 것이다. 
+      </p><p>   당초 가집행선고부 보전처분취소판결이 있더라도 집행취소절차라는 별도의 제도를 마련하고 있었던 취지는, 위에서 본 바와 같이 채권가압류를 제외한 대부분의 보전처분은 그 집행에 있어 등기, 등록이나 집행기관의 집행행위 등 국가기관의 공권력에 의한 별도의 행위를 요하므로 그 구체적인 집행을 취소함에 있어서도 보전처분결정을 취소한다는 관념적인 판결의 선고만으로는 당초의 보전처분으로 이루어진 집행상태가 제거될 수 없음은 당연하므로, 우선 집행기관에게 보전처분결정이 판결로서 취소되었다는 사실을 알려 집행시와 마찬가지로 집행기관이 보전처분의 태양에 따른 구체적인 집행취소절차를 밟은 후에야 집행상태가 제거될 수 밖에 없다는 점에 있다고 할 것인데, 채권가압류의 경우에는 집행법원이 제3채무자에게 채무자에의 변제금지취지를 결정문 송달의 방법으로 고지함으로써 집행행위가 마쳐졌으므로 집행취소도 제3채무자에게 채무자에의 변제금지명령이 해제되었다는 사실만 고지하면 족하다고 할 것이므로 구태여 별도로 집행법원에의 집행취소신청이라는 절차를 거쳐 집행법원으로 하여금 제3채무자에게 가압류취소통지를 하게 하는 번거로운 절차를 거치지 않고서도 가압류 이의사건의 수소법원의 사무관이 제3채무자에게 바로 판결 정본을 송달하는 방법에 의하여 가압류결정취소 사실을 고지할 수도 있다고 보이고, 또한 이 사건에서와 같이 가집행선고부 보전처분취소 판결이 상급심에서 취소, 변경됨으로써 그 보전처분에 관하여 새로운 집행이 필요하게 된 때에는 취소의 판결을 한 당해 법원이 직권으로 그 집행절차를 진행할 수 밖에 없는데(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|298|">민사집행법 제298조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|301|">제301조</a></span> 참조), 실무상 채권가압류의 경우에는 사실상 판결을 한 법원이 제3채무자에게 판결 정본을 송달하는 방법으로 이를 집행할 수 밖에 없으므로 채권가압류 이의사건에서 제3채무자에게도 판결 정본을 송달할 필요가 있을 수 있는 점 등을 종합적으로 참작할 때, 채권가압류 이의사건의 수소법원 사무관이 제3채무자에게 판결 정본을 송달한 행위가 법령상 의무지워진 행위는 아니어서 불필요한 업무집행이라고는 할 수 있을지언정 거기에 어떤 법령위반이 있거나, 객관적 정당성을 결여하고 있다고 까지 볼 수는 없다. 다만 2004. 1. 12. 개정된 대법원 재판예규 제944호(재민 2003-4)에 ‘채권가압류 취소판결의 송달시 유의사항’이란 제목으로 제13조가 신설되어 ‘채권가압류에 대한 이의사건·취소사건에서 채권가압류를 취소하는 판결이 있는 경우에는 판결문에 제3채무자의 표시가 있는 경우라도 판결문 정본을 제3채무자에게 송달하여서는 아니된다’고 규정되어 있으나, 우선 위 규정은 이 사건 가압류이의 사건의 제1심 판결이 선고될 당시에는 존재하지 않았던 규정으로서 이 사건에 적용할 수는 없는데다가, 그 규정의 제정취지도 채권가압류이의 사건에서 제3채무자에게 판결정본을 송달한 것이 위법하다는 전제에서가 아니라 법원의 재판사무의 통일을 기하고 이 사건과 같이 이해관계인으로부터 손해배상청구를 당할 우려를 미연에 방지하기 위하여 관련 법원공무원의 주의를 촉구하는 정도에 불과하여 위 규정의 제정만으로 이 사건 제3채무자에의 판결문 송달행위가 사후적으로 위법성을 띄게 된다고 볼 수도 없다.    
+      </p><p>   (3) 또한, 앞서 본 바와 같이 집행법원을 통한 집행취소절차를 밟지 않은 이상 현실적으로 채권가압류 집행이 해제되었다고 볼 수 없고, 따라서 제3채무자인 소외 회사의 
+        소외 1에 대한 변제가 바로 유효하다고 볼 수는 없어도 채권의 준점유자에 대한 변제로서는 유효하다고 한다면, 결국 집행법원을 통하여 제3채무자에게 가압류실효사실을 통지하든지 가압류이의 사건을 판결한 법원이 직접 판결정본을 송달하는 방법으로 통지하든지 간에 그 최종적인 효력면에서는 차이가 없는 것이고, 채무자인 
+        소외 1이 이 사건 채권가압류의 집행해제를 적극 의욕했던 점에 비추어 집행취소의 절차를 밟든지 판결 법원의 판결 송달후 채권의 준점유자의 지위에서 소외 회사에게 지급을 구했든지 간에 결국 적법하게 유보된 임금을 찾아갈 수 있었을 것임은 위 인정사실에 비추어 명백하다고 할 것이므로 결국 위 판결정본의 송달행위로 인하여 원고에게 어떤 예상치 못한 손해를 가했다고 보기도 어렵다.  
+      </p><p>   혹여 채무자가 집행취소신청을 하지도 않고, 판결 법원이 제3채무자에게 판결정본을 송달하지도 않을 경우를 가정한다면 이 사건에서와 같이 가집행선고부 가압류취소판결이 항소심에서 취소되어 가압류가 다시 인가될 경우 채권자는 채무자의 책임재산을 확보할 수 있을 것이므로 판결법원의 사무관이 필요하지도 않은 판결정본 송달을 한 것은 결국 채권자로 하여금 채무자의 책임재산을 확보하여 채권의 만족을 얻을 수 있는 기회를 상실케 하는 손해를 입힌 것이라고 볼 여지도 있다. 그러나 이는 우선 가압류의 취소를 적극적으로 의욕하여 이의를 제기하고 변론과정에서 다투어 온 결과 가집행선고부 승소판결까지 받은 채무자에게 그 후 가압류의 집행을 해제하기 위한 어떠한 조치도 취하지 않고 가압류의 집행상태를 방치한다는 극히 기대하기 어려운 상황을 상정한다는 점에서 타당성이 없으며, 위와 같이 실제 
+        소외 1은 위 가압류결정에 불복하여 그 취소와 가압류 신청의 기각을 구하는 가압류 이의를 하였고, 본안소송과 가압류이의소송을 통해 치열하게 채권자와 공방을 한 끝에 일응 승소 판결을 얻기에 이르자, 비록 집행취소의 절차를 밟지는 않았으나 판결을 송달받자 마자 곧 바로 소외 회사에 판결 정본을 제시하면서 그 동안 유보된 임금의 지급을 청구하는 등 위 가압류이의 판결 선고 당시까지 가압류의 해제를 적극적으로 의욕해 온 점에 비추어, 가사 판결법원의 사무관이 소외 회사에게 판결 정본을 송달하지 않아 소외 회사가 법원으로부터의 통지 없이는 
+        소외 1의 청구에 응할 수 없다고 하였다 하더라도 변호사를 소송대리인으로 선임하여 법률적 조력을 받고 있던 
+        소외 1로서는 곧 바로 집행취소절차를 밟았을 것으로 예상함이 상당하고 이와는 달리 아무런 조치도 없이 막연히 상소심 판결이 확정되기를 기다려 집행취소절차를 밟을 것으로 기대하기는 어렵다.
+      </p><p>   (4) 결국 위 법원사무관 
+        소외 2와 법원서기 
+        소외 3이 소외 회사에게 판결정본을 송달한 것이 법령에 위반한 행위라고 볼 수도 없고, 원고가 주장하는 손해가 위 판결 정본의 송달로 말미암은 것이라고 볼 수도 없다.      
+      </p><p>
+        <b>3. 결론</b>
+      </p><p>  그렇다면, 위 법원사무관 등이 소외 회사에게 판결정본을 송달한 것이 법령에 위반한 행위이거나 위 판결 정본의 송달로 인해 원고가 손해를 입었음을 전제로 한 원고의 피고에 대한 청구는 이유 없어 이를 기각할 것인바, 제1심 판결은 이와 결론을 달리하여 부당하므로 피고의 항소를 받아 들여 이를 취소하고, 원고의 피고에 대한 청구를 기각하기로 하며, 원고의 항소는 이유없어 이를 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김이수(재판장) 이일주 위현석 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

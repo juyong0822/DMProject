@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2003나42833 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2036873';
+var contIdEtc = '';
+var saNo = '2003나42833';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20050330' ? 
+			'20050330'.length==4 ? Date.parseExact('20050330','yyyy').toString('yyyy. M. d.') : 
+				'20050330'.length==6 ? Date.parseExact('20050330','yyyyMM').toString('yyyy. M. d.') : 
+					'20050330'.length==8 ? Date.parseExact('20050330','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2003나42833 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2003나42833';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2003나42833</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(5)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(11)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|89헌가106">헌법재판소 1991. 7. 22. 89헌가106 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|89헌마88">1992. 11. 12. 89헌마88 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|97헌마130">헌법재판소 1999. 3. 25. 97헌마130 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|98헌가16">헌법재판소 2000. 4. 27. 98헌가16등 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2000헌마278">헌법재판소 2001. 11. 29.  2000헌마278 결정</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|31|0|null">헌법 제31조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|10|0|null">헌법 제10조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|34|0|null">헌법 제34조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|31|0|null">헌법 제31조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|31|0|null">헌법 제31조 제6항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="교원의노동조합설립및운영등에관한법률|8|0|null">교원의노동조합설립및운영등에관한법률 제8조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="사립학교법|58|0|null">사립학교법 제58조 제1항 제4호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|36|0|null">헌법 제36조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="헌법|37|0|null">헌법 제37조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울남부지방법원|2002가합1384">서울남부지방법원 2003. 6. 12. 선고 2002가합1384 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2005. 3. 30. 선고 2003나42833 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인】
+      
+        
+          원고(소송대리인 법무법인 정일 담당변호사 임홍종외 3인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인】
+      
+        
+          피고 1외 33인(소송대리인 법무법인 덕수 담당변호사 위대영외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2005. 3. 2.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울남부지방법원|2002가합1384|판결" href="#//">서울남부지방법원 2003. 6. 12. 선고 2002가합1384 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 피고들의 항소를 모두 기각한다.</p><p>2. 항소비용은 피고들의 부담으로 한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p>피고들은 연대하여 원고(선정당사자, 이하 원고라고만 한다) 및 선정자들에게 각 금 10,000,000원 및 이에 대하여 2001. 5. 27.부터 이 사건 소장 최종송달일까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 25%의 각 비율에 의한 금원을 지급하라.</p>
+      <p>2. 항소취지</p>
+      <p>제1심판결 중 피고의 패소부분을 취소하고, 위 취소부분에 해당하는 원고의 청구를 기각한다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 인정사실</p><p>  가. 2001년 4월, 5월 당시 
+        선정자 2, 
+        4, 
+        6, 
+        8, 
+        20, 
+        28, 
+        소외 1은 
+        소외 학교법인이 운영하는 
+        (명칭 생략)여자상업고등학교(이하 
+        (명칭 생략)여상이라고 한다) 3학년 20반, 
+        선정자 10, 
+        12, 
+        15, 
+        18, 
+        22, 
+        24는 같은 학교 3학년 19반, 
+        소외 2는 같은 학교 3학년 16반, 
+        선정자 26은 같은 학교 3학년 6반 학생이었고, 원고와 나머지 선정자들은 위 선정자들 및 소외 학생들(이하 ‘원고 학생들’이라고 한다)의 부 또는 모이며, 피고들은 전국교직원노동조합(이하, 전교조라 한다) 서울시지부 사립강서지회 
+        소외 학교법인연합분회 구성원들(
+        피고 1은 위 
+        소외 학교법인 연합분회장, 
+        피고 5는 
+        (명칭 생략)여상 분회장)이다.
+      </p><p>  나. 피고들은 2001. 4. 3. 경 
+        (명칭 생략)여상 정문 앞에서 
+        소외 학교법인 연합분회 창립기념 및 사립학교법 개정을 위한 궐기대회를 개최하면서, 예산결산공개, 인사위원회 구성, 단체협약안 실시, 폭력교사 보직해임을 요구하는 결의안을 채택한 다음, 같은 달 4일부터 같은 달 13일까지 하루 8시간 근무를 이유로 매일 16:00에 퇴근하고 학교 현관 앞에서 침묵시위와 피켓팅시위를 하던 중, 같은 달 16일자로 위 
+        소외 학교법인에서 
+        (명칭 생략)여자중학교 교감 
+        소외 3을 
+        (명칭 생략)여상 교장직무대리로 발령하는 인사를 단행하자 위 인사의 부당함을 주장하며 부패재단 퇴진운동을 전개하였다. 
+      </p><p>  다. 피고들은 위와 같은 주장을 관철시키기 위하여 수업을 거부하기로 결의하고, 2001. 4. 16.부터 같은 해 5. 3.까지 및 같은 해 5. 14.부터 같은 해 5. 19.까지(2001. 5. 4.부터 같은 달 12.까지는 
+        (명칭 생략)여상이 가정학습기간으로 정하여 학교에서 수업을 하지 아니함) 담당 수업을 거부하였는데, 그 중 이 사건 원고 학생들이 소속된 학급의 수업거부 내역은 별지 ‘피고들 수업거부 내역표’의 기재와 같다.
+      </p><p>  라. 또한 피고들은 자신들의 주장을 관철시키기 위하여 학교 밖에서뿐만 아니라 학교 내에서도 학생들의 참여를 유도하여 집회를 열기로 결의하고,</p><p>   (1) 2001. 4. 17. 09:00경부터 15:30경까지 
+        (명칭 생략)여상 운동장에서 학생 200여 명과 함께 ‘전교조가’, ‘임을 위한 행진곡’ 등의 노래와 
+        소외 학교법인 측을 비방하는 구호를 외치고,
+      </p><p>   (2) 같은 달 19. 08:00 경부터 11:00 경까지, 15:30 경부터 16:00 경까지 같은 장소에서 학생 300여 명과 함께 ‘참교육의 함성’ 등의 노래를 스피커를 통하여 틀어놓고 구호를 외치고,</p><p>   (3) 같은 달 20. 09:00 경부터 11:00 경까지 같은 장소에서 학생 200여 명과 함께 마이크를 이용하여 재단을 비방하는 연설을 하고 구호를 외치면서 시위를 하고,</p><p>   (4) 같은 달 21. 08:20 경부터 11:50 경까지 같은 장소에서 학생 500여 명과 함께 위 (3)항과 같은 내용의 시위를 하고,</p><p>   (5) 같은 달 23. 07:30 경부터 11:00 경까지 같은 장소에서 학생 170여 명과 함께 위 (3)항과 같은 시위를 하고, 학생들은 북과 꽹과리를 치며 운동장 및 수업을 하고 있는 교실의 복도를 행진하고,</p><p>   (6) 같은 달 24. 08:30 경부터 10:00 경까지 같은 장소에서 학생 200여 명과 함께 위 (3)항과 같은 내용의 시위를 하고,</p><p>   (7) 같은 달 25. 10:00 경부터 11:30 경까지 같은 장소에서 학생 150여 명과 함께 위 (5)항과 같은 시위를 하고, 북과 꽹과리를 치며 복도를 행진하던 일부 학생이 쓰레기가 들어 있는 봉지를 유리창으로 던져 깨뜨리는 등으로 위력을 행사하여 전교생이 2교시 수업만 받기로 하는 단축수업을 하도록 하고,</p><p>   (8) 같은 달 26. 08:30 경부터 11:50 경까지 같은 장소에서 학생 20여 명과 함께 위 (3)항과 같은 시위를 하다가 참석 학생수가 적자 학생들로 하여금 교실 쪽을 향하여 함성을 지르고 ‘나와라, 나와라’고 고함을 치게 하고, 학생들이 북과 꽹과리를 치며 교실복도를 돌아다니게 하고,</p><p>   (9) 같은 달 27. 08:50 경부터 11:50 경까지 같은 장소에서 학생 200여 명과 함께 위 (5)항과 같은 내용의 시위를 하고,</p><p>   (10) 같은 달 28. 08:50 경부터 09:30 경까지 같은 장소에서 학생 200여 명과 함께 위 (5)항과 같은 내용의 시위를 하였다.</p><p>  [인정 근거 : 다툼 없는 사실, 갑 제1호증, 갑 제2호증의 1 내지 13, 18 내지 22, 갑 제3호증, 갑 제8호증의 6, 갑 제11, 12, 15호증, 을 제3호증의 각 기재, 당심의 서울특별시 교육청에 대한 사실조회 결과, 증인 
+        선정자 8, 
+        소외 4의 각 증언, 변론의 전취지]
+      </p><p>  [배척 증거 : 을 제7, 8호증의 각 기재, 증인 
+        소외 5의 증언]
+      </p><p>2. 판  단</p><p>  가. 피고들의 손해배상책임</p><p>   (1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|31|">헌법 제31조 제1항</a></span>은 “모든 국민은 능력에 따라 균등하게 교육을 받을 권리를 가진다.”고 규정하여 국민의 교육을 받을 권리(이하 “수학권”(수학권)이라 약칭한다)를 보장하고 있는데, 이는 국민이 인간으로서 존엄과 가치를 가지며 행복을 추구하고(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|10|">헌법 제10조</a></span> 전문) 인간다운 생활을 영위하기 위한(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|34|">헌법 제34조 제1항</a></span>) 필수적인 조건이자 대전제이며, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|31|">헌법 제31조 제2항</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|31|">제6항</a></span>에서 규정하고 있는 교육을 받게 할 의무, 의무교육의 무상, 교육의 자주성·전문성·중립성 보장, 평생교육진흥, 교육제도 및 교육재정, 교원지위 법률주의 등도 국민의 수학권의 효율적인 보장을 위한 규정이라 할 것이다. 한편, 학교교육에 있어서 교사의 가르치는 권리를 수업권이라고 한다면 그것은 자연법적으로는 학부모에게 속하는 자녀에 대한 교육권을 신탁받은 것이고, 실정법상으로는 공교육의 책임이 있는 국가의 위임에 의한 것이며, 그것은 교사의 지위에서 생기는 학생에 대한 일차적인 교육상의 직무권한이지만, 학생의 수학권의 실현을 위하여 인정되는 것으로서 양자는 상호협력관계에 있다고 하겠으나, 수학권은 헌법상 보장된 기본권의 하나로서 보다 존중되어야 하며, 그것이 왜곡되지 않고 올바로 행사될 수 있게 하기 위한 범위 내에서는 수업권도 어느 정도의 범위 내에서 제약을 받지 않으면 안될 것이며(
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|89헌가106|결정" href="#//">헌법재판소 1991. 7. 22. 89헌가106 결정</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|89헌마88|결정" href="#//">1992. 11. 12. 89헌마88 결정</a></span> 등 참고), 따라서 교원에게 공교육 주관자로서 직무수행과 관련하여 포괄적인 자유재량이 보장된다고 하더라도 개개 교사들의 일정한 범위를 벗어난 행동으로부터 학생들이 보호되어야 하며, 그 밖에 일반적인 질서기준들과 국가의 교육이념의 준거는 지켜져야 할 것이다. 나아가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교원의노동조합설립및운영등에관한법률|8|">교원의노동조합설립및운영등에관한법률 제8조</a></span>는 “노동조합과 그 조합원은 파업·태업 기타업무의 정상적인 운영을 저해하는 일체의 쟁의행위를 하여서는 아니된다”고 규정하고 있고, 이와 관련하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="사립학교법|58|">사립학교법 제58조 제1항 제4호</a></span>는 사립학교의 교원이 “정치운동 또는 노동운동을 하거나 집단적으로 수업을 거부하거나 또는 어느 정당을 지지, 또는 반대하기 위하여 학생을 지도·선동한 때”를 면직사유로 규정하고 있는 것도 위에서 본 바와 같은 수학권이라는 헌법상 보장된 기본권을 확보하기 위한 규정으로 파악할 수 있다.
+      </p><p>  그리고, 비록 명문으로 규정되어 있지는 아니하지만 헌법상 부모의 자녀에 대한 교육권은 모든 인간이 국적과 관계없이 누리는 양도할 수 없는 불가침의 인권으로서, 혼인과 가족생활을 보장하는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|36|">헌법 제36조 제1항</a></span>, 행복추구권을 보장하는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|10|">헌법 제10조</a></span> 및 "국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다"고 규정하는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|37|">헌법 제37조 제1항</a></span>에서 나오는 중요한 기본권이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|97헌마130|결정" href="#//">헌법재판소 1999. 3. 25. 97헌마130 결정</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|98헌가16|결정" href="#//">헌법재판소 2000. 4. 27. 98헌가16등 결정</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2000헌마278|결정" href="#//">헌법재판소 2001. 11. 29.  2000헌마278 결정</a></span> 등 참고).
+      </p><p>   (2) 돌이켜 이 사건에 관하여 보건대, 위 인정사실에 의하면 피고들의 수업거부 등의 위법행위로 인하여 당시 진학을 앞둔 고등학교 3학년 학생이던 이 사건 원고 학생들이 수업을 받지 못하고, 평온한 환경에서 학습을 할 수 없게 되는 등 수학권이 침해되었을 뿐만 아니라 미성년인 위 원고 학생들의 부모인 원고와 나머지 선정자들의 교육권 또한 침해되었다 할 것이고, 이로 인하여 원고 및 선정자들이 정신적 고통을 입었을 것임은 경험칙상 넉넉히 인정되므로 피고들은 원고와 선정자들의 고통을 금전으로나마 위자할 의무가 있다.</p><p>   (3) 원고 및 선정자들은 피고들의 위와 같은 불법행위로 인하여 학생이던 선정자들이 진학할 수 있었던 대학교보다 더 낮은 대학교로 진학하게 되었으므로 피고들은 이로 인한 손해도 배상할 책임이 있다는 취지로도 주장하나, 증인 
+        선정자 8의 증언만으로는 피고들의 수업거부 등으로 인하여 학생이던 선정자들의 기대보다 낮은 대학교로밖에 진학할 수 없었음을 인정하기에 부족하고 달리 이를 인정할 만한 증거가 없으므로 이 부분 주장은 이유 없다.
+      </p><p>  나. 피고들의 주장에 관한 판단</p><p>   (1) 이에 대하여 피고들은, 수업거부와 시위는 
+        소외 학교법인의 공금횡령 등 비리의혹과 열악한 교육환경을 해소하기 위한 것으로서, 이 사건 원고 학생들이 수업을 받지 못한 것은 
+        소외 학교법인에게만 귀책사유가 있는 것이므로 피고들은 원고와 선정자들에게 이로 인한 손해를 배상할 책임이 없다는 취지로 주장한다. 
+      </p><p>    살피건대, 을 제1호증의 2, 3, 을 제3호증의 각 기재에 변론의 전취지를 종합하면 피고들의 수업거부와 시위는 
+        소외 학교법인의 비리의혹을 해소하고 그 전횡을 방지하여 교육환경을 개선시키고자 노력하는 과정에서 발생하게 된 것으로도 보이나, 학생들을 가르치는 교사인 피고들이 합법적인 절차나 수단에 의하지 아니하고 불법적인 방법(앞서 본 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="교원의노동조합설립및운영등에관한법률|8|">교원의노동조합설립및운영등에관한법률 제8조</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="사립학교법|58|">사립학교법 제58조 제1항 제4호</a></span> 등 참고)을 사용한 이상 비록 
+        소외 학교법인에 비리가 있었다 하더라도 이로 인하여 피고들의 행위의 위법성이 조각된다거나 책임을 면하게 된다고 할 수는 없으므로, 피고들의 이 부분 주장은 받아들이지 아니한다.
+      </p><p>   (2) 또한 피고들은 
+        (명칭 생략)여상의 학생들이 대토론회를 거쳐 자율적으로 수업거부를 결의하였으므로 피고들의 행위와 원고 및 선정자들의 손해 사이에 인과관계가 없다는 취지로도 주장한다.
+      </p><p>    살피건대, 증인 
+        소외 4의 증언에 변론의 전취지를 종합하면, 
+        (명칭 생략)여상 학생들이 대토론회를 개최하여 수업거부를 결의한 사실을 인정할 수 있으나, 위 증인의 증언에 의하더라도 위 대토론회는 각 반의 반장 등 학생회 임원들로만 이루어졌을 뿐만 아니라, 이 사건 원고 학생들 대부분이 속한 3학년 19반과 20반의 반장은 참석하지 아니하였다는 것인바, 이러한 대토론회의 결의만으로 위 대토론회에 참석하지 아니하고 수업거부에 찬성하지 아니한 학생들까지 수학권을 포기한 것으로 보기는 어렵다. 그렇다면, 위와 같이 원고 학생들의 수학권이 침해된 것이 오로지 학생들의 자율적인 결의 및 단체행동에 의한 것이라고 할 수 없고, 피고들의 수업거부 결의 및 단체행동에 의하여 비롯된 것이라고 봄이 상당하다.
+      </p><p>   (3) 마지막으로 피고들은 이 사건 원고 학생들이 속한 학급의 수업을 거의 담당하지 아니하였을 뿐만 아니라, 피고들이 학교 내에서 시위를 할 당시 피고들 이외의 교사들도 수업을 하지 아니하였으므로 피고들의 수업거부나 시위로 인하여 원고와 선정자들의 수업권, 학습권, 교육권 등이 침해된 것으로는 볼 수 없다고도 주장한다.</p><p>    살피건대, 
+        피고 2, 
+        5, 
+        7, 
+        10, 
+        13, 
+        15, 
+        23, 
+        28, 
+        29, 
+        30, 
+        34를 제외한 나머지 피고들은 3학년 6반, 16반, 19반, 20반의 수업을 담당하지 아니한 사실은 앞서 본 바와 같고, 증인 
+        선정자 8의 증언에 변론의 전취지를 종합하면, 피고들 이외에 수업거부 결의나 시위에 참여하지 아니한 
+        (명칭 생략)여상의 나머지 교사들도 일부 수업을 하지 아니한 사실을 인정할 수 있으나, 피고들 이외의 나머지 교사들의 수업이 진행되지 못한 것은 피고들의 수업거부, 시위로 인하여 학내에 소란이 생김으로 인한 것으로 보이고, 일부 피고들만이 이 사건 원고 학생들이 속한 학급의 수업을 거부한 것이라 하더라도 피고들 모두 공동불법행위자로서 이로 인한 손해를 연대하여 배상할 책임이 있는 것이므로 피고들의 이 부분 주장 또한 이유 없다.
+      </p><p>  다. 손해배상의 범위</p><p>   나아가 피고들이 원고 및 선정자들에 대하여 배상하여야 할 위자료액에 관하여 살피건대, 앞서 본 바와 같이 위 문제의 발생이 
+        소외 학교법인의 비리에서 기인하였다고도 볼 수 있는 점, 피고들의 행위가 피고들 개인의 이익을 위한 것은 아닌 것으로 보이는 점, 원고 학생들은 당시 진학을 앞둔 3학년이었던 점, 피고들이 학생들의 시위참가를 적극적으로 유도한 점 등 기록에 나타난 제반 사정을 종합하면, 피고들은 당시 
+        (명칭 생략)여상 학생이었던 
+        선정자 2, 
+        4, 
+        6, 
+        8, 
+        10, 
+        12, 
+        15, 
+        18, 
+        20, 
+        22, 
+        24, 
+        26, 
+        28에게 각 금 1,000,000원, 원고 학생들의 부 또는 모인 원고 및 
+        선정자 1, 
+        3, 
+        5, 
+        7, 
+        9, 
+        11, 
+        13, 
+        14, 
+        16, 
+        17, 
+        19, 
+        21, 
+        23, 
+        25에게 각 금 300,000원(직접적으로 수업을 받지 못하고 학습권을 침해당한 이 사건 원고 학생들의 정신적 고통과 비교할 때,  그들의 부모인 원고와 나머지 선정자들의 교육권 침해로 인한 정신적 고통은 그보다 작다고 볼 것이다)의 위자료를 지급함이 상당하다.
+      </p><p>3. 결  론 </p><p>  그렇다면, 피고들은 연대하여 원고 및 선정자들에게 위 각 위자료 및 그에 대하여 피고들의 불법행위일 이후로서 원고 및 선정자들이 구하는 2001. 5. 27.부터 피고들이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 제1심판결 선고일인 2003. 6. 12.까지는 민법 소정의 연 5%, 그 다음날부터 다 갚는 날까지는 소송촉진등에관한특례법 소정의 연 20%의 각 비율에 의한 지연손해금을 지급할 의무가 있으므로, 원고 및 선정자들의 피고들에 대한 이 사건 청구는 위 인정범위 내에서 이유 있어 인용하고, 나머지 청구는 이유 없어 기각할 것인바, 제1심은 이와 결론을 같이 하여 정당하고, 피고들의 항소는 이유 없으므로 이를 모두 기각한다.</p><p>[별지 선정자목록 및 피고들 수업거부 내역표 각 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김영태(재판장) 임복규 김종호 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

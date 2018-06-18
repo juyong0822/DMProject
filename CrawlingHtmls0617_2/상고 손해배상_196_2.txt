@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대구고등법원 2000르125 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2174111';
+var contIdEtc = '';
+var saNo = '2000르125';
+var sngoNm = '선고';
+var saNm = '손해배상(사실혼파기)';
+try {
+	var sngoDay=('20000811' ? 
+			'20000811'.length==4 ? Date.parseExact('20000811','yyyy').toString('yyyy. M. d.') : 
+				'20000811'.length==6 ? Date.parseExact('20000811','yyyyMM').toString('yyyy. M. d.') : 
+					'20000811'.length==8 ? Date.parseExact('20000811','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대구고등법원';
+var bubCd = '000300';
+var panTypeNm = '판결：상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2000르125,132 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2000르125';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대구고등법원<br />2000르125</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(6)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(10)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|676403">이동진 혼인관념, 인적 혼인의무 및 그 위반에 대한 제재 법학 53권 3호  / 서울대학교 법학연구소  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636813">김상용 (2000년대 민사판례의 경향과 흐름)가족법 민사판례연구 33-2권  / 박영사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|748600">김태호 사실혼 또는 혼인관계가 해소된 경우 예물반환청구의 요건으로서 '단기간 파탄'의 기준에 관하여 가정법원 50주년 기념논문집   / 서울가정법원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|748991">김상용 2000년대 친족·상속법 판례의 경향과 흐름 가족법연구 . Ⅳ   / 법문사  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638539">임혜원 사실혼 또는 혼인관계가 단시일 내에 해소된 경우 발생하는 몇 가지 문제점에 관하여 가사재판연구 . Ⅰ   / 서울가정법원 가사재판연구회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|516082">손승온 사실혼관계 해소와 관련한 문제점 재판자료 101집 (상) / 법원도서관  2003 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|94므895">
+대법원 1994. 12. 27. 선고 94므895 판결(공1995상, 674)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다5506">
+대법원 1996. 5. 14. 선고 96다5506 판결(공1996하, 1858)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|806|0|null">민법 제806조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|843|0|null">민법 제843조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|806|0|null">민법 제806조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|843|0|null">민법 제843조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|806|0|null">민법 제806조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민법|843|0|null">민법 제843조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|99드합36">
+대구지법 안동지원 2000. 4. 7. 선고 99드합36, 2000드합 18 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대구고법 2000. 8. 11. 선고 2000르125,132 판결：상고</h2><p class="sub_title">[손해배상(사실혼파기)][하집2000-2,663]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1]당사자가 결혼식을 올린 후 부부공동체로서 실태를 갖추어 공동생활을 하는 것이라고 사회적으로 인정하기 어려운 단시일 내에 그 관계가 해소되어 그 결혼식이 무의미하게 되어 버린 경우, 사실혼관계의 파탄에 책임이 있는 상대방에게 불법행위를 원인으로 하는 손해배상을 청구할 수 있는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2]사실혼관계가 파탄된 경우, 그 파탄의 유책당사자에게 예물 및 예복 가액 상당의 손해배상을 청구할 수 있는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[3]사실혼관계의 파탄에 있어서 쌍방의 책임이 대등한 경우, 각자 자신의 손해액 전부를 상대방으로부터 배상받을 수 있는 것이 아니라 50%를 과실상계한 나머지 부분에 한하여 배상받을 수 있을 뿐이라고 본 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1]당사자가 결혼식을 올린 후 부부공동체로서 실태를 갖추어 공동생활을 하는 것이라고 사회적으로 인정하기 어려운 단시일 내에 그 관계가 해소되어 그 결혼식이 무의미하게 되어 버린 경우에는 결혼식에 소요된 비용은 무용의 지출이라고 보여지므로 그 비용을 지출한 당사자는 사실혼관계의 파탄에 책임이 있는 상대방에게 불법행위를 원인으로 하는 손해배상을 청구할 수 있다.</p>
+      <p></p><p>
+        </p><p>[2]혼인에 있어서 일방 당사자가 상대방에게 예물 및 예복을 주는 것은 혼인의 불성립을 해제조건으로 하는 증여의 일종으로서, 나중에 혼인이 성립하지 않으면 해제조건의 성취로 인하여 증여의 효력이 소멸하여 원상회복으로서 상대방에게 예물 및 예복의 반환을 청구할 수 있는 것인바, 사실혼관계가 파탄된 경우 예물 및 예복의 증여에 관하여 해제조건이 성취되었다고 할 것이어서 그 비용을 지출한 당사자가 원상회복으로서 사실혼관계의 파탄에 책임이 있는 상대방에게 예물 및 예복의 반환을 구하는 것은 별론으로 하고 이로 인하여 그 비용을 지출한 당사자에게 어떠한 손해가 발생하였다고 할 수는 없다.</p>
+      <p></p><p>
+        </p><p>[3]사실혼관계의 파탄에 있어서 쌍방의 책임이 대등한 경우, 각자 자신의 손해액 전부를 상대방으로부터 배상받을 수 있는 것이 아니라 50%를 과실상계한 나머지 부분에 한하여 배상받을 수 있을 뿐이라고 본 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|"> [1] 민법 제750조, </a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|806|">제806조</a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|843|">제843조 </a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조,</a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|806|">제806조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|843|">제843조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">제396조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|806|">제806조</a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|843|">제843조 </a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|94므895|판결" href="#//">대법원 1994. 12. 27. 선고 94므895 판결(공1995상, 674)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다5506|판결" href="#//">대법원 1996. 5. 14. 선고 96다5506 판결(공1996하, 1858)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(반소피고), 항소인 겸 부대피항소인】
+      
+         A (소송대리인 변호사 장익혁)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고(반소원고), 피항소인 겸 부대항소인】
+      
+         B 외 1인 (소송대리인 변호사 김형수)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|99드합36|2000드합 18 판결" href="#//">
+대구지법 안동지원 2000. 4. 7. 선고 99드합36, 2000드합 18 판결</a></span>
+2000드합 18 판결
+
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>1. 원심판결의 본소 부분과 피고(반소원고) B의 반소 부분을 아래와 같이 변경한다.
+</p><p>가. 피고(반소원고)들은 연대하여 원고(반소피고)에게 12,057,000원 및 이에 대하여 피고(반소원고) B는 1999. 7. 3.부터, 피고(반소원고) C는 1999. 7. 1.부터 각 2000. 8. 11.까지는 연 5푼의, 각 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 돈을 지급하라.
+</p><p>나. 원고(반소피고)는 피고(반소원고) B에게 1,987,000원 및 이에 대하여 2000. 1. 14.부터 2000. 8. 11.까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 돈을 지급하라.
+</p><p>다. 원고(반소피고)의 나머지 본소 청구(당심에서 확장 및 추가한 부분 포함)와 피고(반소원고) B의 나머지 반소 청구를 모두 기각한다.
+</p><p>2. 원고의 본소에 관한 항소와 피고(반소원고)들의 반소에 관한 부대항소를 모두 기각한다.
+</p><p>3. 소송비용은 본소, 반소 및 제1, 2심을 통하여 이를 2분하여 그 1은 원고(반소피고)의, 나머지는 피고(반소원고)들의 각 부담으로 한다.
+</p>
+    
+      【청구취지】
+      <p>본소：피고(반소원고, 이하 '피고'라고 한다)들은 연대하여 원고(반소피고, 이하 '원고'라고 한다)에게 84,898,280원 및 이에 대하여 이 사건 소장부본 송달일 다음날부터 완제일까지 연 2할 5푼의 비율에 의한 돈을 지급하라(원고는 당심에 이르러 청구금액을 확장하고 지연손해금의 청구를 추가하였다).
+</p>
+      <p>반소：원고는 피고 B에게 65,970,800원, 피고 C에게 30,000,000원 및 각 이에 대하여 이 사건 반소장부본 송달일 다음날부터 완제일까지 연 2할 5푼의 비율에 의한 돈을 지급하라.
+</p>
+    
+    
+      【항소취지】
+      <p>원심판결 중 본소에 관한 원고 패소 부분을 취소하고, 피고들은 연대하여 원고에게 62,116,680원을 지급하며, 반소에 관한 원고 패소 부분을 취소하고, 이 부분에 해당하는 피고 B의 청구를 기각한다.
+</p>
+    
+    
+      【부대항소취지】
+      <p>원심판결 중 본소에 관한 피고들 패소 부분을 취소하고, 이 부분에 해당하는 원고의 청구를 기각하며, 반소에 관한 피고들 패소 부분을 취소하고, 원고는 피고 B에게 37,996,720원, 피고 C에게 30,000,000원 및 각 이에 대하여 이 사건 반소장부본 송달일 다음날부터 완제일까지 연 2할 5푼의 비율에 의한 돈을 지급하라.
+</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>본소 및 반소를 함께 판단하기로 한다.
+</p><p>1. 인정 사실
+</p><p>갑 제1호증의 1, 2, 갑 제2호증, 갑 제5호증의 1, 2, 을 제8호증의 각 기재, 갑 제3, 6, 7, 8호증, 을 제7호증의 각 일부 기재(아래에서 믿지 아니하는 부분 제외), 원심 증인 D, 원심 및 당심 증인 E의 각 일부 증언(아래에서 믿지 아니하는 부분 제외)과 피고 B 본인 신문결과에 변론의 전취지를 종합하면 아래와 같은 사실을 인정할 수 있고, 이에 반하는 갑 제3, 6, 7, 8호증, 을 제7호증의 각 일부 기재와 위 D, E의 각 일부 증언은 믿을 수 없으며, 달리 반증이 없다.
+</p><p>가. 원고와 피고 B는 1992년경 처음 만나 7여 년 간 교제하면서 서로가 살아온 환경, 집안 형편 등을 잘 알고 지내오다가, 피고 B가 회사에 취직을 하게 되자 1999. 5. 5. 결혼식을 올리고 신혼여행을 다녀온 후 피고 B의 직장 소재지인 구미에서 혼인생활을 시작하였다.
+</p><p>나. 원고와 피고 B는 결혼초부터 사소한 문제로 서로 다투기 시작하였는데, 원고가 신혼여행지에 도착하여 시모인 피고 C에게 안부전화를 한 후 피고 B에게 친정에 안부전화를 할 것을 요구하였음에도 불구하고 피고 B가 결혼식을 하느라고 육체적으로 고단하고 특히 피로연에서 친구들과 마신 술로 인하여 정신이 맑지 않으니 나중에 전화하겠다고 하여, 원고와 피고 B는 이 문제로 말다툼을 하다가 마침내 원고는 핸드백을 집어던지고 피고 B는 휴대전화를 벽에 던지기까지 하였다.
+</p><p>다. 피고 B는 결혼 직전 취직하여 결혼 후 수습사원으로서 회사 업무를 처리하느라 상당히 바쁘게 지내고 있었는데, 원고는 피고 B가 퇴근하여 오면 우선 친정에 전화할 것을 요구하곤 하였고 이에 피고 B가 피곤한 상태로 퇴근한 남편을 다그치기만 하는 원고의 태도에 섭섭한 마음을 가지게 됨으로써 부부싸움을 하곤하였다.
+</p><p>라. 위와 같이 원고가 계속하여 피고 B에게 친정에 관심을 가져 줄 것을 요구함에 대하여 피고 B는 원고에게 혼자 있는 피고 C에게 우선적으로 효도를 하라고 요구함으로써 둘 사이의 갈등이 심화되어 오던 중, 1999. 5. 21. 피고 B가 석가탄신일인 그 다음날 피고 C와 함께 절에 가기 위하여 퇴근 후 피고 C가 살고 있는 대구로 출발하려 할 무렵 원고가 휴일에 집을 비우면 친정에서 계속 전화할지도 모르니 미리 전화해 두고 가자고 하자 피고 B는 출발이 급하니 그 전화는 대구에 가서 하자고 하면서 의견 대립을 보이다가 결국은 심한 부부싸움을 하게 되었는데, 이에 흥분한 피고 B는 피고 C에게 부부싸움을 하여 갈 수 없다고 전화를 한 후 혼인신고를 위해 원고가 준비해 둔 혼인신고서 양식 및 호적등본 등을 모두 찢어버렸다.
+</p><p>마. 한편, 피고 C는 27세 무렵 남편을 여의고 혼자 자녀를 길러왔는데, 원고와 피고 B가 신혼여행을 다녀온 후 원고가 가지고 온 이바지음식이 형편없다고 이야기하고, 1999. 5. 11. 원고와 피고 B가 사는 아파트에 와서는 원고가 준비해 온 혼수품에 관하여 원고와 이야기를 나누던 중 혼수품이 촌스럽다고 이야기하는 등 원고에게 불평을 하자, 원고는 이를 못마땅하게 여기고 공손하지 못한 태도로 피고 C를 대하여 원고와 피고 C는 서로 감정을 상하게 되었고, 그 후 원고와 피고 C는 사사건건 서로의 감정을 자극하는 행동을 함으로써 원고와 피고 C 사이는 점점 멀어지게 되던 중, 1999. 5. 22. 피고 C는 원고와 피고 B가 그 전날 부부싸움을 한 사실을 알고 원고에게 전화를 하여 남편에게 무조건 복종하라는 취지로 이야기하였으나 원고는 그럴 수 없다며 공손하지 못한 태도로 퉁명스럽게 대꾸하여 서로 다투었다.
+</p><p>바. 또한, 피고 C는 원고와 피고 B의 혼인생활에 대하여 간섭을 하면서 가재도구가 제대로 갖춰지지 않았고 반찬을 잘 만들지 못한다는 등으로 원고를 질책하였는데, 원고는 이를 못마땅하게 생각하여 피고 C의 질책에 대하여 침묵으로 일관하거나 아무말없이 피고 C에게 대드는 듯한 행동을 하는 한편, 피고 B에게 피고 C가 지나치게 간섭을 한다고 불평을 하여 피고 B의 마음을 불편하게 하였다.
+</p><p>사. 한편, 피고 B의 위와 같이 원고와 피고 C가 서로 사이가 좋지 않다는 사실을 알고서도 이를 원만히 조정해 주거나 원고를 위로해 주지 않고 오히려 피고 C의 편을 들어 원고에게 복종을 강요함으로써 원고가 혼인생활에 적응하는데 지장을 초래하게 하였다.
+</p><p>아. 위와 같이 원고와 피고들이 서로 감정적으로 대립하면서 지내 오던 중, 1999. 6. 6.경 원고와 피고 B가 피고 C의 집에 갔다가 피고 C가 위장병을 앓고 있어서 피고 C를 원고와 피고 B가 살고 있던 구미로 모시게 되었는데, 당시 원고는 피고 C와 함께 생활해야 하는 것이 싫어서 구미로 가는 도중 피고 C의 물음에 대답도 하지 않는 등 노골적으로 불만을 나타내다가 그 다음날인 1999. 6. 7. 피고 C와 또다시 다툰 다음 영주시에 있는 친정으로 가 버렸다.
+</p><p>자. 그 후 피고 B는 장모인 소외 E로부터 원고를 데리고 가라는 전화를 받았으나 바쁘다는 핑계로 데리러 가지 않고 원고가 스스로 돌아올 것을 요구하다가, 원고가 돌아오지 않자 수차례 처가에 전화를 하여 원고와 통화를 시도하였으나 원고는 더 이상 피고들과 지내는 것이 힘들다고 생각하여 피고 B와 통화를 하지 않았고, 다시 피고들이 직접 영주시에 가서 원고 및 그 가족들과의 화해를 시도하였으나 화해가 이루어지지 않은 채 지금에 이르고 있다.
+</p><p>2. 재산상 손해배상청구에 관한 판단
+</p><p>가. 손해배상책임의 발생
+</p><p>(1) 위 인정 사실에 의하면, 원고와 피고 B는 서로 결혼하기로 합의하고 결혼식을 올림으로써 그들 사이에 사실상 혼인관계가 성립되었으나 그 후 1개월만에 서로 별거함으로써 그 사실혼관계는 파탄되었다고 할 것인데, 피고 C는 원고와 피고 B의 결혼생활에 지나치게 간섭하고, 원고가 가져온 혼수품이 마음에 들지 않는다는 이유로 원고를 구박하고 부당한 간섭과 질책으로 원고의 감정을 자극한 잘못이 있고, 원고도 시모인 피고 C가 혼자서 자식들을 키웠기 때문에 자식들에 대하여 보통사람들보다 강한 애착을 가지고 있음을 이해하면서 참을성을 가지고 혼인생활을 하며 피고 C와 친해지기 위한 노력은 하지 아니한 채 자신의 주장만을 내세우고 공손하지 못한 태도로 일관하면서 피고 B에게도 지나치게 자신의 친정에 관심을 가져 줄 것을 요구하다가 피고 B가 이를 들어주지 않고 피고 C조차 이를 못마땅하게 여겨 원고를 나무라자 1개월만에 스스로 집을 나가 친정으로 가버린 잘못이 있으며, 피고 B 또한 이제 막 결혼한 원고와 시모인 피고 C 사이가 좋지 않아서 감정의 대립이 있음을 인식하였으면 원고의 감정을 누그러뜨리고 피고 C와 바람직한 관계를 유지할 수 있도록 인내와 사랑으로 원고를 도와주어야 함에도 불구하고, 자신의 감정을 주체하지 못하고 원고에게 역정을 부리면서 오히려 피고 C의 편만 드는 태도를 보여 원고로 하여금 결혼생활에 적응하기 어렵게 한 잘못이 있어, 이 사건 사실혼관계는 원고와 피고들의 위와 같은 잘못이 경합함으로써 파탄에 이른 것이라 하겠다.
+</p><p>(2) 그리고 당사자가 결혼식을 올린 후 부부공동체로서 실태를 갖추어 공동생활을 하는 것이라고 사회적으로 인정하기 어려운 단시일 내에 그 관계가 해소되어 그 결혼식이 무의미하게 되어버린 경우에는 결혼식에 소요된 비용은 무용의 지출이라고 보여지므로 그 비용을 지출한 당사자는 사실혼관계의 파탄에 책임이 있는 상대방에게 불법행위를 원인으로 하는 손해배상을 청구할 수 있다고 할 것인데, 이 사건에 있어서 원고와 피고 B 사이의 결혼생활도 불과 1개월 가량 계속되다가 미처 부부공동체로서의 실태를 갖추기 전에 해소된 것이라 할 것이므로, 원고와 피고들은 이 사건 사실혼관계가 파탄된 것에 대한 유책당사자로서 각자 상대방에 대하여 결혼식 및 혼인생활의 준비에 소요된 비용으로서 이 사건 사실혼관계의 성립과 상당인과관계 있는 비용을 손해배상금으로 지급할 책임이 있다고 할 것이다.
+</p><p>나. 손해배상의 범위</p><p>(1) 피고들의 책임 범위</p><p>(가) 손해액의 확정</p><p>① 갑 제9호증의 9 내지 17, 19, 을 제2호증의 5, 6의 각 기재와 위 E의 일부 증언에 변론의 전취지를 종합하면, 원고는 피고 B와의 결혼을 위하여 피고들에게 예단비로 3,000,000원을 지급하였고, 예식장비로 715,000원, 야외촬영비로 300,000원, 청첩장 제작비로 100,000원, 하객식대로 3,960,000원, 하객 음료수비로 194,000원, 폐백비용으로 75,000원, 이바지음식비로 270,000원, 함값으로 500,000원을 각 지출하였으며, 피고 B가 결혼 후 생활할 아파트를 자신의 명의로 구입하는 데 보태기 위하여 15,000,000원을 피고 B에게 지급한 사실을 인정할 수 있고 달리 반증이 없으므로, 원고가 결혼식 및 혼인생활의 준비를 위하여 지출함으로써 입은 손해액은 합계 24,114,000원이 된다 할 것이다.
+</p><p>② 원고는, 피고 B와의 혼인생활을 위하여 피고 B에게 오디오 대금 구입비로 1,000,000원, 동복 구입비로 1,000,000원을 각 지급하였으므로 피고들은 위 돈 또한 손해배상금으로 원고에게 지급하여야 한다고 주장하나, 이에 부합하는 듯한 위 E의 일부 증언은 믿을 수 없고 달리 이를 인정할 증거가 없으며, 오히려 갑 제3호증의 기재와 피고 B 본인 신문결과에 변론의 전취지를 종합하면, 원고는 위 E로부터 돈을 받아서 이를 피고 B에게 전해준 것이 아니라 피고 B와 같이 가서 오디오와 동복을 구입한 것에 불과하다고 보이므로 원고의 이 부분 청구는 이유가 없다.
+</p><p>③ 원고는, 피고 B와의 혼인생활을 위하여 이불 구입비로 1,280,000원, 가구 구입비로 1,490,000원, 전자제품 구입비로 3,745,000원, 주방용품 구입비로 1,015,000원을 각 지출하였으므로 피고들은 위 돈 또한 손해배상금으로 원고에게 지급하여야 한다고 주장하므로 살피건대, 위 물건들은 원고가 피고 B와 혼인생활을 위한 혼수품으로 사용하기 위하여 결혼하기 전이나 결혼 후에 자신의 비용으로 구입한 것으로서 피고 B가 이를 소유하고 있다고 하더라도 여전히 원고의 소유에 속한다고 할 것이어서, 원고가 소유권에 기하여 그 반환을 구하거나 원상회복으로 그 반환을 구하는 것은 별론으로 하고 이로 인하여 원고에게 어떠한 손해가 발생하였다고 할 수는 없을 뿐만 아니라 그 가액 상당이 이 사건 사실혼관계의 파탄과 상당인과관계있는 손해라고 볼 수도 없다.
+</p><p>④ 원고는, 피고 B에게 준 예복 구입비로 2,754,280원, 예물 구입비로 500,000원을 각 지출하였으므로 피고들은 위 돈 또한 손해배상금으로 원고에게 지급하여야 한다고 주장하므로 살피건대, 혼인에 있어서 일방 당사자가 상대방에게 예물 및 예복을 주는 것은 혼인의 불성립을 해제조건으로 하는 증여의 일종으로서, 나중에 혼인이 성립하지 않으면 해제조건의 성취로 인하여 증여의 효력이 소멸하여 원상회복으로서 상대방에게 예물 및 예복의 반환을 청구할 수 있는 것인바, 이 사건에 있어서도 이 사건 사실혼관계가 파탄됨으로써 위 예물 및 예복의 증여에 관하여 해제조건이 성취되었다고 할 것이어서 원고가 원상회복으로서 피고 B에게 위 예물 및 예복의 반환을 구하는 것은 별론으로 하고 이로 인하여 원고에게 어떠한 손해가 발생하였다고 할 수는 없을 뿐만 아니라 그 가액 상당이 이 사건 사실혼관계의 파탄과 상당인과관계있는 손해라고 볼 수도 없다.
+</p><p>(나) 과실 상계
+</p><p>위에서 살펴본 바와 같이 이 사건 사실혼관계는 원고와 피고들의 잘못이 경합하여 파탄에 이르렀다고 할 것인데, 그 정도를 비교하여 보면 원고와 피고들 어느 쪽에게 더 무거운 책임이 있다고 하기 어려울 정도로 쌍방의 책임정도가 대등하다고 판단되므로 피고들이 배상하여야 할 손해액을 정함에 있어서 위와 같은 원고의 과실을 참작하기로 하되 그 과실비율은 50% 정도로 봄이 상당하다고 할 것이므로 원고의 위 손해 중 피고들에게 배상책임이 있는 금액은 12,057,000원(24,114,000원×0.5)이 된다.
+</p><p>(2) 원고의 책임 범위
+</p><p>(가) 손해액의 확정
+</p><p>① 을 제2호증의 5 내지 12, 을 제3호증의 2, 3, 4, 을 제4호증의 각 기재와 피고 B 본인신문결과에 변론의 전취지를 종합하면, 피고 B는 원고와의 결혼을 위하여 예식장비로 715,000원, 야외촬영비로 300,000원, 하객식대로 979,000원, 하객을 위한 버스사용료 및 하객에게 대접할 음식을 마련하는 데 합계 980,000원, 친구들 식사비로 1,000,000원을 각 지출한 사실을 인정할 수 있고 달리 반증이 없으므로, 피고 B가 결혼식 및 혼인생활의 준비를 위하여 지출함으로써 입은 손해액은 합계 3,974,000원이 된다 할 것이다.
+</p><p>② 피고 B는, 원고에게 준 신부한복 및 예물, 물목 구입비로 1,520,800원, 예물 및 핸드백, 화장품 구입비로 1,176,000원을 각 지출하였으므로 원고는 위 돈도 손해배상금으로 피고 B에게 지급하여야 한다고 주장하나, 위에서 살펴본 바와 같이 이 사건 사실혼관계가 파탄됨으로써 위 예물 및 예복의 증여에 관하여 해제조건이 성취되었다고 할 것이어서 피고 B가 원상회복으로서 원고에게 위 예물 및 예복의 반환을 구하는 것은 별론으로 하고 이로 인하여 피고 B에게 어떠한 손해가 발생하였다고 할 수는 없을 뿐만 아니라 그 가액 상당이 이 사건 사실혼관계의 파탄과 상당인과관계 있는 손해라고 볼 수도 없다.
+</p><p>③ 피고 B는, 원고와 결혼 후 살 아파트를 구입하는 데 29,450,000원, 그 아파트의 도배비용으로 500,000원을 각 지출하였으므로 원고는 위 돈 또한 손해배상금으로 피고 B에게 지급하여야 한다고 주장하나, 피고 B가 구입한 아파트는 이 사건 사실혼관계가 파탄된 후에도 여전히 피고 B가 이를 소유하는 것이고, 위 도배비용은 위 아파트의 가액을 증가시킨 비용으로서 피고 B가 여전히 그로 인하여 증가된 가치를 보유한다고 할 것이어서 피고 B가 위 각 비용을 지출하였다고 하더라도 이로 인하여 어떠한 손해가 있다고 할 수 없다.
+</p><p>④ 피고 B는, 결혼 후 살 아파트를 구입하는데 지출한 비용과 도배비용이 손해에 해당되지 않는다고 하더라도 원고 부모의 요구에 따라 위 아파트를 구입하게 된 것이므로 위 아파트를 구입하기 위하여 지출한 부대비용인 부동산소개비 300,000원, 소유권이전등기시 납부한 등록세 1,200,000원, 교육세 240,000원, 취득세 800,000원과 피고 B가 다른 아파트를 구입하기 위하여 계약금으로 교부하였다가 위약금으로 지출하게 된 500,000원, 위 아파트를 구입하면서 소외 주식회사 한국주택은행으로부터 대출받은 12,000,000원에 대한 이자로 지급한 1,259,920원 등 합계 4,299,920원은 이 사건 사실혼관계 파탄에 따른 피고 B의 손해에 해당하므로 원고는 위 돈도 손해배상금으로 피고 B에게 지급하여야 한다고 주장하나, 원고 부모가 위 아파트의 구입을 요구하였다는 점을 인정할 증거가 없을 뿐만 아니라 그렇다고 하더라도 위 돈이 이 사건 사실혼관계의 파탄과 상당인과관계있는 손해라고 볼 수 없다.
+</p><p>⑤ 피고 B는, 원고와의 혼인생활을 위하여 300,000원을 들여 책장을 구입하였으므로 원고는 그 가액 상당을 손해배상금으로 피고에게 지급하여야 한다고 주장하나, 피고 B의 주장 자체에 의하더라도 현재 피고 B가 위 책장을 소유하면서 사용하고 있다는 것이어서 피고 B가 위 책장 구입비로 300,000원을 지출하였다고 하더라도 이로 인하여 피고 B가 어떠한 손해를 입었다고 할 수는 없다.
+</p><p>(나) 과실 상계
+</p><p>위에서 살펴본 바와 같이 이 사건 사실혼관계는 원고와 피고 B의 잘못이 결합하여 파탄에 이르렀다고 할 것인데, 그 정도를 비교하여 보면 원고와 피고 B 어느 쪽에게 더 무거운 책임이 있다고 하기 어려울 정도로 쌍방의 책임정도가 대등하다고 판단되므로 원고가 배상하여야 할 손해액을 정함에 있어서 위와 같은 피고 B의 과실을 참작하기로 하되 그 과실비율은 50% 정도로 봄이 상당하므로 피고 B의 위 손해 중 원고에게 배상책임이 있는 금액은 1,987,000원(3,974,000원×0.5)이 된다.
+</p><p>3. 위자료 청구에 관한 판단
+</p><p>가. 당사자의 주장
+</p><p>원고는, 이 사건 사실혼관계의 파탄책임이 피고들에게 있음을 이유로 하여 본소로서 피고들에 대하여 50,000,000원의 위자료의 지급을 구한다고 주장함에 대하여 피고들은, 이 사건 사실혼관계의 파탄책임이 원고에게 있을 뿐만 아니라, 피고 C는 원고가 시모인 피고 C에게 심히 부당한 대우를 함으로써 정신적인 피해를 입었음을 이유로 하여 반소로서 원고에 대하여 각 30,000,000원의 위자료의 지급을 구한다고 주장한다.
+</p><p>나. 판　단
+</p><p>살피건대, 이 사건 사실혼관계가 원고와 피고들 쌍방에게 각각 책임있는 사유에 의하여 파탄에 이르게 되었는데, 이 사건 사실혼관계의 파탄에 있어서 원고와 피고들은 각 가해자임과 동시에 피해자로서 어느 쪽에 더 무거운 책임이 있다고 하기 어려울 정도로 쌍방의 책임정도가 대등함은 위에서 살펴 본 바와 같으므로, 각 상대방에게 이 사건 사실혼관계 파탄의 책임이 있음을 전제로 하는 원고와 피고들의 각 위자료 청구는 받아들이지 않기로 한다.
+</p><p>4. 결　　론
+</p><p>그렇다면 본소에 기하여 피고들은 연대하여 원고에게 12,057,000원 및 이에 대하여 원고가 구하는 바에 따라 이 사건 소장부본이 송달된 다음날임이 기록상 명백한 피고 B에 대하여는 1999. 7. 3.부터, 피고 C에 대하여는 1999. 7. 1.부터 각 피고들이 손해배상의 범위에 관하여 다툼이 상당하다고 인정되는 당심 판결 선고일인 2000. 8. 11.까지는 민법이 정하는 연 5푼의, 그 다음날부터 완제일까지는 소송촉진등에관한특례법이 정하는 연 2할 5푼의 각 비율에 의한 지연손해금을, 반소에 기하여 원고는 피고 B에게 1,987,000원 및 이에 대하여 위 피고가 구하는 바에 따라 원고에게 이 사건 반소장부본이 송달된 다음날임이 기록상 명백한 2000. 1. 14.부터 원고가 손해배상의 범위에 관하여 다툼이 상당하다고 인정되는 당심판결 선고일인 2000. 8. 11.까지는 민법이 정하는 연 5푼의, 그 다음날부터 완제일까지는 소송촉진등에관한특례법이 정하는 연 2할 5푼의 각 비율에 의한 지연손해금을 지급할 의무가 있으므로, 원고의 이 사건 본소 청구 및 피고 B의 이 사건 반소 청구는 각 위 인정범위 내에서 이유 있어 이를 각 인용하고, 원고의 나머지 본소 청구와 피고 B의 나머지 반소 청구 및 피고 C의 반소 청구는 이유 없으므로 이를 모두 기각하여야 할 것인바, 원심판결은 이와 결론을 달리하여 부당하므로 원고가 당심에서 확장 및 추가한 본소 청구의 일부와 원고의 반소에 관한 항소, 피고들의 본소에 관한 부대항소의 일부를 각 받아들여 원심판결의 본소 부분과 피고 B의 반소 부분을 주문 제1항과 같이 변경하기로 하고, 원고의 본소에 관한 항소와 피고들의 반소에 관한 부대항소는 이유 없으므로 이를 모두 기각하기로 하며, 소송비용의 부담에 관하여는 가사소송법 제12조, 민사소송법 제89조, 제92조, 제93조, 제96조를 적용하여 주문과 같이 판결한다.
+</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   박태호(재판장) 이상선 정웅달 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2013나70790 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2194723';
+var contIdEtc = '';
+var saNo = '2013나70790';
+var sngoNm = '선고';
+var saNm = '손해배상(지)';
+try {
+	var sngoDay=('20140529' ? 
+			'20140529'.length==4 ? Date.parseExact('20140529','yyyy').toString('yyyy. M. d.') : 
+				'20140529'.length==6 ? Date.parseExact('20140529','yyyyMM').toString('yyyy. M. d.') : 
+					'20140529'.length==8 ? Date.parseExact('20140529','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2013나70790 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2013나70790';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2013나70790</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(2)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(7)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806102">박태일 결합발명의 진보성 판단 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806104">박태일 반제품을 생산하여 수출한 행위가 특허권 간접침해행위에 해당하는지 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="null|2012당2544">2012당2544호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="특허법원|2013허1351">2013허1351호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2013후2620">2013후2620</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006후2912">대법원 2008. 6. 26. 선고 2006후2912 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007후1053">대법원 2009. 1. 15. 선고 2007후1053 판결</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003후2447">대법원 2004. 10. 28. 선고 2003후2447 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2010후2377">대법원 2011. 2. 10. 선고 2010후2377 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|127|0|null">특허법 제127조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|2|0|null">특허법 제2조 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|127|0|null">특허법 제127조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|29|0|null">특허법 제29조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2012가합63163">서울중앙지방법원 2013. 10. 4. 선고 2012가합63163 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><input type="hidden" class="contImagePath" name="img1" value="15w0901-007-01.gif" /><input type="hidden" class="contImagePath" name="img2" value="15w0901-007-02.gif" /><input type="hidden" class="contImagePath" name="img3" value="15w0901-007-03.gif" /><input type="hidden" class="contImagePath" name="img4" value="15w0901-007-04.gif" /><input type="hidden" class="contImagePath" name="img5" value="15w0901-007-05.gif" /><input type="hidden" class="contImagePath" name="img6" value="15w0901-007-06.gif" /><input type="hidden" class="contImagePath" name="img7" value="15w0901-007-07.gif" /><input type="hidden" class="contImagePath" name="img8" value="15w0901-007-08.gif" /><div class="tit_area" id="bmunStart"><h2>서울고등법원 2014. 5. 29. 선고 2013나70790 판결</h2><p class="sub_title">[손해배상(지)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 항소인】
+원고 (소송대리인 법무법인 다래 담당변호사 장달원)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피항소인】
+주식회사 노키아티엠씨 (소송대리인 변호사 이회기)
+
+</strong></p>
+<span class="space"></span>【변론종결】
+<p>2014. 5. 1.</p>
+
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【제1심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2012가합63163|판결" href="#//">서울중앙지방법원 2013. 10. 4. 선고 2012가합63163 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원고의 항소를 기각한다.</p><p>항소비용은 원고가 부담한다.</p>
+【청구취지 및 항소취지】
+<p>청구취지</p>
+<p>피고는 원고에게 8,926,859,130원 및 이에 대한 이 사건 소장 부본이 송달된 다음날부터 다 갚는 날까지 연 20%의 비율에 따른 금원을 지급하라는 판결.</p>
+<p>항소취지</p>
+<p>제1심판결 중 다음에서 지급을 명하는 원고 패소 부분을 취소한다. 피고는 원고에게 10억 원 및 이에 대한 이 사건 소장 부본이 송달된 다음날부터 다 갚는 날까지 연 20%의 비율에 따른 금원을 지급하라는 판결.</p>
+
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 사안의 개요와 전제된 사실관계</p><p>  가. 사안의 개요</p><p>    이 사건은 양방향 멀티슬라이드 휴대단말기의 특허권자인 원고가 피고에 대하여 피고의 휴대전화 제품이 원고의 특허권의 보호범위에 속한다고 주장하면서 특허권 침해에 따른 불법행위에 기초하여 손해배상(8,926,859,130원)과 그 지연손해금의 지급을 구하는 사안이다.</p><p>    제1심법원은 원고의 특허에 무효사유가 있음이 분명하므로 그러한 특허권에 기초하여 특허권 침해에 따른 손해배상을 구하는 것은 권리남용에 해당한다는 이유로 원고의 청구를 기각하였고, 원고가 일부(10억 원 부분)에 한정하여 불복하여 항소를 제기하였다.</p><p>  나. 전제된 사실관계</p><p>  【증거】갑1, 4, 6의 각 1, 2, 갑7, 8, 9, 갑13, 을5, 을8의 1, 2, 을10의 1에서 6, 을16과 변론 전체의 취지</p><p>    ⑴ 원고의 특허권</p><p>      ㈎ 원고는 양방향 멀티슬라이드 휴대단말기라는 다음과 같은 특허발명에 관한 특허권자이다.</p><p>        ① 원출원일/ 이중출원일/ 등록일/ 등록번호: 2004. 8. 5./ 2005. 11. 1./ 2007. 5. 10./ (특허 등록번호 생략)</p><p>        ② 특허청구범위(정정청구 전 특허청구범위) </p><p>          [청구항 1] 슬라이드형 휴대단말기로서 디스플레이 창을 구비한 상부 본체와 서로 다른 기능을 갖는 두 개 이상의 키패드를 갖는 하부 본체, 상부 본체가 하부 본체에 대해 어느 한 방향으로 이동할 때, 하부 본체의 다른 방향에 있는 키패드 중 적어도 어느 하나가 개방되는 것을 특징으로 하는 양방향 멀티슬라이드 휴대단말기.</p><p>          [청구항 2] 제1항에 있어서 상부 본체가 하부 본체에 대해 하측으로 상대 슬라이딩될 때, 디스플레이 창의 양쪽에 대칭이 되어 양손 조작이 가능하게 상부 본체의 하측부에 제1기능 키패드부를 구비하는 것을 특징으로 하는 양방향 멀티슬라이드 휴대단말기(이하, 원고의 특허권의 특허청구범위 청구항 1의 발명을 ‘특허발명 1’, 청구항 2의 발명을 ‘특허발명 2’라 하고, 이를 합쳐 ‘원고의 특허발명’이라 한다). </p><p>        ③ 주요 도면: 별지 1과 같다.</p><p>      ㈏ 특허발명 1, 2의 구성요건은 다음과 같다.</p><p>        [특허발명 1] </p><p>        (A) 양 방향 멀티슬라이드 형 휴대단말기</p><p>        (B) 디스플레이 창을 갖춘 상부 본체</p><p>        (C) 서로 다른 기능을 갖는 두 개 이상의 키패드를 갖는 하부 본체 </p><p>        (D) 상부 본체가 하부본체에 대해 어느 한 방향으로 이동할 때, 하부본체의 다른 방향에 있는 키패드 중 적어도 어느 하나가 개방</p><p>        [특허발명 2] </p><p>        (A)부터 (D)까지의 구성에 더하여  </p><p>        (E) 상부 본체가 하부 본체에 대하여 아래쪽으로 슬라이딩 될 때 디스플레이 창의 양쪽에 대칭되어 양손으로 조작할 수 있도록 상부 본체의 아래에 제1기능 키패드부를 포함</p><p>    ⑵ 피고의 행위</p><p>      ㈎ 피고는 2007년부터 2010년 무렵까지 휴대전화 단말기 제품으로서 N95를 미완성 제품, 반제품, 완성품으로, N96을 반제품으로 생산하여 수출하였다.</p><p>      ㈏ N95와 N96의 완성품은 다음과 같은 구성으로 이루어져 있다(별지 2 참조).  </p><p>        (a) 양방향 슬라이드 형 휴대단말기</p><p>        (b) 디스플레이 창을 갖춘 상부 본체</p><p>        (c) 하부본체 상·하에 서로 다른 기능의 키패드를 포함</p><p>        (d) 상부 본체가 상·하로 이동할 때 각기 다른 기능의 키패드가 개방</p><p>        (e) 상부 본체가 하부본체에 대해 하측으로 상대 슬라이딩 될 때 상부 본체의 제1기능 키패드와 하부본체의 키패드가 대칭</p><p>    ⑶ 특허무효심결절차에서의 정정청구</p><p>      ㈎ 피고가 2012. 9. 25. 원고를 상대로 원고의 특허발명이 비교대상발명과 대비하여 진보성이 없다는 등의 사유를 들어 특허무효심판을 청구하였고(<span id="link"><a name="linkContPanre" title="새창" type="|2012당2544" href="#//">2012당2544호</a></span>), 원고는 2012. 11. 22. 무효심판절차에서 특허발명 1의 특허청구범위에 특허발명 2{구성 (E)}를 병합하여 특허발명 1의 특허청구 범위를 다음과 같이 정정하고, 특허발명 2의 특허청구범위를 삭제하는 내용으로 정정청구를 하였다.</p><p> - 다음 -</p><p>  【정정 후 청구항 1】슬라이드 형 휴대단말기로서 디스플레이창을 구비한 상부 본체와 서로 다른 기능을 갖는 두 개 이상의 키패드를 갖는 하부 본체, 상부 본체가 하부 본체에 대해 어느 한 방향으로 이동할 때, 하부 본체의 다른 방향에 있는 키패드 중 적어도 어느 하나가 개방되고, 상부 본체가 하부 본체에 대해 하측으로 상대 슬라이딩 될 때, 디스플레이 창의 양쪽에 대칭이 되어 양손 조작이 가능하게 상부 본체의 하측부에 제1기능 키패드 부를 구비하는 것을 특징으로 하는 양방향 멀티슬라이드 휴대단말기</p><p>      ㈏ 특허심판원은 2013. 1. 22. 원고의 정정청구를 받아들이면서 피고의 무효심판청구를 기각하는 내용의 심결을 내렸다.</p><p>      ㈐ 이에 피고는 특허법원에 심결에 대한 취소소송을 제기하였고(<span id="link"><a name="linkContPanre" title="새창" type="특허법원|2013허1351|판결" href="#//">2013허1351호</a></span>), 특허법원은 2013. 9. 12. 정정 후 특허발명의 진보성이 부정되어 특허등록이 무효가 되어야 한다는 이유로 특허심판원의 심결을 취소하는 판결을 선고하였다. 원고가 특허법원의 판결에 불복하여 대법원에 상고를 제기하였다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2013후2620" href="#//">2013후2620</a></span>).</p><p>2. 이 사건의 쟁점   </p><p>  가. 피고의 대상제품이 특허발명 1, 2의 보호범위에 속하는지 여부</p><p>  나. 특허발명 1, 2에 무효사유가 있음이 분명하고, 원고가 그와 같은 특허권에 기초하여 권리를 행사하는 것이 권리남용에 해당하는지 여부</p><p>  다. 권리남용의 항변을 배척할 특별한 사정의 존부(정정 후 특허발명에 무효사유가 있음이 분명한지)</p><p>3. 이 법원의 판단</p><p>  가. 피고의 대상제품이 특허발명 1, 2의 보호범위에 속하는지 여부</p><p>    [원고의 주장]</p><p>    원고는 피고가 제조하여 판매하는 제품은 원고의 특허발명 1, 2의 구성요소를 모두 갖추고 있으므로 원고의 특허발명 1, 2의 보호범위에 속한다고 주장한다.</p><p>    [피고의 반론]</p><p>    피고는 피고가 생산한 제품인 N95와 N96의 반제품 또는 미완성 제품은 특허발명 1, 2의 구성요소를 갖추고 있지 않아 원고 특허권의 보호범위에 속하지 않고, 반제품과 미완성품이 외국에서 완성품으로 생산되는 것이므로 특허법의 속지주의에 따라 간접침해도 성립하지 않으며, N95 완성품의 경우에 피고가 완성품 상태로 수입하여 다시 작업하여 수출한 것으로 국내에서 판매가 이루어지지 않았다고 다툰다.</p><p>    [판단]</p><p>    ⑴ 증거(을10의 1에서 6)에 변론 전체의 취지를 종합하면, 다음과 같은 사실을 인정할 수 있다.</p><p>      N95와 N96의 반제품은 구성 (c)를 갖추고 있지 않고, N95의 미완성 제품은 구성 (a), (b), (c), (e)를 갖추고 있지 않으며, 그 반제품과 미완성 제품은 모두 외국에서 완성품으로 생산되었다.</p><p>    ⑵ <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|127|">특허법 127조 1호</a></span>에 따르면, 특허가 물건의 발명인 경우에는 그 물건의 생산에만 사용하는 물건을 생산·양도·대여 또는 수입하거나 그 물건의 양도 또는 대여의 청약을 하는 행위를 업으로서 하는 경우에 특허권 또는 전용실시권을 침해한 것으로 본다. 이러한 간접침해에서의 생산은 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|2|">특허법 2조 3호</a></span>에서 규정하는 생산을 말하고, 그 생산은 특허법의 속지주의에 따라 국내에서의 생산을 말하는 것이므로 직접침해가 국내에서 발생하지 않는 경우에는 간접침해도 성립할 수 없다고 보아야 한다.</p><p>      앞서 본 전제사실과 위 인정사실에 의하면, 피고의 대상제품 N95와 N96 완성품의 구성 중 (a), (b), (c), (d), (e)는 각각 특허발명 1, 2의 구성요건 (A), (B), (C), (D), (E)와 실질적으로 같으므로 그 보호범위에 속한다(별지 2 참조).</p><p>      그러나 피고가 생산하여 수출한 N95와 N96의 반제품과 N95의 미완성 제품은 특허발명 1, 2의 구성요건 일부를 갖추고 있지 않으므로 직접침해가 성립하지 않고, 모두 외국에서 완성품으로 생산되었으므로 특허법의 속지주의에 따라 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|127|">특허법 127조</a></span>에 정해진 간접침해도 성립하지 않는다. 또한 피고는 N96의 완성품을 생산하지 않았다. 그러므로 피고의 대상제품 중 N95의 완성품만 특허발명 1, 2의 보험범위에 속한다. 원고의 위 주장은 위 인정 범위 내에서 이유 있고, 나머지 주장은 이유 없다.</p><p>  나. 특허발명 1, 2에 무효사유가 있음이 분명하고, 원고가 그와 같은 특허권에 기초하여 권리를 행사하는 것이 권리남용에 해당하는지 여부</p><p>    [피고의 주장]</p><p>    피고는 원고의 특허발명은 비교대상발명과 대비하여 신규성이 부정되고, 통상의 기술자가 비교대상발명을 결합하거나 비교대상발명과 다른 선행문헌을 결합함으로써 용이하게 발명할 수 있는 것이므로 진보성이 부정되어 무효사유가 있음이 명백하므로 그러한 무효사유가 있음이 분명한 특허권에 기초하여 손해배상을 구하는 것은 권리남용에 해당하여 허용되지 않는다고 주장한다.</p><p>    [원고의 반론]</p><p>    원고는 특허발명은 비교대상발명에 개시되지 않은 구성들을 포함하고 있고, 그에 따라 비교대상발명에서 기대할 수 없는 유용한 작용 효과가 있으므로 진보성이 있다고 다툰다.</p><p>    [판단]</p><p>    ⑴ 특허무효심판절차에서 정정청구가 있는 경우에 정정의 인정 여부는 무효심판절차에서 함께 심리되는 것이므로 독립된 정정심판청구의 경우와 달리 정정만이 따로 확정되는 것이 아니라 무효심판의 심결이 확정되는 시점에 함께 확정된다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006후2912|판결" href="#//">대법원 2008. 6. 26. 선고 2006후2912 판결</a></span>, <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007후1053|판결" href="#//">대법원 2009. 1. 15. 선고 2007후1053 판결</a></span> 등 참조). 따라서 무효심판절차에서 정정청구가 있는 경우에는 정정의 인정 여부는 무효심판절차에서 함께 심리되는 것이므로 그 무효심판의 심결에 대한 심결취소소송이 특허법원에 제기된 경우에는 그 심결취소소송이 확정되지 아니하면 정정의 효과가 발생하지 아니하므로 정정 전의 특허권을 기초로 특허권의 침해 여부를 판단하여야 한다. </p><p>      위 인정사실에 의하면, 특허심판원이 원고의 특허발명에 대한 원고의 정정청구를 받아들이면서 피고의 무효심판청구를 기각하는 심결을 하였으나 피고가 이에 불복하여 심결취소소송을 제기함으로써 그 소송이 계속 중이므로 원고의 특허발명에 대한 정정의 효과는 발생하지 않는다. 따라서 정정 전의 특허권인 특허발명 1, 2를 기초로 특허권의 침해 여부를 판단한다.</p><p>    ⑵ 특허발명출원 전에 국내 또는 국외에서 반포된 간행물에 게재된 발명</p><p>      ㈎ 비교대상발명 1(을1)</p><p>        ① 공개일/ 간행물/ 공개번호: 2004. 4. 3./ 공개특허공보/ (공개특허공보 생략)</p><p>        ② 명칭: 슬라이드타입의 액정화면을 구비하는 이동통신단말기</p><p>        ③ 주요 도면: 별지 3의 제1항과 같다.</p><p>      ㈏ 비교대상발명 4(을3의 1. 디자인에 해당하나 편의상 발명이라 한다)</p><p>        ① 공고일/ 간행물/ 등록번호: 2004. 3. 22./ 등록의장공보/ (등록의장공보 생략)</p><p>        ② 물품: 휴대전화</p><p>        ③ 주요 도면: 별지 3의 제2항과 같다.</p><p>     ㈐ 원고의 특허발명과 비교대상발명의 대비</p><p>      ① 구성의 대비</p><p>        ㉮ 구성 (A)</p><p><img name="img1" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-01.gif" alt="본문내 삽입된 이미지" /></p><p>          구성 (A)과 비교대상발명 4의 대응구성은 상·하 방향으로 슬라이드 이동이 가능한 휴대단말기(휴대전화)라는 점에서 별다른 차이가 없고, 비교대상발명 1의 대응구성은 길이 방향으로 슬라이딩 운동이 가능한 구조로 이루어진 액정화면을 갖춘 이동통신단말기로서 구성 (A)의 슬라이드 형 휴대단말기와 핵심적인 기술사상이 같다.</p><p>        ㉯ 구성 (B)</p><p><img name="img2" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-02.gif" alt="본문내 삽입된 이미지" /></p><p>          각 대응구성은 상부 본체(정면 폴더, 덮개)가 디스플레이 창(디스플레이부, 액정화면)을 갖춘다는 점에서 별다른 차이가 없다. </p><p>          한편 비교대상발명 1의 명세서에는 ‘본체(100) 전면의 일부를 덮을 수 있는 크기와 형상으로 이루어져 있으며 영상을 출력하는 액정화면(210)’이라는 기재(을1, 3면 ‘발명의 구성 및 작용’22~23행)가 있고, 이에 원고는 위와 같이 크기와 형상이 한정된 비교대상발명 1의 덮개는 구성 2의 상부 본체와 다르다는 취지로 주장한다. </p><p>          그러나 비교대상발명 1의 덮개가 구성 (B)에 게시되어 있는 구성 즉 액정화면(디스플레이 창)을 갖춘다는 핵심적 기술구성을 그대로 담고 있으므로 그 크기와 형상에 관하여 구성 (B)와 달리 추가적인 한정사항이 있다고 하더라도 양 대응구성이 실질적으로 같다고 보아야 한다. </p><p>        ㉰ 구성 (C)</p><p><img name="img3" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-03.gif" alt="본문내 삽입된 이미지" /></p><p>          비교대상발명 4의 대응구성은 그 하부에 복수의 키로 이루어진 집합 즉, 키패드의 구성으로 된 기능키가 도시되어 있기는 하나, 그 상부에는 카메라가 도시되어 있을 뿐이므로 서로 다른 기능을 갖는 두 개 이상의 키패드를 갖는 구성 3의 하부본체와 대비할 때 갖춘 키패드의 개수에 있어서 차이가 있다. </p><p>          그런데 비교대상발명 1의 대응구성은 이동통신단말기의 기능 실행과 관련된 신호입력을 위한 키버튼(110)과 함께 커서 이동 및 메뉴 선택을 포함한 특수기능 실행과 관련된 신호입력을 위한 기능키(140)를 갖추고 있고, 키버튼(110)과 기능키(140)는 모두 복수의 키로 이루어진 집합 즉 키패드의 구성으로 개시되어 있으므로 서로 다른 기능을 갖는 두 개 이상의 키패드를 갖는 구성 3의 하부본체와 별다른 차이가 없다.</p><p>        ㉱ 구성 (D)</p><p><img name="img4" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-04.gif" alt="본문내 삽입된 이미지" /></p><p>          ㉠ 비교대상발명 4의 대응구성은 폴더부(상부 본체)를 상부로 이동할 때 본체(하부 본체)의 기능키(키패드)가 개방되지만, 폴더부(상부 본체)를 하부로 이동할 때 본체(하부 본체)의 카메라가 개방된다는 구성으로서 구성 4 즉 상부 본체가 하부 본체에 대해 어느 한 쪽으로 이동할 때 하부 본체의 다른 방향에 있는 키패드 중 적어도 어느 하나가 개방되는 구성과 다르고, 이는 비교대상발명 4의 본체에 갖춘 키패드의 개수가 구성 4의 하부 본체와 다른 것에서 유래한다. </p><p>           그러나 비교대상발명 1의 대응구성은 덮개(200)를 본체(100)의 상단 방향으로 밀어 올리면 키버튼(110)이 외부로 노출되고, 덮개(200)를 본체(100)의 하단부에 위치시키면 기능키(140)가 외부로 노출되는 구성으로서 상부 본체가 하부본체에 대해 어느 한 방향으로 이동할 때 하부본체의 다른 방향에 있는 키패드 중 적어도 어느 하나가 개방되는 구성 4와 별다른 차이가 없다. </p><p><img name="img5" title="[이 사건 발명의 도면 1]" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-05.gif" alt="본문내 삽입된 이미지" /></p><p>          ㉡ 원고는, 구성 (D)의 기술적 구성에 있어서 상부 본체가 하부 본체에 대해 어느 한 방향으로 이동하지 않는 경우에 하부본체에 있는 키패드 중의 어느 하나도 개방되지 않는 것으로 한정하여 해석되는데, 비교대상발명 1의 대응구성에는 위와 같은 구성이 개시 또는 암시되어 있지 않으므로 양 대응구성 사이에 실질적인 구성상의 차이가 있다는 취지로 주장한다. 그러나 다음과 같은 사정에 비추어 원고의 위 주장은 받아들일 수 없다.</p><p>            원고의 특허발명 명세서에는 상부 본체(10)와 하부 본체(20)가 서로 완전히 겹쳐졌을 때는 보통 휴대하기 좋은 대기모드의 상태가 된다는 기재가 있고, 도면 1에는 상부 본체와 하부 본체가 서로 완전히 겹쳐진 상태로서 하부 본체에 있는 키패드 중의 어느 하나도 개방되지 않는 형상이 도시되어 있다.  </p><p>            그러나 특허발명의 보호범위는 특허 청구범위에 기재된 사항에 따라 정해지는 것이고, 기재된 사항만으로 특허발명의 기술적 구성을 알 수 없거나 알 수 있다고 하더라도 보호범위를 확정할 수 없는 경우에는 명세서의 다른 기재에 의한 보충을 할 수 있으나, 이 경우에도 명세서의 다른 기재에 의하여 특허 청구범위의 확장 해석은 허용되지 아니하며, 특허 청구범위의 기재만으로 보호범위가 명백한 때에는 명세서의 다른 기재를 가지고 특허 청구범위의 기재를 제한하여 해석할 수는 없다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2003후2447|판결" href="#//">대법원 2004. 10. 28. 선고 2003후2447 판결</a></span> 및 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010후2377|판결" href="#//">대법원 2011. 2. 10. 선고 2010후2377 판결</a></span> 등 참조). </p><p>            이 사건에서, 원고 특허발명의 특허 청구범위와 관련하여 구성 (D)에 관한 기재에서 상부 본체가 하부 본체에 대해 상측으로 이동할 때에는 하부 본체의 하단부에 있는 키패드 중 적어도 어느 하나가 개방되고, 상부 본체가 하부 본체에 대해 하측으로 이동할 때에는 하부 본체의 상단부에 있는 키패드 중 적어도 어느 하나가 개방된다는 내용으로 기술적 구성과 그 범위가 분명하므로 그 명세서 기재와 그림에 의하여 원고가 지적하는 바와 같이 구성 4의 기술적 구성이 상부 본체가 하부 본체에 대해 어느 한 방향으로 이동하지 않는 경우에 하부 본체에 있는 키패드 중의 어느 하나도 개방되지 않는 것으로 제한하여 해석할 수 없고, 달리 그와 같은 내용으로 한정하여 해석할 만한 자료도 없다[또 비교대상발명 4의 정면도에는 원고의 특허발명 도면 1과 마찬가지로 폴더부(상부 본체)와 본체(하부 본체)가 서로 완전히 겹쳐진 상태로서 본체(하부 본체)에 있는 기능키(키패드)와 카메라 중의 어느 하나도 개방되지 않는 형상이 도시되어 있다].</p><p>        ㉲ 구성 (E)</p><p><img name="img6" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-06.gif" alt="본문내 삽입된 이미지" /></p><p>          비교대상발명 4의 정면 폴더의 아래쪽에 배열되는 원형의 기능키와 기능버튼은 참고도 2에 도시된 바와 같이 폴더부가 본체에 대해 아래쪽으로 슬라이딩이 되면 조작할 수 있는 구성이다. 따라서 구성 (E) 중 상부 본체가 하부 본체에 대해 하측으로 슬라이딩 될 때 조작이 가능하도록 상부 본체의 하측부에 구비된 제1기능 키패드부라는 구성부분과 비교대상발명 4의 대응구성 사이에는 별다른 차이가 없다.</p><p><img name="img7" title="[이 사건 발명의 도면 3]" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-07.gif" alt="본문내 삽입된 이미지" /> </p><p>          구성 (E)의 디스플레이창의 양쪽에 대칭되어 양손 조작이 가능하다는 나머지 구성이 가지는 기술적 의의는 구성 (D)에 개시된 것처럼 상부 본체가 하부 본체에 대해 아래쪽으로 슬라이딩하여 이동될 때 구성 (C)의 두 개 이상의 키패드 중 하나로서 하부 본체의 상단부에 존재하는 키패드가 개방된다는 구성을 내재한다[원고의 특허발명 도면 3에는 위와 같이 하부 본체의 상단부에 존재하는 키패드가 ‘제2기능 키패드(22)’로 표시되어 있다].</p><p>          이러한 사정에 비추어 본체가 갖춘 키패드의 개수가 구성 (D)의 하부본체와 차이가 있는 비교대상발명 4의 대응구성은 앞서 본 바와 같이 폴더부를 하부로 이동할 때 본체의 상단부에 존재하는 카메라가 개방될 뿐이고, 구성 (E)의 나머지 구성부분과 같이 본체(하부 본체)의 상단부에 키패드가 존재하지 않으므로 양자 사이에는 구성상 차이가 있다. </p><p>          그러나 비교대상발명 1의 대응구성은 덮개(상부 본체)를 본체(하부 본체)의 하단부에 두면 본체(하부 본체) 상단부에 있는 기능키(140)가 외부로 노출되는 구성이므로 이는 구성 (E)의 나머지 구성 부분에 내재한 상부 본체가 하부본체에 대해 아래쪽으로 슬라이딩하여 이동될 때 하부본체의 상단부에 존재하는 키패드가 개방된다는 구성 부분과 별다른 차이가 없다. </p><p>        ② 기술 분야의 대비</p><p>          원고의 특허발명과 비교대상발명 1, 4는 모두 휴대단말기(이동통신단말기, 휴대전화)에 관한 것으로서 그 기술 분야가 같다.</p><p>        ③ 구성의 곤란성(결합의 용이성) 유무</p><p>          앞서 본 바와 같이 원고 특허발명의 구성 (A), (B), (C), (D), (E)는 비교대상발명 4의 대응구성과 덮개를 본체의 하단부에 두면서 본체 상단부에 존재하는 기능키가 외부로 노출되는 구성까지 포함된 비교대상발명 1의 대응구성을 결합함으로써 쉽게 이끌어 낼 수 있고, 다음과 같은 사정에 비추어 통상의 기술자로서는 선행기술인 비교대상발명 1, 4의 대응구성을 결합하는 데에 특별한 기술적 어려움이 있다고 볼 수 없다.</p><p>          비교대상발명 1의 명세서에는 ‘최근 통신기술의 비약적인 발전에 힘입어 이동통신단말기의 소형화가 이루어짐과 동시에 이동통신단말기 용도의 다양화가 이루어져 이동통신단말기를 이용한 인터넷 검색, 동영상 재생, 각종 게임 등 다양한 기능수행이 가능해지고 있다. 따라서 이동통신단말기는 더 많은 양의 정보를 한 번에 출력할 수 있도록 액정화면의 대형화가 요구되고 있고, 다양한 신호입력을 위하여 키버튼의 다양화가 요구된다는 취지로 적혀 있다(을1, 2면 ‘발명이 속하는 기술 및 그 분야의 종래기술’ 4~7행). 이러한 명세서의 기재에 비추어 이동통신단말기(휴대단말기)의 용도를 인터넷을 검색하거나 동영상의 재생 및 각종 게임의 실행 등으로 다양하게 이용하기 위해서 여러 가지 신호를 입력할 수 있도록 키 버튼의 구성을 다양화하는 것은 원고의 특허발명 출원 당시에 그 기술 분야에서 일반적으로 요구되는 기술적 과제로 보인다. 비교대상발명 4의 대응구성과 본체 상단부에 기능키가 있는 구성까지 포함한 비교대상발명 1의 대응구성 사이의 결합은 이러한 일반적인 기술과제에 따른 연장선에 있으므로 원고 특허발명의 구성은 모두 통상의 기술자가 비교대상발명 1, 4로부터 용이하게 이끌어 낼 수 있는 것으로서 구성의 곤란성이 있다고 볼 수 없다.</p><p>        ④ 작용효과의 현저성 유무</p><p><img name="img8" title="[이 사건 발명의 도면 6]" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2194723&amp;attachImgNm=15w0901-007-08.gif" alt="본문내 삽입된 이미지" /></p><p>          원고의 특허발명 명세서에는 발명의 효과에 관하여 하부 본체에 통상의 입력 숫자 키패드 외에 별도의 기능 키패드를 갖추어 상부 본체가 하부 본체에 대해 양방향으로 슬라이딩 되는 경우에 고유의 통신기능과 멀티미디어 기능을 적절히 사용하게 할 수 있는 인터페이스구조를 제공함에 목적이 있다고 밝히고 있고(갑1의 2, 2면 ‘발명이 이루고자 하는 기술적 과제’), 본래 고유의 통신기능뿐만 아니라 게임이나 카메라 동영상을 디스플레이하는 오락 기능까지 그 상태에 맞추어 손쉽게 사용할 수 있어 멀티미디어화가 되는 휴대단말기를 제공할 수 있게 되었다고 밝히고 있다(갑1의 2, 3면 ‘발명의 효과’ 1~3행).</p><p>          이처럼 고유의 통신기능과 멀티미디어 기능을 적절히 사용하게 할 수 있는 인터페이스구조를 제공하는 원고의 특허발명의 작용효과는  구성 (A), (B), (C), (D), (E)를 유기적 결합함으로 달성할 수 있다. </p><p>       이러한 구성 (A), (B), (C), (D), (E)는 모두 비교대상발명 1, 4의 대응구성을 결합함으로써 쉽게 이끌어낼 수 있으므로 원고 특허발명의 작용 효과에 통상의 기술자가 앞서 본 선행기술을 결합함으로써 예상할 수 있는 범위를 넘어서는 현저한 작용효과가 있다고 볼 수는 없다.</p><p>        ⑤ 정리</p><p>           원고의 특허발명은 기술 분야가 동일한 비교대상발명 1, 4와 대비하여 그 구성의 곤란성과 작용효과의 현저성이 있다고 볼 수 없으므로 결국 통상의 기술자가 비교대상발명 1, 4를 가지고 쉽게 발명할 수 있는 것으로서 그 진보성이 부정된다. 따라서 원고의 특허발명은 진보성이 없고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|29|">특허법 29조 2항</a></span>에 위반하여 특허등록이 되어 특허발명에 무효사유가 있음이 명백하므로 원고가 피고를 상대로 원고의 특허발명에 기초하여 특허권 침해를 이유로 손해배상을 구하는 것은 권리남용에 해당하여 허용되지 않는다. 피고의 위 주장은 이유 있다.</p><p>  다. 권리남용의 항변을 배척할 특별한 사정의 존부(정정 후 특허발명에 무효사유가 있음이 분명한지)</p><p>    [판단]</p><p>    원고는 특허무효심판절차에서 원고의 특허 청구범위에 대하여 정정을 신청하였고, 정정 후 특허발명은 정정 전 특허발명 1, 2의 청구항 구성을 결합한 것에 불과하므로 그 구성요건이 실질적으로 같다.   </p><p>    그러므로 원고의 정정 후 특허발명도 기술 분야가 동일한 비교대상발명 1, 4와 대비하여 보면 그 구성의 곤란성과 작용효과의 현저성이 있다고 볼 수도 없으므로 결국 통상의 기술자가 비교대상발명 1, 4를 가지고 쉽게 이끌어낼 수 있는 발명에 해당하므로 그 진보성이 부정된다. 그러므로 원고의 정정 후 특허발명에도 진보성이 없고, 원고의 정정청구가 그대로 확정되더라도 원고의 정정 후 특허발명에 무효사유가 있음이 명백하므로 원고가 무효심판절차에서 정정청구를 하여 그 정정을 받아들이는 내용의 심결이 확정되어 특허발명 1, 2가 원래부터 정정 후 특허발명으로 된다고 하더라도 정정 후 특허발명에 기초하여 손해배상을 구하는 것도 권리남용에 해당하여 허용되지 않으므로 피고의 권리남용의 항변을 배척할 특별한 사정이 있다고 볼 수도 없다. </p><p>4. 결론</p><p>  그렇다면 원고의 청구는 이유 없다. 이와 결론을 같이하여 원고의 청구를 기각한 제1심판결은 정당하고, 원고의 항소는 이유 없으므로 이를 기각한다.</p><p>[별지 도면 생략]</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   이균용(재판장) 박재우 정윤형 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

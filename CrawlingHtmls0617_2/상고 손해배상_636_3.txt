@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011다36848 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2058622';
+var contIdEtc = '';
+var saNo = '2011다36848';
+var sngoNm = '선고';
+var saNm = '손해배상(의)';
+try {
+	var sngoDay=('20130228' ? 
+			'20130228'.length==4 ? Date.parseExact('20130228','yyyy').toString('yyyy. M. d.') : 
+				'20130228'.length==6 ? Date.parseExact('20130228','yyyyMM').toString('yyyy. M. d.') : 
+					'20130228'.length==8 ? Date.parseExact('20130228','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011다36848 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011다36848';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011다36848</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(4)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548410">한국. 대법원 법원행정처 재판실무편람. 제5호:. 의료재판실무편람 의료재판실무편람 집필위원회  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다13045">대법원 2005. 10. 28. 선고 2004다13045 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|94다27151">대법원 1995. 4. 25. 선고 94다27151 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다23707">대법원 1992. 5. 12. 선고 91다23707</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다95635">대법원 2012. 6. 14. 선고 2010다95635 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="부산고등법원|2010나9306">부산고법 2011. 4. 7. 선고 2010나9306 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2013. 2. 28. 선고 2011다36848 판결</h2><p class="sub_title">[손해배상(의)][공2013상,554]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>즉시 추가검사 등을 시행하지 않고 경과관찰을 선택한 의사가, 환자의 상태가 통상의 예후와 달리 갑자기 악화될 수 있다거나 이에 대비한 추가검사를 받을 것인지에 관한 설명을 하지 않은 경우, 설명의무를 위반하여 환자의 치료기회를 상실시키거나 자기결정권을 침해한 것으로 볼 수 있는지 여부(한정 소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>즉시 추가검사 등 의료행위를 시행하지 않고 경과관찰을 선택한 의사의 판단이 합리적인 범위에 있다면, 환자의 상태가 당시의 의료수준에서 예상할 수 있는 통상의 예후와는 달리 갑자기 악화될 예외적 가능성까지 고려하여 환자의 상태가 갑자기 악화될 수 있다거나 그에 대비한 추가검사를 받을 것인지에 관한 설명을 하지 않았다고 하더라도, 의사가 설명의무를 위반하여 환자의 치료기회를 상실시켰다거나 자기결정권을 침해하였다고 할 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">제751조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인 겸 피상고인】
+      
+        
+          원고 1 외 1인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인 겸 상고인】
+      
+        학교법인 울산공업학원 외 1인 (소송대리인 법무법인 동행 담당변호사 김성환 외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="부산고등법원|2010나9306|판결" href="#//">부산고법 2011. 4. 7. 선고 2010나9306 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고들 패소부분을 파기하고, 이 부분 사건을 부산고등법원에 환송한다.  원고들의 상고를 모두 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 원고들의 상고이유에 대하여</p><p>  의사가 진찰·치료 등의 의료행위를 함에 있어서는 사람의 생명·신체·건강을 관리하는 업무의 성질에 비추어 환자의 구체적인 증상이나 상황에 따라 위험을 방지하기 위하여 요구되는 최선의 조치를 취하여야 할 주의의무가 있고, 의사의 이와 같은 주의의무는 의료행위를 할 당시 의료기관 등 임상의학 분야에서 실천되고 있는 의료행위의 수준을 기준으로 삼되, 그 의료수준은 통상의 의사에게 의료행위 당시 일반적으로 알려져 있고 또 시인되고 있는 이른바 의학상식을 뜻하므로, 진료환경 및 조건, 의료행위의 특수성 등을 고려하여 규범적인 수준으로 파악되어야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다13045|판결" href="#//">대법원 2005. 10. 28. 선고 2004다13045 판결</a></span> 등 참조).
+      </p><p>  위 법리에 비추어 원심판결 이유를 살펴보면, 원심이 뇌동맥류 질환 등의 특성, 망 
+        소외인(이하 ‘망인’이라 한다)이 보인 증상 및 징후, 울산대학교병원 의료진의 치료 내용 등을 종합하여, 뇌동맥류 결찰수술 1주일 후 시행된 뇌전산화단층촬영(CT) 검사에서 경미한 뇌경색 소견이 있었던 망인에 대하여 뇌혈관조영술 등 필요한 검사를 시행하지 않고, 뇌경색 및 뇌부종에 대하여 필요한 치료를 하지 못하는 등 울산대학교병원 의료진의 진료상 과실로 인하여 망인이 사망하였다는 원고들의 주장을 배척한 것은 수긍할 수 있고, 여기에 상고이유에서 주장하는 의료과실 및 인과관계에 대한 법리오해, 자유심증주의 위반 등의 위법이 없다.
+      </p><p>  2. 피고들의 상고이유에 대하여</p><p>  가. 의사의 환자에 대한 설명의무가 수술 시에만 한하지 않고, 검사, 진단, 치료 등 진료의 모든 단계에서 각각 발생한다 하더라도, 위 설명의무위반에 대하여 의사에게 위자료 등의 지급의무를 부담시키는 것은 의사가 환자에게 제대로 설명하지 아니한 채 수술 등을 시행하여 환자에게 예기치 못한 중대한 결과가 발생하였을 경우 의사가 그 행위에 앞서 환자에게 질병의 증상, 치료나 진단방법의 내용 및 필요성과 그로 인하여 발생이 예상되는 위험성 등을 설명하여 주었더라면 환자가 스스로 자기결정권을 행사하여 그 의료행위를 받을 것인지 여부를 선택함으로써 중대한 결과의 발생을 회피할 수 있었음에도, 의사가 위 설명을 하지 아니하여 그 기회를 상실하게 된 데에 따른 정신적 고통을 위자하기 위한 것이다. 이러한 의미에서의 의사의 설명은 모든 의료과정 전반을 대상으로 하는 것이 아니라 수술 등 침습을 과하는 과정 및 그 후에 나쁜 결과 발생의 개연성이 있는 의료행위를 하는 경우 또는 사망 등의 중대한 결과발생이 예측되는 의료행위를 하는 경우 등과 같이 환자에게 자기결정에 의한 선택이 요구되는 경우만을 대상으로 하여야 하고, 환자에게 발생한 중대한 결과가 의사의 침습행위로 인한 것이 아니거나 환자의 자기결정권이 문제되지 아니하는 사항에 관한 것은 위자료 지급대상으로서의 설명의무위반이 문제 될 여지는 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다27151|판결" href="#//">대법원 1995. 4. 25. 선고 94다27151 판결</a></span> 등 참조).
+      </p><p>  그리고 의사는 환자의 상황과 당시의 의료수준 그리고 자기의 지식경험에 따라 적절하다고 판단되는 방법을 선택하여 진료할 수 있으므로, 진료방법 선택에 관한 의사의 판단이 합리적인 범위를 벗어난 것이 아닌 한 특정한 진료방법을 선택한 결과가 좋지 않았다는 사정만으로 바로 의료과실이 있다고 평가할 수는 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다23707|판결" href="#//">대법원 1992. 5. 12. 선고 91다23707</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다95635|판결" href="#//">대법원 2012. 6. 14. 선고 2010다95635 판결</a></span> 등 참조).
+      </p><p>  따라서 
+        <span class="accrnt_txt">즉시 추가검사 등 의료행위를 시행하지 않고 경과관찰을 선택한 의사의 판단이 합리적인 범위에 있다면, 환자의 상태가 당시의 의료수준에서 예상할 수 있는 통상의 예후와는 달리 갑자기 악화될 예외적 가능성까지 고려하여 환자의 상태가 갑자기 악화될 수 있다거나 그에 대비한 추가검사를 받을 것인지에 관한 설명을 하지 않았다고 하더라도, 의사가 설명의무를 위반하여 환자의 치료기회를 상실시켰다거나 자기결정권을 침해하였다고 할 수 없다.</span>
+      </p><p>  나. 원심은, 
+        피고 2가 수술 전 망인에게 수술의 부작용인 뇌경색 등에 관하여 설명하긴 하였으나, 망인에 대한 뇌동맥류 결찰수술 1주일 후인 2003. 5. 26. 시행된 이 사건 뇌전산화단층촬영(CT) 검사상 뇌 좌측 기저핵 부위에서 경미한 뇌경색 및 뇌부종의 증상으로 볼 만한 소견을 발견하고도 그 사실이나 치료방법은 물론 그 확진을 위해 침습적인 뇌혈관조형술 등이 필요할 수도 있다는 점을 망인이나 원고들에게 설명하지는 않은 사실 등 판시 사실을 인정한 후, 
+        피고 2는 수술 후 경미하나마 뇌경색 등의 징후가 나타난 사실과 확진을 위한 추가적인 검사 및 치료방법 등에 관한 설명을 하여야 할 의무가 있음에도 이를 이행하지 아니하였으므로, 추가적인 치료기회를 상실하고 자기결정권을 침해당한 망인 및 그 가족들에게 위자료를 지급할 책임이 있다고 판단하였다.
+      </p><p>  다. 그러나 원심판결 이유 및 원심이 적법하게 채택한 증거에 의하면, 뇌동맥류 결찰수술 후 추적검사로 시행되는 뇌 CT 검사상 허혈성 병변은 상당수 환자에서 관찰되나 뇌경색 증상을 보이지 않는 경우가 많은 사실, 뇌지주막하 출혈을 동반하지 않은 비파열성 뇌동맥류 결찰수술 후 뇌혈관 연축에 의한 뇌경색이 발생하는 경우는 증례 보고의 대상이 될 정도로 매우 드문 사실, 망인은 2003. 5. 20. 비파열성 뇌동맥류 결찰수술을 받고 상태가 비교적 호전되는 양상을 보이는 가운데 수술경과 확인을 위해 뇌 CT 검사를 받았고, 당시 신경학적 관점에서 볼 때 의식이 명료하고 지남력이 있으며 근력 저하도 없는 등 특이한 징후를 보임이 없이 양호한 상태를 보였던 사실 등을 알 수 있으므로, 원심이 판단한 바와 같이 뇌 CT 검사에서 관찰된 좌측 기저핵 부위의 작은 뇌경색과 경미한 뇌부종 소견만으로는 망인이 불과 2~3일 만에 좌측 중대뇌동맥 영역의 뇌경색으로 진행되어 사망에 이를 수 있다고 예측하기는 어려웠고, 
+        피고 2 등 울산대학교병원 의료진이 망인에 대한 뇌 CT 검사 후 즉시 뇌혈관조영술 검사 등 조치를 시행하지 않고 경과관찰을 선택한 판단이 합리적인 범위를 벗어난 것이라고 볼 수 없다.
+      </p><p>  그렇다면 
+        피고 2 등 울산대학교병원 의료진이 뇌 CT 소견 등을 토대로 망인에 대한 경과관찰을 하는 사이에 망인이 갑자기 심각한 뇌경색으로 진행되어 사망에 이를 수 있다거나 뇌혈관 연축 발생 여부 등을 진단하기 위하여 추가로 뇌혈관조영술 검사 등을 받을 것인지에 관한 설명을 하지 않았다고 하더라도, 망인의 치료기회를 상실시켰다거나 자기결정권을 침해하였다고 할 수는 없다.
+      </p><p>  그럼에도 원심은 위와 같은 이유만으로 피고들에게 설명의무위반으로 인한 위자료 지급을 명하였으므로, 원심판결에는 의사의 설명의무에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 있다.</p><p>  3. 결론</p><p>  그러므로 원심판결 중 피고들 패소부분을 파기하고 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하며, 원고들의 상고를 모두 기각하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   민일영(재판장) 이인복 박보영(주심) 김신 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

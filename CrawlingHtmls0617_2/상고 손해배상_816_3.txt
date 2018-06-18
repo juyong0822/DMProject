@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2012다104526 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2176079';
+var contIdEtc = '';
+var saNo = '2012다104526';
+var sngoNm = '선고';
+var saNm = '회생채권조사확정재판에대한이의·채권조사확정재판에대한이의의소';
+try {
+	var sngoDay=('20150528' ? 
+			'20150528'.length==4 ? Date.parseExact('20150528','yyyy').toString('yyyy. M. d.') : 
+				'20150528'.length==6 ? Date.parseExact('20150528','yyyyMM').toString('yyyy. M. d.') : 
+					'20150528'.length==8 ? Date.parseExact('20150528','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012다104526,104533 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2012다104526';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2012다104526</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(6)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(9)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(6)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|786578">외국적 요소가 있는 쌍방미이행 쌍무계약에서 도산법정지법도산법정지법 원칙의 적용 범위 및 영국법상 중간이자공제의 법리 김진오 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|815267">회생절차 개시후 정기용선계약 해지에 따른 손해배상채권의 준거법과 손해배상의 범위 권창영 한국해사문제연구소</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|823763">도산국제사법과 도산법정지법도산법정지법의 원칙 이형근 @ 김시내 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|817706">외국적 요소가 있는 정기용선계약 용선자의 계약 해지 시 적용되는 준거법 및 선주가 입은 손해액 산정방법 @ 회생채권조사확정 재판에 대한 이의·채권조사확정 재판에 대한 이의의 소 손수호 서울地方辯護士會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|786578">김진오 외국적 요소가 있는 쌍방미이행 쌍무계약에서 도산법정지법(도산법정지법) 원칙의 적용 범위 및 영국법상 중간이자공제의 법리 대법원판례해설 제103호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|797416">이은재 한국과 미국의 회생절차에서의 미이행계약에 대한 비교 사법 35호 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|854997">김영석 해운회사의 국제도산에 관한 연구 : - 선박 관련 쟁점을 중심으로 - 사법논집=. 제64집 제64집 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|823763">이형근 도산국제사법과 도산법정지법(도산법정지법)의 원칙 율촌판례연구   / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|788984">김희중 2015년 상반기 도산법 관련 대법원 판례 소개 도산법연구 제6권 제2호  / 사단법인 도산법연구회[편]  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|835313">김윤종 외국적 요소가 있는 채권자취소권의 준거법 대법원판례해설 제109호 / 법원도서관  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="채무자회생및파산에관한법률|119|0|null">채무자 회생 및 파산에 관한 법률 제119조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="채무자회생및파산에관한법률|121|0|null">채무자 회생 및 파산에 관한 법률 제121조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="국제사법|25|0|null">국제사법 제25조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="채무자회생및파산에관한법률|119|0|null">채무자 회생 및 파산에 관한 법률 제119조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="채무자회생및파산에관한법률|121|0|null">채무자 회생 및 파산에 관한 법률 제121조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="채무자회생및파산에관한법률|138|0|null">채무자 회생 및 파산에 관한 법률 제138조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="국제사법|25|0|null">국제사법 제25조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|119|0|null">채무자 회생 및 파산에 관한 법률 제119조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|121|0|null">채무자 회생 및 파산에 관한 법률 제121조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|119|0|null">채무자 회생 및 파산에 관한 법률 제119조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|118|0|null">채무자 회생 및 파산에 관한 법률 제118조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="채무자회생및파산에관한법률|118|0|null">채무자 회생 및 파산에 관한 법률 제118조 제3호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2011나83778">서울고법 2012. 9. 26. 선고 2011나83778, 83785 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2015. 5. 28. 선고 2012다104526,104533 판결</h2><p class="sub_title">[회생채권조사확정재판에대한이의·채권조사확정재판에대한이의의소][공2015하,843]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 외국적 요소가 있는 계약을 체결한 당사자에 대한 회생절차가 개시된 경우, 계약이 쌍방미이행 쌍무계약에 해당하여 관리인이 이행 또는 해제·해지를 선택할 수 있는지와 계약의 해제·해지로 발생한 손해배상채권이 회생채권인지에 관한 준거법(=도산법정지법) 및 계약의 해제·해지에 따른 손해배상의 범위에 관한 준거법(=국제사법에 따른 계약의 준거법)</p>
+<p></p>
+<p></p><p>[2] 영국법상 장래손해(future loss)의 현가 산정에서 중간이자를 공제하지 않더라도 과잉배상이 되지 않은 경우, 반드시 중간이자를 공제하여 손해액을 할인하여야 하는지 여부(소극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 외국적 요소가 있는 계약을 체결한 당사자에 대한 회생절차가 개시된 경우, 계약이 쌍방미이행 쌍무계약에 해당하여 관리인이 이행 또는 해제·해지를 선택할 수 있는지, 그리고 계약의 해제·해지로 인하여 발생한 손해배상채권이 회생채권인지는 도산법정지법(도산법정지법)인 채무자 회생 및 파산에 관한 법률에 따라 판단되어야 하지만, 계약의 해제·해지로 인한 손해배상의 범위에 관한 문제는 계약 자체의 효력과 관련된 실체법적 사항으로서 도산전형적인 법률효과에 해당하지 아니하므로 국제사법에 따라 정해지는 계약의 준거법이 적용된다.</p>
+<p></p><p></p><p>[2] 영국법상 향후 발생할 손해를 일정 시점을 기준으로 일시금(일시김)으로 지급하기 위한 장래손해(future loss)의 현가 산정은, 정당한 배상액을 정하기 위한 배상액의 조정으로 과잉배상 내지 과소배상을 방지하기 위한 것이므로, 이러한 배상액 산정에서 중간이자를 공제하지 않더라도 과잉배상이 되지 않는 경우에는 반드시 중간이자를 공제하여 손해액을 할인하여야 하는 것은 아니다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|119|">채무자 회생 및 파산에 관한 법률 제119조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|121|">제121조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|25|">국제사법 제25조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|119|">채무자 회생 및 파산에 관한 법률 제119조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|121|">제121조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|138|">제138조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국제사법|25|">국제사법 제25조</a></span></p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 상고인】
+주식회사 삼선로직스 (소송대리인 변호사 권성원 외 2인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피상고인】
+진양해운 주식회사
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고보조참가인】
+셀렉트 벌크 쉬핑 리미티드
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2011나83778|판결" href="#//">서울고법 2012. 9. 26. 선고 2011나83778, 83785 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.  상고비용은 보조참가로 인한 부분을 포함하여 원고가 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 중간이자의 공제 여부에 관한 상고이유에 대하여</p><p>  가. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|119|">채무자 회생 및 파산에 관한 법률(이하 ‘채무자회생법’이라 한다)은 제119조 제1항</a></span> 본문에서, “쌍무계약에 관하여 채무자와 그 상대방이 모두 회생절차개시 당시에 아직 그 이행을 완료하지 아니한 때에는 관리인은 계약을 해제 또는 해지하거나 채무자의 채무를 이행하고 상대방의 채무이행을 청구할 수 있다.”고 규정하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|121|">제121조 제1항</a></span>에서 “<span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|119|">제119조</a></span>의 규정에 의하여 계약이 해제 또는 해지된 때에는 상대방은 손해배상에 관하여 회생채권자로서 그 권리를 행사할 수 있다.”고 규정하고 있다. <span class="accrnt_txt">외국적 요소가 있는 계약을 체결한 당사자에 대한 회생절차가 개시된 경우, 그 계약이 쌍방미이행 쌍무계약에 해당하여 관리인이 이행 또는 해제·해지를 선택할 수 있는지 여부, 그리고 계약의 해제·해지로 인하여 발생한 손해배상채권이 회생채권인지 여부는 도산법정지법(도산법정지법)인 채무자회생법에 따라 판단되어야 하지만, 그 계약의 해제·해지로 인한 손해배상의 범위에 관한 문제는 계약 자체의 효력과 관련된 실체법적 사항으로서 도산전형적인 법률효과에 해당하지 아니하므로 국제사법에 따라 정해지는 계약의 준거법이 적용된다.</span></p><p>  그리고 <span class="accrnt_txt">영국법상 향후 발생할 손해를 일정시점을 기준으로 일시금(일시김)으로 지급하기 위한 장래손해(future loss)의 현가 산정은, 정당한 배상액을 정하기 위한 배상액의 조정으로 과잉배상 내지 과소배상을 방지하기 위한 것이므로, 이러한 배상액 산정에 있어 중간이자를 공제하지 않더라도 과잉배상이 되지 않는 경우에는 반드시 중간이자를 공제하여 손해액을 할인하여야 하는 것은 아니다.</span></p><p>  나. 원심판결 이유 및 원심이 적법하게 채택한 증거에 의하면, ① 원고와 피고는 2007. 8. 14. 주식회사 오리엔트조선이 건조 중인 ㉮ 이 사건 제1선박에 관하여 인도기간 2009. 12. 1.부터 2010. 2. 29.까지, 용선료 1일 18,700달러, 용선기간 5년으로 하는 이 사건 제1정기용선계약을, ㉯ 이 사건 제2선박에 관하여 인도기간 2010. 3. 1.부터 2010. 6. 30.까지, 용선료 1일 18,400달러, 용선기간 5년으로 하는 이 사건 제2정기용선계약(이하 이 사건 제1, 2정기용선계약을 합하여 ‘이 사건 정기용선계약’이라 한다)을 체결한 사실, ② 원고와 피고는 이 사건 정기용선계약의 준거법으로 영국법을 적용하기로 합의하고, 그 계약대상인 선박의 국적(국적)을 파나마 국으로 정한 사실, ③ 이 사건 제1, 2선박이 건조 중인 2009. 3. 6. 정기용선자인 원고에 대한 회생절차가 개시되자, 원고의 관리인은 2009. 7. 15. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|119|">채무자회생법 제119조 제1항</a></span>에 따라 이 사건 정기용선계약을 해지한 사실, ④ 피고는 2009. 7. 29. 원고의 이 사건 정기용선계약 해지로 인해 장래의 용선료 수입 상당의 손해가 발생하였다고 주장하면서 그 손해원금만을 회생채권으로 신고하였고, 원고의 관리인이 이를 전부 부인한 사실, ⑤ 이에 피고가 원고의 관리인을 상대로 회생채권조사확정재판을 신청하자, 법원은 2011. 2. 23. 피고의 원고에 대한 회생채권은 24,187,113달러임을 확정한다는 취지의 결정을 하였고, 이에 대하여 원고와 피고가 모두 이의한 사실 등을 알 수 있다.</p><p>  다. 위와 같은 사실관계를 앞서 본 법리에 비추어 살펴본다.</p><p>  이 사건 정기용선계약은 외국적 요소가 있는 쌍방미이행 쌍무계약으로서, 그 해지로 인한 손해배상의 범위에 관한 문제는 계약 자체의 효력과 관련된 실체법적 사항이므로 이 사건 정기용선계약의 준거법인 영국법이 적용된다.</p><p>  그리고 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|118|">채무자회생법은 제118조 제1호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="채무자 회생 및 파산에 관한 법률|118|">제3호</a></span>에서 회생절차개시 전의 원인으로 생긴 재산상의 청구권뿐만 아니라, 회생절차 개시 후의 이자, 불이행으로 인한 손해배상금도 회생채권에 포함시키고 있으므로, 피고는 이 사건 정기용선계약해지로 인한 손해배상채권의 원금뿐만 아니라 그 지연손해금에 대하여도 회생채권자로서 권리를 행사할 수 있었음에도 이를 회생채권으로 신고하지 아니한 점 등에 비추어 보면, 피고의 손해배상액 산정에 있어 중간이자를 공제하지 않는다 하더라도 과잉배상이 된다고 볼 수는 없으므로 반드시 중간이자를 공제하여야 하는 것은 아니다. 원심의 이유 설시에 다소 부적절한 점이 없지 아니하나, 원고의 중간이자 공제주장을 배척한 원심의 판단은 결론에 있어 정당하고, 거기에 상고이유 주장과 같이 정기용선계약의 해지로 인한 손해배상액 산정 등에 관한 법리를 오해하여 판결에 영향을 미친 위법이 없다.</p><p>  2. 휴항기간 및 사업위험분의 공제 여부에 관한 상고이유에 대하여</p><p>  원심은, 원고의 다음과 같은 주장, 즉 손해배상의 범위를 정함에 있어 ① 용선기간 중 악천후, 건선거입거(건선거입거, dry docking) 등으로 선박의 정상적인 운항이 불가능할 것으로 예견되는 휴항기간(휴항기간)에 해당하는 용선료가 공제되어야 하며, ② 선주는 선박의 전손(전손), 파산 등의 사업위험에 노출되어 있고, 이러한 사업위험이 현실화되는 경우 용선료수입을 얻을 수 없으므로 선주의 사업위험분이 공제되어야 한다는 주장에 대하여, ① 이 사건 제1, 2용선계약은 용선기간에 따라 용선료를 지급하는 정기용선계약이므로 악천후로 인하여 운항을 못하는 손해는 용선자가 그 위험을 부담하는 것이 상당하고, 이 사건 제1, 2용선계약은 용선기간을 5년으로 정하여 신조선박(신조선박)을 용선하는 것이고 신조선박의 경우 관련 법령상 5년 이내에는 선박에 대한 검사가 없으므로 검사를 위한 건선거입거로 인하여 휴항하는 경우는 상정할 수 없으며, ② 이 사건 제1, 2용선계약의 해지로 인한 선주의 손해를 산정함에 있어 언제 현실화될지도 모르는 막연한 선주의 사업위험분을 공제하여야 할 특별한 사정이 있다고 볼 수 없다고 판단하여, 이를 모두 배척하였다.</p><p>  관련 법리와 기록에 비추어 살펴보면, 이러한 원심의 판단은 정당하고, 거기에 상고이유 주장과 같이 정기용선계약의 해지로 인한 손해배상액 산정 등에 관한 법리를 오해하여 판결에 영향을 미친 위법이 없다.</p><p>  3. 선박의 인도가능성 여부에 관한 상고이유에 대하여</p><p>  원심은, 이 사건 제1, 2정기용선계약의 해지일로부터 약정 선박인도기일까지의 잔여기간, 이 사건 제1, 2정기용선계약의 해지 당시 이 사건 제1, 2선박의 공정 정도 등에 비추어, 피고가 이 사건 제1, 2정기용선계약에서 정한 약정인도기일까지 원고에게 이 사건 제1, 2선박을 인도할 수 없었다고 단정하기 어렵다고 판단하였다.</p><p>  이러한 원심의 판단을 다투는 이 부분 상고이유 주장은 사실심인 원심의 전권사항인 증거의 취사선택과 가치판단 및 이에 기초한 사실인정을 탓하는 것에 불과하여 적법한 상고이유로 볼 수 없다.</p><p>  4. 결론</p><p>  그러므로 상고를 기각하고 상고비용은 패소자가 부담하도록 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박상옥(재판장) 이상훈 김창석(주심) 조희대 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

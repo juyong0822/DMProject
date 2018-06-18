@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다34159 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2137956';
+var contIdEtc = '';
+var saNo = '2010다34159';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('20130613' ? 
+			'20130613'.length==4 ? Date.parseExact('20130613','yyyy').toString('yyyy. M. d.') : 
+				'20130613'.length==6 ? Date.parseExact('20130613','yyyyMM').toString('yyyy. M. d.') : 
+					'20130613'.length==8 ? Date.parseExact('20130613','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다34159 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'D3';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다34159';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다34159</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(8)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(10)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2163820">대법원 2014. 10. 27. 선고 2012다22242 판결 [공2014하,2225]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2251451">대법원 2018. 4. 12. 선고 2017다229536 판결 [공2018상,889]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|722321">보험상품 판매과정에서 고객보호의무 위반에 따른 손해배상책임 박양준 서울대학교 금융법센터</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|765684">변액보험에서 적합성원칙과 설명의무에 관한 판례평석 @ 대법원 2013 6 13 선고 2010다34159 판결과 원심판결을 중심으로 이훈종 韓國經濟法學會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|740211">정태윤 '가치이전형' 공동불법행위에서 주모자가 피해자에게 전액을 배상한 후에 그 불법행위로 인한 이득을 모두 보유하고 있는 가담자에게 구상청구할수 있는가? 법학논집 제18권 제4호 / 이화여자대학교 법학연구소  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|772337">고홍석 대법원 판례에 나타난 금융투자상품 거래에서의 적합성 원칙 민사판례연구 37권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|800359">한영표 카지노업자의 고객보호의무 또는 규정 위반으로 인한 손해배상의무에 관하여 : 대법원 2014. 8. 21. 선고 2010다92438판결 판례연구 27집 / 부산판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|743972">장덕조 2013년도  보험법 판례의 동향과 그 연구 상사판례연구 27집 2권 / 한국상사판례학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|757171">고홍석 키코(KIKO) 통화옵션계약 체결 과정에서의 불법행위 성립 여부 양승태 대법원장 재임 3년 주요 판례 평석   / 사법발전재단  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725490">서영화 2013년 상법(보험, 해상) 중요 판례 인권과 정의 제440호 / 대한변호사협회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|649919">최승재 고객보호의무 위반과 변액보험에서의 획책된 과실 : 서울고등법원 2010. 3. 31. 선고 2009나97606 판결을 중심으로 민사재판의 제문제 20권 / 한국사법행정학회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|722321">박양준 보험상품 판매과정에서 고객보호의무 위반에 따른 손해배상책임 BFL 61호 / 서울대학교 금융법센터  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다16758">대법원 2007. 10. 25. 선고 2006다16758, 16765 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다76733">대법원 2010. 3. 11. 선고 2007다76733 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="상법|638|3|null">상법 제638조의3 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="보험업법|95|0|20100723">보험업법(구) 제95조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="보험업법|97|0|null">보험업법(구) 제97조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="보험업법|102|0|null">보험업법(구) 제102조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="보험업법시행령|42|0|20080229">보험업법 시행령(구) 제42조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="보험업법|102|0|20100723">보험업법(구) 제102조 제1항 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다76733">대법원 2010. 3. 11. 선고 2007다76733 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다16758">대법원 2007. 10. 25. 선고 2006다16758, 16765 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="보험업법|102|0|20100723">보험업법(구) 제102조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="보험업법|97|0|null">보험업법(구) 제97조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="보험업법|95|0|null">보험업법(구) 제95조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="보험업법시행령|42|0|20080229">보험업법 시행령(구) 제42조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|339|0|20020126">민사소송법(구) 제339조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나97606">서울고법 2010. 3. 31. 선고 2009나97606 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2013. 6. 13. 선고 2010다34159 판결</h2><p class="sub_title">[손해배상][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 보험회사 또는 보험모집종사자가 보험계약을 체결하거나 모집하면서 보험계약의 중요사항에 관한 설명의무를 위반한 경우, 손해배상책임을 부담하는지 여부(적극) 및 이때 설명의무의 정도와 그 판단 기준</p>
+<p></p>
+<p></p><p>[2] 보험회사나 보험모집종사자에게 적합성 원칙 위반에 따른 손해배상책임이 있는지 판단하는 기준</p>
+<p></p>
+<p></p><p>[3] 불법행위로 인한 손해의 발생 또는 확대에 관하여 피해자에게도 과실이 있는데도 과실상계가 허용되지 않는 경우</p>
+<p></p>
+
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|638|3">상법 제638조의3 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|95|">구 보험업법(2010. 7. 23. 법률 제10394호로 개정되기 전의 것) 제95조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|97|">제97조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|102|">제102조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법 시행령|42|">구 보험업법 시행령(2008. 2. 29. 대통령령 제20653호로 개정되기 전의 것) 제42조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|102|">구 보험업법(2010. 7. 23. 법률 제10394호로 개정되기 전의 것) 제102조 제1항</a></span> [3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">민법 제396조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[3] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다16758|판결" href="#//">대법원 2007. 10. 25. 선고 2006다16758, 16765 판결</a></span>(공2007하, 1806)<br /><span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다76733|판결" href="#//">대법원 2010. 3. 11. 선고 2007다76733 판결</a></span>(공2010상, 715)</p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+효준정밀 주식회사 외 1인 (소송대리인 법무법인 상상 담당변호사 김의창 외 4인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인】
+에이아이에이인터내셔널리미티드(변경 전 명칭: 아메리카인터내셔날어슈어런스컴파니) 외 1인 (소송대리인 변호사 이임수 외 3인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나97606|판결" href="#//">서울고법 2010. 3. 31. 선고 2009나97606 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고들 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지나서 제출된 상고이유보충서의 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 설명의무에 관한 피고들의 상고이유 및 설명의무 위반과 손해 사이의 인과관계, 처분문서의 해석에 관한 피고 2의 상고이유에 대하여</p><p>  <span class="accrnt_txt">보험회사 또는 보험모집종사자는 고객과 사이에 보험계약을 체결하거나 모집함에 있어서 보험료의 납입, 보험금·해약환급금의 지급사유와 그 금액의 산출 기준, 변액보험계약인 경우 그 투자형태 및 구조 등 개별 보험상품의 특성과 위험성을 알 수 있는 보험계약의 중요사항을 명확히 설명함으로써 고객이 그 정보를 바탕으로 보험계약 체결 여부를 합리적으로 판단을 할 수 있도록 고객을 보호하여야 할 의무가 있고, 이러한 의무를 위반하면 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|" style="text-decoration:underline">민법 제750조</a></span> 또는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|102|" style="text-decoration:underline">구 보험업법 제102조 제1항(2010. 7. 23. 법률 제10394호로 개정되기 전의 것, 이하 같다)</a></span>에 기하여 이로 인하여 발생한 고객의 손해를 배상할 책임을 부담한다</span>.</p><p>  <span class="accrnt_txt">여기서 보험회사 또는 보험모집종사자가 고객에게 보험계약의 중요사항에 관하여 어느 정도의 설명을 하여야 하는지는 보험상품의 특성 및 위험도 수준, 고객의 보험가입경험 및 이해능력 등을 종합하여 판단하여야 하지만, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|97|" style="text-decoration:underline">구 보험업법 제97조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|95|" style="text-decoration:underline">제95조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법 시행령|42|" style="text-decoration:underline">구 보험업법 시행령(2008. 2. 29. 대통령령 제20653호로 개정되기 전의 것) 제42조</a></span> 등에서 규정하는 보험회사와 보험모집종사자의 의무 내용이 유력한 판단 기준이 된다. 그리고 보험계약의 중요사항은 반드시 보험약관에 규정된 것에 한정된다고 할 수 없으므로, 보험약관만으로 보험계약의 중요사항을 설명하기 어려운 경우에는 보험회사 또는 보험모집종사자는 상품설명서 등 적절한 추가자료를 활용하는 등의 방법을 통하여 개별 보험상품의 특성과 위험성에 관한 보험계약의 중요사항을 고객이 이해할 수 있도록 설명하여야 한다</span>.</p><p>  원심은 그 판시와 같은 사실을 인정한 다음, 피고(에이아이에이인터내셔널리미티드, 이하 ‘피고 회사’라 한다)의 보험설계사인 피고 2가 이 사건 각 보험계약의 체결 시 원고들에게 이 사건 각 보험계약의 약관을 교부하기는 하였으나 그 약관의 기재 내용만으로는 이 사건 각 보험계약의 중요사항이 명시되었다고 보기 어렵고, 약관과 별도로 해약환급금예시표 등 다른 추가 설명자료도 교부하지 아니한 점 등에 비추어 이 사건 각 보험의 내용이나 위험성, 투자수익률에 따른 해약환급금의 변동, 특히 해약환급금이 납입보험료 원금 상당액에 이르려면 상당한 기간이 소요된다는 점에 대하여 충분히 설명하지 아니하였고, 특히 변액보험인 이 사건 제2보험계약 및 제3보험계약에 관하여는 보장되지 않는 고율의 수익률을 전제로 하여 보험계약의 내용을 설명함으로써 이 사건 각 보험계약에 관한 설명의무를 위반하였고, 이로 인하여 원고들이 이 사건 각 보험의 특성이나 위험성을 제대로 인식하지 못한 채 이 사건 각 보험계약을 체결함으로써 원고들이 납입한 각 보험계약의 보험료 합계액과 원고들이 수령한 각 해약환급금의 차액 상당의 손해를 입었다는 취지로 판단하였다.</p><p>  원심의 판단은 앞서 본 법리에 따른 것으로 정당하고, 거기에 고객보호의무 또는 설명의무, 설명의무 위반과 손해 사이의 인과관계 또는 처분문서의 해석 등에 관한 법리오해의 위법이 없으며, 이에 관한 원심의 증거취사와 사실인정을 다투는 주장은 적법한 상고이유가 되지 못한다. 피고들의 이 부분 상고이유 주장은 이유가 없다.</p><p>  2. 증거법칙 위반에 관한 피고 회사의 상고이유에 대하여</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|339|">구 민사소송법(2002. 1. 26. 법률 제6626호로 전부 개정되기 전의 것) 제339조</a></span>는 법원은 증거조사에 의하여 심증을 얻지 못한 때에는 직권 또는 당사자의 신청에 의하여 당사자 본인을 신문할 수 있다는 당사자신문의 보충성에 관하여 규정하고 있었으나, 2002. 1. 26. 민사소송법의 개정으로 당사자신문의 보충성에 관한 규정이 폐지됨으로써 당사자신문 결과는 다른 증거와 마찬가지로 법관의 자유심증에 의하여 독립된 증거력을 평가받을 수 있게 되었다.</p><p>  따라서 원심판결이 원고 2의 당사자신문 결과만으로 주요사실을 인정하였다 하더라도 증거법칙을 위반하였다고 할 수 없다. 뿐만 아니라 원심판결의 이유와 기록에 의하면 원심이 원고 2의 당사자신문 결과만으로 주요사실을 인정한 것으로 보이지도 않는다. 피고 회사의 이 부분 상고이유 주장은 이유가 없다.</p><p>  3. 적합성 원칙 위반에 관한 피고들의 상고이유에 대하여</p><p>  <span class="accrnt_txt">보험회사나 보험모집종사자는 고객의 연령, 재산 및 소득상황, 사회적 경험, 보험가입의 목적 등에 비추어 투자성이 있는 보험이나 변액보험이 고객에게 적합하지 아니하다고 인정되면 그러한 보험계약의 체결을 권유하여서는 아니 되고, 이러한 적합성 원칙을 지키지 않은 채 과대한 위험성을 수반하는 보험계약의 체결을 권유함으로써 그 권유행위가 고객에 대한 보호의무를 저버려 위법성을 띤 행위로 평가되면, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|" style="text-decoration:underline">민법 제750조</a></span> 또는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="보험업법|102|" style="text-decoration:underline">구 보험업법 제102조 제1항</a></span>에 기하여 그로 인하여 발생한 고객의 손해를 배상할 책임을 부담한다. 여기서 적합성 원칙의 위반에 따른 손해배상책임의 존부는 고객의 연령, 재산 및 소득상황과 보험가입의 목적, 가입한 보험의 특성 등 여러 사정을 종합적으로 충분히 검토하여 판단하여야 하고, 이에 관한 주장·증명책임은 보험계약 체결을 권유받은 고객에게 있으므로, 단지 그 체결을 권유받은 변액보험상품에 높은 투자위험이 수반된다거나 소득에서 보험료 지출이 차지하는 비중이 높다는 단편적인 사정만을 들어 바로 적합성 원칙을 위반하여 위법한 권유행위를 하였다고 단정해서는 아니 된다</span>.</p><p>  원심판결 이유에 의하면, 원심은 피고 2가 이 사건 제2보험계약을 체결함에 있어 원고 2에게 월 소득의 100%에 상당하는 금원을 월 납입보험료로 정하도록 하면서 위험성이 가장 높은 주식형 펀드에 100% 투자할 것을 권유한 점 등 판시 사정에 비추어 보면, 피고 2가 원고 2에게 이 사건 제2보험계약의 가입을 권유한 것은 원고 2의 연령, 투자목적, 재산상황 및 투자경험에 비하여 과대한 위험성을 수반하는 거래를 적극적으로 권유한 행위이고, 또한 피고 2가 이 사건 제3보험계약을 체결함에 있어 원고 효준정밀 주식회사(이하 ‘원고 회사’라 한다)에 연간 당기순이익의 51%에 상당하는 금원을 납입보험료로 정하도록 하면서 위험성이 가장 높은 주식형 펀드에 100% 투자할 것을 권유한 점, 더욱이 여기에 이 사건 제1보험계약의 납입보험료까지 가산하면 원고 회사가 부담하는 납입보험료가 연간 당기순이익의 85%에 달하는 점 등 판시 사정에 비추어 보면 피고 2가 원고 회사에 이 사건 제3보험계약의 가입을 권유한 것은 원고 회사의 투자목적, 재산상황 및 투자경험에 비하여 과대한 위험성을 수반하는 거래를 적극적으로 권유한 행위로서 각각 적합성의 원칙에 반한다고 판단하였다.</p><p>  그러나 앞서 본 법리에 비추어 보면, 원고들의 자산·부채의 규모 및 구성, 장래 소득에 관한 예상과 전망, 보험가입 목적 등에 따른 원고들의 위험감수 능력 및 의사 등에 대한 추가적인 사정이 밝혀지지 않은 상태에서 원심이 인정한 사실관계만으로는 피고 2의 이 사건 제2보험과 제3보험에 대한 권유행위가 적합성 원칙에 위반하여 위법성이 있는 행위라고 단정하기 어렵다. 더욱이 원심이 적법하게 채택한 증거에 의하면 이 사건 제2보험과 제3보험은 변액 유니버설보험상품으로 보험료의 납입금액과 납입시기를 어느 정도 조절할 수 있는 장점이 있고 특별계정의 운용을 주식형 펀드에서 채권형 펀드로 변경함으로써 위험에 대처할 수 있는 상품인 사실을 알 수 있는데, 이러한 점을 고려하면 원심이 지적한 것만큼 이 사건 제2보험과 제3보험의 위험성이 과대하다고 할 수도 없다.</p><p>  그럼에도 원심은 그 판시와 같은 이유만으로 피고 2가 적합성의 원칙에 반하여 과대한 위험성을 수반하는 거래를 적극적으로 권유하였다고 판단하였다. 이러한 원심판결에는 변액 유니버설보험계약 체결의 권유에 있어 적합성 원칙에 관한 법리를 오해하여 필요한 심리를 다하지 아니한 위법이 있고, 이 점을 지적하는 피고들의 상고이유 주장은 이유가 있다.</p><p>  4. 과실상계에 관한 피고들의 상고이유에 대하여</p><p>  원심판결 이유에 의하면, 원심은 판시 사실을 인정한 다음, 피고 2의 부당권유가 사기의 경우와 같이 불법행위로 인하여 피해자의 재산 내지 경제적 이익이 가해자에게 이전되는 이른바 ‘가치이전형’ 불법행위에 해당하고, 또한 이 사건 원고들의 과실은 피고 2의 부당권유에 의하여 야기된 이른바 ‘획책된 과실’로서 권유자의 위법과 별도로 평가할 수 없다고 하여, 피고들의 원고들에 대한 손해배상액을 산정함에 있어 비록 원고들이 이 사건 각 보험계약을 체결하면서 해약환급금 등 계약의 중요사항에 대하여 적극적으로 확인하지 아니한 점이 인정되더라도 이를 과실상계의 대상으로 삼을 수 없다고 판단하였다.</p><p>  그러나 <span class="accrnt_txt">불법행위로 인한 손해의 발생 또는 확대에 관하여 피해자에게도 과실이 있는 때에는 가해자의 손해배상의 범위를 정함에 있어 당연히 이를 참작하여야 하고</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다76733|판결" href="#//">대법원 2010. 3. 11. 선고 2007다76733 판결</a></span> 등 참조), <span class="accrnt_txt">가해행위가 사기, 횡령, 배임 등의 영득행위인 경우 등 과실상계를 인정하게 되면 가해자로 하여금 불법행위로 인한 이익을 최종적으로 보유하게 하여 공평의 이념이나 신의칙에 반하는 결과를 가져오는 경우에만 예외적으로 과실상계가 허용되지 않는다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다16758|판결" href="#//">대법원 2007. 10. 25. 선고 2006다16758, 16765 판결</a></span> 등 참조). 그런데 원심이 인정한 사실관계에 의하더라도, 피고들의 원고들에 대한 부당권유행위가 이러한 영득행위에 해당한다고 평가할 수 없으므로, 원심으로서는 원고들의 과실을 참작하여 피고들의 손해배상의 범위를 정하였어야 한다.</p><p>  그럼에도 원심은 이와 달리 판시 이유를 내세워 원고들의 과실이 과실상계의 대상이 될 수 없다고 판단하였다. 이러한 원심판결에는 과실상계에 관한 법리를 오해한 위법이 있고, 이 점을 지적하는 피고들의 상고이유 주장은 이유가 있다.</p><p>  5. 결론</p><p>  그러므로 원심판결 중 피고들 패소 부분을 파기하고, 이 부분 사건을 다시 심리, 판단하도록 원심법원에 환송하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   양창수(재판장) 박병대 고영한(주심) 김창석 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

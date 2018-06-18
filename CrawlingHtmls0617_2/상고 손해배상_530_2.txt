@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2009나60 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2034922';
+var contIdEtc = '';
+var saNo = '2009나60';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20090909' ? 
+			'20090909'.length==4 ? Date.parseExact('20090909','yyyy').toString('yyyy. M. d.') : 
+				'20090909'.length==6 ? Date.parseExact('20090909','yyyyMM').toString('yyyy. M. d.') : 
+					'20090909'.length==8 ? Date.parseExact('20090909','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009나60 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009나60';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2009나60</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(4)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다39429">대법원 1993. 7. 13. 선고 91다39429 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|90다8152">대법원 1991. 3. 22. 선고 90다8152 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다30440">대법원 2008. 4. 24. 선고 2006다30440 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다32913">대법원 2006. 10. 27. 선고 2005다32913 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공탁사무처리규칙|38|0|20050921">공탁사무처리규칙(구) 제38조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|766|0|null">민법 제766조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|126|0|null">민법 제126조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2008가합17422">서울중앙지방법원 2008. 11. 11. 선고 2008가합17422 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2009. 9. 9. 선고 2009나60 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 항소인】
+      
+        
+          원고 주식회사 (소송대리인 법무법인 화우 담당변호사 정진수외 2인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 피항소인】
+      
+        대한민국
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2009. 8. 12.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2008가합17422|판결" href="#//">서울중앙지방법원 2008. 11. 11. 선고 2008가합17422 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원고와 피고의 항소를 모두 기각한다.</p><p>항소비용은 각자 부담한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>청구취지</p>
+      <p>  피고는 원고에게 4,285,484,393원 및 이에 대한 소장부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 금원을 지급하라.</p>
+      <p>항소취지</p>
+      <p>  원고 : 제1심 판결 중 다음에서 추가로 지급을 구하는 부분에 해당하는 원고 패소 부분을 취소한다. 피고는 원고에게 2,142,742,197원 및 이에 대하여 이 사건 소장부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 돈을 지급하라.</p>
+      <p>  피고 : 제1심 판결 중 피고 패소 부분을 취소한다. 그 취소 부분에 해당하는 원고의 청구를 기각한다. </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 기초 사실</b>
+      </p><p> 【증거】다툼 없는 사실, 갑 1~5호증, 7~10호증, 을 2, 4호증(가지번호 있는 경우 각 가지번호 포함)의 기재와 변론 전체의 취지</p><p>
+        <b>가. 원고의 공탁과 채권양수</b>
+      </p><p>  (1) 원고와 
+        소외 1 주식회사는 2003. 8. 26. 
+        소외 2 주식회사를 피공탁자로 하여 광주지방법원 2003금5529호로 4,200,000,000원을 변제공탁(이하 ‘이 사건 공탁’이라 하고, 그 공탁금을 ‘이 사건 공탁금’이라 한다)하였다.
+      </p><p>  (2) 한편, 
+        소외 1 주식회사는 같은 날 이 사건 공탁에 관한 공탁금회수청구권을 원고에게 양도하고 피고(소관 : 광주지방법원 공탁공무원)에게 채권양도 통지를 하여 그 통지가 2003. 9. 1. 피고에게 도달하였고, 2004. 7. 29. 피고에게 다시 동일한 내용의 채권양도 통지를 하여 그 통지가 2004. 8. 2. 피고에게 도달하였다.
+      </p><p>  (3) 위 각 채권양도의 통지 사실은 이 사건 공탁의 공탁사건기록 표지에 기재되었다.</p><p>
+        <b>나. 이 사건 공탁금의 출급 과정</b>
+      </p><p>  (1) 
+        소외 3, 
+        5, 
+        6, 
+        7, 
+        8 등은 이 사건 공탁 사실을 알고는 이 사건 공탁금을 편취하기로 공모하고, 공탁금회수청구시 공탁자로 행세하기 위해 사용할 목적으로, 
+        소외 5는 미리 소지하고 있던 플라스틱에 
+        소외 6의 사진을 붙이는 등으로 
+        소외 1 주식회사의 대표이사인 
+        소외 9의 주민등록증을, 
+        소외 7의 사진을 붙이는 등으로 원고의 대표이사이던 
+        소외 10의 주민등록증을 각 위조하여 이를 
+        소외 3에게 넘기고, 
+        소외 8은 
+        소외 3으로부터 
+        소외 9, 
+        10의 위조된 주민등록증을 건네받아 경기 연천군 신서면사무소에서 위 각 주민등록증을 이용하여 
+        소외 9, 
+        10의 인감증명서를 발급받아 
+        소외 3에게 전달하고, 
+        소외 6은 
+        소외 3으로부터 
+        소외 9의 위조된 주민등록증과 인감증명서를 건네받아 
+        소외 9가 대표이사로 있던 
+        소외 1 주식회사의 법인인감을 교체하고 법인인감증명서를 부정 발급받았으며, 
+        소외 7은 
+        소외 3으로부터 
+        소외 10의 위조된 주민등록증과 인감증명서를 건네받아 같은 방식으로 
+        소외 10이 대표이사로 있던 원고의 법인인감을 교체하고 법인인감증명서를 부정 발급받는 한편, 
+        소외 5는 공탁금출급시 공탁서를 대신하는 공탁보증인용 서류 등으로 사용할 목적으로 
+        소외 6으로부터 건네받은 
+        소외 6의 인감증명서 2장을 이용하여 그 중 1장은 부동산등기부등본상 서울 강남구 도곡동에 거주하는 것으로 되어 있던 
+        소외 11의 인감증명서(서울 영등포구 당산2동장 발행으로 기재)로, 나머지 1장은 부동산등기부등본상 천안시 신방동에 거주하는 것으로 되어 있던 
+        소외 12의 인감증명서(서울 마포구 망원2동장 발행으로 기재)로 각 위조하였다.
+      </p><p>  (2) 
+        소외 7과 
+        소외 6은 
+        소외 3의 지시에 따라 2004. 11. 5. 11:00경 광주 동구 금남로 소재 
+        소외 4 법무사 사무실에 찾아가, 
+        소외 7은 원고의 대표이사이던 
+        소외 10인 것처럼, 
+        소외 6은 
+        소외 1 주식회사의 대표이사인 
+        소외 9인 것처럼 행세하며 
+        소외 4에게 공탁금 회수업무를 의뢰하면서 
+        소외 4에게 
+        소외 9와 
+        소외 10의 각 위조된 주민등록증을 제시한 후, 임의로 만들어 소지하고 있던 원고와 
+        소외 1 주식회사 명의의 각 법인인감과 함께 부정 발급받은 원고와 
+        소외 1 주식회사의 각 법인인감증명서, 각 법인등기부등본을 제시하는 한편, 공탁서를 대신하여 사용될 공탁보증인용 서류로 위와 같이 위조한 
+        소외 11과 
+        소외 12의 각 인감증명서를, 그리고 공탁보증인의 재산증명을 위한 서류로 
+        소외 11 소유로 되어 있는 서울 강서구 
+        ○○동
+        (이하지번 1 생략) 답 2569㎡, 같은 동 
+        (이하지번 2 생략) 답 7544㎡에 관한 각 부동산등기부등본 및 토지대장, 
+        소외 12 소유로 되어 있는 천안시 
+        ○○동
+        (이하지번 3 생략) 답 5076㎡, 같은 동 
+        (이하지번 4 생략) 답 5904㎡에 관한 각 부동산등기부등본 및 토지대장을 각 제출하였다. 
+      </p><p>  (3) 
+        소외 4는 위와 같이 제출받은 서류를 검토한 후 원고와 
+        소외 1 주식회사의 공동명의로 공탁금회수청구서를 작성한 다음, 제출받은 서류를 첨부하여 같은 날 15:00경 광주지방법원 공탁계 사무실에서 위조되거나 부정 발급받은 정을 모르는 위 법원 소속 공탁금 회수업무 담당 법원사무관 
+        소외 14에게 이를 제출하였고, 
+        소외 14는 같은 날 16:00경 위 공탁계 사무실에서 제출받은 서류를 검토한 후 
+        소외 4에게 공탁금회수인가서를 교부하였다. 
+        소외 3 등은 
+        소외 4로부터 위 공탁금회수인가서를 건네받은 다음, 같은 날 위 법원 조흥은행 출장소에서 공탁회수금(이자 포함)으로 4,285,484,393원을 교부받아 이를 편취하였다.
+      </p><p>
+        <b>2. 원고의 청구원인에 대한 판단</b>
+      </p><p>
+        <b>가. 공탁서에 갈음하는 보증서 및 그 첨부서류에 대한 심사를 소홀히 하였음을 이유로 하는 손해배상청구에 관한 판단</b>
+      </p><p>  원고는 먼저, 
+        소외 6, 
+        7 등은 공탁서를 분실하였다는 이유로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공탁사무처리규칙|38|">구 공탁사무처리규칙(2005. 9. 21. 대법원규칙 제1957호로 개정되기 전의 것) 제38조 제1항</a></span>에 따라 공탁서를 제출하지 않고 공탁보증인의 보증에 근거하여 이 사건 공탁금을 회수하여 갔는데, 이 사건 공탁금이 4,200,000,000원 상당의 고액이고, 공탁보증인들의 인감증명서 발급지가 그들의 부동산등기부등본상 주소지와는 무관한 서울 영등포구 당산2동 및 서울 마포구 망원2동이었던 점 등을 감안할 때, 피고 소속 공탁공무원인 
+        소외 14에게는 공탁보증인인 
+        소외 11, 
+        12 명의의 각 인감증명서가 제대로 발급되었는지 여부, 그리고 
+        소외 11과 
+        소외 12에게 4,200,000,000원 상당의 보증을 할 자력이 있었는지 여부를 면밀하게 검토하기 위하여 공탁보증인들에게 직접 출석요구를 하거나 관계 기관에 서류의 진정발급 여부를 확인해야 할 주의의무가 있었다고 할 것인데, 이와 같은 주의의무를 다 하지 아니한 피고 소속 공탁공무원 
+        소외 14의 직무상 과실로 
+        소외 3 등이 위법하게 이 사건 공탁금을 회수함으로 인하여 공탁금회수권자인 원고가 이 사건 공탁금 4,285,484,393원을 회수할 수 없게 되었으므로, 피고는 원고에게 위 공탁금 및 그에 대한 지연손해금을 배상할 의무가 있다고 주장한다. 
+      </p><p>  공탁공무원은 공탁신청 또는 지급청구의 절차적 요건뿐만 아니라 해당 공탁의 유효 여부, 청구자가 실체법상 청구권자인지 여부 등 그 요건에 관하여도 심사하되, 다만 그 심사방법은 공탁 관계 법령이 규정하는 공탁서 또는 지급청구서 등과 첨부서면만에 의하는 형식적 심사주의에 의한다 할 것인바, 이 사건 공탁금의 회수인가 당시 공탁공무원인 
+        소외 14로서는 공탁금출급청구의 첨부서류인 
+        소외 11과 
+        소외 12 명의의 각 인감증명서 및 각 부동산등기부등본의 기재 자체에 의하여 그 보증서의 절차적, 실체적 요건을 심사하면 족하고, 원고 주장과 같이 위 각 인감증명서의 진정발급 여부나 위 공탁보증인들의 자력을 실제 확인할 주의의무까지 있다고 볼 수는 없으므로, 이와는 다른 전제에 선 원고의 위 주장은 이유 없다. 
+      </p><p>
+        <b>나. 공탁공무원의 과실 및 이와 상당인과관계가 인정되는 손해의 범위</b>
+      </p><p>  (1) 원고는, 공탁사건기록에 
+        소외 1 주식회사가 원고에게 피고에 대한 공탁금회수청구권을 양도했다는 사실이 기재되어 있었으므로, 이러한 경우 공탁공무원으로서는 
+        소외 1 주식회사에 대하여 공탁금회수인가를 할 수 없고, 
+        소외 1 주식회사로부터 공탁금회수청구권을 양수한 원고에 대하여도 공탁금회수청구권의 양수 사실을 증명하는 서면인 채권양도증서를 교부받기 전에는 공탁금회수인가를 해서는 아니 될 주의의무가 있었는데도, 피고 소속 공탁공무원인 
+        소외 14가 그 주의의무에 위배하여 원고와 
+        소외 1 주식회사에 대하여 이 사건 공탁금 전액을 회수인가하였고, 이와 같은 
+        소외 14의 직무상 과실로 
+        소외 3 등이 위법하게 이 사건 공탁금을 회수함으로 인하여 공탁금회수권자인 원고가 이 사건 공탁금 4,285,484,393원을 회수할 수 없게 되었으므로, 피고는 원고에게 위 공탁금 및 그에 대한 지연손해금을 배상할 의무가 있다고 주장한다. 
+      </p><p>  (2) 인정 사실에 따르면, 이 사건 공탁의 공동공탁자 중 1인인 
+        소외 1 주식회사가 
+        소외 3 등의 편취 범행이 있기 전에 이미 2차례에 걸쳐 공탁금회수청구권을 원고에게 양도하고, 피고에게 그 양도 사실을 통지하여 그 각 통지 사실이 이 사건 공탁의 공탁사건기록 표지에 모두 명기되어 있었던 사실이 인정된다. 
+      </p><p>  공탁관이 형식적 심사권만 가진다고 하더라도, 위와 같이 2차례에 걸쳐 채권양도 통지를 받고 그 취지가 공탁사건기록에 명백히 기재되어 있었던 이상, 이 사건 공탁금의 회수인가 여부를 판단해야 하는 피고 소속 공탁공무원 
+        소외 14로서는 원고가 이 사건 공탁금 전액에 관한 회수청구권을 가진다는 점을 공탁사건기록의 기재 자체에 의하여 바로 확인할 수 있었으므로, 
+        소외 14가 공탁금회수청구 당시 이 사건 공탁금에 관하여 아무런 권리도 가지고 있지 않았던 
+        소외 1 주식회사의 회수청구 부분에 관하여 그 공탁금의 회수를 인가한 데에는 공탁공무원으로서 직무집행을 그르친 과실이 있다고 할 것이다(피고는, 이 사건 공탁금 전액에 관하여 회수청구권을 가진 원고로서는 채권양도증서를 제출하면서 전액에 관하여 공탁금회수청구를 할 수도 있었지만, 채권양도증서를 제출하지 아니하고 채권양수의 포기, 채권양수 관련 계약의 해제, 채권양도 통지의 철회를 전제로 하여 
+        소외 1 주식회사와 공동으로 공탁금회수청구를 할 수도 있는 것이므로, 후자의 경우에 해당할 때에는 이 사건 공탁은 상대적 불확지 공탁이 되어 공탁관이 공동신청으로 보고 처리하였다 하여 여기에 과실이 있다고 할 수는 없다고 주장하나, 수인의 공탁자 중 1인이 다른 공탁자들로부터 공탁금회수청구권을 양수하고도 그 회수청구시에 채권양도증서를 제출하지 않았다 하여 그러한 사실만으로 채권을 양수한 공탁자가 채권양수를 포기했다거나, 채권양수 관련 계약이 해제되었다거나, 채권양도 통지가 철회되었다고 볼 수는 없고, 이 사건 공탁이 상대적 불확지 공탁이라고 볼 수도 없어, 피고의 위 주장은 이유 없다). 
+      </p><p>  그런데 공탁관의 공탁금회수인가처분이 있고 그에 따라 공탁금이 회수되었다면 설사 이를 회수한 자가 진정한 회수청구권자가 아니라 하더라도 이로써 공탁법상의 공탁절차는 종료되었다 할 것이므로(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다39429|판결" href="#//">대법원 1993. 7. 13. 선고 91다39429 판결</a></span> 참조), 피고는 피고 소속 공탁공무원의 위와 같은 과실로 인하여 공탁금회수청구권이 없는 
+        소외 1 주식회사의 공탁금회수청구에 대하여 공탁금회수인가를 함으로 인해 진정한 공탁금회수청구권자인 원고가 공탁금회수를 하지 못함으로써 입은 손해를 배상할 책임이 있다.  
+      </p><p>  (3) 나아가 원고는, 2인 공동공탁에 있어 공동공탁자 중 1인만이 공탁금회수청구를 한 경우 공탁공무원은 공탁자들 사이의 내부관계에서 자금의 부담비율 등을 알 수 없으므로, 공동공탁자 중 1인에게 공탁금 중 2분의 1에 대하여 회수인가를 하여서는 아니되는데, 피고 소속 공탁공무원인 
+        소외 14가 원고에게 채권양도 사실을 증명할 수 있는 서면을 요구하여 그 서면을 교부받지 않은 이상 이 사건 공탁금회수청구는 공동공탁자 중 1인인 원고만의 공탁금회수청구라 할 것이고, 따라서 공탁공무원인 
+        소외 14는 공탁금 중 2분의 1에 대하여도 회수인가를 하여서는 안 될 것임에도 회수인가를 하여 주었으므로, 공탁공무원인 
+        소외 14는 원고의 회수청구 부분에 관하여도 공탁공무원로서의 직무집행을 그르친 과실이 있다고 주장한다.
+      </p><p>  살피건대, 원고의 주장처럼 원고와 
+        소외 1 주식회사 공동명의의 공탁금회수청구에 있어서 
+        소외 1 주식회사는 이미 공탁금회수청구권을 원고에게 양도하였으므로 
+        소외 1 주식회사 명의의 공탁금회수청구는 아무런 효력이 없고, 원고가 공탁공무원에게 채권양도 사실을 증명할 수 있는 서면을 제출하지 아니한 이상 이 사건 공탁금회수청구는 공동공탁자 중 1인인 원고만의 공탁금회수청구로 볼 수밖에 없다.
+      </p><p>  그리고 2인 공동공탁에 있어 공동공탁자들이 공탁한 부분은 특별한 사정이 없는 한 공탁자들이 동등한 비율로 분담하여 공탁한 것이라 추정될 수 있지만, 공탁공무원은 공탁자들 사이의 내부관계에서 자금의 부담비율 등을 알 수 없으므로, 공탁자 2인이 공동으로 회수청구하지 않는 이상, 공탁자 등 1인이 공탁금 중 2분의 1만 회수청구를 하였다고 하더라도 공탁공무원은 회수인가를 하여서는 안 됨이 원칙이라 할 것이다.</p><p>  그런데 앞에서 본 것처럼 공탁공무원이 원고와 
+        소외 1 주식회사를 사칭하는 자들에게 공탁금회수인가를 하였다는 것 만에 대하여는 공탁공무원에게 과실이 있다고 할 수 없으므로, 만일 이 사건에서와 같이 제3자가 원고를 사칭하면서 공탁금회수청구를 한 것이 아니고 진정한 원고가 공탁금회수청구를 하였다고 가정할 때, 과연 공탁공무원인 
+        소외 14가 원고만의 공탁금회수청구에 따라 공탁금 중 2분의 1에 대하여 회수인가를 한 것이 잘못인지에 관하여 보건대, 갑 1호증, 2호증의 1, 2의 기재에 따르면, 이 사건 공탁의 공탁원인은, 
+        소외 2 주식회사가 
+        소외 1 주식회사의 연대보증 하에 
+        소외 15 주식회사에게 4,200,000,000원을 대여하고, 그에 대한 담보로 남양주시 
+        ○○리
+        (이하지번 5 생략) 외 24필지 지상 아파트 건설사업의 사업권과 관련된 15,340,000,000원의 수익권증서를 교부받았는데, 
+        소외 1 주식회사의 채권자인 원고가 
+        소외 2 주식회사에게 위 대여금 4,200,000,000원을 변제하고 위 수익권증서를 반환받으려 했지만, 
+        소외 2 주식회사가 위 4,200,000,000원의 수령을 거절하여, 위 금원으로 대여금을 변제하고 
+        소외 2 주식회사로부터 위 수익권증서를 반환받고자 원고와 
+        소외 1 주식회사가 공동으로 위 금원을 변제공탁한다는 내용인 사실을 인정할 수 있으므로, 공동공탁자인 원고와 
+        소외 1 주식회사 내부관계에서의 자금부담비율은 원고가 100%라 할 것이고, 
+        소외 1 주식회사는 이러한 형식적인 공탁금회수청구권을 원고에게 양도하고 피고에게 그 양도통지까지 함으로써 원고가 이 사건 공탁금 전체에 대하여 회수청구권을 갖게 된 이상은, 원고만의 공탁금회수청구가 있었을 경우 이에 대해 공탁공무원이 공탁금 중 2분의 1에 대하여 회수인가를 하였다면 결과적으로 원고에게 회수인가를 할 수 있는 범위 내에서 회수인가를 한 셈이어서 원고에게 어떠한 손해가 발생하였다고 할 수 없다. 따라서 원고의 공탁금회수청구 부분에 대하여도 공탁공무원의 과실이 있기는 하지만, 이 과실과 원고가 이 사건 공탁금 중 나머지 2분의 1에 관하여 입은 손해와 사이에는 상당인과관계가 있다고 할 수 없다.
+      </p><p>  (4) 이와 같은 판단을 토대로 피고가 배상하여야 할 손해액을 산정하여 보면, 이에 있어서는 원고와 
+        소외 1 주식회사의 공탁금회수청구권 지분이 각 2분의 1인 것으로 볼 수밖에 없으므로, 결국 피고는 피고 소속 공무원인 
+        소외 14의 과실로 인하여 원고가 입은 손해인 이 사건 공탁금의 2분의 1에 상당하는 2,142,742,196원 및 그 지연손해금을 배상할 의무가 있다.  
+      </p><p>
+        <b>3. 피고의 주장에 대한 판단</b>
+      </p><p>
+        <b>가. 소멸시효 항변에 관한 판단</b>
+      </p><p>  피고는, 원고가 2005. 1. 13. 광주지방법원 
+        소외 16 사무관으로부터 이 사건 공탁금이 위조로 인하여 회수되었다는 확인서를 발급받은 바 있으므로, 그 때에 이 사건 공탁금의 출급으로 인한 손해 및 가해자를 인식하였다 할 것이어서, 그로부터 3년이 경과한 2008. 2. 25. 이 사건 소가 제기된 이상, 원고의 피고에 대한 손해배상청구권은 시효로 소멸하였다고 항변한다.
+      </p><p>  불법행위로 인한 손해배상청구권의 단기소멸시효의 기산점이 되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항</a></span> 소정의 ‘손해 및 가해자를 안 날’이라 함은 손해의 발생, 위법한 가해행위의 존재, 가해행위와 손해의 발생과의 사이에 상당인과관계가 있다는 점 등 불법행위의 요건사실에 대하여 현실적이고도 구체적으로 인식하였을 때를 의미한다고 할 것이고, 피해자 등이 언제 불법행위의 요건사실을 현실적이고도 구체적으로 인식한 것으로 볼 것인지는 개별적 사건에 있어서의 여러 객관적 사정을 참작하고 손해배상청구가 사실상 가능하게 된 상황을 고려하여 합리적으로 인정하여야 하며(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|90다8152|판결" href="#//">대법원 1991. 3. 22. 선고 90다8152 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다30440|판결" href="#//">대법원 2008. 4. 24. 선고 2006다30440 판결</a></span> 등 참조), 권리자인 피해자의 위와 같은 주관적 용태, 즉 손해를 안 시기는 시효의 이익을 주장하는 자가 입증할 책임이 있이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다32913|판결" href="#//">대법원 2006. 10. 27. 선고 2005다32913 판결</a></span> 참조).
+      </p><p>  이러한 법리에 비추어 볼 때, 원고가 피고에게 국가배상청구권을 행사하기 위하여는 
+        소외 3 등 사기범들이 관련 서류를 위조하여 이 사건 공탁금을 받아간 것만으로는 부족하고, 공탁공무원이 공탁금 회수인가업무를 수행함에 있어서 요구되는 주의의무를 게을리 하여 권한 없는 자에게 이 사건 공탁금에 관한 회수인가를 하였다는 사실까지 알아야 비로소 피고에게 국가배상청구권을 행사할 수 있었다 할 것인데, 을 1호증의 기재에 변론 전체의 취지를 종합하면, 원고가 2005. 1. 13. 광주지방법원 법원사무관 
+        소외 16으로부터 이 사건 공탁금을 제3자가 2004. 11. 5. 관계서류를 위조하여 편취한 사실을 증명받은 사실을 인정할 수 있지만, 이러한 사실만으로 곧바로 원고가 당시 공탁공무원 
+        소외 14가 공탁금 회수인가업무를 수행함에 있어서 요구되는 주의의무를 게을리 하여 권한 없는 자에게 공탁금을 지급하였다는 사실까지 알았다고 볼 수는 없고, 달리 원고가 이 사건 소 제기일부터 3년 내에 위 사실을 알았다고 인정할 증거가 없으므로, 피고의 소멸시효 항변은 이유 없다. 
+      </p><p>
+        <b>나. 표현대리 주장에 관한 판단</b>
+      </p><p>  피고는, 이 사건 공탁금의 회수청구권 중 2분의 1에 관하여 정당한 권리자인 듯한 외관을 가진 
+        소외 1 주식회사의 대리인인 
+        소외 4 법무사가 공탁금회수청구에 필요한 서류를 모두 갖추어 공탁금회수청구를 한 이상, 피고 소속 공탁공무원인 
+        소외 14로서는 
+        소외 4 법무사에게 
+        소외 1 주식회사를 대리할 권한이 있다고 믿었고 그와 같이 믿은 데에 정당한 이유가 있었으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">민법 제126조</a></span>에 따라 
+        소외 1 주식회사의 대리인이 이 사건 공탁금 중 2분의 1을 정당하게 수령한 것으로 보아야 할 것이어서 원고의 청구에 응할 수 없다고 주장한다.
+      </p><p>  그러나 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|126|">민법 제126조</a></span>에 기한 표현대리를 주장하기 위해서는 표현대리인이 대리할 본인의 권리가 존재하여야 할 것인데, 본인인 
+        소외 1 주식회사가 원고에게 이 사건 공탁금에 관한 회수청구권을 양도하여 아무런 권리도 가지지 아니한다는 점은 앞서 본 바와 같으므로, 원고의 위 주장은 더 살펴볼 필요 없이 이유 없다.
+      </p><p>
+        <b>4. 결  론</b>
+      </p><p> 그렇다면, 피고는 원고에게 이 사건 공탁금 중 2분의 1 상당액인 2,142,742,196원 및 이에 대하여 이 사건 소장부본 송달 다음날인 2008. 3. 22.부터 이행의무의 존부나 범위에 관하여 항쟁함이 상당하다고 인정되는 제1심 판결 선고일인 2008. 11. 11.까지는 민법이 정한 연 5%, 그 다음날부터 다 갚는 날까지는 소송촉진 등에 관한 특례법이 정한 연 20%의 각 비율로 계산한 지연손해금을 지급할 의무가 있으므로, 원고의 청구는 위 인정범위에서 이유 있어 인용하고 나머지 청구는 이유 없어 이를 기각할 것인바, 제1심 판결은 이와 결론을 같이 하여 정당하므로, 원고의 피고의 항소를 모두 기각하기로 하여, 주문과 같이 판결한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   최성준(재판장) 함석천 김현석 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

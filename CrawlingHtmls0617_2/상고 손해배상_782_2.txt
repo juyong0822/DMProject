@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>광주고등법원 88나3153 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1996299';
+var contIdEtc = '';
+var saNo = '88나3153';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('19881228' ? 
+			'19881228'.length==4 ? Date.parseExact('19881228','yyyy').toString('yyyy. M. d.') : 
+				'19881228'.length==6 ? Date.parseExact('19881228','yyyyMM').toString('yyyy. M. d.') : 
+					'19881228'.length==8 ? Date.parseExact('19881228','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '광주고등법원';
+var bubCd = '000500';
+var panTypeNm = '제1민사부판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 88나3153 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '88나3153';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">광주고등법원<br />88나3153</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="집합건물의소유및관리에관한법률|23|0|null">집합건물의소유및관리에관한법률 제23조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="집합건물의소유및관리에관한법률|24|0|null">집합건물의소유및관리에관한법률 제24조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="집합건물의소유및관리에관한법률|25|0|null">집합건물의소유및관리에관한법률 제25조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="주택건설촉진법|38|0|null">주택건설촉진법 제38조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="공동주택관리령|8|0|null">공동주택관리령 제8조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공동주택관리령|8|0|null">공동주택관리령 제8조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|96|0|null">민사소송법 제96조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|89|0|null">민사소송법 제89조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|93|0|null">민사소송법 제93조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="광주지방법원|87가합810">광주지방법원(87가합810 판결)</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>광주고법 1988. 12. 28. 선고 88나3153 제1민사부판결 : 상고</h2><p class="sub_title">[손해배상(기)][하집1988(3.4),66]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>관리의무기간이 경과하였다 하여 공동주택(아파트) 건축주의 사용자책임을 부정한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>공동주택(아파트)의 곤돌라 추락으로 인한 사망사고가 발생한 경우, 건축주가 주택건설촉진법이 정한 사업주체로서 관리의무기간이 경과한 이후에도 편의상 위 공동주택을 관리하였다 하더라도 관리의 주체는 어디까지나 집합건물의소유및관리에관한법률이 정한 관리단인 것이므로 건축주에게는 위 사고에 대한 사용자책임을 물을 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|23|">집합건물의소유및관리에관한법률 제23조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|24|">동법 제24조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|25|">동법 제25조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|38|">주택건설촉진법 제38조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공동주택관리령|8|">공동주택관리령 제8조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인】
+      
+        
+          원고 1 외 2인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인】
+      
+        
+          피고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+제1심 
+        <span id="link"><a name="linkContPanre" title="새창" type="광주지방법원|87가합810|판결" href="#//">광주지방법원(87가합810 판결)</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 원심판결 중 피고 패소부분을 취소하고 이 취소부분에 해당하는 원고들의 청구를 각 기각한다.</p><p>  2. 소송비용은 1, 2심 모두 원고들의 부담으로 한다.</p>
+    
+      【청구취지】
+      <p>  피고는 원고 
+        1에게 금 22,250,846원, 원고 
+        2에게 금 18,624,126원, 원고 
+        3에게 금 12,749,417원 및 각 이에 대한 1987.6.9.부터 원심판결 선고일까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라.
+      </p>
+      <p>  소송비용은 피고의 부담으로 한다라는 판결 및 가집행의 선고.</p>
+    
+    
+      【항소취지】
+      <p>  주문과 같다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  소외 
+        1이 1987.6.9. 17:30경 광주 서구 
+        (상세주소 및 아파트 동호수 생략)호에서 소외 
+        2가 조작하는 곤돌라(gondola)에 이삿짐을 실어내리는 작업을 하던중 곤돌라의 쇠줄이 끊겨 6층에서 지상으로 추락하여 그 다음날 06:00경 전남의대부속병원에서 기도내 출혈 등으로 사망한 사실은 당사자 사이에 다툼이 없고, 각 성립에 다툼이 없는 갑 제1호증의 1, 2(호적등본, 제적등본)의 각 기재에 의하면 원고 
+        1은 위 망인의 처이고, 원고 
+        2, 
+        3은 위 망인의 아들들인 사실을 인정할 수 있고 다른 반증이 없다.
+      </p><p>  이에 원고들은 위 곤돌라는 피고의 소유이고, 이건 사고는 곤돌라를 조작하던 
+        소외 2의 과실로 인하여 발생한 것이므로 피고는 
+        소외 2의 사용자로서 뿐만 아니라 위 곤돌라의 소유자로서 그 설치보존의 하자로 인하여 원고들이 입은 모든 손해를 배상할 책임이 있다고 주장하므로 먼저 위 곤돌라가 피고의 소유인지 여부에 관하여 살피건대, 각 성립에 다툼이 없는 을 제1호증(준공신고서 및 준공검사필증), 을 제4호증의 1 내지 56(각 등기부등본)의 각 기재에 변론의 전취지를 종합하면 피고는 1985.11.11.경 이 사건 사고가 난 명지맨션(총 110세대)을 건축, 준공검사를 끝내고 위 사고무렵 약 60세대 정도는 분양이 되고 약 50세대 정도는 분양이 되지 아니하여 피고가 소유권을 보유한 채 임대를 하고 있었던 사실은 인정되나 한편 성립에 다툼이 없는 갑 제11호증의 22(실황조사서)의 기재와 원심법원의 현장검증결과에 변론의 취지를 종합하면 위 곤돌라는 명지맨션 건물의 11층 옥상 베란다에 부착되어 있고 고정대에서 2개의 쇠줄이 건물외벽과 약 30 내지 40센티미터 정도의 간격을 두고 지상쪽으로 내려져 가로 2.4미터 세로 95센티미터, 높이 1미터 가량의 적재함과 연결되어 있으며 쇠줄을 감았다 풀었다 하므로써 적재함이 상.하로, 고정대를 좌우로 옮김으로써 설치장소를 좌, 우로 옮길 수 있도록 되어 있는 구조물로서 명지맨션의 이삿짐을 운반하는 중요한 부대시설이고 따라서 명지맨션의 입주자는 누구나 사용할 수 있는 명지맨션의 공용부분으로서 구분소유자(분양입주자)들의 공유에 속하는 것으로서 이를 피고의 단독소유라고는 할 수 없으므로 피고가 위 곤돌라의 소유자임을 이유로 그로 인한 책임을 물을 수는 없다 할 것이고(또한 곤돌라가 위와 같이 명지맨션 건물에 부착되어 그 일부를 이루고 있음이 명백하므로 곤돌라 부분만을 피고가 독립하여 점유 관리하고 있다고 볼만한 아무런 주장 입증이 없으므로 피고에게 곤도라의 점유자로서의 책임 역시 지울 수 없다 할 것이다), 다음으로 피고가 
+        소외 2의 사용자로서의 책임이 있는지의 여부에 관하여 보건대, 피고가 사용자로서의 책임을 지기 위하여는 우선 이삿짐을 오르내리는 곤돌라를 조작 작동시키는 업무가 피고의 사무이어야 할 것인 바, 위 인정사실에 의하면 이 사건 건물은 주택건설촉진법 및 집합건물의소유및관리에 관한법률의 적용을 받는 공동주택으로 집합건물의소유및관리에관한법률에 의하면 건물에 대하여 구분소유관계가 성립되면 구분소유자 전원으로서 건물 및 그 대지와 부속시설의 관리에 관한 사업의 시행을 목적으로 하는 관리단을 구성(이는 소위 당연 설립하는 관리단으로서 법정 강제설립의 성격을 갖는다 하겠다)하여 이 관리단이 건물의 관리에 관한 사무(사업)을 집행하도록 되어 있으며 다만 관리단집회의 결의에 의하여 관리인을 선임하여(구분소유자가 10인 이상일 때에는 관리인을 반드시 선임하도록 되어 있다) 그로 하여금 공용부분의 보존, 관리 및 변경 등의 사무집행을 하도록 하고 사무집행에 관하여 관리단을 대표하여 재판상 또는 재판외의 모든 행위를 할 수 있도록 하고 있으므로 위 명지맨션건물의 부대시설인 위 곤돌라의 작동을 포함한 위 건물의 관리는 이러한 관리단의 소관 사무로서 피고의 소관 업무가 아니고, 관리단은 그 대표 내지 집행기관으로 관리인을 두어 그 사무를 처리하고 있고 관리인이 다시 그 업무의 일부를 처리하고 보조하게 하기 위하여 채용한 자는 관리인의 피용인이 아니라 위 관리단의 피용인이라 할 것이므로 
+        소외 2를 설사 피고가 채용하였다 하여도 동인에 대한 사용자는 관리단이고, 피고가 주택건설촉진법이 정한 사업주체로서 관리의무기간(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공동주택관리령|8|">공동주택관리령 제8조 제1항</a></span>)이 지난 이후 관리단 집회에서 관리인으로 선임된 바 없이 건축주로서 관리단에서 관리인을 선임하여 관리하기까지 편의상 관리를 하였다 하여도 이는 법률상 당연히 설립되게 되어 있는 관리단의 사무집행을 적법한 대표권 없이 임의로 처리한 것이 될 뿐 관리단과 떠난 별개 독립의 관리주체라고는 할 수 없으므로 피고가 
+        소외 2의 사용자임을 전제로 한 원고의 주장 역시 그 이유가 없다 할 것이다.
+      </p><p>  그렇다면 원고들의 청구는 더나아가 살펴볼 필요없이 그 이유없으므로 이를 각 기각하여야 할 것인 바, 이와 결론을 달리하여 원고들의 청구를 일부 인용하고 있는 원심판결은 부당하므로 원심판결의 피고 패소부분을 취소하고 이 취소부분에 해당하는 원고들의 청구를 각 기각하기로 하고, 소송비용의 부담에 관하여는
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|96|"> 민사소송법 제96조</a></span>,
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|89|"> 제89조</a></span>,
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|93|"> 제93조</a></span>를 각 적용하여 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   조윤(재판장) 최훈장 신정식 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2007다25865 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2066618';
+var contIdEtc = '';
+var saNo = '2007다25865';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20070920' ? 
+			'20070920'.length==4 ? Date.parseExact('20070920','yyyy').toString('yyyy. M. d.') : 
+				'20070920'.length==6 ? Date.parseExact('20070920','yyyyMM').toString('yyyy. M. d.') : 
+					'20070920'.length==8 ? Date.parseExact('20070920','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007다25865 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007다25865';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2007다25865</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(6)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(14)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(6)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(4)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2060752">대법원 2007. 12. 13. 선고 2007다60080 판결 [공2008상,25]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2059775">대법원 2008. 4. 10. 선고 2004다68519 판결 [공2008상,646]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1968468">대법원 2009. 10. 29. 선고 2009다49766 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1968486">대법원 2009. 11. 12. 선고 2007다53785 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1971447">대법원 2011. 4. 14. 선고 2008다14633 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2152414">대법원 2014. 5. 16. 선고 2013다101104 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|591129">분식결산과 이사의 손해배상 책임 손영화 韓國商事判例學會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638896">윤민섭 파생상품거래에 있어서의 이사의 책임 성균관법학 23권 1호  / 성균관대학교 비교법연구소  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|610017">우성엽 지적재산권 침해 및 관리 등과 관련한 회사의 이사 및 투자자 책임 LAW &amp; TECHNOLOGY 제5권 제5호 / 서울대학교 기술과법센터  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|640260">양명조 2011년 개정 상법상 주식회사 이사의 자기거래에 있어서의 공정성 요건 법조 통권660호  / 법조협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|691420">박수영 일본법상 이사의 감시의무 법학연구 통권 제37집 / 전북대학교 출판부  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603014">정진세 이사의 "법령" 위반으로 인한 회사에 대한 책임 상장협 59호  / 한국상장회사협의회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|604935">홍용건 법인세법상 대표자에 대한 인정상여로 처분된 소득에 관하여 법인이 대표자로부터 갑종근로소득세를 원천징수하지 않은 채 원천징수의무자로서 이를 국가에 납부한 후 대표자에 대하여 구상권을 행사한 경우에 그 대 대법원판례해설 78호 (2009.07) / 법원도서관  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|591129">손영화 분식결산과 이사의 손해배상 책임 상사판례연구 21집 2권  / 한국상사판례학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|700406">정지영 미국 회사법상 이사의 회사에 대한 책임 : 미국법상 이사 의무의 종류 및 의무위반의 판단기준에 관한 고찰 . 재판자료 . 제126집 : 외국사법연수논집(32） 제126집  / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|693012">김지환 주주대표소송에서의 이사의 책임 선진상사법률연구 62호 / 법무부  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|686502">이원석 경영판단의 원칙에 대한 이해, 그리고 우리법에의 수용가능성 재판실무연구 제5권 / 수원지방법원  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696289">이창현 형사공탁금과 소멸시효의 중단 민사판례연구 35권  / 박영사  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|619712">장홍선 상법 제399조에 기한 이사의 회사에 대한 손해배상 책임과 경영판단의 원칙 판례연구 21집  / 부산판례연구회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|617454">김택주 회사법판례의 변화와 전망 상사판례연구 23집 1권  / 한국상사판례학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|512233">한국. 대법원 법원행정처 재판실무편람/ 제9호: 회사재판실무편람 법원행정처  2008 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다69638">대법원 2005. 10. 28. 선고 2003다69638 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다41651">대법원 2006. 11. 9. 선고 2004다41651, 41668 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다33609">대법원 2007. 7. 26. 선고 2006다33609 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|84다카1954">대법원 1985. 6. 25. 선고 84다카1954 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다60467">대법원 2004. 12. 10. 선고 2002다60467, 60474 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다59687">대법원 2007. 6. 28. 선고 2006다59687 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="상법|399|0|null">상법 제399조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="상법|399|0|null">상법 제399조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="상법|399|0|null">상법 제399조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민사소송법|216|0|null">민사소송법 제216조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다69638">대법원 2005. 10. 28. 선고 2003다69638 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002다60467">대법원 2004. 12. 10. 선고 2002다60467, 60474 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다2820">대법원 2005. 4. 29. 선고 2005다2820 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다59687">대법원 2007. 6. 28. 선고 2006다59687 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|399|0|null">상법 제399조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|399|0|null">상법 제399조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|401|2|null">상법 제401조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|401|2|null">상법 제401조의2 제2항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구고등법원|2006나7229">대구고법 2007. 3. 28. 선고 2006나7229 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2007. 9. 20. 선고 2007다25865 판결</h2><p class="sub_title">[손해배상(기)][공2007.10.15.(284),1632]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span>에 정한 ‘법령에 위반한 행위’의 의미 및 이사가 ‘법령에 위반한 행위’로 회사에 손해를 입힌 경우 그 손해배상책임을 면할 수 있는지 여부(소극) 
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 주식회사의 이사가 다른 업무담당이사의 업무집행이 위법하다고 의심할 만한 사유가 있음에도 이를 방치한 경우, 회사가 입은 손해에 대하여 배상책임을 지는지 여부(적극)     </p>
+      <p></p>
+      <p>
+        </p><p>[3] 회사 자금의 횡령행위가 이루어진 후에 그로 인한 회사 자금의 부족을 은폐하기 위하여 허위로 회계처리하도록 업무를 집행한 이사가 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span>의 손해배상책임을 부담하는지 여부(원칙적 소극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[4] 동일한 채무자에 대하여 발생시기와 발생원인 등을 달리하는 수개의 손해배상채권을 가지고 있는 채권자가 그 중 일부만을 청구하는 경우, 손해배상채권별로 청구금액을 특정하여야 하는지 여부(적극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span>는 이사가 법령 또는 정관에 위반한 행위를 하거나 그 임무를 해태한 때에는 회사에 대하여 손해배상책임을 지도록 규정하고 있는데, 이사가 회사에 대하여 손해배상책임을 지는 사유가 되는 법령에 위반한 행위는 이사로서 임무를 수행함에 있어서 준수하여야 할 의무를 개별적으로 규정하고 있는 상법 등의 제 규정과 회사가 영업활동을 함에 있어서 준수하여야 할 제 규정을 위반한 경우가 이에 해당하고, 이사가 임무를 수행함에 있어서 위와 같은 법령에 위반한 행위를 한 때에는 그 행위 자체가 회사에 대하여 채무불이행에 해당하므로 이로 인하여 회사에 손해가 발생한 이상 손해배상책임을 면할 수 없다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 주식회사의 이사는 이사회의 일원으로서 이사회에 상정된 의안에 대하여 찬부의 의사표시를 하는 데 그치지 않고, 담당업무는 물론 다른 업무담당이사의 업무집행을 전반적으로 감시할 의무가 있으므로, 주식회사의 이사가 다른 업무담당이사의 업무집행이 위법하다고 의심할 만한 사유가 있음에도 불구하고 이를 방치한 때에는 이사에게 요구되는 선관주의의무 내지 감시의무를 해태한 것이므로 이로 말미암아 회사가 입은 손해에 대하여 배상책임을 면할 수 없다.</p>
+      <p></p><p>
+        </p><p>[3] 회사 자금의 횡령행위가 이루어진 후에 그로 인한 회사 자금의 부족을 은폐하기 위하여 허위로 회계처리하도록 업무를 집행한 이사는, 그 회계처리 당시에는 횡령행위에 관여한 자들로부터 횡령금액 또는 횡령으로 인한 손해배상채권을 회수할 수 있었으나 허위로 회계처리함으로써 횡령행위를 적발하고 회수할 수 있는 기회를 놓쳤고 그 사이 그들의 자금사정이 악화되어 이를 회수할 수 없게 되었다는 등의 사정이 없는 한, 손해배상책임을 부담하지 않는다.     </p>
+      <p></p><p>
+        </p><p>[4] 채권자가 동일한 채무자에 대하여 수개의 손해배상채권을 가지고 있다고 하더라도 그 손해배상채권들이 발생시기와 발생원인 등을 달리하는 별개의 채권인 이상 이는 별개의 소송물에 해당하고, 그 손해배상채권들은 각각 소멸시효의 기산일이나 채무자가 주장할 수 있는 항변들이 다를 수도 있으므로, 이를 소로써 구하는 채권자로서는 손해배상채권별로 청구금액을 특정하여야 하며, 법원도 이에 따라 손해배상채권별로 인용금액을 특정하여야 하고, 이러한 법리는 채권자가 수개의 손해배상채권들 중 일부만을 청구하고 있는 경우에도 마찬가지이다.   </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|216|">민사소송법 제216조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다69638|판결" href="#//">대법원 2005. 10. 28. 선고 2003다69638 판결</a></span>(공2005하, 1847)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다41651|판결" href="#//">대법원 2006. 11. 9. 선고 2004다41651, 41668 판결</a></span>(공2006하, 2053)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다33609|판결" href="#//">대법원 2007. 7. 26. 선고 2006다33609 판결</a></span>(공2007하, 1346)<br />[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|84다카1954|판결" href="#//">대법원 1985. 6. 25. 선고 84다카1954 판결</a></span>(공1985, 1049)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다60467|판결" href="#//">대법원 2004. 12. 10. 선고 2002다60467, 60474 판결</a></span>(공2005상, 87)<br />[4]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다59687|판결" href="#//">대법원 2007. 6. 28. 선고 2006다59687 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        정리회사 주식회사 청구의 관리인 양종석의 소송수계인 주식회사 청구
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고 (소송대리인 법무법인 한별 담당변호사 변정일외 4인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구고등법원|2006나7229|판결" href="#//">대구고법 2007. 3. 28. 선고 2006나7229 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원심판결을 파기하고, 사건을 대구고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 
+        소외 1 주식회사(이하 ‘
+        소외 1 회사’라 한다) 관련 손해에 대하여 
+      </p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|" style="text-decoration:underline">상법 제399조</a></span>는 이사가 법령 또는 정관에 위반한 행위를 하거나 그 임무를 해태한 때에는 회사에 대하여 손해배상책임을 지도록 규정하고 있는바, 이사가 회사에 대하여 손해배상책임을 지는 사유가 되는 법령에 위반한 행위는 이사로서 임무를 수행함에 있어서 준수하여야 할 의무를 개별적으로 규정하고 있는 상법 등의 제 규정과 회사가 영업활동을 함에 있어서 준수하여야 할 제 규정을 위반한 경우가 이에 해당된다고 할 것이고, 이사가 임무를 수행함에 있어서 위와 같은 법령에 위반한 행위를 한 때에는 그 행위 자체가 회사에 대하여 채무불이행에 해당되므로 이로 인하여 회사에 손해가 발생한 이상, 특별한 사정이 없는 한 손해배상책임을 면할 수는 없다 할 것이며
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다69638|판결" href="#//">대법원 2005. 10. 28. 선고 2003다69638 판결</a></span> 등 참조), 
+        <span class="accrnt_txt">주식회사의 이사는 이사회의 일원으로서 이사회에 상정된 의안에 대하여 찬부의 의사표시를 하는 데에 그치지 않고, 담당업무는 물론 다른 업무담당이사의 업무집행을 전반적으로 감시할 의무가 있으므로, 주식회사의 이사가 다른 업무담당이사의 업무집행이 위법하다고 의심할 만한 사유가 있음에도 불구하고 이를 방치한 때에는 이사에게 요구되는 선관주의의무 내지 감시의무를 해태한 것이므로 이로 말미암아 회사가 입은 손해에 대하여 배상책임을 면할 수 없다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002다60467|판결" href="#//">대법원 2004. 12. 10. 선고 2002다60467, 60474 판결</a></span> 등 참조).
+      </p><p>  원심은 그 채용 증거들을 종합하여, 원고는 1996. 12. 27.경 분당 블루빌 오피스텔 신축공사를 
+        소외 1 회사에 하도급하였다가 계약을 변경하여 1997. 8. 14. 공사대금 35억 1,230만 원으로 최종 계약을 체결하고, 약속어음과 당좌예금 인출의 방법으로 위 금액을 
+        소외 1 회사에 지급한 사실, 원고는 1997. 8. 25.경 오디세이 오피스텔 신축공사를 
+        소외 1 회사에 계약금액 112억 8,600만 원으로 하도급하고, 위와 같은 방법으로 대금을 지급한 사실, 그런데 
+        소외 2, 피고, 
+        소외 3, 
+        소외 4는 비자금을 조성할 목적으로 실제 공사비보다 과다 계상하여 위 하도급 계약들을 체결한 것으로서, 
+        소외 1 회사에게 지급한 약속어음 중 어음금액 3억 원 2매와 4억 원 1매 합계 10억 원이 1997. 10. 31. 국민은행 서초남지점을 통하여 추심 결제되자 같은 해 11. 10.경 
+        소외 1 회사 직원 
+        소외 5 과장으로부터 현금으로 받아 원고 비서실 
+        소외 6 상무를 통하여 
+        소외 2에게 전달되게 하고, 1997. 11. 25. 위 국민은행 지점을 통하여 추심 결제된 어음금 중 10억 원 상당을 
+        소외 2에게 전달되도록 하여 원고에게 20억 원 상당의 손해를 입힌 사실을 인정한 다음, 1997. 3. 14.부터 1998. 6. 17.까지 원고의 대표이사 및 그룹 부회장으로서 원고의 경영을 총괄하여 담당하였던 피고는 원고 회사 자금의 횡령과 비자금 조성에 직접적으로 관여하였거나, 그렇지 않다 하더라도 이를 방임 내지 방관하였으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|2">제401조의2 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|2">제2항</a></span>에 따라 원고에게 이로 인한 손해를 배상할 책임이 있다고 판단하였는바, 앞서 본 법리와 기록에 비추어 살펴보면, 위와 같은 원심의 사실인정과 판단은 옳은 것으로 수긍이 가고, 거기에 채증법칙 위배나 이사의 회사에 대한 손해배상책임에 관한 법리오해 등의 위법이 있다고 할 수 없다. 
+      </p><p>  2. 서울 하계 1차 주택조합 및 홍은동 주택조합 관련 손해에 대하여</p><p>  가. 원심의 판단</p><p>  원심은 그 채용 증거들을 종합하여, ① 피고가 1997년도에 지출된 
+        소외 2의 비자금과 사업상 지출된 비자금의 정리 및 
+        소외 2 개인 명의의 부동산 구입 등을 위하여 회사 자금을 무단 횡령한 후, 이와 같이 횡령한 자금의 부족을 은폐하기 위하여 1997. 3. 28.부터 1997. 12. 24.까지 실제로 대여한 사실이 없음에도 서울 하계 1차 주택조합에 사업비 84억 16,158,948원을 대여한 것처럼 허위로 회계처리하도록 업무를 집행하여, 원고에게 동액 상당의 손해를 입혔고, ② 피고가 
+        소외 2 회장 개인의 가지급금 정리, 홍은동 주택조합의 조합장에 대한 비자금 제공 및 비자금 조성목적으로 차입한 사채의 변제 등을 위해 회사 자금을 횡령한 후, 이와 같이 횡령한 자금의 부족을 은폐하기 위하여 1997. 12. 9.부터 1998. 5. 26.까지 실제로 대여한 사실이 없음에도 불구하고 서울 홍은동 주택조합에 사업비 83억 3,700만 원 상당을 대여한 것처럼 허위로 회계처리하도록 업무를 집행하여, 원고에게 동액 상당의 손해를 입혔다고 판단하였다. 
+      </p><p>  나. 이 법원의 판단</p><p>  그러나 위와 같은 원심의 판단은 다음과 같은 이유로 수긍하기 어렵다.</p><p>  이사의 법령·정관 위반행위 혹은 임무해태행위로 인한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|399|">상법 제399조</a></span>의 손해배상책임은 그 위반행위와 상당인과관계 있는 손해에 한하여 인정될 뿐이므로, 그 결과로서 발생한 손해와의 사이에 상당인과관계가 인정되지 아니하는 경우에는 이사의 손해배상책임이 성립하지 아니한다고 할 것이고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다2820|판결" href="#//">대법원 2005. 4. 29. 선고 2005다2820 판결</a></span> 등 참조), 
+        <span class="accrnt_txt">회사 자금의 횡령행위가 이루어진 이후에 그로 인한 회사 자금의 부족을 은폐하기 위하여 허위로 회계처리하도록 업무를 집행한 이사는 그 회계처리 당시에는 횡령행위에 관여한 자들로부터 횡령금액 또는 횡령으로 인한 손해배상채권을 회수할 수 있었으나 허위로 회계처리함으로써 횡령행위를 적발하고 회수할 수 있는 기회를 놓쳤고 그 사이 그들의 자금사정이 악화되어 이를 회수할 수 없게 되었다는 등의 사정이 없는 한, 손해배상책임을 부담하지 않는다고 할 것이다.</span>
+      </p><p>  그렇다면 원심으로서는 이 부분 손해배상책임을 구하는 근거인 법령위반행위 또는 임무해태행위가 횡령행위로 인한 것인지 아니면 허위 회계처리행위로 인한 것인지 여부를 분명하게 밝히고, 횡령행위로 인한 것이라면 피고가 어떠한 방법으로 횡령하였는지 및 
+        소외 2 등의 횡령행위에 어떻게 관여하였는지 그리고 횡령한 금액이 구체적으로 얼마인지 등에 대하여 심리한 다음 그로 인하여 발생한 손해액을 특정하였어야 하고, 허위 회계처리행위로 인한 것이라면 허위 회계처리행위와 손해의 발생 사이에 인과관계가 있는지 여부 등을 심리하여 피고가 원고에게 입힌 손해액을 판단하였어야 할 것이다. 
+      </p><p>  그럼에도 불구하고, 원심은 피고가 회사 자금을 횡령한 후 그로 인한 자금 부족을 은폐하기 위하여 실제로 대여한 사실이 없음에도 불구하고 서울 하계 1차 주택조합에 사업비 84억 16,158,948원을, 서울 홍은동 주택조합에 사업비 83억 3,700만 원 상당을 대여한 것처럼 각 허위로 회계처리하도록 업무를 집행하여, 원고에게 각 동액 상당의 손해를 입혔다고 판단하였으니, 원심판결에는 심리를 다하지 아니하였거나 손해배상책임에 있어서 인과관계에 관한 법리를 오해한 위법이 있고, 이러한 위법은 판결에 영향을 미쳤음이 분명하다. </p><p>  3. 일부청구에 관한 법리에 대하여</p><p>
+        <span class="accrnt_txt">채권자가 동일한 채무자에 대하여 수개의 손해배상채권을 가지고 있다고 하더라도 그 손해배상채권들이 발생시기와 발생원인 등을 달리하는 별개의 채권인 이상 이는 별개의 소송물에 해당하고, 그 손해배상채권들은 각각 소멸시효의 기산일이나 채무자가 주장할 수 있는 항변들이 다를 수도 있으므로, 이를 소로써 구하는 채권자로서는 손해배상채권별로 청구금액을 특정하여야 하며, 법원도 이에 따라 손해배상채권별로 인용금액을 특정하여야 할 것이고, 이러한 법리는 원고가 수개의 손해배상채권들 중 일부만을 청구하고 있는 경우에도 마찬가지라고 할 것이다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다59687|판결" href="#//">대법원 2007. 6. 28. 선고 2006다59687 판결</a></span> 등 참조). 
+      </p><p>  기록에 의하면, 원고가 피고의 이사로서의 법령위반행위로 인하여 3회에 걸쳐 손해를 입었다고 주장하면서 피고를 상대로 그로 인한 총 손해 중 명시적 일부청구로서 10억 원의 배상을 청구하는 이 사건 소에 대하여, 원심은 각 채권별로 전체 손해액을 특정한 다음, 원고가 일부청구로서 구하는 10억 원의 손해배상금액에 대하여 각 손해배상채권에 따른 개별적인 인용금액을 구분하지 아니한 채 피고에 대하여 포괄적으로 10억 원의 손해배상금액을 인정하였음을 알 수 있다. </p><p>  그런데 앞서 본 사실관계에 의하면, 이 사건 원심 변론종결 당시, 원고가 구하는 10억 원의 손해배상채권이 어느 채권에 대한 청구인지 불분명하여 그 청구가 특정되었다고 볼 수 없는바, 그렇다면 원심으로서는 석명권을 적절히 행사하여 원고가 구하는 이 사건 일부청구에 관한 주장이 불완전·불명료한 점을 지적하여 이를 정정·보충하도록 보정을 명함으로써 이 사건 소송상의 청구를 명확히 특정한 다음, 나아가 원고 주장의 당부를 심리·판단하였어야 할 것이다.</p><p>  그럼에도 불구하고, 원심은 원고 청구의 불분명한 내용에 관하여 석명권을 행사하지 아니한 채, 각 손해배상채권에 따른 개별적인 인용금액을 구분하지 아니하고 피고에 대하여 포괄적으로 10억 원의 손해배상금액을 인정하였으니, 원심판결에는 석명권 불행사, 심리미진의 위법이 있다고 하지 않을 수 없고, 이러한 위법 역시 판결에 영향을 미쳤음이 분명하다.</p><p>  4. 결 론</p><p>  그러므로 나머지 상고이유에 대하여 더 나아가 살펴볼 필요 없이 원심판결을 파기하고, 사건을 다시 심리ㆍ판단하게 하기 위하여 원심법원에 환송하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김지형(재판장) 고현철(주심) 양승태 전수안 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

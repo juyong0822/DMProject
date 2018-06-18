@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 93나17890 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1995993';
+var contIdEtc = '';
+var saNo = '93나17890';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('19940902' ? 
+			'19940902'.length==4 ? Date.parseExact('19940902','yyyy').toString('yyyy. M. d.') : 
+				'19940902'.length==6 ? Date.parseExact('19940902','yyyyMM').toString('yyyy. M. d.') : 
+					'19940902'.length==8 ? Date.parseExact('19940902','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '제2민사부판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 93나17890 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '93나17890';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />93나17890</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(6)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|500256">이춘원 건물의 구분소유에 관한 연구 성균관대학교 대학원  2005 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다32272">
+대법원 1993.6.8. 선고 92다32272 판결(공1993하, 1997)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="집합건물의소유및관리에관한법률|2|0|null">집합건물의소유및관리에관한법률 제2조 제3호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="집합건물의소유및관리에관한법률|2|0|null">집합건물의소유및관리에관한법률 제2조 제4호 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="집합건물의소유및관리에관한법률|3|0|null">집합건물의소유및관리에관한법률 제3조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="집합건물의소유및관리에관한법률|10|0|null">집합건물의소유및관리에관한법률 제10조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="관리에관한법률|15|0|null">관리에관한법률 제15조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|265|0|null">민법 제265조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다32272">대법원 1993.6.8. 선고 92다32272 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|10|0|null">집합건물의소유및관리에관한법률 제10조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|96|0|null">민사소송법 제96조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|89|0|null">민사소송법 제89조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|92|0|null">민사소송법 제92조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|93|0|null">민사소송법 제93조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="수원지방법원|92가합12974">제1심 수원지법(1993.2.25. 선고 92가합12974 판결)</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고법 1994. 9. 2. 선고 93나17890 제2민사부판결 : 상고</h2><p class="sub_title">[손해배상(기)][하집1994(2),379]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 상가건물의 앞 유리벽이 공용부분인지의 여부</p>
+      <p></p>
+      <p>
+        </p><p>나. 상가건물의 후열점포의 소유자들이 개별점포부분의 앞 유리벽에 출입문을 개설한 전열점포의 소유자들에 대하여 그 출입문의 폐쇄를 구할 수 있는지 여부</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 집합건물에 있어서 건물의 안전이나 외관을 유지하기 위하여 필요한 지주, 지붕, 외벽, 기초공작물 등은 구조상 구분소유자의 전원 또는 그 일부의 공용에 제공되는 부분으로서 구분소유권의 목적이 되지 않으며, 건물의 외벽인 이상 그것이 콘크리트나 벽돌로 되었느냐 유리로 되었느냐 등 그 재질에 따라 달리 볼 것은 아니므로, 상가건물 전체와 1층 부분의 구조, 외관, 용도 등에 비추어 볼 때 전열점포의 소유자들이 개별적으로 출입문을 개설한 각 점포의 앞 유리벽은 비록 그것이 쇼 윈도로서의 역할을 겸하고 있다 하더라도 집합건물의 안전이나 외관을 유지하기 위하여 필요한 외벽으로서 공용부분이다.</p>
+      <p></p><p>
+        </p><p>나. 건물의 공용부분인 유리벽에 출입문을 개설하는 행위는 공용부분의 변경에 해당하여 구분소유자 및 의결권의 각 4분의 3 이상의 다수에 의한 집회결의로써 결정하여야 하는데, 그와 같은 집회결의를 거쳤음에 대한 아무런 주장.입증이 없으므로 전열점포의 소유자들의 각 출입문 개설은 위법한 공용부분의 변경이라 할 것이어서, 집합건물의 1층 부분의 구분소유자들인 후열점포의 소유자들은 보존행위로서 집합건물의소유및관리에관한법률 제16조 제1항 단서 또는 민법 제265조에 의하여 각 그 변경된 공용부분의 원상회복으로서 출입문의 폐쇄를 구할 수 있다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|2|">집합건물의소유및관리에관한법률 제2조 제3호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|2|">제2조제4호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|3|">제3조제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|10|">제10조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="관리에관한법률|15|">제15조제1항</a></span>      제16조 제1항,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|265|">민법 제265조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">1.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다32272|판결" href="#//">대법원 1993.6.8. 선고 92다32272 판결(공1993하, 1997)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+          김상순외 6인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        
+          피고 1외 12인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="수원지방법원|92가합12974|판결" href="#//">제1심 수원지법(1993.2.25. 선고 92가합12974 판결)</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 가. 제1심 판결 중 아래에서 이행을 명하는 부분에 해당하는 원고들 패소부분을 각 취소한다.</p><p>  나. 별지 제1목록 기재 건물 1층 건평 722. 845㎡ 중 피고 
+        1은 별지 도면 1, 2 표시 각 점을 연결한 선상의 출입문을, 피고 
+        2, 
+        3은 같은 도면 4,5 표시 각 점을 연결한 선상의 출입문을, 피고 
+        4, 
+        5는 같은 도면 6,7 표시 각 점을 연결한 선상의 출입문과 같은 도면 8,9 표시 각 점을 연결한 선상의 출입문을, 피고 
+        6, 
+        7은 같은 도면 11,12 표시 각 점을 연결한 선상의 출입문을, 피고 
+        8, 
+        9는 같은 도면 14,15 표시 각 점을 연결한 선상의 출입문을, 피고 
+        10, 
+        11은 같은 도면 16,17 표시 각 점을 연결한 선상의 출입문을, 피고 
+        12, 
+        13은 같은 도면 18, 19 표시 각 점을 연결한 선상의 출입문을 각 폐쇄하라.
+      </p><p>  2. 원고들의 나머지 항소를 각 기각한다.</p><p>  3. 소송비용은 제1, 2심 모두 이를 2등분하여 그 1은 원고들의, 나머지는 피고들의 각 부담으로 한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>  제1심 판결을 취소하고, 주문 제1항의 나와 같은 판결 및 피고들은 연대하여, 각 원고에게 각 금 5,000,000원을 지급하고, 1992.10.13.부터 주문 제1항의 나와 같이 각 출입문을 폐쇄할 때까지 원고 김상순, 홍대식에게 매월 각 금 205,425원씩을, 원고 조영현에게 매월 금 388,800원씩을, 원고 김교진에게 매월 금 1,000,050원씩을, 원고 오경근에게 매월 금 427,733원씩을, 원고 박제성에게 매월 금 982,800원씩을, 원고 박남순에게 매월 금 1,728,000원씩을 각 지급하라는 판결.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 사실관계</p><p>  갑 제1호증(등기부등본), 갑 제2호증의 1 내지 3(각 분양계약서), 갑 제5호증(도면), 갑 제8호증(회신), 갑 제9호증(통고서), 갑 제24호증의 1 내지 7(각 월세계약서), 갑 제51호증(인증서), 갑 제57호증의 1 내지 14(각 사진), 을 제1호증의 1 내지 6(각 분양계약서), 을 제3호증의 1,3 내지 6(각 자술서), 을 제4호증의 1,2(각 분양계약서), 을 제5호증의 1,2(각 등기부등본), 을 제6호증(도면), 을 제12호증의 1 내지 7(각 등기부등본)의 각 기재와 제1심증인 김종만, 김정흔, 박영근, 당심증인 황영윤의 각 증언 및 당원의 현장검증결과에 변론의 전취지를 종합하면 아래와 같은 사실을 인정할 수 있고, 당원의 광명시장에 대한 사실조회결과는 아래 인정사실을 좌우할 자료가 되지 못하며, 달리 반증이 없다.</p><p>  가. 별지 제1목록 기재 건물(이하 이 사건 건물이라 한다.)은 소외 성보건설산업주식회사가 광명시 하안동 중심상가지역 3블록 5롯트 지상에 1990.5.30.경 건축허가를 받아 신축을 시작하여 1991.9.2. 준공검사를 마치고 같은 해 10.5. 소유권보존등기를 마친 건물인바, 위 성보건설산업주식회사는 위 건물에 대한 건축허가를 받기 전에 미리 이 사건 건물 내의 각 점포의 소유권을 분양하기 위하여 소외 르메이에르주식회사와 분양대행계약을 체결하고, 위 르메이에르주식회사로 하여금 일반 피분양자들에게 이 사건 건물 내의 각 점포를 분양하도록 하였는데, 위 르메이에르주식회사의 직원들은 전열점포를 분양받은 피고 
+        1, 
+        2, 
+        4, 
+        12, 
+        6, 
+        8, 
+        10 등에게는 전열점포의 앞 유리벽에 개별적으로 출입문을 개설할 수 있다고 설명하고, 후열점포를 분양받은 원고들에게는 전열점포의 앞 유리벽에 따로 출입문이 없으니 통로를 이용하는 백화점식 점포여서 영업이 잘될 것이라고 설명하면서 건축허가가 나오기 전인 1990.3.경부터 분양계약에 대한 청약을 받기 시작하여 건축허가가 나온 후 원고들과 피고 
+        1, 
+        2, 
+        4, 
+        12, 
+        6, 
+        8, 
+        10에게 별지 제2목록 기재와 같이 이 사건 건물 중 1층 전. 후열 각 점포를 분양하여 동인들이 그 각 점포의 소유권을 취득함으로써 이 사건 건물의 1층 부분은 동인들이 구분소유하게 되었고, 한편 피고 
+        2, 
+        4, 
+        6, 
+        8, 
+        10, 
+        12는 위 피고들이 각 분양받아 소유하는 점포를 같은 목록 기재와 같이 피고 
+        3, 
+        5, 
+        7, 
+        9, 
+        11, 
+        13에게 각 임대하였다.
+      </p><p>  나. 이 사건 건물의 건축업자인 소외 성보건설산업주식회사는 이 사건 건물 1층에는 별지 도면과 같이 양 모서리쪽에 이 사건 건물 전체의 출입구를 두고 이 사건 건물 1층의 전면 중 기둥을 제외한 외벽은 점포별로 1개의 유리를 사용하되 그 곳에는 따로 출입문을 내지 않으며, 1층 내부에 통로 및 점포별 칸막이도 없이 1층 전체가 트인 공간으로 하여 이 사건 건물을 설계(을 제6호증) 및 시공하고, 준공검사를 받았는데, 위 성보건설산업주식회사의 분양대행회사인 위 르메이에르주식회사가 이 사건 각 점포에 대한 분양계약을 체결할 때에는 현재와 같이 중간통로와 전열점포 및 후열점포를 구획하여 각 피분양자들에게 분양하였고, 위 성보건설산업주식회사는 1991. 9. 2. 준공검사를 받은 후 1층 내의 각 점포별 칸막이공사를 유리벽으로 시행함으로써 이 사건 건물 1층은 중간통로를 중심으로 양쪽으로 점포가 나열되어 있고, 이 사건 건물의 양 모서리쪽에 이 사건 건물 전체로 들어가는 출입문이 있으며, 그 출입문을 통하여 1층으로 들어온 후 중간통로로 들어와 중간통로와 연결된 출입문을 통하여 각 점포로 출입할 수 있도록 시공되었다.</p><p>  다. 이 사건 건물 중 1층 전열점포를 각 분양받은 피고 
+        1, 
+        12(전열 4호 점포 부분)은 직접, 피고 
+        2, 
+        4, 
+        6, 
+        8, 
+        10, 
+        12(전열 6-2호 점포 부분)으로부터 별지 제2목록 기재 각 점포를 임차하여 입주한 피고 
+        3, 
+        5, 
+        7, 
+        9, 
+        11, 
+        13은 각 그 점포의 소유자로부터 동의를 받아 피고들이 소유 내지 임차하여 점유하고 있는 각 점포의 전면 유리벽을 각 점포별로 개조하여 1991.10.경(피고 
+        13의 경우에는 1992.2.말경) 주문 제1항 기재와 같이 각 출입문을 개설하였다.
+      </p><p>  라. 이 사건 건물은 지하 3층, 지상 10층의 근린생활시설로서 지하 1층, 지하 2층 일부, 지상 1층은 소매점, 수퍼, 다과점 등으로 지상 2층부터 9층까지는 병원시설로, 지상 10층은 예능계학원으로, 각 용도가 지정되어 있는데, 다만 실제 분양과정에서 용도상의 변화가 발생하여 현재 지하 1층, 지상 1층에는 수퍼 및 소매점이, 2층에는 음식점, 다방 등이, 3층부터 9층 사이에는 병원, 사무실, 학원 등이, 10층에는 식당이 들어 있고, 이 사건 건물의 앞면은 모두 대형유리벽으로 되어 있으며, 1층과 2층을 받치고 있는 5개의 거대한 원형기둥은 이 사건 건물의 특징적이고 주요한 외관을 이루고 있고, 이 사건 건물 1층의 유리벽 부분은 그것을 통하여 1층 상가 전체를 투시할 수 있도록 되어 있다.</p><p>  2. 출입문폐쇄청구에 관한 판단</p><p>  앞서 인정한 사실들에 비추어 이 사건 건물은 집합건물의소유및관리에관한법률 소정의 집합건물에 해당한다 할 것인데, 집합건물에 있어서는 건물의 안전이나 외관을 유지하기 위하여 필요한 지주, 지붕, 외벽, 기초공작물 등은 구조상 구분소유자의 전원 또는 그 일부의 공용에 제공되는 부분으로서 구분소유권의 목적이 되지 않으며(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다32272|판결" href="#//">대법원 1993.6.8. 선고 92다32272 판결</a></span>), 건물의 외벽인 이상 그것이 콘크리트나 벽돌로 되었느냐 유리로 되었느냐 등 그 재질에 따라 달리 볼 것은 아니므로, 앞서 본 바와 같은 이 사건 건물 전체와 1층 부분의 구조, 외관, 용도 등에 비추어 볼 때 피고들이 개별적으로 출입문을 개설한 이 사건 각 점포의 앞 유리벽은 비록 그것이 쇼 윈도로서의 역할을 겸하고 있다 하더라도 집합건물인 이 사건 건물의 안전이나 외관을 유지하기 위하여 필요한 외벽으로서 공용부분이라 할 것이고, 이러한 공용부분인 건물의 기본적 구조부분은 구분소유자 전원의 공유에 속하는 것으로서(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|10|">집합건물의소유및관리에관한법률 제10조 제1항 </a></span>본문), 이와 같이 이 사건 건물의 공용부분인 유리벽에 출입문을 개설하는 행위는 공용부분의 변경에 해당하여 구분소유자 및 의결권의 각 4분의 3 이상의 다수에 의한 집회결의로써 결정하여야 하고(동법 제15조 제1항 본문), 이러한 공용부분의 변경에 관한 요건은 규약으로써도 달리 정할 수 없는 것(동법 제10조 제2항 단서)임에도 불구하고, 피고들이 공용부분의 변경에 해당하는 그 각 출입문을 개설함에 있어서 구분소유자 및 의결권의 각 4분의 3 이상의 다수에 의한 집회결의를 거쳤음에 대한 아무런 주장 입증이 없으므로 피고들의 앞서 본 각 출입문 개설은 위법한 공용부분의 변경이라 할 것이어서, 집합건물인 이 사건 건물의 1층 부분의 구분소유자들인 원고들은 보존행위로서 그 각 소유 점포에 출입문을 직접 개설한 피고 
+        1과 
+        피고 12(전열 4호 점포 부분) 및 그 각 임차인들이 출입문을 개설하는 데 동의한 피고 
+        2, 
+        4, 
+        6, 
+        8, 
+        10, 
+        12 (전열 6-2호 점포 부분)에 대하여는 집합건물의소유및관리에관한법률 제16조 제1항 단서에 의하여 각 그 변경된 공용부분의 원상회복으로서 출입문의 폐쇄를 구할 수 있고, 피고 
+        2, 
+        4, 
+        6, 
+        8, 
+        10, 
+        12로부터 동의를 얻어 그 각 임차점포에 출입문을 개설한 피고 
+        3, 
+        5, 
+        7, 
+        9, 
+        11, 
+        13에 대하여는 민법 제265조에 의하여 각 그 변경된 공유물의 원상회복으로서 출입문의 폐쇄를 구할 수 있다 할 것이니, 피고들은 피고들이 개설한 위 각 출입문을 폐쇄하여야 할 의무가 있다.
+      </p><p>  이에 대하여 피고들은, 소외 성보건설산업주식회사가 이 사건 건물에 대한 건축허가도 얻기 전인 1990.4.20.부터 같은 달 30. 까지 사이에 위 성보건설산업주식회사를 대리한 분양대행업자인 소외 르메이에르주식회사와 사이에 분양계약을 체결할 때 피고들의 각 전유부분인 점포의 앞 유리벽에 출입문을 자유로이 개설할 수 있다는 것을 조건으로 하여 분양계약을 체결하여 출입문 개설이 가능한 것으로 알고 출입문을 개설한 것이므로 이 사건 청구에 응할 수 없다고 다투나, 집합건물의소유및관리에관한법률 제15조 제1항, 제10조 제2항의 각 규정에 의하면 공용부분의 변경에 관한 사항은 구분소유자 및 의결권의 각 4분의 3 이상의 다수에 의한 집회결의로써 결정하여야 하고 이에 관하여는 규약으로써도 달리 정할 수 없으므로 가사 피고들이 이 사건 각 점포를 분양받을 당시 위 르메이에르주식회사가 피고들에게 앞 유리벽에 출입문을 개설할 수 있다고 하였다 하더라도 그것은 그 후 실제로 이 사건 건물의 앞 유리벽에 출입문이 설치되지 아니하는 것으로 건축허가되어 완공된 이상 위 법의 규정에 위배되어 효력이 없다 할 것이므로 피고들이 그러한 말을 믿고 이 사건 각 출입문을 개설하였다 하더라도 그 원상회복을 구하는 원고들의 청구를 거절할 사유는 될 수 없다 할 것이다.</p><p>  3. 손해배상청구에 관한 판단</p><p>  원고들은, 피고들이 임의로 공용부분인 이 사건 건물의 앞 유리벽에 출입문을 개설한 불법행위로 말미암아 원래 고객이 통행하기로 예정된 중앙통로쪽은 뒷문 또는 샛문으로 사용됨에 그치고 그쪽으로 주방을 설치하거나 짐을 쌓아 둠으로써 그 곳 출입구는 고객이 출입하는 진열대로서의 기능이 저하되고 있을 뿐만 아니라 일반고객들로 하여금 이 사건 건물 1층 후열에 원고들의 점포가 있다는 사실조차 알기 어렵게 하는 결과를 초래하여 고객들이 원고들의 점포에 접근하는 것을 구조적으로 제한시키고 있으며 또한 소외 성보건설산업주식회사로부터 분양받아 제3자에게 점포를 임대하려고 하였던 원고들로서는 피고들의 위와 같은 불법행위로 인하여 제3자에 대한 임대차계약 체결에 곤란을 받게 되어 여러 모로 투자효율을 충분히 발휘하지 못하게 될 상황에 이르게 되었으므로 피고들로서는 피고들의 불법행위로 인하여 원고들이 입게 된 점포 시가의 비정상적인 하락분과 임대가격의 하락분을 손해로 배상할 책임이 있다고 주장한다.</p><p>  그러나, 피고들의 위 인정과 같은 출입문을 개설한 공용부분의 변경행위가 집합건물의소유및관리에관한법률에 위반한 행위임은 앞서 본 바와 같으나, 그것이 원고들에 대한 관계에서 바로 불법행위가 된다고는 보기 어려울 뿐 아니라 가사 불법행위가 된다고 하더라도 아래에서 보는 바와 같이 피고들의 출입문 개설로 인하여 원고들에게 그 주장과 같은 손해가 발생하였다고 보기도 어렵다.</p><p>  즉, 제1심 감정인 최권옥의 감정결과만으로는 피고들의 출입문 개설로 인하여 원고들이 그 주장과 같은 손해를 입었다고 인정하기에 부족하고 달리 이를 인정할 만한 증거가 없으며, 오히려 앞서 인정한 바와 같은 이 사건 건물의 구조와 외관, 각층의 용도 및 1층의 이용실태 등 제반 사정을 종합하여 보면, 피고들이 위와 같이 출입문을 개설하였다고 하여 전열점포와 후열점포의 업종이 피차 상이한 마당에 피고들이 위와 같이 출입문을 각 개설한 것이 원인이 되어 원고들 점포의 고객이 전열점포에만 들르고 후열점포에는 들르지 않는다고 단정할 수 없고, 피고들 점포를 찾아오는 고객들이 도로에서 곧바로 피고들의 점포로 들어와 구매를 하고 돌아간다 하여 고객들이 중간통로로 들어와 구매를 하는 경우보다 원고들의 점포에 대한 광고효과가 반드시 감소된다고 보기가 어려울 뿐 아니라 광고효과가 다소 감소된다고 하더라도 그것은 간접적인 손해에 불과할 뿐이며, 특히 이 사건 건물은 지하 3층, 지상 10층의 건물로서 다른 층에 출입하는 고객들은 이 사건 건물의 1층에 중간통로가 있고 그 좌우에 점포들이 나열되어 있다는 것을 쉽게 알 수 있고, 또한 위와 같은 각 출입문의 개설에 의하여 전열점포의 영업에 커다란 이익이 되리라고는 쉽게 예측할 수 있으나 그렇다고 하여 반드시 후열점포의 영업상의 손실을 초래한다고는 쉽게 믿기 어려우며, 원고들은 또한 출입문을 개설함으로써 건물 외부의 도로에서 후열점포가 보이지 않기 때문에 손해를 입고 있는 듯이 주장하고 있으나 전열점포의 앞 유리벽을 쇼 윈도로만 사용한다고 하더라도 진열된 상품으로 인하여 후열점포의 존재를 알기가 또한 어려울 것이고, 어차피 전열점포에 들어온 고객은 후열점포의 존재를 알 수 있으므로 출입문의 존재로 인하여 고객들이 후열점포의 존재를 인지하기에 더 곤란해졌다고도 보기 어렵기 때문에 어느 모로 보나 피고들이 위와 같이 출입문을 개설함으로 인하여 원고들에게 손해를 입혔다고는 볼 수 없으므로 원고들의 손해배상청구는 그 이유 없다.</p><p>  4. 그렇다면, 원고들의 출입문폐쇄청구부분은 이유 있어 이를 인용하고, 손해배상청구부분은 이유 없어 이를 기각할 것인바, 제1심판결은 이와 일부 결론을 달리하여 부당하므로 원고들의 항소를 일부 받아들여 원고들의 출입문폐쇄청구를 기각한 제1심판결을 취소하고, 위와 같이 피고들에 대하여 그 각 개설한 출입문을 폐쇄할 것을 명하며, 원고들의 나머지 항소는 이유 없어 이를 기각하고, 소송비용의 부담에 관하여는
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|96|"> 민사소송법 제96조</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|89|">제89조</a></span>
+, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|92|">제92조</a></span> 본문, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|93|">제93조 </a></span>본문을 각 적용하고, 가집행선고는 붙이지 아니함이 상당하다고 인정되어 주문과 같이 판결한다.[별지생략]
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   이상현(재판장) 박기동 최병철 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

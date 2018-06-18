@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다13527 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2058658';
+var contIdEtc = '';
+var saNo = '2010다13527';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20100722' ? 
+			'20100722'.length==4 ? Date.parseExact('20100722','yyyy').toString('yyyy. M. d.') : 
+				'20100722'.length==6 ? Date.parseExact('20100722','yyyyMM').toString('yyyy. M. d.') : 
+					'20100722'.length==8 ? Date.parseExact('20100722','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다13527 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다13527';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다13527</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(24)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(15)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|659664">홍정선 개별공시지가와 권리보호 : 용인시 기흥구 상업용지 변경사건 (최신) 행정법판례특강 제2판 / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|635343">최선웅 최근 행정관련판례 동향 행정법연구 28호  / 행정법이론실무학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|705559">강한철 임상시험심사위원회(IRB)의 리베이트 통제 역할에 관한 소고 인권과 정의 제434호 / 대한변호사협회  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|20080229">부동산가격공시및감정평가에관한법률(구) 제11조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제4항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제7항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|20|0|null">부동산가격공시및감정평가에관한법률(구) 제20조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="부동산가격공시및감정평가에관한법률시행령|16|0|20080229">부동산가격공시및감정평가에관한법률시행령(구) 제16조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="부동산가격공시및감정평가에관한법률시행령|16|0|null">부동산가격공시및감정평가에관한법률시행령(구) 제16조 제2항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|20080229">부동산가격공시및감정평가에관한법률(구) 제11조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제4항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제7항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|20|0|null">부동산가격공시및감정평가에관한법률(구) 제20조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="부동산가격공시및감정평가에관한법률시행령|16|0|20080229">부동산가격공시및감정평가에관한법률시행령(구) 제16조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink17" name="linkContJomun" type="부동산가격공시및감정평가에관한법률시행령|16|0|null">부동산가격공시및감정평가에관한법률시행령(구) 제16조 제2항 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink18" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink19" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink20" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|20080229">부동산가격공시및감정평가에관한법률(구) 제11조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink21" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink22" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink23" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|20080229">부동산가격공시및감정평가에관한법률(구) 제11조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다43466">대법원 1993. 2. 12. 선고 91다43466 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|97다36613">대법원 1998. 5. 8. 선고 97다36613 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다48994">대법원 2008. 4. 10. 선고 2005다48994 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|20080229">부동산가격공시및감정평가에관한법률(구) 제11조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|20|0|null">부동산가격공시및감정평가에관한법률(구) 제20조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|11|0|null">부동산가격공시및감정평가에관한법률(구) 제11조 제7항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률시행령|16|0|20080229">부동산가격공시및감정평가에관한법률시행령(구) 제16조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률시행령|16|0|null">부동산가격공시및감정평가에관한법률시행령(구) 제16조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|1|0|null">부동산가격공시및감정평가에관한법률(구) 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|3|0|null">부동산가격공시및감정평가에관한법률(구) 제3조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산가격공시및감정평가에관한법률|10|0|null">부동산가격공시및감정평가에관한법률(구) 제10조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나48932">서울고법 2010. 1. 13. 선고 2009나48932 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 7. 22. 선고 2010다13527 판결</h2><p class="sub_title">[손해배상(기)][공2010하,1644]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 개별공시지가 산정업무 담당공무원 등이 부담하는 직무상 의무의 내용 및 그 담당공무원 등이 직무상 의무에 위반하여 현저하게 불합리한 개별공시지가가 결정되도록 함으로써 국민 개개인의 재산권을 침해한 경우, 그 담당공무원 등이 속한 지방자치단체가 손해배상책임을 지는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 시장(시장)이 토지의 이용상황을 실제 이용되고 있는 ‘자연림’으로 하여 개별공시지가를 산정한 다음 감정평가법인에 검증을 의뢰하였는데, 감정평가법인이 그 토지의 이용상황을 ‘공업용’으로 잘못 정정하여 검증지가를 산정하고, 시(시) 부동산평가위원회가 검증지가를 심의하면서 그 잘못을 발견하지 못함에 따라, 그 토지의 개별공시지가가 적정가격보다 훨씬 높은 가격으로 결정·공시된 사안에서, 이는 개별공시지가 산정업무 담당공무원 등이 직무상 의무를 위반한 것으로 불법행위에 해당한다고 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 개별공시지가가 토지의 거래 또는 담보제공에서 그 실제 거래가액 또는 담보가치를 보장하는 등의 구속력을 갖는지 여부(소극) 및 개개 토지에 관한 개별공시지가를 기준으로 거래하거나 담보제공을 받았다가 토지의 실제 거래가액 또는 담보가치가 개별공시지가에 미치지 못함으로 인하여 발생한 손해에 대해서도 개별공시지가를 결정·공시한 지방자치단체가 손해배상책임을 부담하는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[4] 개별공시지가 산정업무 담당공무원 등이 잘못 산정·공시한 개별공시지가를 신뢰한 나머지 토지의 담보가치가 충분하다고 믿고 그 토지에 관하여 근저당권설정등기를 경료한 후 물품을 추가로 공급함으로써 손해를 입었음을 이유로 그 담당공무원이 속한 지방자치단체에 손해배상을 구한 사안에서, 그 담당공무원 등의 개별공시지가 산정에 관한 직무상 위반행위와 위 손해 사이에 상당인과관계가 있다고 보기 어렵다고 판단한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 개별공시지가는 개발부담금의 부과, 토지 관련 조세 부과 등 다른 법령이 정하는 목적을 위해 지가를 산정하는 경우에 그 산정 기준이 되는 관계로 납세자인 국민 등의 재산상 권리·의무에 직접적인 영향을 미치게 되므로, 개별공시지가 산정업무를 담당하는 공무원으로서는 당해 토지의 실제 이용상황 등 토지특성을 정확하게 조사하고 당해 토지와 토지이용상황이 유사한 비교표준지를 선정하여 그 특성을 비교하는 등 법령 및 ‘개별공시지가의 조사·산정 지침’에서 정한 기준과 방법에 의하여 개별공시지가를 산정하고, 산정지가의 검증을 의뢰받은 감정평가업자나 시·군·구 부동산평가위원회로서는 위 산정지가 또는 검증지가가 위와 같은 기준과 방법에 의하여 제대로 산정된 것인지 여부를 검증, 심의함으로써 적정한 개별공시지가가 결정·공시되도록 조치할 직무상의 의무가 있고, 이러한 직무상 의무는 단순히 공공 일반의 이익을 위한 것이거나 행정기관 내부의 질서를 규율하기 위한 것이 아니고 전적으로 또는 부수적으로 국민 개개인의 재산권 보장을 목적으로 하여 규정된 것이라고 봄이 상당하다. 따라서 개별공시지가 산정업무 담당공무원 등이 그 직무상 의무에 위반하여 현저하게 불합리한 개별공시지가가 결정되도록 함으로써 국민 개개인의 재산권을 침해한 경우에는 그 손해에 대하여 상당인과관계 있는 범위 내에서 그 담당공무원 등이 소속된 지방자치단체가 배상책임을 지게 된다.</p>
+      <p></p><p>
+        </p><p>[2] 시장(시장)이 토지의 이용상황을 실제 이용되고 있는 ‘자연림’으로 하여 개별공시지가를 산정한 다음 감정평가법인에 검증을 의뢰하였는데, 감정평가법인이 그 토지의 이용상황을 ‘공업용’으로 잘못 정정하여 검증지가를 산정하고, 시(시) 부동산평가위원회가 검증지가를 심의하면서 그 잘못을 발견하지 못함에 따라, 그 토지의 개별공시지가가 적정가격보다 훨씬 높은 가격으로 결정·공시된 사안에서, 이는 개별공시지가 산정업무 담당공무원 등이 개별공시지가의 산정 및 검증, 심의에 관한 직무상 의무를 위반한 것으로 불법행위에 해당한다고 한 사례.</p>
+      <p></p><p>
+        </p><p>[3] 개별공시지가는 그 산정 목적인 개발부담금의 부과, 토지 관련 조세 부과 등 다른 법령이 정하는 목적을 위해 지가를 산정하는 경우에 그 산정 기준이 되는 범위 내에서는 납세자인 국민 등의 재산상 권리·의무에 직접적인 영향을 미칠 수 있지만, 이에 더 나아가 개별공시지가가 당해 토지의 거래 또는 담보제공을 받음에 있어 그 실제 거래가액 또는 담보가치를 보장한다거나 어떠한 구속력을 미친다고 할 수는 없다. 그럼에도 개개 토지에 관한 개별공시지가를 기준으로 거래하거나 담보제공을 받았다가 당해 토지의 실제 거래가액 또는 담보가치가 개별공시지가에 미치지 못함으로 인해 발생할 수 있는 손해에 대해서까지 그 개별공시지가를 결정·공시하는 지방자치단체에 손해배상책임을 부담시키게 된다면, 개개 거래당사자들 사이에 이루어지는 다양한 거래관계와 관련하여 발생한 손해에 대하여 무차별적으로 책임을 추궁당하게 되고, 그 거래관계를 둘러싼 분쟁에 끌려들어가 많은 노력과 비용을 지출하는 결과가 초래되게 된다. 이는 결과발생에 대한 예견가능성의 범위를 넘어서는 것임은 물론이고, 행정기관이 사용하는 지가를 일원화하여 일정한 행정목적을 위한 기준으로 삼음으로써 국토의 효율적인 이용과 국민경제의 발전에 기여하려는 구 부동산 가격공시 및 감정평가에 관한 법률(2008. 2. 29. 법률 제8852호로 개정되기 전의 것)의 목적과 기능, 그 보호법익의 보호범위를 넘어서는 것이다.</p>
+      <p></p><p>
+        </p><p>[4] 개별공시지가 산정업무 담당공무원 등이 잘못 산정·공시한 개별공시지가를 신뢰한 나머지 토지의 담보가치가 충분하다고 믿고 그 토지에 관하여 근저당권설정등기를 경료한 후 물품을 추가로 공급함으로써 손해를 입었음을 이유로 그 담당공무원이 속한 지방자치단체에 손해배상을 구한 사안에서, 그 담당공무원 등의 개별공시지가 산정에 관한 직무상 위반행위와 위 손해 사이에 상당인과관계가 있다고 보기 어렵다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">구 부동산 가격공시 및 감정평가에 관한 법률(2008. 2. 29. 법률 제8852호로 개정되기 전의 것) 제11조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">제3항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">제4항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">제7항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|20|">제20조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률시행령|16|">구 부동산 가격공시 및 감정평가에 관한 법률 시행령(2008. 2. 29. 대통령령 제20722호로 개정되기 전의 것) 제16조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률시행령|16|">제2항</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">구 부동산 가격공시 및 감정평가에 관한 법률(2008. 2. 29. 법률 제8852호로 개정되기 전의 것) 제11조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">제3항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">제4항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">제7항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|20|">제20조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률시행령|16|">구 부동산 가격공시 및 감정평가에 관한 법률 시행령(2008. 2. 29. 대통령령 제20722호로 개정되기 전의 것) 제16조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률시행령|16|">제2항</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">구 부동산 가격공시 및 감정평가에 관한 법률(2008. 2. 29. 법률 제8852호로 개정되기 전의 것) 제11조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">구 부동산 가격공시 및 감정평가에 관한 법률(2008. 2. 29. 법률 제8852호로 개정되기 전의 것) 제11조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        주식회사 대우일렉트로닉스 (소송대리인 법무법인 광장 담당변호사 임성우외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        경기도 광주시 (소송대리인 변호사 이돈희외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나48932|판결" href="#//">서울고법 2010. 1. 13. 선고 2009나48932 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유 중 과실상계의 점을 제외한 나머지 부분을 함께 판단한다.</p><p>  1. 이 사건 개별공시지가 결정·공시의 위법성에 대하여</p><p>  가. 공무원에게 부과된 직무상 의무의 내용이 단순히 공공 일반의 이익을 위한 것이거나 행정기관 내부의 질서를 규율하기 위한 것이 아니고 전적으로 또는 부수적으로 사회구성원 개인의 안전과 이익을 보호하기 위하여 설정된 것이라면, 공무원이 그와 같은 직무상 의무를 위반함으로 인하여 피해자가 입은 손해에 대하여는 상당인과관계가 인정되는 범위 내에서 국가가 배상책임을 지며, 이때 상당인과관계의 유무를 판단함에 있어서는 일반적인 결과 발생의 개연성은 물론 직무상 의무를 부과하는 법령 기타 행동규범의 목적이나 가해행위의 태양 및 피해의 정도 등을 종합적으로 고려하여야 하고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다43466|판결" href="#//">대법원 1993. 2. 12. 선고 91다43466 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다36613|판결" href="#//">대법원 1998. 5. 8. 선고 97다36613 판결</a></span> 등 참조), 이는 지방자치단체와 그 소속 공무원에 대하여도 마찬가지이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다48994|판결" href="#//">대법원 2008. 4. 10. 선고 2005다48994 판결</a></span> 참조).
+      </p><p>  나. 개별공시지가는 시장·군수 또는 구청장이「개발이익환수에 관한 법률」에 의한 개발부담금의 부과 그 밖의 다른 법령이 정하는 목적을 위한 지가산정에 사용하도록 하기 위하여 결정·공시하는 개별토지의 단위면적당 가격[
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">구 부동산 가격공시 및 감정평가에 관한 법률(2008. 2. 29. 법률 제8852호로 개정되기 전의 것, 이하 ‘법’이라고 한다) 제11조 제1항</a></span>]으로서, 개별공시지가를 산정하여 결정·공시함에 있어 시장·군수 또는 구청장은 당해 토지와 유사한 이용가치를 지닌다고 인정되는 하나 또는 둘 이상의 표준지의 공시지가를 기준으로 토지가격비준표를 사용하여 지가를 산정하되, 당해 토지의 가격과 표준지공시지가가 균형을 유지하도록 하여야 하고(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">법 제11조 제3항</a></span>), 산정한 개별토지 가격의 타당성에 대하여 원칙적으로 감정평가업자의 검증을 받고 토지소유자 그 밖의 이해관계인의 의견을 들어야 하며(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">법 제11조 제4항</a></span>), 시·군·구 부동산평가위원회의 심의를 거쳐야 한다(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">법 제11조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|20|">제20조 제1항</a></span>). 한편 건설교통부장관은 지가형성에 영향을 미치는 토지특성조사에 관한 사항, 개별공시지가의 산정기준이 되는 비교표준지의 선정에 관한 사항, 토지가격비준표의 사용에 관한 사항 등이 포함된「개별공시지가의 조사·산정지침」을 정하여 시장·군수 또는 구청장에게 통보하여야 하고, 시장·군수 또는 구청장은 그 지침에 따라 개별공시지가를 조사·산정하여야 하며[
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">법 제11조 제7항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률시행령|16|">구 부동산 가격공시 및 감정평가에 관한 법률 시행령(2008. 2. 29. 대통령령 제20722호로 개정되기 전의 것) 제16조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률시행령|16|">제2항</a></span>],「2007년도 적용 개별공시지가 조사·산정지침」에는 토지특성조사는 토지대장 등 각종 공부조사 및 지가현황도면과 현장확인을 통하여 정확하게 조사하여야 하고, 토지특성항목 중 토지이용상황은 토지의 실제 이용상황 및 주위의 주된 토지의 토지이용상황을 기준으로 조사하되 일시적인 이용상황을 고려하지 않도록 규정하고 있고, 조사대상 토지와 동일 용도지역 안에 있는 유사가격권의 표준지 중에서 조사대상 토지와 토지이용상황이 유사한 비교표준지를 선정하도록 규정하고 있다.
+      </p><p>  이와 같이 
+        <span class="accrnt_txt">개별공시지가는 개발부담금의 부과, 토지 관련 조세 부과 등 다른 법령이 정하는 목적을 위해 지가를 산정하는 경우에 그 산정 기준이 되는 관계로 납세자인 국민 등의 재산상 권리·의무에 직접적인 영향을 미치게 되므로, 개별공시지가 산정업무를 담당하는 공무원으로서는 당해 토지의 실제 이용상황 등 토지특성을 정확하게 조사하고 당해 토지와 토지이용상황이 유사한 비교표준지를 선정하여 그 특성을 비교하는 등 법령 및「개별공시지가의 조사·산정지침」에서 정한 기준과 방법에 의하여 개별공시지가를 산정하고, 산정지가의 검증을 의뢰받은 감정평가업자나 시·군·구 부동산평가위원회로서는 위 산정지가 또는 검증지가가 위와 같은 기준과 방법에 의하여 제대로 산정된 것인지 여부를 검증, 심의함으로써 적정한 개별공시지가가 결정·공시되도록 조치할 직무상의 의무가 있고, 이러한 직무상 의무는 단순히 공공 일반의 이익을 위한 것이거나 행정기관 내부의 질서를 규율하기 위한 것이 아니고 전적으로 또는 부수적으로 국민 개개인의 재산권 보장을 목적으로 하여 규정된 것이라고 봄이 상당하다. 따라서 개별공시지가 산정업무 담당공무원 등이 그 직무상 의무에 위반하여 현저하게 불합리한 개별공시지가가 결정되도록 함으로써 국민 개개인의 재산권을 침해한 경우에는 그 손해에 대하여 상당인과관계 있는 범위 내에서 그 담당공무원 등이 소속된 지방자치단체가 배상책임을 지게 된다</span>.
+      </p><p>  다. 원심판결 이유와 기록에 의하면, 광주시장은 2006. 3.경 이 사건 토지의 2006년도 개별공시지가를 결정·공시하기 위하여 이 사건 토지의 이용상황을 자연림으로 하여 개별공시지가를 ㎡당 109,000원으로 산정한 후 아세아감정평가법인에게 그 검증을 의뢰하였는데, 아세아감정평가법인은 이 사건 토지의 이용상황을 실제 이용되고 있는 자연림이 아닌 공업용으로 정정하고 비교표준지를 공업용으로 이용되고 있는 표준지 중에서 선정하여 검증지가를 ㎡당 820,000원으로 잘못 산정한 사실, 광주시 부동산평가위원회는 위 검증지가를 심의하였으나 위와 같은 잘못을 발견하지 못하였고, 이에 광주시장은 이 사건 토지의 2006년도 개별공시지가를 ㎡당 820,000원으로 결정·공시하였으며, 2007년도 개별공시지가를 결정·공시함에 있어서도 위와 같은 잘못을 그대로 반영하여 그 적정가격인 ㎡당 22,000원보다 훨씬 높은 ㎡당 900,000원으로 산정하여 공시한 사실을 알 수 있다.</p><p>  그렇다면 앞서 본 법리에 비추어, 피고 소속 담당공무원 등이 이 사건 토지의 실제와 다르게 조사된 토지이용상황 및 비교표준지를 적용한 과실로 현저하게 불합리한 2007년도 개별공시지가를 산정하여 결정·공시되도록 한 행위는 개별공시지가의 산정 및 검증, 심의에 관한 직무상 의무를 위반한 것으로서 직무상 불법행위에 해당한다.</p><p>  같은 취지의 원심 판단은 정당하고, 상고이유의 주장과 같은 공무원의 직무상 위법행위에 관한 법리오해의 위법이 없다.</p><p>  2. 손해배상에 있어 상당인과관계의 점에 대하여</p><p>  가. 원심은, 그 채용 증거를 종합하여, 원고가 피고 소속 담당공무원에 의해 잘못 산정된 이 사건 토지의 개별공시지가를 신뢰한 나머지 이 사건 토지의 담보가치가 충분하다고 믿고 이 사건 토지에 관하여 이 사건 근저당권설정등기를 경료한 후 
+        소외인에게 합계 726,196,720원 상당의 물품을 추가로 공급한 사실을 인정한 다음, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|1|">법 제1조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|3|">제3조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|10|">제10조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|11|">제11조 제1항</a></span>의 규정에 비추어 표준지 및 개별토지의 지가를 산정하여 공시하는 이유가 부동산거래를 하는 일반 국민들에게 부동산 가격산정의 기준으로 제공하고자 하는 목적도 있는 것으로 보아, 원고가 위와 같이 잘못 산정된 이 사건 토지에 관한 개별공시지가를 신뢰하여 물품을 공급하였다가 손해를 입게 되었으므로, 피고가 원고의 위 손해를 배상할 의무가 있다고 판단하였다.
+      </p><p>나. 그러나 원심의 판단은 다음과 같은 이유로 수긍하기 어렵다.</p><p>  (1) 개별공시지가 산정업무 담담공무원 등이 직무상 의무를 위반할 경우 그 소속 지방자치단체가 부담하게 되는 손해배상책임은 그 직무상 의무 위반과 상당인과관계 있는 손해에 한하여 인정될 수 있으므로, 비록 개별공시지가 산정업무 담담공무원 등이 그 직무 수행 과정에서 법령 및「개별공시지가의 조사·산정지침」을 위반하는 행위를 하였다고 하더라도, 그 결과로서 발생한 손해와 사이에 상당인과관계가 인정되지 아니하는 경우에는 그 소속 지방자치단체에 손해배상책임을 물을 수 없다.</p><p>  (2) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|1|">법 제1조</a></span>에서 이 법의 목적이 토지, 주택 등 부동산의 적정가격을 공시하여 부동산 가격산정의 기준이 되게 하는데 있다고 규정함과 아울러, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|10|">법 제10조</a></span>에서 표준지공시지가가 토지시장의 지가정보를 제공하고 일반적인 토지거래의 지표가 된다고 규정하고 있는 취지는, 일반 국민에 대한 관계에서 토지에 관하여 합리적으로 평가한 적정가치를 제시함으로써 토지를 거래하는 당사자의 합리적인 의사결정의 지표가 될 만한 지가정보를 제공한다는 의미에 불과할 뿐 표준지공시지가 또는 그에 기초한 개별공시지가를 지표로 거래해야 한다는 법적 구속력을 부여하는 의미라고 보기 어렵고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|1|">법 제1조</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산가격공시및감정평가에관한법률|3|">제3조 제1항</a></span> 등에서 규정하고 있는 ‘적정가격’의 개념도 당해 토지 및 주택에 대하여 통상적인 시장에서 정상적인 거래가 이루어지는 경우 성립될 가능성이 가장 높다고 인정되는 가격을 말하고, 이는 거래당사자가 현실적인 토지시장에서 교환의 대가로 지불한 실제 거래액을 의미하는 것이 아니라 잠재적인 경쟁시장에서 충분한 지식과 정보를 가지고 사려 깊게 행동하는 거래당사자 사이라면 성립될 가능성이 가장 높은 추정된 가격을 의미할 뿐이다.
+      </p><p>  따라서 
+        <span class="accrnt_txt">개별공시지가는 그 산정 목적인 개발부담금의 부과, 토지 관련 조세 부과 등 다른 법령이 정하는 목적을 위해 지가를 산정하는 경우에 그 산정 기준이 되는 범위 내에서는 납세자인 국민 등의 재산상 권리·의무에 직접적인 영향을 미칠 수 있지만, 이에 더 나아가 개별공시지가가 당해 토지의 거래 또는 담보제공을 받음에 있어 그 실제 거래가액 또는 담보가치를 보장한다거나 어떠한 구속력을 미친다고 할 수는 없다. 그럼에도 불구하고 이 사건과 같이 개개 토지에 관한 개별공시지가를 기준으로 거래하거나 담보제공을 받았다가 당해 토지의 실제 거래가액 또는 담보가치가 개별공시지가에 미치지 못함으로 인해 발생할 수 있는 손해에 대해서까지 그 개별공시지가를 결정·공시하는 지방자치단체에 손해배상책임을 부담시키게 된다면, 개개 거래당사자들 사이에 이루어지는 다양한 거래관계와 관련하여 발생한 손해에 대하여 무차별적으로 책임을 추궁당하게 되고, 그 거래관계를 둘러싼 분쟁에 끌려들어가 많은 노력과 비용을 지출하는 결과가 초래되게 된다. 이는 결과발생에 대한 예견가능성의 범위를 넘어서는 것임은 물론이고, 행정기관이 사용하는 지가를 일원화하여 일정한 행정목적을 위한 기준으로 삼음으로써 국토의 효율적인 이용과 국민경제의 발전에 기여하려는 이 법의 목적과 기능, 그 보호법익의 보호범위를 넘어서는 것이다</span>.
+      </p><p>  (3) 더욱이 원심판결 이유 및 기록에 의하면, 원고는 
+        소외인으로부터 이 사건 토지를 담보로 제공받은 이후 
+        소외인에 대해 매월 2,415,806,005원 내지 3,267,273,405원의 외상매출채권을 가지고 있었으나, 위와 같이 담보로 제공받기 이전인 2006. 9.경부터 2007. 8.경까지 사이에도 위 외상매출채권에 상당한 매월 2,440,136,455원 내지 3,806,529,387원의 외상매출채권을 가지고 있었던 사실에 비추어 원고가 2007. 8. 이후에 729,196,720원 상당의 물품을 추가로 공급한 것이 이 사건 토지의 개별공시지가를 신뢰하고 담보로 제공받았기 때문이라고 단정하기 어려운 점, 원고는 
+        소외인으로부터 이 사건 토지를 담보로 제공하겠다는 제안을 받고 이 사건 토지의 담보가치를 파악하기 위해 온누리감정평가법인에 탁상감정 내지 약식감정을 의뢰하였고, 온누리감정평가법인으로부터 이 사건 토지의 개별공시지가가 31억 5,000만 원 정도 되고 주변 시세도 비슷하므로 이 사건 토지의 거래가액이 개별공시지가 이상이 될 것이라는 의견을 듣고 이 사건 토지에 근저당권을 설정하게 된 점을 알 수 있는바, 앞서 본 법리 및 개별공시지가의 산정 목적에다가 이와 같은 사정 등을 종합적으로 고려해 보면, 피고 소속 담당공무원 등의 이 사건 토지에 관한 개별공시지가 산정에 관한 직무상 위반행위와 원고가 이 사건 토지의 담보가치가 충분하다고 믿고 추가로 물품을 공급하였다가 입은 손해 사이에 상당인과관계가 있다고 보기 어렵다.
+      </p><p>  그런데도 원심은 이와 달리 판단하고 말았으니, 원심판결에는 손해배상에 있어서 상당인과관계에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다. 이를 지적하는 상고이유의 주장은 이유 있다.</p><p>  3. 결 론</p><p>  그러므로 나머지 상고이유에 대한 판단을 생략한 채 원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로  관여 대법관의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김능환(재판장) 김영란(주심) 이홍훈 민일영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

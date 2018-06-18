@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2008누35943 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2030244';
+var contIdEtc = '';
+var saNo = '2008누35943';
+var sngoNm = '선고';
+var saNm = '손해배상청구';
+try {
+	var sngoDay=('20090707' ? 
+			'20090707'.length==4 ? Date.parseExact('20090707','yyyy').toString('yyyy. M. d.') : 
+				'20090707'.length==6 ? Date.parseExact('20090707','yyyyMM').toString('yyyy. M. d.') : 
+					'20090707'.length==8 ? Date.parseExact('20090707','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2008누35943 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2008누35943';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2008누35943</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(16)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|627554">주민소송의 대상 확장  위법성승계론의 당부  수원지법 2006구합4586 판결 및 서울고법 2008누35943 판결을 소재로 문상덕 법영사</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|855019">박형순 주민소송의 이론과 실무 : - 지방자치법 제17조 제2항 제4호 소송을 중심으로 한 고찰－ 사법논집=. 제65집 제65집 / 법원도서관  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="군용항공기지법|4|0|20040120">군용항공기지법(구) 제4조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="군용항공기지법|8|0|null">군용항공기지법(구) 제8조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="군용항공기지법|9|0|null">군용항공기지법(구) 제9조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|4|20070511">지방자치법(구) 제13조의4 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|5|null">지방자치법(구) 제13조의5 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|5|null">지방자치법(구) 제13조의5 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|4|null">지방자치법(구) 제13조의4 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|5|null">지방자치법(구) 제13조의5 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|4|null">지방자치법(구) 제13조의4 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|5|null">지방자치법(구) 제13조의5 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|5|null">지방자치법(구) 제13조의5 제4항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|4|null">지방자치법(구) 제13조의4 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|13|5|null">지방자치법(구) 제13조의5 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방재정법|67|0|null">지방재정법 제67조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방재정법|70|0|null">지방재정법 제70조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="군용항공기지법|8|0|null">군용항공기지법(구) 제8조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="수원지방법원|2006구합4586">수원지방법원 2008. 9. 24. 선고 2006구합4586 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2009. 7. 7. 선고 2008누35943 판결</h2><p class="sub_title">[손해배상청구][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(선정당사자), 항소인】
+      
+        
+          원고(선정당사자) 1 외 2인 (소송대리인 변호사 김영수 외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        성남시장 (소송대리인 법무법인 담소 담당변호사 최준영)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2009. 6. 16.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="수원지방법원|2006구합4586|판결" href="#//">수원지방법원 2008. 9. 24. 선고 2006구합4586 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원고(선정당사자)들의 항소를 기각한다. </p><p>항소비용은 원고(선정당사자)들이 부담한다. </p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 
+        소외 1에 대하여 금 3,736,048,000원의 손해배상청구를  하라.
+      </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 기초사실</b>
+      </p><p>  가. 성남시장은 1996. 2. 21. 탄천제방 우회도로 개설계획을 수립하고 2001. 3. 이를 도시교통정비 중기계획에 반영하였으며, 2001. 11. 8. 위 도시교통정비 중기계획에 따라 상습 교통체증 지역인 성남대로 모란 지역의 교통난을 해소하고 용인, 광주, 판교 개발에 따른 교통난을 해소하기 위하여 중앙로(수진정수장)-수정로(삼부아파트) 1.1km 구간(2단계 도로개설구간으로 예정되어 있었다. 이하 ‘2단계 구간’이라 한다)에 있는 기존의 탄천변도로(폭 6m)를 확장하여 도로를 개설하는 내용을 포함한 탄천변도로 확장공사계획(이하 ‘이 사건 도로 확장공사계획’이라 한다)을 수립하였다.</p><p>  나. 한편, 공군 제3368부대장은 2001. 2. 27. 성남시 수진동 및 태평동 일원을 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="군용항공기지법|4|">구 군용항공기지법(2004. 1. 20. 법률 제7083호로 개정되기 전의 것, 이하 같다) 제4조</a></span>에 의한 비행안전구역으로 고시하였다.
+      </p><p>  다. 성남시장은 2003. 2. 6. 주식회사 태영에게 이 사건 도로 확장공사계획에 따라 비행안전 제1구역 내에 확장·개설될 도로 270m(이하 ‘이 사건 도로’라 한다)를 포함한 2단계 구간 확장공사(왕복 4차로, 사업기간 2003. 2. 14.부터 2005. 12. 21.까지, 사업비 178억 원)를 발주하는 내용의 공사도급계약(이하 ‘이 사건 공사도급계약’이라 한다)을 체결하였고, 이에 따라 주식회사 태영은 같은 달 14. 위 2단계 구간 확장공사에 착수하여 2005. 9.경 위 공사의 공정을 마무리하였다(성남시장은 2003. 5. 26. 이 사건 도로를 포함한 2단계 구간을 도로구역으로 결정하고 이를 고시하였다).</p><p>  라. 그런데 공군 제15혼성비행단장(이하 ‘공군비행단장’이라 한다)은 2005. 10. 7. 및 같은 달 14. 성남시장에게 이 사건 도로가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="군용항공기지법|8|">구 군용항공기지법 제8조</a></span>에 위반하여 비행안전 제1구역에 개설되었다는 이유로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="군용항공기지법|9|">같은 법 제9조</a></span>에 기하여 이 사건 도로와 위 도로상에 설치된 가로등, 교통표지판 등의 구조물을 제거할 것과 2단계 구간 도로개통식을 개최하지 말 것을 요구하였다.
+      </p><p>      이에 성남시장은 일단 위 도로개통식을 취소하였다가 2005. 12. 21. 2단계 구간 도로공사를 준공한 다음, 다시 공군비행단장에게 이 사건 도로의 개설을 허용해 줄 것을 계속 요청하였으나, 공군비행단장이 이를 받아들이지 아니하고 계속하여 이 사건 도로 등의 제거와 이 사건 도로의 노선변경을 요구하자, 2006. 2.경 위 가로등, 교통표지판 등을 제거하고 이 사건 도로를 흙으로 덮었다.</p><p>      이후 이 사건 도로가 위와 같은 상태로 방치되던 중, 이 사건 도로 관련 관계기관회의가 2007. 12. 20. 국무조정실의 주관으로 개최되어 위 회의에 참석한 관계자들(외교안보심의관, 국방부 시설기획관, 공군 전력기획처장, 경기도 교통국장, 성남시 건설교통국장, 청와대 안보정책실, 감사원 감사관) 사이에 이 사건 도로의 노선을 변경하는 것은 불가능하므로 그 노선을 그대로 유지하는 대신 이 사건 도로를 군사시설로 지정하여 작전도로로 편입하고 연결교량 및 진입로를 개설하여 활용하기로 하는 방안이 채택되었고, 이에 따라 성남시와 공군비행단은 2008. 1. 25. 성남시는 위 공군 부대 출입문으로부터 이 사건 도로로 연결되는 탄천교량과 이 사건 도로에서 공군 경원진지로 진입하는 진입로를 건설하여 이 사건 도로를 개통하고 이에 관한 유지·관리를 담당하며, 공군비행단은 작전상 긴급출동을 요하는 경우에 위 탄천교량에서부터 이 사건 도로를 경유하여 위 진입로까지에 이르는 도로 구간을 작전도로로서 우선적으로 무상사용할 수 있다는 내용의 합의(이하 ‘이 사건 합의’라 한다)를 하였다. </p><p>  마. 한편, 국무조정실 조사심의관실은 2006. 2. 14.부터 2006. 2. 16.까지 사이에 성남시 소속 공무원들의 이 사건 도로개설 업무처리에 관하여 감사를 실시하였고, 이에 따라 행정자치부장관은 2006. 4. 7.경 경기도지사에게 성남시 부시장, 건설교통국장 등의 관련 공무원에 대하여 징계조치 할 것을 요구하였으며, 이에 경기도지사는 2006. 9.경 성남시 건설교통국장 
+        소외 2, 건설교통국 도로과장 
+        소외 3, 
+        4, 건설교통국 도로시설팀장 
+        소외 5, 도로시설팀 직원 
+        소외 6 등 관계공무원 5인에 대하여 
+        소외 2, 
+        3, 
+        5는 각 견책으로, 
+        소외 4, 
+        6은 각 불문으로 의결하되, 다만 
+        소외 4, 
+        6에게는 각 경고할 것을 권고한다는 내용의 경기도인사위원회 징계의결결과를 성남시에 통보하였고, 이에 따라 성남시장은 2006. 9. 14. 
+        소외 2, 
+        3, 
+        5에 대하여 각 견책의 징계처분을 하였다.
+      </p><p>  바. 
+        소외 1은 2002. 7. 1.부터 현재까지 성남시장으로 재직하고 있다.
+      </p><p>  사. 한편 원고(선정당사자, 이하 ‘원고’라 한다)들과 선정자들은 2006. 2. 16. 경기도지사에게 성남시장을 비롯한 성남시 소속 공무원들이 위법하게 비행안전 제1구역 내에 이 사건 도로를 개설하는 사업을 강행함으로써 예산을 낭비하고 공익을 해하였다고 주장하면서 ‘성남 탄천변 불법도로 건설공사’를 감사청구 대상행위로 하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|4">구 지방자치법(2007. 5. 11. 법률 제8423호로 개정되기 전의 것, 이하 같다) 제13조의4</a></span>(주민의 감사청구)에 기한 주민감사청구(이하 ‘이 사건 감사청구’라 한다)를 한 후, 같은 해 5. 25. 피고를 상대로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|5">구 지방자치법 제13조의5</a></span>(주민소송)에 기하여 청구취지 기재와 같은 손해배상청구를 할 것을 요구하는 이 사건 소를 제기하였고, 경기도지사는 2006. 6. 22. 국무조정실 조사심의관실에서 이 사건 감사청구의 대상에 관하여 이미 감사를 실시하였기 때문에 이 사건 감사청구는 감사청구의 대상으로 할 수 없는 ‘다른 기관에서 감사한 사항’을 대상으로 하는 것으로서 부적법하다는 이유로 이를 각하하였다.  
+      </p><p>  [인정근거] 다툼 없는 사실, 갑 제2호증, 갑 제11 내지 39호증, 갑 제40호증의 1 내지 3, 갑 제41호증, 갑 제42호증의 1, 2, 갑 제47호증, 을 제1, 2, 6호증, 을 제9호증의 1 내지 10, 을 제16, 17호증의 각 기재 및 영상, 변론 전체의 취지</p><p>
+        <b>2. 본안전 항변에 대한 판단</b>
+      </p><p>  가. 피고의 주장</p><p>    (1) 원고들 및 선정자들이 이 사건 감사청구 및 주민소송을 통하여 주장하는 성남시장 
+        소외 1의 위법행위는 주민소송의 요건을 정한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|5">구 지방자치법 제13조의5 제1항</a></span> 소정의 ‘공금의 지출에 관한 사항’이나 ‘지방자치단체를 당사자로 하는 계약의 체결·이행에 관한 사항’에 해당하지 아니하는바, 원고들 및 선정자들이 이 사건 감사청구 및 주민소송에서 문제 삼는 성남시장 
+        소외 1의 행위는 주민소송의 대상이 되는 행위라고 할 수 없으므로, 이 사건 감사청구 및 주민소송은 모두 부적법하다.  
+      </p><p>    (2) 원고들은 이 사건 감사청구에 대한 감사결과가 나오지도 아니한 상태에서 이 사건 주민소송을 제기하였을 뿐만 아니라, 원고들의 이 사건 소 제기 후 이 사건 감사청구가 부적법하다는 이유로 각하되었으므로, 이 사건 주민소송은 전치절차인 주민감사청구를 거치지 아니한 채 제기된 것으로서 부적법하다.  </p><p>  나. 관계법령</p><p>    별지 기재와 같다. </p><p>  다. 판단  </p><p>    (1) 첫 번째 주장에 대하여</p><p>      (가) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|4">구 지방자치법 제13조의4</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|5">제13조의5</a></span> 등의 규정에 의하면, 지방자치단체의 주민은 당해 지방자치단체와 그 장의 권한에 속하는 사무의 처리가 법령에 위반되거나 공익을 현저히 해한다고 인정되는 경우에는 다른 기관에서 감사한 사항(다만, 주민소송의 대상이 되는 경우 등은 제외한다) 등을 제외하고는 시·도지사 등에게 감사를 청구할 수 있고, 그 중 공금의 지출에 관한 사항 등에 관하여 적법한 감사청구를 한 주민은 그 감사청구한 사항과 관련 있는 위법한 행위 등에 대하여 당해 지방자치단체의 장을 상대방으로 하여 당해 지방자치단체의 장 및 직원 등에게 손해배상청구 등을 할 것을 요구하는 소송 등을 제기할 수 있다.    
+      </p><p>      (나) 그렇다면, 경기도지사에 의하여 다른 기관에서 감사한 사항에 대한 것으로서 부적법하다는 이유로 각하된 이 사건 감사청구가 적법한지 여부 및 위 감사청구 후 주민소송으로서 제기한 이 사건 소가 적법한지 여부는 이 사건 감사청구의 대상으로 삼았다가 이 사건 소송에서 문제 삼은 성남시장 
+        소외 1의 행위가 주민소송의 대상이 되는 행위인지 여부에 달려 있다고 할 것이다. 
+      </p><p>      살피건대, 갑 제2호증의 기재에 변론 전체의 취지를 종합하면, 원고들과 선정자들은 이 사건 감사청구를 하면서 ① 그 청구대상 사무를 ‘법령에 위반됨에도 사업을 강행, 불법사업을 위해 예산을 지출하여 낭비, 공익을 현저히 해한 성남 탄천변 불법도로 건설공사’로, 청구취지를 “성남시의 ‘성남 탄천변 불법도로 건설공사’와 관련한 자치단체장 및 관련공무원의 위법, 부당한 업무수행, 예산집행에 대한 징계 및 환수조치”로 하였고, ② 청구이유에서 ‘청구대상 사무는 성남시의 자치권력 남용에 의한 불법적 예산사용, 낭비의 대표적 사례이다. 이에 자치단체장 및 관련공무원의 위법·부당한 업무수행, 예산집행에 대한 책임을 묻고 낭비된 예산환수를 위한 주민소송 등을 위하여 상급기관인 경기도에 주민감사를 청구하게 되었다. 성남시가 서울공항 인근 비행안전 1구역을 침범해 개설한 탄천변 도로 중 일부 구간(중앙로~수정로간)이 불법임을 알면서도 공사를 강행하여, 결국 국무조정실의 권고에 의해 도로를 폐쇄, 원상복구해야 하는 상황이다. 불법도로공사비 180여억 원 외에도 불법도로공사 개통식 홍보에 든 비용과 원상복구에 따른 비용, 우회도로를 만들 경우의 사업비까지 포함하면 수백억 원이 넘는 시민 혈세가 낭비될 것이 자명하다. 공군비행단 서울공항 측이 2단계 구간 공사 착공 전 비행안전 제1구역 내 공사금지 입장을 명확히 함으로써 그대로 공사를 진행할 경우 불법임이 자명한 상황이었음에도, 성남시는 성남시장의 공약사항이라는 이유로 군당국과 재협의 없이 180여억 원의 예산을 집행, 본 공사를 강행하였다. 이에 불법공사강행으로 인한 예산낭비에 대해 감사를 통한 책임추궁은 물론 주민소송을 통해 낭비된 예산을 환수하고자 주민감사청구를 한다’고 하고 있는 사실을 인정할 수 있는바, 위 인정사실에 의하면, 이 사건 감사청구는 ‘관련공무원들의 불법 도로공사 수행’뿐 아니라, 이에 수반된 ‘이 사건 도로확장공사와 관련한 위법한 예산지출’도 그 대상으로 한 것으로서 주민소송의 대상인 ‘공금의 지출에 관한 사항’을 그 대상으로 한 것이라고 봄이 상당하다.        </p><p>      (다) 따라서 이 사건 감사청구 및 주민소송은 ‘공금의 지출에 관한 사항’을 그 대상으로 하고 있는 것으로서 모두 적법하다고 할 것이므로, 이와 다른 전제에서 이 사건 소가 부적법하다는 피고의 주장은 이유 없다(원고들 및 선정자들로서는 이 사건 감사청구 및 주민소송에서 그 대상으로 삼은 공금의 지출행위가 위법하다고 주장함으로써 소송요건을 충족하였다고 할 것이고, 위와 같은 공금지출행위가 실제로 위법한 것인지 여부는 이와는 별도로 본안에서 판단될 사항이라고 할 것이다).    </p><p>    (2) 두 번째 주장에 대하여</p><p>      (가) 앞서 본 바와 같이 ‘다른 기관에서 감사한 사항’ 등은 원칙적으로 주민감사 청구의 대상에서 제외되나, 예외적으로 주민소송의 대상이 되는 경우 등에는 감사청구의 대상에 포함되는바(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|4">구 지방자치법 제13조의4 제1항 제3호</a></span> 단서), 이 사건 감사청구는 앞서 본 바와 같이 주민소송의 대상인 ‘공금의 지출에 관한 사항과 관련 있는 위법한 행위’를 그 대상으로 삼은 것으로서 적법한 것임에도, 경기도지사가 이 사건 주민소송이 제기된 상태에서 이 사건 감사청구가 감사청구의 대상으로 할 수 없는 ‘다른 기관에서 감사한 사항’을 대상으로 하고 있어 부적법하다는 이유로 이를 각하한 것은 잘못이므로, 이 사건 소는 적법한 주민감사청구를 거쳐 제기된 것으로 보아야 할 것이다.
+      </p><p>      (나) 그리고 이처럼 적법한 감사청구임에도 상급 감사기관이 잘못하여 이것을 부적법하다고 각하한 경우 주민소송의 제소기간은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|5">구 지방자치법 제13조의5 제1항 제1호</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|5">제4항 제1호</a></span>의 규정에 따라 시·도지사가 감사청구를 수리한 날부터 60일이 경과하여도 감사를 종료하지 아니한 경우에 해당한다고 보아 당해 60일이 종료된 날로부터 90일 이내에 제기하여야 한다고 할 것인바, 원고들 및 선정자들이 경기도지사에게 이 사건 감사청구를 한 2006. 2. 16.로부터 기산하여 150일(=60일+90일) 이내임이 역수상 분명한 2006. 5. 25. 이 사건 소가 제기되었음은 앞서 본 바와 같으므로, 이 사건 소는 적법한 제소기간 내에 제기된 것이라고 할 것이어서, 피고의 위 주장은 이유 없다.     
+      </p><p>
+        <b>3. 본안에 대한 판단</b>
+      </p><p>  가. 원고들의 주장</p><p>    성남시장 
+        소외 1이 이 사건 도로의 개설이 구 군용항공기지법에 위반된 것임을 잘 알면서도 성남시 소속 공무원들에게 이 사건 도로의 개설을 강행할 것을 지시함에 따라 성남시에서 이 사건 도로를 개설하였다가 공군비행단으로부터 도로제거 요청을 받게 되어 위 도로의 시설물을 철거하고 다시 위 도로를 사용하기 위하여 공군비행단과 이 사건 합의를 하게 됨으로써 이 사건 도로 시설물의 철거 및 재설치비용, 이 사건 합의 내용을 이행하기 위한 비용, 금융비용 등의 손해가 발생하였으므로, 피고를 상대로 
+        소외 1에게 그 손해의 배상을 청구할 것을 구한다.     
+      </p><p>  나. 이 사건에서 공금의 지출이 위법한지 여부</p><p>    (1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|4">구 지방자치법 제13조의4 제1항</a></span>은 주민의 감사청구 대상을 ‘당해 지방자치단체와 그 장의 권한에 속하는 사무의 처리가 법령에 위반되거나 공익을 현저히 해한다고 인정되는 경우’로 포괄적으로 규정하고 있음에 반하여, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|13|5">같은 법 제13조의5 제1항</a></span>은 주민소송의 대상을 ‘공금의 지출에 관한 사항, 재산의 취득·관리·처분에 관한 사항, 당해 지방자치단체를 당사자로 하는 매매·임차·도급 그 밖의 계약의 체결·이행에 관한 사항 또는 지방세·사용료·수수료·과태료 등 공금의 부과·징수의 해태에 관한 사항과 관련 있는 위법한 행위나 해태사실’, 즉 재무회계행위에 관한 사항에 한정하고 있는 것에 비추어 보면 주민소송의 목적은 지방자치단체 행정 전반의 적법한 운영을 확보하려는 데 있는 것이 아니라 지방자치단체의 재무행정운영에 있어서의 비위의 방지·시정 또는 그로 인한 손해의 회복에 있다고 할 것이고, 이러한 입법취지에 의하면, 주민소송의 대상행위 중 하나인 ‘공금의 지출’이라 함은 당해 지방자치단체의 관리에 속하는 현금·유가증권의 지출원인행위, 그 지급명령 및 지출을 의미하는 것이고, 여기서 ‘지출원인행위’는 지방자치단체가 지불의무를 부담하는 예산집행의 최초 행위로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방재정법|67|">지방재정법 제67조 제1항</a></span>에서 규정한 ‘지방자치단체의 지출의 원인이 되는 계약 그 밖의 행위’를, ‘지급명령’은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방재정법|70|">지방재정법 제70조</a></span>에서 규정한 ‘지방자치단체의 장이 임명한 지출원이 지출원인행위에 의하여 지출을 하는 때 현금의 지급에 갈음하여 그 지방자치단체의 금고에 대하여 발하는 지출의 명령’을, ‘지출’은 ‘당해 지방자치단체의 금고가 지방자치단체에 대한 금전채권을 갖는 자에 대하여 현금교부 등의 수단에 의해 지불하는 것’을 각 의미하는 것으로 봄이 상당하며, 따라서 공금의 지출과 직접 관련이 있는 지출원인행위, 지급명령 및 지출이 아니라 공금의 지출원인행위에 선행하여 그러한 지출행위가 수반되게 하는 행정청의 결정, 결단 등과 같은 비재무회계행위(이하 ‘선행행위’라 한다)는 위와 같은 공금의 지출에 관한 사항에 해당한다고 볼 수 없어 비록 그것이 위법한 것이라고 하더라도 주민소송의 대상으로는 할 수 없다고 할 것이다. 
+      </p><p>    (2) 그러나, 이 사건과 같이 선행의 비재무회계행위와 후행의 재무회계행위의 처리 권한이 동일한 기관에 속하고, 선행행위와 후행행위 사이에 직접적인 원인관계가 존재하는 경우, 재무회계 권한자가 공금의 지출이라는 재무회계행위를 행함에 있어서 선행행위에 중대하고 명백한 위법사유가 있어서 그 행위가 무효임이 분명하거나, 그렇지 않더라도 선행행위에 위법이나 하자가 있음을 명백히 인식하였을 경우에는 예산집행의 적정성 확보차원에서 선행행위의 무효선언, 취소, 변경 등 시정조치를 취하여 부당한 공금의 지출을 막아야 할 의무가 있고, 이러한 조치를 취하지 아니한 채 선행행위가 존재한다는 이유만으로 공금을 지출하면 그 재무회계행위는 위법함을 면하지 못한다고 할 것이다.  </p><p>    (3) 이 사건에 관하여 보건대, 이 사건 도로확장사업으로 인한 공사대금의 지출에 관한 사항은 이 사건 공사계약의 체결(지출원인행위)과 그에 따른 공사비 지급명령 및 지출과 같은 행위에 관한 사항을 의미하는 것이지 이 사건 도로확장공사를 추진하기로 결정하는 것과 같은 행위를 의미하지는 아니한다고 할 것인바(원고들은 이 사건 도로확장공사의 추진이 지출원인행위에 포함된다는 취지로 주장하기도 하나, 이는 각 별개, 독립의 행위라고 할 것이므로, 위 주장은 받아들이지 아니한다), 이 사건 공사계약이나 이에 따른 공사비 지출과 관련하여 재무회계 자체적으로 어떠한 위법이 있다고 인정할 증거가 없다(원고들 및 선정자들의 주장 자체에 의하더라도, 원고들 및 선정자들은 직접적으로 이 사건 공사계약의 체결이나 그에 따른 공사비의 지출 등과 관련한 위법을 문제 삼고 있는 것은 아니고, 그 선행행위인 이 사건 도로확장공사 추진의 위법성이 후행하는 공금지출행위에 승계된다고 주장하고 있다).</p><p>    그러므로 과연 이 사건에서 선행행위인 이 사건 도로확장공사의 추진에 중대·명백한 위법 등이 있는지 여부에 관하여 살피건대, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="군용항공기지법|8|">구 군용항공기지법 제8조 제1항</a></span>이 ‘비행안전구역 중 제1구역 안에서는 군사시설(민간항공기의 항행을 지원하기 위한 항행안전시설을 포함한다)을 제외한 건축물·구조물·식물 그 밖의 장애물을 설치·재배하거나 방치하여서는 아니된다’고 규정하고 있음에 비추어 이 사건 도로확장공사의 추진은 위 규정에 저촉되어 위법한 것으로 판단될 여지가 없지 아니하나, 한편, 위에서 든 각 증거 및 을 제3호증의 1, 2, 을 제4, 7호증의 각 기재 및 영상, 제1심 법원의 공군 제3368부대장에 대한 사실조회결과와 위 인정사실에 의하여 인정되는 다음과 같은 사정들, 즉 ① 이 사건 도로확장계획은 현 성남시장인 
+        소외 1이 세운 것이 아니라 전임 성남시장이 수립한 것인 점, ② 공군비행단의 서편활주로는 1970. 12. 30., 동편활주로는 1978. 12. 30.에 각 개설되었음에도, 성남시 수진동 및 태평동 일원은 2001. 2. 27.에 이르러서야 비로소 비행안전구역으로 고시되기에 이른 점, ③ 비행안전 제1구역에 속하는 탄천 둔치에는 이미 상당한 면적에 걸쳐 광역상수도 배기변, 자전거 및 인라인스케이트용 도로, 물놀이장, 농구연습장 등 비행장애물로 볼 수 있는 시설들이 존재하고 있었고, 앞서 본 바와 폭이 6ｍ인 기존의 포장도로가 존재하였는바(이 사건 도로 중 3차로가 폐쇄된 이후에도 위 기존도로 부분은 차량통행이 이루어졌다), 이 사건 도로확장공사는 위 기존도로를 폭 16ｍ의 4차로 도로로 확장한 것에 불과하여 종전과는 전혀 다른 새로운 비행장애물이 설치된 것이라고 보기 어려운 측면이 있는 점, ④ 이 사건 도로확장공사는 상습 교통체증 지역인 성남대로 모란 지역의 교통난을 해소하고, 용인, 광주, 판교 개발에 따른 교통난을 해소하기 위한 것으로서 그 추진이 불가피하다고 보이는 반면에, 이 사건 도로 대신 비행안전 제1구역을 벗어나 우회도로를 건설하기 위해서는 약 241억 원으로 추산되는 막대한 추가비용이 소요될 것으로 예상되고 있을 뿐만 아니라(이에 비하여 원고들이 주장하는 손해액은 약 37억 원에 불과하고, 그 중 대부분은 이 사건 도로확장공사와 인과관계가 있다고 보기도 어렵다) 이 사건 도로 부근에 위치한 성남IC 및 수진가압장 부지 일부를 침범하게 되는 등 지형여건상 여러 가지 문제점이 있어(성남시는 탄천변 도로 총 5.8㎞ 구간 중 비행안전 제1구역에 저촉되는 부분으로서 이 사건 도로와 같은 불가피한 사정이 없는 1.47㎞ 부분에 관하여는 약 198억여 원의 예산이 증액됨에도 비행안전 제1구역을 우회하여 건설하도록 하기도 하였다), 비행안전 제1구역에서의 이 사건 도로확장공사는 성남시로서는 부득이한 선택이었던 것으로 보이는 점, ⑤ 공군비행단장은 이 사건 도로확장공사가 진행되고 있는 동안에는 별다른 이의를 제기하지 않다가 이 사건 도로공사가 마무리된 시점에 이르러서야 비로소 도로제거 요청을 한 점, ⑥ 성남시가 국무조정실 등을 통하여 관계기관과 지속적으로 협의를 추진한 결과, 이 사건 도로를 군사시설로 지정하는 조건으로 2008. 1. 29.경 이 사건 도로가 개통되기에 이른 점(기록 479면) 등을 종합하면, 이 사건 선행행위에 중대하고도 명백한 위법성이 있었다고는 보기 어렵고, 가사 선행행위에 일부 위법성이 있었다고 하여도, 성남시장이 그러한 점을 시정하지 아니한 채 이 사건 공금지출행위를 하였다고 해서 그러한 사유만으로 위 공금지출행위가 당연히 위법하다고는 볼 수 없으므로, 원고들의 위 주장은 더 나아가 살필 여지 없이 이유 없다. 
+      </p><p>
+        <b>4. 결론</b>
+      </p><p>  그렇다면, 원고들의 이 사건 청구는 이유 없어 이를 기각할 것인바, 제1심 판결은 이 사건 소를 각하하여 부당하다고 할 것이나, 제1심에서 본안판결을 할 수 있을 정도로 심리가 되었다고 인정되므로 이 사건을 제1심 법원으로 환송하지 아니하고 본안판결을 하기로 한다. 다만, 원고들만이 항소한 이 사건에 있어서 불이익변경금지의 원칙상 항소인들인 원고들에게 불이익하게 제1심 판결을 취소하여 원고들 청구기각의 판결을 선고할 수는 없다고 할 것이므로 원고들의 항소만을 기각하기로 하여 주문과 같이 판결한다. </p><p>[별지 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   윤재윤(재판장) 한정훈 이광영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

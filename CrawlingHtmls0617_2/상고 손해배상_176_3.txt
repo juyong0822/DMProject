@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 90다카20654 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2092808';
+var contIdEtc = '';
+var saNo = '90다카20654';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('19920121' ? 
+			'19920121'.length==4 ? Date.parseExact('19920121','yyyy').toString('yyyy. M. d.') : 
+				'19920121'.length==6 ? Date.parseExact('19920121','yyyyMM').toString('yyyy. M. d.') : 
+					'19920121'.length==8 ? Date.parseExact('19920121','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 90다카20654 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '90다카20654';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />90다카20654</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(5)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(37)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(9)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2094800">대법원 1992. 5. 22. 선고 91다36642 판결 [공1992.7.15.(924),1961]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2106391">대법원 1993. 12. 21. 선고 91다36420 판결 [집41(3)민,362;공1994.2.15.(962),475]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1998058">서울지방법원 1995. 8. 3. 선고 95가합9025 판결：항소 및 상고 기각 [하집1995-2, 234]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2103887">대법원 1997. 9. 12. 선고 97다19298 판결 [공1997.10.15.(44),3096]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2101971">대법원 1998. 2. 13. 선고 96다55525 판결 [공1998.3.15.(54),724]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|34702">무면허운전 면책조항의 의미 양승규 大韓損害保險協會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|40243">무면허운전과 보험자의 책임 정진옥 韓國商事判例學會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|484782">무면허운전 면책조항의 의미 양승규 三知院</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|266318">김성태 보험약관상의 면책조항과 관련한 대법원판결의 분석과 개선방향 법학 40권 1호 (99.05) / 서울대학교 법학연구소  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|216779">손주찬 약관규제법과 상법과의 관계 현대사회와 법의 발달 : 균재 양승두교수화갑기념논문집(II)   / 홍문사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|454731">김성태 보험약관상 면책조항과 관련한 대법원 판결의 경향과 개선방향 보험법률 통권31호  / 보험신보사  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39590">양승규 1992년도 상사판례, 하 인권과 정의 201호  / 대한변호사협회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|446893">이형근 보험자의 보상책임의 제한에 관한 연구  : 보험계약자측의 책무를 중심으로 건국대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256159">심상무 자동차보험에 있어서 보험자의 면책사유에 관한 연구 연세대 연세법학연구 3집 (95.11) : 균제 양승두 교수 화갑기념논문집 / 연세대학교 법과대학 법률문제연구소  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|219747">최병규 보험계약의 특수성과 그 변화 보험조사월보 18권 12호 (95.12) / 보험감독원  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251176">김성태 보험계약상의 면책조항에 관한 이론적 조망 민사판례연구 , XX 20권  / 박영사  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|234773">전현정 자동차종합보험의 면책약관에 관한 고찰 사법논집 27집  / 대법원 법원행정처  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|523449">김대연 인보험에서의 무면허ㆍ음주운전면책보험약관의 효력 상사판례연구 10집  / 한국상사판례학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|231134">장경환 음주운전 면책조항의 효력 손해보험 335호  / 대한손해보험협회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40221">전현정 자동차종합보험약관상 무면허운전 면책조항의 효력 사법연수생논문집 22기  / 사법연수원  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|498795">박세민 현행 자동차보험계약상 무면허ㆍ음주운전 면책약관의 해석론 : 대인배상 Ⅱ와 자기신체사고보험을 대상으로 . 경영법률 13집 1호  / 한국경영법률학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34702">양승규 무면허운전 면책조항의 의미 손해보험 283호  / 대한손해보험협회  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|225679">최병규 보통거래약관에 대한 내용통제의 범위 상거래법의 이론과 실제 : 석영 안동섭교수화갑기념논문집   / 세창출판사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|238602">김용직 상해보험약관상의 무면허면책약관이 상법 제663조, 제732조의2, 제739조에 위반되어 무효인지 여부 대법원판례해설 27호 (97.07) / 법원도서관  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|496770">한창희 보험약관상의 실효조항과 무면허ㆍ음주운전면책조항의 효력 상사법연구 18권 2호 (99.10) / 한국상사법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|266924">한창희 보험약관상의 실효조항과 무면허·음주운전면책조항의 효력 보험법률 통권29호  / 보험신보사  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|245046">최병규 무면허운전면책약관의 판례에 대한 종합적 검토 보험법률 통권19호  / 보험신보사  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|211405">김종대 무면허운전면책에 관한 보험약관의 유효성 판례연구 5집  / 부산판례연구회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|263034">김병운 (인보험의 '음주운전 및 무면허운전 면책약관'의 효력) 인보험의 음주·무면허 면책약관의 효력 판례실무연구  Ⅱ  / 박영사  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|454738">장경환 무면허·음주운전 면책 위헌결정에 대한 의견 손해보험 376호  / 대한손해보험협회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|485057">양승규 무면허운전면책약관의 효력과 그 적용한계 보험법의 법리 (2000.10) / 삼지원  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|229293">최병규 유럽의 보험법변화가 주는 한국에의 시사점 안암법학 3호  / 무지개출판사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|462338">심상무 자동차보험자의 면책사유 상사법론총  : 제남강위두박사화갑기념  . 하 (96.02) / 형설출판사  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|266296">김대연 자동차보험약관에 관한 소고 : 무면허·음주운전면책약관을 중심으로 법학논고 14집  / 경북대학교 출판부  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|210865">김종대 무면허 운전 사고와 보험자의 면책 부산지방변호사회지 12호  / 부산지방변호사회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|224983">최병규 상해보험 음주운전 면책판결 : 음주운전은 상법이 적용되지 않아 면책조항은 유효해 보험법률 통권7호  / 보험신보사  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|213361">김동훈 약관의 내용규제와 수정해석 인권과 정의 223호  / 대한변호사협회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|664638">최승재 신종 책임보험에 대한 시론(시론) : 특허침해배상책임보험에 대한 연구 . 사법 20호 / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|250129">이기수 음주운전 면책약관 고려대 판례연구 8집  / 고려대학교 법학연구소  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|226788">최병규 독일 약관규제법의 최근동향 상사법연구 14집 1호  / 한국상사법학회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|106822">이종근 보험계약법상의 Obliegenheit 부산대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|229546">맹수석 무면허운전사고에 있어서 자동차보험자의 책임에 관한 연구 충남대 법학연구 5권 1호  / 충남대학교 법학연구소  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|541552">심상무 상법 제663조에 관한 연구 비교사법 11권 3호 (2004.09) / 한국비교사법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461274">장경환 상법 제732조의 2의 합헌성과 상해보험약관상의 무면허·음주운전 면책조항의 효력 상사판례연구 IV권  / 박영사  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236375">김성태 제조물책임보험 시행의 전제조건 보험학회지 48집  / 한국보험학회  1996 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|90다카26270">대법원 1991.2.26. 선고 90다카26270 판결(공1991,1086)</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|90다카23899">대법원 1991.12.24. 선고 90다카23899 전원합의체판결(공1992,652</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="상법|659|0|null">상법 제659조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="상법|663|0|null">상법 제663조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|89다카17591">대법원 1990.5.25. 89다카17591 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|90다카23899">당원 1991.12.24. 선고 90다카23899 전원합의체 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|659|0|null">상법 제659조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|663|0|null">상법 제663조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|89나40930">서울고등법원 1990.6.8. 선고 89나40930 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1992. 1. 21. 선고 90다카20654 판결</h2><p class="sub_title">[손해배상][공1992.3.15.(916),870]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조 제2항</a></span>의 적용 대상과 자가운전자동차종합보험계약상의 약관 중 무면허운전면책조항
+        </p>
+      <p></p>
+      <p>
+        </p><p>나. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조</a></span>의 규정 취지와 위 규정 및 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|">상법 제663조</a></span>의 규정이 위 “가”항의 무면허운전면책조항에 적용되는지 여부(소극)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조 제2항</a></span>은 사망 또는 상해를 보험사고로 한 보험계약, 즉 인보험계약에만 적용되는 규정으로서, 피보험자가 보험기간 중의 교통사고로 인하여 제3자에게 손해를 배상할 책임을 지는 경우에 보험자가 이를 보상할 책임을 지는 책임보험계약에는 적용되지 않는 것임이 위 조항의 문리상 명백하므로, 자가운전자동차종합보험과 같은 책임보험계약에 있어서의 약관 소정의 “자동차의 운전자가 무면허운전을 하였을 때에 생긴 사고로 인한 손해에 대하여는 보상하지 아니한다”는 무면허운전면책조항이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조 제2항</a></span> 및 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|">제663조</a></span>에 위반되어 무효라 할 수 없다.
+        </p>
+      <p></p><p>
+        </p><p>나. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조 제2항</a></span>과 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">제1항</a></span>의 규정 취지는, 보험사고를 직접 유발한 자, 즉 손해발생원인에 전적인 책임이 있는 자를 보험의 보호 대상에서 제외하려는 데에 있으므로, 보험약관에서 손해발생원인에 대한 책임조건을 위 규정들보다 경감하는 내용으로 면책사유를 규정하는 것은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|">상법 제663조</a></span>의 불이익변경금지에 저촉되겠지만, 위 “가”항의 무면허운전면책조항은 사고발생의 원인이 무면허운전에 있음을 이유로 한 것이 아니라 사고발생시에 무면허운전중이었다는 법규위반상황을 중시하여 이를 보험자의 보상 대상에서 제외하는 사유로 정한 것이므로 위 상법의 규정들이 적용된다고 보기 어렵다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조</a></span>,        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|">제663조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">가.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|90다카26270|판결" href="#//">대법원 1991.2.26. 선고 90다카26270 판결(공1991,1086)</a></span> /나.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|90다카23899|전원합의체판결" href="#//">대법원 1991.12.24. 선고 90다카23899 전원합의체판결(공1992,652</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+         국제화재해상보험주식회사  소송대리인 변호사 유재방
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+         성준모
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|89나40930|판결" href="#//">서울고등법원 1990.6.8. 선고 89나40930 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기한다.</p><p>  사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  원고소송대리인의 상고이유에 대하여 판단한다.</p><p>  1. 원심의 판단.</p><p>  원심은, 원고가 1988.5.7. 피고와의 사이에 피보험자동차를 피고 소유의 충남 1거5899호 자동차로, 기명피보험자를 피고로, 보험기간을 11.7.까지로 하여 피고가 위 자동차의 운행으로 인하여 남을 죽게 하거나 다치게 하여 자동차손해배상보장법에 의한 손해배상책임을 짐으로써 입게 될 손해를 원고로부터 보상받기로 하는 대인배상을 비롯하여 대물배상, 자손사고 및 차량손해의 4가지를 담보하는 자가운전자동차종합보험계약을 체결하고 소정의 보험료를 지급한 사실, 피고가 위 보험기간 내인 1988.5.11. 02:00경 위 자동차를 운전하여 천안시 사직동 부근을 지나다가 전방우측 도로변에 정차하고 있던 화물트럭을 들이받아 위 자동차에 타고 있던 소외 손상원에게 상해를 입히고, 소외 박병주를 사망케 한 교통사고를 일으킨 사실, 위 자가운전자동차종합보험계약상의 약관 제10조에는 원고가 보상하지 아니하는 손해의 하나로서 그 제6항에 “자동차의 운전자가 무면허운전을 하였을 때에 생긴 사고로 인한 손해”를 정하고 있는 사실, 피고는 위 보험계약체결시와 위 교통사고발생 당시에 도로교통법 소정의 운전면허를 받지 않고 있었던 사실 등을 인정한 다음, 위 교통사고는 피고가 적법한 운전면허를 받지 아니한 채 피보험자동차를 운전하던 중에 발생한 것이므로, 위 약관의 무면허운전면책조항에 따라 원고가 위 사고로 인한 보험금액을 지급할 책임을 면하게 된다는 원고의 주장에 대하여 다음과 같이 판단하였다.</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조 제2항</a></span>에 의하면 “사망 또는 상해를 보험사고로 한 보험계약에는 사고가 보험계약자 또는 피보험자나 보험수익자의 중대한 과실로 인하여 생긴 경우에도 보험자는 보험금액을 지급할 책임을 면하지 못한다. 그러나 사형의 집행으로 사망한 때에는 그러하지 아니하다”라고 규정되어 있고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|">같은 법 제663조</a></span>에서는 당사자 간의 특약으로 보험계약자 또는 피보험자나 보험수익자에게 불이익하게 위 규정을 변경하지 못하게 규정함으로써 위 규정이 피보험자 등의 이익을 위한 강행규정임을 선언하고 있어, 사망 또는 상해를 보험사고로 한 보험계약에 의한 경우에는 위 규정이 적용되며, 보험사고가 고의로 인하여 발생하였거나 사형의 집행으로 인한 것이 아니라면 비록 중대한 과실에 의한 것이라고 하더라도 보험자는 보험금액을 지급하여야 할 것이고, 위 약관의 조항이 무면허운전의 경우 보험사고의 발생이 고의에 의한 것인지 또는 과실에 의한 것인지를 가리지 아니하고 모두 면책되는 것이라면, 과실로 평가되는 행위로 인한 사고에 관한 한 위 상법 규정에 저촉되어 무효라고 볼 것인데(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|89다카17591|판결" href="#//">대법원 1990.5.25. 89다카17591 판결</a></span> 참조), 무면허운전의 경우 그 고의는 특별한 사정이 없는 한 무면허운전 자체에 관한 것이고 직접적으로 사망이나 상해에 관한 것은 아니므로, 위와 같은 경우 피고가 단지 무면허로 운전하다가 사고를 일으켰다는 사유만으로 원고의 보험금액 지급의무가 면책된다고 하는 위 약관조항은 위 상법 규정에 위배되어 무효라고 할 것이므로, 원고의 위 보험금액 지급의무가 면책된다는 원고의 주장은 이유가 없다는 것이다.
+      </p><p>  2. 
+        <span class="accrnt_txt">그러나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|" style="text-decoration:underline">상법 제659조 제2항</a></span>은 사망 또는 상해를 보험사고로 한 보험계약, 즉 인보험계약에만 적용되는 규정으로서, 피보험자가 보험기간 중의 교통사고로 인하여 제3자에게 손해를 배상할 책임을 지는 경우에 보험자가 이를 보상할 책임을 지는 책임보험계약에는 적용되지 않는 것임이 위 조항의 문리상 명백하므로, 이 사건의 경우와 같은 책임보험계약에 있어서의 위와 같은 약관상의 무면허운전면책조항이 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|" style="text-decoration:underline">상법 제659조 제2항</a></span> 및 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|" style="text-decoration:underline">제663조</a></span>에 위반된다는 이유로 무효가 될 수는 없는 것이다
+        </span>(원심이 내세우고 있는 당원의 판결은 인보험계약에 관한 것이므로 이 사건의 선례가 될 수 없다).
+      </p><p>
+        <span class="accrnt_txt">또한 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|" style="text-decoration:underline">상법 제659조 제2항</a></span>과 책임보험계약을 포함한 손해보험계약에 적용될 같은 조 제1항의 규정 취지는, 보험사고를 직접 유발한 자, 즉 손해발생원인에 전적인 책임이 있는 자를 보험의 보호 대상에서 제외하려는 데에 있으므로, 보험약관에서 손해발생원인에 대한 책임조건을 위 규정들보다 경감하는 내용으로 면책사유를 정하는 것은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|" style="text-decoration:underline">상법 제663조</a></span>의 불이익변경금지에 저촉되겠지만, 위와 같은 무면허운전면책조항은 사고발생의 원인이 무면허운전에 있음을 이유로 한 것이 아니라, 사고발생시에 무면허운전중이었다는 법규위반상황을 중시하여 이를 보험자의 보상 대상에서 제외하는 사유로 정한 것이므로, 위와 같은 상법의 규정들이 적용된다고 보기 어렵다는 것이 
+          <span id="link"><a name="linkContPanre" title="새창" type="대법원|90다카23899|전원합의체 판결" href="#//" style="text-decoration:underline">당원 1991.12.24. 선고 90다카23899 전원합의체 판결</a></span>이 취한 견해이기도 하다.
+        </span>
+      </p><p>  3. 그렇다면 이 사건 보험계약에 있어서의 위와 같은 무면허운전면책에 관한 약관조항이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조 제2항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|663|">제663조</a></span>에 위반되어 무효라고 판단한 원심판결에는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|659|">상법 제659조 제2항</a></span>의 적용 대상에 관한 법리를 오해한 위법이 있다고 하지 않을 수 없고, 이와 같은 위법은 판결에 영향을 미친 것임이 명백하므로, 이 점을 지적하는 논지는 이유가 있다.
+      </p><p>  그러므로 원심판결을 파기하고 다시 심리 판단하게 하기 위하여 사건을 원심법원에 환송하기로 관여 법관의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   윤관(재판장) 최재호 김주한 김용준 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

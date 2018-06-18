@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>광주고등법원 2003나8489 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2036771';
+var contIdEtc = '';
+var saNo = '2003나8489';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20090930' ? 
+			'20090930'.length==4 ? Date.parseExact('20090930','yyyy').toString('yyyy. M. d.') : 
+				'20090930'.length==6 ? Date.parseExact('20090930','yyyyMM').toString('yyyy. M. d.') : 
+					'20090930'.length==8 ? Date.parseExact('20090930','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '광주고등법원';
+var bubCd = '000500';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2003나8489 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2003나8489';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">광주고등법원<br />2003나8489</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(7)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(12)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696295">허성욱 지방자치단체 권리의무의 포괄적 승계에 관해 정하고 있는 조례규정의 해석 : 민법 제454조 및 계약인수의 법리와 관련하여 민사판례연구 35권  / 박영사  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002추23">대법원 2002. 4. 26. 선고 2002추23 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003추13">대법원 2003. 9. 23. 선고 2003추13 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002추16">대법원 2004. 4. 23. 선고 2002추16 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96추244">대법원 1997. 4. 25. 선고 96추244 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006추52">대법원 2007. 12. 13. 선고 2006추52 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다40498">대법원 1992. 6. 26. 선고 91다40498 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다8914">대법원 2008. 2. 1. 선고 2007다8914 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|null">집합건물의 소유 및 관리에 관한 법률 제9조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|137|0|null">지방자치법(구) 제137조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방공기업법|49|0|null">지방공기업법(구) 제49조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|5|0|null">지방자치법 제5조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|15|0|null">지방자치법(구) 제15조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="행정규제기본법|4|0|null">행정규제기본법 제4조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방공기업법|49|0|null">지방공기업법(구) 제49조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="지방자치법|5|0|null">지방자치법 제5조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="광주지방법원|2000가합5437">광주지방법원 2003. 9. 25. 선고 2000가합5437 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>광주고등법원 2009. 9. 30. 선고 2003나8489 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 항소인(탈퇴)】
+      
+        
+          별지 목록 (1)의 원고 1 외 538인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【원고, 피항소인 겸 부대항소인(탈퇴)】
+      
+        
+          별지 목록 (2) 원고 1 외 124인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【원고, 피항소인 겸 항소인, 별지목록(1),(2)의 원고승계참가인】
+      
+        금호시영1단지아파트 관리단 (소송대리인 변호사 정채웅)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【피고, 항소인 겸 부대피항소인】
+      
+        광주광역시 (소송대리인 변호사 이근우 외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party10">
+      【피고보조참가인】
+      
+        금호산업 주식회사 (소송대리인 법무법인 장원 담당변호사 김천석)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2009. 8. 12.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="광주지방법원|2000가합5437|판결" href="#//">광주지방법원 2003. 9. 25. 선고 2000가합5437 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>피고의 항소에 기초하여 제1심판결을 다음과 같이 변경한다.</p><p>원고 겸 별지 목록 (1), (2)의 원고승계참가인의 청구를 모두 기각한다.</p><p>소송총비용과 보조참가로 인한 비용은 원고 겸 별지 목록 (1), (2)의 원고승계참가인이 모두 부담한다.</p>
+    
+      【청구취지, 항소취지 및 부대항소취지】
+      <p>청구취지</p>
+      <p>피고는 원고 겸 별지 목록 (1), (2)의 원고승계참가인(이하, ‘원고 관리단’이라 한다)에게 9,067,315,744원 및 이에 대한 이 사건 소장 부본이 송달된 다음날부터 다 갚는 날까지 연 20%의 비율에 따른 금원을 지급하라는 판결{이 법원에서 별지 목록 (1), (2) 기재 664명의 구분소유자들은 금호시영1단지아파트의 하자보수에 갈음한 손해배상청구권을 원고 관리단에 채권양도하고 소송에서 탈퇴하였고, 원고 관리단은 소변경신청서(2008. 12. 17.자)로써 이에 승계참가하면서 청구취지를 감축하였다}. </p>
+      <p>항소취지</p>
+      <p>별지 목록 (1) 기재 539명과 원고 관리단: 제1심판결 중 다음에서 지급을 명하는 부분에 해당하는 별지 목록 (1) 기재 539명과 원고 관리단의 패소부분을 취소한다. 피고는 위 539명에게 각 8,874,675원, 원고 관리단에게 2,929,495,802원 및 각 이에 대한 이 사건 소장 부본이 송달된 날부터 다 갚는 날까지 연 20%의 비율에 따른 금원을 지급하라는 판결. </p>
+      <p>피고: 제1심판결 중 피고 패소부분을 취소하고, 취소부분에 해당하는 별지 목록 (1), (2) 기재 664명과 원고 관리단의 청구를 모두 기각한다는 판결.</p>
+      <p>부대항소취지 </p>
+      <p>별지 목록 (2) 기재 125명: 제1심판결 중 다음에서 지급을 명하는 부분에 해당하는 별지 목록 (2) 기재 125명의 패소부분을 취소한다. 피고는 위 125명에게 각 8,874,675원 및 이에 대한 이 사건 소장 부본이 송달된 날부터 다 갚는 날까지 연 20%의 비율에 따른 금원을 지급하라는 판결.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 사안의 개요와 전제된 사실관계</b>
+      </p><p> 가. 사안의 개요</p><p>   이 사건은 피고로부터 금호동 금호시영1단지아파트(이하, ‘금호아파트’라 한다)를 분양받거나 수분양자로부터 매수하여 소유하고 있는 구분소유자들의 일부와 구분소유자 전원으로 구성된 원고 관리단이 피고에 대하여 금호아파트의 전유부분과 공용부분에 설계변경 또는 부실시공으로 인한 하자가 존재한다고 주장하면서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물의 소유 및 관리에 관한 법률(이하, ‘집합건물법’이라 한다) 제9조</a></span>에 기초하여 구분소유자들은 전유부분에 대하여, 원고 관리단은 공용부분에 대하여 각각 하자보수에 갈음한 손해배상을 구하는 사안이다.
+      </p><p>   제1심판결은 구분소유자들과 원고 관리단의 청구 중 일부를 받아들였고, 664세대 중 539세대의 구분소유자 및 원고 관리단과 피고가 그 패소부분에 불복하여 각각 항소하였으며, 또 항소를 제기하지 않았던 125세대의 구분소유자가 그 패소부분에 불복하여 부대항소를 제기하였다{이 법원에서 원고 관리단이 664세대의 구분소유자들로부터 하자보수에 갈음하는 손해배상청구권을 양수받아 승계참가하였고(전유부분에 관하여는 양수금의 지급을, 공용부분에 관하여는 주위적으로 구분소유자들을 대표하여 손해배상을, 예비적으로 양수금의 지급을 구한다), 그 구분소유자들은 소송에서 탈퇴하였다}.</p><p> 나. 전제된 사실관계</p><p> 【증거】갑4의 1·2, 갑5, 6, 갑7의 5·17, 갑8의 1·4, 갑15, 을가1의 1·2, 6 내지 9, 11 내지 13, 16·18·19, 을가2의 1·2·3, 을가3의 2, 을가4의 6 내지 12, 을가22의 1 내지 5와 변론 전체의 취지</p><p>  (1) 당사자</p><p>     원고 관리단은 피고가 신축하여 분양한 금호아파트의 구분소유자 전원으로 구성되어 구분소유건물 및 그 대지와 부속시설의 관리에 관한 사업의 시행을 목적으로 하는 관리단이고, 피고는 금호아파트를 건축하여 분양한 지방자치단체이다.</p><p>  (2) 피고의 금호아파트 신축과 설계변경</p><p>    (가) 피고는 무주택 서민의 주거안정을 위한 주택건설계획의 하나로 피고 산하 광주광역시 공영개발사업단을 통하여 1992. 1. 8. 광주시장으로부터 광주 서구 금호동 금호택지 개발지구 제4블록에 사업비 315억 5,700만 원을 들여 연면적 58,245.97㎡(지하주차장⑴ 1,277.01㎡, 지하주차장⑵ 1,732.5㎡ 포함, 기타 부분 생략)의 아파트 6개동(지하 1층, 지상 15층) 810세대(세대당 전용면적 49.86㎡, 공용면적 20.013㎡, 합계 69.873㎡)와 부대복리시설을 건설하는 내용의 주택건설사업계획승인을 받았다.</p><p>    (나) 피고는 1992. 2. 25. 피고보조참가인(이하, ‘금호’라 한다)과 사이에 피고가 금호에게 위 금호아파트건설공사에 관하여 공사대금을 233억 3,400만 원에 정하여 도급주어 금호가 1992. 3. 2. 아파트신축공사에 착공하였다.</p><p>    (다) 그 후 피고는 1992. 3. 10.부터 1992. 7. 무렵까지 사이에 금호아파트의 공사비를 줄이기 위해서 지하주차장 2개를 없애고, 그 대신에 어린이놀이터에 지상주차장을 만드는 내용 등을 포함하여 여러 가지의 항목의 아파트설계와 공사자재를 변경하기로 하고(갑4의 1·2, 을가1의 7 내지 9), 1992. 8. 3. 
+        ○○건축사사무소
+        △△과 사이에 설계변경용역계약을 체결하고 1992. 9. 9. 설계변경을 완료하였다.
+      </p><p>    (라) 피고는 1992. 8. 24. 금호아파트와 동시에 건축하여 분양한 일반분양아파트까지 통틀어 최종이익금이 995,765,000원이 되도록 금호아파트의 분양가를 평당 178만  원으로 결정하였다(을가2의 1·2).</p><p>  (3) 피고의 입주자모집공고와 분양계약</p><p>     피고는 1992. 8. 25. 공용부분의 면적변경(지하주차장 해당 면적이 표시되지 않음), 분양가격, 발코니 설치비용의 세대부담 등 설계변경안의 중요부분을 표시하여 금호아파트 입주자모집공고를 한 다음(갑5, 을가2의 3), 1992. 10. 10.부터 1992. 12. 무렵까지 소송에서 탈퇴한 664세대의 구분소유자들과 사이에 각 금호아파트에 관하여 분양계약을 체결하였다. </p><p>  (4) 주택건설사업계획(변경)승인과 건설공사도급계약의 변경</p><p>    (가) 피고는 1992. 12. 11. 광주시장으로부터 종전의 주택건설사업계획에 대하여 사업비는 354억 4,000만 원으로, 연면적은 58,520.02㎡(지하주차장 삭제, 기타 부분 생략)로 하여 아파트 6개동 810세대(세대당 전용면적 49.86㎡, 공용면적 20.35㎡, 합계 70.21㎡)와 부대복리시설을 건설하는 내용의 주택건설사업계획(변경)승인을 받았다. </p><p>    (나) 피고는 금호와 사이에 1992. 11. 24.부터 1993. 8.까지 사이에 3회에 걸쳐 아파트신축공사에 설계변경의 내용을 반영하여 공사도급계약의 내용을 변경하여 최종적으로 공사대금이 21,660,909,000원으로 정해졌다. </p><p>  (5) 금호아파트의 완공과 사용검사</p><p>     금호아파트는 1993. 12. 10. 사용검사를 마치고, 1993. 12. 19.부터 수분양자들의 입주가 시작되었다. </p><p>  (6) 금호아파트의 하자와 그에 대한 하자보수</p><p>    (가) 그런데 금호아파트에는 앞서 본 바와 같은 경위로 변경된 설계도면에 따라 시공된 부분이 있고, 설계도면대로 시공되지 않았거나 잘못 시공되어 교환가치가 떨어지는 등의 여러 하자가 발견되었다.</p><p>    (나) 금호아파트의 입주자들은 자치관리위원회를 구성하여 1995. 6. 무렵부터 광주광역시 도시개발공사(뒤에서 보는 바와 같이 1993. 9. 1. 설립되어 주택건설 등에 관한 피고의 권리의무를 포괄적으로 승계한 지방공기업이다)에 대하여 하자보수와 사업승인도면에 따른 지하주차장의 설치를 요구하였다. 그러나 광주직할시 도시개발공사는 입주자모집공고 당시에 이미 지하주차장이 분양면적과 분양가격에서 제외되었음을 통지하고, 금호아파트의 각 구분소유자들로부터 하자보수점검표를 제출받아 금호로 하여금 1996. 8. 20.까지 해당 부분의 하자보수를 일부 실시하도록 조치하였다.</p><p>    (다) 자치관리위원회는 1997. 3. 21. 광주광역시 도시개발공사, 금호와 합동으로 금호아파트의 남아 있는 하자를 점검하여 그 내역을 별지 하자합의Ⅰ, Ⅱ와 같이 정리하고, 이에 금호는 1997. 4. 30.까지 해당 부분의 하자보수를 일부 실시하였다(을가4의 7).</p><p>    (라) 자치관리위원장 
+        소외 1, 관리소장 
+        소외 2, 입주자대표 
+        소외 3은 1997. 5. 26. 광주광역시 도시개발공사, 금호와 사이에 ① 각 세대가 접수한 하자 중 아직 처리되지 않은 부분(별지 잔여 보수리스트 참조)은 금호가 1일 2회씩 처리하여 완료한다. 일정은 관리사무소에서 1997. 6. 10. 이전에 통보하고 그 기간 중에 부재 중인 세대는 완료로 처리한다. ② 별지 하자합의Ⅰ 순번 1 내지 22 기재의 하자는 하자보수가 완료되었음을 확인하고(순번 23 내지 26 제외), 정화조 배수펌프 1대를 충원한다. ③ 잔여 보수리스트의 보수완료를 자치위원회에서 확인한 후 자치관리위원회의 요구사항{관리사무소 창문유리와 내부 페인트, 반사경 보수, 주차선 표시)을 금호가 실시하기로 합의하였다(을가4의 10). 한편, 관리소장 
+        소외 2는 1997. 5. 21. 금호가 하자보수공사 14종류를 완료하였다는 내용의 확인서 5장을 작성해 주었고(을가22의 1 내지 5), 이에 금호는 1997. 5. 29. 피고로부터 하자준공검사조서를 받아 하자보수보증금을 인출하였다.
+      </p><p>    (마) 금호는 1997. 5. 27.부터 1997. 5. 29.까지 자치관리위원회와 협의한 하자보수를 일부 시행하였으나 하자보수보증금을 인출한 다음부터는 더 이상 하자보수를 이행하지 않았고, 원고는 1997. 6. 10. 하자보수완료확인서에 날인해 달라는 금호의 요청을 거절하였다(갑15).  </p><p>  (7) 소송경과</p><p>    (가) 금호아파트의 총 810세대의 구분소유자 중 
+        별지 목록 (1)의 원고 1(대법원 판결의 원고 1) 등 668세대의 구분소유자들은 1999. 12. 20. 관리단집회를 개최하여 
+        소외 3을 관리인으로 선임한 다음, 금호아파트 전유부분의 하자에 대하여는 668세대의 구분소유자들이 각자 원고가 되고, 그리고 공용부분의 하자에 대하여는 원고 관리단이 직접 원고가 되어 분양자인 피고와 공사를 시공한 금호를 공동피고로 하여 2000. 6. 8. 이 사건 소를 제기하였다(금호에 대한 소는 제1심소송의 진행 중에 취하하였다).   
+      </p><p>    (나) 제1심법원은 2003. 9. 25. 피고에 대하여 664세대의 구분소유자(소를 제기한 668세대 중 
+        소외 4 등 4세대는 소를 취하하였다)에게 각 2,742,580원을, 원고 관리단에게 204,999,377원 및 그 지연손해금을 지급하라는 내용의 원고들 일부승소판결을 선고하였고, 664세대 중 539세대의 구분소유자들과 원고 관리단이 2004. 1. 30.에, 피고가 2003. 12. 31.에 각각 패소부분에 대하여 항소를 제기하였으며, 항소를 제기하지 않았던 나머지 125(＝664-539)세대의 구분소유자들은 2005. 10. 12. 그 패소부분에 대하여 부대항소를 제기하였다. 
+      </p><p>    (다) 이 법원에서 원고 관리단이 금호아파트의 공용부분에 대한 하자보수에 갈음한 손해배상청구권을 가지는지 여부가 쟁점이 되자 664세대의 구분소유자들은 2008. 8. 14. 무렵 피고에 대한 하자보수에 갈음한 손해배상청구권을 모두 원고 관리단에 양도하고, 2008. 11. 20. 소송에서 탈퇴하였고, 원고 관리단은 소변경신청서(2008. 12. 17.자)로써 승계참가하였다. </p><p>
+        <b>2. 이 사건의 쟁점</b>
+      </p><p> 가. 피고의 금호아파트에 관한 하자담보책임 등 분양자로서의 권리의무가 광주광역시 도시공사에 포괄적으로 승계되었는지 여부</p><p> 나. 광주직할시 도시개발공사 설치 조례 부칙 제3조의 법령 등 위반 여부</p><p>
+        <b>3. 이 법원의 판단</b>
+      </p><p> 가. 피고의 금호아파트에 관한 하자담보책임 등 분양자로서의 권리의무가 광주광역시 도시공사에 포괄적으로 승계되었는지 여부</p><p>  [피고의 주장]</p><p>  피고의 금호아파트에 관한 하자담보책임 등 분양자로서의 권리의무는 광주직할시 도시개발공사 설립 조례 부칙 제3조에 의하여 광주광역시 도시공사에 포괄적으로 승계되었으므로 피고는 그 책임을 부담하지 않는다고 주장한다. </p><p>  [원고 관리단의 반론]</p><p>  원고 관리단은 광주직할시 도시개발공사 설립 조례 부칙 제3조는 본질적으로 영업양도이므로 상법상의 영업양도에 관한 법리가 적용되어 조례 공포일자 이전의 분양계약에 기초한 금호아파트의 하자담보책임은 피고만이 부담하고, 그렇지 않더라도 금호아파트의 하자담보책임은 피고가 사경제주체로서 체결한 분양계약에 기초하고 있으므로 채무인수에 관한 민법 규정이 적용되어 피고와 광주광역시 도시공사가 중첩적으로 하자담보책임을 진다는 취지로 다툰다.</p><p>  [판단]</p><p>   그런데 광주직할시 도시개발공사 설치 조례(1993. 6. 18. 광주직할시 조례 제2394호) 부칙 제3조는 광주직할시 도시개발공사는 설립일로부터 광주직할시 공영개발사업단에 관한 광주직할시의 권리의무를 포괄적으로 승계한다고 규정하고 있다{광주직할시 도시개발공사는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|137|">구 지방자치법(2007. 5. 11. 법률 제8423호로 개정되기 전) 제137조</a></span>와 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방공기업법|49|">구 지방공기업법(2009. 4. 1. 법률 제9575호로 개정되기 전) 제49조</a></span>에 의하여 1993. 9. 1. 설립되었고, 1999. 6. 1. 광주광역시 시설관리공단과 통합되면서 광주광역시 도시공사로 명칭이 변경되었다}.
+      </p><p>   위 조례규정에 따르면, 피고가 금호아파트를 수분양자들에게 분양함으로 인하여 수분양자 또는 그로부터 매수한 구분소유자들에 대하여 부담하게 되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물법 제9조</a></span>에 따른 금호아파트에 관한 하자담보책임 등 분양자로서의 권리의무 내지 피고의 분양자로서의 지위를 포괄하는 금호아파트에 관한 분양계약 당사자로서의 지위는 1993. 9. 1. 피고로부터 광주직할시(광주광역시) 도시개발공사를 거쳐 1999. 6. 1. 광주광역시 도시공사에 포괄적으로 승계되었고, 피고는 금호아파트에 관한 분양자로서의 지위에서 벗어났다고 봄이 상당하다(이는 실체법의 해석적용의 문제로서 자백의 대상이 되지 아니한다). 피고의 위 주장은 이유 있다.
+      </p><p> 나. 광주직할시 도시개발공사 설치 조례 부칙 제3조의 법령 등 위반 여부</p><p>  [원고 관리단의 주장]</p><p>  원고 관리단은 위 조례가 주민의 권리제한 또는 의무부과에 관한 사항으로서 법률의 위임 없이 금호아파트에 관한 수분양자의 권리를 정당한 이유 없이 침해하여 무효이거나 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|5|">지방자치법 제5조</a></span>가 금지하고 있는 채무인수를 규정하여 민법의 기본원리와 헌법이 보장하는 국민의 재산권보호를 침해하는 것으로서 헌법에 위반된다고 주장한다.
+      </p><p>  [판단]</p><p>   (1) 그런데 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|15|">구 지방자치법(2007. 5. 11. 법률 제8423호로 전문 개정되기 전의 것, 이하 같다) 제15조</a></span> 본문은 지방자치단체는 법령의 범위 안에서 그 사무에 관하여 조례를 제정할 수 있다고 규정하고 있으므로 지방자치단체가 제정한 조례가 법령에 위반되는 경우에는 효력이 없고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002추23|판결" href="#//">대법원 2002. 4. 26. 선고 2002추23 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003추13|판결" href="#//">대법원 2003. 9. 23. 선고 2003추13 판결</a></span> 등 참조), 조례가 법령에 위반되는지 여부는 법령과 조례의 각각의 규정취지, 규정의 목적과 내용 및 효과 등을 비교하여 양자 사이에 모순, 저촉이 있는지의 여부에 따라서 개별적, 구체적으로 결정하여야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002추16|판결" href="#//">대법원 2004. 4. 23. 선고 2002추16 판결</a></span> 참조). 따라서 어떤 사항에 관해서 국가의 법령 중에 이를 규율하는 명문의 규정이 없는 경우에는 해당 법령의 전체에서 비추어 보아 그 규정을 두지 않은 것이 특히 그 사항에 관해서는 어떠한 규제도 실시하지 않고 방치하여야 한다는 취지로 해석되는 때에 한하여 그에 관해 규율을 설정하는 조례의 규정은 국가의 법령에 위반하게 될 수가 있다. 반대로 조례가 규율하는 특정사항에 관하여 그것을 규율하는 국가의 법령이 이미 존재하여 특정한 사항에 관하여 이를 규율하는 법령과 조례가 병존하는 경우에는 조례가 법령과 다른 목적에 기초하여 규율을 의도한 것이고, 그 적용으로 인하여 법령의 규정이 의도하는 목적과 효과를 저해하지 아니하거나 또는 법령과 조례가 동일한 목적에서 나온 것이라고 하더라도 국가의 법령이 반드시 그 규정에 의하여 전국에 걸쳐 일률적으로 동일한 내용을 규율하려는 취지가 아니고 각각의 지방자치단체가 그 지방의 실정에 맞게 별도로 규율하는 것을 용인하는 취지라고 해석되는 때에는 국가의 법령과 조례 사이에 아무런 모순, 저촉이 없고, 조례가 법령에 위반되는 문제는 생기지 아니한다고 봄이 상당하다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96추244|판결" href="#//">대법원 1997. 4. 25. 선고 96추244 판결</a></span> 참조). 
+      </p><p>       한편, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|15|">구 지방자치법 제15조</a></span> 단서, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="행정규제기본법|4|">행정규제기본법 제4조 제3항</a></span>에 의하면, 지방자치단체는 그 고유사무인 자치사무와 개별법령에 의하여 지방자치단체에 위임된 단체위임사무에 관하여 자치조례를 제정할 수 있지만 이 경우에도 주민의 권리제한 또는 의무부과에 관한 사항이나 벌칙은 법률의 위임이 있어야 하며, 기관위임사무에 관하여 제정되는 이른바 위임조례는 개별법령에서 일정한 사항을 조례로 정하도록 위임하고 있는 경우에 한하여 제정할 수 있으므로, 주민의 권리제한 또는 의무부과에 관한 사항이나 벌칙에 해당하는 조례를 제정할 경우에는 그 조례의 성질을 묻지 아니하고 법률의 위임이 있어야 하고 그러한 위임 없이 제정된 조례는 효력이 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006추52|판결" href="#//">대법원 2007. 12. 13. 선고 2006추52 판결</a></span> 참조).
+      </p><p>   (2) 이 사건에서 보면, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방공기업법|49|">구 지방공기업법(2009. 4. 1. 법률 제9575호로 개정되기 전의 것, 이하 같다) 제49조 제2항</a></span>은 지방자치단체가 주택사업 등을 효율적으로 수행하기 위하여 지방공사를 설립하고자 할 때 그 설립·업무 및 운영에 관한 기본적인 사항을 조례로 정하도록 규정하였을 뿐이고, 구 지방공기업법의 목적 등 법령 전체의 내용에 비추어 위 규정이 지방자치단체가 설립한 공사가 해당 사업에 관한 지방자치단체의 권리의무를 포괄적으로 승계하는 것을 금지하는 취지로 해석되지는 않는다. 그러므로 광주직할시 도시개발공사 설치 조례 부칙 제3조에서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방공기업법|49|">구 지방공기업법 제49조 제2항</a></span>의 위임에 따라 광주직할시 도시개발공사의 설립, 업무 및 운영에 관한 기본적인 사항으로서 광주직할시 도시개발공사가 그 설립일로부터 광주직할시 공영개발사업단에 관한 피고의 권리의무를 포괄적으로 승계하도록 규정한 것은 조례제정권의 범위에 관한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|15|">구 지방자치법 제15조</a></span> 본문의 규정에 위반되지 아니한다(원고 관리단이 들고 있는 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다40498|판결" href="#//">대법원 1992. 6. 26. 선고 91다40498 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다8914|판결" href="#//">대법원 2008. 2. 1. 선고 2007다8914 판결</a></span> 등은 지방자치단체의 구역변경이나 폐치·분합이 있는 때에는 새로 그 지역을 관할하게 된 지방자치단체가 그 사무와 재산을 승계한다는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="지방자치법|5|">지방자치법 제5조 제1항</a></span>의 ‘재산’이라 함은 현금 외의 모든 재산적 가치가 있는 물건 및 권리만을 의미하고 채무는 포함되지 않는다고 해석한 것이므로, 원고 관리단의 주장처럼 지방자치법이 지방자치단체의 조례제정에 있어 채무인수를 금지하고 있다고 볼 수는 없다). 또한 광주직할시 도시개발공사 조례 부칙 제3조에 따라 피고의 금호아파트에 관한 하자담보책임 등 분양자로서의 권리의무가 광주직할시 도시개발공사에게 포괄적으로 승계됨으로써 금호아파트에 관한 분양계약의 계약당사자로서의 지위가 구분소유자와 피고 사이에서 구분소유자와 광주직할시 도시개발공사 사이로 이전된 것에 불과하므로, 원고 관리단의 주장과 같이 위 조례 부칙 제3조가 금호아파트의 구분소유자 또는 원고 관리단의 권리를 제한하거나 의무를 부과하는 내용으로 볼 수 없으며, 그와 같은 조례의 규정이 민법의 기본원리에 위반된다거나 헌법상의 재산권보장의 원칙을 침해하는 위헌이라고 볼 수도 없다. 따라서 원고 관리단의 위 주장은 모두 이유 없다.
+      </p><p>
+        <b>4. 결론</b>
+      </p><p>   그렇다면 원고 관리단의 청구는 모두 이유 없고, 이와 결론을 달리한 제1심판결은 부당하므로 피고의 항소를 받아들여 제1심판결을 주문과 같이 변경한다.</p><p>[별지 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   이균용(재판장) 최창훈 정도성 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

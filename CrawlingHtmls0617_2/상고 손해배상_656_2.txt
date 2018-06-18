@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2002나46562 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2026311';
+var contIdEtc = '2025636';
+var saNo = '2002나46562';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20030624' ? 
+			'20030624'.length==4 ? Date.parseExact('20030624','yyyy').toString('yyyy. M. d.') : 
+				'20030624'.length==6 ? Date.parseExact('20030624','yyyyMM').toString('yyyy. M. d.') : 
+					'20030624'.length==8 ? Date.parseExact('20030624','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2002나46562 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2002나46562';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2002나46562</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(20)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|537045">국내에서의 외국음반의 보호 최정환 한국정보법학회</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|805469">정태호 1986년 개정 이전의 구 저작권법에서의 음반의 보호에 관한 제문제 특별법연구 13권 / 사법발전재단  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="수원지방법원|97카합8305">수원지방법원 97카합8305호</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|4|0|null">저작권법 부칙 제4조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|46|0|null">저작권법(구) 제46조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|2|0|null">저작권법(구) 제2조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|61|0|null">저작권법(구) 제61조 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|61|0|null">저작권법 제61조 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|3|0|null">저작권법 부칙 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|3|0|null">저작권법 제3조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|61|0|null">저작권법 제61조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|30|0|null">저작권법(구) 제30조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|33|0|null">저작권법(구) 제33조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|70|0|null">저작권법(구) 제70조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|2|0|null">저작권법(구) 제2조 제2항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|3|0|null">저작권법(구) 제3조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|2|0|null">저작권법(구) 제2조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="저작권법|3|0|null">저작권법(구) 부칙 제3조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원|2001가합25783">서울지방법원 2002. 7. 5. 선고 2001가합25783 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2025636">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2003. 6. 24. 선고 2002나46562 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고(소송대리인 변호사 이장호)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        주식회사 유니버설뮤직(소송대리인 법무법인 두우 담당변호사 김종환외 1인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2003.6.3.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원|2001가합25783|판결" href="#//">서울지방법원 2002. 7. 5. 선고 2001가합25783 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고의 항소를 기각한다.</p><p>2. 항소비용은 원고의 부담으로 한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>피고는 원고에게 3,224,397,779원 및 이에 대하여 이 사건 청구취지확장신청서 송달 다음날부터 이 사건 판결선고일까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 25%의 각 비율에 의한 금전을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>다음 각 사실은 당사자 사이에 다툼이 없거나, 갑 제1 내지 7호증, 갑 제10 내지 15호증, 갑 제31, 33, 34, 56, 85호증, 갑 제88 내지 91호증, 갑 제93호증의 1, 을 제2 내지 10호증의 각 기재와 당심 증인 유강호의 증언에 변론 전체의 취지를 종합하면 이를 인정할 수 있고, 반증이 없다.</p><p>가. 원고는 ‘윈디사운드’라는 상호로 국내에서 음반의 제조, 판매업에 종사하던 자이고, 피고는 독일 회사인 소외 도이취 그라모폰 게젤샤프트 엠베하(Deutsche Grammophon Gesellschaft mbH, 이하 '그라모폰사'라 한다)가 제작하는 음반에 대한 국내 유일의 배급업자로서, 위 회사로부터 위 회사가 제작하는 음반을 국내에서 독점적이고 배타적으로 제작, 판매할 수 있는 권리를 취득하였다.</p><p>나. 그라모폰사는 헤르베르트 폰 카라얀(Herbert von Karajan, 이하 ‘카라얀’이라 한다)이 베를린 필하모닉(Berlin Philharmonic, 이하 ‘베를린 필’이라 한다)에서 처음 지휘를 시작한 1938년 경부터 1989. 7. 16. 사망하기 직전까지 지휘한 베를린 필 등의 연주실황을 녹음하여 음반을 제작, 판매하여 왔다.</p><p>다. 한편 일본 회사인 소외 유어 뮤직 컴퍼니(Your Music Co. LTD, 이하 'YMC사'라 한다)는 1982년부터 1986년에 걸쳐 1978. 10. 1. 이전(일본은 1978. 10. 14. ‘음반의 무단복제로부터 음반제작자를 보호하기 위한 협약’에 가입)에 발표된 레코드 및 오픈릴 테이프로부터 음원을 복각하였는데, 그 중 카라얀이 지휘한 연주를 녹음한 그라모폰사의 음반에서 복각한 곡도 상당수 포함되어 있다.</p><p>라. 소외 유강호와 서강식은 1992. 6.경 YMC사로부터 위 회사가 위와 같이 복각한 음원의 국내에서의 사용권을 취득한 후, 1994. 1. 13. 문화체육부 장관으로부터 278곡에 대하여 외국음반 복제허가를 받았으며, 1995. 6. 21. 원고에게 원고가 임의 선곡한 CD 35장 분량의 음원사용권을 부여하였다.</p><p>마. 원고는 유강호 등으로부터 사용권을 취득한 음원을 이용하여 소외 주식회사 SKC에게 의뢰하여 CD 30장(음반명 WRC 001 SB에서 WRC 030 SB까지)을 제작한 후 이를 10장, 20장, 30장 단위의 세트로 만든 후 ‘카라얀 베스트클래식‘ 등의 이름으로 저렴한 가격에 비씨카드주식회사, 한솔CSN 주식회사, 엘지 홈쇼핑 등을 통하여 판매하여 왔는데, 위 CD 30장에 수록된 71곡 중 38곡이 카라얀이 지휘한 곡이다.</p><p>바. 한편, 우리나라는 외국인의 저작인접권을 내국인의 저작인접권과 동일하게 보호하도록 하는 ‘무역관련 지적재산권에 관한 협정’(Agreement on Trade-related Aspects of Intellectual Property Right, 이하 ‘TRIPs 협정’이라 한다)에 가입하여 1995. 1. 1. 위 협정이 발효되고, 이에 따라 저작권법이 개정되고 위 개정법이 1996. 7. 1.부터 시행되면서 그동안 국내에서 자유이용상태에 놓였던 외국인이 제작한 음반 등이 저작권법의 보호를 받게 되었다.</p><p>사. 그라모폰사는 1996. 9.경 원고가 제작한 CD세트 중 3개의 CD를 무작위로 선정하여 조사한 결과 그 중 WRC 010 SB의 “RAVEL, BOLERO"는 그라모폰사가 제작한 카라얀 지휘의 베를린 필의 연주곡에 관한 음반을 복제한 것으로 판단하였다.</p><p>아. 피고(당시의 상호는 ‘폴리그램 주식회사’)는 1997. 6. 5. 비씨카드 주식회사, 주식회사 SKC에게 피고는 그라모폰사를 포함한 유명 레이블을 보유하고 있으며 카라얀의 실연에 대한 음반 판매와 복제권 등의 대행을 맡고 있는바, 저작권법이 개정되어 외국인의 저작인접권도 보호되면서 피고가 보호, 관리하는 음반 등을 무단 복제, 판매하는 행위는 금지되므로, 이를 위반하는 경우 일체의 민, 형사상 절차를 취할 것이라는 취지의 통고서를 보냈고, 특히 비씨카드 주식회사에게 보낸 통고서에는 위 회사가 광고하고 있는 원고의 CD세트가 피고의 음반 등 복제, 판매권 등을 침해한 것으로 간주된다고 기재되어 있다.</p><p>자. 피고는 같은 해 7. 8. 한솔CSN 주식회사에게 위 회사의 창간호 상품 중 원고의 CD세트가 기존 통신망을 통하여 판매되는 불법음반복제물과 동일한 것으로 추정된다는 내용의 통고서를 보냈다.</p><p>차. 원고는 피고와 원고의 CD세트의 계속판매 등에 관하여 협상을 추진하다가, 서로의 입장차이로 협상이 결렬된 후 같은 해 7. 15. 그라모폰사에게 원고는 일본 YMC사 음원의 한국 판권자로 적법한 절차를 거쳐 사용권을 부여받았는바, 일본 YMC사 음원의 불법성이 확증될 때까지 영업제한을 해제해 주고, 불법성이 입증되는 경우에도 영업정리를 위하여 3개월 정도의 유예기간을 달라는 내용의 통지서를 보냈다.</p><p>카. 그라모폰사는 같은 달 21. 원고에게 위 회사가 YMC사에게 어떠한 권리도 부여한 사실이 없으며, 원고가 발매한 CD세트 중 12장(WRC 001 SB, WRC 002 SB, WRC 004 SB, WRC 005 SB, WRC 006 SB, WRC 007 SB, WRC 009 SB, WRC 012 SB, WRC 013 SB, WRC 020 SB, WRC 021 SB, WRC 027 SB)이 그라모폰사의 음반을 복제한 것으로 믿을 만한 이유가 있다는 취지의 팩스를 보냈다.</p><p>타. 그라모폰사는 같은 해 12. 11. 원고를 상대로 
+        <span id="link"><a name="linkContPanre" title="새창" type="수원지방법원|97카합8305" href="#//">수원지방법원 97카합8305호</a></span>로 원고의 CD세트 중 별지 목록 기재 CD 5장에 대한 음반판매금지가처분신청을 하였고 1998. 8. 7. 위 법원으로부터 가처분결정을 받았다.
+      </p><p>2. 판단</p><p>가. 당사자들의 주장</p><p>(1) 원고는 원고의 CD세트에 카라얀의 지휘곡이 포함되어 있는 것은 사실이나, 피고는 그에 관한 카라얀의 실연자로서의 권리를 행사할 권한이 없으며, 원고의 CD세트에 실린 카라얀의 지휘곡은 이미 보호기간이 경과하는 등으로 자유이용상태에 놓인 카라얀의 실연 및 그 실연 녹음 음반을 YMC사가 복각한 음원을 사용한 것이므로 그라모폰사나 카라얀의 저작인접권을 침해하는 것이 아니고, 가사 그 일부가 보호기간내의 실연 및 음반을 기초로 제작한 것이라 하더라도, YMC사의 복각음원은 2차적 저작물이므로 
+        저작권법 부칙 제4조 3항에 의하여 계속 사용할 수 있는 것임에도 불구하고, 피고는 원고의 거래처들에게 원고의 CD세트가 그라모폰사 및 카라얀의 저작인접권을 침해하는 것이라는 허위내용의 통고서를 보내어 원고의 신용을 훼손하고, 영업을 방해하는 불법행위를 하였으므로, 그로 인한 손해를 배상할 책임이 있다고 주장한다.
+      </p><p>(2) 이에 대하여 피고는 국내에서 그라모폰사 및 카라얀의 저작인접권을 행사할 권한이 있고, 1996. 7. 1. 시행된 개정 저작권법에 의하여 카라얀 및 그라모폰사의 저작인접권이 소급하여 보호되는데, 원고는 그라모폰사가 카라얀의 지휘곡을 녹음하여 제작한 음반을 복제, 판매하여 위 그라모폰사 및 카라얀의 저작인접권을 침해하였으므로, 피고가 위와 같이 통고서를 보낸 것은 정당한 권리행사의 일환으로 불법행위를 구성하지 아니한다고 다툰다.</p><p>나. 피고에게 그라모폰사 및 카라얀의 저작인접권을 행사할 권한이 있는지의 여부</p><p>(1) 피고는 원고의 거래업체들에게 피고는 그라모폰사를 포함한 유명 레이블을 보유하고 있으며, 카라얀의 실연에 대한 음반 판매와 복제권 등의 대행을 맡고 있는바, 그라모폰사 및 카라얀의 저작인접권을 침해하는 불법음반을 판매하거나 유통시키는 행위를 하는 경우 일체의 민, 형사상 절차를 취할 것이라는 취지의 통고서를 보냈는데, 일부 업체에 보낸 통고서에는 원고의 CD세트가 그라모폰사 및 카라얀의 저작인접권을 침해하는 것으로 보인다는 내용이 기재되어 있는 사실은 위에서 인정한 바이므로, 피고가 위와 같이 통고서를 보낸 행위가 불법행위에 해당하는지를 판단하기 위하여 피고에게 그라모폰사와 카라얀의 저작인접권을 국내에서 행사할 권한이 있는지에 관하여 살펴보기로 한다.</p><p>(가) 피고가 그라모폰사로부터 국내에서 위 회사의 음반을 배타적, 독점적으로 제조, 판매할 수 있는 권리를 취득하였음은 위에서 인정한 바이므로, 피고는 국내에서 그라모폰사의 음반제작자로서의 권리를 침해하는 자에 대하여 그라모폰사를 대위하여 그 침해를 정지할 것을 요구할 권한이 있다고 할 것이다.</p><p>(나) 다음, 피고가 카라얀의 저작인접권을 행사할 권한이 있는지의 여부에 관하여 보건대, 을 제8호증의 기재는 카라얀의 유언집행인이 그라모폰사가 1975년부터 1977년 사이에 베토벤의 교향곡 1, 2, 9번에 관한 카라얀의 지휘곡을 녹음한 음반에 대한 독점적 권리를 가지고 있다는 점을 확인한 것에 불과하여, 그것만으로는 그라모폰사나 피고가 카라얀으로부터 원고의 CD세트에 실린 카라얀의 실연에 대한 저작인접권을 행사할 권한을 위임받았다거나, 그 권리를 양도받았다고 인정하기에 부족하고, 달리 이를 인정할 만한 증거가 없다.</p><p>(2) 위와 같이 카라얀의 저작인접권에 대하여는 피고에게 그것을 행사할 수 있는 권한이 있다고 인정하기 어려우므로, 아래서는 원고가 그라모폰사의 음반제작자로서의 저작인접권을 침해하였는지 여부에 대해서만 살펴보기로 한다.</p><p>다. 원고의 그라모폰사의 음반제작자로서의 저작인접권 침해 여부</p><p>(1) 우리나라 저작권법상 외국인 음반제작자의 권리 보호</p><p>(가) 1957년 저작권법</p><p>1957. 1. 28. 법률 제432호로 제정된 저작권법(이하 ‘1957년 저작권법’이라 한다)은 외국인의 저작물에 대하여 조약에 규정이 없는 경우에는 국내에서 처음으로 그 저작물을 발행한 외국인에 한하여 위 법에 따라 저작물을 보호하도록 규정하고 있었으나(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|46|">제46조</a></span> 단서), 위 법이 시행되는 기간 중에 우리나라는 외국인의 저작물의 보호에 관한 어떠한 조약에도 가입한 적이 없었으므로, 외국인의 저작물은 국내에서 최초로 발행된 것에 한하여 보호되었다(위 법은 저작인접권이라는 별도의 개념을 사용하지 아니하였으나, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">제2조</a></span>에서 저작물에 ‘음반’을 포함시켜 음반제작자의 권리를 저작권의 일종으로서 보호하였다).
+      </p><p>(나) 1987년 저작권법 및 음반협약</p><p>그 후 1986. 12. 31. 법률 제3916호로 전면개정되어 1987. 7. 1.부터 시행된 저작권법(이하 ‘1987년 저작권법’이라 한다)은 외국인이 제작한 음반에 관하여 “음이 맨 처음 대한민국 내에서 고정된 음반”(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|61|">제61조 2호 나목</a></span>)과 “대한민국이 가입 또는 체결한 조약에 따라 보호되는 음반”(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|61|">2호 다목</a></span>)에 한하여 저작인접권으로서 보호하였고, 한편, 우리나라는 1987. 7. '음반의 무단복제로부터 음반제작자를 보호하기 위한 협약'(이하 ‘음반협약’이라 한다)에 가입하여 같은 해 10. 10. 동 조약이 비준, 공포되어 효력이 발생하게 되었는데 그 효력은 소급하지 않는 것으로 해석되므로, 외국인의 음반제작자로서의 저작인접권은 국내에서 최초로 고정된 음반 및 1987. 10. 10. 이후에 녹음된 음반에 한하여만 보호되었다.
+      </p><p>(다) 현행 저작권법 및 TRIPs협정</p><p>1) 1995. 12. 6. 법률 제5015호로 개정되어 1996. 7. 1.부터 시행된 저작권법(이하 ‘현행 저작권법’이라 한다)은 외국인이 제작한 음반에 대하여 “대한민국이 가입 또는 체결한 조약에 따라 보호되는 음반으로서 체약국 내에서 최초로 고정된 음반”(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|61|">제61조 제2호 다목</a></span>)을 저작인접권으로 보호하였고, 한편, 우리나라는 TRIPs협정에 가입하였는데, TRIPs협정 제14조에서는, 실연자, 음반제작자 및 방송사업자의 이른바 저작인접권을 인정하면서(제1, 2, 3항), 소급보호원칙을 규정한 '문학·예술저작물의 보호를 위한 베른협약'(이하 ‘베른협약’이라 한다) 제18조를 준용하도록 하고 있고(제6항), 베른협약 제18조는 이 협약의 효력발생 당시에 본국에서 보호기간의 만료에 의하여 이미 저작권이 소멸하여 공중의 자유이용 상태에 놓이지 아니한 모든 저작물에 대하여 소급적으로 보호하되(제1항) 기존의 또는 장래에 체결될 동맹국 사이의 특별협약이나 각 체약국의 국내법으로 그 소급보호원칙의 적용에 관한 방법을 제한할 수 있음(제3항)을 규정하고 있는데, 우리나라는 1996. 6. 21. 베른협약에도 가입하였다.
+      </p><p>2) 따라서, 외국인의 음반제작자로서의 저작인접권은 그 외국인의 본국이 TRIPs협정의 체약국이고 본국의 저작권법에서 정한 보호기간이 만료되지 아니한 것인 때에는 1987. 10. 10. 이후에 녹음된 음반(음반협정의 발효에 의하여 보호되는 부분)이나, 국내에서 최초로 발표된 것(1957년 저작권법에 의하여 보호되는 부분)에 대한 것이 아닌 경우에도 소급하여 현행 저작권법에 의하여 보호를 받게 되었다고 할 것인데, 독일은 TRIPs협정의 체약국이고, 이 사건에서 문제된 독일 회사인 그라모폰사의 음반은 모두 1987. 10. 10. 전에 녹음되고, 독일에서 최초로 발표된 것이므로, 위 각 음반에 대한 그라모폰사의 음반제작자로서의 권리는 현행 저작권법에 의하여 비로소 보호를 받게 되었다고 할 것이다.</p><p>(2) 그라모폰사의 저작인접권의 보호기간</p><p>(가) 대한민국에서 보호되었더라면 인정되었을 보호기간</p><p>현행 
+        저작권법 부칙 제3조는 “
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|3|">제3조 제1항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|61|">제61조</a></span>의 규정에 의하여 새로이 보호되는 외국인의 저작물 및 음반으로서 이 법 시행전에 시행된 것(이하 ‘회복저작물등’이라 한다)의 저작권과 실연자 및 음반제작자의 권리는 당해 회복저작물등이 대한민국에서 보호되었더라면 인정되었을 보호기간의 잔여기간동안 존속한다”라고 규정하여, 회복저작물등의 소급보호에 관하여 일정한 제한을 가하고 있는바, 앞에서 살펴본 바와 같이 이 사건에서 문제되는 그라모폰사의 음반은 현행 저작권법에 의하여 새로이 보호되는 외국인의 음반으로서 
+        위 부칙 3조에 말하는 회복저작물등에 해당한다고 할 것이므로, 그에 대한 음반제작자로서의 권리는 당해 음반이 ‘대한민국에서 보호되었더라면 인정되었을 보호기간의 잔여기간동안’ 존속한다고 할 것이다.
+      </p><p>(나) 우리나라 저작권법상 음반제작자의 권리의 보호기간</p><p>1) 1957년 저작권법은 저작권은 저작자의 생존간 및 사후 30년간 존속하되(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|30|">제30조 제1항</a></span>), 단체명의의 저작물의 저작권은 발행 또는 공연한 날로부터 30년간 존속하며(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|33|">제33조</a></span>), 한편 저작권의 기간을 계산함에는 저작자 사망의 해 또는 저작물을 발행 또는 공연한 때의 다음해부터 기산한다고 규정하고 있었다.
+      </p><p>2) 1987년 저작권법은 저작인접권에 관한 규정을 신설하면서, 그 보호기간은 음반에 있어서는 그 음을 맨처음 그 음반에 고정한 때의 다음해부터 기산하여 20년간으로 정하면서(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|70|">제70조</a></span>), 그 부칙에서 종전의 규정에 의한 저작물로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">1957년 저작권법 제2조</a></span>의 규정에 의한 연주, 가창, 연출, 음반 또는 녹음필름은 종전의 규정에 의하며(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">제2조 2항 1호</a></span>), 위 법 시행 이전에 공표된 저작물로서 위 법 시행일 1987. 7. 1.을 기준으로 저작권이 소멸하지 않은 저작물에 대하여 종전의 규정에 의한 보호기간이 위 법에 의한 보호기간보다 긴 때에는 종전의 규정에 의하도록 정하였는바(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|3|">제3조 1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">2조 1항</a></span>), 결국 1987. 7. 1. 이후에 공표된 음반의 경우에만 위 법상의 보호기간이 적용되고, 그 전에 공표된 음반에 대한 음반제작자의 권리의 보호기간에 대하여는 여전히 1957년 저작권법에 의하게 되었다.
+      </p><p>3) 그 후 1994. 1. 7. 법률 제4717호로 개정되어 1994. 7. 1. 시행된 저작권법(이하 ‘1994년 저작권법’이라 한다)은 음반제작자의 저작인접권의 보호기간을 음을 맨처음 음반에 고정한 때의 다음해부터 기산하여 50년으로 연장하였으나(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|70|">제70조</a></span>), 
+        그 부칙 제3조에서 “이 법 시행전에 발생된 저작인접권의 보호기간은 종전의 규정에 의한다”고 정하여 위 법상의 보호기간은 1994. 7. 1. 이후에 녹음된 음반에 대한 음반제작자의 권리에 대하여만 적용되게 되었다.
+      </p><p>4) 위와 같은 현행 저작권법까지의 음반제작자의 권리의 보호기간에 대한 규정들을 종합해 보면, 1987. 6. 30. 이전에 공표된 음반에 대한 권리는 1957년 저작권법에서 규정한 대로 저작자가 사망한 다음해로부터, 단체명의의 저작물인 경우는 발행한 때의 다음해로부터 각 30년까지 보호되고, 1987. 7. 1. 이후 1994. 6. 30.까지 녹음된 음반에 대한 저작인접권은 음을 처음으로 음반에 고정한 때의 다음해로부터 20년까지 보호되며, 1994. 7. 1. 이후 녹음된 음반에 대한 저작인접권은 음을 처음으로 음반에 고정한 때의 다음해로부터 50년까지 보호된다고 할 것이다.</p><p>(다) 한편, 앞에서 살펴본 바와 같이 현행저작권법상 회복저작물등은 
+        부칙 3조에 따라 ‘대한민국에서 보호하였더라면 인정되었을 보호기간의 잔여기간 동안’ 존속한다고 할 것인데, 이 사건에서 문제되는 그라모폰사의 음반은 회복저작물등으로서 모두 1987. 6. 30. 이전에 공표된 것이고, 그라모폰사의 음반제작자로서의 권리는 1957년 저작권법상 단체명의의 저작물에 관한 것이므로, 당해 음반을 발행한 때의 다음해로부터 30년까지만 보호된다고 할 것이다.
+      </p><p>(3) 원고의 그라모폰사의 저작인접권 침해 여부</p><p>(가) 피고는 원고의 CD세트 중 별지 목록 기재 CD 5장이 아래 표의 ‘피고 주장 복각대상음반’란에 기재된 일시에 녹음되고 발행된 그라모폰사의 음반을 복제하여 제작한 것으로 그라모폰사의 음반제작자로서의 권리를 침해한 것이라고 주장하고, 이에 대하여 원고는 별지 목록 제2, 5항 기재 각 CD가 피고 주장과 같은 그라모폰사의 음반을 복각하여 만들어진 것은 사실이나, 나머지 3장에 대하여는 아래 표의 ‘원고 주장 복각대상음반’란에 기재된 일시에 녹음되고 발행한 것을 복각하여 만든 것으로 그 각 음반의 보호기간이 이미 경과하였다고 다툰다.</p><p>
+        </p><div name="Table321" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="1">원고의 CD</td><td align="CENTER" valign="MIDDLE" rowspan="1">피고 주장 복각대상음반</td><td align="CENTER" valign="MIDDLE" rowspan="1">원고 주장 복각대상음반</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">별지 목록 제1항</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1976. 10. 19., 발행 1977. 8. 1.</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1962. 2. 15., 발행 1963.</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">제2항</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1966. 10. 13., 발행 1967. 7. 1.</td><td align="CENTER" valign="MIDDLE" rowspan="1">좌동</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">제3항</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1972. 6. 8., 발행 1973. 9. 1.</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1964. 3. 4., 발행 1964.</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">제4항</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1983. 2. 21., 발행 1984. 2. 1.</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1964. 12. 27., 발행 1965.</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">제5항</td><td align="CENTER" valign="MIDDLE" rowspan="1">녹음 1968. 8. 22., 발행 1969. 3. 1.</td><td align="CENTER" valign="MIDDLE" rowspan="1">좌동</td></tr></tbody></table></div></div>
+      <p></p><p>(나) 살피건대, 을 제4 내지 7호증의 각 기재는 그라모폰사가 원고의 CD세트를 입수하여 자체의 전문 청취실에서 그라모폰사가 제작한 음반과 비교한 결과 별지 목록 기재 각 CD가 위 표의 ‘피고 주장 복각대상음반’란 기재의 음반을 복제한 것이라고 스스로 판단한 것일 뿐이고, 한편, 갑 제56호증, 갑 제57 내지 59호증의 각 1 내지 3의 각 기재에 의하면, YMC사의 복각작업기록철에는 별지 목록 제1, 3, 4항 기재 각 CD의 기초가 된 음원은 위 표의 ‘원고 주장 복각대상음반’란에 기재된 일시에 녹음되고 발행된 그라모폰사의 음반을 복각한 것으로 되어 있는바, 그에 의하면 그라모폰사의 위 각 음반은 현행 저작권법이 시행되기도 전에 그 보호기간(발행된 다음해로부터 30년)이 경과하였다고 할 것이므로, 위 을 제 4 내지 7호증의 기재만으로는 원고의 위 3장의 CD가 그라모폰사의 저작인접권을 침해하였다고 단정할 수 없다.</p><p>그러나, 별지 목록 제2, 5항 기재 CD가 위 표의 ‘피고 주장 복각대상음반’란에 기재된 일시에 녹음되고 발행된 그라모폰사의 음반을 복각한 음원을 이용한 것임은 원고도 인정하고 있는 바, 그렇다면, 그라모폰사의 위 각 음반은 피고가 비씨카드 주식회사 등에게 통고서를 보낼 당시 그 보호기간(발행한 다음해로부터 30년)이 경과하지 않았음이 역수상 명백하여 현행 저작권법에 의하여 보호되고 있었다고 할 것이므로, 원고는 적어도 위 2장의 CD에 실린 곡에 관하여는 그라모폰사의 음반제작자로서의 권리를 침해하였다고 할 것이다.</p><p>(다) 2차적 저작물의 이용으로서 허용되는 행위인지의 여부</p><p>원고는 가사 원고의 CD세트에 실린 카라얀 지휘곡의 일부가 보호기간이 경과하지 않은 그라모폰사의 음반을 기초로 한 것이라 하더라도, YMC사가 위 그라모폰사의 음반을 복각하여 만든 음원은 2차적 저작물에 해당하고, 원고는 그 2차적 저작물을 이용한 것이므로 이는 현행 저작권법에 의하여 허용되는 것이라고 주장하므로 살피건대, 현행 저작권법은 위 법 시행 이전에 회복저작물등을 사용한 선의이용자를 보호하기 위하여, 
+        부칙 제4조 제3항에서 “회복저작물등을 원저작물로 하는 2차적 저작물로서 1995. 1. 1. 전에 작성된 것은 이 법 시행후에도 이를 계속하여 이용할 수 있다, 다만, 그 원저작물의 권리자는 1999. 12. 31. 후의 이용에 대하여 상당한 보상을 청구할 수 있다”라고 규정하고 있는바, 원고의 CD세트에 실린 카라얀의 지휘곡은 그라모폰사가 녹음한 음반을 기초로 하여 YMC사가 1995. 1. 1. 전에 복각하여 만든 음원을 이용한 것이라는 사실은 앞에서 인정한 바와 같으나, YMC사가 복각한 음원을 제2차적 저작물이라 할 수 있기 위해서는 YMC사가 그라모폰사의 음반에 실질적인 개변작업을 더함으로써 그것이 독립한 별도의 창작물이 될 수 있을 정도에 이르러야 할 것인데, 갑 제27 내지 29호증의 기재만으로는 이를 인정하기에 부족하고 달리 이를 인정할 증거가 없으며, 오히려 앞에서 든 증거에 의하면 YMC사는 카라얀의 지휘곡을 녹음한 그라모폰사의 음반을 아날로그 방식에서 디지털 방식으로 전환하면서 잡음을 제거하는 정도의 작업을 하였다는 것일 뿐 그 연주의 속도, 리듬, 가락 등에 어떠한 실질적인 변화가 없으므로 위 복각음원은 카라얀의 실연을 녹음한 그라모폰사의 음반을 복제한 것에 불과하지 실질적인 개변이 있다고 볼 수 없어 원고가 YMC사의 복각음원을 이용한 것을 2차적 저작물의 이용행위라고 할 수 없다.
+      </p><p>라. 불법행위의 성립 여부</p><p>(1) 앞에서 살펴본 바와 같이 원고의 CD세트 30장 중 적어도 2장이 그라모폰사의 음반제작자로서의 권리를 침해하였으며, 피고는 그라모폰사의 음반에 대한 국내에서의 독점적 제조, 판매권자로서 그라모폰사를 대위하여 그 권리침해의 정지를 구할 권리가 있는 이상, 비록 피고가 원고의 CD세트에 실린 카라얀의 실연에 대한 저작인접권을 행사할 권한이 없다고 하더라도, 피고가 원고의 거래업체들에게 원고의 CD세트가 그라모폰사 및 카라얀의 저작인접권을 침해한 것으로 보이니, 그 제조, 판매를 중지하지 않을 경우 법적 조치를 취하겠다는 취지의 통고서를 보낸 것은 정당한 권리행사의 일환으로 행해진 것으로서 이를 위법하다고 할 수 없다.</p><p>(2) 이에 대하여 원고는 그라모폰사의 저작인접권 침해가 문제되는 것은 원고의 CD세트 중 일부에 불과한데도, 피고는 저작인접권 침해가 문제되는 곡을 특정하지 않고, 원고의 CD세트 전체가 위 회사의 저작인접권을 침해한 것처럼 내용증명을 보내어 원고의 영업 전체를 불가능하게 하였으므로, 이는 불법행위에 해당한다고 주장하므로 살피건대, 저작인접권자는 그 권리를 침해하는 자에 대하여 침해의 정지를, 그 권리를 침해할 우려가 있는 자에 대하여 침해의 예방 또는 손해배상의 담보를 청구할 수 있는바, 저작인접권자가 침해금지가처분 및 침해금지의 본안소송 등을 제기하기에 앞서 침해를 정지할 것을 서면으로 경고하는 것은 당연히 허용되는 행위라고 할 것인데 이 때 저작인접권자에게 저작인접권의 침해 또는 침해가 우려되는 대상을 구체적으로 특정하여 경고해야 할 책임이 있다고 볼 수는 없으며, 한편, 이 사건에서 피고가 비씨카드 주식회사나 한솔CSN 주식회사에게 보낸 통고서에서 위 각 회사가 광고하고 있는 원고의 CD세트가 피고의 저작인접권을 침해하는 것으로 보인다고 주장한 사실은 위에서 인정한 바이나, 위 각 회사에서 CD를 낱개로 판매하는 것이 아니라, 여러 장을 묶어 세트로 저렴한 가격에 판매한다고 광고한 이상, 피고에게 CD세트 중 어느 CD에 실린 무슨 곡이 저작인접권을 침해하고 있다고 구체적으로 특정하여 경고하기를 기대하기는 어렵다고 할 것인바(원고가 그라모폰사에 보낸 1997. 7. 15.자 서신에 대하여 그라모폰사 측은 같은 달 21. 원고의 이 사건 CD 30장 중 12장이 그라모폰사의 녹음물을 포함하고 있는 것으로 보인다는 답신을 보내왔으며, 그라모폰사는 같은 해 12. 11. 그 중 5장의 CD에 대하여만 음반제조및판매금지가처분을 신청한 사실은 위에서 인정한 바인바, 결국, 피고 측으로서는 위와 같은 통고서를 보낸 후에 원고의 CD세트 중 저작인접권 침해로 보여지는 CD를 계속하여 특정해 왔다고 할 것이다), 위와 같은 사정을 종합해 볼 때, 피고가 저작인접권 침해가 문제되는 곡을 구체적으로 특정하지 않고 통고서를 보낸 것을 정당한 권리행사의 범위를 벗어난 위법한 행위라고 볼 수는 없으므로, 원고의 위 주장은 결국 이유없다.</p><p>3. 결론</p><p>그렇다면, 원고의 이 사건 청구는 그 밖의 점에 관하여 나아가 판단할 필요도 없이 이유없다고 할 것이므로 이를 기각하여야 할 것인바, 제1심 판결은 이와 결론을 같이 하여 정당하고, 원고의 항소는 이유없어 이를 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   양동관(재판장) 전원열 배준현 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

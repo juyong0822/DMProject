@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다95390 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2059161';
+var contIdEtc = '2131376';
+var saNo = '2010다95390';
+var sngoNm = '선고';
+var saNm = '특허권침해금지및손해배상(기)';
+try {
+	var sngoDay=('20120119' ? 
+			'20120119'.length==4 ? Date.parseExact('20120119','yyyy').toString('yyyy. M. d.') : 
+				'20120119'.length==6 ? Date.parseExact('20120119','yyyyMM').toString('yyyy. M. d.') : 
+					'20120119'.length==8 ? Date.parseExact('20120119','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '전원합의체 판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다95390 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A1';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다95390';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다95390</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(69)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(12)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1970257">대법원 2012. 3. 15. 선고 2010다63133 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1969113">대법원 2012. 7. 12. 선고 2010다42082 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2244315">대법원 2017. 10. 26. 선고 2015다42599 판결 [공2017하,2167]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|658181">진보성이 부정되는 특허권에 기초한 금지청구의 가부 노윤종 法律新聞社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|757152">침해소송법원에서 특허발명의 진보성에 대한 심리ㆍ판단 가능 여부 유영선 사법발전재단</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|843030">특허침해소송에서의 진보성 판단 박원규 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|843042">권리남용항변과 명백성 요건 김태현 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|661867">특허침해소송에서의 진보성 판단 박원규 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|671524">특허분쟁 이원화 구조 관점에서 살펴본 대법원 판결 김태수 韓國發明振興會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|678220">특허분쟁 이원화 구조 관점에서 살펴본 대법원 판결 김태수 韓國發明振興會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|685631">진보성 없는 특허에 기한 특허권의 행사와 권리남용 도두형도두형 서울地方辯護士會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|685241">특허침해소송에서 진보성 판단 문제 김태현 大邱判例硏究會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|805472">김동준 후출원 특허발명을 확인대상으로 하는 권리범위확인심판 특별법연구 13권 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|700686">정태호 무효사유가 있는 상표권에 대한 권리남용의 적용상의 문제점 : 보충성 요건의 고려를 중심으로 . 선진상사법률연구 63호 / 법무부  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|690615">김원준 자유기술의 항변에 대한 비교법적 고찰 : 독일, 일본, 중국의 판례를 중심으로 . IT와 법연구 7집 / IT와 법센터  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683104">설민수 특허권 소진 법리의 역사적 전개와 한국에서의 적용 사법논집 . 제55집 제55집 / 법원도서관  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563532">한국. 대법원 법원행정처 재판실무편람. 제42호:. 임시의 지위를 정하기 위한 가처분 재판실무편람 임시의 지위를 정하기 위한 가처분 재판실무편람 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665436">김종석 직무발명이 그 출원 당시 이미 공지된 것이고 제3자도 그와 같은 사정을 용이하게 알 수 있었던 것으로 보이는 경우 실시보상금의 지급 의무 여부 대법원판례해설 90호  / 법원도서관  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661950">남현 기재불비의 하자가 있는 특허발명과 특허권침해죄 특허판례연구 개정판 / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|713468">강경태 제조방법을 기재한 물건발명 청구항 : (Product by Process Claim)의 해석 . LAW &amp; TECHNOLOGY 제9권 제5호 / 서울대학교 기술과법센터  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683609">강명수 특허권의 행사와 공정거래의 관계 인권과 정의 431호  / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|690583">이헌희 한중일 3국의 중재제도의 조화를 위한 소고 : 특허권 중재를 중심으로 . 중재연구 제23권 제1호  / 한국중재학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|697067">김용길 중재합의의 효력범위에 관한 고찰 중재연구 제23권 제2호  / 한국중재학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|802459">이현석 권리범위 확인심판에서 특허 무효사유의 판단가부에 대하여 LAW &amp; TECHNOLOGY 제12권 제2호 / 서울대학교 기술과법센터  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|688190">이호영 표준필수특허 보유자의 FRAND 확약 위반행위에 대한 공정거래법의 집행에 관한 연구 상사법연구 31권 4호 / 한국상사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|718285">정진근 저작권 라이선스 규제의 필요성과 과제 (계간)저작권 vol.26 no.4 / 한국저작권위원회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683906">백승엽 우리나라에서의 저작권 남용법리의 정립을 위한 일고찰 LAW &amp; TECHNOLOGY 제9권 제1호 / 서울대학교 기술과법센터  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|678943">전성태 특허침해소송에서의 무효의 항변 : 문제점과 해결방향을 중심으로 창작과 권리 69호 / 세창출판사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|551576">한국. 대법원 법원행정처 법원실무제요. [2-4]:. 민사집행(IV): 보전처분 법원행정처  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769785">박태일 무역위원회가 특허청구범위의 해석에 관한 법리 오해에 기인하여 불공정무역행위 판정에서의 재량권을 일탈ㆍ남용하였다고 판단한 사례 : 2014. 7. 24. 선고 2013두5180 판결: 미간행 대법원판례해설 제102호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|831005">설민수 행정절차에서 특허의 무효심사와 특허법의 방향 : 미국의 특허심판원(PTAB)과 관련제도에 중점을 두고 (2016년도)법관연수 어드밴스(Advance) 과정 연구논문집 : 전문 분야 소송의 주요쟁점(조세/지식재산권/노동)   / 사법연수원  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|848829">김창권 특허무효사유와 직무발명보상금 대법원판례해설 제112호 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769234">장락원 권리범위확인심판에서의 진보성 판단 여부 : 2014. 3. 20. 선고 2012후4162 전원합의체 판결 : 공2014상, 977 대법원판례해설 제100호 / 법원도서관  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|700333">박준석 무효사유 있는 특허권에 기한 권리행사와 권리남용 LAW &amp; TECHNOLOGY 제9권 제3호 / 서울대학교 기술과법센터  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827379">구민승 이용관계 해당 여부 및 권리 대 권리 적극적 권리범위확인심판의 허부 대법원판례해설 제108호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|723758">송재섭 표준특허에 근거한 권리행사의 한계 : 침해금지청구권과 손해배상청구권을 중심으로 . 저스티스 통권 제140호 / 한국법학원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|757223">장낙원 권리범위확인심판에서의 진보성 판단 여부 양승태 대법원장 재임 3년 주요 판례 평석   / 사법발전재단  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|855000">박태일 불사용취소로 될 것임이 명백한 상표권의 행사와 권리남용 항변 사법논집=. 제64집 제64집 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|843058">김관식 문언침해시 자유실시기술항변의 허용여부 특허판례연구   / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761582">김동준 특허청구범위 해석에 있어서 상세한 설명의 참작 정보법학 제16권 제3호 / 한국정보법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806104">박태일 반제품을 생산하여 수출한 행위가 특허권 간접침해행위에 해당하는지 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|671569">설민수 특허결정에 대한 특허침해소송 법원의 진보성 판단의 범위와 그 개선방향 법조  (2012.10) / 법조협회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|694234">문선영 국제특허침해소송의 재판관할권 판단기준에 관한 연구 : 국제적 비교법적 연구를 바탕으로 . 상사판례연구 26집 1권 / 한국상사판례학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687087">박성호 2012년 지적재산법 중요 판례 인권과 정의 제432호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687398">나지원(나지원) 특허권의 소멸과 실시료 지급합의의 효력(공정거래위원회 심결을 중심으로) 변호사 제43집 / 서울지방변호사회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|805920">손천우 제조방법이 기재된 물건(Product by Process) 청구항의 특허침해판단에서의 해석기준 사법 36호 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|752736">고학수 법경제학적 관점에서 본 판례의 변경 민사판례연구 36권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|737472">배대헌 특허보호대상을 건너뛴 특허요건 : MySpace,Inc.v.GraphOn Corp. 사건판결을 중심으로 . 법학논고 제46집 / 경북대학교 출판부  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661863">김태현 공지기술과 자유실시기술의 항변 특허판례연구 개정판 / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661867">박원규 특허침해소송에서의 진보성 판단 특허판례연구 개정판 / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|654783">정희영 무효사유 있음이 명백한 지식재산권에 기한 권리행사의 가부 LAW &amp; TECHNOLOGY 제8권 제1호 / 서울대학교 기술과법센터  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|704804">정차호 특별행정심판인 특허무효심판에서의 무효사유 증명책임 행정법연구 제36호  / 행정법이론실무학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|546336">대법원 형사법연구회 범죄유형별 재판 참고사항.. 2013 대법원 형사법연구회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716205">이진기 대리제도와 당사자에 관한 대법원 기본판결 비교사법 제20권 4호 / 한국비교사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|674565">유영선 침해소송법원에서 진보성의 심리·판단 가능 여부 사법 21호 / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|544373">한국 . 대법원 법원행정처 재판실무편람 . 제8호 : 지적재산권재판실무편람 법원행정처  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|700433">정택수 정정청구를 수반한 특허무효심판과 그 취소소송의 구조 특허소송연구 6집  / 특허법원  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|678946">최승재 상표침해소송에서 무효사유에 기한 청구기각의 가부 창작과 권리 69호 / 세창출판사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|690579">손경한 중재합의에 대한 새로운 고찰 중재연구 제23권 제1호  / 한국중재학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|757160">유영선 침해소송법원에서 상표등록 무효를 심리ㆍ판단할 수 있는지 여부 양승태 대법원장 재임 3년 주요 판례 평석   / 사법발전재단  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|719392">박준석 표준특허의 제문제 : ITC의 배제명령 발동가능성 문제를 포함하여 . 법학 54권 4호  / 서울대학교 법학연구소  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725685">강경태 청구범위해석의 체계 : 이원적 청구범위해석론의 재검토를 중심으로 . 특별법연구 11권 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|658835">윤선희 특허권 중재가능성에 관한 소고 중재연구 22권 1호  / 한국중재학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|792158">김관식 트레이드드레스 보호의 소극적요건으로서의 기능성 : 미국 CAFC 2015. 5. 18. 선고 Apple v. Samsung 판결을 중심으로 과학기술법연구 제21집 제3호 / 한남대학교 과학기술연구원  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|822596">이규홍 특허소송 관할집중에 있어서 ‘특허권 등에 관한 소’의 해석상 문제점에 관한 연구 : 헌법합치적 법률해석의 관점에서 사법 38호 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|715866">구대환 특허침해소송에서 권리남용 법리 적용의 문제점 법학논총 제20집 제2-1호 / 조선대학교 법학연구소  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|681957">안원모 특허에 진보성 결여가 명백한 경우의 침해소송법원에서의 처리 법조  (2013.01) / 법조협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|685631">도두형(도두형) 진보성 없는 특허에 기한 특허권의 행사와 권리남용 판례연구 제26집 1  / 서울지방변호사회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|685654">김범희(김범희) 상표권 침해소송에서의 상표등록 무효사유를 원인으로 한 권리남용 항변 판례연구 제26집 2  / 서울지방변호사회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|677989">손경한 분쟁해결합의에 관한 일반적 고찰 법조  (2012.12) / 법조협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|685241">김태현 특허침해소송에서 진보성 판단 문제 재판과 판례 제21집 / 대구판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|686116">정차호 대한민국 지식재산전문법원의 사물관할 법제연구 통권 제43호 / 한국법제연구원  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687680">정태호 특허침해소송에서의 권리남용의 적용에 대한 비판적 고찰 법학논총 제29권 제4호 / 한양대학교법학연구소  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725678">김관식 식별력 있는 표식로서 트레이드드레스(Trade Dress)의 법적 보호 : 한국과 미국에서 그 법적 보호의 비교를 중심으로 . 특별법연구 11권 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|732543">설민수 표준특허의 명암 , : 스마트폰 특허분쟁에서 특허알박기(Patent Holdup) 우려를 중심으로 . 저스티스 통권 제141호 / 한국법학원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761580">구대환 권리범위확인심판에서는 법원이 진보성 판단을 할 수 없는가? 정보법학 제16권 제3호 / 한국정보법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|711103">나지원 삼성전자와 Apple사 간 특허침해소송에서 나타난 권리남용의 항변 변호사 제44집 / 서울지방변호사회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|714833">박준석 한국 지적재산권법과 다른 법률들과의 관계 법조 (통권687호) (2013. 12) / 법조협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|757152">유영선 침해소송법원에서 특허발명의 진보성에 대한 심리ㆍ판단 가능 여부 양승태 대법원장 재임 3년 주요 판례 평석   / 사법발전재단  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|749827">김원준 등록상표권의 행사와 권리남용 : 대법원 2012.10.18. 선고 2010다103000 전원합의체 판결을 중심으로 기업법연구 제28권 제3호 / 한국기업법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761599">손승우 "특허유효성 추정원칙"의 국내 도입에 관한 검토 정보법학 제17권 제2호 / 한국정보법학회  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|91마540">대법원 1992. 6. 2.자 91마540 결정</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다7209">대법원 2001. 3. 23. 선고 98다7209 판결</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="특허법|1|0|null">특허법 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="특허법|29|0|null">특허법 제29조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="특허법|126|0|null">특허법 제126조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="특허법|128|0|null">특허법 제128조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="특허법|133|0|null">특허법 제133조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="특허법|1|0|null">특허법 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="특허법|29|0|null">특허법 제29조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="특허법|126|0|null">특허법 제126조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="특허법|128|0|null">특허법 제128조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="특허법|133|0|null">특허법 제133조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91마540">대법원 1992. 6. 2.자 91마540 결정</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다7209">대법원 2001. 3. 23. 선고 98다7209 판결</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다46226">대법원 1993. 12. 21. 선고 92다46226 전원합의체 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|1|0|null">특허법 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|29|0|null">특허법 제29조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|136|0|20010203">특허법(구) 제136조 제9항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="특허법|136|0|null">특허법 제136조 제8항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|451|0|null">민사소송법 제451조 제1항 제8호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나112741">서울고법 2010. 9. 29. 선고 2009나112741 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2131376">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 1. 19. 선고 2010다95390 전원합의체 판결</h2><p class="sub_title">[특허권침해금지및손해배상(기)][공2012상,299]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 특허발명에 대한 무효심결 확정 전이라 하더라도 진보성이 부정되어 특허가 무효로 될 것이 명백한 경우, 특허권에 기초한 침해금지 또는 손해배상 등 청구가 권리남용에 해당하는지 여부(원칙적 적극) 및 이 경우 특허권침해소송 담당 법원은 권리남용 항변의 당부를 판단하기 위한 전제로서 특허발명의 진보성 여부를 심리·판단할 수 있는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 명칭을 “드럼세탁기의 구동부 구조”로 하는 특허발명의 특허권자인 갑 주식회사가 을 주식회사를 상대로 특허침해금지 등을 청구한 사안에서, 진보성이 부정되어 특허가 무효로 될 것이 명백하다고 할 수 없는데도 위 청구가 권리남용에 해당한다고 본 원심판결에 법리오해의 위법이 있다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 특허법은 특허가 일정한 사유에 해당하는 경우에 별도로 마련한 특허의 무효심판절차를 거쳐 무효로 할 수 있도록 규정하고 있으므로, 특허는 일단 등록된 이상 비록 진보성이 없어 무효사유가 존재한다고 하더라도 이와 같은 심판에 의하여 무효로 한다는 심결이 확정되지 않는 한 대세적(대세적)으로 무효로 되는 것은 아니다. 그런데 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|1|">특허법은 제1조</a></span>에서 발명을 보호·장려하고 이용을 도모함으로써 기술의 발전을 촉진하여 산업발전에 이바지함을 목적으로 한다고 규정하여 발명자뿐만 아니라 이용자의 이익도 아울러 보호하여 궁극적으로 산업발전에 기여함을 입법목적으로 하고 있는 한편 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|29|">제29조 제2항</a></span>에서 그 발명이 속하는 기술분야에서 통상의 지식을 가진 자(이하 ‘통상의 기술자’라 한다)가 특허출원 전에 공지된 선행기술에 의하여 용이하게 발명할 수 있는 것에 대하여는 특허를 받을 수 없다고 규정함으로써 사회의 기술발전에 기여하지 못하는 진보성 없는 발명은 누구나 자유롭게 이용할 수 있는 이른바 공공영역에 두고 있다. 따라서 진보성이 없어 본래 공중에게 개방되어야 하는 기술에 대하여 잘못하여 특허등록이 이루어져 있음에도 별다른 제한 없이 그 기술을 당해 특허권자에게 독점시킨다면 공공의 이익을 부당하게 훼손할 뿐만 아니라 위에서 본 바와 같은 특허법의 입법목적에도 정면으로 배치된다. 또한 특허권도 사적 재산권의 하나인 이상 특허발명의 실질적 가치에 부응하여 정의와 공평의 이념에 맞게 행사되어야 할 것인데, 진보성이 없어 보호할 가치가 없는 발명에 대하여 형식적으로 특허등록이 되어 있음을 기화로 발명을 실시하는 자를 상대로 침해금지 또는 손해배상 등을 청구할 수 있도록 용인하는 것은 특허권자에게 부당한 이익을 주고 발명을 실시하는 자에게는 불합리한 고통이나 손해를 줄 뿐이므로 실질적 정의와 당사자들 사이의 형평에도 어긋난다. 이러한 점들에 비추어 보면, 특허발명에 대한 무효심결이 확정되기 전이라고 하더라도 특허발명의 진보성이 부정되어 특허가 특허무효심판에 의하여 무효로 될 것임이 명백한 경우에는 특허권에 기초한 침해금지 또는 손해배상 등의 청구는 특별한 사정이 없는 한 권리남용에 해당하여 허용되지 아니한다고 보아야 하고, 특허권침해소송을 담당하는 법원으로서도 특허권자의 그러한 청구가 권리남용에 해당한다는 항변이 있는 경우 당부를 살피기 위한 전제로서 특허발명의 진보성 여부에 대하여 심리·판단할 수 있다.
+        
+        </p>
+      <p></p><p>
+        </p><p>[2] 명칭을 “드럼세탁기의 구동부 구조”로 하는 특허발명의 특허권자인 갑 주식회사가 을 주식회사를 상대로 특허권에 기초하여 특허침해금지, 특허침해제품의 폐기 및 손해배상을 청구한 사안에서, 위 발명의 특허청구범위 제31항 중 일부 구성이 선행기술에 이미 개시되어 있거나 그로부터 용이하게 도출할 수 있는 것이라 하더라도, ‘서포터·베어링하우징 밀착구성’은 선행기술에 전혀 개시 또는 암시되어 있지 않아 통상의 기술자가 선행기술로부터 용이하게 도출할 수 없는 것이고, 특허청구범위 제31항은 각각의 구성이 유기적으로 결합한 전체로 볼 때 선행기술에 의하여 진보성이 부정되어 특허가 무효로 될 것이 명백하다고 할 수 없는데도, 이와 달리 위 청구가 권리남용에 해당한다고 본 원심판결에 법리오해의 위법이 있다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|1|">특허법 제1조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|29|">제29조 제2항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|126|">제126조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|128|">제128조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|133|">제133조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|">민법 제2조</a></span> [2]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|1|">특허법 제1조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|29|">제29조 제2항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|126|">제126조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|128|">제128조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|133|">제133조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|">민법 제2조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|91마540|결정" href="#//">대법원 1992. 6. 2.자 91마540 결정</a></span>(공1992하, 2109)(변경)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다7209|판결" href="#//">대법원 2001. 3. 23. 선고 98다7209 판결</a></span>(공2001상, 926)(변경)            </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        엘지전자 주식회사 (소송대리인 변호사 이수완 외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        주식회사 대우일렉트로닉스 (소송대리인 변호사 이임수 외 3인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나112741|판결" href="#//">서울고법 2010. 9. 29. 선고 2009나112741 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간 경과 후에 제출된 상고이유보충서들의 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 이 사건 제1 특허발명의 특허청구범위 제31항에 관한 상고이유에 대하여</p><p>  가. 
+        
+        <span class="accrnt_txt">특허법은 특허가 일정한 사유에 해당하는 경우에 별도로 마련한 특허의 무효심판절차를 거쳐 무효로 할 수 있도록 규정하고 있으므로, 특허는 일단 등록된 이상 비록 진보성이 없어 무효사유가 존재한다고 하더라도 이와 같은 심판에 의하여 무효로 한다는 심결이 확정되지 않는 한 대세적(대세적)으로 무효로 되는 것은 아니다</span>.
+      
+      </p><p>
+        <span class="accrnt_txt">그런데 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|1|" style="text-decoration:underline">특허법은 제1조</a></span>에서 발명을 보호·장려하고 그 이용을 도모함으로써 기술의 발전을 촉진하여 산업발전에 이바지함을 목적으로 한다고 규정하여 발명자뿐만 아니라 그 이용자의 이익도 아울러 보호하여 궁극적으로 산업발전에 기여함을 입법목적으로 하고 있는 한편 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|29|" style="text-decoration:underline">제29조 제2항</a></span>에서 그 발명이 속하는 기술분야에서 통상의 지식을 가진 자(이하 ‘통상의 기술자’라고 한다)가 특허출원 전에 공지된 선행기술에 의하여 용이하게 발명할 수 있는 것에 대하여는 특허를 받을 수 없다고 규정함으로써 사회의 기술발전에 기여하지 못하는 진보성 없는 발명은 누구나 자유롭게 이용할 수 있는 이른바 공공영역에 두고 있다. 따라서 진보성이 없어 본래 공중에게 개방되어야 하는 기술에 대하여 잘못하여 특허등록이 이루어져 있음에도 별다른 제한 없이 그 기술을 당해 특허권자에게 독점시킨다면 공공의 이익을 부당하게 훼손할 뿐만 아니라 위에서 본 바와 같은 특허법의 입법목적에도 정면으로 배치된다. 또한 특허권도 사적 재산권의 하나인 이상 그 특허발명의 실질적 가치에 부응하여 정의와 공평의 이념에 맞게 행사되어야 할 것인데, 진보성이 없어 보호할 가치가 없는 발명에 대하여 형식적으로 특허등록이 되어 있음을 기화로 그 발명을 실시하는 자를 상대로 침해금지 또는 손해배상 등을 청구할 수 있도록 용인하는 것은 특허권자에게 부당한 이익을 주고 그 발명을 실시하는 자에게는 불합리한 고통이나 손해를 줄 뿐이므로 실질적 정의와 당사자들 사이의 형평에도 어긋난다
+        
+        </span>.
+      
+      </p><p>
+        <span class="accrnt_txt">이러한 점들에 비추어 보면, 특허발명에 대한 무효심결이 확정되기 전이라고 하더라도 특허발명의 진보성이 부정되어 그 특허가 특허무효심판에 의하여 무효로 될 것임이 명백한 경우에는 그 특허권에 기초한 침해금지 또는 손해배상 등의 청구는 특별한 사정이 없는 한 권리남용에 해당하여 허용되지 아니한다고 보아야 하고, 특허권침해소송을 담당하는 법원으로서도 특허권자의 그러한 청구가 권리남용에 해당한다는 항변이 있는 경우 그 당부를 살피기 위한 전제로서 특허발명의 진보성 여부에 대하여 심리·판단할 수 있다고 할 것이다</span>.
+      
+      </p><p>  이와 달리 신규성은 있으나 진보성이 없는 경우까지 법원이 특허권 또는 실용신안권침해소송에서 당연히 권리범위를 부정할 수는 없다고 판시한 
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91마540|결정" href="#//">대법원 1992. 6. 2.자 91마540 결정</a></span> 및 
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다7209|판결" href="#//">대법원 2001. 3. 23. 선고 98다7209 판결</a></span>은 이 판결의 견해에 배치되는 범위에서 이를 변경하기로 한다.
+      
+      </p><p>  나. 위 법리에 따라서, 명칭을 “드럼세탁기의 구동부 구조”로 하는 이 사건 제1 특허발명(특허등록번호 제457429호) 중 특허청구범위 제31항(이하 ‘이 사건 제31항 발명’이라고 한다)의 진보성이 부정되어 그 특허가 무효로 될 것임이 명백하여, 위 발명의 특허권에 기초한 원고의 이 사건 특허침해금지, 특허침해제품의 폐기 및 손해배상 청구가 권리남용에 해당하는지 여부를 기록에 비추어 살펴본다.</p><p>  우선, 이 사건 제31항 발명의 구성들 중 ‘캐비닛 내측에 설치되는 플라스틱 재질의 터브, 터브 내측에 설치되는 드럼, 스테이터와 그 외주면을 감싸도록 형성된 로터로 이루어진 모터, 로터의 중심부와 드럼에 축으로 연결되어 모터의 구동력을 드럼에 전달하는 샤프트, 샤프트를 지지하기 위한 베어링, 베어링을 지지하기 위하여 중앙부가 원통형으로 형성된 금속 재질의 베어링하우징, 터브후벽부에 고정된 서포터의 구성’은 원심 판시 선행기술 1에 그대로 개시되어 있는 것들이다. 그리고 이 사건 제31항 발명의 구성들 중 ‘베어링하우징이 터브후벽부에 인서트 사출된 구성’은 통상의 기술자가 간접 구동식 드럼세탁기에 관하여 그와 같은 구성이 그대로 개시되어 있는 원심 판시 선행기술 2로부터 이를 채용하여 이 사건 제31항 발명과 같은 모터 직결식 드럼세탁기에 적용하여 구성하는 데에 별다른 기술적 어려움이나 결합의 곤란성이 없을 것으로 보인다.</p><p>  다음으로, 이 사건 제31항 발명 중 ‘베어링하우징의 후단부 일부가 터브후벽부로부터 돌출되어 터브후벽부에 의해 감싸지지 못하고 외부로 노출되도록 하고, 노출된 베어링하우징의 후단부 외주면에 서포터의 후단부가 밀착되도록 하는 구성’(이하 ‘서포터·베어링하우징 밀착구성’이라고 한다)에 대하여 보면, 이 구성은 샤프트를 짧게 하여 동심도(동심도)를 유지하기 위해 터브후벽부의 일부를 제거함에 따라 터브후벽부에 인서트 사출성형된 베어링하우징 후단부가 터브후벽부 외부로 노출되어 진동이 발생하므로, 터브후벽부에 고정된 서포터 후단부를 노출된 베어링하우징 후단부 외주면에 밀착되도록 함으로써 베어링하우징 후단부의 진동을 감소시키는 작용효과를 가지는 구성이다. 이 사건 제31항 발명의 특허출원 전에 공지된 것으로서 서포터·베어링하우징 밀착구성에 대응시켜 볼 수 있는 구성으로는 원심 판시 선행기술 3에 개시되어 있는 ‘서포터가 베어링하우징에 밀착되어 있는 구성’이 있으나, 이 구성에서는 서포터가 터브후벽부가 아닌 베어링하우징 자체에 나사로 결합되어 있는 관계로 베어링하우징과 함께 일체로 진동하게 되기 때문에 베어링하우징의 진동을 감소시키는 작용효과가 발생하지 않으므로, 서포터·베어링하우징 밀착구성에서와 같은 기술사상은 전혀 개시 또는 암시되어 있지 아니하다. 따라서 서포터·베어링하우징 밀착구성은 통상의 기술자가 선행기술 3으로부터 용이하게 도출할 수 없는 것이고, 기록에 의하더라도 그 이외에 통상의 기술자가 이를 용이하게 도출할 수 있다고 볼 만한 선행기술은 나타나 있지 않다.</p><p>  그렇다면 이 사건 제31항 발명은 그 각각의 구성이 유기적으로 결합한 전체로 볼 때 선행기술 1, 2, 3에 비하여 구성의 곤란성 및 효과의 현저성이 인정되므로, 이들 선행기술에 의하여 진보성이 부정되어 그 특허가 무효로 될 것임이 명백하다고 할 수 없다. 따라서 이 사건 제31항 발명의 특허권에 기초한 원고의 이 사건 청구는 권리남용에 해당하지 아니한다.</p><p>  다. 그럼에도 불구하고 원심은 선행기술 1, 2, 3에 의하여 이 사건 제31항 발명의 진보성이 부정되어 그 특허가 무효로 될 것임이 명백하다고 보아 이에 기초한 원고의 이 사건 청구는 권리남용에 해당하여 허용되지 아니한다고 판단하였으니, 이러한 원심판결에는 진보성에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다. 이 점을 지적하는 상고이유의 주장은 이유 있다.</p><p>  2. 이 사건 제1 특허발명의 특허청구범위 제5항, 제28항 및 이 사건 제2 특허발명의 특허청구범위 제1항, 제2항에 관한 상고이유에 대하여</p><p>  원심판결 이유에 의하면, 원심은 이 사건 제1 특허발명의 특허청구범위 제5항, 제28항 및 명칭을 “세탁기의 구동부 지지구조”로 하는 이 사건 제2 특허발명(특허등록번호 434303호)의 특허청구범위 제1항, 제2항은 모두 선행기술 1, 2 등에 의하여 진보성이 부정되어 그 특허가 무효로 될 것임이 명백하다고 보아, 이러한 특허권에 기초한 원고의 이 사건 특허침해금지, 특허침해제품의 폐기 및 손해배상 청구는 권리남용에 해당하여 허용되지 아니한다고 판단하였다.</p><p>  그러나 기록에 의하면, 원고의 정정심판청구에 의하여 원심판결 선고 이후인 2011. 7. 21. 위 각 발명의 청구범위를 정정하는 심결이 내려져 그 무렵 확정되었음을 알 수 있으므로, 이 사건 제1 특허발명의 특허청구범위 제5항, 제28항에 관하여는 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|136|">구 특허법(2001. 2. 3. 법률 제6411호로 개정되기 전의 것) 제136조 제9항</a></span>에 의하여, 이 사건 제2 특허발명의 특허청구범위 제1항, 제2항에 관하여는 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="특허법|136|">특허법 제136조 제8항</a></span>에 의하여, 위와 같이 정정된 후의 명세서에 의하여 특허출원 및 특허권의 설정등록이 된 것으로 보아야 한다.
+      
+      </p><p>  따라서 정정 전의 위 각 발명을 대상으로 하여 원고의 이 사건 청구의 당부를 심리·판단한 원심판결에는 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|451|">민사소송법 제451조 제1항 제8호</a></span>에 규정된 재심사유가 있어 결과적으로 판결에 영향을 미친 법령위반의 위법이 있게 되었다.
+      
+      </p><p>  3. 결론</p><p>  선택적으로 병합된 수개의 청구를 모두 기각한 항소심판결에 대하여 원고가 상고한 경우, 상고법원이 선택적 청구 중 일부라도 그에 관한 상고가 이유 있다고 인정할 때에는 원심판결을 전부 파기하여야 할 것이므로(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다46226|전원합의체 판결" href="#//">대법원 1993. 12. 21. 선고 92다46226 전원합의체 판결</a></span> 참조), 선택적으로 병합된 수개의 이 사건 청구를 모두 기각한 원심판결을 전부 파기하고, 사건을 다시 심리·판단하도록 원심법원에 환송하기로 하여, 관여 법관의 일치된 의견으로 주문과 같이 판결한다.
+      
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법원장   양승태(재판장)        대법관   박일환 김능환 전수안 안대희 양창수 신영철 민일영 이인복 이상훈(주심) 박병대 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

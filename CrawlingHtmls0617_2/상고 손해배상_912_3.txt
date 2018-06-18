@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 87누880 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2088582';
+var contIdEtc = '';
+var saNo = '87누880';
+var sngoNm = '선고';
+var saNm = '법인세등부과처분취소';
+try {
+	var sngoDay=('19890328' ? 
+			'19890328'.length==4 ? Date.parseExact('19890328','yyyy').toString('yyyy. M. d.') : 
+				'19890328'.length==6 ? Date.parseExact('19890328','yyyyMM').toString('yyyy. M. d.') : 
+					'19890328'.length==8 ? Date.parseExact('19890328','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 87누880 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '87누880';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />87누880</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(12)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(5)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(4)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(10)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2100691">대법원 1989. 8. 8. 선고 88누3680 판결 [집37(2)특,592;공1989.10.1.(857),1370]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1991319">대전고등법원 2002. 8. 29. 선고 2001누1893 판결：상고 [하집2002-2,491]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1966859">대법원 2004. 4. 9. 선고 2002두9254 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|604934">조일영 법인의 실질적 경영자인 대표이사 등이 법인의 자금을 유용한 행위가 자금에 대한 지출 자체로서 사외유출에 해당한다고 볼 수 없는 특별한 사정의 유무 대법원판례해설 78호 (2009.07) / 법원도서관  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|734368">이예슬 소득처분의 입증책임·효과 및 효과 발생시점 규제와 법정책 제1호 / 규제법연구회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|576263">이철송 법인대표자에 대한 상여처분제도의 타당성 조세법연구 (9-1) (2003.07) / 세경사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|535147">서울행정법원 조세소송실무   2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|599714">이전오 2008년 조세법 판례 연구 인권과 정의 391호  / 대한변호사협회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701862">안경봉 법인의 실질적 경영자의 횡령금에 대한 소득세 과세 법학논총 제30권 제2호 / 한양대학교법학연구소  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|563471">윤지현 대표이사가 회사 재산을 횡령한 경우 상여로 소득처분할 수 있는 요건에 관한 고찰 특별법연구 8권  / 사법발전재단  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806080">하태흥 대리인의 양도대금 횡령과 양도소득의 귀속 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|431085">전경근 예금계약에 관한 연구 서울대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|235801">윤병철 대표이사 유용금의 근로소득과세 가능성 국세 364호  / 국세청 세우회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|826591">임성민 위법소득이 몰수 또는 추징된 경우, 후발적 경정청구를 통해 납세의무의 부담에서 벗어날 수 있는지 여부 재판과 판례 제25집 / 대구판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|475888">서울고등법원 행정소송실무편람 한국사법행정학회  2003 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|84누481">
+대법원 1985.4.23. 선고 84누481 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|85누129">
+1985.9.10. 선고 85누129 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|85누605">
+1986.10.28. 선고 85누605 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|87누450">
+대법원 1987.10.26 선고 87누450 판결</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|86누790">
+1988.11.22 선고 86누790 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="법인세법|2|0|null">법인세법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="법인세법|20|0|null">법인세법 제20조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="법인세법|13|0|null">법인세법 제13조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="법인세법|17|0|null">법인세법 제17조 제6항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="법인세법시행령|18|0|null">법인세법시행령 제18조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85누129">당원 1985.9.10.선고 85누129 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85누605"> 1986.10.28선고 85누605 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|87누450">당원 1987.10.26.선고 87누450 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|86누790">1988.11.22. 선고 86누790 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법|13|0|null">법인세법 제13조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법시행령|18|0|null">법인세법시행령 제18조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법시행규칙|7|0|null">법인세법시행규칙 제7조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법시행규칙|13|0|null">법인세법시행규칙 제13조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="소득세법|21|0|null">소득세법 제21조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="근로기준법|28|0|null">근로기준법 제28조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법|17|0|null">법인세법 제17조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법|17|0|null">법인세법 제17조 제6항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|85구982">
+서울고등법원 1987.8.13. 선고 85구982 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1989. 3. 28. 선고 87누880 판결</h2><p class="sub_title">[법인세등부과처분취소][공1989.5.15.(848),687]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 금융기관의 시설자금대출에 따른 소위 여신관리자금 및 그 환급이자와 선취이자의 법적 성질</p>
+      <p></p>
+      <p>
+        </p><p>나. 사용자가 피용자에 대하여 취득한 불법행위로 인한 손해배상채권 상당액을 피용자에게 지급된 근로소득으로 볼 수 있는지 여부(소극)와 이에 관한 법인세법기본통칙의 효력</p>
+      <p></p>
+      <p>
+        </p><p>다. 연, 월차수당과 휴가보상금 및 해외지점에 근무하는 직원에게 지급한 급여가 법인세법상 퇴직급여충당금 한도액 산정의 기초가 되는 "총급여액"에 포함되는지 여부(적극)와 이에 관한 법인세법기본통칙의 효력</p>
+      <p></p>
+      <p>
+        </p><p>라. 금융기관이 비업무용 자산을 성업공사에 위임하여 매각하면서 지급한 수수료를 손금부인할 수 없다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 금융기관의 기업에 대한 시설자금대출에 따른 소위 여신관리자금은 예금이 아니므로 이에 관한 환급이자도 예금이자라고 할 수 없고 여신관리자금이 실제로 인출되지 않는 한 아직 대출이 실행된 것도 아니므로 미실행분에 대한 선취이자 역시 대출이자라고 할 수 없다.</p>
+      <p></p><p>
+        </p><p>나. 사용자가 피용자에 대하여 불법행위로 인한  손해배상청구채권을  취득한 경우 그 손해배상액 상당을 곧바로 그 피용자에게  지급된  근로소득으로 볼 수 있는 법령상의 근거규정이 없고, 피용자가 부당유용한 공금을 회수할 수 없는 경우에는 그 피용자의 근로소득으로 처리한다고 규정한  법인세법기준통칙 2-14-9. (20) 제12호 단서는 법령에 근거가 없는 것이어서 법규적 효력이 없다.</p>
+      <p></p><p>
+        </p><p>다. 연, 월차수당과 휴가보상금은 성질상 실비변상이나 복지후생에 관한 것이 아니고 근로의 대가로 받는 것이므로 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|13|">법인세법 제13조 제1항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행령|18|">같은법시행령 제18조 제2항</a></span> 소정의 퇴직급여충당금 한도액 산정의 기초가  되는 "총급여액"에 포함되고 또 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="근로기준법|28|">근로기준법 제28조</a></span>에 의하면  특별한 사정이 없는한 해외지점에 근무하는 현지 직원에 대하여도 퇴직급여 충당금을 계상할 필요가 있으므로 그 직원들에게 지급한 급여도 "총급여액"에 포함된다.
+        </p>
+      <p></p><p>
+        </p><p>라. 금융기관이 담보권실행으로 유입 취득한 비업무용 자산을 금융단협정에 따라 성업공사에 위임하여 매각하면서 수수료는 매각대금의 1퍼센트로 하되 그 지급시기는 매매계약이  체결되어 계약보증금을 수령할 때에 50퍼센트를, 매매대금 완납시에 나머지 50퍼센트를 각 지급하며, 매매계약이 해제되더라도 성업공사는 계약시 지급 받은 수수료를 반환하지 않기로 되어 있어서 계약보증금 수령시 그 수수료 50퍼센트를 성업공사에 지급한 것이라면 금융기관은 계약금 이외의 매매대금을 지급 받지 않더라도 수수료 50퍼센트의 지급의무를 확정적으로 부담하게 되므로 성업공사에 지급된 수수료를 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|17|">법인세법 제17조 제6항</a></span> 소정의 "각 사업년도에  회수하거나 회수할 판매 또는 양도금액에 대응하는 비용"이라고 할 수 없고, 따라서 이를 선급비용으로 취급하여 손금부인할 수도 없다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|2|">법인세법 제2조</a></span> 나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|20|">제20조</a></span> 다.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|13|">제13조 제1항</a></span> 라.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|17|">제17조 제6항</a></span> 나. 법인세법기본통칙 2-14-9 다. 2-6-5 다.        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행령|18|"> 법인세법시행령 제18조 제2항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">가.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|84누481|판결" href="#//">대법원 1985.4.23. 선고 84누481 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|85누129|판결" href="#//">1985.9.10. 선고 85누129 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|85누605|판결" href="#//">1986.10.28. 선고 85누605 판결</a></span><br />다.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|87누450|판결" href="#//">대법원 1987.10.26 선고 87누450 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|86누790|판결" href="#//">1988.11.22 선고 86누790 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          주식회사 서울신탁은행 소송대리인 변호사 황의채
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          중부세무서장
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|85구982|판결" href="#//">
+서울고등법원 1987.8.13. 선고 85구982 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.</p><p>  상고비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 본다.</p><p>  제1점에 대하여,</p><p>  원심판결이 확정한 바와 같이 금융단 협정에 따라 원고은행과 소외 회사 사이의 약정으로 개설된 여신자금관리계정이 장기간에 걸쳐 거액을 필요로 하는 긴요산업시설공사 자금을 중점적으로 공급하기 위하여 마련된 정책금융계정이고 그 시설자금대출의 승인을 받은 금융기관이 그 승인된 금액에 대하여 실제로는 대출이 없으면서도 이를 시설자금대출과목으로 계상하여, 그 전액을 차주명의의 여신관리자금계좌로 이체 입금하여 두고, 그 금액전부에 대한 연10퍼센트의 선이자를 차주로부터 받은 다음 그 대출목적인 시설공사 기성고를 확인하여 그때마다 기성액 해당의 자금을 인출, 대여하여 주면서 미리 받았던 선이자액도 차주가 실제로 인출사용하지 아니한 기간, 즉 여신관리자금계좌에의 유보기간 분에 해당하는 기간의 이자액에서 대출수수료 명목으로 연0.5퍼센트 상당액을 공제한 잔액을 차주에게 환급하여 주는 방식으로 운용되어 왔다면 
+        <span class="accrnt_txt">위 시설자금대출에 따른 여신관리자금은 예금이라 할 수 없는 것이어서 이에 관한 환급이자도 예금이자라고 할 수 없다 하겠고 또한 여신관리자금이 실제로 인출되지 아니하는 한 아직 대출이 실행된 것도 아니므로 미실행분에 대한 선취이자 역시 대출이자라고 할 수는 없다.</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85누129|판결" href="#//">당원 1985.9.10.선고 85누129 판결</a></span>,
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85누605|판결" href="#//"> 1986.10.28선고 85누605 판결</a></span> 참조).
+      </p><p>  같은 취지의 원심판단은 정당하고 거기에 지적하는 바와 같은 예금이자에 대한 법리의 오해나 채증법칙위배, 이유불비의 위법이 없다. 주장은 이유 없다.</p><p>  제2점에 대하여,</p><p>
+        <span class="accrnt_txt">사용자가 피용자에 대하여 불법행위로 인한 손해배상청구채권을 취득하였다하여 그 손해배상액 상당이 곧바로 그 피용자에게 지급된 근로소득으로 볼 수 있는 법령상의 근거규정이 없으므로</span>(더우기 이 사건에서는 원고가 취득한 소외 이원준에 대한 손해배상청구채권이 소외인의 무자력 등으로 회수할 수 없게되어 대손금으로 손금처리까지 되었다). 같은 취지에서 원심이 불법행위자인 피용자에게 손해배상채권 상당액의 근로소득이 지급되었음을 전제로 한 이 사건 원천징수소득세부과처분이 위법하다고 판단한 것은 정당하고 거기에 주장과 같은 법리오해등의 위법이 있다할 수 없다.
+      </p><p>
+        <span class="accrnt_txt">법인세법기본통칙 2-14-9...(20) 제12호 단서에 피용자가 부당 유용한 공금을 회수할 수 없는 경우에는 그 피용자의 근로소득으로 처리한다고 규정하고 있지만 이는 법령에 근거가 없는 것이어서 법규적 효력을 인정할 수 없다.</span> 주장은 이유 없다.
+      </p><p>  제3점에 대하여,</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|13|">법인세법 제13조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행령|18|">같은법시행령 제18조 제2항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행규칙|7|">같은법시행규칙 제7조제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행규칙|13|">제13조 제2항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소득세법|21|">소득세법 제21조 제1항 제1호 (가)</a></span>의 규정에 의하면, 
+        <span class="accrnt_txt">연·월차수당과 휴가보상금은 성질상 실비변상이나 복지후생에 관한 것이 아니고 어디까지나 근로의 대가로 받는 것이므로
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|13|" style="text-decoration:underline"> 법인세법 제13조 제1항</a></span>,
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행령|18|" style="text-decoration:underline"> 같은법시행령 제18조 제2항</a></span>에서 정한 퇴직급여 충당금 한도액 산정의 기초가 되는"총급여액"에 포함된다 할 것이고 또 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="근로기준법|28|" style="text-decoration:underline">근로기준법 제28조</a></span>에 의하면 특별한 사정이 없는 한 해외지점에 근무하는 현지직원에 대하여도 퇴직급여충당금을 계상할 필요가 있는 것이므로 그 직원들에게 지급한 급여도 위 퇴직급여충당금한도액 산정의 기초가 되는 "총급여액"에 포함된다 할 것이다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|87누450|판결" href="#//">당원 1987.10.26.선고 87누450 판결</a></span>; 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|86누790|판결" href="#//">1988.11.22. 선고 86누790 판결</a></span> 참조).
+      </p><p>  그리고 이 사건 퇴직급여충당금을 산정함에 있어 피고가 내세우고 있는 법인세법기본통칙 2-6-5...(13)의 규정도 법규적 효력이 있는 것이 아니다.</p><p>  같은 취지의 원심판결은 정당하고 거기에 지적하는 바와 같은 법리오해의 위법이 없다.</p><p>  또 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|17|">법인세법 제17조 제1항</a></span>은 내국법인의 각 사업년도의 익금과 손금의 귀속사업년도는 그 익금과 손금이 확정된 날이 속하는 사업년도로 한다고 규정함으로써 권리의무확정(발생)주의를 채택하고 있고, 원심이 적법하게 인정한 사실에 의하면, 
+        <span class="accrnt_txt">금융기관은 담보권실행으로 유입취득한 비업무용 재산을 원칙적으로 금융단협정에 따라 성업공사에 위임하여 매각하되 그 수수료는 매각대금의 1퍼센트로 하고, 수수료의 지급시기는 매매계약이 체결되어 계약보증금을 수령할 때에 50퍼센트를, 매매대금완납시에 나머지 50퍼센트를 각 지급하며, 매매계약이 해제되더라도 성업공사는 계약시 지급 받은 위 수수료를 반환하지 않기로 되어 있어서 원고가 유입취득한 비업무용자산의 매각을 성업공사에 위임하고 그 계약보증금을 수령할 때 그 수수료 50퍼센트를 지급한 것이라면 원고는 계약금 이외의 매매대금을 지급 받지 아니하더라도 수수료 50퍼센트의 지급의무를 확정적으로 부담하게 된다고 할 것이므로 성업공사에 지급되는 위수수료를
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|17|" style="text-decoration:underline"> 법인세법 제17조 제6항</a></span>에서 규정한 "각 사업년도에 회수하거나 회수할 판매 또는 양도금액에 대응하는 비용"이라고 할 수 없고, 따라서 이를 선급비용으로 취급하여 손금부인할 수도 없다할 것이다.
+        </span>
+      </p><p>  같은 취지의 원심판단은 정당하고 거기에 지적하는 바와 같은 법리오해의 위법이 없다. 주장은 이유 없다.</p><p>  그러므로 상고를 기각하고, 상고비용은 패소자의 부담으로 하여 관여법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   안우만(재판장) 김덕주 윤관 배만운 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

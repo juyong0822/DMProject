@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대전고등법원 2004나8508 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2030336';
+var contIdEtc = '';
+var saNo = '2004나8508';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20061227' ? 
+			'20061227'.length==4 ? Date.parseExact('20061227','yyyy').toString('yyyy. M. d.') : 
+				'20061227'.length==6 ? Date.parseExact('20061227','yyyyMM').toString('yyyy. M. d.') : 
+					'20061227'.length==8 ? Date.parseExact('20061227','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대전고등법원';
+var bubCd = '000600';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2004나8508 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2004나8508';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대전고등법원<br />2004나8508</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|686274">김남근 공동주택의 분양에 관한 판례경향의 비판적 고찰 고려법학 제66호  / 고려대학교 법학연구원  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665686">이준현 아파트 일조부족에 대한 분양회사의 하자담보책임 또는 채무불이행책임 재산법연구 28권 4호  / 법문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655549">이흥구 일조 부족과 아파트 분양회사의 하자담보책임 판례연구 23집 / 부산판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661993">고은설 일조가 부족한 아파트의 분양자책임 : 하자담보책임을 중심으로 민사판례연구 34권  / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631375">이헌숙 분양받은 아파트의 일조가 연속 2시간에 미달하는 경우 하자담보책임의 성립 여부 대법원판례해설 83호  / 법원도서관  2010 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다72213">대법원 2002. 12. 10. 선고 2000다72213 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|95다12798">대법원 1996. 6. 11. 선고 95다12798 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건축법시행령|86|0|19960222">건축법시행령 제86조 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건축법시행령|90|0|19891120">건축법시행령(구) 제90조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="건축법시행령|86|0|20000627">건축법시행령 제86조 제2항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|582|0|null">민법 제582조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|null">집합건물의소유및관리에관한법률 제9조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|667|0|null">민법 제667조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|671|0|null">민법 제671조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|2002가합3291">대전지방법원 2004. 8. 25. 선고 2002가합3291 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대전고등법원 2006. 12. 27. 선고 2004나8508 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원    고】
+      
+        
+          원고 1외 120인 (소송대리인 변호사 김삼현)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인 겸 항소인】
+      
+        계룡건설산업 주식회사외 1 (소송대리인 법무법인바른 담당변호사 김의재외 1인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2006. 11. 22.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|2002가합3291|판결" href="#//">대전지방법원 2004. 8. 25. 선고 2002가합3291 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 아래에서 지급을 명하는 부분에 해당하는 원고들 패소부분을 취소한다.</p><p>  피고들은 연대하여 별지 기재 원고 순번 1, 2, 4, 5, 7, 8, 10, 11, 13, 15, 16, 18, 19, 24 내지 89, 91 내지 94, 96, 97, 99 내지 101, 103, 105, 107, 109 내지 121 원고에게 별지 손해배상내역표 ‘⑤ 차액’란 기재 각 금액 및 위 각 금액에 대하여 2002. 6. 4.부터 2006. 12. 27.까지 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 돈을 지급하라.</p><p>2. 
+        원고 3, 
+        6, 
+        9, 
+        12, 
+        14, 
+        17, 
+        20, 
+        21, 
+        22, 
+        23, 
+        90, 
+        95, 
+        98, 
+        102, 
+        104, 
+        106, 
+        108의 항소 및 나머지 원고들의 나머지 항소와 피고들의 항소를 각 기각한다.
+      </p><p>3. 
+        원고 3, 
+        6, 
+        9, 
+        12, 
+        14, 
+        17, 
+        20, 
+        21, 
+        22, 
+        23, 
+        90, 
+        95, 
+        98, 
+        102, 
+        104, 
+        106, 
+        108의 항소비용은 위 원고들이, 나머지 원고들과 피고들 사이에 생긴 소송총비용은 그 중 60%는 나머지 원고들이, 40%는 피고들이 각 부담한다.
+      </p><p>4. 제1항에서 지급을 명한 부분은 가집행할 수 있다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지 </p>
+      <p>피고들은 각자 원고들에게 별지 손해배상내역표 중 ‘⑥ 청구금액’란 기재 각 금액 및 소장 최후 송달 다음날부터 판결선고일까지 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금액을 지급하라. </p>
+      <p>2. 항소취지</p>
+      <p>  가. 원고들 항소취지 : 제1심 판결 중 원고들 패소부분을 취소하고 피고는 원고들에게 제1심 판결금액에 추가하여 별지 Ⅱ 기재 ‘2심 추가청구금액’란 기재 각 금액 및 이에 대한 2002. 6. 4.부터 이 사건 선고일까지는 연 5%의, 그 다음날부터 완제일까지는 연 20%의 각 비율에 의한 금액을 지급하라.</p>
+      <p>  나. 피고들 항소취지 : 제1심 판결 중 피고들 패소부분을 취소하고, 그에 해당하는 원고들의 청구를 기각하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실(다툼 없음)</p><p>  피고들은 대전 대덕구 
+        (이하 생략) 지상에 
+        ○○마을 4단지 아파트(이하, 이 사건 아파트라 한다)를 건설하여 분양한 회사들이다.
+      </p><p>  원고들은 피고들의 이 사건 아파트 입주자 모집공고에 분양신청을 하여 그 순위에 따라 추첨을 통하여 입주자로 선정 및 동·호수 배정을 받아 1997. 3.경 피고들과 분양계약을 체결한 후 분양대금을 납입하고 1999. 12.경 각 소유권이전등기를 마친 자들이거나, 1999. 10. 중순 전까지 이 사건 아파트 각 해당 세대에 관하여 분양권을 전매하거나 또는 미분양 세대에 관하여 피고들과 분양계약을 체결하여 소유권을 취득한 자들로서 1999. 10. 중순경부터 일반인들에게 출입이 허용된 이 사건 아파트에 1999. 11.경부터 입주하기 시작하였다.</p><p> 2. 손해배상책임의 발생에 대한 판단</p><p>  가. 원고들 주장</p><p>  원고들은, 원고들이 분양 받은 이 사건 아파트의 각 세대에는 수인한도를 넘는 일조권, 조망권의 침해가 있는바, 이는 피고들이 아파트 분양시 요구되는 통상 수준의 품질을 갖추지 아니한 아파트를 공급하면서 그에 대한 정확한 정보를 제공하지 않음으로써 원고들에게 손해를 입혔으므로, 피고들은 원고들에게 하자담보책임 내지 채무불이행 책임에 기하여 원고들이 입은 손해를 배상하여야 한다고 주장한다.</p><p>  나. 인정사실</p><p>    (1) 원고들이 거주하는 이 사건 아파트는 18층(높이 48.3m), 19층(높이 51.1m)으로서 단지내 아파트는 동남향으로 배치되어 있고, 이 사건 아파트는 ㄷ 자 형태로 이루어져 있으며, 가장 가까운 동간 거리는 6.65m에서 9.37m이고 마주 보는 건물 사이는 51m에서 55m에 이른다. 단지 형태는 주출입구쪽(동남방향)에서 부출입구쪽(서북방향)으로 경사진 형태이고 그 고도차이는 11.5m이다. 구체적인 이 사건 아파트의 각 동의 배치, 동간 거리, 각 동의 높이는 별지 도면 표시와 같다.</p><p>    (2) 피고들이 이 사건 아파트 분양당시 모델하우스에 이 사건 아파트에 관한 배치도 및 조감도를 비치하였고, 분양가격은 평수와 사양에 의하여만 결정되었다.</p><p>    (3) 관련 법규정</p><p>  피고들이 이 사건 아파트를 건축할 당시 시행되던 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건축법시행령|86|">건축법시행령(1996. 2. 22. 대통령령 제14920호) 제86조 제2호 나목</a></span>은, 일조 등의 확보를 위한 건축물의 높이 제한에 관하여 ‘당해 대지 안의 모든 세대가 동지일을 기준으로 9시에서 15시 사이에 건축조례가 정하는 시간 이상을 연속하여 일조를 확보할 수 있는 높이 이하’이면 높이 제한을 받지 않는다고 규정하고 있었음에도 당시 대전광역시건축조례 및 대전광역시대덕구건축조례에서는 위와 같은 사항을 규정하지 않고 있었으나, 위 건축법시행령으로 개정되기 전의 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건축법시행령|90|">구 건축법시행령(1989. 11. 20. 대통령령 제12845호로 개정된 것) 제90조 제1호 나.목의 (7)</a></span>에 의하면 ‘당해 대지 내의 모든 세대가 동지일을 기준으로 9시에서 15시 사이에 2시간 이상 연속하여 일조를 확보할 수 있다’고 인정되면 높이 제한을 받지 않는다고 규정하고 있었으며, 현재 시행되고 있는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="건축법시행령|86|">건축법시행령(2000. 6. 27. 대통령령 제16874호로 개정된 것) 제86조 제2항 제2호</a></span>에 의하면 ‘동일한 대지 안에서 2동 이상의 건축물이 서로 마주보고 있는 경우(1동의 건축물의 각 부분이 서로 마주보고 있는 경우를 포함한다)의 건축물 각 부분 사이의 거리는 건축조례가 정하는 거리 이상’을 띄워야 하나, 다만, ‘당해 대지 안의 모든 세대가 동지일을 기준으로 9시에서 15시 사이에 2시간 이상을 계속하여 일조를 확보할 수 있는 거리 이상’이면 그 제한을 받지 않는 것으로 규정하고 있다.
+      </p><p>    (4) 이 사건 아파트 단지 내 서북방향에 위치한 원고들 소유 아파트는 ㄷ 자 형태로 인한 일조방해와 아울러 고도가 더 높은 동남향에 위치한 아파트들로 인하여 일조에 더 큰 방해를 받고 있다. 원고들이 소유하는 이 사건 아파트의 각 세대에 대한 동지일인 12. 21.의 각 일조시간은 별지 손해배상내역표 중 ‘① 일조시간’란 각 기재와 같고, 원고들은 일조방해로 난방비와 전기료를 일조방해를 받지 않은 가구보다 초과하여 지출하고 있다. </p><p>    (5) 일조침해의 회피가능성 등</p><p>  피고들은 이 사건 아파트를 분양하면서 이 사건 아파트에 사회통념상의 수인한도를 넘는 일조 침해가 발생한다는 사실을 예측할 수 있었을 터인데도 이 사건 아파트를 분양시에 수분양자들에게 그러한 사실을 고지하거나 설명한 바가 없다. 그리고 피고들이 동간 거리를 늘리거나 또는 서북방향쪽 토지의 높이를 높이거나 또는 동의 배치를 달리하는 등의 방법으로 위와 같은 심각한 일조침해를 회피할 수 있는 가능성이 있었다고 판단된다.</p><p>  (6) 이 사건 아파트에서 원고들 각 세대의 가운데 전면에서 밖을 바라보았을 때 다른 아파트에 의해 가려지는 정도는, 최소 75%에서 최대 100%에 이르고 있다.</p><p>[인정근거] : 갑 제1 내지 6호증(가지번호 포함), 을 제2호증, 을 제4 내지 27(가지번호 포함)의 각 기재 및 영상, 제1심 법원의 현장검증결과, 제1심 감정인 이영규의 이 사건 아파트에 대한 일조권, 조망권 및 프라이버시 침해에 관한 감정결과, 제1심 감정인 류경순의 이 사건 아파트에 대한 일조권 등의 침해에 따른 가치하락액 감정결과, 제1심 법원의 이영규, 류경순에 대한 각 사실조회결과, 당원의 현장검증결과, 변론전체의 취지   </p><p>  나. 판단</p><p>    (1) 일조미달에 대하여</p><p>      (가) 주거의 일조는 쾌적하고 건강한 생활에 필요한 생활이익으로서 법적 보호의 대상이 되는 것으로서, 피고들이 공급한 아파트에 수인한도 내의 일조량이 보장되지 않아 그로 인하여 재산적 가치의 하락을 초래하는 경우에는 아파트가 매매매목적물로서 통상 갖추어야 할 품질을 갖추지 못하였다고 볼 것이다. 또한 대단위 아파트를 분양 받는 일반인이라면 누구나 일조와 전망이 좋은 이른바 로얄층을 분양 받기를 원하고 있으나, 현실은 그렇지 못하여 같은 단지 내의 아파트라 하더라도 그 위치와 층수에 따라 일조량이 천차만별이다. 그러므로 아파트를 특정하여 매수하지 않는 한 수분양자들은 자신이 원하는 곳의 아파트를 분양 받을 수 없는 결과가 항상 생길 수 밖에 없고, 분양신청자 또한 그러한 사정을 알고도 추첨을 통하여 분양을 받고 있는 것이 우리의 현실이다. 따라서 아파트를 건설하는 회사로서는 아파트를 설계하고 시공함에 있어 일조 등이 침해되지 않도록 최대한의 배려를 하여야 할 것이고, 이를 위하여 위에서 본 바와 같이 건축법과 건축조례는 건물 상호간 최소한의 이격거리를 규정하고 있다. 결론적으로 피고들로서는 분양되는 아파트의 일조 등에 관하여 명시적인 약정이 없었다 하더라도 신의칙상 적어도 사회통념상 용인되는 수인한도 내의 일조량이 보장되는 아파트를 공급하여야 할 의무가 있다고 할 것이다.</p><p>  그리고 일조 등의 침해가 사회통념상 수인한도를 넘었는지 여부는 피해의 정도, 피해이익의 성질 및 그에 대한 사회적 평가, 가해 건물의 용도, 지역성, 토지이용의 선후관계, 가해 방지 및 피해 회피의 가능성, 공법적 규제의 위반 여부, 교섭 경과 등 모든 사정을 종합적으로 고려하여 판단하여야 하고, 건축 후에 신설된 일조권에 관한 새로운 공법적 규제 역시 이를 판단함에 있어서 중요한 자료가 될 수 있다 할 것인바(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다72213|판결" href="#//">대법원 2002. 12. 10. 선고 2000다72213 판결</a></span> 등 참조), 위에서 본 바와 같이, 원고들이 일조량의 미달로 주거환경에서 건강상 위해 뿐만 아니라 난방비, 전기료 등의 지출도 큰 점, 원고들이 분양 받은 이 사건 아파트 각 세대의 분양가격은 그 평수와 사양에 따라 정하여져 있을 뿐 일조 등의 침해를 고려하여 정해지지 않았고, 원고들 중 상당수는 추첨에 의하여 분양 받았고 그렇지 아니한 원고들도 대부분은 분양 받을 당시 이 사건 아파트가 완공되지 아니하는 등의 사정으로 각자 분양 받은 세대에 대하여 위 일조권 침해 등을 고려하여 가격결정권을 행사하지 못한 점, 관련 법규정이 동지를 기준으로 일정한 일조량을 확보하여야 한다고 규정하고 있는 점, 피고들이 이 사건 아파트를 건축하면서 일조방해를 어느 정도 회피할 수 있었다고 보이는 점, 대도시 인구의 과밀화 및 토지의 효율적 이용을 위한 건물의 고층화 경향이 있는 점 등을 종합할 때 이 사건 아파트의 경우 동지일을 기준으로 9시부터 15시까지 사이의 6시간 중 일조시간이 연속하여 2시간 이상 확보되지 아니하는 일조방해의 경우에는 사회통념상 일반적으로 용인되는 수인한도를 넘는 경우라고 봄이 상당하다. 
+      </p><p>      (나) 따라서, 
+        원고 3, 
+        소외 1, 
+        원고 6, 
+        9, 
+        12, 
+        14, 
+        17, 
+        소외 2,
+        원고 20, 
+        21, 
+        22, 
+        23, 
+        90, 
+        95, 
+        98, 
+        102, 
+        104, 
+        106, 
+        108, 
+        소외 3이 소유하는 각 세대의 일조침해는 수인한도 내에 있다고 할 것이다.
+      </p><p>  그러나, 별지 기재 원고 순번 1, 2, 4, 5, 7, 8, 10, 11, 13, 15, 16, 18, 19, 24 내지 89, 91 내지 94, 96, 97, 99 내지 101, 103, 105, 107, 109 내지 121 원고들이 소유하는 각 세대의 일조침해는 수인한도를 넘는다고 할 것이므로, 피고들은 특별한 사정이 없는 한 위 원고들에게 통상의 품질을 갖추지 못한 하자로 인한 재산적 가치하락분 상당의 손해를 배상할 책임이 있다.</p><p>      (다) 원고들은 개구부와 교각이 15°이하인 일사는 일조시간 산정에서 제외되어야 한다고 주장하나, 개구부와의 교각이 15°이하인 일사는 일정한 각을 유지하면서 들어오는 일사에 비하여 상대적으로 가치가 낮다고 하여 이를 일조가 전혀 없는 경우와 동일시 하기는 어려우므로 위 주장은 이유 없다. </p><p>    (2) 조망 미달에 대하여</p><p>  어느 토지나 건물의 소유자가 향유하는 경관이나 조망의 이익은 원칙적으로 특정의 장소가 그 장소로부터 외부를 조망함에 있어 특별한 가치를 가지고 있고, 그와 같은 조망이익의 향유를 하나의 중요한 목적으로 하여 그 장소에 건물이 건축된 경우와 같이 당해 건물의 소유자나 점유자가 그 건물로부터 향유하는 조망이익이 사회통념상 독자의 이익으로 승인되어야 할 정도로 중요성을 갖는다고 인정되는 경우에 비로소 법적인 보호의 대상이 되는 것이고, 그와 같은 정도에 이르지 못하는 조망이익의 경우에는 특별한 사정이 없는 한 법적인 보호의 대상이 될 수 없다.</p><p>  이 사건의 경우 이 사건 아파트의 전면에서 보았을 때 세대별로 조망이 가려지는 결과가 발생하였다고 하더라도, 이 점에 관하여 이 사건 아파트가 아파트로서 통상 갖추어야 할 품질을 갖추지 못하였다고 보기는 어렵다고 할 것이다. </p><p>  다. 피고들의 주장에 관한 판단</p><p>    (1) 피고들은, 이 사건 아파트는 건축관계 법령을 준수하여 적법하게 건축된 것이므로 손해를 배상할 책임이 없다고 주장한다.</p><p>  살피건대, 건축법 등 관계 법령에 일조방해에 관한 직접적인 단속법규가 있다면 동 법규에 적합한지 여부가 일조 등의 침해로 인한 건축물의 하자 여부를 판단함에 있어서 중요한 판단자료가 될 것이지만 이러한 공법적 규제에 의하여 확보하고자 하는 일조는 원래 사법상 보호되는 일조를 공법적인 면에서도 가능한 한 보증하려는 것으로서 특별한 사정이 없는 한 일조 보호를 위한 일응의 기준으로 봄이 상당하고, 구체적인 경우에 있어서 어떠한 건물신축이 건축 당시의 공법적 규제에 형식적으로 적합하다고 하더라도 현실적인 일조방해의 정도가 현저하게 커 사회통념상 수인한도를 넘는 경우에는 주거로서의 하자가 존재하는 것이라 할 것이므로 위 주장은 이유 없다.  </p><p>    (2) 피고들은 분양계약을 체결하기 전 모델하우스에 이 사건 아파트에 관한 설계도, 배치도, 조감도 등을 비치하고, 비디오테이프를 이용하여 컴퓨터로 시뮬레이션한 전경을 보여주기도 하였으므로 원고들로서는 이 사건 아파트의 일조, 조망 등의 상황을 알았거나 알 수 있었고, 적어도 골조가 완공된 1998. 8.말경에는 이를 알 수 있었으므로 하자담보책임을 구할 수 없다고 주장한다.</p><p>  살피건대, 피고들이 이 사건 아파트의 모델하우스에 이 사건 아파트에 관한 배치도 및 조감도를 비치한 사실은 위에서 본 바와 같으나, 원고들이 위 배치도 및 조감도만으로 수인한도를 넘는 일조침해가 있는지 여부를 판단하기는 어렵다고 보인다. 건축분야의 문외한인 일반인의 입장에서 조감도나 분양안내서만 살펴보고서 주변 건물로 인한 일조침해의 정도나 심각성 등을 판단하기는 어렵다고 할 것이다.</p><p>  그리고 을 제5호증의 1, 2의 각 영상만으로는 피고들이 위 모델하우스에 비디오테이프를 이용하여 컴퓨터 시뮬레이션 전경을 보여주었거나 설계도를 비치하였다는 사실을 인정하기에 부족하고 달리 이를 인정할 증거가 없다(가사, 설계도를 비치하고 비디오테이프를 상영하였더라도 그와 함께 이 사건 아파트의 일조권이 침해될 수 있다는 사정에 관하여 설명을 하지 않은 이상 위와 같은 자료들이 모델하우스에 비치되어 있었다고 하여 건축분야의 전문가가 아닌 일반인들인 원고들이 위와 같은 자료만으로 일조권이 침해된다는 것을 판단하기는 어렵다고 할 것이다). </p><p>  또한 골조가 완공되었다고 하여 원고들이 아직 공사 중인 이 사건 아파트 단지 내에 들어가 각 동의 배치와 높이, 간격 등을 확인할 수 있었다고 볼 자료도 없다. </p><p>  따라서 피고들의 위 주장도 이유 없다.</p><p>    (3) 다만 이 사건 아파트를 분양받음에 있어서 아파트에 흠결이 있는지 여부를 제대로 살피지 아니한 수분양자의 과실이 전혀 없다고는 볼 수 없으므로 뒤에서 손해배상의 범위를 정함에 있어 그 과실을 참작하기로 한다.</p><p>    (4) 피고들은 원고들의 이 사건 청구가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|582|">민법 제582조</a></span>에서 정한 제척기간을 도과한 것이라고 주장하나, 원고들 청구는 채무불이행책임을 근거로 하고 있을 뿐만 아니라 이 사건 아파트는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의소유및관리에관한법률|9|">집합건물의소유및관리에관한법률 제9조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">671조</a></span>에 의하여 그 제척기간은 10년이라 할 것인바, 이 사건 소제기 당시 그 기간이 경과하지 아니하였음이 명백하므로 위 주장은 이유 없다.
+      </p><p>3. 손해배상의 범위 </p><p>  가. 재산상 손해</p><p>    (1) 위 감정인 류경순의 이 사건 아파트에 대한 일조권 등 침해에 따른 가치하락액 감정결과, 감정평가사 류경순에 대한 사실조회결과에 변론전체의 취지를 종합하여 계산하면, 별지 손해배상내역표 기재 원고 순번 1, 2, 4, 5, 7, 8, 10, 11, 13, 15, 16, 18, 19, 24 내지 89, 91 내지 94, 96, 97, 99 내지 101, 103, 105, 107 , 109 내지 121 원고들의 경우 수인한도를 넘는 일조침해로 인하여 각 세대별로 별지 손해배상내역표의 ‘② 시가하락분’란 기재와 같은 각 금액의 손해가 발생한 사실을 인정할 수 있는바, 일응 위 금액이 재산적 손해이다.</p><p>    (2) 다만, 수분양자들이 이 사건 아파트의 세부적인 부분까지 제대로 알아보지 아니하고 분양받은 과실 등을 참작하면 위 가치하락분의 80% 정도가 이사건 아파트의 수분양자 및 전득자들이 입은 손해라고 봄이 상당하다. 한편 피고들이 책임의 근거를하자담보책임이라 하더라도 위 원고들도 이 사건 아파트 각 세대를 피고들로부터 분양 받음에 있어 미리 일조권 침해 여부 등에 대하여 관심을 가지고 이를 조사하여 분양가격을 절충하는 등의 조치를 취하지 않은 점, 피고들의 이 사건 아파트 건축행위에 높이제한 및 이격거리에 대한 법규위반이 없는 점, 피고들이 모델하우스에 배치도와 조감도를 비치한 점 등을 종합적으로 고려하면, 피고들이 배상하는 손해액을 적정한 정도로 감액하는 것이 공평의 원칙상 타당하다 할 것이므로 마찬가지 결론에 이른다.</p><p>  나. 정신적 손해</p><p>  일반적으로 아파트 분양시 분양받은 건물에 하자가 있는 경우에, 이로 인하여 수분양자들이 받은 정신적 고통은 그 재산적 손해에 대한 배상이 이루어짐으로써 회복된다고 보아야 할 것이므로, 수분양자들이 손해배상만으로는 회복될 수 없는 정신적 고통을 입었다면 이는 특별한 사정으로 인한 손해로서 분양자가 이와 같은 사정을 알았거나 알 수 있었을 경우에 한하여 정신적 고통에 대한 위자료를 인정할 수 있을 것인바(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다12798|판결" href="#//">대법원 1996. 6. 11. 선고 95다12798 판결</a></span> 등 참조), 위 원고들이 하자의 보수에 갈음하는 손해배상으로도 회복될 수 없는 정신적 고통을 입었고, 피고들이 이를 알았거나 알 수 있었다고 볼 자료가 없으므로 위 원고들의 위자료 청구는 이유 없고, 나머지 원고들의 경우 각 그 아파트의 하자 자체를 인정할 자료가 없으므로 이를 전제로 하는 위자료 청구는 이유 없다.
+      </p><p>4. 결론 </p><p>  그렇다면, 피고들은 연대하여 별지 기재 원고 순번 1, 2, 4, 5, 7, 8, 10, 11, 13, 15, 16, 18, 19, 24 내지 89, 91 내지 94, 96, 97, 99 내지 101, 103, 105, 107, 109 내지 121 원고들에게 별지 손해배상내역표 ‘④ 당원인용금액’란(② 시가하락분의 80%) 기재 각 금액 및 위 각 금액에 대하여 원고들이 구하는 바에 따라 이 사건 소장이 피고들에게 최후 송달된 다음 날인 2002. 6. 4.부터 제1심 인용금액에 대하여는 항쟁함이 상당한 제1심 판결선고일인 2004. 8. 25.까지, 당원 인용금액과 제1심 인용금액의 차액에 해당하는 손해배상내역표 ‘⑤ 차액’란 기재 각 금액 부분은 그 항쟁함이 상당한 당심 판결 선고일인 2006. 12. 27.까지 연 5%, 각 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 돈을 지급할 의무가 있으므로 위 원고들의 피고들에 대한 청구는 위 인정범위 내에서 이유 있어 인용하고, 위 원고들의 나머지 청구 및 
+        원고 3, 
+        6, 
+        9, 
+        12, 
+        14, 
+        17, 
+        20, 
+        21, 
+        22, 
+        23, 
+        90, 
+        95, 
+        98, 
+        102, 
+        104, 
+        106, 
+        108의 청구는 이유 없어 이를 기각할 것인바, 제1심판결 중 이와 결론을 일부 달리한 원고 순번 1, 2, 4, 5, 7, 8, 10, 11, 13, 15, 16, 18, 19, 24 내지 89, 91 내지 94, 96, 97, 99 내지 101, 103, 105, 107, 109 내지 121 원고들 패소부분은 부당하므로 이를 취소하고, 취소부분에 해당하는 원고들 청구를 인용하고, 피고들의 항소는 이유 없어 이를 기각한다.
+      </p><p>[원고들 목록 및 손해배상내역표 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   박철(재판장) 정선오 윤영훈 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010두1385 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2184517';
+var contIdEtc = '';
+var saNo = '2010두1385';
+var sngoNm = '선고';
+var saNm = '양도소득세등부과처분취소';
+try {
+	var sngoDay=('20150910' ? 
+			'20150910'.length==4 ? Date.parseExact('20150910','yyyy').toString('yyyy. M. d.') : 
+				'20150910'.length==6 ? Date.parseExact('20150910','yyyyMM').toString('yyyy. M. d.') : 
+					'20150910'.length==8 ? Date.parseExact('20150910','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010두1385 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010두1385';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010두1385</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(2)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(7)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(7)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(11)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|806080">대리인의 양도대금 횡령과 양도소득의 귀속 하태흥 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|821335">실질과세원칙과 권리확정주의 장윤하 國稅廳 稅友會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806080">하태흥 대리인의 양도대금 횡령과 양도소득의 귀속 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806081">하태흥 동일한 납세의무자가 지배․관리하는 양도인과 양수인 간의 양도거래와 실질과세원칙의 적용 범위 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009두15104">대법원 2011. 9. 29. 선고 2009두15104 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|92누9357">대법원 1993. 4. 27. 선고 92누9357 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국세기본법|26|2|19991231">국세기본법(구) 제26조의2 제1항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="국세기본법|26|2|null">국세기본법(구) 제26조의2 제1항 제3호 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="국세기본법|14|0|null">국세기본법 제14조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="소득세법|24|0|20001229">소득세법(구) 제24조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="소득세법|39|0|null">소득세법(구) 제39조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="소득세법|94|0|null">소득세법(구) 제94조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="소득세법|118|0|null">소득세법(구) 제118조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007두14695">대법원 2009. 9. 10. 선고 2007두14695 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008두21614">대법원 2011. 7. 28. 선고 2008두21614 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009두15104">대법원 2011. 9. 29. 선고 2009두15104 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009두3682">대법원 2011. 10. 27. 선고 2009두3682 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96누19154">대법원 1997. 6. 13. 선고 96누19154 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|93다39379">대법원 1994. 2. 8. 선고 93다39379 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92누9357">대법원 1993. 4. 27. 선고 92누9357 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|116|0|null">민법 제116조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="증권거래세법|1|0|null">증권거래세법(구) 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="증권거래세법|3|0|null">증권거래세법(구) 제3조 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="증권거래세법|7|0|null">증권거래세법(구) 제7조 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|26|2|19991231">국세기본법(구) 제26조의2 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|26|2|null">국세기본법(구) 제26조의2 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|26|2|null">국세기본법(구) 제26조의2 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|26|2|null">국세기본법 제26조의2 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|26|2|null">국세기본법 제26조의2 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국세기본법|14|0|null">국세기본법 제14조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009누5451">서울고법 2009. 12. 16. 선고 2009누5451 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2015. 9. 10. 선고 2010두1385 판결</h2><p class="sub_title">[양도소득세등부과처분취소][공2015하,1531]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">구 국세기본법 제26조의2 제1항 제1호</a></span> 및 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">제3호</a></span>의 내용과 입법 취지 및 여기에서 말하는 ‘부정한 행위’에 납세의무자의 대리인이나 이행보조자 등의 부정한 행위도 포함되는지 여부(원칙적 적극)</p>
+<p></p>
+<p></p><p>[2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|14|">국세기본법 제14조</a></span>에서 규정하는 실질과세의 원칙의 의미 / 납세의무자인 양도인과 최종 양수인 사이에 중간 거래가 개입되었으나 실제로는 양도인과 최종 양수인 사이에 하나의 양도거래가 있는 경우, 실질과세의 원칙상 양도거래로 인한 효과가 모두 양도인에게 귀속되는지 여부(적극)</p>
+<p></p>
+<p></p><p>[3] 대리인이 위임의 취지에 반하여 자산을 저가에 양도한 것처럼 본인을 속여 양도대금의 일부를 횡령하고, 횡령금액 상당의 손해배상채권이 회수불능이 되어 장래 소득이 실현될 가능성이 없게 된 것이 객관적으로 명백한 경우, 그 소득을 과세소득으로 하여 본인에게 양도소득세를 부과할 수 있는지 여부(소극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">구 국세기본법(1999. 12. 31. 법률 제6070호로 개정되기 전의 것) 제26조의2 제1항 제1호</a></span> 및 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">제3호</a></span>의 내용과 입법 취지는 조세법률관계의 신속한 확정을 위하여 원칙적으로 국세 부과권의 제척기간을 5년으로 하면서도 국세에 관한 과세요건사실의 발견을 곤란하게 하거나 허위의 사실을 작출하는 등의 부정한 행위가 있는 경우에 과세관청은 탈루신고임을 발견하기가 쉽지 아니하여 부과권의 행사를 기대하기가 어려우므로 국세에 대한 부과제척기간을 10년으로 연장하는 데 있다. 그렇다면 여기서 말하는 ‘부정한 행위’에는 납세의무자 본인의 부정한 행위뿐만 아니라, 납세의무자가 스스로 관련 업무의 처리를 위탁함으로써 행위영역 확장의 이익을 얻게 되는 납세의무자의 대리인이나 이행보조자 등의 부정한 행위도 다른 특별한 사정이 없는 한 포함된다.</p>
+<p></p><p></p><p>[2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|14|">국세기본법 제14조</a></span>에서 규정하는 실질과세의 원칙은, 납세의무자가 소득이나 수익, 재산, 거래 등의 과세요건사실에 관하여 실질과 괴리되는 비합리적인 형식이나 외관을 취한 경우 형식이나 외관에 불구하고 뒤에 숨어 있는 실질에 따라 과세요건이 되는 소득이나 수익, 재산, 거래 등의 발생, 귀속과 내용 등을 파악하여 과세하여야 한다는 국세부과의 원칙을 말한다. 따라서 납세의무자인 양도인과 최종 양수인 사이에 중간 거래가 개입되었으나 그것이 가장행위에 의한 형식상의 양도거래에 불과하고 실제로는 양도인과 최종 양수인 사이에 하나의 양도거래가 있을 뿐이라면, 실질과세의 원칙상 양도거래로 인한 효과는 모두 납세의무자인 양도인에게 귀속된다.</p>
+<p></p><p></p><p>[3] 본인이 대리인에게 자산의 양도와 대금의 수령권한을 부여하고 대리인이 상대방에게서 양도대금을 지급받았다면 대금수령의 법률적 효과는 본인에게 귀속될 뿐만 아니라 특별한 사정이 없는 한 본인도 대금에 대한 지배·관리를 하면서 담세력도 보유하게 되므로 본인의 양도소득은 실현되었다고 볼 것이지만, 만약 대리인이 위임의 취지에 반하여 자산을 저가에 양도한 것처럼 본인을 속여 양도대금의 일부를 횡령하고, 나아가 본인의 대리인에 대한 횡령금액 상당의 손해배상채권이 대리인의 자산상황, 지급능력 등에 비추어 회수불능이 되어 장래 소득이 실현될 가능성이 전혀 없게 된 것이 객관적으로 명백한 때에는 그 소득을 과세소득으로 하여 본인에게 양도소득세를 부과할 수 없다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">구 국세기본법(1999. 12. 31. 법률 제6070호로 개정되기 전의 것) 제26조의2 제1항 제1호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">제3호</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|14|">국세기본법 제14조</a></span> [3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소득세법|24|">구 소득세법(2000. 12. 29. 법률 제6292호로 개정되기 전의 것) 제24조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소득세법|39|">제39조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소득세법|94|">제94조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소득세법|118|">제118조</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009두15104|판결" href="#//">대법원 2011. 9. 29. 선고 2009두15104 판결</a></span>(공2011하, 2254)<br />[3] <span id="link"><a name="linkContPanre" title="새창" type="대법원|92누9357|판결" href="#//">대법원 1993. 4. 27. 선고 92누9357 판결</a></span>(공1993하, 1608)</p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 상고인】
+원고 (소송대리인 변호사 김상근 외 4인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피상고인】
+남양주세무서장
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009누5451|판결" href="#//">서울고법 2009. 12. 16. 선고 2009누5451 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 양도소득세 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  나머지 상고를 기각한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 경과한 후에 제출된 상고이유보충서의 내용은 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 원심의 판단</p><p>  가. 원심은 우선 다음과 같은 사실을 인정하였다.</p><p>  (1) 현대산업개발 주식회사(이하 ‘현대산업개발’이라고 한다)의 대표이사인 원고는 1999. 10.경 현대산업개발의 재정팀장으로 근무하던 소외 1에게 원고 소유의 신세기통신 주식회사(이하 ‘신세기통신’이라고 한다) 주식을 매도하라고 지시하면서 매도할 주식의 대략적인 수량만 정하여 준 채 매도가격, 매도상대방, 매도시점 등에 관한 일체의 권한을 위임하였다.</p><p>  (2) 소외 1은 1999. 12. 17. 원고 소유의 신세기통신 주식 중 30만 주를 대유리젠트증권 주식회사(이하 ‘대유리젠트증권’이라고 한다)에 대금 105억 원에, 20만 주를 한누리투자증권 주식회사(이하 ‘한누리투자증권’이라고 한다)에 대금 68억 원에 매도하였다.</p><p>  (3) 그런데 소외 1은 위 주식 50만 주(이하 ‘이 사건 주식’이라고 한다)의 매도과정에서 대유리젠트증권의 과장 소외 2 및 한누리투자증권의 상무이사 소외 3에게 형식상의 중간거래인을 세워줄 것을 부탁한 다음, 신세기통신 주식 30만 주를 소외 2가 내세운 주식회사 제이씨캐피탈(이하 ‘제이씨캐피탈’이라고 한다)에 대금 82억 5,000만 원에 매도하였다가 제이씨캐피탈이 다시 대유리젠트증권에 대금 105억 원에 매도하는 것처럼 2단계의 계약서를 작성하고, 20만 주 역시 소외 3이 내세운 소외 4 및 세홍피엔씨 주식회사(이하 ‘세홍피엔씨’라고 한다)에 대금 합계 58억 원에 매도하였다가 그들이 다시 한누리투자증권에 대금 합계 68억 원에 매도하는 것처럼 2단계의 계약서를 작성하였다. 그리고 소외 1은 대유리젠트증권 및 한누리투자증권으로부터 대금 합계 173억 원을 모두 지급받은 후 중간거래인 명의를 빌릴 수 있도록 도와준 대가로 소외 2에게 2,000만 원, 소외 4에게 2억 원을 주고, 소외 3에게 원고의 신세기통신 주식 2,255주를 시세보다 낮은 가격에 매수할 수 있도록 해 주었다.</p><p>  (4) 소외 1은 원고로부터 이 사건 주식에 관한 양도소득세 및 증권거래세 신고를 지시받고는 현대산업개발 경리팀에 근무하는 소외 5에게 원고와 제이씨캐피탈, 소외 4 및 세홍피엔씨 사이의 매매계약서를 기초로 양도소득세 및 증권거래세 신고를 하도록 함으로써, 2000. 2. 29. 이 사건 주식의 양도가액을 140억 5,000만 원(= 82억 5,000만 원 + 58억 원)으로 하는 양도소득세 및 증권거래세 신고가 이루어졌다.</p><p>  (5) 그러나 피고는 원고가 이 사건 주식을 대유리젠트증권 및 한누리투자증권에 대금 합계 173억 원에 매도하였음에도 실제 계약내용과 달리 제이씨캐피탈, 소외 4 및 세홍피엔씨에 대금 합계 140억 5,000만 원에 양도한 것처럼 양도소득세 및 증권거래세 신고를 한 것은 신고내용의 탈루에 해당한다고 보아 2006. 5. 4. 원고에게 그 차액 32억 5,000만 원에 관하여 1999년 귀속 양도소득세 776,100,000원(가산세 포함), 1999년 12월 귀속 증권거래세 17,875,000원(가산세 포함)을 각 증액하는 이 사건 처분을 하였다.</p><p>  나. 원심은 이러한 사실관계를 토대로 하여, 다음과 같은 이유에서 이 사건 처분이 적법하다고 판단하였다.</p><p>  (1) 이 사건 주식에 대한 2단계의 매매계약은 가장행위에 불과하고, 이 사건 주식에 대한 매매계약의 실질은 원고와 대유리젠트증권 및 한누리투자증권 사이에 직접 이루어진 것으로 보아야 한다.</p><p>  (2) 소외 1이 이 사건 주식 양도에 관한 원고의 포괄적 대리인으로서 이 사건 주식의 양도대금 173억 원을 모두 지급받았으므로 그 전액이 원고의 소득으로 귀속되었고, 이 사건 주식의 실지거래가액 또한 173억 원으로 보아야 하며, 설령 소외 1이 원고에게 이 사건 주식을 제이씨캐피탈, 소외 4 및 세홍피엔씨에 140억 5,000만 원에 양도한 것처럼 거짓 보고하고 실제 양도대금 173억 원과의 차액 32억 5,000만 원을 횡령함으로써 원고가 그러한 사실을 몰랐다고 하더라도 이는 원고로부터 포괄적 대리권을 수여받은 소외 1이 그 위임의 취지에 반하여 배임행위를 저지른 것을 원인으로 한 원고와 소외 1 사이의 내부적인 정산관계에 불과하다.</p><p>  (3) 양도소득세 및 증권거래세 신고는 소외 1이 원고를 대리하여 한 것이고 소외 5는 단지 소외 1의 지시에 따라 신고서의 작성 및 제출이라는 사실행위를 수행한 사자에 불과하다. 그리고 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|116|">민법 제116조 제1항</a></span>에 의할 때 양도소득세 및 증권거래세 신고에 관하여 본인이 사기 기타 부정한 행위를 하였는지 여부는 대리인을 표준으로 결정하여야 하는데, 이 사건 주식의 매매가 실질적으로 하나의 거래였음에도 소외 1은 마치 2단계의 거래가 이루어진 것처럼 매매계약서를 작성하고 원고에게 귀속되는 양도가액이 140억 5,000만 원에 불과한 것처럼 신고함으로써 사기 기타 부정한 행위를 하였으므로, 원고가 납세의무를 부담하는 양도소득세 및 증권거래세에 관하여 10년의 부과제척기간이 적용된다.</p><p>  (4) 원고가 소외 1의 거짓 보고와 횡령으로 인하여 이 사건 주식의 실제 양도가액이 173억 원임을 알지 못하였다는 사정만으로는 가산세를 면할 정당한 사유가 존재한다고 할 수 없다.</p><p>  2. 대법원의 판단</p><p>  가. 증권거래세 부분에 관하여</p><p>  (1) 상고이유 제1점</p><p>  구 증권거래세법(2000. 12. 29. 법률 제6302호로 개정되기 전의 것)은 ‘주권의 양도’를 과세대상으로 규정하고(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래세법|1|">제1조</a></span>), 증권거래소 등을 통하지 않고 주권을 양도하는 경우 ‘당해 주권의 양도자’를 납세의무자로 규정하며(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래세법|3|">제3조 제3호</a></span>), 그 양도가액을 알 수 있는 경우에는 원칙적으로 ‘당해 주권의 양도가액’을 과세표준으로 규정하고 있다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래세법|7|">제7조 제3호</a></span>).</p><p>  증권거래세는 유상으로 주권의 소유권이 이전되는 경우 이익의 발생 여부에 관계없이 과세되는 유통세이고(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2007두14695|판결" href="#//">대법원 2009. 9. 10. 선고 2007두14695 판결</a></span> 참조), 증권거래세 산정의 기초가 되는 ‘주권의 양도가액’이란 거래 당시 그 대가로 실지 약정된 금액을 말한다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2008두21614|판결" href="#//">대법원 2011. 7. 28. 선고 2008두21614 판결</a></span> 참조).</p><p>  원심이 이 사건 주식에 대한 2단계의 매매계약이 가장행위에 불과하고 그 실질은 원고와 대유리젠트증권 및 한누리투자증권 사이에 직접 이루어진 것으로 보아야 한다는 이유에서 이 사건 주식의 양도자인 원고가 그 대가로 실지 약정된 양도가액 173억 원을 과세표준으로 한 증권거래세의 납세의무를 부담한다고 판단한 것은 위와 같은 규정과 법리에 따른 것으로서 정당하고, 거기에 증권거래세의 납세의무자와 과세표준에 관한 법리오해 등의 잘못이 없다.</p><p>  (2) 상고이유 제2점</p><p>  <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">구 국세기본법(1999. 12. 31. 법률 제6070호로 개정되기 전의 것, 이하 ‘국세기본법’이라고 한다) 제26조의2 제1항</a></span>은 원칙적으로 국세의 부과제척기간을 5년으로 규정하고 있으나(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">제3호</a></span>), ‘납세자가 사기 기타 부정한 행위로써 국세를 포탈하거나 환급·공제받는 경우’에는 당해 국세를 부과할 수 있는 날부터 10년으로 부과제척기간을 연장하고 있다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2">제1호</a></span>).</p><p>  <span class="accrnt_txt"><span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2" style="text-decoration:underline">국세기본법 제26조의2 제1항 제1호</a></span> 및 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|26|2" style="text-decoration:underline">제3호</a></span>의 내용과 그 입법 취지는 조세법률관계의 신속한 확정을 위하여 원칙적으로 국세 부과권의 제척기간을 5년으로 하면서도 국세에 관한 과세요건사실의 발견을 곤란하게 하거나 허위의 사실을 작출하는 등의 부정한 행위가 있는 경우에 과세관청으로서는 탈루신고임을 발견하기가 쉽지 아니하여 부과권의 행사를 기대하기가 어려우므로 당해 국세에 대한 부과제척기간을 10년으로 연장하는 데에 있다. 그렇다면 여기서 말하는 ‘부정한 행위’에는 납세의무자 본인의 부정한 행위뿐만 아니라, 납세의무자가 스스로 관련 업무의 처리를 위탁함으로써 그 행위영역 확장의 이익을 얻게 되는 납세의무자의 대리인이나 이행보조자 등의 부정한 행위도 다른 특별한 사정이 없는 한 포함된다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2009두15104|판결" href="#//">대법원 2011. 9. 29. 선고 2009두15104 판결</a></span> 참조).</p><p>  원심이 대리행위의 하자에 관한 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|116|">민법 제116조 제1항</a></span>을 들어 납세의무자가 사기 기타 부정한 행위를 하였는지 여부가 대리인을 표준으로 결정된다고 본 것은 잘못이다. 그러나 앞서 본 법리에 의하면 원고가 소외 1의 사기 기타 부정한 행위를 알지 못하였거나 직접 관여하지 아니하였다 하더라도 원고는 소외 1에게 스스로 이 사건 주식의 매매를 위탁함으로써 그로 인한 이익을 얻게 되었고 소외 1의 사기 기타 부정한 행위에 의하여 원고의 증권거래세가 포탈되었으므로, 원고가 소외 1의 부정행위를 방지하기 위해 상당한 주의와 감독을 다하였다는 등의 특별한 사정이 없는 한 원고가 납세의무를 부담하는 증권거래세의 부과제척기간은 10년으로 보아야 한다. 따라서 원심이 증권거래세의 부과제척기간을 10년으로 본 결론은 정당하고, 앞서 본 원심의 법리오해는 판결 결과에 영향이 없다.</p><p>  (3) 상고이유 제3점</p><p>  세법상 가산세는 과세권의 행사 및 조세채권의 실현을 용이하게 하기 위하여 납세의무자가 정당한 이유 없이 법에 규정된 신고, 납세 등 각종 의무를 위반한 경우에 법이 정하는 바에 따라 부과하는 행정상 제재로서 그 의무의 이행을 납세의무자에게 기대하는 것이 무리인 사정이 있을 때 등 그 의무해태를 탓할 수 없는 정당한 사유가 있는 경우에는 이를 부과할 수 없다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2009두3682|판결" href="#//">대법원 2011. 10. 27. 선고 2009두3682 판결</a></span> 등 참조).</p><p>  이러한 법리에 비추어 기록을 살펴보면, 원고가 주장하는 사정만으로는 가산세를 면할 정당한 사유가 존재하는 것으로 볼 수 없다고 한 원심의 판단은 정당하고, 거기에 가산세를 면할 정당한 사유에 관한 법리오해 등의 잘못이 없다.</p><p>  나. 양도소득세 부분에 관하여</p><p>  (1) 그러나 원심의 판단 중 소외 1이 수령한 173억 원 가운데 양도대금 차액 32억 5,000만 원이 원고의 양도소득으로 귀속되었다고 본 부분은 다음과 같은 이유에서 법리오해의 잘못이 있다고 보아야 한다.</p><p>  (2) <span class="accrnt_txt"><span id="link"><a name="linkContJomun" href="#//" title="새창" type="국세기본법|14|" style="text-decoration:underline">국세기본법 제14조</a></span>에서 규정하는 실질과세의 원칙은, 납세의무자가 소득이나 수익, 재산, 거래 등의 과세요건사실에 관하여 실질과 괴리되는 비합리적인 형식이나 외관을 취한 경우 그 형식이나 외관에 불구하고 그 뒤에 숨어 있는 실질에 따라 과세요건이 되는 소득이나 수익, 재산, 거래 등의 발생, 귀속과 내용 등을 파악하여 과세하여야 한다는 국세부과의 원칙을 말하는 것이다. 따라서 납세의무자인 양도인과 최종 양수인 사이에 중간 거래가 개입되었으나 그것이 가장행위에 의한 형식상의 양도거래에 불과하고 실제로는 양도인과 최종 양수인 사이에 하나의 양도거래가 있을 뿐이라면, 실질과세의 원칙상 그 양도거래로 인한 효과는 모두 납세의무자인 양도인에게 귀속된다고 보아야 한다.</span></p><p>  한편 소득세법은 현실적으로 소득이 없더라도 그 원인이 되는 권리가 확정적으로 발생한 때에는 그 소득의 실현이 있는 것으로 보고 과세소득을 계산하는 이른바 권리확정주의를 채택하고 있으나, 그와 같은 권리확정주의에서 ‘확정’의 개념은 소득의 귀속시기에 관한 예외 없는 일반원칙으로 단정하여서는 아니 되고, 구체적인 사안에 관하여 소득에 대한 관리·지배와 발생소득의 객관화 정도, 납세자금의 확보시기 등까지도 함께 고려하여 그 소득의 실현가능성이 상당히 높은 정도로 성숙·확정되었는지 여부를 기준으로 귀속시기를 판단하여야 한다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|96누19154|판결" href="#//">대법원 1997. 6. 13. 선고 96누19154 판결</a></span> 등 참조). 소유자로부터 매매계약을 체결할 대리권을 수여받은 대리인은 특별한 다른 사정이 없는 한 그 매매계약에서 정한 바에 따라 중도금이나 잔금 등을 수령할 권한도 있다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|93다39379|판결" href="#//">대법원 1994. 2. 8. 선고 93다39379 판결</a></span> 등 참조). 따라서 <span class="accrnt_txt">본인이 대리인에게 자산의 양도와 그 대금의 수령권한을 부여하고 대리인이 상대방으로부터 양도대금을 지급받았다면 대금수령의 법률적 효과는 본인에게 귀속될 뿐만 아니라 특별한 사정이 없는 한 본인도 그 대금에 대한 지배·관리를 하면서 담세력도 보유하게 되므로 본인의 양도소득은 실현되었다고 볼 것이지만</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|92누9357|판결" href="#//">대법원 1993. 4. 27. 선고 92누9357 판결</a></span> 참조), <span class="accrnt_txt">만약 대리인이 위임의 취지에 반하여 자산을 저가에 양도한 것처럼 본인을 속여 양도대금의 일부를 횡령하고, 나아가 본인의 대리인에 대한 횡령금액 상당의 손해배상채권이 대리인의 자산상황, 지급능력 등에 비추어 회수불능이 되어 장래 그 소득이 실현될 가능성이 전혀 없게 된 것이 객관적으로 명백한 때에는 그 소득을 과세소득으로 하여 본인에게 양도소득세를 부과할 수 없다.</span></p><p>  (3) 원심이 인정한 사실관계에 의하더라도, 소외 1이 이 사건 주식의 매수인인 대유리젠트증권 및 한누리투자증권의 임직원에게 부탁하여 허위의 중간거래를 개입시키고 그들에게 대가를 지급하였던 것으로 보아 원고는 소외 1에게 속아 이 사건 주식의 실제 양도대금이 173억 원이라는 사실과 소외 1이 양도대금 차액 32억 5,000만 원을 횡령하였다는 사실을 2006. 4.경 자신에 대한 검찰수사가 개시될 당시까지 알지 못하였을 개연성이 있다.</p><p>  또한 원심이 적법하게 채택한 증거에 의하면, 소외 1은 2002. 4.경 현대산업개발에서 퇴사한 후 미국으로 이주하여 영주권을 취득하였고, 2006. 3.경 검찰이 이와 관련된 수사를 본격적으로 개시하자 미국의 주소와 연락처를 바꾸고 도피하였으며, 2006. 4.경까지 국내에 있던 자신과 가족의 예금자산을 대부분 현금화하여 미국으로 송금하였던 사실 등도 알 수 있다.</p><p>  (4) 이와 같은 사정에 비추어 보면, 원고는 소외 1의 횡령으로 인하여 양도대금 차액 32억 5,000만 원에 대한 지배·관리를 전혀 하지 못하였을 뿐만 아니라, 원고의 소외 1에 대한 동액 상당의 손해배상채권도 회수불능이 되어 그 소득이 실현될 가능성이 전혀 없게 된 것이 객관적으로 명백하게 되었으므로, 이러한 경우에는 위 양도대금 차액 32억 5,000만 원이 원고의 과세소득으로 실현되었다고 할 수 없다. 따라서 이 사건 처분 중 양도소득세 부분은 위법하다.</p><p>  그런데도 원심은 이와 달리 대리인이 상대방으로부터 양도대금을 지급받은 이상 대금수령의 법률적 효과가 본인에게 귀속된다는 이유만으로 원고에게 32억 5,000만 원의 소득이 실현된 것으로 보아 이 사건 처분 중 양도소득세 부분이 적법하다고 판단하였으니, 이러한 원심의 판단에는 권리확정주의와 과세소득의 실현 등에 관한 법리를 오해하여 판결에 영향을 미친 잘못이 있다. 이 점을 지적하는 상고이유의 주장은 이유 있다.</p><p>  3. 결론</p><p>  그러므로 양도소득세 부분에 관한 나머지 상고이유에 대한 판단을 생략한 채 원심판결 중 양도소득세 부분을 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원으로 환송하며, 나머지 상고를 기각하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박보영(재판장) 민일영 김신 권순일(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

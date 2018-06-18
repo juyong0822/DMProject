@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2012다6059 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2152851';
+var contIdEtc = '2218091';
+var saNo = '2012다6059';
+var sngoNm = '선고';
+var saNm = '상표사용금지등';
+try {
+	var sngoDay=('20140820' ? 
+			'20140820'.length==4 ? Date.parseExact('20140820','yyyy').toString('yyyy. M. d.') : 
+				'20140820'.length==6 ? Date.parseExact('20140820','yyyyMM').toString('yyyy. M. d.') : 
+					'20140820'.length==8 ? Date.parseExact('20140820','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2012다6059 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2012다6059';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2012다6059</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(4)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(14)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(5)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|800238">역혼동과 상표권 남용의 관계에 관한 고찰 @ 대법원 2014 8 20 선고 2012다6059 판결을 중심으로 정태호 인하대학교 법학연구소</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769269">윤태식 상표법상 상표의 유사 여부 판단에 관한 연구 사법논집 . 제59집   / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|855000">박태일 불사용취소로 될 것임이 명백한 상표권의 행사와 권리남용 항변 사법논집=. 제64집 제64집 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827373">김창권 구 상표법(2013. 4. 5. 법률 제11747호로 개정되기 전의 것) 제7조 제1항 제7호의 타인에 해당하는지에 관한 판단 기준시점 대법원판례해설 제108호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|835389">구민승 미등록 사용상표의 계속 사용과 상표의 부정사용 대법원판례해설 제110호 / 법원도서관  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다67223">대법원 2007. 1. 25. 선고 2005다67223 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006후3113">대법원 2007. 6. 28. 선고 2006후3113 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다40423">대법원 2006. 10. 13. 선고 2006다40423 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="상표법|50|0|null">상표법 제50조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="상표법|65|0|null">상표법 제65조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="상표법|66|2|null">상표법 제66조의2 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="상표법|2|0|null">상표법 제2조 제1항 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="상표법|7|0|null">상표법 제7조 제1항 제11호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="상표법|66|0|null">상표법 제66조 제1항 제1호 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|2|0|null">민법 제2조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="상표법|2|0|null">상표법 제2조 제1항 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="상표법|7|0|null">상표법 제7조 제1항 제11호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="상표법|65|0|null">상표법 제65조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="상표법|66|0|null">상표법 제66조 제1항 제1호 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="상표법|2|0|null">상표법 제2조 제1항 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="상표법|66|0|null">상표법 제66조 제1항 제1호 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다26550">대법원 2005. 7. 22. 선고 2005다26550 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다79068">대법원 2003. 6. 13. 선고 2001다79068 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다67223">대법원 2007. 1. 25. 선고 2005다67223 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006후3113">대법원 2007. 6. 28. 선고 2006후3113 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다40423">대법원 2006. 10. 13. 선고 2006다40423 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상표법|7|0|null">상표법 제7조 제1항 제11호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="불공정무역행위조사및산업피해구제에관한법률|4|0|null">불공정무역행위 조사 및 산업피해구제에 관한 법률 제4조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부정경쟁방지법|2|0|null">부정경쟁방지법 제2조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상표법|76|0|null">상표법 제76조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2010나115746">서울고법 2011. 11. 30. 선고 2010나115746 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2218091">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><input type="hidden" class="contImagePath" name="img11" value="14f1001dr002-11.gif" /><input type="hidden" class="contImagePath" name="img10" value="14f1001dr002-10.gif" /><input type="hidden" class="contImagePath" name="img12" value="14f1001dr002-12.gif" /><input type="hidden" class="contImagePath" name="img13" value="14f1001dr002-13.gif" /><input type="hidden" class="contImagePath" name="img14" value="14f1001dr002-14.gif" /><input type="hidden" class="contImagePath" name="img15" value="14f1001dr002-15.gif" /><input type="hidden" class="contImagePath" name="img16" value="14f1001dr002-16.gif" /><input type="hidden" class="contImagePath" name="img17" value="14f1001dr002-17.gif" /><input type="hidden" class="contImagePath" name="img18" value="14f1001dr002-18.gif" /><input type="hidden" class="contImagePath" name="img19" value="14f1001dr002-19.gif" /><input type="hidden" class="contImagePath" name="img1" value="14f1001dr002-01.gif" /><input type="hidden" class="contImagePath" name="img2" value="14f1001dr002-02.gif" /><input type="hidden" class="contImagePath" name="img3" value="14f1001dr002-03.gif" /><input type="hidden" class="contImagePath" name="img4" value="14f1001dr002-04.gif" /><input type="hidden" class="contImagePath" name="img5" value="14f1001dr002-05.gif" /><input type="hidden" class="contImagePath" name="img6" value="14f1001dr002-06.gif" /><input type="hidden" class="contImagePath" name="img7" value="14f1001dr002-07.gif" /><input type="hidden" class="contImagePath" name="img8" value="14f1001dr002-08.gif" /><input type="hidden" class="contImagePath" name="img9" value="14f1001dr002-09.gif" /><input type="hidden" class="contImagePath" name="img20" value="14f1001dr002-20.gif" /><div class="tit_area" id="bmunStart"><h2>대법원 2014. 8. 20. 선고 2012다6059 판결</h2><p class="sub_title">[상표사용금지등][공2014하,1772]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 등록상표권자의 상표권 행사가 권리남용에 해당하는지 판단하는 기준 / 어떤 상표가 정당하게 출원·등록된 후 등록상표와 동일·유사한 상표를 정당한 이유 없이 사용한 결과 사용상표가 주지성을 취득하였다는 이유로 상표 사용자를 상대로 한 상표권침해금지 또는 손해배상 등의 청구가 권리남용에 해당하는지 여부(소극)</p>
+<p></p>
+<p></p><p>[2] 선행 등록상표와 표장 및 지정상품이 동일·유사한 후행 등록상표가, 선행 등록상표의 등록 이후부터 사용되어 후행 등록상표의 등록결정 당시 특정인의 상표로 인식된 타인의 상표와의 관계에서 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">상표법 제7조 제1항 제11호</a></span> 후단의 ‘수요자를 기만할 염려가 있는 상표’에 해당하여 등록이 무효로 된 경우, 위 타인의 상표 사용이 선행 등록상표에 대한 관계에서 정당하게 되거나 선행 등록상표의 상표권에 대한 침해를 면하게 되는지 여부(소극)</p>
+<p></p>
+<p></p><p>[3] 지정상품을 ‘골프채’ 등으로 하는 등록상표 ‘<img name="img1" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-01.gif" alt="본문내 삽입된 이미지" />’의 상표권자인 갑 외국법인이 ‘<img name="img2" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-02.gif" alt="본문내 삽입된 이미지" />’와 ‘<img name="img3" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-03.gif" alt="본문내 삽입된 이미지" />’ 등의 상표를 사용하여 골프채 등을 수입·판매하는 을 주식회사를 상대로 상표사용금지 등을 구한 사안에서, 갑 법인의 상표권 행사가 권리남용에 해당하지 않고, 갑 법인의 후행 등록상표인 ‘<img name="img4" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-04.gif" alt="본문내 삽입된 이미지" />’ 등이 을 회사가 사용하는 ‘<img name="img5" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-05.gif" alt="본문내 삽입된 이미지" />’ 상표 등과의 관계에서 등록이 무효로 되었더라도 을 회사 사용상표의 사용이 갑 법인의 상표권에 대한 침해를 면하지 않는다고 한 사례</p>
+<p></p>
+<p></p><p>[4] 국내의 등록상표와 동일·유사한 상표가 부착된 지정상품과 동일·유사한 상품을 수입하는 행위가 등록상표권의 침해 등을 구성하지 않는다고 하기 위한 요건</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 상표권의 행사가 등록상표에 관한 권리를 남용하는 것으로서 허용될 수 없다고 하기 위해서는, 상표권자가 당해 상표를 출원·등록하게 된 목적과 경위, 상표권을 행사하기에 이른 구체적·개별적 사정 등에 비추어, 상대방에 대한 상표권의 행사가 상표사용자의 업무상의 신용유지와 수요자의 이익보호를 목적으로 하는 상표제도의 목적이나 기능을 일탈하여 공정한 경쟁질서와 상거래 질서를 어지럽히고 수요자 사이에 혼동을 초래하거나 상대방에 대한 관계에서 신의성실의 원칙에 위배되는 등 법적으로 보호받을 만한 가치가 없다고 인정되어야 한다.</p>
+<p>  그리고 어떤 상표가 정당하게 출원·등록된 이후에 등록상표와 동일·유사한 상표를 그 지정상품과 동일·유사한 상품에 정당한 이유 없이 사용한 결과 그 사용상표가 국내의 일반 수요자들에게 알려지게 되었다고 하더라도, 사용상표와 관련하여 얻은 신용과 고객흡인력은 등록상표의 상표권을 침해하는 행위에 의한 것으로서 보호받을 만한 가치가 없고 그러한 상표의 사용을 용인한다면 우리 상표법이 취하고 있는 등록주의 원칙의 근간을 훼손하게 되므로, 위와 같은 상표 사용으로 시장에서 형성된 일반 수요자들의 인식만을 근거로 하여 상표 사용자를 상대로 한 등록상표의 상표권에 기초한 침해금지 또는 손해배상 등의 청구가 권리남용에 해당한다고 볼 수는 없다.</p>
+<p></p><p></p><p>[2] 선행 등록상표의 등록 이후에 등록결정이 된 후행 등록상표가 선행 등록상표와 표장 및 지정상품이 동일·유사하고, 또한 후행 등록상표의 등록결정 당시 특정인의 상표라고 인식된 타인의 상표가 선행 등록상표의 등록 이후부터 사용되어 온 것이라고 하더라도, 이러한 타인의 사용상표(이하 ‘후발 선사용상표’라고 한다)와의 관계에서 후행 등록상표가 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">상표법 제7조 제1항 제11호</a></span> 후단에서 규정하고 있는 ‘수요자를 기만할 염려가 있는 상표’에 해당하여 등록이 무효로 될 수 있고, 그 결과 후발 선사용상표가 사실상 보호받는 것처럼 보일 수는 있다. 그러나 위 규정의 취지가 후발 선사용상표를 보호하려는 데 있는 것이 아니라 이미 특정인의 상표라고 인식된 상표를 사용하는 상품의 출처 등에 관한 일반 수요자들의 오인·혼동을 방지하여 이에 대한 신뢰를 보호하려는 데 있음을 고려할 때, 그러한 결과는 일반 수요자들의 이익을 보호함에 따른 간접적·반사적인 효과에 지나지 아니하므로, 그러한 사정을 들어 후발 선사용상표의 사용이 선행 등록상표에 대한 관계에서 정당하게 된다거나 선행 등록상표의 상표권에 대한 침해를 면하게 된다고 볼 수는 없다.</p>
+<p></p><p></p><p>[3] 지정상품을 ‘골프채’ 등으로 하는 등록상표 ‘<img name="img6" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-06.gif" alt="본문내 삽입된 이미지" />’의 상표권자인 갑 외국법인이 ‘<img name="img7" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-07.gif" alt="본문내 삽입된 이미지" />’와 ‘<img name="img8" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-08.gif" alt="본문내 삽입된 이미지" />’ 등의 상표를 사용하여 골프채 등을 수입·판매하는 을 주식회사를 상대로 상표사용금지 등을 구한 사안에서, 갑 법인이 등록상표를 정당한 목적으로 출원·등록하여 상표권을 취득한 후 을 회사가 이와 유사한 상표를 정당한 이유 없이 사용해 온 결과 을 회사 사용상표들이 국내의 일반 수요자들 사이에서 특정인의 상표나 주지상표로 인식되기에 이르렀다고 하더라도 그러한 사정을 들어 을 회사에 대한 갑 법인의 상표권 행사가 권리남용에 해당한다고 보기 어렵고, 갑 법인의 후행 등록상표인 ‘<img name="img9" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-09.gif" alt="본문내 삽입된 이미지" />’ 등이 을 회사가 사용하고 있는 ‘<img name="img10" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-10.gif" alt="본문내 삽입된 이미지" />’ 상표 등과의 관계에서 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">상표법 제7조 제1항 제11호</a></span> 후단의 ‘수요자를 기만할 염려가 있는 상표’에 해당한다는 이유로 등록이 무효로 되었다는 사정을 들어 을 회사 사용상표들에 앞서 등록된 갑 법인의 상표권에 대한 관계에서 을 회사 사용상표들의 사용이 정당하게 된다거나 갑 법인의 상표권에 대한 침해를 면하게 된다고 볼 수 없다고 한 사례.</p>
+<p></p><p></p><p>[4] 국내에 등록된 상표와 동일·유사한 상표가 부착된 지정상품과 동일·유사한 상품을 수입하는 행위가 등록상표권의 침해 등을 구성하지 않는다고 하기 위해서는, 외국의 상표권자 또는 정당한 사용권자가 수입된 상품에 상표를 부착하였어야 하고, 외국 상표권자와 우리나라의 등록상표권자가 법적 또는 경제적으로 밀접한 관계에 있거나 그 밖의 사정에 의하여 위와 같은 수입상품에 부착된 상표가 우리나라의 등록상표와 동일한 출처를 표시하는 것으로 볼 수 있는 경우이어야 하며, 아울러 수입된 상품과 우리나라의 상표권자가 등록상표를 부착한 상품의 각 품질 사이에 실질적인 차이가 없어야 한다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|">민법 제2조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|50|">상표법 제50조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|65|">제65조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|66|2">제66조의2</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|2|">상표법 제2조 제1항 제7호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">제7조 제1항 제11호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|66|">제66조 제1항 제1호</a></span> [3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|2|">민법 제2조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|2|">상표법 제2조 제1항 제7호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">제7조 제1항 제11호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|65|">제65조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|66|">제66조 제1항 제1호</a></span> [4] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|2|">상표법 제2조 제1항 제7호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|66|">제66조 제1항 제1호</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다67223|판결" href="#//">대법원 2007. 1. 25. 선고 2005다67223 판결</a></span>(공2007상, 344)<br />[2] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006후3113|판결" href="#//">대법원 2007. 6. 28. 선고 2006후3113 판결</a></span>(공2007하, 1193)<br />[4] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다40423|판결" href="#//">대법원 2006. 10. 13. 선고 2006다40423 판결</a></span>(공2006하, 1914)</p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인 겸 상고인】
+판-웨스트(피티이) 리미티드 (소송대리인 법무법인 보나 담당변호사 소동기 외 3인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【원고보조참가인】
+주식회사 타미스포츠 (소송대리인 법무법인 보나 담당변호사 소동기 외 3인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고, 상고인 겸 피상고인】
+주식회사 카타나골프 (소송대리인 법무법인 다래 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2010나115746|판결" href="#//">서울고법 2011. 11. 30. 선고 2010나115746 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 상고인 각자가 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지난 후에 제출된 원고의 준비서면 및 피고의 상고이유보충서의 기재는 원고 및 피고의 각 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 원고 및 원고 보조참가인의 상고이유에 관하여</p><p>  가. 원고의 상고이유 제1점에 관하여</p><p><img name="img11" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-11.gif" alt="본문내 삽입된 이미지" /></p><p>  원심은, 피고가 일본의 주식회사 우메다쇼카이(주식회사 매전상회, 이하 ‘우메다쇼카이’라고 한다) 및 주식회사 카타나골프(주식회사 カタナゴルフ, 이하 ‘일본 카타나사’라고 한다)로부터 이들 회사가 생산하는 골프채(이하 ‘일본 카타나 골프채’라고 한다) 등을 국내에 수입·판매하면서 ‘<img name="img12" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-12.gif" alt="본문내 삽입된 이미지" />’라는 상표를 사용함으로써, 지정상품을 ‘골프채(아이언), 골프공, 골프가방, 골프클럽’ 등으로 하고 오른쪽과 같이 구성된 이 사건 등록상표(등록번호 생략)에 관한 원고의 상표권(이하 ‘원고의 이 사건 상표권’이라고 한다)을 침해하였다는 원고의 주장에 대하여, 피고가 ‘<img name="img13" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-13.gif" alt="본문내 삽입된 이미지" />’와 ‘<img name="img14" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-14.gif" alt="본문내 삽입된 이미지" />’라는 상표(이하 ‘피고 사용상표들’이라고 한다) 등과 별도로 원고의 위 주장과 같은 상표를 사용하고 있음을 인정할 증거가 없다면서 원고의 위 주장을 배척하였다.</p><p>  위와 같은 원심의 판단을 다투는 상고이유 주장은 실질적으로 사실심법원의 자유심증에 속하는 증거의 취사선택과 가치 판단 및 이에 기초한 사실인정을 탓하는 것에 불과하다. 그리고 원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보아도, 위와 같은 원심의 판단에 논리와 경험의 법칙을 위반하고 자유심증주의의 한계를 벗어난 위법이 없다.</p><p>  그리고 상고심은 순수한 법률심이어서 당사자는 상고심에서 새로운 주장이나 증거를 제출하여 원심의 사실인정을 다툴 수 없으므로(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다26550|판결" href="#//">대법원 2005. 7. 22. 선고 2005다26550 판결</a></span> 등 참조), 원고의 상고이유서에 첨부된 새로운 자료들을 들어 위와 같은 원심의 판단이 위법하다는 주장은 받아들일 수 없다.</p><p>  나. 원고의 상고이유 제2점에 관하여</p><p>  타인의 등록상표와 유사한 표장을 이용한 경우라고 하더라도 그것이 상표의 본질적인 기능이라고 할 수 있는 출처 표시를 위한 것이 아니어서 상표의 사용으로 인식될 수 없는 경우에는 등록상표의 상표권을 침해하였다고 할 수 없다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다79068|판결" href="#//">대법원 2003. 6. 13. 선고 2001다79068 판결</a></span> 등 참조).</p><p>  원심은, 피고가 ‘주식회사 카타나’라는 피고의 상호(이하 ‘이 사건 상호’라고 한다)를 상표적으로 사용하였음을 인정할 증거가 없다고 인정하여, 이 사건 상호를 사용함으로써 원고의 이 사건 상표권을 침해하였다는 원고의 주장을 배척하였다.</p><p>  이러한 원심의 판단을 다투는 상고이유 주장은 실질적으로 사실심법원의 자유심증에 속하는 증거의 취사선택과 가치 판단 및 이에 기초한 사실인정을 탓하는 것에 불과하고, 원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보아도 원심의 판단에 자유심증주의의 한계를 벗어난 위법이 없다.</p><p>  또한 원고는, 피고가 원고의 이 사건 등록상표에 대한 부정경쟁의 목적으로 이 사건 상호를 사용하고 있음에도 원심이 이를 인정하지 아니한 위법이 있다고 주장하나, 이에 관한 원심의 판단은 이 사건 상호를 상표적으로 사용한 것으로 인정할 경우를 가정하여 한 부가적인 판단에 불과하여 그 당부는 판결 결과에 영향을 미칠 수 없으므로, 위 주장은 나아가 살펴볼 필요 없이 받아들일 수 없다.</p><p>  다. 원고의 상고이유 제3점에 관하여</p><p>  원심은, 도메인이름의 말소등록청구는 그 등록사용자를 상대로 제기하여야 하는데 2002. 4. 22.에 등록된 ‘(도메인 주소 생략)’이라는 도메인이름의 등록사용자는 피고가 아니라 소외인이므로, 피고를 상대로 한 위 도메인이름의 등록말소청구는 더 나아가 살펴볼 필요 없이 이유 없다고 판단하였다.</p><p>  원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보면, 위와 같은 원심의 판단에 분쟁의 일회적 해결 원칙 위반 등을 비롯한 상고이유의 주장과 같은 위법이 있다고 할 수 없다.</p><p>  라. 원고 보조참가인의 상고이유에 관하여</p><p>  원고 보조참가인이 주장하는 사유는 원심이 피고의 권리남용 주장을 배척하면서 판시한 이유 중의 일부 사실을 다투는 것으로서, 그 주장과 같이 원심의 사실인정에 잘못이 있다고 하더라도, 피고의 권리남용 주장을 배척한 원심의 판단은 원고 보조참가인에게 유리한 것일 뿐 아니라 아래에서 보는 것과 같이 그 판단에 위법이 없는 이상 판결에 영향을 미친 위법이 있다고 할 수 없으므로 원심을 파기할 사유가 되지 못한다.</p><p>  2. 피고의 상고이유에 관하여</p><p>  가. 상고이유 제1, 2점에 관하여</p><p>  (1) <span class="accrnt_txt">상표권의 행사가 등록상표에 관한 권리를 남용하는 것으로서 허용될 수 없다고 하기 위해서는, 상표권자가 당해 상표를 출원·등록하게 된 목적과 경위, 상표권을 행사하기에 이른 구체적·개별적 사정 등에 비추어, 상대방에 대한 상표권의 행사가 상표사용자의 업무상의 신용유지와 수요자의 이익보호를 목적으로 하는 상표제도의 목적이나 기능을 일탈하여 공정한 경쟁질서와 상거래 질서를 어지럽히고 수요자 사이에 혼동을 초래하거나 상대방에 대한 관계에서 신의성실의 원칙에 위배되는 등 법적으로 보호받을 만한 가치가 없다고 인정되어야 한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다67223|판결" href="#//">대법원 2007. 1. 25. 선고 2005다67223 판결</a></span> 등 참조).</p><p>  <span class="accrnt_txt">그리고 어떤 상표가 정당하게 출원·등록된 이후에 그 등록상표와 동일·유사한 상표를 그 지정상품과 동일·유사한 상품에 정당한 이유 없이 사용한 결과 그 사용상표가 국내의 일반 수요자들에게 알려지게 되었다고 하더라도, 그 사용상표와 관련하여 얻은 신용과 고객흡인력은 그 등록상표의 상표권을 침해하는 행위에 의한 것으로서 보호받을 만한 가치가 없고 그러한 상표의 사용을 용인한다면 우리 상표법이 취하고 있는 등록주의 원칙의 근간을 훼손하게 되므로, 위와 같은 상표 사용으로 인하여 시장에서 형성된 일반 수요자들의 인식만을 근거로 하여 그 상표 사용자를 상대로 한 등록상표의 상표권에 기초한 침해금지 또는 손해배상 등의 청구가 권리남용에 해당한다고 볼 수는 없다.</span></p><p>  한편 <span class="accrnt_txt">선행 등록상표의 등록 이후에 등록결정이 된 후행 등록상표가 선행 등록상표와 표장 및 지정상품이 동일·유사하고, 또한 후행 등록상표의 등록결정 당시 특정인의 상표라고 인식된 타인의 상표가 선행 등록상표의 등록 이후부터 사용되어 온 것이라고 하더라도, 이러한 타인의 사용상표(이하 ‘후발 선사용상표’라고 한다)와의 관계에서 후행 등록상표가 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|" style="text-decoration:underline">상표법 제7조 제1항 제11호</a></span> 후단에서 규정하고 있는 ‘수요자를 기만할 염려가 있는 상표’에 해당하여 그 등록이 무효로 될 수 있고, 그 결과 후발 선사용상표가 사실상 보호받는 것처럼 보일 수는 있다. 그러나 위 규정의 취지가 후발 선사용상표를 보호하려는 데 있는 것이 아니라 이미 특정인의 상표라고 인식된 상표를 사용하는 상품의 출처 등에 관한 일반 수요자들의 오인·혼동을 방지하여 이에 대한 신뢰를 보호하려는 데 있음을 고려할 때, 그러한 결과는 일반 수요자들의 이익을 보호함에 따른 간접적·반사적인 효과에 지나지 아니하므로</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006후3113|판결" href="#//">대법원 2007. 6. 28. 선고 2006후3113 판결</a></span> 등 참조), <span class="accrnt_txt">그러한 사정을 들어 후발 선사용상표의 사용이 선행 등록상표에 대한 관계에서 정당하게 된다거나 선행 등록상표의 상표권에 대한 침해를 면하게 된다고 볼 수는 없다.</span></p><p>  (2) 원심판결 이유 및 적법하게 채택된 증거들에 의하면 아래와 같은 사정들을 알 수 있다.</p><p>  원고는 1997. 9. 22. 우리나라에서 이 사건 등록상표를 출원하여 1998. 11. 17. 상표등록을 받고, 그 무렵 우메다쇼카이 및 일본 카타나사와 이들 회사가 생산하는 일본 카타나 골프채를 일본 외의 지역에서 판매하기로 하는 내용의 골프채 수출·판매계약(이하 ‘원고의 기존 수출·판매계약’이라고 한다)을 체결하고 국내에 일본 카타나 골프채를 수입·판매하기 시작하였다.</p><p>  또한 원고는 1997년경부터 싱가포르를 비롯한 중국, 태국 등 여러 나라에서 이 사건 등록상표와 동일·유사한 상표를 출원·등록하고 그 무렵부터 현재까지 싱가포르에서 그 상표를 사용하여 골프채 등을 광고·판매해 오고 있다.</p><p>  이와 같이 원고가 우리나라와 싱가포르 등에서 이 사건 등록상표 또는 그와 동일·유사한 상표를 출원·등록하여 사용해 오기 시작한 시기는 우메다쇼카이가 일본의 야마하 주식회사(ヤマハ 주식회사)로부터 지정상품을 ‘골프용구’로 하고 ‘<img name="img15" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-15.gif" alt="본문내 삽입된 이미지" />’와 같이 구성된 상표(이하 ‘일본 카타나 상표’라 한다)의 상표권이전등록을 받은 2000. 8. 18.이나 일본 카타나사(회사 설립일인 1998. 6. 16. 당시의 상호는 ‘주식회사 골프디자인’이었다)가 그와 같이 상호를 변경한 2000. 3. 15.보다 앞선다.</p><p>  반면, 원심 판시와 같이 이 사건 등록상표와 유사한 것으로 인정되는 피고 사용상표들을 비롯한 원심 판시 피고 제1표장 내지 제5표장은 모두 이 사건 등록상표의 등록일 후인 2000. 5. 31.경부터 피고가 우메다쇼카이 및 일본 카타나사로부터 일본 카타나 골프채 등을 국내에 수입·판매하면서 사용해 온 상표들로서(특히 피고 제1, 2표장에는 일본 카타나 상표에는 없고 이 사건 등록상표에만 있는 <img name="img16" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-16.gif" alt="본문내 삽입된 이미지" /> 로고가 포함되어 있다), 이 사건 등록상표의 출원·등록일 이전에는 국내에서는 물론 일본에서도 주지성을 취득하기는커녕 사용되지도 않았다. 게다가 우메다쇼카이 및 일본 카타나사는 2003년경부터는 일본 카타나 골프채의 주된 상표를 ‘SWORD’ 상표로 변경하였고, 우메다쇼카이는 2004. 6. 11.경 원고에게 이 사건 등록상표와 <img name="img17" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-17.gif" alt="본문내 삽입된 이미지" /> 로고 등을 매수하겠다는 취지의 의사를 표시하기도 하였으나 원고가 이를 거절하였다. 그럼에도 피고는 현재까지 계속하여 일본 카타나 골프채 등을 국내에 수입·판매하면서 피고 사용상표들을 사용해 오고 있다.</p><p>  원고는 2000년경부터 국내에서 이 사건 등록상표가 부착된 일본 카타나 골프채의 수입·판매를 중단한 적이 있고 원고의 기존 수출·판매계약도 2002~2003년경 완전히 해지되었으나, 2002년경부터 일본의 노오쓰랜드 주식회사(Northland Co. Ltd)로부터 주문자상표부착(OEM) 생산방식으로 이 사건 등록상표가 부착된 골프채 등을 공급받아 싱가포르 등지에서 판매해 왔고, 2004년경부터는 국내에서도 이 사건 등록상표가 부착된 골프채 등을 판매해 오다가, 2009. 5. 25. 일본 후쿠오카에 카타나골프 주식회사(KATANA GOLF 주식회사)가 설립된 이후에는 위 회사로부터 이 사건 등록상표가 부착된 골프채 등을 공급받아 국내에 판매해 오고 있다.</p><p>  그리고 ① 피고는 원고를 상대로 이 사건 등록상표에 대하여, 2006. 3. 2.과 2009. 2. 12. 두 번에 걸쳐 불사용으로 인한 상표등록취소심판을, 2009. 2. 12. 상표등록무효심판을 각 청구하였으나 모두 기각하는 심결이 확정되었고, 한편 ② 2009. 2. 12. 둘 다 ‘<img name="img18" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-18.gif" alt="본문내 삽입된 이미지" />’와 같이 구성되고 ‘골프화’, ‘골프클럽, 골프백, 골프공 등’이 각각의 지정상품인 원고의 등록상표들(이하 ‘원고의 후행 등록상표들’이라고 한다)에 대하여 피고가 상표등록무효심판을 청구하여 이들 상표가 그 각 등록결정일인 2006. 6. 14.과 2007. 11. 28. 무렵 피고의 사용에 의해 ‘골프채’ 등에 관하여 특정인의 상표라고 인식된 앞서의 ‘<img name="img19" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-19.gif" alt="본문내 삽입된 이미지" />’ 상표 등과의 관계에서 동일·유사하여 일반 수요자들로 하여금 상품 출처에 대한 오인·혼동을 일으켜 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">상표법 제7조 제1항 제11호</a></span> 후단의 ‘수요자를 기만할 염려가 있는 상표’에 해당한다는 이유로 모두 그 등록을 무효로 하는 심결이 확정되었는데, ③ 이러한 일련의 심판청구에 대해 적극적으로 대응해 오던 원고는 2009. 9. 11. 피고를 상대로 이 사건 소를 제기하였다.</p><p>  (3) 이러한 사정들을 앞서 본 법리에 비추어 살펴보면, 원고가 이 사건 등록상표를 정당한 목적으로 출원·등록하여 상표권을 취득한 후 이를 꾸준히 사용해 오고 있음에도, 피고는 이 사건 등록상표가 등록된 후에서야 이 사건 등록상표와 유사한 피고 사용상표들을 사용하기 시작한 이래로 원고와 상표분쟁을 일으키면서 오랫동안 계속하여 피고 사용상표들을 정당한 이유 없이 사용해 오고 있다고 할 것이므로, 설령 그러한 상표 사용의 결과 피고 사용상표들이 국내의 일반 수요자들 사이에서 특정인의 상표나 주지상표로 인식되기에 이르렀다고 하더라도 그러한 사정을 들어 피고에 대한 원고의 이 사건 상표권 행사가 상표제도의 목적이나 기능을 일탈하여 공정한 경쟁질서와 상거래 질서를 어지럽히거나 신의성실의 원칙에 위배되어 권리남용에 해당한다고 보기는 어렵다.</p><p>  그리고 앞서 살펴본 사정들을 종합적으로 고려할 때, 설령 원고가 일본으로부터 이 사건 등록상표가 부착된 골프채 등을 수입하는 행위가 우메다쇼카이의 일본 카타나 상표와의 관계에서 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="불공정무역행위 조사 및 산업피해구제에 관한 법률|4|">불공정무역행위 조사 및 산업피해구제에 관한 법률 제4조</a></span>를 위반하는 불공정무역행위에 해당할 수 있다거나, 피고가 일본 카타나 골프채 등을 국내에 수입·판매하기 시작한 2000. 5. 31.경부터 9년여가 지난 2009. 9. 11. 이 사건 소가 제기되었다고 하여 위와 달리 볼 수 없다.</p><p>  한편 앞서 본 것과 같이 원고의 후행 등록상표들이 피고가 사용해 오고 있는 ‘<img name="img20" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2152851&amp;attachImgNm=14f1001dr002-20.gif" alt="본문내 삽입된 이미지" />’ 상표 등과의 관계에서 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">상표법 제7조 제1항 제11호</a></span> 후단의 ‘수요자를 기만할 염려가 있는 상표’에 해당한다는 이유로 그 등록이 모두 무효로 되기는 하였으나, 그러한 사정을 들어 피고 사용상표들에 앞서 등록된 원고의 이 사건 상표권에 대한 관계에서 피고 사용상표들의 사용이 정당하게 된다거나 원고의 이 사건 상표권에 대한 침해를 면하게 된다고 볼 수는 없다.</p><p>  (4) 따라서 이와 같은 취지에서 원고의 이 사건 상표권 행사가 권리남용에 해당하지 않는다고 인정한 원심의 판단에, 상고이유의 주장과 같이 상표권의 남용, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지법|2|">부정경쟁방지법 제2조</a></span>의 부정경쟁행위 및 주지성, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|7|">상표법 제7조 제1항 제11호</a></span> 후단 및 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|76|">제76조 제1항</a></span>에 관한 법리를 오해하거나 논리와 경험의 법칙을 위반하고 자유심증주의의 한계를 벗어나는 등의 위법이 있다고 할 수 없다.</p><p>  나. 상고이유 제3점에 관하여</p><p>  원심은 판시와 같은 이유로, ‘골프채’ 외에도 ‘골프용품(골프화, 골프공, 골프용 장갑, 골프가방, 골프채 헤드커버, 골프채 그립)’에 대하여 피고 사용상표들의 사용 금지를 구하는 원고의 주장을 받아들여 그 사용 금지를 명하였다. 원심판결 이유를 적법하게 채택된 증거들을 비롯한 기록에 비추어 살펴보면, 비록 원심의 이유설시에 부족한 부분이 있다고 하더라도 위와 같은 결론에 이른 원심의 판단은 수긍할 수 있고, 거기에 상고이유의 주장과 같이 변론주의를 위반하고 석명권을 과도하게 행사하거나 판결의 이유를 밝히지 아니하여 판결에 영향을 미친 위법이 없다.</p><p>  다. 상고이유 제4점에 관하여</p><p>  <span class="accrnt_txt">국내에 등록된 상표와 동일·유사한 상표가 부착된 그 지정상품과 동일·유사한 상품을 수입하는 행위가 그 등록상표권의 침해 등을 구성하지 않는다고 하기 위해서는, 외국의 상표권자 또는 정당한 사용권자가 그 수입된 상품에 상표를 부착하였어야 하고, 그 외국 상표권자와 우리나라의 등록상표권자가 법적 또는 경제적으로 밀접한 관계에 있거나 그 밖의 사정에 의하여 위와 같은 수입상품에 부착된 상표가 우리나라의 등록상표와 동일한 출처를 표시하는 것으로 볼 수 있는 경우이어야 하며, 아울러 그 수입된 상품과 우리나라의 상표권자가 등록상표를 부착한 상품의 각 품질 사이에 실질적인 차이가 없어야 한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다40423|판결" href="#//">대법원 2006. 10. 13. 선고 2006다40423 판결</a></span> 등 참조).</p><p>  원심은, 이 사건 등록상표의 상표권자인 원고와 일본 카타나 골프채에 피고 사용상표들을 부착한 일본 카타나사 또는 일본 카타나 상표의 상표권자인 우메다쇼카이가 법적 또는 경제적으로 밀접한 관계에 있다거나, 그 밖의 사정에 의하여 일본 카타나 골프채에 부착된 피고 사용상표들이 이 사건 등록상표와 동일한 출처를 표시하는 것으로 볼 수는 없다고 판단하여, 피고 사용상표들이 부착된 일본 카타나 골프채를 피고가 수입판매하면서 그 광고에 피고 사용상표들을 사용하는 행위가 원고의 이 사건 상표권을 침해하지 않는 행위로서 허용되어야 한다는 피고의 주장을 받아들이지 아니하였다.</p><p>  원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보면, 위와 같은 원심의 판단은 앞서 본 법리에 기초한 것으로서, 거기에 병행수입에 관한 법리를 오해한 위법이 없다.</p><p>  3. 결론</p><p>  그러므로 상고를 모두 기각하고 상고비용은 상고인 각자가 부담하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신영철(재판장) 이상훈 김용덕(주심) 김소영 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

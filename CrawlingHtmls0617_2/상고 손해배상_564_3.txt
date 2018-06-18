@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 92다25885 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2098085';
+var contIdEtc = '';
+var saNo = '92다25885';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('19940415' ? 
+			'19940415'.length==4 ? Date.parseExact('19940415','yyyy').toString('yyyy. M. d.') : 
+				'19940415'.length==6 ? Date.parseExact('19940415','yyyyMM').toString('yyyy. M. d.') : 
+					'19940415'.length==8 ? Date.parseExact('19940415','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 92다25885 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '92다25885';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />92다25885</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(13)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(97)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2098091">대법원 1994. 4. 15. 선고 93다60953 판결 [집42(1)민,294;공1994.6.1.(969),1440]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1995965">서울지방법원 1994. 8. 24. 선고 93가합80648 제15부판결 : 항소 [하집1994(2),132]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2097372">대법원 1995. 1. 20. 선고 94다3421 판결 [집43(1)민,23;공1995.2.15.(986),885]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2097865">대법원 1995. 2. 10. 선고 93다52402 판결 [집43(1)민,51;공1995.3.15.(988),1281]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2099294">대법원 1995. 4. 25. 선고 94다27151 판결 [공1995.6.1.(993),1939]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2057655">대법원 2002. 1. 11. 선고 2001다27449 판결 [공2002.3.1.(149),457]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2058515">대법원 2002. 5. 28. 선고 2000다46511 판결 [공2002.7.15.(158),1502]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2067303">대법원 2002. 10. 25. 선고 2002다48443 판결 [공2002.12.15.(168),2867]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1964730">대법원 2007. 9. 7. 선고 2005다69540 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2059419">대법원 2009. 5. 21. 선고 2009다17417 전원합의체 판결 [공2009상,849]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2059095">대법원 2010. 3. 25. 선고 2009다95714 판결 [공2010상,812]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2124430">대법원 2013. 6. 13. 선고 2012다94865 판결 [공2013하,1199]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2194221">대법원 2015. 10. 29. 선고 2014다22871 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|219332">의사의 설명의무위반과 가정적 승낙 손해배상책임의 범위 전하은 大邱判例硏究會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|203524">스테로이드 제재솔루메드롤 사용으로 양측 대퇴골두에 무혈성괴사가 발생한 의료사고 한국자동차보험주 법제실 韓國賠償醫學會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|543253">설명의무의 범위에 대한 의학적 고찰 이경석 @ 김정은 @ 이경환 한국의료법학회</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|224054">환자의 자기결정권 침해로 인한 손해배상 책임 김종기 釜山判例硏究會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|736744">김민중 (의료법 관련 제문제)진료계약: 판례로 형성된 원칙에서 전형계약으로 사법 28호 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|543253">이경석 설명의무의 범위에 대한 의학적 고찰 한국의료법학회지 12권 2호  / 한국의료법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|473330">조재건 의료과오소송에 있어서의 입증책임 민사법연구 8집  / 대한민사법학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|597301">박영호 설명의무위반 및 치료기회상실을 근거로 한 가족들의 독자적 위자료 청구권 법조 58권 2호 (2009. 2) / 법조협회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|464442">권순일 증권회사의 고객에 대한 보호의무 민사재판의 제문제 10권  / 한국사법행정학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|224054">김종기 환자의 자기결정권 침해로 인한 손해배상 책임 판례연구 6집  / 부산판례연구회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|87238">김상찬 의료사고의 민사적 책임과 분쟁해결의 법리 건국대학교  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236681">길전성삼 신문판매업자단체によるアウトサイダ-の절입み광고수수료の결정 : 다마신문판매동업조합사건 ジュリスト 별책 141호 (제5판) / 유비각  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|520888">김민중 의사의 설명의무에 관한 몇 가지 특수문제 의료법학 4권 2호  / 대한의료법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|480872">박영호 의료과실판단기준으로서의 지역차와 긴급성 인권과 정의 302호  / 대한변호사협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|485724">박영호 야간응급실 일반의의 주의의무의 기준 인권과 정의 305호  / 대한변호사협회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|455345">이진성 의사의 설명의무와 손해배상책임의 범위 판례월보 353호  / 판례월보사  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|491058">정용엽 원격의료의 민사책임 및 법제개선에 관한 연구 경희대학교  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251704">김민규 의사의 설명의무와 그의 면제 민법의 과제와 현대법의 조명 : 경암 홍천용박사화갑기념 (97.11) / 21세기 국제정경연구원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256152">박태신 의료소송에 있어서 설명의무의 기능 연세대 연세법학연구 5집1권 (98.05) : 예당 홍성찬 교수 화갑기념논문집 / 연세대학교 법과대학 법률문제연구소  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|760029">김진환 〈특집－심포지엄: 개인정보의 법적 보호와 그 한계〉: 개인정보 보호의 규범적 의의와 한계 : 사법(사법) 영역에서의 두 가지 주요 쟁점을 중심으로 저스티스 통권 제144호 / 한국법학원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|638659">문현호 줄기세포를 이용한 임상시험과 설명의무 대법원판례해설 85호  / 법원도서관  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|465354">김민중 의료분쟁 판례의 동향과 문제점 의료법학 : 창간호 창간호  / 대한의료법학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|657607">최수정 인체에 대한 권리관계의 새로운 패러다임 법학논총 제29집 제1호  / 한양대학교  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|465724">범경철 의료과오소송에 관한 연구 전북대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|496681">김민규 설명의무위반과 위자료 비교법학 13집  / 부산외국어대학교비교법연구소  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|567642">최재천 의료소송의 범주와 의료과실 보건의료법의 현대적 과제 . 2006 전남대학교 법률행정연구소 편 / 도서출판fides  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|501956">김충원 약사의 설명의무위반과 손해배상 책임 판례연구 16집 하  / 서울지방변호사회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|616849">노태헌 연명치료 중단의 허부 및 허용요건 사법 9호 / 사법발전재단  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632627">서영애 의사의 지도ㆍ설명의무의 내용과 손해배상책임의 범위 재판과 판례 19집  / 대구판례연구회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|225567">김천수 의사의 설명과오책임에 관한 국내 판례의 분석 민사재판의 제문제(상) : 송천 이시윤박사화갑기념논문집 (95.10) / 박영사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|518875">백경희 의료사고 민사책임의 성립과 범위에 관한 연구 : 새로운 쟁점을 중심으로 고려대학교 대학원  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|203870">추호경 최근 의료과오재판의 경향 및 문제점 대한법의학회지 18권 2호 (94.10) / 대한법의학회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571295">김민중 의약품에 대한 설명의무 JURIST plus 412호 : 2007년1호(채권법)(v.2007-1) / 청림출판  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701670">남기연 문신시술과 민사책임에 관한 연구 법학논총 36권 2호 / 단국대학교  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|480514">추호경 의사의 설명의무위반과 손해배상책임 법조 50권 7호 (2001.07) / 법조협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|542366">김만오 의료과오에 관한 판례의 동향 민사법학 27호  / 한국사법행정학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|486400">박영호 의료소송에 있어서 주의의무위반 여부의 판정기준 사법논집 32집  / 대법원 법원행정처  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476905">이기용 교통사고와 의료과오의 경합 법학연구 7권 2호  / 충북대학교  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|619151">문성제 무의미한 연명치료 중단 등의 기준에 관한 재고 의료법학 10권 2호  / 대한의료법학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|546512">김충원 의사 설명의무에 있어서 설명의 범위 법률신문 3404호  / 법률신문사  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571294">김민중 의사의 설명의무와 면제 JURIST plus 412호 : 2007년1호(채권법)(v.2007-1) / 청림출판  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|567595">김재국 채혈 및 수혈 시 주의의무와 설명의무 비교사법 13권 4호  / 한국비교사법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476031">홍천용 의사의 설명의무위반과 손해배상 창원지방변호사회지 3호  / 창원지방변호사회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476776">안귀옥 의사의 설명의무와 관련된 판례의 검토 인천법학논총 3집  / 인천대학교 법과대학  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|616323">정철 연명치료 중단 입법안에 관한 헌법적 고찰 공법연구 38집 2호 / 한국공법학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|625222">이수경 의사의 설명의무위반으로 인한 손해배상책임 판례연구 24집(2010.09) / 서울지방변호사회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|626068">안성준 무의미한 연명치료중단의 형사법적 검토 형사판례연구 18호  / 박영사  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|605738">김기영 의약품의 부작용에 대한 제조물책임의 영역과 의사의 설명의무 : 독일과 우리나라 판례에 대한 비교법적 고찰을 중심으로 비교사법 16권 2호  / 한국비교사법학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701626">배현아 정신적으로 제약이 있는 자의 자기 결정권 보호를 위한 법제 법학논총 37권 1호 / 단국대학교  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632626">이종길 수혈 관련 사고에 따른 책임의 주체와 범위 재판과 판례 19집  / 대구판례연구회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|494008">한국 . 대법원 법원행정처 재판실무편람 . 제5호 : 의료재판실무편람 대법원 법원행정처  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|606621">김기영 의약품의 사용설명서와 부작용에 대한 의사의 설명의무 법조 통권635호  / 법조협회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495620">권용우 우리나라 불법행위법의 최근 동향 법학논총 25집  / 단국대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|549618">천대엽 의료행위에 있어서 투약에 따른 설명의무의 정도 대법원판례해설 54호 (2006.01) / 법원도서관  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|477715">권남혁 의료전문인의 의료과오로 인한 민사책임 민사법연구 4집  / 대한민사법학회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|552498">윤석찬 스위스의 의료과오책임 : 우리나라의 의료과오책임과 비교법적 관점에서 . 재산법연구 20권 1호  / 법문사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|230988">김영규 대학병원에 근무하는 전문의의 주의의무 판례월보 312호  / 판례월보사  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696066">박수곤 의료계약의 민법편입과 과제 민사법학 60호  / 한국사법행정학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|541592">김민규 일본 민사법 연구에 대한 비판적 고찰 : 의료과오책임법상의 「과실판단구조」를 소재로 . 비교사법 12권 1호 (2005.03) / 한국비교사법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622069">김민동 의약품의 설계상 결함으로 인한 제조물책임 : 미국의 리스테이트먼트와 판례이론을 중심으로 고려법학 56호  / 고려대학교 법학연구원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|732257">박지용 보건의료법학의 체계적 이해를 위한 일고 : 학문적 성격, 위상 그리고 개념적 기초 . 법학논집 제18권 제3호 / 이화여자대학교 법학연구소  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|619141">박영호 손해배상액 산정에 관한 최근 10년간 판례의 동향(상) 의료법학 10권 2호  / 대한의료법학회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|669165">배현아 응급환자의 전원과 의사의 설명의무 의료법학 13권 1호  / 대한의료법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|625788">김기영 새로운 약제의 사용과 의사의 민사책임의 근거 법조 통권644호  / 법조협회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|645689">김기영 임상시험계약상 피험자의 민사법적 보호 : 의사의 진료와 의약품임상시험과의 구별을 중심으로 법조 통권656호  / 법조협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|629415">이수경 의료과오소송에서의 인과관계와 입증책임 판례연구 22집(2008.08) / 서울지방변호사회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|518352">이경환 의료과실소송에 있어서의 과실과 관련된 쟁점 저스티스 77호  / 한국법학원  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|826599">권미연 투자신탁에서 자산운용회사의 법적 책임에 관하여 재판과 판례 제25집 / 대구판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|611293">김용빈 의료과오소송에 있어 입증책임 완화에 따른 의료과실의 의미와 판단기준 의료법학 9권 1호  / 대한의료법학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548410">한국. 대법원 법원행정처 재판실무편람. 제5호:. 의료재판실무편람 의료재판실무편람 집필위원회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|545325">길준규 보건의료법제에서의 경쟁구축 공법연구 33집 4호  / 한국공법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461110">홍천용 의료과오로 인한 피해의 사법적 구제 경남법학 15집  / 경남대학교 법학연구소  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|247300">강동세 수혈로 인한 후천성면역결핍증(AIDS) 감염에 따른 법적 문제에 관한 연구 판례연구 v.1997  / 서울지방법원 동부지원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|237236">한삼인 설명의무론과 자기결정권의 법적 평가 비교사법 2권1호 (95.06)  / 한국비교사법학회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|605271">김선혜 한방의료와 의료과실(하) 법조 통권634호  / 법조협회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|465356">안법영 산부인과 진료와 의사의 주의의무 : 대법원판결례의 분석을 중심으로 . 의료법학 : 창간호 창간호  / 대한의료법학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|235089">김성수 의료판례의 종합적 분석 및 그 전망 법조 46권 1호 (97.01) / 법조협회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|500776">민유숙 의사의 설명의무의 범위 대법원판례해설 40호 (2002.12) / 법원도서관  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256043">류승훈 의료과오소송에서의 인과관계와 과실의 제문제 한국외대 외법논집 4집  / 한국외국어대학교 법학연구소  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564653">김재국 수혈로 인한 에이즈감염에 대한 손해배상책임 민사법의 새로운 전개 : 한도 정환담교수 정년기념논문집 (2006.08) / 용봉민사법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|523313">김재형 한약업사의 설명의무 : 의사의 설명의무 법리의 연장선상에 있는가? . 인권과 정의 334호  / 대한변호사협회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|519397">박종원 의사의 설명의무의 범위와 그 위반의 효과 민사법연구 10집1호  / 대한민사법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571167">소재선 한약업사의 설명의무 Jurist 412호 : 2007년1호(채권법)(v.2007-1) / 청림출판  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|629398">김충원 의사 설명의무 위반 정도와 손해배상의 범위 판례연구 21집(2007.12) / 서울지방변호사회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|223866">임통일 의사의 설명의무와 그 위반의 효과 판례연구 9집  / 서울지방변호사회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|614059">정철 연명치료중단 판결의 헌법적 검토 법학 50권 4호  / 서울대학교 법학연구소  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|589191">김우수 가. 의사의 설명의무의 내용 및 그 범위, 나. 무혈성골괴사라는 심각한 부작용을 초래할 수 있는 스테로이드제를 투여함에 있어 설명의무를 위반하여 환자의 투약 여부를 결정할 수 있는 권리를 침해하였다는 이유로 대법원판례해설 71호 (2008.07) / 법원도서관  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|206095">심병연 가. 의사가 환자에게 수술등 침습을 가함에 있어 그 승낙을 얻기위한 전제로서 부담하는 설명의무의 내용 나. 설명의무위반과 손해배상의 범위 대법원판례해설 21호 (94.11) / 법원도서관  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|265326">이태영 의료소송에 있어서의 입증책임 실무연구자료 3권  / 대전지방법원  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|535253">이경환 환경소송ㆍ담배소송ㆍ의료소송의 과실 관련 쟁점의 비교 환경·에너지문제연구총서 11권  / 대한변호사협회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|238354">최재천 의사의 의료행위에 있어서의 주의의무의 기준 판례월보 323호  / 판례월보사  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|209076">석희태 1994년도 민법학계ㆍ판례의 동향과 전망 하 고시연구 22권 2호 (95.01) / 고시연구사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|249791">권순일 투자권유와 증권회사의 고객에 대한 보호의무 저스티스 31권 2호  / 한국법학원  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|504421">문성제 의약품사용과 의료과오의 제 문제 의료법학 3권 2호  / 대한의료법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|503036">전병남 의사의 설명의무위반과 손해배상책임 의료법학 3권 1호  / 대한의료법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539922">이경환 의료과실소송에서의 설명의무에 대한 고찰 : 판례를 중심으로 . 대전지방변호사회지 3호  / 대전지방변호사회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|473836">박종원 의사의 설명의무 전북대학교  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|520924">범경철 의사의 설명의무와 환자의 자기결정권 의료법학 4권 2호  / 대한의료법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|486697">류승훈 의료과오책임과 관련한 현재의 제과제 외법논집 10집  / 한국외국어대학교 법학연구소  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761620">김형석 피후견인의 신상결정과 그 대행 가족법연구 제28권 제2호 / 한국가족법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|494971">김민중 판례를 통한 「의사법」이론의 발전과 문제점 법학연구 21집  / 전북대학교 출판부  1999 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|93다60953">대법원 1994.4.15. 선고 93다60953 판결(공1994상,1440)</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|86다카1136">대법원 1987.4.28. 선고 86다카1136 판결(공1987,873)</a></p><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다36710">1992.4.14. 선고 91다36710 판결(공1992,1573)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|91나55669">서울고등법원 1992.5.12. 선고 91나55669 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1994. 4. 15. 선고 92다25885 판결</h2><p class="sub_title">[손해배상(기)][집42(1)민,267;공1994.6.1.(969),1434]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 의사의 설명의무</p>
+      <p></p>
+      <p>
+        </p><p>나. 가정적 승낙에 의한 의사의 면책요건</p>
+      <p></p>
+      <p>
+        </p><p>다. 의사의 설명의무 위반의 효과</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 의사는 반드시 병을 완치시켜야 할 의무를 부담하는 것은 아니라 할지라도 최선의 주의로써 병을 치료하기 위한 충분한 조치를 다할 의무가 있고, 환자에 대한 수술은 물론, 치료를 위한 의약품의 투여도 신체에 대한 침습을 포함하는 것이므로, 의사는 긴급한 경우 기타의 특별한 사정이 없는 한, 그 침습에 대한 승낙을 얻기 위한 전제로서 환자에 대하여 질환의 증상, 치료방법 및 내용, 그 필요성, 예후 및 예상되는 생명, 신체에 대한 위험성과 부작용 등, 환자의 의사결정을 위하여 중요한 사항에 관하여 사전에 설명함으로써 환자로 하여금 수술이나 투약에 응할 것인가의 여부를 스스로 결정할 기회를 가지도록 할 의무가 있고, 이러한 설명을 아니한 채 승낙 없이 침습한 경우에는, 설령 의사에게 치료상의 과실이 없는 경우에도 환자의 승낙권을 침해하는 위법한 행위가 된다. </p>
+      <p></p><p>
+        </p><p>나. 환자가 의사로부터 올바른 설명을 들었더라도 위 투약에 동의하였을 것이라는 이른바 가정적 승낙에 의한 의사의 면책은 의사측의 항변사항으로서 환자의 승낙이 명백히 예상되는 경우에만 허용된다. </p>
+      <p></p><p>
+        </p><p>다. 피해자가 의사의 치료상의 과실이 없더라도 그의 설명의무 위반으로 투약 여부에 대한 승낙권을 침해당하였다면 그 위법행위때문에 예기치 못한 의약품의 부작용으로 인한 정신적 고통을 입었다 할 것이고 / 가족들도 위 고통을 함께 입었다 할 것이므로, 이러한 경우 병원을 경영하는 법인은 위 피해자에게 신체장해 등에 의한 재산적 손해를 배상할 책임은 없다 하더라도 위 피해자와 그의 가족들에게 위 정신적 고통에 대한 위자료는 지급할 책임이 있다. </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">제751조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">가.다.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|93다60953|판결" href="#//">대법원 1994.4.15. 선고 93다60953 판결(공1994상,1440)</a></span><br />가.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|86다카1136|판결" href="#//">대법원 1987.4.28. 선고 86다카1136 판결(공1987,873)</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다36710|판결" href="#//">1992.4.14. 선고 91다36710 판결(공1992,1573)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고 1 외 5인 원고들  소송대리인 변호사  전재중 외 1인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+          학교법인 한양학원 외 1인 피고들 소송대리인 변호사  김동정 외 1인
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|91나55669|판결" href="#//">서울고등법원 1992.5.12. 선고 91나55669 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 원고들의 피고 학교법인 한양학원에 대한 위자료 청구부분을 파기하고, 그 부분 사건을 서울고등법원에 환송한다. </p><p>  원고들의 피고 학교법인 한양학원에 대한 나머지 상고와, 원고들의 피고 한국업죤 주식회사에 대한 상고를 모두 기각하고, 그 각 상고기각 부분의 상고비용은 원고들의 부담으로 한다. </p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  원고들의 상고이유를 본다. </p><p>  1. 피고 학교법인 한양학원에 대하여</p><p>  가. 원심판결 이유에 의하면, 원심은 피고 학교법인 한양학원(이하에서는 '피고 법인'이라 한다) 경영의 한양대학부속병원 신경외과 전문의인 소외 
+        1은 1983.6.29. 교통사고로 뇌부분에 심한 상처를 입은 직후 응급입원한 원고 
+        1(당시 20세 2개월 남짓한 나이였다)
+        이 당시 두부손상으로 가면상태에서 의식이 없고, 우측 측두부의 급성뇌막하혈종과 뇌부종으로 뇌압이 상승하고 있었으며, 뇌막파열로 뇌척수액과 혈액이 뇌표면으로부터 흘러나오는 등 생명이 매우 위중한 상황에 있음을 확인하고서 일단 산소공급과 급성 뇌압강하제인 만니톨을 주사하는 등의 응급조치를 취한 뒤 뇌압하강과 뇌기능보호를 위한 중증 쇼크치료제로 쓰이는 부신피질호르몬제제인 솔루메드롤(Solumedrol)을 투약하기로 결정하고, 입원 당일 250mg, 익일인 같은 해 6.30.부터 7.1.까지 매일 500mg씩을, 7.2.부터 4.까지 3일간 매일 250mg씩을 주사함으로써 의식이 정상회복하는 등, 위급한 고비를 넘겨서 투약을 중단하였다가, 그 후 위 두부 외상부의 조직부종으로 인하여 속발된 우측안면신경 중증도 마비를 치료하기 위하여 7.15.부터 같은 달 17.까지 3일간은 매일 250mg씩, 그 다음날부터 7.20.까지 3일간은 매일 125mg씩 주사하였는데, 그 각 투여 당시에 위 원고나 가족의 승낙이나 동의없이 독자적 판단으로 솔루메드롤을 투여한 사실, 그 결과 위 원고의 중증 뇌부종 및 안면신경마비증세를 성공적으로 치료하여 위 원고를 같은 해 9.7. 퇴원시켰으나, 그 1년 5개월 이후에 위 약품투여에 의한 부작용으로 위 원고에게 대퇴골두골저 무혈성괴사의 증상이 나타나게 된 사실, 이는 대퇴골두에 영양을 공급하는 모세혈관의 순환장애로 발생하는 것으로서 대퇴골 골두의 변형과 함께 고관절의 2차적 변화 및 운동장애가 수반되는 불치의 병으로 대퇴골 및 고관절이 체중을 제대로 지탱하지 못하여 보행에 지장을 주는 형태로 증상이 고착되는 사실을 각 인정한 후, 그 판시와 같은 여러 사정을 종합하여 의사 
+        소외 1에게는 위와 같은 투약에 의한 치료상의 과실은 없다고 판단하고서, 그와 아울러 
+        소외 1이 그러한 부작용의 가능성을 사전에 위 원고나 가족들에게 설명하지 아니한 채 그 승낙없이 위 투약을 계속하였으므로 피고 법인은 채무불이행책임 또는 불법행위책임이 있다는 원고들의 주장에 대하여는, 의료행위에 대한 동의 내지 선택권은 환자인 위 원고에게만 있고, 나머지 원고들은 설명의무의 상대방 내지는 동의, 승낙의 주체가 될 수 없으며, 응급입원 당시 및 의식회복 후 발생한 신경마비증세에 대한 치료가 급박하여 치료방법 및 약제사용에 관한 사전설명이 사실상 불가능하였고, 달리 대체할 치료방법이 없었으므로, 위 원고가 사전에 치료방법, 약제의 선택 및 발생 가능한 부작용에 관한 설명을 들었다 해도 투약에 동의할 것으로 추정되며, 위 부작용은 지극히 비전형적인 사례이고, 그 발생가능성 또한 희박한 것이므로, 두부손상이 완치된 후 부작용의 징후가 전혀 보이지 아니한 상황에서 그 가능성을 원고들에게 알리지 아니한 것에 잘못이 없고, 설령 이를 원고들에게 예고하였다손 치더라도 그 발병을 사전예방할 수 있다는 것을 인정할 만한 자료도 없다는 등의 이유로 이 역시 배척하여 결국 원고들의 이 사건 손해배상청구를 전부 기각하였다. 
+      </p><p>  나. 
+        <span class="accrnt_txt">의사는 반드시 병을 완치시켜야 할 의무를 부담하는 것은 아니라 할지라도 최선의 주의로써 병을 치료하기 위한 충분한 조치를 다할 의무가 있고, 환자에 대한 수술은 물론, 치료를 위한 의약품의 투여도 신체에 대한 침습(침습)을 포함하는 것이므로, 의사는 긴급한 경우 기타의 특별한 사정이 없는 한, 그 침습에 대한 승낙을 얻기 위한 전제로서 환자에 대하여 질환의 증상, 치료방법 및 내용, 그 필요성, 예후 및 예상되는 생명, 신체에 대한 위험성과 부작용 등, 환자의 의사결정을 위하여 중요한 사항에 관하여 사전에 설명함으로써 환자로 하여금 수술이나 투약에 응할 것인가의 여부를 스스로 결정할 기회를 가지도록 할 의무가 있고, 이러한 설명을 아니한 채 승낙없이 침습한 경우에는, 설령 의사에게 치료상의 과실이 없는 경우에도 환자의 승낙권을 침해하는 위법한 행위가 된다</span> 할 것이다. 
+      </p><p>  다. 이러한 입장에서 원심의 판단을 차례로 검토해 보기로 한다. </p><p>  (1) 먼저, 위 원고가 생명이 위독한 상태하에서 의식이 회복되기 전까지의 투약에 관한 한, 사전의 설명이 불가능하여 긴급한 경우에 해당한다 할 것이므로, 같은 취지에서 그 때까지 
+        소외 1의 설명의무를 부인한 원심판단은 옳다고 수긍된다. 
+      </p><p>  (2) 그러나, 위 원고가 의식을 회복한 후에도 치료의 경과와 부작용의 가능성에 관한 설명의무가 없다고 판단한 것은 아래와 같은 점에서 수긍하기 어렵다. </p><p>  ① 원심 판시에 의하여도 설명을 할 시간적 여유가 없을 정도로 긴급한 사태가 존재하였다고 볼 근거가 없다. </p><p>  ② 위 의약품 투여에 따른 부작용의 범위가 광범위하고, 그 투약시 이 사건에서와 같은 부작용이 이미 의학계에 보고되어 있는 형편에서 그 제조판매자인 피고 한국업죤주식회사도 이를 경고하고 있었음은 원심도 인정한 바이고, 위 원고와 같은 입원환자는 통상 의사를 통하여 간접적으로 의약품에 관한 설명을 들을 수밖에 없는 점, 위에서 본 부작용은 회복할 수 없는 중대한 것일 뿐만 아니라 위 원고에게는 의외의 것이라 할 것인 점 등에 비추어 보면, 위 부작용이 비전형적인 것이라고 단정할 수 없고, 그 발생가능성의 희소성 만으로 설명의무가 면제된다고도 할 수 없으며, 위 원고의 두부손상 치료후에 그 부작용이나, 합병증의 징후가 없었다 하더라도 그 후의 투약을 위하여는 여전히 그에 의한 부작용 등의 가능성에 관한 사전의 설명이 필요하고, 원심 판시와 같이 그에 관한 사전검사나 예방방법이 구체적으로 의학계에 알려지지 않았다면 그 알려진 부작용의 중대성 등에 비추어 더욱 그 설명의 필요성이 있다 할 것이며, 의사가 그 의약품의 용법과 용량에 따른 투약을 할 경우에도 그 부작용의 가능성을 미리 설명하여 환자의 승낙을 받아야 할 것이다. </p><p>  ③ 
+        <span class="accrnt_txt">환자가 의사로부터 올바른 설명을 들었더라도 위 투약에 동의하였을 것이라는 이른바 가정적(가정적) 승낙에 의한 의사의 면책은 의사측의 항변사항으로서 환자의 승낙이 명백히 예상되는 경우에만 허용된다</span> 할 것인바, 기록에 의하면 피고 법인의 이에 관한 주장이 없을 뿐만 아니라 원심 판시와 같이 의사입장에서 달리 대체할 치료방법이 없었다는 사유만으로 환자인 원고 
+        1이 위 부작용을 고려하여 여러가지로 대처할 선택의 가능성을 모두 배제하고 그 투약을 승낙했을 것이 명백하다고 추정하여 환자의 자기결정권 침해를 부정할 수는 없다 할 것이다. 
+      </p><p>  라. 결국 위 
+        <span class="accrnt_txt">원고 
+          1은
+          소외 1의 치료상의 과실이 없더라도 그의 설명의무위반으로 투약 여부에 대한 승낙권을 침해당하였다면 그 위법행위 때문에 예기치 못한 의약품의 부작용으로 인한 정신적 고통을 입었다 할 것이고 / 가족인 나머지 원고들도 위 고통을 함께 입었다 할 것이므로, 이러한 경우 피고 법인은 위 원고 
+          1에게 신체장해 등에 의한 재산적 손해를 배상할 책임은 없다 하더라도 원고들에게 위 정신적 고통에 대한 위자료는 지급할 책임이 있다
+        </span> 할 것이다. 
+      </p><p>  따라서 원심판결에는 설명의무의 법리를 오해한 위법이 있어 그 중 원고들의 피고 법인에 대한 위자료부분에 관하여 판결에 영향을 미쳤다 할 것이니, 원고들의 상고논지는 그 부분에 한하여 이유 있고, 나머지는 이유 없다. </p><p>  2. 피고 한국업죤 주식회사에 대하여</p><p>  원심인용의 증거들을 기록에 대조하여 검토하여 보아도 위 원고에게 투여된 솔루메드롤의 제조, 판매자인 피고 한국업죤 주식회사(이하에서는 '피고 회사'라 함)에게 그 설계와 제조과정상의 잘못이나 발매 후의 부작용에 관한 조사연구를 게을리한 과실이 없으며, 당시까지 알려진 바에 따라 그 약품설명서에 의하여 그 오·남용을 막기 위한 구체적인 사용지시와 경고의무를 다하였다고 한 원심의 인정판단은 정당하다고 수긍되고, 거기에 소론이 지적하는 바와 같은 위법이 없다. 원고들의 이 부분 상고논지는 이유 없다. </p><p>  3. 이에 원심판결 중 원고들의 피고 법인에 대한 위자료부분을 파기하고 그 부분 사건을 원심법원에 환송하되, 같은 피고에 대한 원고들의 나머지 상고와 원고들의 피고 회사에 대한 상고는 이유없어 이를 모두 기각하고, 상고기각된 부분의 상고비용은 패소자들의 부담으로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   윤영철(재판장) 김상원 박만호 박준서(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

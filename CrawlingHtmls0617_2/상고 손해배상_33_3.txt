@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011다101148 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2174813';
+var contIdEtc = '';
+var saNo = '2011다101148';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('20150409' ? 
+			'20150409'.length==4 ? Date.parseExact('20150409','yyyy').toString('yyyy. M. d.') : 
+				'20150409'.length==6 ? Date.parseExact('20150409','yyyyMM').toString('yyyy. M. d.') : 
+					'20150409'.length==8 ? Date.parseExact('20150409','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011다101148 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011다101148';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011다101148</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(8)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|786572">저작권신탁계약종료 시 저작권신탁관리업자가 체결한 계약의 효력 최승재 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|814953">저작권관리신탁계약이 해지될 경우 수탁자와 체결하였던 포괄이용계약의 승계 여부 임상민 한국저작권위원회</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|826863">저작권관리신탁계약이 해지될 경우 수탁자와 체결하였던 포괄 이용계약의 승계 여부 @ 대법원 2015 4 9 선고 2011다101148 판결을 중심으로 임상민 釜山判例硏究會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662750">박준석 콘텐츠 산업에서의 저작권 : 최근 1년간의 관련 판례들을 중심으로 . 창작과 권리 67호  / 세창출판사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|805488">박태일 2015년 지식재산권 분야 판례의 동향 특별법연구 13권 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|786572">최승재 저작권신탁계약종료 시 저작권신탁관리업자가 체결한 계약의 효력 대법원판례해설 제103호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|826863">임상민 저작권관리신탁계약이 해지될 경우 수탁자와 체결하였던 포괄 이용계약의 승계 여부 : 대법원 2015. 4. 9. 선고 2011다101148 판결을 중심으로 판례연구 28집 / 부산판례연구회  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827374">구민승 저작권법 제99조 제1항의 ‘영상화’의 의미 대법원판례해설 제108호 / 법원도서관  2016 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="저작권법|2|0|null">저작권법 제2조 제26호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="저작권법|46|0|null">저작권법 제46조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="신탁법|101|0|null">신탁법 제101조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="저작권법|4|0|null">저작권법 제4조 제1항 제1호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="저작권법|4|0|null">저작권법 제4조 제1항 제2호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="저작권법|4|0|null">저작권법 제4조 제1항 제7호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="저작권법|13|0|null">저작권법 제13조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="저작권법|46|0|null">저작권법 제46조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|95다46265">대법원 1997. 10. 10. 선고 95다46265 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006재다218">대법원 2008. 7. 10. 선고 2006재다218 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|429|0|null">민사소송법 제429조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|208|0|null">민사소송법 제208조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2011나6870">서울고법 2011. 10. 27. 선고 2011나6870 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2015. 4. 9. 선고 2011다101148 판결</h2><p class="sub_title">[손해배상][공2015상,669]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 저작권 신탁이 종료되어 저작권이 원저작권자인 위탁자에게 이전된 경우, 저작물 이용자가 신탁종료에 따른 저작권 이전 후의 이용행위에 대하여 수탁자의 이용허락이 있었음을 들어 원저작권자에게 대항할 수 있는지 여부(원칙적 소극)</p>
+<p></p>
+<p></p><p>[2] 어문저작물이나 음악저작물·영상저작물 등의 부분적 이용이 저작자의 동일성유지권을 침해한 것으로 볼 수 없는 경우 및 부분적 이용에 관하여 저작재산권자의 이용허락을 받지 않은 경우에도 마찬가지인지 여부(적극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 저작물 이용자가 저작권자와의 이용허락계약에 의하여 취득하는 이용권은 저작권자에 대한 관계에서 저작물 이용행위를 정당화할 수 있는 채권으로서의 성질을 가지는 데 불과하므로, 저작권 신탁이 종료되어 저작권이 원저작권자인 위탁자에게 이전된 경우에는 원저작권자와 수탁자 사이에 수탁자가 행한 이용허락을 원저작권자가 승계하기로 하는 약정이 존재하는 등의 특별한 사정이 없는 한 저작물 이용자는 신탁종료에 따른 저작권 이전 후의 이용행위에 대해서까지 수탁자의 이용허락이 있었음을 들어 원저작권자에게 대항할 수 없다.</p>
+<p></p><p></p><p>[2] 어문저작물이나 음악저작물·영상저작물 등의 일부만을 이용하더라도, 부분적 이용이 저작물 중 일부를 발췌하여 그대로 이용하는 것이어서 이용되는 부분 자체는 아무런 변경이 없고, 이용방법도 저작물의 통상적 이용방법을 따른 것이며, 저작물의 이용 관행에 비추어 일반 대중이나 당해 저작물의 수요자가 부분적 이용이 전체 저작물의 일부를 이용한 것임을 쉽게 알 수 있어 저작물 중 부분적으로 이용된 부분이 저작물의 전부인 것으로 오인되거나, 부분적 이용으로 저작물에 표현된 저작자의 사상·감정이 왜곡되거나 저작물의 내용이나 형식이 오인될 우려가 없는 경우에는, 그러한 부분적 이용은 저작물 전부를 이용하는 것과 이용하는 분량 면에서만 차이가 있을 뿐이어서 저작자의 동일성유지권을 침해한 것으로 볼 수 없다. 이는 부분적 이용에 관하여 저작재산권자의 이용허락을 받지 않은 경우에도 마찬가지이다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|2|">저작권법 제2조 제26호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|46|">제46조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="신탁법|101|">신탁법 제101조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|4|">저작권법 제4조 제1항 제1호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|4|">제2호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|4|">제7호</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|13|">제13조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="저작권법|46|">제46조</a></span></p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 상고인 겸 피상고인 겸 부대피상고인】
+원고 (소송대리인 변호사 이재민 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피상고인 겸 상고인】
+주식회사 금영 외 1인 (소송대리인 법무법인 지안 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고, 피상고인 겸 부대상고인】
+주식회사 로엔엔터테인먼트 (소송대리인 변호사 전문영)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2011나6870|판결" href="#//">서울고법 2011. 10. 27. 선고 2011나6870 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결의 원고 패소 부분 중 피고 주식회사 금영의 노래반주기와 노래반주기용 DVD 타이틀에 의한 저작재산권 침해로 인한 손해배상청구 부분 및 피고 주식회사 금영의 패소 부분 중 저작인격권 침해로 인한 손해배상청구 부분을 각 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  원고의 피고 주식회사 금영에 대한 나머지 상고 및 피고 주식회사 로엔엔터테인먼트, 에스케이커뮤니케이션즈 주식회사에 대한 각 상고, 피고 주식회사 금영의 나머지 상고, 피고 에스케이커뮤니케이션즈 주식회사의 상고, 피고 주식회사 로엔엔터테인먼트의 부대상고를 모두 기각한다.  원고와 피고 주식회사 로엔엔터테인먼트, 에스케이커뮤니케이션즈 주식회사 사이에 생긴 상고비용 및 부대상고비용은 각자가 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 지난 후에 제출된 원고와 피고 에스케이커뮤니케이션즈 주식회사의 각 상고이유보충서 기재는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 원고의 상고이유에 관한 판단</p><p>  가. 상고이유 제1점에 관하여</p><p>  <span class="accrnt_txt">저작물 이용자가 저작권자와의 이용허락계약에 의하여 취득하는 이용권은 저작권자에 대한 관계에서 자신의 저작물 이용행위를 정당화할 수 있는 채권으로서의 성질을 가지는 데 불과하므로, 저작권 신탁이 종료되어 저작권이 원저작권자인 위탁자에게 이전된 경우에는 원저작권자와 수탁자 사이에 수탁자가 행한 이용허락을 원저작권자가 승계하기로 하는 약정이 존재하는 등의 특별한 사정이 없는 한 저작물 이용자는 신탁종료에 따른 저작권 이전 후의 이용행위에 대해서까지 수탁자의 이용허락이 있었음을 들어 원저작권자에게 대항할 수 없다.</span></p><p>  원심판결 이유와 원심이 채택한 증거에 의하면, 사단법인 한국음악저작권협회(이하 ‘음악저작권협회’라고만 한다)는 1998. 5. 15. 및 2003. 7. 20. 피고 주식회사 금영(이하 ‘피고 금영’이라고만 한다)에게 이 사건 음악저작물에 관하여 이용허락을 한 사실, 음악저작권협회는 2004. 4.경 원고에게 ‘이 사건 음악저작물에 관하여 원고와 음악저작권협회 사이에 체결된 신탁계약은 2004. 4. 6.자로 해지되었다’는 취지의 통보를 한 사실을 알 수 있다.</p><p>  이러한 사실관계를 앞에서 본 법리에 비추어 보면, 원고와 음악저작권협회 사이의 신탁계약이 종료되어 이 사건 음악저작물의 저작권이 원저작권자인 원고에게 이전된 이상, 피고 금영은 특별한 사정이 없는 한 그 이후 이 사건 음악저작물을 노래반주기와 노래반주기용 DVD 타이틀 제조에 이용하는 행위에 대하여 음악저작권협회의 1998. 5. 15.자 및 2003. 7. 20.자 각 이용허락을 들어 원고에게 대항할 수는 없다.</p><p>  그리고 설령 위 각 이용허락에서 이용기간을 제한하지 아니하였고 이용료 지급방식이 정액제로 정하여져 있었다고 하더라도, 원고가 이와 같은 사정을 모두 알면서 이의 없이 위 각 이용허락에 따른 이용료를 지급받았음을 인정할 자료가 없는 이상, 그러한 사정만으로는 원고가 위 각 이용허락에 관한 음악저작권협회의 지위 또는 의무를 승계하는 데에 묵시적으로라도 동의하였다고 보기에 부족하고, 기록을 살펴보아도 달리 이를 인정할 증거가 없으므로, 이 사건에서는 피고 금영이 원고에게 대항할 수 있는 특별한 사정이 있다고 할 수도 없다.</p><p>  그럼에도 원심은 이와 달리 피고 금영이 음악저작권협회로부터 받은 이용허락의 효력을 신탁계약의 종료와 무관하게 원고에게도 주장할 수 있다고 판단하였으니, 이러한 원심판결에는 저작권 신탁 및 저작물의 이용허락에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있고, 상고이유 중 이를 지적하는 부분은 이유 있다.</p><p>  나. 상고이유 제3점에 관하여</p><p>  원심판결 이유에 의하면, 원심은 피고 금영이 이 사건 음악저작물을 노래반주기용 반주곡으로 제작하면서 일부분의 선율을 변경하고, 원곡과 다른 코러스, 랩, 의성어 등을 삽입하기는 하였으나, 그러한 변경만으로는 음악저작물을 노래반주기에 이용할 때 일반적으로 통용되는 범위를 초과하여 이 사건 음악저작물을 변경하였다고 보기 어렵다는 이유로, 위와 같은 변경이 이 사건 음악저작물의 동일성유지권을 침해한 것이라는 원고의 주장을 배척하였다.</p><p>  관련 법리와 기록에 비추어 살펴보면, 원심의 이러한 판단은 정당하고, 거기에 상고이유 주장과 같이 동일성유지권 침해에 관한 법리를 오해하는 등의 위법이 없다.</p><p>  다. 상고이유 제4점에 관하여</p><p>  원심판결 이유에 의하면, 원심은 피고들의 저작권 침해행위를 인정한 부분에 대하여 손해배상금을 산정하면서 원고가 스스로 노래연습장에서 이 사건 음악저작물을 이용한 결과물인 녹음파일을 피고 금영의 인터넷 사이트에 전송하여 위 녹음파일이 다른 피고들의 인터넷 사이트로 복제·전송된 사실이 인정될 뿐 다른 경로에 의하여 원고의 저작권이 침해된 사실을 인정할 증거가 없는 점, 저작재산권 침해로 인한 손해의 발생 또는 확대에 피해자의 과실이 있으면 가해자의 손해배상 범위를 정할 때 이를 당연히 참작하여야 하는 점 등을 고려하였다.</p><p>  관련 법리와 기록에 비추어 살펴보면, 원심의 위와 같은 조치는 정당하고, 거기에 상고이유 주장과 같은 손해배상액의 산정에 관한 법리오해 등의 위법이 없다.</p><p>  2. 피고 금영의 상고이유에 관한 판단</p><p>  가. 상고이유 제1점에 관하여</p><p>  원심판결 이유를 관련 법리와 기록에 비추어 살펴보면 원심이, 피고 금영의 인터넷 사이트상 이 사건 음악저작물 이용행위가 1998. 5. 15.자 이용허락의 범위를 벗어난 것으로 판단한 것은 정당하고, 거기에 상고이유 주장과 같이 처분문서 및 의사표시 해석에 관한 법리를 오해하는 등의 위법이 없다.</p><p>  나. 상고이유 제2점에 관하여</p><p>  원심판결 이유에 의하면, 원심은 제1심판결 이유를 일부 인용하여 피고 금영이 이 사건 음악저작물을 노래반주기에 수록하거나 인터넷 사이트의 음악서비스에 제공하면서 작곡가를 소외인이라고 표시하거나, 작곡가를 표시하지 아니하여 이 사건 음악저작물에 관한 원고의 성명표시권을 침해하였다고 인정하는 한편, 피고 금영이 주장하는 바와 같은 성명표시권 침해에 이르게 된 사정만으로는 피고 금영이 성명표시권을 침해한 데 과실이 없다고 할 수 없다고 판단하였다.</p><p>  관련 법리와 기록에 비추어 살펴보면, 원심의 이러한 판단은 정당한 것으로 수긍이 가고, 거기에 상고이유 주장과 같이 심리미진으로 판결에 영향을 미친 위법이 없다.</p><p>  다. 상고이유 제3점에 관하여</p><p>  <span class="accrnt_txt">어문저작물이나 음악저작물·영상저작물 등의 일부만을 이용하더라도, 그 부분적 이용이 저작물 중 일부를 발췌하여 그대로 이용하는 것이어서 이용되는 부분 자체는 아무런 변경이 없고, 이용방법도 그 저작물의 통상적 이용방법을 따른 것이며, 그 저작물의 이용 관행에 비추어 일반 대중이나 당해 저작물의 수요자가 그 부분적 이용이 전체 저작물의 일부를 이용한 것임을 쉽게 알 수 있어 저작물 중 부분적으로 이용된 부분이 그 저작물의 전부인 것으로 오인되거나, 그 부분적 이용으로 그 저작물에 표현된 저작자의 사상·감정이 왜곡되거나 저작물의 내용이나 형식이 오인될 우려가 없는 경우에는, 그러한 부분적 이용은 그 저작물 전부를 이용하는 것과 이용하는 분량 면에서만 차이가 있을 뿐이어서 저작자의 동일성유지권을 침해한 것으로 볼 수 없다. 이는 그 부분적 이용에 관하여 저작재산권자의 이용허락을 받지 않은 경우에도 마찬가지이다.</span></p><p>  원심판결 이유 및 원심이 채택한 증거에 의하면, 음악저작물의 미리듣기 서비스는 음악저작물의 음원 중 약 30초 내지 1분 정도의 분량을 스트리밍 방식으로 전송하여 인터넷 이용자가 이를 들을 수 있도록 하는 일종의 음원 샘플 제공 행위로서 인터넷상 음악저작물 이용거래에서 음악저작물의 홍보나 유료 이용에 도움을 주기 위하여 널리 행해지는 음악저작물의 이용 행태 중 하나이고, 음악저작물의 음원을 그대로 전송·재생하되 한정된 시간 동안 그 일부만 재생하도록 제한하고 있을 뿐이어서 음악저작물 중 미리듣기 서비스에 이용되는 부분 자체는 아무런 변경이 없는 점, 피고 금영이 그의 인터넷 사이트에서 제공한 이 사건 음악저작물의 미리듣기 서비스도 이 사건 음악저작물의 음원 중 약 30초 정도 분량만을 스트리밍 방식으로 무료로 전송·재생하는 것이어서 재생되는 부분 자체는 아무런 변경이 없는 점 등을 알 수 있다.</p><p>  이러한 사정을 앞서 본 법리에 비추어 보면, 피고 금영이 제공하는 이 사건 음악저작물의 미리듣기 서비스는 통상적인 음악저작물의 미리듣기 서비스와 다를 바가 없어서 일반 대중이나 이 사건 음악저작물의 수요자로서는 이 사건 음악저작물의 미리듣기 서비스가 음악저작물 전부가 아닌 일부만을 제공하는 것임을 쉽게 알 수 있으므로, 이 사건 음악저작물 중 미리듣기 서비스에 이용된 부분이 이 사건 음악저작물의 전부인 것으로 오인되거나, 미리듣기 서비스로 인하여 이 사건 음악저작물에 표현된 원고의 사상·감정이 왜곡되거나 이 사건 음악저작물의 내용 또는 형식이 오인될 우려가 없다고 할 것이다.</p><p>  따라서 피고 금영이 이용허락을 받지 아니한 채 이 사건 음악저작물의 미리듣기 서비스를 제공하였다고 하더라도 이것이 원고의 동일성유지권을 침해한 것이라고 볼 수는 없다.</p><p>  이와 달리 판단한 원심판결에는 동일성유지권 침해에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있고, 이를 지적하는 상고이유 주장은 이유 있다.</p><p>  3. 피고 주식회사 로엔엔터테인먼트의 부대상고에 관하여</p><p>  피고 주식회사 로엔엔터테인먼트(이하 ‘피고 로엔엔터테인먼트’라고만 한다)의 부대상고이유를 판단하기에 앞서 직권으로 살펴본다.</p><p>  피상고인은 상고권이 소멸된 후에도 부대상고를 할 수 있으나, 상고인의 상고이유서 제출기간 내에 부대상고를 제기하고 부대상고이유서도 제출하여야 하는 것인바(<span id="link"><a name="linkContPanre" title="새창" type="대법원|95다46265|판결" href="#//">대법원 1997. 10. 10. 선고 95다46265 판결</a></span> 등 참조), 기록에 의하면 피고 로엔엔터테인먼트는 상고인인 원고에게 상고소송기록 접수통지서가 송달된 2011. 12. 5.로부터 20일 이내인 같은 달 13일 부대상고장을 제출하였으나, 부대상고장에 부대상고이유를 기재하지 아니하였고, 부대상고이유서는 상고이유서 제출기간 말일인 같은 달 26일이 경과한 후인 2012. 1. 6. 비로소 제출하였음이 명백하므로, 피고 로엔엔터테인먼트의 부대상고는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|429|">민사소송법 제429조</a></span>에 의하여 부대상고이유에 관한 판단을 할 것도 없이 기각되어야 한다.</p><p>  4. 피고 에스케이커뮤니케이션즈 주식회사의 상고이유에 관한 판단</p><p>  가. 상고이유 제1점에 관하여</p><p>  원심판결 이유에 의하면, 원심은 피고 에스케이커뮤니케이션즈 주식회사(이하 ‘피고 에스케이커뮤니케이션즈’라고만 한다)와 주식회사 에이온미디어(이하 ‘에이온미디어’라고만 한다) 사이의 정보제공계약서 내용 등을 근거로 피고 에스케이커뮤니케이션즈는 단순히 에이온미디어의 노래방 서비스를 매개 내지 중개하는 온라인서비스제공자가 아니라 자신의 이름으로 음악저작물의 복제·전송행위를 포함한 서비스를 제공하였다고 판단하였다.</p><p>  관련 법리와 기록에 비추어 살펴보면, 원심의 이러한 판단은 정당한 것으로 수긍이 가고, 거기에 상고이유 주장과 같이 음악저작물 복제 및 전송 주체의 판단에 관한 법리를 오해하는 등의 위법이 없다.</p><p>  나. 상고이유 제2점에 관하여</p><p>  원심판결 이유를 관련 법리와 기록에 비추어 살펴보면, 원심이, 피고 에스케이커뮤니케이션즈는 싸이월드 사이트 운영자로서 단순한 온라인서비스제공자에 해당하므로 싸이월드 사이트 노래방서비스에서 발생한 이 사건 음악저작물의 저작재산권 침해에 대한 고의·과실이 없다는 피고 에스케이커뮤니케이션즈의 주장을 배척한 것은 정당하고, 거기에 상고이유 주장과 같은 고의 또는 과실의 존부 판단에 관한 법리오해 등의 위법이 없다.</p><p>  5. 피고 금영의 상고이유 제4, 5점 및 피고 에스케이커뮤니케이션즈의 상고이유 제3점에 관한 판단</p><p>  판결서의 이유에는 주문이 정당하다는 것을 인정할 수 있을 정도로 당사자의 주장, 그 밖의 공격·방어방법에 관한 판단을 표시하면 되므로(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|208|">민사소송법 제208조</a></span>) 당사자의 모든 주장이나 공격·방어방법을 판단할 필요는 없다. 한편 당사자가 주장한 사항에 대한 구체적·직접적인 판단이 판결 이유에 표시되어 있지 않았더라도 판결 이유의 전반적인 취지에 비추어 그 주장을 인용하거나 배척하였음을 알 수 있는 정도라면 판단누락이라고 할 수 없고, 설령 실제로 판단을 하지 아니하였다고 하더라도 판결 결과에 영향이 없다면 판단누락의 위법이 있다고 할 수 없다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2006재다218|판결" href="#//">대법원 2008. 7. 10. 선고 2006재다218 판결</a></span> 등 참조).</p><p>  원심판결 이유에 의하면, 원심은 인터넷상 저작재산권 침해로 인한 피고들의 원고에 대한 손해배상책임을 긍정하면서도 위에서 본 바와 같이 원고가 스스로 노래연습장에서 이 사건 음악저작물을 이용한 결과물인 녹음파일을 피고 금영의 인터넷 사이트에 전송하여 위 녹음파일이 다른 피고들의 인터넷 사이트로 복제·전송된 사실이 인정될 뿐 다른 경로에 의하여 원고의 저작권이 침해된 사실을 인정하기에 충분한 자료가 없는 점, 저작재산권 침해로 인한 손해의 발생 또는 확대에 피해자에게도 과실이 있는 때에는 가해자의 손해배상 범위를 정할 때 이를 당연히 참작하여야 한다는 점 등을 고려하여 그 손해배상액을 산정하였다.</p><p>  원심의 이러한 판단을 앞서 본 법리에 비추어 살펴보면, 원심판결에 원고의 이 사건 청구가 권리남용에 해당한다는 피고 금영 및 피고 에스케이커뮤니케이션즈의 주장에 대한 명시적 판단은 없으나, 원심은 원고의 이 사건 청구가 권리남용으로서 배척되어야 할 것은 아님을 전제로 피고 금영이나 피고 에스케이커뮤니케이션즈가 주장하는 사정을 손해배상액 산정에서 고려하였다고 할 수 있으므로, 원심판결에 피고 금영 및 피고 에스케이커뮤니케이션즈의 상고이유 주장과 같은 판단누락이나 심리미진으로 판결에 영향을 미친 위법이 없다.</p><p>  6. 원심판결 중 파기 범위</p><p>  앞에서 본 바와 같이 원심판결 중 피고 금영의 노래반주기와 노래반주기용 DVD 타이틀에 의한 저작재산권 침해에 관한 부분 및 피고 금영의 미리듣기 서비스에 의한 동일성유지권 침해에 관한 부분이 각 파기되어야 하는데, 원심이 피고 금영의 저작인격권 침해에 관한 전체 손해배상액을 50만 원으로 산정하였을 뿐 성명표시권 침해에 대한 손해배상액과 동일성유지권 침해에 대한 손해배상액을 구분하여 산정하지 아니하여 원심이 인정한 피고 금영의 저작인격권 침해에 대한 손해배상액 중 미리듣기 서비스에 의한 동일성유지권 침해에 해당하는 부분을 특정할 수 없으므로, 결국 원심판결의 저작인격권 침해에 관한 피고 금영의 패소 부분은 전부 파기될 수밖에 없다.</p><p>  7. 결론</p><p>  그러므로 원고와 피고 금영의 각 나머지 상고이유 주장에 관한 판단을 생략한 채 원심판결의 원고 패소 부분 중 피고 금영의 노래반주기 및 노래반주기용 DVD 타이틀에 의한 저작재산권 침해로 인한 손해배상청구 부분 및 피고 금영의 패소 부분 중 저작인격권 침해로 인한 손해배상청구 부분을 각 파기하고, 이 부분 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하며, 원고의 피고 금영에 대한 나머지 상고 및 피고 로엔엔터테인먼트, 에스케이커뮤니케이션즈에 대한 각 상고, 피고 금영의 나머지 상고, 피고 에스케이커뮤니케이션즈의 상고, 피고 로엔엔터테인먼트의 부대상고를 모두 기각하고, 원고와 피고 로엔엔터테인먼트, 에스케이커뮤니케이션즈 사이에 생긴 상고비용 및 부대상고비용은 각자가 부담하도록 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   조희대(재판장) 이상훈 김창석(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

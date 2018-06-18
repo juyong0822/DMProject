@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2010나116800 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2036096';
+var contIdEtc = '';
+var saNo = '2010나116800';
+var sngoNm = '선고';
+var saNm = '손해배상(기)등';
+try {
+	var sngoDay=('20110810' ? 
+			'20110810'.length==4 ? Date.parseExact('20110810','yyyy').toString('yyyy. M. d.') : 
+				'20110810'.length==6 ? Date.parseExact('20110810','yyyyMM').toString('yyyy. M. d.') : 
+					'20110810'.length==8 ? Date.parseExact('20110810','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010나116800 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010나116800';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2010나116800</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다27411">대법원 2002. 9. 27. 선고 2000다27411</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다30782">대법원 2010. 9. 30. 선고 2010다30782 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="한국수자원공사법|10|0|20010116">한국수자원공사법(구) 제10조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|91|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 제91조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="수원지방법원성남지원|2008가합13148">수원지방법원 성남지원 2010. 10. 19. 선고 2008가합13148 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2011. 8. 10. 선고 2010나116800 판결</h2><p class="sub_title">[손해배상(기)등][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인】
+      
+        
+          원고 (소송대리인 법무법인 청신 담당변호사 이근윤 외 3인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인】
+      
+        한국수자원공사 (소송대리인 박순성 외 3인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2011. 5. 18.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="수원지방법원성남지원|2008가합13148|판결" href="#//">수원지방법원 성남지원 2010. 10. 19. 선고 2008가합13148 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결을 다음과 같이 변경한다.</p><p>  원고의 피고에 대한 주위적 청구 및 예비적 청구를 모두 기각한다.</p><p>2. 소송총비용은 원고가 부담한다.</p>
+    
+      【청구취지】
+      <p>주위적으로,</p>
+      <p>피고는 원고에게 100,000,100원 및 그 중 50,000,050원에 대한 2008. 8. 13.부터, 나머지 50,000,050원에 대한 2004. 12. 7.부터 각 이 사건 소장 부본 송달일까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을 지급하라. </p>
+      <p>예비적으로(소장의 청구취지 중 ‘선택적으로’라는 기재는 오기로 보인다), </p>
+      <p>1. 피고는 원고에게 제2 별지 목록 1 내지 3 기재 각 부동산 중 1/2지분에 관하여 각 2008. 8. 13.자 환매를 원인으로 한 소유권이전등기절차를 이행하라. </p>
+      <p>2. 피고는 원고에게 50,000,050원 및 이에 대하여 2004. 12. 7.부터 이 사건 소장 부본 송달일까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을 지급하라.</p>
+    
+    
+      【항소취지】
+      <p>제1심 판결 중 피고 패소 부분을 취소하고, 위 취소 부분에 해당하는 원고의 청구를 기각한다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 이 법원의 심판범위</p><p>  제1심에서 원고는 피고에 대하여 청구취지와 같은 판결을 구하였고, 제1심 법원은  예비적 청구 중 소유권이전등기절차 이행을 구하는 부분을 인용하고, 나머지 청구는 기각하였다. 이에 대하여 피고만이 항소하였으므로, 이 법원은 위 소유권이전등기절차 이행을 구하는 청구와 그에 대한 주위적 청구 부분에 대하여만 판단한다.</p><p>2. 기초사실  </p><p>  가. 피고는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="한국수자원공사법|10|">구 한국수자원공사법(2001. 1. 16. 법률 제6366호로 개정되기 전의 것) 제10조 제1항</a></span>에 근거하여 ‘수도권 광역상수도사업’(이하 ‘이 사건 상수도사업’이라 한다)을 위한 실시계획승인을 얻은 후 1998. 6. 23. 중앙토지수용위원회로부터 원고 소유이던 제1 별지 목록 1 내지 11 기재 각 부동산에 대하여 보상금을 498,902,350원, 수용개시일을 1998. 8. 4.로 하는 수용재결을 받았다.
+      </p><p>  나. 위 각 부동산은 그 뒤 수도용지로 지목이 변경되었는데, 제1 별지 목록 1 내지 8 토지는 토지대장상 2001. 6. 1. 성남시 분당구 삼평동 77 수도용지 2,992㎡로 합병되었고, 같은 목록 10, 11 토지는 토지대장상 2001. 6. 1. 성남시 분당구 삼평동 산 28 수도용지 2,363㎡로 합병되었다(이를 현재의 지적공부에 의하여 특정하면 제2 별지 목록 제1 내지 3 기재 부동산이 되는바, 이하 통틀어 ‘이 사건 부동산’이라 한다). </p><p>  다. 한편, 건설교통부장관은 2001. 12. 26. 이 사건 부동산을 포함한 성남시 분당구 판교동 일대를 판교신도시 택지개발 예정지구로 지정하고, 한국토지공사(2009. 10. 1. 대한주택공사와 합병되어 한국토지주택공사가 되었다, 이하 ‘토지공사’라 한다) 등을 판교신도시 택지개발사업(이하 ‘이 사건 택지개발사업’이라 한다)의 시행자로 지정하였으며, 토지공사는 2003. 12. 26. 건설교통부장관으로부터 이 사건 택지개발사업을 승인받아 같은 달 30. 고시하였다.   </p><p>  라. 원고는 토지공사에게 이 사건 부동산의 환매를 요청하면서 2008. 8. 13. 토지공사를 피공탁자로 하여 환매대금으로 677,458,300원을 공탁하였다(수원지방법원 성남지원 2008년 제2826호). </p><p>  [인정근거] 다툼 없는 사실, 갑 제1 내지 10, 12호증, 을가 제1, 2, 3, 6, 7, 8호증, 을나 제1, 6, 7호증(각 가지번호 포함)의 각 기재 및 영상, 변론 전체의 취지</p><p>3. 원고의 주장</p><p>  가. 주위적 청구</p><p>      이 사건 부동산은 2008. 7. 30. 환매권이 발생하였고, 원고는 2008. 8. 13. 토지공사 앞으로 원고가 당초 수령한 보상금을 초과하여 적절한 방법으로 산정한 이 사건 부동산의 환매대금 677,458,300원을 공탁하고, 환매의 의사표시를 하였는바, 이로써 이 사건 부동산에 대한 환매가 성립하였다. 따라서 피고는 원고에게 이 사건 부동산 중 1/2지분에 관하여 환매를 원인으로 한 소유권이전등기절차를 이행할 의무가 있다. 그런데 피고는 위 소유권이전등기절차의 이행이 불능이라고 주장하므로, 이 사건 부동산 중 1/2지분에 대한 보상금으로 50,000,050원 및 이에 대하여 피고의 소유권이전등기의무가 발생한 환매대금 공탁일인 2008. 8. 13. 이후의 지연손해금을 지급할 의무가 있다.  </p><p>  나. 예비적 청구</p><p>      위와 같이 이 사건 부동산에 대한 환매가 성립하였는데 환매를 원인으로 한 소유권이전등기절차 이행의무가 이행불능이 아니라면, 피고는 원고에게 이 사건 부동산 중 1/2지분에 대하여 2008. 8. 13. 환매를 원인으로 한 소유권이전등기절차를 이행할 의무가 있다.       </p><p>4. 판단</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|91|">‘공익사업을 위한 토지 등의 취득 및 보상에 관한 법률’(이하 ‘공익사업법’이라 한다) 제91조 제1항</a></span>은 ‘토지의 협의취득일 또는 수용의 개시일부터 10년 이내에 당해 사업의 폐지·변경 그 밖의 사유로 인하여 취득한 토지의 전부 또는 일부가 필요 없게 된 경우 취득일 당시의 토지소유자 또는 그 포괄승계인(이하 ’토지소유자 등‘이라 한다)은 당해 토지의 전부 또는 일부가 필요 없게 된 때부터 1년 또는 그 취득일부터 10년 이내에 당해 토지에 대하여 지급받은 보상금에 상당한 금액을 사업시행자에게 지급하고 그 토지를 환매할 수 있다.’라고 규정하고 있다. 따라서 공익사업법에 의한 환매가 성립하기 위해서는 토지소유자 등이 지급받은 보상금에 상당한 금액을 사업시행자에게 지급하는 것이 그 요건 중 하나이다.
+      </p><p>  살피건대, 이 사건 부동산이 1998. 8. 4.을 수용개시일로 하여 이 사건 상수도사업을 취득목적으로 하여 수용된 사실은 앞서 본 바와 같고, 앞서 든 증거에 을가 제8호증의 기재 및 변론 전체의 취지를 종합하면, 아래 ① 내지 ③ 사실을 인정할 수 있으며 달리 반증이 없다. ① 피고는 이 사건 상수도 사업의 사업시행자이다. ② 피고는 이 사건 부동산에 설치된 기존의 수도관로를 판교택지지구 내 광역상수도로 계속하여 이용하여 오다가 2008. 7. 30.에 이르러 이용을 중단하였다. ③ 원고는 이 사건 부동산에 관하여 2008. 6. 19. 토지공사에게 환매권발생의 확인을 요청하였으나, 토지공사는 2008. 6. 20. 환매권 관련 업무는 피고의 업무라고 회신하였고, 피고는 2008. 6. 27. 이 사건 이설사업 관련 업무가 토지공사에 이첩되었다고 통지하였다.  </p><p>  위 인정사실에 의하면, 토지수용으로부터 10년 이내에 이 사건 부동산은 취득목적인 상수도 사업에 이용할 필요가 없어진 것은 사실이나, 이 사건 상수도사업의 사업시행자는 피고인데 원고가 피고에게 환매대금을 지급하였음을 인정할 증거가 없다. 오히려 원고는 2008. 8. 13. 토지공사를 피공탁자로 하여 환매대금으로 677,458,300원을 공탁하였을 뿐임은 앞서 본 바와 같다. 따라서 공익사업법에 따라 사업시행자에게 환매대금을 지급하여 환매요건을 충족하였음을 전제로 하는 원고의 주위적 및 예비적 청구는 나머지 부분에 대하여는 더 나아가 살필 필요 없이 이유 없다. </p><p>  [나아가 보충적으로 피고의 소유권이전등기의무의 성립 여부에 관하여도 본다. 공익사업법상 환매권은 그 성립이 특약에 의하여 이루어지는 것이 아니라 법률상 당연히 인정되는 법정환매권이며, 환매특약의 등기 없이도 법률에 의하여 사업시행자에 대하여 당연히 가지는 권리이므로, 환매권을 행사하면 별도의 이행을 기다리지 않고 환매권자에게 소유권이 당연히 복귀한다고 보아야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다27411|판결" href="#//">대법원 2002. 9. 27. 선고 2000다27411</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다30782|판결" href="#//">대법원 2010. 9. 30. 선고 2010다30782 판결</a></span> 등 참조). 
+      </p><p>  그런데 이 사건 부동산에 대한 등기명의자는 피고가 아닌 ‘대한민국’으로 되어 있어, 이 사건 부동산에 관하여 피고의 원고에 대한 소유권이전등기의무는 인정될 수 없다. 따라서 소유권이전등기의무가 이행불능에 해당함을 전제로 손해배상을 구하는 주위적 청구는 나머지 부분에 대하여는 더 나아가 살필 필요 없이 이유 없다. </p><p> 다음으로, 원고가 피고를 상대로 위 환매권행사에 따른 소유권이전등기청구를 하므로 살피건대, 이 사건 부동산에 대한 등기명의자는 피고가 아닌 ‘대한민국’으로 되어 있으므로, 원고가 환매권자로서 대한민국을 상대로 방해배제청구권의 행사로서 그 소유권이전등기의 말소 또는 소유권이전등기를 구함은 별론으로 하고, 피고의 원고에 대한 이 사건 부동산에 관한 소유권이전등기의무가 인정될 수 없음은 앞서 본 바와 같다. 원고의 이 부분 청구도 이유 없다.] </p><p>5. 결론</p><p>  그렇다면, 원고의 이 사건 주위적 및 예비적 청구는 모두 이유 없으므로 이를 기각할 것인바, 제1심 판결의 이 사건 예비적 청구 중 피고 패소 부분은 이와 결론을 달리하여 부당하므로 피고의 항소를 받아들여 원고의 각 청구를 선택적 병합관계로 본 제1심 판결을 위와 같이 변경하기로 하여 주문과 같이 판결한다. </p><p>[별지 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   장석조(재판장) 명재권 최항석 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

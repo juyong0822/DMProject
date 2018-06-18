@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2009다41137 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2061342';
+var contIdEtc = '';
+var saNo = '2009다41137';
+var sngoNm = '선고';
+var saNm = '손해배상(기)·공사대금';
+try {
+	var sngoDay=('20100128' ? 
+			'20100128'.length==4 ? Date.parseExact('20100128','yyyy').toString('yyyy. M. d.') : 
+				'20100128'.length==6 ? Date.parseExact('20100128','yyyyMM').toString('yyyy. M. d.') : 
+					'20100128'.length==8 ? Date.parseExact('20100128','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009다41137,41144 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009다41137';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2009다41137</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(8)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(6)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2228289">대법원 2016. 12. 27. 선고 2015다231672 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|653176">계약이행보증금과 지체상금의 관계 김기현 대구판례연구회</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653207">김연우 지체상금을 정할 지체일수의 산정 건축관련판례 50선 : 대구판례연구회 300회 발표 기념 건축관련판례 50선 / 대구판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|692964">이상헌 하도급법상 직불청구권과 건산법상 직불청구권 법조  (2013. 5) / 법조협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769733">조중래 가압류채권자의 채권에 대하여 배당액이 공탁된 경우, 본안의 확정판결 등에서 지급을 명한 가압류채권자의 채권이 소멸하는 범위와 시기 : 2014. 9. 4. 선고 2012다65874 판결: 공2014하, 1987 대법원판례해설 제101호 / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632139">김미리 민법 제397조 제1항에 관한 소고 민사재판의 제문제 19권 / 한국사법행정학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|698877">김병식 저작권신탁계약의 해지 및 그에 따른 법률관계 대법원판례해설 제94호 / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|664196">최창렬 공사도급계약에서의 계약보증금의 법적 성질에 관한 소고 한국민법의 새로운 전개 : 고상룡교수고희기념논문집   / 법문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548408">한국. 대법원 법원행정처 재판실무편람. 제4호:. 건설재판실무편람 건설재판실무편람 집필위원회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653176">김기현 계약이행보증금과 지체상금의 관계 건축관련판례 50선 : 대구판례연구회 300회 발표 기념 건축관련판례 50선 / 대구판례연구회  2012 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다39511">대법원 2006. 4. 28. 선고 2004다39511 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|105|0|null">민법 제105조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|398|0|null">민법 제398조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|664|0|null">민법 제664조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|398|0|null">민법 제398조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|664|0|null">민법 제664조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다39511">대법원 2006. 4. 28. 선고 2004다39511 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="광주고등법원|2008나56">광주고법 2009. 5. 13. 선고 (제주)2008나56, 63 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2010. 1. 28. 선고 2009다41137,41144 판결</h2><p class="sub_title">[손해배상(기)·공사대금][공2010상,408]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 공사도급계약을 체결하면서 지체상금약정과 별도로 손해배상약정을 한 경우, 부실공사와 같은 불완전급부 등으로 발생한 손해에 대하여 위 손해배상약정에 기하여 별도로 그 배상을 청구할 수 있는지 여부(원칙적 적극) 및 이 경우 손해배상의 범위가 지체상금약정에 기한 지체상금액을 초과할 수 없는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 수급인이 완공기한 내에 공사를 완성하지 못한 채 중단하여 계약이 해제된 결과 완공이 지연된 경우, 지체상금의 발생시기 및 종기</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 공사도급계약을 체결하면서 건설교통부 고시 ‘민간건설공사 표준도급계약 일반조건’을 계약의 일부로 편입하기로 합의하였고, 위 일반조건에서 지체상금에 관한 규정과 별도로 계약의 해제·해지로 인한 손해배상청구에 관한 규정을 두고 있는 경우, 채무불이행에 관한 손해배상액의 예정은 당사자의 합의로 행하여지는 것으로서, 그 내용이 어떠한가, 특히 어떠한 유형의 채무불이행에 관한 손해배상을 예정한 것인가는 무엇보다도 당해 약정의 해석에 의하여 정하여지는바, 위 일반조건의 지체상금약정은 수급인이 공사완성의 기한 내에 공사를 완성하지 못한 경우에 완공의 지체로 인한 손해배상책임에 관하여 손해배상액을 예정하였다고 해석할 것이고, 수급인이 완공의 지체가 아니라 그 공사를 부실하게 한 것과 같은 불완전급부 등으로 인하여 발생한 손해는 그것이 그 부실공사 등과 상당인과관계가 있는 완공의 지체로 인하여 발생한 것이 아닌 한 위 지체상금약정에 의하여 처리되지 아니하고 도급인은 위 일반조건의 손해배상약정에 기하여 별도로 그 배상을 청구할 수 있다. 이 경우 손해배상의 범위는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span> 등과 같은 그 범위획정에 관한 일반법리에 의하여 정하여지고, 그것이 위 지체상금약정에 기하여 산정되는 지체상금액에 제한되어 이를 넘지 못한다고 볼 것이 아니다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 수급인이 완공기한 내에 공사를 완성하지 못한 채 공사를 중단하고 계약이 해제된 결과 완공이 지연된 경우에 있어서 지체상금은 약정 준공일 다음날부터 발생하되 그 종기는 수급인이 공사를 중단하거나 기타 해제사유가 있어 도급인이 공사도급계약을 해제할 수 있었을 때(실제로 해제한 때가 아니다)부터 도급인이 다른 업자에게 맡겨서 공사를 완성할 수 있었던 시점까지이고, 수급인이 책임질 수 없는 사유로 인하여 공사가 지연된 경우에는 그 기간만큼 공제되어야 한다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|105|">민법 제105조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">제393조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">제398조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|664|">제664조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">민법 제398조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|664|">제664조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다39511|판결" href="#//">대법원 2006. 4. 28. 선고 2004다39511 판결</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(반소피고), 상고인】
+      
+        
+          원고 (소송대리인 법무법인 세화 담당변호사 김종배외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고(반소원고), 피상고인】
+      
+        
+          피고 주식회사 (소송대리인 변호사 이연봉)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="광주고등법원|2008나56|판결" href="#//">광주고법 2009. 5. 13. 선고 (제주)2008나56, 63 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 손해배상에 관한 본소청구 부분을 파기하고, 이 부분 사건을 광주고등법원에 환송한다.  나머지 상고를 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유(상고이유서 제출기간이 경과한 후에 제출된 상고이유보충서의 기재는 상고이유를 보충하는 범위 내에서)를 본다.</p><p>  1. 상고이유 제1점에 대하여</p><p>  가. 원심은, 원고(반소피고. 이하 ‘원고’라고 한다)가 이 사건 계약의 해제로 인한 손해배상으로서 물가상승 등으로 인한 예상공사비의 증가분 및 차임 상당 손해액의 지급을 구함에 대하여, 이 사건 계약에서 지체상금에 관한 약정을 한 사실은 인정되나 달리 피고(반소원고. 이하 ‘피고’라고 한다)가 지체상금을 초과한 손해까지 배상하기로 약정하였음을 인정할 아무런 증거가 없으므로 원고는 이 사건 계약의 해제에 따른 손해배상으로 피고에게 약정된 지체상금을 초과하는 손해배상액의 지급을 구할 수 없다고 판단하였다.</p><p>  나. 그러나 원심의 위와 같은 판단은 그대로 수긍하기 어렵다.</p><p>  (1) 기록에 의하면 다음과 같은 사실을 알 수 있다.</p><p>  원고와 피고는 이 사건 건물신축공사에 관한 도급계약을 체결함에 있어서 건설교통부 고시 제2000-56호의 ‘민간건설공사 표준도급계약 일반조건’을 그 계약의 일부로 편입하기로 합의하였다. 그런데 위 일반조건의 제27조는 ‘지체상금’이라는 표제 아래 그 제1항 본문에서 “수급인이 준공기한 내에 공사를 완성하지 아니한 때에는 매 지체일수마다 계약서상의 지체상금율[이는 별도로 0.1%로 약정되었다]을 곱하여 산출한 금액을 도급인에게 지급하여야 한다”고 정한다. 한편 위 일반조건의 제33조 제2항은 “제31조 및 제32조의 규정에 의한 계약의 해제 또는 해지로 인하여 손해가 발생한 때에는 상대방에게 그에 대한 배상을 청구할 수 있다”고 정하는데, 제31조 및 제32조는 계약의 해제·해지사유로서, 수급인의 책임 있는 사유로 인하여 준공기일 내에 공사를 완성할 가능성이 없음이 명백한 경우 등의 개별적 사유와 아울러 “기타 수급인의 계약조건 위반으로 인하여 계약의 목적을 달성할 수 없다고 인정되는 경우”(제31조 제1항 제4호)를 규정하고 있다.</p><p>  (2) 
+        <span class="accrnt_txt">채무불이행에 관한 손해배상액의 예정은 당사자의 합의로 행하여지는 것으로서, 그 내용이 어떠한가, 특히 어떠한 유형의 채무불이행에 관한 손해배상을 예정한 것인가는 무엇보다도 당해 약정의 해석에 의하여 정하여진다.</span> 이 사건에서 위에서 본 바와 같은 계약조항의 문언 및 체계, 나아가 지체상금에 관한 제27조 중 앞서 인용한 부분을 제외한 나머지 부분이 거기서 정하는 지체상금지급의무가 발생하지 아니하는 경우로서도 공사 또는 착공의 지연, 지체 또는 중단과 같이 공사의 지연과 관련된 사유만을 지적하고 있는 점 등을 종합하여 보면, 
+        <span class="accrnt_txt">위 일반조건 제27조의 지체상금약정은 수급인이 공사완성의 기한 내에 공사를 완성하지 못한 경우에 완공의 지체로 인한 손해배상책임에 관하여 손해배상액을 예정하였다고 해석할 것이고, 수급인이 완공의 지체가 아니라 그 공사를 부실하게 한 것과 같은 불완전급부 등으로 인하여 발생한 손해는 그것이 그 부실공사 등과 상당인과관계가 있는 완공의 지체로 인하여 발생한 것이 아닌 한 위 지체상금약정에 의하여 처리되지 아니하고 도급인은 위 일반조건 제33조 제2항에 기하여 별도로 그 배상을 청구할 수 있다고 봄이 상당하다. 이 경우 손해배상의 범위는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|" style="text-decoration:underline">민법 제393조</a></span> 등과 같은 그 범위획정에 관한 일반법리에 의하여 정하여지고, 그것이 위 지체상금약정에 기하여 산정되는 지체상금액에 제한되어 이를 넘지 못한다고 볼 것이 아니다.
+        </span>
+      </p><p>  그럼에도 불구하고 원고가 수급인인 피고의 부실시공 및 공사포기 등 계약조건의 위반으로 해제되었음을 이유로 그로 인하여 발생한 위에서 본 바와 같은 손해의 배상을 구하는 이 사건에서 원심이 이 사건 도급계약에서 수급인인 피고가 위 지체상금약정에 기한 지체상금액을 초과한 손해까지 배상하기로 약정하였다고 인정할 증거가 없으므로 그것을 넘는 손해의 배상을 구할 수 없다고 판단한 것에는 손해배상액의 예정에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 있다. 이 점을 지적하는 상고취지는 이유 있다.</p><p>  2. 상고이유 제2점에 대하여</p><p>  이 부분 상고이유의 주장은 사실심의 전권에 속하는 증거의 취사선택 및 사실인정을 탓하는 취지라 할 것이므로 적법한 상고이유라고 할 수 없다. 뿐만 아니라 기록에 비추어 살펴보더라도 원심이 피고가 시공한 부분 중 재시공이 필요 없는 터파기와 매트 부분의 공사비가 5,400만 원이라고 사실인정한 것은 정당한 것으로 수긍이 간다. 원심판결에 상고이유에서 주장하는 바와 같은 채증법칙 위반 등의 위법이 없다.</p><p>  3. 상고이유 제3점에 대하여</p><p>
+        <span class="accrnt_txt">수급인이 완공기한 내에 공사를 완성하지 못한 채 공사를 중단하고 계약이 해제된 결과 완공이 지연된 경우에 있어서 지체상금은 약정 준공일 다음날부터 발생하되 그 종기는 수급인이 공사를 중단하거나 기타 해제사유가 있어 도급인이 공사도급계약을 해제할 수 있었을 때(실제로 해제한 때가 아니다)부터 도급인이 다른 업자에게 맡겨서 공사를 완성할 수 있었던 시점까지이고, 수급인이 책임질 수 없는 사유로 인하여 공사가 지연된 경우에는 그 기간만큼 공제되어야 한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다39511|판결" href="#//">대법원 2006. 4. 28. 선고 2004다39511 판결</a></span> 등 참조).
+      </p><p>  원심은 그 판시와 같은 사실을 인정한 다음, 원고로서는 적어도 피고로부터 공사 타절 및 정산을 제의하는 통지를 수령한 2003. 8. 16. 이후에는 이 사건 계약을 해제할 수 있었다고 할 것이므로, 지체상금의 종기를 원고가 그때부터 다른 업자에게 이 사건 공사를 의뢰하여 완공하는 데 필요한 기간인 224일이 경과한 2004. 3. 26.로 봄이 상당하다고 보아 피고의 지체일수를 원래의 준공예정일인 2004. 1. 10.의 다음날부터 위 2004. 3. 26.까지의 76일로 산정하여 그에 따른 지체상금을 인정하였다.</p><p>  위 법리 및 기록에 비추어 살펴보면, 원심의 위와 같은 사실인정 및 판단은 정당한 것으로 수긍할 수 있다. 원심판결에 상고이유에서 주장하는 바와 같은 지체상금의 산정에 관한 법리 오해 등의 위법이 있다고 할 수 없다.</p><p>  4. 파기 범위</p><p>  기록에 의하면, 원고는 주위적으로 이 사건 계약의 해제로 인한 손해배상으로서 예상공사비의 증가분 및 차임 상당의 손해의 배상을 구하고, 예비적으로 이 사건 도급계약의 지체상금약정에 의한 손해배상을 구하고 있으며, 또한 위 주위적 청구와 선택적으로 불법행위에 의한 손해배상을 구하고 있음을 알 수 있다.</p><p>  그런데 위에서 본 바와 같이 위 주위적 청구에 관한 원고의 상고를 받아들이는 이상 위와 같은 예비적 청구 및 선택적 청구에 관한 부분도 파기하여야 할 것이므로, 결국 원심판결 중 손해배상에 관한 본소청구 부분을 모두 파기함이 상당하다.</p><p>  5. 결론</p><p>  그러므로 원심판결 중 손해배상에 관한 본소청구 부분을 파기하고 사건을 다시 심리·판단하도록 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김지형(재판장) 양승태 전수안 양창수(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

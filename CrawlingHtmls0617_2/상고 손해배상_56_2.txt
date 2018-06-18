@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2009나105750 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2034901';
+var contIdEtc = '';
+var saNo = '2009나105750';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('20101022' ? 
+			'20101022'.length==4 ? Date.parseExact('20101022','yyyy').toString('yyyy. M. d.') : 
+				'20101022'.length==6 ? Date.parseExact('20101022','yyyyMM').toString('yyyy. M. d.') : 
+					'20101022'.length==8 ? Date.parseExact('20101022','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009나105750 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009나105750';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2009나105750</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(10)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2005가합11419">서울동부지방법원 2005가합11419호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2005가합11419">위 2005가합11419호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2005가합11419">서울동부지방법원 2005가합11419호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울행정법원|2005구합24551">서울행정법원 2005구합24551호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2007누2304">서울고등법원 2007누2304호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007두21921">대법원 2007두21921호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2005타기1619">서울동부지방법원 2005타기1619호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2005가합11419">서울동부지방법원 2005가합11419호 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2007누2304">서울고등법원 2007누2304호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다54706">대법원 2009. 12. 10. 선고 2009다54706, 54713 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|75|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 제75조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|75|0|null">공익사업을위한 토지 등의 취득 및 보상에 관한 법률(구) 제75조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2009가합1059">서울중앙지방법원 2009. 9. 17. 선고 2009가합1059 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2010. 10. 22. 선고 2009나105750 판결</h2><p class="sub_title">[손해배상][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인 겸 피항소인】
+      
+        한연산업 주식회사 (소송대리인 법무법인 세종 담당변호사 변희찬 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인 겸 항소인】
+      
+        에스에이치공사 (소송대리인 변호사 곽창욱)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2010. 9. 8.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2009가합1059|판결" href="#//">서울중앙지방법원 2009. 9. 17. 선고 2009가합1059 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 피고에 대하여 원고에게 748,392,000원 및 이에 대하여 2007. 3. 31.부터 2010. 10. 22.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 초과하여 지급을 명한 피고 패소부분을 취소하고, 그 취소부분에 해당하는 원고의 청구를 기각한다. </p><p>2. 원고의 항소 및 피고의 나머지 항소를 각 기각한다.</p><p>3. 소송 총비용 중 3/10은 피고의 부담으로 하고, 나머지는 원고의 부담으로 한다. </p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p>  피고는 원고에게 2,379,207,000원 및 그 중 3억 원에 대하여는 2006. 2. 1.부터 이 사건 소장부본 송달일까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의, 그 중 2,079,207,000원에 대하여는 2006. 2. 1.부터 이 사건 청구취지변경신청서 부본 송달일까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라(주위적으로 채무불이행으로 인한 손해배상금의 지급을, 예비적으로 불법행위로 인한 손해배상금의 지급을 구한다).</p>
+      <p>2. 항소취지</p>
+      <p>  원고 : 제1심 판결 중 다음에서 지급을 명하는 부분에 해당하는 원고 패소부분을 취소한다. 피고는 원고에게 153,994,000원 및 이에 대하여 2006. 2. 1.부터 2009. 7. 29.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율로 계산한 돈을 지급하라.</p>
+      <p>  피고 : 제1심 판결 중 피고패소 부분을 취소하고, 위 취소부분에 해당하는 원고의 청구를 기각한다. </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 인정사실  </p><p>  가. 원고는 서울 송파구 장지동 302-22 토지(이하 이 사건 토지라고 한다)를 임차한 후 위 지상에 골재 153,994㎥를 적치하여 놓고(이하 위 지상에 적치된 골재를 이 사건 골재라고 한다) 골재 선별, 파쇄, 판매 등을 영업하여 온 주식회사이고, 피고는 서울장지지구 택지개발사업(이하 이 사건 사업이라고 한다)을 시행한 사업시행자이다. </p><p>  나. 이 사건 수용재결 및 공탁 등</p><p>   (1) 피고는 이 사건 사업의 시행을 위하여 이 사건 토지를 취득하였으며, 중앙토지수용위원회에 원고와 
+        소외 1(대법원판결의 소외인)을 상대로 이 사건 골재에 대한 수용재결을 신청하였다(당시 원고와 
+        소외 1 사이에 이 사건 골재의 소유권에 관한 다툼이 있었다). 
+      </p><p>   (2) 중앙토지수용위원회의 의뢰에 따라 이 사건 골재에 대한 수용보상금 감정을 의뢰받은 소외 주식회사 나라감정평가법인, 주식회사 고려감정평가법인은 다음과 같은 내용의 감정서를 제출하였다.</p><p>  “이 사건 골재 153,994㎥의 이전비로 1,565,310,490원이 소요될 것으로 예상되고, 그 취득비는 923,964,000원(6,000원/㎥ ; 이 사건 골재의 현황이 모래와 자갈을 분류하지 않은 상태의 혼합골재인바, 정상적인 상태의 혼합골재 시중가격은 8,000원/㎥ 정도이나 장기간 방치되어 있어 상품성이 떨어진다는 것을 감안하여 6,000원/㎥로 평가하였다)으로 평가되는바, 이전비가 취득비를 초과하므로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|75|">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 제75조</a></span>에 의거 취득비를 손실보상금으로 평가한다.”
+      </p><p>   (3) 중앙토지수용위원회는 2005. 7. 13. 다음과 같이 수용재결하였다(이하 이 사건 수용재결이라고 한다).</p><p>  “피고는 이 사건 사업 시행을 위하여 이 사건 골재를 이전하게 하며, 손실보상금으로 923,964,000원을 지급한다. 수용개시일은 2005. 8. 11.로 한다.”</p><p>   (4) 중앙토지수용위원회는 2005. 8. 10. ‘원고와 
+        소외 1 사이에 이 사건 골재의 소유권에 관한 다툼이 있어 소유자를 확정하기 어렵고, 손실보상금채권에 대해 송파구청장의 채권압류 통지 등이 있다’는 이유로, 피공탁자를 ‘원고 또는 
+        소외 1’로 지정하여 손실보상금 923,964,000원을 공탁하였다(서울동부지방법원 2005년 금제2879호 ; 이하 이 사건 공탁이라고 한다).
+      </p><p>  다. 공탁금출급금 확인의 소 등</p><p>   (1) 
+        소외 1은 위 공탁이 있은 직후 원고와 소외 송파구를 상대로 ‘이 사건 공탁금출급채권이 원고에게 있음을 확인한다’는 취지의 확인의 소를 제기하였다(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2005가합11419" href="#//">서울동부지방법원 2005가합11419호</a></span>).
+      </p><p>   (2) 위 법원은 2006. 1. 27. 
+        소외 1의 원고에 대한 청구를 인용하고(
+        소외 1의 청구가 자백간주되었다), 송파구에 대한 청구를 기각하는 판결을 선고하였으며(이 사건 골재가 
+        소외 1의 소유임을 인정할 증거가 없다라는 취지로 판시되었다), 위 판결은 그 무렵 확정되었다. 
+      </p><p>  라. 피고는 이 사건 사업의 시행을 위하여 이 사건 토지를 사용해야 할 상황에 처하자 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2005가합11419" href="#//">위 2005가합11419호</a></span> 사건이 계속 중인 2005. 12. 16. 원고, 
+        소외 1과 사이에 다음과 같이 합의하였다(이하 이 사건 합의라고 한다).
+      </p><p>  “① 원고, 
+        소외 1은 피고가 2005. 12.경부터 이 사건 골재를 다른 장소로 이전하는 것에 동의하고 이전시 발생하는 골재의 손망실에 대하여 피고에게 어떠한 책임도 묻지 아니하며, 피고는 원고 또는 
+        소외 1에게 이전비용 등을 구상하지 아니한다. ② 다만 위 합의는 피고의 원활한 공사 진행을 위한 것으로서 원고 또는 
+        소외 1이 피고에게 손실보상금채권을 가지는 것을 전제로 하고, 또한 추가 보상금 소송에 관하여 아무런 영향을 미치지 않는다. ③ 이 사건 골재의 소유자는 
+        소외 1이나 소유권에 관하여 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2005가합11419" href="#//">서울동부지방법원 2005가합11419호</a></span> 사건이 계속 중이므로 그 소송에서 원고가 소유자라는 결론이 나는 경우를 대비하여 소유자를 
+        소외 1 또는 원고로 표시한다.”
+      </p><p>  마. 이 사건 이의재결 등</p><p>   (1) 한편 원고와 
+        소외 1 및 피고는 이 사건 수용재결에 대해 각 불복하여, 원고와 
+        소외 1은 ‘수용보상금을 증액해 달라’는 취지로, 피고는 ‘이 사건 골재에 대해 이전비가 아닌 취득비로 보상하게 하여달라(이 사건 골재에 대한 소유권을 취득하는 내용의 수용청구 주장으로 보인다)’는 취지로 이의재결을 신청하였다.
+      </p><p>   (2) 중앙토지수용위원회의 의뢰에 따라 이 사건 골재에 대한 수용보상금 감정을 의뢰받은 소외 주식회사 경일감정평가법인, 한국감정원은 다음과 같은 내용의 감정서를 제출하였다.</p><p>     (가) 위 경일감정평가법인 : 이 사건 골재 153,994㎥의 취득가는 862,366,400원(5,600원/㎥)으로 평가되는데, 이전비가 취득가를 초과하므로 위 취득가를 손실보상금으로 평가한다.</p><p>     (나) 위 한국감정원 : 이 사건 골재 153,994㎥의 취득가는 847,000,000원(이 사건 골재는 품질이 떨어지는 골재로 시중에서 5,000원/㎥ 내지 6,000원/㎥로 거래되는데, 제반요인을 고려하여 5,500원/㎥으로 평가한다)으로 평가되는데, 이전비가 취득가를 초과하므로 위 취득가를 손실보상금으로 평가한다.</p><p>   (3) 중앙토지수용위원회는 2006. 1. 25. 원고, 
+        소외 1과 피고의 이의를 모두 기각하는 내용으로 이의재결하면서, 특히 피고의 주장에 대하여 ‘사업부지내 소유자가 이 사건 골재를 야적한 상태이므로 취득비보다는 이전비로 보상함이 타당하다’라고 판단하였다.
+      </p><p>  바. 이 사건 골재의 멸실 등</p><p>   (1) 피고는 이 사건 합의가 있은 후 2006. 1.경 이 사건 골재의 이전방안을 검토하면서 ‘토사는 성토용 재료로 사용가능하나 골재는 점토와 혼합되어 있어 토목공사용으로 사용이 불가능하여 외부로의 반출이 불가피하다’라는 이유로 ‘이 사건 골재 중 일부를 이 사건 사업 시행지구 내로 이전하고 일부를 사토처리한다’는 계획을 수립하였다.</p><p>   (2) 피고는 위 계획에 따라 2006. 1.경부터 2.경 사이에 이 사건 골재 중 약 67,500㎥를 이 사건 토지 인근 이 사건 사업 시행지구 내 다른 토지에 이전·적치하게 하고, 약 24,631㎥를 잔토에 불과하다는 이유로 사토처리하고, 9,496㎥를 이 사건 사업 시행 지구 내 가도조성을 위한 성토용으로 사용하게 하는 등 처리하였다. 피고는 이후 이전·적치된 67,500㎥를 ‘점토와 혼합된 골재로 토목공사용으로 사용불가하다’는 이유 등으로 2007. 3.경까지 사토처리하거나 성토용으로 사용하도록 하였다. </p><p>   (3) 이 사건 골재는 위와 같은 경위로 2007. 3.경까지 모두 멸실되었다.</p><p>  사. 행정소송의 진행 등</p><p>   (1) 
+        소외 1은 이 사건 이의재결이 있기 전인 2005.경 피고를 상대로 ‘이 사건 골재의 정당한 보상금액과 이 사건 공탁금의 차액을 지급하라’는 취지의 소를 제기하였다(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울행정법원|2005구합24551" href="#//">서울행정법원 2005구합24551호</a></span>). 
+      </p><p>   (2) 위 법원의 의뢰에 따라 이 사건 골재에 대한 수용보상비 감정을 의뢰받은 소외 주식회사 중앙감정평가법인은 다음과 같은 내용의 감정서를 제출하였다.</p><p>  “이 사건 골재 153,994㎥는 타지역에서 운반된 모래, 자갈, 흙이 혼합된 골재이다(자갈 대 모래의 비율은 3 대 7). 위 골재의 이전비로 1,161,297,900원{= 부지 정지작업비 28,040,000원 + 덤프트럭 15톤으로 30Km 운반시 골재 운반비 1,077,958,000원(7,000원/㎥) + 제경비 55,290,000원}이 소요될 것으로 예상된다. 이 사건 골재는 장기간 방치된 상태의 물건이기는 하지만 최소한 타지에서 운반되어 온 것으로 운반비 이상의 가격이 형성된다고 볼 수 있다. 따라서 취득가를 따로 산정하지 않고 위 이전비를 손실보상금으로 평가한다.”</p><p>   (3) 위 법원은 2006. 11. 29. 위 감정평가 결과에 근거하여 이 사건 골재의 이전비에 대한 정당한 보상금을 1,161,000,000원으로 산정한 후 ‘피고는 
+        소외 1에게 위 보상금과 이 사건 공탁금의 차액을 지급하라’는 취지의 판결을 선고하였다. 
+      </p><p>   (4) 피고는 위 판결에 불복하여 항소하였는데(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2007누2304" href="#//">서울고등법원 2007누2304호</a></span>), 위 항소법원은 2007. 9. 4. ‘
+        소외 1을 이 사건 골재의 소유자로 인정할 증거가 없다’라는 이유로 원고의 청구를 기각하는 판결을 선고하였다.
+      </p><p>   (5) 
+        소외 1은 위 항소심 판결에 불복하여 상고하였으나(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007두21921" href="#//">대법원 2007두21921호</a></span>) 2007. 12. 27. 상고기각되었다. 
+      </p><p>  아. 이 사건 공탁금은 2006. 4. 6. 실시된 배당절차에서(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2005타기1619" href="#//">서울동부지방법원 2005타기1619호</a></span>) 원고의 채권자들인 송파구청과 
+        소외 2에게 각 358,822,422원, 565,109,778원씩 배당되고 지급되었다. 
+      </p><p>  자. 골재의 통계가격 등</p><p>    (1) 사단법인 한국물가정보가 발행한 종합물가정보 2006. 2.호(조사기간 2006. 1. 2.부터 2006. 1. 10.까지)에 의하면, 서울(파주, 김포, 고양 등 포함) 채취장 상차도를 기준으로 한 골재의 가격은 자연 자갈은 14,000원/㎥, 강 모래는 13,000원/㎥이고, 서울 시내 도착도를 기준으로 한 골재의 가격은 자연 자갈이 23,500원/㎥, 강 모래가 22,000원/㎥이다.</p><p>   (2) 이 사건 골재의 선별비용은 700원/㎥에서 2,000원/㎥원 사이이다.</p><p>  [인정근거] 다툼이 없는 사실, 갑 1 내지 3호증, 갑 4호증의 1 내지 3, 갑 5호증의 1 내지 3, 갑 8호증의 2, 갑 9호증의 1 내지 4, 갑 11, 12, 갑 13호증의 1 내지 3, 갑 14호증, 갑 15호증의 1 내지 9, 갑 16호증의 1 내지 4, 갑 19, 20호증, 을 1호증, 을 2 내지 4호증의 각 1, 2, 을 5, 8호증, 을 9호증의 1 내지 6, 을 11호증의 1, 을 22호증 , 제1심 법원의 한국감정원, 주식회사 경일감정평가법인에 대한 사실조회결과, 변론 전체의 취지 </p><p>2. 손해배상책임의 발생</p><p>  가. 이 사건 골재의 소유자 및 손해배상책임의 근거 등</p><p>   (1) 이 사건 골재가 원고 또는 
+        소외 1의 소유임은 분명한 것으로 보이는 점, 원고가 이 사건 토지를 임차하고 그 지상에 이 사건 골재를 적치하여 놓고 골재 선별 및 판매 영업을 하였던 사정에 비추어 이 사건 골재는 원고의 소유로 추정되는 점, 
+        소외 1이 원고와 사이에 이 사건 공탁금출급채권이 
+        소외 1의 소유라는 점에 관한 확인판결을 받았으나(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2005가합11419|판결" href="#//">서울동부지방법원 2005가합11419호 판결</a></span>), 위 판결은 원고와 
+        소외 1 사이에서의 자백간주 판결인데다 
+        소외 1이 이 사건 공탁금출급권자라는 것을 확인한 것에 불과하여 이로써 원고와 피고 사이에서도 
+        소외 1이 이 사건 골재의 소유자라고 볼 것은 아니며, 오히려 
+        소외 1과 송파구 사이의 공탁금출급권 확인소송에서 ‘이 사건 골재가 
+        소외 1의 소유라는 점을 인정할 증거가 없다’는 이유로 
+        소외 1의 패소판결이 선고되어 확정된 점, 
+        소외 1이 제기한 행정소송에서도 같은 이유로 
+        소외 1의 패소판결이 선고되어 확정된 점(
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2007누2304" href="#//">서울고등법원 2007누2304호</a></span>), 피고 역시 원고 또는 
+        소외 1이 이 사건 골재의 소유자임을 전제로 이 사건 합의를 한 것으로 보이는 점 등을 종합하면, 이 사건 골재는 원고의 소유라고 봄이 상당하다.
+      </p><p>   (2) 피고가 이 사건 합의에서 이 사건 골재를 이 사건 토지로부터 인근 다른 장소로 이전하기로 하였으면 선량한 관리자의 주의로 이를 이행할 의무가 있음에도, 오히려 2006. 1.경 이 사건 합의와 달리 일부 골재를 반출하거나 성토용으로 사용하기로 계획한 다음 2007. 3.에 이르기까지 이 사건 골재를 사토처리하거나 성토용으로 사용함으로써 결국 위 골재 전체를 멸실되도록 하였다. 피고의 위와 같은 행위는 이 사건 합의상의 의무를 제대로 이행하지 아니한 채무불이행에 해당함과 동시에 위와 같은 행위를 실제 행한 피고 직원의 행위는 불법행위에 해당한다. </p><p>   (3) 따라서 피고는 위 채무불이행으로 인하여 원고가 입은 손해를 배상할 책임이 있으며 아울러 피고 직원의 사용자로서 피고 직원의 불법행위로 인하여 원고가 입은 손해를 배상할 책임이 있다. </p><p>  나. 피고의 주장에 관하여</p><p>   (1) 피고는 먼저 ‘원고는 이 사건 골재의 소유자가 아니다. 또한 원고는 
+        소외 1과의 소송에서 
+        소외 1이 이 사건 골재의 소유자인 사실을 다투지 아니하였고, 행정소송에서원고가 이 사건 골재의 소유자인 사실을 주장하지 않았는데, 원고가 이 사건에서 자신이 이 사건 골재의 소유자라고 주장하는 것은 금반언의 원칙과 신의성실의 원칙에 반한다.’라고 주장한다.         
+      </p><p>  그러나 원고가 이 사건 골재의 소유자인 것으로 판단된다는 점은 앞서 살핀 바와 같고 이를 뒤집을 증거가 없으며, 원고가 다른 소송에서 
+        소외 1의 소유권을 다투지 아니하였다거나 이 사건 골재에 대한 소유권을 주장하지 아니하였다는 사정만으로, 원고가 이 사건 골재에 대하여 소유권을 주장하는 것이 금반언의 원칙이나 신의성실의 원칙에 반한다고 볼 수 없고 달리 이를 인정할 증거도 없다. 피고의 위 주장은 이유 없다.
+      </p><p>   (2) 피고는 다음으로 ‘이 사건 수용재결 및 이의재결은 이 사건 골재의 취득가를 손실보상금으로 지급하도록 하였으며, 피고는 위 재결에 따라 위 보상금을 공탁하였다. 피고는 이로써 이 사건 골재에 대한 소유권 또는 처분권한을 취득하였다. 따라서 피고가 이 사건 골재를 사용한 것에 어떠한 잘못이나 과실이 있다고 할 수 없으며 원고가 그로 인하여 어떠한 손해를 입었다고도 할 수 없다.’라는 취지로 주장한다.</p><p>  살피건대 중앙토지수용위원회는 수용재결에서 피고에게 이 사건 골재를 이전하게 하되 다만 손실보상금으로서 취득가 상당액을 지급하도록 한 점(취득가가 이전비를 상회하는 경우 취득가를 기준으로 손실보상금을 지급하도록 규정한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을위한 토지 등의 취득 및 보상에 관한 법률|75|">구 토지 등의 취득 및 보상에 관한 법률 제75조 제1항</a></span>에 근거한 것이다), 피고는 이 사건 수용재결 후 이 사건 골재의 소유권을 수용할 수 있도록 해 달라는 취지의 이의재결을 신청하였으나 기각되기도 하였던 점, 물건의 취득가 상당액을 손실보상금으로 공탁하였다고 하여도 소유권에 대한 수용절차 없이 그 소유권을 취득할 수는 없는 점 등에 비추어, 피고가 이 사건 골재의 취득가 상당을 손실보상금으로 공탁하였다고 하더라도 이로써 이 사건 골재의 소유권 또는 처분권한을 취득하였다고 할 수 없다. 이를 전제한 피고의 위 주장 역시 이유 없다. 
+      </p><p>   (3) 피고는 ‘원고가 이 사건 합의로써 이 사건 골재의 소유권 또는 손망실에 대한 손해배상청구권을 포기하였다.’라는 취지로도 주장한다. </p><p>  그러나 피고가 이 사건 합의로써 이 사건 소유권을 포기하였다고 볼 근거가 없고, 피고가 이 사건 합의로써 포기한 손해배상청구 부분은 ‘정상적인 이전과정에서 자연스럽게 발생할 수 있는 사소한 손망실’ 부분에 한정된다고 봄이 상당할 뿐 이 사건 골재 전체가 멸실된 경우 그에 대한 손해배상청구권까지를 포기한 것으로 볼 수는 없다. 피고의 위 주장도 이유 없다.</p><p>3. 손해배상책임의 범위</p><p>  가. 피고의 채무불이행 또는 불법행위로 인한 원고의 손해는 이 사건 골재가 멸실된2006. 1. 내지 2007. 3.경 그 시가 상당액이라고 할 것이다.</p><p>  나. 손해배상액의 구체적 산정방식과 관련하여</p><p>   (1) 이 사건 골재는 이 사건 토지에서 채취된 것이 아니라 다른 지역에서 채취되어 이 사건 토지로 운반되어 온 것이고, 원고는 골재를 구입한 후 이 사건 토지 등에 적치하여 놓고 선별작업을 진행하여 이를 판매하여 왔다. 그런데 종합물가정보 기재 채취장 상차도는 ‘채취업자가 채취장에서 골재를 상차하는 비용까지 포함한 판매가격’이고, 시내 도착도는 ‘생산업자 또는 도매상이 시내 수요자에게로의 운반비용까지 포함한 판매가격’을 의미하는 것으로 보인다. 따라서 이 사건에서의 손해배상액은, 위 종합물가정보(2006. 2.호)의 시내 도착도에서 선별 비용, 시내 수요자에게로의 운송비용을 공제하는 방식으로 산정함이 상당하다(이 사건 골재의 멸실은 2006. 1.경부터 2007. 3.경까지 사이에 발생하였고, 위 종합물가정보는 2006. 1.경의 가격을 조사한 것이지만, 위 멸실기간 전체의 통계가격에 관한 자료의 제출이 없고, 위 멸실기간과 조사기간이 비교적 단기인 사정을 고려하여, 위 전체 기간에 대하여 위 종합물가정보상의 통계가격을 적용하기로 한다).</p><p>  원고는 ‘종합물가정보 기재 채취장 상차도 가격에 채취장에서 이 사건 토지까지의 운송비, 원고의 이윤을 더하는 방식으로 손해배상액을 산정하여야 한다.’라는 취지로 주장한다. 그러나 원고가 채취장에서 골재를 취득한 일자나 당시의 취득가를 알 수 있는 자료의 제출이 없고 취득일자를 알 수 없어 통계가격을 적용하기도 곤란한 점, 채취장 장소를 알 수 있는 자료의 제출이 없어 채취장에서 이 사건 토지로의 운송비를 추정하기 곤란한 점, 나아가 원고의 이윤을 추정할 아무런 자료가 없는 점 등을 고려하면 원고가 주장하는 방식에 따라 손해를 산정하기는 어렵다.</p><p>   (2) 이 사건 골재는 자갈과 모래, 흙이 혼합된 것으로 선별작업을 거쳐 판매되기는 하였으나, 종합물가정보 기재 혼합골재 즉 암석을 기계로 파쇄한 쇄석과 석분이 혼합된 골재에 해당한다고 보기는 어려우므로, 이 사건 골재의 시가는 위 종합물가종보 기재 자연 자갈과 강 모래의 가격을 기준으로 산정함이 상당하다. </p><p>   (3) 이 사건 기록에 나타나는 선별작업의 내용, 이 사건 골재의 양, 원고가 선별기계를 사용하여 골재 선별작업을 진행하며 영업하였던 사정, 앞서 살핀 골재의 선별에 드는 통상적 비용 등을 고려하여, 이 사건 골재의 선별비용은 1,500원/㎥로 봄이 상당하다.</p><p>   (4) 시내 도착도에서 공제하여야 할 시내 수요자에게로의 운송비는, 위 제1의 사.(2)항의 인정사실에 비추어 볼 때 이 사건 토지로부터 서울 시내 평균거리라고 볼 수 있는 30Km 지점 까지를 운반하는 것을 기준으로 7,000원/㎥로 봄이 상당하다. </p><p>  다. 멸실된 자갈, 모래의 양에 관하여</p><p>   (1) 앞서의 인정사실과 거시증거 및 갑 17호증의 1, 2, 갑 18호증의 1의 각 기재에 의하면, 피고의 채무불이행 또는 불법행위 당시 이 사건 골재의 양은 위 골재에 대한 수용보상금 산정 과정에서 인정된 153,994㎥로 추정되며, 을 9호증의 1, 을 11호증의 1의 각 기재만으로는 위 추정을 뒤집기에 부족하고 달리 이를 뒤집을 증거가 없다{을 9호증의 1, 을 11호증의 1의 각 기재에 의하면, 피고가 2006. 1. 무렵 이 사건 골재의 양을 101,624㎥로 측량한 사실은 인정되지만, 위 을호증 기재 측량은 갑 17호증의 1, 2, 갑 18호증의 1 기재 측량에 비하여 정교하지 못하였던 것으로 보이는 점(위 갑호증 기재 측량은 중심체인을 2m 내지 5m로 설정하였던 것에 비하여 위 을호증 기재 측량은 중심체인을 20m로 길게 설정하였다), 골재를 적치하는 경우 지반 아래에도 적치하는 것이 일반적인데도 위 을호증 기재 측량은 지반 아래 골재를 산출하지 아니한 것으로 보이는 점 등에 비추어, 위 을호증 기재 측량결과는 위 갑호증 기재 측량보다 정확성이 떨어진다고 볼 수 밖에 없다}.</p><p>   (2) 다만 앞서의 인정사실과 거시증거에 나타나는 다음 사정 즉, 원고는 이 사건 골재를 선별작업을 거쳐 판매하여 왔는데 그 과정에서 잔토 등이 배출된 점, 수용재결 및 이의재결 당시 감정인들이 이 사건 골재를 상품성이 낮은 것으로 보아 5,500원/㎥ 내지 6,000원/㎥으로 평가하였던 점, 행정소송에서의 감정인 역시 이 사건 골재가 모래, 자갈, 흙이 혼합된 골재라고 지적하였던 점, 피고가 이 사건 골재의 상품성을 낮게 보고 반출계획 등을 수립하였으며 실제 많은 부분을 사토처리하거나 성토용으로 사용한 점, 원상연이 수사기관에서 이 사건 골재를 1만 원/㎥라고 언급한 적이 있는 점과 갑 5호증의 1, 2, 갑 9호증의 7, 갑 10호증의 1 내지 20, 갑 15호증의 1 내지 9의 각 영상에 나타나는 이 사건 골재의 상태 등을 종합하면, 이 사건 골재에는 상품성이 있는 자갈, 모래와 상품성이 없는 흙 등이 혼합되어 있었던 것으로 보인다. 한편 이 사건 합의 당시 원고는 이전과정에서의 일부 손망실을 예상하여 이를 문제삼지 않기로 합의한 바 있고 실제 이전과정에서 손망실이 있었던 것으로 보인다. 또 행정소송에서의 감정인은 이 사건 골재의 자갈 대 모래 비율을 3 대 7로 평가하였다. 위와 같은 제반사정을 고려하면, 피고의 채무불이행 또는 불법행위 당시 이 사건 골재 중 상품성 있는 자갈, 모래의 비율은, 이전과정에서의 일부 손망실된 부분까지를 고려하여, 이 사전 골재의 전체량 153,994㎥의 80% 정도라고 봄이 상당하며, 그 중 자갈과 모래의 비율은 30% 대 70%로 봄이 상당하다.</p><p>  라. 손해배상액의 계산(원 이하, ㎥ 이하 각 버림) </p><p>   (1) 멸실된 상품성 있는 자갈 및 모래의 양</p><p>     (가) 자갈 : 36,958㎥(= 153,994㎥ × 8/10 × 3/10)</p><p>     (나) 모래 : 86,236㎥(= 153,994㎥ × 8/10 × 7/10)</p><p>   (2) 시내 도착도 가격의 적용</p><p>     (가) 자갈 : 868,513,000원(= 23,500원/㎥ × 36,958㎥)</p><p>     (나) 모래 : 1,897,192,000원(= 22,000원/㎥ × 86,236㎥)</p><p>   (3) 선별비용 : 230,991,000원(= 153,994㎥ × 1,500원/㎥)</p><p>   (4) 운반비용 : 862,358,000원{= (36,958㎥ + 86,236㎥) × 7,000원/㎥}</p><p>   (5) 손해액 : 1,672,356,000원{= (868,513,000원 + 1,897,192,000원) - 230,991,000원 - 862,358,000원}</p><p>  마. 피고의 과실상계 등 주장에 관하여</p><p>   (1) 과실상계 주장에 관하여</p><p>  피고는 ‘원고가 이 사건 골재의 소유자에 대한 주장을 번복하고, 이 사건 골재를 장기간 방치한 잘못이 있으므로, 피고의 손해배상액을 산정함에 있어 이를 참작하여야 한다.’라는 취지로 주장한다. </p><p>  그러나 고의에 의한 채무불이행 또는 불법행위로 인한 손해배상액을 산정함에 있어 채권자나 피해자의 과실을 고려할 필요가 없다고 할 것인데 피고는 이 사건 합의 후 일련의 계획하에 이 사건 골재를 이전, 사토처리하여 이 사건 합의를 이행하지 아니함으로써 고의로 이 사건 골재를 멸실한 것으로 보이는 점, 피고가 이 사건 합의에서 자신의 비용으로 이 사건 골재를 이전하기로 하였던 점 등에 비추어 보면, 피고에게 이 사건 골재의 멸실과 관련하여 어떠한 잘못이 있다고 보기도 어렵거니와 설령 일부 잘못이 있다고 하더라도 이를 손해배상액을 산정함에 있어 고려할 필요는 없다고 할 것이다. </p><p>  피고의 위 주장은 이유 없다.</p><p>   (2) 손익상계 주장에 관하여</p><p>  피고는 ‘피고가 부담할 손해배상액에서 이 사건 수용재결상의 손실보상금 상당액은 손익상계되어야 한다.’라는 취지로 주장한다.</p><p>  채무불이행이나 불법행위 등이 채권자 또는 피해자에게 손해를 생기게 하는 동시에 이익을 가져다 준 경우 손해배상책임의 원인이 되는 행위로 인하여 피해자가 새로운 이득을 얻었고, 그 이득과 손해배상책임의 원인인 행위 사이에 상당인과관계가 있다면, 공평의 관념상 그 이익은 손해를 산정함에 있어서 공제되어야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다54706|판결" href="#//">대법원 2009. 12. 10. 선고 2009다54706, 54713 판결</a></span> 등 참조).
+      </p><p>  이 사건으로 돌아와 살피건대, 앞서의 인정사실과 거시증거에 나타나는 다음 사정 즉, 피고는 이 사건 수용재결에 따라 공탁된 이 사건 골재에 대한 이전비 명목으로 그 취득가액 상당인 923,964,000원을 수령할 지위에 있었던 점, 피고가 이 사건 합의에 반하여 이 사건 골재를 멸실시킴으로써 원고는 이를 이전할 필요성이 없게 되었으며 이전비를 지출할 필요성이 없게 된 점, 이 사건 공탁금을 원고의 채권자들이 모두 수령한 점 등을 종합하면, 원고는 피고의 채무불이행 또는 불법행위로 인하여 이전비 상당액을 지출하지 아니하여도 되는 이득을 얻었고, 위 이득과 위 채무불이행 또는 불법행위 사이에는 상당인과관계가 있다고 할 것이므로, 피고가 부담하는 손해배상액에서 위 이전비 상당 923,964,000원을 공제함이 상당하다(설령 위 이전비 상당액을 손익상계 대상이 아니라고 보더라도, 원고는 이 사건 골재를 이전할 필요성이 없게 됨으로써 이전비 상당 금액을 부당이득하고 있다고 할 것이므로, 피고가 원고에게 가지는 부당이득반환채권과 원고가 피고에게 가지는 손해배상채권은 대등액에서 상계될 수 있다).</p><p>  피고의 위 손익상계 주장은 이유 있다.</p><p>   (3) 상계 주장에 관하여</p><p>  피고는 ‘원고가 이 사건 골재의 이전을 지체하여 피고로 하여금 이 사건 사업의 진행을 지연시켜 많은 손해를 입혔다. 따라서 피고가 원고에게 가지는 위 손해배상채권과 원고가 피고에게 가지는 손해배상채권은 상계되어야 한다.’라는 취지로 주장한다.</p><p>  그러나 을 11호증의 2, 을 12호증, 을 14호증의 2의 각 기재만으로는 원고가 이 사건 골재의 이전을 지연함으로써 피고에게 손해를 입혔다는 사실이나 그 손해액을 인정하기에 부족하고 달리 이를 인정할 증거가 없다. 피고의 위 주장은 이유 없다.</p><p>5. 결 론</p><p>  그렇다면 피고는 원고에게 앞서 산정한 손해배상금 1,672,356,000원에서 이 사건 수용재결상의 손실보상금 923,964,000원을 공제한 나머지 748,392,000원(= 1,672,356,000원 - 923,964,000원) 및 이에 대하여 이 사건 골재가 최종 멸실된 2007. 3. 31.부터(원고는 2006. 2. 1.부터의 지연손해금을 구하고 있으나 이 사건 골재의 멸실이 2007. 3.경까지 발생한 사실은 앞서 본 바와 같으므로 원고의 위 부분 주장은 받아 들이지 않는다. 한편 채무불이행으로 인한 손해배상금의 지연손해금 기산일은 채권자의 청구가 있은 날의 다음날이라고 할 것이지만 원고가 예비적으로 불법행위로 인한 손해배상청구를 하고 있고 그 책임이 인정되는데 불법행위로 인한 손해배상금의 지연손해금 기산일은 불법행위가 있은 날이므로 이 사건 골재의 멸실이 있은 2007. 3. 31.부터 지연손해금을 산정한다) 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 당심 판결 선고일인 2010. 10. 22.까지는 민법 소정의 연 5%의, 그 다음날부터 다 갚는 날까지는 소송촉진 등에 관한 특례법 소정의 연 20%의 각 비율에 의한 지연손해금을 지급할 의무가 있으므로, 원고의 청구는 위 인정범위 내에서 이유 있어 이를 인용하고 나머지는 이유 없어 이를 기각할 것이다.</p><p>  그런데 제1심 판결 중 이와 결론을 일부 달리하여 위 인정 범위를 초과하여 지급을 명한 피고 패소부분은 부당하므로 이를 취소하고 그 취소부분에 해당하는 원고의 청구를 기각하며, 원고의 항소 및 피고의 나머지 항소는 이유 없어 이를 각 기각한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   원유석(재판장) 김주식 소병석 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

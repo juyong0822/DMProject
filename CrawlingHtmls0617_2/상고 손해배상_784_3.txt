@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2006다15922 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2062352';
+var contIdEtc = '';
+var saNo = '2006다15922';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20061222' ? 
+			'20061222'.length==4 ? Date.parseExact('20061222','yyyy').toString('yyyy. M. d.') : 
+				'20061222'.length==6 ? Date.parseExact('20061222','yyyyMM').toString('yyyy. M. d.') : 
+					'20061222'.length==8 ? Date.parseExact('20061222','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2006다15922 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2006다15922';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2006다15922</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(14)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(3)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(9)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1967698">대법원 2007. 7. 12. 선고 2006다65620 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061787">대법원 2008. 1. 24. 선고 2005다58823 판결 [공2008상,355]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2203737">대법원 2016. 5. 27. 선고 2015다33489 판결 [공2016하,865]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|577327">인격권 침해의 유형과 사생활의 비밀의 보호영역 김시철 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|756147">사생활의 자유와 비밀에 대한 침해 사봉관 사법발전재단</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|639107">정하명 공무사용 전자기기와 공무원의 사생활보호 최신외국법제정보 2010년 10호 / 한국법제연구원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|702772">지창구 언론중재법 제5조 제2항의 문제점과 그 적용범위 법조  (2013. 8) / 법조협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|756144">최석문 개인정보자기결정권 헌법판례해설 . Ⅰ 헌법판례해설 Ⅰ / 사법발전재단  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|635873">민성철 허위ㆍ과장의 비교광고에 대한 경쟁자의 손해배상청구권의 성립요건에 대한 비교법적 검토 저스티스 123호  / 한국법학원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|585248">성선제 2007년도 국내언론관계판결의 동향 언론중재 28권 1호  / 언론중재위원회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|832954">조웅 명예훼손적 언론보도의 위법성조각 요건 : 대법원 2016. 5. 27. 선고 2015다33489 판결 법과 정의 그리고 사람:. 박병대 대법관 재임기념 문집(2017)   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|690625">정하명 미국 연방법원의 위치정보관련 최근 판결례 분석 IT와 법연구 7집 / IT와 법센터  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577731">김동하 언론피해구제 효과 제고를 위한 관련 제도 고찰 : 인격권 보호의 효과적인 수단으로서의 손해배상제도 : 언론에 의한 인격권 침해에 한하여 . 언론중재 27권 3호  / 언론중재위원회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577666">한위수 명예훼손에 특유한 위법성조각사유에 대한 고찰 사법 창간호  / 사법발전재단  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563531">한국. 대법원 법원행정처 재판실무편람. 제6호:. 언론재판실무편람 언론재판실무편람 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577327">김시철 인격권 침해의 유형과 사생활의 비밀의 보호영역 대법원판례해설 63호 (2007.07) / 법원도서관  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696335">홍진영 개인정보자기결정권과 개인정보처리의 자유 충돌의 사법적 해결 민사판례연구 35권  / 박영사  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636707">권오석 SNS 게시물의 재공표와 명예훼손, 사생활침해 LAW &amp; TECHNOLOGY 제7권 제2호 / 서울대학교 기술과법센터  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622778">김시철 명예훼손ㆍ모욕ㆍ사실왜곡에 의한 인격권 침해의 성립요건 및 공통점과 차이점 대법원판례해설 79호  / 법원도서관  2009 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|94다35718">대법원 1995. 6. 16. 선고 94다35718 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|95다36329">대법원 1996. 10. 11. 선고 95다36329 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다52142">대법원 2006. 3. 23. 선고 2003다52142 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="형법|307|0|null">형법 제307조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="형법|310|0|null">형법 제310조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="헌법|17|0|null">헌법 제17조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="형법|307|0|null">형법 제307조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="형법|310|0|null">형법 제310조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="헌법|17|0|null">헌법 제17조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|94다35718">대법원 1995. 6. 16. 선고 94다35718 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|95다36329">1996. 10. 11. 선고 95다36329 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2005나44451">서울고법 2006. 1. 26. 선고 2005나44451 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2006. 12. 22. 선고 2006다15922 판결</h2><p class="sub_title">[손해배상(기)][공2007.2.1.(267),206]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 명예훼손으로 인한 불법행위의 위법성조각사유인 ‘공공의 이익에 관한 때’의 판단 기준 </p>
+      <p></p>
+      <p>
+        </p><p>[2] 사생활과 관련된 사항의 공개가 사생활의 비밀을 침해하는 것으로서 위법하다고 하기 위한 요건</p>
+      <p></p>
+      <p>
+        </p><p>[3] 재건축을 추진하는 아파트 단지 내 도로의 소유자가 재건축조합에게 이를 고가로 매도하려고 하여 재건축조합 및 조합원들과 이해가 상반된 상황에서, 위 소유자가 사석에서 도로를 고가로 매도하여야 한다는 동석자의 말에 동조한 사실을 재건축조합의 조합장이 재건축조합 소식지 등을 통하여 조합원들에게 알린 것이 위법하지 않다고 본 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 형사상이나 민사상으로 타인의 명예를 훼손하는 경우에도 그것이 진실한 사실로서 오로지 공공의 이익에 관한 때에는 그 행위에 위법성이 없는바, 여기서 ‘오로지 공공의 이익에 관한 때’는 적시된 사실이 객관적으로 볼 때 공공의 이익에 관한 것으로서 행위자도 공공의 이익을 위하여 그 사실을 적시한 것이어야 하며, 이 경우에 적시된 사실이 공공의 이익에 관한 것인지의 여부는 그 적시된 사실의 구체적 내용, 그 사실의 공표가 이루어진 상대방의 범위, 그 표현의 방법 등 그 표현 자체에 관한 제반 사정을 고려함과 동시에 그 표현에 의하여 훼손되거나 훼손될 수 있는 명예의 침해 정도 등을 비교·고려하여 결정하여야 하고, 행위자의 주요한 목적이나 동기가 공공의 이익을 위한 것이라면 부수적으로 다른 사익적 동기가 내포되어 있었다고 하더라도 행위자의 주요한 목적이나 동기가 공공의 이익을 위한 것으로 보아야 한다.</p>
+      <p></p><p>
+        </p><p>[2] 사생활과 관련된 사항의 공개가 사생활의 비밀을 침해하는 것으로서 위법하다고 하기 위하여는 적어도 공표된 사항이 일반인의 감수성을 기준으로 하여 그 개인의 입장에 섰을 때 공개되기를 바라지 않을 것에 해당하고 아울러 일반인에게 아직 알려지지 않은 것으로서 그것이 공개됨으로써 그 개인이 불쾌감이나 불안감을 가질 사항 등에 해당하여야 한다.    </p>
+      <p></p><p>
+        </p><p>[3] 재건축을 추진하는 아파트 단지 내 도로의 소유자가 재건축조합에게 이를 고가로 매도하려고 하여 재건축조합 및 조합원들과 이해가 상반된 상황에서, 위 소유자가 사석에서 도로를 고가로 매도하여야 한다는 동석자의 말에 동조한 사실을 재건축조합의 조합장이 재건축조합 소식지 등을 통하여 조합원들에게 알린 것이 위법하지 않다고 본 사례.    </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">민법 제751조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|307|">형법 제307조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|310|">제310조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">민법 제751조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|17|">헌법 제17조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">민법 제751조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|307|">형법 제307조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|310|">제310조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="헌법|17|">헌법 제17조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다35718|판결" href="#//">대법원 1995. 6. 16. 선고 94다35718 판결</a></span>(공1995하, 2496)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다36329|판결" href="#//">대법원 1996. 10. 11. 선고 95다36329 판결</a></span>(공1996하, 3297)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다52142|판결" href="#//">대법원 2006. 3. 23. 선고 2003다52142 판결</a></span>(공2006상, 713)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고 (소송대리인 변호사 김광로외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2005나44451|판결" href="#//">서울고법 2006. 1. 26. 선고 2005나44451 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>원심판결을 파기하고, 사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>상고이유를 판단한다.</p><p>  1. 원심판결 이유에 의하면 원심은, 수원시 팔달구 인계동 소재 향원아파트재건축조합의 조합장인 피고가 2002. 12. 15. 및 같은 달 16.의 2회에 걸쳐 원고와 관련된 내용이 게재된 ‘재건축주택조합소식’이라는 제목의 유인물을 조합원 약 120세대에게 발송하고 이를 확대·복사하여 조합게시판에 공고한 사실, 그 내용의 요지는 “
+        소외 1이 ‘단지 내 도로를 평당 100만 원씩 해서 14억 원은 받아야 한다.’고 말하자 원고는 ‘당연히 그 정도는 받아야지’라고 동조하였다, 이들은 겉으로는 주민을 위한다고 하면서 속으로는 자기 이익을 챙기기 위해 선량한 주민을 선동하고 있는 것이다, 조합장은 단지 내 도로 문제를 8억 5,000만 원에 해결하겠다고 하였는데, 
+        소외 1과 뜻을 같이하는 몇몇 사람들이 우리 아파트에서 살 자격이 있다고 생각하느냐”는 것이었던 사실을 인정한 다음, 원고와 
+        소외 1이 각각 위와 같은 발언을 한 것은 사실이지만, 위 유인물은 원고를 특정하여 지목하면서 원고가 자신의 경제적 이익을 위하여 조합원들에게 손해를 가하는 행동을 하여 온 사람으로서 위 아파트에 함께 거주할 자격이 없다는 취지로서 원고의 명예를 실추시켰음이 명백하므로 피고는 원고에게 위자료를 지급할 의무가 있다고 판단하는 한편, 위 유인물의 내용은 공공의 이익을 위하여 사실을 적시한 것이어서 위법성이 없다는 피고의 항변에 대하여는, 사인인 원고가 사석에서 동석자의 말에 단지 동조하는 취지의 말을 한 사실을 공개하여 원고의 명예를 훼손한 행위가 공공의 이익을 위한 것으로서 정당한 행위에 해당할 수 없다고 판단하여 이를 배척하였다.
+      </p><p>  2. 그러나 원심의 판단은 다음과 같은 점에서 그대로 수긍하기 어렵다.</p><p>  가. 
+        <span class="accrnt_txt">형사상이나 민사상으로 타인의 명예를 훼손하는 경우에도 그것이 진실한 사실로서 오로지 공공의 이익에 관한 때에는 그 행위에 위법성이 없다고 할 것인데, 여기서 ‘오로지 공공의 이익에 관한 때’라 함은 적시된 사실이 객관적으로 볼 때 공공의 이익에 관한 것으로서 행위자도 공공의 이익을 위하여 그 사실을 적시한 것이어야 하며, 이 경우에 적시된 사실이 공공의 이익에 관한 것인지의 여부는 그 적시된 사실의 구체적 내용, 그 사실의 공표가 이루어진 상대방의 범위, 그 표현의 방법 등 그 표현 자체에 관한 제반 사정을 고려함과 동시에 그 표현에 의하여 훼손되거나 훼손될 수 있는 명예의 침해 정도 등을 비교·고려하여 결정하여야 하고, 행위자의 주요한 목적이나 동기가 공공의 이익을 위한 것이라면 부수적으로 다른 사익적 동기가 내포되어 있었다고 하더라도 행위자의 주요한 목적이나 동기가 공공의 이익을 위한 것으로 보아야 할 것이다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다35718|판결" href="#//">대법원 1995. 6. 16. 선고 94다35718 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다36329|판결" href="#//">1996. 10. 11. 선고 95다36329 판결</a></span> 등 참조).
+      </p><p>  기록에 의하면, 피고는 향원아파트재건축조합의 조합장이고 원고와 
+        소외 1은 그 조합원인 사실, 
+        소외 1은 위 아파트의 단지 내 도로에 해당하는 수원시 팔달구 인계동 865-1 대 4,594㎡를 주식회사 경남주택으로부터 매수하여 2000. 10. 24. 소유권이전등기를 경료한 사실, 재건축조합으로서는 그 사업시행을 위하여 위 토지의 소유권을 취득하여야 할 입장이었는데, 
+        소외 1은 이를 고가로 매도하려고 하여 재건축조합 및 조합원들과 이해가 상반되었던 사실, 그런데 2002. 12. 6. 위 아파트 근처의 식당에서 조합원인 
+        소외 2, 
+        3, 원고, 
+        소외 1 등이 모여 식사를 하는 도중에 원고와 
+        소외 1이 위 유인물에 게재된 것과 같은 내용의 대화를 주고받은 사실, 
+        소외 2는 그 즉시 위 재건축조합의 사무실로 찾아와 조합장인 피고, 부조합장인 
+        소외 4, 이사인 
+        소외 5, 
+        6 등이 함께 있는 자리에서 원고와 
+        소외 1 사이의 위 대화내용을 알려 준 사실, 피고는 그 진행경과 등을 조합원에게 알리겠다는 생각과 목적으로 그 대화내용과 그에 대한 피고의 의견 내지 평가를 위 유인물에 게재하여 조합원에게 배포하고 조합 사무실의 게시판에 게시하기에 이른 사실 등을 인정할 수 있다.
+      </p><p>  이러한 전후사정에 비추어 보면, 위 단지 내 도로의 매수가격이 얼마로 결정되는지 및 그 토지의 소유자인 
+        소외 1이 얼마를 매도가격으로 요구할 것인지 등은 위 재건축조합 및 그 조합원의 이해관계에 직결되는 것으로서 그 조합원들에 대한 관계에서는 공적인 관심사항에 속하는 것이라고 할 것이고, 그 적시된 사실의 구체적 내용, 그 사실의 공표가 이루어진 상대방의 범위, 그 표현의 방법, 그 표현에 의하여 훼손되거나 훼손될 수 있는 원고의 명예의 침해 정도 등을 비교·고려하여 볼 때, 피고가 원고와 
+        소외 1 사이의 대화내용을 위 유인물 등에 게재한 것은 진실한 사실로서 오로지 공공의 이익에 관한 것이라고 할 것이어서 그 행위에 위법성이 없는 것으로 보아야 할 것이다.
+      </p><p>  나. 나아가, 원심의 판단을 피고가 사인인 원고의 사석에서의 발언을 공개한 것 자체를 원고에 대한 불법행위로 파악한 것으로 본다고 하더라도, 
+        <span class="accrnt_txt">사생활과 관련된 사항의 공개가 사생활의 비밀을 침해하는 것으로서 위법하다고 하기 위하여는, 적어도 그 공표된 사항이 일반인의 감수성을 기준으로 하여 그 개인의 입장에 섰을 때 공개되기를 바라지 않을 것에 해당한다고 인정되고 아울러 일반인에게 아직 알려지지 않은 것으로서 그것이 공개됨으로써 그 개인이 불쾌감이나 불안감을 가질 사항 등에 해당하여야 할 것인데,</span> 앞에서 인정한 사실관계에 비추어 볼 때 피고가 유인물에 기재한 원고의 발언은 이미 다수의 조합원들에게 공개되었던 것이어서 사생활의 비밀이 보호되어야 하는 영역에 속하는 것이라고 할 수 없다.
+      </p><p>  다. 그럼에도 불구하고, 원심은 피고의 행위가 위법한 것이거나 사생활의 비밀을 침해하는 것임을 전제로 하여 피고에게 불법행위로 인한 손해배상책임을 인정하고 말았으니, 원심판결에는 명예훼손 또는 사생활의 비밀 침해로 인한 손해배상책임에 관한 법리를 오해하였거나 심리를 다하지 아니하고 사실을 오인하여 판결에 영향을 미친 위법이 있다고 할 것이다.</p><p>  3. 그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박시환(재판장) 김용담 박일환 김능환(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

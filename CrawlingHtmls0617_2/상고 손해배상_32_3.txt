@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2005다65579 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2061750';
+var contIdEtc = '';
+var saNo = '2005다65579';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20080118' ? 
+			'20080118'.length==4 ? Date.parseExact('20080118','yyyy').toString('yyyy. M. d.') : 
+				'20080118'.length==6 ? Date.parseExact('20080118','yyyyMM').toString('yyyy. M. d.') : 
+					'20080118'.length==8 ? Date.parseExact('20080118','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2005다65579 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2005다65579';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2005다65579</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(10)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(17)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(5)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(14)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(5)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061791">대법원 2008. 2. 14. 선고 2006다82601 판결 [공2008상,370]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2063097">대법원 2008. 5. 29. 선고 2004다33469 판결 [공2008하,1109]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1971877">대법원 2008. 6. 26. 선고 2007다43436 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1970625">대법원 2009. 1. 30. 선고 2007다65245 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1971433">대법원 2009. 10. 15. 선고 2008다88832 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061156">대법원 2010. 5. 27. 선고 2010다7577 판결 [공2010하,1401]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2063709">대법원 2010. 11. 25. 선고 2007다10627 판결 [공2011상,1]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1968705">대법원 2011. 5. 26. 선고 2007다83991 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061984">대법원 2011. 11. 10. 선고 2011다54686 판결 [공2011하,2549]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2063183">대법원 2012. 4. 13. 선고 2009다33754 판결 [공2012상,759]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|603787">분식회계로 인한 이사의 민사책임 김성태 博英社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|611174">회사 임직원의 분식회계가담과 부실대출에 대한 손해배상책임 채동헌 韓國上場會社協議會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|658473">민정석 부진정연대채무자 중 1인이 한 상계 내지 상계계약의 효력 정의로운 사법 : 이용훈대법원장재임기념   / 사법발전재단  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|652347">배호근 건물신축시 일조방해로 인한 손해배상청구권의 소멸시효 기산점 재판실무연구 4권  / 수원지방법원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631748">김화진 은행의 지배구조와 은행 이사의 법률적 책임 : 상법 제401조의 해석을 중심으로 법학 51권 4호  / 서울대학교 법학연구소  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633854">임태혁 지명채권의 양도와 영업양도 사이의 법률관계 청연논총 (제8집)손용근 사법연수원장 퇴임기념 / 사법연수원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633430">민정석 기업개선작업절차에서의 출자전환의 법적성격 및 부진정연대채무자 중 1인이 한 상계 내지 상계계약의 효력 사법 15호 / 사법발전재단  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|625476">박영규 '부진정 연대채무' 이론 비판 민사법학 48호  / 한국사법행정학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|784591">최경진 새로 도입된 법정손해배상에 관한 비판적 검토 : 개인정보보호 관련법에서의 법정손해배상을 중심으로 성균관법학 제27권 제2호 / 성균관대학교 비교법연구소  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|736980">김순석 이사의 제3자에 대한 손해배상책임과 주주의 간접손해 상사법연구 33권 1호 / 한국상사법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|631353">김민기 부진정연대채무에 있어서의 구상권 및 변제자대위 대법원판례해설 83호  / 법원도서관  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|828787">천경훈 회사에서의 이익충돌 저스티스 통권 제159호  / 한국법학원  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|709498">전형배 파견근로에서 사용사업주의 안전보호의무와 민사책임 노동법연구 제35호 / 서울대학교 노동법연구회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633972">송주희 부진정연대채무자 중 1인이 한 상계의 효력 재판실무연구 2010 / 서울남부지방법원  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|657284">나태영 부진정연대채무와 상계 등의 효력 한양법학 37집  / 한양법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|603787">김성태 분식회계로 인한 이사의 민사책임 민사판례연구 31권  / 박영사  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|661985">이재찬 불진정연대채무자 중 1인이 한 상계의 다른 채무자에 대한 효력 민사판례연구 34권  / 박영사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|710896">김성식 부진정연대채무의 일부변제 등에 관한 법리의 검토 : 대법원 2012. 2. 9. 선고 2009다72094 판결 등 판례에 나타난 소액채무 또는 부대채무의 일부변제로 인한 효과를 중심으로 . 저스티스 통권 제138호 / 한국법학원  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|617454">김택주 회사법판례의 변화와 전망 상사판례연구 23집 1권  / 한국상사판례학회  2010 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1][5]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다28082">대법원 2007. 1. 11. 선고 2005다28082 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다52259">대법원 2007. 6. 28. 선고 2006다52259 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다63354">대법원 2006. 12. 22. 선고 2004다63354 판결</a></p><p class="areaChjPanre"><font>[5]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다30735">대법원 1999. 9. 3. 선고 98다30735 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다22249">대법원 2002. 6. 28. 선고 2000다22249 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="상법|401|0|null">상법 제401조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="상법|414|0|null">상법 제414조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="상법|414|0|null">상법 제414조 제3항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="상법|401|0|null">상법 제401조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="상법|414|0|null">상법 제414조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="상법|414|0|null">상법 제414조 제3항 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="상법|401|0|null">상법 제401조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="상법|414|0|null">상법 제414조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="상법|414|0|null">상법 제414조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률|4|0|20011231">금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률(구) 제4조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="상법|401|0|null">상법 제401조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="민법|162|0|null">민법 제162조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="민법|766|0|null">민법 제766조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[5]</font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="민법|766|0|null">민법 제766조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다28082">대법원 2007. 1. 11. 선고 2005다28082 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006다52259">대법원 2007. 6. 28. 선고 2006다52259 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다63354">대법원 2006. 12. 22. 선고 2004다63354 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다30735">대법원 1999. 9. 3. 선고 98다30735 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다28082">대법원 2007. 1. 11. 선고 2005다28082 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률|4|0|20011231">금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률(구) 제4조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|401|0|null">상법 제401조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|766|0|null">민법 제766조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|162|0|null">민법 제162조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2005나1096">서울고법 2005. 10. 14. 선고 2005나1096 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2008. 1. 18. 선고 2005다65579 판결</h2><p class="sub_title">[손해배상(기)][공2008상,225]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 기업체 임직원 등의 대규모 분식회계 가담 행위 등과 그 기업체에 대한 금융기관의 여신 제공 사이에 인과관계가 인정되는지 여부(적극)   </p>
+      <p></p>
+      <p>
+        </p><p>[2] 금융기관이 회사 임직원의 대규모 분식회계로 그 회사의 재무구조를 잘못 파악하고 대출을 해 준 경우, 회사의 대출금채무와 회사 임직원의 손해배상채무의 관계(=부진정연대) 및 위 대출금채권의 양도로 손해배상채권도 수반하여 양도되는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[3] 금융기관이 회사 임직원의 대규모 분식회계로 회사의 재무구조를 잘못 파악하고 대출을 해준 후 그 부실채권을 한국자산관리공사에게 양도하여 대가를 지급받은 경우, 부실대출로 인한 금융기관의 손해액(=양도대가에 의하여 회수되지 아니한 대출금채권액) 및 그 후 위 공사가 대출금채권을 행사하거나 담보권을 실행하여 만족을 얻은 경우, 그 대등액 상당을 회사 임직원의 손해배상액 산정시 공제하여야 하는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[4] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|">상법 제401조</a></span>에 의한 이사의 제3자에 대한 손해배상채무의 소멸시효기간(=10년) 
+        </p>
+      <p></p>
+      <p>
+        </p><p>[5] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항</a></span>에 정한 ‘손해 및 가해자를 안 날’의 의미 및 그 판단 기준
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 기업체의 재무제표 및 이에 대한 외부감사인의 회계감사 결과를 기재한 감사보고서는 대상 기업체의 정확한 재무상태를 드러내는 가장 객관적인 자료로서 증권거래소 등을 통하여 일반에 공시되고 기업체의 신용도와 상환능력 등의 기초자료로서 그 기업체가 발행하는 회사채나 기업어음의 신용등급평가와 금융기관의 여신제공 여부 결정에 중요한 판단 근거가 된다. 따라서 기업체의 임직원 등이 대규모의 분식회계에 가담하거나 기업체의 감사가 대규모로 분식된 재무제표의 감사와 관련하여 중요한 감사절차를 수행하지 아니하거나 소홀히 한 잘못이 있는 경우에는, 그로 말미암아 금융기관이 기업체에게 여신을 제공하기에 이르렀다고 봄이 상당하고, 위와 같은 재무상태가 제대로 밝혀진 상황에서라면 금융기관이 여신을 제공함에 있어서 고려할 요소로서 ‘재무제표에 나타난 기업체의 재무상태’ 외의 다른 요소들, 즉 상환자원 및 사업계획의 타당성, 채권의 보전방법, 거래실적 및 전망, 기업체의 수익성, 사업성과, 기업분석 및 시장조사 결과 등도 모두 극히 저조한 평가를 받을 수밖에 없으므로, 이러한 ‘재무제표에 나타난 기업체의 재무상태’ 외의 요소들이 함께 고려된다는 사정을 들어 여신 제공 여부의 판단이 달라졌으리라고 볼 수 없다.  </p>
+      <p></p><p>
+        </p><p>[2] 금융기관이 회사 임직원의 대규모 분식회계로 인하여 회사의 재무구조를 잘못 파악하고 회사에 대출을 해 준 경우, 회사의 금융기관에 대한 대출금채무와 회사 임직원의 분식회계 행위로 인한 금융기관에 대한 손해배상채무는 서로 동일한 경제적 목적을 가진 채무로서 서로 중첩되는 부분에 관하여는 일방의 채무가 변제 등으로 소멸하면 타방의 채무도 소멸하는 이른바 부진정연대의 관계에 있다. 그러나 금융기관의 회사에 대한 대출금채권과 회사 임직원에 대한 손해배상채권은 어디까지나 법률적으로 발생원인을 달리하는 별개의 채권으로서 그 성질상 회사 임직원에 대한 손해배상채권이 회사에 대한 대출금채권의 처분에 당연히 종속된다고 볼 수 없을 뿐만 아니라, 특히 금융기관이 부실채권을 신속하게 정리하기 위하여 타인에게 대출금채권을 양도하고 받은 대금이 대출금채권액에 미달하는 경우에는 미회수된 채권 상당액을 회사 임직원에 대한 손해배상청구를 통하여 회수할 실익이 있는 점 등에 비추어 볼 때, 금융기관이 회사에 대한 대출금채권을 타인에게 양도하였다는 사정만으로 회사 임직원에 대한 손해배상채권까지 당연히 함께 수반되어 양도된 것이라고 단정할 수는 없다.</p>
+      <p></p><p>
+        </p><p>[3] 금융기관이 회사 임직원의 대규모 분식회계로 인하여 회사의 재무구조를 잘못 파악하고 회사에 대출을 해 준 후 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률|4|">구 금융기관 부실자산 등의 효율적 처리 및 한국자산관리공사의 설립에 관한 법률(2001. 12. 31. 법률 제6561호로 개정되기 전의 것) 제4조</a></span>에서 정한 바에 따라 부실채권을 신속하게 정리하기 위하여 회사에 대한 대출금채권을 한국자산관리공사에게 양도하고 그 대출금채권의 실질적 가액에 관한 정산을 거쳐 대가를 지급받은 경우, 부실대출로 인한 금융기관의 손해는 그 양도대가에 의하여 회수되지 아니하는 대출금채권액으로 확정되고, 그 후 한국자산관리공사가 그 대출금채권을 행사하거나 그에 관한 담보권을 실행하여 어떠한 만족을 얻었다 하더라도 이미 대출금채권을 양도한 금융기관의 회사 임직원에 대한 손해배상채권이 그 대등액 상당만큼 실질적인 만족을 얻어 당연히 소멸하게 된다고 볼 수 없으므로 그 대등액 상당을 회사 임직원이 배상할 손해액을 산정함에 있어서 당연히 공제할 수는 없고, 다만 대출금채권을 양수한 한국자산관리공사가 대출금채권을 행사하거나 담보권을 실행하여 회수한 금액이 대출금채권의 양도대금을 상당히 초과하여 그 대가 산정의 적정성이 문제될 수 있는 등의 특별한 사정이 인정되는 경우에 한하여 회사 임직원의 손해배상책임을 제한하는 참작사유가 될 수 있을 뿐이다.
+        </p>
+      <p></p><p>
+        </p><p>[4] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|">상법 제401조</a></span>에 의한 이사의 제3자에 대한 손해배상책임이 제3자를 보호하기 위하여 상법이 인정하는 특수한 책임이라는 점을 감안할 때, 일반 불법행위책임의 단기소멸시효를 규정한 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항</a></span>은 적용될 여지가 없고, 달리 별도로 시효를 정한 규정이 없는 이상 일반 채권으로서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|162|">민법 제162조 제1항</a></span>에 따라 그 소멸시효기간은 10년이라고 봄이 상당하다. 
+        </p>
+      <p></p><p>
+        </p><p>[5] 불법행위로 인한 손해배상청구권의 단기소멸시효의 기산점이 되는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항</a></span>의 ‘손해 및 가해자를 안 날’은 손해의 발생, 위법한 가해행위의 존재, 가해행위와 손해의 발생과의 사이에 상당인과관계가 있다는 사실 등 불법행위의 요건사실에 관하여 현실적이고도 구체적으로 인식하였을 때를 의미하고, 피해자 등이 언제 불법행위의 요건사실을 현실적이고도 구체적으로 인식한 것으로 볼 것인지는 개별 사건의 여러 객관적 사정을 참작하고 손해배상청구가 사실상 가능하게 된 상황을 고려하여 합리적으로 인정하여야 한다. 
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|">상법 제401조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제414조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제3항</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|">상법 제401조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제414조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제3항</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|">상법 제401조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제414조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|414|">제3항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률|4|">구 금융기관 부실자산 등의 효율적 처리 및 한국자산관리공사의 설립에 관한 법률(2001. 12. 31. 법률 제6561호로 개정되기 전의 것) 제4조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|">상법 제401조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|162|">민법 제162조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">제766조 제1항</a></span> [5]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1][5]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다28082|판결" href="#//">대법원 2007. 1. 11. 선고 2005다28082 판결</a></span>(공2007상, 270)<br />[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다52259|판결" href="#//">대법원 2007. 6. 28. 선고 2006다52259 판결</a></span>(공2007하, 1154)<br />[4]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다63354|판결" href="#//">대법원 2006. 12. 22. 선고 2004다63354 판결</a></span>(공2007상, 199)<br />[5]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다30735|판결" href="#//">대법원 1999. 9. 3. 선고 98다30735 판결</a></span><br />         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다22249|판결" href="#//">대법원 2002. 6. 28. 선고 2000다22249 판결</a></span>(공2002하, 1777)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        주식회사 우리은행 (소송대리인 법무법인 푸른 담당변호사 김상훈)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고 1외 4인 (소송대리인 변호사 이임수외 6인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2005나1096|판결" href="#//">서울고법 2005. 10. 14. 선고 2005나1096 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>상고를 모두 기각한다.  상고비용은 피고들이 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>상고이유(상고이유서 제출기간 후에 제출된 상고이유보충서는 상고이유를 보충하는 범위 내에서)를 판단한다.</p><p>  1. 상고이유 제1점에 대하여</p><p>  가. 
+        <span class="accrnt_txt">기업체의 재무제표 및 이에 대한 외부감사인의 회계감사 결과를 기재한 감사보고서는 대상 기업체의 정확한 재무상태를 드러내는 가장 객관적인 자료로서 증권거래소 등을 통하여 일반에 공시되고 기업체의 신용도와 상환능력 등의 기초자료로서 그 기업체가 발행하는 회사채나 기업어음의 신용등급평가와 금융기관의 여신제공 여부 결정에 중요한 판단 근거가 된다. 따라서 기업체의 임직원 등이 대규모의 분식회계에 가담하거나 기업체의 감사가 대규모로 분식된 재무제표의 감사와 관련하여 중요한 감사절차를 수행하지 아니하거나 소홀히 한 잘못이 있는 경우에는, 그로 말미암아 금융기관이 기업체에게 여신을 제공하기에 이르렀다고 봄이 상당하고, 위와 같은 재무상태가 제대로 밝혀진 상황에서라면 금융기관이 여신을 제공함에 있어서 고려할 요소로서 ‘재무제표에 나타난 기업체의 재무상태’ 외의 다른 요소들, 즉 상환자원 및 사업계획의 타당성, 채권의 보전방법, 거래실적 및 전망, 기업체의 수익성, 사업성과, 기업분석 및 시장조사 결과 등도 모두 극히 저조한 평가를 받을 수밖에 없으므로, 이러한 ‘재무제표에 나타난 기업체의 재무상태’ 외의 요소들이 함께 고려된다는 사정을 들어 여신 제공 여부의 판단이 달라졌으리라고 볼 수 없다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다28082|판결" href="#//">대법원 2007. 1. 11. 선고 2005다28082 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006다52259|판결" href="#//">대법원 2007. 6. 28. 선고 2006다52259 판결</a></span> 등 참조).
+      </p><p>  앞에서 본 법리와 기록에 비추어 살펴보면, 원심이 제1심판결을 인용하여 그 판시와 같은 사실을 인정한 다음, 대우자동차 주식회사(이하 ‘대우자동차’라 한다)의 제26기 재무제표에 대한 분식회계로 인하여 원고와 신용평가기관의 대출 등을 위한 평가가 크게 영향을 받았고 이 평가에 기초하여 이 사건 대출이 이루어졌으며, 원고가 대우자동차의 재무상태 이외에 다른 여러 요소들을 고려하여 대출을 결정하였다 하더라도 이 사건 대출이 분식회계의 사실을 제대로 모르는 상태에서 이루어진 것인 이상 분식회계와 대출 사이에 인과관계가 인정된다고 판단한 것은 정당하고, 거기에 피고들이 상고이유에서 주장하는 바와 같은 채증법칙 위반과 상당인과관계에 관한 법리오해 등의 위법이 없다.</p><p>  나. 기록에 비추어 살펴보면, 원심이 제1심판결을 인용하여 그 판시와 같은 사실을 인정한 다음, 원고의 이 사건 대출은 대우자동차가 기존 대출을 상환한 탓에 부족해진 자금을 보충하기 위하여 이루어진 것이라 하더라도, 원고가 대우자동차로부터 1998. 8. 10. 보증어음대출금 200억 원, 같은 해 8. 13. 보증어음대출금 200억 원을 각 상환받은 다음, 같은 해 8. 25. 대우자동차에게 신탁어음대출 형식으로 400억 원을 대출해 준 것이어서, 이를 현실적인 자금의 수수 없이 형식적으로만 신규대출을 하여 기존 채무를 변제하는 대환이라고 볼 수는 없고, 더구나 이 사건 분식회계가 이 사건 대출 당시 원고의 대우자동차에 대한 새로운 신용조사 결과에 크게 영향을 미친 이상 이 사건 분식회계와 이 사건 대출 사이의 인과관계를 부정할 수는 없다고 판단한 것은 정당하고, 거기에 피고들이 상고이유에서 주장하는 바와 같은 채증법칙 위반과 상당인과관계에 관한 법리오해 등의 위법이 없다.</p><p>  다. 기록에 비추어 살펴보면, 원심이 그 채용 증거를 종합하여 대우자동차 채권금융기관협의회가 1999. 11. 25. 대우자동차에 대한 기존 채권에 관하여 원금상환청구를 2004. 12. 31.까지로 유예하고, 이율, 이자지급시기 등도 일부 완화 내지 연기하기로 결의하였다가 2000. 1. 26. 대우자동차와 사이에 위 결의와 같은 내용의 기업개선작업 약정을 체결한 사실, 원고가 2000. 12. 29. 대우자동차에 발송한 채권양도통지서의 양도채권명세에 이 사건 대출로 인한 당초 대출금 400억 원의 대출일이 2000. 1. 25. 만기일이 2004. 12. 31.로 기재되어 있는 사실 등을 인정한 다음, 그러한 사정만으로는 이 사건 대출에 따른 채무가 2000. 1. 25.자 대출로 전환됨으로써 소멸되었다거나 이 사건 대출을 새로운 대출로 변경하는 갱개계약이 성립되었다고 보기 어렵고, 오히려 위 기업개선작업 약정은 이 사건 대출의 상환기간을 2004. 12. 31.까지로 유예한 것에 불과하다고 봄이 상당하다고 판단하여 이 사건 대출이 2000. 1. 25.자 대출로 전환되어 소멸되었다는 피고들의 주장을 배척한 것은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 채증법칙 위반, 갱개계약 및 상당인과관계에 관한 법리오해 등의 위법이 없다.</p><p>  2. 상고이유 제2점에 대하여</p><p>  가. 
+        <span class="accrnt_txt">금융기관이 회사 임직원의 대규모 분식회계로 인하여 회사의 재무구조를 잘못 파악하고 회사에 대출을 해 준 경우, 회사의 금융기관에 대한 대출금채무와 회사 임직원의 분식회계 행위로 인한 금융기관에 대한 손해배상채무는 서로 동일한 경제적 목적을 가진 채무로서 서로 중첩되는 부분에 관하여는 일방의 채무가 변제 등으로 소멸하면 타방의 채무도 소멸하는 이른바 부진정연대의 관계에 있다. 그러나 금융기관의 회사에 대한 대출금채권과 회사 임직원에 대한 손해배상채권은 어디까지나 법률적으로 발생원인을 달리하는 별개의 채권으로서 그 성질상 회사 임직원에 대한 손해배상채권이 회사에 대한 대출금채권의 처분에 당연히 종속된다고 볼 수 없을 뿐만 아니라, 특히 금융기관이 부실채권을 신속하게 정리하기 위하여 타인에게 대출금채권을 양도하고 받은 대금이 대출금채권액에 미달하는 경우에는 미회수된 채권 상당액을 회사 임직원에 대한 손해배상청구를 통하여 회수할 실익이 있는 점 등에 비추어 볼 때, 금융기관이 회사에 대한 대출금채권을 타인에게 양도하였다는 사정만으로 회사 임직원에 대한 손해배상채권까지 당연히 함께 수반되어 양도된 것이라고 단정할 수는 없다.</span>
+      </p><p>  위 법리와 기록에 비추어 살펴보면, 원심이 제1심판결을 인용하여, 원고가 2000. 12. 29. 한국자산관리공사에게 이 사건 대출금채권 400억 원을 포함한 원고의 대우자동차에 대한 3,837억 원의 부실채권을 968억 9,400만 원(이 사건 대출금채권의 양도가액은 95억 9,560만 원)에 양도한 사실을 인정한 다음, 그와 같은 사정만으로는 이 사건 대출금채권의 양도 당시 피고들에 대한 이 사건 손해배상청구권도 함께 양도된 것으로 보기 어렵다고 보아, 원고가 이 사건 대출금채권의 양도로 피고들에 대한 이 사건 손해배상청구권을 상실하였다는 피고들의 항변을 배척한 것은 정당하고, 거기에 피고들이 상고이유에서 주장하는 바와 같은 채증법칙 위반과 채권양도 및 부진정연대채무에 관한 법리오해 등의 위법이 없다.</p><p>  나. 
+        <span class="accrnt_txt">금융기관이 회사 임직원의 대규모 분식회계로 인하여 회사의 재무구조를 잘못 파악하고 회사에 대출을 해 준 후 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률|4|" style="text-decoration:underline">구 금융기관 부실자산 등의 효율적 처리 및 한국자산관리공사의 설립에 관한 법률(2001. 12. 31. 법률 제6561호로 개정되기 전의 것) 제4조</a></span>에서 정한 바에 따라 부실채권을 신속하게 정리하기 위하여 회사에 대한 대출금채권을 한국자산관리공사에게 양도하고 그 대출금채권의 실질적 가액에 관한 정산을 거쳐 대가를 지급받은 경우에는, 부실 대출로 인한 금융기관의 손해는 그 양도대가에 의하여 회수되지 아니하는 대출금채권액으로 확정된다 할 것이고, 그 이후 한국자산관리공사가 그 대출금채권을 행사하거나 그에 관한 담보권을 실행하여 어떠한 만족을 얻었다 하더라도 이미 대출금채권을 양도한 금융기관의 회사 임직원에 대한 손해배상채권이 그 대등액 상당만큼 실질적인 만족을 얻어 당연히 소멸하게 된다고 볼 수 없으므로 그 대등액 상당을 회사 임직원이 배상할 손해액을 산정함에 있어서 당연히 공제할 수는 없고, 다만 대출금채권을 양수한 한국자산관리공사가 대출금채권을 행사하거나 담보권을 실행하여 회수한 금액이 대출금채권의 양도대금을 상당히 초과하여 그 대가 산정의 적정성이 문제될 수 있는 등의 특별한 사정이 인정되는 경우에 한하여 회사 임직원의 손해배상책임을 제한하는 참작사유가 될 수 있을 뿐이다.
+        </span>
+      </p><p>  위 법리와 기록에 비추어 살펴보면, 원고가 2000. 12. 29. 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="금융기관부실자산등의효율적처리및한국자산관리공사의설립에관한법률|4|">구 금융기관 부실자산 등의 효율적 처리 및 한국자산관리공사의 설립에 관한 법률 제4조</a></span>에서 정한 바에 따라 부실채권을 신속하게 정리하기 위하여 한국자산관리공사에게 이 사건 대출금채권 400억 원을 양도대금 95억 9,560만 원에 양도하였음을 알 수 있는 이 사건에서, 원심이 이 사건 대출금채권의 양도대금은 한국자산관리공사가 금융기관이 보유하는 부실자산의 정리촉진 등을 효율적으로 지원하기 위한 공익적 목적에서 금융기관의 부실채권 등을 적정하게 평가하여 인수한 것으로서, 이 사건 대출금채권이 양도된 후 대우자동차에 대한 회사정리절차에서 회사정리계획안이 인가되고 그에 따라 양수인인 한국자산관리공사에 대한 변제가 이루어지고 있다 하더라도 그러한 사정만으로 원고가 입은 손해의 존부 및 범위에 당연히 영향을 미친다고 볼 수는 없다고 판단하여 피고들의 손해배상채무 소멸 내지 공제 항변을 배척한 것은 정당하고, 거기에 피고들이 상고이유에서 주장하는 바와 같은 부진정연대채무에 관한 법리오해 등의 위법이 없다.
+      </p><p>  3. 상고이유 제3점에 대하여</p><p>  가. 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|" style="text-decoration:underline">상법 제401조</a></span>에 기한 이사의 제3자에 대한 손해배상책임이 제3자를 보호하기 위하여 상법이 인정하는 특수한 책임이라는 점을 감안할 때, 일반 불법행위책임의 단기소멸시효를 규정한 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|" style="text-decoration:underline">민법 제766조 제1항</a></span>은 적용될 여지가 없고, 달리 별도로 시효를 정한 규정이 없는 이상 일반 채권으로서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|162|" style="text-decoration:underline">민법 제162조 제1항</a></span>에 따라 그 소멸시효기간은 10년이라고 봄이 상당하다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다63354|판결" href="#//">대법원 2006. 12. 22. 선고 2004다63354 판결</a></span> 참조).
+      </p><p>  위 법리와 기록에 비추어 살펴보면, 원심이 같은 취지에서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|401|">상법 제401조</a></span>에 기한 이사의 제3자에 대한 손해배상책임은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항</a></span>의 단기소멸시효가 적용되어야 한다는 
+        피고 2, 
+        3, 
+        5의 주장을 배척한 것은 정당하고, 거기에 위 피고들이 상고이유에서 주장하는 바와 같은 소멸시효기간에 대한 법리오해의 위법이 없다.
+      </p><p>  나. 
+        <span class="accrnt_txt">불법행위로 인한 손해배상청구권의 단기소멸시효의 기산점이 되는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|" style="text-decoration:underline">민법 제766조 제1항</a></span> 소정의 ‘손해 및 가해자를 안 날’이라 함은 손해의 발생, 위법한 가해행위의 존재, 가해행위와 손해의 발생과의 사이에 상당인과관계가 있다는 사실 등 불법행위의 요건사실에 대하여 현실적이고도 구체적으로 인식하였을 때를 의미한다고 할 것이고, 피해자 등이 언제 불법행위의 요건사실을 현실적이고도 구체적으로 인식한 것으로 볼 것인지는 개별 사건의 여러 객관적 사정을 참작하고 손해배상청구가 사실상 가능하게 된 상황을 고려하여 합리적으로 인정하여야 한다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다30735|판결" href="#//">대법원 1999. 9. 3. 선고 98다30735 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다28082|판결" href="#//">대법원 2007. 1. 11. 선고 2005다28082 판결</a></span> 등 참조).
+      </p><p>  위 법리와 기록에 비추어 살펴보면, 원심이 제1심판결을 인용하여 그 판시와 같은 사실을 인정한 다음, 금융감독위원회와 금융감독원이 1999. 11. 4. 대우자동차에 대한 실사 결과 대우자동차의 1999. 8. 말 현재 자산이 12조 9,359억 원, 부채가 18조 6,383억 원으로 자기자본이 완전 잠식된 것으로 나타나자 대우 기업개선계획 관련 금융시장안정 종합대책을 확정·발표하는 한편 대우그룹 워크아웃 추진현황 및 향후 계획을 수립하였고, 다음날인 1999. 11. 5. 각 일반신문에 위 내용이 보도되었다 하더라도, 원고로서는 그와 같은 사실만으로는 위 분식회계에 구체적으로 누가 관여한 것인지, 즉 이 사건 불법행위자가 누구인지까지 알았다고 보기 어렵고, 달리 이 사건 소 제기일임이 기록상 명백한 2002. 12. 7.로부터 역산하여 3년이 되는 1999. 12. 7. 이전에 
+        피고 1, 
+        4가 대우자동차의 제26기 재무제표에 대한 분식회계에 가담한 사실을 원고가 알았다고 볼 자료가 없다고 판단하여 위 피고들의 소멸시효 항변을 배척한 것은 정당하고, 거기에 위 피고들이 상고이유에서 주장하는 바와 같은 채증법칙 소멸시효의 기산점에 관한 법리오해 등의 위법이 없다.
+      </p><p>  4. 
+        피고 5의 사실오인 주장에 대하여
+      </p><p>
+        피고 5가 대우자동차의 제26기 재무제표에 대한 분식회계에 가담하지 아니하였다는 주장은 상고이유서 제출기간 도과 후에 제출한 상고이유보충서에서 비로소 제기한 새로운 주장이므로 적법한 상고이유가 될 수 없다.
+      </p><p>  5. 그러므로 상고를 모두 기각하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박시환(재판장) 김용담 박일환 김능환(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

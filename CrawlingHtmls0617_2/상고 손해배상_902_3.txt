@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2016다211156 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2217133';
+var contIdEtc = '';
+var saNo = '2016다211156';
+var sngoNm = '선고';
+var saNm = '건물인도';
+try {
+	var sngoDay=('20160829' ? 
+			'20160829'.length==4 ? Date.parseExact('20160829','yyyy').toString('yyyy. M. d.') : 
+				'20160829'.length==6 ? Date.parseExact('20160829','yyyyMM').toString('yyyy. M. d.') : 
+					'20160829'.length==8 ? Date.parseExact('20160829','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2016다211156 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2016다211156';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2016다211156</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|492|0|null">민법 제492조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|760|0|null">민법 제760조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|760|0|null">민법 제760조 제3항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2013고합1026">2013. 9. 27. 서울중앙지방법원(2013고합1026호)</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2015나23668">서울동부지법 2016. 1. 27. 선고 2015나23668 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2016. 8. 29. 선고 2016다211156 판결</h2><p class="sub_title">[건물인도][공2016하,1498]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>갑 주식회사가 아파트 등을 일괄 임차하여 전대하는 영업을 하는 을 주식회사에 아파트와 오피스텔 수십 채를 임대하였는데, 을 회사가 대표이사 병의 자금 횡령으로 자력이 부족하여 차임을 지속적으로 연체하자 갑 회사가 전차인들에게서 전대차보증금 및 차임을 직접 지급받아 을 회사의 연체차임 등에 우선 변제충당하기로 약정하고, 을 회사가 임대차기간이 약 6개월 남은 시점에 정과 계약기간을 1년으로 정하여 전대차계약을 체결하자 ‘임대차기간 종료 시 전대차는 종료되고, 전차인은 전대차 잔여기간에 대하여 임대인과 새로이 임대차계약을 체결한 다음 임대차보증금을 지급하여야 한다’는 취지의 전대차 승인서를 송부하여 동의한 사안에서, 병은 정에게서 전대차보증금을 편취하였고 갑 회사는 불법행위를 방조하였으므로, 갑 회사는 정에 대하여 방조로 인한 공동불법행위책임을 부담하고, 정은 불법행위에 기한 손해배상채권을 자동채권으로 갑 회사의 임료 상당의 부당이득반환채권과 상계할 수 있다고 한 사례</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>갑 주식회사가 아파트 등을 일괄 임차하여 전대하는 영업을 하는 을 주식회사에 아파트와 오피스텔 수십 채를 임대하였는데, 을 회사가 대표이사 병의 자금 횡령으로 자력이 부족하여 차임을 지속적으로 연체하자 갑 회사가 전차인들에게서 전대차보증금 및 차임을 직접 지급받아 을 회사의 연체차임 등에 우선 변제충당하기로 약정하고, 을 회사가 임대차기간이 약 6개월 남은 시점에 정과 계약기간을 1년으로 정하여 전대차계약을 체결하자 ‘임대차기간 종료 시 전대차는 종료되고, 전차인은 전대차 잔여기간에 대하여 임대인과 새로이 임대차계약을 체결한 다음 임대차보증금을 지급하여야 한다’는 취지의 전대차 승인서를 송부하여 동의한 사안에서, 갑 회사는 전대차계약에 대한 동의 당시 임대차계약을 갱신할 의사가 없었음이 명백한 점, 그에 따라 전대차계약은 임대차기간의 만료로 종료될 수밖에 없고 을 회사가 체결한 다른 전대차계약도 마찬가지인 점, 을 회사가 체결한 전대차계약이 일시에 모두 종료될 경우 병의 횡령으로 을 회사의 자력이 부족하여 정에게 전대차보증금을 반환할 능력이 없는 점, 갑 회사는 이러한 사정을 알았거나 알 수 있었는데도 을 회사가 연체한 차임을 전차인들이 제공하는 보증금과 차임 등으로 변제받아 자신의 손해를 최소화하기 위하여 위 전대차계약을 승인한 점 등을 종합하면, 병은 전대차 종료 시 전대차보증금을 반환해 줄 의사나 능력이 없는데도 전대차계약을 체결하여 정에게서 전대차보증금을 편취하였고, 갑 회사는 연체차임의 회수를 위하여 위와 같은 행위를 함으로써 불법행위를 방조하였으므로, 갑 회사는 정에 대하여 방조로 인한 공동불법행위책임을 부담하고, 정은 불법행위에 기한 손해배상채권을 자동채권으로 갑 회사의 임료 상당의 부당이득반환채권과 상계할 수 있다고 한 사례.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p> <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|492|">민법 제492조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">제760조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">제3항</a></span></p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 상고인】
+주식회사 대우건설 (소송대리인 변호사 김철완)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 피상고인】
+피고
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2015나23668|판결" href="#//">서울동부지법 2016. 1. 27. 선고 2015나23668 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.  상고비용은 원고가 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 상고이유 제2점에 관하여</p><p>  가. 원심판결 이유 및 원심이 일부 인용한 제1심판결 이유에 의하면 다음의 사실들을 알 수 있다.</p><p>  (1) 원고는 2009. 5. 13. 파이부투산업 주식회사(이하 ‘파이부투산업’이라고 한다)에 이 사건 집합건물 중 아파트 52세대, 오피스텔 13세대를 보증금 5억 원, 월 차임 5,800만 원, 임대차기간 2009. 5. 13.부터 2012. 5. 12.까지로 정하여 임대하였다가, 2012. 5. 11. 위 임대차 목적물 중 아파트 51세대, 오피스텔 11세대에 관한 위 임대차계약을 갱신하면서 보증금 15억 원, 월 차임 4,000만 원, 임대차기간 2012. 5. 13.부터 2014. 5. 12.까지로 정하였다.</p><p>  (2) 원고는 위 2012. 5. 11.자 임대차계약 체결 당시 파이부투산업의 경제력 부족으로 전대차보증금의 반환이 불가능할 때 발생할 수 있는 원고와 전차인 간의 법적 분쟁으로 인한 손해 및 원고의 소유권 행사 차질에 따른 손실 등을 방지하기 위한 조치가 필요하다는 인식에 따라 ‘전대차계약관련 특약사항’(제4조)을 두어 파이부투산업이 납부한 보증금과 전차인들에게서 수령한 전대차보증금의 반환을 담보하기 위한 조치(파이부투산업으로 하여금 11억 원을 보증금 관리통장에 보관하게 하고, 보증금 관리통장 및 차임 관리통장에 예금 근질권설정계약을 체결함)를 하고, 보증금반환의무가 발생하는 전세계약을 지양하고 월세계약을 유도하였다.</p><p>  (3) 소외인은 2013년 초경부터 서울중앙지방검찰청에서 2009. 5.경부터 2011. 6. 15.까지 자신이 대표이사로 있던 파이부투산업의 전대차보증금 등의 자금 약 12억 6,000만 원을 임의로 사용한 것과, 2010. 7.경부터 2012. 7. 10.까지 이오개발 주식회사(원고로부터 수십 채의 오피스텔을 일괄 임차하여 이를 전대하는 영업을 하던 회사로서 소외인이 대표이사이다)의 자금 약 11억 1,400만 원을 임의로 사용한 것에 대하여 수사를 받기 시작하였고, 원고의 직원도 위 사건의 참고인 등으로 조사를 받았으며, 이후 소외인은 <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2013고합1026|판결" href="#//">2013. 9. 27. 서울중앙지방법원(2013고합1026호)</a></span>에 특정경제범죄가중처벌등에관한법률위반(횡령)으로 기소되어 위 법원으로부터 징역 2년에 집행유예 3년의 유죄판결을 받아 확정되었다.</p><p>  (4) 소외인의 자금 횡령으로 자력이 부족해진 파이부투산업이 차임을 지속적으로 연체하자 원고와 파이부투산업은 2013. 7. 2.경 위 2012. 5. 11.자 임대차계약을 변경하여 보증금 9억 원, 월 차임 4,000만 원, 임대차기간 2012. 5. 13.부터 2014. 5. 14.까지로 정하고, 파이부투산업의 전대차계약의 원활한 관리를 위하여 원고가 전차인들로부터 전대차보증금 및 차임을 원고 명의의 산업은행 계좌로 직접 지급받아 파이부투산업의 연체차임 등에 우선 변제충당하고, 그 나머지를 파이부투산업의 필요경비에 지출하기로 약정하였다(이하 ‘이 사건 임대차계약’이라고 한다).</p><p>  (5) 파이부투산업은 2013. 11. 8. 피고에게 이 사건 집합건물 중 제102동 제1504호를 전대차보증금 3,000만 원, 월 차임 190만 원, 전대차기간 2013. 11. 26.부터 2014. 11. 25.까지로 정하여 전대하였다(이하 ‘이 사건 전대차계약’이라고 한다).</p><p>  (6) 이 사건 임대차계약서에는 파이부투산업의 전대차에 관하여 원고의 서면 동의가 필요하다는 내용이 규정되어 있고, 이 사건 전대차계약서는 전대차기간은 이 사건 임대차계약에서 정한 임대차기간 이내로 한다는 내용이 규정되어 있다.</p><p>  (7) 원고는 2013. 11. 29. 파이부투산업에 ‘임대차기간 종료 시 전대차는 종료되고, 전차인은 전대차 잔여기간에 대하여 임대인과 새로이 임대차계약을 체결한 다음 임대차보증금을 지불해야 한다’는 취지의 전대차 승인서를 송부하였다.</p><p>  나. 이러한 사실관계 및 그로부터 알 수 있는 다음과 같은 사정, 즉 ① 원고는 이 사건 전대차계약에 대한 동의 당시 이 사건 임대차계약을 갱신할 의사가 없었음이 명백한 것으로 보이는 점, ② 그에 따라 이 사건 전대차계약은 2014. 5. 14. 이 사건 임대차계약기간이 만료됨으로써 종료될 수밖에 없고, 이는 파이부투산업이 체결한 다른 전대차계약에 관하여도 마찬가지인 점, ③ 파이부투산업이 체결한 전대차계약이 일시에 모두 종료될 경우 소외인의 횡령으로 파이부투산업의 자력이 부족하여 파이부투산업이 피고에게 전대차보증금을 반환할 능력이 없다는 점, ④ 원고는 이러한 사정을 알았거나 알 수 있었음에도 파이부투산업이 연체한 차임을 전차인들이 제공하는 보증금과 차임 등으로 변제받아 자신의 손해를 최소화하기 위하여 이 사건 전대차계약을 승인한 것으로 보이는 점 등을 종합하여 관련 법리와 기록에 비추어 살펴보면, 소외인은 피고를 비롯한 전차인들과 전대차계약을 체결하더라도 전대차 종료 시에 그들에 대한 전대차보증금을 제대로 반환해 줄 의사나 능력이 없음에도 불구하고 피고와 이 사건 전대차계약을 체결하여 피고로부터 전대차보증금을 편취하였고, 원고는 연체차임의 회수를 위해 만연히 위와 같은 행위를 함으로써 소외인의 위와 같은 불법행위를 방조하였다고 할 것이므로, 원고는 피고에 대하여 방조로 인한 공동불법행위책임을 부담하고, 피고는 원고에 대한 위와 같은 불법행위에 기한 손해배상채권을 자동채권으로 하여 원고의 임료 상당의 부당이득반환채권과 상계할 수 있다.</p><p>  같은 취지의 원심판단은 정당한 것으로 수긍이 가고, 거기에 상고이유 주장과 같이 방조로 인한 공동불법행위책임에 관한 법리를 오해한 잘못이 없다.</p><p>  2. 상고이유 제1점에 관하여</p><p>  원심판결 이유에 의하면, 원심은, 이 사건 전대차계약서 제9조에 “전대차계약 및 표시부동산과 관련한 모든 민·형사상의 문제는 피고와 파이부투산업에게 귀속되고 원고는 전대차계약과 관련한 어떠한 책임도 부담하지 아니한다.”라고 기재되어 있는데, 이러한 면책특약은 이 사건 전대차계약 체결로 인한 계약상의 책임 외에 파이부투산업의 불법행위를 방조한 원고의 불법행위책임에까지 적용되지 않는다고 판단하였다.</p><p>  원심판결 이유를 관련 법리와 기록에 비추어 살펴보면, 원심의 위와 같은 판단은 정당한 것으로 수긍이 가고, 거기에 면책특약의 의사해석에 관한 법리를 오해한 잘못이 없다.</p><p>  3. 결론</p><p>  그러므로 상고를 기각하고, 상고비용은 패소자가 부담하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김용덕(재판장) 이인복 김소영 이기택(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

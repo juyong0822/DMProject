@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011다66610 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063855';
+var contIdEtc = '';
+var saNo = '2011다66610';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20120510' ? 
+			'20120510'.length==4 ? Date.parseExact('20120510','yyyy').toString('yyyy. M. d.') : 
+				'20120510'.length==6 ? Date.parseExact('20120510','yyyyMM').toString('yyyy. M. d.') : 
+					'20120510'.length==8 ? Date.parseExact('20120510','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011다66610 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011다66610';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011다66610</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(26)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548408">한국. 대법원 법원행정처 재판실무편람. 제4호:. 건설재판실무편람 건설재판실무편람 집필위원회  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|20050526">집합건물의 소유 및 관리에 관한 법률(구) 제9조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|671|0|null">민법 제671조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|20050526">집합건물의 소유 및 관리에 관한 법률(구) 제9조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|671|0|null">민법 제671조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="헌법재판소|2005헌가16">헌법재판소 2008. 7. 31. 선고 2005헌가16 결정</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|20050526">집합건물의 소유 및 관리에 관한 법률(구) 제9조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|667|0|null">민법 제667조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|671|0|null">민법 제671조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|671|0|null">민법 제671조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|6|0|20050526">집합건물의 소유 및 관리에 관한 법률 부칙 제6조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|46|0|20050526">주택법 제46조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|46|0|null">주택법 제46조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|null">집합건물의 소유 및 관리에 관한 법률(구) 제9조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택법|3|0|null">주택법 부칙 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|null">집합건물의 소유 및 관리에 관한 법률 제9조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|9|0|null">집합건물의 소유 및 관리에 관한 법률 제9조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2010나97558">서울고법 2011. 6. 16. 선고 2010나97558 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 5. 10. 선고 2011다66610 판결</h2><p class="sub_title">[손해배상(기)][공2012상,992]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 2005. 5. 26. 전에 사용검사 또는 사용승인을 받은 후 임대에서 분양으로 전환된 임대아파트의 경우에도 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물의 소유 및 관리에 관한 법률 제9조 제1항</a></span> 및 이에 의하여 준용되는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조 제1항</a></span> 단서가 적용되는지 여부(적극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 임대 후 분양전환된 집합건물의 경우 하자담보책임의 제척기간 기산점(=임대에 의한 집합건물 인도시)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물의 소유 및 관리에 관한 법률(2005. 5. 26. 법률 제7502호로 개정되기 전의 것, 이하 ‘구 집합건물법’이라 한다) 제9조 제1항</a></span>은, 집합건물을 건축하여 분양한 자에게 견고한 건물을 짓도록 유도하고 부실하게 건축된 집합건물의 소유자를 두텁게 보호하기 위하여, 민법상 수급인의 담보책임에 관한 규정을 준용하도록 함으로써 담보책임의 내용을 명확히 하는 한편 이를 강행규정화한 것인데, 집합건물을 건축하여 바로 분양한 경우뿐 아니라 집합건물인 임대아파트를 건축하여 임대하였다가 분양전환을 한 경우에도 집합건물의 소유자를 보호할 필요성이 있음은 마찬가지다. 그리고 위 규정에 의한 하자담보추급권은 현재의 집합건물 소유자에게 귀속되고, 임대아파트의 분양전환가격을 결정할 때에 아파트의 노후 정도가 평가되었다고 하더라도 부실시공으로 인한 아파트의 하자까지 모두 반영되어 가격이 결정되었다고 단정할 수는 없으며, 분양전환되기 전의 임차기간 동안 입주자들이 임대차계약에 기해 하자보수를 요구할 수 있다고는 하지만 임차인의 지위에서 인정되는 하자보수청구권과 분양을 받은 소유자의 지위에서 인정되는 하자담보추급권은 법적 성질 및 기능이 동일하다고 보기는 어렵다. 따라서 이러한 여러 사정 등을 함께 종합하여 보면, 2005. 5. 26. 전에 사용검사 또는 사용승인을 받은 후 임대에서 분양으로 전환된 임대아파트의 경우에도 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물법 제9조 제1항</a></span> 및 이에 의하여 준용되는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조 제1항</a></span> 단서가 적용된다고 보아야 한다. 
+        </p>
+      <p></p><p>
+        </p><p>[2] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물의 소유 및 관리에 관한 법률(2005. 5. 26. 법률 제7502호로 개정되기 전의 것, 이하 ‘구 집합건물법’이라 한다) 제9조</a></span>가 준용하는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조 제1항</a></span> 단서는 하자의 종류나 하자의 발생 시점을 고려하지 않고 일률적으로 하자담보책임의 제척기간을 ‘인도’ 후 10년으로 정하고 있는데, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물법 제9조</a></span>와 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span> 내지 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">제671조</a></span>의 각 규정 내용에 비추어 위 ‘인도’는 인도의 원인관계를 불문하고 ‘건축 후 최초 인도’를 의미한다고 해석함이 타당하므로, 임대 후 분양전환된 집합건물의 경우에도 분양전환 시점이 아닌 임대에 의하여 집합건물을 인도받은 시점부터 하자담보책임의 제척기간이 진행한다고 할 것이다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물의 소유 및 관리에 관한 법률(2005. 5. 26. 법률 제7502호로 개정되기 전의 것) 제9조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물의 소유 및 관리에 관한 법률(2005. 5. 26. 법률 제7502호로 개정되기 전의 것) 제9조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        호성주공 1, 2차아파트 입주자대표회의 (소송대리인 법무법인 새빌 담당변호사 이주영 외 5인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        한국토지주택공사 (소송대리인 법무법인(유한) 한결한울 담당변호사 김호철 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고보조참가인】
+      
+        코오롱건설 주식회사
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2010나97558|판결" href="#//">서울고법 2011. 6. 16. 선고 2010나97558 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  1. 상고이유를 판단한다.</p><p>  가. 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물의 소유 및 관리에 관한 법률(2005. 5. 26. 법률 제7502호로 개정되기 전의 것, 이하 ‘구 집합건물법’이라 한다) 제9조 제1항</a></span>은 집합건물을 건축하여 분양한 자의 담보책임에 관하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">제671조</a></span>의 규정을 준용한다고 규정하였고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조 제1항</a></span> 단서는 석조, 석회조, 연와조, 금속 기타 이와 유사한 재료로 조성된 건물의 수급인은 목적물의 하자에 관하여 인도 후 10년간 담보책임을 진다고 규정하고 있다. 
+      </p><p>  한편 
+        2005. 5. 26. 법률 제7502호로 개정된 집합건물법은 1984. 4. 10. 법률 제3725호로 개정된 집합건물법의 부칙 제6조를 개정하여 공동주택의 담보책임 및 하자보수에 관하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">2005. 5. 26. 법률 제7520호로 개정되어 같은 날 시행된 주택법 제46조</a></span>의 규정에 따르도록 하였고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">위 주택법 제46조 제1항</a></span>은 건축물 분양에 따른 담보책임에 관하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">위 집합건물법 제9조</a></span>의 규정을 배제하고 별도로 담보책임 및 하자보수에 관한 규정을 두고 있다. 그렇지만 
+        위 주택법 부칙 제3조(2005. 5. 26. 개정시의 규정이 
+        <span id="link"><a name="linkContPanre" title="새창" type="헌법재판소|2005헌가16|결정" href="#//">헌법재판소 2008. 7. 31. 선고 2005헌가16 결정</a></span>에 의하여 위헌으로 선언되어 효력을 상실함에 따라 2010. 4. 5. 법률 제10237호로 개정되었다)는 위 주택법 시행 전에 사용검사 또는 사용승인을 받은 공동주택에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택법|46|">제46조</a></span>의 개정에 불구하고 종전의 규정에 따르도록 규정하였으므로, 2005. 5. 26. 전에 사용검사 또는 사용승인을 받은 공동주택에 관하여는 여전히 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물법 제9조 제1항</a></span>과 그에 의하여 준용되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|">민법 제667조</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">제671조</a></span>에 따라 하자담보책임의 내용 및 범위가 결정된다.
+      </p><p>  따라서 2005. 5. 26. 전에 사용검사 또는 사용승인을 받은 아파트와 같은 콘크리트 구조물에 대해서는 앞서 본 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조 제1항</a></span> 단서가 적용되고, 그 하자담보책임은 인도 후 10년이라 할 것이다.
+      </p><p>  나. 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|" style="text-decoration:underline">구 집합건물법 제9조 제1항</a></span>은, 집합건물을 건축하여 분양한 자로 하여금 견고한 건물을 짓도록 유도하고 부실하게 건축된 집합건물의 소유자를 두텁게 보호하기 위하여, 민법상 수급인의 담보책임에 관한 규정을 준용하도록 함으로써 그 담보책임의 내용을 명확히 하는 한편 이를 강행규정화한 것인데, 집합건물을 건축하여 바로 분양한 경우뿐 아니라 집합건물인 임대아파트를 건축하여 임대하였다가 분양전환을 한 경우에도 집합건물의 소유자를 보호할 필요성이 있음은 마찬가지다.
+        </span>
+      </p><p>
+        <span class="accrnt_txt">그리고 위 규정에 의한 하자담보추급권은 현재의 집합건물 소유자에게 귀속되고, 임대아파트의 분양전환가격을 결정할 때에 아파트의 노후 정도가 평가되었다고 하더라도 부실시공으로 인한 아파트의 하자까지 모두 반영되어 그 가격이 결정되었다고 단정할 수는 없으며, 분양전환되기 전의 임차기간 동안 입주자들이 임대차계약에 기해 하자보수를 요구할 수 있다고는 하지만 임차인의 지위에서 인정되는 하자보수청구권과 분양을 받은 소유자의 지위에서 인정되는 하자담보추급권은 그 법적 성질 및 기능이 동일하다고 보기는 어렵다.</span>
+      </p><p>
+        <span class="accrnt_txt">따라서 이러한 여러 사정 등을 함께 종합하여 보면, 2005. 5. 26. 전에 사용검사 또는 사용승인을 받은 후 임대에서 분양으로 전환된 임대아파트의 경우에도 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|" style="text-decoration:underline">구 집합건물법 제9조 제1항</a></span> 및 이에 의하여 준용되는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|" style="text-decoration:underline">민법 제671조 제1항</a></span> 단서가 적용된다고 봄이 상당하다.
+        </span>
+      </p><p>  다. 원심은, 피고가 이 사건 아파트를 신축하여 1997. 6. 30. 사용검사를 받아 그 무렵 장기전세주택으로 임대하였다가 2002. 9. 1. 분양전환을 한 사실을 인정한 다음, 이 사건 아파트에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">집합건물법 제9조</a></span> 및 이에 의하여 준용되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조 제1항</a></span> 단서가 적용되어 이에 따라 이 사건 아파트에 관한 하자담보책임의 내용 및 범위가 결정된다고 판단하였다. 
+      </p><p>  원심의 이러한 판단은 앞서 본 법리에 따른 것으로서 정당하고, 거기에 상고이유로 주장하는 바와 같이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물법 제9조</a></span>의 하자담보책임에 관한 법리를 오해한 위법이 없다. 
+      </p><p>  2. 다만 이 사건 아파트에 적용되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|">민법 제671조 제1항</a></span> 단서에서 정한 10년의 하자담보책임기간은 제척기간이므로, 직권으로 원고가 그 제척기간을 준수하였는지 살펴본다. 
+      </p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|" style="text-decoration:underline">구 집합건물법 제9조</a></span>가 준용하는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|" style="text-decoration:underline">민법 제671조 제1항</a></span> 단서는 하자의 종류나 하자의 발생 시점을 고려하지 않고 일률적으로 하자담보책임의 제척기간을 ‘인도’ 후 10년으로 정하고 있는데, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|" style="text-decoration:underline">구 집합건물법 제9조</a></span>와 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|667|" style="text-decoration:underline">민법 제667조</a></span> 내지 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|671|" style="text-decoration:underline">제671조</a></span>의 각 규정 내용에 비추어 위 ‘인도’는 ‘인도’의 원인관계를 불문하고 ‘건축 후 최초 인도’를 의미한다고 해석함이 타당하므로, 이 사건 아파트와 같이 임대 후 분양전환된 집합건물의 경우에도 분양전환 시점이 아닌 임대에 의하여 아파트를 인도받은 시점부터 하자담보책임의 제척기간이 진행한다고 할 것이다.
+        </span>
+      </p><p>  기록에 의하면, 이 사건 아파트의 사용검사일인 1997. 6. 30. 무렵에 임차인들에게 이 사건 아파트가 인도되었음은 당사자 사이에 다툼이 없으며, 그로부터 10년이 경과한 2008. 8. 12.경, 2009. 1. 20.경 및 2010. 6. 7.경에야 이 사건 아파트를 분양받은 일부 구분소유자들로부터 피고에게 하자보수에 갈음한 손해배상청구권의 양도통지가 이루어졌고 원고는 2008. 8. 21. 이 사건 소송을 제기한 사실을 알 수 있다. 따라서 원고가 위 구분소유자들로부터 손해배상청구권을 양수한 후 이 사건 소송을 제기하거나 소제기 후 이루어진 채권양수를 주장하여 권리를 행사한 시기는 모두 위 인도일부터 10년이 지났음이 명백하므로, 달리 위 구분소유자들이 2007. 6. 30.경보다 전에 피고에게 하자담보추급권을 행사하였다고 인정할만한 사정이 인정되지 않는다면, 원고가 위 구분소유자들로부터 양수한 하자보수에 갈음한 손해배상청구권은 제척기간이 도과되었다고 보아야 할 것이다.</p><p>  그럼에도 이와 달리 원심은 분양전환된 임대아파트의 경우에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|9|">구 집합건물법 제9조</a></span>에서 정한 하자담보책임은 분양전환으로 인하여 수분양자가 아파트를 인도받은 때부터 10년간 존속한다는 전제 아래, 이 사건 아파트의 분양전환이 이루어진 2002. 9. 1.경부터 10년이 지나기 전에 이 사건 소가 제기되었다는 이유로 제척기간이 도과되지 않았다고 판단하였으므로, 원심판결에는 임대 후 분양전환된 집합건물에 관한 하자담보책임의 제척기간에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 있다.
+      </p><p>  3. 그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   양창수(재판장) 전수안 이상훈 김용덕(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

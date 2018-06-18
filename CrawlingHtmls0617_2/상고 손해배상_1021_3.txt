@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 92도147 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2088065';
+var contIdEtc = '';
+var saNo = '92도147';
+var sngoNm = '선고';
+var saNm = '특정경제범죄가중처벌등에관한법률위반(업무상횡령),특정범죄가중처벌등에관한법률위반『(조세포탈), 일부인정된죄명:조세범처벌법위반, 방위세법위반』,조세범처벌법위반';
+try {
+	var sngoDay=('19920310' ? 
+			'19920310'.length==4 ? Date.parseExact('19920310','yyyy').toString('yyyy. M. d.') : 
+				'19920310'.length==6 ? Date.parseExact('19920310','yyyyMM').toString('yyyy. M. d.') : 
+					'19920310'.length==8 ? Date.parseExact('19920310','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 92도147 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '92도147';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />92도147</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(5)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(2)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2062738">대법원 2011. 3. 10. 선고 2008도6335 판결 [공2011상,765]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|549750">권순익 조세범처벌법 제9조 제1항에 규정된 '사기 기타 부정한 행위'의 의미 대법원판례해설 56호 (2005.12) / 법원도서관  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|652355">이진석 사기죄와 배임(또는 횡령)죄의 양립 가능성에 관한 검토 재판실무연구 4권  / 수원지방법원  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|471429">서명수 법인의 비자금과 횡령죄 형사재판의 제문제  . 제3권 (2000.11) / 박영사  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|812971">고홍석 과세대상의 미신고나 과소신고와 아울러 수입이나 매출 등을 기재하는 장부를 작성하지 않거나 비치하지 않는 행위 등이 덧붙여진 경우, 구 국세기본법의 '사기 그 밖의 부정한 행위'에 해당 여부 올바른 재판 따뜻한 재판:. 이인복 대법관 퇴임기념 논문집   / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581882">김종민 조세포탈범의 형사처벌과 관련한 제문제 사법논집  . 제45집 45집 / 법원도서관  2007 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|82누518">대법원 1984.6.26. 선고 82누518 판결(공1984,1353)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="조세범처벌법|9|0|null">조세범처벌법 제9조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="법인세법|9|0|null">법인세법 제9조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="법인세법시행령|12|0|null">법인세법시행령 제12조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="형법|356|0|null">형법 제356조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="형법|355|0|null">형법 제355조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|82누518">1984.6.26. 선고 82누518 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대법원|90도1955">대법원 1990.10.16. 선고 90도1955 판결</a></p><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|90노3746">서울고등법원 1991.12.20. 선고 90노3746 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1992. 3. 10. 선고 92도147 판결</h2><p class="sub_title">[특정경제범죄가중처벌등에관한법률위반(업무상횡령),특정범죄가중처벌등에관한법률위반『(조세포탈), 일부인정된죄명:조세범처벌법위반, 방위세법위반』,조세범처벌법위반][공1992.5.1.(919),1345]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 회사의 대표자가 회사자금을 인출하여 횡령함에 있어 경비지출을 장부상 과다 계상하고, 이를 토대로 조세를 납부한 경우 조세포탈행위가 되는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>나. 위 “가”항의 경우 조세포탈행위를 횡령의 불가벌적 사후행위로 볼 수 있는지 여부(소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 법인 대표자가 회사자금을 횡령하였다면 회사는 그에 상당하는 손해배상청구권 내지 부당이득반환청구권이 있는 것이고 이는 곧 회사의 익금으로 보아야 하므로 회사 대표자가 회사자금을 인출하여 횡령함에 있어 경비지출을 과다계상하여 장부에 기장하고 나아가 이를 토대로 법인세 등의 조세를 납부한 경우 국가의 조세수입의 감소를 초래하여 조세를 포탈하였다고 할 것이다.</p>
+      <p></p><p>
+        </p><p>나. 위 “가”항의 경우 위와 같은 조세포탈행위는 횡령범행과는 전혀 다른 새로운 법익을 침해하는 행위로서 이를 횡령의 불가벌적 사후행위라고 볼 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p> 가.나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="조세범처벌법|9|">조세범처벌법 제9조 제1항</a></span> 가.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|9|">법인세법 제9조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행령|12|">같은법시행령 제12조</a></span> 나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|356|">형법 제356조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="형법|355|">제355조 제1항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">가.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|82누518|판결" href="#//">대법원 1984.6.26. 선고 82누518 판결(공1984,1353)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+          피고인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【변 호 인】
+      
+          변호사 심훈종 외 3인
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【환송판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|90도1955|판결" href="#//">대법원 1990.10.16. 선고 90도1955 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|90노3746|판결" href="#//">서울고등법원 1991.12.20. 선고 90노3746 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  피고인 변호인들의 상고이유를 본다.</p><p>  (1) 조세회피행위를 조세포탈로 잘못 해석하였다는 점에 대하여,</p><p> 기록에 살펴보면 원심이
+         공소외 1 주식회사
+         및
+         공소외 2 주식회사
+        는 강관가공물량 또는 운송물량 등을 실제물량보다 늘리는 등의 방법으로 강관외주가공비 또는 운송비를 허위로 과다계상하여 세금계산서를 작성 교부받는 일방 회계장부를 정리하고 나아가 위 각 회사 모두 법인세 및 방위세를 납부함에 있어 위와 같이 과다계상된 손금(경비지출액)을 토대로 산출된 세액만을 납부함으로써 법인세 및 방위세를 포탈하고 또
+         공소외 2 주식회사
+         의 경우 부가가치세를 신고납부함에 있어 위와 같이 과다계상된 매입세액을 공제받음으로써 부가가치세를 포탈한 것으로 인정되고 위 강관외주가공비 및 운송비가 당사자 사이의 진실한 의사로 실제와 부합되게 정하여진 것으로는 볼 수 없다 하여 사법상 유효한 행위를 수단으로 조세부담을 줄인 조세회피행위에 불과하다는 변호인들의 주장을 배척한 것은 수긍이 된다. 논지는 강관 가공물량, 운송물량을 실제물량보다 늘렸다고 표현한 부분을 문제 삼고 있으나 이는 강관외주가공비 또는 운송비를 과다계상한 행위를 하기에 이른 방법의 하나를 표현한 것에 불과하고 또 기록에 의하면 그러한 방법도 이 사건 강관외주가공비 또는 운송비의 과다계상행위의 방법의 하나로 동원되었다고 볼 여지가 없는 것도 아니다. 원심판결에 소론과 같은 증거에 의하지 아니하고 사실을 인정한 위법이나 공소제기 되지 아니한 사실을 유죄로 인정한 위법 또는 조세포탈의 법리해석을 그르친 위법이 있다고 할 수 없다.
+      </p><p>  (2) 부가가치세포탈에 관한 법리오해 및 증거의 취사를 그르친 위법이 있다는 점에 대하여,</p><p> 원심판결 이유에 의하면 원심은 그 채택증거에 의하여 그 판시와 같은 사실을 인정한 다음
+         공소외 1 주식회사
+         의 경우 그 대표이사인 피고인으로서는 공소외 이덕영이 경영하는 덕우상사가 자신의 부가가치세를 신고 납부함에 있어 위와 같이 강관외주가공비가 과다계상된 세금계산서의 기재대로 매출세액을 신고납부할 것이고 그것을 납부한 후에도 과다계상분에 대한 매출세액을 환급받는 행위는 하지 아니할 것으로 믿고 있었음이 분명하여 조세포탈의 범의를 인정하기 어려우나
+         공소외 2 주식회사
+         의 경우 그 대표이사인 환송 전 공동피고인
+         및 위 회사의 감사인 피고인으로서는 거래 상대방인 각 운송업체들이 각자 자신들의 부가가치세를 신고 납부함에 있어 위와 같이 운송비가 과다계상된 세금계산서의 기재대로 매출세액을 신고 납부하고 그것을 납부한 후에도 다시 환급받는 행위를 하지 아니할 것으로 믿고 있었다고 인정하기에는 부족하고 오히려 각 운송업체들이 과다계상분에 대한 매출세액을 신고 납부하지 아니하거나 일단 납부하였다가 다시 환급받을 수도 있다는 점에 대하여 적어도 미필적으로라도 인식하여 조세포탈의 범의가 있었던 것으로 인정된다고 판시하여 변호인들의 주장을 배척하였는 바 이 부분 원심판결 이유를 기록과 대조하여 살펴보면, 원심의 사실인정과 판단은 수긍이 되고 거기에 소론과 같은 채증법칙을 위배한 위법이나 부가가치세의 법리를 오해한 위법이 있다고 할 수 없다.
+      </p><p>  (3) 횡령행위와 조세포탈행위가 양립될 수 없다는 점에 대하여,</p><p> 	원심판결 이유에 의하면 원심은 회사법인의 회계원칙상 임직원 등이 회사자산을 횡령한 경우 그 횡령액은 곧 당해 사업년도의 손금으로 계상된다고 하여도 반면에 권리확정주의의 원칙상 횡령자에 대한 법인의 손해배상청구권이 법인의 익금을 구성하고 또 이 사건에서와 같이 그 횡령자가 법인의 대표자이거나 또는 법인의 대표자와 공모·공동한 자인 경우에는 그 횡령범행이 객관적으로 드러나 장부상 횡령으로 인한 손해배상청구권이 회사의 익금으로 계상되지 아니하였어도 법인의 익금이 발생한 것으로 보아야 할 것이므로 결국 
+        <span class="accrnt_txt">회사대표자가 회사자금을 인출하여 횡령함에 있어 경비지출을 과다계상하여 장부에 기장하고 나아가 이를 토대로 법인세 등의 조세를 납부한 경우 국가의 조세수입의 감소를 초래하여 조세를 포탈하였다고 할 것이고 위와 같은 조세포탈행위는 횡령범행과는 전혀 다른 새로운 법익을 침해하는 행위로서 이를 횡령의 불가벌적 사후행위라고는 볼 수 없으며</span> 한편 피고인의 범행은 강관판매대금을 판시 비자금구좌에 입금받는 등으로 판매대금에 대한 영득의사를 실현한 대금횡령행위일 뿐 강관 자체의 횡령으로는 볼 수 없다고 하여 변호인들의 주장을 배척하였다.
+      </p><p>
+        <span class="accrnt_txt">법인의 대표자가 위와 같이 금원을 횡령하였다면 결국 회사는 그에 상당하는 손해배상청구권 내지 부당이득반환청구권이 있는 것이고 이것이 곧 회사의 익금이라고 보아야 할 것인바</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|82누518|판결" href="#//">1984.6.26. 선고 82누518 판결</a></span> 참조) 같은 취지에서 한 원심의 이 부분 판단도 정당하고 거기에 소론과 같은 법리오해의 위법이 있다고 할 수 없다. 상고논지는 원심의 적법한 판단을 그와는 다른 견해로 공격하는 것에 불과하여 받아들일 수 없는 것이다.
+      </p><p>  (4) 공소제기된 횡령금액 전부를 유죄로 인정한 것은 잘못이라는 점에 대하여,</p><p> 기록을 살펴보면 피고인이
+         공소외 1 주식회사
+         의 대표이사로 있으면서 동 회사의 강관판매대금이나 공사하청대금 등을 빼돌려 자신의 개인비자금을 조성하여 횡령하였다는 원심의 이 부분 사실인정도 그대로 수긍이 되고 사실관계가 위와 같다면 횡령금액 중 회사를 위하여 일부 소비한 부분이 있다고 하여도 이 부분 금원에 대하여 횡령죄의 죄책을 면할 수는 없다고 할 것이다. 이 부분 금원을 특정하여 이를 횡령금에서 공제하지 아니하였다 하여 원심판결에 심리미진의 위법이 있다는 소론 주장은 반대의 견해에서 원심판결을 공격하는 것에 불과하여 받아들일 수 없다.
+      </p><p>  (5) 상고논지는 어느 것이나 이유 없으므로 피고인의 상고를 기각하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이재성(재판장) 이회창 배만운 김석수 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

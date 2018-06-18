@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2013다211865 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2139335';
+var contIdEtc = '';
+var saNo = '2013다211865';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20140123' ? 
+			'20140123'.length==4 ? Date.parseExact('20140123','yyyy').toString('yyyy. M. d.') : 
+				'20140123'.length==6 ? Date.parseExact('20140123','yyyyMM').toString('yyyy. M. d.') : 
+					'20140123'.length==8 ? Date.parseExact('20140123','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2013다211865 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2013다211865';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2013다211865</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|759596">김용섭 2014년 행정법 중요 판례 인권과 정의 제448호 / 대한변호사협회  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="국가배상법|5|0|null">국가배상법 제5조 제1항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="국가배상법|5|0|null">국가배상법 제5조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다54004">대법원 2000. 2. 25. 선고 99다54004 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다88903">대법원 2008. 9. 25. 선고 2007다88903 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가배상법|5|0|null">국가배상법 제5조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2013나2010077">서울고법 2013. 8. 29. 선고 2013나2010077 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2014. 1. 23. 선고 2013다211865 판결</h2><p class="sub_title">[손해배상(기)][공2014상,483]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] 자연영조물인 하천의 관리주체가 익사사고를 방지하기 위하여 부담하는 방호조치의무의 정도</p>
+<p></p>
+<p></p><p>[2] 수련회에 참석한 미성년자 갑이 하천을 가로질러 수심이 깊은 맞은 편 바위  위에서 다이빙을 하며 놀다가 익사하자, 갑의 유족들이 하천 관리주체인 지방자치단체를 상대로 손해배상을 구한 사안에서, 지방자치단체의 손해배상책임을 인정한 원심판결에 법리오해의 위법이 있다고 한 사례</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 자연영조물로서 하천은 이를 설치할 것인지 여부에 대한 선택의 여지가 없고, 위험을 내포한 상태에서 자연적으로 존재하고 있으며, 그 유역의 광범위성과 유수(류수)의 상황에 따른 하상의 가변성 등으로 인하여 익사사고에 대비한 하천 자체의 위험관리에는 일정한 한계가 있을 수밖에 없어, 하천 관리주체로서는 익사사고의 위험성이 있는 모든 하천구역에 대해 위험관리를 하는 것은 불가능하므로, 당해 하천의 현황과 이용 상황, 과거에 발생한 사고 이력 등을 종합적으로 고려하여 하천구역의 위험성에 비례하여 사회통념상 일반적으로 요구되는 정도의 방호조치의무를 다하였다면 하천의 설치·관리상의 하자를 인정할 수 없다.</p>
+<p></p><p></p><p>[2] 수련회에 참석한 미성년자 갑이 유원지 옆 작은 하천을 가로질러 수심이 깊은 맞은 편 바위 쪽으로 이동한 다음 바위 위에서 하천으로 다이빙을 하며 놀다가 익사하자, 갑의 유족들이 하천 관리주체인 지방자치단체를 상대로 손해배상을 구한 사안에서, 하천 관리자인 지방자치단체가 유원지 입구나 유원지를 거쳐 하천에 접근하는 길에 수영금지의 경고표지판과 현수막을 설치함으로써 하천을 이용하는 사람들의 안전을 보호하기 위하여 통상 갖추어야 할 시설을 갖추었다고 볼 수 있고, 지방자치단체에게 사고지점에 각별한 주의를 촉구하는 내용의 위험표지나 부표를 설치하는 것과 같은 방호조치를 취하지 않은 과실이 인정되더라도 익사사고와 상당인과관계가 있다고 보기 어려운데도 지방자치단체의 손해배상책임을 인정한 원심판결에 하천의 설치 또는 관리상 하자책임에 관한 법리오해의 위법이 있다고 한 사례.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|5|">국가배상법 제5조 제1항</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|5|">국가배상법 제5조 제1항</a></span></p>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+원고 1 외 3인 (소송대리인 법무법인 신성 담당변호사 강동규 외 8인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인】
+강원도 (소송대리인 법무법인 다헌 담당변호사 윤재경 외 2인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2013나2010077|판결" href="#//">서울고법 2013. 8. 29. 선고 2013나2010077 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 원심판결 이유에 의하면, 원심은 이 사건 사고가 발생한 황새바위 인근에 일반인들이 자주 이용하는 유원지가 설치되어 있고, 황새바위 부근의 수심은 주위보다 훨씬 깊은 1.5∼2m에 이르러 유원지를 방문한 일반인들이 황새바위 부근에서 물놀이를 하다가 익사할 위험성이 높으므로, 이 사건 하천의 설치, 관리 의무를 담당하고 있는 피고(실제 하천관리청은 ‘강원도지사’이지만, 그 소속 지방자치단체인 피고에게 손해배상책임이 있으므로, 이하 이를 구분하지 않고 ‘피고’라고만 표시한다)는 관리인을 두어 이 사건 사고 지점 부근에서의 물놀이를 금지하거나 사고 지점 부근에 위험표지 또는 부표를 설치하는 등의 방법으로 보통의 농촌 지역을 흐르는 하천 유역보다는 더욱 높은 정도의 주의를 기울여 방호조치를 해야 했을 것인데도, 단순히 유원지 입구에 ‘물놀이 주의사항’이 기재된 안내표지판을 설치하는 정도의 조치만을 취하여 사리분별력이 일반인보다 떨어지는 미성년자인 망인과 그 일행이 유원지 입구가 아닌 숲길로 황새바위 부근에 이르러 물놀이를 하다가 망인이 익사하는 ‘이 사건 사고’를 당하였는바, 이 사건 사고는 피고가 설치, 관리하는 영조물인 이 사건 하천의 설치, 관리상의 하자로 인하여 발생하였다고 할 것이므로, 피고는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|5|">국가배상법 제5조 제1항</a></span>에 따라 이 사건 사고로 망인과 그 유족인 원고들이 입은 손해를 배상할 책임이 있다고 판단하였다.</p><p>  2. 그러나 원심의 위와 같은 판단은 다음과 같은 이유로 수긍하기 어렵다.</p><p>  가. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|5|">국가배상법 제5조 제1항</a></span> 소정의 ‘영조물의 설치 또는 관리의 하자’라고 함은 영조물이 그 용도에 따라 통상 갖추어야 할 안전성을 갖추지 못한 상태에 있음을 말하는 것으로서, 영조물이 완전무결한 상태에 있지 아니하고 그 기능상 어떠한 결함이 있다는 것만으로 영조물의 설치 또는 관리에 하자가 있다고 할 수 없고, 위와 같은 안전성의 구비 여부는 당해 영조물의 용도, 그 설치장소의 현황과 이용 상황 등 제반 사정을 종합적으로 고려하여 설치·관리자가 그 영조물의 위험성에 비례하여 사회통념상 일반적으로 요구되는 정도의 방호조치의무를 다하였는지 여부를 그 기준으로 삼아 판단하여야 하고, 다른 생활필수시설과의 관계나 그것을 설치하고 관리하는 주체의 재정적, 인적, 물적 제약 등을 고려하여 그것을 이용하는 자의 상식적이고 질서 있는 이용 방법을 기대한 상대적인 안전성을 갖추는 것으로 족하다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|99다54004|판결" href="#//">대법원 2000. 2. 25. 선고 99다54004 판결</a></span>, <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다88903|판결" href="#//">대법원 2008. 9. 25. 선고 2007다88903 판결</a></span> 등 참조).</p><p>  특히 <span class="accrnt_txt">자연영조물로서의 하천은 이를 설치할 것인지 여부에 대한 선택의 여지가 없고, 위험을 내포한 상태에서 자연적으로 존재하고 있으며, 그 유역의 광범위성과 유수(유수)의 상황에 따른 하상의 가변성 등으로 인하여 익사사고에 대비한 하천 자체의 위험관리에는 일정한 한계가 있을 수밖에 없어, 하천 관리주체로서는 익사사고의 위험성이 있는 모든 하천구역에 대해 위험관리를 하는 것은 불가능하므로, 당해 하천의 현황과 이용 상황, 과거에 발생한 사고 이력 등을 종합적으로 고려하여 하천구역의 위험성에 비례하여 사회통념상 일반적으로 요구되는 정도의 방호조치의무를 다하였다면 하천의 설치·관리상의 하자를 인정할 수 없다고 할 것이다</span>.</p><p>  나. 기록에 의하면 다음과 같은 사실 또는 사정을 알 수 있다.</p><p>  ① 이 사건 하천은 흥터유원지 옆을 따라 흐르는 하천인데, 흥터유원지는 그 주변에 조성된 황장목 군락지를 위주로 하는 관광지이고, 이 사건 하천은 흥터유원지를 이용하는 관광객들이 잠시 물놀이를 하는 정도의 작은 하천이다.</p><p>  ② 흥터유원지 앞쪽의 하천은 그 수심이 어른 무릎 높이에 미치지 아니하는 정도이고, 관광객들은 통상적으로 거기에서 물놀이를 한다.</p><p>  ③ 황새바위는 흥터유원지에서 폭이 20∼30m 정도 되는 이 사건 하천의 맞은 편에 있는 큰 바위로서, 지방도 415호선(이하 ‘이 사건 도로’라고 한다)의 법면에서 이 사건 하천 쪽으로 돌출되어 있고, 수면 위 바위의 높이가 5∼6m 정도이며, 황새바위 아랫부분 수심은 주위보다 깊은 1.5∼2m 정도이다.</p><p>  ④ 흥터유원지에서 황새바위로 접근하기 위하여는 이 사건 하천을 가로질러 건너 이 사건 도로 쪽으로 올라간 다음 도로 가장자리를 따라 이동하여야 하는데, 도로 가장자리에는 이 사건 하천을 따라 난간이 설치되어 있고 난간 밖으로 약간의 공간을 두고 콘크리트로 축조된 옹벽이 바로 이어지므로 사람들이 통상 이 사건 도로의 가장자리를 왕래하지는 않는 것으로 보인다. 또한 이 사건 사고지점의 현황에 비추어 일반적인 흥터유원지 관광객들이 이 사건 하천을 건너가서 위 옹벽이나 황새바위 위에서 다이빙을 하지는 않는 것으로 보이고, 그러하리라고 예상되지도 않는다.</p><p>  ⑤ 망인과 그 일행(이하 ‘망인 등’이라고 한다)은 하천의 수심이 깊은 곳을 찾아 다이빙을 하기 위하여 흥터유원지의 맞은 편 쪽으로 이동하였는데, 하천의 바닥이 드러난 자갈밭이나 수심이 얕은 부분을 통하여 이 사건 하천을 건너갔다. 망인 등은 처음에는 이 사건 도로 가장자리 난간 밖의 콘크리트 옹벽 위에서 다이빙을 하다가 수심이 얕아 재미가 없자 수심이 더 깊은 황새바위 쪽으로 이동하여 황새바위의 중간 튀어나온 부분에서 이 사건 하천으로 뛰어내리며 다이빙을 하였다.</p><p>  ⑥ 망인은 황새바위 위에서 두세 번 정도 다이빙을 한 다음 수영해서 하천 밖으로 나오기도 하였으므로, 이 사건 사고 직전에는 사고지점의 수심이나 위험성 등에 관하여 인식하고 다이빙을 하였을 것으로 보인다.</p><p>  ⑦ 이 사건 사고는 망인 등이 물놀이를 시작한 후 약 한 시간이 경과한 이후에 발생하였는데, 망인 등이 황새바위에서 다이빙을 시작할 무렵에는 체력적으로 상당히 지쳐있었던 것으로 보인다. 이 사건 사고 당시 망인의 사촌 소외 1이 황새바위에서 다이빙을 한 후 이 사건 사고지점에서 허우적거리자, 망인은 아무런 안전 장구를 착용하지 않은 채 다이빙을 하여 물에 들어갔다가 소외 1과 함께 물에 빠져 얽히는 상황이 되었고, 소외 1은 다른 사람들에 의하여 구조되었으나 망인은 구조되지 못하였다.</p><p>  ⑧ 학생들을 인솔하여 수련회에 참석한 소외 2는 망인 등이 다이빙을 하기 전에 먼저 학생들이 다이빙을 할 장소로 가서 수심을 확인한 후 학생들에게 물이 목 부근까지 차고, 황새바위 쪽으로 가면 물이 점점 깊어진다고 알려주었다. 그리고 미성년자들만 황새바위에서 다이빙을 한 것이 아니라, 인솔자로 참석한 대학생 소외 3 등도 망인 등과 함께 황새바위에서 다이빙을 하였고, 다른 인솔자들도 황새바위 부근에서 망인 등이 다이빙을 하는 것을 지켜보기도 하였다.</p><p>  ⑨ 한편 흥터유원지 입구에는 정선군수 명의로 「이 지역은 수심이 깊어 안전사고 위험이 높은 지역으로 다음 사항을 준수하여 주시기 바랍니다. ○ 부표가 설치된 곳을 넘어서 들어가지 맙시다. ○ 수온이 차가우니 급히 물에 뛰어들지 맙시다. ○ 물놀이 전에는 충분한 준비운동을 합시다. ○ 어린이, 노약자는 보호자와 함께 물놀이를 합시다. ○ 음주 후에는 절대 물놀이를 하지 맙시다.」와 같은 내용의 ‘물놀이 주의사항’이 기재된 안내표지판이 설치되어 있고, 흥터유원지를 통하여 이 사건 하천으로 들어가는 입구에는 ‘수영금지, 깊은 수심 주의’라는 문구가 들어간 경고표지판과 현수막이 설치되어 있으며, 그 옆에는 정선군수와 정선소방서장의 명의로 ‘간이인명구조장비 사용안내문’과 함께 구명조끼, 구명환, 구명 밧줄을 수납할 수 있는 ‘인명구조 장비함’과 ‘안전사고예방을 위해 물놀이 안전수칙을 준수합시다’, ‘여러분의 생명은 소중합니다. 구명조끼를 입으세요’라는 내용의 현수막이 각 설치되어 있다.</p><p>  ⑩ 2009년 이후 이 사건 사고가 발생하기 이전까지 이 사건 하천에서 익사 사고가 발생한 적이 없다.</p><p>  다. 위와 같은 사실이나 사정을 앞서 본 법리에 비추어 살펴보면, 이 사건 하천의 관리자인 피고로서는 흥터유원지 입구나 흥터유원지를 거쳐 이 사건 하천에 접근하는 길에 수영금지의 경고표지판과 현수막을 설치함으로써 하천을 이용하는 사람들의 안전을 보호하기 위하여 통상 갖추어야 할 시설을 갖추었다고 볼 것이고, 흥터유원지 관광객이 이 사건 하천을 가로질러 건너가서 이 사건 도로 가장자리의 난간 밖에 있는 황새바위에서 다이빙을 할 것까지 예상하여, 관리인을 두어 이 사건 사고지점 부근에서의 물놀이를 금지하거나 이 사건 사고지점에 각별한 주의를 촉구하는 내용의 위험표지 또는 부표를 추가로 설치하는 등의 방법으로 방호조치를 할 의무까지는 없다고 할 것이다. 나아가 이 사건 사고는 망인이 이 사건 사고지점의 수심이 깊다는 사실을 알면서도 아무런 안전 장구를 착용하지 않은 채 위험을 무릅쓰고 황새바위에서 다이빙을 하다가 체력이 소진하였거나 소외 1과 물속에서 얽히는 바람에 발생한 것으로서, 피고가 이 사건 사고지점 등에 위험표지나 부표를 설치하였다고 하더라도 이 사건 사고와 같은 사고를 방지할 수는 없었다고 보이므로, 피고에게 위와 같은 방호조치를 취하지 않은 과실이 인정된다고 하더라도 그러한 과실과 이 사건 사고 사이의 상당인과관계를 인정하기도 어렵다.</p><p>  라. 그런데도 원심은 그 판시와 같은 사정만으로 이 사건 사고가 이 사건 하천의 설치, 관리상의 하자로 인하여 발생하였다고 보아 피고의 손해배상책임을 인정하였는바, 이러한 원심판결에는 하천의 설치 또는 관리상의 하자책임에 관한 법리를 오해하여 판결에 영향을 미친 위법이 있다. 상고이유 주장은 이유 있다.</p><p>  3. 그러므로 원심판결 중 피고 패소 부분을 파기하고, 이 부분 사건을 다시 심리·판단하도록 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이인복(재판장) 민일영 박보영 김신(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

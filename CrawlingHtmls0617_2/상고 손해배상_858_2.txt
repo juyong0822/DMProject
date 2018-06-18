@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대전고등법원 2011나512 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2029194';
+var contIdEtc = '';
+var saNo = '2011나512';
+var sngoNm = '선고';
+var saNm = '채무부존재확인';
+try {
+	var sngoDay=('20110623' ? 
+			'20110623'.length==4 ? Date.parseExact('20110623','yyyy').toString('yyyy. M. d.') : 
+				'20110623'.length==6 ? Date.parseExact('20110623','yyyyMM').toString('yyyy. M. d.') : 
+					'20110623'.length==8 ? Date.parseExact('20110623','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대전고등법원';
+var bubCd = '000600';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' (청주)2011나512(본소),(청주)2011나529(반소) ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011나512';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대전고등법원<br />2011나512</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|759987">이창현 경쟁적 운동경기 중 경기자의 부상으로 인한 민사적 법률관계 저스티스 통권 제146-1호 / 한국법학원  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008도6940">대법원 2008. 10. 23. 선고 2008도6940 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="청주지방법원|2010가합3596">청주지방법원 2011. 1. 26. 선고 2010가합3596(본소), 2010가합4667(반소) 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대전고등법원 2011. 6. 23. 선고 (청주)2011나512(본소),(청주)2011나529(반소) 판결</h2><p class="sub_title">[채무부존재확인][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(반소피고), 항소인 겸 부대피항소인】
+      
+        메리츠화재해상보험 주식회사 (소송대리인 변호사 이장석)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인 겸 부대항소인】
+      
+        
+          피고 1
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고(반소원고), 피항소인 겸 부대항소인】
+      
+        
+          피고 2
+        
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2011. 5. 31.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="청주지방법원|2010가합3596|판결" href="#//">청주지방법원 2011. 1. 26. 선고 2010가합3596(본소), 2010가합4667(반소) 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 당심에서 확장된 
+        피고(반소원고) 2의 반소청구를 포함하여 제1심 판결의 주문 제1 내지 3항을 다음과 같이 변경한다.
+      </p><p> 가. 원고(반소피고)와 
+        피고 1 및 
+        피고(반소원고) 2 사이에 별지 기재 사고에 관하여 원고(반소피고)의 
+        피고 1 및 
+        피고(반소원고) 2에 대한 별지 기재 보험계약에 기한 보험금지급채무는 존재하지 않음을 확인한다. 
+      </p><p> 나. 
+        피고(반소원고) 2의 원고(반소피고)에 대한 반소청구를 기각한다.
+      </p><p>2. 소송총비용은 제1, 2심을 통하여 
+        피고 1 및 
+        피고(반소원고) 2가 부담한다.
+      </p>
+    
+      【청구취지, 항소취지 및 부대항소취지】
+      <p>[청구취지]</p>
+      <p>1. 본소 : 주문 제1의 가항 기재와 같다.</p>
+      <p>2. 반소 : 원고(반소피고, 이하 ‘원고’라 한다)는 
+        피고(반소원고, 이하 ‘피고’라 한다) 2에게 20,665,564원 및 이에 대하여 이 사건 반소장 부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율에 의한 금원을 지급하라.
+      </p>
+      <p>[항소취지]  </p>
+      <p>주문 제1의 가항 기재와 같다.</p>
+      <p>[부대항소취지]</p>
+      <p>제1심 판결 중 피고들 패소부분을 취소한다. 원고는 
+        피고 2에게 25,569,315원 
+        피고 2는 부대항소취지를 원심에서 인용된 금액인 4,211,475원을 포함하여 29,780,790원을 구하는 것으로 기재하였으나, 원심에서 인용된 금액을 제외한 나머지 부분에 대하여 부대항소한 것으로 본다.  
+      </p>
+      <p> 및 이에 대하여 2010. 8. 25.부터 항소심 판결확정일까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을 지급하라(
+        피고 2는 부대항소를 하면서 반소청구취지를 확장하였다).  
+      </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>본소와 반소를 함께 살펴본다.</p><p>1. 기초사실</p><p>  가. 원고는 2008. 2. 4. 
+        피고 1의 처 
+        소외인과 이 사건 보험계약을 체결하였다. 이 사건 보험계약의 가족일상생활 중 배상책임(Ⅱ)보장 특별약관 중 이 사건과 관련된 규정은 다음과 같다. 
+      </p><p>  제1조 보상하는 손해 </p><p>  ① 우리 회사는 피보험자가 이 가족일상생활 중 배상책임(Ⅱ)보장 특별약관의 보험기간 중에 다음에 열거하는 사고로 타인의 신체의 장해에 대한 법률상의 배상책임을 부담함으로써 입은 손해를 이 특별약관에 따라 보상하여 드립니다. </p><p>    2. 피보험자의 일상생활(주택 이외의 부동산의 소유, 사용 및 관리를 제외합니다)에 기인하는 우연한 사고 </p><p>  제2조 보상하는 손해의 범위 </p><p>  ① 회사가 1 사고 당 보상하는 손해의 범위는 아래와 같습니다.</p><p>    1. 피보험자가 피해자에게 지급한 손해배상금(손해배상금을 지급함으로써 대위 취득할 것이 있을 때에는 그 가액을 뺍니다) </p><p>  나. 
+        피고 1은 2009. 8. 14. 20:00경 
+        피고 2 등 친구들과 함께 청주시 흥덕구 청남로 330 청주교육대학교 내 야외농구장에서 농구를 하던 중 
+        피고 2에게 치아파절 등의 상해를 입혔다. 
+      </p><p>  다. 위 상해로 인해 
+        피고 2는 부러진 이 두개를 뽑고 브리지 시술을 받았다.  
+      </p><p>  [인정근거] 다툼 없는 사실, 갑 제1호증, 갑 제2호증의 1의 각 기재, 변론 전체의 취지 </p><p>2. 당사자의 주장 및 판단</p><p>  가. 당사자의 주장</p><p>  원고는 이 사건 사고에 있어 
+        피고 1이 경기규칙이나 주의의무를 위반한 것이 전혀 없으므로 과실이 없고, 
+        피고 1의 행위는 농구경기 중 통상 허용되는 범위내의 행위로서 정당행위에 해당하며 경기 중 행위로 인하여 통상 상해를 당할 수도 있으리라는 것을 
+        피고 2가 미리 예상하고 이를 승낙하였으므로 
+        피고 1의 행위는 위법성 내지 책임성이 조각되어 불법행위에 해당되지 아니하여 
+        피고 1에게는 배상책임이 없으므로 이 사건 사고는 이 사건 보험계약에 있어 보상하지 아니하는 손해에 해당한다고 주장한다.
+      </p><p>  이에 대하여 피고들은 이 사건 농구경기에 있어서 
+        피고 2로서는 
+        피고 1이 점프하고 내려오다가 어깨로 
+        피고 2의 얼굴을 쳐서 이가 부러지는 등의 상해가 발생하는 것까지 용인한 것은 아니므로 이 사건 사고는 이 사건 보험계약상 우연한 사고로 인한 것으로서 이 사건 보험계약상 보험사고에 해당한다고 주장한다.
+      </p><p>  나. 손해배상책임의 존부에 관한 판단</p><p>   1) 운동경기에 참가하는 자는 자신의 행동으로 인해 다른 사람이 다칠 수도 있으므로, 경기규칙을 준수하고 주위를 살펴 상해의 결과가 발생하는 것을 미연에 방지해야할 주의의무가 있다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008도6940|판결" href="#//">대법원 2008. 10. 23. 선고 2008도6940 판결</a></span>). 다만, 운동경기는 신체의 접촉을 수반하는 경우가 많아 경기 자체에 내재된 부상의 위험이 있고, 그 경기에 참가하는 자는 예상할 수 있는 범위 내에서의 경미한 위험은 어느 정도 감수하고 경기에 참가하는 것이므로, 운동경기에 참가한 자가 앞서 본 주위의무 위배로 인하여 손해배상책임을 지는지 여부는 해당경기의 종류와 위험성, 당시 경기진행상황, 관련당사자들의 경기규칙의 준수 여부, 위반한 경기규칙이 있는 경우 그 규칙의 성질과 위반 정도, 부상의 부위와 정도 등 제반 사정을 종합적으로 고려하여 그 행위가 사회적 상당성의 범위를 벗어나지 아니하였다면 이에 대하여 손해배상책임을 물을 수 없다 할 것이다.
+      </p><p>   2) 갑 제2호증(가지번호 포함)의 각 기재에 변론 전체의 취지를 종합하면, 
+        피고 1과 
+        피고 2는 친구사이인데, 2009. 8. 4. 20:00경 친구 4명과 함께 청주시 흥덕구 청남로 330에 있는 청주교육대학교 내 야외 농구장에서 반코트만을 사용하여 친선 농구경기를 한 사실, 당시 
+        피고 1은 리바운드를 하기 위해 점프를 하여 공을 잡고 내려오던 중 
+        피고 1 바로 등 뒤에서 리바운드를 하기 위해 서 있던 
+        피고 2의 입부위를 오른쪽 어깨부위로 충격한 사실, 그로 인해 
+        피고 2는 앞니 두개가 부러지고 그 좌우측 2개의 이빨이 탈구되는 부상을 입은 사실을 인정할 수 있다.
+      </p><p>  일반적으로 농구경기는 참가자들 사이에서 신체적 접촉과 충격이 많은 경기이고, 특히 당시 
+        피고 1과 
+        피고 2는 야간에 코트의 반만을 사용하여 농구경기를 하였으므로, 
+        피고 1과 
+        피고 2가 한 농구경기에는 상당한 부상의 위험성이 내재되어 있었던 것으로 보이는 점, 농구경기에서 리바운드를 하던 중에 참가자들 사이에서 신체적 접촉이 발생하는 것은 통상 예상할 수 있는 상황인 점, 
+        피고 1은 당시 리바운드를 잡고 내려오다가 
+        피고 2를 충격하게 된 것으로서 농구경기 규칙을 위반하였다고 볼 아무런 사정이 없는 점, 
+        피고 1에 대하여 자신의 뒤에 있을지도 모를 참가자와의 충돌을 피하기 위하여 리바운드를 잡고 내려오는 중에 착지방향을 바꾸거나 몸을 움츠리도록 요구한다는 것은 농구경기의 성질상 기대하기 힘든 점, 
+        피고 2는 
+        피고 1의 어깨부위로 입부위를 맞아 치아파절 등의 상해를 입게 된 것으로서 그 부상부위나 정도가 농구경기 과정에서 통상 발생할 수 있는 것으로 보이는 점 등을 고려하면 이 사건 사고에 있어서 
+        피고 1의 행위는 사회적 상당성의 범위 내에 있었던 것으로서 그에게 손해배상책임을 지울 만한 주의의무 위반이 있다고 보기 어렵다.    따라서 이 사건 사고는 피보험자인 
+        피고 1이 타인의 신체의 장해에 대한 법률상의 배상책임을 부담하게 된 경우가 아니므로, 원고의 피고에 대한 이 사건 보험계약에 기한 보험금 지급채무는 존재하지 아니한다고 할 것이다.
+      </p><p>3. 결론</p><p>  그렇다면, 원고의 이 사건 본소청구는 이유 있고, 피고가 원고에게 보험금 지급청구를 하며 이를 다투는 이상 그 확인을 구할 이익도 있다고 할 것이며, 
+        피고 2의 원고에 대한 반소청구(당심에서 확장된 반소청구 포함)는 이유 없으므로 이를 기각하여야 할 것인바, 제1심 판결은 이와 일부 결론을 달리하여 부당하므로 원고의 항소를 받아들여 본소청구 및 반소청구에 관한 제1심 판결의 주문 제1 내지 3항을 주문 제1항과 같이 변경하기로 하여 주문과 같이 판결한다. 
+      </p><p>[별지 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김흥준(재판장) 서재국 강두례 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

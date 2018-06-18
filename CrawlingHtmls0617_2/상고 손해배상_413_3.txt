@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다20044 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2062654';
+var contIdEtc = '';
+var saNo = '2010다20044';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20120329' ? 
+			'20120329'.length==4 ? Date.parseExact('20120329','yyyy').toString('yyyy. M. d.') : 
+				'20120329'.length==6 ? Date.parseExact('20120329','yyyyMM').toString('yyyy. M. d.') : 
+					'20120329'.length==8 ? Date.parseExact('20120329','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다20044 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다20044';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다20044</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(14)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(5)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(9)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(7)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2059611">대법원 2013. 3. 28. 선고 2010다58261 판결 [공2013상,724]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2244592">대법원 2017. 11. 9. 선고 2014다49180 판결 [공2017하,2296]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665955">정상조 상이한 문예 장르 간의 표절 : . LAW &amp; TECHNOLOGY 제8권 제4호 / 서울대학교 기술과법센터  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|672389">김기수 부정경쟁방지법상 상품형태의 보호 LAW &amp; TECHNOLOGY 제8권 제5호 / 서울대학교 기술과법센터  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|780619">이상현 불법행위 법리를 통한 지적 창작물의 보호 LAW &amp; TECHNOLOGY 제11권 제4호 / 서울대학교 기술과법센터  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|563532">한국. 대법원 법원행정처 재판실무편람. 제42호:. 임시의 지위를 정하기 위한 가처분 재판실무편람 임시의 지위를 정하기 위한 가처분 재판실무편람 집필위원회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|812969">박태일 입체상표의 식별력과 사용에 의한 식별력 판단기준 올바른 재판 따뜻한 재판:. 이인복 대법관 퇴임기념 논문집   / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|822593">박태일 입체상표의 식별력 및 기능성 판단기준 사법 38호 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|715769">이상정 개정 부정경쟁방지법에 대한 일고 창작과 권리 73호  / 세창출판사  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|787756">유영선 불법행위자로서 ‘부정한 경쟁행위’ 및 그에 기한 금지청구권의 성립 요건 등에 관하여 : 대법원 2010. 8. 25.자 2008마1541 결정(공2010하, 1855) 민사재판의 제문제 23권  / 한국사법행정학회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827792">김창권 부정경쟁방지법 제2조 제1호 (자)목이 규정한 상품형태의 요건 사법 39호 / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|723756">최호진 아이디어의 보호가능성과 유형별 사례분석 저스티스 통권 제140호 / 한국법학원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806099">김창권 캐릭터 인형의 수입․판매와 저작권법 위반죄, 상표법 위반죄, 부정경쟁방지 및 영업비밀보호에 관한 법률 위반죄 대법원판례해설 제106호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687087">박성호 2012년 지적재산법 중요 판례 인권과 정의 제432호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|665959">설지혜 엔터테인먼트 산업의 사업다각화와 실무상 통용되는 "판권" 용어에 관한 제언(제언) LAW &amp; TECHNOLOGY 제8권 제4호 / 서울대학교 기술과법센터  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|714833">박준석 한국 지적재산권법과 다른 법률들과의 관계 법조 (통권687호) (2013. 12) / 법조협회  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2002도3445">대법원 2003. 4. 11. 선고 2002도3445 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도70">대법원 2005. 4. 29. 선고 2005도70 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도4002">대법원 2006. 12. 22. 선고 2005도4002 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도1157">대법원 2007. 7. 13. 선고 2006도1157 판결</a></p><p class="areaChjPanre"><font>[6]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2008마1541">대법원 2010. 8. 25.자 2008마1541 결정</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="상표법|2|0|null">상표법 제2조 제1항 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="상표법|66|0|null">상표법 제66조 제1항 제1호 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="상표법|2|0|null">상표법 제2조 제1항 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="상표법|66|0|null">상표법 제66조 제1항 제1호 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="부정경쟁방지및영업비밀보호에관한법률|2|0|null">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="부정경쟁방지및영업비밀보호에관한법률|2|0|null">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 </a></p><p class="areaChjJomun"><font>[5]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="부정경쟁방지및영업비밀보호에관한법률|2|0|null">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 </a></p><p class="areaChjJomun"><font>[6]</font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[7]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2002도3445">대법원 2003. 4. 11. 선고 2002도3445 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000마4424">대법원 2002. 11. 13.자 2000마4424 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도70">대법원 2005. 4. 29. 선고 2005도70 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005도4002">대법원 2006. 12. 22. 선고 2005도4002 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006도1157">대법원 2007. 7. 13. 선고 2006도1157 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2006마342">대법원 2008. 10. 17.자 2006마342 결정</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008마1541">대법원 2010. 8. 25.자 2008마1541 결정</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상표법|2|0|null">상표법 제2조 제1항 제7호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부정경쟁방지및영업비밀보호에관한법률|2|0|null">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나4116">서울고법 2010. 1. 14. 선고 2009나4116 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><input type="hidden" class="contImagePath" name="img1" value="12f0501dr007-01.gif" /><input type="hidden" class="contImagePath" name="img2" value="12f0501dr007-02.gif" /><input type="hidden" class="contImagePath" name="img3" value="12f0501dr007-03.gif" /><input type="hidden" class="contImagePath" name="img4" value="12f0501dr007-04.gif" /><input type="hidden" class="contImagePath" name="img5" value="12f0501dr007-05.gif" /><input type="hidden" class="contImagePath" name="img6" value="12f0501dr007-06.gif" /><input type="hidden" class="contImagePath" name="img7" value="12f0501dr007-07.gif" /><input type="hidden" class="contImagePath" name="img8" value="12f0501dr007-08.gif" /><input type="hidden" class="contImagePath" name="img9" value="12f0501dr007-09.gif" /><div class="tit_area" id="bmunStart"><h2>대법원 2012. 3. 29. 선고 2010다20044 판결</h2><p class="sub_title">[손해배상(기)][공2012상,643]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 타인의 등록상표를 이용하였으나 출처표시를 위한 것이 아닌 경우 상표권 침해행위로 볼 수 있는지 여부(소극) 및 표시된 표장이 상표로서 사용되고 있는지에 관한 판단 기준</p>
+      <p></p>
+      <p>
+        </p><p>[2] 갑 주식회사로부터 국내에서 “HELLO KITTY” 캐릭터를 상품화할 수 있는 독점권을 부여받은 을 주식회사가 자신이 운영하는 홈페이지에 “HELLO KITTY” 캐릭터가 부착 또는 표시된 상품의 이미지 바로 아래에 있는 상품 이름 앞에 “대장금”, “장금”, “주몽”이라는 표장을 표시한 행위가 등록상표 “
+          <img name="img1" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-01.gif" alt="본문내 삽입된 이미지" />”, “
+          <img name="img2" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-02.gif" alt="본문내 삽입된 이미지" />”, “
+          <img name="img3" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-03.gif" alt="본문내 삽입된 이미지" />”의 상표권자인 병 방송사 등의 상표권을 침해하는 행위에 해당하는지 문제된 사안에서, 위 표장이 상표로서 사용되었다고 볼 수 없다고 한 사례
+        </p>
+      <p></p>
+      <p>
+        </p><p>[3] 캐릭터가 상품화되어 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (가)목</a></span>에 규정된 ‘국내에 널리 인식된 타인의 상품임을 표시한 표지’가 되기 위한 요건
+        </p>
+      <p></p>
+      <p>
+        </p><p>[4] 상품형태가 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (가)목</a></span>에 규정된 ‘국내에 널리 인식된 타인의 상품임을 표시한 표지’로서 보호받기 위한 요건
+        </p>
+      <p></p>
+      <p>
+        </p><p>[5] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (자)목</a></span>에서 정한 ‘모방’의 의미 및 그 판단 기준
+        </p>
+      <p></p>
+      <p>
+        </p><p>[6] 경쟁자가 상당한 노력과 투자에 의하여 구축한 성과물을 자신의 영업을 위하여 무단으로 이용함으로써 부당하게 이익을 얻고 경쟁자의 법률상 보호할 가치가 있는 이익을 침해한 경우, 민법상 불법행위에 해당하는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[7] 갑 주식회사가 자신이 운영하는 홈페이지에서 한국방송공사와 을 방송사가 방영한 “겨울연가”, “황진이”, “대장금”, “주몽” 등 제호하에 위 드라마가 연상되는 의상, 소품, 모습, 배경 등으로 꾸민 “HELLO KITTY” 제품을 제조·판매한 사안에서, 갑 회사의 제조·판매 행위는 부정한 경쟁행위로서 민법상 불법행위에 해당한다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 타인의 등록상표를 그 지정상품과 동일 또는 유사한 상품에 사용하면 타인의 상표권을 침해하는 행위가 되나, 타인의 등록상표를 이용한 경우라고 하더라도 그것이 상표의 본질적인 기능이라고 할 수 있는 출처표시를 위한 것이 아니어서 상표의 사용으로 인식될 수 없는 경우에는 등록상표의 상표권을 침해한 행위로 볼 수 없고, 그것이 상표로서 사용되고 있는지는 상품과 관계, 당해 표장의 사용 태양(즉 상품 등에 표시된 위치, 크기 등), 등록상표의 주지저명성 그리고 사용자의 의도와 사용 경위 등을 종합하여 실제 거래계에서 표시된 표장이 상품의 식별표지로서 사용되고 있는지에 의하여 판단하여야 한다.</p>
+      <p></p><p>
+        </p><p>[2] 갑 주식회사로부터 국내에서 “HELLO KITTY” 캐릭터를 상품화할 수 있는 독점권을 부여받은 을 주식회사가 자신이 운영하는 홈페이지에 “HELLO KITTY” 캐릭터가 부착 또는 표시된 상품의 이미지 바로 아래에 있는 상품 이름 앞에 “대장금”, “장금”, “주몽”이라는 표장을 표시한 행위가 등록상표 “
+          <img name="img4" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-04.gif" alt="본문내 삽입된 이미지" />”, “
+          <img name="img5" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-05.gif" alt="본문내 삽입된 이미지" />”, “
+          <img name="img6" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-06.gif" alt="본문내 삽입된 이미지" />”의 상표권자인 병 방송사 등의 상표권을 침해하는 행위에 해당하는지 문제된 사안에서, 위 표장의 사용 태양, 위 등록상표와 “HELLO KITTY” 표장의 주지저명의 정도, 을 회사의 의도와 위 표장의 사용 경위 등을 종합하면 전체적으로 을 회사가 홈페이지에서 광고·판매한 위 상품들의 출처가 갑 회사 또는 동일 상품화 사업을 영위하는 집단인 것으로 명확히 인식되고, “대장금” 등 표장은 상품에 부착 또는 표시된 “HELLO KITTY” 캐릭터가 병 방송사가 제작·방영한 드라마의 캐릭터로 알려진 ‘대장금’, ‘주몽’을 형상화한 것임을 안내·설명하기 위한 것일 뿐 상품의 식별표지로서 사용되었다고는 볼 수 없으므로, “대장금” 등 표장이 상표로서 사용되었다고 볼 수 없다고 한 사례.
+        </p>
+      <p></p><p>
+        </p><p>[3] 캐릭터가 상품화되어 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (가)목</a></span>에 규정된 ‘국내에 널리 인식된 타인의 상품임을 표시한 표지’가 되기 위해서는 캐릭터 자체가 국내에 널리 알려진 것만으로는 부족하고, 캐릭터에 대한 상품화 사업이 이루어지고 이에 대한 지속적인 선전, 광고 및 품질관리 등으로 캐릭터가 이를 상품화할 수 있는 권리를 가진 자의 상품표지이거나 상품화권자와 그로부터 상품화 계약에 따라 캐릭터사용허락을 받은 사용권자 및 재사용권자 등 캐릭터에 관한 상품화 사업을 영위하는 집단(group)의 상품표지로서 수요자들에게 널리 인식되어 있을 것을 요한다.
+        </p>
+      <p></p><p>
+        </p><p>[4] 어떤 상품의 형태가 출처표시기능을 가지고 나아가 주지성까지 획득하는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (가)목</a></span>에 규정된 ‘국내에 널리 인식된 타인의 상품임을 표시한 표지’에 해당하여 같은 법에 의한 보호를 받을 수 있는데, 이를 위해서는 상품형태가 다른 유사상품과 비교하여 수요자의 감각에 강하게 호소하는 독특한 디자인적 특징을 가지고 있는 등 일반수요자가 일견하여 특정 영업주체의 상품이라는 것을 인식할 수 있는 정도의 식별력을 갖추고 있어야 하며, 나아가 당해 상품형태가 장기간에 걸쳐 특정 영업주체의 상품으로 계속적·독점적·배타적으로 사용되거나 또는 단기간이라도 강력한 선전·광고가 이루어짐으로써 상품형태가 갖는 차별적 특징이 거래자 또는 일반수요자에게 특정 출처의 상품임을 연상시킬 정도로 현저하게 개별화된 정도에 이르러야 한다.
+        </p>
+      <p></p><p>
+        </p><p>[5] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (자)목</a></span>은 부정경쟁행위의 한 유형으로서 타인이 제작한 상품의 형태를 모방한 상품을 양도·대여 또는 이를 위한 전시를 하거나 수입·수출하는 행위를 규정하고 있는데, 여기에서 ‘모방’이란 타인의 상품형태에 의거하여 이와 실질적으로 동일한 형태의 상품을 만들어 내는 것을 말하며, 형태에 변경이 있는 경우 실질적으로 동일한 형태의 상품에 해당하는지는 당해 변경의 내용·정도, 착상의 난이도, 변경에 의한 형태적 효과 등을 종합적으로 고려하여 판단하여야 한다.
+        </p>
+      <p></p><p>
+        </p><p>[6] 경쟁자가 상당한 노력과 투자에 의하여 구축한 성과물을 상도덕이나 공정한 경쟁질서에 반하여 자신의 영업을 위하여 무단으로 이용함으로써 경쟁자의 노력과 투자에 편승하여 부당하게 이익을 얻고 경쟁자의 법률상 보호할 가치가 있는 이익을 침해하는 행위는 부정한 경쟁행위로서 민법상 불법행위에 해당한다.</p>
+      <p></p><p>
+        </p><p>[7] 갑 주식회사가 자신이 운영하는 홈페이지에서 한국방송공사와 을 방송사가 방영한 “겨울연가”, “황진이”, “대장금”, “주몽” 등 제호하에 위 드라마가 연상되는 의상, 소품, 모습, 배경 등으로 꾸민 “HELLO KITTY” 제품을 제조·판매한 사안에서, 제반 사정에 비추어 갑 회사가 드라마를 이용한 상품화 사업 분야에서 경쟁자 관계에 있는 한국방송공사 등의 상당한 노력과 투자에 편승하여 각 드라마의 명성과 고객흡인력을 자신의 영업을 위하여 무단으로 이용하여 법률상 보호할 가치가 있는 한국방송공사 등의 해당 드라마에 관한 상품화 사업을 통한 영업상 이익을 침해하였다고 보아, 갑 회사의 제조·판매 행위는 부정한 경쟁행위로서 민법상 불법행위에 해당한다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|2|">상표법 제2조 제1항 제7호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|66|">제66조 제1항 제1호</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|2|">상표법 제2조 제1항 제7호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|66|">제66조 제1항 제1호</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (가)목</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (가)목</a></span> [5]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률 제2조 제1호 (자)목</a></span> [6]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span> [7]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002도3445|판결" href="#//">대법원 2003. 4. 11. 선고 2002도3445 판결</a></span>(공2003상, 1218)<br />[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도70|판결" href="#//">대법원 2005. 4. 29. 선고 2005도70 판결</a></span>(공2005상, 893)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도4002|판결" href="#//">대법원 2006. 12. 22. 선고 2005도4002 판결</a></span><br />[4]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도1157|판결" href="#//">대법원 2007. 7. 13. 선고 2006도1157 판결</a></span>(공2007하, 1330)<br />[6]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008마1541|결정" href="#//">대법원 2010. 8. 25.자 2008마1541 결정</a></span>(공2010하, 1855)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인 겸 피상고인】
+      
+        한국방송공사 외 1인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【원고, 상고인】
+      
+        주식회사 희원엔터테인먼트 외 2인 (소송대리인 변호사 정희창 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 피상고인】
+      
+        주식회사 산리오코리아 (소송대리인 변호사 장상익)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【피고, 피상고인 겸 상고인】
+      
+        주식회사 데카리오 (소송대리인 법무법인 남명 담당변호사 강인구 외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나4116|판결" href="#//">서울고법 2010. 1. 14. 선고 2009나4116 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원고들과 피고 주식회사 데카리오의 상고를 모두 기각한다.  상고비용 중 원고 한국방송공사, 원고 주식회사 문화방송과 피고 주식회사 데카리오 사이에서 생긴 부분은 각자가 부담하고, 원고 주식회사 희원엔터테인먼트, 원고 주식회사 올리브나인, 원고 주식회사 유성글로벌과 피고 주식회사 데카리오 사이에서 생긴 부분은 위 원고들이 부담하며, 원고들과 피고 주식회사 산리오코리아 사이에서 생긴 부분은 원고들이 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  원고들과 피고 주식회사 데카리오(이하 ‘데카리오’라고 한다)의 상고이유(상고이유서 제출기간 경과 후에 제출된 각 상고이유보충서의 기재는 상고이유를 보충하는 범위 내에서)를 함께 판단한다.</p><p>  1. 원고 주식회사 문화방송(이하 ‘문화방송’이라고 한다), 주식회사 올리브나인(이하 ‘올리브나인’이라고 한다)의 상표권 침해에 관한 각 상고이유에 대하여</p><p>  가. 피고 데카리오의 홈페이지에서 상품을 광고·판매한 부분에 대하여</p><p>  (1) 
+        <span class="accrnt_txt">타인의 등록상표를 그 지정상품과 동일 또는 유사한 상품에 사용하면 타인의 상표권을 침해하는 행위가 되나, 타인의 등록상표를 이용한 경우라고 하더라도 그것이 상표의 본질적인 기능이라고 할 수 있는 출처표시를 위한 것이 아니어서 상표의 사용으로 인식될 수 없는 경우에는 등록상표의 상표권을 침해한 행위로 볼 수 없고, 그것이 상표로서 사용되고 있는지 여부는 상품과의 관계, 당해 표장의 사용 태양(즉 상품 등에 표시된 위치, 크기 등), 등록상표의 주지저명성 그리고 사용자의 의도와 사용 경위 등을 종합하여 실제 거래계에서 그 표시된 표장이 상품의 식별표지로서 사용되고 있는지 여부에 의하여 판단하여야 한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2002도3445|판결" href="#//">대법원 2003. 4. 11. 선고 2002도3445 판결</a></span> 등 참조).
+      </p><p>  (2) 기록에 비추어 살펴보면, 아래와 같은 사실들을 알 수 있다.</p><p>  원고 문화방송은 등록상표 “
+        <img name="img7" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-07.gif" alt="본문내 삽입된 이미지" />”(등록번호 제647208호, 이하 ‘대장금상표’라고 한다), 원고 올리브나인은 등록상표 “
+        <img name="img8" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-08.gif" alt="본문내 삽입된 이미지" />”(등록번호 제20378호, 이하 ‘주몽상표’라고 한다) 및 “
+        <img name="img9" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2062654&amp;attachImgNm=12f0501dr007-09.gif" alt="본문내 삽입된 이미지" />”(등록번호 제730401호, 이하 ‘삼족오상표’라고 한다)의 각 상표권자이다. 피고 데카리오는 2007. 8.경부터 2007. 10.경까지 그가 운영하는 홈페이지에 조선 시대 의녀의 복장을 하고 신선로를 들고 있는 HELLO KITTY 캐릭터가 부착 또는 표시된 휴대전화기 줄·손수건 등의 상품, 갑옷을 입고 이마에 띠를 두른 다음 한 손에 칼을 들고 있거나 흰색 바탕에 분홍색의 점무늬가 섞여 있고 손목 부위에 분홍색 띠가 있는 옷을 입고 있는 HELLO KITTY 캐릭터가 부착된 볼펜·볼 매듭 등의 상품(이하 일괄하여 ‘피고 제품’이라 한다)의 이미지 바로 아래에 있는 상품 이름 앞에 “대장금”, “장금”, “주몽”이라는 표장(이하 ‘이 사건 각 표장’이라고 한다)을 표시하였다. 그런데 위 원고들의 등록상표는 그 무렵 주지의 상표는 아니었던 반면에, HELLO KITTY는 일본국 법인인 가부시키가이샤 산리오가 1974. 10.경 고양이 얼굴을 의인화하여 창작한 캐릭터로, 일본은 물론 국내에서도 1979. 2. 14.경부터 그에 관한 상표등록 및 상품화 사업이 이루어진 결과, 2000년경 이미 국내외적으로 저명한 상품표지이었다. 피고 데카리오는 가부시키가이샤 산리오의 국내 법인인 피고 주식회사 산리오코리아(이하 ‘산리오코리아’라고 한다)로부터 2006년경부터 국내에서 HELLO KITTY 캐릭터를 상품화할 수 있는 독점권을 부여받아 HELLO KITTY 캐릭터에 다양한 의상을 입히거나 소품을 이용해 변형을 가하여 인형, 손수건, 열쇠고리, 볼펜 등을 제조·판매하고 있고, 이 사건 각 표장의 사용 당시 그 홈페이지 왼쪽 상단에는 “데카리오 쇼핑몰”, “HELLO KITTY”, “ⓒ 1976, 2007 SANRIO CO., LTD.”라는 문구가 기재되어 있었으며, 위 각 상품 이미지 중 일부에는 이 사건 각 표장과 함께 그보다 작은 글씨의 “DECCario”, “Licensed by Sanrio CO., LTD”, “(주) 데카리오”라는 문구가 상품 이미지 오른쪽 아래에 표시되어 있었다. 한편 원고 문화방송은 ‘대장금’, ‘주몽’을 주인공으로 하는 같은 제호의 드라마를 제작·방영하여 큰 호응을 얻었고, 위 드라마들은 해외에도 수출된 바 있다.
+      </p><p>  (3) 앞서 본 법리에 따라 위와 같은 사실관계에 나타난 이 사건 각 표장의 사용 태양, 대장금상표 또는 주몽상표·삼족오상표와 HELLO KITTY 표장의 주지저명의 정도, 피고 데카리오의 의도와 이 사건 각 표장의 사용 경위 등을 종합하여 살펴보면, 전체적으로 피고 데카리오가 그 홈페이지에서 광고·판매한 위 휴대전화기 줄 등과 같은 상품들의 출처가 가부시키가이샤 산리오 또는 동일 상품화 사업을 영위하는 집단인 것으로 명확히 인식된다고 할 것이다. 또한 이 사건 각 표장은 위와 같은 상품들에 부착 또는 표시된 HELLO KITTY 캐릭터가 원고 문화방송이 제작·방영한 드라마의 캐릭터로 알려진 ‘대장금’, ‘주몽’을 형상화한 것임을 안내·설명하기 위한 것일 뿐 상품의 식별표지로서 사용된 것이라고는 볼 수 없다. 이는 위 홈페이지 왼쪽 화면 상단에 “대장금”이라는 메뉴 창이 표시되어 있다거나, 일부 상품 이미지와 관련하여서는 이 사건 각 표장 이외에 아무것도 표시되어 있지 않다고 하여 달리 볼 것은 아니다. </p><p>  원심이 같은 취지에서 이 사건 각 표장은 상표로서 사용된 것이라고 할 수 없다고 판단한 것은 정당하고, 거기에 각 상고이유의 주장과 같은 상표 사용에 관한 법리오해 등의 위법이 없다.</p><p>  나. 그 이외의 부분에 대하여</p><p>  원심은 롯데면세점 잠실점(‘본점’이라고 한 것은 오기로 보인다)과 제주 신라면세점에서 판매된 원심판시 피고 제품의 진열장 혹은 그 제품포장의 일부에 “대장금”이라는 표시가 되어 있었으나 피고 데카리오가 위 표시를 하였음을 인정할 증거가 없고, 피고 데카리오가 원고 주식회사 유성글로벌(이하 ‘유성글로벌’이라고 한다)에게 송부한 주문서(갑 제21호증의 1)에 기재된 “대장금”, “주몽” 표장은 상품의 출처표시라고 할 수 없으며, 피고 제품을 판매한 소매상이 소비자에게 작성하여 준 전표(갑 제21호증의 2) 위의 “대장금 키티폰줄”이라는 수기 부분은 피고 데카리오가 이를 기재하였음을 인정할 증거가 없으므로, 이로써 피고 데카리오가 원고 문화방송의 대장금상표, 원고 올리브나인의 주몽상표 또는 삼족오상표에 관한 각 상표권을 침해하였다고 볼 수 없다는 취지로 판단하였다. 원심판결 이유를 기록에 비추어 살펴보면 원심의 위와 같은 판단은 정당하고, 거기에 논리와 경험의 법칙에 반하여 자유심증주의의 한계를 벗어나거나 필요한 심리를 다하지 아니하는 등의 위법은 없다.</p><p>  그 밖에 세관에 제출하는 수입신고서 위에 표시된 “대장금”, “주몽” 표장이 원고 문화방송, 올리브나인의 위 각 상표권을 침해하였다는 주장은 상고심에서 처음으로 하는 것으로서 적법한 상고이유가 될 수 없다[위 수입신고서는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상표법|2|">상표법 제2조 제1항 제7호 (다)목</a></span>의 거래서류에 해당하지도 아니한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000마4424|결정" href="#//">대법원 2002. 11. 13.자 2000마4424 결정</a></span> 참조)].
+      </p><p>  2. 원고들의 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지 및 영업비밀보호에 관한 법률(이하 ‘부정경쟁방지법’이라고 한다) 제2조 제1호 (가)목</a></span>에 관한 각 상고이유에 대하여
+      </p><p>
+        <span class="accrnt_txt">캐릭터가 상품화되어 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|" style="text-decoration:underline">부정경쟁방지법 제2조 제1호 (가)목</a></span>에 규정된 ‘국내에 널리 인식된 타인의 상품임을 표시한 표지’가 되기 위해서는 캐릭터 자체가 국내에 널리 알려져 있는 것만으로는 부족하고, 그 캐릭터에 대한 상품화 사업이 이루어지고 이에 대한 지속적인 선전, 광고 및 품질관리 등으로 그 캐릭터가 이를 상품화할 수 있는 권리를 가진 자의 상품표지이거나 위 상품화권자와 그로부터 상품화 계약에 따라 캐릭터사용허락을 받은 사용권자 및 재사용권자 등 그 캐릭터에 관한 상품화 사업을 영위하는 집단(group)의 상품표지로서 수요자들에게 널리 인식되어 있을 것을 요한다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도70|판결" href="#//">대법원 2005. 4. 29. 선고 2005도70 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005도4002|판결" href="#//">대법원 2006. 12. 22. 선고 2005도4002 판결</a></span> 등 참조). 그리고 
+        <span class="accrnt_txt">어떤 상품의 형태가 출처표시기능을 가지고 나아가 주지성까지 획득하는 경우에는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|" style="text-decoration:underline">부정경쟁방지법 제2조 제1호 (가)목</a></span>에 규정된 ‘국내에 널리 인식된 타인의 상품임을 표시한 표지’에 해당하여 같은 법에 의한 보호를 받을 수 있는데, 이를 위해서는 상품의 형태가 다른 유사상품과 비교하여, 수요자의 감각에 강하게 호소하는 독특한 디자인적 특징을 가지고 있는 등 일반수요자가 일견하여 특정의 영업주체의 상품이라는 것을 인식할 수 있는 정도의 식별력을 갖추고 있어야 하며, 나아가 당해 상품의 형태가 장기간에 걸쳐 특정의 영업주체의 상품으로 계속적·독점적·배타적으로 사용되거나, 또는 단기간이라도 강력한 선전·광고가 이루어짐으로써 그 상품형태가 갖는 차별적 특징이 거래자 또는 일반수요자에게 특정 출처의 상품임을 연상시킬 정도로 현저하게 개별화된 정도에 이르러야 한다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006도1157|판결" href="#//">대법원 2007. 7. 13. 선고 2006도1157 판결</a></span> 등 참조).
+      </p><p>  위 법리와 기록에 비추어 살펴보면, 원심이 드라마 ‘겨울연가’, ‘황진이’, ‘대장금’, ‘주몽’(이하 ‘이 사건 각 드라마’라고 한다)의 캐릭터가 그 상품화 사업에 대한 지속적인 선전, 광고 및 품질관리 등으로 이를 상품화할 수 있는 권리를 가진 자 또는 그 캐릭터에 관한 상품화 사업을 영위하는 집단의 상품표지로서 국내 수요자들에게 널리 인식되어 있다고 보기 어렵고, 또한 이 사건 각 드라마의 의상, 소품, 배경 등을 상품화한 원고들 상품의 형태도 그 상품형태가 갖는 차별적 특징이 거래자 또는 일반수요자에게 특정 출처의 상품임을 연상시킬 정도로 현저하게 개별화된 정도에 이르렀다고 보기 어렵다고 하는 이유로, 피고 데카리오의 원심판시 피고 제품의 판매행위가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지법 제2조 제1호 (가)목</a></span>에 해당하지 않는다는 취지로 판단한 것은 정당하고, 거기에 각 상고이유의 주장과 같은 법리오해 등의 위법이 없다.
+      </p><p>  3. 원고들의 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지법 제2조 제1호 (자)목</a></span>에 관한 각 상고이유에 대하여
+      </p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|" style="text-decoration:underline">부정경쟁방지법 제2조 제1호 (자)목</a></span>은 부정경쟁행위의 한 유형으로서 타인이 제작한 상품의 형태를 모방한 상품을 양도·대여 또는 이를 위한 전시를 하거나 수입·수출하는 행위를 규정하고 있는데, 여기에서 “모방”이라 함은 타인의 상품의 형태에 의거하여 이와 실질적으로 동일한 형태의 상품을 만들어 내는 것을 말하며, 형태에 변경이 있는 경우 실질적으로 동일한 형태의 상품에 해당하는지 여부는 당해 변경의 내용·정도, 그 착상의 난이도, 변경에 의한 형태적 효과 등을 종합적으로 고려하여 판단하여야 한다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2006마342|결정" href="#//">대법원 2008. 10. 17.자 2006마342 결정</a></span> 참조).
+      </p><p>  위 법리와 기록에 비추어 살펴보면, 원심이 그 판시와 같은 사정을 들어 피고 제품이 원고들 상품과 실질적으로 동일한 형태라고 할 수 없으므로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부정경쟁방지 및 영업비밀보호에 관한 법률|2|">부정경쟁방지법 제2조 제1호 (자)목</a></span>에 해당하지 않는다는 취지로 판단한 것은 정당하다. 거기에 각 상고이유의 주장과 같은 법리오해 등의 위법은 없다.
+      </p><p>  4. 원고 한국방송공사, 문화방송의 복제권, 2차적저작물 작성권 침해에 관한 각 상고이유에 대하여</p><p>  가. 캐릭터 저작물에 관한 각 상고이유에 대하여</p><p>  원심판결 이유를 기록에 비추어 살펴보면, 원심이 이 사건 각 드라마에 등장하는 인물들의 이름, 복장, 소품만으로는 이 사건 각 드라마와 별개로 저작권법에 의하여 보호받을 수 있는 캐릭터 저작물이 된다고 할 수 없다는 취지로 판단한 것은 정당하고, 거기에 각 상고이유로 주장하는 바와 같은 캐릭터의 저작물성에 관한 법리오해 등의 위법이 없다.</p><p>  그 밖에 피고 제품이 만화영화 “장금이의 꿈”에 등장하는 장금이 캐릭터에 관한 저작권을 침해하였다는 원고 주식회사 희원엔터테인먼트(이하 ‘희원’이라고 한다)의 주장은 상고심에서 처음으로 주장된 것으로서 적법한 상고이유가 될 수 없다.</p><p>  나. 사진저작물, 영상저작물에 관한 각 상고이유에 대하여</p><p>  원심판결 이유를 기록에 비추어 살펴보면, 원심이 그 판시와 같은 사정을 들어 피고 제품은 이 사건 각 드라마에 관한 사진저작물, 영상저작물과 실질적 유사성이 없다고 판단한 것은 정당하고, 거기에 각 상고이유로 주장하는 바와 같은 저작물의 실질적 유사성 판단에 관한 법리오해 등의 위법이 없다.</p><p>  다. 응용미술저작물에 관한 각 상고이유에 대하여</p><p>  원심판결 이유를 기록에 비추어 살펴보면, 원심이 그 판시와 같은 사정을 들어, 드라마 ‘겨울연가’ 남녀 주인공의 코트와 목도리, 드라마 ‘대장금’의 의녀 복장과 드라마 ‘주몽’의 소서노 의상은 각 저작물로서 보호받기 위해 필요한 창작성이 있다고 할 수 없고, 드라마 ‘황진이’에서 황진이가 입었던 한복은 그에 관한 저작권이 원고 한국방송공사에게 있음을 인정하기가 어려우며, 드라마 ‘주몽’에서 주몽이 입었던 갑옷의 경우는 그 실질적 유사성이 없다고 보아, 피고 제품이 원고 한국방송공사, 문화방송의 이에 관한 각 복제권 또는 2차적저작물 작성권을 침해한 것으로 볼 수 없다고 판단한 것은 정당하고, 거기에 각 상고이유의 주장과 같은 법리오해 등의 위법이 없다.</p><p>  5. 원고 유성글로벌의 저작권 침해에 관한 상고이유에 대하여</p><p>  기록에 의하면, 원고 유성글로벌이 2009. 6. 1.자 준비서면에서 피고 제품은 원고 유성글로벌이 드라마 ‘황진이’, ‘대장금’ 및 ‘주몽’에 관하여 상품화 사업계약을 체결하고 제작한 인형, 볼펜, 가방고리, 열쇠고리, 키홀더 등의 물품에 이용된 응용미술저작물에 관한 저작권을 침해하였다는 주장을 하였음에도, 원심이 이 점에 관하여 아무런 판단을 하지 아니하였음은 상고이유의 주장과 같다. 그러나 기록에 비추어 살펴보면, 원고 유성글로벌이 응용미술저작물에 해당한다고 주장하는 것들과 피고 제품을 창작적인 표현형식에 해당하는 것만을 가지고 대비할 때 얼굴 모습, 색채와 무늬, 제품 형태 등 구체적인 디자인에서 큰 차이가 있어 이들 사이에 실질적인 유사성이 있다고 할 수 없으므로, 피고 제품이 원고 유성글로벌의 위 저작권을 침해하였다고 볼 수 없다.</p><p>  그렇다면 결국 원고 유성글로벌의 위 주장은 이유가 없어 배척될 경우임이 명백하고, 당사자의 주장에 대한 판단누락의 위법이 있다 하더라도 그 주장이 배척될 경우임이 명백한 때에는 판결 결과에 영향이 없으므로, 원심의 이 부분 판단누락에 관한 원고 유성글로벌의 상고이유 주장은 받아들일 수 없다.</p><p>  6. 불법행위에 관한 원고들 및 피고 데카리오의 각 상고이유에 대하여</p><p>  가. 원고 한국방송공사, 문화방송에 대하여 불법행위가 성립하지 않는다는 피고 데카리오의 상고이유에 대하여</p><p>  (1) 
+        <span class="accrnt_txt">경쟁자가 상당한 노력과 투자에 의하여 구축한 성과물을 상도덕이나 공정한 경쟁질서에 반하여 자신의 영업을 위하여 무단으로 이용함으로써 경쟁자의 노력과 투자에 편승하여 부당하게 이익을 얻고 경쟁자의 법률상 보호할 가치가 있는 이익을 침해하는 행위는 부정한 경쟁행위로서 민법상 불법행위에 해당한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008마1541|결정" href="#//">대법원 2010. 8. 25.자 2008마1541 결정</a></span> 참조).
+      </p><p>  (2) 위 법리와 기록에 비추어 살펴본다.</p><p>  (가) 원고 한국방송공사가 방영한 드라마 ‘겨울연가’와 ‘황진이’ 및 원고 문화방송이 방영한 드라마 ‘대장금’과 ‘주몽’은 이들 방송사가 상당한 노력과 투자에 의하여 구축한 성과물로서, 이들 방송사는 각 해당 드라마의 명성과 고객흡인력을 이용하여 그에 관한 상품화 사업을 수행할 수 있는 권한을 타인에게 부여하고 대가를 받는 방식 등으로 영업해 오고 있음을 알 수 있는데, 이러한 영업을 통하여 원고 한국방송공사, 문화방송이 얻는 이익은 법률상 보호할 가치가 있는 이익에 해당한다.</p><p>  (나) 그리고 이 사건 각 드라마가 국내뿐 아니라 해외에서도 인기를 얻어 국내 수요자나 해외 관광객들 사이에서 이와 관련한 상품에 대한 수요가 커지자, 피고 데카리오는 이 사건 각 드라마를 구축한 원고 한국방송공사, 문화방송으로부터 허락도 받지 아니한 채, 피고 제품을 접한 수요자들로 하여금 이 사건 각 드라마를 직접적으로 연상하도록 하고 그러한 연상으로부터 생겨나는 수요자들의 제품 구매 욕구에 편승하여 피고 제품을 제조·판매하였음이 아래와 같은 사정들에 의하여 넉넉히 인정된다.</p><p>  먼저 피고 데카리오는 이 사건 각 드라마가 인기를 끌기 전까지는 피고 제품을 제조·판매한 적이 없었고, 또한 자신의 홈페이지에 “한류 열풍의 주역인 겨울연가, 대장금, 주몽 등 특별한 캐릭터들을 상품화시켜 이미지 변신을 꾀하고 있는데, 이런 멋진 상품들을 파는 매장들은 면세점이나 관광특구 지역에서 판매되고 있는데 남대문의 직영매장을 비롯한 명동, 인사동, 동대문에 가면 만날 수가 있습니다.”라고 게시하여 피고 제품이 이 사건 각 드라마를 상품화한 것임을 명백히 하였다. 그리고 드라마 ‘겨울연가’와 관련하여 그 남녀 주인공들과 유사한 자세 및 그들이 착용하였던 것과 유사한 색깔, 스타일의 옷과 목도리, 겨울을 나타내는 눈과 앙상한 가지 등으로 꾸민 헬로키티 제품, 드라마 ‘황진이’와 관련하여 붉은색의 치마와 꽃무늬 저고리를 입고 어여머리를 올린 헬로키티 제품, 드라마 ‘대장금’과 관련하여 조선 시대 의녀의 복장을 하고 신선로를 들고 있는 헬로키티 제품, 드라마 ‘주몽’과 관련하여 갑옷을 입고 이마에 띠를 두른 다음 한 손에 칼을 들고 있거나 흰색 바탕에 분홍색의 점무늬가 섞여 있고 손목 부위에 분홍색 띠가 있는 옷을 입고 있는 헬로키티 제품 등 그 수요자들로 하여금 이 사건 각 드라마를 떠올리도록 하기에 충분한 의상과 소품, 모습, 배경 등으로 꾸민 피고 제품을 제조·판매하였다. 또한 피고 데카리오는 자신의 홈페이지에 게시한 피고 제품의 이름 앞에 ‘겨울연가’, ‘황진이’, ‘대장금’, ‘주몽’ 등 이 사건 각 드라마의 제호를 직접 기재하기까지 하였다.</p><p>  (다) 그런데 드라마 관련 상품화 사업을 추진하기 위해서는 그에 관한 권리자로부터 허락을 받는 것이 그 거래사회에서 일반적인 관행인 점 등을 고려할 때, 원고 한국방송공사와 원고 문화방송으로부터 허락을 받지 아니한 피고 데카리오의 위와 같은 행위는 상도덕이나 공정한 경쟁질서에 반하는 것이다. 그리고 이러한 행위는 드라마를 이용한 상품화 사업 분야에서 서로 경쟁자의 관계에 있는 위 원고들의 상당한 노력과 투자에 편승하여 이 사건 각 드라마의 명성과 고객흡인력을 자신의 영업을 위하여 무단으로 이용하여, 앞서 본 바와 같이 법률상 보호할 가치가 있는 위 원고들의 각 해당 드라마에 관한 상품화 사업을 통한 영업상의 이익을 침해하는 것이기도 하다.</p><p>  따라서 피고 데카리오의 위와 같은 피고 제품의 제조·판매 행위는 부정한 경쟁행위로서 민법상 불법행위에 해당한다. </p><p>  (3) 소결</p><p>  이와 같은 취지에서 피고 데카리오의 불법행위가 성립한다고 한 원심판단은 정당하고, 거기에 피고 데카리오가 상고이유로 주장하는 바와 같은 불법행위에 관한 법리오해 등의 위법이 없다.</p><p>  나. 불법행위 성립에 관한 원고 희원, 올리브나인, 유성글로벌의 각 상고이유에 대하여</p><p>  기록에 비추어 살펴보면, 원심이 피고 데카리오의 피고 제품 제조·판매행위는 원고 올리브나인, 희원, 유성글로벌에 대한 관계에서 불법행위에 해당하지 아니한다고 판단한 것은 정당하고, 거기에 각 상고이유의 주장과 같은 법리오해 등의 위법이 없다.</p><p>  다. 손해배상액 산정에 관한 원고 한국방송공사, 문화방송의 상고이유에 대하여</p><p>  원심판결 이유에 의하면, 원심은 이 사건 각 드라마 관련 피고 제품의 판매수량과 소매가 합계, 원고 한국방송공사, 문화방송이 직접 상품화 사업을 하지는 아니한 점, 피고 데카리오가 위 원고들과 각 상품화사업 계약을 체결하였다면 지급하였을 사용료 및 이 경우 상품화권리를 부여받은 다른 업체들의 판매 감소로 인해 결과적으로 감소하였을 위 원고들의 사용료 수입, 통상적인 상품화 사업 계약에서 소매가 대비 출고가의 비율과 사용료 요율 등을 참작하여, 피고 데카리오의 원고 한국방송공사에 대한 손해배상액을 10,000,000원으로, 원고 문화방송에 대한 손해배상액을 20,000,000원으로 각 정하였다.</p><p>  기록에 비추어 살펴보면, 원심의 위와 같은 판단에 상고이유의 주장과 같은 손해배상액의 산정에 관한 법리오해 등의 위법이 있다고 할 것은 아니다. </p><p>  7. 피고 산리오코리아에 관한 원고들의 각 상고이유에 대하여</p><p>  기록에 비추어 살펴보면, 원심이 피고 산리오코리아는 피고 데카리오의 피고 제품 제조·판매행위에 가담 또는 방조함으로써 공동으로 불법행위를 하였거나, 독자적으로 불법행위를 하였음을 인정하기 어렵다고 판단한 것은 정당하고, 거기에 각 상고이유의 주장과 같은 법리오해 등의 위법이 없다.</p><p>  8. 결론</p><p>  그러므로 관여 대법관의 일치된 의견으로 원고들과 피고 데카리오의 상고를 모두 기각하고, 상고비용 중 원고 한국방송공사, 문화방송과 피고 데카리오 사이에서 생긴 부분은 각자가 부담하도록 하며, 원고 희원, 올리브나인, 유성글로벌과 피고 데카리오 사이에서 생긴 부분 및 원고들과 피고 산리오코리아 사이에서 생긴 부분은 각 패소자들이 부담하도록 하여, 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   안대희(재판장) 김능환 이인복 박병대(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

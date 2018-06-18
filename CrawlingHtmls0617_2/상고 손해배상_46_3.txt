@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 98두15597 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2058008';
+var contIdEtc = '2107031';
+var saNo = '98두15597';
+var sngoNm = '선고';
+var saNm = '손실보상금재결처분취소';
+try {
+	var sngoDay=('20010315' ? 
+			'20010315'.length==4 ? Date.parseExact('20010315','yyyy').toString('yyyy. M. d.') : 
+				'20010315'.length==6 ? Date.parseExact('20010315','yyyyMM').toString('yyyy. M. d.') : 
+					'20010315'.length==8 ? Date.parseExact('20010315','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '전원합의체 판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 98두15597 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A1';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '98두15597';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />98두15597</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(10)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(11)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(14)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(2)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|475431">파기판결의 구속력과 전원합의체 김상수 判例月報社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|546340">파기환송 판결의 기속력에 대한 예외를 인정할 수 있는지 여부 백춘기 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|534094">파기판결의 효력 김상수 국가고시학회</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|562699">윤진수 허위표시와 제3자 저스티스 94호  / 한국법학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|628722">박찬주 재판소원 인권과 정의 413호  / 대한변호사협회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|752737">이동진 판례변경의 소급효 민사판례연구 36권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|522238">피정현 파기판결의 기속력 비교사법 10권 3호 (2003.09) / 한국비교사법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|534094">김상수 파기판결의 효력 고시계 50권 2호 (2005.02) / 국가고시학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|475431">김상수 파기판결의 구속력과 전원합의체 판례월보 369호  / 판례월보사  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495246">김상수 상소와 재심 고시연구 29권 9호 (2002.09) / 고시연구사  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|752736">고학수 법경제학적 관점에서 본 판례의 변경 민사판례연구 36권  / 박영사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|586135">엄상필 분묘기지권의 내용과 범위 및 점유로 인한 분묘기지의 시효취득 대법원판례해설 67호 (2007.12) / 법원도서관  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|649907">노재호 소멸시효의 원용 : 원용권자의 범위와 원용권자 상호간의 관계를 중심으로 사법논집 . 제52집   / 법원도서관  2011 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|80다2029">
+대법원 1981. 2. 24. 선고 80다2029 전원합의체 판결(공1981, 13735)(변경)</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|87다카1396">
+대법원 1988. 3. 8. 선고 87다카1396 판결(공1988, 655)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|88다카24622">
+대법원 1990. 1. 12. 선고 88다카24622 판결(공1990, 451)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|94재누18">
+대법원 1995. 5. 23. 선고 94재누18 판결(변경)</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|94다43078">
+대법원 1995. 8. 22. 선고 94다43078 판결(공1995하, 3236)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|95다49233">
+대법원 1997. 2. 28. 선고 95다49233 판결(공1997상, 895)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|97다12150">
+대법원 1997. 6. 13. 선고 97다12150 판결, 대법원 1997. 7. 11. 선고 97다14934 판결(공1997하, 2495) </a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|80다710">
+대법원 1981. 5. 26. 선고 80다710 판결(공1981, 13969)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|80누535">
+대법원 1982. 9. 14. 선고 80누535 판결(공1982, 1013)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|88다카23032">
+대법원 1989. 5. 9. 선고 88다카23032, 88다카23049 판결(공1989, 907)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|91다26089">
+대법원 1992. 2. 14. 선고 91다26089 판결(공1992, 1023)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사소송법|406|0|null">민사소송법 제406조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="법원조직법|7|0|null">법원조직법 제7조 제1항 제3호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="법원조직법|8|0|null">법원조직법 제8조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="행정소송법|8|0|null">행정소송법 제8조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="행정소송법|27|0|null">행정소송법 제27조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="하천법|3|0|19990208">하천법(구) 제3조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="하천법|10|0|null">하천법(구) 제10조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="하천법|2|0|null">하천법 제2조 제2항 제3호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="하천법|74|0|null">하천법(구) 제74조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="하천법|2|0|null">하천법 제2조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="하천법|2|0|null">하천법 제2조 제2항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="하천법시행령|9|0|19990809">하천법시행령(구) 제9조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="하천법|4|0|null">하천법 제4조 제2항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="하천법시행령|9|0|null">하천법시행령(구) 제9조 제3항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대법원|97누20175">
+대법원 1998. 3. 10. 선고 97누20175 판결</a></p><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|98누8645">
+서울고법  1998. 8. 21. 선고 98누8645 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2107031">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2001. 3. 15. 선고 98두15597 전원합의체 판결</h2><p class="sub_title">[손실보상금재결처분취소][집49(1)특,586;공2001.5.1.(129),890]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 환송판결의 기속력이 재상고심의 전원합의체에도 미치는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 구 하천법상 개인 소유의 토지가 준용하천의 부지로 편입된 경우, 당연히 국유로 되어 종래의 소유자가 그 소유권을 상실하게 되는지 여부(소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 상고심으로부터 사건을 환송받은 법원은 그 사건을 재판함에 있어서 상고법원이 파기이유로 한 사실상 및 법률상의 판단에 대하여, 환송 후의 심리과정에서 새로운 주장이나 입증이 제출되어 기속적 판단의 기초가 된 사실관계에 변동이 생기지 아니하는 한 이에 기속을 받는다고 할 것이다. 따라서 환송 후 원심판결이 환송 전후를 통하여 사실관계에 아무런 변동이 없음에도 불구하고 환송판결이 파기이유로 한 법률상의 판단에 반하는 판단을 한 것은 일응 환송판결의 기속력에 관한 법리를 오해한 위법을 저지른 것이라고 아니할 수 없다. 그런데 행정소송법 제8조 제2항에 의하여 행정소송에 준용되는 민사소송법 제406조 제2항이, 사건을 환송받은 법원은 상고법원이 파기이유로 한 법률상의 판단 등에 기속을 받는다고 규정하고 있는 취지는, 사건을 환송받은 법원이 자신의 견해가 상고법원의 그것과 다르다는 이유로 이에 따르지 아니하고 다른 견해를 취하는 것을 허용한다면 법령의 해석적용의 통일이라는 상고법원의 임무가 유명무실하게 되고, 사건이 하급심법원과 상고법원 사이를 여러 차례 왕복할 수밖에 없게 되어 분쟁의 종국적 해결이 지연되거나 불가능하게 되며, 나아가 심급제도 자체가 무의미하게 되는 결과를 초래하게 될 것이므로, 이를 방지함으로써 법령의 해석적용의 통일을 기하고 심급제도를 유지하며 당사자의 법률관계의 안정과 소송경제를 도모하고자 하는 데 있다고 할 수 있다. 따라서 위와 같은 환송판결의 하급심법원에 대한 기속력을 절차적으로 담보하고 그 취지를 관철하기 위하여서는 원칙적으로 하급심법원뿐만 아니라 상고법원 자신도 동일 사건의 재상고심에서 환송판결의 법률상 판단에 기속된다고 할 것이다. 그러나 한편, 대법원은 법령의 정당한 해석적용과 그 통일을 주된 임무로 하는 최고법원이고, 대법원의 전원합의체는 종전에 대법원에서 판시한 법령의 해석적용에 관한 의견을 스스로 변경할 수 있는 것인바(법원조직법 제7조 제1항 제3호), 환송판결이 파기이유로 한 법률상 판단도 여기에서 말하는 '대법원에서 판시한 법령의 해석적용에 관한 의견'에 포함되는 것이므로 대법원의 전원합의체가 종전의 환송판결의 법률상 판단을 변경할 필요가 있다고 인정하는 경우에는, 그에 기속되지 아니하고 통상적인 법령의 해석적용에 관한 의견의 변경절차에 따라 이를 변경할 수 있다고 보아야 할 것이다. 환송판결이 한 법률상의 판단을 변경할 필요가 있음에도 불구하고 대법원의 전원합의체까지 이에 기속되어야 한다면, 그것은 전원합의체의 권능 행사를 통하여 법령의 올바른 해석적용과 그 통일을 기하고 무엇이 정당한 법인가를 선언함으로써 사법적 정의를 실현하여야 할 임무가 있는 대법원이 자신의 책무를 스스로 포기하는 셈이 될 것이고, 그로 인하여 하급심법원을 비롯한 사법전체가 심각한 혼란과 불안정에 빠질 수도 있을 것이며 소송경제에도 반하게 될 것임이 분명하다. 그리고 이와 같은 환송판결의 자기기속력의 부정은 법령의 해석적용에 관한 의견변경의 권능을 가진 대법원의 전원합의체에게만 그 권한이 주어지는 것이므로 그로 인하여 사건이 대법원과 원심법원을 여러 차례 왕복함으로써 사건의 종국적 해결이 지연될 위험도 없다고 할 것이다.</p>
+      <p></p><p>
+        </p><p>[2] 구 하천법(1999. 2. 8. 법률 제5893호로 전문 개정되기 전의 것) 제10조는 같은 법의 규정을 대통령령이 정하는 바에 의하여 준용하천에 준용한다고 규정하고 있고, 같은법시행령(1999. 8. 9. 대통령령 제16535호로 전문 개정되기 전의 것) 제9조 제3항은 준용하천에 준용되는 같은 법의 규정들을 열거하면서 하천의 국유화에 관한 같은 법 제3조를 제외하고 있으므로, 개인 소유의 토지가 준용하천의 부지로 편입되었다고 하더라도 당연히 국유로 되어 종래의 소유자가 그 소유권을 상실하게 되는 것이 아님은 명백하다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>  [1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|406|">민사소송법 제406조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법원조직법|7|">법원조직법 제7조 제1항 제3호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법원조직법|8|">제8조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="행정소송법|8|">행정소송법 제8조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="행정소송법|27|">제27조[행정소송재판일반]</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법|3|">구 하천법(1999. 2. 8. 법률 제5893호로 전문 개정되기 전의 것) 제3조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법|10|">제10조</a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법|2|">(현행 제2조 제2항 제3호)</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법|74|">제74조 제1항</a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법|2|">(현행 제74조 제1항, </a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법|2|">제2항 참조), </a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법시행령|9|">구 하천법시행령(1999. 8. 9. 대통령령 제16535호로 전문 개정되기 전의 것) 제9조 제1항</a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법|4|">(현행 제4조 제2항, 부칙 제2항 참조), </a></span>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="하천법시행령|9|">제3항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|80다2029" href="#//">대법원 1981. 2. 24. 선고 80다2029 전원합의체 판결(공1981, 13735)(변경)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|87다카1396|판결" href="#//">대법원 1988. 3. 8. 선고 87다카1396 판결(공1988, 655)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|88다카24622|판결" href="#//">대법원 1990. 1. 12. 선고 88다카24622 판결(공1990, 451)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94재누18" href="#//">대법원 1995. 5. 23. 선고 94재누18 판결(변경)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다43078|판결" href="#//">대법원 1995. 8. 22. 선고 94다43078 판결(공1995하, 3236)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다49233|판결" href="#//">대법원 1997. 2. 28. 선고 95다49233 판결(공1997상, 895)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다12150|판결" href="#//">대법원 1997. 6. 13. 선고 97다12150 판결, 대법원 1997. 7. 11. 선고 97다14934 판결(공1997하, 2495) </a></span></p><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|80다710|판결" href="#//">대법원 1981. 5. 26. 선고 80다710 판결(공1981, 13969)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|80누535|판결" href="#//">대법원 1982. 9. 14. 선고 80누535 판결(공1982, 1013)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|88다카23032|판결" href="#//">대법원 1989. 5. 9. 선고 88다카23032, 88다카23049 판결(공1989, 907)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다26089|판결" href="#//">대법원 1992. 2. 14. 선고 91다26089 판결(공1992, 1023)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,피상고인】
+      
+          원고 (소송대리인 변호사 태윤기)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고,상고인】
+      
+          중앙토지수용위원회 (소송대리인 법무법인 삼정 담당변호사 김학세 외 5인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【환송판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97누20175|판결" href="#//">
+대법원 1998. 3. 10. 선고 97누20175 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|98누8645|판결" href="#//">
+서울고법  1998. 8. 21. 선고 98누8645 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>상고를 기각한다.  상고비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 제1점에 대하여</p><p>  가. 원심판결 이유에 의하면, 원심은 그 판결에서 채용하고 있는 증거들을 종합하여, 경기도지사가 준용하천인 왕숙천의 관리청으로서 1985. 7. 16.부터 같은 해 11월 26일까지 왕숙천 수택제 개수공사를 시행하면서 원고 소유인 이 사건 토지 위에 제방을 축조하여 이 사건 토지 일부가 제방의 부지 등 하천구역으로 편입되었는데, 당시 경기도지사는 원고와 손실보상에 관한 협의를 하다가 그 협의가 성립되지 아니하자 더 이상 손실보상을 위한 조치를 취하지 아니한 채 이 사건 토지 일부를 위 제방 부지 등으로 점유·관리하여 온 사실, 그 후 경기도지사는 1994년 11월경 왕숙천의 제방과 고수부지 및 하도를 정비하는 왕숙천개발사업을 시행하면서 구리시장에게 개발사업으로 인한 부지매수 및 손실보상에 관한 협의를 위임하였고 구리시장은 1995. 2. 10. 원고로부터 이 사건 토지를 금 56,674,500원에 매수하기로 하는 매매계약을 체결한 사실 등을 각 인정한 다음, 위 왕숙천 수택제 개수공사로 이 사건 토지가 하천구역에 편입된 이래 위 매매계약시까지 이 사건 토지에 대한 원고의 사권행사가 제한됨으로써 그 임료 상당의 손실을 입었다는 원고의 주장에 대하여, 구 하천법시행령(1999. 8. 9. 대통령령 제16535호로 전문 개정되기 전의 것, 이하 같다) 제9조 제3항에 의하면, 준용하천에는 하천의 국유화에 관한 구 하천법(1999. 2. 8. 법률 제5893호로 전문 개정되기 전의 것, 이하 같다) 제3조의 규정이 준용되지 아니하므로 이 사건 토지가 준용하천의 부지로 편입되었다고 하여도 원고는 그 소유권을 상실하지 아니하므로 경기도는 구 하천법 제74조 제1항에 따라 원고에게 그 손실을 보상할 의무가 있다고 판단하여, 그 손실보상청구를 기각한 재결의 취소를 구하는 원고의 이 사건 청구를 인용하고 있다.</p><p>  나. 그런데 기록에 의하면, 원심판결은 이 사건 환송판결(대법원 1998. 3. 10. 선고 97누20175 판결) 후의 재항소심 판결로서, 환송 전 원심판결이 경기도지사는 그가 시행한 위 하천공사로 인하여 하천구역으로 편입된 이 사건 토지의 소유자인 원고가 위 매매계약시까지 그 사용·수익에 관한 사권의 행사를 제한받음으로써 입은 손실을 보상할 의무가 있다고 판단하여 원고의 이 사건 청구를 인용한 데 대하여 피고가 상고를 제기하자, 이 사건 환송판결은, 그 이유에서 준용하천의 관리청이 설치한 제방의 부지는 구 하천법 제8조, 제3조에 의하여 국유로 된다고 전제한 다음, 이 사건 토지는 관리청인 경기도지사가 1985. 11. 26.경 설치한 제방의 부지로 편입됨으로써 당연히 국유로 되었으므로, 원고는 그 후부터는 구 하천법 제74조에 정한 바에 따라 경기도지사에게 토지 가액에 대한 손실보상을 청구할 수 있을 뿐, 여전히 이 사건 토지가 자기의 소유임을 내세워 임료 상당의 손실보상 등을 청구할 수는 없다고 판단하여 환송 전 원심판결이 구 하천법의 법리를 오해하였다는 이유로 파기환송하였는데, 환송 후 원심판결은 환송 전후를 통하여 사실관계에 아무런 변동이 없음에도 불구하고 앞서 본 바와 같이 준용하천에는 하천의 국유화에 관한 구 하천법 제3조의 규정이 준용되지 아니하므로 이 사건 토지가 준용하천의 부지로 편입되었다고 하더라도 원고는 그 소유권을 상실하지 아니한다고 판단하여 이 사건 환송판결의 판단에 반하는 판결을 하였음을 알 수 있다. </p><p>  다. 
+        <span class="accrnt_txt">상고심으로부터 사건을 환송받은 법원은 그 사건을 재판함에 있어서 상고법원이 파기이유로 한 사실상 및 법률상의 판단에 대하여, 환송 후의 심리과정에서 새로운 주장이나 입증이 제출되어 기속적 판단의 기초가 된 사실관계에 변동이 생기지 아니하는 한 이에 기속을 받는다고 할 것이다</span>(대법원 1988. 3. 8. 선고 87다카1396 판결, 1997. 2. 28. 선고 95다49233 판결, 1997. 7. 11. 선고 97다14934 판결 등 참조). 
+      </p><p>
+        <span class="accrnt_txt">따라서 환송 후 원심판결이 환송 전후를 통하여 사실관계에 아무런 변동이 없음에도 불구하고 위와 같이 이 사건 환송판결이 파기이유로 한 법률상의 판단에 반하는 판단을 한 것은 일응 환송판결의 기속력에 관한 법리를 오해한 위법을 저지른 것이라고 아니할 수 없다</span>. 
+      </p><p>  라. 그러나 
+        <span class="accrnt_txt">구 하천법 제10조는 같은 법의 규정을 대통령령이 정하는 바에 의하여 준용하천에 준용한다고 규정하고 있고, 같은법시행령 제9조 제3항은 준용하천에 준용되는 같은 법의 규정들을 열거하면서 하천의 국유화에 관한 같은 법 제3조를 제외하고 있으므로, 개인 소유의 토지가 준용하천의 부지로 편입되었다고 하더라도 당연히 국유로 되어 종래의 소유자가 그 소유권을 상실하게 되는 것이 아님은 명백하고, 이러한 법리는 대법원 1981. 5. 26. 선고 80다710 판결, 1982. 9. 14. 선고 80누535 판결, 1989. 5. 9. 선고 88다카23032, 88다카23049 판결, 1992. 2. 14. 선고 91다26089 판결 등에서도 거듭 확인된 바 있다</span>. 
+      </p><p>
+        <span class="accrnt_txt">따라서 이 사건 환송판결이 준용하천의 국유화에 관하여 한 위와 같은 법률상의 판단은 구 하천법시행령 제9조 제3항의 규정을 간과함으로써 구 하천법의 적용을 그르친 것일 뿐만 아니라, 구 하천법의 해석에 관한 종래의 대법원의 견해와도 상반되는 것임이 분명하다 할 것이다</span>.
+      </p><p>  마. 
+        <span class="accrnt_txt">행정소송법 제8조 제2항에 의하여 행정소송에 준용되는 민사소송법 제406조 제2항이, 사건을 환송받은 법원은 상고법원이 파기이유로 한 법률상의 판단 등에 기속을 받는다고 규정하고 있는 취지는, 사건을 환송받은 법원이 자신의 견해가 상고법원의 그것과 다르다는 이유로 이에 따르지 아니하고 다른 견해를 취하는 것을 허용한다면 법령의 해석적용의 통일이라는 상고법원의 임무가 유명무실하게 되고, 사건이 하급심법원과 상고법원 사이를 여러 차례 왕복할 수밖에 없게 되어 분쟁의 종국적 해결이 지연되거나 불가능하게 되며, 나아가 심급제도 자체가 무의미하게 되는 결과를 초래하게 될 것이므로, 이를 방지함으로써 법령의 해석적용의 통일을 기하고 심급제도를 유지하며 당사자의 법률관계의 안정과 소송경제를 도모하고자 하는 데 있다고 할 수 있다. 따라서 위와 같은 환송판결의 하급심법원에 대한 기속력을 절차적으로 담보하고 그 취지를 관철하기 위하여서는 원칙적으로 하급심법원뿐만 아니라 상고법원 자신도 동일 사건의 재상고심에서 환송판결의 법률상 판단에 기속된다고 할 것이다</span>(대법원 1990. 1. 12. 선고 88다카24622 판결, 1995. 8. 22. 선고 94다43078 판결, 1997. 6. 13. 선고 97다12150 판결 등 참조).
+      </p><p>
+        <span class="accrnt_txt">그러나 한편, 대법원은 법령의 정당한 해석적용과 그 통일을 주된 임무로 하는 최고법원이고, 대법원의 전원합의체는 종전에 대법원에서 판시한 법령의 해석적용에 관한 의견을 스스로 변경할 수 있는 것인바(법원조직법 제7조 제1항 제3호), 환송판결이 파기이유로 한 법률상 판단도 여기에서 말하는 '대법원에서 판시한 법령의 해석적용에 관한 의견'에 포함되는 것이므로 대법원의 전원합의체가 종전의 환송판결의 법률상 판단을 변경할 필요가 있다고 인정하는 경우에는, 그에 기속되지 아니하고 통상적인 법령의 해석적용에 관한 의견의 변경절차에 따라 이를 변경할 수 있다고 보아야 할 것이다. 환송판결이 한 법률상의 판단을 변경할 필요가 있음에도 불구하고 대법원의 전원합의체까지 이에 기속되어야 한다면, 그것은 전원합의체의 권능 행사를 통하여 법령의 올바른 해석적용과 그 통일을 기하고 무엇이 정당한 법인가를 선언함으로써 사법적 정의를 실현하여야 할 임무가 있는 대법원이 자신의 책무를 스스로 포기하는 셈이 될 것이고, 그로 인하여 하급심법원을 비롯한 사법전체가 심각한 혼란과 불안정에 빠질 수도 있을 것이며 소송경제에도 반하게 될 것임이 분명하다. 그리고 이와 같은 환송판결의 자기기속력의 부정은 법령의 해석적용에 관한 의견변경의 권능을 가진 대법원의 전원합의체에게만 그 권한이 주어지는 것이므로 그로 인하여 사건이 대법원과 원심법원을 여러 차례 왕복함으로써 사건의 종국적 해결이 지연될 위험도 없다고 할 것이다</span>. 
+      </p><p>
+        <span class="accrnt_txt">따라서 이와 달리 환송판결의 기속력이 재상고심의 전원합의체에까지도 예외 없이 미친다고 본 대법원 1981. 2. 24. 선고 80다2029 전원합의체 판결 및 1995. 5. 23. 선고 94재누18 판결 등의 견해는 이와 저촉되는 한도에서 변경하기로 한다</span>.
+      </p><p>  바. 앞서 본 바와 같이 이 사건 환송판결이 준용하천의 국유화에 관하여 한 법률상의 판단은 구 하천법시행령 제9조 제3항의 규정을 간과하여 구 하천법의 적용을 그르친 것이고, 구 하천법의 해석에 관한 종래의 대법원의 견해와도 상반되는 것이므로 이를 변경할 필요가 있다고 할 것이다. </p><p>  이에 준용하천의 국유화에 관한 이 사건 환송판결의 위 견해를 통상적인 법령의 해석적용에 관한 의견의 변경절차에 따라 전원합의체 판결로써 변경하기로 하는바, 그렇다면 준용하천에는 하천의 국유화에 관한 구 하천법 제3조의 규정이 준용되지 아니한다는 전제하에 이 사건 토지가 준용하천의 부지로 편입되었다고 하더라도 그에 관한 원고의 소유권이 상실되지 아니한다고 판단한 환송 후 원심판결은, 결국 대법원이 유지하기로 하는 법률상의 의견에 부합하는 것이어서 정당한 것으로 수긍할 수 있다고 할 것이다. 이 점에 관한 상고이유는 받아들일 수 없다. </p><p>  2. 제2점에 대하여</p><p>  원심판결 이유에 의하면, 원심은 그 판결에서 채용하고 있는 증거들을 종합하여 그 판시와 같은 사실을 인정한 다음, 이 사건 토지에 대한 매매계약서(갑 제7호증) 제4조는 이 사건 토지에 물권 또는 임차권 등이 설정되어 있는 경우에 그 권리자들에 대한 법률관계를 매도인인 원고의 책임 아래 해결하여야 한다는 취지로 해석함이 상당하고, 원고가 이 사건 토지에 관하여 이미 취득한 손실보상청구권까지 포기한다는 취지로 해석할 수는 없다고 판단하고 있다. </p><p>  기록에 비추어 살펴보면, 원심의 위와 같은 사실인정과 판단은 수긍이 가고, 거기에 채증법칙을 위반하거나 손실보상청구권의 수액 또는 포기에 관한 법리를 오해한 위법이 있다고 할 수 없다. 상고이유에서 들고 있는 대법원판결은 불법행위로 인한 손해배상청구에 관한 것으로서 이 사건과는 사안과 취지를 달리하는 것이므로 원용하기에 적절하지 아니하다. 이 점에 관한 상고이유도 받아들일 수 없다. </p><p>  3. 그러므로 상고를 기각하고, 상고비용은 패소자인 피고의 부담으로 하기로 관여 대법관들 전원의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법원장   최종영(재판장)        대법관   송진훈 서성 조무제 유지담 윤재식 이용우 배기원 강신욱 이규홍 이강국(주심) 손지열 박재윤 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다93790 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2060846';
+var contIdEtc = '';
+var saNo = '2010다93790';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20121129' ? 
+			'20121129'.length==4 ? Date.parseExact('20121129','yyyy').toString('yyyy. M. d.') : 
+				'20121129'.length==6 ? Date.parseExact('20121129','yyyyMM').toString('yyyy. M. d.') : 
+					'20121129'.length==8 ? Date.parseExact('20121129','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다93790 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다93790';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다93790</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(28)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(5)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(16)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(6)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|701009">부당한 공동행위로 인한 손해액의 산정방법과 이른바 손해전가의 항변passing on defence 인정 여부 이상주 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|686885">부당한 공동행위에 대한 손해배상 청구소송에서 손해전가 항변 이선희 法律新聞社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|711554">부당한 공동행위에 대한 손해배상청구에서 손해전가항변과 책임제한 이선희 고려대학교 법학연구원</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|703062">부당한 공동행위로 인한 손해배상청구 등 관련쌍방 상고 사건 각 상고기각 윤인성 한국공정경쟁연합회</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|711554">이선희 부당한 공동행위에 대한 손해배상청구에서 손해전가항변과 책임제한 고려법학 제70호(분관결호) / 고려대학교 법학연구원  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|770755">홍대식 공정거래법상 공적집행과 사적집행 간의 관계 시장경제와 사회조화 : 남천 권오승교수 정년기념논문집   / 법문사  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|686885">이선희 부당한 공동행위에 대한 손해배상 청구소송에서 손해전가 항변 법률신문 4099호  / 법률신문사  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|739721">김용진 국제카르텔분쟁사건의 준거법 법제연구 통권 제44호 / 한국법제연구원  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|573788">한국. 대법원 법원행정처 법원실무제요. [1-3]:. 민사소송(Ⅲ) 법원행정처  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|573785">한국. 대법원 법원행정처 법원실무제요. [1-1]:. 민사소송(Ⅰ) 법원행정처  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769263">설민수 특허침해 소송에서 손해배상 산정의 현실과 그 구조적 원인, 그 개선모델 사법논집 . 제58집   / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|806012">이원석 아파트 허위․과장광고로 인한 표시광고법상 손해배상책임에 있어 수분양자 지위가 양도된 경우와 분양계약이 해제된 경우의 법률관계 대법원판례해설 제105호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701009">이상주 부당한 공동행위로 인한 손해액의 산정방법과 이른바 손해전가의 항변(Passing on Defence) 인정 여부 대법원판례해설 제93호 / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687090">최승재 2012년 경제법 중요 판례 인권과 정의 제432호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|738719">민성철 청소년 관람불가 등급분류기준으로서‘영상표현의 선정성’의 의미 및 그 요건을 충족하는지 여부의 판단 방법 대법원판례해설 제97호 / 법원도서관  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|711752">정재훈 부당한 공동행위와 관련시장의 획정 법조 (통권686호) (2013. 11) / 법조협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|687088">장재형 2012년 민사소송법 중요 판례 인권과 정의 제432호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|686421">주진열 카르텔 억지 및 피해자의 효과적 구제를 위한 독점규제법의 사적 집행 방안 행정법연구 제34호  / 행정법이론실무학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761532">홍진영 (소특집: 성범죄사건에 관한 연구) : 성범죄사건의 실무적 쟁점 : 영상녹화물 증거 제도와 전문심리위원 제도를 중심으로 사법 31호 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|667210">윤성운 공정거래법 위반으로 인한 손해액의 산정방법과 주요 쟁점 경쟁법연구 25권  / 한국경쟁법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|712481">이영대 시장지배적지위 남용행위 중 소비자이익저해행위에 대한 규제 방안 경쟁법연구 27권  / 한국경쟁법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|749596">김두진 카르텔에 대한 징벌적 배상제도의 도입론 경쟁법연구 29권  / 한국경쟁법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|728205">황태희 담합 자진신고자 감면제도와 손해배상의 법적 쟁점 선진상사법률연구 66호 / 법무부  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833690">김웅재 기망행위에 속아 물건을 고가에 매수한 뒤 그 물건가격이 변동한 경우 손해배상의 범위 및 손해배상액 산정의 기준시점 민사판례연구 39권  / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|732609">서정 한국의 사적 집행 사례와 시사점 경쟁법연구 28권  / 한국경쟁법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|812946">이원석 아파트 허위·과장광고로 인한 표시광고법상 손해배상책임에 있어 수분양자 지위가 양도된 경우와 분양계약이 해제된 경우의 법률관계 올바른 재판 따뜻한 재판:. 이인복 대법관 퇴임기념 논문집   / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|727820">홍진영 성폭력 심리절차의 새로운 쟁점 : 아동·장애인 성폭력 사건에서의 전문심리위원 활용 실태 및 개선점-진술의 신빙성 판단을 중심으로 . 성폭력 재판과 아동/청소년 : 2014년 젠더법연구회 심포지엄   / 대법원 젠더법연구회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725912">김용진 국제 카르텔 행위에 대한 사적 집행제도의 발전 현황과 대응 방안 비교사법 제21권 1호 / 한국비교사법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|778276">이선희 독점규제법상 부당한 공동행위에 대한 손해배상청구권의 소멸시효 민사법학 70호  / 한국사법행정학회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|835303">이원석 경유가격 담합과 공정거래법 제57조 손해액 인정제도에 의한 손해액 산정(부 - 간접구매자의 손해배상청구) 대법원판례해설 제109호 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|749593">이선희 한국 경쟁법의 사적 집행제도의 개요와 향후 발전방향 경쟁법연구 29권  / 한국경쟁법학회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696169">주진열 카르텔 손해액 추정을 위한 계량경제분석의 규범적 통제 경제법판례연구 . 제8권 8권  / 법문사  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다70420">대법원 2007. 2. 22. 선고 2004다70420, 70437 판결</a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다69638">대법원 2005. 10. 28. 선고 2003다69638 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다91828">대법원 2010. 4. 29. 선고 2009다91828 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다98652">대법원 2011. 4. 28. 선고 2009다98652 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다18850">대법원 2011. 7. 28. 선고 2010다18850 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 제3호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="독점규제및공정거래에관한법률|56|0|null">독점규제 및 공정거래에 관한 법률 제56조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민사소송법|202|0|null">민사소송법 제202조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 제3호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="독점규제및공정거래에관한법률|56|0|null">독점규제 및 공정거래에 관한 법률 제56조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민사소송법|202|0|null">민사소송법 제202조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="독점규제및공정거래에관한법률|56|0|null">독점규제 및 공정거래에 관한 법률 제56조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[5]</font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="독점규제및공정거래에관한법률|56|0|null">독점규제 및 공정거래에 관한 법률 제56조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="민법|393|0|null">민법 제393조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="민법|763|0|null">민법 제763조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2004다70420">대법원 2007. 2. 22. 선고 2004다70420, 70437 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다91828">대법원 2010. 4. 29. 선고 2009다91828 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다69638">대법원 2005. 10. 28. 선고 2003다69638 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다98652">대법원 2011. 4. 28. 선고 2009다98652 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다18850">대법원 2011. 7. 28. 선고 2010다18850 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2009다29366">대법원 2011. 3. 24. 선고 2009다29366 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="독점규제및공정거래에관한법률|19|0|null">독점규제 및 공정거래에 관한 법률 제19조 제1항 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="독점규제및공정거래에관한법률|56|0|null">독점규제 및 공정거래에 관한 법률 제56조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나65012">서울고법 2010. 10. 14. 선고 2009나65012 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 11. 29. 선고 2010다93790 판결</h2><p class="sub_title">[손해배상(기)]〈밀가루 가격 담합 사건〉[공2013상,5]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 갑 주식회사 등 국내 밀가루 시장점유율의 대부분을 차지하는 8개 밀가루 제조·판매회사들이 공동으로 밀가루 생산량(판매량)을 제한하고 밀가루 가격을 결정·유지·변경하였는데, 갑 회사 등으로부터 밀가루를 매입한 을 주식회사가 갑 회사 등을 상대로 손해배상을 구한 사안에서, 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호</a></span>, 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">제3호</a></span> 위반을 이유로 갑 회사 등의 손해배상책임을 인정한 원심판단을 수긍한 사례
+        
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 감정인의 감정 결과의 증명력</p>
+      <p></p>
+      <p>
+        </p><p>[3] 갑 주식회사 등 국내 밀가루 시장점유율의 대부분을 차지하는 8개 밀가루 제조·판매회사들이 공동으로 밀가루 생산량(판매량)을 제한하고 밀가루 가격을 결정·유지·변경하였는데, 갑 회사 등으로부터 밀가루를 매입한 을 주식회사가 갑 회사 등을 상대로 손해배상을 구한 사안에서, 담합 후 더미변수를 사용한 계량경제학적 분석방법으로 을 회사의 손해액을 산정한 제1심 감정인의 감정 결과를 채택한 원심판단을 수긍한 사례</p>
+      <p></p>
+      <p>
+        </p><p>[4] 위법한 가격 담합으로 인한 손해배상액의 산정 방법 및 담합에 의하여 가격이 인상된 재화 등을 매수한 매수인이 다시 이를 제3자인 수요자에게 판매하거나 그 재화 등을 사용·가공하여 생산된 제품을 수요자에게 판매한 경우, 제품 등의 가격 인상을 이유로 매수인의 손해가 감소되거나 회복되었다고 단정할 수 있는지 여부(원칙적 소극)</p>
+      <p></p>
+      <p>
+        </p><p>[5] 갑 주식회사 등 국내 밀가루 시장점유율의 대부분을 차지하는 8개 밀가루 제조·판매회사들이 공동으로 밀가루 생산량(판매량)을 제한하고 밀가루 가격을 결정·유지·변경하였는데, 갑 회사 등으로부터 밀가루를 매입한 을 주식회사가 갑 회사 등을 상대로 손해배상을 구한 사안에서, 갑 회사 등이 을 회사에 지급한 장려금과 을 회사의 제품 가격 인상에 의하여 전가된 손해액 부분은 갑 회사 등의 손해배상액에서 공제되어야 한다는 항변을 배척하는 한편 그와 같은 사정들을 참작하여 갑 회사 등의 손해배상책임을 제한한 원심판단을 수긍한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 갑 주식회사 등을 비롯한 국내 밀가루 시장점유율의 대부분을 차지하는 8개 밀가루 제조·판매회사들이 공동으로 밀가루 생산량(판매량)을 제한하고 밀가루 가격을 결정·유지·변경하였는데, 갑 회사 등으로부터 밀가루를 매입한 을 주식회사가 갑 회사 등을 상대로 손해배상을 구한 사안에서, 위와 같은 갑 회사 등의 행위는 밀가루 제조·판매시장의 경쟁을 부당하게 감소시키거나 제한하는 공동행위로서 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호</a></span>, 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">제3호</a></span>를 위반한 행위에 해당하므로, 갑 회사 등은 을 회사가 입은 손해를 배상할 의무가 있다고 본 원심판단을 수긍한 사례.
+        
+        </p>
+      <p></p><p>
+        </p><p>[2] 감정인의 감정 결과는 감정 방법 등이 경험칙에 반하거나 합리성이 없는 등의 현저한 잘못이 없는 한 존중하여야 한다.</p>
+      <p></p><p>
+        </p><p>[3] 갑 주식회사 등을 비롯한 국내 밀가루 시장점유율의 대부분을 차지하는 8개 밀가루 제조·판매회사들이 공동으로 밀가루 생산량(판매량)을 제한하고 밀가루 가격을 결정·유지·변경하였는데, 갑 회사 등으로부터 밀가루를 매입한 을 주식회사가 갑 회사 등을 상대로 손해배상을 구한 사안에서, 계량경제학적 분석방법인 회귀분석을 통하여 담합 후 더미변수와 3개월 전의 원맥도입가 및 실질국내총생산 등을 각각 설명변수로 하고 밀가루 입고단가를 종속변수로 한 회귀방정식을 추정한 다음, 이를 근거로 계산한 밀가루의 경쟁가격을 전제로 을 회사의 손해액을 산정한 제1심 감정인의 감정 결과를 채택한 원심판단을 수긍한 사례.</p>
+      <p></p><p>
+        </p><p>[4] 불법행위로 인한 손해는 위법행위가 없었을 경우에 상대방에게 존재하였을 재산상태와 위법행위가 가해진 재산상태의 차이를 말한다. 그리고 불법행위 등이 채권자 또는 피해자에게 손해를 생기게 하는 동시에 이익을 가져다 준 경우에는 공평의 관념상 그 이익은 당사자의 주장을 기다리지 아니하고 손해를 산정할 때에 공제하여야 하나, 손익상계가 허용되기 위해서는 손해배상책임의 원인이 되는 행위로 인하여 피해자가 새로운 이득을 얻었고 그 이득과 손해배상책임의 원인행위 사이에 상당인과관계가 있어야 한다. 이에 비추어 보면 위법한 가격 담합에 의하여 가격이 인상된 재화나 용역(이하 ‘재화 등’이라 한다)을 매수한 경우에, 매수인이 입는 직접적인 손해는 특별한 사정이 없다면 실제 매수한 가격과 담합행위가 없었을 경우에 형성되었을 가격(이하 ‘가상 경쟁가격’이라 한다)의 차액이 되며, 여기서 가상 경쟁가격은 담합행위가 발생한 당해 시장의 다른 가격형성 요인을 그대로 유지한 상태에서 담합행위로 인한 가격상승분만을 제외하는 방식으로 산정된다. 그리고 담합에 의하여 가격이 인상된 재화 등을 매수한 매수인이 다시 이를 제3자인 수요자에게 판매하거나 그 재화 등을 원료 등으로 사용·가공하여 생산된 제품을 수요자에게 판매한 경우에, 재화 등의 가격 인상 후 수요자에게 판매하는 재화 등 또는 위 제품(이하 이를 모두 포함하여 ‘제품 등’이라 한다)의 가격이 인상되었다고 하더라도, 재화 등의 가격 인상을 자동적으로 제품 등의 가격에 반영하기로 하는 약정이 있는 경우 등과 같이 재화 등의 가격 인상이 제품 등의 판매 가격 상승으로 바로 이어지는 특별한 사정이 없는 한, 제품 등의 가격은 매수인이 당시의 제품 등에 관한 시장 상황, 다른 원료나 인건비 등의 변화, 가격 인상으로 인한 판매 감소 가능성, 매수인의 영업상황 및 고객 보호 관련 영업상의 신인도 등 여러 사정을 고려하여 결정할 것이므로, 재화 등의 가격 인상과 제품 등의 가격 인상 사이에 직접적인 인과관계가 있다거나 제품 등의 인상된 가격 폭이 재화 등의 가격 인상을 그대로 반영하고 있다고 단정할 수 없다. 그뿐 아니라 제품 등의 가격 인상은 제품 등의 수요 감소 요인으로 작용하여 전체적으로 매출액 또는 영업이익의 감소가 초래될 수 있고, 이 역시 위법한 담합으로 인한 매수인의 손해라 할 수 있으므로, 이와 같은 여러 사정을 종합적으로 고려하지 아니하고 제품 등의 가격 인상에 의하여 매수인의 손해가 바로 감소되거나 회복되는 상당인과관계가 있다고 쉽게 추정하거나 단정하기도 부족하다. 다만 이와 같이 제품 등의 가격 인상을 통하여 부분적으로 손해가 감소되었을 가능성이 있는 경우에는 직접적인 상당인과관계가 인정되지 아니한다고 하더라도 이러한 사정을 손해배상액을 정할 때에 참작하는 것이 공평의 원칙상 타당하다.</p>
+      <p></p><p>
+        </p><p>[5] 갑 주식회사 등을 비롯한 국내 밀가루 시장점유율의 대부분을 차지하는 8개 밀가루 제조·판매회사들이 공동으로 밀가루 생산량(판매량)을 제한하고 밀가루 가격을 결정·유지·변경하였는데, 갑 회사 등으로부터 밀가루를 매입한 을 주식회사가 갑 회사 등을 상대로 손해배상을 구한 사안에서, 갑 회사 등이 을 회사에 밀가루를 판매하면서 판매증대를 목적으로 지급한 장려금이 갑 회사 등의 손해배상액에서 공제될 성질의 것은 아니라고 판단하고, 담합행위로 인하여 인상된 가격으로 밀가루를 구매한 을 회사가 밀가루를 원료로 생산하여 판매하는 제품에 관한 가격 인상을 통하여 인상된 밀가루 가격의 전부 또는 일부를 최종 소비자에게 전가하였다는 이유로 위와 같이 전가된 손해액 부분의 공제를 주장한 이른바 ‘손해전가의 항변(passing-on defence)’을 받아들이지 아니하는 한편 위와 같은 장려금 지급 및 제품 가격 인상에 의한 손해 전가에 관한 사정들을 참작하여 갑 회사 등의 손해배상책임을 제한한 원심판단을 수긍한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">제3호</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|56|">제56조</a></span> [2]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|202|">민사소송법 제202조</a></span> [3]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1호</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">제3호</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|56|">제56조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|202|">민사소송법 제202조</a></span> [4]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|56|">제56조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span> [5]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|56|">제56조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|393|">민법 제393조</a></span>,                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|763|">제763조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다70420|판결" href="#//">대법원 2007. 2. 22. 선고 2004다70420, 70437 판결</a></span><br />[4]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다69638|판결" href="#//">대법원 2005. 10. 28. 선고 2003다69638 판결</a></span>(공2005하, 1847)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다91828|판결" href="#//">대법원 2010. 4. 29. 선고 2009다91828 판결</a></span>(공2010상, 990)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다98652|판결" href="#//">대법원 2011. 4. 28. 선고 2009다98652 판결</a></span><br />                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다18850|판결" href="#//">대법원 2011. 7. 28. 선고 2010다18850 판결</a></span>(공2011하, 1740)            </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인 겸 상고인】
+      
+        주식회사 삼립식품 (소송대리인 법무법인 (유한) 화우 담당변호사 양호승 외 3인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인 겸 피상고인】
+      
+        씨제이 주식회사의 소송수계인 씨제이제일제당 주식회사 (소송대리인 변호사 김수형 외 3인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 피상고인 겸 상고인】
+      
+        주식회사 삼양사 (소송대리인 법무법인 (유한) 태평양 담당변호사 오금석 외 4인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나65012|판결" href="#//">서울고법 2010. 10. 14. 선고 2009나65012 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 상고인 각자가 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 담합으로 인한 손해배상책임 발생과 관련된 피고들의 상고이유에 관하여</p><p>  원심은, (1) 그 채택 증거에 의하여, 피고 주식회사 삼양사(이하 ‘피고 삼양사’라고 한다)를 제외한 피고 씨제이제일제당 주식회사(피고 씨제이제일제당 주식회사는 2007. 9. 1. 씨제이 주식회사로부터 분할되어 이 사건에 대한 씨제이 주식회사의 권리·의무를 포괄 승계함에 따라 이 사건 소송을 수계하였다. 이하 ‘피고 씨제이’라고 한다) 등 7개의 밀가루 제조·판매회사들은 2000년부터, 피고 삼양사는 2002년 2월 하순경부터, 각각 2005년경까지 밀가루 공급과잉에 따른 가격 하락으로 인한 손실을 방지하기 위하여 국내 밀가루 시장에서의 공급량을 제한·할당하기로 하는 합의를 하였던 사실, 그리고 위 회사들은 영업임원회의 및 영업부장회의를 개최하여 합의의 세부적인 실행방안, 점검방안 등을 마련한 후, 각 회사별 연간, 월별 반출량을 정하고 합의 준수 여부를 점검하면서 일부 회사들의 실적이 계획과 다소 차이가 발생할 경우, 계획대비 초과/부족분을 다음 해의 계획에 반영하여 정산함으로써, 공동으로 상품의 생산, 출고, 수송 또는 거래를 제한하였던 사실, 2000년 12월 중순부터는(피고 삼양사는 2002. 9. 16.부터) 영업임원회의 및 영업부장회의를 통하여 주요 밀가루 제품들의 가격을 인상하기로 합의하고, 그 합의에 따라 밀가루 가격을 인상하는 등 공동으로 밀가루 가격을 결정·유지·변경하였던 사실을 인정한 다음, (2) ① 피고들을 비롯한 국내 밀가루 시장점유율의 대부분을 차지하는 8개 밀가루 제조·판매회사들이 공동으로 밀가루의 생산량(판매량)을 제한하고 밀가루 가격을 결정·유지·변경한 행위는, 밀가루 제조·판매시장에서의 경쟁을 부당하게 감소시키거나 제한하는 공동행위로서 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1</a></span>, 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">3호</a></span>를 위반한 행위에 해당하고, ② 아울러 피고들이 가격 인상 합의를 하여 담합한 것이 도매상에 대한 공급가격이라 하더라도, 그로 인하여 원고를 포함한 대량수요처에 대한 밀가루 가격의 변경이 초래된다고 봄이 상당하며, 피고들을 포함한 담합사들이 인상 합의된 가격과 유사하게 가격을 인상하였으므로 그 실행행위가 없다고 볼 수도 없고, 피고들이 원고에게 장려금을 지급하였다 하더라도 그로 인하여 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">독점규제 및 공정거래에 관한 법률 제19조 제1항 제1</a></span>, 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|19|">3호</a></span> 위반행위에 따르는 손해배상책임이 면제된다고 볼 수 없으므로, (3) 피고들은 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="독점규제 및 공정거래에 관한 법률|56|">독점규제 및 공정거래에 관한 법률 제56조</a></span>에 따라 원고가 입은 손해를 배상할 의무가 있다고 판단하였다.
+      
+      </p><p>  원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보면, 원심의 위와 같은 판단에 상고이유로 주장하는 바와 같이 담합의 영향이 미치는 범위 등 담합으로 인한 손해배상책임 발생에 관한 법리를 오해한 위법이 있다고 할 수 없다.</p><p>  2. 담합 후 더미변수의 사용과 감정 결과의 취사선택과 관련된 원고와 피고들의 상고이유에 관하여</p><p>
+        <span class="accrnt_txt">감정인의 감정 결과는 그 감정 방법 등이 경험칙에 반하거나 합리성이 없는 등의 현저한 잘못이 없는 한 이를 존중하여야 한다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2004다70420|판결" href="#//">대법원 2007. 2. 22. 선고 2004다70420, 70437 판결</a></span> 참조).
+      
+      </p><p>  원심은 그 판시와 같은 사실을 인정한 다음, 이 사건에서 담합 종료 후 밀가루 가격이 즉시 담합 이전 가격으로 하락하지 아니한 점에 비추어 보면, 제1심 감정인의 담합 후 더미변수 사용이 단순히 가능성에 근거한 것으로 보이지 아니하므로, 감정인이 담합 후 더미변수를 사용한 것이 경험칙에 반하거나 합리성이 없는 것으로 보이지 않는다고 판단하였다.</p><p>  위 법리와 적법하게 채택된 증거 등에 비추어 원심판결 이유를 살펴보면, 계량경제학적 분석방법인 회귀분석을 통하여 담합 후 더미변수와 3개월 전의 원맥도입가 및 실질국내총생산 등을 각각 설명변수로 하고 밀가루 입고단가를 종속변수로 한 회귀방정식을 추정한 다음, 이를 근거로 계산한 밀가루의 경쟁가격을 전제로 원고의 손해액을 산정한 제1심 감정인의 감정 결과를 채택한 원심의 판단에, 감정 방법 등이 경험칙에 반하거나 합리성이 없는 등의 현저한 잘못이 있는 감정 결과를 채택하거나 손해액 산정 및 손해배상의 범위에 관한 법리를 오해한 위법 등이 있다고 할 수 없다.</p><p>  3. 장려금 지급 및 제품 가격 상승을 통한 손해전가와 관련된 피고들의 상고이유에 관하여</p><p>  가. 
+        
+        <span class="accrnt_txt">불법행위로 인한 손해는 그 위법행위가 없었을 경우에 상대방에게 존재하였을 재산상태와 그 위법행위가 가해진 재산상태의 차이를 말한다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다91828|판결" href="#//">대법원 2010. 4. 29. 선고 2009다91828 판결</a></span> 등 참조). 
+        
+        <span class="accrnt_txt">그리고 불법행위 등이 채권자 또는 피해자에게 손해를 생기게 하는 동시에 이익을 가져다 준 경우에는 공평의 관념상 그 이익은 당사자의 주장을 기다리지 아니하고 손해를 산정할 때에 공제하여야 하나, 손익상계가 허용되기 위해서는 손해배상책임의 원인이 되는 행위로 인하여 피해자가 새로운 이득을 얻었고 그 이득과 손해배상책임의 원인행위 사이에 상당인과관계가 있어야 한다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다69638|판결" href="#//">대법원 2005. 10. 28. 선고 2003다69638 판결</a></span>, 
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다98652|판결" href="#//">대법원 2011. 4. 28. 선고 2009다98652 판결</a></span> 등 참조).
+      
+      </p><p>
+        <span class="accrnt_txt">이에 비추어 보면 위법한 가격 담합에 의하여 가격이 인상된 재화나 용역(이하 ‘재화 등’이라 한다)을 매수한 경우에, 매수인이 입는 직접적인 손해는 특별한 사정이 없다면 실제 매수한 가격과 담합행위가 없었을 경우에 형성되었을 가격(이하 ‘가상 경쟁가격’이라 한다)의 차액이 되며, 여기서 가상 경쟁가격은 담합행위가 발생한 당해 시장의 다른 가격형성 요인을 그대로 유지한 상태에서 담합행위로 인한 가격상승분만을 제외하는 방식으로 산정된다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다18850|판결" href="#//">대법원 2011. 7. 28. 선고 2010다18850 판결</a></span> 참조).
+      
+      </p><p>
+        <span class="accrnt_txt">그리고 담합에 의하여 가격이 인상된 재화 등을 매수한 매수인이 다시 이를 제3자인 수요자에게 판매하거나 그 재화 등을 원료 등으로 사용·가공하여 생산된 제품을 수요자에게 판매한 경우에, 재화 등의 가격 인상 후 수요자에게 판매하는 재화 등 또는 위 제품(이하 이를 모두 포함하여 ‘제품 등’이라 한다)의 가격이 인상되었다고 하더라도, 재화 등의 가격 인상을 자동적으로 제품 등의 가격에 반영하기로 하는 약정이 있는 경우 등과 같이 재화 등의 가격 인상이 제품 등의 판매 가격 상승으로 바로 이어지는 특별한 사정이 없는 한, 제품 등의 가격은 매수인이 당시의 제품 등에 관한 시장 상황, 다른 원료나 인건비 등의 변화, 가격 인상으로 인한 판매 감소 가능성, 매수인의 영업상황 및 고객 보호 관련 영업상의 신인도 등 여러 사정을 고려하여 결정할 것이므로, 재화 등의 가격 인상과 제품 등의 가격 인상 사이에 직접적인 인과관계가 있다거나 제품 등의 인상된 가격 폭이 재화 등의 가격 인상을 그대로 반영하고 있다고 단정할 수 없다. 그뿐 아니라 제품 등의 가격 인상은 제품 등의 수요 감소 요인으로 작용하여 전체적으로 매출액 또는 영업이익의 감소가 초래될 수 있고, 이 역시 위법한 담합으로 인한 매수인의 손해라 할 수 있으므로, 이와 같은 여러 사정을 종합적으로 고려하지 아니하고 제품 등의 가격 인상에 의하여 매수인의 손해가 바로 감소되거나 회복되는 상당인과관계가 있다고 쉽게 추정하거나 단정하기도 부족하다. 다만 이와 같이 제품 등의 가격 인상을 통하여 부분적으로 손해가 감소되었을 가능성이 있는 경우에는 직접적인 상당인과관계가 인정되지 아니한다고 하더라도 이러한 사정을 손해배상액을 정할 때에 참작하는 것이 공평의 원칙상 타당할 것이다.</span>
+      </p><p>  나. 원심은, (1) 피고들의 담합에 의한 밀가루 가격 상승으로 인하여 담합기간 동안 원고가 피고들에게 경쟁가격을 초과한 가격을 지급함으로써 원고에게 발생한 손해액이 피고 씨제이에 대해서는 2,981,843,190원, 피고 삼양사에 대해서는 753,509,858원인 사실을 인정한 다음, (2) 피고 씨제이가 원고에게 밀가루를 판매하면서 판매증대를 목적으로 한 장려금 지급약정을 하였고 그 장려금 지급약정이 담합기간 이후에도 계속되었으며 장려금도 계속 지급된 사실, 피고 삼양사도 원고와 사이에 밀가루 등을 거래하면서 장려금 지급약정을 하였고 그 후 계속하여 장려금을 지급하고 있는 사실에 비추어 보면, 장려금 지급은 담합행위와 상당인과관계가 있다고 보이지 않기 때문에, 피고들이 지급한 장려금이 손익상계의 대상이 되어 피고들의 손해배상액에서 공제될 성질의 것은 아니라고 판단하고, (3) 나아가, 이 사건 담합행위로 인하여 인상된 가격으로 밀가루를 구매한 원고가 밀가루를 원료로 생산하여 판매하는 제품에 관한 가격 인상을 통하여 인상된 밀가루 가격의 전부 또는 일부를 최종 소비자에게 전가하였다는 이유로 피고들 자신이 배상할 손해액에서 위와 같이 전가된 손해액 부분을 공제할 것을 주장한 이른바 ‘손해전가의 항변(passing-on defence)’에 대하여, 원고가 중간 단계의 원재료 구매자로서 자신이 입은 손해의 전부 또는 일부를 하위 구매자인 간접구매자에게 전가하였다 하더라도, 사전 약정 등에 따라 원고가 초과 지급한 밀가루 가격에 대응하여 고정적으로 일정 비율 또는 그 액수만큼 제품의 가격 인상이 이루어지고 제품의 판매 수량에 변동이 없다는 등의 특별한 사정이 없는 한, 밀가루를 원료로 하여 생산한 제품의 가격을 인상하여 비용을 전가할 것인지 여부 및 그 범위는 원고의 의사에 전적으로 맡겨진 영역이고, 제품 가격의 인상으로 인한 수요 감소를 무릅쓰고 비용을 전가할 것인지 여부는 원고의 별도의 판단에 따른 것이라는 사정 등을 참작하여, 담합으로 인한 밀가루 가격 상승에 따른 원고의 손해와 원고가 제품 가격의 인상에 의하여 취득한 가액 사이에는 상당인과관계가 없다고 판단하여, 피고들의 위 항변을 받아들이지 아니하는 한편 (4) 뒤에서 보는 바와 같이 위와 같은 장려금 지급 및 제품 가격 인상에 의한 손해 전가에 관한 사정들을 참작하여 피고들의 손해배상책임을 제한하였다.</p><p>  다. 원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보면, 원심판결 이유 중에 다소 적절하지 아니한 부분이 있지만, 원심의 위와 같은 판단은 앞에서 본 법리에 따른 것으로 보이고, 거기에 담합으로 인한 손해액 산정과 손익상계 등 손해배상범위에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 있다고 할 수 없다.</p><p>  4. 손해배상책임 제한과 관련된 원고와 피고 씨제이의 상고이유에 관하여</p><p>  불법행위로 인한 손해배상사건에서 불법행위의 발생경위나 진행경과, 그 밖의 제반 사정을 종합하여 피고의 책임비율을 제한하는 것은 그것이 형평의 원칙에 비추어 현저히 불합리하다고 인정되지 않는 한 사실심의 전권사항에 속한다(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2009다29366|판결" href="#//">대법원 2011. 3. 24. 선고 2009다29366 판결</a></span> 참조).
+      
+      </p><p>  원심판결의 이유에 의하면, 원심은 ① 제1심 감정인은 담합 후 기간에 대하여 담합 후 더미변수를 설명변수로 사용하여 원고의 손해액수를 산정하였으나, 위 기간의 어느 시점에 밀가루 가격이 경쟁가격으로 복귀하였다면, 손해액수가 과대평가될 수 있고, ② 피고들이 원고에게 지급한 장려금이 원고와 피고들 사이의 거래관계에 있어 실질적으로 밀가루 가격을 할인하여 주고, 시장 경쟁을 촉진시킨 측면이 있으므로, 원고가 입은 손해액을 산정함에 있어 이를 고려함이 신의칙상 타당함에도 불구하고, 제1심 감정인은 당사자들이 주장하는 장려금 액수가 다르다는 이유로 손해액을 산정하면서 원고가 지급받은 장려금을 전혀 고려하지 않았으므로, 앞서 본 손해액수가 과대평가된 것으로 볼 수 있으며(제1심 감정 결과가 법원에 제출된 이후 당사자들도 제1심 변론기일에서 장려금으로 지급된 돈의 1/2 정도가 손해액에서 공제되거나 손해액을 정하는 데 참작되어야 함을 다투지 아니하기로 하였다), ③ 원고는 피고들의 담합행위로 인하여 입은 손해 중 일부를 소비자에게 전가시켰는데, 「독점규제 및 공정거래에 관한 법률」의 제정 목적은 공정하고 자유로운 경쟁을 촉진함으로써 궁극적으로 소비자를 보호하기 위한 것이기 때문에, 소비자에게 궁극적으로 손해의 일부를 전가시킨 원고에 대하여 비용전가 사실을 전혀 고려하지 아니한 채 손해 전부를 전보시켜준다면, 원고가 뜻하지 않은 이익을 취득하게 되는 것이어서 손해배상제도의 이념에 반하므로, 그 전가액을 고려하여 피고들이 부담하는 손해배상액수를 일부 감액함이 타당하다는 사정들을 종합하여, 피고 씨제이와 피고 삼양사가 각각 배상할 손해액을 원심판시 각 손해배상액으로 제한하였다.</p><p>  원심판결 이유를 기록에 비추어 살펴보면, 피고들이 각각 배상할 원고의 손해액을 위와 같이 제한한 원심의 조치는 앞서 본 법리에 기초한 것으로서 형평의 원칙에 비추어 현저히 불합리하다고 볼 수 없고, 거기에 원고와 피고 씨제이의 상고이유의 주장과 같이 불법행위에서의 손해배상책임 제한에 관한 법리를 오해한 위법이 있다고 할 수 없다.</p><p>  5. 사기 또는 착오를 원인으로 한 의사표시의 취소와 관련된 원고의 상고이유들에 관하여</p><p>  원심은 (1) 피고들이 밀가루의 경쟁가격을 인식하고 있었다고 볼 증거가 없어, 피고들이 인식하고 있지도 않은 경쟁가격을 원고에게 고지할 의무가 있다고 보기 어려우며, 피고들이 「독점규제 및 공정거래에 관한 법률」에서 금지한 부당한 공동행위를 하였고 그로 인하여 경쟁가격보다 높은 시가가 형성되었다 하더라도 피고들이 부당한 공동행위를 하였다는 사실을 원고에게 고지할 의무가 있다고 보기 어려우며, (2) 밀가루 매매계약에서 밀가루의 경쟁가격에 관한 착오는 밀가루를 매수하려는 의사 결정의 동기의 착오로서 법률행위 내용의 중요부분의 착오로 볼 수 없고, 또한 피고들이 매매계약을 체결하면서 원고에게 밀가루의 경쟁가격을 고지할 의무나 부당한 공동행위를 하였다는 사실을 고지할 의무가 있다고 보기 어려운 이상 원고의 경쟁가격에 관한 착오를 피고들이 유발하였다고 보기도 어려우므로, (3) 원고는 사기 또는 착오를 이유로 피고들과의 밀가루 매매계약을 취소할 수 없다고 판단하였다.</p><p>  원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보면, 위와 같은 원심의 판단에 상고이유에서 주장하는 바와 같은 사기 또는 착오를 원인으로 한 의사표시의 취소에 관한 법리를 오해한 위법이 있다고 할 수 없다.</p><p>  그리고 위와 같이 이 사건 밀가루 매매계약을 사기 또는 착오를 이유로 취소할 수 없다고 본 원심의 판단을 다투는 상고이유 주장을 받아들이지 아니하는 이상, 사기 또는 착오를 이유로 한 취소가 인정될 경우를 가정하여 손해액에 대하여 한 원심의 판단을 다투는 원고의 나머지 상고이유들은 판결 결과에 영향이 없는 가정적 판단에 대한 것이므로, 더 나아가 살펴볼 필요 없이 받아들이지 아니한다.</p><p>  6. 결론</p><p>  그러므로 상고를 모두 기각하고 상고비용은 패소자인 상고인 각자가 부담하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   신영철(재판장) 이상훈 김용덕(주심) 김소영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

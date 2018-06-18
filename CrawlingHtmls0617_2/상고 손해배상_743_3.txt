@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010도11258 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2062645';
+var contIdEtc = '';
+var saNo = '2010도11258';
+var sngoNm = '선고';
+var saNm = '대부업의등록및금융이용자보호에관한법률위반';
+try {
+	var sngoDay=('20120315' ? 
+			'20120315'.length==4 ? Date.parseExact('20120315','yyyy').toString('yyyy. M. d.') : 
+				'20120315'.length==6 ? Date.parseExact('20120315','yyyyMM').toString('yyyy. M. d.') : 
+					'20120315'.length==8 ? Date.parseExact('20120315','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010도11258 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010도11258';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010도11258</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(24)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(12)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2123144">대법원 2013. 5. 9. 선고 2012다56245 판결 [공2013상,1022]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2164032">대법원 2014. 11. 13. 선고 2014다24785 판결 [공2014하,2343]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|662356">중도상환수수료가 구 대부업의 등록 및 금융이용자보호에 관한 법률 제8조 제2항 소정의 간주이자에 해당하는지 여부 송우철 사법발전재단</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|662452">중도상환수수료가 구 대부업의 등록 및 금융이용자보호에 관한 법률2009121 법률 제9344호 ‘대부업 등의 등록 및 금융이용자보호에 관한 법률’로 개정되기 전의 것 제8조 제2항의 간주이자에 해당하는지 여부 김양섭 사법발전재단</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662356">송우철 중도상환수수료가 구 대부업의 등록 및 금융이용자보호에 관한 법률 제8조 제2항 소정의 간주이자에 해당하는지 여부 자유와 책임 그리고 동행 : 안대희 대법관 재임기념   / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662452">김양섭 중도상환수수료가 구 대부업의 등록 및 금융이용자보호에 관한 법률(2009.1.21. 법률 제9344호 ‘대부업 등의 등록 및 금융이용자보호에 관한 법률’로 개정되기 전의 것) 제8조 제2항의 간주이자에 해당하는지 여부 특별법연구 10권 / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|720497">유진현 사전 공제한 선이자가 제한이자율을 초과하지 아니하는 경우 변제기에 갚아야 할 대부원금 대법원판례해설 제95호  / 법원도서관  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|1|0|20090121">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|1|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|8|0|null">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제8조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|8|0|null">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제8조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|8|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|8|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|8|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제5항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|20090421">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|null">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제4항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|null">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제4항 제2호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률시행령|5|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령 제5조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률시행령|5|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령 제5조 제3항 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률시행령|5|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령 제5조 제3항 제2호 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|8|0|20090121">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제8조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|8|0|null">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제8조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|8|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|8|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink17" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|8|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제5항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink18" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|19|0|null">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제19조 제2항 제2호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink19" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|19|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제19조 제2항 제3호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink20" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|20|0|null">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제20조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink21" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률|20|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제20조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink22" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|20090421">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink23" name="linkContJomun" type="대부업등의등록및금융이용자보호에관한법률시행령|5|0|null">대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령 제5조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|1|0|20090121">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|8|0|null">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제8조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|20090421">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률|8|0|null">대부업의 등록 및 금융이용자보호에 관한 법률(구) 제8조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|null">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|null">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제4항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="대부업의등록및금융이용자보호에관한법률시행령|5|0|null">대부업의 등록 및 금융이용자보호에 관한 법률 시행령(구) 제5조 제4항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="신용정보의이용및보호에관한법률|4|0|null">신용정보의 이용 및 보호에 관한 법률 제4조 제4항 제1호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2010노525">대구지법 2010. 8. 12. 선고 2010노525 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 3. 15. 선고 2010도11258 판결</h2><p class="sub_title">[대부업의등록및금융이용자보호에관한법률위반][공2012상,610]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 대부업자가 사전에 공제한 선이자 산정의 대상기간 또는 약정 대부기간이 경과하기 전에 대부원금이 상환된 경우, 선이자가 구 대부업의 등록 및 금융이용자보호에 관한 법률에서 정한 제한이자율을 초과하는지 판단하는 기준 및 ‘중도상환수수료’ 지급 약정이 있는 경우에도 동일한 법리가 적용되는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 피고인들이 갑에게 대부기간을 3개월로 하여 돈을 대부하면서 1개월분 선이자를 공제하였는데 5일 후 약정 대부원금 전액을 변제받고도 선이자로 공제한 금액을 정산하지 않아 제한이자율을 초과하였다고 하여 구 대부업의 등록 및 금융이용자보호에 관한 법률 위반으로 기소된 사안에서, 사전에 공제한 선이자 중 실제 대부기간에 대한 제한이자율에 따른 이자를 초과하는 부분은 중도상환수수료로 받은 것이어서 제한이자율을 초과한 것으로 볼 수 없다는 취지의 원심판단에 법리오해의 위법이 있다고 한 사례</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|1|">구 대부업의 등록 및 금융이용자보호에 관한 법률(2009. 1. 21. 법률 제9344호 대부업 등의 등록 및 금융이용자 보호에 관한 법률로 개정되기 전의 것, 이하 ‘구 대부업법’이라 한다) 제1조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">제8조 제1항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">제2항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">구 대부업의 등록 및 금융이용자보호에 관한 법률 시행령(2009. 4. 21. 대통령령 제21446호로 개정되기 전의 것, 이하 ‘구 대부업법 시행령’이라 한다) 제5조 제3항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">제4항</a></span> 등에서 정한 구 대부업법의 입법목적과 관련 법령의 규정 내용을 종합하면, 대부업자가 선이자를 사전에 공제한 후 대부하였는데 선이자 산정의 대상기간 또는 약정 대부기간이 도과하기 전 중도에 대부원금이 상환된 경우 대부업자가 사전에 공제한 선이자가 구 대부업법에서 정한 제한이자율을 초과하는지 여부는, 선이자 공제액을 제외하고 채무자가 실제로 받은 금액을 원본으로 하여 대부일부터 실제 변제일까지 기간에 대한 제한이자율 소정의 이자를 기준으로 판단하여야 하고, 이러한 법리는 금융이용자가 약정 변제기 전에 대부금을 변제하는 경우 그로 인한 대부업자의 손해배상 명목으로 중도상환수수료를 지급하기로 하는 약정이 있는 경우에도 마찬가지이다. 결국 구 대부업법이 적용되는 대부에서는, 중도상환수수료를 포함하여 명목이나 명칭에 불구하고 대부업자가 받은 일체의 금원 중 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">구 대부업법 시행령 제5조 제4항</a></span>에 열거된 비용을 제외한 금원을 모두 이자로 보아, 그 금액이 실제 대부기간에 대한 제한이자율 소정의 이율을 초과하게 되면 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">구 대부업법 제8조 제1항</a></span>을 위반한 죄에 해당하게 된다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 피고인들이 갑에게 대부기간을 3개월로 하여 돈을 대부하면서 1개월분 선이자를 공제하였는데 5일 후 약정 대부원금 전액을 변제받고도 선이자로 공제한 금액을 정산하지 않아 제한이자율을 초과하였다고 하여 구 대부업의 등록 및 금융이용자보호에 관한 법률(2009. 1. 21. 법률 제9344호 대부업 등의 등록 및 금융이용자 보호에 관한 법률로 개정되기 전의 것, 이하 ‘구 대부업법’이라 한다) 위반으로 기소된 사안에서, 피고인들이 사전에 공제한 선이자가 실제 대부기간에 대한 구 대부업법에서 정한 제한이자율에 따른 이자를 초과하였지만 초과 부분은 이자가 아닌 중도상환수수료로 받은 것이어서 제한이자율을 초과한 것으로 볼 수 없다는 취지로 판단한 원심의 조치에 구 대부업법상 중도상환수수료의 간주이자 해당 여부에 관한 법리오해의 위법이 있다고 한 사례.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|1|">구 대부업의 등록 및 금융이용자보호에 관한 법률(2009. 1. 21. 법률 제9344호 대부업 등의 등록 및 금융이용자 보호에 관한 법률로 개정되기 전의 것) 제1조</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|1|">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제1조</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">제8조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">제2항</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|8|">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|8|">제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|8|">제5항</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">구 대부업의 등록 및 금융이용자보호에 관한 법률 시행령(2009. 4. 21. 대통령령 제21446호 대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령으로 개정되기 전의 것) 제5조 제3항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">제4항 제1호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">제2호</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령|5|">대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령 제5조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령|5|">제3항 제1호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령|5|">제2호</a></span> 참조) [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">구 대부업의 등록 및 금융이용자보호에 관한 법률(2009. 1. 21. 법률 제9344호 대부업 등의 등록 및 금융이용자 보호에 관한 법률로 개정되기 전의 것) 제8조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">제2항</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|8|">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제8조 제1항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|8|">제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|8|">제5항</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|19|">제19조 제2항 제2호</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|19|">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제19조 제2항 제3호</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|20|">제20조</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률|20|">대부업 등의 등록 및 금융이용자 보호에 관한 법률 제20조</a></span> 참조),         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">구 대부업의 등록 및 금융이용자보호에 관한 법률 시행령(2009. 4. 21. 대통령령 제21446호 대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령으로 개정되기 전의 것) 제5조 제3항</a></span>(현행         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령|5|">대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령 제5조 제2항</a></span> 참조)      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【피 고 인】
+      
+        
+          피고인 1 외 1인
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【상 고 인】
+      
+        검사
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2010노525|판결" href="#//">대구지법 2010. 8. 12. 선고 2010노525 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결을 파기하고, 사건을 대구지방법원 본원 합의부에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|1|">구 대부업의 등록 및 금융이용자보호에 관한 법률(2009. 1. 21. 법률 제9344호 ‘대부업 등의 등록 및 금융이용자 보호에 관한 법률’로 개정되기 전의 것, 이하 ‘구 대부업법’이라 한다) 제1조</a></span>는 “이 법은 대부업의 등록 및 감독에 관하여 필요한 사항을 규정하고 대부업자와 여신금융기관의 불법적 채권추심행위 및 이자율 등을 규제함으로써 대부업의 건전한 발전을 도모하는 한편 금융이용자를 보호하고 국민의 경제생활의 안정에 이바지함을 목적으로 한다.”고 규정하고 있고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">제8조 제1항</a></span>은 “대부업자가 개인 또는 대통령령이 정하는 소규모 법인에게 대부를 하는 경우 이자율은 연 100분의 60의 범위 이내에서 대통령령이 정하는 율을 초과할 수 없다.”고 규정하고 있으며, 이에 따라 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">구 대부업법 시행령(2009. 4. 21. 대통령령 제21446호로 개정되기 전의 것, 이하 같다) 제5조 제3항</a></span>은 “
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">법 제8조 제1항</a></span>에서 ‘대통령령이 정하는 율’이라 함은 연 100분의 49를 말하며, 월이자율 및 일이자율은 연 100분의 49를 단리로 환산한다.”고 규정하고 있다.
+      </p><p>  한편 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">구 대부업법 제8조 제2항</a></span>은 “
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">제1항</a></span>의 규정에 의한 이자율을 산정함에 있어 사례금·할인금·수수료·공제금·연체이자·선이자 등 그 명칭에 불구하고 대부와 관련하여 대부업자가 받는 것은 이를 이자로 본다. 다만 당해 거래의 체결과 변제에 관한 부대비용으로서 대통령령이 정한 사항은 그러하지 아니하다.”고 규정하고 있고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">구 대부업법 시행령 제5조 제4항</a></span>은 “
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|">법 제8조 제2항</a></span> 단서에서 ‘대통령령이 정한 사항’이라 함은 다음 각 호의 비용을 말한다.”고 규정하면서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">제1호</a></span>로 담보권설정비용을, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|">제2호</a></span>로 신용조회비용(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="신용정보의 이용 및 보호에 관한 법률|4|">신용정보의 이용 및 보호에 관한 법률 제4조 제4항 제1호</a></span>의 업무를 허가받은 자에게 거래상대방의 신용을 조회하는 경우에 한한다)을 들고 있다.
+      </p><p>
+        <span class="accrnt_txt">위와 같은 구 대부업법의 입법목적과 관련 법령의 규정 내용을 종합하면, 대부업자가 선이자를 사전에 공제한 후 대부하였는데 선이자 산정의 대상기간 또는 약정 대부기간이 도과하기 전에 중도에 대부원금이 상환된 경우 대부업자가 사전에 공제한 선이자가 구 대부업법 소정의 제한이자율을 초과하는지 여부는, 그 선이자 공제액을 제외하고 채무자가 실제로 받은 금액을 원본으로 하여 대부일부터 실제 변제일까지의 기간에 대한 제한이자율 소정의 이자를 기준으로 그 초과 여부를 판단하여야 하고, 이러한 법리는 금융이용자가 약정 변제기 전에 대부금을 변제하는 경우 그로 인한 대부업자의 손해배상 명목으로 중도상환수수료를 지급하기로 하는 약정이 있은 경우에도 마찬가지라고 할 것이다.</span>
+      </p><p>
+        <span class="accrnt_txt">결국 구 대부업법이 적용되는 대부에 있어서는, 중도상환수수료를 포함하여 그 명목이나 명칭에 불구하고 대부업자가 받은 일체의 금원 중 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률 시행령|5|" style="text-decoration:underline">그 시행령 제5조 제4항</a></span>에 열거된 비용을 제외한 금원을 모두 이자로 보아, 그 금액이 실제 대부기간에 대한 제한이자율 소정의 이율을 초과하게 되면 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="대부업의 등록 및 금융이용자보호에 관한 법률|8|" style="text-decoration:underline">구 대부업법 제8조 제1항</a></span>을 위반한 죄에 해당하게 된다.
+        </span>
+      </p><p>  2. 원심은 그 채택 증거들을 종합하여 
+        피고인 1이 2008. 11. 6. 차주 
+        공소외인에게 2,000만 원을 이자 월 3%, 중도상환수수료 3%, 변제기 2009. 2. 5.로 각 정하여 대부하면서 1개월분 선이자 60만 원을 공제한 1,940만 원을 송금하여 주었다가 그로부터 5일 후인 2008. 11. 11. 약정 대부원금인 2,000만 원 전액을 변제받으면서 사전에 선이자로 공제한 위 60만 원을 차주에게 정산하여 반환하지 않은 사실을 인정한 다음, 위 60만 원 중 5일분의 이자를 초과하는 부분은 피고인들이 중도상환수수료 명목으로 약정에 따라 적법하게 취득할 수 있었던 부분임을 고려하면 피고인들이 실제 대부기간에 해당하는 이자 외에 손해배상에 해당하는 수수료를 수령하였다고 하여 이를 구 대부업법 소정의 제한이자율을 초과하여 이자를 수령한 것으로 볼 수는 없다고 판단하여 피고인들에게 무죄를 선고하였다.
+      </p><p>  원심판결 이유를 앞서 본 법리에 비추어 살펴보면, 원심이 피고인들이 사전에 공제한 선이자가 실제 대부기간에 대한 구 대부업법 소정의 제한이자율에 의한 이자를 초과하였다고 보면서도 그 초과 부분은 이자가 아닌 중도상환수수료로 받은 것이므로 구 대부업법 소정의 제한이자율을 초과하여 이자를 수령한 것으로 볼 수 없다는 취지로 판단한 조치에는 구 대부업법상 중도상환수수료의 간주이자 해당 여부에 관한 법리를 오해하여 판결에 영향을 미친 잘못이 있다. 이를 지적하는 검사의 상고이유는 이유 있다.</p><p>  3. 그러므로 원심판결을 파기하고, 이 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   이상훈(재판장) 전수안(주심) 양창수 김용덕 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

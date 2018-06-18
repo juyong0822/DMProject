@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 72다1774 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2076822';
+var contIdEtc = '2076823';
+var saNo = '72다1774';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('19741210' ? 
+			'19741210'.length==4 ? Date.parseExact('19741210','yyyy').toString('yyyy. M. d.') : 
+				'19741210'.length==6 ? Date.parseExact('19741210','yyyyMM').toString('yyyy. M. d.') : 
+					'19741210'.length==8 ? Date.parseExact('19741210','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 72다1774 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '72다1774';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />72다1774</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(175)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(1)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(1)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1999839">서울민사지방법원 1989. 1. 12. 선고 88가합2897 제13부판결 : 항소 [하집1989(1),100]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1999330">인천지방법원 1999. 8. 18. 선고 96가합8303 판결 : 항소 [하집1999-2, 71]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180861">강현중 증명책임 법률학의 제문제 : 유기천박사고희기념   / 박영사  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32153">박동섭 의료과오소송에 있어서의 인과관계, 2 사법논집 20집  / 대법원 법원행정처  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|453730">손용근 의료과오소송의 입증경감에 관한 판례의 최근 동향 민사법연구 7집  / 대한민사법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|456338">서광민 한국불법행위법의 변천과 불법행위법학의 과제 저스티스 32권 4호  / 한국법학원  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162866">이명갑 불법행위법론 연구 판례월보 175호  / 판례월보사  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125863">이기우 상린관계의 법리에 관한 연구 전주대학교  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|447063">나윤수 해상유류오염피해보상제도에 관한 연구 한국외국어대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163298">임정평 공동불법행위론에 있어서 공해에 대한 소고 상 사법행정 27권 3호  / 한국사법행정학회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461020">전경운 복수원인자에 의한 환경침해책임 비교사법 6권 1호 (99.06) / 한국비교사법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|491058">정용엽 원격의료의 민사책임 및 법제개선에 관한 연구 경희대학교  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622048">강상욱 부당한 공동행위의 추정 사법 12호 / 사법발전재단  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495029">문광섭 환경침해에 대한 유지청구 재판자료 94집 (상) / 법원도서관  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|176343">권용우 공해소송과 인과관계의 입증, 2 법조 24권 3호  / 법조협회  1975 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|184998">박영관 공해에 대한 형사적제재 사법연수생논문집 13기  / 사법연수원  1983 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40675">국순욱 증명도에 관한 약간의 고찰 민사법연구 2집  / 대한민사법학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|545407">전경운 환경분쟁조정제도의 현황과 문제점 환경법연구 26권 3호  / 한국환경법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|822772">한지형 공해소송에서 법원의 인과관계 판단 : 대법원 2012. 1. 12. 선고 2009다84608, 84615, 84622, 84639 판결 민사법연구 제24집 / 대한민사법학회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162937">이명갑 현행 불법행위론의 궤적과 전망 3 대한변호사협회지 118호  / 대한변호사협회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163344">이명갑 공해의 사법적 구제 하 사법행정 26권 2호  / 한국사법행정학회  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|490984">황진호 환경오염 피해구제와 문제점 환경문제연구총서 9권  / 대한변호사협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716620">한상운 환경책임과 환경보험 : 환경피해구제방안(2013년 7월 30일 국회발의)을 중심으로 . 사법 26호 / 사법발전재단  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|576875">채우석 환경소송의 법리와 판례 기업소송연구 2006  / 다사랑  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|683291">조용현 토양환경보전법 제10조의3 제3항 제2호에서 정한 오염원인자(오염원인자)의 요건 대법원판례해설 91호  / 법원도서관  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495020">임치용 환경소송에서의 인과관계와 입증책임 재판자료 94집 (상) / 법원도서관  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|512227">한국. 대법원 법원행정처 재판실무편람. 제17호:. 환경재판실무편람 법원행정처  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570659">조은래 환경소송상의 입증문제에 대한 소고 환경법연구 제28권 제3호 / 한국환경법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|685227">서여정 의약품(혈액제제) 제조물책임에서의 증명책임 완화 재판과 판례 제21집 / 대구판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|259409">이재진 환경오염에 있어서의 유지청구권 법학의 현대적 제문제 : 덕암김병대교수화갑기념논문집 (98.02) / 대흥기획  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180848">오석락 입증책임에 관한 민사판례 노트 9 판례월보 70호  / 판례월보사  1976 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|508747">장영수 환경권 고시계 48권 10호 (2003.10) / 국가고시학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|35445">김상용 환경소송에 있어서 인과관계입증책임의 분담 판례월보 255호  / 판례월보사  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163300">임정평 공동불법행위론에 있어서 공해에 대한 소고 하 사법행정 27권 5호  / 한국사법행정학회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|215853">이덕환 의약품 처방과오에 대한 의사의 민사책임 한양대 법학논총 11집  / 한양대학교  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|727229">문현호 혈액제제 제조물책임 소송과 증명책임 형사재판의 제문제  . 제7권 형사실무연구회 편 / 사법발전재단  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539617">최상회 무과실책임의 현대적 의미 법학연구 12권  / 충북대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|176346">박영관 공해에 대한 형사적 제재 : 입법론을 중심으로 . 검찰 90호  / 대검찰청  1984 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|210801">윤용석 환경오염의 민사책임에 관한 새로운 동향 재산법연구 11권 1호  / 법문사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|516202">전경운 한경책임법제정의 필요성과 그 내용 환경법연구 25권 1호  / 한국환경법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|757234">박영주 흡연과 폐암 발병 사이의 인과관계 고요한 정의의 울림  : 신영철 대법관 퇴임기념 논문집  : 공의를 향한 사랑, 고민, 열정을 기리며   / 사법발전재단  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236922">김균보 외 4인 해양오염의 종합적 규제를 위한 법적 연구 부산대 법학연구 35권 1호 (94.12) / 부산대학교  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|63589">성위석 민사책임에 있어서의 인과관계와 그 입증 경북대학교  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653482">조민석 공해소송에 있어서 입증책임 : 입증경감을 중심으로 토지법학 27-2호  / 한국토지법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633139">김형석 민사적 환경책임 법학 52권 1호  / 서울대학교 법학연구소  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|457833">임성권 북한민법상의 불법행위에 관한 고찰 법학연구 1집  / 인하대학교 법학연구소  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125777">오용호 불법행위소송에 있어서의 입증에 관한 연구 : 입증의 정도를 중심으로 서울대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|446937">최학유 민사소송에 있어서의 증명책임에 관한 연구 동아대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|97562">김종국 발파진동으로 인한 환경오염책임에 관한 연구 : 용인 태영골프장 사건을 중심으로 경희대학교  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32128">김태천 의약품제조자책임에 있어서 과실과 인과관계의 입증 형평과 정의 2집  / 대구지방변호사회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|260347">김원주 우리 나라 환경법과 공익 한국 법학 50년 - 과거·현재·미래 : 대한민국 건국 50주년 기념 제1회 한국법학자대회 논문집 , II Ⅱ  / 한국법학교수회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|35433">신은주 공해소송에 있어서 인원관계입증에 관한 판례연구 판례월보 258호  / 판례월보사  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476130">김시승 환경권과 그 침해에 대한 사법적 구제 판례연구 12집  / 부산판례연구회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|508249">정진명 환경오염 피해에 대한 사법적 구제 : 위험책임의 입장에서 . 환경법연구 21권  / 한국환경법학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163415">김오수 의약품제조자의 민사책임 재판자료 27집  / 법원행정처  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|468366">김홍균 환경법상의 환경책임제도 법조 50권 1호 (2001.01) / 법조협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163301">임정평 공동불법 행위론에 있어서 공해에 대한 소고 민사법과 환경법의 제문제 : 송간안이준박사화갑기념논문   /  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|533539">최명구 (자동차급발진사고와 제조물책임) 자동차결함과 제조물책임 : AT(Automatic Transmission) 자동차의 급발진을 중심으로 판례실무연구 VII  / 박영사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|202098">이상규 환경법체계의 정립 변호사 : 법률실무연구 24집  / 서울지방변호사회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180724">유근완 경험칙 : 민사소송법 ∬187조에 관하여 사법연구자료 4집  / 대법원 법원행정처  1977 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|652792">문현호 혈액제제 제조물책임 소송과 증명책임 : 대법원 2011.9.29.선고 2008다16776 판결과 관련하여 의료법학 12권 2호  / 대한의료법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|595693">설민수 민사ㆍ형사 재판에서의 입증의 정도에 대한 비교법적ㆍ실증적 접근 인권과 정의 388호  / 대한변호사협회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|500662">한상운 생태적 환경국가원리에 관한 연구 : 헌법해석론을 중심으로 성균관대학교 대학원  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163414">홍천룡 우리나라에 있어서의 제조물 책임법리의 구성 현대민법론 (82.11) / 고시원  1982 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|234239">최문기 환경오염에 있어서의 공동불법행위책임에 관한 소고 경성법학 5호  / 경성대학교 법학연구소  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39169">홍천룡 환경오염 피해의 구제 환경법연구 14권  / 한국환경법학회  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34335">이상욱 불법행위에서의 인과관계 사법행정 31권 10호  / 한국사법행정학회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558552">장영수 환경국가의 헌법적 기초 헌법학연구 12권 1호  / 한국헌법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40670">배대헌 손해배상소송에 있어서의 증명도 충남대 법학연구 3권 1호  / 충남대학교 법학연구소  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|248637">전경운 환경침해에 대한 방어청구권과 보상청구권, 상 사법행정 39권 5호  / 한국사법행정학회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|227870">김상용 환경소송에 있어서 인과관계입증책임의 분담 민사판례평석(1) (95.03) / 법원사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|463459">송오식 환경오염과 사법적 구제 : 환경권 정립을 위한 시론 . 비교사법 5권2호 (98.12) / 한국비교사법학회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|515852">조홍석 헌법상의 환경권 논쟁 헌법학연구 2집  / 한국헌법학회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39157">조성민 공해의 사법적 구제에 관한 고찰 한양법학 1집  / 한양법학회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|534540">곽용섭 민법 제217조 제1항의 '적당한 조처 사법논집  . 제38집 38집  / 법원도서관  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180682">김완섭 민사재판에 있어서 증명도 재판자료 25집 (상) / 법원행정처  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39081">고승덕 The Comparative Negligence System in Korea 현대법의 이론과 실제  : 금낭 김철수교수화갑기념 (93.10) / 박영사  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180872">박우동 공해사건의 입증책임 판례회고 7호 (79.11) / 서울대학교  1979 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|452557">박동진 독일불법행위법구조의 재조명 민사법학 17호  / 한국사법행정학회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163345">정재헌 공해의 사법적 구제 사법연구자료 6집  / 대법원 법원행정처  1979 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|507647">김홍균 환경정책기본법 개정방향 : 분쟁조정 및 피해구제 . 환경법연구 23권 1호  / 한국환경법학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|611292">신은주 의료과오소송 입증책임론의 전개와 발전 의료법학 9권 1호  / 대한의료법학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|674553">허성욱 기후변화시대의 불법행위법 : 기후변화대응 정책수단으로서 불법행위소송의 장·단점 및 발전방향에 관한 소고 . 사법 21호 / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653200">박연욱 건설공사 소음·진동으로 인한 손해배상 건축관련판례 50선 : 대구판례연구회 300회 발표 기념 건축관련판례 50선 / 대구판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570442">김구년 독점규제법상 손해배상청구소송의 제문제 비교사법 14권 1호  / 한국비교사법학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|190269">오용호 민사소송에 있어서의 증거법에 관한 고찰 사법논집 14집  / 대법원 법원행정처  1983 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38347">김형배 우리 민법과 외국법의 영향 한국법학의 회고와 전망   / 법문사  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655520">박은경 보험을 통한 환경오염손해 배상책임위험의 전가 법학연구 45집  / 한국법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|532283">손윤하 환경침해를 원인으로 한 민사송송에 관한 문제 : 일조, 조망 및 생활소음 중심으로 . 저스티스 81호  / 한국법학원  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|242306">홍천용 대기오염피해의 사법적 구제 경남법학 12집  / 경남대학교 법학연구소  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|469970">서울행정법원 행정재판실무편람.. II:. 자료집 서울행정법원  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39162">안법영 민법상 환경오염사고의 불법행위책임 재조명 : 독일연방법원 판결례와의 비교적 고찰 한림법학FORUM 2권 (93.06) / 한림대학교 법학연구소  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|475496">윤효영 유류오염 손해배상책임에 관한 연구 : 그 성립과 범위를 중심으로 고려대학교  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558551">한상운 환경침해에 대한 동법구제의 문제점 및 대책 헌법학연구 12권 1호  / 한국헌법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163362">홍천룡 수질오염으로 인한 어업피해의 사법적 구제 경남법학 2집  / 경남대학교 법학연구소  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|508131">조홍식 토양환경침해에 관한 법적 책임 환경법연구 20권  / 한국환경법학회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|190386">김영진 우리나라 공해소송의 판결예 재판자료 2집  / 법원행정처  1979 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|252551">정해덕 해상사고소송에 있어서의 불법행위책임 인권과 정의 264호  / 대한변호사협회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|528608">전경운 환경피해의 사법적 구제법리 현대상사법 논집  : 우계강희갑 박사 화갑기념   / 법지사  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|503035">범경철 의료과오소송에 있어서의 입증책임 의료법학 3권 1호  / 대한의료법학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|513670">문성제 의약품제조자의 책임 , : Hoffman v. Sterling Drug Inc사건을 중심으로 . 의료법학 4권 1호  / 대한의료법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180680">이건웅 민사재판과 사실인정 재판자료 25집 (상) / 법원행정처  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|176341">오석락 공해소송과 인과관계의 증명도 법조 25권 6호  / 법조협회  1976 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|176367">권용우 임해공해판례에 관한 연구 : 특히 개연성 이론을 중심으로 단국대 논문집 12집  / 단국대학교 출판부  1978 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|218068">김상용 환경침해불법행위 민법학논총(2권) : 후암 곽윤직선생고희기념   / 박영사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163450">정만조 과실에 기한 제조물 책임과 그 증명 문제 민사판례연구 1권  / 박영사  1979 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|31705">한국 법무자료 . 제90집 : 다수당사자소송연구 법무부 법무국  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40908">이경환 환경오염피해분쟁조정제도 저스티스 25권 2호  / 한국법학원  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|59977">황진호 환경오염의 사법적 구제에 관한 연구 단국대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|590657">박찬주 자유심증에 대한 새로운 이해 법학논총 14집 1호  / 조선대학교 법학연구소  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180825">양병회 입증책임 고시계 32권 1호 (86.12) / 국가고시학회  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|669127">조은래 토양환경의 보전과 책임 토지법학 28-1호  / 한국토지법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701613">소재선 나노물질의 환경침해책임에 관한 소고 법학논총 36권 1호 / 단국대학교  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40677">홍기문 증명책임분배에 관한 신이론 민사법연구 창간호  / 대한민사법학회  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|176384">고광하 해양오염으로 인한 양식업피해 대한변호사협회지 137호  / 대한변호사협회  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|243031">이범주 교육환경등의 침해와 유지청구 법조 47권 2호 (98.02) / 법조협회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|502839">한삼인 환경오염책임 고시계 48권 5호 (2003.05) / 국가고시학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|247635">정해덕 개정유류오염손해배상보장법과 유류오염손해배상 법조 47권 5호 (98.05) / 법조협회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|212470">조은래 환경소송에 있어서 인과관계론의 고찰 현대법학의 제문제 : , 이재 이종상박사화갑기념논문집   / 이재 이종상박사화갑기념논문집간행위원회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163210">오석락 의료과실의 입증 법조 26권 1호  / 법조협회  1977 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|490985">이경환 환경소송에서의 역학적 인과관계론 환경문제연구총서 9권  / 대한변호사협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539791">손윤하 항공기소음에 의한 피해구제를 위한 민사소송의 문제점 법조 54권 3호 (2005.03) / 법조협회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|33146">김기섭 이전가격에 관한 판례연구 변호사 : 법률실무연구 20집  / 서울지방변호사회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|160447">장경학 물권적 청구권 판례월보 198호  / 판례월보사  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|201111">조연홍 집단적행정소송의 입법화에 관한 연구 공법연구 20집  / 한국공법학회  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162900">오용호 불법행위소송과 입증의 정도 민법학논총(1권) : 후암 곽윤직교수화갑기념 (85.12) / 박영사  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|542093">고영훈 환경분쟁에 있어서 주요쟁점에 관한 고찰 공법학연구 6권 1호  / 한국비교공법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|219491">오석락 환경책임의 입증 인권과 정의 230호  / 대한변호사협회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|461110">홍천용 의료과오로 인한 피해의 사법적 구제 경남법학 15집  / 경남대학교 법학연구소  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39084">김상용 인과관계 고시계 38권 4호 (93.03) / 국가고시학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|471508">김홍균 환경오염피해에 대한 사법적 구제의 효율성 제고방안 인권과 정의 294호  / 대한변호사협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38777">김형배 채권법의 문제점과 전망 민사법학 9·10호  / 한국사법행정학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716593">윤형렬 민사책임에서 인과관계와 이에 대한 입증책임 : 독일법과의 비교법적 고찰을 중심으로 . 민사재판의 제문제 22권  / 한국사법행정학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163317">이용우 공해소송에 있어서의 판례동향 사법행정 26권 3호  / 한국사법행정학회  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476113">류승훈 증명책임과 관련한 현재의 제문제 비교사법 8권 1호(통권14호) (2001.06) / 한국비교사법학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32138">오용호 유독성 물질로 인한 불법행위소송에 있어서의 인과관계와 그 입증 사법논집 20집  / 대법원 법원행정처  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|259821">황영선 환경과 공해 및 공해소송에 있어서의 인과관계의 입증책임에 관한 판례연구 부산법조(구 부산변호사회지) 16호  / 부산지방변호사회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|535402">백정현 공동불법행위에 있어서의 몇 가지 문제 경기법조 10호  / 수원지방변호사회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125957">김영훈 환경권에 관한 연구 : 공법상의 법리와 구제를 중심으로 건국대학교  1981 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|176297">서원우 환경오염과 피해자 구제 검찰 69호  / 대검찰청  1978 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|448755">윤서성 오염된 토양의 공법상 정화책임에 관한 연구 성균관대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|504434">안경희 소음에 의한 생활방해 : 민법 제217조와 소음ㆍ진동규제법을 중심으로 . 민사법학 22호  / 한국사법행정학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163314">권택수 공해소송에 있어서의 인과관계의 입증 : 특히 대법원 판례를 중심으로 사법연수생논문집 15기  / 사법연수원  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|44065">손용근 환경분쟁가처분에 관한 이론과 판례현황의 검토 민사소송법의 제문제 : 경허 김홍규박사화갑기념 Ⅰ (92.12) / 삼영사  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|504461">전경운 환경침해로 인한 위법성판단과 환경정책기본법 제31조의 효력 민사법학 22호  / 한국사법행정학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|229274">김종국 환경오염책임법리의 재구성 수원지방변호사회지 6호  / 수원지방변호사회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|42066">피정현 입증책임없는 당사자의 해명의무에 관한 비교법적 고찰 민사소송법의 제문제 : 경허 김홍규박사화갑기념 Ⅰ (92.12) / 삼영사  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|484189">정해덕 미국 유류오염법에 관한 소고 : 우리나라 유류오염손해배상제도와의 비교를 중심으로 . 법조 50권 12호 (2001.12) / 법조협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|544418">전경운 광해로 인한 손해배상책임 명지법학 2호  / 명지대학교 법학연구센터  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|218066">권오승 환경소송의 효용과 한계 민법학논총(2권) : 후암 곽윤직선생고희기념   / 박영사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163343">이명갑 공해의 사법적 구제 상 사법행정 26권 1호  / 한국사법행정학회  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163318">오용호 공해소송의 인과관계에 대한 입증 민사판례연구 7권  / 박영사  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|216320">이상규 판례를 통하여 본 환경소송 아ㆍ사ㆍ연 법ㆍ언론 연구총서(4권) : 21세기를 대비한 한국의 당면과제 4권  / 도서출판 아사연  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|211909">임통일 의료과오의 인과관계와 입증책임 판례연구 8집  / 서울지방변호사회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716617">김현준 환경책임 및 환경소송의 법체계 : 한·독 비교법적 검토를 중심으로 . 사법 26호 / 사법발전재단  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163315">천경송 공해소송에 있어서의 인과관계의 입증 사법논집 8집  / 대법원 법원행정처  1977 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570660">채우석 환경행정소송의 전개와 법리변화 환경법연구 제28권 제3호 / 한국환경법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|106927">손용근 의료과오소송에 있어서 입증의 경감에 관한 연구 연세대학교  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180798">오용호 민사소송에 있어서 입증의 정도 : 특히 불법행위에 관한 소송을 중심으로 사법논집 15집  / 대법원 법원행정처  1984 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|535253">이경환 환경소송ㆍ담배소송ㆍ의료소송의 과실 관련 쟁점의 비교 환경·에너지문제연구총서 11권  / 대한변호사협회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|212860">임건면 환경침해와 민사법상의 책임 : 독일 민사법상의 책임을 중심으로 . 경남법학 10집  / 경남대학교 법학연구소  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125946">피정현 입증책임없는 당사자의 해명의무 연세대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125856">홍기문 증명책임론 전북대학교  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162432">김주상 타인의 권리매매에 있어서 매도인의 담보책임과 채무불이행책임 사법연수생논문집 창간호  / 사법연수원  1978 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236869">황진호 환경오염에 대한 손해배상 환경문제연구총서 6권  / 대한변호사협회  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|473468">박정호 손해배상의 인과관계에 대한 소고 법학논총 24집  / 단국대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40667">황진호 공해소송에 있어서 인과관계 : 개연성설을 중심으로 단국대 학술논총 13집  / 단국대학교 출판부  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|501458">남현우 환경침해의 사법상 구제에 관한 연구 충남대학교 대학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|518934">윤효영 유류오염손해배상책임의 성립요건 안암법학 16호  / 무지개출판사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|527717">김재국 기업의 환경오염에 대한 사법적 책임 기업법연구 16집  / 한국기업법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|43091">윤명선 환경권 월간고시 20권 8호 (93.07) / 법지사  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|215120">표시열 학교영역에서의 불법행위책임에 관한 연구 교육법학연구 6호  / 대한교육법학회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|486697">류승훈 의료과오책임과 관련한 현재의 제과제 외법논집 10집  / 한국외국어대학교 법학연구소  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495036">우성만 수질오염, 해양오염과 환경소송 재판자료 95집 (하) / 법원도서관  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|482807">문성제 자동차 제조자의 책임 : 자동차 급발진 사고 손해배상 사건 . Jurist 374호  / 청림인터렉티브  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|511705">범경철 환경오염분쟁에 있어서 사법적 고찰 기업법연구 5집  / 한국기업법학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163457">정태세 불법행위로 인한 손해배상책임의 요건사실 : 입증책임의 관점에서 . 재판자료 26집 (하) / 법원행정처  1985 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|760|0|null">민법 제760조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|71나1620">
+서울고등법원 1972.9.6. 선고 71나1620 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2076823">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1974. 12. 10. 선고 72다1774 판결</h2><p class="sub_title">[손해배상][집22(3)민,106;공1975.1.15.(504),8214]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p> 공해로 인한 손해배상청구소송에 있어서 가해행위와 손해발생 사이의 인과관계의 입증의 정도</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p> 공해로 인한 불법행위에 있어서의 인과관계에 관하여 당해행위가 없었더라면 결과가 발생하지 아니하였으리라는 정도의 개연성, 즉 침해행위와 손해와의 사이에 인과관계가 존재하는 상당정도의 가능성이 있다는 입증을 함으로써 족하다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+          박이준  소송대리인 변호사 안이준
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+          한국전력주식회사  소송대리인 변호사 계창업 강서룡
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|71나1620|판결" href="#//">
+서울고등법원 1972.9.6. 선고 71나1620 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.</p><p>  상고소송비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  피고소송대리인들의 상고이유를 판단한다.</p><p>  1.  상고이유 제1점에 대하여,</p><p>  근대산업의 발전에 따라 공업의 대기업화를 촉진하고, 그 결과로 기업이 경영하는 대단위 생산공장에서 사람의 생명 건강 및 재산에 유해로운 각종 오염물질, 소음 및 진동 따위를 배출 확산하여 사람의 건강에나 동식물의 생장에 위해를 미치게 하는 바 적지 아니하므로 법령에서 이런 공해를 방지하는 규제를 하고 있다(공해방지법등). 한편 
+        <span class="accrnt_txt">이런 공해로 인한 손해배상청구소송에 있어도 가해행위와 손해발생사이에 있어야 할 인과관계의 증명에 관하여도 이른바 개연성이론이 대두되어 대소간에 그 이론이 사실인정에 작용하고 있음을 부인할 수 없는 추세에 있다고 하겠다. 개연성이론 그 자체가 확고하게 정립되어 있다고는 할 수 없으나 결론적으로 말하면 공해로 인한 불법행위에 있어서의 인과관계에 관하여 당해 행위가 없었더라면 결과가 발생하지 아니 하였으리라는 정도의 개연성이 있으면 그로써 족하다는 다시 말하면 침해행위와 손해와의 사이에 인과관계가 존재하는 상당정도의 가능성이 있다는 입증을 하므로써 족하고</span> 가해자는 이에 대한 반증을 한 경우에만 인과관계를 부정할 수 있다고 하는 것으로 이는 손해배상을 청구하는 원고에 입증책임이 있다는 종래의 입증책임 원칙을 유지하면서 다만 피해자의 입증의 범위를 완화 내지 경감하는 반면 가해자의 반증의 범위를 확대하자는 것을 그 골자로 하고 있는 것으로 이해된다. 무릇 불법행위로 인한 손해배상에 있어서 불법행위의 성립요건으로서의 인과관계는 현실로 발생한 손해를 누구에게 배상책임을 지울 것인가를 가리기 위한 개념이므로 자연과학의 분야에서 말하는 인과관계가 아니라 법관의 자유심증에 터 잡아 얻어지는 확신에 의하여 인정되는 인과관계를 말한다 할 것인데 이런 확신은 통상인이 일상생활에 있어서 그 정도의 판단을 얻을 때는 의심을 품지 않고 안심하고 행동할 것이라는 정도를 일컬어 말함이니 이런 관점에서 볼 때 개연성이론을 수긍못할 바 아니다.
+      </p><p>  그러나 요는 구체적 사건에서 어떠한 증거에 의하여 어떤 사실을 인정한 조치가 타당한 여부에 문제의 초점이 있다고 할 것이므로 개연성이론 그것이 논의의 대상이 될 수 없는 바이다. 돌이켜 이 사건을 살피건대 기록에 의하여 원심이 그 의용의 증거에 의하여 피고 발전소에서 다량으로 분출 확산되는 아황산까스로 인하여 원고소유 과수의 수세가 악화되어 결실의 불량 저하로 원고는 손해를 입었다는 사실을 인정한 조치는 정당하며 위 설시와 같은 개연성을 바탕으로 한 그 증거취사나 사실인정 과정에 나무랄 곳이 없으므로 반대의 견해로 원심을 비난하는 논지는 이유없다.</p><p>  2.  상고이유 제2,7점에 대하여,</p><p>  기록에 의하여 소송의 진행상태를 보아 소론 증거신청을 채택 시행치 아니한 원심의 조치를 탓할 수 없으므로 심리미진으로 인한 사실오인이니, 채증법칙위배라는 논지 또한 이유없다.</p><p>  3.  상고이유 제3점에 대하여,</p><p>  공해소송이라 하여서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|760|">민법 제760조</a></span>의 소위 공동불법행위책임을 적용 아니할 합리적인 근거가 없으므로 원심이 소외 한국석유주식회사의 굴뚝에서 분출되는 아황산까스로 인하여서도(피고 것에 비하여 극소량) 피해 있음을 인정하면서 공동불법행위라는 전제아래 피고에게 전손해를 명한 판단은 정당하다 할 것이므로 논지는 채택할 수 없다.
+      </p><p>  4.  상고이유 제4점에 대하여,</p><p>  소론은 원고에게 과수원을 폐지하고 공해에 강한 다른 농작물 기타로 대치하는 등 피해를 최소한으로 방지할 아무런 조치를 아니한 과실이 있다는 것이나 이 사건에서 피해의 원인이 피고 발전소에서 분출 확산되는 아황산까스에 있다는 것이 원판시의 인정한 사실이므로 피해를 막는 길은 그런 유해까스가 분출되지 않도록 피고측에서 조치를 강구할 것이지 원고로 하여금 피해를 방지하라 함은 사리에 어긋나는 소리일 뿐 아니라 일건기록상 원고가 용이하게 피해를 방지할 길이 있었다고 볼 자료도 없으므로 논지 이유없다.</p><p>  5.  상고이유 제5,6점에 대하여,</p><p>  과수에서 수익을 얻을 수 있는 가능성이 있는 이상 피고의 불법행위가 계속되는 동안에는 매년도의 손해배상책임이 있다 할 것이며 과수가 생성하면서 결실을 볼 수 있는 동안은 외적사유에 의하여 성과수획이 없다 하여도 그 비배관리를 필요로 함은 경험칙에 의하여 알 수있는 바이므로 그에 소요되는 관리비가 절약되었다고 볼 수 없으니 이를 손해액에서 공제 아니한 원심의 조치는 정당하다 할 것이니 반대의 견해로 나온 소론의 논지 또한 이유없다.</p><p>  그러므로 상고를 기각하고, 소송비용은 패소자의 부담으로 하기로 관여 법관의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김영세(재판장) 주재황 이병호 이일규 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

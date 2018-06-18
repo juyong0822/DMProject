@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2009나102140 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2035484';
+var contIdEtc = '';
+var saNo = '2009나102140';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('20100915' ? 
+			'20100915'.length==4 ? Date.parseExact('20100915','yyyy').toString('yyyy. M. d.') : 
+				'20100915'.length==6 ? Date.parseExact('20100915','yyyyMM').toString('yyyy. M. d.') : 
+					'20100915'.length==8 ? Date.parseExact('20100915','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009나102140 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009나102140';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2009나102140</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|722303">박 준 신디케이티드 대출에서 대리은행이 부담하는 선관주의의무 BFL 59호 / 서울대학교 금융법센터  2013 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2009가합15256">서울중앙지방법원 2009. 10. 16. 선고 2009가합15256 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2010. 9. 15. 선고 2009나102140 판결</h2><p class="sub_title">[손해배상][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        주식회사 에이치케이상호저축은행 (소송대리인 법무법인 민주 담당변호사 백화명 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        주식회사 솔로몬상호저축은행 (소송대리인 법무법인 광장 담당변호사 조원희)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2010. 8. 18.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2009가합15256|판결" href="#//">서울중앙지방법원 2009. 10. 16. 선고 2009가합15256 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고의 항소를 기각한다.</p><p>2. 항소비용은 원고가 부담한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 원고에게 500,000,000원 및 이에 대한 이 사건 소장 부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율로 계산한 돈을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>  다음 각 사실은 당사자 사이에 다툼이 없거나, 갑 제1 내지 6호증, 을 제1 내지 5호증(각 가지번호 포함, 이하 같다)의 각 기재에 변론 전체의 취지를 종합하여 인정할 수 있다.</p><p>  가. 피고는 2005. 12. 28. 주식회사 에스디(이하 ‘에스디’라고 한다)가 시행사로서 추진하는 대구 중구 대봉동 88-65 일대 아파트 신축사업(이하 ‘이 사건 사업’이라고 한다)에 관하여, 에스디, 시공사인 주식회사 태영(이하 ‘태영’이라고 한다), 금융주간 및 자문기관인 동부증권 주식회사(이하 ‘동부증권’이라고 한다)와 사이에 다음과 같은 내용의 사업협약(이하 ‘이 사건 사업협약’이라고 한다)을 체결하여, 피고 또는 제3자(피고 또는 동부증권이 지정하는 금융기관)가 에스디에게 사업부지에 대한 취득자금 및 기타 사업비로 약 70,000,000,000원을 대출하여 주기로 하였다. </p><p>
+        <b>제4조 사업부지 부동산 계약금 대출</b>
+      </p><p>
+        <b>① 피고는 본건 사업을 위하여 다음 각호의 내용으로 에스디에게 계약금대출을 하기로 한다.</b>
+      </p><p>
+        <b>1. 채무자 : 에스디</b>
+      </p><p>
+        <b>2. 채권자 : 피고</b>
+      </p><p>
+        <b>3. 금융주간 및 자문기관 : 동부증권</b>
+      </p><p>
+        <b>4. 자금용도 : 사업부지 부동산 계약금(일부 중잔금) 및 기타 사업비</b>
+      </p><p>
+        <b>5. 대출금액 : 금 칠백억원(70,000,000,000원) 내외(추후 별도 협의)</b>
+      </p><p>
+        <b>6. 대출기간 : 이 사건 사업 관련 본 PF 대출시 최우선 변제</b>
+      </p><p>
+        <b>④ 본조 기재 계약금 대출의 기타 세부적인 사항은 에스디, 피고, 동부증권 간에 별도로 협의하여 대출 관련 약정서를 체결하기로 한다.</b>
+      </p><p>
+        <b>⑤ 제1항 내지 제4항에도 불구하고, 제1항 제2호 기재 채권자가 피고 또는 제3자(피고 또는 동부증권이 지정하는 금융기관)로 변경 또는 추가되는 경우 계약당사자는 제3자가 이 사건 협약상 대주로서의 제 조항을 준수하는 것을 조건으로 하여 이 사건 협약이 계약 당사자 사이는 물론 위 제3자 사이에도 적법, 유효하게 효력을 발생하는데 동의한다. 따라서 위와 같은 경우 위 제3자가 이 사건 협약상 대주로서의 제 조항을 준수하는 것을 조건으로 하여 위 제3자가 대주와 동일한 내용으로 당사자로 편입되는 것으로 하며, 위 제3자를 대주와 동일하게 해석, 적용하기로 한다.</b>
+      </p><p>
+        <b>제5조 계약금대출 관련 채권보전 및 일부 사업부지 부동산 소유권 확보</b>
+      </p><p>
+        <b>① 계약 당사자는 제4조에서 정한 피고의 계약금대출 원리금은 본 PF 대출시 최우선 상환하기로 하는데 합의한다.</b>
+      </p><p>
+        <b>③ 에스디는 이 사건 협약 체결과 동시에 사업부지에 대한 매매계약을 체결하고 피고에게 계약서 등을 첨부하여 제4조 기재에 따른 계약금 대출을 요청하여야 한다. 단, 에스디가 본건 사업부지 계약금 이외에 중잔금의 일시불 지급 및 매입을 요구하는 경우 에스디는 당해 부지의 소유권이전과 동시에 당해 부지에 대하여 피고를 제1순위 근저당권자로 하는 근저당권 또는 이에 준하는 담보권을 설정하여야 한다(다만, 채권최고액은 피고와 동부증권과의 별도 협의를 요한다).</b>
+      </p><p>
+        <b>⑤ 제1항의 계약금 등은 에스디의 최종 책임 하에 본래의 적정한 용도로만 이루어져야 하며, 에스디가 제출한 계약서 원본 등 자료에 대하여 피고 및 동부증권이 해당자료 및 계약금 입금계좌를 확인한 후 집행한다.</b>
+      </p><p>
+        <b>제6조 본 PF 대출</b>
+      </p><p>
+        <b>① 본 PF 대출은 에스디와 태영이 공사도급계약을 체결한 후 별도 협의하여 진행키로 하며 이때 동부증권을 금융주간 및 자문기관사로 우선 협상하기로 한다.</b>
+      </p><p>
+        <b>② 본 PF 대출시기는 에스디와 태영이 공사도급계약을 체결하고 사업부지매매계약이 계약금 대출 기표일로부터 6개월 이내(3개월 1회 한하여 연장가능)에 사업부지(국공유지 포함) 총필지수의 95% 이상 달성되고, 그 매입가가 에스디가 2005. 12. 작성한 사업계획서상 사업수지표 기재 예정토지매입가의 범위 내인 경우 태영의 연대보증 하에 즉시 실행하기로 한다. 다만, 위 예정토지매입가를 초과하는 경우에는 에스디, 태영, 동부증권이 본 PF 대출시기를 별도로 협의하기로 한다. 한편, 위 95% 이상 확인은 태영과 동부증권이 협의하여 결정키로 한다.</b>
+      </p><p>
+        <b>제9조 자금관리</b>
+      </p><p>
+        <b>본건 사업과 관련한 제 자금은 본 PF 대출 집행 이전까지 동부증권이 관리하고, 본 PF 대출 집행 이후에는 태영이 관리하기로 한다(계좌관리 : 태영 단독 명의, 에스디 및 태영 공동 날인 예정)</b>
+      </p><p>
+        <b>제12조 동부증권의 금융주간 겸 자문</b>
+      </p><p>
+        <b>동부증권의 본건 금융주간 및 자문의 전제조건은 별첨 ‘Indicative Terms ＆ Contions'에서 정한 모든 조건을 충족됨을 전제로 한다. 또한, 본 계약에 따라 피고 또는 동부증권이 주간 겸 자문한 금융기관의 대출은 피고 또는 동부증권이 주간한 각 금융기관의 여신심사기준에 따른 내부승인을 조건으로 한다.</b>
+      </p><p>  나. 피고는 이 사건 사업협약에 따른 대출을 하기 위하여 원고를 포함한 16개 금융기관을 대주단으로 모집한 후, 대출조건의 확정, 참여은행별 대출 분담금의 할당 등 대출업무를 주관하여 진행한 후, 2006. 1. 25. 대주단의 일원으로 확정된 원고를 포함한 16개 금융기관에게 ‘대주단 구성이 확정되어 대출을 실행하고자 하니 약정대출금을 송금하여 주기를 바라며, 피고가 대출금의 자금집행에 있어서 선량한 관리자로서의 주의의무를 다하여 자금집행에 차질이 없도록 할 것’이라는 내용의 통지를 하였다. 이후 주간사은행인 피고와 원고를 포함한 16개의 금융기관(이하 ‘참여은행’이라고 한다)은 2006. 1. 27. 차주사인 에스디와 사이에 에스디의 대표이사 
+        소외 1 및 
+        소외 2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8(이하 ‘보증인’이라고 한다)의 보증 하에 총 71,000,000,000원(이하 ‘이 사건 대출금’이라 한다)을 대출하기로 하는 다음과 같은 내용의 협약(이하 ‘이 사건 융자협약’이라고 한다)을 체결하였다(이하 이 사건 융자협약에 기하여 이루어진 에스디에 대한 대출을 ‘이 사건 대출’이라고 한다). 피고는 위와 같이 주간사은행으로서 대출업무를 처리한 대가로 에스디로부터 이 사건 대출금의 1%인 710,000,000원(= 71,000,000,000원 × 1%)을 지급받았다. 
+      </p><p>
+        <b>제1조 에스디는 다음의 조건으로 피고와 참여은행의 대출금을 운용한다.</b>
+      </p><p>
+        <b>(1) 대출금액 : 71,000,000,000원</b>
+      </p><p>
+        <b>참여기관별 여신취급 내역 : 원고와 피고는 각 8,000,000,000원(나머지 참여은행은 생략)</b>
+      </p><p>
+        <b>(3) 대출기간 : 대출취급일로부터 6개월</b>
+      </p><p>
+        <b>(6) 대출의 실행 : 피고와 참여은행은 에스디와 보증인의 요청에 의하여 (1)항에서 정한 대출금을 기표하여 피고에 개설한 에스디 명의의 보통예금계좌에 입금하기로 하고, 피고와 참여은행은 이를 대출의 실행으로 인정하기로 합의한다.</b>
+      </p><p>
+        <b>제2조 대출자금의 용도</b>
+      </p><p>
+        <b>에스디와 보증인은 본건 대출금을 본 협약서 말미에 기재하는 (별첨1)의 담보부동산에 대한 선순위상환자금 및 (별첨2)의 담보부동산에 대한 매입잔금 및 (별첨3) 사업부지에 대한 계약금의 지급 및 초기사업자금으로 사용한다.</b>
+      </p><p>
+        <b>제3조 상환방법</b>
+      </p><p>
+        <b>에스디와 보증인은 별첨1 내지 별첨3 내역의 부동산에 대한 토지매매계약 완료 후(95% 계약율 달성, 국공유지 포함), 태영을 시공사로 하고 동부증권을 금융주간사로 하는 본 P/F 대출금으로 본건 대출금을 상환하기로 한다.</b>
+      </p><p>
+        <b>제5조 담보제공</b>
+      </p><p>
+        <b>(1) 에스디와 보증인은 협약서 말미에 기재하는 (별첨1)과 (별첨2)의 담보부동산에 대하여 아래 내용과 같이 담보신탁계약을 체결하여야 한다.</b>
+      </p><p>
+        <b>① 위탁자 : 에스디</b>
+      </p><p>
+        <b>② 수탁자 : 한국자산신탁 주식회사</b>
+      </p><p>
+        <b>③ 공동 1순위 우선수익자 : 피고와 참여은행</b>
+      </p><p>
+        <b>④ 공동 1순위 우선수익권증서 금액 : 92,300,000,000원</b>
+      </p><p>
+        <b>(2) 에스디와 보증인은 회사주식 100%에 대하여 피고와 참여은행을 담보권자로 하는 주식양도담보권설정계약을 체결한다.</b>
+      </p><p>
+        <b>(4) 에스디는 시행사의 사업권 및 시행권 포기각서를 임시주주총회의사록을 첨부하여 피고와 참여은행에게 제출하여야 한다.</b>
+      </p><p>
+        <b>제6조 보장 및 준수사항</b>
+      </p><p>
+        <b>(3) 에스디와 보증인은 이 사건 사업 협약상 대주의 지위에 본 융자협약서상의 참여은행이 포함됨을 승인하며 이에 이의를 제기하지 않기로 한다.</b>
+      </p><p>
+        <b>(8) 에스디와 보증인은 본 융자협약서에 의한 대출실행시, (별첨1) 담보부동산에 대한 선순위상환자금 12,986,000,000원 중 10,400,000,000원은 대출실행시에 지급하고, 잔액 2,586,000,000원은 사업부지 매매계약율 95% 달성시에 지급하기로 한다.</b>
+      </p><p>
+        <b>(9) 상기 (8)항의 조건에도 불구하고, 대출실행시에 에스디와 보증인은 (별첨1) 담보부동산에 대하여 피고와 참여은행이 1순위 담보를 취득할 수 있도록 하여야 한다.</b>
+      </p><p>
+        <b>제7조 대출금의 관리 </b>
+      </p><p>
+        <b>참여은행이 실행한 대출자금은 피고에 개설한 에스디 명의의 보통예금계좌에 이체하여 피고의 관리감독하에 제2조에서 정한 용도로 집행하기로 한다.</b>
+      </p><p>
+        <b>(별첨1) 선순위 상환 부동산 내역</b>
+      </p><p>
+        <b>대구 중구 대봉동 720-8 외 27필지(내역 생략)</b>
+      </p><p>
+        <b>(별첨2) 소유권 이전 후 담보 부동산 내역</b>
+      </p><p>
+        <b>대구 중구 대봉동 171-20 외 113필지(내역 생략)</b>
+      </p><p>
+        <b>상기 필지 중 토지 작업의 특성상 지번이 변경될 수 있으며, 변경되는 경우에라도 융자협약서 제5조의 (1)항에 의하여 담보취득하는 부동산의 매매대금은 41,450,000,000원 이상이어야 함</b>
+      </p><p>
+        <b>제10조 채무불이행</b>
+      </p><p>
+        <b>상호저축은행의 여신거래기본약관 및 유사성격의 대출약정상의 채무불이행 이외에 다음의 사항을 포함하며, 채무불이행시에는 그 원인의 해소가 있기 전까지 기한의 이익을 상실하고...(이하 생략)</b>
+      </p><p>
+        <b>(1) 제6조 보장 및 준수사항의 부인 및 미이행</b>
+      </p><p>
+        <b>제12조 공동법적절차</b>
+      </p><p>
+        <b>에스디에게 대출한 피고 및 참여은행들 중 어느 한 저축은행에라도 이자납입이 지연되거나, 기한의 이익이 상실되었을 때에는 지체 없이 참여은행들은 피고에게 알려야 하며, 법적절차는 본 융자협약서 상의 모든 대출은행이 공동으로 착수하기로 하되, 법적절차의 수행은 주간사은행인 피고가 맡기로 한다.</b>
+      </p><p>  원고는 2006. 2. 1. 에스디에게 참여은행별 할당에 따른 원고의 대출금 8,000,000,000원을 대출하였다. </p><p>  다. 한편 피고는 대주단의 주간사은행으로서 이 사건 융자협약일인 2006. 1. 27. 이 사건 대출금의 집행을 관리하기 위하여 에스디, 한국자산신탁 주식회사(이하 ‘한국자산신탁’이라고 한다), 동부증권과 사이에, 피고가 피고에 개설된 에스디 명의의 보통예금계좌에서 한국자산신탁 명의로 개설한 관리계좌로 자금을 이체하여 주면, 한국자산신탁이 관리계좌에 입금된 자금에 대하여 집행을 관리하기로 하는 약정(이하 ‘이 사건 자금관리약정’이라고 한다)을 체결하였는데, 위 약정에 의하면 에스디가 사업부지 매입자금을 미리 정하여 둔 지불예정액 범위 내에서 요청할 경우에 한국자산신탁이 이를 지급하고, 에스디가 위 지불예정액을 초과하는 사업부지 매입자금을 요청하거나, 사업부지 매입자금 외의 일반사업비 또는 기타 경비 등의 자금인출을 요청하는 경우에는 피고와 동부증권의 동의를 얻어 한국자산신탁에게 요청하면 한국자산신탁이 이에 지급하기로 하였다. </p><p>  라. 에스디가 이 사건 사업을 진행하기 위하여 토지를 매입하던 중 지가의 상승 등으로 토지 매입비가 예상보다 증가되어 2006. 5. 3.경 한국자산신탁의 관리계정에 남아있는 대출금을 이 사건 자금관리약정 당시 미리 정하여 둔 지불예정액에 따라 사용할 경우 향후 PF 대출이 가능하게 되는 계약율 95%를 달성할 수 없게 되어, 피고와 동부증권의 동의를 받아 이 사건 자금관리약정 당시 정하여진 지불예정액과 달리 자금을 집행하여야 할 필요가 생겼고, 피고, 에스디, 태영, 동부증권, 한국자산신탁은 2006. 5. 3. 관리계정의 잔여대출금 중 피고 및 참여은행들에게 담보로 제공할 토지의 소유권 확보 목적으로 사용하기로 하였던 자금을 다른 토지의 계약금으로 사용함으로써 PF 대출이 가능하도록 계약율을 높이기로 하는 데 합의하였다. 그 후 위 합의에 따라 대출금을 집행하게 됨에 따라 결국 피고 및 원고를 포함한 참여은행들은 토지 3,328.7평(매입가 35,317,000,000원)만을 담보로 제공받게 되었다.</p><p>  마. 피고는 2006. 10. 23. 원고에게 라.항과 같은 이유로 당초 예정된 4,859.9평(매입가 41,450,000,000원)이 아닌 3,328.7평(매입가 35,317,000,000원)만을 담보로 제공받게 되었음을 통지하였다.</p><p>  바. 이 사건 대출금은 2007. 4. 28.까지 41,455,755,175원이 집행되었고, 2007. 7. 12.까지 59,780,054,877원이 집행되었다. </p><p>2. 원고의 주장</p><p>  피고는 이 사건 융자협약의 주간사로서, 이 사건 대출금의 집행 등에 관하여 원고의 수임인으로서 선량한 관리자로서의 주의의무를 부담한다고 할 것인바, 당초 대출의 전제조건이었던 매입가 합계 41,450,000,000원 이상인 토지의 담보제공이 이루어질 수 없는 사정을 알았거나 알 수 있었다면, 즉시 원고 등 참여은행에게 이러한 사정을 알리고, 대출실행을 중단한 다음 대출금 회수를 위한 절차에 착수하여 원고의 손해를 줄일 수 있도록 노력하여야 할 의무가 있음에도 불구하고, 이를 게을리한 채 계속 대출을 실행하여 원고로 하여금 피고가 매입가 41,450,000,000원 이상인 토지의 담보제공이 이루어질 수 없는 사정을 알았거나 알 수 있었던 이후에 인출된 대출금 상당의 손해를 원고 등 참여은행들에게 입게 하였는바, 그 금액은 예정된 담보취득액인 41,450,000,000원에서 실제 담보취득액인 35,317,000,000원을 공제한 6,133,000,000원(=41,450,000,000원-35,317,000,000원)이거나, 적어도 피고가 잔여대출금 사용용도를 변경하기로 한 이후에 계약금으로 지출한 4,224,600,000원이라 할 것인데, 그 중 원고의 손해는 위 각 금원에 원고의 대출금 지분비율 8/71(= 8,000,000,000원/71,000,000,000원)을 곱한 금액이라 할 것이므로, 피고는 원고에게 그 손해배상금의 일부로서  500,000,000원을 지급할 의무가 있다. </p><p>3. 판단</p><p>  가. 피고가 이 사건 대출금 집행에 관하여 선량한 관리자로서의 주의의무를 부담하는지 여부</p><p>  살피건대, 위 인정사실에 의하여 인정되는 다음과 같은 사정들, 즉, ① 피고가 이 사건 사업을 위하여 원고를 포함한 16개 금융기관을 대주단으로 모집한 후, 주간사은행으로서 대출조건의 확정, 참여은행별 대출 분담금의 할당 등 대출업무를 주관하여 이 사건 융자협약이 체결되었고, 피고가 위와 같이 주간사은행의 역할을 한 대가로 에스디로부터 이 사건 대출금의 1%인 710,000,000원을 수령한 점, ② 이 사건 사업협약에 따른 대출은 이 사건 사업의 초기단계에서 사업부지에 관한 매매계약 체결을 위한 계약금 등에 사용될 자금을 단기간 대여하는 것으로, 개발행위에 따른 사업의 미래 수익성을 평가하여 대출이 이루어지므로 그 담보가 부족할 수밖에 없으나, 이후 사업이 진행되어 PF 대출을 받게 되면 그 대출금으로 이 사건 대출금이 우선 상환될 것을 예정하는 것이어서, 에스디가 이 사건 대출금을 적절히 집행함으로써 이 사건 사업이 정상적으로 진행되도록 하여야 할 필요가 크고, 따라서 이 사건 융자협약서 제2조는 대출자금의 용도를 한정하고, 제7조에서는 참여은행이 실행한 대출자금은 피고에 개설한 에스디 명의의 보통예금계좌에 이체하여 피고의 관리감독 하에 제2조에서 정한 용도로 집행하도록 하고 있으며, 피고는 이 사건 융자협약이 체결되기 2일 전 참여은행들에게 약정대출금을 송금하여 줄 것을 요청하면서, 피고가 대출금의 자금집행에 있어 선량한 관리자의 주의의무를 다하여 자금집행에 차질이 없도록 하겠다는 내용의 통지를 한 점, ③ 이 사건 사업협약서 제9조는 동부증권이 금융주간사로서 PF 대출 집행 이전까지 자금관리를 담당하도록 하고 있으나, 이는 PF 대출의 조건들이 구비되어 동부증권이 PF 대출을 하게 되는 경우 최종적으로 동부증권이 이 사건 사업의 금융주간사가 됨을 전제로 한 것이고, 동부증권이 PF를 하지 않은 상태에서는 피고를 포함한 대주단이 이 사건 사업의 자금관리에 관하여 가장 직접적인 이해관계를 가지며, 따라서 이 사건 사업협약서 제5조 제5항에서 이 사건 사업자금의 집행에 관하여 피고의 확인을 받도록 하고 있는 점, ④ 이 사건 융자협약서 제10조에 의하면 피고가 제6조의 담보제공의무를 이행하지 못하였을 경우 기한의 이익을 상실하도록 되어 있고, 또 제12조에 의하면 참여은행들 중 어느 한 곳에라도 에스디가 이자납입을 지연하거나 기한의 이익을 상실하였을 경우에는 참여은행들은 주간사은행인 피고에게 알려야 하며, 법적절차의 수행은 주간사은행인 피고가 맡기로 되어 있는 점, ⑤ 피고는 대주단의 주간사은행으로서 이 사건 융자협약일인 2006. 1. 27. 이 사건 대출금의 집행을 관리하기 위하여 에스디, 한국자산신탁, 동부증권과 사이에 이 사건 자금관리 약정을 체결하면서, 에스디가 위 약정에서 미리 정하여 둔 지불예정액 범위 내에서 사업부지 매입과 관련한 자금을 인출하는 외의 용도로 대출금을 사용하는 경우 피고의 동의를 얻도록 한 점 등에 비추어 보면 피고는 이 사건 융자협약의 주간사은행으로서 원고를 포함한 참여은행들과의 관계에서 선량한 관리자의 주의로서 이 사건 대출금이 적절히 집행되도록 하여야 할 의무를 부담한다고 봄이 상당하다.</p><p>  나. 피고가 선량한 관리자로서의 주의의무를 위반하였는지 여부</p><p>    살피건대, 위 인정사실에 의하면 피고는 에스디, 태영, 동부증권, 한국자산신탁과 사이에 대주단에게 담보로 제공할 토지의 소유권 확보 목적으로 사용하기로 한 잔여대출금을 다른 토지의 계약금으로 사용하는데 합의한 2006. 5. 3.경에는 위와 같은 합의에 기한 자금집행으로 인하여 매입가 41,450,000,000원 이상인 토지들의 담보제공이 이루어질 수 없는 사정을 알았거나 알 수 있었다고 봄이 상당하다.</p><p>  그러나 피고가 매입가 41,450,000,000원 이상인 토지들의 담보제공이 이루어질 수 없는 사정을 알았거나 알 수 있었음에도 즉시 원고 등 참여은행에게 이를 알리지 않고, 대출금의 집행을 중단한 다음 대출금 회수를 위한 절차에 착수하지 않은 것이 이 사건 대출금의 집행에 있어 선량한 관리자로서의 주의의무를 위반한 것인지에 관하여 보건대, 위 인정사실에 의하여 인정되는 다음과 같은 사정들, 즉, ① 이 사건 대출은 이 사건 사업의 초기단계에서 사업부지에 관한 매매계약을 체결하기 위한 계약금 등에 사용될 자금을 단기간 대여하는 것으로서 이 사건 융자협약에 따라 매입가 41,400,000,000원(담보감정가 25,000,000,000원) 상당의 토지들이 담보로 제공된다 하더라도 이 사건 대출금을 담보하기에 부족하나, 이 사건 사업이 정상적으로 진행되어 PF 대출을 받게 되면 그 대출금으로 이 사건 대출금이 우선 상환될 것이므로, 이 사건 대출금의 상환을 위하여는 이 사건 사업이 정상적으로 진행되게 하여 PF 대출이 이루어지도록 하는 것이 가장 중요한 점, ② 매입가 41,450,000,000원 이상인 토지들을 담보로 제공하여야 할 의무 자체는 이 사건 융자협약 제5조 1항에 의하여 에스디가 참여은행들에게 직접 부담하는 것으로, 피고가 대주단의 나머지 참여은행들에게 이와 같은 의무를 부담하는 것은 아닌 점, ③ 에스디가 이 사건 사업 진행을 위해 토지를 매입하던 중 지가의 상승 등으로 토지 매입비가 예상보다 증가됨으로써, 만약 잔여대출금을 원래대로 이 사건 사업 목적 토지 매수를 위한 계약금으로 사용하는 경우 피고를 비롯한 참여은행들에 대한 담보취득의무를 이행하지 못하게 되고, 반대로 잔여대출금을 담보취득을 위한 토지 매입에 사용하는 경우 이 사건 PF 대출이 가능하게 되는 계약율 95%를 달성할 수 없게 되어 결국 이 사건 대출의 목적 달성이 불가능해지는 상황에 처하게 되었는바, 이 사건 자금관리약정에서 에스디가 지불예정액을 초과하는 사업부지 매입자금을 요청하거나, 사업부지 매입자금 외의 일반사업비 또는 기타 경비 등의 자금인출을 요청하는 경우에는 피고와 동부증권의 동의를 얻은 경우 한국자산신탁이 그에 응하기로 정한 것은 이 사건 사업의 추진과정에서 이 사건에 있어서와 같은 사정변경이 있을 때 적절한 대처를 하기 위한 것으로 보이는 점, ④ 에스디가 이 사건 융자협약에 따른 담보제공의무를 이행하지 못한 경우에는 이 사건 대출금채무의 기한이익 상실사유가 되기는 하지만, 2006. 5. 3.경 이미 이 사건 대출금 중 41,455,755,175원이 집행된 상태였는바, 위와 같은 사유로 즉시 대출금의 집행을 중단하고 대출금 회수를 위한 절차에 착수하는 경우 이 사건 사업은 추진이 불가능하게 되고, 충분한 담보를 확보하지 못한 이 사건 대출금은 그 회수가 매우 곤란하게 되는 점, ⑤ 피고가 이러한 상황에서 이 사건 대출금의 기한이익을 상실시키지 않고 이 사건 사업을 계속 진행시켜 PF 대출을 받을 수 있게 하는 것이 이 사건 대출금을 회수하는 최선의 방법이라고 판단하여 이 사건 자금관리약정에 따라 태영, 동부증권 및 한국자산신탁 등 관계사와 협의 및 동의의 절차를 거쳐 이 사건 대출금을 계속 집행하기로 한 점, ⑥ 에스디는 대주단에게 매입가 41,450,000,000원 이상인 토지들을 담보로 제공하여 주지 못하였으나, 약정된 매입가의 85% 이상인 매입가 35,317,000,000원 상당의 토지들을 담보로 제공하여 준 점 등에 비추어 보면, 피고가 매입가 41,450,000,000원 이상인 토지들의 담보제공이 이루어질 수 없는 사정을 알았거나 알 수 있었음에도 즉시 이를 원고 등 참여은행에게 알리고, 대출금의 집행을 중단하고 대출금 회수를 위한 절차에 착수하지 않은 것이 이 사건 대출금의 집행에 있어 선량한 관리자로서의 주의의무를 위반한 것이라고 보기는 어렵다 할 것이므로, 원고의 주장은 이유 없다.</p><p>4. 결론</p><p>  그렇다면 원고의 이 사건 청구는 더 나아가 살펴볼 필요 없이 이유 없으므로 이를 기각할 것인바, 제1심 판결은 이와 결론을 같이하여 정당하므로, 원고의 항소는 이유 없어 이를 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   여상훈(재판장) 양철한 문병찬 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

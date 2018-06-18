@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2005나96315 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2032825';
+var contIdEtc = '';
+var saNo = '2005나96315';
+var sngoNm = '선고';
+var saNm = '구상금';
+try {
+	var sngoDay=('20060705' ? 
+			'20060705'.length==4 ? Date.parseExact('20060705','yyyy').toString('yyyy. M. d.') : 
+				'20060705'.length==6 ? Date.parseExact('20060705','yyyyMM').toString('yyyy. M. d.') : 
+					'20060705'.length==8 ? Date.parseExact('20060705','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2005나96315 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2005나96315';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2005나96315</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(5)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2004고약4703">서울동부지방법원 2004고약4703호로 약식명령</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|85다카1548">대법원 1988. 11. 8. 선고 85다카1548 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|87누519">대법원 1988. 9. 27. 선고 87누519 판결</a><img alt="변경" src="/wsjodocs/images/contents/flag_03.gif" /></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법|32|0|19981228">법인세법(구) 제32조 제5항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법|26|0|null">법인세법(구) 제26조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법|32|0|null">법인세법(구) 제32조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법|32|0|null">법인세법(구) 제32조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="법인세법시행령|94|2|19981231">법인세법시행령(구) 제94조의2 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울동부지방법원|2004가합5769">서울동부지방법원 2005. 9. 30. 선고 2004가합5769 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2006. 7. 5. 선고 2005나96315 판결</h2><p class="sub_title">[구상금][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인 겸 피항소인】
+      
+        
+          원고 주식회사(소송대리인 법무법인 태평양 담당변호사 유철형외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인 겸 항소인】
+      
+        
+          피고 1외 1인(소송대리인 법무법인 삼한 담당변호사 김광년외 2인)
+        
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2006. 5. 24.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2004가합5769|판결" href="#//">서울동부지방법원 2005. 9. 30. 선고 2004가합5769 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 
+        피고 2에게 159,595,440원 및 위 금원 중 15,000,000원에 대하여는 2004. 4. 10.부터, 144,595,440원에 대하여는 2005. 1. 7.부터 각 2006. 7. 5.까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을 초과하여 지급을 명한 
+        피고 2 패소부분을 취소하고, 그 취소부분에 해당하는 원고의 
+        피고 2에 대한 청구를 기각한다. 
+      </p><p>2. 원고와 
+        피고 1의 항소 및 
+        피고 2의 나머지 항소를 각 기각한다.
+      </p><p>3. 소송비용 중 원고와 
+        피고 1 사이의 항소비용은 각자의 부담으로 하고, 원고와 
+        피고 2 사이의 소송총비용은 이를 10분하여 그 7은 원고의, 나머지는 위 피고의 각 부담으로 한다. 
+      </p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p> 원고에게, 
+        피고 1은 293,253,660원 및 위 금원 중 251,283,350원에 대하여는 2003. 1. 10.부터 이 사건 2004. 9. 3.자 청구취지변경신청서부본 송달일까지, 41,970,310원에 대하여는 2004. 12. 15.부터 이 사건 2004. 12. 17.자 청구취지변경신청서부본 송달일까지 각 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을, 
+        피고 2는 539,476,810원 및 위 금원 중 256,972,170원에 대하여는 2003. 1. 10.부터 이 사건 2004. 9. 3.자 청구취지변경신청서부본 송달일까지, 282,504,640원에 대하여는 2005. 1. 7.부터 이 사건 2005. 1. 11.자 청구취지변경신청서부본 송달일까지 각 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을, 피고들은 연대하여 30,000,000원 및 이에 대하여 2004. 4. 10.부터 이 사건 2005. 1. 11.자 청구취지변경신청서부본 송달일까지 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을 각 지급하라.
+      </p>
+      <p>2. 항소취지</p>
+      <p> 원고 : 제1심 판결 중 다음에서 지급을 명하는 부분에 해당하는 원고 패소부분을 취소한다. 원고에게, 
+        피고 1은 281,283,350원 및 위 금원 중 251,283,350원에 대하여는 2003. 1. 10.부터 이 사건 2004. 9. 3.자 청구취지변경신청서부본 송달일까지, 30,000,000원에 대하여는 2004. 4. 10.부터 이 사건 2005. 1. 11.자 청구취지변경신청서부본 송달일까지 각 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을, 
+        피고 2는 137,909,200원 및 이에 대하여 2005. 1. 7.부터 이 사건 2005. 1. 11.자 청구취지변경신청서부본 송달일까지 연 5%, 그 다음날부터 다 갚는 날까지 연 20%의 각 비율에 의한 금원을 각 지급하라.
+      </p>
+      <p> 피고들 : 제1심 판결 중 피고들 패소부분을 각 취소하고, 위 취소부분에 해당하는 원고의 피고들에 대한 청구를 각 기각한다. </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 기초사실</b>
+      </p><p>다음의 각 사실은 당사자 사이에 다툼이 없거나, 갑 2 내지 8호증, 갑 12 내지 30호증, 을가 2호증(각 가지번호 포함)의 각 기재에 변론 전체의 취지를 종합하여 인정할 수 있다.</p><p>가. 당사자의 지위</p><p>
+        원고는 인터넷 무인발급 서비스 및 자동증명서 발급기 등의 컴퓨터시스템을 제조·판매하는 회사이고, 피고들은 원고의 전직 대표이사들로서, 
+        피고 1은 1992. 5. 13.부터 2000. 6. 30.까지, 
+        피고 2는 2000. 7. 1.부터 2003. 7. 14.까지 각 원고의 법인등기부에 대표이사로 등재되어 있었다.
+      </p><p>나. 송파세무서장의 소득금액변동통지와 원고의 근로소득세 납부</p><p> (1) 송파세무서장은 2003. 11.경 원고에 대하여 1998 및 2000사업연도 법인세 및 귀속소득에 대한 세무조사를 시행하고, 아래와 같이 소득금액변동통지를 하였다. </p><p>  ⓛ 원고가 1998사업연도(1998. 1. 1.부터 같은 해 12. 31.까지)에 
+        소외 2 주식회사 명의로 가공매입한 110,000,000원을 사외유출시켰다고 판단하고 그 귀속이 불분명하다는 사유로 위 금원을  
+        피고 1에 대한 상여로 인정하여, 원고에게 위와 같이 상여로 인정된 금원을 
+        피고 1에 대한 1998사업연도 근로소득으로 인정하는 내용의 ‘소득금액변동통지’를 하였다. 
+      </p><p>  ② 원고가 2000사업연도(2000. 1. 1.부터 같은 해 12. 31.까지)에 
+        소외 1 주식회사 등의 명의로 가공매입한 금 1,157,000,000원, 업무와 무관한 통신비 지출금 4,593,000원, 증빙자료 없는 복리후생비, 접대비, 여비교통비 및 기타 제경비 등 금 35,016,000원 등 합계 금 1,196,611,011원을 사외 유출시켰다고 판단하고 그 귀속이 불분명하다는 사유로 당시 원고의 대표이사였던 피고들의 법인등기부상 재직기간을 기준으로 하여 각 1/2인 598,305,505원을 피고들에 대한 상여로 인정하여, 원고에게 위와 같이 각 상여로 인정된 금원을 피고들에 대한 2000사업연도 근로소득으로 인정하는 내용의 ‘소득금액변동통지’를 하였다. 
+      </p><p> (2) 이에 따라 원고는 위 각 상여로 인정된 근로소득에 대한 원천징수의무자로서 2004. 1. 12. 
+        피고 1에 대한 2000사업연도 추가소득세 251,283,350원, 
+        피고 2에 대한 2000사업연도 추가소득세 256,972,170원(원고가 구하는 바에 따라 10원 미만은 버림, 이하 같다)을 각 납부하고, 2004. 12. 15. 
+        피고 1에 대한 1998사업연도 추가소득세 41,970,310원을 납부하였다.
+      </p><p> (3) 또한, 송파세무서장은 2004. 9.경 원고에 대하여 2001 및 2002사업연도 법인세 및 귀속소득에 대한 세무조사를 시행하고, 아래와 같이 소득금액변동통지를 하였다. </p><p>  ⓛ 원고가 2001사업연도(2001. 1. 1.부터 같은 해 12. 31.까지)에 이동형 하드디스크 매출누락액 62,760,000원, 
+        소외 1 주식회사로부터 가공매입한 219,030,900원, 법인사옥 신축과정에서 공사계약서 이중 작성에 의한 건물취득가액 과다금액 330,000,000원, 복리후생비 등 증빙자료 없는 금액 10,779,200원 합계 622,570,100원을 사외유출시켰다고 판단하고 그 귀속이 불분명하다는 사유로 위 금원을 당시 대표이사인 
+        피고 2에 대한 상여로 인정하여, 원고에게 위와 같이 상여로 인정된 금원을 
+        피고 2에 대한 2001사업연도 근로소득으로 인정하는 내용의 ‘소득금액변동통지’를 하였다. 
+      </p><p>  ② 원고가 2002사업연도(2002. 1. 1.부터 같은 해 12. 31.까지)에 
+        소외 1 주식회사로부터 가공매입한 금 99,044,000원을 사외유출시켰다고 판단하고 그 귀속이 불분명하다는 사유로 위 금원을 당시 대표이사인 
+        피고 2에 대한 상여로 인정하여, 원고에게 위와 같이 상여로 인정된 금원을 
+        피고 2에 대한 2002사업연도 근로소득으로 인정하는 내용의 ‘소득금액변동통지’를 하였다. 
+      </p><p> (4) 이에 따라 원고는 위 각 인정상여로 처리된 소득에 대한 근로소득세의 원천징수의무자로서 2005. 1. 7. 
+        피고 2에 대한 2001사업연도 추가소득세 251,946,550원, 2002사업연도 추가소득세 30,558,090원 합계 282,504,640원을 납부하였다.
+      </p><p>다. 관련 세법규정(아래규정은 1998사업연도에 관한 것인바, 다른 사업연도에 관한 규정은 조문의 번호만 다를 뿐 그 내용은 동일하므로 생략한다)</p><p>	  (1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|32|">구 법인세법(1998. 12. 28. 법률 제5581호로 개정되기 전의 것, 이하 ‘구 법인세법’이라 한다) 제32조 제5항</a></span>
+      </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|26|">제26조</a></span>의 규정에 의하여 법인세의 과세표준을 신고하거나 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|32|">제1항</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|32|">제4항</a></span>의 규정에 의하여 법인세의 과세표준을 결정 또는 경정함에 있어 익금에 산입한 금액은 그 귀속자에 따라 상여·배당·기타 사외유출·사내유보 등 대통령령이 정하는 바에 따라 처분한다.
+      </p><p>     (2) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법시행령|94|2">구 법인세법시행령(1998. 12. 31. 대통령령 제15970호로 개정되기 전의 것, 이하 ‘구 법인세법시행령’이라 한다) 제94조의 2 제1항</a></span>
+      </p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="법인세법|32|">법 제32조 제5항</a></span>의 규정에 의하여 익금에 산입한 금액은 다음 각호의 규정에 의하여 처분한다. 비영리내국법인과 비영리외국법인에 대하여도 또한 같다.
+      </p><p>        1호. 익금에 산입한 금액이 사외에 유출된 것이 분명한 경우에는 그 귀속자에 따라 다음 각목에 의하여 배당, 이익처분에 의한 상여, 기타소득, 기타 사외유출로 할 것. 다만, 귀속이 불분명한 경우에는 대표자에게 귀속된 것으로 본다. </p><p>          가. 귀속자가 주주 등(임원 또는 사용인인 주주 등을 제외한다)인 경우에는 그 귀속자에 대한 배당</p><p>          나. 귀속자가 임원 또는 사용인인 경우에는 그 귀속자에 대한 상여</p><p>라. 원고에 대한 약식명령 </p><p> 원고는 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울동부지방법원|2004고약4703|명령" href="#//">서울동부지방법원 2004고약4703호로 약식명령</a></span>에 회부되어, 2004. 3. 8. 위 법원으로부터, 원고의 대표이사인 
+        피고 2가 2000. 1. 5.부터 2000. 12. 21.경까지 사이에 비자금을 조성하기 위하여 
+        소외 1 주식회사로부터 허위의 세금계산서 총 27장 공급가액 합계 1,157,000,000원을 교부받았다는 이유로 조세범처벌법위반죄로 벌금 30,000,000원의 약식명령을 받아 그대로 확정되었으며, 2004. 4. 9. 위 벌금을 납부하였다.
+      </p><p>
+        <b>2. 원고의 피고들에 대한 구상금청구</b>
+      </p><p> 가. 당자자들의 주장 요지</p><p>   원고는, 송파세무서장의 원고에 대한 2차에 걸친 세무조사 결과 각 당시 대표이사였던 피고들에 대한 인정상여로 처분된 소득에 대하여 추가로 부과된 근로소득세를 근로소득세의 원천징수의무자로서 피고들을 대위하여 납부하였음을 이유로, 
+        피고 1에 대하여 1998사업연도 근로소득세 41,970,310원, 2000사업연도 근로소득세 251,283,350원 합계 293,253,660원, 
+        피고 2에 대하여 2000사업연도 근로소득세 256,972,170원, 2001사업연도 근로소득세 251,946,550원 및 2002사업연도 근로소득세 30,558,090원 합계 539,476,810원 상당의 구상금의 지급을 구하고 있다.
+      </p><p>   피고들은 이에 대하여, 위와 같이 상여로 인정된 금원은 실제로 원고 회사를 위하여 사용된 것으로서 피고들에게 귀속되지 아니함에도 이를 피고들에 대한 상여로 인정한 과세관청의 소득처분은 잘못되었으며, 따라서, 원고는 위 금액에 대한 원천징수의무가 없음에도 위 금원을 인정상여로 보아 근로소득세를 납부하였으므로, 피고들은 원고의 구상금 청구에 응할 수 없다고 주장한다.</p><p> 나. 판단의 기초가 되는 법리</p><p>  소득처분에 따른 법인의 갑종근로소득세 원천징수의무의 법리상, 원천납세의무자(소득의 귀속자)가 퇴직하여 원천징수가 불가능하게 되었더라도, 당해 법인은 원천징수의무를 부담하게 되고, 원천납세의무자의 납세의무 역시 변동이 없는바, 법인이 갑종근로소득세를 원천징수함이 없이 세무서에 납부한 경우 원칙적으로 법인은 원천납세의무자를 상대로 그 금액을 구상할 수 있다.</p><p>   그러나, 원천징수의무자에 대한 납세의 고지는 과세처분이 아니라 징수처분이어서 이에 대한 원천징수의무자의 납세의무가 확정되었더라도 원천납세의무자의 원천납세의무의 존부 및 범위에 영향을 미치지 아니하므로(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|85다카1548|판결" href="#//">대법원 1988. 11. 8. 선고 85다카1548 판결</a></span> 참조) 원천납세의무자는 원천징수의무자의 구상청구에 대하여 원천납세의무의 존부 또는 범위를 다투어 그 청구의 전부 또는 일부를 거절할 수 있다 할 것이고, 따라서 이 사건의 경우와 같이 과세관청이 법인세의 과세표준과 세액을 경정함에 있어 익금에 산입한 금액이 사외유출된 것이 분명하나 그 귀속자가 불분명한 경우에 대표자에게 귀속된 것으로 처리하는 대표자 인정상여의 경우 소득세법상 당해법인이 대표자로부터 갑종근로소득세를 원천징수하여 납부하도록 되어 있으나 법인과 대표자 개인간의 내부관계에 있어서는 법인이 이를 대표자로부터 징수함이 없이 대납하였다 하더라도 상여로 인정된 소득이 실제로 대표자에게 귀속되었던 것이 아니라면 법인은 대표자에 대하여 구상권을 행사할 수 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|87누519|판결" href="#//">대법원 1988. 9. 27. 선고 87누519 판결</a></span> 참조). 
+      </p><p>다. 
+        피고 1에 대한 청구에 관한 판단
+      </p><p> (1) 1998사업연도 인정상여 부분</p><p>  (가) 송파세무서장이 1998사업년도 
+        피고 1의 상여소득으로 인정한 110,000,000원이 실제로 
+        피고 1에게 귀속되었는지 여부에 관하여 보건대, 이에 대하여 
+        피고 1은 위 기간 동안 
+        소외 2 주식회사로부터 허위계산서를 발급받는 형식으로 가공매입거래를 통하여 110,000,000원의 비자금을 조성하여 이를 관리한 사실을 자인하고 있으므로, 특별한 사정이 없는 한 위 금원은 
+        피고 1에게 귀속된 것으로 봄이 상당하다.
+      </p><p>     (나) 이에 대하여 
+        피고 1은 위와 같이 조성한 비자금으로 원고 회사의 공장 임차료 18,000,000원, 일본의 기술제휴 회사 사장에 대한 도자기 선물비용 2,000,000원, 길병원에 파견된 원고 직원에 대한 특별지원금 3,000,000원, 
+        소외 3 고문에 대한 지원금 6,000,000원, 자동증명발급기 판매 인센티브 64,000,000원을 사용하는 등 모두 원고 회사를 위하여 사용하였기 때문에 
+        피고 1에게 귀속된 소득이 아니었다고 주장하나, 위 피고의 주장을 인정할 아무런 증거도 없으므로, 위 주장은 이유 없다. 
+      </p><p>
+        피고 1은 또한, 원고가 송파세무서장의 세무조사 당시 인정상여 소득에 대한 원천징수세액에 대하여 적극적으로 다투지 아니하고, 
+        피고 1에게 통지하여 소명의 기회를 주지 아니한 이상, 
+        피고 1에게 위와 같은 원천징수세액에 대해 구상을 구함은 부당하다고 주장하므로 살피건대, 귀속불명의 소득이 법인 대표자에 대한 상여로 인정되어 원천징수의무자인 법인이 근로소득세를 대납한 후 대표자를 상대로 구상청구를 하는 경우, 그 대표자는 납세의무 자체의 존부 또는 범위를 다투어 그 청구의 전부 또는 일부를 거절할 수는 있으나, 법인이 원천징수세액에 대하여 적극적으로 다투지 아니하였다거나 납세의무자인 대표자에게 통지하여 소명의 기회를 주지 아니하였다는 이유만으로 구상청구를 거절할 수는 없다 할 것이므로, 위 주장 역시 이유 없다. 
+      </p><p>     (다) 따라서, 
+        피고 1은 원고에게 1998사업연도 
+        피고 1에 대한 상여소득으로 인정된 110,000,000원에 대한 납부세액 41,970,310원 및 이에 대한 지연손해금을 지급할 의무가 있다.  
+      </p><p>   (2) 2000사업연도 인정상여 부분</p><p>	 송파세무서장이 2000. 1. 1.부터 같은 해 6. 30.까지 기간 동안 
+        피고 1의 상여소득으로 인정한 598,305,505원이 실제로 
+        피고 1에게 귀속되었는지 여부에 관하여 보건대, 
+        피고 1이 2000. 1. 1부터 2000. 6. 30.까지 사이에 원고의 대표이사로 등재되어 있던 것은 앞서 본 바와 같으나, 갑 9, 10호증의 각 1 내지 3, 을가 3호증의 8, 을나 17, 18호증의 각 기재만으로는 
+        피고 1이 위 기간 동안 원고의 실질적인 대표자로서 회사의 경영을 사실상 지배하고 있었고 위와 같이 소득처분된 금원이 
+        피고 1에게 귀속되었다고 인정하기에 부족하며 달리 이를 인정할 증거가 없다. 
+      </p><p>  오히려 을가 1호증의 1 내지 4, 을가 3호증의 5, 7, 8, 10, 을가 4호증의 1, 2, 을가 5호증의 1 내지 9의 각 기재에 변론 전체의 취지를 종합하면, 
+        피고 1은 2000. 2. 28. 원고의 대표이사 및 이사직을 사실상 사임하고 실질적 경영권을 
+        피고 2에게 인계하여 경영에서 물러난 사실, 
+        피고 2는 원고의 대표이사로서 2000. 1. 5.경부터 2000. 12. 21.경까지 사이에 
+        소외 1 주식회사로부터 허위세금계산서를 교부받는 형식으로 1,157,000,000원의 비자금을 조성하였다는 이유로 2004. 4. 23. 서울동부지방법원으로부터 조세범처벌법위반죄로 징역 10월에 집행유예 2년의 형을 선고받은 사실 등을 인정할 수 있는바, 위 인정사실에 비추어 보면 
+        피고 1은 적어도 2000년에는 원고의 비자금 조성에 관여하지 아니하였고, 따라서 2000사업연도에 조성된 위 비자금은 
+        피고 1에게 귀속되지 아니한 것으로 봄이 상당하므로, 결국 이 부분에 대한 원고의 주장은 이유 없다.
+      </p><p> 라. 
+        피고 2에 대한 청구에 관한 판단
+      </p><p>   (1) 2000사업연도 인정상여 부분</p><p>	  송파세무서장이 2000. 7. 1.부터 2000. 12. 31.까지 기간 동안 
+        피고 2의 상여소득으로 인정한 598,305,505원이 실제로 
+        피고 2에게 귀속되었는지 여부에 관하여 본다. 
+      </p><p>  (가) 송파세무서장이 원고가 2000년에 
+        소외 1 주식회사 등의 명의로 가공매입한 1,157,000,000원, 업무와 무관한 통신비 지출금 4,593,000원, 증빙자료 없는 복리후생비, 접대비, 여비교통비 및 기타 제경비 등 금 35,016,000원 등 합계 1,196,611,011원을 사외 유출시켰다고 판단하고 
+        피고 2의 법인등기부상 재직기간을 근거로 위 금액의 1/2인 598,305,505원을 
+        피고 2에 대한 상여로 인정한 사실은 앞서 보았으며, 
+        피고 2는 2000년 한해 동안 
+        소외 1 주식회사로부터 허위세금계산서를 교부받는 형식의 가공매입거래 등의 방법으로 비자금 1,170,000,000원을 조성하고 이를 관리한 사실을 자인하고 있기는 하다. 
+      </p><p>  (나) 그러나, 을나 1호증의 1 내지 4, 을나 13, 14호증, 을나 16 내지 18호증, 을나 31호증의 각 기재, 제1심 증인 
+        소외 4, 
+        5, 
+        6, 
+        7, 
+        8의 각 증언에 변론 전체의 취지를 종합하면, 2000년에 위와 같이 조성된 비자금 중에서 ⓛ 2001. 3.경 원고의 부사장이었던 
+        소외 6에게 퇴직위로금으로 30,000,000원이 지급된 사실, ② 2001. 5. 18. 원고의 이사였던 
+        소외 9에게 퇴직위로금으로 40,000,000원이 지급된 사실, ③ 2001. 10. 8. 
+        ○○○○중공업 대표이사 
+        소외 10에게 동두천재생병원의 메인서버 납품과 관련된 컨설팅 용역대금으로 30,000,000원이 지급된 사실, ④ 2001. 10. 8. 원고의 우리사주 조합장 
+        소외 11에게 주식 매수대금의 납입지원금으로 30,000,000원이 지급된 사실, ⑤ 2001. 10. 28. 원고의 관리부장 
+        소외 5에게 코스닥 등록에 대한 특별상여금으로 80,000,000원이 지급된 사실, ⑥ 2000 및 2001년 원고의 직원들의 포상금 및 연말 복리후생비로 30,000,000원이 사용된 사실, ⑦ 2000 및 2001년 원고의 영업부 직원들의 업무추진비 및 각 대학에 상주하는 직원들의 부대비용으로 180,000,000원이 사용된 사실 등을 인정할 수 있는바, 위 인정사실에 의하면 위 ⓛ 내지 ⑦과 같이 지출된 합계 420,000,000원은 모두 원고의 업무와 관련되어 지출된 것으로서 
+        피고 2에게 귀속된 것은 아니라고 봄이 상당하다. 
+      </p><p>  또한, 을나 2 내지 4호증, 을나 14, 15, 17, 18호증의 각 기재, 제1심 증인 
+        소외 5, 
+        7, 
+        8, 
+        12의 각 증언에 변론 전체의 취지를 종합하면, 원고가 1999. 12.말경 주요 거래선인 
+        소외 13 주식회사에게 500,000,000원을 대여하였는데 
+        소외 13 주식회사의 자금사정이 악화되어 이를 회수하지 못하게 되자, 
+        피고 2는 
+        소외 13 주식회사과의 거래 관계를 고려하여 위 대여금을 형식적으로만 변제처리하기로 당시 임원들과 협의한 후, 
+        소외 13 주식회사으로부터 500,000,000원을 입금받아 위 대여금의 변제에 충당처리한 후 즉시 동액 상당의 금원을 회계장부상 처리하지 않은 채 인출하여 다시 
+        소외 13 주식회사에게 빌려 준 사실, 그 후 
+        피고 2는 2001. 봄경 당시 이사들과 협의 하에 당시 조성한 비자금 중 250,000,000원을 
+        소외 13 주식회사에게 추가로 대여한 사실을 각 인정할 수 있는바, 위 인정사실에 의하면 위와 같이 사용된 비자금 750,000,000원(= 500,000,000원 + 250,000,000원)은 비록 회계장부상 대여금으로 처리되지는 아니하였지만, 실제로는 원고가 
+        소외 13 주식회사에 대하여 동액 상당의 대여금채권을 보유한다고 할 것이므로, 위 금원 역시 
+        피고 2에게 귀속된 것은 아니라고 봄이 상당하다.
+      </p><p>  결국, 
+        소외 1 주식회사와의 가공매입거래로 조성한 비자금 1,170,000,000원(= 420,000,000원 + 750,000,000원)은 
+        피고 2에게 귀속된 것이 아니라고 봄이 상당하다. 
+      </p><p>   (다) 한편 송파세무서장이 인정상여로 처분하면서 업무와 무관하거나 증빙자료가 없다는 이유로 손금으로 인정하지 아니한 통신비 지출금 4,593,000원, 복리후생비, 접대비, 여비교통비 및 기타 제경비 등 35,016,000원에 관하여 보건대, 이에 관하여는 위 금원을 
+        피고 2가 비자금으로 조성하였음을 인정할 증거가 없을 뿐만 아니라, 만일 위 금원이 비자금으로 조성되었다고 하더라도 위 지출항목에 비추어 회사를 위하여 사용된 것으로 봄이 상당하므로 위 금원 역시 
+        피고 2에게 귀속되었다고 볼 수 없다.
+      </p><p>   (라) 따라서, 
+        피고 2에 대한 2000사업연도 인정상여와 관련한 원고의 청구는 이유 없다. 
+      </p><p> (2) 2001 및 2002사업연도 인정상여 부분</p><p>	 송파세무서장이 2001 및 2002년 
+        피고 2에 대한 상여소득으로 인정한 622,570,100원(2001사업연도) 및 99,044,000원(2002사업연도)이 각 
+        피고 2에게 귀속되었는지에 관하여 살펴본다.
+      </p><p>     (가) 먼저, 
+        피고 2는 2001사업연도 세무조사 결과 상여로 인정된 금원 중 원고의 건물 신축과정에서 시공사인 
+        소외 14 주식회사로부터 공사계약서를 이중으로 작성하는 방법으로 공사사례금 명목으로 받은 금 330,000,000원, 증빙자료 없는 복리후생비 금 10,779,200원 합계 340,779,200원에 대하여는 이를 비자금으로 조성하여 관리한 사실을 자인하고 있기는 하다. 
+      </p><p>    그러나, 을나 17, 18호증, 을나 31호증, 을나 32호증의 1, 2, 을나 33 내지 39호증의 각 기재, 제1심 증인 
+        소외 8, 
+        15, 
+        16의 각 증언에 변론 전체의 취지를 종합하면, 2001년에 위와 같이 조성된 비자금 중에서 ⓛ 2001. 11. 5. 원고의 직원인 
+        소외 5, 
+        17에게 코스닥 등록에 대한 특별상여금으로 50,000,000원이 지급된 사실, ② 2001. 11. 16. 가천의과대학 길병원의 전산실을 유지관리하는 
+        소외 21 주식회사 대표이사 
+        소외 18에게 컨설팅 용역대금으로 50,000,000원이 지급된 사실, ③ 2001. 11. 26. 
+        소외 15에게 주식회사 비와이씨(BYC) 전산실의 메인서버 납품과 관련하여 컨설팅 용역대금으로 30,000,000원이 지급된 사실, ④ 2001. 12. 20. 및 같은 달 27. 원고 소유 건물의 종전 임차인에게 명도 합의금으로 20,000,000원이 지급된 사실, ⑤ 2002. 1. 22. 
+        소외 19에게 신호처리 분리기의 개발 용역대금으로 7,997,320원이 지급된 사실, ⑥ 2002. 2. 7. 원고의 부산지사장 
+        소외 8에게 업무추진비 및 컨설팅 용역대금으로 32,000,000원이 지급된 사실, ⑦ 2002. 2.경 원고의 성명불상 직원에게 해외출장비로 6,400,000원이 지급된 사실, ⑧ 2002. 3. 11. 및 2003. 3. 21. 원고의 직원 
+        소외 3에게 영업수수료로 14,200,000원이 지급된 사실, ⑨ 2002. 6. 19. 가천의과대학 납품과 관련하여 대학관계자에게 컨설팅 용역대금으로 4,500,000원이 지급된 사실, ⑩ 2002. 1. 15. 원고의 직원 
+        소외 16에게 생활지원금으로 6,000,000원이 지급된 사실, ⑪ 복리후생비 관련하여 증빙자료가 없어 인정상여로 처분된 10,779,200원 상당은 주로 원고의 직원들의 식사비나 소모품 및 간식 구입비로 지출된 사실, ⑫ 나머지 약 170,000,000원은 
+        소외 8 등 전국의 각 영업책임자들에게 업무추진비 및 컨설팅 비용으로 지급된 사실 등을 인정할 수 있는바, 위 인정사실에 의하면 위 ⓛ 내지 ⑫와 같이 지출된 금원 합계 340,779,200원은 모두 원고의 업무와 관련되어 지출된 것으로서 
+        피고 2에게 귀속된 것은 아니라고 봄이 상당하다.
+      </p><p>     (나) 다음으로 2001 및 2002사업연도 세무조사 결과 인정상여로 처분된 이동형 하드디스크 매출누락액 62,760,000원, 
+        소외 1 주식회사로부터 가공매입한 219,030,900원(2001사업연도) 및 99,044,000원(2002사업연도)이 각 
+        피고 2에게 현실적으로 귀속되었는지에 관하여 살펴본다.
+      </p><p> 첫째로, 
+        피고 2는, 송파세무서장이 2001사업연도 세무조사 결과 원고가 재고물량으로 있던 이동형 하드디스크 145개를 관공서에 팔고도 회계장부에 그 매출액을 누락시켜 금 62,760,000원을 사외유출시켰다고 판단한 것은 잘못이고, 재고로 있던 이동형 하드디스크를 모두 원고의 직원들에게 업무용으로 또는 거래처에 홍보용으로 증정하였으므로, 위 금원은 
+        피고 2에게 귀속된 것이 아니라고 주장하므로 살피건대, 갑 2, 7호증, 갑 29호증의 1 내지 4, 갑 33, 36, 37호증의 각 기재에 변론 전체의 취지를 종합하면, 2001사업연도 세무조사 당시 원고의 2001사업연도 상품재고 수불부(갑 36호증)상으로는 이동형 하드디스크의 입고량이 3,910개, 출고량이 2,406개였으나, 매출액 기준으로 산정하면 실제로는 1,433개만이 출고된 것으로 밝혀져 나머지 973개(= 2,406개 - 1,433개)가 문제되었는데, 원고는 송파세무서장에게 위 이동형 하드디스크가 모두 업무용 또는 홍보용으로 직원 또는 거래처에 증정되었음을 적극적으로 소명하였으나 그 중 145개에 대해서는 받아들여지지 아니하고 그에 대한 가액인 62,760,000원에 대하여 사외유출된 것으로 인정되어 
+        피고 2에 대한 인정상여로 처분된 사실을 인정할 수 있는바, 이에 비추어 보면 
+        피고 2는 2001사업연도 이동형 하드디스크 제고물량 중 145개에 대한 매출액 62,760,000원을 정식으로 회계처리하지 아니하고 사외유출시켜 비자금으로 조성 및 관리한 사실을 추인할 수 있다. 
+      </p><p> 둘째로, 
+        피고 2는 송파세무서장이 2001 및 2002사업연도 세무조사 결과 원고와 
+        소외 1 주식회사 사이에 2001 및 2002년에 이루어진 거래를 모두 가공매입거래로 보고 2001년도 매입액 금 219,030,900원 및 2002년도 매입액 금 99,044,000원이 모두 사외유출되었다고 판단한 것은 잘못이고, 위 사업연도에 이루어진 원고와 
+        소외 1 주식회사와 사이에 거래는 모두 실거래로서 매입액 상당의 금원이 사외 유출되거나 
+        피고 2에게 귀속된 사실이 없다고 주장하므로 살피건대, 갑 27, 28호증, 갑 29호증의 1 내지 4, 갑 32호증의 1 내지 13, 갑 33 내지 35호증, 갑 43호증의 1 내지 8의 각 기재에 변론 전체의 취지를 종합하면, 2001 및 2002사업연도 세무조사 당시 원고는 송파세무서장에게 각 사업연도의 
+        소외 1 주식회사와의 거래가 실거래임을 적극적으로 소명하였으나 이미 2000사업연도 세무조사 결과 
+        소외 1 주식회사와의 거래가 가공매입거래임이 밝혀졌을 뿐만 아니라, 원고의 비자금이 입금된 
+        소외 20 명의 통장(갑 33호증)이 발견되어 2001 및 2002년에 이루어진 거래도 가공매입거래로 인정되고 
+        피고 2에 대한 인정상여로 처분된 사실, 원고의 비자금이 입금되어 있는 
+        소외 20 명의 통장에 2001. 1.경부터 같은 해 9.경까지 사이에 총 7회에 걸쳐 원고가 거래처원장(갑 34호증)상 
+        소외 1 주식회사로부터 매입한 것으로 되어 있는 물품대금과 동일한 금액이 동일자에 입금되어 총 합계 약 3억 원 상당의 금원이 입금된 사실, 원고가 
+        소외 1 주식회사로부터 매입한 것으로 되어 있는 물품 중 노트북의 수량 및 취득연월일의 기재가 원고의 회계자료인 물품별 구매·판매현황자료(갑 32호증의 1 내지 14)와 비품감가상각비명세서(갑 35호증) 및 세금계산서(갑 43호증의 1 내지 8)에 각 다르게 되어 있는 사실 등을 인정할 수 있는바, 이에 비추어 보면 
+        피고 2는 
+        소외 1 주식회사와의 가공매입거래를 통하여 2001년에 219,030,900원, 2002년에 99,044,000원의 각 회사자금을 사외 유출시켜 비자금으로 조성 및 관리한 사실을 추인할 수 있다. 
+      </p><p>   결국, 2001사업연도의 이동형 하드디스크 매출누락액 62,760,000원, 
+        소외 1 주식회사로부터 가공매입한 219,030,900원 및 2002사업연도의 
+        소외 1 주식회사로부터 가공매입한 99,044,000원은 특별한 사정이 없는 한 각 
+        피고 2에게 귀속되었다고 봄이 상당하다. 
+      </p><p>   (다) 따라서, 
+        피고 2는 원고에게 2001사업연도 세무조사 결과 
+        피고 2에 대한 귀속소득으로 인정된 622,570,100원 중 281,790,900원(= 62,760,000원 + 219,030,900원)에 대한 근로소득세 114,037,350원(= 이미 납부한 근로소득세 251,946,550원 × 281,790,900원 ÷ 622,570,100원, 10원 미만 버림) 및 2002사업연도 세무조사 결과 
+        피고 2에 대한 귀속소득으로 인정된 99,044,000원에 대하여 이미 납부한 근로소득세 30,558,090원과 각 이에 대한 지연손해금을 지급할 의무가 있다. 
+      </p><p>   (라) 이에 대하여 
+        피고 2는, 원고가 송파세무서장의 세무조사 당시 인정상여 소득에 대한 원천징수세액에 대하여 적극적으로 다투지 아니하였으며, 위 피고에게 통지도 하지 아니하고 송파세무서장의 소득세부과처분에 대하여 불복함 없이 이를 전부 납부하였으므로, 원고가 위와 같이 납부한 근로소득세에 대하여 
+        피고 2에게 구상을 구함은 부당하다고 주장하므로 살피건대, 위에서 
+        피고 1의 주장에 대하여 판단한 것과 마찬가지 이유로 위 주장은 이유 없다. 
+      </p><p>
+        <b>3. 원고의 피고들에 대한 손해배상청구</b>
+      </p><p> 가. 원고는, 피고들이 2000년에 행한 불법적인 비자금 조성행위로 인하여 조세범처벌법위반죄로 벌금 30,000,000원의 약식명령을 받아 이를 납부하였으므로, 피고들은 연대하여 원고에게 위 벌금액 상당의 손해를 배상할 의무가 있다고 주장한다.</p><p> 나. 먼저, 
+        피고 2의 손해배상책임에 관하여 보건대, 
+        피고 2가 2000년에 원고의 대표이사로 근무하면서 
+        소외 1 주식회사로부터 허위세금계산서를 교부받는 형식으로 금 1,157,000,000원의 비자금을 조성한 사실 및 원고가 이로 인하여 2004. 3. 8. 서울동부지방법원으로부터 벌금 30,000,000원의 약식명령을 받아 2004. 4. 9. 이를 납부한 사실은 앞서 본 바와 같고, 위 인정사실에 의하면 
+        피고 2는 원고가 벌금으로 납부한 금 30,000,000원의 손해를 배상할 책임이 있다 할 것이다. 
+      </p><p>   다만, 
+        피고 2가 조성한 비자금을 위에서 본 바와 같이 대부분 자신의 이익이 아닌 회사의 업무를 위하여 사용한 점, 
+        피고 2 자신도 위와 같이 1,157,000,000원의 비자금을 조성하였다는 범죄사실에 대하여 조세범처벌법위반죄로 유죄가 인정되어 징역 10월에 집행유예 2년의 형을 선고받은 점 등 앞서 채택한 각 증거에 변론 전체의 취지를 종합하면 인정되는 
+        피고 2의 비자금조성 경위, 원고의 손해 발생 및 확대에 관여된 객관적인 사정이나 그 정도, 평소 
+        피고 2의 원고에 대한 공헌도, 비자금조성으로 인한 
+        피고 2의 이득 유무 기타 이 사건 변론에 나타난 제반 사정을 참작하여, 손해분담의 공평이라는 손해배상제도의 이념에 비추어 
+        피고 2의 책임을 위 손해액의 50%에 해당하는 15,000,000원으로 제한함이 상당하다.  
+      </p><p> 다. 다음으로, 
+        피고 1의 손해배상책임에 관하여 보건대, 위에서 판단한 바와 같이 
+        피고 1은 2000년에는 원고의 비자금 조성에 관여하지 아니하였다고 봄이 상당하므로, 원고의 
+        피고 1에 대한 위 주장은 더 나아가 살필 필요 없이 이유 없다.
+      </p><p>
+        <b>4. 피고별 인용금액</b>
+      </p><p>  따라서, 원고에게, (1) 
+        피고 1은 위 구상금 41,970,310원 및 이에 대하여 1998사업연도 근로소득세 납부일인 2004. 12. 15.부터 위 피고가 그 이행의무의 존부 및 범위에 대하여 항쟁함이 상당하다고 인정되는 제1심 판결 선고일인 2005. 9. 30.까지는 민법이 정하는 연 5%, 그 다음날부터 다 갚는 날까지는 소송촉진등에관한특례법이 정하는 연 20%의 각 비율에 의한 지연손해금을, (2) 
+        피고 2는 위 구상금 및 손해배상금 합계 159,595,440원(= 114,037,350원 + 30,558,090원 + 15,000,000원) 및 위 금원 중 손해배상금 15,000,000원에 대하여는 위 불법행위일 이후로서 원고가 구하는 2004. 4. 10.부터, 2001 및 2002사업연도 근로소득세 합계 144,595,440원(= 114,037,350원 + 30,558,090원)에 대하여는 그 납부일인 2005. 1. 7.부터, 각 위 피고가 그 이행의무의 존부 및 범위에 대하여 항쟁함이 상당하다고 인정되는 이 판결 선고일인 2006. 7. 5.까지는 민법이 정하는 연 5%, 그 다음날부터 다 갚는 날까지는 소송촉진등에관한특례법이 정하는 연 20%의 각 비율에 의한 지연손해금을 각 지급할 의무가 있다. 
+      </p><p>
+        <b>5. 결론</b>
+      </p><p>  그렇다면, 원고의 피고들에 대한 청구는 위 인정범위 내에서 이유 있어 인용하고, 나머지 청구는 이유 없어 각 기각할 것인바, 제1심 판결 중 이와 일부 결론이 다른 
+        피고 2 패소부분은 부당하므로 이를 취소하여 그 취소부분에 해당하는 원고의 
+        피고 2에 대한 청구를 기각하고, 원고와 
+        피고 1의 항소와 
+        피고 2의 나머지 항소를 각 기각하기로 하여 주문과 같이 판결한다. 
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   주기동(재판장) 최재혁 구회근 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

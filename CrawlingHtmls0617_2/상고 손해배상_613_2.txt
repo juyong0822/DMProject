@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2004나78549 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2033522';
+var contIdEtc = '';
+var saNo = '2004나78549';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20051028' ? 
+			'20051028'.length==4 ? Date.parseExact('20051028','yyyy').toString('yyyy. M. d.') : 
+				'20051028'.length==6 ? Date.parseExact('20051028','yyyyMM').toString('yyyy. M. d.') : 
+					'20051028'.length==8 ? Date.parseExact('20051028','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2004나78549 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2004나78549';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2004나78549</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(6)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다37326">대법원 2004. 6. 25. 선고 2000다37326 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|513|0|null">상법 제513조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|513|0|null">상법 제513조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|516|0|null">상법 제516조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|346|0|null">상법 제346조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|424|0|null">상법 제424조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2004가합25531">서울중앙지방법원 2004. 10. 7. 선고 2004가합25531 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2005. 10. 28. 선고 2004나78549 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고(소송대리인 법무법인 바른 담당변호사 박인호외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        
+          피고 주식회사(소송대리인 변호사 김영훈)
+        
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2005. 9. 23.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2004가합25531|판결" href="#//">서울중앙지방법원 2004. 10. 7. 선고 2004가합25531 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고의 항소를 기각한다.</p><p>2. 항소비용은 원고의 부담으로 한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 원고에게 500,000,000원과 이에 대하여 이 사건 소장부본 송달 다음날부터 완제일까지 연 20％의 비율로 계산한 금원을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>［인정근거：다툼 없는 사실, 갑1 내지 15호증, 갑16호증의 1, 2, 을1 내지 4호증의 각 기재, 변론 전체의 취지］</p><p>가. 1999. 2.경 
+        소외 2 주식회사(2003. 9. 8. 피고로 상호 변경되었다. 이하 ‘
+        소외 2 회사’라 한다)가 자금사정 악화로 경영위기에 처하자 당시 구치소에 수감 중이던 
+        소외 2 회사의 실질적인 지배주주이자 대표이사이던 
+        소외 3은 우선 
+        소외 2 회사의 부도를 피하기 위한 운영자금을 마련하기 위하여 그와 그의 처 원고 등 특수관계인이 보유하던 
+        소외 2 회사의 주식을 매각하여 그 매각자금 등 33억 원(그 중 원고의 몫은 6억 원 상당이다)을 
+        소외 2 회사에 출연하였는데, 그 구체적 지원방식은 처음에는 
+        소외 2 회사의 자회사 중 하나인 
+        소외 4 주식회사(이하 ‘소외 4 회사’라 한다)를 통하여 
+        소외 4 회사가 
+        소외 2 회사에 대여하는 형식을 취하였다가 나중에는 그 방식을 일부 바꾸어 대여 주체에 
+        소외 4 회사 외에 
+        소외 1 주식회사(이하 ‘
+        소외 1 회사’라 한다)등 다른 자회사도 포함시키는 것으로 하였다. 즉 
+        소외 3과 원고 등은 
+        소외 1 회사 등 계열 자회사에 위 주식매각자금 등 33억 원을 대여하고, 
+        소외 1 회사 등은 그 돈을 다시 
+        소외 2 회사에 운영자금으로 대여하면서 그 대여금채권과 
+        소외 1 회사 등 
+        소외 2 회사의 자회사들이 분사 당시부터 모회사인 
+        소외 2 회사에 대하여 부담하고 있었던 영업권 등 자산매입대금 상환채무를 상계하는 것으로 처리하는 방식이다.
+      </p><p>이와 같은 방식에 따라 원고는 1999. 3. 23. 
+        소외 1 회사에게 1억 원을 이자 연 10％, 변제기 2011. 4. 30.로 정하여 대여하면서 
+        소외 1 회사와 사이에 “원고가 위 변제기까지 대여금액의 전부 또는 일부를 
+        소외 1 회사의 주식으로 전환받기를 원하는 경우 
+        소외 1 회사는 언제나 주식을 액면가(1주당 5,000원)로 발행하여 원고에게 이를 교부한다. 그리고 
+        소외 1 회사는 원고의 동의를 받지 않고는 증자를 실시하지 않는다”는 약정 (이하 ‘이 사건 약정’이라 한다)을 하였다.
+      </p><p>나. 이 사건 약정 당시 
+        소외 2 회사는 
+        소외 1 회사의 발행주식 총수 10,000주(1주당 액면가 5,000원) 중 9,800주(지분비율 98％)를 보유하고 있었다［당시 
+        소외 1 회사의 나머지 주식 200주는 
+        소외 1 회사의 대표이사였던 
+        소외 5가 100주(지분비율 1％), 
+        소외 6이 80주(지분비율 0.8％), 
+        소외 7이 20주(지분비율 0.2％)를 각 보유하고 있었다］.
+      </p><p>다. 이 사건 약정 당시 
+        소외 1 회사의 정관(을2호증)에는 주주 이외의 자에게 전환사채를 발행할 경우의 근거와 구체적인 내용(전환사채의 총액, 전환의 조건, 전환으로 인하여 발행할 주식의 내용, 전환을 청구할 수 있는 기간)에 관한 규정이 없었으며｛원고는, 을2호증이 1999. 3. 23. 개정되었고, 개정된 정관(갑17호증)은 개정된 당일부터 효력을 발생하였는바, 개정된 정관 제19조에는 전환사채의 발행에 관한 규정이 신설되었다고 주장하나, 을3, 4호증의 각 기재에 변론 전체의 취지를 종합하면, 
+        소외 1 회사는 주주총회의 소집을 위한 각 주주에 대한 아무런 서면통지나 소집공고 없이, 또 실제 결의를 한 바 없이, 허위의 주주총회 의사록을 작성한 사실을 인정할 수 있고, 위 인정사실에 의하면 위 주주총회는 그 절차상의 하자가 너무 중대하여 그 주주총회에서 한 정관변경 결의는 무효 혹은 부존재한다고 봄이 상당하므로(당시 
+        소외 2 회사가 
+        소외 1 회사 주식의 98％를 소유하고 있다고 하여 
+        소외 1 회사가 1인 주주 회사라고 볼 수는 없다), 원고의 위 주장은 받아들이지 않는다｝,
+        소외 1 회사의 대표이사는 주주 이외의 자에게 전환사채를 발행하기 위한 주주총회의 특별결의절차를 전혀 거치지 않고 임의로 이 사건 약정을 하였다.
+      </p><p>라. 원고는 1999. 3. 26.과 2001. 1. 5. 
+        소외 1 회사에게 이 사건 약정에 따라 대여금 전부를 주식으로 전환해줄 것(즉, 
+        소외 1 회사의 주식 20,000주를 발행해 달라는 취지임)을 청구하였으나 
+        소외 1 회사는 ‘1998년 결산 결과 자본잠식상태이므로 전환사채를 발행할 수 없다’는 등의 이유로 이를 거절하였다.
+      </p><p>마. 한편, 피고는 2004. 2. 23. 
+        소외 1 회사를 흡수합병하고 2004. 3. 3. 등기를 마쳤는데, 합병 당시 피고가 
+        소외 1 회사의 발행주식 전체(발행주식 총수 10,000주)를 보유하고 있었으므로 신주를 교부하지 않는 무증자합병의 방식을 택하였고 
+        소외 1 회사의 주식 1주를 234,788원으로 평가하여 합병기준가액을 산출하였다.
+      </p><p>바. 원고는 위와 같이 흡수합병이 진행되던 도중은 물론 흡수합병이 종료된 이후에도 
+        소외 1 회사에게 ‘이 사건 약정에 따른 주식발행 또는 이 사건 약정에 따라 주식발행이 이루어졌을 경우 원고가 흡수합병과정에서 얻었을 금전적 이득(
+        소외 1 회사의 주식 20,000주×합병 당시 1주당 평가금액 234,788원)의 지급’을 요청하였고, 이에 대하여 
+        소외 1 회사는 2004. 2. 19. 이 사건 약정에 대하여 소비대차의 효력만을 인정하고 원금 1억 원에 대여일로부터 2004. 2. 17.까지 연 10％의 이율(복리)에 따라 계산한 이자를 가산한 금액인 159,669,172원을 서울중앙지방법원에 공탁하였는데, 그 후 원고가 이의를 유보하고 이를 수령하였다.
+      </p><p>2. 주장 및 판단</p><p>가. 원고의 주장</p><p>(1) 
+        소외 1 회사는 이 사건 약정에 따라 주식전환을 청구한 원고에게 주식 20,000주를 발행해 줄 의무가 있고 만약 
+        소외 1 회사가 이러한 의무를 이행하였다면 원고는 위 합병 당시 주식가치에 상당하는 금전적 이득을 얻을 수 있었을 것인데, 
+        소외 1 회사가 이 사건 약정에 따른 주식발행의무를 이행하지 않음으로써 위와 같은 금전적 이득(
+        소외 1 회사의 주식 20,000주×합병 당시 1주당 평가금액 234,788원=4,536,090,828원)을 상실하는 손해를 입었으므로 합병에 따라 
+        소외 1 회사의 권리와 의무를 승계한 피고가 
+        소외 1 회사의 약정불이행으로 말미암은 원고의 손해를 배상할 의무가 있는데, 원고는 피고에 대하여 위 손해배상금 4,536,090,828원 중 명시적 일부 청구로써 5억 원 및 이에 대한 지연손해금의 지급을 구한다.
+      </p><p>(2) 가사 이 사건 약정이 
+        소외 1 회사의 지배권과 경영권의 변동을 가져오는 것으로서 무효라고 하더라도, 이 사건 약정에 의한 원고의 권리행사는 
+        소외 1 회사의 지배권과 경영권의 변동을 가져오지 않는 범위 내에서는 유효하다. 
+        소외 1 회사의 지배주주이던 피고는 전체 발행주식 10,000주의 98％에 해당하는 9,800주를 소유하고 있었으므로, 피고가 
+        소외 1 회사의 지배권과 경영권을 행사하기 위하여는 전체 발행주식의 51％에 해당하는 주식을 소유하면 충분한 것이고, 피고가 위 지분비율을 유지하도록 하기 위하여 
+        소외 1 회사가 원고에게 발행할 수 있는 주식은 9,215주 상당이므로, 
+        소외 1 회사는 원고에게 위 9,215주에 해당하는 신주 또는 전환사채를 발행하였어야 한다. 피고가 위 의무를 이행하였을 경우 원고가 피고로부터 받을 금액은 2,163,571,420원(=9,215주×234,788원)이므로, 피고는 원고에게 위 금액에서 원고에게 공탁한 금액 중 위 주식수에 해당하는 금액인 73,567,570원(=159,669,172원×9,215주／20,000주)을 공제한 금액을 지급할 의무가 있다.
+      </p><p>나. 피고의 주장</p><p>이 사건 약정은 
+        소외 1 회사의 모회사인 
+        소외 2 회사의 지배주주 겸 대표이사인 
+        소외 3이 처인 원고를 내세워 
+        소외 1 회사의 경영권을 불법적으로 박탈하기 위한 목적에서 체결된 것으로 ① 전환사채발행에 관한 상법의 규정을 위반하여 이사회 결의와 주주총회의 특별결의를 거치지 않았고, ② 또한 원고의 주장에 따를 때 합병 당시 1주당 234,788원의 가치가 있는 
+        소외 1 회사의 주식을 1주당 5,000원으로 계산하여 전환사채 발행가액을 정한 것이라고 할 수 있으므로 무효이다.
+      </p><p>다. 판단</p><p>(1) 원고는 이 사건 약정이 유효함을 전제로 이 사건 청구를 하고 있으므로, 우선 이 사건 약정이 유효한지 여부에 관하여 살피기로 한다.</p><p>(2) 이 사건 약정은 소비대차의 형식을 띄고 있으나 실질적으로는 원고에게 위 대여금을 주식으로 전환할 수 있는 권리를 부여한 것으로 전환사채발행약정에 해당한다고 할 것이다. 상법은 원칙적으로 이사회의 결의에 따라 사채를 발행하도록 하고 있으나(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|513|">상법 제513조 제2항</a></span>), 예외적으로 주주 이외의 자에게 전환사채를 발행하기 위해서는 정관에 그 근거와 발행을 위한 구체적인 내용(전환사채의 총액, 전환의 조건, 전환으로 인하여 발행할 주식의 내용, 전환을 청구할 수 있는 기간)에 관한 정함이 있어야 하고 만약 이러한 정함이 없는 경우 주주총회의 특별결의를 거쳐야 한다고 규정하고 있다(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|513|">상법 제513조 제3항</a></span>). 그런데, 
+        소외 1 회사의 대표이사가 
+        소외 1 회사의 정관에 주주 이외의 자에 대한 전환사채발행에 관한 아무런 정함이 없는 상태에서 주주총회의 특별 결의도 거치지 않은 채 임의로 이 사건 약정을 하였음은 앞서 본 바와 같다.
+      </p><p>(3) 살피건대, 앞서 보았거나 앞서 채택한 각 증거에 변론 전체의 취지를 종합하면 인정되는 다음과 같은 여러 사정 즉, ① 전환사채는 전환권의 행사에 의하여 장차 주식으로 전환될 수 있는 권리가 부여된 사채로서 이러한 전환사채발행은 주식회사의 물적 기초와 기존 주주들의 이해관계에 직접적인 영향을 미칠 수 있는 것으로서 사실상 신주발행과 같은 의미를 갖는 점, ② 상법은 주주 이외의 자에 대한 전환사채발행에 관하여 정관에 구체적인 근거가 있거나 혹은 주주총회의 특별결의를 거친 경우에 한하여 이를 허용하고 있는데 이는 주주의 신주인수권을 우선적으로 보장하고 있는 것과 같은 취지로 보는 것이 상당한 점, ③ 상법이 주주총회의 특별결의사항으로 정하고 있는 것은 모두 주주의 이해관계에 특히 막대한 영향을 미치는 중요한 경영사항과 회사의 조직이나 자본을 근본적으로 변경하는 비상사항에 관한 것들인데, 만약 이 사건 약정에 따라 전환사채가 발행되었다면 원고가 
+        소외 1 회사의 발행주식 총수 30,000주 중 20,000주를 보유하게 되어 지분비율 66.6％의 지배주주가 되고 이전에 98％의 지배주주였던 
+        소외 2 회사는 9,800주, 지분비율 32.6％의 주주가 되는 결과가 되는데, 이러한 전환사채발행은 달리 특별한 사정이 없는 한 법령이나 정관을 중대하게 위반한 것으로서 주식회사의 본질이나 회사법의 기본원칙에 반하거나 기존 주주들의 이익과 회사의 경영권 내지 지배권에 중대한 영향을 미치는 경우로서 전환사채와 관련된 거래의 안정, 주주 기타 이해관계인의 이익 등을 고려하더라도 도저히 묵과할 수 없는 정도라고 평가될 수 있어 무효라고 봄이 상당한 점(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다37326|판결" href="#//">대법원 2004. 6. 25. 선고 2000다37326 판결</a></span> 참조), ④ 다만, 위 ③의 경우 실제로 전환사채나 신주가 발행된 경우 주식의 유통가능성과 집단적인 법률관계의 특성상 사후에 이를 무효로 하면 거래의 안전과 법적 안정성을 해칠 위험성이 크다는 점에서 전환사채 발행의 효력발생 후에는 원칙적으로 전환사채 발행 무효의 소에 의하여서만 이를 다툴 수 있다고 할 것이나, 이 사건과 같이 전환사채발행을 하기로 하는 약정은 있으나 실제 발행이 이루어지지 않은 경우에는 거래의 안전과 다수 이해관계인의 이익 등을 해칠 위험성이 전혀 없으므로, 그 무효원인을 보다 넓게 해석하는 것이 마땅한 점, ⑤ 주주 외의 자에게 발행할 전환사채의 액과 그 전환조건에 의하여 그 전환으로 인하여 회사가 발행할 주식의 총수가 명확하게 되고, 회사는 전환청구기간 중에 이를 미발행주식의 수 중에 보류하고 있어야 하는데(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|516|">상법 제516조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|346|">제346조 제2항</a></span>), 위와 같이 주주 외의 자에게 발행할 전환사채의 액과 그 전환조건은 주주에게 중대한 이해관계 있는 사항이고 또 이는 수권주식과 관련되는 문제로서 주식회사의 본질에 관한 것이므로, 주주 외의 자에게 발행할 전환사채의 액과 그 전환조건은 전환으로 인하여 회사가 발행할 주식의 총수를 알 수 있을 정도로 구체적으로 정하여야 함에도 불구하고, 이 사건 약정에는 위와 같은 구체적인 정함이 없는 점, ⑥ 회사가 법령 또는 정관에 위반하거나 현저하게 불공정한 방법에 의하여 주식을 발행함으로써 주주가 불이익을 받을 염려가 있는 경우에는 그 주주는 회사에 대하여 그 발행을 유지할 것을 청구할 수 있는 점(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|516|">상법 제516조 제1항</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|424|">제424조</a></span>), ⑦ 만약 이 사건 약정의 유효성을 인정한다면 이는 사실상 주주의 신주인수권, 신주발행절차, 전환사채발행절차 등에 관한 상법의 여러 규정을 무력화시키고 이를 잠탈하는 취지의 약정을 용인하게 되는 점 등 기타 이 사건 변론에 나타난 제반 사정에 비추어 볼 때, 이 사건 약정은 무효라고 봄이 상당하고, 따라서 이 사건 약정이 유효함을 전제로 한 원고의 이 사건 청구는 더 나아가 살필 필요 없이 이유 없다(위와 같은 여러 사정에 비추어 이 사건 약정에 의한 원고의 권리행사는 
+        소외 1 회사의 지배권과 경영권의 변동을 가져오지 않는 범위 내에서는 유효하다는 원고의 주장도 역시 이유 없다).
+      </p><p>3. 결론</p><p>그렇다면 원고의 이 사건 청구는 이유 없어 기각할 것인바, 제1심 판결은 이와 결론을 같이 하여 정당하므로, 원고의 항소를 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   안영률(재판장) 김성수 여운국 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

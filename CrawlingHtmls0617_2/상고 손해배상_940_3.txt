@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2011다27103 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2135991';
+var contIdEtc = '';
+var saNo = '2011다27103';
+var sngoNm = '선고';
+var saNm = '손해배상등';
+try {
+	var sngoDay=('20131114' ? 
+			'20131114'.length==4 ? Date.parseExact('20131114','yyyy').toString('yyyy. M. d.') : 
+				'20131114'.length==6 ? Date.parseExact('20131114','yyyyMM').toString('yyyy. M. d.') : 
+					'20131114'.length==8 ? Date.parseExact('20131114','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2011다27103 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2011다27103';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2011다27103</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(1)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(6)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(6)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|738655">사전보상 절차를 거치지 않고 공사에 착수하여 영농을 방해한 경우 2년분의 영농손실보상금과 별도로 손해배상책임을 부담하는지 여부 공도일 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|816653">토지보상법상 사전보상 절차 없이 공사에 착수한 사업시행자의 손해배상책임 @ 대상판결  대법원 20131114 선고 2011다27103 판결 정기상 韓國法學院</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|849396">손실보상론토지보상법상 사전보상 절차 없이 공사에 착수한 사업시행자의 손해배상책임 대상판결  대법원 2013 11 14 선고 2011다27103 판결 정기상 유로</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|738655">공도일 사전보상 절차를 거치지 않고 공사에 착수하여 영농을 방해한 경우 2년분의 영농손실보상금과 별도로 손해배상책임을 부담하는지 여부 대법원판례해설 제97호 / 법원도서관  2014 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다57812">대법원 2000. 2. 25. 선고 99다57812 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|40|0|20110804">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(구) 제40조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|62|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(구) 제62조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|77|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(구) 제77조 제2항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률시행규칙|48|0|20130425">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙(구) 제48조 제1항 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률시행규칙|48|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙(구) 제48조 제3항 제5호 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다57812">대법원 2000. 2. 25. 선고 99다57812 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|40|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(구) 제40조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|62|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(구) 제62조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률|77|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(구) 제77조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률시행규칙|48|0|20130425">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙(구) 제48조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률시행규칙|48|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙(구) 제48조 제3항 제5호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공익사업을위한토지등의취득및보상에관한법률시행규칙|48|0|null">공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙(구) 제48조 제4항 제1호 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2010나29883">서울고법 2011. 2. 11. 선고 2010나29883 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2013. 11. 14. 선고 2011다27103 판결</h2><p class="sub_title">[손해배상등][공2013하,2189]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>사업시행자가 보상금 지급이나 토지소유자 및 관계인의 승낙 없이 공익사업을 위한 공사에 착수하여 영농을 계속할 수 없게 한 경우, 2년분의 영농손실보상금 지급과 별도로 공사의 사전 착공으로 토지소유자나 관계인이 영농을 할 수 없게 된 때부터 수용개시일까지 입은 손해를 배상할 책임이 있는지 여부(적극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p> <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|40|">구 공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(2011. 8. 4. 법률 제11017호로 개정되기 전의 것, 이하 ‘공익사업법’이라 한다) 제40조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|62|">제62조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|77|">제77조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙|48|">구 공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙(2013. 4. 25. 국토교통부령 제5호로 개정되기 전의 것) 제48조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙|48|">제3항 제5호</a></span>의 규정들을 종합하여 보면, 공익사업을 위한 공사는 손실보상금을 지급하거나 토지소유자 및 관계인의 승낙을 받지 않고는 미리 착공해서는 아니 되는 것으로, 이는 그 보상권리자가 수용대상에 대하여 가지는 법적 이익과 기존의 생활관계 등을 보호하고자 하는 것이고, 수용대상인 농지의 경작자 등에 대한 2년분의 영농손실보상은 그 농지의 수용으로 인하여 장래에 영농을 계속하지 못하게 되어 생기는 이익 상실 등에 대한 보상을 하기 위한 것이다. 따라서 사업시행자가 토지소유자 및 관계인에게 보상금을 지급하지 아니하고 그 승낙도 받지 아니한 채 미리 공사에 착수하여 영농을 계속할 수 없게 하였다면 이는 공익사업법상 사전보상의 원칙을 위반한 것으로서 위법하다 할 것이므로, 이 경우 사업시행자는 2년분의 영농손실보상금을 지급하는 것과 별도로, 공사의 사전 착공으로 인하여 토지소유자나 관계인이 영농을 할 수 없게 된 때부터 수용개시일까지 입은 손해에 대하여 이를 배상할 책임이 있다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p> <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|40|">구 공익사업을 위한 토지 등의 취득 및 보상에 관한 법률(2011. 8. 4. 법률 제11017호로 개정되기 전의 것) 제40조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|62|">제62조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|77|">제77조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙|48|">구 공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙(2013. 4. 25. 국토교통부령 제5호로 개정되기 전의 것) 제48조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙|48|">제3항 제5호</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9"> <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다57812|판결" href="#//">대법원 2000. 2. 25. 선고 99다57812 판결</a></span>(공2000상, 837)</p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인 겸 상고인】
+원고 1 외 1인 (소송대리인 법무법인 해마루 담당변호사 오재창 외 13인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인 겸 피상고인】
+경기도 (소송대리인 변호사 장태규)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party5">【피고보조참가인】
+현대건설 주식회사 (소송대리인 변호사 문지희)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2010나29883|판결" href="#//">서울고법 2011. 2. 11. 선고 2010나29883 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 각자가 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 수용 전 공사 착공으로 인한 손해배상의무의 존부와 관련한 주장에 대하여</p><p>  가. 구 「공익사업을 위한 토지 등의 취득 및 보상에 관한 법률」(2011. 8. 4. 법률 제11017호로 개정되기 전의 것, 이하 ‘공익사업법’이라 한다)에 의하면, 공익사업에 필요한 토지 등을 협의 또는 수용에 의하여 취득할 경우 사업시행자는 원칙적으로 수용 또는 사용의 개시일(토지수용위원회가 재결로서 결정한 수용 또는 사용을 개시한 날을 말한다)까지 관할 토지수용위원회가 재결한 보상금을 지급하여야 하고, 그와 같이 지급하거나 토지소유자 및 관계인의 승낙을 받기 전에는 해당 공익사업을 위한 공사에 착수할 수 없다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|40|">제40조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|62|">제62조</a></span>). 그리고 공익사업으로 인한 농업의 손실에 대하여는 2년분의 영농손실액을 보상하도록 하면서 다만 토지의 취득에 대한 보상 이후에 사업시행자가 2년 이상 계속하여 경작하도록 허용한 토지에 대하여는 영농손실을 보상하지 아니할 수 있도록 규정하고 있다[<span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률|77|">공익사업법 제77조 제2항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙|48|">그 시행규칙(2013. 4. 25. 국토교통부령 제5호로 개정되기 전의 시행규칙, 이하 ‘시행규칙’이라 한다) 제48조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙|48|">제3항 제5호</a></span>].</p><p>  <span class="accrnt_txt">이러한 규정들을 종합하여 보면, 공익사업을 위한 공사는 손실보상금을 지급하거나 토지소유자 및 관계인의 승낙을 받지 않고는 미리 착공해서는 아니 되는 것으로, 이는 그 보상권리자가 수용대상에 대하여 가지는 법적 이익과 기존의 생활관계 등을 보호하고자 하는 것이고, 수용대상인 농지의 경작자 등에 대한 2년분의 영농손실보상은 그 농지의 수용으로 인하여 장래에 영농을 계속하지 못하게 되어 생기는 이익 상실 등에 대한 보상을 하기 위한 것이다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|99다57812|판결" href="#//">대법원 2000. 2. 25. 선고 99다57812 판결</a></span> 참조). <span class="accrnt_txt">따라서 사업시행자가 토지소유자 및 관계인에게 보상금을 지급하지 아니하고 그 승낙도 받지 아니한 채 미리 공사에 착수하여 영농을 계속할 수 없게 하였다면 이는 위 공익사업법상 사전보상의 원칙을 위반한 것으로서 위법하다 할 것이므로, 이 경우 사업시행자는 2년분의 영농손실보상금을 지급하는 것과 별도로, 공사의 사전 착공으로 인하여 토지소유자나 관계인이 영농을 할 수 없게 된 때부터 수용개시일까지 입은 손해에 대하여 이를 배상할 책임이 있다 할 것이다</span>.</p><p>  나. 원심은 이미 2년분의 영농손실보상금이 지급된 이상 원고들은 더 이상 손해배상을 청구할 수 없다는 피고의 주장에 대하여, 공익사업법에 따른 영농손실보상금은 수용재결에 따라 수용개시일 이후 더 이상 이 사건 토지를 이용하여 영농을 할 수 없게 됨으로 인하여 생기는 손실을 보상하기 위한 것이고, 원고들의 이 사건 손해배상청구는 경기도지사가 이 사건 토지에 대하여 사전 보상절차 없이 2007년 4월경 불법으로 공사에 착수함으로써 원고들이 그때부터 이 사건 수용재결에 의한 수용개시일까지의 기간 동안 미나리를 재배하지 못하게 된 손해에 관한 것으로 대상 기간과 사유를 달리하는 것이며, 수용재결에 따라 원고들에게 영농손실보상금을 지급하는 것만으로 위와 같이 불법으로 공사에 착수함으로 인한 손해배상이 이루어지는 것도 아니라는 이유로 그 주장을 배척하였다.</p><p>  원심의 위와 같은 판단은 앞서 본 법리에 따른 것으로서 정당하고, 거기에 피고의 상고이유의 주장과 같이 논리와 경험의 법칙을 위반하여 자유심증주의의 한계를 벗어나거나 영농손실보상에 관한 법리를 오해한 위법이 있다고 할 수 없다.</p><p>  2. 손해배상책임의 기간과 관련한 주장에 대하여</p><p>  원심은, 원고들이 이 사건 토지를 그 소유자들로부터 임차하여 미나리를 재배하던 중 임대차계약이 묵시적으로 갱신되어 적법한 임차권을 가지고 있던 상태에서 경기도지사가 2007년 4월경 도로 공사에 착공함으로써 원고들의 경작권을 침해하였고, 그로 인하여 미나리 재배를 하지 못하게 되어 손해를 입은 기간은 공사착공 시 무렵인 2007년 5월부터 수용개시일(2009. 3. 3.) 이전인 2008년 11월까지라고 판단하여 그에 대한 손해배상책임을 인정하였다.</p><p>  이에 대하여 피고는 상고이유로서, 원심이 이 사건 토지에 대한 원고들의 임대차계약이 묵시적으로 갱신되었다고 인정한 것은 잘못이고, 또한 피고가 2007년 3월부터 10월 사이에 이 사건 토지를 협의취득하여 그 소유권을 취득하였고 원고들과 종전 토지소유자들 사이의 임대차계약을 승계한 바도 없는 이상 그 이후 기간에 대해서는 경작권의 침해를 주장할 수 없음에도 원심이 수용개시일까지의 기간에 대하여 불법행위책임을 인정한 것은 관련 법리를 오해한 것으로서 위법하다고 주장한다.</p><p>  그러나 원심에 이르기까지 채택된 증거에 비추어 보면 원심이 위 임대차계약의 묵시적 갱신을 인정한 것은 정당한 것으로 수긍할 수 있고, 거기에 자유심증주의의 한계를 벗어난 위법사유가 있다고는 인정되지 않는다. 또한 이 부분 원고들의 손해배상청구는 피고가 공익사업법의 규정에 위배하여 공사를 사전에 착공한 위법행위를 원인으로 하는 것이고, 이 사건 토지가 협의취득에 의하여 피고에게 소유권이 이전될 당시 원고들은 적법한 임차권에 의하여 이 사건 토지를 경작하고 있었고, 피고가 공익사업법에 근거하여 이 사건 토지 소유권을 취득하는 절차를 진행하고서도 경작자 등에 대한 보상은 이를 하지도 아니한 채 공사에 착공한 이상, 사업시행자가 당해 토지를 적법하게 사용할 수 있게 되는 시점인 수용개시일까지의 기간 동안에 경작자 등이 입은 손해에 대하여는 이를 배상할 책임이 있다고 보아야 할 것이다. 따라서 원심이 피고가 배상책임을 지는 기간을 위와 같이 인정한 데에 피고의 상고이유 주장과 같이 원고들의 경작권에 관한 법리를 오해하여 판결 결과에 영향을 미친 위법이 있다고는 할 수 없다.</p><p>  3. 공사착공에 대한 원고들의 승낙 여부에 관한 주장에 대하여</p><p>  원심은, 시흥시 (이하 생략) 토지에 대하여는 공사 착공에 대한 원고들의 승낙이 있었다고 볼 수 있으나 이를 제외한 나머지 토지들에 대하여는 원고들의 승낙이 있었다고 인정하기 어렵다고 판단하였다.</p><p>  원심판결 이유를 적법하게 채택된 증거들에 비추어 살펴보면, 위와 같은 원심의 판단은 수긍할 수 있고, 거기에는 상고이유의 주장과 같이 논리와 경험의 법칙에 반하여 자유심증주의의 한계를 벗어난 위법이 없다. 이 부분 원심판단에 대한 원고들 및 피고의 상고이유 주장은 모두 이유 없다.</p><p>  4. 일부 공탁으로 인한 손해배상 청구에 관한 주장에 대하여</p><p>  원심은 그 판시와 같은 이유로 피고가 수용재결금액 전부를 원고들에게 지급하지 아니하였다고 하여 그것이 위법하다거나 원고들이 그 판시와 같은 손해를 입었다고 보기 어렵다고 하고, 또한 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 시행규칙|48|">시행규칙 제48조 제4항 제1호</a></span>는 자경농지가 아닌 농지에 대한 영농손실보상에 관하여, 농지의 소유자가 해당 지역에 거주하는 농민인 경우로서, ① 농지의 소유자와 실제 경작자 간에 협의가 성립된 경우에는 협의 내용에 따라 보상하고, ② 농지의 소유자와 실제 경작자 간에 협의가 성립되지 아니하는 경우에는 농지의 소유자와 실제 경작자에게 각각 영농손실액의 50%에 해당하는 금액을 보상하도록 규정하고 있는데, 판시 증거들에 의하면 경기도지사가 영농손실보상금의 절반을 공탁한 원심 판시 별지2 토지의 소유자 소외 1, 2, 3의 경우 모두 해당 지역에 거주하는 농민인 사실이 인정되고, 원고들과 토지소유자인 소외 1 등 사이에 영농손실보상금을 실제 경작자인 원고들이 받기로 하는 합의가 있었다고 인정하기 어렵다는 이유로 일부 공탁으로 인한 불법행위책임을 묻는 원고들의 주장을 배척하였다.</p><p>  관련 규정과 법리 및 적법하게 채택된 증거들에 비추어 살펴보면, 원심의 위와 같은 판단은 정당하여 수긍할 수 있다. 거기에 원고들의 상고이유 주장과 같이 논리와 경험의 법칙에 반하여 자유심증주의의 한계를 벗어나거나 공익사업법이 정한 손실보상이나 손해배상, 처분문서의 해석에 관한 법리를 오해하고 필요한 심리를 다하지 아니하여 판결 결과에 영향을 미친 위법이 있다고는 인정되지 아니한다.</p><p>  5. 결론</p><p>  그러므로 관여 대법관의 일치된 의견으로, 원고들 및 피고의 상고를 모두 기각하고, 상고비용은 패소자들 각자가 부담하도록 하여 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김창석(재판장) 양창수 박병대(주심) 고영한 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

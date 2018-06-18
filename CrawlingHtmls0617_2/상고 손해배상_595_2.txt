@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대전고등법원 2007나7834 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2036820';
+var contIdEtc = '';
+var saNo = '2007나7834';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20080515' ? 
+			'20080515'.length==4 ? Date.parseExact('20080515','yyyy').toString('yyyy. M. d.') : 
+				'20080515'.length==6 ? Date.parseExact('20080515','yyyyMM').toString('yyyy. M. d.') : 
+					'20080515'.length==8 ? Date.parseExact('20080515','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대전고등법원';
+var bubCd = '000600';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2007나7834 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2007나7834';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대전고등법원<br />2007나7834</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(12)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(13)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|96가합10328">대전지방법원 96가합10328호 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|97라14">대전고등법원 97라14호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|98가합11684">대전지방법원 98가합11684호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|99나4069">대전고등법원 99나4069호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|2000가합11793">대전지방법원 2000가합11793호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|2001가합4860">위 법원 2001가합4860호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|2003나514">대전고등법원 2003나514(본소), 2003나521(반소)호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|2002가합6863">대전지방법원 2003. 7. 16. 선고 2002가합6863 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|2003나5434">대전고등법원 2005. 6. 16. 선고 2003나5434 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다4969">대법원 2005. 4. 21. 선고 2003다4969 전원합의체 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다33070">대법원 1992. 6. 23. 선고 91다33070 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다63337">대법원 2007. 9. 20. 선고 2005다63337 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|47|0|null">집합건물의 소유 및 관리에 관한 법률 제47조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|47|0|null">집합건물의 소유 및 관리에 관한 법률 제47조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|47|0|null">집합건물의 소유 및 관리에 관한 법률 제47조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="집합건물의소유및관리에관한법률|47|0|null">집합건물의 소유 및 관리에 관한 법률 제47조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도시및주거환경정비법|47|0|null">도시 및 주거환경정비법 제47조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="도시및주거환경정비법시행령|48|0|null">도시 및 주거환경정비법 시행령 제48조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택건설촉진법|8|0|null">주택건설촉진법 제8조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주택공급에관한규칙|7|0|null">주택공급에 관한 규칙 제7조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대전지방법원|2006가합13357">대전지방법원 2007. 7. 4. 선고 2006가합13357 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><input type="hidden" class="contImagePath" name="img1" value="09w1015-006-01.gif" /><div class="tit_area" id="bmunStart"><h2>대전고등법원 2008. 5. 15. 선고 2007나7834 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(선정당사자), 항소인】
+      
+        
+          원고 (소송대리인 변호사 조용무외 3인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        
+          피고 1 재건축주택조합외 2 (소송대리인 변호사 서희종외 1인)
+        
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2008. 3. 27.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|2006가합13357|판결" href="#//">대전지방법원 2007. 7. 4. 선고 2006가합13357 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 당심에서 확장된 청구를 포함하여 제1심 판결을 다음과 같이 변경한다.</p><p> 가. 
+        피고 1 재건축주택조합은
+      </p><p>  ⑴ 원고(선정당사자) 및 
+        선정자 2, 
+        선정자 3, 
+        선정자 4, 
+        선정자 5, 
+        선정자 6, 
+        선정자 7, 
+        선정자 8, 
+        선정자 10에게 각 62,769,500원 및 각 그 중 23,002,500원에 대하여는 2003. 12. 20.부터 2007. 7. 4.까지는 연 5%, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한, 각 나머지 39,767,000원에 대하여는 2003. 12. 20.부터 2008. 5. 15.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을,
+      </p><p>  ⑵ 
+        선정자 9에게 62,769,500원 및 그 중 23,052,500원에 대하여는 2003. 12. 20.부터 2007. 7. 4.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한, 나머지 39,717,000원에 대하여는 2003. 12. 20.부터 2008. 5. 15.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을
+      </p><p>  각 지급하라.</p><p> 나. 
+        피고 2 주식회사는 
+        피고 1 재건축주택조합과 연대하여 원고(선정당사자) 및 선정자들에게 위 가.항 기재 금원 중 각 62,769,500원 및 각 이에 대하여 2003. 12. 20.부터 2008. 5. 15.까지는 연 5%의, 그 다음날부터 다 갚는 날까지는 연 20%의 각 비율에 의한 금원을 각 지급하라.
+      </p><p> 다. 원고(선정당사자)의 
+        피고 1 재건축주택조합, 
+        피고 2 주식회사에 대한 각 나머지 청구 및 
+        피고 3에 대한 청구를 모두 기각한다.
+      </p><p>2. 소송총비용 중 원고(선정당사자)와 
+        피고 1 재건축주택조합 사이에 생긴 부분은 이를 10분하여 그 4는 원고(선정당사자)가, 나머지는 위 피고가 각 부담하고, 원고(선정당사자)와 
+        피고 2 주식회사 사이에 생긴 부분은 이를 10분하여 그 6은 원고(선정당사자)가, 나머지는 위 피고가 각 부담하며, 원고(선정당사자)와 
+        피고 3 사이에 생긴 부분은 원고(선정당사자)가 부담한다.
+      </p><p>3. 제1의 가. 나.항은 각 가집행할 수 있다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 아래와 같이 변경한다. 피고들은 연대하여 원고(선정당사자, 이하 ‘원고’라 한다) 및 선정자들에게 각 100,000,000원 및 각 이에 대한 2000. 10. 1.부터 다 갚는 날까지 연 20%의 비율에 의한 금원을 지급하라(원고는 당심에서 청구취지를 확장하였다).</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>
+        <b>1. 기초사실</b>
+      </p><p> 다음 각 사실은 당사자 사이에 다툼이 없거나, 갑 제1호증, 갑 제4 내지 6호증, 갑 제9 내지 11호증, 갑 제14호증, 을 제1 내지 6호증, 을 제10, 11호증(가지번호 있는 것은 가지번호 포함)의 각 기재에 변론 전체의 취지를 모아 보면, 이를 인정할 수 있다.</p><p> 가. 
+        피고 1 주택재건축조합의 설립과 재건축 추진 과정
+      </p><p> ⑴ 
+        피고 1 주택재건축조합(이하 ‘피고 조합’이라 한다)은 1988. 10.경 대전 대덕구 
+        (이하 생략) 외 3필지에 있던 
+        ●●
+        □□아파트와 그 부속상가의 구분소유자들 중 기존 아파트와 상가를 철거하고 새로운 아파트(이하 ‘이 사건 아파트’라고 한다)를 재건축하기로 하는 재건축결의에 동의한 구분 소유자들로 구성된 재건축주택조합으로서, 1989. 1. 11. 대전시장으로부터 당시 조합원 450명으로 주택조합 설립인가를 받았고, 1989. 2. 16. 
+        소외 2가 피고 조합의 조합장으로 선출되었으며, 그 후 1991. 7. 20. 조합원 총회에서 55명의 조합원이 추가로 가입하여 총조합원수가 505명이 되었다.
+      </p><p> ⑵ 원고 및 선정자들은 피고 조합의 조합원들로서, 당초 아래 표 기재 건물 및 아파트 대지에 대한 구분소유권 지분을 소유하고 있었다.</p><p>
+        </p><div name="Table423" align="center"><div class="tbl_typeM_wrap" align="center"><table border="1" class="contents_table" summary="본문내 포함된 표"><caption align="center">본문내 포함된 표</caption><tbody><tr><td align="CENTER" valign="MIDDLE" rowspan="1">순번</td><td align="CENTER" valign="MIDDLE" rowspan="1">성 명</td><td align="CENTER" valign="MIDDLE" rowspan="1">소유 건물</td><td align="CENTER" valign="MIDDLE" rowspan="1">대지권 지분</td><td align="CENTER" valign="MIDDLE" rowspan="1">순번</td><td align="CENTER" valign="MIDDLE" rowspan="1">성 명</td><td align="CENTER" valign="MIDDLE" rowspan="1">소유 건물</td><td align="CENTER" valign="MIDDLE" rowspan="1">대지권 지분</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">1</td><td align="CENTER" valign="MIDDLE" rowspan="1">원고</td><td align="CENTER" valign="MIDDLE" rowspan="1">7동 104호</td><td align="CENTER" valign="MIDDLE" rowspan="1">41.555/21,041.2</td><td align="CENTER" valign="MIDDLE" rowspan="1">6</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 6</td><td align="CENTER" valign="MIDDLE" rowspan="1">7동 317호</td><td align="CENTER" valign="MIDDLE" rowspan="1">41.555/21,041.2</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">2</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 2</td><td align="CENTER" valign="MIDDLE" rowspan="1">1동 505호</td><td align="CENTER" valign="MIDDLE" rowspan="1">〃</td><td align="CENTER" valign="MIDDLE" rowspan="1">7</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 7</td><td align="CENTER" valign="MIDDLE" rowspan="1">6동 502호</td><td align="CENTER" valign="MIDDLE" rowspan="1">〃</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">3</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 3</td><td align="CENTER" valign="MIDDLE" rowspan="1">3동 106호</td><td align="CENTER" valign="MIDDLE" rowspan="1">〃</td><td align="CENTER" valign="MIDDLE" rowspan="1">8</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 8</td><td align="CENTER" valign="MIDDLE" rowspan="1">7동 317호</td><td align="CENTER" valign="MIDDLE" rowspan="1">〃</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">4</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 4</td><td align="CENTER" valign="MIDDLE" rowspan="1">5동 106호</td><td align="CENTER" valign="MIDDLE" rowspan="1">〃</td><td align="CENTER" valign="MIDDLE" rowspan="1">9</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 9</td><td align="CENTER" valign="MIDDLE" rowspan="1">11동 207호</td><td align="CENTER" valign="MIDDLE" rowspan="1">41.645/21,041.2</td></tr><tr><td align="CENTER" valign="MIDDLE" rowspan="1">5</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 5</td><td align="CENTER" valign="MIDDLE" rowspan="1">6동 308호</td><td align="CENTER" valign="MIDDLE" rowspan="1">〃</td><td align="CENTER" valign="MIDDLE" rowspan="1">10</td><td align="CENTER" valign="MIDDLE" rowspan="1">선정자 10</td><td align="CENTER" valign="MIDDLE" rowspan="1">5동 303호</td><td align="CENTER" valign="MIDDLE" rowspan="1">41.555/21,041.2</td></tr></tbody></table></div></div>
+      <p></p><p> ⑶ 피고 조합은 1988. 10.경 이 사건 아파트를 재건축하기로 하는 재건축결의를 하였지만, 그 재건축결의에서 구 건물의 철거, 신 건물 설계의 개요 및 건축에 소요되는 비용, 재건축비용의 분담에 관한 사항 등이 구체적으로 어떻게 정해졌는지에 관한 자료가 남아 있지 않다. 다만 그 후 1991. 7. 20. 개최된 조합원 총회에서 재건축 세대수를 450세대에서 625세대로, 총 사업비를 17,722,770,000원에서 34,573,670,000원으로 각 변경하는 결의를 하였고, 그 결의는 당시 전체 조합원 450명 중 약 78%에 해당하는 353명의 참석으로 이루어졌다.</p><p> ⑷ 피고 조합의 최초 규약으로 보이는 1991. 7. 규약(갑 제3호증의 1) 제6장은 관리처분계획을 규정하고 있는데, 그 중 제29조는 토지 등의 권리가액 평가방법을, 제30조는 분양신청 등을, 제31조는 아래와 같은 내용의 관리처분계획의 기준을, 제32조는 종전 토지 등의 면적을, 제34조는 건축시설의 분양에 관한 사항을 정하고 있다.</p><p>  제31조(관리처분계획의 기준)</p><p>  1) 관리처분계획은 평가식 방법을 기본으로 하고 제30조 규정에 따라 대지 및 건축시설에 대한 분양신청자 중, 제34조 제1항 및 제3항의 규정에 해당하는 자를 대상으로 하여 분양하여야 할 공동주택 또는 상가 등의 복리시설을 정한다.</p><p>  2) 건축시설 분양의 기준이 되는 분양기준 가액의 산출은 아래의 방법에 의한다.</p><p>단, 비례율 산정방법은 공동주택과 상가 등 복리시설을 구분하여 산출할 수 있다.</p><p>   ○ 분양기준가액 = 종전 토지 및 건축물 평가액 ⅹ 비례율</p><p>
+        <img name="img1" style="scale:100;" src="/wsjo/cm/imgDownload.do?contId=2036820&amp;attachImgNm=09w1015-006-01.gif" alt="본문내 삽입된 이미지" />
+      </p><p> A = 공동주택 및 상가 등 부대시설의 총 분양금액(평가액)</p><p> E = 시행구역 내 종전 토지 및 건축물의 총 평가액</p><p> B = 조합원의 부담이 되는 총 사업비</p><p>  3) 건축시설의 분양면적은 전용면적과 공유면적을 합한 면적으로 하며 대지는 건축시설의 분양면적 비율에 의하여 공유지분으로서 그 소유권이 주어진다.</p><p> ⑸ 피고 조합은 1990. 1. 24. 
+        소외 4 주식회사와 이 사건 아파트 건설공사 도급계약을 체결하였다가 1992. 12. 7. 그 계약을 해지하고, 1993. 2. 26. 다시 피고 회사와 이 사건 아파트 건설공사 도급계약을 체결한 후, 1993. 12. 31. 대전시장으로부터 공사 시공자를 피고 회사로 하는 내용으로 주택건설사업계획을 승인받았다. 그 후 피고 회사가 이 사건 아파트 건설공사에 착수하여 1995. 5. 3.까지 조합원들의 이주를 완료하고 기존의 
+        □□아파트와 그 부속상가를 철거하여 1996. 6. 22. 견본주택까지 개관하였으나 1996. 7.경 피고 회사의 부도로 위 건축공사가 중단되었다.
+      </p><p> ⑹ 피고 조합의 현 대표자인 
+        소외 3은 1996. 1. 6. 및 1996. 3. 17. 각 임시총회에서 조합원들에게 무상지분평수 17평을 보장하겠다는 것을 공약으로 내세워 조합장으로 선출되었지만 이를 조합규약에 반영하지 않았고, 아울러 그 공약을 실현할 수 있도록 전체 조합원 4/5 이상의 동의를 얻은 상태도 아니었다. 그 후 피고 조합원들 중 일부가 공약의 이행을 촉구하며 무상지분평수 17평에 대한 보장을 요구하자, 
+        소외 3은 1996. 4. 23. “피고 조합의 조합장으로서 1996. 1. 6. 임시총회에서 밝힌 무상보장평수가 17평 ± a (24평형 기준 : 계약면적 31평)”라는 내용의 확인서를 작성하여 주었다. 그러나 
+        소외 3을 반대하는 피고 조합의 일부 조합원들은 위 각 임시총회결의 무효확인의 소를 제기하였고, 그 결과 피고 조합의 위 각 임시총회는 그 소집절차에 중대한 하자가 있다는 이유로 그 각 결의의 무효를 확인하는 취지의 
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|96가합10328|판결" href="#//">대전지방법원 96가합10328호 판결</a></span>이 선고되었으며, 위 판결은 1998. 4. 13. 대법원에서 상고가 기각되어 확정되었다.
+      </p><p> ⑺ 한편, 피고 조합은 피고 회사의 부도로 중단된 재건축사업을 계속하기 위하여 1999. 9. 15. 
+        소외 1 주식회사와 사이에 ‘이 사건 아파트 및 그 부대상가 공사비를 평당 2,000,000원(단 인근에 소재한 
+        ○○아파트를 매수하여 그 부지를 재건축사업에 포함시킬 경우에는 평당 2,100,000원)으로 하되, 분양계약을 체결한 조합원 비율이 80%에 미치지 못하는 경우에는 공사를 중지하고 공사계약을 해제할 수 있다’는 내용의 공사 도급계약을 체결하였다. 그 후 피고 조합은 1999. 11. 26. 
+        소외 1 주식회사와 사이에 ‘2000. 1. 15.까지 
+        ○○아파트를 매수하여 그 부지를 재건축 사업에 편입시키되, 공사비는 전과 마찬가지로 평당 2,000,000원으로 한다’는 내용으로 약정을 변경한 다음 
+        소외 1 주식회사로부터 매수자금을 빌려 위 
+        ○○아파트를 매수하고 철거까지 마쳐 재건축사업에 제공되는 대지면적을 21,141.2㎡에서 22,169.1㎡로 증가시켰다.
+      </p><p> ⑻ 
+        소외 1 주식회사는 피고 조합에게 신축 아파트의 평당 분양가를 3,050,000원으로 예정하고, 평당 공사비를 2,000,000원으로 계산하여 총 분양수익금을 70,306,116,000원, 총 사업비를 59,936,116,000원으로 정한 사업수지계획서를 제출하였다. 이에 따라 피고 조합은 총 분양수익금에서 총 사업비를 뺀 나머지 10,370,000,000원을 아파트를 소유했던 조합원수 500명으로 나눈 금액인 20,740,000원을 조합원 지분 금액으로 계산하고, 그 조합원 지분금액을 다시 평당 분양가인 3,050,000원으로 나누어 6.8평을 조합원들에게 제공할 무상지분평수로 산정하였다. 여기에 근거하여 피고 조합은 1999. 10. 16. 개최된 임시총회에서 처음으로 조합원들에게 무상지분평수가 당초 
+        소외 3이 약속했던 17평보다 훨씬 작은 6.8평이 될 수밖에 없는 사정을 설명하고 이에 맞추어 조합규약을 개정하는 결의를 하였다. 그 결의는 위 임시총회에 서면으로 참여한 74명을 포함하여 전체 조합원 중 56% 상당인 286명의 조합원이 참석한 상태에서 이루어졌다.
+      </p><p> ⑼ 한편, 전 조합장 
+        소외 2와 후임 조합장 
+        소외 3을 조합대표자로 선출하거나 해임한 조합원 총회 결의의 효력에 관한 분쟁으로 인하여 피고 조합의 사업시행이 지지부진하게 되자, 피고 조합의 조합원 중 194명은 
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|97라14" href="#//">대전고등법원 97라14호</a></span>로 임시총회 소집허가를 얻어 1998. 3. 7. 피고 조합의 조합원 임시총회를 소집하였고, 위 총회에서 피고 조합의 규약 개정과 1996. 1. 6.자 및 1996. 3. 17.자 각 임시총회 결의사항에 대한 추인 등의 결의가 이루어졌다. 그 후 위 1998. 3. 7.자 임시총회에 대하여도 다시 
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|98가합11684" href="#//">대전지방법원 98가합11684호</a></span>로 임시총회결의 무효 확인의 소가 제기되었으나 제1심에서 그 결의가 유효하다는 판결이 선고되었고, 이 판결에 대하여 항소가 되었지만 그 항소심(
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|99나4069" href="#//">대전고등법원 99나4069호</a></span>)에서 2000. 7. 21. 대립하는 조합원들 사이에 조합원 명부 작성, 총회 소집, 조합규약 개정방법 등에 관하여 구체적인 합의를 마친 후 조정이 성립되었다.
+      </p><p> ⑽ 위 조정절차에서 합의된 사항에 의거하여 2000. 8. 12. 조합원 임시총회가 개최되었고, 위 임시총회에서 조합원 505명 중 296명이 참석한 가운데 조합원의 무상지분평수를 6.8평으로 한다는 내용의 조합규약 개정결의(1999. 10. 16.자 개정결의와 같은 내용으로 보인다. 이하 ‘이 사건 개정결의’라 한다) 및 
+        소외 3을 조합장으로 선출하는 결의가 이루어졌다.
+      </p><p> ⑾ 피고 조합과 
+        소외 1 주식회사는 2000. 5. 20. 
+        피고 3으로부터 원래의 사업계획승인 내용 가운데, 사업주체를 피고 조합과 
+        소외 1 주식회사, 시공자를 
+        소외 1 주식회사, 대지면적을 22,169.1㎡, 건축 연면적을 85,657.8116㎡(약 25,911.37평), 주택규모를 14층 내지 25층 아파트 6개동 724세대로 변경하는데 대한 승인을 받았다. 그 후 
+        소외 1 주식회사는 2000. 5. 25. 견본주택을 개관하고, 조합원들을 상대로 1개월 동안 1차 분양을 실시하였는데, 그 기간 내에 분양계약을 체결한 사람은 15명에 불과하였다. 
+        소외 1 주식회사는 추가로 분양계약을 체결하면서 2000. 7. 3.경 일단 이 사건 아파트 건설공사에 착수하기는 하였으나 2000. 7. 11.까지도 분양계약을 체결한 조합원이 전체 조합원 505명 중 192명에 불과하자 2000. 8. 14. 이 사건 아파트 건축공사를 중단하였다.
+      </p><p> ⑿ 이에 피고 조합은 2000. 8. 25. 
+        소외 1 주식회사와 사이에 조합원에 대한 분양기한을 2000. 9. 9.로 연장하되 조합원 분양률이 80% 이상이 되면 공사를 재개하기로 합의하였다. 그러나 원고 및 선정자들을 포함한 301명의 조합원들이 무상지분평수 17평에 대한 약속이 지켜지지 않았음을 이유로 분양계약 체결을 거부함에 따라 2000. 9. 9.까지의 추가분양기간 동안 새로 분양계약을 체결한 사람이 6명에 불과하였다.
+      </p><p> 나. 원고와 선정자들을 포함한 조합원 과반수 이상의 제명</p><p> ⑴ 위 문제를 해결하기 위하여 피고 조합은 2000. 9. 18. 6 내지 7명의 대의원이 참석한 대의원회의를 개최하여 분양계약을 체결하지 않은 조합원 가운데 전체 조합원의 과반수가 넘는 262명을 제명한 후, 이에 기하여 2000. 9. 29. 
+        피고 3으로부터 조합원수를 505명에서 243명으로 감축하는 내용의 주택조합변경인가를 받은 다음, 
+        소외 1 주식회사에게 조합원 분양률이 80%를 초과하였음을 이유로 공사 재개 및 추가자금 대여를 촉구하였다.
+      </p><p> ⑵ 그러나 
+        소외 1 주식회사는 ‘조합원수를 줄이는 방법으로 조합원 분양률이 80%를 초과하게 한 것은 2000. 8. 25.자 합의내용의 이행으로 볼 수 없다’는 이유로 피고 조합에 대하여 조합원 분양률 80% 초과 조건 이행을 촉구하고, 공사재개를 거부하였다.
+      </p><p> ⑶ 그 후 피고 조합은 2000. 11. 16. 대의원회의에서 39명의 조합원을 또다시 제명하는 결의를 하여, 제명된 조합원은 원고와 선정자들을 포함하여 모두 301명에 이르게 되었다(이하 위 2회에 걸친 조합원 제명결의를 합하여 ‘이 사건 제명결의’라 한다).</p><p> ⑷ 그 후 피고 조합은 
+        소외 1 주식회사를 상대로 채무불이행을 원인으로 공사계약을 해제하고 공사지연에 따른 손해배상청구의 소(
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|2000가합11793" href="#//">대전지방법원 2000가합11793호</a></span>)를 제기하였고, 이에 대하여 
+        소외 1 주식회사는 피고 조합을 상대로 대여금·공사대금 및 손해배상금의 지급을 구하는 취지의 반소(
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|2001가합4860" href="#//">위 법원 2001가합4860호</a></span>)를 제기하였는데, 위 법원은 2002. 12. 12. 피고 조합의 본소청구를 전부 기각하면서 
+        소외 1 주식회사의 반소청구를 일부 인용하여 ‘피고 조합은 
+        소외 1 주식회사에게 4,478,954,389원(= 대여금 1,628,703,689원 + 공사대금 1,295,568,500원 + 손해배상금 1,554,682,200원) 및 그에 대한 지연손해금을 지급하라’는 취지의 판결을 선고하였으며, 피고 조합이 이에 불복하여 
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|2003나514" href="#//">대전고등법원 2003나514(본소), 2003나521(반소)호</a></span>로 항소하였으나 항소가 기각되어 위 판결이 확정되었다.
+      </p><p> 다. 피고 회사와 공사계약 체결 및 그 이후의 재건축 과정</p><p> ⑴ 피고 조합은 2000. 12.경 
+        소외 1 주식회사에게 공사계약 해지를 통보하고, 2001. 12. 4. 
+        소외 5 주식회사와 공사계약을 체결하였다가 2002. 3. 29. 다시 그 공사계약을 해지하였다.
+      </p><p> ⑵ 피고 회사는 피고 조합과 
+        소외 1 주식회사 사이의 위 소송의 제1심 판결이 선고되고 항소심 계속 중이던 2003. 3. 12. 피고 조합에 이 사건 아파트 재건축사업에 참여하고자 한다는 취지의 사업참여제안서를 제출하였고, 피고 조합은 2003. 3. 20. 조합원총회를 개최하여 피고 회사가 제시한 위 사업참여제안서를 토대로 피고 회사를 이 사건 아파트 재건축사업의 시공사 겸 공동시행자로 선정한 다음 2003. 4. 29. 피고 회사와 사이에 ‘2000. 5. 20. 
+        피고 3으로부터 변경 승인받은 주택사업계획의 내용을 승계하고, 조합원의 부담금은 
+        소외 1 주식회사와 체결하기로 하였던 분양계약을 기준으로 삼는 것’을 주된 내용으로 하는 공사계약을 체결하였다.
+      </p><p> ⑶ 피고 조합과 피고 회사는 2003. 11. 29. 
+        피고 3으로부터 사업주체를 피고 조합 및 피고 회사, 대지면적 22,183.30㎡, 건축연면적 93,124.5330㎡, 주택규모 아파트 5개동 646세대, 총사업비 97,500,000,000원으로 변경하는 내용의 사업계획에 대한 승인(이하 ‘이 사건 주택건설사업계획 변경승인’이라고 한다)을 받았다.
+      </p><p> ⑷ 피고 회사는 2003. 11.경 
+        피고 3으로부터 착공 허가(이하 ‘이 사건 착공허가’라 한다)를 받았고, 이어 2003. 12. 10. 입주자모집공고에 대한 승인(이하 ‘이 사건 입주자모집공고 승인’이라고 한다)을 받았다.
+      </p><p> ⑸ 피고 회사는 2003. 12. 20.경 이 사건 아파트 646세대에 대한 조합원 및 일반 분양을 모두 마치고, 그 무렵 공사를 재개하여 2006. 6. 16. 
+        피고 3으로부터 이 사건 아파트에 대한 사용승인을 받음과 동시에 그에 대하여 피고 회사 앞으로 소유권보존등기를 마쳤다.
+      </p><p> ⑹ 한편, 피고 조합은 2003.경부터 위와 같이 제명한 조합원 301명을 상대로 지분소유권이전등기를 요구하여 그 중 141명과 사이에서는 합의가 이루어져 금전청산을 해주었고, 합의를 거부하는 나머지 조합원에 대하여는 소송을 통하여 승소 판결(
+        <span id="link"><a name="linkContPanre" title="새창" type="대전지방법원|2002가합6863|판결" href="#//">대전지방법원 2003. 7. 16. 선고 2002가합6863 판결</a></span>, 그 항소심인 
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|2003나5434|판결" href="#//">대전고등법원 2005. 6. 16. 선고 2003나5434 판결</a></span>)을 받아 소유권을 이전받았다(한편, 위 항소사건 판결이유에서 대전고등법원은 아래 제2의 나.⑴항 및 나.⑵㈎항에서 보는 것과 동일한 취지에서 이 사건 제명결의가 무효라고 판단한 바 있다).
+      </p><p> ⑺ 피고 조합은 2006. 5. 9. 다시 대의원회의를 개최하여 2000. 9. 18.자 및 2000. 11. 16.자 제명 조합원 중에서 원고 및 선정자들을 포함하여 금전청산이 이루어지지 아니한 조합원 160명에 대한 제명결의를 취소하고 조합원 자격을 회복시켜 주었으며, 이에 기하여 2006. 5. 25. 
+        피고 3으로부터 조합원 수를 204명에서 363명으로 변경하는 주택조합변경인가를 받았다.
+      </p><p>
+        <b>2. 피고 조합 및 피고 회사에 대한 손해배상청구에 관한 판단</b>
+      </p><p> 가. 원고 주장의 요지</p><p> 원고는, 당초의 무상지분평수 17평이 전체 조합원 4/5 이상의 동의 없이 6.8평으로 감축됨에 따라 원고와 선정자들이 분양계약을 체결하지 아니하였음에도 피고 조합은 원고와 선정자들이 정당한 이유 없이 분양계약을 체결하지 않아 조합원으로서의 의무를 이행하지 아니하였다면서 원고와 선정자들을 위법하게 제명하였고, 피고 회사는 이 사건 아파트 재건축 사업의 공동사업시행자로서 이 사건 재건축사업이 적법한 재건축결의 없이 전체 조합원의 과반수가 넘는 301명의 조합원을 위법하게 제명한 상태에서 위법하게 진행되고 있다는 사실을 알고 있었음에도 불구하고, 피고 조합과 피고 회사는 공모하여 이 사건 아파트에 대한 일반 분양을 마침으로써 원고와 선정자들에게 부여된 이 사건 아파트에 대한 조합원으로서의 수분양권을 박탈하는 불법행위를 저질렀으므로, 위 피고들은 연대하여 원고와 선정자들에게 그 손해를 배상할 의무가 있다고 주장한다.</p><p> 나. 판단</p><p> ⑴ 관련 법령의 규정 및 재건축내용 변경결의의 요건</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">‘집합건물의 소유 및 관리에 관한 법률’(이하 ‘집합건물법’이라 한다) 제47조</a></span>는 재건축의 결의는 구분소유자 및 의결권의 각 4/5 이상의 다수에 의한 결의에 의하되(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">제2항</a></span>), 재건축의 결의를 할 때에는 건물의 철거 및 신건물의 건축에 소요되는 비용의 개산액과 그 분담에 관한 사항 및 신건물의 구분소유권의 귀속에 관한 사항을 정하여야 하고(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">제3항</a></span>), 위와 같은 사항은 각 구분소유자 간의 형평이 유지되도록 정하지 아니하면 아니된다(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">제4항</a></span>)고 규정하고 있다. 위 재건축 비용의 분담에 관한 사항은 구분소유자들로 하여금 상당한 비용을 부담하면서 재건축에 참가할 것인지, 아니면 시가에 의하여 구분소유권 등을 매도하고 재건축에 참가하지 않을 것인지를 선택하는 기준이 되는 것이고, 재건축 결의의 내용 중 가장 중요하고 본질적인 부분으로서, 재건축의 실행단계에서 다시 비용 분담에 관한 합의를 하지 않아도 될 정도로 그 분담액 또는 산출기준을 정하여야 하고 이를 정하지 아니한 재건축 결의는 특별한 사정이 없는 한 무효라고 할 것이며, 재건축의 결의 시 재건축 비용의 분담에 관한 사항을 정하지 아니하고 재건축의 실행단계에서 조합원 총회에서 그 비용의 분담에 관한 사항을 결의하는 경우에는 이해관계가 대립하는 조합원들 간의 형평을 보장하기 위하여 재건축 결의 시의 특별 다수의 정족수를 준용하여 조합원 4/5 이상의 다수에 의한 결의가 필요하고 또 조합원들 간의 형평이 유지되도록 정하여야 하며, 같은 이유에서 재건축 결의의 내용을 변경함에 있어서는 그것이 구성원인 조합원의 이해관계에 미치는 영향에 비추어 재건축 결의 시의 의결정족수를 규정한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">집합건물법 제47조 제2항</a></span>을 유추 적용하여 조합원 4/5 이상의 결의가 필요하다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다4969|전원합의체 판결" href="#//">대법원 2005. 4. 21. 선고 2003다4969 전원합의체 판결</a></span> 참조).
+      </p><p> ⑵ 손해배상책임의 발생</p><p> ㈎ 원고 및 선정자들에 대한 제명결의의 적법 여부</p><p> 1) 먼저, 피고 조합이 이 사건 제명결의의 사유로 내세운 조합원으로서의 의무불이행의 근거가 된 2000. 8. 12.자 이 사건 개정결의의 적법·유효 여부에 관하여 본다.</p><p> 위 제1의 가.⑷항에서 본 바와 같이 조합원의 무상지분평수에 평당 분양가를 곱한 금액이 조합원 지분금액이 되고, 분양대금에서 조합원 지분금액을 뺀 금원이 조합원들이 재건축으로 부담하는 실질적인 비용이 되므로, 무상지분평수의 변경은 재건축비용의 분담에 관한 사항의 변동이 되는 것으로서 이를 위하여는 조합원 4/5 이상의 결의가 있어야 할 것이다.</p><p> 그럼에도 불구하고, 앞서 본 바와 같이 피고 조합은 2000. 8. 12. 전체 조합원 505명 중 296명만이 참석한 상태에서 무상지분평수를 17평에서 6.8평으로 감축하는 내용으로 조합규약을 변경하는 결의를 하였는바, 이는 재건축 결의의 내용 중 가장 중요하고 본질적인 부분인 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">집합건물법 제47조 제3항</a></span> 소정의 재건축비용의 분담에 관한 결의의 요건이 흠결되어 위법한 무효의 결의이다.
+      </p><p> 이에 대하여 피고 조합은, 조합원들에게 제공할 무상지분평수는 최초 재건축결의 당시부터 피고 조합의 사업완료 후의 건축시설 총 평가액에서 총 사업비를 공제한 나머지를 조합원들의 지분에 따라 배정하는 방법으로 산정하도록 되어 있었고, 그 후 위 건축시설 총 평가액과 총 사업비가 변동됨에 따라 조합원들의 무상지분평수의 수치가 자연스럽게 변동된 것에 불과하므로, 이는 피고 조합이 위 재건축결의 내용을 변경한 것이 아니라고 주장한다. 보건대, 피고 조합의 최초 규약에 분양기준가액의 산출방식이 위와 같이 기재되어 있는 사실은 앞서 본 바와 같으나, 그와 같이 추상적인 기재만으로는 재건축비용의 분담에 관한 기준을 정하였다고 할 수 없고, 이 사건 재건축과 관련하여 피고 조합이 각 건설회사들과 공사계약을 체결하였다가 해지하는 과정을 되풀이하면서 많은 시간이 흘러 물가상승 등으로 공사비가 상승하였고, 인근의 
+        ○○아파트를 매입하여 그 부지를 재건축 사업에 포함시킴으로써 재건축사업에 제공되는 대지의 면적, 건축 연면적, 재건축 세대수까지 증가하였고, 
+        소외 1 주식회사에 대한 손해배상채무까지 부담하게 되어 총 사업비가 대폭 증가되었으며, 이에 따라 조합원들의 분양대금 및 지분금액, 무상지분평수 등이 변경되는데, 그 변경이 애초의 재건축 결의 시 통상 예견할 수 있는 정도를 훨씬 초과하고 있고, 이와 같은 총 사업비, 분양대금, 평당 공사비, 조합원 지분금액, 무상지분평수 등은 재건축에 참가할 것인지를 선택하는 중요한 기준으로서 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">집합건물법 제47조 제3항</a></span> 소정의 재건축비용의 분담에 관한 사항이어서, 그 변경에는 역시 재건축결의시의 의결정족수를 규정한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="집합건물의 소유 및 관리에 관한 법률|47|">집합건물법 제47조 제2항</a></span>을 유추 적용하여 조합원 4/5 이상의 결의가 필요하다고 해석하여야 하므로, 피고 조합의 위 주장은 이유 없다.
+      </p><p> 2) 다음으로, 이 사건 제명결의 자체의 적법·유효 여부에 관하여 본다.</p><p> 무릇, 재건축조합의 의사결정기관은 조합원 총회이지만 대규모 조합의 경우에는 이사회 또는 대의원회 같은 총회를 대신하는 의사결정기관을 두는 것이 일반적이고, 조합규약에 근거규정을 두고 있는 경우에는 그와 같은 총회를 대신하는 대의기관에서 정해진 결정은 특별한 사정이 없는 한 재건축조합의 의사결정으로서 효력이 있다. 그러나, 대의원회는 근본적으로 반드시 총회에서 결의하여야 하는 안건을 제외한 기타 안건에 관한 사항과 총회로부터 위임받은 사항 등에 관하여 총회를 대신하여 결의하는 대의기관에 지나지 아니하므로, 위임이나 대의기관의 법리에 따라 총회의 객관적이고 명시적인 의사에 반한 결의나 총회에서도 허용되지 않는 결의를 할 수는 없다고 볼 것인데, 조합원 총회에서 과반수가 넘는 조합원을 그 과반수가 넘는 조합원의 의사에 반하여 제명하는 것은 다수결의 원칙상 허용되지 않는다. 또한, 재건축을 위하여 조직된 인적결합체인 재건축조합이 재건축에 찬성하여 조합원이 된 자를 그 의사에 반하여 제명하기 위해서는 그 조합원을 제명하지 않으면 재건축사업의 시행이 불가능해지거나 현저히 곤란해지는 등의 불가피한 사유가 있는 경우에 최종적인 수단으로서만 인정되어야 하고, 규약에 그 제명사유가 규정되어 있다고 하더라도 그와 같은 견지에서 이를 엄격히 해석하여야 한다.</p><p> 이 사건으로 돌아와 살피건대, 앞서 본 바와 같이 피고 조합은 원고와 선정자들이 재건축 자체에 반대한 것이 아니라 피고 조합이 전체 조합원 4/5 이상의 특별결의 없이 부적법하게 조합원 무상지분평수를 결정하여 강요하는 것을 반대하여 분양계약을 체결하지 아니하였음에도, 분양신청을 하지 않은 조합원을 제명함으로써 분양률 수치를 높여 
+        소외 1 주식회사가 요구하는 분양률 80%의 조건을 이행하였다고 주장하기 위하여 불과 6 내지 7명의 대의원이 참석한 대의원회 결의를 통하여 원고와 선정자들을 포함하여 과반수가 넘는 301명의 조합원에 대한 이 사건 제명결의를 하였다. 원고와 선정자들이 분양계약을 체결하지 않은 것이 비록 형식적으로는 규약 제40조 제3항에 규정된 조합원 자격의 박탈사유에 해당한다 하더라도 이 사건 제명결의는 총회의 객관적이고 명시적인 의사에 반한 결의이거나 총회에서도 허용되지 않는 결의에 해당할 뿐만 아니라, 앞서 본 바와 같은 위법·무효인 이 사건 개정결의로 인하여 원고 및 선정자들이 예기치 않은 추가 부담을 지게 된 상황에서 이를 이유로 원고 및 선정자들이 그 분양계약을 체결하지 않았으므로 그 분양계약을 체결하지 않은 것에는 정당한 이유가 있는 반면, 이 사건 제명결의가 피고 조합의 재건축사업이 좌절되는 것을 막고 피고 조합의 공동의 이익을 위하여 불가피한 경우에 최종적인 수단으로 선택된 것이라고 볼 수도 없으므로 무효이다.
+      </p><p> 3) 그렇다면, 피고 조합의 원고와 선정자들에 대한 이 사건 제명결의는 위법·무효인 2000. 8. 12.자 이 사건 개정결의에 기반을 둔 것일 뿐만 아니라 그 자체로도 중대한 하자가 있으므로 어느 모로 보아도 무효라 할 것이다.</p><p> ㈏ 피고 조합의 손해배상책임</p><p> 한편, 피고 조합은 앞서 본 바와 같이 이 사건 제명결의가 유효한 것을 전제로 2003. 12. 20. 이 사건 
+        ●● 아파트 646세대 전부에 관한 조합원 분양 및 일반 분양을 마쳤고, 그로 인하여 피고 조합의 조합원들인 원고와 선정자들은 피고 조합이나 또는 
+        소외 1 주식회사가 제시한 위 조합원 지분금액과 각 평형별 분양대금을 받아들여 상당한 비용을 부담하면서 재건축에 참가할 것인지, 아니면 시가에 의하여 구분소유권 등을 매도하고 재건축에 참가하지 않을 것인지를 선택할 수 있는 기회를 잃게 되었으므로, 피고 조합은 원고 및 선정자들에게 위 불법행위로 인한 손해를 배상할 의무가 있다.
+      </p><p> ㈐ 피고 회사의 손해배상책임</p><p> 살피건대, 이 사건 재건축사업의 경우 피고 조합이 시행자가 되고 피고 회사가 시공사가 되는 방식이 아니라 피고 조합과 피고 회사가 공동 사업시행자가 되어 피고 회사가 시공을 담당하는 방식으로 진행된 사실을 비롯한 앞서 본 인정사실들에, 갑 제17호증의 기재에 의하여 인정되는, 피고 회사가 2003. 11. 29. 
+        피고 3에 입주자모집공고 승인신청을 하면서 ‘매도청구소송과 관련하여 조합이 패소하여 제명된 조합원자격이 부활되어 분양권을 갖게 된 경우에 이로 인한 손해에 대하여 피고 조합과 피고 회사가 민·형사상 책임을 부담하겠다’는 내용의 각서를 공증하여 제출한 사실을 합하여 보면, 이 사건 재건축사업과 같은 공사를 다수 시공해 본 경험이 있는 전문적인 건설업체인 피고 회사는 분양률이 저조하여 공사가 중단될 위기에 놓이자 피고 조합이 
+        소외 1 주식회사에 약정한 조합원 분양률을 맞추기 위하여 전체 조합원의 과반수가 훨씬 넘는 301명의 조합원을 제명하는 이 사건 제명결의를 하였고 그에 따라 이 사건 제명결의가 위법하여 무효라는 점을 알았거나 알 수 있었으므로, 원고와 선정자들을 포함한 제명조합원들에게 이 사건 아파트를 분양받을 수 있는 기회를 보장하거나 이 사건 제명결의의 유효 여부에 관한 분쟁이 해소된 이후에 일반 분양을 실시하였어야 할 것이다. 그럼에도 불구하고, 피고 회사가 2003. 4. 29. 피고 조합과 이 사건 아파트 건축에 관한 공사도급계약을 체결한 다음, 앞서 본 바와 같이 손해배상책임을 인수한다는 취지의 각서를 제출하는 등 피고 조합의 행위에 적극 협력하여  2003. 12. 10. 관할행정청인 대덕구청장으로부터 이 사건 입주자모집공고승인을 받아내고(피고 조합 내의 분쟁이 존재하던 상황에서 피고 회사의 각서 제출은 위 승인에 중요한 역할을 한 것으로 보인다) 2003. 12. 20. 이 사건 아파트에 대한 일반 분양을 모두 마침으로써 피고 조합의 위 불법행위에 가담하였다고 봄이 상당하므로, 피고 회사는 피고 조합과 연대하여 원고 및 선정자들의 손해를 배상할 의무가 있다.
+      </p><p> [이에 대하여 피고 회사는, 자신이 이 사건 제명결의 당시 시공사가 아니었던 까닭에 그 제명결의가 이루어진 경위 등을 소상히 알지 못하여 그 위법성 여부를 알 수 없었고, 그에 따라 피고 조합과의 위 공사도급계약 체결 당시 제명된 조합원을 제외한 204명(= 전체 조합원 505명 - 제명된 조합원 301명)만이 적법하게 조합원 지위를 보유하고 있는 것을 전제로 삼았으므로, 피고 회사를 상대로 한 원고의 이 사건 손해배상청구는 부당하다고 주장한다. 살피건대, 무엇보다도 피고 회사의 위 주장은 스스로 작성한 위 갑 제17호증(각서)의 내용에 저촉된다. 그뿐만 아니라 피고 회사는 이 사건 아파트 재건축사업 초기로서 이 사건 제명결의가 이루어지기 훨씬 이전인 1993. 2. 26.부터 피고 회사가 부도를 낸 1996. 7.경까지 3년이 넘는 기간 동안 시공사 겸 공동사업시행자로 이 사건 재건축사업의 추진·시행에서 주도적인 역할을 담당하였고, 피고 회사가 정상화된 이후인 2003. 3. 12.경부터 이 사건 아파트 재건축사업에 다시 참여할 기회를 찾다가 2003. 4. 29.경 다시 이 사건 아파트 재건축사업의 시공사 겸 공동시행자의 지위를 회복하였음은 앞서 본 바와 같고, 이에 비추어 보면, 피고 회사는 이 사건 아파트 재건축사업의 경과나 내용에 대하여 소상히 알고 있어 피고 조합의 당초 조합원이 505명이라는 사실은 물론이고, 피고 회사의 부도 이후 반복된 시공사 교체 과정에서 사업비가 급격히 증대되면서 조합원들 간에 무상지분평수 내지 조합원분담금과 관련하여 분쟁이 발생하여 조합원 분양률이 극히 저조한 수준에 머무르게 된 사실, 그로 인하여 피고 조합과 
+        소외 1 주식회사 사이에 공사도급계약이 해제되면서 분쟁이 발생하여 소송으로까지 비화된 경위 등을 모두 소상히 알고 이 사건 재건축사업의 시공사 겸 공동시행자가 되었다고 봄이 상당한바, 피고 회사가 이 사건 제명결의 당시 시공사가 아니었다는 점을 근거로 한 피고 회사의 위 주장은 받아들일 수 없다.
+      </p><p> 첨언컨대, 피고 회사가 피고 조합과의 이 사건 아파트 공사도급계약을 통하여 피고 조합의 원고 및 선정자들에 대한 채무에 대하여 이행인수를 하였다는 점은 이를 자인하고 있고, 이 사건 아파트에 대한 분양이 완료되고 부속상가 등은 이 사건 아파트 공사대금으로 완공과 동시에 그 소유권을 피고 회사에 귀속시키기로 함에 따라 피고 조합이 위 불법행위 당시는 물론이고 현재 시점에서도 별다른 재산을 보유하고 있지 아니한 반면 피고 조합은 최소한 원고 및 선정자들에 대한 이 사건 불법행위에 기한 채무를 부담하고 있음은 앞서 본 바와 같으므로 결국 피고 조합은 적극재산으로 소극재산(채무) 전부를 변제할 수 없는 무자력 상태에 있음은 어렵지 않게 추단된다. 그렇다면, 가사 피고 회사의 주장과 같이 피고 회사가 원고 및 선정자들에게 공동불법행위로 인한 손해배상책임을 부담하지 않는다고 하더라도, 원고 및 선정자들이 피고 조합을 대위하여 피고 회사에 대하여 이 사건 불법행위에 기한 손해배상채무의 이행을 요구하는 것이 가능하므로 결과에 있어 다를바 없다.]</p><p> ⑶ 손해배상책임의 제한 여부</p><p> ㈎ 피고 조합 및 피고 회사의 주장</p><p> 피고 조합 및 피고 회사는, ① 피고 조합이 조합원 무상보장 평수를 6.8평으로 감축하게 된 것은 설계변경으로 인한 건축 연면적 감소와 재건축 지연으로 인한 건축공사비 인상 및 기타 사업비의 증가 등으로 인하여 부득이한 것이었고, ② 피고 조합은 2000. 8. 12.자 조합원 임시총회에서 조합원 지분을 감축할 수밖에 없는 위와 같은 사정을 충분히 설명하였을 뿐만 아니라, 이를 명시한 개정 규약에 대하여 다수의 조합원들로부터 찬성 결의를 받았으며, ③ 이어 피고 조합은 조합원들에 대하여 분양 신청을 독려하였으나 원고 및 선정자들이 고의적으로 분양 신청을 하지 않았고, ④ 피고 조합이 
+        소외 1 주식회사를 상대로 한 소송에서 패소하여 막대한 손해를 배상하게 된 주된 원인도 원고 및 선정자들을 포함한 301명이 분양신청을 하지 않았기 때문이며, ⑤ 원고 및 선정자들을 포함한 301명의 조합원이 분양신청을 하지 않은 주된 이유는 2000년경의 IMF 사태 후의 건설경기가 극도로 악화되어 수익 전망이 불투명한데다, 피고 조합의 전 집행부와 현 집행부 사이의 분쟁으로 인하여 언제든지 재건축사업이 중단될 위험이 있었기 때문에 불투명한 지위에서 분양신청을 하는 것보다 오히려 금전청산을 선호한 것에 기인하므로, 이와 같은 사정을 감안하여 피고 조합 및 피고 회사의 책임을 1/3 이상 감경하여야 한다고 주장한다.
+      </p><p> ㈏ 판단</p><p> 살피건대, 원고 및 선정자들을 포함한 301명의 조합원들이 피고 조합의 분양신청 독려에도 불구하고 신청을 거부함으로써 결국 
+        소외 1 주식회사와의 공사계약이 해지되고 나중에 손해배상까지 해주게 되었음은 앞서 본 바와 같다. 그러나 조합원 지분의 축소에 관한 내용은 전체 조합원 4/5 이상의 동의를 얻어야 하는 재건축결의 사항이므로, 당시 다수의 조합원들이 분양신청을 거부한 것이 금전청산을 받으려는 것이었다면, 피고 조합은 조합원 총회를 개최하여 위와 같이 지분 축소에 반대하는 조합원들에게 금전청산을 할지 아니면 비용이 늘어나더라도 재건축사업에 동참할지 기회를 주었어야 함에도 불구하고, 그런 노력 없이 일방적으로 위법하게 조합원 제명이라는 극단적인 수단을 동원하여 위와 같은 기회 자체를 박탈한 것은 용납될 수 없으므로, 피고 조합과 피고 회사가 그 주장하는 사유를 들어 책임 감경을 주장하는 것은 받아들일 수 없다.
+      </p><p> ⑷ 손해배상책임의 범위</p><p> ㈎ 비록 실질적으로는 이 사건 제명결의가 위법하여 무효이어서 원고와 선정자들은 계속하여 피고 조합 조합원의 지위를 유지하고 있었지만 외형적으로는 이 사건 제명결의가 존재함으로 인하여 원고와 선정자들은 이 사건 아파트에 대한 조합원 분양을 신청하지 못하였고, 이 사건 아파트 중 이 사건 제명결의로 제명되지 아니한 조합원들이 분양신청한 부분을 제외한 나머지 전체 세대에 대하여 2003. 12. 20. 일반 분양이 완료됨에 따라 종국적으로 원고 및 선정자들이 이 사건 아파트에 대한 분양을 신청할 수도 없게 되었으므로, 원고 및 선정자들이 피고 조합으로부터 위법하게 제명됨으로 인하여 입은 손해는 원고와 선정자들이 조합원의 지위에서 향유할 수 있었던 수분양권의 상실이라 할 것이고, 그 구체적 가액은 위 2003. 12. 20.경 이 사건 아파트 중 원고 및 선정자들이 분양을 신청할 평형 아파트의 수분양권의 거래가(분양가에 소위 프리미엄이 가산된 금액)에서 이 사건 제명결의가 없었더라면 원고 및 선정자들이 부담하였을 분담금을 공제한 차액이라고 할 것이다.</p><p> 한편, 원고 및 선정자들이 이 사건 아파트 중 24평형에 대한 분양신청을 하였을 것이라는 점은 당사자 사이에 다툼이 없다. 그리고 을 제13호증의 기재에 의하면, 이 사건 아파트 중 24평형에 대한 조합원 분양가는 층수에 관계없이 73,230,500원이고 그 지분인정금액이 20,740,000원이어서 결국 조합원 분담금은 52,490,500원(= 73,230,500원 - 20,740,000원)인데 반하여, 이 사건 아파트 646세대 중 24평형 100세대(각 층당 4세대씩 25개층)의 일반 분양가는 1층(4세대)은 107,900,000원, 2층과 최상층(8세대)은 111,900,000원, 나머지 층(88세대)은 115,900,000원이므로 평균분양가는 115,260,000원인 사실을 인정할 수 있고, 위와 같은 가격으로 이 사건 아파트 24평형에 대한 일반 분양이 모두 완료된 점에 비추어 위 분양 당시 이 사건 아파트 24평형의 시가는 위 분양가 상당이라고 추정된다. 한편, 이 사건 불법행위로 인하여 원고 및 선정자들이 상실하게 된 아파트 수분양권의 가액은 위 평균분양가 상당 또는 그 이상이라 할 것이다.</p><p> ㈏ 피고 조합의 주장에 대한 판단</p><p> 1) 피고 조합은 먼저, 원고 및 선정자들이 피고 조합으로부터 제명당함으로써 입은 손해액은 불법행위시인 위 시점에서 원고 및 선정자들의 철거된 종전 아파트에 대한 시가 상당 금원(개발이익이 포함된 금원)이라고 주장한다.</p><p> 살피건대, 불법행위로 인한 재산상 손해는 특별한 사정이 없는 한 불법행위로 인하여 손해가 발생하였을 당시를 기준으로 산정하여야 하고, 또 불법행위로 인한 재산상 손해란 위법한 가해행위로 인하여 발생한 재산상의 불이익 즉 그 위법행위가 없었더라면 존재하였을 재산상태와 그 위법행위가 가해진 현재의 재산상태의 차이를 말하는 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다33070|판결" href="#//">대법원 1992. 6. 23. 선고 91다33070 판결</a></span> 등 참조). 그런데 이 사건에서 피고 조합의 이 사건 제명결의로 인하여 침해된 원고와 선정자들의 권리는 철거된 아파트에 대한 원고와 선정자들의 지분청산청구권이 아니라(이러한 지분청산청구권은 원고 및 선정자들에 대한 제명이 위법하지 않고 적법하여 불법행위를 구성하지 않는 경우에도 동일하게 인정된다는 점에서도 이 사건 제명결의로 침해된 권리가 아님은 명백하다) 원고와 선정자들이 조합원의 자격으로 이 사건 아파트를 분양받을 수 있는 기대권 내지 가치권이므로, 그 권리에 대한 침해가 없었던 경우의 재산상태와 분양이 불가능하게 되어 원고와 선정자들이 원래부터 가지고 있던 조합원으로서의 지분청산청구권만을 행사하게 된 경우의 재산상태 사이의 차액 상당이 바로 이 사건 불법행위로 인한 손해라고 할 것인바, 그 시점에서 원고와 선정자들의 철거된 종전 아파트에 대한 시가 상당 금원은 원고와 선정자들이 철거된 아파트 외에 추가로 부담하여야 할 분담금을 정하는 하나의 요소에 불과할 뿐 그것이 곧바로 이 사건 제명결의가 없었을 경우 원고와 선정자들이 보유 또는 취득하였을 재산상태 자체를 의미하는 것이 아니므로 피고 조합의 위 주장은 받아들일 수 없다.
+      </p><p> 2) 피고 조합은 다음으로, 이 사건 아파트를 정상적으로 분양받은 조합원들은 무상보장평수를 6.8평으로 하는데 동의하고, 또 당시 외환위기(국제통화기금으로부터의 긴급 외환자금을 지원받은 소위 ‘IMF 사태’) 이후 건설경기가 극도로 악화되어 있어 이 사건 재건축사업의 성공 여부나 그 분양으로 인한 수익 전망이 불투명하였던 데다가 피고 조합의 전(전) 집행부와 현(현) 집행부 사이의 분쟁으로 인한 재건축사업의 중단의 우려 등 여러 가지 위험이 있었음에도 이를 감수하고 분양계약을 체결한 것인데, 그 후 행정수도의 건설이라는 예상치 못한 호재의 발생으로 아파트 분양시장이 회복됨으로써, 결과적으로 조합원 아파트를 분양받은 것이 일반 분양가에 비하여 이익을 얻은 셈이 된 것일 뿐이고, 더욱이 피고 회사와 피고 조합이 이 사건 아파트 재건축 공사계약을 체결하면서 피고 조합의 조합원이 204명임을 전제로 하되 만약 피고 조합의 조합원 수가 이를 초과할 경우에는 조합원 분담금을 조정하기로 약정하였는데 나중에 제명 조합원들 중 일부 조합원의 지위가 회복되어 피고 조합의 조합원 수가 변동된 이상 조합원 분담금의 조정 없이 조합원이 위 204명임을 기준으로 한 일반분양금액과 조합원 분양금액의 차액이 곧 원고와 선정자들의 손해액이라고 할 수도 없다는 취지로도 다툰다.</p><p> 살피건대, 피고 조합이 지적하는 위와 같은 점들 즉 이 사건 제명결의의 대상이 되지 아니한 조합원들이 이 사건 아파트에 대한 수분양과정에 내재된 각종의 투자위험에도 불구하고 이 사건 아파트를 분양받은 것은 이 사건 재건축사업이 최초 시작되었을 당시부터 당연히 수반된 위험을 인수한 것에 불과하므로 그것을 이유로 불법행위인 이 사건 제명결의에 따른 손해의 평가가 달라질 것도 아니고, 2003. 12. 20.에야 비로소 완성된 이 사건 불법행위에 영향을 미칠만한 사정도 아니며, 피고 조합과 피고 회사 사이의 최종적인 정산 즉 조합원 수의 변동에 따른 조합원 분담금 조정의 문제는 별도로 피고 조합이 원고와 선정자들을 포함한 전체 조합원 중 청산이 완료되지 아니한 조합원들을 상대로 정산을 시행함으로써 해소되어야 할 조합청산에 관한 문제에 지나지 아니하므로 피고 조합의 위 주장 역시 이유 없다.</p><p> 3) 피고 조합은 마지막으로, 피고 조합이 원고 및 선정자들에 대하여 부담하는 책임이 이행지체로 인한 전보배상책임임을 전제로, 피고 조합은 원고 및 선정자들이 제명된 시점인 2000. 9. 18. 또는 2000. 11. 16.을 기준으로 산정한 청산금 상당액인 22,735,000원 내지 23,320,000원 범위에서만 금원지급 의무가 있다고 주장한다.</p><p> 보건대, 피고 조합이 원고 및 선정자들에 대하여 부담하는 책임은 위법한 이 사건 제명결의로 인하여 원고 및 선정자들이 이 사건 아파트에 대한 분양신청을 하지 못한 상태에서 일반 분양이 완료됨에 따른 것으로서 이는 이행지체로 인한 손해배상책임이 아니라 이행불능으로 인한 손해배상책임이라 할 것이므로 이와 다른 전제에 선 피고 조합의 주장은 받아들일 수 없고, 가사 견해를 달리하여 위 책임이 이행지체로 인한 전보배상책임에 해당한다고 보더라도 이행지체 중에 채무자가 이행거절의 의사를 명백히 표시하여 최고 없이 계약의 해제나 손해배상을 청구할 수 있는 경우에는 이행거절 당시의 급부목적물의 시가를 표준으로 하여야 하는데(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다63337|판결" href="#//">대법원 2007. 9. 20. 선고 2005다63337 판결</a></span>) 이 사건에서의 급부목적물은 이 사건 아파트에 대한 수분양권 자체이므로 그에 대한 시가평가액을 표준으로 하지 않고 원고 및 선정자들이 피고 조합에 대하여 가지는 청산금 상당액에 대하여만 배상 의무가 있다는 피고 조합의 위 주장은 받아들일 수 없다.
+      </p><p> ㈐ 피고 회사의 주장에 대한 판단</p><p> 1) 한편 피고 회사는, 피고 회사와 피고 조합 사이에 체결된 이 사건 아파트에 관한 공사도급계약(갑 제6호증) 및 피고 조합의 규약(갑 제3호증의 2)에 의하면 제명 등으로 조합원 지위를 상실하였거나 조합원 분양을 신청하지 아니하여 분양에서 제외된 조합원은 무상지분금액 범위 내에서 2개 이상의 공인 감정기관의 평가액을 산술평균하여 산출된 종전 토지 및 건축물의 가격을 기준으로 금전으로 청산하는 것으로 정하고 있으므로 피고 회사가 원고 및 선정자들에 대하여 부담하는 책임범위는 무상지분금액인 20,740,000원에 국한된다고 주장한다. 그러나, 피고 조합과 피고 회사 사이의 위 공사도급계약의 내용으로 원고와 선정자들에 대하여 대항할 수 없고, 위 규약상의 조항은 정상적으로 이루어진 유효한 제명으로 인하여 조합원의 지위를 상실하거나 조합원의 선택으로 분양신청을 하지 아니한 경우에 관한 것으로서 위법한 제명조치로 인하여 분양신청의 기회를 상실한 이 사건에서 손해배상액 산정의 기준이 될 수 없으므로, 피고 회사의 위 주장은 이유 없다.</p><p> 2) 또한 피고 회사는, 이 사건의 원고 및 선정자들과 같이 재건축과정에서 분양신청을 하지 아니한 조합원에 대한 청산에 대하여는 ‘도시 및 주거환경정비법’이 정한 대로 분양신청기간 만료일을 기준으로 하여 감정평가업자 2인 이상이 평가한 금액을 산술평균하여 산정한 금액을 기준으로 하여야 한다는 점에서도 피고 회사가 원고 및 선정자들에 대하여 부담하는 책임범위는 위 20,740,000원에 국한된다는 취지로 주장한다.</p><p> 보건대, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|47|">‘도시 및 주거환경정비법’ 제47조</a></span>는 ‘사업시행자는 토지 등 소유자가 분양신청을 하지 아니하거나 분양신청을 철회한 경우에는 그 해당하게 된 날부터 150일 이내에 대통령령이 정하는 절차에 따라 토지·건축물 또는 그 밖의 권리에 대하여 현금으로 청산하여야 한다’고 정하고 있고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법 시행령|48|">위 법 시행령 제48조</a></span>는 ‘사업시행자가 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="도시 및 주거환경정비법|47|">법 제47조</a></span>의 규정에 의하여 토지 등 소유자의 토지·건축물 그 밖의 권리에 대하여 현금으로 청산하는 경우 청산금액은 사업시행자와 토지등소유자가 협의하여 산정하되, 이 경우 시장·군수가 추천하는 부동산가격공시 및 감정평가에 관한 법률에 의한 감정평가업자 2인 이상이 평가한 금액을 산술평균하여 산정한 금액을 기준으로 협의할 수 있다’고 정하고 있기는 하나, 위 법령 조항에 의한 금전청산은 조합원의 선택으로 분양신청을 하지 아니하거나 분양신청을 하였다가 이를 철회한 경우에 적용되는 것임이 그 조문의 규정자체로 명확한데, 이 사건 원고 및 선정자들이 여기에 해당하지 아니함은 앞서 본 바와 같으므로 피고 회사의 위 주장 역시 이유 없다.
+      </p><p> 다. 소결론</p><p> 그렇다면, 피고 조합과 피고 회사는 연대하여 원고와 선정자들에게 이 사건 제명결의 등 불법행위로 인한 손해배상으로 원고가 구하는 바에 따라 각 62,769,500원(= 평균 일반 분양가 115,900,000원 - 조합원 분담금 52,490,500원) 및 이에 대한 불법행위일부터 다 갚는 날까지의 지연손해금을 지급할 의무가 있다.</p><p>
+        <b>3. 피고 조합에 대한 청산금청구에 대한 판단</b>
+      </p><p> 가. 원고 주장의 요지</p><p> 원고는, 이 사건 제명결의로 인하여 원고 및 선정자들이 이 사건 아파트에 대한 조합원 분양을 받을 수 없었고 그 후 피고 조합과 피고 회사는 이 사건 아파트 중 조합원에게 분양된 세대를 제외한 나머지 세대 전부에 대하여 일반 분양을 마치고 2006. 6. 16.경 그에 따른 소유권이전등기까지 모두 마침으로써 원고 및 선정자들이 더 이상 이 사건 아파트를 분양받을 여지가 없게 되었으므로, 피고 조합은 원고 및 선정자들에게 조합규약이 정한 바에 따라 청산금을 지급할 의무가 있다고 주장한다.</p><p> 나. 판단</p><p> 살피건대, 갑 제3호증의 1의 기재에 의하면, 피고 조합 규약은 이 사건 아파트 재건축 사업에 따른 공사가 완료된 다음 이 사건 아파트 재건축 사업구역 내 토지 등의 소유자(즉 조합원) 중 분양신청을 하지 아니하거나 분양을 희망하지 아니한 조합원에 대하여 제41조 및 제42조 규정에 의하여 청산하고(위 규약 제30조 제3항), 이때의 금전 청산 가액은 2개 이상의 공인 감정기관의 감정을 받아 대전시 가격 평가 위원회에서 평가 결정한 가액으로 한다(위 규약 제41조 제2항)고 정한 사실을 인정할 수 있으나, 위 규약의 규정들은 분양신청의 기회가 부여된 조합원이 그 기회를 포기한 경우에 지급할 청산금에 관한 것으로서 위법한 제명결의로 인하여 분양신청의 기회를 상실한 원고와 선정자들에게 적용되지 아니하고, 만일 이를 인정한다면 앞서 인정한 손해배상액과의 관계에서 중복 지급의 문제가 발생하게 되므로, 원고의 위 주장은 이유 없고 원고의 위 청산금 청구 부분은 받아들일 수 없다.</p><p>
+        <b>4. 
+          피고 3에 대한 청구에 관한 판단
+        </b>
+      </p><p> 가. 원고 주장의 요지</p><p> 원고는, 
+        피고 3이 이 사건 주택건설 사업계획 변경승인, 주택조합설립 변경승인, 착공허가, 입주자모집공고 승인, 준공인가 등을 함에 있어, 위와 같이 피고 조합의 재건축결의가 유효한지, 원고 및 선정자들을 포함한 301명에 대한 제명처분이 유효한지 여부 등의 위법 사항을 제대로 확인하지 아니한 채 공사가 진행되어 일반 분양이 마쳐지도록 방치하여 원고 및 선정자들의 수분양권이 침해되도록 하였으므로, 
+        피고 3은 피고 조합 및 피고 회사와 연대하여 원고 및 선정자들에게 이에 따른 손해를 배상할 의무가 있다고 주장한다.
+      </p><p> 나. 판단</p><p> 원고가 주장하는 
+        피고 3의 각 승인 내지 인가행위는 기본행위인 조합의 행위를 보충시키는 행위로서 기본행위에 하자가 있는 경우 이에 대한 관할관청의 승인 내지 인가로 인하여 기본행위의 하자가 치유되는 것이 아니므로, 원고와 선정자들의 조합원의 지위에 영향을 미칠 수 없고, 달리 원고 및 선정자들의 손해가 관할관청인 
+        피고 3의 위와 같은 승인 내지 인가로 인하여 발생하였다고 볼만한 다른 사정도 없다.
+      </p><p> 다만, 이 사건 불법행위로 인한 손해는 피고 조합의 일반 분양이 완료됨으로써 발생한 것이므로, 
+        피고 3의 입주자 모집공고에 대한 승인처분이 그 원인이 되었다고 볼 여지가 있어 이 점에 관하여 본다. 입주자모집공고에 대한 승인처분은 피고 재건축조합이 그 조합원 총회에서 결의한 관리처분계획에 따라 조합원들에게 분양할 아파트를 제외한 잔여 아파트를 일반인에게 분양하는 행위를 보충하여 그 법률상 효력을 완성시키는 보충행위일 뿐이며, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택건설촉진법|8|">주택건설촉진법 제8조 제1항</a></span>은 사업주체가 입주자를 모집하는 경우에는 건설교통부령이 정하는 바에 의하여 시장·군수·구청장의 승인을 얻도록 규정하고, 이에 따른 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주택공급에 관한 규칙|7|">‘주택공급에 관한 규칙’ 제7조</a></span>는 입주자모집 시기 및 조건과 관련하여 사업주체가 주택이 건설되는 대지의 소유권을 확보할 것을 요건으로 하고 그 모집시기가 착공과 동시이냐 일정한 건축공정에 이른 때이냐에 따라 분양에 대한 보증이 정도를 달리 정하고 있는바, 이와 같이 주택사업의 주체가 일반분양을 함에 있어 일정한 요건의 구비를 요구하고 관할 구청장 등의 승인을 요구하는 것은 일반 수분양자들의 주택의 완공 전에 분양대금을 납입하는데 따른 위험과 손해를 예방하려는 데에 있는 것이지 주택사업 주체, 그 구성원 또는 주택의 대지 소유자를 보호하기 위한 것이라고 할 수 없다. 게다가 
+        피고 3은 위 승인 처분을 함에 있어서 원고 및 선정자들과 피고 조합 사이에 분쟁이 있음을 고려하여 피고 회사로부터 앞서 본 각서(갑 제17호증)를 제출받음으로써 원고와 선정자들이 입게 될 수 있는 손해에 대한 보장책을 마련한 점에 비추어 피고 조합과 원고 및 선정자들의 이익을 적정하게 형량하였다고 판단된다. 따라서 위 승인처분에 달리 위법한 하자가 있음에 대한 입증이 없는 이상 
+        피고 3의 위 승인처분이 불법행위에 해당한다는 원고의 주장은 받아들일 수 없다.
+      </p><p>
+        <b>5. 결론</b>
+      </p><p> 따라서, 피고 조합은 원고 및 
+        선정자 2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        10에게 불법행위에 기한 손해배상금으로 각 62,769,500원 및 그 중 제1심 판결 인용금액인 각 23,002,500원에 대하여는 이 사건 불법행위일인 2003. 12. 20.부터 피고 조합이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 제1심 판결 선고일인 2007. 7. 4.까지는 민법이 정한 연 5%의, 그 다음날부터 다 갚는 날까지는 ‘소송촉진 등에 관한 특례법’이 정한 연 20%의 각 비율에 의한, 나머지 각 39,767,000원[= 62,769,500원(총 손해배상금) - 23,002,500원(제1심 판결 인용금액)]에 대하여는 위 2003. 12. 20.부터 피고 조합이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 당심 판결 선고일인 2008. 5. 15.까지는 민법이 정한 연 5%의, 그 다음날부터 다 갚는 날까지는 위 특례법이 정한 연 20%의 각 비율에 의한 금원을 지급할 의무가 있고, 
+        선정자 9에게 불법행위에 기한 손해배상금으로 62,769,500원 및 그 중 그 중 제1심 판결 인용금액인 23,052,500원에 대하여는 이 사건 불법행위일인 2003. 12. 20.부터 피고 조합이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 제1심 판결 선고일인 2007. 7. 4.까지는 민법이 정한 연 5%의, 그 다음날부터 다 갚는 날까지는 위 특례법이 정한 연 20%의 각 비율에 의한, 나머지 39,717,000원[= 62,769,500원(총 손해배상금) - 23,052,500원(제1심 판결 인용금액)]에 대하여는 위 2003. 12. 20.부터 피고 조합이 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 위 2008. 5. 15.까지는 민법이 정한 연 5%의, 그 다음날부터 다 갚는 날까지는 위 특례법이 정한 연 20%의 각 비율에 의한 금원을 지급할 의무가 있다. 또한, 피고 회사는 불법행위에 기한 손해배상금으로 피고 조합과 연대하여 원고 및 선정자들에게 위 62,769,500원 및 이에 대하여 이 사건 불법행위일인 2003. 12. 20.부터 피고 회사가 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 당심 판결 선고일인 2008. 5. 15.까지는 민법이 정한 연 5%의, 그 다음날부터 다 갚는 날까지는 위 특례법이 정한 연 20%의 각 비율에 의한 금원을 지급할 의무가 있다.
+      </p><p> 그렇다면, 원고의 당심에서 확장된 청구를 포함하여 원고의 청구는 위 인정범위 내에서 이유 있어 이를 각 인용하고, 나머지 청구는 이유 없어 이를 각 기각할 것인바, 제1심 판결은 이와 결론을 일부 달리하여 부당하므로 원고의 항소를 일부 받아들이기로 하여 제1심 판결을 주문과 같이 변경한다.</p><p>[별지 선정자 목록 생략]</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   장석조(재판장) 구창모 윤성묵 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

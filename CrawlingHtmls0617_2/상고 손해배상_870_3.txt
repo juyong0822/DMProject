@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 95다19959 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2102504';
+var contIdEtc = '';
+var saNo = '95다19959';
+var sngoNm = '선고';
+var saNm = '부당이득금';
+try {
+	var sngoDay=('19970627' ? 
+			'19970627'.length==4 ? Date.parseExact('19970627','yyyy').toString('yyyy. M. d.') : 
+				'19970627'.length==6 ? Date.parseExact('19970627','yyyyMM').toString('yyyy. M. d.') : 
+					'19970627'.length==8 ? Date.parseExact('19970627','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 95다19959 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '95다19959';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />95다19959</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(9)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(4)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(7)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061705">대법원 2009. 3. 26. 선고 2008다72325 판결 [공2009상,564]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476140">박민수 대출계약서의 명의상 주채무자가 실질적 주채무자와 다른 경우의 법률관계 판례연구 12집  / 부산판례연구회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|815203">황남석 실물거래 없는 세금계산서의 수수로 인한 조세범 처벌법 위반죄의 성부 사법 37호 / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|241504">이호원 민사소송법 : 1997년도 학계활동의 결산과 판례동향 . 고시연구 25권 1호 (97.12): 신년특대호 / 고시연구사  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|515215">곽종훈 명의대여에 의한 대출약정과 통정허위표시 민사재판의 제문제 12권  / 한국사법행정학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|261022">권오창 계약명의신탁의 법률관계에 관한 고찰 법조 48권 5호 (99.05) / 법조협회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|622790">견종철 단체수의계약을 체결한 중소기업협동조합과 계약물품을 납품한 조합원의 관계 대법원판례해설 79호  / 법원도서관  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|602868">김명숙 타인의 이름을 사용한 법률행위 : 판례를 중심으로 안암법학 27호  / 무지개출판사  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|240507">윤진수 계약 당사자의 확정에 관한 고찰 : 특히 예금계약을 중심으로 법조 46권 11호 (97.11) / 법조협회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|263002">윤진수 (병행행수입) 계약 당사자의 확정에 관한 고찰 판례실무연구  Ⅱ  / 박영사  1998 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|91다13144">
+대법원 1991. 8. 13. 선고 91다13144 판결(공1991, 2344)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|93다19962">
+대법원 1993. 7. 13. 선고 93다19962 판결(공1993하, 2278)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|94다16083">
+대법원 1995. 4. 28. 선고 94다16083 판결(공1995상, 1958) </a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|91다46885">
+대법원 1992. 4. 28. 선고 91다46885 판결(공1992, 1713)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="중소기업협동조합법|31|0|19900113">중소기업협동조합법(구) 제31조 제1항 제7호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="중소기업협동조합법|35|0|19900113">중소기업협동조합법(구) 제35조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민사소송법|188|0|null">민사소송법 제188조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|390|0|null">민법 제390조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중소기업제품구매촉진법|3|0|19811231">중소기업제품구매촉진법 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중소기업협동조합법|3|0|null">중소기업협동조합법 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중소기업협동조합법|31|0|null">중소기업협동조합법 제31조 제1항 제7호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중소기업협동조합법|35|0|null">중소기업협동조합법 제35조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중소기업협동조합법|35|0|null">중소기업협동조합법 제35조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="중소기업제품구매촉진법|9|0|null">중소기업제품구매촉진법 제9조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|94나5108">
+서울고법  1995. 3. 30. 선고 94나5108 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1997. 6. 27. 선고 95다19959 판결</h2><p class="sub_title">[부당이득금][공1997.8.15.(40),2295]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|35|">구 중소기업협동조합법 제35조</a></span> 소정의 단체적 계약의 당사자
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 조합의 단체적 계약이 직접 조합원에 대하여 효력이 있음을 이유로 조합원에게 계약에 기한 책임을 청구함에 대하여, 조합원이 계약당사자임을 이유로 계약에 기한 책임을 인정하는 것이 변론주의에 위배되는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[3] 물품구매계약 특수조건에 기한 계약금액 환수청구권의 법적 성질</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>  [1] 구 중소기업제품구매촉진법(1994. 12. 22. 법률 제4825호로 폐지) 및 구 중소기업협동조합법(1990. 1. 13. 법률 제4211호로 개정되기 전의 것)의 규정에 의하면 단체 수의계약의 당사자는 중소기업협동조합이고 당해 구매계약 역시 공공기관과 조합 명의로 체결되었으므로, 구매계약의 체결 및 이행과정이 납품업자인 조합원에 의하여 임의로 이루어졌다고 하더라도 당해 구매계약의 당사자를 조합이 아닌 납품업자라고 볼 수 없다. </p>
+      <p></p><p>
+        </p><p>  [2] 원고가 청구원인으로서 조합이 당사자인 당해 구매계약은 관계 법령의 규정에 따라 납품업자에게 직접 효력이 있으므로, 납품업자는 구매계약의 직접적 효력을 받는 당사자로서 조합과 연대하여 계약금액 환수의무가 있다고 주장한 경우, 원심이 납품업자에게 단체적 계약의 효력을 직접 받는 조합원으로서의 책임이 있는지 여부만을 심리·판단하였어야 할 것인데, 당해 구매계약의 당사자를 납품업자들로 보고 원고가 주장하지도 아니한 원고와 납품업자들 사이의 구매계약에 기한 책임을 인정한 것은 변론주의에 위반된다.</p>
+      <p></p><p>
+        </p><p>  [3] 단체적 구매계약의 특수조건으로 "① 계약체결 후라 할지라도 계약금액 결정이 하자 또는 착오가 있어 동 계약금액을 감액하여야 할 사유가 발생하였을 경우와 이미 체결된 계약상의 물품 구매가격이 타관서의 동종 물품 구매가격에 비하여 현저히 고가인 경우에는 계약담당공무원이 정하는 금액을 감액 또는 환수 조치할 수 있다. ② 계약자는 하시라도 가격 증빙자료의 제시 또는 열람 요구에 응하여야 하며 가격 증빙자료의 위조, 변조 또는 정당한 이유 없이 증빙자료 제시에 불응하거나 기타 사실과 상이한 가격자료의 제출 사실이 발견된 경우 계약담당공무원은 이에 따라 계약금액을 일방적으로 감액, 수정 또는 환수 조치할 수 있다."라고 규정하고 있다면, 이는 공공기관이 계약자에게 정당한 가격을 제시할 의무를 부과하고 그 의무불이행시 그로 인한 손해배상청구권을 취득한다는 취지라고 할 것이므로, 공공기관의 납품업자들에 대한 계약금액 환수청구권은 일종의 채무불이행으로 인한 손해배상채권으로서 과실상계의 대상이 된다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|31|">구 중소기업협동조합법(1990. 1. 13. 법률 제4211호로 개정되기 전의 것) 제31조 제1항 제7호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|35|">제35조</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|188|">민사소송법 제188조</a></span>[3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|390|">민법 제390조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">제396조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다13144|판결" href="#//">대법원 1991. 8. 13. 선고 91다13144 판결(공1991, 2344)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|93다19962|판결" href="#//">대법원 1993. 7. 13. 선고 93다19962 판결(공1993하, 2278)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다16083|판결" href="#//">대법원 1995. 4. 28. 선고 94다16083 판결(공1995상, 1958) </a></span></p><p class="txt_9">[3]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다46885|판결" href="#//">대법원 1992. 4. 28. 선고 91다46885 판결(공1992, 1713)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,피상고인겸상고인】
+      
+          서울특별시 (소송대리인 변호사 오성환 외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고,피상고인】
+      
+          한국침장공업협동조합 (소송대리인 변호사 박태영)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고,상고인겸피상고인】
+      
+          화산기업 주식회사 외 1인 (피고들 소송대리인 변호사 윤일영)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|94나5108|판결" href="#//">
+서울고법  1995. 3. 30. 선고 94나5108 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>원심판결 중 피고 한국침장공업협동조합에 대한 부분 및 피고 화산기업 주식회사와 피고 민복임에 대한 원고 패소 부분을 파기하고, 이 부분 사건을 서울고등법원에 환송한다.  피고 화산기업 주식회사와 피고 민복임의 상고를 모두 기각하고, 이 부분 상고비용은 위 피고들의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>  원고와 피고 화산기업 주식회사 및 피고 민복임의 각 상고이유와 기간이 지난 뒤에 제출된 피고 화산기업 주식회사와 피고 민복임의 상고이유보충서의 기재 중 상고이유를 보충하는 부분을 함께 판단한다.</p><p>  1. 원고의 상고이유 제1점에 대하여</p><p>  가. 원심이 인정한 사실관계</p><p>  (1) 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업제품구매촉진법|3|">구 중소기업제품구매촉진법(1981. 12. 31. 법률 제3536호, 1994. 12. 22. 법률 제4825호로 폐지) 제3조</a></span>에 의하면, 원고와 같은 공공기관이 물품을 구매하고자 할 때에는 중소기업자가 생산하는 물품의 구매를 증대하여야 하고, 이 경우 공공기관은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|3|">중소기업협동조합법 제3조</a></span>에 의한 중소기업협동조합과 우선적으로 단체 수의계약을 체결할 수 있게 되어 있으며, 한편 구 중소기업협동조합법(1990. 1. 13. 법률 제4211호로 개정되기 전의 것)에 의하면, 중소기업협동조합은 조합원의 경제적 이익을 도모하기 위한 단체적 계약을 체결할 수 있고(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|31|">제31조 제1항 제7호</a></span>), 이 단체적 계약은 미리 이사회의 의결을 거쳐 단체적 계약임을 명기한 서면으로 하여야 하며(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|35|">제35조 제1항</a></span>), 단체적 계약은 직접 조합원에 대하여 효력을 가지도록 되어 있고(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|35|">제35조 제2항</a></span>), 중소기업협동조합이 공공기관의 계약 당사자가 되어 계약을 이행함에 있어서는 그 물품을 생산하는 조합원에게 특별한 사유가 없는 한 균등한 수혜가 이루어지도록 하여야 하게 되어 있다(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업제품구매촉진법|9|">중소기업제품구매촉진법 제9조</a></span>).
+      </p><p>  (2) 원고는 1988. 12. 22.부터 1992. 1. 18.까지 11회에 걸쳐 피고 한국침장공업협동조합과 사이에 피고 조합원으로부터 모포 141,319장을 공급받기로 하는 단체 수의계약을 체결하고, 그 중 139,919장의 모포를 피고 화산기업 주식회사와 피고 민복임으로부터 공급받았다.</p><p>  (3) 원래 피고 조합이 단체적 계약을 맺으면 합리적인 기준에 따라 균등한 혜택이 돌아가도록 조합원에게 공급물량을 배정하여야 하는데, 피고 회사 대표이사 임병현은 피고 조합을 제쳐두고 원고의 관계 공무원들을 개인적으로 교섭하여 공급할 모포의 수량, 가격, 공급시기, 장소 등을 미리 합의하고 그 공급권을 따내어, 피고 회사와 자신의 처인 피고 민복임이 원고에게 필요한 물량의 모포를 공급하기로 하는 구매계약(이하 이 사건 구매계약이라 한다)을 피고 조합 명의로 맺었고, 위 계약과정에서 피고 조합은 공급할 모포의 수량, 가격, 공급시기, 장소 등 구매계약의 내용을 결정하는 데에 사전에 전혀 관여하지 않았으며, 위와 같이 원고의 관계 공무원들과 피고 회사와 피고 민복임이 공급자와 구매계약의 내용을 미리 정하고 이를 위 임병현을 통하여 피고 조합에 통보하여 오면 이를 그대로 수용하여 마치 피고 조합이 원고와 구매계약을 맺는 것처럼 위 임병현에게 피고 조합직원을 딸려 보내거나 임병현에게 피고 조합의 대표자 인장을 주어 계약서에 날인 절차를 밟게 하였으며, 피고 조합이 구매계약을 맺기 전에 원고에게 내는 견적서도 위 임병현이 작성하여 온 서류에 형식적으로 날인만 하였고, 구매계약 후에도 물량을 조합원들에게 실질적으로 배정하는 것처럼 서류를 작성하는 등 형식을 갖추었으나 조합 정관에서 단체적 계약을 맺을 때 의결을 거치도록 규정한 이사회에서도 물량배정에 관하여 실질심사를 하지 아니한 채 이를 사후추인만 하였으며, 원고 역시 위 구매계약을 맺는 데에 피고 조합을 실질적으로 관여시키지 아니하고 애초부터 형식적 계약 당사자로만 여겨 계약서류를 작성하였으며 뒤에 물품에 흠이 있다거나 문제가 발생한 경우에도 피고 조합에는 통보만 하고 책임은 납품업자에게만 추궁하였고, 납품대금은 일단 피고 조합에게 주기는 하였으나 이는 서류상 계약명의자가 피고 조합으로 되어 있기 때문에 형식을 일관되게 갖추는 것에 불과하였으며, 피고 조합은 위와 같이 서류상으로 명의만 빌려 주는 대신 납품 조합원으로부터 공급금액의 1.5% 또는 2% 상당을 수수료로 받았다.</p><p>  나. 원심의 판단</p><p>  위 인정 사실로 보면, 이 사건 구매계약은 원고와 피고 조합이 중소기업제품구매촉진법, 중소기업협동조합법 소정의 단체적 계약을 체결한 형식을 갖추고 있으나 이는 관계 규정상 원고와 납품업자가 직접 계약을 맺을 수 없기 때문에 갖추게 된 외형에 불과하고 실질적으로는 원고와 피고 회사 및 피고 민복임 사이에서 계약을 맺은 것으로 보아야 하며, 또한 원고는 스스로 피고 조합을 배제한 채 위 임병현과 모든 계약조건을 정한 후에 피고 조합을 형식적 당사자로 하여 이 사건 구매계약을 맺었으므로 형식적 당사자에 불과한 피고 조합에 대하여 이 사건 구매계약에 기한 책임을 묻는 것은 선행행위에 모순되는 것이어서 신의칙상 허용될 수 없다 하여, 원고의 피고 조합에 대한 청구를 배척하였다.</p><p>  다. 상고이유에 대한 판단</p><p>  그러나 원심이 적법하게 인정한 사실과 관계 법령의 규정에 의하면, 
+        <span class="accrnt_txt">단체 수의계약의 당사자는 중소기업협동조합이고, 이 사건 구매계약 역시 원고와 피고 조합 명의로 체결되었다는 것이므로, 이 사건 구매계약의 체결 및 이행과정에 원심판시와 같은 사정이 있다 하더라도 이 사건 구매계약의 당사자를 피고 조합이 아닌 피고 회사와 피고 민복임이라고 볼 수는 없다</span> 할 것이다.
+      </p><p>  따라서 이 사건 구매계약의 당사자를 피고 회사와 피고 민복임으로 본 원심판결에는 중소기업협동조합법 및 중소기업제품구매촉진법상의 단체 수의계약의 당사자 확정에 관한 법리를 오해한 위법이 있고, 논지는 이유 있다.</p><p>  2. 피고 회사와 피고 민복임의 상고이유 제1점에 대하여</p><p>  기록에 의하면, 
+        <span class="accrnt_txt">원고는 이 사건 청구원인으로서 피고 조합이 당사자인 이 사건 구매계약은 위 관계 법령의 규정에 따라 피고 회사와 피고 민복임에게 직접 효력이 있으므로, 위 피고들은 이 사건 구매계약의 직접적 효력을 받는 당사자로서 피고 조합과 연대하여 계약금액 환수의무가 있다고 주장하여, 위 피고들에게 단체적 계약의 효력을 직접 받는 조합원으로서의 책임을 묻고 있음이 명백하다.</span>
+      </p><p>
+        <span class="accrnt_txt">그러므로 원심으로서는 위 피고들에게 위 관계 법령의 규정에 따라 단체적 계약의 효력을 직접 받는 조합원으로서의 책임이 있는지 여부만을 심리·판단하였어야 할 것인데, 이 사건 구매계약의 당사자를 위 피고들로 보고 원고가 주장하지도 아니한 원고와 위 피고들 사이의 이 사건 구매계약에 기한 책임을 인정하였으니, 이 점에서 원심판결은 변론주의에 위반한 위법을 범하였다</span> 할 것이다.
+      </p><p>  그러나 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|35|">중소기업협동조합법 제35조 제2항</a></span>에 의하면 단체적 계약은 직접 조합원에 대하여 효력을 가진다고 규정되어 있는바, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="중소기업협동조합법|35|">위 법 제35조 제2항</a></span>의 의미는 조합으로부터 단체적 계약의 수혜(물량배정)를 받은 조합원은 그 단체적 계약의 효력을 직접 받아 그에 기한 책임도 부담한다는 취지라고 볼 것이므로, 위 피고들은 이 사건 구매계약의 효력을 직접 받아 그에 기한 책임을 지지 않을 수 없고, 따라서 원심의 위와 같은 위법은 판결 결과에 아무런 영향이 없다고 하겠다. 논지는 이유 없다.
+      </p><p>  3. 피고 회사와 피고 민복임의 상고이유 제2점에 대하여</p><p>  원심판결 이유에 의하면, 원심은 그 거시 증거에 의하여, 이 사건 구매계약의 특수조건 제7조(또는 제8조)에 의한 계약금액 환수청구권의 발생요건을 계약상대자가 부정한 방법을 사용하고 그로 말미암아 계약금액 결정에 하자 또는 착오가 있었으며 또한 계약금액이 부당하게 높게 되었을 때로 보고, 위 피고들이 그 판시와 같은 부정한 방법을 사용하여 원고의 담당공무원이 착오를 일으켜 계약금액이 부당하게 높게 책정되었다고 인정한 다음, 원고는 위 특수조건에 따라 위 피고들에게 환수청구권을 행사할 수 있다고 판단하였는바, 기록에 의하여 살펴보면, 원심의 위 인정과 판단은 정당한 것으로 여겨지고, 거기에 소론과 같은 이유불비, 심리미진, 채증법칙 위배 등의 위법이 있다고 할 수 없다. 논지도 이유 없다.</p><p>  4. 원고의 상고이유 제3점 및 피고 회사와 피고 민복임의 상고이유 제2점에 대하여</p><p>  원심은 그 거시 증거에 의하여, 피고 회사와 피고 민복임은 피고 조합의 다른 조합원인 소외 김경식으로부터 모포를 공급받아 아무런 추가공정 없이 이를 원고에게 공급하였으므로, 위 김경식이 원고에게 위 물품을 공급할 경우에도 위 피고들에게 공급한 가격에 조합수수료를 더한 가격으로 원고에게 공급할 수 있었음을 인정하고, 위 피고들이 조합수수료 외에 운송비, 상하차 인건비, 스티커 인쇄비, 포장비, 부가가치세, 소득세, 직원 급료, 인지대를 부대비용으로 지출하였다는 점에 관하여는 그 판시와 같은 이유로 이를 배척한 다음, 원고가 구매할 수 있었던 적정가격은 위 김경식이 위 피고들에게 공급한 가격에 조합수수료를 더한 가격이므로, 원고는 위 피고들이 원고에게 공급한 가격과 위 적정가격의 차액에 대하여 환수청구권을 행사할 수 있다고 판단하였다.</p><p>  기록에 의하여 살펴보면, 원심이 위 피고들 주장의 부대비용 지출의 점을 배척한 데에 소론과 같은 이유불비, 심리미진, 채증법칙 위배 등의 위법이 있다 할 수 없으므로 위 피고들의 상고논지는 이유 없으나, 한편, 위 조합수수료는 부당하게 고액으로 책정된 위 피고들의 원고에 대한 공급가격에 대한 것임이 분명하므로, 원심으로서는 원고가 구매할 수 있었던 적정가격을 산출함에 있어 위 조합수수료를 전액 고려할 것이 아니라 위 김경식이 위 피고들에게 공급한 가격에 대한 조합수수료만을 고려하였어야 할 것이다. 이 점을 지적하는 원고의 상고논지는 이유 있다.</p><p>  5. 원고의 상고이유 제2점에 대하여</p><p>  기록에 의하면, 
+        <span class="accrnt_txt">이 사건 구매계약의 특수조건 제7조(또는 제8조) 제1항은 계약 체결 후라 할지라도 계약금액 결정에 하자 또는 착오가 있어 동 계약금액을 감액하여야 할 사유가 발생하였을 경우와 이미 체결된 계약상의 물품 구매가격이 타관서의 동종 물품 구매가격에 비하여 현저히 고가인 경우에는 계약 담당공무원이 정하는 금액을 감액 또는 환수 조치할 수 있다고 규정하고, 제2항은 계약자는 하시라도 가격 증빙자료의 제시 또는 열람 요구에 응하여야 하며 가격 증빙자료의 위조, 변조 또는 정당한 이유 없이 증빙자료 제시에 불응하거나 기타 사실과 상이한 가격자료의 제출 사실이 발견된 경우 계약 담당공무원은 이에 따라 계약금액을 일방적으로 감액, 수정 또는 환수 조치할 수 있다고 규정하고 있음을 알 수 있는바, 이는 원고가 계약자에게 정당한 가격을 제시할 의무를 부과하고 그 의무불이행시 그로 인한 손해배상청구권을 취득한다는 취지라고 할 것이므로, 원고의 피고들에 대한 이 사건 계약금액 환수청구권은 일종의 채무불이행으로 인한 손해배상채권으로서 과실상계의 대상이 된다</span> 할 것이다. 
+      </p><p>  같은 취지에서 원심이 원고에게도 그 판시와 같은 과실이 있다 하여 이를 참작하였음은 정당하고, 거기에 소론과 같이 이 사건 계약금액 환수청구권의 법적 성질을 오해한 법리오해의 위법이 있다 할 수 없다. 논지는 이유 없다.</p><p>  6. 원고의 상고이유 제3점 및 피고 회사와 피고 민복임의 상고이유 제3점에 대하여</p><p>  손해배상 사건에서 채권자에게 손해의 발생이나 확대에 관하여 과실이 있는 경우에는 배상책임의 범위를 정함에 있어 당연히 이를 참작하여야 할 것이나, 과실상계의 사유에 관한 사실인정이나 그 비율을 정하는 것은 그것이 형평의 원칙에 비추어 현저히 불합리하다고 인정되지 않는 한 사실심의 전권사항에 속한다고 할 것인바, 기록에 의하여 인정되는 이 사건 구매계약의 체결과정 등 제반 상황에 비추어 보면, 원심이 원고의 과실 비율을 30%로 인정한 것은 적절한 것으로 보여지고, 거기에 소론과 같이 과실상계에 관한 법리를 오해한 위법이 있다고 볼 수 없다. 논지 역시 이유 없다.</p><p>  그러므로 원심판결 중 피고 조합에 대한 부분 및 피고 회사와 피고 민복임에 대한 원고 패소 부분을 파기하여 이 부분 사건을 원심법원에 환송하기로 하고, 피고 회사와 피고 민복임의 상고를 모두 기각하며, 이 부분 상고비용은 그 피고들의 부담으로 하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   송진훈(재판장) 지창권 신성택(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

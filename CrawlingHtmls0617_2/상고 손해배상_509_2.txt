@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 99다55434 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2057496';
+var contIdEtc = '2106474';
+var saNo = '99다55434';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20010209' ? 
+			'20010209'.length==4 ? Date.parseExact('20010209','yyyy').toString('yyyy. M. d.') : 
+				'20010209'.length==6 ? Date.parseExact('20010209','yyyyMM').toString('yyyy. M. d.') : 
+					'20010209'.length==8 ? Date.parseExact('20010209','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 99다55434 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '99다55434';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />99다55434</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(4)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(59)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(4)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2066964">대법원 2003. 6. 27. 선고 2001다734 판결 [공2003.8.1.(183),1592]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1969969">대법원 2008. 9. 11. 선고 2006다50338 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061945">대법원 2010. 7. 15. 선고 2006다84126 판결 [공2010하,1549]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2226510">대법원 2017. 2. 15. 선고 2015다23321 판결 [공2017상,548]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|533483">공해배상소송에서의 수인한도론과 공용관련하자 이강원 韓國司法行政學會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|490773">환경오염으로 인한 배상책임의 구조 @ 위험책임과의 관계 한영표 釜山判例硏究會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|571318">환경침해로 인한 위법성판단에서의 수인한도론과 사업장 등의 무과실책임 전경운 청림출판</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|514254">위법성 판단기준으로서의 수인한도 오현규 博英社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|675038">양돈업 폐업사건 조홍식 박영사</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|504461">환경침해로 인한 위법성판단과 환경정책기본법 제31조의 효력 전경운 韓國司法行政學會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|812950">이영창 도로소음을 원인으로 한 손해배상청구 및 방지청구 올바른 재판 따뜻한 재판:. 이인복 대법관 퇴임기념 논문집   / 사법발전재단  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|617870">조은래 건설도급상의 생활환경침해에 대한 책임 비교법학 20집  / 부산외국어대학교비교법연구소  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|550698">나지원 항공기소음피해소송에 관한 연구 : 매향리 사건을 중심으로 . 경기법조 12호  / 수원지방변호사회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|533483">이강원 공해배상소송에서의 수인한도론과 공용관련하자 민사재판의 제문제 13권  / 한국사법행정학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|512227">한국. 대법원 법원행정처 재판실무편람. 제17호:. 환경재판실무편람 법원행정처  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570659">조은래 환경소송상의 입증문제에 대한 소고 환경법연구 제28권 제3호 / 한국환경법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|484196">김진우 환경행정법과 민사책임의 관계 법조 50권 12호 (2001.12) / 법조협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|493659">이경주 매향리 소음 피해소송의 헌법실천적 의의와 과제 법학연구 4집  / 인하대학교 법학연구소  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|516202">전경운 한경책임법제정의 필요성과 그 내용 환경법연구 25권 1호  / 한국환경법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581188">지영난 고속도로의 소음과 관련하여 추상적 부작위명령을 구하는 유지청구의 인정 여부 민사재판의 제문제 16권 / 한국사법행정학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495038">이경춘 소음과 환경소송 재판자료 95집 (하) / 법원도서관  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539617">최상회 무과실책임의 현대적 의미 법학연구 12권  / 충북대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653482">조민석 공해소송에 있어서 입증책임 : 입증경감을 중심으로 토지법학 27-2호  / 한국토지법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633139">김형석 민사적 환경책임 법학 52권 1호  / 서울대학교 법학연구소  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|514254">오현규 위법성 판단기준으로서의 수인한도 민사판례연구 25권  / 박영사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833688">조재헌 도로소음으로 인한 생활방해의 방지청구 : 수인한도와 이익형량을 중심으로 민사판례연구 39권  / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716619">김홍균 환경정책기본법상의 무과실책임 규정의 한계와 극복 사법 26호 / 사법발전재단  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|575702">강구철 사업손실보상 법학논총 19집  / 국민대학교 법학연구소  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662352">민정석 환경소송에서 인과관계 증명에 관한 법리 자유와 책임 그리고 동행 : 안대희 대법관 재임기념   / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558960">김규완 상린자 사이의 생활방해와 피해자를 위한 법적구제수단 Jurist 410호 : 2006년2호(물권법)(v.2006-2) / 청림출판  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|500662">한상운 생태적 환경국가원리에 관한 연구 : 헌법해석론을 중심으로 성균관대학교 대학원  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|581859">강종선 항공기소음 관련 민사소송의 제 논점 사법논집  . 제44집 44집 / 법원도서관  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|523542">이현수 공법상 허가와 민법상 책임 : 독일의 상린관계법상의 논의를 중심으로 . 행정법연구 11호 (2004.05) / 행정법이론실무학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|534540">곽용섭 민법 제217조 제1항의 '적당한 조처 사법논집  . 제38집 38집  / 법원도서관  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|542838">조은래 환경권과 생활방해에 대한 위법성판단의 연구 법학연구 18집  / 한국법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|557386">정남철 현행 도로교통소음 규제법제의 공법적 과제와 전망 환경법연구 27권 3호  / 한국환경법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|625330">문광섭 타인의 예금채권에 대한 가압류와 손해배상책임 민사집행법연구 : 한국민사집행법학회지 6권  / 한국사법행정학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653200">박연욱 건설공사 소음·진동으로 인한 손해배상 건축관련판례 50선 : 대구판례연구회 300회 발표 기념 건축관련판례 50선 / 대구판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|646459">황진호 도로소음으로 인한 인근주택 거주자들에 대한 주택건설 분양업자 및 도로설치, 관리자의 책임 판례연구 24집(2010.12) / 서울지방변호사회  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|587618">박균성 간접손실보상의 재검토 토지보상법연구 8집  / 한국토지보상법연구회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716591">김상중 불법행위에 대한 금지청구권의 판례법적 형성과 발전 : 영업이익과 계약관계 침해에 대한 예방적 보호를 중심으로 . 민사재판의 제문제 22권  / 한국사법행정학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|721133">최호진 해킹에 의한 개인정보유출과 정보통신서비스 제공자에 대한 손해배상책임에 관한 고찰 : SK컴즈 사건을 중심으로 . 법조 (통권689호) (2014. 2) / 법조협회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655520">박은경 보험을 통한 환경오염손해 배상책임위험의 전가 법학연구 45집  / 한국법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|737920">소병천 환경 보호 메커니즘에 대한 법적 고찰 아주법학 제5권 제2호 / 아주대학교 법학연구소  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|532283">손윤하 환경침해를 원인으로 한 민사송송에 관한 문제 : 일조, 조망 및 생활소음 중심으로 . 저스티스 81호  / 한국법학원  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|557382">양승업 철도환경영향평가에 관한 고찰 : 경춘선 복선전철화사업을 중심으로 . 환경법연구 27권 3호  / 한국환경법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558551">한상운 환경침해에 대한 동법구제의 문제점 및 대책 헌법학연구 12권 1호  / 한국헌법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|823744">조규석 도로소음에 대한 도로관리주체, 건축물 분양회사 등 관계자의 책임 및 소음 방지대책이 요구되는 수인한도의 기준 율촌판례연구   / 박영사  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|714817">한삼인 운동경기 중 발생한 상해와 민사책임의 성립 여부 인권과 정의 제438호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|563453">하종대 간접손실의 보상에 관한 법리 특별법연구 8권  / 사법발전재단  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|669127">조은래 토양환경의 보전과 책임 토지법학 28-1호  / 한국토지법학회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|701613">소재선 나노물질의 환경침해책임에 관한 소고 법학논총 36권 1호 / 단국대학교  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|502839">한삼인 환경오염책임 고시계 48권 5호 (2003.05) / 국가고시학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|490773">한영표 환경오염으로 인한 배상책임의 구조 : 위험책임과의 관계 . 판례연구 13집  / 부산판례연구회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|545355">정완 환경오염피해에 대한 민사책임 환경법연구 25권 2호  / 한국환경법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539791">손윤하 항공기소음에 의한 피해구제를 위한 민사소송의 문제점 법조 54권 3호 (2005.03) / 법조협회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|720319">한지형 토양오염 관련 민사소송의 제 논점 : 오염토양 정화비용을 부담한 자에 대한 책임을 중심으로 . 사법논집 . 제57집 57집 / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|557372">채우석 소음ㆍ진동에 관한 규제법제 환경법연구 27권 2호  / 한국환경법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|734394">허 현 토양오염에 대한 책임과 그 한계 규제와 법정책 제2호 / 규제법연구회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|578699">권영준 인터넷상 정보에 대한 접근 및 취득행위의 위법성 비교사법 14권 3호 상(2007.09) / 한국비교사법학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|504461">전경운 환경침해로 인한 위법성판단과 환경정책기본법 제31조의 효력 민사법학 22호  / 한국사법행정학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|507782">정진명 스팸메일에 대한 민사법적 대응방안 민사법이론과 실무 6집  / 민사법의 이론과 실무 학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|469707">정형근 도로의 설치·관리하자로 인한 국가배상책임에 관한 연구 경희대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716617">김현준 환경책임 및 환경소송의 법체계 : 한·독 비교법적 검토를 중심으로 . 사법 26호 / 사법발전재단  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|491724">서정 항공기소음을 둘러싼 민사적 분쟁에 관한 고찰 이십일세기 한국민사법학의 과제와 전망 : 심당 송상현교수화갑기념논문집   / 박영사  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|501458">남현우 환경침해의 사법상 구제에 관한 연구 충남대학교 대학원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570484">이태영 환경오염피해에 대한 배상책임의 구조 : 고의, 과실과 위법성을 중심으로 강원법학 23권  / 강원대학교 비교법학연구소  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|495036">우성만 수질오염, 해양오염과 환경소송 재판자료 95집 (하) / 법원도서관  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|533744">정광정 도로소음공해와 도로하자책임에 관한 연구 법학연구 17집  / 한국법학회  2004 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|89다카1275">
+대법원 1991. 7. 23. 선고 89다카1275 판결(공1991, 2211)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다47528">
+대법원 1999. 7. 27. 선고 98다47528 판결(공1999하, 1755)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="환경정책기본법|3|0|null">환경정책기본법 제3조 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="환경정책기본법|31|0|null">환경정책기본법 제31조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|98나36155">
+서울고법  1999. 8. 25. 선고 98나36155 판결 </a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2106474">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2001. 2. 9. 선고 99다55434 판결</h2><p class="sub_title">[손해배상(기)][집49(1)민,74;공2001.4.1.(127),606]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 적법시설이나 공용시설로부터 발생하는 유해배출물로 인하여 손해가 발생한 경우, 그 위법성의 판단 기준 </p>
+      <p></p>
+      <p>
+        </p><p>[2] 고속도로의 확장으로 인하여 소음ㆍ진동이 증가하여 인근 양돈업자가 양돈업을 폐업하게 된 사안에서, 양돈업에 대한 침해의 정도가 사회통념상 일반적으로 수인할 정도를 넘어선 것으로 보아 한국도로공사의 손해배상책임을 인정한 사례 </p>
+      <p></p>
+      <p>
+        </p><p>[3] 사업장 등에서 발생되는 환경오염으로 인하여 피해가 발생한 경우, 당해 사업자는 귀책사유가 없는 때에도 피해를 배상하여야 하는지 여부(적극) </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 불법행위 성립요건으로서의 위법성은 관련 행위 전체를 일체로만 판단하여 결정하여야 하는 것은 아니고, 문제가 되는 행위마다 개별적·상대적으로 판단하여야 할 것이므로 어느 시설을 적법하게 가동하거나 공용에 제공하는 경우에도 그로부터 발생하는 유해배출물로 인하여 제3자가 손해를 입은 경우에는 그 위법성을 별도로 판단하여야 하고, 이러한 경우의 판단 기준은 그 유해의 정도가 사회생활상 통상의 수인한도를 넘는 것인지 여부라고 할 것이다.</p>
+      <p></p><p>
+        </p><p>[2] 고속도로의 확장으로 인하여 소음·진동이 증가하여 인근 양돈업자가 양돈업을 폐업하게 된 사안에서, 양돈업에 대한 침해의 정도가 사회통념상 일반적으로 수인할 정도를 넘어선 것으로 보아 한국도로공사의 손해배상책임을 인정한 사례.</p>
+      <p></p><p>
+        </p><p>  [3] 환경정책기본법 제31조 제1항 및 제3조 제1호, 제3호, 제4호에 의하면, 사업장 등에서 발생되는 환경오염으로 인하여 피해가 발생한 경우에는 당해 사업자는 귀책사유가 없더라도 그 피해를 배상하여야 하고, 위 환경오염에는 소음·진동으로 사람의 건강이나 환경에 피해를 주는 것도 포함되므로, 피해자들의 손해에 대하여 사업자는 그 귀책사유가 없더라도 특별한 사정이 없는 한 이를 배상할 의무가 있다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>  [1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>[3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|3|">환경정책기본법 제3조 제1호</a></span>, 제3호, 제4호,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|31|">제31조 제1항 </a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|89다카1275|판결" href="#//">대법원 1991. 7. 23. 선고 89다카1275 판결(공1991, 2211)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다47528|판결" href="#//">대법원 1999. 7. 27. 선고 98다47528 판결(공1999하, 1755)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,상고인】
+      
+          원고 1 외 2인 (소송대리인 법무법인 바른법률사무소 담당변호사 김찬진 외 9인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고,피상고인】
+      
+          한국도로공사 (소송대리인 아주종합 법무법인 담당변호사 유효경 외 5인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|98나36155|판결 " href="#//">
+서울고법  1999. 8. 25. 선고 98나36155 판결 </a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>  원심판결을 파기하고, 사건을 서울고등법원에 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>  상고이유를 본다.</p><p>  1. 원심판결 이유에 의하면, 원심은 이 사건의 기본적 사실관계에 관하여, 원고들은 1993. 5. 1.부터 강원 횡성군 (주소 1 생략)필지 총 면적 2,985㎡ 지상 건축물 연면적 1,785.6㎡의 양돈장에서 법주농장의 상호로 약 1,600두의 돼지(모돈 180두, 기타 1,420두)를 양육하는 양돈업을 공동으로 경영하여 온 사실, 피고는 고속국도법 제6조 제1항의 규정에 의하여 건설교통부장관을 대행하여 고속국도를 점유ㆍ관리하는 법인으로서 1995년 1월 초경부터 1996년 1월 말경까지 약 13개월간 제4호 고속국도(영동고속도로) 중 위 양돈장 옆을 지나는 강원 원주군 (주소 2 생략)부터 강원 횡성군 (주소 3 생략)까지 사이의 구간을 기존의 2차로에서 4차로로 확장하는 공사를 시행한 사실, 위 확장공사가 완료됨에 따라 당초 65m 정도이던 위 양돈장과 고속국도 사이의 거리가 약 25m로 가까워졌고, 위 양돈장과 고속국도 사이의 자연방음벽 역할을 하던 야산이 위 도로확장을 위한 부지조성공사로 깎였을 뿐 아니라 교통량과 진행 차량의 속도의 증가 및 확장한 고속도로면을 아스팔트 대신 아스콘을 사용하는 등의 사정으로 인하여 위 고속도로에서 발생하는 소음·진동이 종전의 약 45 내지 55dB에서 평균 75dB로 증가됨으로써 위 양돈장에서의 정상적인 양돈업이 불가능하게 되어 원고들은 1996. 5. 31. 위 양돈업을 폐업한 사실을 인정한 다음, 위 양돈업 폐업에 대하여 피고는 불법행위 등에 기한 손해배상책임이 있다는 원고들의 이 사건 청구원인의 주장에 대하여는, 이 사건 도로 확장공사는 차량의 통행량 확대와 진행속도의 개선을 위한 공익사업으로 이루어진 것으로 기존의 고속국도를 확장하는 과정에서 불가피하게 방음벽 역할을 하던 야산을 깎아낸 것이고, 한편 위 양돈장을 지나는 구간에 방음벽을 설치함으로써 소음과 진동을 다소 방지할 수는 있을 것이나, 그러한 통상의 방음벽을 설치하는 경우라 하더라도 양돈업을 계속함에 여전히 지장을 가져올 것으로 보이므로 피고가 위와 같이 도로의 확장으로 인하여 발생하는 소음과 진동을 방지하거나 감소시키는 조치를 취하지 아니하였다고 하여 피고가 이 사건 도로공사를 시행하는 과정 및 그 후에 도로를 유지ㆍ관리하는 과정에서 어떠한 위법성이 있었다거나, 원고들이 양돈업을 계속하지 못하게 될 결과를 예견하고, 그러한 결과가 발생하지 않도록 어떠한 조치를 취하여야 할 의무가 존재한다고 보기 어렵고, 이 사건 공사로 인하여 인근지역에 소음과 진동이 증가하였다는 점만으로 도로 자체에 어떤 위험성이 존재한다거나 더 나아가 그 이용으로 인한 위해가 발생할 가능성이 있다고 보기도 어려워 민법 제758조 제1항의 공작물책임도 인정될 수 없다는 이유로 피고에게는 이 사건 원고들의 피해를 배상할 책임이 있지 않다고 판단하였다.</p><p>  2. 그러나 우선 원고들의 이 사건 피해에 대한 피고의 손해배상책임을 인정할 수 없다는 원심의 판단은 다음과 같은 이유에서 수긍할 수 없다.</p><p>  가. 먼저 
+        <span class="accrnt_txt">불법행위 성립요건으로서의 위법성은 관련 행위 전체를 일체로만 판단하여 결정하여야 하는 것은 아니고, 문제가 되는 행위마다 개별적·상대적으로 판단하여야 할 것이므로 어느 시설을 적법하게 가동하거나 공용에 제공하는 경우에도 그로부터 발생하는 유해배출물로 인하여 제3자가 손해를 입은 경우에는 그 위법성을 별도로 판단하여야 하고, 이러한 경우의 판단 기준은 그 유해의 정도가 사회생활상 통상의 수인한도를 넘는 것인지 여부라고 할 것이다</span>(대법원 1991. 7. 23. 선고 89다카1275 판결, 1999. 7. 27. 선고 98다47528 판결 등 참조).
+      </p><p>  원심판결에 의하더라도 피고가 점유·관리하는 위 고속도로가 확장되고 공사완료 후 차량의 교통량과 차량의 속도가 증가함에 따라 원고들이 이미 하고 있던 위 양돈업을 폐업하여야 할 만큼의 소음·진동이 발생하였다는 것인바, 그렇다면 원고들이 입은 위 피해의 성질과 내용 및 그 정도나 규모, 피해 원인과 그 밖에 기록으로 알 수 있는 위 고속도로 확장공사시나 공사완료 후의 소음정도와 일반적으로 허용되는 소음기준치, 피고가 위 고속도로 확장공사 전에 원고들의 피해를 방지하기 위하여, 고속도로 개통 후 원고들의 피해 경감을 위하여 아무런 조치를 취한 바 없는 점, 위 양돈장이 소재한 곳의 위치와 도로 근접성 및 그 주변 일대의 일반적인 토지이용관계 등 여러 사정을 종합하여 볼 때, 위 고속도로 확장공사 및 차량통행에 따른 소음으로 인한 원고들의 양돈업에 대한 침해는 그 정도가 사회통념상 일반적으로 수인할 정도를 넘어선 것이라고 볼 것이고, 따라서 고속도로의 사용이나 자동차의 통행 그 자체가 공익적인 것이고, 고속도로에서의 차량통행으로 인한 소음·진동이 불가피하게 발생한다 하더라도 그 정도가 수인한도를 넘어 원고들에게 위와 같이 양돈업을 폐업하게 하는 손해를 입혔다면 피고는 원고들에 대하여 그로 인한 손해배상책임을 면할 수 없다 할 것이다.</p><p>  나. 다음으로, 
+        <span class="accrnt_txt">환경정책기본법 제31조 제1항 및 제3조 제1호, 제3호, 제4호에 의하면, 사업장 등에서 발생되는 환경오염으로 인하여 피해가 발생한 경우에는 당해 사업자는 귀책사유가 없더라도 그 피해를 배상하여야 하고, 위 환경오염에는 소음·진동으로 사람의 건강이나 환경에 피해를 주는 것도 포함되므로, 이 사건 원고들의 손해에 대하여 피고는 그 귀책사유가 없더라도 특별한 사정이 없는 한 이를 배상할 의무가 있다고 할 것이다</span>.
+      </p><p>  다. 그럼에도 불구하고 이 사건 원고들의 피해와 관련하여 피고의 위법행위와 귀책사유를 인정할 수 없다는 이유로 피고의 불법행위로 인한 손해배상책임을 인정하지 아니한 원심의 판단에는 도로 등에서 수인한도를 넘는 소음·진동의 발생으로 인한 손해배상책임의 성립에 관한 법리를 오해한 위법이 있다고 할 것이고, 이는 판결 결과에 영향을 미쳤음이 분명하므로, 이 점을 지적하는 원고들의 주장은 이유 있다.</p><p>  3. 그러므로 나머지 상고이유에 대한 판단을 생략한 채 원심판결을 파기하고, 사건을 다시 심리·판단하게 하기 위하여 원심법원에 환송하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   송진훈(재판장) 윤재식 이규홍(주심) 손지열 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

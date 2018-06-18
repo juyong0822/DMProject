@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 90다카7262 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2093003';
+var contIdEtc = '';
+var saNo = '90다카7262';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('19901109' ? 
+			'19901109'.length==4 ? Date.parseExact('19901109','yyyy').toString('yyyy. M. d.') : 
+				'19901109'.length==6 ? Date.parseExact('19901109','yyyyMM').toString('yyyy. M. d.') : 
+					'19901109'.length==8 ? Date.parseExact('19901109','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 90다카7262 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '90다카7262';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />90다카7262</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(7)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(25)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(2)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1998636">서울고등법원 1990. 2. 2. 선고 89나23072 제7민사부판결 : 파기환송 [하집1990(1),96]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2102316">대법원 1998. 7. 10. 선고 98다6763 판결 [공1998.8.15.(64),2084]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2055065">대법원 2001. 7. 10. 선고 2001다16449 판결 [공2001.9.1.(137),1834]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2057659">대법원 2002. 1. 11. 선고 2001다60767 판결 [공2002.3.1.(149),470]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2061589">대법원 2002. 5. 10. 선고 2002다12871 판결 [공2002.7.1.(157),1379]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2060442">대법원 2009. 6. 11. 선고 2009다12399 판결 [공2009하,1119]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2152869">대법원 2014. 8. 28. 선고 2013다74363 판결 [공2014하,1852]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|800358">이혁 지연손해금과 법정이자 판례연구 27집 / 부산판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|567379">김민중 신종계약 Jurist 411호 : 2006년3호(계약법)(v.2006-3) / 청림출판  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|766935">김경수 묵시적 합의변제충당에 관한 판례 검토 청연논총 (제12집) 고 박삼봉 / 사법연수원  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|569638">최진수 지연손해금청구 사법연수원 논문집 제4집  / 사법연수원  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|38788">송덕수 이자채권 하 사법행정 34권 9호  / 한국사법행정학회  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|201450">이광범 손해배상예정액의 감액 민사판례연구 16권  / 박영사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577554">박성수 특허법 제128조 제2항에 의한 손해배상액의 산정방법 대법원판례해설 66호 (2007.07) / 법원도서관  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564069">권영준 연대보증인에 대한 보증금청구를 둘러싼 몇 가지 쟁점들 : 소멸시효, 일부공탁, 변제충당, 연대보증인의 동의없는 변제기연장에 관하여. 고시연구 33권 12호 (2006.12) / 고시연구사  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662408">서민석 부동산 명도 및 금원 지급을 명한 확정판결에 기한 강제경매절차에서 부동산 명도 집행비용 및 소송비용의 추심 특별법연구 10권 / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|570473">임건면 스포츠 중재합의와 내용통제 : 독일에서의 논의를 고려하여 스포츠와 법 9권  / 한국스포츠법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251063">백태승 이자제한법 폐지에 따른 법률상의 문제점 고시연구 25권 9호 (98.08) / 고시연구사  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|236196">박기동 채권의 일부만을 집행채권으로 하여 채권압류 및 전부명령을 받은 경우 채무소멸의 효과가 미치는 범위 대법원판례해설 26호 (96.12) / 법원도서관  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539469">김동훈 스폰서계약의 법적 고찰 스포츠와 법 창간호  / 한국스포츠법학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827416">신신호 채무불이행에 채권자에게도 과실이 있는 경우 손해배상 예정액의 감액 외에 과실상계가 허용되는지 여부 대법원판례해설 제107호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539815">김재형 프로스포츠 선수계약의 불이행으로 인한 손해배상책임 인권과 정의 345호  / 대한변호사협회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539480">김은경 스포츠규약의 법적 문제 : 야구규약을 중심으로 . 스포츠와 법 2권  / 한국스포츠법학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|475387">백태승 이자제한법 폐지에 따른 문제점과 대책 인권과 정의 298호  / 대한변호사협회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|551604">장재현 전문직종사자 전속계약의 특질 법학논고 22집  / 경북대학교 출판부  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|477405">양창수 1993년 민법 판례 개관 민법연구  . 제3권   / 박영사  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|127654">최창렬 손해배상액의 예정과 위약벌에 관한 연구 성균관대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|457945">박영규 손해배상액의 예정에 관한 판례분석 사법연구 4집  / 한학문화  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|588458">한웅길 전속계약의 계약금(전속금) : 연예인의 경우를 중심으로 영산법률논총 4권 2호  / 영산대학교 법률연구소  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|633877">김민중 도핑의 민사법적 문제 법학연구 31집  / 전북대학교 출판부  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|562642">사법연수원 민사실무:. 2016. Ⅱ 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|465431">김동훈 신종계약의 입법방향 민사법학 18호  / 한국사법행정학회  2000 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|80다3009">
+대법원 1981.5.26. 선고 80다3009 판결(공1990,13982)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|398|0|null">민법 제398조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민사소송법|261|0|null">민사소송법 제261조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|479|0|null">민법 제479조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|80다3009">당원 1981.5.26. 선고 80다3009 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|548|0|null">민법 제548조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|479|0|null">민법 제479조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|89나23072">
+서울고등법원 1990.2.2. 선고 89나23072 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1990. 11. 9. 선고 90다카7262 판결</h2><p class="sub_title">[손해배상(기)][집38(3)민,46;공1991.1.1.(887),39]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 배구선수의 전속계약시 손해배상액의 예정비율을 연 2할 5푼으로 정하였으나 원심이 연 6푼으로 감액한 것이 부당하다고 본 사례</p>
+      <p></p>
+      <p>
+        </p><p>나. 변제충당의 순서를 지정하는 소송당사자의 주장이 자백의 대상이 되는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>다. 변제충당의 순서</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 배구단운영회사와 배구선수가 전속계약을 체결함에 있어 선수의 위약시의 손해배상액의 예정비율을 연 2할 5푼으로 정하였으나 선수가 계약을 불이행하고 다른 구단에 입단한 경우, 전속계약을 불이행하게 된 것이 전속계약 당시 회사측에서 소속 학교측의 추천의사를 확인하지 아니하고 전속계약을 체결하여 사후에 이를 알게 된 학교측이 추천을 거부하였기 때문이었다는 점 및 선수가 받은 돈의 대부분을 반환하였다는 점 등을 고려할 때 당초 약정된 손해배상액의 예정비율을 감액하는 것 자체는 수긍할 수 있다 하겠으나 원심이 연 6푼의 비율로 감액한 조치는 위 선수가 상인인 위 회사에 대하여 당연히 지급의무를 부담하는 상사법정이율에 불과하여 이는 결과적으로 손해배상액 예정에 관한 약정자체를 전면 부인하는 것과 같은 결과로 되기 때문에 부당하다.</p>
+      <p></p><p>
+        </p><p>나. 자백이라 함은 소송당사자가 자기에게 불리한 사실을 인정하는 진술을 말하는 것으로 변제충당의 순서를 지정하는 소송당사자의 주장은 자백의 대상이 되는 사실에 관한 진술이라 할 수 없다.</p>
+      <p></p><p>
+        </p><p>다. 비용, 이자, 원본에 대한 변제충당의 순서는 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|479|">민법 제479조</a></span>에 법정되어 있으므로 당사자 사이에 그와 다른 특별한 합의가 있었다거나 일방의 지정에 대하여 상대방이 지체 없이 이의를 제기하지 아니함으로써 묵시적 합의가 되었다고 보여지는 경우 등 특단의 사정이 없는 한 위의 법정순서에 의하여 변제충당이 이루어져야 하는 것이며, 채무자는 물론 채권자라 할지라도 그와 다르게 일방적으로 충당의 순서를 지정할 수 없다.
+        
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|398|">민법 제398조</a></span> 나.                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|261|">민사소송법 제261조</a></span> 다.                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|479|">민법 제479조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">다.                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|80다3009|판결" href="#//">대법원 1981.5.26. 선고 80다3009 판결(공1990,13982)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+          주식회사 금성사   소송대리인 변호사 전정구
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+          이재필 외 1인 피고들   소송대리인 변호사 이영수 외 1인
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|89나23072|판결" href="#//">
+서울고등법원 1990.2.2. 선고 89나23072 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 원고 패소부분을 파기하고 이 부분 사건을 서울고등법원에</p><p>  환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  원고 소송대리인의 상고이유에 대하여,</p><p>  1. 원심판결 이유에 의하면, 원심은 그 채택증거에 의하여 1985. 7. 8. 원고와 피고 이재필 사이에 피고 이재필은 재학중인 한양대학교를 졸업하거나 위 대학교 배구단을 이탈한 경우에는 곧 원고회사 운영의 금성배구단에 입단하며, 타배구단에 이중으로 선수등록을 하지 않기로 함에 있어, 원고는 위 피고에게 전속금을 지급하는 외에 매월 또는 정기적으로 격려금을 지급하기로 하고, 
+        
+        <span class="accrnt_txt">만약 위 피고가 전속계약에 따른 의무를 이행하지 아니할 경우에는 위 피고는 원고로부터 수령한 위 전속금과 격려금 및 이에 대한 각 수령일로부터 연 2할 5푼의 비율에 의한 금원과 그 이외에 위 피고의 계약불이행으로 인하여 원고가 입은 일체의 손해를 배상하기로 하는 내용의 이른바 전속계약을 체결하고,</span> 피고 이병준은 피고 이재필의 아버지로서 피고 이재필이 원고에 대하여 부담하는 위 전속계약상의 채무를 연대보증한 사실 및 원고는 위 전속계약에 따라 피고 이재필에게 1985. 7. 11. 전속금으로 금 6천만원을 지급한 외에 매월 격려금 명목으로 금원을 지급하여 왔으나 피고 이재필은 위 전속계약에 위배하여 1987. 11. 3. 원고에게 그 동안 원고로부터 수령한 금원 중 금 73,676,370원을 반환하면서 위 전속계약을 파기한다는 의사표시를 통지하고 그후 소외 고려증권주식회사가 운영하는  배구단에 입단한 사실을 인정하고, 피고들은 연대하여 원고에게 손해를 배상할 의무가 있다고 판시하면서 원고와 피고들 사이에 체결된 손해배상액의 예정 가운데 피고 이재필이 수령한 금원에 대하여 연 2할 5푼의 비율에 의한 금원을 가산하여 배상하기로 한 부분은 그 손해배상액의 예정비율에 있어서 너무 과다하여 부당하므로 그 비율을 연 6푼 정도로 감액함이 상당하다고 판단하였다. 이와 같이 감액하여야 하는 이유로서 원심은 
+        
+        <span class="accrnt_txt">이 사건 전속계약 당시 이미 대한배구협회에서 배구선수의 스카우트에 따르는 부작용과 사회적인 물의를 예방하기 위하여 배구선수의 실업팀 입단에는 반드시 그 선수가 소속되어 있는 학교의 장의 추천을 받을 것을 요건으로 함으로써 소속학교를 통하여 스카우트교섭을 하도록 지침을 정하여 이를 시행하고 있다는 사실을 알고 있었음에도 불구하고 피고 이재필을 원고구단에 입단시키기 위하여 위 방침을 따르지 아니한 채 임의로 피고 이재필에게만 접근하여 위 피고 소속학교의 원고구단에 대한 추천의사의 유무도 확인되지 아니한 상태에서 "원고 회사측에서 위 학교장 추천문제는 알아서 처리할 터이니 원고구단에 입단하라"고 권유하였고, 이에 피고 이재필은 이를 그대로 믿고 앞에서 본 바와 같은 전속계약을 체결하였으나 그 후 한양대학교에서는 위와 같은 사실을 알고 선수스카우트제도에 관한 질서유지의 차원에서 위 피고를 원고구단에 추천하기를 거부하여 끝내 위 피고는 학교장 추천이 불가능하여 원고구단에 입단할 수가 없게 됨에 따라 위 전속계약을 파기하기에 이른 사실과 이에 덧붙여 위 피고가 전속계약의 해제 의사표시를 하면서 원고로부터 수령한 금원의 대부분을 반환한 사실을 고려하는 것으로 설명하였다. 원심이 인정한 위와 같은 사실관계에서 볼 때 당초 약정된 손해배상액의 예정비율을 감액 인정한 것 자체는 수긍할 수 있다 하겠으나 그 감액의 정도가 너무 지나쳐서 합리성을 인정하기 어렵다고 생각된다.</span> 왜냐하면 이 사건은 원고와 피고 이재필 사이의 전속계약이 해제됨에 따른 법률관계의 간명한 청산을 위하여 손해보상액을 예정한 것인데 당초부터 위와 같은 손해배상액의 예정에 관한 약정이 없었다 하더라도 계약해제의 일반적 효과로서 위 피고는 원고에 대하여 원상회복의무를 지게 되고, 그 의무의 내용으로서 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|548|">민법 제548조 제 2 항</a></span>에 따라 위 피고는 원고로부터 이미 지급받은 금액 및 그에 대한 법정이자(이 사건의 경우 원고가 상인이므로 상사법정이자)를 붙여 반환하여야 하는 것인바, 
+        
+        <span class="accrnt_txt">원심이 감액 인정한 연 6푼의 비율은 위 피고에게 당연히 지급의무를 부담하는 상사법정이율에 불과하여 이는 결과적으로 손해배상액 예정에 관한 약정자체를 전면 부인하는 것과 같은 결과로 되기 때문이다.</span>
+      </p><p>  이와 같은 원심판결의 잘못은 판결결과에 영향을 미쳤음이 분명하다. 논지는 이유있음에 돌아간다.</p><p>  2. 기록에 의하면, 원고는 원심 제2차 변론기일에서 1989. 9. 11. 자 청구취지정정 및 청구원인보충서를 진술하였는바, 그 내용의 요지는 원고가 제1심법원에서 피고 이재필이 원고에게 반환한 금 73,676,370원에 대하여 격려금과 전속금의 일부로 변제충당한 것으로 착오계산했던 것을 바로 잡아서 전속금과 격려금에서 일부 변제일까지 발생한 지연손해금에 먼저 충당한 것으로 계산한다는 것이다.</p><p>  그런데 원심은 이에 대하여, 원고가 제1심 제1차 변론기일에서 피고 이재필이 원고에게 반환한 위 금원을 전속금과 격려금의 원금 일부로 변제 충당하였다고 스스로 자백하였고, 피고들은 제1심 제6차 변론기일에서 피고 이재필이 원고로부터 수령한 금원을 모두 반환하였다고 진술하고 있어 결국 원고의 위 변제충당 주장은 피고들이 이를 원용한 것으로 보아야 할 것이므로 원고는 위 자백을 철회할 수가 없다 할 것이고, 가사 원고의 당심에서 한 위 주장을 원심에서 한 위 자백을 취소하는 뜻으로 본다 하더라도 위에서 인정하는 각 사실에 비추어 볼 때 원고의 위 자백이 진실에 반하고 착오에 기인한 것이라고 인정할 만한 아무런 자료도 없으므로 원고의 위 자백의 취소는 받아들이지 아니한다고 판시하고 위 반환금을 전속금과 격려금의 원금에 먼저 충당하였다.</p><p>  그러나 
+        
+        <span class="accrnt_txt">자백이라 함은 소송당사자가 자기에게 불리한 사실을 인정하는 진술을 말하는 것으로서 변제충당의 순서를 지정하는 소송당사자의 주장은 자백의 대상이 되는 사실에 관한 진술이라 할 수 없는 것이다.</span> 따라서 원심이 위와 같은 원고의 주장을 자백으로 취급한 것은 잘못이라 할 것이다. 뿐만 아니라 피고들이 채무의 완제를 주장하였다 하여 원고의 변제충당에 관한 주장을 원용한 것이라고 본 것도 지나친 의제라 아니할 수 없다. 한편 
+        
+        <span class="accrnt_txt">비용, 이자, 원본에 대한 변제충당의 순서는 
+          
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|479|" style="text-decoration:underline">민법 제479조</a></span>에 법정되어 있으므로 당사자 사이에 그와 다른 특별한 합의가 있었다거나 일방의 지정에 대하여 상대방이 지체없이 이의를 제기하지 아니함으로써 묵시적인 합의가 되었다고 보여지는 경우 등 특단의 사정이 없는 한 위의 법정순서에 의하여 변제충당이 이루어져야 하는 것이며, 채무자는 물론 채권자라 할지라도 그와 다르게 일방적으로 충당의 순서를 지정할 수 없는 것이므로
+        
+        </span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|80다3009|판결" href="#//">당원 1981.5.26. 선고 80다3009 판결</a></span> 참조)당사자 사이에 변제충당의 순서에 관한 특별한 합의가 있었다고 보여지지 아니하는 이 사건에 있어서 변제충당의 순서는 위의 법정순서에 의하여 이루어져야 하는 것이다. 그리하여 원고가 그에 어긋나는 당초의 주장을 위의 법정순서에 맞추어 변경하는 것을 허용하지 못할 이유가 없는 것이다.
+      
+      </p><p>  그럼에도 불구하고 원심이 변제충당의 순서를 지정한 원고의 주장을 자백으로 취급하여 그에 관한 주장의 변경을 허용하지 아니한 채 위 반환금을 법정순서와는 달리 이자 보다 먼저 원금의 변제에 충당한 것은 자백과 자백의 철회에 대한 법리오해 및 
+        
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|479|">민법 제479조</a></span>의 변제충당의 순서에 관한 법리를 오해한 위법이 있다 할 것이다. 논지는 이유있다.
+      
+      </p><p>  이에 원심판결 중 원고 패소부분을 파기하고 이 부분 사건을 원심법원에 환송하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   윤영철(재판장) 박우동 이재성 김용준 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

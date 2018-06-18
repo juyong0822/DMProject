@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2005나100627 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2036654';
+var contIdEtc = '';
+var saNo = '2005나100627';
+var sngoNm = '선고';
+var saNm = '해고무효확인및임금';
+try {
+	var sngoDay=('20060623' ? 
+			'20060623'.length==4 ? Date.parseExact('20060623','yyyy').toString('yyyy. M. d.') : 
+				'20060623'.length==6 ? Date.parseExact('20060623','yyyyMM').toString('yyyy. M. d.') : 
+					'20060623'.length==8 ? Date.parseExact('20060623','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2005나100627 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2005나100627';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2005나100627</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|93다26496">대법원 1994. 9. 30. 선고 93다26496 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96누16063">대법원 1997. 6. 24. 선고 96누16063 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|95다53102">대법원 1996. 4. 23. 선고 95다53102 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="의정부지방법원|2004가합5270">의정부지방법원 2005. 10. 6. 선고 2004가합5270 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2006. 6. 23. 선고 2005나100627 판결</h2><p class="sub_title">[해고무효확인및임금][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 부대항소인】
+      
+        
+          원고(소송대리인 법무법인 시민 담당변호사 강기탁)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 부대피항소인】
+      
+        유한회사 철원콜택시(소송대리인 변호사 박문우외 1인)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2006. 6. 2.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="의정부지방법원|2004가합5270|판결" href="#//">의정부지방법원 2005. 10. 6. 선고 2004가합5270 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심 판결 중 피고 패소부분을 취소하고, 그 부분에 해당하는 원고의 청구를 기각한다. </p><p>2. 원고의 부대항소 및 항소심에서 추가된 해고무효확인 청구를 모두 기각한다. </p><p>3. 소송의 총비용은 원고가 부담한다. </p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p>  피고의 원고에 대한 2003. 4. 10.자 해고는 무효임을 확인한다(원고는 항소심에 이르러 해고무효확인 청구를 추가하였다). 피고는 원고에게 ① 41,320,000원 및 이에 대하여 이 사건 소장 부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율에 의한 돈, ② 2004. 8. 1.부터 원고를 복직시킬 때까지 월 2,307,000원의 비율에 의한 돈을 각 지급하라.  </p>
+      <p>2. 항소취지</p>
+      <p>  주문 제1항과 같다.</p>
+      <p>3. 부대항소취지</p>
+      <p>  제1심 판결 중 다음에서 추가로 지급을 구하는 원고 패소부분을 취소한다. 피고는 원고에게 ① 12,729,289원 및 이에 대하여 이에 대하여 이 사건 소장 부본 송달 다음날부터 다 갚는 날까지 연 20%의 비율에 의한 돈, ② 74,419원(2,307,000원×1/31) 및 2004. 8. 2.부터 원고를 복직시킬 때까지 월 490,787원의 비율에 의한 돈을 각 지급하라.      </p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>  다음 사실은 당사자 사이에 다툼이 없거나, 갑 제1호증, 갑 제2, 3호증의 각 1, 2, 갑 제4, 5호증, 을 제8호증의 각 기재에 변론 전체의 취지를 종합하여 인정할 수 있다. </p><p>  가. 피고는 강원 철원군 동송읍 이평리 708-25에서 택시운송업을 하는 회사이고, 원고는 피고 소속 택시 운전기사로 근무하던 중 2003. 4. 10. 해고된 사람이다. </p><p>  나. 피고는 2003. 4. 10. 원고에 대한 징계위원회를 개최하여 ‘매일 납부하여야 할 사납금(공금) 988,000원을 개인적으로 유용하여 회사 경영에 막대한 피해를 끼치고, 그 잘못에 대하여 반성하지 아니하여 더 이상 근로계약을 지속시킬 수 없다’는 것을 사유로 하여 같은 날 원고를 징계해고하였다(이하 ‘이 사건 해고’라 한다). </p><p>  다. 원고는 이 사건 해고에 대하여 강원지방노동위원회에 부당해고 및 부당노동행위 구제신청을 하여 2003. 10. 23. 징계 종류 중 가장 무거운 처분인 해고를 한 것은 재량권남용이라는 이유로 부당해고 결정을 받았으나 부당노동행위에 대하여는 기각결정이 내려졌다. 원고 및 피고가 신청한 재심사건에서 중앙노동위원회는 2004. 5. 7. 위 초심결정 중 부당해고 부분은 유지하고, 부당노동행위 부분을 취소하여 원고에 대한 해고는 부당노동행위라고 결정하였다. 이에 대하여 피고가 행정소송을 제기하지 아니하여 위 재심결정은 확정되었다.</p><p>  라. 피고 취업규칙 중 이 사건 해고 관련 규정은 다음과 같다. </p><p>   제17조(운송수입금 입금)</p><p>      1. 종업원은 1일 영업 후에는 당일 운송수입금 전액을 회사에 입금하여야 한다(정액제). </p><p>      2. 입금 시간은 노사합의로 정한 시간으로 한다.</p><p>   제36조(해고) </p><p>     종업원이 다음 각 호에 저촉될 때에는 징계위원회에 회부하여 해고한다. </p><p>       6. 운송수입금 유용 및 횡령하거나 회사 자산을 절취한 자 및 3일 이상 입금 미납자</p><p>   제37조(징계)</p><p>       1. 전조에 미달되는 종업원의 귀책사유에 대하여 그 경중에 따라 해고를 사전 예방코자 과실이 경미한 경우 다음과 같이 징계를 구분한다. </p><p>        ① 경고, ② 견책, ③ 감봉, ④ 정직</p><p>   제38조(징계위원회 구성)</p><p>      1. 징계위원회는 노, 사 각 2명으로 구성하여 과반수 이상의 찬성에 따라 결정한다. </p><p>2. 해고무효확인 청구에 관한 판단</p><p>  가. 당사자의 주장</p><p>   원고는 다음과 같은 여러 가지 이유를 들어 이 사건 해고는 무효라고 주장한다. 이에 대하여 피고는 원고에게 앞서 본 바와 같은 징계사유가 있어 피고 취업규칙에 따라 이 사건 해고를 한 것이므로 정당하다고 주장한다.  </p><p>   ⑴ 절차적 정당성에 관하여 </p><p>    ① 피고가 이 사건 해고를 위하여 징계위원회를 개최하면서 피고로부터 징계사유를 사전에 통보받거나 그에 관하여 소명할 기회를 부여받지 못하여 이 사건 해고는 중대한 하자가 있고, ② 피고의 취업규칙상 징계위원회 구성은 노사 동수로 하도록 규정하여 징계의 공정성을 담보하도록 하고 있는데 이에 위반하여, 회사측 징계위원들 자격도 문제될 뿐 아니라, 근로자측 징계위원 2명을 근로자들을 대표하는 조직(당시 피고 근로자들의 경우 ‘우신상조회’가 이에 해당한다)이 위촉하도록 하지 아니하고 피고 대표이사가 일방적으로 위촉을 하였고, 그에 따라 구성된 징계위원회에서 이 사건 해고가 이루어진 것이므로 중대한 하자로 절차적 정당성이 없다. 따라서 이 사건 해고는 무효이다. </p><p>   ⑵ 실체적 정당성에 관하여 </p><p>    ① 원고의 운송수입금 미납은 원고가 운송수입금을 유용하거나 횡령한 것은 아니므로 해고사유에 해당하지 아니하며, 또 일일 단위로 입금되기 보다는 2~3일 또는 1주일 심지어 10일 단위 등으로 이루어지고 있는 피고 소속 기사들의 운송수입금 납입관행에 비추어 보아도 원고에게 해고사유가 없다고 할 것이고, ② 원고가 운송수입금을 미납하게 된 것은 업무 수행 중 발생한 교통사고에 따른 손해배상책임을 전적으로 근로자에게 부담시키는 피고의 부당한 책임전가로 인하여 사채를 빌리게 되어 그로 인하여 겪은 경제적 어려움 때문에 부득이하였던 점, 원고가 이 사건 해고 이전에 미납운송수입금을 모두 납입하였을 뿐 아니라 그 액수가 다른 기사들에 비하여 큰 편도 아니며 통상적인 수준인 점, 액수가 훨씬 큰 
+        소외 1의 경우 피고가 계속 근무하도록 허용하였던 점 등을 고려하면 이 사건 해고는 사유에 비하여 지나치게 중한 징계라 할 것이므로 실체적 정당성이 없다고 할 것이다. 따라서 이 사건 해고는 무효이다. 
+      </p><p>   ⑶ 부당노동행위, 신의칙 등</p><p>    ① 원고가 주도적 역할을 하면서 피고 사업장에 전국민주택시노동조합 소속 노동조합을 결성하자 노조활동을 혐오한 피고가 이를 방해하기 위하여 원고를 포함한 노조원들을 연달아 해고하였는데 비위사실에 비추어 과중한 처분인 것을 고려하면, 이 사건 해고는 부당노동행위에 해당하여 무효이고, ② 또한 이미 이 사건 해고가 부당해고에 해당한다는 결정이 노동위원회로부터 있었고 피고가 이에 승복하고 행정소송을 제기하지 아니하여 확정된 사정을 감안하면, 피고가 이 사건 소송에서 다시 이 사건 해고의 정당성을 다투는 것은 신의칙이나 금반언의 원칙에 반하여 허용될 수도 없는 것이다. </p><p>  나. 인정사실</p><p>   다음 사실은 갑 제2, 3호증의 각 2, 갑 제6호증, 갑 제15호증의 1 내지 3, 을 제1호증의 1 내지 9, 을 제3호증의 1 내지 20, 을 제4호증, 을 제5호증의 1 내지 5, 을 제6호증의 1 내지 8, 을 제7호증의 1 내지 5, 을 제8, 9호증, 을 제14호증의 1 내지 8, 을 제18, 20호증, 을 제21호증의 1 내지 4, 을 제25호증의 7, 을 제28, 31호증의 각 기재, 제1심 증인 
+        소외 2의 증언에 변론 전체의 취지를 종합하여 인정할 수 있다. 
+      </p><p>   ⑴ 피고 임금협정서 등에 의하여 피고 소속 운전기사들은 1일 운행에 의한 운송수입금 중 일정금액(이하 ‘사납금’이라 한다)을 월 26일 간 회사에 입금하고 사납금을 제외한 나머지 운송수입금은 모두 근로자의 수입으로 하기로 하는 소위 ‘사납금제’ 방식으로 근무를 하였고, 피고는 그 외에 별도로 운전기사들에게 월급으로 소정의 임금을 지급하는 것으로 하여 회사를 운영하고 있었다.</p><p>   ⑵ 피고 소속 운전기사들의 사납금은 1일 단위로 매일 납입하는 것을 원칙으로 하되, 장거리 운행 등 예외적인 경우에 납입유예를 허용하고 있다. 그런데 일부 기사들이 2~3일 또는 1주일 단위 등으로 사납금을 납입하는 경우가 종종 있었고, 피고는 이러한 납입형태를 문제 삼지 아니하고 묵인하여 주었다.  </p><p>   ⑶ 원고는 2002. 9. 1.경 피고에 입사하여 시용기간 3개월을 거친 후 2002. 12. 1.부터 고정승무기사로 근무하여 왔는데, 원고의 경우 1일 사납금은 76,000원이고, 월급은 310,000원이었다.  </p><p>   ⑷ 원고는 2003. 3. 15. 택시운행 중 본인의 과실로 교통사고를 일으켰다. 위 사고로 발생한 대인·대물 손해에 관하여는 피고가 가입된 공제조합을 통하여 처리를 하였으나, 자기차량손해공제에는 가입하지 않았기 때문에 차량 수리비는 처리하지 아니하였다. 그런데 위 사고는 피고 취업규칙(제13조)에서 정하고 있는 원고의 중대한 과실로 발생한 사고(중대한 10개항목 교통사고)로서 원고가 피고에게 그 손해를 보상할 의무가 있고, 그에 따라 원고는 위 사고에 의한 차량 수리비 1,400,000원 및 수리기간 동안의 사납금 228,000원 합계 1,628,000원을 피고에게 보상할 채무를 부담하게 되었다. </p><p>   ⑸ 그런데 원고는 2003. 3. 13.경부터 2003. 3. 30.경까지 택시운행을 하였으나 그 운송수입금 중 13일치에 해당하는 사납금인 988,000원(이하 ‘이 사건 사납금’이라 한다)을 피고에게 납입하지 아니하였다.  </p><p>   ⑹ 피고는 원고 등 사납금을 연체하고 있는 운전기사들에게 2003. 3. 31.경, 2003. 4. 2.경 등 수차례에 걸쳐 사납금 성실 납입을 독촉하였고, 불성실 미납자들에게는 시말서나 각서를 받는 등의 조치를 취하였다. 그러나 원고가 여전히 이 사건 사납금을 납입하지 아니하자 2003. 4. 10.자로 징계위원회가 개최된다는 사실을 통지하였다. 그러자 비로소 원고는 2003. 4. 10. 징계위원회 개최 직전 이 사건 사납금을 납입하였으나, 피고는 원고에게 사납금 연체와 관련하여 소명할 기회를 준 다음 징계위원회를 개최를 속행하여 이 사건 해고를 하게 되었다.</p><p>   ⑺ 위 징계위원회의 징계위원으로는 회사측에서 삼우택시 주식회사(이하 ‘삼우택시’라 한다) 대표이사인 
+        소외 3과 그의 부인 
+        소외 4가, 근로자측에서 
+        소외 5, 
+        6이 각 참석하였고, 징계위원들 모두 피고 대표이사의 위촉에 따라 선임이 되었다. 그리고 징계위원들의 만장일치로 이 사건 해고가 의결되었다.  
+      </p><p>   ⑻ 한편, 피고 소속 근로자 
+        소외 1은 2003. 4. 11. 사납금 2,862,000원을 연체하였다는 사유로 해고되었다가, 사납금의 변제를 약속한 후 2003. 6. 2. 재입사 형식으로 복직되었다.
+      </p><p>   ⑼ 피고와 삼우택시는 공동운수협정을 체결하고 주차장을 공동으로 사용하는 등 실질적으로 하나의 사업장으로 운영하고 있다. 그런데 피고 및 삼우택시의 근로자들이 2003. 3. 20. 전국민주택시노동조합 소속 노동조합인 대신·삼우 분회를 설립하는 총회를 개최하고, 2003. 4. 1. 피고에게 노조설립을 통보하였다. 그 무렵 삼우택시의 근로자로 위 분회 위원장인 
+        소외 7이 2003. 3. 31.자로, 대의원인 
+        소외 8이 2003. 4. 7.자로, 피고 소속으로 대의원인 
+        소외 9가 2003. 4. 8.자로, 사무장인 원고가 2003. 4. 10.자로 각 소속 회사로부터 해고되었다.   
+      </p><p>  다. 판단</p><p>   ⑴ 절차적 정당성에 관한 주장</p><p>     ㈎ 징계사유 미통지와 소명 기회 미부여</p><p>      피고가 원고에게 사전에 이 사건 해고사유를 알려주었고 소명할 기회를 준 사실은 앞서 인정한 바와 같을 뿐 아니라, 이러한 사실은 원고가 그 내용에 관하여 자필로 기재하고 서명한 진술서(을 제1호증의 2)에 의하면 명백하다고 할 것이다. 또한 피고의 취업규칙에 징계사유의 사전통고 및 진술기회 부여에 관한 절차가 규정되어 있지 아니한 사실은 앞서 본 바와 같으므로, 이러한 경우 그러한 절차를 거치지 아니하고 징계처분을 하였다고 하더라도 징계의 효력에는 영향이 없다고 할 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|93다26496|판결" href="#//">대법원 1994. 9. 30. 선고 93다26496 판결</a></span> 참조). 원고의 위 주장은 이유 없다. 
+      </p><p>     ㈏ 징계위원회 구성상 하자</p><p>      피고의 취업규칙에 징계위원회의 구성에 대하여 ‘징계위원회는 노, 사 각 2명으로 구성하여’라고만 하고 있을 뿐 징계위원의 자격이나 선임절차에 관하여는 아무런 규정을 두고 있지 아니한 사실은 앞서 본 바와 같다. 따라서 징계위원의 자격이나 선임절차에 대하여 따로 문제 삼을 수 없다고 할 것이고, 피고가 취업규칙에 정해진 바에 따라 노측 및 사측 징계위원 각 2명으로 하여 규정된 형식을 갖추어 징계위원회를 구성한 다음 이 사건 해고를 결의한 것이므로, 근로자측 징계위원 2명이 피고 대표이사에 의하여 위촉되었다는 사실만으로써 그 구성에 어떠한 절차적 하자가 있다고 보기는 어렵다고 할 것이다. 나아가 근로자측 징계위원인 
+        소외 5, 
+        6이 근로자측의 견해를 대변할 수 있는 사람이 아니어서 그 자격이 없기 때문에 규정에 위반하여 징계위원회를 구성하였다고 볼 만한 증거도 없다. 원고의 위 주장은 이유 없다.
+      </p><p>   ⑵ 실체적 정당성에 관한 주장</p><p>     ㈎ 해고사유 부존재</p><p>      위 인정사실과 같이 원고가 택시운행을 하고도 이 사건 사납금을 납입하지 않다가 2003. 4. 10. 이를 한꺼번에 납입한 것은 운송수입금을 유용한 행위로서 피고의 취업규칙 제36조 제6호에 정한 해고사유에 해당한다고 할 것이다. 원고는 유용이나 횡령이 아니라고 주장하나, 을 제1호증의 2의 기재에 의하면 피고가 이 사건 사납금을 미납한 이유로 내세운 것은 사고로 인하여 차량수리비 지불 때문이라는 사실인데, 이는 운송수입금을 다른 용도에 사용한 것이어서 유용에 해당한다고 할 것이다. 그러하지 않더라도 위 행위는 같은 조항에서 정하고 있는 ‘3일 이상 운송수입금 입금 미납자’에 해당하기 때문에 여전히 해고사유에 해당하는 점에는 변함이 없다. </p><p>      한편, 원고는 1주일 심지어 10일 단위로 사납금의 입금이 이루어지는 관행이 있으므로 원고의 이 사건 사납금의 지연입금을 두고 해고사유로 삼을 수 없다고 하지만, 앞서 본 바와 같이 사납금의 납부는 1일 단위로 하게 되어 있고 정당한 이유가 있을 경우에만 유예를 허용하고 있는 점에 비추어 볼 때 일부 운전기사들이 사납금을 일일 단위로 납부하지 않고 피고가 그에 관하여 문제를 삼지 아니하였다고 하여 그러한 관행이 정립된 것이라고 보기는 어렵고, 오히려 정당한 이유가 없는 지연입금의 경우 원칙적으로 징계사유에 해당한다고 할 것이다. 더구나 원고가 피고로부터 이 사건 사납금의 독촉을 받았던 사실은 앞서 본 바와 같으므로 원고가 주장하는 사유만으로 이 사건 사납금 미납행위가 정당화 될 수는 없다고 할 것이다. 결국 이 사건 해고사유의 부존재에 관한 원고의 위 주장은 이유 없다. </p><p>     ㈏ 징계양정의 적정성</p><p>      앞서 본 사실관계에 의하면, ① 원고가 이 사건 사납금을 미납한 이유라는 것은 2003. 3. 15. 일으킨 교통사고로 인한 손해를 보상하는데 따른 어려움 때문이라고 하지만, 원고가 이 사건 사납금을 미납하기 시작한 것은 위 교통사고가 발생하기 이전인 2003. 3. 13.경부터이고, 이는 원고가 피고의 고정승무기사로 근무하기 시작한지 3개월 남짓 밖에 지나지 아니한 시점인 점, ② 피고가 위 교통사고로 인하여 발생한 손해 중 대인·대물 손해를 처리하여 주었을 뿐 아니라, 위 교통사고는 원고의 중대한 과실로 발생한 사고이므로 그로 인하여 발생한 손해를 근로자에게 부담시킨다는 것이 피고의 부당한 책임전가라고 보기는 어려운 점, ③ 원고가 비록 이 사건 사납금을 완납하였으나, 피고로부터 수차례 독촉을 받고 징계위원회 통지까지 받았음에도 불구하고 납입하지 아니하다가 징계위원회 개최 당일 비로소 납부한 것이므로 완납하였다는 사실만으로 앞으로 동일한 미납행위가 반복되지 않으리라고 기대하기는 어렵다고 보이는 점, ④ 원고의 미납액이 큰 편이 아니거나 통상적인 수준이라고 인정할 만한 뚜렷한 자료가 없을 뿐 아니라, 원고가 형평성을 내세우는 
+        소외 1의 경우 피고로부터 징계해고를 당한 사실에 비추어 이 사건 해고가 사유에 비하여 지나치게 중하여 형평성이 없다고 보기 어려운 점 등의 사정이 인정된다. 
+      </p><p>      이러한 여러 가지 사정과 이 사건 변론에 드러난 제반 사정, 특히 택시운송사업을 영위하는 회사로서는 운영자금을 소속 운전기사들이 매일 택시를 운행하여 회사에 납입하는 운송수입금으로 충당하는 것이 보통이고 이와 같은 영업구조에서 운전기사들이 임금협정 등에서 정한 바에 따라 성실하고 규칙적으로 운송수입금을 회사에 납입하여야 하는 것은 택시회사 운전기사로서의 기본적 의무이므로, 운전기사가 특별한 사정이 없는데도 임금협정 등에서 정한 운송수입금의 납입의무를 제대로 이행하지 아니하는 것은 근로계약에 따른 근로자의 본질적이고 기본적인 의무를 이행하지 아니하는 것으로서 이는 채무불이행이 될 뿐 아니라 일반적으로 해고사유가 된다고 보아야 하는  점을 종합하여 보면, 피고와 원고 사이의 근로관계는 사회통념상 원고의 귀책사유로 더 이상 그 계속을 기대하기 어려울 정도에 이르게 되었다고 보는 것이 상당하다. </p><p>      따라서 피고의 원고에 대한 이 사건 해고가 징계재량권을 일탈하거나 남용한 것이라고 볼 수는 없다. 징계양정의 적정성 등 이 사건 해고의 실체적 정당성을 다투는 원고의 위 주장은 이유 없다. </p><p>   ⑷ 부당노동행위 등에 관한 주장</p><p>     ㈎ 부당노동행위</p><p>      살피건대, 근로자에 대한 해고 등의 불이익처분에 정당한 이유가 있는 것으로 인정되는 경우에는 비록 사용자가 근로자의 노동조합 활동을 못마땅하게 여긴 흔적이 있다거나 사용자에게 반노동조합의사가 추정된다고 하더라도 당해 불이익처분의 사유가 단순한 표면상의 구실에 불과하다고 할 수는 없어 그와 같은 불이익처분이 부당노동행위에 해당하지 않는다고 할 것이다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96누16063|판결" href="#//">대법원 1997. 6. 24. 선고 96누16063 판결</a></span> 참조).
+      </p><p>      원고의 주장에 부합하는 듯한 갑 제2호증의 2의 기재는 그대로 믿지 아니하고, 앞서 본 바와 같이 피고와 삼우택시의 노조설립을 즈음하여 원고를 포함한 주도적 역할을 한 근로자들이 잇달아 소속 회사로부터 해고된 사실과 갑 제12호증의 1, 갑 제13호증, 갑 제14호증의 1, 갑 제29, 30호증의 각 기재만으로는 피고가 원고의 노조설립과 활동을 방해하기 위한 목적으로 이 사건 해고를 하였다고 인정하기 부족하고, 달리 이 사건 해고가 부당노동행위라고 인정할 만한 증거는 없다. 오히려 원고에 대한 이 사건 해고는 원고의 개인적인 비위사실인 이 사건 사납금의 미납행위를 이유로 피고의 정당한 징계권의 행사에 따른 것임은 앞서 본 바와 같을 뿐이다. 원고의 위 주장은 이유 없다. </p><p>     ㈏ 신의칙, 금반언의 원칙</p><p>      살피건대, 노동위원회의 사용자에 대한 구제명령은 사용자에게 이에 복종하여야 할 공법상의 의무를 부담시킬 뿐, 직접 노사간의 사법상의 법률관계를 발생 또는 변경시키는 것은 아니라고 할 것이고(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다53102|판결" href="#//">대법원 1996. 4. 23. 선고 95다53102 판결</a></span> 참조), 이러한 점에서 노동위원회로부터 부당해고라는 구제명령이 있고 확정이 되었다는 사정만으로 새로이 제기된 민사소송에서 사용자가 이를 다투는 것이 신의칙이나 금반언의 원칙에 반하여 허용될 수 없는 것이라고 하기 어렵다. 나아가 달리 피고가 노동위원회의 위 결정에 승복하였다고 인정할 만한 증거도 없다. 원고의 위 주장은 이유 없다.   
+      </p><p>3. 임금 및 위자료지급 청구에 관한 판단</p><p>  원고는 이 사건 해고가 무효임을 전제로 하여 피고에 대하여 이 사건 해고 이후 원고를 복직시킬 때까지의 임금 및 부당한 해고로 인하여 원고가 입은 정신적 충격에 대한 손해배상인 위자료로 청구취지 기재와 같은 금원을 지급하여야 한다고 주장하고 있으나, 이 사건 해고가 정당한 사유에 의한 적법한 것임은 위에서 본 바와 같다. 따라서 원고의 이에 관한 주장은 더 살펴볼 필요 없이 이유 없다.  </p><p>4. 결  론</p><p>  그렇다면, 항소심에서 추가된 해고무효확인 청구를 포함하여 원고의 이 사건 청구는 모두 이유 없어 이를 기각할 것이다. 그런데 제1심 판결은 이와 결론이 일부 달라 부당하므로, 피고의 항소를 받아들여 제1심 판결 중 피고 패소부분을 취소하고 그 부분에 해당하는 원고의 청구를 기각하며, 원고의 부대항소 및 항소심에서 추가된 해고무효확인 청구는 모두 이유 없어 이를 각 기각한다. </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김병운(재판장) 김연하 박순영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

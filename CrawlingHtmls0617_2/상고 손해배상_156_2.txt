@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2009나85122 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2036248';
+var contIdEtc = '';
+var saNo = '2009나85122';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20100318' ? 
+			'20100318'.length==4 ? Date.parseExact('20100318','yyyy').toString('yyyy. M. d.') : 
+				'20100318'.length==6 ? Date.parseExact('20100318','yyyyMM').toString('yyyy. M. d.') : 
+					'20100318'.length==8 ? Date.parseExact('20100318','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2009나85122 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2009나85122';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2009나85122</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(6)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(3)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|758044">송민화 물권적 청구권의 이행불능으로 인한 전보배상청구권의 인정 여부 : 대법원 2012. 5. 17. 선고 2010다28604 전원합의체 판결 재판과 판례 제23집 / 대구판례연구회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|696291">정문경 물권적 청구권의 이행불능으로 인한 전보배상청구권 민사판례연구 35권  / 박영사  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|676556">지원림 물권적 방해배제청구의 이행불능과 전보배상 법률신문 4038호  / 법률신문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|725921">임경섭 물권적 청구권의 이행불능으로 인한 전보배상청구권이 인정되는지 여부 판례연구 25집 / 부산판례연구회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|691408">변우주 물권적 청구권의 이행불능으로 인한 전보배상청구권의 인정여부 법학연구 통권 제37집 / 전북대학교 출판부  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769259">김웅재 무권리자가 마친 부실등기를 기초로 등기부취득시효가 완성되어 소유권을 상실한 경우 불법행위책임의 성립 여부 및 그 손해배상채권의 소멸시효 기산점 사법논집 . 제58집   / 법원도서관  2015 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2008가합94375">서울중앙지방법원 2008가합94375</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다18196">대법원 2001. 1. 30. 선고 2000다18196 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다29474">대법원 2005. 9. 15. 선고 2005다29474 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2009가합51498">서울중앙지방법원 2009. 8. 18. 선고 2009가합51498 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2010. 3. 18. 선고 2009나85122 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피항소인 겸 부대항소인】
+      
+        
+          원고 (소송대리인 변호사 박진우)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 부대피항소인】
+      
+        대한민국
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2010. 2. 25.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2009가합51498|판결" href="#//">서울중앙지방법원 2009. 8. 18. 선고 2009가합51498 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고의 부대항소와 피고의 항소를 모두 기각한다.</p><p>2. 부대항소비용은 원고가, 항소비용은 피고가 각 부담한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>1. 청구취지</p>
+      <p>피고는 원고에게 980,928,000원 및 이에 대하여 2009. 5. 1.부터 제1심 판결선고일까지는 연 5%, 그 다음날부터 완제일까지는 연 20%의 각 비율로 계산한 돈을 지급하라.</p>
+      <p>2. 항소취지</p>
+      <p>제1심 판결 중 피고 패소부분을 취소한다. 위 취소부분에 해당하는 원고의 청구를 기각한다.</p>
+      <p>3. 부대항소취지</p>
+      <p>제1심 판결 중 원고 패소부분을 취소한다. 피고는 원고에게 294,278,400원 및 이에 대하여 2009. 5. 1.부터 2009. 8. 18.까지는 연 5%, 그 다음날부터 완제일까지는 연 20%의 각 비율로 계산한 돈을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 기초사실</p><p>  다음 각 사실은 당사자 사이에 다툼이 없거나 갑 제1, 2호증의 각 1, 2의 각 기재에 변론 전체의 취지를 종합하여 인정할 수 있다.</p><p>  가. 경기도 화성군 팔탄면 매곡리 산
+        (지번 생략) 임야 5,109㎡(이하 ‘이 사건 토지’라 한다)에 관하여 수원지방법원 화성등기소 1974. 6. 26. 접수 제22025호로 피고 명의로 소유권보존등기가 경료되었고, 이 사건 토지 중 각 2,554.5/5,109 지분에 관하여 1997. 12. 2.자 매매를 원인으로 하여 같은 등기소 1998. 1. 22. 접수 제4915호로 
+        소외 1, 
+        2(이하 ‘
+        소외 1 등’이라 한다) 앞으로 각 소유권이전등기가 경료되었다.
+      </p><p>  나. 원고가 피고를 상대로 위 소유권보존등기(이하 ‘이 사건 소유권보존등기’라고 한다)의, 
+        소외 1 등을 상대로 위 소유권이전등기의 각 말소등기를 청구한 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2008가합94375" href="#//">서울중앙지방법원 2008가합94375</a></span> 소유권보존등기말소 등 사건에서 2009. 4. 2. 피고에 대하여는 ‘원고의 선대인 
+        소외 3이 이 사건 토지를 사정받은 것으로 추정되고, 피고 명의의 이 사건 소유권보존등기는 원인무효이므로, 피고는 
+        소외 3의 재산을 최종적으로 단독상속한 원고에게 그 말소등기절차를 이행할 의무가 있다’라는 이유로 원고 승소의, 
+        소외 1 등에 대하여는 ‘이 사건 토지에 관한 
+        소외 1 등 명의의 소유권이전등기가 경료된 날로부터 10년이 경과한 2008. 1. 22. 등기부취득시효가 완성되었으므로, 
+        소외 1 등의 소유권이전등기는 실체관계에 부합하는 유효한 등기이다’라는 이유로 원고 패소의 판결이 선고되었다. 이 판결은 원고, 피고, 
+        소외 1에 대하여는 2009. 4. 28. 확정되었고, 
+        소외 2에 대하여는 2009. 4. 30. 확정되었다.
+      </p><p>2. 판단</p><p>  가. 손해배상책임의 발생</p><p>    (1) 위 인정사실에 의하면, 이 사건 소유권보존등기는 원인무효의 등기이므로, 피고는 이 사건 토지의 소유권을 상속한 원고에게 위 소유권보존등기의 말소등기절차를 이행할 의무가 있다고 할 것인데, 피고 명의의 이 사건 소유권보존등기에 터 잡아 
+        소외 1 등 명의로 소유권이전등기가 경료된 이후 원고가 피고 및 
+        소외 1 등을 상대로 제기한 소송에서 
+        소외 1 등 명의의 소유권이전등기가 취득시효 완성을 이유로 유효한 것으로 인정됨에 따라 피고의 위 말소등기절차 이행의무는 결국 이행불능이 되었다고 할 것이므로, 피고는 특별한 사정이 없는 한 원고에게 위 말소등기절차 이행의무의 이행불능으로 인한 손해를 배상할 의무가 있다.
+      </p><p>    (2) 이에 대하여 피고는, 이 사건 토지가 비록 귀속임야대장에 등재되어 있지는 않더라도 구 임야대장 및 관련 지적공부상 일본인이 소유자로 기재되어 있고, 이에 따라 무주부동산취득절차 등 적법절차를 거쳐 이 사건 소유권보존등기를 경료하였는바, 피고에게는 아무런 귀책사유가 없으므로 손해배상책임이 없다고 주장한다.</p><p>    을 제1호증의 기재에 의하면 이 사건 토지의 구 임야대장에 소유자로 ‘
+        (일본인명 생략)외 2인’이라고 기재되어 있는 사실은 인정되나, 갑 제3호증의 기재 및 변론 전체의 취지에 의하여 인정되는 다음과 같은 사정, 즉 이 사건 토지는 귀속임야대장에 등재되어 있지 않은 점, 1967. 4. 1.자로 복구된 위 구 임야대장은 1975. 12. 31. 지적법 개정 전에 소관청이 아무런 법적 근거 없이 행정편의를 위하여 임의로 복구한 것으로서 그 기재에 권리추정력이 없는 점, 피고는 이 사건 소유권보존등기를 경료하게 된 경위에 대하여 별다른 주장·입증을 하지 않고 있고, 나아가 이 사건 소유권보존등기의 경료시 국유재산법상 무주부동산취득절차 등 적법절차를 거쳤는지 여부에 관하여도 아무런 증거를 제시하지 못하고 있는 점, 이 사건 임야의 임야조사부가 현존하고 있는 것으로 보이는 점 등을 종합하면, 국민의 사유재산권을 보장할 의무가 있는 피고로서는 이 사건 소유권보존등기를 경료하기에 앞서 이 사건 토지의 사정명의인 및 그 후손 기타 정당한 소유자가 존재하는지 여부를 밝히는데 최선을 다하여야 함에도 불구하고 이를 게을리 한 채 만연히 이 사건 소유권보존등기를 경료한 잘못이 있다고 할 것이고, 이러한 피고의 잘못으로 말미암아 결국 원고가 이 사건 토지의 소유권을 상실하게 된 손해를 입게 되었으므로, 피고의 위 주장은 이유 없다.
+      </p><p>  나. 손해배상의 범위</p><p>    (1) 부동산소유권보존등기 말소등기절차 이행의무가 이행불능이 됨으로 말미암아 그 권리자가 입는 손해액은 원칙적으로 그 이행불능이 될 당시의 목적물 시가 상당액이다. 한편 원인무효인 소유권보존등기에 터 잡아 제3자 앞으로 소유권이전등기가 경료된 경우에 위 소유권보존등기는 소송 기타 방법에 따라 말소 환원 여부가 결정될 특별한 사정이 있으므로, 소유자가 등기명의인인 제3자를 상대로 제기한 소유권이전등기 말소청구소송 등이 패소확정되면 그 때에 소유권보존등기 말소등기의무는 이행불능 상태에 이른다고 할 것이고, 위 등기말소청구소송 등에서 등기명의인의 취득시효가 인용됨에 따라 소유자가 패소하였다고 하더라도 취득시효 완성 당시에 이행불능 상태에 이른다고 볼 것은 아니다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다18196|판결" href="#//">대법원 2001. 1. 30. 선고 2000다18196 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다29474|판결" href="#//">대법원 2005. 9. 15. 선고 2005다29474 판결</a></span> 참조). 
+      </p><p>      따라서 피고의 소유권보존등기 말소등기절차 이행의무는 종전소송에서 원고의 패소판결이 최종 확정된 때인 2009. 4. 30. 이행불능에 이르렀다고 할 것이고, 제1심 감정인 
+        소외 4에 대한 시가감정촉탁결과에 의하면 이 사건 토지의 2009. 4. 30. 당시의 시가가 980,928,000원임이 인정되므로 피고는 위 이행불능 당시의 이 사건 각 토지의 시가 상당액 980,928,000원을 원고에게 지급할 의무가 있다.
+      </p><p>    (2) 다만 원고 또는 원고의 피상속인에게도 오랫동안 이 사건 토지의 소유권 귀속 여부 및 상속 여부를 파악하는 등의 조치를 게을리 함으로써 피고 명의의 소유권보존등기 및 
+        소외 1 등 명의의 소유권이전등기에 대하여 적시에 대처하지 아니한 잘못이 있다고 할 것인바, 이러한 원고 측의 과실 역시 이 사건 손해 발생의 한 원인이 되었다고 할 것이므로, 피고가 배상하여야 할 손해액을 정함에 있어 이를 참작하기로 하되, 그 비율은 위 사실관계에 비추어 30% 정도로 봄이 상당하다(피고의 책임비율은 70%).
+      </p><p>    (3) 이에 대하여 원고는, 피고가 이 사건 토지가 귀속임야대장에 등재되어 있지 않아 해방 당시 일본인 소유가 아님을 잘 알고 있었고, 또한 지적복구시 소유자의 신고를 받거나 무주부동산공고 등을 통하여 정당한 권리자가 신고를 할 수 있도록 하여야 함에도 이러한 조치를 취하지 아니한 채 일방적으로 피고 명의의 소유권보존등기를 경료하였는바, 이는 결국 피고의 고의에 의하여 피고의 소유권보존등기 말소등기절차 이행의무가 이행불능에 이르게 된 것이므로 과실상계를 해서는 아니 된다고 주장한다.</p><p>    앞에서 본 바와 같이 피고에게 만연히 이 사건 소유권보존등기를 경료한 잘못이 있다고 할 것이나, 그 의무 위반의 정도나 경위 등에 비추어 볼 때 이는 고의가 아니라 과실에 해당한다고 봄이 상당하므로, 원고의 위 주장은 이유 없다.  </p><p>    (4) 따라서 피고는 원고에게 686,649,600원(=980,928,000원×0.7) 및 이에 대하여 이행불능일 다음날인 2009. 5. 1.부터 피고가 그 이행의무의 존부 및 범위에 관하여 항쟁함이 상당한 제1심 판결 선고일인 2009. 8. 18.까지는 민법이 정한 연 5%의, 그 다음날부터 다 갚는 날까지는 소송촉진 등에 관한 특례법이 정한 연 20%의 각 비율로 계산한 지연손해금을 지급할 의무가 있다.</p><p>3. 결론</p><p>  그렇다면 원고의 청구는 위 인정범위 안에서 이유 있어 인용하고 나머지 청구는 이유 없어 기각할 것인바, 제1심 판결은 이와 결론을 같이 하여 정당하므로, 원고의 부대항소 및 피고의 항소는 이유 없어 모두 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   김동오(재판장) 심연수 김익환 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

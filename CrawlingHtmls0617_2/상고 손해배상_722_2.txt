@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2006나56925 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2034449';
+var contIdEtc = '';
+var saNo = '2006나56925';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20061201' ? 
+			'20061201'.length==4 ? Date.parseExact('20061201','yyyy').toString('yyyy. M. d.') : 
+				'20061201'.length==6 ? Date.parseExact('20061201','yyyyMM').toString('yyyy. M. d.') : 
+					'20061201'.length==8 ? Date.parseExact('20061201','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2006나56925 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2006나56925';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2006나56925</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(3)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(14)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|619728">이상근 우편역무조사자의 직무상 의무위반으로 인한 손해배상 판례연구 21집  / 부산판례연구회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|632068">제철웅 (불법행위와 특별한 사정으로 인한 손해) 우편물의 멸실, 훼손, 지연배달로 인한 국가의 손해배상책임 판례실무연구 x / 박영사  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|636798">제철웅 우편배달사고로 인한 국가의 손해배상책임 민사판례연구 33-1권  / 박영사  2011 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|420|0|null">민사소송법 제420조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="국가배상법|2|0|null">국가배상법 제2조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법|38|0|20000121">우편법(구) 제38조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법|38|0|null">우편법(구) 제38조 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법|38|0|null">우편법(구) 제38조 제3호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법|42|0|null">우편법(구) 제42조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법|43|0|null">우편법(구) 제43조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법|15|0|null">우편법(구) 제15조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법시행규칙|25|0|19990121">우편법시행규칙(구) 제25조 제1항 제6호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="우편법|1|0|null">우편법(구) 제1조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2003가단447250">서울중앙지방법원 2006. 6. 15. 선고 2003가단447250 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2006. 12. 1. 선고 2006나56925 판결</h2><p class="sub_title">[손해배상(기)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인】
+      
+        
+          원고 (소송대리인 변호사 심종신)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피항소인】
+      
+        대한민국 (소송대리인 변호사 이동영)
+      
+    </strong></p>
+    <span class="space"></span>
+      【변론종결】
+      <p>2006. 11. 10.</p>
+    
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2003가단447250|판결" href="#//">서울중앙지방법원 2006. 6. 15. 선고 2003가단447250 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고의 항소를 기각한다.</p><p>2. 항소비용은 원고의 부담으로 한다.</p>
+    
+      【청구취지 및 항소취지】
+      <p>제1심 판결을 취소한다. 피고는 원고에게 100,000,000원과 이에 대하여 이 사건 소장부본 송달 다음날부터 다 갚는 날까지 연 20%의 율로 계산한 돈을 지급하라.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 인정사실</p><p>  이 법원이 이 부분에서 설시할 이유는 제1심 판결의 해당란 기재와 같으므로, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|420|">민사소송법 제420조</a></span>에 의하여 이를 그대로 인용한다.
+      </p><p>2. 당사자의 주장</p><p>  가. 원고</p><p>  (1) 서울 마포우체국 소속 집배원인 
+        소외 3은 이 사건 결정정본을 제3채무자인 
+        소외 2 주식회사에게 송달함에 있어서 
+        ○○기업의 직원으로서 위 신축공사현장의 경비반장을 맡고 있던 
+        소외 4에게 
+        소외 2 주식회사의 적법한 수령대행인이 될 수 있는 자격에 관하여 확인하였어야 함에도, 이러한 확인을 하지 아니한 채 제3채무자인 
+        소외 2 주식회사의 사무원, 고용인도 아니고 그 외 아무런 고용관계에 있지 아니하며 단지 위 
+        □□□ 건물의 신축공사 수급인인 
+        □□건설로부터 경비용역 업무를 맡은 
+        ○○기업의 고용인에 불과하여 
+        소외 2 주식회사를 위한 수령대행권한이 없는 
+        소외 4에게 이 사건 결정정본을 건네주고, 적법한 보충송달을 한 것으로 송달보고서를 작성한 과실이 있다.
+      </p><p>  (2) 그로 인하여 이 사건 결정정본의 효력이 발생되지 못하였고, 그 후 
+        소외 2 주식회사로부터 위 계약이행보증금을 반환받은 
+        소외 1 주식회사가 무자력에 빠져 원고의 
+        소외 1 주식회사에 대한 1억 원의 채권이 집행불능에 이르게 되었으므로, 피고는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="국가배상법|2|">국가배상법 제2조 제1항</a></span>에 따라 위와 같은 
+        소외 3의 과실로 인하여 원고가 입은 1억 원의 손해배상금과 그에 대한 지연손해금을 지급할 책임이 있다.
+      </p><p>  나. 피고</p><p>  (1) 
+        소외 2 주식회사의 본점 소재지인 서울 마포구 동교동 
+        (지번 1 생략) 지상에서 신축공사가 진행되면서 위 주소지로 배달되는 우편물은 위 
+        ○○기업의 경비사무실로 배달되기 시작하였는데, 
+        소외 3의 전임 집배원은 위 경비사무실로 
+        소외 2 주식회사의 우편물을 최초로 배달하면서 
+        소외 4에게 그 수령권한이 있음을 확인하였고, 그 후 위 서울 마포구 동교동 
+        (지번 1 생략)로 배달되는 
+        소외 2 주식회사의 우편물이 계속하여 위 경비사무실로 배달되었음에도 
+        소외 2 주식회사로부터 아무런 이의 제기가 없었으므로, 
+        소외 4에게 우편물을 송달한 집배원 
+        소외 3에게는 아무런 과실이 없다.
+      </p><p>  (2) 또한 우편물의 배달 관련 손해배상은 우편업무의 특수성을 고려하여 우편법 규정에 의한 배상만이 인정되는 것인데, 이 사건과 같이 우편물이 적법하게 보충송달되지 않은 경우에 관하여는 우편법에서 규정하고 있지 아니할 뿐만 아니라, 우편법상의 제척기간도 이미 도과하였으므로, 피고에게는 손해배상책임이 없다.</p><p>  (3) 가사 피고가 우편물의 배달과 관련하여 국가배상법상의 손해배상책임을 부담한다 하더라도, 우편법의 제정목적과 원할하고 신속하게 저렴한 가격으로 전국으로 우편물을 배달하여야 하는 국가우편제도의 유지 필요성 등을 고려하면, 우편업무 종사자에게 고의 또는 중대한 과실이 있는 경우에 한하여 국가의 손해배상책임이 인정되어야 하는 것인데, 이 사건의 경우 
+        소외 3의 과실을 중대한 과실로 볼 수는 없다.
+      </p><p>3. 판단</p><p>  가. 구 우편법 관련규정의 해석과 적용범위</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">구 우편법(2000. 1. 21. 법률 제6196호로 개정되기 전의 것, 이하 구 우편법이라고 한다) 제38조</a></span>(손해배상의 범위)에서는 1. 부가우편역무 중 그 취급과정을 기록취급하는 우편물을 망실 또는 훼손한 때, 2. 부가우편역무 중 보험취급 우편물을 망실 또는 훼손한 때, 3. 부가우편역무 중 현금추심취급 우편물을 배달하면서 추심금액을 받지 아니하고 수취인에게 교부한 때, 4. 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">제1호</a></span> 내지 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">제3호</a></span> 외의 부가우편역무로서 대통령령으로 정하는 경우에는 국가가 그로 인한 손해를 배상하고, 배상금액은 정보통신부령으로 정한다고 규정하고 있으며, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|42|">제42조</a></span>(손해배상청구권자)에서는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">제38조</a></span>의 규정에 의한 손해배상을 청구할 수 있는 자는 당해 우편물의 발송인 또는 그 승인을 얻은 수취인으로 한다고 규정하고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|43|">제43조</a></span>(제척기간)에서는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">제38조</a></span>에 의한 배상에 관하여 우편물을 발송한 날로부터 1년을 그 제척기간으로 규정하고 있다.
+      </p><p>  한편, 집배원에 의한 이 사건 결정정본의 송달이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|15|">구 우편법 제15조 제1항 제1호</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법시행규칙|25|">구 우편법 시행규칙(1999. 1. 21. 정보통신부령 제64호로 개정되기 전의 것, 이하 구 우편법 시행규칙이라고 한다) 제25조 제1항 제6호</a></span>에서 규정하는 부가우편역무에 해당함은 당사자 사이에 다툼이 없으므로 구 우편법 중 부가우편역무로 인한 손해배상 범위에 관련된 조항은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">제38조 제1호</a></span>로 보아야 한다.
+      </p><p>  살피건대, 우편이용에 관한 기본적인 사항을 정하여 공평하고 적정한 우편역무가 제공되도록 함으로써 공공의 복지증진에 기여하고자 하는 구 우편법의 제정목적(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|1|">제1조</a></span>)과 손해배상의 대상이 되는 손해의 범위와 손해배상 액수를 규정하고 있는 구 우편법의 관련 조항들의 내용을 종합하여 보면, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">구 우편법 제38조</a></span>에서 정하는 손해, 즉 부가우편역무 중 그 취급과정을 기록취급하는 우편물이 망실 또는 훼손되는 손해 등이 발생한 경우에는, 구 우편법이 민법이나 국가배상법상의 손해배상 규정에 대한 특별법으로서 우선 적용된다고 보아야 하므로 우편물의 발송인 또는 그 승인을 얻은 수취인으로서는 구 우편법의 규정에 따라 국가로부터 손해배상을 받을 수 있을 뿐 민법이나 국가배상법에 기한 국가의 손해배상책임은 면책된다 할 것이나, 부가우편역무 중 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="우편법|38|">구 우편법 제38조</a></span>가 정하는 손해배상의 범위에 속하지 아니하는 다른 손해가 발생한 경우 그 피해자로서는 민법이나 국가배상법에 기하여 국가를 상대로 손해배상을 구할 수 있다고 보아야 할 것이다(구 우편법의 제정목적과 원활하고 신속하게 저렴한 가격으로 전국으로 우편물을 배달하여야 하는 국가우편제도의 유지 필요성 등을 고려할 때, 우편물의 배달과 관련하여 우편종사자에게 고의 또는 중대한 과실이 인정되는 경우에 한하여 국가배상법상의 손해배상책임을 물을 수 있다는 피고의 주장은 그와 같은 제반 사정을 고려하더라도 받아들일 수 없다).
+      </p><p>  나. 이 사건에 있어 피고의 책임</p><p>  (1) 원고가 주장하고 있는 피고의 손해배상책임은 집배원이 보충송달의 요건을 흠결한 채로 
+        소외 4에게 위법한 송달을 하였다는 것에 기한 것이므로, 이는 앞에서 본 구 우편법의 적용대상에는 포함되지 않고, 원고가 주장하는 바와 같이 국가배상법상 피고에게 손해배상책임이 인정되는지 여부가 문제로 된다.
+      </p><p>  (2) 살피건대, 우편집배원의 송달업무에 관한 주의의무 내용을 규정하는 
+        <span id="link"><a href="javascript:jf_goRuleref(%EC%9E%AC%ED%8C%90%EC%98%88%EA%B7%9C%EC%A0%9C428%ED%98%B8, %EC%9A%B0%ED%8E%B8%EC%A7%91%EB%B0%B0%EC%9D%B8%EC%97%90 %EB%8C%80%ED%95%9C %EA%B5%90%EC%9C%A1)" class="t01-text">대법원 재판예규 제428호 “우편집배원에 대한 교육”에서는, 수령대행인에 대한 보충송달에 있어서 “수령대행인이 될 수 있는지의 자격에 관해서는 충분한 조사를 요하므로 본인과의 관계 등을 적극적으로 문의하여 확인한 후에 송달의 가부를 결정하여야 한다”</a></span>고 규정하고 있는바, 그에 비추어 보면 집배원 
+        소외 3은 이 사건 결정정본을 제3채무자인 
+        소외 2 주식회사에게 송달함에 있어서 
+        ○○기업의 직원으로서 위 신축공사현장의 경비반장을 맡고 있는 
+        소외 4가 
+        소외 2 주식회사를 위한 적법한 수령대행인이 될 수 있는지의 자격에 관하여 충분한 조사를 통하여 확인하였어야 함에도, 이러한 확인을 하지 아니한 채 
+        소외 2 주식회사의 사무원, 고용인도 아니고 그 외 아무런 고용관계에 있지 아니하며 단지 위 
+        □□□ 건물의 신축공사 수급인인 
+        □□건설로부터 경비용역 업무를 맡은 
+        ○○기업의 고용인에 불과하여 
+        소외 2 주식회사를 위한 수령대행권한이 없는 
+        소외 4에게 이 사건 결정정본을 건네주고, 
+        소외 4로부터 도장을 받아 이를 날인한 다음 그 옆에 자신이 
+        소외 4의 이름을 기재한 후 사무원에게 이 사건 결정정본을 건네준 것으로 표시하여 일응 적법한 보충송달을 한 것처럼 송달보고서를 작성한 과실이 있다 할 것이므로(
+        소외 3의 전임 집배원이 위 서울 마포구 동교동 
+        (지번 1 생략) 지상에 신축공사가 진행된 이후 
+        소외 2 주식회사에 대한 우편물을 위 경비사무실로 배달하면서 
+        소외 4에게 수령권한이 있음을 확인하였다는 점에 관하여는 이를 인정할 증거가 없고, 집배원이 
+        소외 2 주식회사의 본점 소재지인 서울 마포구 동교동 
+        (지번 1 생략)로 우송되는 일반우편물을 계속 
+        ○○기업의 경비사무실에 배달하였음에도 
+        소외 2 주식회사로부터 아무런 이의가 없었다는 점에 기하여 
+        소외 2 주식회사가 
+        소외 4에게 우편물의 수령권한을 위임하였다고 인정할 수도 없다), 피고는 그로 인한 원고의 손해를 배상할 책임이 있다 할 것이다.
+      </p><p>  (3) 다만, 원고가 주장하는 손해, 즉 집배원이 보충송달의 요건을 흠결한 채로 위법한 송달을 하는 바람에 원고가 
+        소외 1 주식회사에 대하여 보유하는 1억 원의 채권이 집행불능으로 되었다는 손해는 특별한 사정에 기한 것으로서, 집배원이 그 불법행위 당시 그와 같은 사정을 알았거나 알 수 있을 경우에 한하여 피고에 대하여 손해배상을 구할 수 있는 것인데, 집배원이 위 우편물의 내용을 알 수 없는 이상 위 우편물이 법원에 의하여 특별송달의 방법으로 발송된 것이라는 점만으로는 집배원이 그와 같은 특별한 사정을 알았거나 알 수 있었다고 인정하기 부족하고, 달리 이를 인정할 증거가 없으므로, 결국 원고가 주장하는 손해에 관하여 피고에게 그 배상책임이 있다고 볼 수는 없다 할 것이다(집배원의 불법행위로 인한 통상적인 손해는 송달료 상당이 될 수 있을 것이나, 원고의 청구에 위와 같은 손해배상을 구하는 내용이 포함되어 있지 않음은 명백하므로, 따로 판단하지 아니한다). 
+      </p><p>4. 결론</p><p>  그렇다면, 원고의 이 사건 청구는 이유 없어 이를 기각할 것인바, 제1심 판결은 이와 결론을 같이하여 정당하므로, 원고의 항소를 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   지대운(재판장) 곽병훈 김복형 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

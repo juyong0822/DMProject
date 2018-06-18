@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 83다카1350 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2093689';
+var contIdEtc = '';
+var saNo = '83다카1350';
+var sngoNm = '선고';
+var saNm = '손해배상';
+try {
+	var sngoDay=('19831122' ? 
+			'19831122'.length==4 ? Date.parseExact('19831122','yyyy').toString('yyyy. M. d.') : 
+				'19831122'.length==6 ? Date.parseExact('19831122','yyyyMM').toString('yyyy. M. d.') : 
+					'19831122'.length==8 ? Date.parseExact('19831122','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 83다카1350 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '83다카1350';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />83다카1350</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(34)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|39145">의료과오와 입증책임 정조근 東亞大學校 出版部</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|567644">홍기문 의료과오소송에 있어서 증명책임의 완화 보건의료법의 현대적 과제 . 2006 전남대학교 법률행정연구소 편 / 도서출판fides  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32153">박동섭 의료과오소송에 있어서의 인과관계, 2 사법논집 20집  / 대법원 법원행정처  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|184210">한경국 의료과오에 관한 형사법적 고찰 재판자료 27집  / 법원행정처  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256425">석희태 의료과오에서의 인과관계에 관한 연구 연세대 연세법학연구 2집 (92.08) : 고 이정한박사 추모논문집 / 연세대학교 법과대학 법률문제연구소  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39136">박일환 의료소송에서의 입증책임 민사법학 8호  / 한국사법행정학회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|126836">석희태 의료과오 민사책임에 관한 연구 연세대학교  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|465724">범경철 의료과오소송에 관한 연구 전북대학교  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|63589">성위석 민사책임에 있어서의 인과관계와 그 입증 경북대학교  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|225567">김천수 의사의 설명과오책임에 관한 국내 판례의 분석 민사재판의 제문제(상) : 송천 이시윤박사화갑기념논문집 (95.10) / 박영사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|542366">김만오 의료과오에 관한 판례의 동향 민사법학 27호  / 한국사법행정학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39132">정조근 의료과오책임의 법리 동아대 동아법학 6호  / 동아대학교 출판부  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|163245">강봉수 의료소송에 있어서의 증명책임 재판자료 27집  / 법원행정처  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32372">오용호 민사소송에 있어서의 입증의 정도와 개연성에 관한 이론 상 인권과 정의 165호  / 대한변호사협회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125931">김천수 환자의 자기결정권과 의사의 설명의무 서울대학교  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39145">정조근 의료과오와 입증책임 동아대 동아법학 11호  / 동아대학교 출판부  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|494008">한국 . 대법원 법원행정처 재판실무편람 . 제5호 : 의료재판실무편람 대법원 법원행정처  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40679">홍기문 특수소송에 있어서 증명책임의 분배 민사법학 8호  / 한국사법행정학회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|446888">신은주 의료과오소송에 있어서 입증책임 경희대학교  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|40678">홍기문 증명책임에 관한 판례 민사소송법의 제문제 : 경허 김홍규박사화갑기념 Ⅰ (92.12) / 삼영사  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|238570">김상영 의료과오소송에 있어서의 인과관계·과실의 입증책임 부산대 법학연구 37권 1호 (96.12) : 김봉태·이영환교수 정년기념 논문집 / 부산대학교  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|479516">안귀옥 의료과오소송에 있어서 입증책임의 문제 인천법조 5집  / 인천지방변호사회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|162900">오용호 불법행위소송과 입증의 정도 민법학논총(1권) : 후암 곽윤직교수화갑기념 (85.12) / 박영사  1985 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|548410">한국. 대법원 법원행정처 재판실무편람. 제5호:. 의료재판실무편람 의료재판실무편람 집필위원회  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476113">류승훈 증명책임과 관련한 현재의 제문제 비교사법 8권 1호(통권14호) (2001.06) / 한국비교사법학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|235089">김성수 의료판례의 종합적 분석 및 그 전망 법조 46권 1호 (97.01) / 법조협회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32136">오용호 미국의 불법행위법상의 Res Ipsa Loquitur원칙, 상 법조 39권 2호 (90.02) / 법조협회  1990 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|256043">류승훈 의료과오소송에서의 인과관계와 과실의 제문제 한국외대 외법논집 4집  / 한국외국어대학교 법학연구소  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|34359">이은경 의료과오책임에 관한 연구 사법연수생논문집 20기  / 사법연수원  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|180798">오용호 민사소송에 있어서 입증의 정도 : 특히 불법행위에 관한 소송을 중심으로 사법논집 15집  / 대법원 법원행정처  1984 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|35435">오용호 민사소송에 있어서의 입증의 정도 법조 40권 7호 (91.07) / 법조협회  1991 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125856">홍기문 증명책임론 전북대학교  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39144">신은주 수술후 하반신마비에 있어서 의사의 과실여부 판례월보 284호  / 판례월보사  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|446948">정규원 피해자의 승낙에 대한 연구  : 의료행위를 중심으로 서울대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|486697">류승훈 의료과오책임과 관련한 현재의 제과제 외법논집 10집  / 한국외국어대학교 법학연구소  2001 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사소송법|187|0|null">민사소송법 제187조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|82나1384">
+서울고등법원 1983.5.13 선고 82나1384 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1983. 11. 22. 선고 83다카1350 판결</h2><p class="sub_title">[손해배상][공1984.1.15.(720),103]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 추정사실을 추인하는 전제요건 사실을 심리하지 않고서 한 사실추정의 적부</p>
+      <p></p>
+      <p>
+        </p><p>나. 수술환자 중 피해자와 같은 부작용이 없었다는 사실등만으로 의사의 치료상 과실추인 가부</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 반측성 안면경련증의 치료를 위한 뇌수술로 인하여 발생하는 후유증인 하지 부전마비의 발생원인으로는 "소뇌혈관이나 뇌간의 손상" "환자의 전신적인 혈관장애" "환자의 특이체질"의 세가지를 예상할 수 있는데 피해자에게 그 원인의 하나인 전신적 혈관장애가 없었다는 사실외에 "환자의 특이체질"이 구체적으로 어떠한 체질을 말하는지 밝히고 피해자의 체질이 그에 해당하는지 여부를 심리판단함이 없이 피해자에게 전신적 혈관장애가 없었다는 사실만으로 바로 그 후유증의 발생이 집도의사가 수술함에 있어서 피해자의 소뇌혈관이나 뇌간에 손상을 가함으로 인한 것이라고 추정할 수 없다.</p>
+      <p></p><p>
+        </p><p>나. 본건 수술의사가 반측성 안면경련증 수술방법을 습득 시술한 이래 피해자에게 이르기까지 수술한 40명의 반측성 안면경련증 환자중 이 사건과 같이 팔. 다리의 부전마비의  부작용이 발생한 것은 피해자가 처음인 사실, 일반적으로 본건 수술의사 정도의 뇌수술을 집도할 수 있는 의료상 기술을 가진 신경외과 의사라면 통상 세심한 주의를 기울이면 뇌수술과정에서 소뇌 혈관이나 뇌간을 손상함이 없이 시술할 수 있다는 사실만으로 피해자의 하지부전마비의 후유증이 좌측경부의 소뇌혈관과 안면신경의 접합부분을 분리하는 뇌수술의사의 과실에 기인한 것으로 추인할 수 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|187|">민사소송법 제187조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        
+          원고 1 외 3인  원고들 소송대리인 변호사 김주용
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고병원  소송대리인 변호사 이병웅, 이세중, 최광률
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|82나1384|판결" href="#//">
+서울고등법원 1983.5.13 선고 82나1384 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결중 피고 패소부분을 파기하고, 이 부분 사건을 서울고등법원으로 환송한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 원심판결 이유에 의하면 원심은 원고 
+        1이 1978.6.19 반측성안면경련증을 치료하기 위하여 당시의 
+        피고병원 신경외과 과장인 소외
+        인의 집도로 좌측두부의 소뇌혈관과 안면신경의 접합부분을 분리하는 수술을 받았는데 수술후 안면경련증세는 다소 호전되었으나 좌측하지의 부전마비증세가 병발한 사실을 확정하고 나아가 그 거시증거에 의하여(가) 위 수술을 한 후 위와 같은 부전마비증세가 나타날 수 있는 원인으로는 위 수술을 하는 과정에서 소뇌혈관이나 뇌간에 손상을 가한 경우, 수술환자에게 동맥경화증과 같은 전신적인 혈관장애가 있는 경우 및 수술환자의 특이체질등을 예상할 수 있는데 원고 
+        1에게는 동맥경화증과 같은 전신적인 혈관장애가 없었던 사실, (나) 소뇌혈관이나 뇌간에 손상을 가하면 혈류에 장애를 일으켜 뇌수조직이 부분적으로 응고괴사되며 그 응고괴사
+      </p><p>로 경색된 뇌수조직은 뇌전산화 단층촬영을 하면 그 사진에 음영으로 나타나는데 1981.1.13 원고 
+        1의 뇌를 전산화 단층촬영의 방법으로 촬영하였던 바, 그 사진상의위 수술부위에 음영이 나타난 사실, (다) 반측성 안면경련증은 최근까지 원인불명의 불치병으로 알려져 왔었으며 약 10년전 미국의 자네타 교수에 의하여그 병인 및 치료법이 규명 개발되었는데 그에 의하면 뇌의 안면신경에 접합되어 있는 소뇌혈관을 분리하여 그 사이에 근육편 또는 아이바롱스폰지나 실리콘 스폰지와 같은 인공물질을 삽입하여 안면경련을 멈추게 하는 수술을 시행하여야 한다는 것인바, 위 경련증의 치료법으로는 위와 같은 수술방법이 유일한 치료방법이며, 위 자네타 교수의 임상결과에 의하면, 127명의 반측성 안면경련증 환자를 위와 같은 방법으로 수술하여 105명은 성공적이었고 9명은 약간의 경련증이 남았으며, 11명은 결과가 좋지 아니하였으나 이 사건과 같은팔, 다리 부전마비의 부작용이 있었던 환자는 없었던 사실, (라) 
+        소외인은위 수술방법을 습득시행한 이래 원고 
+        1에 대한 이 사건 수술에 이르기까지 40명의 반측성 안면경련증 환자를 수술하였는데 이 사건과 같은 팔, 다리부전마비의 부작용이 발생한 것은 원고 
+        1의 경우가 처음인 사실, (마)일반적으로 뇌수술을 집도할 수 있는 정도의 의료상의 기술을 가진 신경외과의사라면 통상 세심한 주의를 기울이면 뇌수술 과정에서 소뇌혈관이나 뇌간을손상 함이 없이 그 수술을 시행할 수 있으며 
+        소외인도 신경외과 의사로서그와 같은 정도의 의료상의 기술을 가지고 있었던 사실을 인정한 다음, 위 인정사실에 의하면 
+        소외인이 이사건 수술을 함에 있어서 원고 
+        1이 소뇌혈관이나 뇌간에 손상을 가한 사실이 추인된다고 판시하고 있다.
+      </p><p>  2. (1) 원심판결의 위와 같은 판시는 결국 그 거시증거에 의하여 몇 가지전제가 되는 사실을 인정하고 그 전제사실을 기초로 하여 이건 수술의 집도의사인 
+        소외인이 수술을 함에 있어서 원고 
+        1의 소뇌혈관이나 뇌간에손상을 가한 사실(이하원판시 추정사실이라 한다)이 추인된다는 것이므로 원심인정의 전제사실을 중심으로 하여 살펴보기로 한다.
+      </p><p>  (2) 원심은 반측성안면경련증의 치료를 위한 뇌수술로 인하여 발생하는 후유증인 하지부전마비의 발생원인으로는 "소뇌혈관이나 뇌간의 손상" "환자의전신적인 혈관장애" "환자의 특이체질"의 세가지를 예상할 수 있는데 원고 
+        1에게는 전신적인 혈관장애가 없었던 사실(위 가항 기재사실)을 확정하고이 사실을 원판시 추정사실을 추인하는 전제사실로 판시하고 있다.
+      </p><p>  그러나 원판시 후유증의 발생원인이 원심 설시대로 세 가지의 경우가 있을수 있는 것이라면 그중 한가지의 원인관계가 없다 하여 바로 나머지 두가지의원인중 어느 한 가지의  원인으로 인한 것이라고 추인될 수는 없을 것이므로 원고 
+        1에게 그 원인의 하나인 전신적 혈관장애가 없었다는 사실만으로는 바로 그 후유증의 발생이 소뇌혈관이나 뇌간의 손상으로 인한 것이라고 추인될 수는 없을 것이고 그것이 원고 
+        1의 특이체질로 인한 것이 아니라는 사실까지 밝혀졌을 때 비로소 그 추인의 전제사실이 될 여지가 있다 할 것이다. 그러므로 원심이 그 판시와 같은 원인관계의 유무를 가려 원판시 추정사실을 추인하는 전제사실로 삼으려면 먼저 ‘환자의 특이체질’이 구체적으로어떠한 체질을 말하는지를 밝혀 원고 
+        1의 체질이 그에 해당되는지의 여부를 심리판단했어야 할 것이다. 원심이 이에 이르지 아니하고 위와 같이 판시한 것은 이유불비와 심리미진의 위법이 있다 할 것이다.
+      </p><p>  (3) 원심은 전제사실의 하나로 원고 
+        1의 뇌를 전산화단층 촬영방법으로 촬영한 사진상 수술부위에 소뇌혈관이나 뇌간에 손상을 가하였을 때 나타나는 음영이 보인다는 사실(위 나항 기재사실)을 인정하고 있다.
+      </p><p>  그러나 원심이 위 판시사실을 인정하기 위하여 들고 있는 모든 증거를 기록과 대조하여 살펴보아도 그 판시사실을 인정할만한 자료를 발견할 수 없다.</p><p>  기록에 의하여 살펴보면 원심채택의 증거중 원판시사실과 관련이 있는 증거로는 갑 제16호증의 기재내용과 원심증인 송진언의 증언이 있는바 위 갑 제16호증은 "외과적 골격손부 및 근처에 약간의 감소음영을 보여주고 있으며 이는수술 후에 수반되는 부종 또는 섬유증식성인 변화를 암시해 주는 음영이라 생각된다"고 되어 있고 원심증인 송진언은 뇌의 전산화단층 촬영사진에 음영이나타나는 일반적인 원인관계를 진술하다가 이 건과 관련되는  것으로는 '갑 제16호증의 기재를 보면 수술부위에 뇌컴퓨터단층 촬영사진에 음영이 나타난 것으로 표시가 되어 있다'고만 진술하고 있어 이들 증거들은 원판시 사진상으로보이는 음영이 소뇌혈관의 수술부위에서 나타난 것이라거나, 소뇌혈관이나 뇌간에 손상을 가한것이 </p><p>원인이 된 것이라는 원판시 사실을 인정할 자료가 될 수 없다 할 것이다.</p><p>  원심이 그 판시증거에 의하여 위 판시사실을 인정한 것은 필경 증거에 의하지 아니하고 사실을 인정하였거나 증거에 대한 가치판단을 그릇하여 채증법칙을 어긴 잘못이 있다 할 것이다.</p><p>  (4) 원심은 전제사실로서 그 판시 자네타 교수의 임상결과에 의하면 127명의 반측성안면경련증 환자를 그 판시와 같은 방법으로 수술하였으나 이 사건과 같은 다리의 부전마비의 부작용이 있었던 환자는 한 사람도 없었던 사실(위 다항 기재사실)을 인정하고 있다. 그러나 원심이 들고 있는 모든 증거를 살펴보아도 자네타 교수의 임상결과 127명의 수술환자가운데 이 사건과 같은다리의 부전마비의 부작용이 있었던 환자가 한 사람도 없었다는 사실을 인정할 아무런 자료를 발견할 수 없고 오히려 위 127명의 환자중 2명은 영구적인 하지부전마비가 발생하였음을 알 수 있다. 원심이 그 판시증거에 의하여 위판시사</p><p>실을 인정한 것 역시 증거에 의하지 아니하고 사실을 인정한 잘못이 있다 하지 않을 수 없다.</p><p>  (5) 그렇다면 원심이 원판시 추정사실을 추인하는 전제로 판시한 전제사실중 세가지 사실의 인정과정에 앞서 본 바와 같은 위법이 있다는 결과가 되고한편 원심설시의 나머지 전제사실(위 라, 마항 기재사실)만으로는 원판시 추정사실이 추인될 수는 없다 할 것이므로 원심이 그 판시 전제사실을 전제로하여 원판시 추정사실을 추인한다고 판시한 것은 결국 이유불비, 심리미진,채증법칙 위배의 위법이 있다 할 것이고 이는 원판시 추정사실의 존재를 전제로 그것이 
+        소외인의 불법행위를 구성하는 것이라 하여 그 사용자인 피고에게 그로 인한 손해배상 책임이 있다고 한 원심판결의 결과에 영향을 미쳤다고할 것이니 이 점을 지적하는 논지는 이유있다.
+      </p><p>  3. 그러므로 나머지 사고논지에 관한 판단을 생략하고 원심판결중 피고 패소부분을 파기하고, 이 부분 사건을 원심인 서울고등법원으로 환송하기로 하여 관여법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   정태균(재판장) 윤일영 김덕주 오성환 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

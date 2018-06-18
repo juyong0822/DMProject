@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 92다34667 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2095058';
+var contIdEtc = '2095059';
+var saNo = '92다34667';
+var sngoNm = '선고';
+var saNm = '토지소유권이전등기';
+try {
+	var sngoDay=('19930527' ? 
+			'19930527'.length==4 ? Date.parseExact('19930527','yyyy').toString('yyyy. M. d.') : 
+				'19930527'.length==6 ? Date.parseExact('19930527','yyyyMM').toString('yyyy. M. d.') : 
+					'19930527'.length==8 ? Date.parseExact('19930527','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 92다34667 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '92다34667';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />92다34667</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(19)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(1)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(9)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(1)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(17)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2056892">대법원 2000. 11. 14. 선고 99다45864 판결 [집48(2)민,150;공2001.1.1.(121),24]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1990653">대전지방법원서산지원 2001. 8. 23. 선고 99가합1603 판결：항소, 강제조정 [하집2001-2,83]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|38998">환매권 침해에 의한 불법행위 전하은 법원도서관</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|692566">이춘원 탈법행위에 관한 소고 비교사법 제20권 1호 / 한국비교사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|472262">박평준 토지수용법상의 환매권제도 고시연구 28권 4호 (2001.04) / 고시연구사  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|474347">배병호 재산권 보장과 공법상 환매제도 행정법연구 6호 (2000.11) / 행정법이론실무학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|251961">김해용 토지법상 환매권의 법리 계명법학(제1집) 2집  / 계명법학간행위원회  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|231649">송유영 토지수용법 제71조 제1항 소정의 「사업의 폐지, 변경 기타의 사유로 인하여 토지의 전부 또는 일부가 필요없게 된 때」의 의미 및 그 해당 여부에 대한 판단기준 판례월보 314호  / 판례월보사  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|448756">장창민 환매법의 연구 성균관대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655563">박춘기 공익사업법이 정한 당해 사업의 폐지·변경 및 공익사업 변환의 판단기준 판례연구 23집 / 부산판례연구회  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|225523">이은영 규제법령에 위반된 법률행위의 무효 민사재판의 제문제(상) : 송천 이시윤박사화갑기념논문집 (95.10) / 박영사  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|466196">배병호 공법상 환매제도에 관한 연구 서울대학교  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|513820">박평준 토지보상법상의 환매권제도 현대공법이론의 제문제 : 천봉석종현박사 화갑기념논문집   / 삼영사  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|589676">김종보 택지개발사업과 환매권의 헌법문제 행정법연구 17호 (2007.05) / 행정법이론실무학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|523544">남하균 공익사업용지의 협의취득과 대상청구권 행정법연구 11호 (2004.05) / 행정법이론실무학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|43686">이상규 93년도 분야별주요판례회고 : 행정판례회고 인권과 정의 213호  / 대한변호사협회  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|501752">유원규 공공사업에 제공된 토지의 환매권 재판의 한 길 : 김용준 헌법재판소장 화갑기념논문집   / 박영사  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|228120">박기동 공공용지의취득및손실보상에관한특례법 제9조 제2항에 의한 환매권 행사의 요건 대법원판례해설 24호 (96.05) / 법원도서관  1996 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|238315">김유환 환매권의 법리 : 판례이론의 분석과 검토 인권과 정의 251호  / 대한변호사협회  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|555376">임호정 토지보상법상 환매권에 대한 쟁점 논의 토지보상법연구 6집  / 한국토지보상법연구회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|532102">오현진 수용토지에 대한 환매권 토지공법연구 22집  / 한국토지공법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|267080">이경민 토지수용사건에 있어서의 몇 가지 문제점 사법논집 30집  / 대법원 법원행정처  1999 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다29927">
+대법원 1992.4.28. 선고 91다29927 판결(공1992,1695)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="산업기지개발촉진법|2|0|19900113">산업기지개발촉진법(구) 제2조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="산업기지개발촉진법|7|0|19900113">산업기지개발촉진법(구) 제7조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="산업기지개발촉진법|10|0|19900113">산업기지개발촉진법(구) 제10조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|1|0|null">공공용지의취득및손실보상에관한특례법 제1조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|2|0|null">공공용지의취득및손실보상에관한특례법 제2조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="토지수용법|3|0|null">토지수용법 제3조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|9|0|null">공공용지의취득및손실보상에관한특례법 제9조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="토지수용법|72|0|null">토지수용법 제72조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다29927">당원 1992.4.28. 선고 91다29927 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="산업기지개발촉진법|9|0|null">산업기지개발촉진법 제9조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="산업기지개발촉진법|8|0|null">산업기지개발촉진법 제8조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="토지수용법|71|0|null">토지수용법 제71조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="토지수용법|72|0|null">토지수용법 제72조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|9|0|null">공공용지의취득및손실보상에관한특례법 제9조 제5항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="토지수용법|72|0|null">토지수용법 제72조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="산업기지개발촉진법|2|0|19900113">산업기지개발촉진법(구) 제2조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="산업기지개발촉진법|7|0|19900113">산업기지개발촉진법(구) 제7조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="산업기지개발촉진법|9|0|19900113">산업기지개발촉진법(구) 제9조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="산업기지개발촉진법|10|0|19900113">산업기지개발촉진법(구) 제10조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|1|0|null">공공용지의취득및손실보상에관한특례법 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|2|0|null">공공용지의취득및손실보상에관한특례법 제2조 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|2|0|null">공공용지의취득및손실보상에관한특례법 제2조 제4호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="토지수용법|3|0|null">토지수용법 제3조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="토지수용법|72|0|null">토지수용법 제72조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공공용지의취득및손실보상에관한특례법|9|0|null">공공용지의취득및손실보상에관한특례법 제9조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="부산고등법원|91나7323">
+부산고등법원 1992.7.10. 선고 91나7323 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2095059">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1993. 5. 27. 선고 92다34667 판결</h2><p class="sub_title">[토지소유권이전등기][공1993.8.1.(949),1869]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>가. 건설부장관으로부터 학교부지조성 및 기타 부대사업의 시행자로 지정을 받고 토지에 대한 매수협의를 한 이후 문교부장관으로부터 대학설립을 승인하지 아니한다는 통보를 받았음에도 계속 나아가 그에 기한 협의취득(소유권이전등기)행위를 마쳤다는 사정만으로 반사회질서적이거나 탈법행위가 된다고 할 수 없다 한 사례</p>
+      <p></p>
+      <p>
+        </p><p>나. 구 산업기지개발촉진법(1990.1.13. 법률 제4216호로 폐지)상의 사업시행자가 사업시행을 위하여 필요한 토지 등을 협의취득하는 법률관계의 준거법(= 공공용지의취득및손실보상에관한특례법)</p>
+      <p></p>
+      <p>
+        </p><p>다. 환매할 토지가 생겼을 경우 기업자로 하여금 원소유자 등에게 지체 없이 통지하거나 공고하도록 규정한 토지수용법 규정의 성질 및 기업자가 그 통지나 공고의무에 위배하여 환매의 목적이 될 토지를 제3자에게 처분한 행위가 원소유자에 대하여 불법행위를 구성하는지 여부(적극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>가. 건설부장관으로부터 학교부지조성 및 기타 부대사업의 시행자로 지정을 받고 토지에 대한 매수협의를 한 이후 문교부장관으로부터 대학설립을 승인하지 아니한다는 통보를 받았음에도 계속 나아가 그에 기한 협의취득(소유권이전등기)행위를 마쳤다는 사정만으로 반사회질서적이거나 탈법행위가 된다고 할 수 없다 한 사례.</p>
+      <p></p><p>
+        </p><p>나. 구 산업기지개발촉진법(1990.1.13. 법률 제4216호로 폐지)상의 사업시행자가 사업시행을 위하여 필요한 토지 등을 토지수용법에 정한 절차에 의하지 아니하고 협의에 의하여 취득하는 것은 공공용지의취득및손실보상에관한특례법상의 공공사업을 위하여 토지 등을 취득하는 것이 되므로 토지에 관한 등기부상 소유권취득원인이 무엇이든지 간에 그 법률관계는 위 특례법으로 규율되어야 할 것이다.</p>
+      <p></p><p>
+        </p><p>다. 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|72|">토지수용법 제72조</a></span>의 규정이 환매할 토지가 생겼을 때에는 기업자(특례법상의 사업시행자)가 지체 없이 이를 원소유자 등에게 통지하거나 공고하도록 규정한 취지는 공익목적에 필요 없게 된 토지가 있을 때에는 먼저 원소유자에게 그 사실을 알려주어 환매할 것인지의 여부를 최고하도록 하고 그러한 기회를 부여한 후에도 환매의 의사가 없을 때에 비로소 원소유자 아닌 제3자에게 전매할 가능성을 가지도록 한다는 것으로서 이는 법률상 당연히 인정되는 환매권 행사의 실효성을 보장하기 위한 것이라고 할 것이므로 위 규정은 단순한 선언적인 것이 아니라 기업자(사업시행자)의 법적인 의무를 정한 것이라고 보아야 할 것이고, 기업자(사업시행자)가 원소유자의 환매가능성이 존속하고 있는데도 이러한 의무에 위배한 채 환매의 목적이 될 토지를 제3자에게 처분한 경우 처분행위 자체는 유효하다 하더라도 적어도 원소유자에 대한 관계에서는 법률에 의하여 인정되는 환매권 자체를 행사함이 불가능하도록 함으로써 환매권 자체를 상실시킨 것으로 되어 불법행위를 구성한다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>가.나.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|2|">구 산업기지개발촉진법(1990.1.13. 법률 제4216호로 폐지) 제2조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|7|">제7조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|10|">제10조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|1|">공공용지의취득및손실보상에관한특례법 제1조</a></span>,          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|2|">제2조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|3|">토지수용법 제3조</a></span> 가.         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span> 다.        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|9|">공공용지의취득및손실보상에관한특례법 제9조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|72|"> 토지수용법 제72조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">다.         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다29927|판결" href="#//">대법원 1992.4.28. 선고 91다29927 판결(공1992,1695)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+          이상곤 외 12인  소송대리인 변호사  김형기
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+          삼성중공업주식회사 외 1인  소송대리인 변호사 김익하 외 1인
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="부산고등법원|91나7323|판결" href="#//">
+부산고등법원 1992.7.10. 선고 91나7323 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  원심판결 중 손해배상청구에 관한 부분(제2차 예비적 청구)을 파기하고 이 부분의 사건을 부산고등법원에 환송한다.</p><p>  2. 원고들의 나머지 상고를 모두 기각한다.</p><p>  3. 상고기각된 부분의 상고비용은 원고들의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유 제1, 2점을 함께 본다.</p><p>  원심판결 이유에 의하면, 원심은 거시증거에 의하여 (가) 1970년대의 정부의 중화학공업 육성정책에 따라 창원시 일원이 산업기지개발촉진법에 의한 산업기지개발촉진지역으로 지정고시되자, 피고 삼성중공업주식회사(이하 “피고 삼성중공업”이라 한다)는 창원공업전문학교 설립계획을 수립하고 그 설립을 위한 시설결정승인 및 학교부지 매입 등 제반사항을 당국에 협조 요청한 결과 이 사건 토지를 비롯한 마산시 남산동 53번지 일대의 토지 29,000평에 대하여 마산(창원)도시계획학교시설결정 및 지적승인이 고시됨과 아울러 1978.12.4.에는 건설부장관으로부터 위 남산동 일원의 토지 29,000평에 대하여 공업전문대학 설립을 위한 학교부지조성 및 기타 부대사업의 사업시행자로 피고 삼성중공업이 지정받았다.</p><p>  (나) 피고 삼성중공업은 1979.2.27. 문교부장관에게 학교설립 및 전문대학설립계획 승인신청을 하는 한편, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|9|">같은 법 제9조 제2항</a></span>에 의하여 위 사업을 위한 용지의 매수와 손실보상업무 등을 마산시장에게 위탁하고, 같은 해 3.22. 건설부장관의 위임을 받은 경상남도지사로부터 그 사업을 위한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|8|">같은 법 제8조</a></span>의 사업실시계획승인을 받았으며, 같은 날 위 승인이 고시되었다.
+      </p><p>  (다) 마산시장은 위와 같은 용지매수 등의 업무위탁에 따라 같은 해 4.말경부터 위 사업지구에 편입된 이 사건 토지의 소유자들인 원고들과의 매수협의를 거쳐 피고 삼성중공업 명의로 원심판시와 같이 1979.10.24.경부터 1986.7.11.경까지 공공용지의 협의취득 또는 법률 제2657호(구 산업기지개발촉진법 1990.1.13. 법률 제4216호 폐지)에 의한 매매를 원인으로 각 소유권이전등기를 경료하였다(그러나 환매특약등기는 이루어진바 없었다).</p><p>  (라) 그러나 피고 삼성중공업은 그와 같은 각 소유권이전등기가 경료되기 이전인 1979. 7.23.경 문교부장관으로부터 위와 같은 학교법인설립 및 전문대학설립계획승인을 아니한다는 통보를 받았다.</p><p>  (마) 이에 따라 피고 삼성중공업은 이 사건 토지를 포함하여 위 사업지구에 편입된 토지를 위 학교법인의 부지로 조성하는 사업을 시행하지 못한 채 이를 그대로 보유하고 있다가 그 주거래은행인 한국산업은행으로부터 비업무용 토지를 매각하라는 통고를 받고서 1986.12.27. 피고 학교법인에게 이 사건 토지를 포함한 위 편입토지 전부를 대금 229,017,180원에 매도하고, 1987.1.19. 그 소유권이전등기를 경료하여 주었다는 사실을 인정한 후, 피고 삼성중공업이 마산시장에게 위탁하여 한 이 사건 토지 등에 관한 매수협의 당시부터 위에서 본 창원공업전문대학의 설립이 승인되지 아니하리라는 것을 알고서도 매수협의를 한 것이 아니라, 단지 
+        <span class="accrnt_txt">그 매수협의 이후에 그 전문대학의 설립을 승인하지 아니한다는 통보를 받고도 계속 나아가 그에 기한 협의취득(소유권이전등기)행위를 마쳤다는 사정만에 의하여서는 위 피고의 이 사건 토지에 관한 협의취득이 반사회질서적이라거나 탈법행위가 된다 할 수 없고,</span> 또 그 매수협의 당시에 원고들을 기망한 것도 아니라는 취지의 이유로 위 피고의 이 사건 토지취득행위가 반사회적 행위 또는 탈법행위로서 무효이거나 기망행위로서 취소되어야 한다는 원고들의 주장을 모두 배척하였다.
+      </p><p>  기록에 의하여 살펴본바, 원심의 위와 같은 인정판단은 정당하고 거기에 소론과 같은 공공용지를 취득할 수 있는 자의 지위에 관한 법리와 반사회적 질서행위 및 기망에 의한 의사표시의 성립요건에 관한 법리오해의 위법이 없다 할 것이다.</p><p>  또 원심은, 원고들이 1992.4.27.자 청구취지 및 청구원인 일부변경신청서의 진술(기록 제933, 934면 및 957면)로써 위 피고의 토지취득행위는 착오로 인한 법률행위로서 취소되어야 한다는 취지의 주장을 하고 있음에도 이에 관하여 아무런 판단을 아니한 것을 알 수 있지만, 위와 같은 사실관계와 기록을 검토하여 볼 때, 이 사건 토지의 매수협의 당시에는 그와 같은 착오가 존재하지 아니하였음이 분명하여 결국 그 판결결과에는 영향이 없다고 판단되므로, 이러한 점을 비난하는 위 각 상고논지는 모두 이유 없다.</p><p>  상고이유 제3점을 본다.</p><p>  원심판결 이유에 의하면, 원심은 피고 삼성중공업이 이 사건 토지들에 대하여 수용의 필요가 없게 되었을 때에는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|71|">토지수용법 제71조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|72|">제72조</a></span>의 규정에 따라 협의취득 당시의 소유자들인 원고들에게 지체 없이 환매할 수 있다는 통지를 하여 원고들로 하여금 환매할 수 있는 기회를 부여하여야 함에도 불구하고, 원고들의 이 사건 토지에 관한 환매권이 존속하고 있는 기간 중에 원고들에게 환매의 통지를 아니한 채 제3자인 피고 학교법인에게 처분한 불법행위로 인하여 원고들의 환매권을 침해당하였다는 취지의 원고들 주장에 대하여, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|9|">공공용지의취득및손실보상에관한특례법(이하 특례법이라 한다) 제9조 제5항</a></span>에 의하여 준용되는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|72|">토지수용법 제72조 제1항</a></span>의 통지나 공고는 환매권 행사의 법정기간을 단축시키는 효과밖에 없으므로, 사업시행자의 통지나 공고의무의 불이행으로 그와 같은 환매사유를 알지 못함으로써 환매의 기회가 상실되었다 하더라도 이것을 가지고 불법행위가 된다 할 수 없고, 그 환매의 등기가 되어 있지 아니한 이상 이는 추상적인 권리에 불과하고, 또 환매권 종료시까지에는 제3자에게 처분을 금하는 것도 아니므로 피고 삼성중공업의 이 사건 토지 처분행위가 불법행위가 된다 할 수 없다는 이유로 이 부분 원고들의 청구를 기각하였다.
+      </p><p>  살피건대, 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|2|" style="text-decoration:underline">구 산업기지개발촉진법 제2조 제2항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|7|" style="text-decoration:underline">제7조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|9|" style="text-decoration:underline">제9조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="산업기지개발촉진법|10|" style="text-decoration:underline">제10조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|1|" style="text-decoration:underline">위 특례법 제1조</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|2|" style="text-decoration:underline">제2조 제2호</a></span> 내지 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|2|" style="text-decoration:underline">제4호</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|3|" style="text-decoration:underline">토지수용법 제3조</a></span>의 규정 등을 종합하여 보면, 산업기지개발촉진법상의 사업시행자가 그 사업시행을 위하여 필요한 토지 등을 토지수용법에 정한 절차에 의하지 아니하고 협의에 의하여 취득하는 것은 위 특례법상의 공공사업을 위하여 토지 등을 취득하는 것이 되므로, 그 실질이 위와 같다면 토지에 관한 등기부상 소유권취득원인이 무엇이든지 간에 그 법률관계는 특례법으로 규율되어야 할 것이다.
+        </span>
+      </p><p>  그리고 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|72|" style="text-decoration:underline">위 토지수용법 제72조</a></span>의 규정이 환매할 토지가 생겼을 때에는 기업자(특례법상의 사업시행자)가 지체 없이 이를 원소유자 등에게 통지하거나 공고하도록 규정한 취지는, 원래 공적인 부담의 최소한성의 요청과 비자발적으로 소유권을 상실한 원소유자를 보호할 필요성 및 공평의 원칙 등 환매권을 규정한 입법이유(
+          <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다29927|판결" href="#//" style="text-decoration:underline">당원 1992.4.28. 선고 91다29927 판결</a></span>참조)에 비추어 공익목적에 필요 없게 된 토지가 있을 때에는 일단 먼저 원소유자에게 그 사실을 알려주어 환매할 것인지의 여부를 최고하도록 하고, 그러한 기회를 부여한 후에도 환매의 의사가 없을 때에 비로소 원소유자 아닌 제3자에게 전매할 가능성을 가지도록 한다는 것으로서 이는 법률상 당연히 인정되는 환매권 행사의 실효성을 보장하기 위한 것이라고 할 것이므로, 그러한 통지나 공고의 불이행에 대한 형사적인 처벌규정이 없다 하더라도 위 규정은 단순한 선언적인 것이 아니라 기업자(사업시행자)의 법적인 의무를 정한 것이라고 보아야 할 것이고, 그와 같은 통지나 공고를 함으로써 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="토지수용법|72|" style="text-decoration:underline">같은 법 제72조 제2항</a></span>에 따라 환매권 행사의 법정기간이 단축되는 것은 그 의무이행의 결과로 발생하는 부수적인 효과라고 해석함이 타당할 것이므로, 기업자(사업시행자)가 원소유자의 환매가능성이 존속하고 있는데도 이러한 의무에 위배한 채 환매의 목적이 될 토지를 제3자에게 처분한 경우에는 그와 같은 처분행위 자체는 유효하다고 하더라도 적어도 원소유자에 대한 관계에서는(그가 비록 지급받은 보상금을 먼저 반환하는 등의 선이행절차를 취하지 아니하였다 할지라도 이제는 그러한 선이행이 아무런 의미가 없게 되므로) 법률에 의하여 인정되는 환매권 자체를 행사함이 불가능하도록 함으로써 그 환매권 자체를 상실시킨 것으로 되어 불법행위를 구성한다고 함이 상당하다 할 것이다.
+        </span>
+      </p><p>  이 사건의 경우, 당초 이 사건 토지의 협의취득의 원인이 된 구체적인 공공사업인 창원공업전문대학 설립을 위한 개발사업은 위에서 본 바와 같이 그 학교법인설립 등이 불승인됨으로써 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공공용지의취득및손실보상에관한특례법|9|">특례법 제9조 제1항 </a></span>소정의 기타사유로 인하여 그 토지가 필요 없게 된 경우에 해당한다 할 것이어서, 원고들은 피고 삼성중공업이 이 사건 토지를 피고 학교법인에게 처분할 당시에 이미 위 조항에 따라 환매할 지위에 있었다고 함이 타당할 것이고, 더구나 피고 삼성중공업은 이 사건 토지가 법인의 비업무용 토지라는 것을 인식하고 이를 타에 처분하였다는 것이므로, 늦어도 그 처분 당시에는 원래의 취득원인인 공공사업에는 필요하지 아니하게 되어 환매의 대상이 된다는 것을 알았거나 알 수 있었다고 보이므로, 피고 삼성중공업이 그와 같은 환매권 행사기간 안에 이러한 통지의무에 위배하여 이 사건 토지를 피고 학교법인에게 처분함으로써 원고들의 환매권을 침해한 것이라고 보지 않을 수 없다.
+      </p><p>  그럼에도 불구하고 원심은 그 판시와 같은 이유만으로 피고 삼성중공업에게 불법행위로 인한 손해배상책임이 없다는 취지로 판단하였으니, 원심판결에는 위와 같은 환매권 통지의무의 규정 및 불법행위의 성립요건에 관한 법리를 오해한 위법이 있고, 이는 판결에 영향을 미친 것임이 명백하므로 이 점을 지적하는 논지는 이유 있다.</p><p>  그러므로 원심판결 중 손해배상청구에 관한 부분(제2차 예비적 청구)을 파기하고 이 부분 사건을 원심법원에 환송하되, 원고들의 나머지 상고는 이를 모두 기각하고 상고기각부분의 상고비용은 패소자들의 부담으로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박우동(재판장) 김상원 윤영철(주심) 박만호 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

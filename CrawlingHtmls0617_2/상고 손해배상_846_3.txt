@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다21214 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2060828';
+var contIdEtc = '';
+var saNo = '2010다21214';
+var sngoNm = '선고';
+var saNm = '소유권이전등기등';
+try {
+	var sngoDay=('20110526' ? 
+			'20110526'.length==4 ? Date.parseExact('20110526','yyyy').toString('yyyy. M. d.') : 
+				'20110526'.length==6 ? Date.parseExact('20110526','yyyyMM').toString('yyyy. M. d.') : 
+					'20110526'.length==8 ? Date.parseExact('20110526','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다21214 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다21214';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다21214</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(7)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(4)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(8)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(14)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(13)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|798108">양경승 명의수탁자의 부당이득반환의무 청연논총 (제13집)사법연수원 교수논문집 / 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|653606">임건면 계약등기명의신탁을 둘러싼 몇 가지 법률적 쟁점에 대한 검토 성균관법학 23권 3호  / 성균관대학교 비교법연구소  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|677990">오승규 부동산실명법상 지방자치단체의 과징금 부과에 대한 법적 검토 법조  (2012.12) / 법조협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|760069">배병일 부동산실명법상 계약명의신탁에 있어서 부당이득반환으로서의 원물반환 저스티스 통권 제143호 / 한국법학원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|709880">윤철홍 2011년도 물권법 분야 주요 판례와 그 의미 법학연구 23권 1호  / 충남대학교 법학연구소  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|704449">김민동 이탈리아 민법에서의 계약무효법리와 의사무능력자 취소규정의 제안 법학연구 제16집 제2호 / 인하대학교 법학연구소  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|655275">김선혜 2011년 민사(물권법) 중요 판례 인권과 정의 424호  / 대한변호사협회  2011 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다30827">대법원 1998. 11. 10. 선고 98다30827 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다1027">대법원 1999. 1. 26. 선고 98다1027 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다51541">대법원 1999. 4. 9. 선고 98다51541 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|98다12874">대법원 1998. 6. 26. 선고 98다12874 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 제4항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민법|103|0|null">민법 제103조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다30827">대법원 1998. 11. 10. 선고 98다30827 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다51541">대법원 1999. 4. 9. 선고 98다51541 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다1027">대법원 1999. 1. 26. 선고 98다1027 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다12874">대법원 1998. 6. 26. 선고 98다12874 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원김천지원|94가단2660">대구지방법원 김천지원 94가단2660호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|95나4566">대구지방법원 95나4566호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|96다35293">대법원 96다35293호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원김천지원|97가합969">대구지방법원 김천지원 97가합969호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원김천지원|97가합969">위 대구지방법원 김천지원 97가합969호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원김천지원|97가합2866">대구지방법원 김천지원 97가합2866호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구고등법원|98나1103">대구고등법원 98나1103호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다2140">대법원 99다2140호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원김천지원|94가단2660">대구지방법원 김천지원 94가단2660호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다1601">대법원 2004. 6. 11. 선고 2003다1601 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산실권리자명의등기에관한법률|12|0|null">부동산 실권리자명의 등기에 관한 법률 제12조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산실권리자명의등기에관한법률|4|0|null">부동산 실권리자명의 등기에 관한 법률 제4조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="부동산실권리자명의등기에관한법률|11|0|null">부동산 실권리자명의 등기에 관한 법률 제11조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원|2009나4808">대구지법 2010. 1. 28. 선고 2009나4808 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2011. 5. 26. 선고 2010다21214 판결</h2><p class="sub_title">[소유권이전등기등][공2011하,1272]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률 제11조 제4항</a></span>에서 정한 ‘부동산물권에 관한 쟁송’의 의미
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률 제11조</a></span>에서 정한 유예기간 후에 제기된 ‘부동산물권에 관한 쟁송’이 같은 법 시행 전 또는 유예기간 중에 제기된 소와 함께 전체로서 일체가 됨으로써 그와 같은 일련의 소송 계속 중에는 기존 명의신탁관계가 실효되지 않는다고 인정하기 위한 요건
+        </p>
+      <p></p>
+      <p>
+        </p><p>[3] 갑과 을의 명의신탁약정에 따라 을이 병에게서 토지를 매수한 후 다시 정과 명의신탁약정을 하고 정에게 소유권이전등기를 경료하여 주었는데, 그 후 을이 의사무능력에 빠지게 되었고 정은 무에게 토지에 관하여 근저당권설정등기를 마쳐준 사안에서, 갑이 정을 상대로 부동산 실권리자명의 등기에 관한 법률 시행 전에 제기한 소가 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">같은 법 제11조 제4항</a></span>에 정한 ‘부동산물권에 관한 쟁송’에 해당한다고 보기 어렵고, 갑의 위 소와 같은 법 유예기간이 경과한 후에 갑이 을 등을 상대로 제기한 소 등이 전체로서 일체가 되어 ‘부동산물권에 관한 쟁송’에 해당한다고 볼 수도 없다고 하며, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">같은 법 제11조 제1항</a></span>에서 정한 유예기간이 경과함으로써 갑과 을의 명의신탁약정이 무효가 되었다고 한 사례
+        </p>
+      <p></p>
+      <p>
+        </p><p>[4] 부동산 실권리자명의 등기에 관한 법률 시행 전에 이른바 계약명의신탁약정을 한 명의수탁자가 명의신탁약정 사실을 알지 못하는 소유자와 부동산 매매계약을 체결하고 대금을 모두 지급하였으나 소유권이전등기를 명의수탁자 명의로 마치지 못한 상태에서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">같은 법 제11조</a></span>에서 정한 유예기간이 경과한 경우, 명의수탁자가 명의신탁자에게 반환하여야 할 부당이득 대상(=매수자금)
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률 제11조 제4항</a></span>에서 말하는 ‘부동산물권에 관한 쟁송’란 명의신탁자가 당사자로서 해당 부동산에 관하여 자신이 실권리자임을 주장하여 이를 공적으로 확인받기 위한 쟁송이면 족하고, 또한 쟁송제기 주체가 명의신탁자가 아닌 명의신탁자의 채권자가 명의신탁자를 대위하여 명의수탁자를 상대로 소송을 제기한 경우에도 이에 해당하며, 그 결과에 의하여 곧바로 실명등기를 할 수 있어야 하는 쟁송으로 제한되는 것도 아니지만, 적어도 다툼의 대상인 권리관계가 확정되기 전까지는 실명등기를 할 수 없는 쟁송이어야 한다고 해석하여야 한다.
+        </p>
+      <p></p><p>
+        </p><p>[2] 비록 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률(이하 ‘부동산실명법’이라 한다) 제11조</a></span>에 규정된 유예기간 후에 ‘부동산물권에 관한 쟁송’이 제기되었더라도 위 소송이 부동산실명법 시행 전 또는 유예기간 중에 제기된 소송과 함께 전체로서 일체가 됨으로써 그 같은 일련의 소송 계속 중에는 기존 명의신탁관계가 실효되지 않는다고 보기 위해서는, 부동산실명법 시행 전 또는 유예기간 중에 ‘부동산물권에 관한 쟁송’이 제1차로 제기되어 판결이 선고되었으나 판결 결과만으로는 실명전환을 할 수 없어 유예기간 경과 후 다시 실명전환을 위한 제2차 소송이 제1차 소송 확정 후 상당한 기간 내에 이루어져 당해 부동산에 관한 쟁송이 계속되고 있다고 평가되는 경우라야 한다.
+        </p>
+      <p></p><p>
+        </p><p>[3] 갑과 을 사이에 체결한 명의신탁약정에 따라 을이 병에게서 토지를 매수하면서 다시 정과 명의신탁약정을 하고 정에게로 소유권이전등기를 마쳤는데 그 후 을이 의사무능력에 빠지게 되었고 정은 무에게 토지에 관하여 근저당권설정등기를 마쳐준 사안에서, 갑이 부동산 실권리자명의 등기에 관한 법률 시행 전에 정을 상대로 제기한 손해배상청구의 소는 근저당권설정행위라는 불법행위에 따른 손해배상을 구하는 내용에 불과하여 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">같은 법 제11조 제4항</a></span>에 정한 ‘부동산물권에 관한 쟁송’에 해당한다고 보기 어렵고, 갑이 정을 상대로 제기하였다가 패소판결이 선고되어 확정된 손해배상청구의 소와 같은 법 유예기간이 경과한 후에 갑이 을 등을 상대로 제기한 소유권이전등기 등 청구의 소 및 갑의 위임을 받은 자가 을 명의로 정 등을 상대로 제기한 소가 전체로서 일체가 되어 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">같은 법 제11조 제4항</a></span>에서 정한 ‘부동산물권에 관한 쟁송’에 해당한다고 볼 수도 없다고 하며, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">같은 법 제11조 제1항</a></span>에서 정한 유예기간이 경과함으로써 갑과 을의 명의신탁약정이 무효가 되었다고 한 사례.
+        </p>
+      <p></p><p>
+        </p><p>[4] 부동산 실권리자명의 등기에 관한 법률(이하 ‘부동산실명법’이라 한다) 시행 전에 명의신탁자와 명의수탁자가 이른바 계약명의신탁약정을 맺고 명의수탁자가 당사자가 되어 명의신탁약정이 있다는 사실을 알지 못하는 소유자와 부동산에 관한 매매계약을 체결하고 매매계약에 따른 매매대금을 모두 지급하였으나 당해 부동산의 소유권이전등기를 명의수탁자 명의로 마치지 못한 상태에서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산실명법 제11조</a></span>에서 정한 유예기간이 경과하였다면, 명의신탁약정의 무효에 불구하고 명의수탁자와 소유자의 매매계약 자체는 유효한 것으로 취급되는데, 이 경우 명의수탁자는 명의신탁약정에 따라 명의신탁자가 제공한 비용으로 소유자에게 매매대금을 지급하고 당해 부동산을 매수한 매수인의 지위를 취득한 것에 불과하지 당해 부동산에 관한 소유권을 취득하는 것은 아니므로, 유예기간 경과에 따른 명의신탁약정의 무효로 인하여 명의신탁자가 입게 되는 손해는 당해 부동산 자체가 아니라 명의수탁자에게 제공한 매수자금이고, 그 후 명의수탁자가 당해 부동산에 관한 소유권을 취득하게 되었다고 하더라도 이로 인하여 부당이득반환 대상이 달라진다고 할 수는 없다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>[명의신탁],         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률 제11조 제4항</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>[명의신탁],         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률 제11조</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>[명의신탁],         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률 제11조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|103|">민법 제103조</a></span>[명의신탁],         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률 제11조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다30827|판결" href="#//">대법원 1998. 11. 10. 선고 98다30827 판결</a></span>(공1998하, 2841)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다1027|판결" href="#//">대법원 1999. 1. 26. 선고 98다1027 판결</a></span>(공1999상, 347)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다51541|판결" href="#//">대법원 1999. 4. 9. 선고 98다51541 판결</a></span>(공1999상, 843)<br />[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다12874|판결" href="#//">대법원 1998. 6. 26. 선고 98다12874 판결</a></span>(공1998하, 1992)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        
+          원고 (소송대리인 법무법인 청주로 담당변호사 유재풍 외 3인)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고 1 외 4인 (소송대리인 법무법인 디.엘.에스 담당변호사 이성희)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|2009나4808|판결" href="#//">대구지법 2010. 1. 28. 선고 2009나4808 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 피고들이 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 상고이유 제2점에 대하여</p><p>
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산 실권리자명의 등기에 관한 법률(이하 ‘부동산실명법’이라 한다) 제11조 제1항</a></span>은 위 법 시행 당시의 기존 명의신탁자에 대하여 시행일로부터 1년의 유예기간 내에 자신 명의로 실명등기를 하도록 규정하고 있고, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">같은 조 제4항</a></span>은 “이 법 시행 전 또는 유예기간 중에 부동산물권에 관한 쟁송이 법원에 제기된 경우에는 당해 쟁송에 관한 확정판결(이와 동일한 효력이 있는 경우를 포함한다)이 있은 날부터 1년 이내에 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">제1항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">제2항</a></span>의 규정에 의한 실명등기 또는 매각처분 등을 하여야 한다.”고 규정함으로써 실명전환을 위한 유예기간의 연장을 허용하는 한편 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|12|">부동산실명법 제12조 제1항</a></span> 및 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|4|">제4조 제1항</a></span>은, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">제11조</a></span>에 규정된 기간 이내에 실명등기 또는 매각처분 등을 하지 아니한 경우 그 기간이 경과한 날 이후의 명의신탁약정은 무효로 한다는 취지로 규정하고 있는바, 부동산실명법이 이와 같이 실명전환을 위한 유예기간을 규정하고 있는 취지는, 오랜 기간 판례를 통하여 그 효력이 인정되어 오던 부동산 명의신탁을 부동산실명법이란 제정법의 시행으로 금지시킬 뿐만 아니라 명의신탁약정 및 이에 기초한 등기의 사법적 효력까지 부정함으로 인하여 발생할 수 있는 사회적 혼란을 막고 법적 안정성을 도모하기 위하여 기존의 명의신탁약정에 관한 한 이를 한시적으로 유효한 것으로 인정함으로써 명의신탁자로 하여금 그 기간 안에 명의신탁해지 등의 방법으로 실명전환을 할 수 있는 기회를 보장하자는 데에 있다고 할 것이므로, 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|" style="text-decoration:underline">부동산실명법 제11조 제4항</a></span>에서 말하는 ‘부동산물권에 관한 쟁송’이라 함은 명의신탁자가 당사자로서 해당 부동산에 관하여 자신이 실권리자임을 주장하여 이를 공적으로 확인받기 위한 쟁송이면 족하다고 할 것이고
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다30827|판결" href="#//">대법원 1998. 11. 10. 선고 98다30827 판결</a></span> 등 참조), 
+        <span class="accrnt_txt">또한 쟁송제기의 주체가 명의신탁자가 아닌 명의신탁자의 채권자가 명의신탁자를 대위하여 명의수탁자를 상대로 소송을 제기한 경우에도 이에 해당하는 것이며</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다51541|판결" href="#//">대법원 1999. 4. 9. 선고 98다51541 판결</a></span> 등 참조), 
+        <span class="accrnt_txt">그 결과에 의하여 곧바로 실명등기를 할 수 있어야 하는 쟁송으로 제한되는 것도 아니지만, 적어도 다툼의 대상인 권리관계가 확정되기 전까지는 실명등기를 할 수 없는 쟁송이어야 한다고 해석함이 상당하다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다1027|판결" href="#//">대법원 1999. 1. 26. 선고 98다1027 판결</a></span> 등 참조).
+      </p><p>  한편 
+        <span class="accrnt_txt">비록 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|" style="text-decoration:underline">부동산실명법 제11조</a></span>에 규정된 유예기간 후에 ‘부동산물권에 관한 쟁송’이 제기되었더라도 위 소송이 부동산실명법 시행 전 또는 유예기간 중에 제기된 소송과 함께 일련의 소송들 전체가 일체가 됨으로써 그 같은 일련의 소송의 계속 중에는 기존의 명의신탁관계가 실효되지 않는다고 보기 위해서는, 부동산실명법 시행 전 또는 유예기간 중에 위에서 본 의미의 ‘부동산물권에 관한 쟁송’이 제1차로 제기되어 판결이 선고되었으나 그 판결 결과만으로는 실명전환을 할 수 없어 유예기간 경과 후 다시 실명전환을 위한 제2차 소송이 제1차 소송 확정 후 상당한 기간 내에 이루어져 당해 부동산에 관한 쟁송이 계속되고 있다고 평가되는 경우라야 한다
+        </span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다12874|판결" href="#//">대법원 1998. 6. 26. 선고 98다12874 판결</a></span> 등 참조).
+      </p><p>  원심은, 제1심판결 이유를 인용하여, 
+        소외 1은 1990. 2. 1.경 
+        소외 2와 
+        소외 2의 비용으로 이 사건 토지 등 4필지를 매수하여 
+        소외 1의 명의로 소유권이전등기를 하는 내용의 명의신탁약정을 체결하고, 이 약정에 따라 1990. 2. 23. 명의신탁약정을 모르던 
+        소외 3과 위 4필지의 토지에 관한 매매계약을 체결한 사실, 그런데 
+        소외 1은 
+        소외 4와 위 4필지의 토지를 
+        소외 4 앞으로 명의신탁하기로 하고, 
+        소외 3에게 이와 같은 사정을 설명하여 1991. 8. 22. 
+        소외 4 명의로 위 4필지 토지에 관한 소유권이전등기를 마친 사실, 그 후 
+        소외 1은 1991. 9. 30. 교통사고로 의사무능력상태에 빠지게 되었고, 
+        소외 4는 1992. 7. 23. 
+        소외 5에게 이 사건 토지에 관하여 근저당권설정등기를 마쳐준 사실, 한편 
+        소외 2는 
+        소외 4를 상대로 대구지방법원 김천지원에 이 사건 토지의 명의신탁자로서 
+        소외 4의 위와 같은 근저당권설정행위로 인한 손해배상을 구하는 소(
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원김천지원|94가단2660" href="#//">대구지방법원 김천지원 94가단2660호</a></span>)를 제기하였으나 항소심(
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원|95나4566" href="#//">대구지방법원 95나4566호</a></span>), 상고심(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다35293" href="#//">대법원 96다35293호</a></span>)을 거쳐 ‘
+        소외 2가 이 사건 토지의 실제 권리자라고 볼 것이긴 하나, 이에 상관없이 손해배상책임을 주장할 수는 없다’는 이유로 패소판결이 선고되어 확정된 사실, 
+        소외 2는 다시 
+        소외 1, 
+        4, 
+        3, 
+        5를 상대로 대구지방법원 김천지원에 이 사건 토지에 관한 
+        소외 4와 
+        소외 1 사이의 명의신탁약정은 무효이므로 
+        소외 4 명의의 소유권이전등기와 
+        소외 5 명의의 근저당권설정등기는 무효이고, 
+        소외 3은 매매계약에 따라 
+        소외 1에게, 
+        소외 1은 명의신탁약정에 따라 
+        소외 2에게 각 소유권이전등기를 이행할 의무가 있다고 주장하면서 소(
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원김천지원|97가합969" href="#//">대구지방법원 김천지원 97가합969호</a></span>)를 제기하였으나, 1997. 9. 5. ‘
+        소외 2와 
+        소외 1 사이의 명의신탁약정이 부동산 실권리자명의 등기에 관한 법률에 위반하여 무효’라는 이유로 패소판결이 선고되어 확정된 사실, 그러자 
+        소외 2의 위임을 받은 
+        소외 6이 1997. 10. 7. 
+        소외 1의 명의로 대구지방법원 김천지원에 
+        소외 4, 
+        3, 
+        5를 상대로 
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원김천지원|97가합969" href="#//">위 대구지방법원 김천지원 97가합969호</a></span>와 같은 이유로 소(
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원김천지원|97가합2866" href="#//">대구지방법원 김천지원 97가합2866호</a></span>)를 제기하여 항소심(
+        <span id="link"><a name="linkContPanre" title="새창" type="대구고등법원|98나1103" href="#//">대구고등법원 98나1103호</a></span>), 상고심(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다2140" href="#//">대법원 99다2140호</a></span>)를 거쳐 1999. 3. 5. 
+        소외 1의 전부 승소판결이 선고되어 확정된 사실, 그 후 
+        소외 2, 
+        6, 
+        7은 위 확정판결에 따라 
+        소외 1 명의로 이 사건 토지에 관한 소유권이전등기를 한 후 이를 다시 
+        소외 2가 
+        소외 7에게 명의신탁하기로 약정한 사실, 이에 따라 
+        소외 7은 1999. 3. 26. 
+        소외 1의 인감변경신고 및 변경된 
+        소외 1의 인감증명서를 발급받고 이를 이용하여 1999. 4. 15. 
+        소외 7과 
+        소외 1 사이의 매매계약서를 작성한 후 1999. 4. 17. 이 사건 토지에 관하여 위 확정판결에 따라 
+        소외 1 명의로 소유권이전등기를 마친 다음, 1999. 4. 20. 자신의 명의로 소유권이전등기를 마친 사실을 인정하였다.
+      </p><p>  위와 같은 인정 사실을 앞서 본 법리에 비추어 보면, 
+        소외 2가 부동산실명법의 시행 전에 제기한 소송인 
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원김천지원|94가단2660" href="#//">대구지방법원 김천지원 94가단2660호</a></span> 소송은 
+        소외 4를 상대로 
+        소외 4의 근저당권설정행위라는 불법행위에 따른 손해배상을 구하는 내용에 불과하여 이를 두고 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산실명법 제11조 제4항</a></span>이 규정한 ‘부동산물권에 관한 쟁송’에 해당한다고 보기 어렵고, 위와 같이 
+        소외 2가 
+        소외 4를 상대로 제기하였다가 패소판결이 선고되어 확정된 위 손해배상청구소송과 부동산실명법의 유예기간이 경과한 후에 
+        소외 2가 위 법원에 
+        소외 1 등을 상대로 제기한 소송 및 
+        소외 2의 위임을 받은 
+        소외 6이 
+        소외 1의 명의로 위 법원에 
+        소외 4 등을 상대로 제기한 소송이 그 전체가 일체가 되어 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산실명법 제11조 제4항</a></span>이 규정한 ‘부동산물권에 관한 쟁송’에 해당한다고 볼 수도 없다.
+      </p><p>  원심판결의 이유설시에 다소 적절하지 않은 부분이 있기는 하지만, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산실명법 제11조 제1항</a></span>에서 정한 유예기간이 경과함으로써 
+        소외 2와 
+        소외 1 사이의 명의신탁약정이 무효가 되었다고 판단한 원심의 결론 자체는 정당하다. 원심판결에 상고이유 주장과 같이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|">부동산실명법 제11조 제4항</a></span>의 부동산물권에 관한 쟁송의 법리를 오해하는 등으로 판결에 영향을 미친 위법이 있다고 할 수 없다.
+      </p><p>  2. 상고이유 제1점 및 제3점에 대하여</p><p>
+        <span class="accrnt_txt">부동산실명법 시행 전에 명의신탁자와 명의수탁자가 이른바 계약명의신탁약정을 맺고 명의수탁자가 당사자가 되어 명의신탁약정이 있다는 사실을 알지 못하는 소유자와 부동산에 관한 매매계약을 체결하고 그 매매계약에 따른 매매대금을 모두 지급하였으나 당해 부동산의 소유권이전등기를 명의수탁자 명의로 마치지 못한 상태에서 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="부동산 실권리자명의 등기에 관한 법률|11|" style="text-decoration:underline">부동산실명법 제11조</a></span>에서 정한 유예기간이 경과하였다면, 위 명의신탁약정의 무효에 불구하고 명의수탁자와 소유자 사이의 매매계약 자체는 유효한 것으로 취급되는바, 이 경우 명의수탁자는 명의신탁약정에 따라 명의신탁자가 제공한 비용으로 소유자에게 매매대금을 지급하고 당해 부동산을 매수한 매수인의 지위를 취득한 것에 불과하지 당해 부동산에 관한 소유권을 취득하는 것은 아니므로, 위 유예기간의 경과에 따른 명의신탁약정의 무효로 인하여 명의신탁자가 입게 되는 손해는 당해 부동산 자체가 아니라 명의수탁자에게 제공한 매수자금이라 할 것이고, 그 후 명의수탁자가 당해 부동산에 관한 소유권을 취득하게 되었다고 하더라도 이로 인하여 부당이득반환의 대상이 달라진다고 할 수는 없다.
+        </span>
+      </p><p>  앞서 본 사실관계를 위 법리에 비추어 보면, 부동산실명법의 유예기간이 경과하여 
+        소외 2와 
+        소외 1 사이의 이 사건 토지에 관한 명의신탁약정이 무효로 될 당시 
+        소외 1 명의로 소유권이전등기가 경료된 바 없어 명의수탁자인 
+        소외 1이 이 사건 토지 자체가 아니라 
+        소외 2로부터 제공받은 매수자금 상당을 부당이득하였다고 할 것이므로, 
+        소외 2는 
+        소외 1에게 매수자금 상당의 부당이득반환채권만을 보유하고 있었던 것에 불과하다.
+      </p><p>  원심판결의 이유설시에 다소 적절하지 않은 부분이 있기는 하지만, 
+        소외 2가 
+        소외 1에 대해 매수자금 상당의 부당이득반환채권만을 보유하고 있었다고 판단한 다음, 이 사건 토지에 관한 피고들 명의의 등기가 실체관계에 부합하는 유효한 등기라는 피고들의 주장을 배척한 원심의 결론 자체는 정당하다. 원심판결에 상고이유 주장과 같이 필요한 심리를 다하지 아니한 채 이 사건 토지의 용도에 관하여 논리와 경험의 법칙을 위반하여 자유심증주의의 한계를 벗어나거나 명의신탁에 관한 법리를 오해하는 등으로 판결에 영향을 미친 위법이 있다고 할 수 없다.
+      </p><p>  3. 상고이유 제4점에 대하여</p><p>  신의성실의 원칙에 위배된다는 이유로 그 권리의 행사를 부정하기 위해서는 상대방에게 신의를 공여하였다거나 객관적으로 보아 상대방이 신의를 가짐이 정당한 상태에 있어야 하며, 이러한 상대방의 신의에 반하여 권리를 행사하는 것이 정의관념에 비추어 용인될 수 없는 정도의 상태에 이르러야 한다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다1601|판결" href="#//">대법원 2004. 6. 11. 선고 2003다1601 판결</a></span>).
+      </p><p>  위와 같은 법리에 비추어 원심판결 이유를 살펴보면, 원심이 그 판시와 같은 이유로 이 사건 토지에 관한 
+        소외 7 명의의 소유권이전등기는 원인무효의 등기이고, 이에 터 잡아 이루어진 피고들 명의의 각 등기 역시 원인무효임을 이유로, 이 사건 토지의 진정한 소유자인 
+        소외 1의 재산을 단독으로 상속한 원고에게, 
+        피고 1, 
+        2, 
+        3, 
+        4는 각 진정명의회복을 원인으로 한 소유권이전등기를, 피고 구미농업협동조합은 각 근저당권설정등기와 지상권설정등기를 각 말소할 의무가 있다고 판단한 것은 정당한 것으로 수긍이 되고, 거기에 상고이유로 주장하는 바와 같이 신의성실의 원칙에 관한 법리를 오해하는 등으로 판결에 영향을 미친 위법이 있다고 할 수 없다.
+      </p><p>  4. 결론</p><p>  그러므로 상고를 모두 기각하고, 상고비용은 패소자가 부담하기로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   민일영(재판장) 이홍훈(주심) 김능환 이인복 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

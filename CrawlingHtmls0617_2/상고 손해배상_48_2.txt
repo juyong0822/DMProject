@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>청주지방법원 98나4256 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1998551';
+var contIdEtc = '';
+var saNo = '98나4256';
+var sngoNm = '선고';
+var saNm = '손해배상(자)';
+try {
+	var sngoDay=('19990708' ? 
+			'19990708'.length==4 ? Date.parseExact('19990708','yyyy').toString('yyyy. M. d.') : 
+				'19990708'.length==6 ? Date.parseExact('19990708','yyyyMM').toString('yyyy. M. d.') : 
+					'19990708'.length==8 ? Date.parseExact('19990708','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '청주지방법원';
+var bubCd = '000270';
+var panTypeNm = '판결 : 상고';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 98나4256 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '98나4256';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">청주지방법원<br />98나4256</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(5)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(6)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|80다1671">대법원 1980. 11. 25. 선고 80다1671 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|92다46226">대법원 1993. 12. 21. 선고 92다46226 전원합의체 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|91다30057">대법원 1991. 12. 13. 선고 91다30057 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|97다423">대법원 1997. 4. 11. 선고 97다423 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|99다7046">대법원 1999. 6. 22. 선고 99다7046 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사소송법|202|0|null">민사소송법 제202조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|766|0|null">민법 제766조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|733|0|null">민법 제733조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|98다7001">대법원 1998. 7. 10. 선고 98다7001 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|80다1671">대법원 1980. 11. 25. 선고 80다1671 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다46226">1993. 12. 21. 선고 92다46226 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다42583">대법원 1992. 12. 8. 선고 92다42583 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="청주지방법원충주지원|92가합2080">청주지방법원 충주지원 92가합2080호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|91다30057">대법원 1991. 12. 13. 선고 91다30057 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="청주지방법원제천지원|97가단3657">청주지법 제천지원 1998. 9. 10. 선고 97가단3657 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>청주지법 1999. 7. 8. 선고 98나4256 판결 : 상고</h2><p class="sub_title">[손해배상(자)][하집1999-2, 224]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 기대여명이 사고 후 5년까지로 단축되었다는 감정에 따라 피해자가 청구취지를 감축하고 법원도 이를 전제로 판결을 하였는데 그 후 피해자가 감정된 기대여명 후에도 생존하여 기대여명이 늘어난 경우, 기대여명이 늘어났음을 전제로 한 피해자의 손해배상청구가 전소의 기판력에 저촉되는지 여부(소극) 및 그 소멸시효의 기산점(=전소에 감정된 기대여명이 종료한 날)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 기대여명이 사고 후 5년까지로 단축되었다는 감정에 따라 피해자가 청구취지를 감축하고 법원도 이를 전제로 판결하여 그 판결에 따른 손해배상금을 지급받으면서 청구권 포기의 합의를 하였는데 그 후 피해자가 감정된 기대여명 후에도 생존하여 기대여명이 늘어난 경우, 종전 소송에서 감축되었던 부분에 대한 손해배상청구가 위 부제소특약에 반하는지 여부(소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 전소의 확정판결에서 피해자의 기대여명이 사고 후 5년까지로 단축 되었다는 이유로 피해자의 청구가 일부 청구에 그치고, 법원도 그에 따라 피해자에 대한 손해배상의 범위를 확정하였으나 그 후 피해자가 실제로 전소에서 기초로 되어 있던 기대여명 이후에 생존하게 됨이 판명된 경우, 이는 전소의 확정판결이 있은 후에 비로소 그 판결에서 전제로 삼은 바와는 다르게 객관적으로 판명되게 된 것이어서 판결 확정 후에 새로운 사유가 발생하여 사정변경이 있은 경우에 해당한다고 할 수 있으므로, 피해자가 전소의 확정판결상의 청구와 동일한 청구를 하고 있더라도 전소 확정판결의 기판력에 저촉된다고 할 수 없으며, 피해자로서는 전소에서 감정된 기대여명이 종료한 날이 지나서야 손해가 예상 외로 확대되었음을 알았다고 할 것이므로 소멸시호는 그 때부터 진행한다.</p>
+      <p></p><p>
+        </p><p>[2] 기대여명이 사고 후 5년까지로 감정됨에 따라 피해자가 청구취지를 감축하고 법원도 이를 전제로 판결을 하여 그 판결에 따른 손해배상금을 지급받으면서 청구권 포기의 합의를 하였는데 그 후 피해자가 기대여명 후에도 생존하여 기대여명이 늘어난 경우, 위 합의는 판결의 기초가 되었던 신체감정 결과에 따른 여명기간이 경과하여 그로 인한 손해액의 확대를 예상하지 못하고 한 것으로서 위 합의의 효력은 피해자가 예측 가능하였던 부분에만 미칠 뿐 기대여명 확대로 인한 손해에 대하여는 미칠 수 없는 것으로 보아야 한다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|202|">민사소송법 제202조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|766|">민법 제766조 제1항</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|733|">민법 제733조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|80다1671|판결" href="#//">대법원 1980. 11. 25. 선고 80다1671 판결</a></span>(공1981, 13453)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다46226|전원합의체 판결" href="#//">대법원 1993. 12. 21. 선고 92다46226 전원합의체 판결</a></span>(공1994상, 484)/ [2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다30057|판결" href="#//">대법원 1991. 12. 13. 선고 91다30057 판결</a></span>(공1992, 509)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|97다423|판결" href="#//">대법원 1997. 4. 11. 선고 97다423 판결</a></span>(공1997상,1440)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다7046|판결" href="#//">대법원 1999. 6. 22. 선고 99다7046 판결</a></span>(공1999하, 1475)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 항소인 겸 피항소인】
+      
+        
+          원고(소송대리인 변호사 홍성배)
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 항소인 겸 피항소인】
+      
+        동양화재해상보험 주식회사(소송대리인 변호사 박인준)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="청주지방법원제천지원|97가단3657|판결" href="#//">청주지법 제천지원 1998. 9. 10. 선고 97가단3657 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 제1심판결 중 금 57,568,316원 및 이에 대한 1992. 9. 24.부터 1999. 7. 8.까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 초과한 피고 패소 부분을 취소하고, 그 취소 부분에 해당하는 원고의 청구를 기각한다.</p><p>2. 원고의 항소 및 피고의 나머지 항소를 각 기각한다.</p><p>3. 소송비용은 제1, 2심 모두 이를 5분하여 그 4는 원고의, 나머지는 피고의 각 부담으로 한다.</p>
+    
+      【청구취지】
+      <p>피고는 원고에게 금 263,664,086원 및 이에 대한 1992. 9. 24.부터 이 사건 항소심 소변경신청서 부본 송달일까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라(원고는 당심에서 청구취지를 감축하였다).</p>
+    
+    
+      【항소취지】
+      <p>원고 : 제1심판결 중 원고 패소 부분을 취소한다. 피고는 원고에게 금 197,248,726원 및 이에 대하여 1992. 9. 24.부터 이 사건 항소심 소변경신청서 부본 송달일까지는 연 5푼의, 그 다음날부터 완제일까지는 연 2할 5푼의 각 비율에 의한 금원을 지급하라.</p>
+      <p>피고 : 제1심판결 중 피고 패소 부분을 취소한다. 위 취소 부분에 대한 원고의 청구를 기각한다.</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1 손해배상책임의 발생</p><p>다음의 사실은 당사자 사이에 다툼이 없거나 갑 제1호증, 갑 제4호증의 4 내지 33, 갑 제5호증의 5 내지 19의 각 기재와 제1심 증인 정덕순의 증언에 변론의 전취지를 종합하면 이를 각 인정할 수 있다. </p><p>가. 소외 
+        1이 1992. 9. 24. 17:50경 소외 
+        2 소유인 
+        (차량번호 생략) 화물자동차를 제천쪽에서 봉양쪽으로 시속 약 50km로 진행하다가 제천시 봉양면 신동에 있는 신일개스 앞길의 우회전 커브길에 이르러 빗길에 미끄러져 중심을 잃고 도로 오른쪽의 방호벽에 충돌한 다음 도로의 중앙선을 넘어 반대차선으로 튕겨져 나가는 바람에, 때마침 반대차선을 주행하여 오던 원고 운전의 봉고차량을 충격하여 원고로 하여금 두개골 골절 등의 상해를 입게 하였다.
+      </p><p>나. 피고는 
+        소외 1 운전의 위 
+        (차량번호 생략) 차량에 관하여 자동차종합보험계약을 체결한 보험자이다.
+      </p><p>다. 위 인정 사실에 의하면, 피고는 위 화물자동차의 보험자로서 위 화물자동차의 운행 중에 발생한 이 사건 사고로 원고가 입은 손해를 배상할 책임이 있다.</p><p>2. 피고의 주장에 대한 판단</p><p>가. 기판력에 관한 주장</p><p>피고는, 원고가 이미 
+        소외 1을 상대로 청주지방법원 충주지원에 위 사고를 원인으로 한 손해배상청구의 소를 제기하여 같은 법원으로부터 일부 승소판결을 받아 그 판결이 그 무렵 확정되었음에도, 동일한 불법행위를 원인으로하여 이 사건 소를 제기하고 있으니 이는 전소 판결의 기판력에 저촉되어 허용될 수 없다고 주장한다.
+      </p><p>그러므로 살피건대, 일반적으로 판결이 확정되면 법원이나 당사자는 확정판결에 반하는 판단이나 주장을 할 수 없는 것이나, 이러한 확정판결의 효력은 그 표준시인 사실심 변론종결시를 기준으로 하여 발생하는 것이므로, 그 이후에 새로운 사유가 발생한 경우까지 전소의 확정판결의 기판력이 미치는 것은 아니라고 할 것인바(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|98다7001|판결" href="#//">대법원 1998. 7. 10. 선고 98다7001 판결</a></span> 참조), 돌이켜 이 사건에 관하여 살피건대, 갑 제1호증, 갑 제4호증의 1 내지 33, 갑 제6호증의 3의 각 기재에 변론의 전취지를 종합하면, 원고가 1992. 11. 위 사건에 관하여 
+        소외 1을 상대로 청주지방법원 충주지원에 손해배상청구의 소를 제기하였고, 같은 법원이 1993. 3. 19. 소외 
+        1로 하여금 원고에게 금 201,594,256원 및 이에 대한 지연손해금을 지급하라는 내용의 판결을 선고하였으며, 전소판결은 그 무렵 확정된 사실을 인정할 수 있으나, 한편 위 각 증거에 의하면, 원고는 전 소송에서 기초로 된 신체감정 결과에 따라 자신이 위 사고 후 5년간만 생존할 것으로 예상하여 여명 이후 가동기간까지에 해당하는 손해배상액을 감축하여 청구하였고, 같은 법원도 위 감정 결과에 따라 원고의 기대여명이 정상적으로는 48.58년이나 후유장애로 인하여 사고 후 5년으로 감축하게 되었음을 인정한 후 원고의 여명기간이 지난 다음날인 1997. 9. 25.부터 가동연한까지는 원고가 사망할 것을 전제로 생계비의 3분의 1을 공제한 다음 원고에 대한 일실수입을 계산하여 그 손해배상의 범위를 정하였음을 알 수 있으며, 원고가 여명기간이 지난 1997. 9. 25.부터 이 사건 항소심 변론종결에 이르기까지도 생존하고 있음은 기록상 명백하다. 사실관계가 위에서 본 바와 같은 이상, 전소의 확정판결에서 원고가 기대여명이 사고 후 5년까지로 단축되었다는 이유로 원고의 청구가 일부청구에 그치고, 법원도 그에 따라 원고에 대한 손해배상의 범위를 확정하였으나 그 후 원고가 실제로 전소에서 기초로 되어 있던 기대여명 이후에 생존하게 됨이 판명된 것은 전소의 확정판결이 있은 후에 비로소 그 판결에서 전제로 삼은 바와는 다르게 객관적으로 판명되게 된 것이어서 판결 확정 후에 새로운 사유가 발생하여 사정변경이 있은 경우에 해당한다고 할 수 있으므로, 원고가 이 사건 소로 전소의 확정판결상의 청구와 동일한 청구를 하고 있더라도 전소 확정판결의 기판력에 저촉된다고 할 수 없으니, 피고의 위 주장은 이유 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|80다1671|판결" href="#//">대법원 1980. 11. 25. 선고 80다1671 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다46226|판결" href="#//">1993. 12. 21. 선고 92다46226 판결</a></span> 등 참조).
+      </p><p>나. 소멸시효의 주장</p><p>피고는 또한, 불법행위에 있어 피해자의 손해배상청구권은 피해자가 손해 및 가해자를 안 때로부터 3년이 경과하면 시효로 인하여 소멸하는 것이므로, 특별한 사정이 없는 한 원고의 손해배상청구권은 이 사건 사고일로부터 3년이 경과하는 1995. 9. 24.경에 원칙적으로 소멸시효가 완성되었다고 할 것이고, 가사 피고가 원고의 법률상 손해배상금 일체를 지급한 1993. 4. 16.경에 위 소멸시효의 진행이 중단되었다고 가정하더라도 그로부터 다시 3년이 경과한 1996. 4. 16.경에는 원고의 피고에 대한 손해배상청구권은 이미 소멸시효가 완성되었다고 주장한다.</p><p>살피건대, 통상의 경우에 상해의 피해자는 상해를 입었을 때 그 손해를 알았다고 보아야 할 것이나, 다만 그 후 변경된 사정으로 인하여 불법행위 당시에는 전혀 예견할 수 없었던 새로운 손해가 발생하였다거나 예상 외로 손해가 확대된 경우에 있어서는 그러한 사유가 판명된 때에 새로이 발생 또는 확대된 손해를 알았다고 보아야 할 것인바(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다42583|판결" href="#//">대법원 1992. 12. 8. 선고 92다42583 판결</a></span> 참조), 앞서 본 바와 같이 원고는 1992. 9. 24. 이 사건 사고를 당하고 중상을 입어 식물인간이 된 후 같은 해 11.경 청주지방법원 충주지원에 사고 운전자인 
+        소외 1을 상대로 손해배상청구의 소를 제기하여 같은 법원에서 신체감정을 명하였는데, 그 감정 결과에 의하면 원고의 여명기간은 사고 후 5년이라고 하였고 원고로서도 위 감정 결과를 믿고 사고 후 5년간만 생존할 것으로 예상한 상태에서 여명기간이 지난 다음날인 1997 9. 25.부터 가동연한인 2032. 4. 28.까지는 생계비의 3분의 1을 공제한 상태에서 일실수입을 청구하였으며, 개호비 역시 위 신체감정상의 여명기간인 1997. 9. 24.까지만 구하였던 점을 인정할 수 있는바, 위 인정 사실에 의하면, 원고로서는 1997. 9. 24.이 지나서야 이 사건 손해가 예상 외로 확대되었음을 알았다고 할 것인즉, 그로부터 3년 내에 이 사건 소를 제기한 점은 기록상 명백하다고 할 것이니, 피고의 위 주장도 이유 없다.
+      </p><p>다. 부제소특약의 주장</p><p>피고는 나아가, 원고가 1993. 4. 16. 전소의 확정판결에 의하여 피고로부터 법률상 손해배상금 일체로 금 207,000,000원을 수령함과 동시에 위 판결 중 나머지 금원에 대한 청구권 등 이 사건 사고에 관한 일체의 청구권을 포기하기로 하였으므로, 이 사건 청구는 위 부제소특약에 위반되었다고 주장한다.</p><p>그러므로 살피건대, 을 제1 내지 3호증, 을 제4호증의 1 내지 4의 각 기재에 변론의 전취지를 종합하면, 원고는 그 소송대리인을 통하여 1993. 4. 16. 
+        소외 1로부터 
+        <span id="link"><a name="linkContPanre" title="새창" type="청주지방법원충주지원|92가합2080" href="#//">청주지방법원 충주지원 92가합2080호</a></span> 손해배상 청구소송사건에 관하여 금 207,000,000원을 수령하고 나머지 금원 등 이 사건 교통사고에 관한 일체의 청구권을 포기하기로 합의한 사실은 인정되나, 한편 앞서 든 각 증거들에 의하면 이는 원고가 전 소송의 판결을 받은 후 그 판결금액에 상당한 금액을 수령한 다음 위 판결의 기초가 되었던 신체감정 결과에 따른 여명기간이 경과하여 그로 인한 손해액의 확대를 예상하지 못하고 위와 같은 권리포기의 합의를 한 것으로 보여지므로, 위 합의의 효력은 원고가 예측가능하였던 부분에만 미칠 뿐 이 사건 소송으로 인한 손해에 대하여는 미칠 수 없는 것으로 보아야 할 것이므로, 피고의 위 주장도 역시 이유 없다(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|91다30057|판결" href="#//">대법원 1991. 12. 13. 선고 91다30057 판결</a></span> 참조).
+      </p><p>3. 손해배상의 범위</p><p>가. 일실 수입</p><p>원고는, 원고가 이 사건 사고로 인하여 이 사건 사고일로부터 가동기간인 2032. 4. 8.까지 사이에 상실한 일실수입 손해라고 주장하는 금 189,172,942원 중 전소판결에서 위 기간 동안 원고의 일실수입 손해라고 인정하였던 금 87,532,856원을 공제한 나머지 금 101,640,086원의 지급을 구하므로 살피건대, 전소의 확정판결의 기판력이 이 사건 청구에 미치지 아니함은 위에서 본 바와 같으나, 전소에서 인정되었던 원고의 일실수입 부분, 즉 이 사건 사고일인 1992. 9. 24.부터 기대여명 기간이었던 1997. 9. 24.까지의 일실수입 손해와 그 다음날부터 가동기간인 2032. 4. 28.까지의 일실수입 손해에서 생계비(1/3)를 공제한 부분에 대하여는 여전히 전소의 확정판결의 기판력이 미친다고 보아야 할 것이므로, 이 부분에 대한 원고의 일실수입 손해는 산정하지 아니하고, 원고가 전소에서 청구하지 아니한 1997. 9. 25.부터 가동기간인 2032. 4. 28.까지의 일실수입 손해 중 공제되었던 생계비 부분에 해당하는 금원을, 원고에 관한 다음 (1)의 인정 사실 및 평가내용을 기초로 하여, 다음 (2)와 같이 월 12분의 5푼의 비율에 의한 중간이자를 공제하는 단리할인법에 따라 이 사건 사고 당시의 현가로 산정하면 금 57,568,316원이 된다.</p><p>(1) 인정 사실 및 평가내용</p><p>(가) 성 별 : 남자  생년월일 : 1972. 4. 28.</p><p>연령(사고당시) : 20세 4개월 남짓</p><p>기대여명 : 1997. 9. 25.경 기준으로는 46.15년이나 8년 정도의 단축이 있다고 인정되므로 38.15년임.</p><p>(나) 거주지 및 소득실태 : 이 사건 사고 당시 도시지역에 거주하였고, 군복무를 마친 다음날부터는 최소한 도시일용 보통인부로서의 수입을 얻을 수 있었으리라고 보여지는바, 1993. 정부노임단가에 의한 도시 보통인부 노임은 1일 금 21,000원(원고가 구하는 바에 따름)이고, 1998. 9.의 보통인부 노임은 1일 금 33,755원임.</p><p>(다) 월 가동일수 및 가동기간 : 월 25일씩 60세가 될 때까지.</p><p>(라) 후유장해 및 노동능력상실률</p><p>① 후유장해 : 뇌조직손상으로 인한 언어, 정신기능장애, 우측반신불수.</p><p>② 노동능력상실률 : 100%</p><p>(2) 계 산 (월 미만 및 원 미만은 버림)</p><p>(가) 1997. 9. 25.부터 1998. 9. 24.까지(12개월)</p><p>금 21,000원×25일×(62.8521-53.4545)×100%×1/3 = 금 1,644,580원</p><p>(나) 그 다음날부터 2032. 4. 28.까지(403개월)</p><p>금 33,755원×25일×(261.6626-62.8521)×100%×1/3 = 금 55,923,736원)</p><p>(다) 합계 금 57,568,316원(= 금 1,644,580원+금 55,923,736원)</p><p>[증 거] 갑 제1호증, 갑 제3, 6, 8호증의 각 1, 2, 이 법원의 제천서울병원 신경외과 최종열에 대한 신체감정촉탁 결과 및 1998. 3. 9.자 사실조회 결과, 변론의 전취지, 경험칙.</p><p>나. 개호비</p><p>원고는 우측반신불수, 언어장애, 기억력장애, 정신기능장애 등으로 인하여 옆에서 부축하여 주어야 보행이 가능하고 식사시에도 옆에서 한 사람이 붙어 앉아 보조를 하여 주어야만 식사가 가능하며 혼자서는 나돌아 다닐 수가 없어서 평생 최소한 한 사람의 개호가 필요하다고 주장하면서 개호비로 금 162,024,000원의 지급을 구한다.</p><p>그러므로 살피건대, 제1심증인 정덕순의 일부 증언과 제천서울병원장의 원고에 대한 신체감정 결과 및 사실조회회보 결과에 변론의 전취지를 종합하면, 원고는 이 사건 사고로 인한 상해로 말미암아 이 사건 사고 직후에는 식물인간 상태였으나 그로부터 4년 여가 경과한 후로 점차 의식을 회복하는 등 상당히 호전되고 있는 점, 좌측 시력이 완전히 실명상태로서 이성적이고 사리에 맞는 판단능력 및 감정조절능력이 상실되었으나, 사고 이후 물리치료와 기관절개복원술 등을 받는 등으로 치료를 계속하였고 그 결과 일상적인 대화수준의 언어를 판단할 수 있고, 평지 보행이 가능하며 제3자의 도움 없이 혼자 옷을 갈아 입을 수 있고 대소변을 가리고 식사가 가능한 점 등을 인정할 수 있는바, 위 인정 사실에 원고의 나이 등까지 아울러 참작하여 볼 때, 비록 위와 같은 후유증 자체는 영구적이라고 하더라도 그 사실만으로는 원고가 혼자서 일상의 거동을 하는 것이 불가능하여 개호인의 개호를 필요로 한다고 보기 어렵고, 제1심 증인 정덕순의 일부 증언과 이 법원의 제천서울병원 신경외과 최종열에 대한 1998. 4. 20.자 사실조회 결과만으로는 이를 인정하기에 부족하고, 달리 이를 인정할 만한 자료가 없다고 할 것이어서 원고의 위 주장은 이유 없다.</p><p>4. 결 론</p><p>그렇다면 피고는 원고에게 금 57,568,316원 및 이에 대하여 이 사건 사고일인 1992. 9. 24.부터 피고가 이행의무의 존부 및 범위에 관하여 항쟁함이 상당하다고 인정되는 이 사건 항소심 판결선고일인 1999. 7. 8.까지는 민법 소정의 연 5푼의, 그 다음날부터 완제일까지는 소송촉진등에관한특례법 소정의 연 2할 5푼의 각 비율에 의한 지연손해금을 지급할 의무가 있으므로, 원고의 이 사건 청구는 위 인정 범위 내에서 이유 있어 이를 인용하고 나머지 청구는 이유 없어 이를 기각할 것인바, 이와 결론을 일부 달리한 원심판결의 피고 패소 부분은 부당하므로 이를 취소하고, 그 부분에 해당하는 원고의 청구를 기각하기로 하며, 원고의 항소 및 피고의 나머지 항소는 모두 이유 없어 이를 각 기각하기로 하여 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   여상조(재판장) 강상욱 신상렬 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

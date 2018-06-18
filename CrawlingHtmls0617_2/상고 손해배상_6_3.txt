@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2001다9311 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2066163';
+var contIdEtc = '';
+var saNo = '2001다9311';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20020924' ? 
+			'20020924'.length==4 ? Date.parseExact('20020924','yyyy').toString('yyyy. M. d.') : 
+				'20020924'.length==6 ? Date.parseExact('20020924','yyyyMM').toString('yyyy. M. d.') : 
+					'20020924'.length==8 ? Date.parseExact('20020924','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2001다9311, 9328 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2001다9311';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2001다9311</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(2)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(17)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(6)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(11)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(5)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(24)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2174404">대법원 2014. 12. 24. 선고 2013다76253 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2194120">대법원 2015. 12. 23. 선고 2013다88447 판결 [공2016상,191]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|537227">유가증권의 발행시장과 유통시장 김주원 서울地方辯護士會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|536805">증권거래법 제14조의 손해배상청구권자의 범위 신우진 博英社</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|544375">한국 . 대법원 법원행정처 재판실무편람 . 제10호 : 증권재판실무편람 법원행정처  2011 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|629702">강성국 외부감사인의 제3자에 대한 손해배상책임 청연논총 제5집 / 사법연수원  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577776">고창현 CHO ㆍCFO 인증제도가 우리나라에서 필요한가 : 부실공시에 대한 손해배상책임제도의 검토 . BFL 제25호  / 서울대학교 금융법센터  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558805">오성근 이사의 부실표시와 민사책임 : 증권거래법 제14조, 상법 제401조를 중심으로 . 증권법연구 7권 1호  / 삼우사  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|576671">박휴상 증권관련 부실공시책임의 손해인과관계에 관한 고찰 법학논총 27집 1호  / 전남대학교 법학연구소  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|662366">윤인성 구 증권거래법 제206조의11 제1항 제1호의 과징금 부과대상자인 ‘공인회계사’의 의미 자유와 책임 그리고 동행 : 안대희 대법관 재임기념   / 사법발전재단  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|494662">서세원 회계감사인의 제3자에 대한 책임에 관한 연구 동국대학교  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|617459">강대섭 증권거래법 판례의 변화와 전망 : 자본시장법의 제정과 관련하여 상사판례연구 23집 1권  / 한국상사판례학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|516975">채동헌 상법 제627조 제1항 소정 부실문서행사죄 대법원판례해설 45호 (2004.01) / 법원도서관  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|527703">서완석 증권거래법상의 손해배상책임에 관한 연구 기업법연구 16집  / 한국기업법학회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|518484">양승규 감사인의 부실감사로 인한 손해배상책임 : 제3자에 대한 책임을 중심으로 . 가톨릭법학 1호  / 가톨릭대학교  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|551152">박휴상 증권거래법상 유통공시책임의 손해배상액에 관한 고찰 기업법연구 19권 4호 / 한국기업법학회  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|580672">백승재 감사실패에 대한 판례의 동향과 문제점 법률신문 3589호  / 법률신문사  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|536805">신우진 증권거래법 제14조의 손해배상청구권자의 범위 민사판례연구 27권  / 박영사  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|629276">백승재 회사의 분식회계 및 감사인의 부실감사와 손해사이의 인과관계의 존부 판례연구 20집(2006.10) / 서울지방변호사회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|596175">장상균 분식회계로 인한 증권투자자 손해배상청구소송의 몇 가지 문제 민사재판의 제문제 17권 / 한국사법행정학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|829088">강대섭 2016년 자본시장법 주요 판례의 분석과 평가 상사판례연구 30집 1권 / 한국상사판례학회  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1][2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|99다48979">
+대법원 2002. 5. 14. 선고 99다48979 판결(공2002상, 1382) </a></p><p class="areaChjPanre"><font>[4]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|86누325">
+대법원 1987. 2. 24. 선고 86누325 판결(공1987, 561)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|92다24325">
+대법원 1992. 9. 25. 선고 92다24325 판결(공1992하, 2999)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|93다26168">
+대법원 1995. 7. 11. 선고 93다26168 전원합의체 판결(공1995하, 2577)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다71760">
+대법원 2001. 6. 12. 선고 2000다71760, 71777 판결(공2001하, 1585)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다63575">
+대법원 2002. 1. 25. 선고 2001다63575 판결(공2002상, 572)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="증권거래법|14|0|19990201">증권거래법(구) 제14조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="증권거래법|188|4|19990201">증권거래법(구) 제188조의4 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="증권거래법시행령|83|8|19990527">증권거래법시행령(구) 제83조의8 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="주식회사의외부감사에관한법률|1|0|20000112">주식회사의외부감사에관한법률(구) 제1조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="주식회사의외부감사에관한법률|2|0|null">주식회사의외부감사에관한법률(구) 제2조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="주식회사의외부감사에관한법률|3|0|null">주식회사의외부감사에관한법률(구) 제3조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="주식회사의외부감사에관한법률|17|0|null">주식회사의외부감사에관한법률(구) 제17조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민사소송법|423|0|null">민사소송법 제423조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[5]</font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민사소송법|203|0|null">민사소송법 제203조 </a></p><p class="areaChjJomun"><font>[6]</font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="증권거래법|14|0|19990201">증권거래법(구) 제14조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다48979">대법원 2002. 5. 14. 선고 99다48979 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다48979">대법원 2002. 5. 14. 선고 99다48979 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|92다24325">대법원 1992. 9. 25. 선고 92다24325 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2000다71760">2001. 6. 12. 선고 2000다71760, 71777 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다63575">2002. 1. 25. 선고 2001다63575 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="유가증권발행신고등에관한규정|12|0|null">유가증권발행신고등에관한규정 제12조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="증권거래법|14|0|null">증권거래법 제14조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="증권거래법|14|0|19990201">증권거래법(구) 제14조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="유가증권발행신고에관한규정|12|0|null">유가증권발행신고에관한규정 제12조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|17|0|null">주식회사의외부감사에관한법률 제17조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|17|0|null">주식회사의외부감사에관한법률 제17조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부담사에관한법률|17|0|null">주식회사의외부담사에관한법률 제17조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|1|0|null">주식회사의외부감사에관한법률 제1조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률|2|0|null">주식회사의외부감사에관한법률 제2조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공인회계사법|23|0|null">공인회계사법 제23조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공인회계사법|3|0|null">공인회계사법 제3조 제1항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="공인회계사법|41|0|null">공인회계사법 제41조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="주식회사의외부감사에관한법률시행령|2|0|19980424">주식회사의외부감사에관한법률시행령 제2조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="증권거래법|194|3|19980108">증권거래법(구) 제194조의3 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="식회사의외부감사에관한법률|17|0|null">식회사의외부감사에관한법률 제17조 제2항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="증권거래법|197|0|null">증권거래법 제197조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2000나10828">
+서울고법 200 1. 1. 9. 선고 2000나10828, 10835 판결 </a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2002. 9. 24. 선고 2001다9311, 9328 판결</h2><p class="sub_title">[손해배상(기)][공2002.11.15.(166),2485]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법 제14조</a></span> 소정의 손해배상청구권자인 '유가증권의 취득자'의 범위에 유가증권의 발행시장이 아닌 유통시장에서 유가증권을 인수한 자도 포함되는지 여부(소극)
+        </p>
+      <p></p>
+      <p>
+        </p><p>[2] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|188|4 ">구 증권거래법 제188조의4 제3항</a></span>, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법시행령|83|8">같은법시행령 제83조의8</a></span>에 의한 '시장조성'의 보호대상자 및 시장조성 포기로 인한 손해배상청구권자의 범위
+        </p>
+      <p></p>
+      <p>
+        </p><p>[3] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">주식회사의외부감사에관한법률 제17조 제2항</a></span> 소정의 손해배상책임을 지는 감사인의 의미
+        </p>
+      <p></p>
+      <p>
+        </p><p>[4] 원심에서 주장하지 않은 새로운 사실을 주장하는 상고이유의 적법 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[5] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">주식회사의외부감사에관한법률 제17조 제2항</a></span>에 의한 감사인의 손해배상책임이 부정되는 경우 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|197|">증권거래법 제197조 제1항</a></span>에 의한 감사인의 손해배상책임을 구하기 위하여는 이에 관한 명시적 주장이 필요하다고 한 사례
+        </p>
+      <p></p>
+      <p>
+        </p><p>[6] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법 제14조</a></span> 소정의 발행인 등의 면책항변의 요건과 그 입증사항
+        </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 우리 증권거래법이 유가증권의 발행시장에서의 공시책임과 유통시장에서의 공시책임을 엄격하게 구분하고, 그 책임요건을 따로 정하고 있는 점, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">증권거래법 제14조</a></span>의 손해배상 책임 규정은 법이 특별히 책임의 요건과 손해의 범위를 정하고, 책임의 추궁을 위한 입증책임도 전환시켜 유가증권 발행시장에 참여하는 투자자를 보호하기 위하여 규정한 조항인 점에 비추어, 유가증권의 유통시장에서 해당 유가증권을 인수한 자는 위와 같은 유가증권 발행신고서 등의 허위 기재시 해당 관여자에게 민법상 불법행위 책임을 물을 수 있는 경우가 있을 수 있음은 별론으로 하고, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법(1999. 2. 1. 법률 제5736호로 개정되기 전의 것) 제14조</a></span> 소정의 손해배상 청구권자인 유가증권 취득자의 범위에는 포함되지 않는다고 봄이 타당하다. 
+        </p>
+      <p></p><p>
+        </p><p>[2] 시장조성이라는 제도는 우리의 유가증권 발행과 유통시장이 매우 취약함을 전제로 유가증권의 모집 및 매출 업무를 담당하는 주간증권사에 특별히 부과하는 의무로서 시장경제와 자유경제적 원칙에 비추어 예외적으로 인정되는 것이라는 점, 유가증권 발행을 주선한 주간증권사의 입장에서 시장조성에 의하여 보호하려는 대상은 유가증권의 모집과 매출 이전에 이미 발행된 주식을 보유하고 있는 주주가 아니라 자신이 발행을 주선한 유가증권을 보유한 투자자라고 보는 것이 원칙인 점, 유가증권의 유통시장에서 투자를 하려는 사람은 시장조성의 여부와 관계없이 기업의 본질가치를 정확하게 판단하고, 해당 기업의 상장 이후 형성된 주가를 보고 자기 책임에 의한 투자를 하여야 하는 것이 유가증권 유통시장의 기본원리인 점 등에 비추어, 시장조성이 이루어지는 대상이 되는 유가증권은 증권거래소나 코스닥증권시장 등 유가증권 유통시장의 특성상 유통시장에서 거래되는 주식 전체가 된다고 하더라도, 그와 같은 시장조성의 보호대상이 되는 유가증권의 보유자로서 시장조성 포기로 인한 손해배상을 구할 수 있는 자는 해당 유가증권의 발행을 주간한 증권사가 모집 또는 매출한 유가증권의 발행에 참가하여 이를 인수한 투자자들과 그들로부터 해당 유가증권을 특정하여 직접 인수한 투자자(공개된 유통시장에서 불특정 주식을 매수한 자는 제외)라고 보는 것이 타당하다. </p>
+      <p></p><p>
+        </p><p>[3] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">주식회사의외부감사에관한법률 제17조 제1항</a></span>은 "감사인이 그 임무를 게을리하여 회사에 대하여 손해를 발생하게 한 때에는 그 감사인은 회사에 대하여 손해를 배상할 책임이 있다.", 제2항은 "감사인이 중요한 사항에 관하여 감사보고서에 기재하지 아니하거나 허위의 기재를 함으로써 이를 믿고 이용한 제3자에게 손해를 발생하게 한 경우에는 그 감사인은 제3자에 대하여 손해를 배상할 책임이 있다."고 규정하고 있지만, 위 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">제17조 제2항</a></span>의 규정에 따라 손해배상책임을 지는 감사인은 같은 법 제3조에 따라 외부감사를 하는 감사인에 한정되고, 주식회사의외부감사에관한법률은 그 입법목적이 '주식회사로부터 독립된 외부의 감사인이 그 주식회사에 대한 회계감사를 실시하여 회계처리의 적정을 기하게 함으로써 이해관계인의 보호와 기업의 건전한 발전에 기여함을 목적'으로 하고 있고(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|">제1조</a></span>), 외부감사의 대상이 되는 회사 및 감사의 범위에 관하여 '직전사업년도말의 자산총액이 대통령령이 정하는 기준액 이상인 주식회사'와 '재무제표'로 한정하고 있고(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|2|">제2조</a></span>), 그러한 감사를 실시할 수 있는 감사인에 대하여 '
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공인회계사법|23|">공인회계사법 제23조</a></span>의 규정에 의한 회계법인(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|3|">제3조 제1항 제1호</a></span>)' 또는 '
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공인회계사법|41|">공인회계사법 제41조</a></span>의 규정에 의하여 설립된 한국공인회계사회에 총리령이 정하는 바에 의하여 등록을 한 감사반(제3호)'으로 한정하고 있음에 비추어 볼 때, 위 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">제17조 제2항</a></span>의 규정에 따라 손해배상책임을 지는 감사인은 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|2|">주식회사의외부감사에관한법률 제2조</a></span>에 따라 외부감사의 대상이 되는 회사에 대하여 외부감사를 하는 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|3|">같은 법 제3조</a></span>의 감사인에 한정된다. 
+        </p>
+      <p></p><p>
+        </p><p>[4] 원심에서 주장한 바 없이 상고심에 이르러 새로이 하는 주장은 원심판결에 대한 적법한 상고이유가 될 수 없다.</p>
+      <p></p><p>
+        </p><p>[5] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">주식회사의외부감사에관한법률 제17조 제2항</a></span>에 의한 감사인의 손해배상책임이 부정되는 경우 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|197|">증권거래법 제197조 제1항</a></span>에 의한 감사인의 손해배상책임을 구하기 위하여는 이에 관한 명시적 주장이 필요하다고 한 사례.
+        </p>
+      <p></p><p>
+        </p><p>[6] 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법(1999. 2. 1. 법률 제5736호로 개정되기 전의 것) 제14조</a></span>에 따라 발행인 등이 그 책임을 면하기 위해서는 상당한 주의를 하였음에도 불구하고 부실표시를 알 수 없었음을 증명하여야 하기 때문에 단순히 그 부실표시를 알지 못하였다든가, 상당한 주의를 다 하지 못하였다면 책임을 면할 수 없고, 이와 같은 '상당한 주의'의 항변을 하기 위해서는 자신의 지위와 특성에 따라 합리적으로 기대되는 조사를 하였으며, 그에 의해 문제된 사항이 진실이라고 믿을 만한 합리적인 근거가 있음을 입증해야 한다.
+        </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>  [1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법(1999. 2. 1. 법률 제5736호로 개정되기 전의 것) 제14조</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|188|4 ">구 증권거래법(1999. 2. 1. 법률 제5736호로 개정되기 전의 것) 제188조의4 제3항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법시행령|83|8">구 증권거래법시행령(1999. 5. 27. 대통령령 제16367호로 개정되기 전의 것) 제83조의8</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>[3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|">구 주식회사의외부감사에관한법률(2000. 1. 12. 법률 제6108호로 개정되기 전의 것) 제1조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|2|">제2조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|3|">제3조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">제17조</a></span>[4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|423|">민사소송법 제423조</a></span>[5]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|203|">민사소송법 제203조</a></span>[6]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법(1999. 2. 1. 법률 제5736호로 개정되기 전의 것) 제14조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1][2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다48979|판결" href="#//">대법원 2002. 5. 14. 선고 99다48979 판결(공2002상, 1382) </a></span></p><p class="txt_9">[4]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|86누325|판결" href="#//">대법원 1987. 2. 24. 선고 86누325 판결(공1987, 561)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다24325|판결" href="#//">대법원 1992. 9. 25. 선고 92다24325 판결(공1992하, 2999)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|93다26168|판결" href="#//">대법원 1995. 7. 11. 선고 93다26168 전원합의체 판결(공1995하, 2577)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다71760|판결" href="#//">대법원 2001. 6. 12. 선고 2000다71760, 71777 판결(공2001하, 1585)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다63575|판결" href="#//">대법원 2002. 1. 25. 선고 2001다63575 판결(공2002상, 572)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,상고인】
+      
+          원고 1 외 9인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【원고,상고인겸피상고인】
+      
+          원고 13 (소송대리인 법무법인 한누리 담당변호사 김상원 외 3인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【원고,피상고인】
+      
+          원고 4 외 1인
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party8">
+      【피고,피상고인】
+      
+          동부증권 주식회사 (소송대리인 법무법인 한결 담당변호사 김희제)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party10">
+      【피고,피상고인겸상고인】
+      
+          송현회계법인 (소송대리인 변호사 정운섭)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party12">
+      【피고1의보조참가인】
+      
+          주식회사 옌트 외 3인
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2000나10828|10835 판결 " href="#//">
+서울고법 200 1. 1. 9. 선고 2000나10828, 10835 판결 </a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 각자의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>  상고이유를 본다. </p><p>  1. 원심이 적법하게 채택한 증거에 의하면, 다음과 같은 사실이 인정된다.</p><p>  가. 주식회사 옌트(이하 '옌트'라고만 한다)는 공장자동화 설비의 설계 및 제조업 등을 목적으로 하는 회사로서, 1998. 2. 외부감사 수검, 같은 해 3. 26. 주식 총액인수 및 공모계약 체결, 같은 해 4. 6. 유가증권신고서 제출, 같은 달 27.(유가증권신고의 효력 발생일) 청약안내공고, 같은 달 28.부터 그 다음날까지 청약 접수, 같은 해 5. 12. 주금 납입 등의 절차를 거쳐 보통주식 150,000주를 발행가액 20,000원으로 공모 발행하고 1998. 5. 25. 한국증권업협회 및 협회중개시장{코스닥(KOSDAQ)시장}에 등록하였다. 그리고 피고 동부증권 주식회사(이하 '피고 동부증권'이라고만 한다)는 위 등록을 주선한 주간사회사이며, 피고 송현회계법인은 위 외부감사를 담당한 회계법인이다.</p><p>  나. 옌트는 1998. 3. 26. 피고 동부증권과 사이에 "주간사회사가 배정 후 잔여 주식을 포함하는 발행 주식 전부를 인수, 매출하고 발행회사의 협회등록 후 1개월간 인수가액으로 시장조성을 수행한다."라는 요지의 총액인수(인수기관이 발행되는 유가증권의 전량을 자기 명의로 인수하고 그에 따른 위험을 전담하는 유가증권 발행방법을 말한다.) 및 매출계약을 체결하고, 같은 해 4. 6. 금융감독위원회에 "주식의 인수는 총액인수의 방법에 의하고 주간사회사가 위와 같이 시장조성을 수행한다."라는 내용의 유가증권신고서를 총액인수 및 매출계약서와 함께 제출하였다. 그런데 사실은 옌트와 피고 동부증권 사이에 같은 해 3. 26. 배정 후 잔여 주식의 인수와 시장조성을 옌트의 계산으로 수행하기로 하는 내용의 이면계약이 체결됨으로써 주식 인수의 방법이 사실상의 모집주선(유가증권의 발행에 따른 위험을 발행인이 부담하고 발행사무만을 인수기관에 위탁하는 유가증권 발행방법을 말한다.)으로 결정된 바 있었음에도, 위 유가증권신고서와 총액인수 및 매출계약서에는 그러한 내용이 기재되지 않았다.</p><p>  다. 피고 송현회계법인은 1998. 2. 24. 옌트와 사이에 외부감사계약을 체결하고 같은 달 27. 감사보고서를 작성, 제출함에 있어, 사실은 옌트가 지난 수년간 재무제표에 가공의 매출액을 계상하고 그에 따른 현금 부족분은 가지급금으로 계상하는 등의 방법으로 분식회계처리를 해 왔으며, 1997년도에는 619,687,788원 상당의 당기 순손실을 입고서도 재무제표에 1,438,800,000원 상당의 가공 매출액과 자기의 대표이사에 대한 같은 액수의 대여금 채권액을 계상함으로써 마치 819,112,212원 상당의 당기 순이익을 얻은 것처럼 가장하였음에도 불구하고, 이를 간과한 채 감사보고서에 옌트의 1997년도 재무제표가 그 재무상태와 경영성과 등을 기업회계기준에 따라 적정하게 표시하고 있다는 내용의 감사의견을 기재하였다. 위 감사보고서(위 재무제표 등 포함)는 위 유가증권신고서의 첨부서류로서(
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="유가증권발행신고등에관한규정|12|">유가증권발행신고등에관한규정 제12조 제1항 제1호 (바)목</a></span> 참조) 금융감독위원회에 제출되었고, 그 내용 중 일부는 위 유가증권신고서에 인용되었다.
+      </p><p>  라. 위 유가증권신고서와 그 첨부서류들은 금융감독위원회에 비치되어 일반인의 열람에 제공되었다. 또한, 피고 동부증권은 위 유가증권신고서 등의 내용을 기초로 1998. 4. 27. 매일경제신문에 청약안내공고를 게재하였고, 직원들로 하여금 홍보자료 등을 활용하여 고객들에게 옌트의 주식에 대한 공모청약 또는 매수를 권유하도록 하였다.</p><p>  마. 그런데 모집한 주식 150,000주 가운데 52,857주에 대해서만 청약이 이루어졌고, 피고 동부증권은 마치 옌트가 위 피고로부터 잔여 주식의 인수가액에 해당하는 1,950,000,000원을 납입받은 후 옌트가 위 피고에게 개설한 수익증권계좌로 입금시킨 것처럼 가장하여 위 금액의 납입을 회피하였다. 그 결과 옌트는 위 금액 상당의 가공 자본금을 보유하게 되었다.</p><p>  바. 그리고 매매개시일인 1998. 5. 25.부터 기존 주주들의 매도 주문에 따라, 옌트의 주식이 하한가인 17,600원에 거래되기 시작하였으며, 피고 동부증권은 같은 날 증권감독원에 시장조성 신고서를 제출하였으나, 계속하여 옌트 주식의 시장가격이 하락하였음에도 불구하고, 위 피고는 공모청약자가 아닌 기존 주주들을 위하여 시장조성을 수행할 필요가 없다고 판단하여, 또한 옌트가 위 이면계약의 내용과 달리 시장조성 자금을 제공하지 않는다는 이유로, 실제로 시장조성에 나서지 않았다.</p><p>  사. 그 후 옌트는 채산성 악화 등으로 인하여 1998. 9. 16. 최종적으로 부도 처리되어 주가는 한때 1,000원 미만까지 떨어졌다가, 1999. 6. 16. 화의인가 결정을 받은 것을 계기로 다소 회복되었다.</p><p>  아. 한편, 원고 4, 원고 7은 공모청약에 의하여 옌트의 공모주를 취득하였고, 같은 원고들과 원고 13을 제외한 나머지 원고들은 협회중개시장에서 옌트의 주식을 매수하였으며, 원고 13은 공모청약에 의하여 옌트의 공모주를 취득한 후 협회중개시장에서 추가로 그 주식을 매수하였다. 상당수의 원고들은 피고 동부증권의 직원들로부터 옌트 주식의 취득을 권유받고 공모청약 또는 매수에 나섰으며, 그렇지 않은 원고들은 나름대로 옌트의 재무상태 등을 검토한 후 장차 그 주가가 상승할 것이라고 기대하여 주식을 매수하였다.</p><p>  2. 원고들(원고 4, 원고 7 제외)의 상고이유에 대한 판단</p><p>  가. 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">증권거래법 제14조</a></span>의 손해배상청구권자에 관한 법리오해의 점
+      </p><p>  원심은, 원고들{원고 4, 원고 7, 원고 13(1998. 5. 25.자 매수분 제외) 각 제외, 이하 이항에서는 같다}이 피고들을 상대로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">증권거래법 제14조</a></span>에 기하여 유가증권발생신고서와 사업설명서 및 이에 첨부된 감사보고서의 허위기재를 원인으로 한 주위적 손해배상 청구에 대하여 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법(1999. 2. 1. 법률 제5736호로 개정되기 전의 것, 이하 같다) 제14조</a></span>는 허위기재 등으로 인한 배상책임에 관하여 발행인이 유가증권신고서와 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="유가증권발행신고에관한규정|12|">제12조</a></span>의 규정에 의한 사업설명서(예비사업설명서를 포함한다)중 허위의 기재 또는 표시가 있거나 중요한 사항이 기재 또는 표시하지 아니함으로써 유가증권의 취득자에게 손해를 끼친 때에는 다음 각 호의 자는 그 손해에 관하여 배상의 책임을 진다고 규정하고 있는데, 증권거래법이 유가증권의 발행시장과 유통시장에 대한 규제를 다른 편에서 따로이 하면서 그 용어도 구분하여 사용하는 점과 모집 또는 매출의 절차에 따라 유가증권을 취득하는 경우 취득을 위한 청약의 시기에 엄격한 제한이 있고, 모집가격 또는 매출가격이 일정하며, 취득의 절차가 복잡하고 기간이 오래 걸리고, 취득 후에도 그 처분이 용이하지 아니하기 때문에 청약의 시기부터 처분가능한 시기까지 장기간 불안정한 지위에 있게 됨에 비하여, 협회중개시장에서 취득하는 경우에는 취득을 위한 매매거래 또는 위탁의 시기에 별다른 제한이 없고, 주가가 탄력적이며, 매매거래 또는 위탁의 절차가 비교적 간단하고 기간도 오래 걸리지 아니하고, 매수 후에도 그 처분이 상당히 용이하기 때문에 상대적으로 안정적인 지위에 있게 되는 관계로, 모집 또는 매출의 절차에 따라 유가증권을 취득하는 자를 협회중개시장 등 유통시장에서 취득하는 자에 비하여 두텁게 보호할 필요성이 있고, 그 보호규정이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법 제14조</a></span>인데, 원고들의 경우 모집 또는 매출의 절차에 따라 이 사건 주식을 취득한 자들이 아니라 등 일반적 유통시장인 협회중개시장에서 유가증권을 취득하는 자들로서 그 손해배상청구권자인 유가증권의 취득자에 해당하지 않는다는 이유로 원고들의 청구를 기각하였다.
+      </p><p>  살피건대, 
+        <span class="accrnt_txt">우리 증권거래법이 유가증권의 발행시장에서의 공시책임과 유통시장에서의 공시책임을 엄격하게 구분하고, 그 책임요건을 따로 정하고 있는 점, 증권거래법 제14조의 손해배상 책임규정은 법이 특별히 책임의 요건과 손해의 범위를 정하고, 책임의 추궁을 위한 입증책임도 전환시켜 유가증권 발행시장에 참여하는 투자자를 보호하기 위하여 규정한 조항인 점에 비추어, 유가증권의 유통시장에서 해당 유가증권을 인수한 자는 위와 같은 유가증권 발행신고서 등의 허위 기재시 해당 관여자에게 민법상 불법행위 책임을 물을 수 있는 경우가 있을 수 있음은 별론으로 하고, 구 증권거래법 제14조 소정의 손해배상 청구권자인 유가증권 취득자의 범위에는 포함되지 않는다고 봄이 타당하다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다48979|판결" href="#//">대법원 2002. 5. 14. 선고 99다48979 판결</a></span> 참조).
+      </p><p>  원심의 위와 같은 판단은 정당하고, 거기에 상고이유에서 지적하는 것과 같은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법 제14조</a></span>의 손해배상 청구권자에 관한 법리오해 등의 위법이 있다고 할 수 없다. 
+      </p><p>  나. 시장조성 포기를 원인으로 한 손해배상청구에 관한 사실오인 및 법리오해의 점</p><p>  원심은 원고들이 피고 동부증권에 대하여 피고 동부증권은 투자자들에게 공시하여 약속한 옌트 주식의 시장조성의무를 일방적으로 포기하였다는 이유로 불법행위를 원인으로 손해배상을 구한 것에 대하여 피고 동부증권이 시장조성의무를 이행할 것을 공시하였는지에 대하여 이를 인정할 만한 증거가 없을 뿐 아니라, 시장조성은 모집의 절차에 따라 공모에 응한 투자자에 대한 것인데, 위 원고들은 공모에 응한 투자자가 아니고 협회중개시장에서 주식을 매수한 자들로서 그 보호의 대상이 되지 않고, 가사 피고 동부증권이 위 원고들이 주장하는 잘못을 저질렀다고 하더라도 옌트 주식의 1주당 주가의 변동과정, 원고들이 이 사건을 주식을 매수하게 된 경위 등에 비추어 위 원고들이 피고 동부증권의 잘못으로 인하여 옌트 주식을 매수하였다거나 또한 옌트 주식을 적절한 시기에 매도하지 못함으로써 주가 하락으로 인한 손해를 입게 되었다고 보기 어렵다는 위 원고들의 청구를 기각하였다.</p><p>  살피건대, 
+        <span class="accrnt_txt">시장조성이라는 제도는 우리의 유가증권 발행과 유통시장이 매우 취약함을 전제로 유가증권의 모집 및 매출 업무를 담당하는 주간증권사에 특별히 부과하는 의무로서 시장경제와 자유경제적 원칙에 비추어 예외적으로 인정되는 것이라는 점, 유가증권 발행을 주선한 주간증권사의 입장에서 시장조성에 의하여 보호하려는 대상은 유가증권의 모집과 매출 이전에 이미 발행된 주식을 보유하고 있는 주주가 아니라 자신이 발행을 주선한 유가증권을 보유한 투자자라고 보는 것이 원칙인 점, 유가증권의 유통시장에서 투자를 하려는 사람은 시장조성의 여부와 관계없이 기업의 본질가치를 정확하게 판단하고, 해당 기업의 상장 이후 형성된 주가를 보고 자기 책임에 의한 투자를 하여야 하는 것이 유가증권 유통시장의 기본원리인 점 등에 비추어, 시장조성이 이루어지는 대상이 되는 유가증권은 증권거래소나 코스닥증권시장 등 유가증권 유통시장의 특성상 유통시장에서 거래되는 주식 전체가 된다고 하더라도, 그와 같은 시장조성의 보호대상이 되는 유가증권의 보유자로서 시장조성 포기로 인한 손해배상을 구할 수 있는 자는 해당 유가증권의 발행을 주간한 증권사가 모집 또는 매출한 유가증권의 발행에 참가하여 이를 인수한 투자자들과 그들로부터 해당 유가증권을 특정하여 직접 인수한 투자자(공개된 유통시장에서 불특정 주식을 매수한 자는 제외)라고 보는 것이 타당하다</span>(위 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다48979|판결" href="#//">대법원 2002. 5. 14. 선고 99다48979 판결</a></span> 참조). 
+      </p><p>  돌아와 이 사건의 경우를 보건대, 이 사건 주식회사 옌트의 경우 코스닥 등록전 발행주식은 모두 600,000주이고 이 사건 주식모집에 의하여 발행된 물량이 모두 150,000주이며, 그 중 일반청약이 이루어진 물량은 52,857주에 지나지 않는 점, 피고 동부증권은 최초 유가증권신고서상에는 회사가 상장된 후 3개월간 시장조성을 하겠다고 기재하였으나, 주당 20,000원에 공모한 이 사건 회사의 주식이 첫거래일부터 주주들이 주식을 대량으로 매도하면서 상장 첫날부터 하한가에 거래가 이루어지자 사실상 주식의 시장조성을 포기하고, 전혀 주식매입을 하지 않은 것으로 보이는 점, 이 사건 원고들 중 원고 1, 원고 9, 원고 13은 그 대부분을 피고 동부증권이 유가증권신고서에 기재한 시장조성 기간 후에 주식을 매입하였을 뿐 아니라, 대부분의 원고들은 위와 같이 피고 동부증권이 사실상 시장조성을 포기하여 주가가 공모가의 거의 절반 이하로 하락하였을 때 그와 같은 사정을 인지하고 난 후 주식을 매입한 것으로 보이는 점 등에 비추어 이 사건 원고들은 피고 동부증권이 부담하는 시장조성의무의 보호대상이라고 볼 수 없고, 원고들의 손해와 피고 동부증권의 시장조성 포기와 사이에 인과관계도 인정할 수 없다.</p><p>  이와 같은 취지의 원심 판단은 결과적으로 정당하고, 거기에 상고이유에서 지적하는 바와 같은 사실오인 및 법리오해의 위법이 있다고 할 수 없다. </p><p>  다. 주식회사의외부감사에관한법률에 기한 회계법인의 책임에 관한 법리오해의 점</p><p>  원심은, 원고들이 피고 송현회계법인에 대하여 중요한 사항에 관하여 감사보고서에 기재하지 아니하거나 허위의 기재를 하였으므로 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">주식회사의외부감사에관한법률(이하 '외감법'이라 한다) 제17조 제2항</a></span>에 따라 위 피고는 원고들이 입은 손해를 배상할 책임이 있다고 주장함에 대하여 
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|" style="text-decoration:underline">외감법 제17조 제1항</a></span>은 "감사인이 그 임무를 게을리하여 회사에 대하여 손해를 발생하게 한 때에는 그 감사인은 회사에 대하여 손해를 배상할 책임이 있다.", 제2항은 "감사인이 중요한 사항에 관하여 감사보고서에 기재하지 아니하거나 허위의 기재를 함으로써 이를 믿고 이용한 제3자에게 손해를 발생하게 한 경우에는 그 감사인은 제3자에 대하여 손해를 배상할 책임이 있다."고 규정하고 있지만, 위 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부담사에관한법률|17|" style="text-decoration:underline">제17조 제2항</a></span>의 규정에 따라 손해배상책임을 지는 감사인은 같은 법 제3조에 따라 외부감사를 하는 감사인에 한정되고, 외감법은 그 입법목적이 '주식회사로부터 독립된 외부의 감사인이 그 주식회사에 대한 회계감사를 실시하여 회계처리의 적정을 기하게 함으로써 이해관계인의 보호와 기업의 건전한 발전에 기여함을 목적'으로 하고 있고(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|1|" style="text-decoration:underline">제1조</a></span>), 외부감사의 대상이 되는 회사 및 감사의 범위에 관하여 '직전 사업연도말의 자산총액이 대통령령이 정하는 기준액 이상인 주식회사'와 '재무제표'로 한정하고 있고(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|2|" style="text-decoration:underline">제2조</a></span>), 그러한 감사를 실시할 수 있는 감사인에 대하여 '
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공인회계사법|23|" style="text-decoration:underline">공인회계사법 제23조</a></span>의 규정에 의한 회계법인'(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공인회계사법|3|" style="text-decoration:underline">제3조 제1항 제1호</a></span>) 또는 '
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="공인회계사법|41|" style="text-decoration:underline">공인회계사법 제41조</a></span>의 규정에 의하여 설립된 한국공인회계사회에 총리령이 정하는 바에 의하여 등록을 한 감사반'(제3호)으로 한정하고 있음에 비추어 볼 때, 위 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|" style="text-decoration:underline">제17조 제2항</a></span>의 규정에 따라 손해배상책임을 지는 감사인은 외감법 제2조에 따라 외부감사의 대상이 되는 회사에 대하여 외부감사를 하는 같은 법 제3조의 감사인에 한정되는데
+        </span>, 이 사건에 있어서 피고 송현회계법인이 감사보고서를 작성함에 있어 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|2|">외감법 제2조</a></span>에 따라 주식회사 옌트에 관하여 회계감사를 하였다고 볼 아무런 자료가 없으므로, 피고 송현회계법인은 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">외감법 제17조 제2항</a></span>에 따라 손해배상책임을 지는 감사인에 해당한다고 볼 수 없고, 설사 감사인에 해당한다고 하더라도 위 원고들이 피고 송현회계법인이 작성한 감사보고서를 믿었고 또한, 그 감사보고서를 이용하였다고 인정하기도 어렵다는 이유로 원고들의 위 청구를 기각하였다.
+      </p><p>  기록에 의하여 살펴보면, 피고 송현회계법인이 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률|17|">외감법 제17조 제2항</a></span>에 의하여 손해배상 책임을 지는 감사인에 해당하지 아니한다는 원심의 위와 같은 판단은 정당하고, 거기에 원고들이 주장하는 바와 같은 주식회사의외부감사에관한법률 제17조 제2항 소정 손해배상 책임에 관한 사실오인 혹은 법리오해의 위법이 있다고 할 수 없다{당시 시행중이던 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="주식회사의외부감사에관한법률시행령|2|">주식회사의외부감사에관한법률시행령(1998. 4. 24. 대통령령 제15779호로 개정되기 이전의 것) 제2조 제1항은 법 제2조</a></span>의 규정에 의하여 외부감사를 받아야 하는 주식회사는 직전 사업연도말의 자산총액이 60억 원 이상인 주식회사로 하고 있고, 이 사건 주식회사 옌트의 경우 당시 자산총액이 59억 원 정도로 이에 해당하지 않고, 이 사건 감사보고서는 위 법 제2조가 정하고 있는 정기적인 재무제표의 작성과 관련된 것이 아니다.}
+      </p><p>  원고들은 상고이유로서 피고 송현회계법인이 제출한 감사보고서는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|194|3">구 증권거래법(1998. 1. 8. 법률 제5498호로 개정되기 전의 것) 제194조의3</a></span>에 의한 것으로서 그 감사보고서에 허위의 기재가 있는 이상 감사인의 손해배상책임을 규정한 구 증권거래법(1997. 12. 13. 법률 제5423호로 개정되기 전의 것) 제197조 제1항에 의하여 손해배상 책임을 부담하여야 한다는 취지의 주장도 하고 있으나, 
+        <span class="accrnt_txt">원심에서 주장한 바 없이 상고심에 이르러 새로이 하는 주장은 원심판결에 대한 적법한 상고이유가 될 수 없다</span>고 할 것인데(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|92다24325|판결" href="#//">대법원 1992. 9. 25. 선고 92다24325 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2000다71760|판결" href="#//">2001. 6. 12. 선고 2000다71760, 71777 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다63575|판결" href="#//">2002. 1. 25. 선고 2001다63575 판결</a></span> 등 참조), 기록에 의하면, 원고는 피고 송현회계법인에 대한 예비적 청구원인으로 위 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="식회사의외부감사에관한법률|17|">주식회사의외부감사에관한법률 제17조 제2항</a></span>에 의한 손해배상을 구한다는 취지를 명백히 하였고, 피고 송현회계법인에 대하여 위 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|197|">증권거래법 제197조 제1항</a></span>에 의한 손해배상을 구한다는 취지의 주장은 원심에 이르기까지 전혀 제출된 바 없음을 알 수 있는 데다가 위 외감법에 기한 손해배상 청구에 증권거래법 제197조 제1항에 의한 손해배상 청구가 당연히 포함되는 것이라고 단정 할 수도 없는 노릇이어서 이 부분 상고이유의 주장을 받아들일만한 것이 되지 못한다. 
+      </p><p>  3. 피고 송현회계법인의 상고이유에 대한 판단</p><p>  가. 원심은, 위에서 인정한 바와 같이 옌트의 재무제표에 대한 분식회계처리 사실 및 1997년도의 619,687,788원 상당 당기 순손실을 가공의 매출액과 자기의 대표이사에 대한 같은 액수의 대여금 채권액을 계상하여 당기 순이익을 얻은 것처럼 가장한 사실을 피고 송현회계법인의 감사보고서가 밝히지 못하였음을 이유로 유가증권의 모집과 매출에 참가한 원고들에 대한 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|">구 증권거래법 제14조</a></span>에 의한 손해배상책임을 인정하고 있다.
+      </p><p>
+        <span class="accrnt_txt">
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="증권거래법|14|" style="text-decoration:underline">구 증권거래법 제14조</a></span>에 따라 발행인 등이 그 책임을 면하기 위해서는 상당한 주의를 하였음에도 불구하고 부실표시를 알 수 없었음을 증명하여야 하기 때문에 단순히 그 부실표시를 알지 못하였다든가, 상당한 주의를 다 하지 못하였다면 책임을 면할 수 없고, 이와 같은 '상당한 주의'의 항변을 하기 위해서는 자신의 지위와 특성에 따라 합리적으로 기대되는 조사를 하였으며, 그에 의해 문제된 사항이 진실이라고 믿을 만한 합리적인 근거가 있음을 입증해야 한다
+        </span>고 할 것이다.
+      </p><p>  기록에 비추어 살펴보면, 일반적으로 회계감사인이 특정 회사와 처음으로 감사계약을 맺는 초도감사일 경우 계속감사보다 그 업무량이 증가하며, 해당 회사가 타감사인으로부터도 감사를 받은 사실이 없는 경우 기초잔액을 확인할 수 있는 별도의 감사절차가 수행되어야 하므로 충분한 시간을 요한다고 할 것인데, 옌트의 경우 협회중개시장 등록을 위하여 최초로 외부감사를 받게 되는 점을 고려하면 피고 송현회계법인으로서는 충분한 시간을 가지고 실질적인 감사를 하였어야 함에도 피고 송현회계법인과 주식회사 옌트 사이의 정식 감사계약 체결은 1998. 2. 24.이고, 감사보고서 완성과 제출시기는 1998. 2. 27.이어서(피고 송현회계법인은 정식 계약 전 2월 중순경부터 감사에 착수하였다고 주장하지만, 이를 객관적으로 인정할 만한 자료는 없다.) 이 정도의 기간으로는  피고가 주장하는 바와 같은 실질적인 감사가 이루어졌다고는 인정하기 어려운 점, 피고 송현회계법인도 표본조사만을 시행하고 전체적이고 실질적인 감사는 하지 않은 사실을 인정하는 점, 피고 송현회계법인이 감사를 맡은 시점 이전의 재무제표의 진실성 및 그 기초자료의 객관성에 대하여 위 피고는 옌트의 재무제표가 기업회계기준에 따라 정당하게 작성되었다는 점에 대한 책임은 옌트측에 있고 이러한 점을 확인한다는 취지의 재무확인서를 옌트로부터 받은 이외 다른 조치는 취하지 않은 것으로 보이는 점, 피고 송현회계법인이 감사보고서상 옌트의 매출을 계산한 근거는 옌트의 계정별 보조원장, 부가가치세신고서, 수출서류철과 입금증빙 등, 선수금명세서의 각 서류들 정도인데 그 이외 객관적으로 매출을 조사하였다는 다른 자료는 발견되지 않는 점, 피고 송현회계법인은 옌트로부터 당시 회사의 자산규모에 비추어 상당한 액수의 대표이사 대여금이 있다는 사실을 듣고서도 단지 대표이사로부터 그 채무를 확인한다는 정도의 확인서만 받은 채 그 진실성 및 실질적인 내용은 전혀 파악하지 않은 점 등 여러 가지 정황에 비추어 기록에 나타난 자료들만으로는 피고 송현회계법인이 옌트에 대한 외부감사를 실시하고 나아가 위 유가증권신고서에 첨부된 감사보고서를 작성함에 있어 상당한 주의를 다하였다고 인정하기는 어렵다고 판단된다. 이와 같은 취지의 원심판단은 정당하고, 거기에 피고 송현회계법인이 주장하는 바와 같은 사실오인 및 법리오해의 위법이 있다고 할 수 없다. </p><p>  나. 위와 같이 감사보고서에 허위의 기재가 있고, 이에 서명한 회계법인을 손해배상의 책임주체로 인정한다면, 위와 같은 감사보고서가 유가증권발행신고서의 첨부서류가 된 이상 위 법조문의 문리해석상 피고 회계법인이 유가증권발행신고서의 작성에 관여하지 않았다든가, 혹은 감사보고서의 수신인 등을 문제삼아 그 책임을 면할 수는 없다고 할 것이고, 감사보고서가 허위로 기재되었으며 이에 대한 피고 회계법인의 면책항변이 받아들여지지 않는 이상, 위 감사보고서를 믿은 원고들에게 어떠한 과실점을 인정하기 곤란하다고 보여지고, 감사보고서의 기재가 유가증권발행신고서상의 공모가격 등에 구체적으로 기여한 정도의 여부와 상관없이 책임은 성립한다고 할 것이며, 책임성립시 그 법정 손해배상의 산정에 관한 증권거래법 제15조 제1항의 내용과 달리 책임을 제한할 이유가 없다고 할 것이다. 이와 같은 취지의 원심은 정당하고, 거기에 피고 송현회계법인이 주장하는 바와 같은 사실오인 혹은 법리오해의 위법이 없다. </p><p>  4. 그러므로 상고를 모두 기각하고, 상고비용은 패소자들의 부담으로 하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   변재승(재판장) 송진훈 윤재식 이규홍(주심) </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

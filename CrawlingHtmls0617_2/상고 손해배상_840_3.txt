@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 97다17544 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2102163';
+var contIdEtc = '2107726';
+var saNo = '97다17544';
+var sngoNm = '선고';
+var saNm = '보험금';
+try {
+	var sngoDay=('19980710' ? 
+			'19980710'.length==4 ? Date.parseExact('19980710','yyyy').toString('yyyy. M. d.') : 
+				'19980710'.length==6 ? Date.parseExact('19980710','yyyyMM').toString('yyyy. M. d.') : 
+					'19980710'.length==8 ? Date.parseExact('19980710','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 97다17544 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'A2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '97다17544';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />97다17544</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(4)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(45)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(6)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(1)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2102432">대법원 1998. 9. 18. 선고 96다19765 판결 [집46(2)민,103;공1998.10.15.(68),2506]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2107383">대법원 1999. 2. 12. 선고 98다44956 판결 [공1999.4.1.(79),527]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2107431">대법원 1999. 6. 11. 선고 99다3143 판결 [공1999.7.15.(86),1377]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="1964822">대법원 2004. 10. 28. 선고 2004다39689 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|254776">개정 상법 이후 채무를 인수한 보험자는 구상권을 당연히 인정되어야 함 @ 보험자간 직접청구권의 소멸시효 홍성태 保險新報社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|477778">공동불법행위자の보험자등 상호간の구상관계 @ 보험금 김교창 韓日辯護士協議會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|461275">공동불법행위 피해자의 직접청구권 정경영 博英社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|265792">공동불법행위 피해자의 직접청구권 정경영 保險新報社</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|455981">공동불법행위 법정책임자의 보험자 상호간 직접구상권의 성립 여부 및 그 소멸시효 우성만 釜山判例硏究會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|494322">공동불법행위 피해자의 직접청구권 정경영 三知院</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|262399">공동불법행위 법정책임자의 보험자 상호간 직접구상권의 성립 여부 및 그 소멸시효 우성만 法曹協會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|800358">이혁 지연손해금과 법정이자 판례연구 27집 / 부산판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|521357">이영동 개정된 하도급거래공정화에관한법률 제14조의 규정이 그 개정 전 체결된 하도급계약의 하도급거래에 관하여도 적용되는지 여부 판례연구 15집  / 부산판례연구회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|494595">이연갑 책임보험에 있어서 직접청구권과 상계의 효력 민사판례연구 24권  / 박영사  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|723405">정우혁 자동차손해배상보장법 시행령 제3조 제1항 제2호와 보험자들 사이의 보험자대위 재판실무연구 2013 / 광주지방법원  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|578368">이상훈 보험금청구권의 소멸시효의 기산점 상사판례연구 Ⅶ권  / 박영사  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|583790">장덕조 피해자 직접청구권과 피보험자 보험금청구권과의 관계 : 상법 제724조 제1항 해석에 관한 판례 법리의 비판 상사법연구 26권 4호 / 한국상사법학회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|550957">손원락 무보험자동차에 의한 상해담보의 법적 성질과 보험자대위 관련 시효문제 실무연구자료 7권  / 대전지방법원  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|483807">김창준 복합운송주선업자의 법적 지위에 관한 연구 : 법해석론적 쟁점을 중심으로 경희대학교 대학원  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|460726">제철웅 수인의 불법행위자 중 1인의 보험자가 피해자에게 손해를 보상한 경우의 구상관계 인권과 정의 287호  / 대한변호사협회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|483194">오창수 보험자대위에 관한 판례이론의 검토 : 청구권대위를 중심으로 . 변호사  : 법률실무연구 31집  / 서울지방변호사회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|523735">오창수 임차건물의 화재와 구상권 : 보험자대위를 중심으로 . 고황법학 4권  / 고황법학교수회  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|571302">박종권 자동차책임보험과 무보험자동차상해특약에서 가족의 위자료 청구 여부 JURIST plus 412호 : 2007년1호(채권법)(v.2007-1) / 청림출판  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|512229">한국. 대법원 법원행정처 재판실무편람. 제11호:. 보험재판실무편람 법원행정처  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|262399">우성만 공동불법행위 법정책임자의 보험자 상호간 직접구상권의 성립 여부 및 그 소멸시효 법조 48권 6호 (99.06) / 법조협회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|506703">김인현 해상 여객 및 수하물 운송에 관한 2002년 개정아테네협약 상사법연구 22권 1호 (2003.05) / 한국상사법학회  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|539475">이형규 체육시설업과 배상책임보험 스포츠와 법 2권  / 한국스포츠법학회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|477778">김교창 공동불법행위자の보험자등, 상호간の구상관계 한일(일한)변호사협의회지 18호  / 한일변호사협의회  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|629285">오창수 책임보험에서의 직접청구권의 성질과 시효 판례연구 20집(2006.10) / 서울지방변호사회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|586809">홍성주 부진정연대채무에서의 구상관계의 성질 판례연구 19집  / 부산판례연구회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558071">문영화 자동차손해배상 보장법 제9조에 적용되는 같은 법 제33조의 소멸시효규정이 상법 제724조 제2항에 의한 손해배상청구에 대하여도 적용되는지 여부 대법원판례해설 57호 (2006.07) / 법원도서관  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|764514">김인현 한국근대 해상법 120년의 성과와 과제 저스티스 통권 제146-3호 / 한국법학원  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|526738">허만 자동차손해배상책임보험금 직접청구권의 소멸시효기간 민사판례연구 26권  / 박영사  2004 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|582975">신안재 자동차손해배상보장법 제9조 제1항의 직접청구권의 범위 및 상법 제724조 제2항의 직접청구권과의 관계 재판과 판례 16집  / 대구판례연구회  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|487345">윤성근 보험자대위와 관련된 몇 가지 실무상의 문제점 재판과 판례 10집  / 대구판례연구회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|769260">남기정 해상책임보험에서 제3자 직접청구권의 준거법 결정 사법논집 . 제58집   / 법원도서관  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|616784">박영준 책임보험의 직접청구권 고시계 55권 4호  / 국가고시학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|617456">장덕조 보험법 판례의 변화와 전망 상사판례연구 23집 1권  / 한국상사판례학회  2010 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|501330">김량호 공동불법행위에 있어서 보험자 상호간 구상권의 소멸시효 저스티스 71호  / 한국법학원  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|671782">장덕조 책임보험에서의 피해자직접청구권 상법판례백선   / 법문사  2012 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|542456">문영화 자동차손해배상보장법 제9조에 의하여 피해자에게 직접 손해배상책임을 지는 책임보험자가 국민건강보험법 제53조 제1항에 규정된된 제3자에 포함되는지 여부 대법원판례해설 52호 (2005.06) / 법원도서관  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|604699">박연욱 보험자가 보험금을 수령한 질권자에 대하여 가지는 부당이득반환청구권의 소멸시효기간 대법원판례해설 77호 (2009.07) / 법원도서관  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|558085">권순익 자동차책임보험과 무보험자동차상해특약의 경우 피해자의 가족이 직접 보험회사에 위자료를 청구할 권리가 있는지의 여부 대법원판례해설 58호 (2006.07) / 법원도서관  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|259935">김철환 자동차보험 면책약관의 해석 : 복수의 피보험자에 대한 개별적용을 중심으로 실무논단 , 1997 1998  / 서울지방법원  1998 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|455956">김교창 구상권과 보험자대위권의 각 소멸시효기간 판례연구 13집  / 서울지방변호사회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|476179">우성만 제3자에 대한 보험자대위와 피보험자의 동거가족 판례연구 12집  / 부산판례연구회  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577331">김하늘 가. 무보험자동차에 의한 상해담보특약에도 중복보험에 관한 상법 제672조 제1항이 준용되는지 여부(적극), 나. 복수의 무보험자동차에 의한 상해보험특약의 보험자들 중 일방 보험자가 다른 보험자에 대하여 가지는 대법원판례해설 63호 (2007.07) / 법원도서관  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|567217">사법연수원 손해배상소송:. 2016 사법연수원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|790119">노호성 자동차보험 진료수가 직접청구권과 부당이득반환 : 대법원 2015. 3. 20. 선고 2012다88945 판결 : 공2015상, 589 재판실무연구 2015 / 광주지방법원  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|500375">위석현 구상권의 소멸시효기간 대전지방변호사회지 2호  / 대전지방변호사회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|716207">장덕조 판례로 나타난 보험계약의 의의와 특성 비교사법 제20권 4호 / 한국비교사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|577243">오지용 무보험자동차에 의한 상해보험의 중복보험규정 적용여부에 관한 고찰 경영법률 17집 4호 / 한국경영법률학회  2007 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|597307">오수원 자동차손해배상보장법에서 압류ㆍ양도가 금지되는 피해자의 직접청구권의 범위 법조 58권 2호 (2009. 2) / 법조협회  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|436740">허홍만 공동불법행위의 성립과 효과 : 자동차사고로 인한 손해배상책임을 중심으로 . 재판실무 (99.08)  / 창원지방법원  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|499540">최종현 선박보험과 피해자의 직접청구권 보험법률 통권42호  / 보험신보사  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|496769">정경영 피해자의 보험금 직접청구권 상사법연구 18권 2호 (99.10) / 한국상사법학회  1999 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|94다6819">
+대법원 1994. 5. 27. 선고 94다6819 판결(공1994하, 1824)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|94다52911">
+대법원 1995. 7. 25. 선고 94다52911 판결(공1995하, 2940)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="상법|724|0|null">상법 제724조 제2항 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|425|0|null">민법 제425조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="상법|724|0|null">상법 제724조 제2항 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="상법|64|0|null">상법 제64조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="상법|724|0|null">상법 제724조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="민법|425|0|null">민법 제425조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|96나19873">
+서울고법  1997. 3. 28. 선고 96나19873 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style=""><em>[기타문서]</em><p class="areaEtcJaryo"><a href="#//" title="새창" name="linkEtcJaryo" type="2107726">기타자료</a></p><p class="space"></p></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1998. 7. 10. 선고 97다17544 판결</h2><p class="sub_title">[보험금][집46(2)민,1;공1998.8.15.(64),2067]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 상법 제724조 제2항에 의한 피해자의 보험자에 대한 직접청구권의 법적 성질 및 위 조항이 같은 법 시행 전에 보험계약이 성립하고 보험사고가 발생한 경우에도 적용되는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 공동불법행위자의 보험자 상호간에 직접 구상권을 행사할 수 있는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[3] 공동불법행위자의 보험자 상호간의 구상권의 소멸시효(=5년)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>  [1] 개정 상법(1991. 12. 31. 법률 제4470호로 개정되어 1993. 1. 1.부터 시행된 것) 제724조 제2항에 의하여 피해자에게 인정되는 직접청구권의 법적 성질은 보험자가 피보험자의 피해자에 대한 손해배상채무를 병존적으로 인수한 것으로서 피해자가 보험자에 대하여 가지는 손해배상청구권이라 할 것이고, 개정 상법 제724조 제2항 본문과 그 부칙 제2조 제1항 본문의 각 규정 취지에 의하면, 같은 법 시행일인 1993. 1. 1. 이전에 보험계약이 성립하고 보험사고인 교통사고가 발생한 경우에 있어서도 그 교통사고의 피해자는 자동차보험을 인수한 보험회사에 대하여 직접 보상을 청구할 수 있다고 할 것인바, 공동불법행위에 있어서 공동불법행위자들과 각각 보험계약을 체결한 보험자들은 그 보험계약과 보험사고가 개정 상법 시행 이전에 발생하였는지를 불문하고 같은 법 시행 이후에는 그 공동불법행위의 피해자에 대한 관계에서 같은 법 제724조 제2항에 의한 손해배상채무를 각자 직접 부담한다.</p>
+      <p></p><p>
+        </p><p>  [2] 공동불법행위자의 보험자들 상호간에 있어서는 공동불법행위자 중의 1인과 사이에 보험계약을 체결한 보험자가 피해자에게 손해배상금을 보험금으로 모두 지급함으로써 공동불법행위자들의 보험자들이 공동면책 되었다면 그 손해배상금을 지급한 보험자는 다른 공동불법행위자들의 보험자들이 부담하여야 할 부분에 대하여 직접 구상권을 행사할 수 있다. </p>
+      <p></p><p>
+        </p><p>  [3] 공동불법행위자들과 각각 상행위인 보험계약을 체결한 보험자들 상호간에 있어서 공동불법행위자 중의 1인과 사이에 보험계약을 체결한 보험자가 피해자에게 손해배상금을 보험금액의 범위 내에서 지급하고 다른 공동불법행위자의 보험자가 부담하여야 할 부분에 대하여 직접 구상권을 행사하는 경우 그 손해배상금 지급행위는 상인이 영업을 위하여 하는 행위라고 할 것이므로, 그 구상금채권은 보조적 상행위로 인한 채권으로서 그 권리를 행사할 수 있는 때로부터 5년간 행사하지 아니하면 소멸시효가 완성한다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>  [1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|724|">상법 제724조 제2항, 부칙(1991. 12. 31.) 제2조 제1항</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|425|">민법 제425조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|724|">상법 제724조 제2항, 부칙(1991. 12. 31.) 제2조 제1항</a></span>[3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|64|">상법 제64조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|724|">제724조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|425|">민법 제425조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다6819|판결" href="#//">대법원 1994. 5. 27. 선고 94다6819 판결(공1994하, 1824)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|94다52911|판결" href="#//">대법원 1995. 7. 25. 선고 94다52911 판결(공1995하, 2940)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,피상고인】
+      
+          현대해상화재보험 주식회사 (소송대리인 변호사 오혁진)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고,상고인】
+      
+          신동아화재해상보험 주식회사 (소송대리인 변호사 경수근 외 2인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|96나19873|판결" href="#//">
+서울고법  1997. 3. 28. 선고 96나19873 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>  상고를 기각한다.  상고비용은 피고의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>  상고이유와 상고이유보충서 중 상고이유를 보충하는 부분을 함께 판단한다.</p><p>  1. 제1점에 대하여</p><p>
+        <span class="accrnt_txt">개정 상법(1991. 12. 31. 법률 제4470호로 개정되어 1993. 1. 1.부터 시행된 법률) 제724조 제2항에 의하여 피해자에게 인정되는 직접청구권의 법적 성질은 보험자가 피보험자의 피해자에 대한 손해배상채무를 병존적으로 인수한 것으로서 피해자가 보험자에 대하여 가지는 손해배상청구권이라고 할 것이고</span>(대법원 1994. 5. 27. 선고 94다6819 판결, 1995. 7. 25. 선고 94다52911 판결 등 참조), 
+        <span class="accrnt_txt">개정 상법 제724조 제2항 본문과 그 부칙 제2조 제1항 본문의 각 규정 취지에 의하면, 같은 법 시행일인 1993. 1. 1. 이전에 보험계약이 성립하고 보험사고인 교통사고가 발생한 경우에 있어서도 그 교통사고의 피해자는 자동차보험을 인수한 보험회사에 대하여 직접 보상을 청구할 수 있다고 할 것인바</span>(대법원 1995. 7. 25. 선고 94다52911 판결 참조), 
+        <span class="accrnt_txt">공동불법행위에 있어서 공동불법행위자들과 각각 보험계약을 체결한 보험자들은 그 보험계약과 보험사고가 개정 상법 시행 이전에 발생하였는지를 불문하고 같은 법 시행 이후에는 그 공동불법행위의 피해자에 대한 관계에서 같은 법 제724조 제2항에 의한 손해배상채무를 각자 직접 부담하는 것이므로, 이러한 관계에 있는 보험자들 상호간에 있어서는 공동불법행위자 중의 1인과 사이에 보험계약을 체결한 보험자가 피해자에게 손해배상금을 보험금으로 모두 지급함으로써 공동불법행위자들의 보험자들이 공동면책 되었다면 그 손해배상금을 지급한 보험자는 다른 공동불법행위자들의 보험자들이 부담하여야 할 부분에 대하여 직접 구상권을 행사할 수 있다</span>고 봄이 상당하다고 할 것이다.
+      </p><p>  원심이 적법하게 확정한 사실관계에 의하면, 소외 삼복기업 주식회사(이하 소외 삼복기업이라 한다)의 운전사인 소외 김학재와 소외 주식회사 천일고속(이하 소외 천일고속이라 한다)의 운전사인 소외 조봉식의 1991. 5. 11.자 공동불법행위로 인하여 소외 하용수, 서호정, 하성효, 하성재, 서용상을 사망하게 하고, 소외 김영숙, 박태인, 황재만, 임태만, 주진전으로 하여금 상해를 입게 하였는데, 원고는 소외 천일고속에 대한 자동차종합보험의 보험자로서 1991. 6. 18.부터 1993. 7. 16.까지 사이에 소외 망인의 상속인들 및 상해를 입은 위 소외인들에게 그 판시와 같은 손해배상금을 보험금으로 지급하였다는 것이고, 한편 피고는 위 사고 당시 공동불법행위자인 소외 삼복기업에 대한 자동차종합보험의 보험자라는 것이므로, 비록 원고와 피고의 위 각 보험계약 및 위 사고가 개정 상법 시행 전에 발생한 것이라고 하더라도 같은 법 시행 이후에는 원고와 피고가 위 사고로 인한 피해자들과의 관계에 있어서 같은 법 제724조 제2항에 따라 각자 직접 손해배상채무를 부담하는 것이 되고, 공동불법행위자 중 1인인 소외 천일고속의 보험자인 원고가 위 피해자들에게 그 판시와 같은 손해배상금을 보험금으로 지급한 이상 다른 공동불법행위자인 소외 삼복기업의 보험자인 피고의 위 피해자들에 대한 손해배상채무 역시 공동면책 되었다고 할 것이므로, 이와 같이 보험금으로서 손해배상금을 지급한 원고는 다른 공동불법행위자의 보험자인 피고의 부담 부분에 대하여 직접 구상권을 행사할 수 있다고 하겠다.</p><p>  원심이 그 이유는 다소 다르지만 원고가 피고에 대하여 직접 구상권을 행사할 수 있다고 판단한 조처는 정당하고, 거기에 상고이유에서 지적하고 있는 제3자 내지 손해배상청구권자의 보험자에 대한 직접청구권에 관한 법리오해 등의 위법이 없다. 이 점에 관한 상고이유의 주장은 이유 없다.</p><p>  2. 제3점에 대하여</p><p>
+        <span class="accrnt_txt">공동불법행위자들과 각각 상행위인 보험계약을 체결한 보험자들 상호간에 있어서 공동불법행위자 중의 1인과 사이에 보험계약을 체결한 보험자가 피해자에게 손해배상금을 보험금액의 범위 내에서 지급하고 다른 공동불법행위자의 보험자가 부담하여야 할 부분에 대하여 직접 구상권을 행사하는 경우 그 손해배상금 지급행위는 상인이 영업을 위하여 하는 행위라고 할 것이므로, 그 구상금채권은 보조적 상행위로 인한 채권으로서 그 권리를 행사할 수 있는 때로부터 5년간 행사하지 아니하면 소멸시효가 완성한다</span>고 봄이 상당하다.
+      </p><p>  원심이 적법하게 확정한 사실관계에 의하면, 이 사건 공동불법행위자의 1인인 소외 천일고속의 보험자인 원고는 1991. 6. 18.부터 1993. 7. 16.까지 사이에 소외 망인의 상속인들 및 상해를 입은 위 소외인들에게 그 판시와 같은 손해배상금을 보험금으로 지급하였다는 것이므로, 다른 공동불법행위자인 소외 삼복기업의 보험자인 피고에 대한 원고의 이 사건 구상권의 소멸시효는 위 각 보험금을 지급한 때로부터 5년이라고 할 것이고, 원고가 피고를 상대로 구상금의 지급을 구하는 이 사건 소를 제기하였음이 기록상 명백한 1995. 11. 1.까지 위 소멸시효기간이 경과되지 아니하였음이 분명하다.</p><p>  그러므로 원심이 원고의 이 사건 구상권이 소멸시효가 완성되었다는 피고의 항변을 배척한 결론은 정당하고, 설사 원심판결에 상고이유에서 지적하는 구상권의 소멸시효에 관한 법리오해의 위법이 있다고 하여도 이는 판결 결과에 영향이 없는 것이라고 하겠다. 이 점에 관한 상고이유의 주장은 이유 없음에 귀착된다.</p><p>  3. 제2점에 대하여</p><p>  원심판결 이유에 의하면 원심은, 영업용자동차 종합보험약관의 무면허운전 면책조항은 무면허운전이 보험계약자나 피보험자의 지배 또는 관리가능한 상황에서 이루어진 경우에 한하여 적용되는 조항이라 할 것이고, 지배 또는 관리가능한 상황에서 이루어진 경우라 함은 보험계약자나 피보험자의 명시적 또는 묵시적 승인하에 이루어진 경우를 말한다고 하면서, 그 판시와 같은 사정만으로는 기명피보험자인 소외 삼복기업이 소외 김학재의 무면허운전을 명시적 또는 묵시적으로 승인하였다고 볼 수 없다는 이유로 피고의 무면허운전 면책항변을 배척하고, 나아가 이 사건 사고가 피고 삼복기업의 중대한 과실로 인하여 생긴 것으로 볼 수 없다는 이유로 피고의 상법 제659조 제1항에 의한 면책항변도 배척하였다.</p><p>  기록에 비추어 살펴보면, 원심의 이와 같은 사실인정 및 판단은 정당하고, 거기에 상고이유에서 지적하는 면책약관의 해석에 관한 법리오해나 상법 제659조 제1항 소정의 중대한 과실에 관한 법리오해 등의 위법이 없다. 이 점에 관한 상고이유의 주장도 모두 이유 없다.</p><p>  4. 그러므로 상고를 기각하고 상고비용은 패소자인 피고의 부담으로 하기로 관여 법관들의 의견이 일치되어 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   정귀호(재판장) 박준서 김형선(주심) 이용훈 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

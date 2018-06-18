@@ -17,7 +17,7 @@ last_sentences_html = []
 baseurl = 'http://glaw.scourt.go.kr/wsjo/panre/sjo100.do?saNo='
 
 # search = {'도로교통법': 41, '교통사고 처리 특례법': 16}
-search = {'교통사고 처리 특례법': 16}
+search = {'손해배상': 386}
 
 
 def get_3sentences(keyword, fail, success):
@@ -27,7 +27,17 @@ def get_3sentences(keyword, fail, success):
         print('fail :', fail, 'success :', success)
         print(sent)
         driver.get(baseurl + sent)
+
         time.sleep(1)
+        try:
+            alert = driver.switch_to.alert
+            alert.accept()
+            print('nodata3 fail')
+            fail += 1
+            continue
+        except NoAlertPresentException:
+            pass
+
         html3 = driver.page_source
         soup3 = BeautifulSoup(html3, 'html.parser')   # BeautifulSoup사용하기
         strong3 = soup3.find_all('strong')

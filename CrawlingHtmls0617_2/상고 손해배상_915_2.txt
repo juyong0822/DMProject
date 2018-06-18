@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울민사지방법원 82나1361 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '1992695';
+var contIdEtc = '';
+var saNo = '82나1361';
+var sngoNm = '선고';
+var saNm = '보증금등청구사건';
+try {
+	var sngoDay=('19840214' ? 
+			'19840214'.length==4 ? Date.parseExact('19840214','yyyy').toString('yyyy. M. d.') : 
+				'19840214'.length==6 ? Date.parseExact('19840214','yyyyMM').toString('yyyy. M. d.') : 
+					'19840214'.length==8 ? Date.parseExact('19840214','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울민사지방법원';
+var bubCd = '000210';
+var panTypeNm = '제1부판결 : 상고허가';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 82나1361(본소),82나1362(반소) ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'H';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '82나1361';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울민사지방법원<br />82나1361</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(17)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(5)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(4)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|502481">소건영 리스료에 관한 고찰 비교법학 3집 윤성 엄영진 교수 정년기념호 / 전주대학교 비교법학연구소  2003 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|97818">박영우 금융리스거래의 법적 고찰 : 리스약관의 내용통제를 중심으로 고려대학교  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|186698">이철송 리스계약의 법적성질 판례월보 194호  / 판례월보사  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|186696">민병국 리스(시설대여)계약의 법률적성질 , 상 법률신문 1651호  / 법률신문사  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|490911">안춘수 금융리스계약의 법적성질과 당사자의 의무 및 이익관계 연세행정논총 19집  / 연세대학교 행정대학원  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|207266">황한식 리스계약의 법적 성질 재판자료 63집 (상) / 법원행정처  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|186692">박일환 리스거래의 법률관계 대한변호사협회지 126호  / 대한변호사협회  1987 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|32093">손주찬 리스(시설대여)계약의 법률관계 법조 38권 4호 (89.04) / 법조협회  1989 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|207271">홍성만 리스계약과 위험부담 재판자료 63집 (상) / 법원행정처  1994 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|125210">어인의 이자제한법론 청주대학교출판부  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|186690">최기원 금융리스 계약의 특수성에 관한 소고 서울대 법학 29권 2호 (88.09) / 서울대학교 법학연구소  1988 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|186697">민병국 리스(시설대여)계약의 법률적성질 , 하 법률신문 1652호  / 법률신문사  1986 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|237820">김상채 리스계약의 법적 성질 재판실무연구 1996  / 광주지방법원  1997 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39735">박영재 리스계약에 관한 연구 사법연수생논문집 22기  / 사법연수원  1993 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|221918">박종기 리스계약의 법적 성질 형평과 정의 10집  / 대구지방변호사회  1995 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|39734">이균부 리스거래에 있어서의 하자담보책임에 관하여 군사법론문집 11집  / 공군본부 법무감실  1992 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|186693">조용호 리스(Lease)거래의 법률문제 사법논집 16집  / 대법원 법원행정처  1985 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사소송법|381|0|null">민사소송법 제381조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민사소송법|382|0|null">민사소송법 제382조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|627|0|null">민법 제627조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|652|0|null">민법 제652조 </a></p><p class="areaChjJomun"><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="시설대여산업육성법|2|0|null">시설대여산업육성법 제2조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|652|0|null">민법 제652조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|627|0|null">민법 제627조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|95|0|null">민사소송법 제95조 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|89|0|null">민사소송법 제89조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울민사지방법원|81가단6719">서울민사지방법원(81가단6719(본소), 82가단989(반소) 판결)</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울민사지법 1984. 2. 14. 선고 82나1361(본소),82나1362(반소) 제1부판결 : 상고허가</h2><p class="sub_title">[보증금등청구사건][하집1984(1),98]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>1. 단독사건에 대한 항소심에서 단독사건의 사물관할 범위를 넘는 반소확장청구를 한 경우의 적부(적법)</p>
+      <p></p>
+      <p>
+        </p><p>2. 시설대여(리스) 계약의 성질과 민법상 임대차규정의 적용여부(적극) </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>1. 제1심에서 반소를 제기한 당사자가 항소심에서 반소를 변경하여 청구를 확장하는 경우 이는 소의 변경에 해당하므로 청구의 기초가 동일한 한 상대방의 동의를 요하지 아니하며, 단독사건의 항소심으로서 지방법원 본원합의부가 재판중에 당사자가 청구를 확장 변경하여 그 소송물가액이 단독판사의 사물관할의 범위를 초과하더라도 이미 결정된 항소심의 관할에는 영향이 없다.</p>
+      <p></p><p>
+        </p><p>2. 시설대여계약의 실질적 목적이 시설자금의 금융에 있는 것이라고 하여도 물건의 사용수익과 이에 대한 차임지급을 그 내용으로 하는 한 이는 그 본질이 임대차관계라 할 것이므로 대여시설에 하자가 있어도 책임을 지지 아니한다는 면책특약은 민법의 임대차에 관한 강행규정에 위반하여 무효이다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|381|">민사소송법 제381조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|382|">제382조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|627|">민법 제627조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|652|">제652조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="시설대여산업육성법|2|">시설대여산업육성법 제2조</a></span>      </p>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고(반소피고), 항소인 겸 피항소인】
+      
+        이선열
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고(반소원고), 피항소인 겸 항소인】
+      
+        한국개발리스주식회사
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party6">
+      【피고, 피항소인】
+      
+        대한중외상사주식회사
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【제1심】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울민사지방법원|81가단6719|판결" href="#//">서울민사지방법원(81가단6719(본소), 82가단989(반소) 판결)</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>1. 원고(반소피고)의 본소에 관한 본소 피고들에 대한 항소와 당심에서 변경된 본소 청구를 각 기각한다.</p><p>2. 피고 한국개발리스주식회사(반소원고)의 본소 및 반소에 관한 항소와 당심에서 확장된 반소청구를 각 기각한다.</p><p>3. 원고(반소피고)의 항소로 인한 소송비용(당심에서 변경된 본소 청구에 관한 비용 포함)은 원고(반소피고)의, 피고 한국개발리스주식회사(반소원고)의 항소로 인한 소송비용(당심에서 확장된 반소청구에 관한 비용포함)은 동 피고(반소원고)의 각 부담으로 한다.</p>
+    
+      【본소청구취지】
+      <p>원고(반소피고, 이하 원고라고만 한다)에게, 피고 한국개발리스주식회사(반소원고, 이하 피고 개발리스라고만 한다)는 별지목록기재 기구를 수령함과 동시에 금 1,615,000원, 피고들은 연대하여 1980. 12. 3.부터 1980. 7. 13.까지 매월 금 1,000,000원의 비율에 의한 금원을 각 지급하라(이 부분 당심에서 청구를 변경하였다. 변경전 청구취지 : 피고들은 연대하여 1980. 12. 3.부터 별지목록기재 기구를 수령할 때까지 매월 금 1,000,000원의 비율에 의한 금원을 지급하라) 판결 및 가집행의 선고</p>
+    
+    
+      【피고 개발리스의 반소청구취지】
+      <p>원고는 피고 개발리스에게 금 34,453,635원 및 이에 대한 1983. 6. 1.부터 완제일까지 연 1할 8푼의 비율에 의한 금원을 지급하라(당심에서 청구를 확장하였다).</p>
+      <p>반소 소송비용은 원고의 부담으로 한다라는 판결 및 가집행의 선고</p>
+    
+    
+      【원고의 항소취지】
+      <p>원판결중 원고 패소부분을 취소한다.</p>
+      <p>피고들은 연대하여 원고에게 1980. 12. 3.부터 1982. 7. 13.까지 매월 금 1,000,000원의 비율에 의한 금원을 지급하라(이부분 당심에서 청구를 변경하였다).</p>
+      <p>소송비용은 제 1, 2심 모두 피고들의 부담으로 한다라는 판결 및 가집행의 선고</p>
+    
+    
+      【피고 개발리스의 항소취지】
+      <p>원판결중 본소 및 반소에 관한 피고 개발리스의 패소부분을 취소한다.</p>
+      <p>원고의 본소청구를 기각한다.</p>
+      <p>원고는 피고 개발리스에게 금 34,453,635원 및 이에 대한 1983. 6. 1.부터 완제일까지 연 1할 8푼의 비율에 의한 금원을 지급하라(이부분 당심에서 청구를 확장하였다).</p>
+      <p>소송비용은 제1, 2심 모두 원고의 부담으로 한다라는 판결 및 가집행의 선고</p>
+    
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>1. 피고 개발리스의 반소확장청구에 대한 원고의 본안전항변에 관한 판단</p><p>원고는 피고 개발리스가 항소심인 당심에서 그 반소청구를 확장하여 소송물가액이 제1심 법원 단독판사의 사물관할을 초과하게 되었으므로 당심에서의 반소확장청구는 사물관할에 관한 법규에 위반되어 부적법하고, 확장된 청구부분이 항소심에서의 새로운 반소제기하고 한다면 이에 부동의 하는바, 그렇다면 피고 개발리스의 반소확장청구는 부적법하여 각하되어야 할 것이라고 본안전항변을 하므로 살피건대, 기록에 의하면 피고 개발리스는 제1심에서 원고를 상대로 반소를 제기하였는데, 이 부분 패소판결을 선고받고 이에 불복항소를 제기한 후 당심에서 동일한 내용의 반소청구를 확장한 사실을 인정할 수 있는바, 제1심에서 반소를 제기한 당사자가 항소심에서 반소를 변경하여 청구를 확장하는 경우 이는 소의 변경에 해당하므로 청구의 기초가 동일한 한 상대방의 동의를 요하는 것은 아니라 할 것이며, 항소심에서는 당사자가 제1심 법원의 관할에 관하여 전속관할을 제외하고는 관할위반의 항변을 제기하지 못하는 것인바, 단독사건의 항소심으로서 지방법원 본원합의부가 재판중에 당사자가 청구를 확장 변경하여 그 소송물가액이 단독판사의 사물관할의 범위를 초과하게 되었다고 하더라도 이미 결정된 항소심의 관할에는 영향이 없는 것이라고 보아야 할 것이므로 원고의 위 본안전항변은 이유없다.</p><p>2. 본안에 관한 판단</p><p>가. 원고의 본소청구</p><p>(1) 피고 개발리스에 대한 보증금 반환청구</p><p>성립에 다툼이 없는 갑 제1호증(매매계약서), 갑 제2호증의 1,2,3(각 해약통고서), 을 제5호증의 1(수입면장), 을 제5호증의 2(자본재도입 물품명세확인신청서), 인영의 진정을 인정하므로 문서전체의 진정성립이 추정되는 을 제1호증(시설대여계약서), 을 제2호증(시설대여변경계약서), 을 제3호증(차수증)의 각 기재내용, 성립에 다툼이 없는 을 제4호증(내용증명서신)의 일부기재내용, 원심 및 당심증인 전용덕의 각 증언, 원심증인 황학길 및 당심증인 김재년의 각 일부증언에 변론의 전취지를 종합하면, 원고는 병원을 경영하는 의사이고, 피고 개발리스는 시설대여업을 하는 회사이며, 피고 대한중외상사주식회사(이하 피고 중외상사라고만 한다)는 의료용 기구의 수입 및 판매를 목적으로 설립된 회사인 바, 피고 개발리스는 피고 중외상사의 소개로 의료기구인 별지목록기재 물건(이하 이 사건 물건이라고 한다)을 수입해서 원고에게 시설 대여하기로 하여 1980. 4. 26. 원고와 시설 대여기간을 차수증발급일로부터 60개월로 정하고 피고 개발리스 소정의 계약약관에 의하여 이 사건 물건에 대한 시설대여(리스)계약을 체결하고, 같은해 11. 3.경 이사건 물건을 통관하여 원고에게 인도하고 같은해 11. 25.자로 원고로부터 차수증을 발급받은 후 같은 날짜로 계약보증금은 금 1,615,000원 시설대여료(리스료)는 매월 선급으로 미화 537불 및 원화 139,900원씩 지급하기로 시설대여변경계약을 체결하고 원고로부터 계약보증금 전액을 지급받은 사실, 한편 이 사건 물건인 전자주사형 초음파 단층기는 화면에 나타나는 영상에 의하여 간·담낭·취장·비장·신장의 각종 질환과 난소·자궁 등에 대한 부인과적 질환을 진단하는 정밀한 의료기구로서 원고와 위 시설대여를 알선한 피고 중외상사 사이에는 피고 중외상사가 이 사건 물건의 인도일로부터 1년간 품질을 보증하고, 기구설치시 취급에 필요한 기술을 제공하며, 인도일로부터 1년 이내에 제조상의 결함에 의하여 고장이 발생하였을 때에는 무료로 수리하고, 연 2회 정기정검을 실시하여 주도록 약정이 되어 있었는데, 원고가 이를 인도받아 1개월 가량 사용하였을 때부터 처음에는 작동이 잘되는 듯하다가는 곧 영상에 이상이 생기고 잡음이 일어나는 등 결함이 발생하여 1981. 1. 초순경부터 이를 사용하지 못하고, 원고는 그 사실을 피고들에게 수차에 걸쳐 통고하면서 고쳐줄 것을 요구하여 피고 중외상사 소속의 기술자가 나와 수리하려고 하였으나 기술미숙으로 결함의 원인을 발견하지 못하여 다시 원고는 피고들에게 이 사건 물건대신 작동에 이상이 없는 다른 제품으로 교체하여 줄 것을 요구하고, 피고들이 이에 응하지 아니하자 그 시경 위 시설대여계약을 해지하면서 보증금을 반환하고 이 사건 물건을 인수하여 갈 것을 통고한 사실, 이 사건 물건은 그후 점검결과 핵심부분인 모니타상에 제조상의 결함이 있어 고장이 난 것이고 당시의 국내기술로서는 수리가 불가능하다는 사실이 판명된 사실을 각 인정할 수 있고 위 인정사실의 일부에 어긋나는 을 제4호증의 나머지 기재내용부분, 위 증인 황학길, 김재년의 각 나머지 증언부분은 이를 믿지 아니하고 달리 위 인정을 좌우할 만한 증거가 없다.</p><p>피고 개발리스는 이 사건 시설대여계약은 그 실질적 목적이 시설자금이 금융에 있는 것이므로 민법상의 임대차계약과는 성질이 다른 비전형계약이고, 시설대여된 이 사건 물건에 하자가 있는 경우에도 대여자인 피고 개발리스가 책임을 부담하지 아니하기로 원고와 특약을 한 바 있으므로 원고의 위 계약해지 의사표시는 위 특약에 반하여 무효라는 취지로 항쟁하고, 이에 대하여 원고는 위 시설대여계약이 민법상의 임대차계약임을 전제로 위 면책특약은 민법의 강행규정에 위반하여 무효라고 다투므로 살피건대, 위에 나온 을 제1호증 시설대여계약서의 약관 제8조 제1항에 의하면, 시설대여물건의 규격, 사양, 성능, 기능등에 부적합, 불완전 기타의 하자가 있더라도 피고 개발리스는 책임을 지지 아니한다라고 규정되어 있기는 하나, 한편 동 계약서 약관 제9조에 의하면 시설대여물건의 소유권은 피고 개발리스에게 있고, 시설이용자는 이를 선량한 관리자의 주의의무를 다하여 보관·사용하도록 규정되어 있는바, 시설대여계약의 실질적 목적이 시설자금의 금융에 있는 것이라고 하여도 물건의 사용수익과 이에 대한 차임지급을 그 내용으로 하는 한 이는 그 본질이 임대차관계라 할 것이고, 시설대여산업을 육성하기 위하여 시설대여산업육성법과 동시행령등으로 시설대여회사에 각종 특례를 인정하고 있다고 하여 위와 같은 내용의 시설대여계약의 임대차관계로서의 본질이 달라지는 것은 아니라 할 것이므로 위 시설대여계약은 민법상 임대차관계규정에 의하여 규율을 받아야 할 것인즉 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|652|">민법 제652조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|627|">제627조</a></span>의 규정에 의하면 임차물의 일부가 임차인의 과실없이 멸실 기타 사유로 인하여 사용·수익할 수 없는 경우 그 잔존부분만으로 임차의 목적을 달성할 수 없는 때에는 임차인은 계약을 해지할 수 있고, 이에 위반하는 약정으로서 임차인에게 불리한 것은 효력이 없는 것이므로 피고주장의 위 면책특약은 시설이용자인 원고에게 불리한 약정으로서 강행규정에 위반하여 무효라 할 것이니 따라서 피고의 위 항쟁은 이유없다.
+      </p><p>그렇다면 원고와 피고 개발리스와의 사이의 위 시설대여계약은 그 목적물의 하자로 인하여 대여의 목적을 달할 수 없게 되었고 1981. 1.초순경 원고의 해지통고로 인하여 해지되었다 할 것이므로 피고는 그 원상회복으로서 이 사건 물건의 수령과 상환으로 원고에게 위 보증금 1,615,000원을 반환할 의무있다 할 것이다.</p><p>(2) 피고들에 대한 손해배상청구</p><p>원고는 또한 원고가 이 사건 물건을 계속 사용하였더라면 최소한 1일에 2명 이상 1인당 이용료 20,000원 합계금 40,000원씩 월평균 25일간 도합 금 1,000,000원의 수익을 얻을 수 있었음에도 위와 같은 기구의 제조상의 결함으로 인하여 1980. 12. 3.부터 이 사건 물건을 피고 개발리스에게 반환한 1982. 7. 14.의 전날인 같은달 13.까지 위 수익을 얻지 못하였다 하여, 피고들에 대하여 연대하여 동 기간동안 매월 금 1,000,000원의 비율에 의한 손해금의 지급을 구하고 있으므로 살피건대, 이 사건 물건의 제조상의 결함으로 인하여 원고가 월평균 금 1,000,000원의 손해를 입었다는 원고의 주장에 부합하는 원심 및 당심증인 전용덕의 증언부분은 이를 믿을 수 없고 달리 이를 인정할만한 뚜렷한 증거가 없으므로 이 부분 원고의 청구는 이유없다.</p><p>나. 피고 개발리스의 반소청구</p><p>피고 개발리스는 반소로서, 원고와 동 피고 사이에 체결된 이 사건 물건에 대한 위 시설대여계약이 그대로 존속중임을 전제로, 원고는 시설대여료(리스료)를 1981. 4. 25.부터 연체하고 있으므로, 기납입시설대여료에 대한 지연배상금 28,254원, 1981. 4. 25.부터 1982. 10. 25.까지 19회분의 연체시설대여료 금 9,371,674원, 동 연체시설대여료에 대한 환율정산차액 금 638,698원, 동 연체시설대여료에 대한 지연배상금 2,727,697원, 동 환율정산차액에 대한 지연배상금 113,406원, 1982. 11. 25.부터 시설대여기간 만료일인 1985. 10. 25.까지 36회분의 기한이익상실 시설대여료 금 19,465,776원, 동 지연배상금 2,054,306원, 피고가 대납한 보험료 135,069원, 동 대납보험료에 대한 지연배상금 41,151원등 합계 금 34,636,446원중 금 34,453,635원의 지급을 구한다고 주장하므로 살피건대, 앞서 본소청구에 대한 판단에서 살펴본 바와 같이 원고와 피고 개발리스 사이의 위 시설대여계약은 동 피고가 시설대여료를 구하는 1981. 4. 25. 이전에 이미 적법히 해지되었으므로 위 시설대여계약이 아직도 유효하게 존속함을 전제로 한 피고 개발리스의 시설대여료등 위 반소청구는 더 나아가 살펴볼 필요없이 이유없다고 할 것이다.</p><p>3. 결론</p><p>그렇다면 원고의 피고 개발리스에 대한 본소청구는 위 인정범위내에서 이유있어 이를 인용하고, 동 피고에 대한 나머지 청구 및 피고 중외상사에 대한 청구는 이유없어 이를 각 기각하며, 피고 개발리스의 반소청구도 이유없어 이를 기각할 것인바, 이와 결론을 같이 한 원판결은 정당하고, 이에 대한 원고의 본소에 관한 피고들에 대한 항소와 피고 개발리스의 본소 및 반소에 관한 항소는 모두 이유없어 이를 각 기각하고, 당심에서 변경된 원고의 피고들에 대한 본소청구 및 당심에서 확장된 피고 개발리스의 반소청구도 이유없어 이를 각 기각하며, 소송비용의 부담에 관하여는 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|95|">민사소송법 제95조</a></span>, 
+        <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|89|">제89조</a></span>를 적용하여 주문과 같이 판결한다.
+      </p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">판사   오상걸(재판장) 서희종 이주영 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

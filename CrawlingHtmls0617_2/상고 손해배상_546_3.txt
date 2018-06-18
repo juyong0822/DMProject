@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2005다23599 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2066085';
+var contIdEtc = '';
+var saNo = '2005다23599';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20070713' ? 
+			'20070713'.length==4 ? Date.parseExact('20070713','yyyy').toString('yyyy. M. d.') : 
+				'20070713'.length==6 ? Date.parseExact('20070713','yyyyMM').toString('yyyy. M. d.') : 
+					'20070713'.length==8 ? Date.parseExact('20070713','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2005다23599 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2005다23599';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2005다23599</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(1)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(6)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(2)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2066084">대법원 2007. 7. 13. 선고 2005다21821 판결 [공2007.8.15.(280),1257]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|597332">이의영 타인명의 예금의 법률관계와 보전처분 저스티스 109호  / 한국법학원  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|591496">윤진수 2007년도 주요 민법 관련 판례 회고 법학 49권 1호  / 서울대학교 법학연구소  2008 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|714817">한삼인 운동경기 중 발생한 상해와 민사책임의 성립 여부 인권과 정의 제438호 / 대한변호사협회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|827418">신신호 모용계좌 개설에 관한 금융기관의 주의의무 위반과 피모용자 또는 제3자의 손해 발생 사이에 상당인과관계가 있는지 판단하는 기준 대법원판례해설 제107호 / 법원도서관  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|616850">이헌숙 뉴스서비스와 제3자 게시물로 인한 포털의 책임 여부 사법 9호 / 사법발전재단  2009 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|589189">오영준 가. 금융기관이 본인 또는 대리인을 자처하는 자에게 예금계좌를 개설하여 줌에 있어서 요구되는 주의의무, 나. 모용계좌의 개설에 관한 금융기관의 주의의무위반과 피모용자나 제3자의 손해 발생 사이에 상당인과관 대법원판례해설 71호 (2008.07) / 법원도서관  2008 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다54599">대법원 2006. 1. 13. 선고 2003다54599 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2005다21821">대법원 2007. 7. 13. 선고 2005다21821 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2003다54599">대법원 2006. 1. 13. 선고 2003다54599 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2001다62251">대법원 2002. 1. 8. 선고 2001다62251, 62268 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대전고등법원|2003나4523">대전고법 2005. 4. 8. 선고 2003나4523 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2007. 7. 13. 선고 2005다23599 판결</h2><p class="sub_title">[손해배상(기)][공2007.8.15.(280),1261]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 금융기관이 본인 또는 대리인을 자처하는 자에게 예금계좌를 개설하여 줌에 있어서 요구되는 주의의무의 정도 및 그러한 조치를 취하지 않은 결과 피모용자가 수령하여야 할 금원이 모용계좌에 송금됨으로써 제3자나 피모용자가 손해를 입은 경우, 금융기관의 주의의무 위반과 위 손해 발생 사이에 상당인과관계가 인정되는지 여부(적극)</p>
+      <p></p>
+      <p>
+        </p><p>[2] 은행 직원이 본인 또는 대리인 여부를 전혀 확인하지 않은 채 피모용자 명의의 예금계좌를 개설해 줌으로써, 피모용자의 직원이 위 예금계좌가 피모용자의 정당한 계좌라고 오신한 제3자로부터 돈을 입금받아 횡령할 수 있게 한 경우, 은행 직원의 주의의무 위반과 위 금액 상당의 손해 발생 사이에 상당인과관계가 인정된다고 한 사례  </p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 금융기관에 개설된 예금계좌는 단순히 그 계좌를 개설한 자가 금원을 입출금하는 데 사용됨에 그치는 것이 아니라, 신용거래의 활성화와 온라인 송금 및 자금이체 시스템 등의 발달로 인하여 일상생활이나 영업활동에서 제3자에 대하여 갖게 되거나 지게 된 채권·채무 등을 추심하거나 변제하기 위한 수단 등으로도 활발히 이용되고 있는 것이 현 금융거래의 실정인바, 금융기관이 본인 또는 대리인을 자처하는 자에게 예금계좌를 개설하여 주는 과정에서 본인의 신분증을 확인하거나 위임장과 인감증명서를 제출받고 대리인의 신분증을 확인하는 등의 최소한의 확인절차마저 모두 생략한다면, 피모용자가 정당하게 성립한 원인계약상의 채무 이행 등에 의하여 수령하여야 할 금원을 피모용자 명의로 임의로 개설한 은행계좌로 송금하게 하는 방법으로 금원을 편취하는 범죄행위 등이 용이하게 이루어질 수 있음은 누구나 쉽게 예견할 수 있다 할 것이고, 위와 같은 유형의 피해를 방지하기 위하여 모용계좌의 출현을 막을 수 있는 적절한 지위에 있는 자는 바로 예금계좌 업무를 담당하고 있는 금융기관 이외에는 존재하지 아니하므로, 예금계좌의 개설에 임하는 금융기관으로서는 금융실명거래 및 비밀보장에 관한 법률에서 정한 실명확인의무와 무관하게 위와 같은 최소한의 조치를 취함으로써 피모용자가 수령하여야 할 금원을 피모용자 명의로 임의로 개설한 은행계좌로 송금하게 하는 방법으로 금원을 편취하는 범죄행위 등에 도움을 주지 않아야 할 주의의무가 있고, 그러한 조치를 전혀 취하지 아니한 결과 개설된 모용계좌가 위와 같은 유형의 범죄행위에 이용되어 피모용자가 수령하여야 할 금원이 모용계좌에 송금됨으로써 제3자나 피모용자가 손해를 입게 되었다면, 모용자의 주된 기망수단은 바로 금융기관에 의하여 잘못 개설된 모용계좌의 존재 그 자체이고 피기망자인 제3자로서는 그 모용계좌를 정당한 계좌로 오신하여 잘못 송금함에 따라 손해가 발생한 것이어서, 금융기관의 위와 같은 주의의무 위반과 제3자나 피모용자가 입게 된 손해 사이에는 상당인과관계가 있다.</p>
+      <p></p><p>
+        </p><p>[2] 은행 직원이 본인 또는 대리인 여부를 전혀 확인하지 않은 채 피모용자 명의의 예금계좌를 개설해 줌으로써, 피모용자의 직원이 위 예금계좌가 피모용자의 정당한 계좌라고 오신한 제3자로부터 돈을 입금받아 횡령할 수 있게 한 경우, 은행 직원의 주의의무 위반과 위 금액 상당의 손해 발생 사이에 상당인과관계가 인정된다고 한 사례. </p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span> [2]                 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]                 <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다54599|판결" href="#//">대법원 2006. 1. 13. 선고 2003다54599 판결</a></span>(공2006상, 226)<br />                <span id="link"><a name="linkContPanre" title="새창" type="대법원|2005다21821|판결" href="#//">대법원 2007. 7. 13. 선고 2005다21821 판결</a></span>(공2007하, 1257)            </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 피상고인】
+      
+        
+          원고 (소송대리인 대전종합법무법인 담당변호사 김태범)
+        
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 상고인】
+      
+        
+          피고 은행 (소송대리인 법무법인 자하연 담당변호사 윤기원외 3인)
+        
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대전고등법원|2003나4523|판결" href="#//">대전고법 2005. 4. 8. 선고 2003나4523 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>상고를 기각한다.  상고비용은 피고가 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>상고이유를 판단한다.</p><p>  1. 금융기관의 예금계좌 개설시 주의의무와 상당인과관계에 관한 상고이유에 대하여 </p><p>  가. 
+        
+        <span class="accrnt_txt">금융기관에 개설된 예금계좌는 단순히 그 계좌를 개설한 자가 금원을 입출금하는 데 사용됨에 그치는 것이 아니라, 신용거래의 활성화와 온라인 송금 및 자금이체 시스템 등의 발달로 인하여 일상생활이나 영업활동에서 제3자에 대하여 갖게 되거나 지게 된 채권·채무 등을 추심하거나 변제하기 위한 수단 등으로도 활발히 이용되고 있는 것이 현 금융거래의 실정인바, 금융기관이 본인 또는 대리인을 자처하는 자에게 예금계좌를 개설하여 주는 과정에서 본인의 신분증을 확인하거나 위임장과 인감증명서를 제출받고 대리인의 신분증을 확인하는 등의 최소한의 확인절차마저 모두 생략한다면, 피모용자가 정당하게 성립한 원인계약상의 채무 이행 등에 의하여 수령하여야 할 금원을 피모용자 명의로 임의로 개설한 은행계좌로 송금하게 하는 방법으로 금원을 편취하는 범죄행위 등이 용이하게 이루어질 수 있음은 누구나 쉽게 예견할 수 있다 할 것이고, 위와 같은 유형의 피해를 방지하기 위하여 모용계좌의 출현을 막을 수 있는 적절한 지위에 있는 자는 바로 예금계좌 업무를 담당하고 있는 금융기관 이외에는 존재하지 아니하므로, 예금계좌의 개설에 임하는 금융기관으로서는 금융실명거래 및 비밀보장에 관한 법률에서 정한 실명확인의무와 무관하게 위와 같은 최소한의 조치를 취함으로써 피모용자가 수령하여야 할 금원을 피모용자 명의로 임의로 개설한 은행계좌로 송금하게 하는 방법으로 금원을 편취하는 범죄행위 등에 도움을 주지 않아야 할 주의의무가 있다고 할 것이고, 그러한 조치를 전혀 취하지 아니한 결과 개설된 모용계좌가 위와 같은 유형의 범죄행위에 이용되어 피모용자가 수령하여야 할 금원이 모용계좌에 송금됨으로써 제3자나 피모용자가 손해를 입게 되었다면, 모용자의 주된 기망수단은 바로 금융기관에 의하여 잘못 개설된 모용계좌의 존재 그 자체이고 피기망자인 제3자로서는 그 모용계좌를 정당한 계좌로 오신하여 잘못 송금함에 따라 손해가 발생한 것이어서, 금융기관의 위와 같은 주의의무 위반과 제3자나 피모용자가 입게 된 손해 사이에는 상당인과관계가 있다고 할 것이다</span>(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2003다54599|판결" href="#//">대법원 2006. 1. 13. 선고 2003다54599 판결</a></span> 참조).
+      
+      </p><p>  나. 위 법리와 기록에 비추어 살펴보면, 원심이 피고 은행에 대하여 피용자의 불법행위로 인한 사용자책임을 인정함에 있어서 그 직원인 
+        
+        소외 1이 본인 내지 대리인 확인절차를 게을리한 잘못의 근거를 금융실명거래 및 비밀보장에 관한 법률에서 규정한 실명확인의무 위반에서 찾은 점은 적절하지 아니하지만, 
+        
+        소외 1이 원고 명의의 예금통장의 개설을 요청한 사람과 그 예금통장을 교부받으러 온 사람이 원고 본인이거나 원고로부터 적법하게 위임을 받은 것인지 여부를 확인할 주의의무가 있음에도 불구하고 이를 전혀 확인하지 않은 채 자신의 남편을 통하여 
+        
+        소외 2로부터 전달받은 원고의 주민등록증 사본과 도장을 이용하여 원고 명의의 보통예금신청서와 현금인출카드신청서를 직접 작성하고 원고 명의의 보통예금계좌(이하 ‘이 사건 예금계좌’라고 한다)와 현금인출카드를 만든 후 이를 
+        
+        소외 2에게 교부한 잘못으로 인하여, 정형외과를 운영하는 원고의 직원인 
+        
+        소외 3이 보험회사에게 이 사건 예금계좌로 치료비를 송금하도록 요청하여 이 사건 예금계좌가 원고의 정당한 계좌라고 오신한 보험회사로부터 이 사건 예금계좌로 치료비를 입금받아 그 금원을 횡령해 갈 수 있게 하였으므로, 
+        
+        소외 1의 위와 같은 주의의무 위반과 원고의 위 치료비 상당의 손해 발생과는 상당인과관계가 인정된다는 취지로 판단하였음은 정당하고, 거기에 상고이유에서 주장하는 바와 같이 금융기관의 예금계좌 개설시 주의의무와 상당인과관계에 관한 법리 등을 오해하여 판결에 영향을 미친 위법이 없다. 상고이유에서 들고 있는 대법원판례는 이 사건과 사안을 달리하는 것이어서 이 사건에 원용하기에 적절하지 않다.
+      
+      </p><p>  2. 과실상계에 관한 상고이유에 대하여</p><p>  불법행위로 인한 손해배상 사건에서 과실상계사유에 관한 사실인정이나 그 비율을 정하는 것은 그것이 형평의 원칙에 비추어 현저히 불합리하다고 인정되지 않는 한 사실심의 전권사항에 속한다(
+        
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2001다62251|판결" href="#//">대법원 2002. 1. 8. 선고 2001다62251, 62268 판결</a></span> 등 참조).
+      
+      </p><p>  위 법리와 기록에 비추어 살펴보면, 원심의 과실상계 비율의 인정이 형평의 원칙에 비추어 현저히 불합리하게 낮다고 보이지 아니하므로 과실상계에 관하여 법리오해 등의 위법이 있다는 상고이유의 주장도 받아들일 수 없다.</p><p>  3. 결 론</p><p>   그러므로 상고를 기각하고, 상고비용은 패소자가 부담하는 것으로 하여 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김능환(재판장) 김용담 박시환(주심) 박일환 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

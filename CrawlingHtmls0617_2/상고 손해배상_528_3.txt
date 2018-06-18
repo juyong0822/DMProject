@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2015다23321 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2226510';
+var contIdEtc = '';
+var saNo = '2015다23321';
+var sngoNm = '선고';
+var saNm = '손해배상(기)';
+try {
+	var sngoDay=('20170215' ? 
+			'20170215'.length==4 ? Date.parseExact('20170215','yyyy').toString('yyyy. M. d.') : 
+				'20170215'.length==6 ? Date.parseExact('20170215','yyyyMM').toString('yyyy. M. d.') : 
+					'20170215'.length==8 ? Date.parseExact('20170215','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2015다23321 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2015다23321';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2015다23321</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(6)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(17)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(6)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(6)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|862121">환경오염피해에 대한 원인자의 무과실책임 @ 대법원 20172 15 선고 2015 다 23321 판결 전경운 法曹協會</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|99다55434">대법원 2001. 2. 9. 선고 99다55434 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다98863">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다98863">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2011다91784">대법원 2015. 9. 24. 선고 2011다91784 판결</a></p><p class="areaChjPanre"><font>[3]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2011다91784">대법원 2015. 9. 24. 선고 2011다91784 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2014다57846">대법원 2016. 11. 25. 선고 2014다57846 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="환경정책기본법|3|0|20110721">환경정책기본법(구) 제3조 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="환경정책기본법|3|0|null">환경정책기본법 제3조 제1호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="환경정책기본법|3|0|null">환경정책기본법(구) 제3조 제3호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="환경정책기본법|3|0|null">환경정책기본법 제3조 제3호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="환경정책기본법|3|0|null">환경정책기본법(구) 제3조 제4호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="환경정책기본법|3|0|null">환경정책기본법 제3조 제4호 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="환경정책기본법|31|0|null">환경정책기본법(구) 제31조 제1항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="환경정책기본법|44|0|null">환경정책기본법 제44조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="환경정책기본법|44|0|null">환경정책기본법 제44조 제1항 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민법|750|0|null">민법 제750조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민법|751|0|null">민법 제751조 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="민법|217|0|null">민법 제217조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="민법|758|0|null">민법 제758조 제1항 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink13" name="linkContJomun" type="민법|217|0|null">민법 제217조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink14" name="linkContJomun" type="소음진동관리법|26|0|null">소음·진동관리법 제26조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink15" name="linkContJomun" type="소음진동관리법|27|0|null">소음·진동관리법 제27조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink16" name="linkContJomun" type="소음진동관리법시행규칙|25|0|null">소음·진동관리법 시행규칙 제25조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|99다55434">대법원 2001. 2. 9. 선고 99다55434 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다98863">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다98863">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2011다91784">대법원 2015. 9. 24. 선고 2011다91784 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2011다91784">대법원 2015. 9. 24. 선고 2011다91784 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2014다57846">대법원 2016. 11. 25. 선고 2014다57846 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="환경정책기본법|31|0|20110721">환경정책기본법(구) 제31조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="환경정책기본법|44|0|20110721">환경정책기본법 제44조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민법|758|0|null">민법 제758조 제1항 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="BU|2014나2054">부산고법 2015. 3. 19. 선고 (창원)2014나2054 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2017. 2. 15. 선고 2015다23321 판결</h2><p class="sub_title">[손해배상(기)][공2017상,548]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p><p></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|31|">구 환경정책기본법 제31조 제1항</a></span>에서 정한 ‘사업자’의 의미와 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|44|">환경정책기본법 제44조 제1항</a></span>에서 정한 ‘원인자’의 의미 및 환경오염이 발생한 사업장의 사업자가 일반적으로 원인자에 포함되는지 여부(적극) / 사업장 등에서 발생하는 소음·진동으로 피해가 발생한 경우, 사업자나 원인자가 귀책사유가 없더라도 피해를 배상하여야 하는지 여부(원칙적 적극)</p>
+<p></p>
+<p></p><p>[2] 철도를 설치하고 보존·관리하는 자가 설치 또는 보존·관리의 하자로 인하여 피해가 발생한 경우, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>에 따라 이를 배상할 의무가 있는지 여부(적극) 및 ‘공작물의 설치 또는 보존의 하자’의 의미 / 공작물을 본래의 목적 등으로 이용하는 과정에서 일정한 한도를 초과하여 제3자에게 사회통념상 일반적으로 참아내야 할 정도를 넘는 피해가 발생하였는지 판단하는 기준</p>
+<p></p>
+<p></p><p>[3] 철도소음·진동을 규제하는 행정법규에서 정하는 기준을 넘는 철도소음·진동이 있다고 하여 참을 한도를 넘는 위법한 침해행위가 있다고 단정할 수 있는지 여부(소극) / 철도소음·진동이 행정법규에서 정하는 기준을 넘는지를 참을 한도를 정하는 데 고려해야 하는지 여부(적극)</p>
+<p></p>
+
+<span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p></p><p>[1] 환경오염의 피해에 대한 책임에 관하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|31|">구 환경정책기본법(2011. 7. 21. 법률 제10893호로 전부 개정되기 전의 것) 제31조 제1항</a></span>은 “사업장 등에서 발생되는 환경오염 또는 환경훼손으로 인하여 피해가 발생한 때에는 당해 사업자는 그 피해를 배상하여야 한다.”라고 정하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|44|">2011. 7. 21. 법률 제10893호로 개정된 환경정책기본법 제44조 제1항</a></span>은 “환경오염 또는 환경훼손으로 피해가 발생한 경우에는 해당 환경오염 또는 환경훼손의 원인자가 그 피해를 배상하여야 한다.”라고 정하고 있다.</p>
+<p>  위와 같이 환경정책기본법의 개정에 따라 환경오염 또는 환경훼손(이하 ‘환경오염’이라고 한다)으로 인한 책임이 인정되는 경우가 사업장 등에서 발생하는 것에 한정되지 않고 모든 환경오염으로 확대되었으며, 환경오염으로 인한 책임의 주체가 ‘사업자’에서 ‘원인자’로 바뀌었다. 여기에서 ‘사업자’는 피해의 원인인 오염물질을 배출할 당시 사업장 등을 운영하기 위하여 비용을 조달하고 이에 관한 의사결정을 하는 등으로 사업장 등을 사실상·경제상 지배하는 자를 의미하고, ‘원인자’는 자기의 행위 또는 사업활동을 위하여 자기의 영향을 받는 사람의 행위나 물건으로 환경오염을 야기한 자를 의미한다. 따라서 환경오염이 발생한 사업장의 사업자는 일반적으로 원인자에 포함된다.</p>
+<p>  사업장 등에서 발생하는 환경오염으로 피해가 발생한 때에는 사업자나 원인자는 환경정책기본법의 위 규정에 따라 귀책사유가 없더라도 피해를 배상하여야 한다. 이때 환경오염에는 소음·진동으로 사람의 건강이나 재산, 환경에 피해를 주는 것도 포함되므로 피해자의 손해에 대하여 사업자나 원인자는 귀책사유가 없더라도 특별한 사정이 없는 한 이를 배상할 의무가 있다.</p>
+<p></p><p></p><p>[2] 철도를 설치하고 보존·관리하는 자는 설치 또는 보존·관리의 하자로 인하여 피해가 발생한 경우 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>에 따라 이를 배상할 의무가 있다. 공작물의 설치 또는 보존의 하자는 해당 공작물이 용도에 따라 갖추어야 할 안전성을 갖추지 못한 상태에 있다는 것을 의미한다. 여기에서 안전성을 갖추지 못한 상태, 즉 타인에게 위해를 끼칠 위험성이 있는 상태라 함은 해당 공작물을 구성하는 물적 시설 자체에 물리적·외형적 결함이 있거나 필요한 물적 시설이 갖추어져 있지 않아 이용자에게 위해를 끼칠 위험성이 있는 경우뿐만 아니라, 공작물을 본래의 목적 등으로 이용하는 과정에서 일정한 한도를 초과하여 제3자에게 사회통념상 일반적으로 참아내야 할 정도(이하 ‘참을 한도’라고 한다)를 넘는 피해를 입히는 경우까지 포함된다. 이 경우 참을 한도를 넘는 피해가 발생하였는지는 구체적으로 피해의 성질과 정도, 피해이익의 공공성, 가해행위의 종류와 태양, 가해행위의 공공성, 가해자의 방지조치 또는 손해 회피의 가능성, 공법상 규제기준의 위반 여부, 토지가 있는 지역의 특성과 용도, 토지이용의 선후 관계 등 모든 사정을 종합적으로 고려하여 판단하여야 한다.</p>
+<p></p><p></p><p>[3] 철도소음·진동을 규제하는 행정법규에서 정하는 기준을 넘는 철도소음·진동이 있다고 하여 바로 사회통념상 일반적으로 참아내야 할 정도(이하 ‘참을 한도’라고 한다)를 넘는 위법한 침해행위가 있어 민사책임이 성립한다고 단정할 수 없다. 그러나 위와 같은 행정법규는 인근 주민의 건강이나 재산, 환경을 소음·진동으로부터 보호하는 데 주요한 목적이 있기 때문에 철도소음·진동이 위 기준을 넘는지는 참을 한도를 정하는 데 중요하게 고려해야 한다.</p>
+<p></p>
+<span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|3|">구 환경정책기본법(2011. 7. 21. 법률 제10893호로 전부 개정되기 전의 것) 제3조 제1호</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|3|">제3조 제1호</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|3|">제3호</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|3|">제3조 제3호</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|3|">제4호</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|3|">제3조 제4호</a></span> 참조), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|31|">제31조 제1항</a></span>(현행 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|44|">제44조 제1항</a></span>), <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|44|">환경정책기본법 제44조 제1항</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|750|">민법 제750조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|751|">제751조</a></span> [2] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|217|">민법 제217조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">제758조 제1항</a></span> [3] <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|217|">민법 제217조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소음·진동관리법|26|">소음·진동관리법 제26조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소음·진동관리법|27|">제27조</a></span>, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="소음·진동관리법 시행규칙|25|">소음·진동관리법 시행규칙 제25조</a></span></p>
+<span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1] <span id="link"><a name="linkContPanre" title="새창" type="대법원|99다55434|판결" href="#//">대법원 2001. 2. 9. 선고 99다55434 판결</a></span>(공2001상, 606)<br /><span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다98863|판결" href="#//">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></span><br />[2] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다98863|판결" href="#//">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></span><br /> <span id="link"><a name="linkContPanre" title="새창" type="대법원|2011다91784|판결" href="#//">대법원 2015. 9. 24. 선고 2011다91784 판결</a></span>(공2015하, 1596)<br />[3] <span id="link"><a name="linkContPanre" title="새창" type="대법원|2011다91784|판결" href="#//">대법원 2015. 9. 24. 선고 2011다91784 판결</a></span>(공2015하, 1596)<br /><span id="link"><a name="linkContPanre" title="새창" type="대법원|2014다57846|판결" href="#//">대법원 2016. 11. 25. 선고 2014다57846 판결</a></span>(공2017상, 8)</p></span><span class="space"></span>
+<span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【원고, 피상고인】
+원고 (소송대리인 법무법인(유한) 영진 담당변호사 한범석 외 2인)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피고, 상고인】
+한국철도시설공단 외 1인 (소송대리인 법무법인 정맥 외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【원심판결】
+ <span id="link"><a name="linkContPanre" title="새창" type="BU|2014나2054|판결" href="#//">부산고법 2015. 3. 19. 선고 (창원)2014나2054 판결</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 모두 기각한다.  상고비용은 피고들이 부담한다.</p>
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 손해배상책임의 성립에 관한 판단(피고들의 각 상고이유 제1점)</p><p>  가. <span class="accrnt_txt">‘환경오염의 피해에 대한 책임’에 관하여 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|31|" style="text-decoration:underline">구 환경정책기본법(2011. 7. 21. 법률 제10893호로 전부 개정되기 전의 것) 제31조 제1항</a></span>은 “사업장 등에서 발생되는 환경오염 또는 환경훼손으로 인하여 피해가 발생한 때에는 당해 사업자는 그 피해를 배상하여야 한다.”라고 정하고, <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|44|" style="text-decoration:underline">2011. 7. 21. 법률 제10893호로 개정된 환경정책기본법 제44조 제1항</a></span>은 “환경오염 또는 환경훼손으로 피해가 발생한 경우에는 해당 환경오염 또는 환경훼손의 원인자가 그 피해를 배상하여야 한다.”라고 정하고 있다.</span></p><p>  <span class="accrnt_txt">위와 같이 환경정책기본법의 개정에 따라 환경오염 또는 환경훼손(이하 ‘환경오염’이라고 한다)으로 인한 책임이 인정되는 경우가 사업장 등에서 발생되는 것에 한정되지 않고 모든 환경오염으로 확대되었으며, 환경오염으로 인한 책임의 주체가 ‘사업자’에서 ‘원인자’로 바뀌었다. 여기에서 ‘사업자’는 피해의 원인인 오염물질을 배출할 당시 사업장 등을 운영하기 위하여 비용을 조달하고 이에 관한 의사결정을 하는 등으로 사업장 등을 사실상·경제상 지배하는 자를 의미하고, ‘원인자’는 자기의 행위 또는 사업활동을 위하여 자기의 영향을 받는 사람의 행위나 물건으로 환경오염을 야기한 자를 의미한다. 따라서 환경오염이 발생된 사업장의 사업자는 일반적으로 원인자에 포함된다고 볼 수 있다.</span></p><p>  <span class="accrnt_txt">사업장 등에서 발생되는 환경오염으로 피해가 발생한 때에는 그 사업자나 원인자는 환경정책기본법의 위 규정에 따라 귀책사유가 없더라도 피해를 배상하여야 한다. 이때 환경오염에는 소음·진동으로 사람의 건강이나 재산, 환경에 피해를 주는 것도 포함되므로 피해자의 손해에 대하여 사업자나 원인자는 귀책사유가 없더라도 특별한 사정이 없는 한 이를 배상할 의무가 있다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|99다55434|판결" href="#//">대법원 2001. 2. 9. 선고 99다55434 판결</a></span>, <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다98863|판결" href="#//">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></span> 등 참조).</p><p>  한편 <span class="accrnt_txt">철도를 설치하고 보존·관리하는 자는 그 설치 또는 보존·관리의 하자로 인하여 피해가 발생한 경우 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|" style="text-decoration:underline">민법 제758조 제1항</a></span>에 따라 이를 배상할 의무가 있다. 공작물의 설치 또는 보존의 하자는 해당 공작물이 그 용도에 따라 갖추어야 할 안전성을 갖추지 못한 상태에 있다는 것을 의미한다. 여기에서 안전성을 갖추지 못한 상태, 즉 타인에게 위해를 끼칠 위험성이 있는 상태라 함은 해당 공작물을 구성하는 물적 시설 그 자체에 물리적·외형적 결함이 있거나 필요한 물적 시설이 갖추어져 있지 않아 이용자에게 위해를 끼칠 위험성이 있는 경우뿐만 아니라, 그 공작물을 본래의 목적 등으로 이용하는 과정에서 일정한 한도를 초과하여 제3자에게 사회통념상 일반적으로 참아내야 할 정도(이하 ‘참을 한도’라고 한다)를 넘는 피해를 입히는 경우까지 포함된다. 이 경우 참을 한도를 넘는 피해가 발생하였는지 여부는 구체적으로 피해의 성질과 정도, 피해이익의 공공성, 가해행위의 종류와 태양, 가해행위의 공공성, 가해자의 방지조치 또는 손해 회피의 가능성, 공법상 규제기준의 위반 여부, 토지가 있는 지역의 특성과 용도, 토지이용의 선후 관계 등 모든 사정을 종합적으로 고려하여 판단하여야 한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다98863|판결" href="#//">대법원 2011. 11. 10. 선고 2010다98863, 98870 판결</a></span>, <span id="link"><a name="linkContPanre" title="새창" type="대법원|2011다91784|판결" href="#//">대법원 2015. 9. 24. 선고 2011다91784 판결</a></span> 등 참조).</p><p>  <span class="accrnt_txt">철도소음·진동을 규제하는 행정법규에서 정하는 기준을 넘는 철도소음·진동이 있다고 하여 바로 참을 한도를 넘는 위법한 침해행위가 있어 민사책임이 성립한다고 단정할 수 없다. 그러나 위와 같은 행정법규는 인근 주민의 건강이나 재산, 환경을 소음·진동으로부터 보호하는 데 주요한 목적이 있기 때문에 철도소음·진동이 이 기준을 넘는지 여부는 참을 한도를 정하는 데 중요하게 고려해야 한다</span>(<span id="link"><a name="linkContPanre" title="새창" type="대법원|2011다91784|판결" href="#//">대법원 2015. 9. 24. 선고 2011다91784 판결</a></span>, <span id="link"><a name="linkContPanre" title="새창" type="대법원|2014다57846|판결" href="#//">대법원 2016. 11. 25. 선고 2014다57846 판결</a></span> 등 참조).</p><p>  나. 피고들의 손해배상책임 발생에 관한 원심의 판단을 정리하면 다음과 같다.</p><p>  (1) 원고는 1996년 이전부터 김해시 (주소 생략) 목장용지에서 한우를 사육하는 농장(이하 ‘이 사건 농장’이라고 한다)을 운영하였다.</p><p>  그 후 피고 한국철도시설공단(이하 ‘피고 공단’이라고 한다)은 부산신항만 배후철도(이하 ‘이 사건 철로’라고 한다)를 건설하여 이 사건 철로에서 2010. 11.경부터 열차의 시험 운행을 하고 2010. 12. 13.부터 정식으로 개통한 후 1일 24회 정도 열차가 통행하고 있다. 피고 공단은 이 사건 철로의 건설과 관리를 맡았고, 피고 한국철도공사(이하 ‘피고 공사’라고 한다)는 열차사업을 운영하고 있다.</p><p>  2010. 11. 이후 이 사건 농장에서 사육 중인 한우들에 유·사산, 성장지연, 수태율 저하 등의 피해가 발생하였다. 원고는 2012. 10. 5.부터 한우를 모두 처분하고 이 사건 농장을 휴업하였다.</p><p>  (2) 이 사건 철로에서 열차를 시험 운행하던 2010. 11. 3. 이 사건 농장에서 열차 통행으로 인한 소음·진동을 측정한 결과 최대소음도가 78dB(A), 5분 등가소음도가 67dB(A)이었다. 제1심 감정인이 2011. 10. 10.부터 10. 11.까지 24시간 동안 열차 통행으로 인한 소음과 진동을 이 사건 농장에서 측정한 결과에 따르면, 최대소음도는 63.8~81.8dB(A), 5분 등가소음도는 51.0~67.7dB(A)였고, 최대진동도는 39.5~67.2dB(V)이었다.</p><p>  (3) 이 사건 소음·진동이 1차적으로는 열차로부터 발생하지만, 열차의 운행에는 철로가 필수적이고 소음과 진동이 철로를 통해서도 생긴다. 이 사건 철로를 통한 열차 운행으로 원고에게 참을 한도를 넘는 소음·진동이 생긴 경우에 피고 공단과 피고 공사는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|31|">구 환경정책기본법 제31조 제1항</a></span>의 사업자와 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="환경정책기본법|44|">환경정책기본법 제44조 제1항</a></span>에서 정한 오염원인자에 해당하여 그 손해를 배상할 책임이 있다.</p><p>  (4) 이 사건 철로의 설치·관리자인 피고 공단은 이 사건 철로 건설 후에도 이를 관리하면서 열차 운행으로 인하여 참을 한도를 넘는 소음·진동 피해가 발생하지 않도록 하여야 할 주의의무가 있다. 피고 공단이 이러한 주의의무를 다하지 않아 이 사건 철로를 통한 열차 운행으로 인해 참을 한도를 넘는 피해가 발생한 경우에는 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>에 따라 그 손해를 배상할 책임이 있다.</p><p>  (5) 철도소음·진동으로 인한 가축 피해에 대하여는 환경부 산하 중앙환경분쟁조정위원회에서 제정한 ‘환경피해 평가방법 및 배상액 산정기준’에서 정한 기준이 공법상 규제기준으로서 소음·진동으로 인해 참을 한도를 넘는 피해가 발생하였는지 여부를 판단하는 데 중요한 고려요소가 될 수 있다. 이 사건 철로에서 열차가 운행된 2010. 11.경부터 열차의 운행으로 생긴 소음·진동이 위 ‘환경피해 평가방법 및 배상액 산정기준’에서 정한 가축피해 인정기준을 지속적으로 초과하였다. 또한 이 사건 농장 지역을 통과하는 항공기의 소음보다는 이 사건 철로를 운행하는 열차에서 생기는 소음·진동이 피해의 직접적인 원인으로 보인다. 이 사건 농장과 철로 사이의 직선거리는 62.5m에 불과한데도 소음·진동 방지를 위한 방지대책을 마련하지 않았다. 이러한 사정 등을 종합하면, 이 사건 철로를 통한 열차 운행으로 생긴 소음·진동으로 말미암아 원고에게 참을 한도를 넘는 피해가 발생하였다.</p><p>  다. 위와 같은 사정을 종합해 보면 원고가 이 사건 농장에서 한우를 사육하고 있던 중 피고 공단이 건설한 이 사건 철로에서 발생한 소음·진동으로 말미암아 위 한우에 피해가 발생하였다고 볼 수 있고, 피고들은 연대하여 원고에게 그 손해를 배상할 책임이 있다고 보아야 한다. 같은 취지의 원심판단은 위에서 본 법리에 기초한 것으로서 모두 정당하다. 원심의 판단에 상고이유 주장과 같이 필요한 심리를 다하지 않은 채 논리와 경험의 법칙에 반하여 자유심증주의의 한계를 벗어나거나 환경정책기본법의 해석·적용과 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|758|">민법 제758조 제1항</a></span>에서 정한 공작물 소유자의 책임과 철도 소음·진동으로 인한 생활방해에서 참을 한도 등에 관한 법리오해 등의 잘못이 없다.</p><p>  2. 손해배상액 산정에 관한 판단(피고 공단의 상고이유 제3점과 피고 공사의 상고이유 제2점)</p><p>  가. 원심은 피고 공단의 손해배상액에 관하여 다음과 같이 판단하였다.</p><p>  이 사건 철로를 통한 열차 운행으로 생긴 소음·진동으로 이 사건 농장은 한우 사육시설로서의 입지를 상실하였다. 피고들은 농장의 이전비용과 그 이전 과정에서 불가피하게 발생하는 피해를 통상손해로서 배상하여야 한다. 그리고 이 사건 농장은 축사건물로서 물리적으로 이전이 불가능하다는 특별한 사정이 존재하므로, 이 사건 농장의 교환가치에 해당하는 금액을 배상할 책임이 있다. 또한 원고가 이 사건 농장을 폐업한 2012. 10. 5.부터 이 사건 농장을 위한 대체지와 한우 농장시설을 확보하는 데 드는 통상의 기간으로 볼 수 있는 9개월 동안 휴업손해를 배상할 책임이 있다.</p><p>  나. 원심판결 이유를 관련 법리와 기록에 비추어 살펴보면, 원심의 판단에 상고이유의 주장과 같이 논리와 경험의 법칙에 반하여 자유심증주의의 한계를 벗어나거나 변론주의 위반 또는 손해배상액 산정에 관한 법리오해 등의 잘못이 없다.</p><p>  3. 책임제한에 관한 판단(피고 공단의 상고이유 제2점)</p><p>  원심은 이 사건 철로를 열차가 운행하기 전에 현대산업개발 주식회사가 이 사건 철로를 건설하는 과정에서 발생시킨 소음·진동이 이 사건 농장의 한우들의 유·사산, 수태율 저하, 성장지연 등의 피해에 영향을 미쳤다는 점, 이 사건 농장에서 측정한 항공기 소음도 이 사건 농장에 발생한 피해에 어느 정도 영향을 미쳤을 것으로 보이는 점 등을 들어 피고 공단의 손해배상 책임범위를 90%로 제한하였다. 원심판결 이유를 관련 법리와 기록에 비추어 살펴보면 위 판단은 정당하다. 원심의 판단에 상고이유 주장과 같이 책임제한에 관한 법리를 오해한 잘못이 없다.</p><p>  4. 결론</p><p>  피고들의 상고를 모두 기각하고 소송비용은 패소자들이 부담하도록 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   박보영(재판장) 박병대 권순일 김재형(주심) </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

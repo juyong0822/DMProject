@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>서울고등법원 2015라20062 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2207459';
+var contIdEtc = '';
+var saNo = '2015라20062';
+var sngoNm = '자';
+var saNm = '손해배상(기)(문서제출명령에대한즉시항고)';
+try {
+	var sngoDay=('20150604' ? 
+			'20150604'.length==4 ? Date.parseExact('20150604','yyyy').toString('yyyy. M. d.') : 
+				'20150604'.length==6 ? Date.parseExact('20150604','yyyyMM').toString('yyyy. M. d.') : 
+					'20150604'.length==8 ? Date.parseExact('20150604','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '서울고등법원';
+var bubCd = '000200';
+var panTypeNm = '결정';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2015라20062 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'W2';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2015라20062';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">서울고등법원<br />2015라20062</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(0)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(0)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(0)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(0)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(2)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(8)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style="display:none"><em>[따름판례]</em></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style="display:none"><em>[관련문헌]</em></p>
+						<p id="areaChjPanre" class="areaChjPanre" style="display:none"><em>[참조판례]</em></p>
+						<p id="areaChjJomun" class="areaChjJomun" style="display:none"><em>[참조조문]</em></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2014가합532052">서울중앙지방법원 2014가합532052</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|95마415">대법원 1995. 5. 3.자 95마415 결정</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|344|0|null">민사소송법 제344조 제2항 제1호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|344|0|null">민사소송법 제344조 제2항 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|347|0|null">민사소송법 제347조 제1항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사소송법|347|0|null">민사소송법 제347조 제4항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="상법|32|0|null">상법 제32조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울중앙지방법원|2014가합532052">서울중앙지방법원 2014. 12. 24.자 2014가합532052 결정</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>서울고등법원 2015. 6. 4. 자 2015라20062 결정</h2><p class="sub_title">[손해배상(기)(문서제출명령에대한즉시항고)][미간행]</p></div><div class="page_area"><div class="page"><span class="space"></span><p><strong id="Body">【전    문】</strong></p><span class="space"></span><p><strong style="font-weight:normal;" id="Party1">【신청인(원고), 상대방】
+주식회사 신호인터내셔날 (소송대리인 변호사 안상일)
+
+</strong></p>
+<span class="space"></span><p><strong style="font-weight:normal;" id="Party3">【피신청인(피고), 항고인】
+에스케이네트웍스 주식회사 외 l인(소송대리인 법무법인 광장 담당변호사 지영철외 1인)
+
+</strong></p>
+<span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">【제1심결정】
+ <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2014가합532052|결정" href="#//">서울중앙지방법원 2014. 12. 24.자 2014가합532052 결정</a></span><span class="space"></span>
+</strong></p>
+<span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  1. 제1심 결정 중 별지 제3목록 제2항 기재 각 문서에 관한 피신청인들 패소 부분을 취소하고, 그 최소 부분에 해당하는 신청인의 신청을 기각한다.</p><p>  2. 피신청인들의 나머지 항고를 기각한다.</p>
+【신청취지 및 항고취지】
+<p>  신청취지: 피신청인들은 이 결정을 받은 날로부터 7일 이내에 별지 제1목록 기재 각 문서를 서울중앙지방법원에 제출하라.</p>
+<p>  항고취지: 제1심 결정을 취소한다. 이 사건 신청을 기각한다.</p>
+
+<span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  <b>1. 본안소송 및 제1심 결정</b></p><p>  이 사건 기록 및 심문 전체의 취지에 의하면 다음 각 사실이 소명된다.</p><p>  가. 신청인은 2014. 5. 12. 피신청인들과 소외 1, 소외 2 등 4인을 상대로 <span id="link"><a name="linkContPanre" title="새창" type="서울중앙지방법원|2014가합532052|결정" href="#//">서울중앙지방법원 2014가합532052</a></span> 손해배상(기) 청구소송(이하 ‘이 사건 본안소송’이라 한다)을 제기하였는바, 그 청구원인은 아래와 같다.</p><p>  1) 철강업체인 포스코로부터 슬라브(두꺼운 판 모양의 철강 반제품) 구매권한을 가지고 있던 신청인은 2011. 2.경 당시 포스코 영업부 담당자이던 소외 1과 피신청인 에스케이네트웍스 재팬 주식회사의 지사장이던 소외 2로부터 일본국 법인인 나카야마스틸 코포레이션(이하 ‘나카야마’라 한다)에 대한 슬라브 수출을 제안받았다.</p><p>  2) 그리하여 2011. 8.경부터 2012. 5.경까지 사이에 포스코가 생산하는 슬라브를 피신청인 에스케이네트웍스 주식회사와 일본국 법인인 피신청인 에스케이네트웍스 재팬 주식회사를 통해 나카야마로 수출하는 거래(이하 ‘이 사건 수출거래’라 한다)가 이루어졌는데, 신청인은 슬라브 구매권한을 가진 자로서 홍콩법인인 티에스엠을 통해 수출대금 중 일부를 커미션으로 지급받게 되었다.</p><p>  3) 그런데 이 사건 수출거래를 제의한 소외 1과 소외 2가 위 거래의 허위 에이전트로, 소외 1이 사실상 지배하는 주식회사 다위드를 개입시켜 커미션의 일부를 받아감으로써 신청인은 본래 자신에게 귀속되어야 할 커미션 중 상당액을 지급받지 못하게 되었는바, 피신청인들은 소외 2의 사용자로서 위와 같은 불법행위로 인해 신청인이 입은 손해를 배상할 책임이 있다.</p><p>  나. 신청인은 2014. 11. 27. 피신청인들과 소외 1, 소외 2의 공동불법행위와 그로 인한 손해액을 특정하기 위해서는 이들이 신청인에게 숨긴, 나카야마에 대한 수출용 슬라브의 최종 판매가격 및 제3의 커미션 수령자의 존재에 관한 사항을 명확히 증명할 필요가 있음을 이유로 문서제출신청을 하였고, 이에 제1심 법원은 2014. 12. 24. 피신청인들에 대하여 송달일로부터 7일 이내에 별지 제1목록 기재 각 문서를 제출하라는 결정을 하였다.</p><p>  <b>2. 항고이유의 요지</b></p><p>  가. 신청인은 이 사건 수출거래로 인한 수익에 관하여 분배 약정이 있음을 전제로 본건 신청을 하였으나, 실제로 그러한 약정은 존재하지 아니함에도 불구하고 모색적, 포괄적 증거수집을 위해 이 사건 신청에 이른 것이므로, 문서제출이 허용되어서는 아니 된다.</p><p>  나. 별지 제2목록(제1심 결정에서 피신청인들에제 제출을 명한 별지 제1목록 기재문서들을 세분하면 별지 제2목록 기재와 같다) 제1항의 ②, 같은 목록 제2항의 ②의 각 문서는 실제로 존재하지 아니하므로 문서제출명령의 대상이 될 수 없다.</p><p>  다. 별지 제2목록 제1항의 ③ 문서는 나카야마가 소지하는 문서로서 피신청인들은 소지하지 않고 있으므로 문서제출명령의 대상이 될 수 없다.</p><p>  라. 별지 제2목록 제1항의 ①, 같은 목록 제2항의 ①, 같은 목록 제3항의 ①, ②, 같은 목록 제4항의 ①, ②, 각 문서는 피신청인들의 영업비밀에 해당하므로 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|344|">민사소송법 제344조 제2항 제1호</a></span>에 의하여 문서 제출을 거부할 수 있다.</p><p>  마. 별지 제2목록 제1항의 ④, 같은 목록 제2항의 ③, ④ 각 문서는 회계서류로서 피신청인들이 내부적으로만 이용하기 위하여 작성한 문서이므로 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|344|">민사소송법 제344조 제2항 제2호</a></span>에 의하여 문서 제출을 거부할 수 있다.</p><p>  <b>3. 판 단</b></p><p>  가. 먼저 2의 가. 주장에 관하여 본다. 법원은 문서제출신청에 ‘정당한 이유’가 있다고 인정한 때에 문서를 가진 사람에게 그 제출을 명할 수 있다(<span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|347|">민사소송법 제347조 제1항</a></span>), 신청에 ‘정당한 이유’가 인정되려면 대상 문서가 존재하고, 피신청인이 그 문서를 소지하며, 그 문서가 서증으로서 증거조사할 필요성이 있어야 한다. 여기서 증거조사의 필요성이란 문서제출신청의 대상이 된 문서들이 신청인이 제시한 증명사항과 관련성이 있고, 그 문서들에 대한 서증조사를 통하여 증명사항이 사실로 인정되면 그러한 사실에 터잡아 신청인의 청구원인 사실을 추단할 수 있는 경우를 의미한다고 할 것이다.</p><p>  신청인은 피신청인들과 소외 1, 소외 2의 공동불법행위와 그로 인한 손해액을 밝히기 위하여 나카야마에 대한 수출용 슬라브의 최종 판매가격 및 제3의 커미션 수령자의 존재를 증명할 목적으로 이 사건 신청을 제기하였는바, 이 사건 문서제출신청의 대상이 된 별지 제2목록 기재 각 문서는 신청인의 이러한 증명사항과 충분한 관련이 있다고 보이고, 신청인이 증명하고자 하는 사항 및 별지 제2목록 기재 각 문서는 이미 구체적으로 특정되었다고 할 것이어서, 이 사건 신청이 증거의 포괄적, 모색적 수집을 위한 것이라고 보기 어렵다.</p><p>  피신청인들은, 신청인과 피신청인들 사이의 수익분배 약정이 증명되지 않는 한, 별지 제2목록 기재 각 문서에 관한 문서제출명령은 허용되어서는 안 된다는 취지의 주장도 하고 있으나, 이 사건 신청은 수익분배 약정의 존부가 아니라 불법행위 성립에 관한 별도의 사실관계 및 손해액 입증을 위한 것으로서, 반드시 수익분배 약정이 증명되어야만 별지 제2목록 기재 각 문서에 대한 제출명령이 허용된다고 볼 수는 없다. 따라서 피신청인들의 위 주장은 이유 없다.</p><p>  나. 다음 2의 나. 주장에 관하여 본다. 법원이 문서제출명령을 하기 위해서는 먼저 당해 문서의 존재와 소지가 증명되어야 하고, 그 증명책임은 원칙적으로 신청인에게 있다(<span id="link"><a name="linkContPanre" title="새창" type="대법원|95마415|결정" href="#//">대법원 1995. 5. 3.자 95마415 결정</a></span> 등 참조). 그러나 이 사건 수출거래와 같은 역외거래에서는 수출입신용장을 이용한 대금 지급 방식이 통상적으로 이용되고, 신청인은 이에 따라 피신청인들을 상대로 별지 제2목록 제1항의 ②, 같은 목록 제2항의 ②의 각 수출입신용장의 제출을 구한 것인데, 피신청인들은 이 사건 수출거래가 모·자회사간, 일본국 법인간의 순차 거래를 통해 이루어져 수출입신용장을 이용하지 아니하였다며 해당 문서들의 존재를 부인할 뿐, 이 사건 수출거래의 대금 지급 방식에 관해서는 아무런 설명을 하지 않고 있고, 이에 따라 신청인으로서는 수출거래에 필수적으로 수반하는 대금 지급 여부의 입증에 관하여 수출입신용장 이외의 다른 문서를 특정하여 그 제출을 신청하지도 못하고 있는바, 어떤 방식에 의해 수출대금 지급이 이루어졌는지에 관해 명확히 알고 있는 피신청인들이 이를 밝히지 않고 있는 현 상황에서는, 피신청인들의 주장에도 불구하고 무역거래에서 대금 지급을 위해 일반적으로 활용하는 수출입신용장의 존재가 사실상 추단된다고 봄이 상당하고, 따라서 그 부존재를 전제로하는 피신청인들의 위 주장은 받아들이지 아니한다.</p><p>  다. 다음 2의 다. 주장에 관하여 보건대, 별지 제2목록 제1항 ③의 피신청인 에스케이네트웍스 재팬 주식회사와 나카야마 간의 슬라브 제품 매매거래에 관련한 매입 회계처리원장은 그 성질상 매입 당사자인 나카야마가 작성, 보관하는 문서로서 거래 당사자가 아니거나 혹은 매출 당사자인 피신청인들은 소지하지 않고 있다고 봄이 상당하므로, 이 점을 지적하는 피신청인들의 위 주장은 이유 있다.</p><p>  라. 다음 2의 라. 주장에 관하여 본다. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|344|">민사소송법 제344조 제2항 제1호</a></span> 소정의 문서 제출 거부사유로서 ‘직업의 비밀’이란, 그 비밀이 공개되면 해당 직업의 수행에 심각한 영향을 주어 그 이후 직업의 수행이 현저히 곤란하게 되는 사정이 있어 진실발견의 요청을 희생하여서라도 보호할 만한 가치가 있는 것을 말한다고 보아야 하고, 이에 해당하는지 여부는 그 정보의 내용 및 성질, 해당 사건에서 정보가 증거로서 필요한 정도, 그 정보의 제출이 정보보유자에게 미칠 영향 등 제반 사정을 고려하여야 한다.</p><p>  돌이켜 이 사건에 관하여 살피건대, 이 법원이 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|347|">민사소송법 제347조 제4항</a></span>에 의해 피신청인들로부터 별지 제2목록 제1항의 ①, 같은 목록 제4항의 ① 등 문서들을 제출받아 검토한 결과, 수출거래에 관한 주문서에 통상적으로 들어가는 제품사양, 수량, 중량, 단가, 금액 등이 기재되어 있고, commission agreement에는 피신청인 에스케이네트웍스 재팬 주식회사와 커미션 수령자인 주식회사 다위드 간의 약정으로서 신청인과 위 피신청인 사이에 작성된 commission agreement(소갑 제1호증의 1 내지 55)와 동일한 양식에 물량, 커미션 액수 등이 기재되어 있는바, 피신청인들과 나카야마 사이의 슬라브 수출거래가 이미 종료되어 위와 같은 내용이 공개되더라도 피신청인들의 영업에 별다른 지장을 초래할 것이라고 보기 어려운 반면, 나카야마에 대한 슬라브의 최종 판매 가격이나 주식회사 다위드가 수령한 커미션 액수 등이 포함되어 있어 이 사건 본안소송의 쟁점 해결에 관한 결정적인 자료라고 할 것이어서, 앞서 본 법리에 비추어 별지 제2목록 제1항의 ①, 같은 목록 제2항의 ①, 같은 목록 제4항의 ①, ② 각 문서들이 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|344|">민사소송법 제344조 제2항 제1호</a></span> 소정의 직업의 비밀에 관한 문서라고 단정할 수 없고, 따라서 피신청인들의 위 주장은 이유 없다.</p><p>  한편, 피신청인들은 거래상대방인 나카야마가 매매계약 관련 정보에 관한 비밀준수를 요구한다는 것도 문서제출 거부의 근거로 주장하나, 문서소지자가 제3자에 대하여 비밀준수의무를 부담한다는 이유만으로는 문서제출을 거부할 수 없고, 구체적인 소송에서 진실을 발견하고 공정한 재판을 실현할 필요성과 그 제3자가 가지는 비밀의 중요성을 비교형량하여 문서제출의무의 존부를 결정하여야 할 것인데, 기록 및 심문 전체의 취지에 의하더라도 이 사건 본안소송에서 진실발견과 공정한 재판의 필요성이 나카야마가 매매계약 관련 정보에 대하여 가지는 비밀의 중요성보다 우월하다고 판단되므로, 이 부분 주장 역시 이유 없다.</p><p>  마. 끝으로 2의 마, 주장에 관하여 본다. <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|344|">민사소송법 제344조 제2항 제2호</a></span> 소정의 ‘오로지 문서를 가진 사람이 이용하기 위한 문서’란 ‘일기, 메모, 가계부, 단체 내부의 의사형성 과정에서 작성된 문서 등과 같이 대외적 공개를 목적으로 하지 아니한 프라이버시에 관한 문서’로 한정하여야 할 것인데, 별지 제2목록 제1항의 ④, 같은 목록 제2항의 ③, ④의 매입 또는 매출 회계처리원장은 회계장부의 일종으로 이를 프라이버시에 관한 문서라고 보기는 어렵고, 오히려 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="상법|32|">상법 제32조</a></span>에 의하여 소송 과정에서 법원이 당사자에게 제출을 명할 수 있는 상업장부에 해당한다고 볼 여지가 크므로, 피신청인들의 위 주장 역시 이유 없다.</p><p>  바. 나아가 살피건대, 이 법원이 <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|347|">민사소송법 제347조 제4항</a></span>에 의한 제시명령을 발령하여 관련 문서들을 제출받아 확인한 결과, 피신청인 에스케이네트웍스 주식회사가 아닌 피신청인 에스케이네트웍스 재팬 주식회사가 커미션 수령자와 약정한 사실이 소명되므로, 별지 제2목록 제3항의 ①, ②의 각 문서는 그 존재 자체를 인정하기 어렵다.</p><p>  또한, 기록에 의하더라도, 제1심 결정에서 피신청인 에스케이네트웍스 주식회사에게 제출을 명한 문서들 중 별지 제2목록 제1항의 ① 내지 ④, 같은 목록 제4항의 ①, ②의 각 문서는 위 피신청인이 당사자가 아니고, 같은 목록 제2항의 ③ 문서는 위 피신청인이 매출 당사자이지 매입 당사자가 아니므로 위 피신청인이 소지한다고 보기 어렵고, 피신청인 에스케이네트웍스 재팬 주식회사에게 제출을 명한 문서들 중 같은 목록 제1항의 ③, 같은 목록 제2항의 ④의 각 문서는 역시 그 각 거래에서 위 피신청인이 매입 혹은 매출 당사자가 아니므로 소지한다고 보기 어렵다. 따라서 위 각 문서들은 그 소지 여부가 소명되지 않는 각 피신청인에게 제출을 명할 수 없다.</p><p>  <b>4. 결 론</b></p><p>  그렇다면, 이 사건 문서제출신청 중 별지 제3목록(별지 제2목록 기재 각 문서를 신청의 인용, 기각 여부에 따라 재배열하여 기재한 목록이다) 제l항 ‘인용 부분’ 기재 각 문서에 관한 부분은 이를 인용하고, 별지 제3목록 제2항 ‘기각 부분’ 기재 각 문서에 관한 부분은 이를 기각하여야 한다. 이와 일부 결론을 달리한 제1심 결정 중 별지 제3목록 제2항 기재 각 문서에 관한 피신청인들 패소 부분은 부당하므로 이를 취소하고, 그 취소 부분에 해당하는 신청인의 신청을 기각하며, 피신청인들의 나머지 항고는 이유 없어 이를 기각하기로 하여 주문과 같이 결정한다.</p><p>  [별지 생략]</p>
+<span class="space"></span><span class="space"></span><center><span class="t01-text">판사   이태종(재판장) 전휴재 윤도근 </span></center><span class="space"></span>
+</div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

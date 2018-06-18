@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 2010다47117 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2063271';
+var contIdEtc = '';
+var saNo = '2010다47117';
+var sngoNm = '선고';
+var saNm = '손해배상및추심금';
+try {
+	var sngoDay=('20121025' ? 
+			'20121025'.length==4 ? Date.parseExact('20121025','yyyy').toString('yyyy. M. d.') : 
+				'20121025'.length==6 ? Date.parseExact('20121025','yyyyMM').toString('yyyy. M. d.') : 
+					'20121025'.length==8 ? Date.parseExact('20121025','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 2010다47117 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '2010다47117';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />2010다47117</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(10)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(4)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(13)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(9)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(3)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(1)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2124438">대법원 2013. 6. 13. 선고 2013다10628 판결 [공2013하,1204]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2139225">대법원 2013. 9. 12. 선고 2013다40377 판결 [공보불게재]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2144507">대법원 2013. 12. 26. 선고 2013다26296 판결 [공보불게재]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style=""><em>[평석]</em><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|700993">은행의 착오로 인한 입금기장 정정권이 인정될 수 있는 요건 오영준 법원도서관</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|777804">은행의 착오로 인한 자금이체의 효력 @ 대법원 20121025 선고 2010다47117 판결 서희석 韓國司法行政學會</a></p><p class="space"></p><p class="areaPsuk"><a href="#//" title="새창" name="linkContMhn" type="기사|833015">은행의 착오로 인한 입금기장의 정정 @ 대법원 2012 10 25 선고 2010다47117 판결 오영준 사법발전재단</a></p><p class="space"></p></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|800358">이혁 지연손해금과 법정이자 판례연구 27집 / 부산판례연구회  2016 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|761690">권영준 불법행위의 과실 판단과 사회평균인 비교사법 제22권 1호 / 한국비교사법학회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|568960">한국. 대법원 법원행정처 사법보좌관실무편람:. 채권집행 및 배당절차.. Ⅱ 법원행정처  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|705185">서희석 지급인의 착오로 인한 자금이체의 효력 : 착오이체의 법률관계에 관한 판례법리의 전개 . 비교사법 제20권 3호 / 한국비교사법학회  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|848769">민철기 국세징수법상 체납처분에 의한 채권압류의 유효요건 대법원판례해설 제111호 / 법원도서관  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|792808">김기현 지연손해금에 관한 재판실무상의 쟁점 재판과 판례 제24집 / 대구판례연구회  2015 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|833015">오영준 은행의 착오로 인한 입금기장의 정정 : 대법원 2012. 10. 25. 선고 2010다47117 판결 법과 정의 그리고 사람:. 박병대 대법관 재임기념 문집(2017)   / 사법발전재단  2017 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|551575">한국. 대법원 법원행정처 법원실무제요. [2-3]:. 민사집행(III): 동산·채권 등 집행 법원행정처  2014 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|700993">오영준 은행의 착오로 인한 입금기장 정정권이 인정될 수 있는 요건 대법원판례해설 제93호 / 법원도서관  2013 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|571634">박병대 대법원재판연구관실무연구회 법과 정의 그리고 사람:. 박병대 대법관 재임기념 문집(2017) 사법발전재단  2017 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2008다9952">대법원 2011. 2. 10. 선고 2008다9952 판결</a></p><p class="areaChjPanre"><font>[2]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다51239">대법원 2007. 11. 29. 선고 2007다51239 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다66088">대법원 2010. 5. 27. 선고 2007다66088 판결</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|2010다41263">대법원 2010. 11. 11. 선고 2010다41263, 41270 판결</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민사집행법|223|0|null">민사집행법 제223조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민사집행법|225|0|null">민사집행법 제225조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|492|0|null">민법 제492조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink3" name="linkContJomun" type="민법|702|0|null">민법 제702조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink4" name="linkContJomun" type="민법|741|0|null">민법 제741조 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink5" name="linkContJomun" type="전자금융거래법|8|0|null">전자금융거래법 제8조 제3항 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink6" name="linkContJomun" type="민사집행법|49|0|null">민사집행법 제49조 제2호 </a><img src="/wsjodocs/images/contents/alert_img_01.png" alt="위헌조문 표시" /></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink7" name="linkContJomun" type="민사집행규칙|161|0|null">민사집행규칙 제161조 </a></p><p class="areaChjJomun"><font>[4]</font><a href="#//" title="새창" id="chjJomunLink8" name="linkContJomun" type="민사소송법|227|0|null">민사소송법 제227조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink9" name="linkContJomun" type="민사소송법|227|0|null">민사소송법 제227조 제3항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink10" name="linkContJomun" type="민사소송법|229|0|null">민사소송법 제229조 제2항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink11" name="linkContJomun" type="민사소송법|229|0|null">민사소송법 제229조 제4항 </a></p><p class="areaChjJomun"><font>, </font><a href="#//" title="새창" id="chjJomunLink12" name="linkContJomun" type="민법|387|0|null">민법 제387조 제2항 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style=""><em>[본문참조판례]</em><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2008다9952">대법원 2011. 2. 10. 선고 2008다9952 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대구지방법원김천지원|2008타채507">대구지방법원 김천지원 2008타채507호</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원서부지원|98가합11956">서울지방법원 서부지원 98가합11956</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다51239">대법원 2007. 11. 29. 선고 2007다51239 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="대법원|2007다66088">대법원 2010. 5. 27. 선고 2007다66088 판결</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울서부지방법원|2008가단23050">서울서부지방법원 2008가단23050</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울서부지방법원|2008카기583">서울서부지방법원 2008카기583</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울서부지방법원|2008가단23050">서울서부지방법원 2008가단23050</a></p><p class="areaBmunChjPanre dept_05"><a href="#//" title="새창" name="linkContPanre" type="서울지방법원서부지원|98가합11956">서울지방법원 서부지원 98가합11956 판결</a></p><p class="space"></p></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style=""><em>[본문참조조문]</em><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="전자금융거래법|8|0|null">전자금융거래법 제8조 제3항 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행법|49|0|null">민사집행법 제49조 제2호 </a></p><p class="areaBmunChjJomun"><a href="#//" title="새창" name="linkContJomun" type="민사집행규칙|161|0|null">민사집행규칙 제161조 </a></p><p class="space"></p></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|2009나81304">서울고법 2010. 4. 28. 선고 2009나81304 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 2012. 10. 25. 선고 2010다47117 판결</h2><p class="sub_title">[손해배상및추심금][공2012하,1898]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 압류될 채권에 장래 채무자의 계좌에 입금될 예금채권도 포함되는지에 관한 결정 기준 및 압류명령의 ‘압류할 채권의 표시’에 기재된 문언의 해석 방법</p>
+      <p></p>
+      <p>
+        </p><p>[2] 출금계좌의 예금주가 수취인 앞으로 계좌이체를 지시하거나 수취인의 추심이체에 관하여 출금 동의 등을 한 바가 없는데도 은행이 그러한 지시나 동의 등이 있는 것으로 착오를 일으켜 계좌이체 등을 한 경우, 수취인이 입금액 상당 예금채권을 취득하는지 여부(원칙적 적극) 및 이 경우 수취인의 예금계좌가 은행에 개설되어 있다면 은행이 오류정정의 방법으로 자금이체 등을 취소시킬 수 있는지 여부(원칙적 적극)</p>
+      <p></p>
+      <p>
+        </p><p>[3] 압류·추심명령에 대한 집행정지결정의 효력 발생 시기(=채무자가 집행기관에 강제집행정지결정 정본을 제출한 때) 및 압류채권자에 대한 강제집행정지결정 정본의 송달 여부나 제3채무자에 대한 집행정지 통보의 송달 여부가 집행정지의 효력 발생에 영향을 미치는지 여부(소극)</p>
+      <p></p>
+      <p>
+        </p><p>[4] 압류·추심명령에 따라 압류된 채권액 상당에 관하여 제3채무자가 압류채권자에게 지체책임을 지는 시기(=추심명령 발령 후 압류채권자로부터 추심금 청구를 받은 다음날부터)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>[1] 채권압류에서 압류될 채권에 장래 채무자의 계좌에 입금될 예금채권이 포함되는지는 압류명령에서 정한 압류할 채권에 그 예금채권이 포함되었는지에 의해 결정되는 것이고 이는 곧 압류명령의 ‘압류할 채권의 표시’에 기재된 문언의 해석에 따라 결정되는 것이 원칙이다. 그런데 제3채무자는 순전히 타의에 의하여 다른 사람들 사이의 법률분쟁에 편입되어 압류명령에서 정한 의무를 부담하는 것이므로 이러한 제3채무자는 압류된 채권이나 그 범위를 파악할 때 과도한 부담을 가지지 않도록 보호할 필요가 있다. 따라서 ‘압류할 채권의 표시’에 기재된 문언은 그 문언 자체의 내용에 따라 객관적으로 엄격하게 해석하여야 하고, 문언의 의미가 불명확한 경우 그로 인한 불이익은 압류 신청채권자에게 부담시키는 것이 타당하므로, 제3채무자가 통상의 주의력을 가진 사회평균인을 기준으로 그 문언을 이해할 때 포함 여부에 의문을 가질 수 있는 채권은 특별한 사정이 없는 한 압류의 대상에 포함되었다고 보아서는 아니 된다.</p>
+      <p></p><p>
+        </p><p>[2] 자금이체는 은행 간 및 은행점포 간의 송금절차를 통하여 저렴한 비용으로 안전하고 신속하게 자금을 이동시키는 수단이고, 다수인 사이에 다액의 자금이동을 원활하게 처리하기 위하여 그 중개역할을 하는 은행이 각 자금이동의 원인인 법률관계의 존부, 내용 등에 관여함이 없이 이를 수행하는 체제로 되어 있다. 따라서 예금거래기본약관에 따라 송금의뢰인이 수취인의 예금계좌에 자금이체를 하여 예금원장에 입금의 기록이 된 때에는 특별한 사정이 없는 한 송금의뢰인과 수취인 사이에 자금이체의 원인인 법률관계가 존재하는지에 관계없이 수취인과 수취은행 사이에는 입금액 상당의 예금계약이 성립하고, 수취인은 수취은행에 대하여 입금액 상당의 예금채권을 취득한다. 이와 같은 법리는 출금계좌의 예금주가 수취인 앞으로의 계좌이체에 대하여 지급지시를 하거나 수취인의 추심이체에 관하여 출금 동의 등을 한 바가 없는데도, 은행이 그와 같은 지급지시나 출금 동의가 있는 것으로 착오를 일으켜 출금계좌에서 예금을 인출한 다음 이를 수취인의 예금계좌에 입금하여 그 기록이 완료된 때에도 동일하게 적용된다고 봄이 타당하므로, 수취인은 이러한 은행의 착오에 의한 자금이체의 경우에도 입금액 상당의 예금채권을 취득한다. 이 경우 은행은 입금기록이 완료됨과 동시에 수취인에 대하여 입금액 상당의 부당이득반환청구권을 취득하게 되는데, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전자금융거래법|8|">전자금융거래법 제8조 제3항</a></span>이 “금융기관 또는 전자금융업자는 스스로 전자금융거래에 오류가 있음을 안 때에는 이를 즉시 조사하여 처리한 후 오류가 있음을 안 날부터 2주 이내에 오류의 원인과 처리 결과를 대통령령으로 정하는 방법에 따라 이용자에게 알려야 한다.”고 하여 오류정정이 허용될 경우의 처리절차에 관하여 규정하고 있는 점, 착오로 입금이 이루어진 수취인의 예금계좌가 그 은행에 개설되어 있는 경우 은행으로서는 수취인에 대한 부당이득반환청구권을 자동채권으로 하여 수취인의 예금채권과 상계할 수 있는 점 등에 비추어 보면, 은행은 위와 같은 상계로써 수취인의 예금채권에 관하여 이미 이해관계를 가지게 된 제3자 등에게 대항할 수 없다는 등 특별한 사정이 없는 한, 착오로 인한 자금이체에 의하여 발생한 채권채무관계를 정리하기 위하여 수취인의 예금계좌에 대한 입금기록을 정정하여 자금이체를 취소시키는 방법으로 은행의 수취인에 대한 부당이득반환청구권과 수취인의 은행에 대한 예금채권을 모두 소멸시킬 수 있다.
+        </p>
+      <p></p><p>
+        </p><p>[3] 집행력이 있는 판결 정본에 기하여 압류·추심명령이 발령된 경우 채무자가 강제집행정지결정의 정본을 집행기관에 제출하면 이로써 집행정지의 효력이 발생하고 그 집행정지가 효력을 잃기 전까지 압류채권자에 의한 채권의 추심이 금지된다(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|49|">민사집행법 제49조 제2호</a></span>). 여기서 강제집행정지결정의 정본이 압류채권자에게 송달되었는지 여부나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행규칙|161|">민사집행규칙 제161조</a></span>가 규정하는 집행정지 통보가 제3채무자에게 송달되었는지 여부는 집행정지의 효력 발생과 무관하다.
+        </p>
+      <p></p><p>
+        </p><p>[4] 추심명령은 압류채권자에게 채무자의 제3채무자에 대한 채권을 추심할 권능을 수여함에 그치고, 제3채무자로 하여금 압류채권자에게 압류된 채권액 상당을 지급할 것을 명하거나 그 지급 기한을 정하는 것이 아니므로, 제3채무자가 압류채권자에게 압류된 채권액 상당에 관하여 지체책임을 지는 것은 집행법원으로부터 추심명령을 송달받은 때부터가 아니라 추심명령이 발령된 후 압류채권자로부터 추심금 청구를 받은 다음날부터라고 하여야 한다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>[1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|223|">민사집행법 제223조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|225|">제225조</a></span> [2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|492|">민법 제492조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|702|">제702조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|741|">제741조</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전자금융거래법|8|">전자금융거래법 제8조 제3항</a></span> [3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|49|">민사집행법 제49조 제2호</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행규칙|161|">민사집행규칙 제161조</a></span> [4]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|227|">민사소송법 제227조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|227|">제3항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|229|">제229조 제2항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사소송법|229|">제4항</a></span>,         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|387|">민법 제387조 제2항</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008다9952|판결" href="#//">대법원 2011. 2. 10. 선고 2008다9952 판결</a></span>(공2011상, 551)<br />[2]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다51239|판결" href="#//">대법원 2007. 11. 29. 선고 2007다51239 판결</a></span>(공2007하, 2031)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다66088|판결" href="#//">대법원 2010. 5. 27. 선고 2007다66088 판결</a></span>(공2010하, 1219)<br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2010다41263|판결" href="#//">대법원 2010. 11. 11. 선고 2010다41263, 41270 판결</a></span>(공2010하, 2248)      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고, 상고인】
+      
+        
+          원고
+        
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고, 피상고인】
+      
+        홍콩상하이은행 영업소 (소송대리인 법무법인 지평지성 담당변호사 배성진 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|2009나81304|판결" href="#//">서울고법 2010. 4. 28. 선고 2009나81304 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주    문】</strong></p><p>  상고를 기각한다.  상고비용은 원고가 부담한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이    유】</strong></p><p>  상고이유를 판단한다.</p><p>  1. 피압류채권의 범위 등에 관한 법리오해 등의 점에 대하여</p><p>  가. 
+        <span class="accrnt_txt">채권압류에 있어서 압류될 채권에 장래에 채무자의 계좌에 입금될 예금채권이 포함되는지 여부는 압류명령에서 정한 압류할 채권에 그 예금채권이 포함되었는지 여부에 의하여 결정되는 것이고 이는 곧 압류명령상의 ‘압류할 채권의 표시’에 기재된 문언의 해석에 따라 결정되는 것이 원칙이다. 그런데 제3채무자는 순전히 타의에 의하여 다른 사람들 사이의 법률분쟁에 편입되어 압류명령에서 정한 의무를 부담하는 것이므로 이러한 제3채무자는 압류된 채권이나 그 범위를 파악함에 있어 과도한 부담을 가지지 않도록 보호할 필요가 있다. 따라서 ‘압류할 채권의 표시’에 기재된 문언은 그 문언 자체의 내용에 따라 객관적으로 엄격하게 해석하여야 하고, 그 문언의 의미가 불명확한 경우 그로 인한 불이익은 압류 신청채권자에게 부담시키는 것이 타당하므로, 제3채무자가 통상의 주의력을 가진 사회평균인을 기준으로 그 문언을 이해할 때 포함 여부에 의문을 가질 수 있는 채권은 특별한 사정이 없는 한 압류의 대상에 포함되었다고 보아서는 아니 된다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2008다9952|판결" href="#//">대법원 2011. 2. 10. 선고 2008다9952 판결</a></span> 참조).
+      </p><p>  나. 원심판결 이유에 의하면, 원고는 2008. 3. 21. 
+        <span id="link"><a name="linkContPanre" title="새창" type="대구지방법원김천지원|2008타채507" href="#//">대구지방법원 김천지원 2008타채507호</a></span>로 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원서부지원|98가합11956" href="#//">서울지방법원 서부지원 98가합11956</a></span> 임금 등 청구사건의 집행력 있는 판결(이하 ‘이 사건 판결’이라고 한다) 정본에 기하여 벡톤디킨슨코리아 주식회사(이하 ‘소외 회사’라고 한다)의 피고 은행에 대한 예금채권에 대하여 압류 및 추심명령(이하 ‘이 사건 압류 및 추심명령’이라고 한다)을 받았고, 이는 2008. 3. 26. 피고 은행에 송달된 사실, 이 사건 압류 및 추심명령의 ‘압류할 채권의 표시’에는 “소외 회사가 피고 은행에 대하여 가지는 다음 예금채권 중 다음에서 기재한 순서에 따라 청구금액 307,118,600원에 이를 때까지의 금액”이라고 기재되어 있고, 그 아래에 “1. 압류되지 않은 예금과 압류된 예금이 있는 때에는 다음 순서에 의하여 압류한다. 가. 선행압류. 압류가 되지 않은 예금, 나. 선행압류. 압류가 된 예금, 2. 여러 종류의 예금이 있는 때에는 다음의 순서에 의하여 압류한다. 가. 정기예금, 나. 정기적금, 다. 보통예금, 라. 당좌예금, 마. 별단예금, 3. 같은 종류의 예금이 여러 계좌 있는 때에는 계좌번호가 빠른 예금부터 압류한다.”라고 기재되어 있는 사실을 알 수 있다.
+      </p><p>  이를 앞에서 본 법리에 비추어 보면, 이 사건 압류 및 추심명령에서 정한 압류할 채권에는 그 문언 자체를 객관적으로 보아 이 사건 압류 및 추심명령이 송달될 당시 소외 회사가 피고 은행에 대하여 가지고 있는 여러 예금채권을 대상으로 하여 위에서 정한 순서에 따라 그 금액이 원고의 청구금액에 달할 때까지의 예금채권이 포함됨은 분명하다. 그러나 나아가 위 문언의 기재로써 이 사건 압류 및 추심명령의 송달 이후에 새로 입금되는 예금채권까지 포함하여 압류되었다고 보는 것은 통상의 주의력을 가진 사회평균인을 기준으로 할 때 의문을 품을 여지가 충분하다고 보이므로, 이 부분 예금채권까지 압류의 대상이라고 해석할 수는 없다.</p><p>  원심이 이 사건 압류 및 추심명령이 피고 은행에게 송달된 후 소외 회사의 예금계좌에 새로이 입금되는 예금채권에 대하여는 그 효력이 미치지 아니한다고 판단한 것은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 피압류채권의 범위나 확정판결의 기판력에 관한 법리오해 등의 위법은 없다.</p><p>  2. 은행의 입금기장의 취소에 관한 법리오해 등의 점에 대하여</p><p>  가. 
+        <span class="accrnt_txt">자금이체는 은행 간 및 은행점포 간의 송금절차를 통하여 저렴한 비용으로 안전하고 신속하게 자금을 이동시키는 수단이고, 다수인 사이에 다액의 자금이동을 원활하게 처리하기 위하여 그 중개역할을 하는 은행이 각 자금이동의 원인인 법률관계의 존부, 내용 등에 관여함이 없이 이를 수행하는 체제로 되어 있다. 따라서 예금거래기본약관에 따라 송금의뢰인이 수취인의 예금계좌에 자금이체를 하여 예금원장에 입금의 기록이 된 때에는 특별한 사정이 없는 한 송금의뢰인과 수취인 사이에 자금이체의 원인인 법률관계가 존재하는지 여부에 관계없이 수취인과 수취은행 사이에는 위 입금액 상당의 예금계약이 성립하고, 수취인은 수취은행에 대하여 그 입금액 상당의 예금채권을 취득한다</span>(
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다51239|판결" href="#//">대법원 2007. 11. 29. 선고 2007다51239 판결</a></span>, 
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|2007다66088|판결" href="#//">대법원 2010. 5. 27. 선고 2007다66088 판결</a></span> 등 참조).
+      </p><p>
+        <span class="accrnt_txt">이와 같은 법리는 출금계좌의 예금주가 수취인 앞으로의 계좌이체에 대하여 지급지시를 하거나 수취인의 추심이체에 관하여 출금 동의 등을 한 바가 없는데도, 은행이 그와 같은 지급지시나 출금 동의가 있는 것으로 착오를 일으켜 그 출금계좌에서 예금을 인출한 다음 이를 수취인의 예금계좌에 입금하여 그 기록이 완료된 때에도 동일하게 적용된다고 봄이 상당하므로, 수취인은 이러한 은행의 착오에 의한 자금이체의 경우에도 그 입금액 상당의 예금채권을 취득한다</span>.
+      </p><p>
+        <span class="accrnt_txt">이 경우 은행은 그 입금기록이 완료됨과 동시에 수취인에 대하여 그 입금액 상당의 부당이득반환청구권을 취득하게 되는데, 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="전자금융거래법|8|" style="text-decoration:underline">전자금융거래법 제8조 제3항</a></span>이 “금융기관 또는 전자금융업자는 스스로 전자금융거래에 오류가 있음을 안 때에는 이를 즉시 조사하여 처리한 후 오류가 있음을 안 날부터 2주 이내에 오류의 원인과 처리 결과를 대통령령으로 정하는 방법에 따라 이용자에게 알려야 한다.”고 하여 오류정정이 허용될 경우의 처리절차에 관하여 규정하고 있는 점, 착오로 입금이 이루어진 수취인의 예금계좌가 그 은행에 개설되어 있는 경우 은행으로서는 수취인에 대한 부당이득반환청구권을 자동채권으로 하여 수취인의 예금채권과 상계할 수 있는 점 등에 비추어 보면, 은행은 위와 같은 상계로써 수취인의 예금채권에 관하여 이미 이해관계를 가지게 된 제3자 등에게 대항할 수 없다는 등의 특별한 사정이 없는 한, 착오로 인한 자금이체에 의하여 발생한 채권채무관계를 정리하기 위하여 수취인의 예금계좌에 대한 입금기록을 정정하여 그 자금이체를 취소시키는 방법으로 은행의 수취인에 대한 부당이득반환청구권과 수취인의 은행에 대한 예금채권을 모두 소멸시킬 수 있다고 할 것이다
+        </span>.
+      </p><p>  나. 원심판결 이유에 의하면, 피고 은행이 2008. 3. 26. 이 사건 압류 및 추심명령을 송달받은 다음날인 같은 해 3. 27. 소외 회사의 예금계좌에 180,690,457원이 입금된 사실, 피고 은행은 2008. 3. 27. 16:28경 소외 회사의 예금계좌에서 위 180,690,457원을 출금한 후 피고 은행에 개설된 원고의 예금계좌로 입금하여 그 기록이 완료된 사실, 피고 은행은 같은 날 17:34경 이 사건 압류 및 추심명령의 송달 후에 입금되는 돈에 대하여 이 사건 압류 및 추심명령의 효력이 미치는지 여부가 분명하지 않다는 이유로 오류정정의 방법으로 위 180,690,457원의 자금이체를 취소한 사실을 알 수 있다.</p><p>  위 사실관계를 앞에서 본 법리에 비추어 살펴보면, 이 사건 압류 및 추심명령을 송달받은 후에 소외 회사의 예금계좌에 입금된 180,690,457원 상당의 예금채권에 대하여는 이 사건 압류 및 추심명령의 효력이 미치지 아니하지만, 피고 은행은 그 효력이 미치는 것으로 착오를 일으킨 나머지 소외 회사의 예금계좌에서 위 돈을 출금하여 피고 은행에 개설된 원고의 예금계좌로 입금하고 그 기록을 완료함으로써 원고는 피고 은행에 대하여 위 180,690,457원 상당의 예금채권을 취득하고 이와 동시에 피고 은행은 원고에 대하여 동액 상당의 부당이득반환청구권을 취득하였다고 할 것이다. 이러한 경우 피고 은행으로서는 위와 같이 착오로 인한 자금이체에 의하여 발생한 채권채무관계를 정리하기 위하여 원고의 예금계좌에 대한 입금기장을 정정하여 그 자금이체를 취소시키는 방법으로 원고에 대한 180,690,457원 상당의 부당이득반환청구권과 원고의 동액 상당의 예금채권을 모두 소멸시킬 수 있다고 할 것이다.</p><p>  원심의 이유설시에 다소 부적절한 부분이 없지 아니하나, 원심이 위와 같이 착오로 이루어진 자금이체를 피고 은행이 오류정정의 방법으로 취소한 조치가 적법하다고 판단한 것은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 은행의 착오에 의한 입금기장의 정정 및 불법행위의 성립 등에 관한 법리오해의 위법이 있다 할 수 없다.</p><p>  3. 강제집행정지결정의 효력발생시기 등에 관한 법리오해 등의 점에 대하여</p><p>  가. 
+        <span class="accrnt_txt">집행력이 있는 판결 정본에 기하여 압류·추심명령이 발령된 경우 채무자가 강제집행정지결정의 정본을 집행기관에 제출하면 이로써 집행정지의 효력이 발생하고 그 집행정지가 효력을 잃기 전까지 압류채권자에 의한 채권의 추심이 금지된다(
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행법|49|" style="text-decoration:underline">민사집행법 제49조 제2호</a></span>). 여기서 강제집행정지결정의 정본이 압류채권자에게 송달되었는지 여부나 
+          <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민사집행규칙|161|" style="text-decoration:underline">민사집행규칙 제161조</a></span>가 규정하는 집행정지 통보가 제3채무자에게 송달되었는지 여부는 집행정지의 효력 발생과 무관하다
+        </span>.
+      </p><p>  한편 
+        <span class="accrnt_txt">추심명령은 압류채권자에게 채무자의 제3채무자에 대한 채권을 추심할 권능을 수여함에 그치고, 제3채무자로 하여금 압류채권자에게 압류된 채권액 상당을 지급할 것을 명하거나 그 지급 기한을 정하는 것이 아니므로, 제3채무자가 압류채권자에게 압류된 채권액 상당에 관하여 지체책임을 지는 것은 집행법원으로부터 추심명령을 송달받은 때부터가 아니라, 추심명령이 발령된 후 압류채권자로부터 추심금 청구를 받은 다음날부터라고 할 것이다</span>.
+      </p><p>  나. 원심판결 이유와 기록에 의하면, 원고는 이 사건 압류 및 추심명령에 대하여 경정신청을 하여 2008. 3. 31. 압류할 채권에 관한 표시에 ‘현재 예금채권과 장래 입금되어 발생할 예금채권’을 추가하는 경정결정(이하 ‘이 사건 경정결정’이라고 한다)을 받았고, 그 정본이 2008. 4. 2. 피고 은행에 송달된 사실, 한편 소외 회사는 2008. 4. 2. 이 사건 판결에 기한 강제집행을 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울서부지방법원|2008가단23050" href="#//">서울서부지방법원 2008가단23050</a></span> 청구이의의 소 판결선고시까지 정지하는 내용의 강제집행정지결정(이하 ‘이 사건 강제집행정지결정’이라고 한다)을 받은 사실, 이 사건 압류 및 추심명령의 집행법원인 대구지방법원 김천지원은 2008. 4. 4.자로 “위 사건에 관하여 아래의 사항을 통지합니다. 1. 채무자가 2008. 4. 2. 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울서부지방법원|2008카기583" href="#//">서울서부지방법원 2008카기583</a></span> 강제집행정지결정을 제출하였습니다. 2. 위 결정은 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울서부지방법원|2008가단23050" href="#//">서울서부지방법원 2008가단23050</a></span> 청구이의 소에 관한 판결이 있을 때까지 이 사건 집행권원인 
+        <span id="link"><a name="linkContPanre" title="새창" type="서울지방법원서부지원|98가합11956|판결" href="#//">서울지방법원 서부지원 98가합11956 판결</a></span>에 의한 강제집행을 정지하도록 명하였습니다. 3. 채권자는 위 강제집행정지결정이 효력을 잃기 전에는 채권의 추심을 하여서는 아니 됩니다. 4. 제3채무자는 위 강제집행정지결정이 효력을 잃기 전에는 채권의 지급을 하여서는 아니 됩니다.”라는 내용의 ‘집행정지 통지’를 작성하였고, 위 집행정지 통지는 2008. 4. 10. 피고 은행에 송달된 사실, 원고는 이 사건 경정결정이 피고 은행에 송달된 후인 2008. 4. 4. 피고 은행에 “경정된 결정문이 송달되면 즉시 원고에게 알리고 원고가 지정하는 계좌로 입금해 달라”는 내용의 통고서를 내용증명 우편으로 발송한 사실 등을 알 수 있다.
+      </p><p>  위 사실관계를 앞에서 본 법리에 비추어 보면, 이 사건 경정결정이 2008. 4. 2. 피고 은행에게 송달됨으로써 이 사건 압류 및 추심명령이 피고 은행에게 송달된 후 소외 회사의 예금계좌에 새로 입금된 예금채권에 대하여도 압류 및 추심명령의 효력이 미치게 되었지만, 소외 회사가 적어도 2008. 4. 4. 또는 그 이전에 이 사건 강제집행정지결정 정본을 집행법원에 제출함으로써 집행정지의 효력이 발생한 이상, 압류채권자인 원고는 그 집행정지의 효력이 상실되기 전까지 예금채권의 추심을 할 수 없게 되었다. 이러한 상태에서 원고가 2008. 4. 4. 이 사건 경정결정을 근거로 이 사건 압류 및 추심명령이 피고 은행에 송달된 후 소외 회사의 예금계좌에 입금된 예금채권에 대하여 추심금청구를 하였다 하더라도, 피고 은행은 이에 응할 의무가 있다고 할 수 없다. 따라서 피고 은행이 원고의 추심금청구에 응하지 아니하였다고 하여 추심금 지급의무를 불이행하였다거나 그 이행을 지체하여 원고에게 어떠한 손해를 입게 하였다고 볼 수 없다.</p><p>  원심이 피고 은행이 이 사건 경정결정을 송달받은 후 원고에게 추심금을 지급하지 않은 데에 어떠한 잘못이 있다거나 추심금 지급을 지체하였다고 볼 수 없다고 판단한 것은 정당하고, 거기에 상고이유에서 주장하는 바와 같은 강제집행정지결정의 효력발생시기, 불법행위나 채무불이행에 기한 손해배상책임 및 지체책임에 관한 법리오해 등의 위법이 없다.</p><p>  4. 결론</p><p>  그러므로 상고를 기각하고, 상고비용은 패소자가 부담하도록 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   김창석(재판장) 양창수 박병대(주심) 고영한 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

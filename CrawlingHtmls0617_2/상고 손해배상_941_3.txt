@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>대법원 97다34822 &gt; 판례 &gt; 본문조회 | 종합법률정보</title>
+<link href="/wsjodocs/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/wsjodocs/css/global_print.css" rel="stylesheet" type="text/css" media="print" />
+	
+		
+<link href="/wsjodocs/css/main.css" rel="stylesheet" type="text/css" />
+		
+		
+	
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link href="/wsjodocs/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/wsjodocs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">//&lt;![CDATA[
+var $documentRoot='/wsjodocs';
+var $sysCd='WSJO';
+var $root='/wsjo/';
+var $siteCode='/wsjo'.substr(2,5);
+var $env='REAL';
+var userId = "ANONYMOUS";
+var userNm = "ANONYMOUS";
+
+//]]&gt;</script>
+
+
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-core.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-cm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cm/wsj-ui.js"></script>
+
+<script type="text/javascript" src="/wsjodocs/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/publish.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/date.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/paging.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/search.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/comm.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/wsjodocs/js/json2.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var $error='';
+var $cgpiId='';
+
+var $fontSizeUserEnv='';
+var $lineHeightUserEnv='';
+var $srchGyulFontSizeUserEnv='';
+var $tonghSrchGyulSetCdUserEnv='';
+var $recordSizeUserEnv='';
+var $closeSplitListUserEnv='';
+var $closeSplitContentsUserEnv='';
+var $autocomUserEnv='';
+if($sysCd!='WSJI') $autocomUserEnv='Y';
+var $showCgpiUserEnv='';
+var $hanjaYnUserEnv='';
+var $splitVerticalYnUserEnv='';
+var $srchGyulClsMokPchimYnUserEnv='';
+var $gwansLawEmailSusinYnUserEnv='';
+var $panreSrchGyulTypeCdUserEnv='';
+var $pageMokCntUserEnv='';
+//var $bmunChangTypeCd=''.replace('01','_blank').replace('02','_blank').replace('03',$siteCode+'Bmun').replace('04',$siteCode+'Bmun');
+var $cpSetTypeCd=parseInt('', 10);
+var $jrReportSysRegYn='N';
+var $srchScrCdUserEnv='';
+var $srchFtnScrCdUserEnv='';
+// 2016.07.04. 이민아 [16A-WSJ-0016] 하이퍼링크 색상 개인화설정 기능 및 내부 보안진단 이행조치 : 하이퍼링크 개인화 추가
+var $bmunLinkSetCd='';
+//var $autoBmunPopupYn='N'; // 바로보기 옵션. 개발
+// [14A-WSJ-0011] 2014.05.02 이민아 판례 등급 권한 체크하여 링크걸기
+var panreGradeAuth = "";
+
+	panreGradeAuth += "A1,";
+
+	panreGradeAuth += "A2,";
+
+	panreGradeAuth += "C,";
+
+	panreGradeAuth += "D3,";
+
+	panreGradeAuth += "H,";
+
+	panreGradeAuth += "H2,";
+
+	panreGradeAuth += "W2,";
+
+
+//var $bmunChangParameter= ''.replace('01', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('02', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0').replace('03', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes').replace('04', 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes, width='+screen.width+' height='+screen.height+', top=0, left=0');
+
+// [14A-WSJ-0008] 2014.04.03 이민아 본문창 개인설정 옵션 추가
+var $bmunChangTypeCd = '';
+var $bmunChangParameter = 'location=yes,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,resizable=yes';
+switch ('') {
+	case '01': //새 창(기본크기)
+		$bmunChangTypeCd = '_blank';
+		break;
+	case '02': //새 창(전체크기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '03': //현재창(기본크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		break;
+	case '04': //현재창(전체크기)
+		$bmunChangTypeCd = $siteCode+'Bmun';	
+		$bmunChangParameter += ', width='+screen.availWidth+', height='+screen.availHeight+', top=0, left=0';
+		break;
+	case '05': //새 창(세로보기)
+		$bmunChangTypeCd = '_blank';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+	case '06': //현재창(세로보기)
+		$bmunChangTypeCd = $siteCode+'Bmun';
+		$bmunChangParameter += ', width=1060, height='+(screen.availHeight-135)+', top=5, left=' + ((screen.availWidth-1000)/2);
+		break;
+}
+
+// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+var $libConnYn = 'Y';
+var $orgNm = '';
+var $userJikmuGbnNm = '';
+var $pstnNm = '';
+var $autocomSubType = '';
+
+if($sysCd=='WSJI') {
+	$panreJyulCd= '';
+
+	// [14A-WSJ-0015] 2014.06.30 이민아	디지털도서관 망분리 블록킹 및 공지
+	if(( $orgNm == "서울중앙지방법원" || $orgNm == "서울고등법원" || $orgNm == "서울북부지방법원"
+		|| $orgNm == "서울서부지방법원" || $orgNm == "서울동부지방법원" || $orgNm == "사법연수원"
+		|| $orgNm == "법원행정처" || $orgNm == "대법원" || $orgNm == "법원도서관" || $orgNm == "양형위원회 ") ) {
+		$libConnYn = 'N';
+	}
+} else {
+	$autocomSubType = '_OUT';
+	
+	$panreJyulCd ='';
+	$cpSetTypeCd = 1;
+}
+
+var $loading = $('&lt;div&gt;&lt;div id = "viewLoading" align="center" style="position:absolute;display:none;z-index:50000"&gt;'+
+				 '&lt;img src = "/wsjodocs/images/contents/loading.gif" alt="로딩 이미지"/&gt;'+
+				 '&lt;/div&gt;'+
+				 '&lt;/div&gt;');
+// [14A-WSJ-0016] 2014.05.16 이민아 통합검색 바로가기 추가
+var $prevUrl = "";
+//]]&gt;
+</script>
+
+<link href="/wsjodocs/css/contents_wrap.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contents.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/jrreportlink.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/panre/sjo100.js"></script>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+var contKindNm = '판례';
+var contKindCd = '01';
+var contId = '2106916';
+var contIdEtc = '';
+var saNo = '97다34822';
+var sngoNm = '선고';
+var saNm = '예탁금반환';
+try {
+	var sngoDay=('19990205' ? 
+			'19990205'.length==4 ? Date.parseExact('19990205','yyyy').toString('yyyy. M. d.') : 
+				'19990205'.length==6 ? Date.parseExact('19990205','yyyyMM').toString('yyyy. M. d.') : 
+					'19990205'.length==8 ? Date.parseExact('19990205','yyyyMMdd').toString('yyyy. M. d.') : 
+						'' : '');
+} catch(t){
+	var sngoDay = '';
+}
+var bubNm = '대법원';
+var bubCd = '000100';
+var panTypeNm = '판결';
+var contTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' ' + saNo + ' ' + panTypeNm + '[' + saNm + ']';
+var contFullTitle = bubNm + ' ' + sngoDay + ' ' + sngoNm + ' 97다34822 ' + panTypeNm + ' [' + saNm + ']';
+var documentTitle = bubNm + ' ' + saNo;
+var panreGradeCd = 'C';
+var panreStatCd = '';
+var $duplicateCnt = -1;
+var paramSaNo = '97다34822';
+var paramBubNm = '';
+var copyDocTitle = document.title; // 판례 출처용
+
+//]]&gt;
+</script>
+</head>
+<body>
+<div id="wrap_conbody">
+
+
+
+
+
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/contsrch.js"></script>
+<script language="javascript" type="text/javascript" src="/wsjodocs/js/copy_attach.js"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var copyTitle = contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+
+$(document).ready(function(){
+	if(typeof(mhnKindCd)!='undefined' &amp;&amp; mhnKindCd =='01') {
+		$contKindNm[contKindCd] = '실무제요';
+		copyTitle=contTitle+' &gt; '+document.title+' '+$contKindNm[contKindCd];
+	} else if(contKindCd == '01') { // 판례
+		copyTitle = contFullTitle + ' &gt; ' + copyDocTitle + '  ' + $contKindNm[contKindCd];
+	}
+	
+	if($('input[name="txtContSrch"]').length&gt;0) $('input[name="txtContSrch"]').css('ime-mode','active');
+	$('#areaContKindNm').text($contKindNm[contKindCd]);
+	
+	if($contKindNm[contKindCd] != '문헌') {
+		copyAttach.init('areaContents%id%',$cpSetTypeCd);
+		copyAttach.setTemplate("&lt;br/&gt;&lt;a href=\"{link}\"&gt;{title}{name}&lt;/a&gt;");
+		copyAttach.setString(1,'(출처 : '+copyTitle+')','',location.href); // contTitle
+		
+		$.browserVer();
+	}
+	
+	if(contKindCd == '03' || contKindCd == '04') { // 법령
+		$('#lawod_info').css('display', '');
+	} else {
+		$('#lawod_info').css('display', 'none');
+	}
+});
+//]]&gt;
+</script>
+<div id="header">
+<!-- 2014.02.05 [14A-WSJ-0002] 건너뛰기 링크 개선 -->
+<div class="skipnavi" name="quickmenu" style="z-index:9999;">
+	<h2>건너뛰기 링크</h2>
+	<ul><li><a href="#container" name="menuSkipContents">목차 리스트</a></li></ul>
+	<ul><li><a href="#bmunStart" name="menuSkipContents">본문 바로가기</a></li></ul>
+</div>
+
+<div class="tit_area">
+	<h1 id="areaContKindNm">판례</h1>
+	<!-- <span class="txt_top_srch">캐릭터</span>' 검색결과 <strong>1</strong>/15 -->
+	<a href="#//" title="이전글" name="btnContPrev"><img src="/wsjodocs/images/layout/arrow_left_search_off.gif" alt="이전글" class="ml_3" /></a><a href="#//" title="다음글" name="btnContNext"><img src="/wsjodocs/images/layout/arrow_right_search_off.gif" alt="다음글" /></a>
+</div>
+
+<div class="lawod_txt" id="lawod_info" style="display:none">
+	<a href="#" id="hpAreaToggle" title="최신공포법령 도움말 보기"><b>최신공포법령</b>은 공포일자별로 구분하여 제공하고 있습니다.[자세히 보기]</a>
+	<div class="hp_area" id="hpArea" style="display:none;">
+		<span class="top"></span><p class="txt">종합법률정보에서는 <b>시행중인 법령중 가장 최근에 공포된 법령을 최신공포법령으로 제공하고 있습니다. 동일한 공포일자의 법령이라도 개별 조문의 시행시기는 부칙에 따라 시행일이 다를 수 있음을 유의하여 주시기 바랍니다.</b> 현재 조문별로 시행되고 있는 법령의 내역은 법령 본문화면 상단의 [<a href="http://www.law.go.kr" target="_blank" style="background:none;padding-left:0px">법제처 바로가기</a>]를 클릭하면 법제처에서 제공하는 시행일별 “현행법령”을 확인할 수 있습니다.</p>
+		<a href="#" class="hp_area_close" id="hpAreaclose" title="현행법령 기준 닫기"><img alt="닫기" src="/wsjodocs/images/btn/btn_close_04.gif" /></a>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+    
+    <div class="con_body_opt">
+    	
+    	<ul class="btn_set">
+    		<li></li>
+    		
+            
+            
+        </ul>
+        
+        
+        <div class="opt_group">
+        	
+			
+            
+            <fieldset class="txt_srch">
+            	<legend>본문단어찾기</legend>
+               	<label for="txtContSrch">본문단어찾기</label>
+               	<input name="txtContSrch" type="text" value="본문단어찾기" id="txtContSrch" title="본문단어입력" style="ime-mode:active" /><a name="btnContSrch" href="#//" title="본문단어찾기"><img src="/wsjodocs/images/btn/btn_find_01.gif" alt="본문단어찾기" /></a>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container">
+    
+        <div class="left_area split full" role="complementary">
+        	<div class="cate_jo">
+                
+                <div class="cate_list type_03">
+                	<div class="netwk">
+                    	<p class="stt" id="areaDocTitle">대법원<br />97다34822</p>
+                        <div class="n_type"> 
+                            <ul class="n_type_04">
+								<li class="list_01"><a href="#//" title="따름판례 바로가기" name="btnNetwork" type="areaTtleumPan">따름판례<span id="areaTtleumPanCount">(3)</span></a></li>
+								<li class="list_02"><a href="#//" title="관련문헌 바로가기" name="btnNetwork" type="areaRelMhn">관련문헌<span id="areaRelMhnCount">(12)</span></a></li>
+								<li class="list_03"><a href="#//" title="참조판례 바로가기" name="btnNetwork" type="areaChjPanre">참조판례<span id="areaChjPanreCount">(2)</span></a></li>
+								<li class="list_04"><a href="#//" title="참조조문 바로가기" name="btnNetwork" type="areaChjJomun">참조조문<span id="areaChjJomunCount">(3)</span></a></li>
+								<li class="list_05"><a href="#//" title="본문참조판례 바로가기" name="btnNetwork" type="areaBmunChjPanre">본문참조판례<span id="areaBmunChjPanreCount">(0)</span></a></li>
+								<li class="list_06"><a href="#//" title="본문참조조문 바로가기" name="btnNetwork" type="areaBmunChjJomun">본문참조조문<span id="areaBmunChjJomunCount">(0)</span></a></li>
+								<li class="list_07"><a href="#//" title="원심판결 바로가기" name="btnNetwork" type="areaWsimPan">원심판결<span id="areaWsimPanCount">(2)</span></a></li>
+								<li class="list_08"><a href="#//" title="기타자료 바로가기" name="btnNetwork" type="areaEtcJaryo">기타자료<span id="areaEtcJaryoCount">(0)</span></a></li>
+                            </ul>
+                        </div>
+                	</div>
+                    
+                    <a href="#//" title="법률네트워크 접기" class="left_nav_split"><img src="/wsjodocs/images/btn/btn_arrow2_off.gif" alt="법률네트워크 접기" /></a>
+                    
+					<div class="comp none_tab" id="areaNetwork" style="padding-top: 0px;">
+					 		
+						<p id="areaTtleumPan" class="areaTtleumPan" style=""><em>[따름판례]</em><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2118751">대법원 2000. 4. 7. 선고 99다53742 판결 [공2000.6.1.(107),1145]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2057495">대법원 2001. 2. 9. 선고 99다48801 판결 [공2001.4.1.(127),603]</a></p><p class="areaTtleumPan"><a href="#//" title="새창" name="linkContPanre" type="2065931">대법원 2006. 5. 26. 선고 2003다65643 판결 [공2006.7.1.(253),1141]</a></p><p class="space"></p></p>
+						<p id="areaPsuk" class="areaPsuk" style="display:none"><em>[평석]</em></p>
+						<p id="areaRelMhn" class="areaRelMhn" style=""><em>[관련문헌]</em><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|486396">곽용섭 부당 인출된 어음ㆍ수표금의 회수에 관한 법리 : 이른바 경기은행 어음ㆍ수표 사건의 해결을 위한 모색적 시론 . 사법논집 32집  / 대법원 법원행정처  2001 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|541404">김교창 어음항변과 어음교환규약상의 사고신고 저스티스 86호  / 한국법학원  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|473493">박동진 과실상계에서 과실의 의미 연세법학연구 7집1권 (2000.06) / 연세대학교 법과대학 법률문제연구소  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|568561">김문재 2005/2006년도 어음ㆍ수표에 관한 대법원판례의 동향과 분석 상사판례연구 19집 4권  / 한국상사판례학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|536624">윤진수 금융기관의 수신거래와 흥신거래  , Ⅰ BFL 제10호  / 서울대학교 금융법센터  2005 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|560405">김제완 전자금융거래법상 금융기관ㆍ전자금융업자의 책임의 법적 성격 : 우리 민법상 과실책임주의의 원칙과의 관계를 중심으로 . 상사법연구 25권 2호 (2006.08) / 한국상사법학회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|488059">배성호 과실상계에 있어서 과실  , 하 사법행정 43권 3호  / 한국사법행정학회  2002 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|457062">지원림 기존채무와 관련하여 어음이나 수표가 교부된 경우의 민법상 법률관계 고시계 45권 5호 (2000.05) / 국가고시학회  2000 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="단행|431085">전경근 예금계약에 관한 연구 서울대학교  1999 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|564739">천대엽 지급은행의 부도어음통보 해태와 어음소지인의 부당이득반환의무 여부 대법원판례해설 60호 (2006.12) / 법원도서관  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|551355">김기현 현금자동지급기를 통한 예금인출과 채권의 준점유자에 대한 변제 재판과 판례 14집  / 대구판례연구회  2006 </a></p><p class="space"></p><p class="areaRelMhn"><a href="#//" title="새창" name="linkContMhn" type="기사|452129">민중기 대리인의 배임적 대리행위의 효력 국민과 사법  : 윤관 대법원장 퇴임기념 (99.01)  / 박영사  1999 </a></p><p class="space"></p></p>
+						<p id="areaChjPanre" class="areaChjPanre" style=""><em>[참조판례]</em><p class="areaChjPanre"><font>[1]</font><a href="#//" title="새창" name="linkContPanre" type="대법원|95다9754">
+대법원 1995. 6. 16. 선고 95다9754, 9761 판결(공1995하, 2508)</a></p><p class="areaChjPanre"><font>, </font><a href="#//" title="새창" name="linkContPanre" type="대법원|96다1610">
+대법원 1996. 9. 20. 선고 96다1610 판결(공1996하, 3118)</a></p><p class="space"></p></p>
+						<p id="areaChjJomun" class="areaChjJomun" style=""><em>[참조조문]</em><p class="areaChjJomun"><font>[1]</font><a href="#//" title="새창" id="chjJomunLink0" name="linkContJomun" type="민법|702|0|null">민법 제702조 </a></p><p class="areaChjJomun"><font>[2]</font><a href="#//" title="새창" id="chjJomunLink1" name="linkContJomun" type="민법|702|0|null">민법 제702조 </a></p><p class="areaChjJomun"><font>[3]</font><a href="#//" title="새창" id="chjJomunLink2" name="linkContJomun" type="민법|396|0|null">민법 제396조 </a></p><p class="space"></p></p>
+						<p id="areaBmunChjPanre" class="areaBmunChjPanre" style="display:none"><em>[본문참조판례]</em></p>
+						<p id="areaBmunChjJomun" class="areaBmunChjJomun" style="display:none"><em>[본문참조조문]</em></p>
+						<p id="areaWsimPan" class="areaWsimPan" style=""><em>[원심판결]</em><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="대법원|95다55986">
+대법원 1996. 4. 23. 선고 95다55986 판결</a></p><p class="areaWsimPan"><a href="#//" title="새창" name="linkContPanre" type="서울고등법원|96나20057">
+서울고법  1997. 6. 26. 선고 96나20057 판결</a></p><p class="space"></p></p>
+						<p id="areaEtcJaryo" class="areaEtcJaryo" style="display:none"><em>[기타문서]</em></p>
+							
+						<p id="areaHsimPan" class="areaHsimPan" style="display:none"><em>[상급심판결]</em></p>
+					</div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+<div class="contents" id="areaContents1">
+        
+            <a href="#//" title="카테고리 숨김" class="nav_split"><img src="/wsjodocs/images/btn/btn_arrow_off.gif" alt="카테고리 숨김" /></a>
+            
+            <div class="top">
+                <ul class="con_tgt" id="areaPanreMochList" role="menu"><li class="none_bg"><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판시사항" type="Abstract">판시사항</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="판결요지" type="JudgementNote">판결요지</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조조문" type="RefLaw">참조조문</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="참조판례" type="RefCase">참조판례</a></li><li><a name="linkPanreMoch" href="#//" class="gray_fefefe" title="전문" type="Body">전문</a></li></ul>
+                
+                <div class="f_right ml__15" role="navigation">
+                	<fieldset>
+                	<legend>본문옵션</legend>
+	                <ul class="icon_set">
+						
+                        
+            		 	
+		                <li class="none_bg"><a href="#//" name="btnPrintBmun" title="본문출력(새창)">본문출력</a></li>
+		                
+		                
+		                
+		                
+		            </ul>
+		            </fieldset>
+		            <a href="#//" title="한자 보기" name="btnHanja" id="btnHanja" type="hanja" class="word_select"><img src="/wsjodocs/images/btn/btn_change_chn.gif" alt="한자" /></a>
+		            <a href="#//" title="글자 크게" name="btnFontBig" class="btn_txt_big"><img src="/wsjodocs/images/btn/btn_plus.gif" alt="글자 크게" /></a>
+		            <a href="#//" title="글자 작게" name="btnFontSmall" class="btn_txt_small"><img src="/wsjodocs/images/btn/btn_minus.gif" alt="글자 작게" /></a>
+		        </div>
+            </div>
+            <div class="con_area_02" id="areaDetail" role="main"><div class="tit_area" id="bmunStart"><h2>대법원 1999. 2. 5. 선고 97다34822 판결</h2><p class="sub_title">[예탁금반환][공1999.3.15.(78),438]</p></div><div class="page_area"><div class="page">
+    <span class="space"></span><p><strong id="Abstract">【판시사항】</strong></p>
+      <p>
+        </p><p>[1] 약속어음 등 증권으로 입금하는 경우, 예금계약의 성립시기</p>
+      <p></p>
+      <p>
+        </p><p>[2] 증권을 예입받은 은행이 예금주의 대리인의 기망행위로 인하여 그 증권의 결제자금을 출연한 경우, 예입된 증권이 정상적으로 추심완료된 것이 아니라는 이유로 예금계약이 성립하지 않았다고 본 사례</p>
+      <p></p>
+      <p>
+        </p><p>[3] 예금계약에 기한 예금반환 청구소송에서 예금주의 예금행위자에 대한 감독상의 과실을 이유로 과실상계할 수 있는지 여부(소극)</p>
+      <p></p>
+    
+    <span class="space"></span><p><strong id="JudgementNote">【판결요지】</strong></p><p>
+        </p><p>  [1] 예금계약에 적용되는 은행수신거래기본약관 제4조 제1항 제1호 소정의 '증권으로 입금하는 경우에는 은행이 교환에 돌려 부도반환시한이 지나고 결제를 확인한 때, 다만 개설점이 지급장소인 증권이면 그 날 안에 결제를 확인한 때'에 예금이 완료된다는 규정은 다른 점포에서 지급될 약속어음 등 증권으로 입금하는 경우에는 이를 교환에 돌려 지급지 점포에서 액면금을 추심하여 그 결제를 확인한 때에 예금계약이 체결된 것으로 본다는 의미이며, 지급지 점포에서 당해 증권이 정상적으로 추심되었는지 또는 부도처리되어 추심이 이루어지지 않았는지 여부에 관계없이 추심을 의뢰한 점포에 위 약관 소정의 부도반환시한까지 부도통지가 없으면 무조건 예금계약이 성립된 것으로 본다는 취지라고는 볼 수 없다.</p>
+      <p></p><p>
+        </p><p>  [2] 증권을 예입받은 은행이 예금주의 대리인의 기망행위로 인하여 그 증권의 결제자금을 출연한 경우, 예입된 증권이 정상적으로 추심완료된 것이 아니라는 이유로 증권의 액면금에 관하여 은행과 예금주 사이에 예금계약이 성립하지 않았다고 본 사례.</p>
+      <p></p><p>
+        </p><p>  [3] 예금주가 예금행위자에 대한 관리·감독을 적절하게 하지 아니한 과실이 있다 하더라도, 채무불이행이나 불법행위로 인한 손해배상청구가 아니고 예금계약에 기한 예금반환 청구사건에 있어 위 과실을 들어 은행의 채무액을 감경하거나 과실상계할 여지는 없다.</p>
+      <p></p>
+    <span class="space"></span><p><strong id="RefLaw">【참조조문】</strong></p><p>  [1]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|702|">민법 제702조</a></span>[2]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|702|">민법 제702조</a></span>[3]         <span id="link"><a name="linkContJomun" href="#//" title="새창" type="민법|396|">민법 제396조</a></span>      </p>
+    <span class="space"></span><p><strong id="RefCase">【참조판례】</strong></p><span class="t01-text"><p class="txt_9">[1]         <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다9754|판결" href="#//">대법원 1995. 6. 16. 선고 95다9754, 9761 판결(공1995하, 2508)</a></span><br />        <span id="link"><a name="linkContPanre" title="새창" type="대법원|96다1610|판결" href="#//">대법원 1996. 9. 20. 선고 96다1610 판결(공1996하, 3118)</a></span>      </p></span><span class="space"></span>
+  <span class="space"></span><p><strong id="Body">【전    문】</strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party2">
+      【원고,상고인겸피상고인】
+      
+          주귀성 (소송대리인 법무법인 광장 담당변호사 박우동 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong style="font-weight:normal;" id="Party4">
+      【피고,피상고인겸상고인】
+      
+          씨티은행 (소송대리인 법무법인 충정 담당변호사 황주명 외 1인)
+      
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【환송판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="대법원|95다55986|판결" href="#//">
+대법원 1996. 4. 23. 선고 95다55986 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="SubjectDecision" style="font-weight:normal">
+      【원심판결】
+      
+        <span id="link"><a name="linkContPanre" title="새창" type="서울고등법원|96나20057|판결" href="#//">
+서울고법  1997. 6. 26. 선고 96나20057 판결</a></span>
+      <span class="space"></span>
+    </strong></p>
+    <span class="space"></span><p><strong id="OutCome" style="font-weight:normal">【주문】</strong></p><p>  상고를 각 기각한다.  상고비용은 상고인들 각자의 부담으로 한다.</p>
+    <span class="space"></span><p><strong id="Reason" style="font-weight:normal">【이유】</strong></p><p>  상고이유를 판단한다. </p><p>  1. 사실관계</p><p>  원심판결 이유에 의하면, 원심은 그 거시 증거에 의하여, 
+        소외 1은 1993. 10. 28. 그의 처인 
+        소외 2와 함께 원고의 주민등록증과 도장 및 자신의 주민등록증을 가지고 피고 은행 여의도지점에 가서 원고 명의의 가계금전신탁 1계좌(계좌번호 08-09-022574, 이하 갑 계좌라고 한다)를 개설하고, 같은 날 액면 금 10,000,000원권 자기앞수표 8매를 예금하였고, 1994. 2. 2. 원고의 주민등록증과 도장 및 자신의 주민등록증을 가지고 피고 은행 여의도지점에 가서 원고 명의의 1년 만기 장기가계금전신탁 2계좌(계좌번호 08-09-022811 및 08-09-022823 : 이하 을, 병 계좌라고 한다)를 각 개설하고, 
+        소외 1의 처인 
+        소외 2 발행의 어음번호 자가 04555486, 지급기일 1994. 2. 3., 지급장소 서울은행 동대문지점의 액면 금 2억 원권 약속어음 1매(이하 이 사건 약속어음이라고 한다)를 각 계좌에 금 1억 원씩 나누어 예입한 사실, 위 각 예금계좌 개설 당시 피고 은행 직원 소외 김현이는 
+        소외 1로부터 교부받은 원고 및 
+        소외 1의 주민등록증을 복사한 다음 원고의 주민등록증 사본 아래에는 실명확인필이라고 기재하고, 
+        소외 1의 주민등록증 사본 아래에는 대리인 또는 피위임인이라고 기재한 사실, 위와 같이 약속어음으로 예입된 것은 통상 예입 다음날 오후 2:30부터 3:00경 사이에 어음교환소를 통하여 어음이 결제되면 예금된 것으로 처리되는 사실, 
+        소외 1은 원고 명의로 금 2억 원이 예금되어 있는 통장을 만들어 이를 원고에게 제시, 교부하여야 할 필요가 있었던 관계로 당시 결제자금이 없었음에도 이 사건 약속어음을 이 사건 을, 병 계좌에 예입한 다음, 오랜 기간 동안 피고 은행과 거액의 예금거래를 하여 온 관계를 이용하여 이 사건 약속어음이 정식으로 결제되기도 전에 예입 바로 다음날인 1994. 2. 3. 정오경 통장 제시도 없이 금 2억 원의 인출을 요구하였고, 이에 피고 은행이 자기앞수표로 금 2억 원을 인출하여 주자 같은 날 12:25경 서울은행 여의도지점을 통하여 이 사건 약속어음의 지급장소인 서울은행 동대문지점에 이 사건 약속어음의 결제자금으로 입금하였으며, 결국 이 사건 약속어음은 피고 은행으로부터 미리 인출한 위 금 2억 원에 의하여 같은 날 13:45경 결제되었으나, 이 사건 약속어음이 결제될 당시 
+        소외 2의 서울은행 동대문지점 거래계좌에는 위 금 2억 원을 제외하면 금 5,256,593원이 남아 있을 뿐이어서 피고 은행이 미결제 약속어음으로 예입된 을, 병 계좌의 인출을 허용하지 아니하였더라면 이 사건 약속어음은 결제될 수 없는 사실, 원고는 1994. 10. 28. 피고에게 이 사건 갑 계좌의 통장과 예금청구서를 제시하고 갑 계좌의 예금 8천만 원을 청구하였으나 당시 잔고가 금 3천만 원밖에 없다는 이유로 금 3천만 원 및 그에 대한 이자만을 지급받고 금 5천만 원의 지급은 거절되었으며, 1994. 11. 2. 이 사건 을, 병 계좌의 해지를 통보하면서 통장과 예금청구서를 제시하고 예금을 청구하였으나 금 2억 원 및 이에 대한 신탁이자의 지급이 거절된 사실을 인정하였다.
+      </p><p>  2. 원고의 상고이유에 대하여</p><p>  가. 제1점에 대하여 </p><p>  기록에 의하면 
+        <span class="accrnt_txt">예금계약에 적용되는 은행수신거래기본약관 제4조 제1항 제1호에 '증권으로 입금하는 경우에는 은행이 교환에 돌려 부도반환시한이 지나고 결제를 확인한 때, 다만 개설점이 지급장소인 증권이면 그 날 안에 결제를 확인한 때' 예금이 완료되는 것으로 규정되어 있음을 알 수 있는바, 이 규정은, 다른 점포에서 지급될 약속어음 등 증권으로 입금하는 경우에는 이를 교환에 돌려 지급지 점포에서 액면금을 추심하여 그 결제를 확인한 때에 예금계약이 체결된 것으로 본다는 의미이지, 지급지 점포에서 당해 증권이 정상적으로 추심되었는지 또는 부도처리되어 추심이 이루어지지 않았는지 여부에 관계없이 추심을 의뢰한 점포에 위 약관 소정의 부도반환시한까지 부도통지가 없으면 무조건 예금계약이 성립된 것으로 본다는 취지라고는 볼 수 없다</span> 할 것이다(대법원 1995. 6. 16. 선고 95다9754, 9761 판결 참조).
+      </p><p>  위에서 본 사실관계에 의하면 이 사건 약속어음은, 실질적으로 원고 또는 
+        소외 1, 
+        2 기타 제3자의 출연에 의하여 결제된 것이 아니고, 바로 그 약속어음을 예입받은 피고 은행이 원고의 대리인이라고 할 수 있는 
+        소외 1의 기망행위에 의하여 출연한 금원에 의하여 결제되었다고 할 것인바, 이러한 경우에는 피고 은행이 이 사건 약속어음을 정상적으로 추심완료하였다고 할 수 없으므로 아직 이 사건 약속어음의 액면금에 관하여 원고와 피고 사이에 예금계약이 성립하지 않았다고 할 것이다. 
+      </p><p>  따라서 원심이 원고와 피고 사이에 적법한 예금계약이 성립된 것이라고 할 수 없다는 이유로 원고의 이 사건 을, 병 계좌의 예금반환청구를 기각한 것은 정당하고 거기에 상고이유로 주장하는 바와 같은 예금계약에 관한 법리오해가 있다고 할 수 없다. 이에 관한 상고이유의 주장은 이유가 없다. </p><p>  나. 제2점에 대하여 </p><p>  원고가 위 을, 병 계좌의 예금증서를 발급받아 소지하게 됨으로 인하여 
+        소외 1로부터 제 때에 돈을 되돌려 받을 기회를 놓쳤다고 하더라도, 피고가 
+        소외 1과 통모하여 위 을, 병 계좌의 예금증서를 발급하고 
+        소외 1에게 이 사건 약속어음의 액면금을 지급하였다고 인정할 증거가 없으므로 그에 대하여 피고가 손해배상책임을 져야 한다고 할 수 없다. 
+      </p><p>  원고의 손해배상청구에 대하여 이와 결론을 같이 한 원심은 옳고, 이에 관한 상고이유의 주장도 받아들일 수 없다.  </p><p>  3. 피고의 상고이유에 대하여</p><p>  가. 제1점에 대하여 </p><p>  기록에 의하여 살펴보면 원심이 그 판시의 사실관계하에서 갑 계좌의 예금주가 원고라고 판단한 것은 옳고 거기에 상고이유로 주장하는 바와 같은 사실오인이 있다고 할 수 없다. 이에 관한 상고이유의 주장은 이유가 없다. </p><p>  나. 제2점에 대하여 </p><p>  기록에 의하여 살펴보면 원심이 그 판시의 사정하에서 피고가 갑 계좌의 예금인출이 원고의 의사에 기한 것으로 믿었거나 그렇게 믿는데 아무런 과실이 없었다고 볼 수 없다고 판단한 것은 옳고 거기에 상고이유로 주장하는 바와 같은 채권의 준점유자에 대한 변제 및 금융실명거래및비밀보장에관한긴급재정경제명령에 관한 법리오해가 있다고 할 수 없다. 이에 관한 상고이유의 주장도 이유가 없다. </p><p>  다. 제3점에 대하여 </p><p>  설령 
+        <span class="accrnt_txt">원고가 
+          소외 1에 대한 관리·감독을 적절하게 하지 아니한 과실이 있다 하더라도, 채무불이행이나 불법행위로 인한 손해배상청구가 아니고 예금계약에 기한 예금반환 청구사건에 있어 위 과실을 들어 은행의 채무액을 감경하거나 과실상계할 여지가 없으므로
+        </span> 이에 관한 상고이유의 주장도 이유가 없다. 
+      </p><p>  4. 그러므로 상고를 각 기각하고 상고비용은 상고인 각자의 부담으로 하기로 하여 관여 법관의 일치된 의견으로 주문과 같이 판결한다.</p>
+    <span class="space"></span><span class="space"></span><center><span class="t01-text">대법관   송진훈(재판장) 천경송 지창권(주심) 신성택 </span></center><span class="space"></span>
+  </div></div></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="viewLoading" align="center" style="z-index: 50000; position: absolute; top: 250px; width: 1000px; display: none;">
+	<img src="/wsjodocs/images/contents/loading.gif" alt="로딩 이미지" />
+</div>
+
+</body></html>

@@ -79,8 +79,10 @@ def get_3sentences(keyword, fail, success):
         text2 = soup2.find("div", {"class": "page_area"}).get_text()
         success += 1
 
-        savetext(keyword, text3, text2, success)
-        savehtml(keyword, html3, html2, success)
+        print(keyword, text3, text2, success)
+
+        # savetext(keyword, text3, text2, success)
+        # savehtml(keyword, html3, html2, success)
 
 
 def savetext(keyword, text3, text2, success):
